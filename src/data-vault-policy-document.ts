@@ -45,7 +45,7 @@ export function dataVaultPolicyDocumentRuleAllowedParameterToTerraform(struct?: 
   }
   return {
     key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.listMapper(cdktf.stringToTerraform)(struct!.value),
+    value: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.value),
   }
 }
 
@@ -163,7 +163,7 @@ export function dataVaultPolicyDocumentRuleDeniedParameterToTerraform(struct?: D
   }
   return {
     key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.listMapper(cdktf.stringToTerraform)(struct!.value),
+    value: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.value),
   }
 }
 
@@ -308,14 +308,14 @@ export function dataVaultPolicyDocumentRuleToTerraform(struct?: DataVaultPolicyD
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    capabilities: cdktf.listMapper(cdktf.stringToTerraform)(struct!.capabilities),
+    capabilities: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.capabilities),
     description: cdktf.stringToTerraform(struct!.description),
     max_wrapping_ttl: cdktf.stringToTerraform(struct!.maxWrappingTtl),
     min_wrapping_ttl: cdktf.stringToTerraform(struct!.minWrappingTtl),
     path: cdktf.stringToTerraform(struct!.path),
-    required_parameters: cdktf.listMapper(cdktf.stringToTerraform)(struct!.requiredParameters),
-    allowed_parameter: cdktf.listMapper(dataVaultPolicyDocumentRuleAllowedParameterToTerraform)(struct!.allowedParameter),
-    denied_parameter: cdktf.listMapper(dataVaultPolicyDocumentRuleDeniedParameterToTerraform)(struct!.deniedParameter),
+    required_parameters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.requiredParameters),
+    allowed_parameter: cdktf.listMapper(dataVaultPolicyDocumentRuleAllowedParameterToTerraform, true)(struct!.allowedParameter),
+    denied_parameter: cdktf.listMapper(dataVaultPolicyDocumentRuleDeniedParameterToTerraform, true)(struct!.deniedParameter),
   }
 }
 
@@ -580,7 +580,10 @@ export class DataVaultPolicyDocument extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._namespace = config.namespace;
@@ -652,7 +655,7 @@ export class DataVaultPolicyDocument extends cdktf.TerraformDataSource {
     return {
       id: cdktf.stringToTerraform(this._id),
       namespace: cdktf.stringToTerraform(this._namespace),
-      rule: cdktf.listMapper(dataVaultPolicyDocumentRuleToTerraform)(this._rule.internalValue),
+      rule: cdktf.listMapper(dataVaultPolicyDocumentRuleToTerraform, true)(this._rule.internalValue),
     };
   }
 }

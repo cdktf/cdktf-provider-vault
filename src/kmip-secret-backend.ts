@@ -120,7 +120,10 @@ export class KmipSecretBackend extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._defaultTlsClientKeyBits = config.defaultTlsClientKeyBits;
     this._defaultTlsClientKeyType = config.defaultTlsClientKeyType;
@@ -357,11 +360,11 @@ export class KmipSecretBackend extends cdktf.TerraformResource {
       default_tls_client_ttl: cdktf.numberToTerraform(this._defaultTlsClientTtl),
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
-      listen_addrs: cdktf.listMapper(cdktf.stringToTerraform)(this._listenAddrs),
+      listen_addrs: cdktf.listMapper(cdktf.stringToTerraform, false)(this._listenAddrs),
       namespace: cdktf.stringToTerraform(this._namespace),
       path: cdktf.stringToTerraform(this._path),
-      server_hostnames: cdktf.listMapper(cdktf.stringToTerraform)(this._serverHostnames),
-      server_ips: cdktf.listMapper(cdktf.stringToTerraform)(this._serverIps),
+      server_hostnames: cdktf.listMapper(cdktf.stringToTerraform, false)(this._serverHostnames),
+      server_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(this._serverIps),
       tls_ca_key_bits: cdktf.numberToTerraform(this._tlsCaKeyBits),
       tls_ca_key_type: cdktf.stringToTerraform(this._tlsCaKeyType),
       tls_min_version: cdktf.stringToTerraform(this._tlsMinVersion),

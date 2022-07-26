@@ -132,7 +132,10 @@ export class PkiSecretBackendSign extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._altNames = config.altNames;
     this._autoRenew = config.autoRenew;
@@ -419,7 +422,7 @@ export class PkiSecretBackendSign extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      alt_names: cdktf.listMapper(cdktf.stringToTerraform)(this._altNames),
+      alt_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._altNames),
       auto_renew: cdktf.booleanToTerraform(this._autoRenew),
       backend: cdktf.stringToTerraform(this._backend),
       common_name: cdktf.stringToTerraform(this._commonName),
@@ -427,13 +430,13 @@ export class PkiSecretBackendSign extends cdktf.TerraformResource {
       exclude_cn_from_sans: cdktf.booleanToTerraform(this._excludeCnFromSans),
       format: cdktf.stringToTerraform(this._format),
       id: cdktf.stringToTerraform(this._id),
-      ip_sans: cdktf.listMapper(cdktf.stringToTerraform)(this._ipSans),
+      ip_sans: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ipSans),
       min_seconds_remaining: cdktf.numberToTerraform(this._minSecondsRemaining),
       name: cdktf.stringToTerraform(this._name),
       namespace: cdktf.stringToTerraform(this._namespace),
-      other_sans: cdktf.listMapper(cdktf.stringToTerraform)(this._otherSans),
+      other_sans: cdktf.listMapper(cdktf.stringToTerraform, false)(this._otherSans),
       ttl: cdktf.stringToTerraform(this._ttl),
-      uri_sans: cdktf.listMapper(cdktf.stringToTerraform)(this._uriSans),
+      uri_sans: cdktf.listMapper(cdktf.stringToTerraform, false)(this._uriSans),
     };
   }
 }

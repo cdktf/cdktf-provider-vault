@@ -150,13 +150,13 @@ export function githubAuthBackendTuneToTerraform(struct?: GithubAuthBackendTune 
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_response_headers: struct!.allowedResponseHeaders === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedResponseHeaders),
-    audit_non_hmac_request_keys: struct!.auditNonHmacRequestKeys === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform)(struct!.auditNonHmacRequestKeys),
-    audit_non_hmac_response_keys: struct!.auditNonHmacResponseKeys === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform)(struct!.auditNonHmacResponseKeys),
+    allowed_response_headers: struct!.allowedResponseHeaders === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedResponseHeaders),
+    audit_non_hmac_request_keys: struct!.auditNonHmacRequestKeys === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.auditNonHmacRequestKeys),
+    audit_non_hmac_response_keys: struct!.auditNonHmacResponseKeys === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.auditNonHmacResponseKeys),
     default_lease_ttl: struct!.defaultLeaseTtl === undefined ? null : cdktf.stringToTerraform(struct!.defaultLeaseTtl),
     listing_visibility: struct!.listingVisibility === undefined ? null : cdktf.stringToTerraform(struct!.listingVisibility),
     max_lease_ttl: struct!.maxLeaseTtl === undefined ? null : cdktf.stringToTerraform(struct!.maxLeaseTtl),
-    passthrough_request_headers: struct!.passthroughRequestHeaders === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform)(struct!.passthroughRequestHeaders),
+    passthrough_request_headers: struct!.passthroughRequestHeaders === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.passthroughRequestHeaders),
     token_type: struct!.tokenType === undefined ? null : cdktf.stringToTerraform(struct!.tokenType),
   }
 }
@@ -428,7 +428,10 @@ export class GithubAuthBackend extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._baseUrl = config.baseUrl;
     this._description = config.description;
@@ -740,16 +743,16 @@ export class GithubAuthBackend extends cdktf.TerraformResource {
       organization: cdktf.stringToTerraform(this._organization),
       organization_id: cdktf.numberToTerraform(this._organizationId),
       path: cdktf.stringToTerraform(this._path),
-      token_bound_cidrs: cdktf.listMapper(cdktf.stringToTerraform)(this._tokenBoundCidrs),
+      token_bound_cidrs: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tokenBoundCidrs),
       token_explicit_max_ttl: cdktf.numberToTerraform(this._tokenExplicitMaxTtl),
       token_max_ttl: cdktf.numberToTerraform(this._tokenMaxTtl),
       token_no_default_policy: cdktf.booleanToTerraform(this._tokenNoDefaultPolicy),
       token_num_uses: cdktf.numberToTerraform(this._tokenNumUses),
       token_period: cdktf.numberToTerraform(this._tokenPeriod),
-      token_policies: cdktf.listMapper(cdktf.stringToTerraform)(this._tokenPolicies),
+      token_policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tokenPolicies),
       token_ttl: cdktf.numberToTerraform(this._tokenTtl),
       token_type: cdktf.stringToTerraform(this._tokenType),
-      tune: cdktf.listMapper(githubAuthBackendTuneToTerraform)(this._tune.internalValue),
+      tune: cdktf.listMapper(githubAuthBackendTuneToTerraform, false)(this._tune.internalValue),
     };
   }
 }

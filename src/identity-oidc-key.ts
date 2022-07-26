@@ -84,7 +84,10 @@ export class IdentityOidcKey extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._algorithm = config.algorithm;
     this._allowedClientIds = config.allowedClientIds;
@@ -215,7 +218,7 @@ export class IdentityOidcKey extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       algorithm: cdktf.stringToTerraform(this._algorithm),
-      allowed_client_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._allowedClientIds),
+      allowed_client_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedClientIds),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       namespace: cdktf.stringToTerraform(this._namespace),

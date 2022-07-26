@@ -95,7 +95,7 @@ export function oktaAuthBackendGroupToTerraform(struct?: OktaAuthBackendGroup | 
   }
   return {
     group_name: struct!.groupName === undefined ? null : cdktf.stringToTerraform(struct!.groupName),
-    policies: struct!.policies === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform)(struct!.policies),
+    policies: struct!.policies === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.policies),
   }
 }
 
@@ -222,8 +222,8 @@ export function oktaAuthBackendUserToTerraform(struct?: OktaAuthBackendUser | cd
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    groups: struct!.groups === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform)(struct!.groups),
-    policies: struct!.policies === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform)(struct!.policies),
+    groups: struct!.groups === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.groups),
+    policies: struct!.policies === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.policies),
     username: struct!.username === undefined ? null : cdktf.stringToTerraform(struct!.username),
   }
 }
@@ -385,7 +385,10 @@ export class OktaAuthBackend extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._baseUrl = config.baseUrl;
     this._bypassOktaMfa = config.bypassOktaMfa;
@@ -608,7 +611,7 @@ export class OktaAuthBackend extends cdktf.TerraformResource {
       base_url: cdktf.stringToTerraform(this._baseUrl),
       bypass_okta_mfa: cdktf.booleanToTerraform(this._bypassOktaMfa),
       description: cdktf.stringToTerraform(this._description),
-      group: cdktf.listMapper(oktaAuthBackendGroupToTerraform)(this._group.internalValue),
+      group: cdktf.listMapper(oktaAuthBackendGroupToTerraform, false)(this._group.internalValue),
       id: cdktf.stringToTerraform(this._id),
       max_ttl: cdktf.stringToTerraform(this._maxTtl),
       namespace: cdktf.stringToTerraform(this._namespace),
@@ -616,7 +619,7 @@ export class OktaAuthBackend extends cdktf.TerraformResource {
       path: cdktf.stringToTerraform(this._path),
       token: cdktf.stringToTerraform(this._token),
       ttl: cdktf.stringToTerraform(this._ttl),
-      user: cdktf.listMapper(oktaAuthBackendUserToTerraform)(this._user.internalValue),
+      user: cdktf.listMapper(oktaAuthBackendUserToTerraform, false)(this._user.internalValue),
     };
   }
 }

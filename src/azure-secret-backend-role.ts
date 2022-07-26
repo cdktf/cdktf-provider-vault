@@ -324,7 +324,10 @@ export class AzureSecretBackendRole extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._applicationObjectId = config.applicationObjectId;
     this._backend = config.backend;
@@ -513,8 +516,8 @@ export class AzureSecretBackendRole extends cdktf.TerraformResource {
       namespace: cdktf.stringToTerraform(this._namespace),
       role: cdktf.stringToTerraform(this._role),
       ttl: cdktf.stringToTerraform(this._ttl),
-      azure_groups: cdktf.listMapper(azureSecretBackendRoleAzureGroupsToTerraform)(this._azureGroups.internalValue),
-      azure_roles: cdktf.listMapper(azureSecretBackendRoleAzureRolesToTerraform)(this._azureRoles.internalValue),
+      azure_groups: cdktf.listMapper(azureSecretBackendRoleAzureGroupsToTerraform, true)(this._azureGroups.internalValue),
+      azure_roles: cdktf.listMapper(azureSecretBackendRoleAzureRolesToTerraform, true)(this._azureRoles.internalValue),
     };
   }
 }

@@ -90,7 +90,10 @@ export class GenericEndpoint extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._dataJson = config.dataJson;
     this._disableDelete = config.disableDelete;
@@ -252,7 +255,7 @@ export class GenericEndpoint extends cdktf.TerraformResource {
       ignore_absent_fields: cdktf.booleanToTerraform(this._ignoreAbsentFields),
       namespace: cdktf.stringToTerraform(this._namespace),
       path: cdktf.stringToTerraform(this._path),
-      write_fields: cdktf.listMapper(cdktf.stringToTerraform)(this._writeFields),
+      write_fields: cdktf.listMapper(cdktf.stringToTerraform, false)(this._writeFields),
     };
   }
 }

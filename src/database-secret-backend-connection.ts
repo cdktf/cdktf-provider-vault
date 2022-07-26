@@ -229,7 +229,7 @@ export function databaseSecretBackendConnectionCassandraToTerraform(struct?: Dat
   }
   return {
     connect_timeout: cdktf.numberToTerraform(struct!.connectTimeout),
-    hosts: cdktf.listMapper(cdktf.stringToTerraform)(struct!.hosts),
+    hosts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.hosts),
     insecure_tls: cdktf.booleanToTerraform(struct!.insecureTls),
     password: cdktf.stringToTerraform(struct!.password),
     pem_bundle: cdktf.stringToTerraform(struct!.pemBundle),
@@ -546,7 +546,7 @@ export function databaseSecretBackendConnectionCouchbaseToTerraform(struct?: Dat
   return {
     base64_pem: cdktf.stringToTerraform(struct!.base64Pem),
     bucket_name: cdktf.stringToTerraform(struct!.bucketName),
-    hosts: cdktf.listMapper(cdktf.stringToTerraform)(struct!.hosts),
+    hosts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.hosts),
     insecure_tls: cdktf.booleanToTerraform(struct!.insecureTls),
     password: cdktf.stringToTerraform(struct!.password),
     tls: cdktf.booleanToTerraform(struct!.tls),
@@ -4360,7 +4360,10 @@ export class DatabaseSecretBackendConnection extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._allowedRoles = config.allowedRoles;
     this._backend = config.backend;
@@ -4793,14 +4796,14 @@ export class DatabaseSecretBackendConnection extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allowed_roles: cdktf.listMapper(cdktf.stringToTerraform)(this._allowedRoles),
+      allowed_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedRoles),
       backend: cdktf.stringToTerraform(this._backend),
       data: cdktf.hashMapper(cdktf.stringToTerraform)(this._data),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       namespace: cdktf.stringToTerraform(this._namespace),
       plugin_name: cdktf.stringToTerraform(this._pluginName),
-      root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform)(this._rootRotationStatements),
+      root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(this._rootRotationStatements),
       verify_connection: cdktf.booleanToTerraform(this._verifyConnection),
       cassandra: databaseSecretBackendConnectionCassandraToTerraform(this._cassandra.internalValue),
       couchbase: databaseSecretBackendConnectionCouchbaseToTerraform(this._couchbase.internalValue),

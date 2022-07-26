@@ -210,7 +210,10 @@ export class JwtAuthBackendRole extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._allowedRedirectUris = config.allowedRedirectUris;
     this._backend = config.backend;
@@ -694,9 +697,9 @@ export class JwtAuthBackendRole extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allowed_redirect_uris: cdktf.listMapper(cdktf.stringToTerraform)(this._allowedRedirectUris),
+      allowed_redirect_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedRedirectUris),
       backend: cdktf.stringToTerraform(this._backend),
-      bound_audiences: cdktf.listMapper(cdktf.stringToTerraform)(this._boundAudiences),
+      bound_audiences: cdktf.listMapper(cdktf.stringToTerraform, false)(this._boundAudiences),
       bound_claims: cdktf.hashMapper(cdktf.stringToTerraform)(this._boundClaims),
       bound_claims_type: cdktf.stringToTerraform(this._boundClaimsType),
       bound_subject: cdktf.stringToTerraform(this._boundSubject),
@@ -708,16 +711,16 @@ export class JwtAuthBackendRole extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       namespace: cdktf.stringToTerraform(this._namespace),
       not_before_leeway: cdktf.numberToTerraform(this._notBeforeLeeway),
-      oidc_scopes: cdktf.listMapper(cdktf.stringToTerraform)(this._oidcScopes),
+      oidc_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._oidcScopes),
       role_name: cdktf.stringToTerraform(this._roleName),
       role_type: cdktf.stringToTerraform(this._roleType),
-      token_bound_cidrs: cdktf.listMapper(cdktf.stringToTerraform)(this._tokenBoundCidrs),
+      token_bound_cidrs: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tokenBoundCidrs),
       token_explicit_max_ttl: cdktf.numberToTerraform(this._tokenExplicitMaxTtl),
       token_max_ttl: cdktf.numberToTerraform(this._tokenMaxTtl),
       token_no_default_policy: cdktf.booleanToTerraform(this._tokenNoDefaultPolicy),
       token_num_uses: cdktf.numberToTerraform(this._tokenNumUses),
       token_period: cdktf.numberToTerraform(this._tokenPeriod),
-      token_policies: cdktf.listMapper(cdktf.stringToTerraform)(this._tokenPolicies),
+      token_policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tokenPolicies),
       token_ttl: cdktf.numberToTerraform(this._tokenTtl),
       token_type: cdktf.stringToTerraform(this._tokenType),
       user_claim: cdktf.stringToTerraform(this._userClaim),

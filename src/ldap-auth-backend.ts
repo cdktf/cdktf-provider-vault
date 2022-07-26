@@ -212,7 +212,10 @@ export class LdapAuthBackend extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._binddn = config.binddn;
     this._bindpass = config.bindpass;
@@ -860,13 +863,13 @@ export class LdapAuthBackend extends cdktf.TerraformResource {
       starttls: cdktf.booleanToTerraform(this._starttls),
       tls_max_version: cdktf.stringToTerraform(this._tlsMaxVersion),
       tls_min_version: cdktf.stringToTerraform(this._tlsMinVersion),
-      token_bound_cidrs: cdktf.listMapper(cdktf.stringToTerraform)(this._tokenBoundCidrs),
+      token_bound_cidrs: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tokenBoundCidrs),
       token_explicit_max_ttl: cdktf.numberToTerraform(this._tokenExplicitMaxTtl),
       token_max_ttl: cdktf.numberToTerraform(this._tokenMaxTtl),
       token_no_default_policy: cdktf.booleanToTerraform(this._tokenNoDefaultPolicy),
       token_num_uses: cdktf.numberToTerraform(this._tokenNumUses),
       token_period: cdktf.numberToTerraform(this._tokenPeriod),
-      token_policies: cdktf.listMapper(cdktf.stringToTerraform)(this._tokenPolicies),
+      token_policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tokenPolicies),
       token_ttl: cdktf.numberToTerraform(this._tokenTtl),
       token_type: cdktf.stringToTerraform(this._tokenType),
       upndomain: cdktf.stringToTerraform(this._upndomain),

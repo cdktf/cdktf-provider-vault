@@ -72,7 +72,10 @@ export class IdentityGroupPolicies extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._exclusive = config.exclusive;
     this._groupId = config.groupId;
@@ -174,7 +177,7 @@ export class IdentityGroupPolicies extends cdktf.TerraformResource {
       group_id: cdktf.stringToTerraform(this._groupId),
       id: cdktf.stringToTerraform(this._id),
       namespace: cdktf.stringToTerraform(this._namespace),
-      policies: cdktf.listMapper(cdktf.stringToTerraform)(this._policies),
+      policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._policies),
     };
   }
 }

@@ -72,7 +72,10 @@ export class GithubTeam extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._backend = config.backend;
     this._id = config.id;
@@ -171,7 +174,7 @@ export class GithubTeam extends cdktf.TerraformResource {
       backend: cdktf.stringToTerraform(this._backend),
       id: cdktf.stringToTerraform(this._id),
       namespace: cdktf.stringToTerraform(this._namespace),
-      policies: cdktf.listMapper(cdktf.stringToTerraform)(this._policies),
+      policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._policies),
       team: cdktf.stringToTerraform(this._team),
     };
   }

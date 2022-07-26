@@ -96,7 +96,10 @@ export class DataVaultTransformEncode extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._batchInput = config.batchInput;
     this._batchResults = config.batchResults;
@@ -257,8 +260,8 @@ export class DataVaultTransformEncode extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      batch_input: cdktf.listMapper(cdktf.hashMapper(cdktf.stringToTerraform))(this._batchInput),
-      batch_results: cdktf.listMapper(cdktf.hashMapper(cdktf.stringToTerraform))(this._batchResults),
+      batch_input: cdktf.listMapper(cdktf.hashMapper(cdktf.stringToTerraform), false)(this._batchInput),
+      batch_results: cdktf.listMapper(cdktf.hashMapper(cdktf.stringToTerraform), false)(this._batchResults),
       encoded_value: cdktf.stringToTerraform(this._encodedValue),
       id: cdktf.stringToTerraform(this._id),
       path: cdktf.stringToTerraform(this._path),

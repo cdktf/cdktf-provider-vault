@@ -108,7 +108,10 @@ export class DatabaseSecretBackendRole extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._backend = config.backend;
     this._creationStatements = config.creationStatements;
@@ -298,16 +301,16 @@ export class DatabaseSecretBackendRole extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       backend: cdktf.stringToTerraform(this._backend),
-      creation_statements: cdktf.listMapper(cdktf.stringToTerraform)(this._creationStatements),
+      creation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(this._creationStatements),
       db_name: cdktf.stringToTerraform(this._dbName),
       default_ttl: cdktf.numberToTerraform(this._defaultTtl),
       id: cdktf.stringToTerraform(this._id),
       max_ttl: cdktf.numberToTerraform(this._maxTtl),
       name: cdktf.stringToTerraform(this._name),
       namespace: cdktf.stringToTerraform(this._namespace),
-      renew_statements: cdktf.listMapper(cdktf.stringToTerraform)(this._renewStatements),
-      revocation_statements: cdktf.listMapper(cdktf.stringToTerraform)(this._revocationStatements),
-      rollback_statements: cdktf.listMapper(cdktf.stringToTerraform)(this._rollbackStatements),
+      renew_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(this._renewStatements),
+      revocation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(this._revocationStatements),
+      rollback_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(this._rollbackStatements),
     };
   }
 }

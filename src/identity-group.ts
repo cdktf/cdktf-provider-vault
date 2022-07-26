@@ -102,7 +102,10 @@ export class IdentityGroup extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._externalMemberEntityIds = config.externalMemberEntityIds;
     this._externalPolicies = config.externalPolicies;
@@ -289,12 +292,12 @@ export class IdentityGroup extends cdktf.TerraformResource {
       external_member_entity_ids: cdktf.booleanToTerraform(this._externalMemberEntityIds),
       external_policies: cdktf.booleanToTerraform(this._externalPolicies),
       id: cdktf.stringToTerraform(this._id),
-      member_entity_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._memberEntityIds),
-      member_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._memberGroupIds),
+      member_entity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._memberEntityIds),
+      member_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._memberGroupIds),
       metadata: cdktf.hashMapper(cdktf.stringToTerraform)(this._metadata),
       name: cdktf.stringToTerraform(this._name),
       namespace: cdktf.stringToTerraform(this._namespace),
-      policies: cdktf.listMapper(cdktf.stringToTerraform)(this._policies),
+      policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._policies),
       type: cdktf.stringToTerraform(this._type),
     };
   }

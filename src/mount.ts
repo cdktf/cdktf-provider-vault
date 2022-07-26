@@ -120,7 +120,10 @@ export class Mount extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._auditNonHmacRequestKeys = config.auditNonHmacRequestKeys;
     this._auditNonHmacResponseKeys = config.auditNonHmacResponseKeys;
@@ -354,8 +357,8 @@ export class Mount extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      audit_non_hmac_request_keys: cdktf.listMapper(cdktf.stringToTerraform)(this._auditNonHmacRequestKeys),
-      audit_non_hmac_response_keys: cdktf.listMapper(cdktf.stringToTerraform)(this._auditNonHmacResponseKeys),
+      audit_non_hmac_request_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._auditNonHmacRequestKeys),
+      audit_non_hmac_response_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._auditNonHmacResponseKeys),
       default_lease_ttl_seconds: cdktf.numberToTerraform(this._defaultLeaseTtlSeconds),
       description: cdktf.stringToTerraform(this._description),
       external_entropy_access: cdktf.booleanToTerraform(this._externalEntropyAccess),

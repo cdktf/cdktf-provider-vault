@@ -96,7 +96,10 @@ export class IdentityOidcClient extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accessTokenTtl = config.accessTokenTtl;
     this._assignments = config.assignments;
@@ -271,14 +274,14 @@ export class IdentityOidcClient extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       access_token_ttl: cdktf.numberToTerraform(this._accessTokenTtl),
-      assignments: cdktf.listMapper(cdktf.stringToTerraform)(this._assignments),
+      assignments: cdktf.listMapper(cdktf.stringToTerraform, false)(this._assignments),
       client_type: cdktf.stringToTerraform(this._clientType),
       id: cdktf.stringToTerraform(this._id),
       id_token_ttl: cdktf.numberToTerraform(this._idTokenTtl),
       key: cdktf.stringToTerraform(this._key),
       name: cdktf.stringToTerraform(this._name),
       namespace: cdktf.stringToTerraform(this._namespace),
-      redirect_uris: cdktf.listMapper(cdktf.stringToTerraform)(this._redirectUris),
+      redirect_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(this._redirectUris),
     };
   }
 }

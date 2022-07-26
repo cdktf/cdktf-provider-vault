@@ -538,9 +538,9 @@ export class VaultProvider extends cdktf.TerraformProvider {
       token: cdktf.stringToTerraform(this._token),
       token_name: cdktf.stringToTerraform(this._tokenName),
       alias: cdktf.stringToTerraform(this._alias),
-      auth_login: cdktf.listMapper(vaultProviderAuthLoginToTerraform)(this._authLogin),
-      client_auth: cdktf.listMapper(vaultProviderClientAuthToTerraform)(this._clientAuth),
-      headers: cdktf.listMapper(vaultProviderHeadersToTerraform)(this._headers),
+      auth_login: cdktf.listMapper(vaultProviderAuthLoginToTerraform, true)(this._authLogin),
+      client_auth: cdktf.listMapper(vaultProviderClientAuthToTerraform, true)(this._clientAuth),
+      headers: cdktf.listMapper(vaultProviderHeadersToTerraform, true)(this._headers),
     };
   }
 }

@@ -96,7 +96,10 @@ export class AwsAuthBackendRoleTag extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._allowInstanceMigration = config.allowInstanceMigration;
     this._backend = config.backend;
@@ -277,7 +280,7 @@ export class AwsAuthBackendRoleTag extends cdktf.TerraformResource {
       instance_id: cdktf.stringToTerraform(this._instanceId),
       max_ttl: cdktf.stringToTerraform(this._maxTtl),
       namespace: cdktf.stringToTerraform(this._namespace),
-      policies: cdktf.listMapper(cdktf.stringToTerraform)(this._policies),
+      policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._policies),
       role: cdktf.stringToTerraform(this._role),
     };
   }

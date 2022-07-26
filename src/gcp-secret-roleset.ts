@@ -79,7 +79,7 @@ export function gcpSecretRolesetBindingToTerraform(struct?: GcpSecretRolesetBind
   }
   return {
     resource: cdktf.stringToTerraform(struct!.resource),
-    roles: cdktf.listMapper(cdktf.stringToTerraform)(struct!.roles),
+    roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.roles),
   }
 }
 
@@ -212,7 +212,10 @@ export class GcpSecretRoleset extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._backend = config.backend;
     this._id = config.id;
@@ -361,8 +364,8 @@ export class GcpSecretRoleset extends cdktf.TerraformResource {
       project: cdktf.stringToTerraform(this._project),
       roleset: cdktf.stringToTerraform(this._roleset),
       secret_type: cdktf.stringToTerraform(this._secretType),
-      token_scopes: cdktf.listMapper(cdktf.stringToTerraform)(this._tokenScopes),
-      binding: cdktf.listMapper(gcpSecretRolesetBindingToTerraform)(this._binding.internalValue),
+      token_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tokenScopes),
+      binding: cdktf.listMapper(gcpSecretRolesetBindingToTerraform, true)(this._binding.internalValue),
     };
   }
 }

@@ -79,7 +79,7 @@ export function gcpSecretStaticAccountBindingToTerraform(struct?: GcpSecretStati
   }
   return {
     resource: cdktf.stringToTerraform(struct!.resource),
-    roles: cdktf.listMapper(cdktf.stringToTerraform)(struct!.roles),
+    roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.roles),
   }
 }
 
@@ -212,7 +212,10 @@ export class GcpSecretStaticAccount extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._backend = config.backend;
     this._id = config.id;
@@ -364,8 +367,8 @@ export class GcpSecretStaticAccount extends cdktf.TerraformResource {
       secret_type: cdktf.stringToTerraform(this._secretType),
       service_account_email: cdktf.stringToTerraform(this._serviceAccountEmail),
       static_account: cdktf.stringToTerraform(this._staticAccount),
-      token_scopes: cdktf.listMapper(cdktf.stringToTerraform)(this._tokenScopes),
-      binding: cdktf.listMapper(gcpSecretStaticAccountBindingToTerraform)(this._binding.internalValue),
+      token_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tokenScopes),
+      binding: cdktf.listMapper(gcpSecretStaticAccountBindingToTerraform, true)(this._binding.internalValue),
     };
   }
 }

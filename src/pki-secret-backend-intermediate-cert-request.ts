@@ -168,7 +168,10 @@ export class PkiSecretBackendIntermediateCertRequest extends cdktf.TerraformReso
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._altNames = config.altNames;
     this._backend = config.backend;
@@ -545,27 +548,27 @@ export class PkiSecretBackendIntermediateCertRequest extends cdktf.TerraformReso
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      alt_names: cdktf.listMapper(cdktf.stringToTerraform)(this._altNames),
+      alt_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._altNames),
       backend: cdktf.stringToTerraform(this._backend),
       common_name: cdktf.stringToTerraform(this._commonName),
       country: cdktf.stringToTerraform(this._country),
       exclude_cn_from_sans: cdktf.booleanToTerraform(this._excludeCnFromSans),
       format: cdktf.stringToTerraform(this._format),
       id: cdktf.stringToTerraform(this._id),
-      ip_sans: cdktf.listMapper(cdktf.stringToTerraform)(this._ipSans),
+      ip_sans: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ipSans),
       key_bits: cdktf.numberToTerraform(this._keyBits),
       key_type: cdktf.stringToTerraform(this._keyType),
       locality: cdktf.stringToTerraform(this._locality),
       namespace: cdktf.stringToTerraform(this._namespace),
       organization: cdktf.stringToTerraform(this._organization),
-      other_sans: cdktf.listMapper(cdktf.stringToTerraform)(this._otherSans),
+      other_sans: cdktf.listMapper(cdktf.stringToTerraform, false)(this._otherSans),
       ou: cdktf.stringToTerraform(this._ou),
       postal_code: cdktf.stringToTerraform(this._postalCode),
       private_key_format: cdktf.stringToTerraform(this._privateKeyFormat),
       province: cdktf.stringToTerraform(this._province),
       street_address: cdktf.stringToTerraform(this._streetAddress),
       type: cdktf.stringToTerraform(this._type),
-      uri_sans: cdktf.listMapper(cdktf.stringToTerraform)(this._uriSans),
+      uri_sans: cdktf.listMapper(cdktf.stringToTerraform, false)(this._uriSans),
     };
   }
 }

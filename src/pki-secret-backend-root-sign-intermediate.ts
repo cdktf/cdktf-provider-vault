@@ -180,7 +180,10 @@ export class PkiSecretBackendRootSignIntermediate extends cdktf.TerraformResourc
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._altNames = config.altNames;
     this._backend = config.backend;
@@ -606,7 +609,7 @@ export class PkiSecretBackendRootSignIntermediate extends cdktf.TerraformResourc
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      alt_names: cdktf.listMapper(cdktf.stringToTerraform)(this._altNames),
+      alt_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._altNames),
       backend: cdktf.stringToTerraform(this._backend),
       common_name: cdktf.stringToTerraform(this._commonName),
       country: cdktf.stringToTerraform(this._country),
@@ -614,20 +617,20 @@ export class PkiSecretBackendRootSignIntermediate extends cdktf.TerraformResourc
       exclude_cn_from_sans: cdktf.booleanToTerraform(this._excludeCnFromSans),
       format: cdktf.stringToTerraform(this._format),
       id: cdktf.stringToTerraform(this._id),
-      ip_sans: cdktf.listMapper(cdktf.stringToTerraform)(this._ipSans),
+      ip_sans: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ipSans),
       locality: cdktf.stringToTerraform(this._locality),
       max_path_length: cdktf.numberToTerraform(this._maxPathLength),
       namespace: cdktf.stringToTerraform(this._namespace),
       organization: cdktf.stringToTerraform(this._organization),
-      other_sans: cdktf.listMapper(cdktf.stringToTerraform)(this._otherSans),
+      other_sans: cdktf.listMapper(cdktf.stringToTerraform, false)(this._otherSans),
       ou: cdktf.stringToTerraform(this._ou),
-      permitted_dns_domains: cdktf.listMapper(cdktf.stringToTerraform)(this._permittedDnsDomains),
+      permitted_dns_domains: cdktf.listMapper(cdktf.stringToTerraform, false)(this._permittedDnsDomains),
       postal_code: cdktf.stringToTerraform(this._postalCode),
       province: cdktf.stringToTerraform(this._province),
       revoke: cdktf.booleanToTerraform(this._revoke),
       street_address: cdktf.stringToTerraform(this._streetAddress),
       ttl: cdktf.stringToTerraform(this._ttl),
-      uri_sans: cdktf.listMapper(cdktf.stringToTerraform)(this._uriSans),
+      uri_sans: cdktf.listMapper(cdktf.stringToTerraform, false)(this._uriSans),
       use_csr_values: cdktf.booleanToTerraform(this._useCsrValues),
     };
   }

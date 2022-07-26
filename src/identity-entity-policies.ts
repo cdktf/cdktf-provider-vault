@@ -72,7 +72,10 @@ export class IdentityEntityPolicies extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._entityId = config.entityId;
     this._exclusive = config.exclusive;
@@ -174,7 +177,7 @@ export class IdentityEntityPolicies extends cdktf.TerraformResource {
       exclusive: cdktf.booleanToTerraform(this._exclusive),
       id: cdktf.stringToTerraform(this._id),
       namespace: cdktf.stringToTerraform(this._namespace),
-      policies: cdktf.listMapper(cdktf.stringToTerraform)(this._policies),
+      policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._policies),
     };
   }
 }

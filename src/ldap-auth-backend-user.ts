@@ -70,7 +70,10 @@ export class LdapAuthBackendUser extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._backend = config.backend;
     this._groups = config.groups;
@@ -184,10 +187,10 @@ export class LdapAuthBackendUser extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       backend: cdktf.stringToTerraform(this._backend),
-      groups: cdktf.listMapper(cdktf.stringToTerraform)(this._groups),
+      groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._groups),
       id: cdktf.stringToTerraform(this._id),
       namespace: cdktf.stringToTerraform(this._namespace),
-      policies: cdktf.listMapper(cdktf.stringToTerraform)(this._policies),
+      policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._policies),
       username: cdktf.stringToTerraform(this._username),
     };
   }
