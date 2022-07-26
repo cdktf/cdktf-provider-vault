@@ -90,7 +90,10 @@ export class DatabaseSecretBackendStaticRole extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._backend = config.backend;
     this._dbName = config.dbName;
@@ -231,7 +234,7 @@ export class DatabaseSecretBackendStaticRole extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       namespace: cdktf.stringToTerraform(this._namespace),
       rotation_period: cdktf.numberToTerraform(this._rotationPeriod),
-      rotation_statements: cdktf.listMapper(cdktf.stringToTerraform)(this._rotationStatements),
+      rotation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(this._rotationStatements),
       username: cdktf.stringToTerraform(this._username),
     };
   }

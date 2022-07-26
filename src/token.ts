@@ -138,7 +138,10 @@ export class Token extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._displayName = config.displayName;
     this._explicitMaxTtl = config.explicitMaxTtl;
@@ -458,7 +461,7 @@ export class Token extends cdktf.TerraformResource {
       no_parent: cdktf.booleanToTerraform(this._noParent),
       num_uses: cdktf.numberToTerraform(this._numUses),
       period: cdktf.stringToTerraform(this._period),
-      policies: cdktf.listMapper(cdktf.stringToTerraform)(this._policies),
+      policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._policies),
       renew_increment: cdktf.numberToTerraform(this._renewIncrement),
       renew_min_lease: cdktf.numberToTerraform(this._renewMinLease),
       renewable: cdktf.booleanToTerraform(this._renewable),

@@ -174,13 +174,13 @@ export function jwtAuthBackendTuneToTerraform(struct?: JwtAuthBackendTune | cdkt
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_response_headers: struct!.allowedResponseHeaders === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedResponseHeaders),
-    audit_non_hmac_request_keys: struct!.auditNonHmacRequestKeys === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform)(struct!.auditNonHmacRequestKeys),
-    audit_non_hmac_response_keys: struct!.auditNonHmacResponseKeys === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform)(struct!.auditNonHmacResponseKeys),
+    allowed_response_headers: struct!.allowedResponseHeaders === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedResponseHeaders),
+    audit_non_hmac_request_keys: struct!.auditNonHmacRequestKeys === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.auditNonHmacRequestKeys),
+    audit_non_hmac_response_keys: struct!.auditNonHmacResponseKeys === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.auditNonHmacResponseKeys),
     default_lease_ttl: struct!.defaultLeaseTtl === undefined ? null : cdktf.stringToTerraform(struct!.defaultLeaseTtl),
     listing_visibility: struct!.listingVisibility === undefined ? null : cdktf.stringToTerraform(struct!.listingVisibility),
     max_lease_ttl: struct!.maxLeaseTtl === undefined ? null : cdktf.stringToTerraform(struct!.maxLeaseTtl),
-    passthrough_request_headers: struct!.passthroughRequestHeaders === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform)(struct!.passthroughRequestHeaders),
+    passthrough_request_headers: struct!.passthroughRequestHeaders === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.passthroughRequestHeaders),
     token_type: struct!.tokenType === undefined ? null : cdktf.stringToTerraform(struct!.tokenType),
   }
 }
@@ -452,7 +452,10 @@ export class JwtAuthBackend extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._boundIssuer = config.boundIssuer;
     this._defaultRole = config.defaultRole;
@@ -834,8 +837,8 @@ export class JwtAuthBackend extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       jwks_ca_pem: cdktf.stringToTerraform(this._jwksCaPem),
       jwks_url: cdktf.stringToTerraform(this._jwksUrl),
-      jwt_supported_algs: cdktf.listMapper(cdktf.stringToTerraform)(this._jwtSupportedAlgs),
-      jwt_validation_pubkeys: cdktf.listMapper(cdktf.stringToTerraform)(this._jwtValidationPubkeys),
+      jwt_supported_algs: cdktf.listMapper(cdktf.stringToTerraform, false)(this._jwtSupportedAlgs),
+      jwt_validation_pubkeys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._jwtValidationPubkeys),
       local: cdktf.booleanToTerraform(this._local),
       namespace: cdktf.stringToTerraform(this._namespace),
       namespace_in_state: cdktf.booleanToTerraform(this._namespaceInState),
@@ -844,10 +847,10 @@ export class JwtAuthBackend extends cdktf.TerraformResource {
       oidc_discovery_ca_pem: cdktf.stringToTerraform(this._oidcDiscoveryCaPem),
       oidc_discovery_url: cdktf.stringToTerraform(this._oidcDiscoveryUrl),
       oidc_response_mode: cdktf.stringToTerraform(this._oidcResponseMode),
-      oidc_response_types: cdktf.listMapper(cdktf.stringToTerraform)(this._oidcResponseTypes),
+      oidc_response_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._oidcResponseTypes),
       path: cdktf.stringToTerraform(this._path),
       provider_config: cdktf.hashMapper(cdktf.stringToTerraform)(this._providerConfig),
-      tune: cdktf.listMapper(jwtAuthBackendTuneToTerraform)(this._tune.internalValue),
+      tune: cdktf.listMapper(jwtAuthBackendTuneToTerraform, false)(this._tune.internalValue),
       type: cdktf.stringToTerraform(this._type),
     };
   }

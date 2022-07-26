@@ -96,7 +96,10 @@ export class ApproleAuthBackendRoleSecretId extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._backend = config.backend;
     this._cidrList = config.cidrList;
@@ -276,7 +279,7 @@ export class ApproleAuthBackendRoleSecretId extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       backend: cdktf.stringToTerraform(this._backend),
-      cidr_list: cdktf.listMapper(cdktf.stringToTerraform)(this._cidrList),
+      cidr_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._cidrList),
       id: cdktf.stringToTerraform(this._id),
       metadata: cdktf.stringToTerraform(this._metadata),
       namespace: cdktf.stringToTerraform(this._namespace),

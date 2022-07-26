@@ -72,7 +72,10 @@ export class IdentityOidcAssignment extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._entityIds = config.entityIds;
     this._groupIds = config.groupIds;
@@ -168,8 +171,8 @@ export class IdentityOidcAssignment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      entity_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._entityIds),
-      group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._groupIds),
+      entity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._entityIds),
+      group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._groupIds),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       namespace: cdktf.stringToTerraform(this._namespace),

@@ -78,7 +78,10 @@ export class PkiSecretBackendConfigUrls extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._backend = config.backend;
     this._crlDistributionPoints = config.crlDistributionPoints;
@@ -192,11 +195,11 @@ export class PkiSecretBackendConfigUrls extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       backend: cdktf.stringToTerraform(this._backend),
-      crl_distribution_points: cdktf.listMapper(cdktf.stringToTerraform)(this._crlDistributionPoints),
+      crl_distribution_points: cdktf.listMapper(cdktf.stringToTerraform, false)(this._crlDistributionPoints),
       id: cdktf.stringToTerraform(this._id),
-      issuing_certificates: cdktf.listMapper(cdktf.stringToTerraform)(this._issuingCertificates),
+      issuing_certificates: cdktf.listMapper(cdktf.stringToTerraform, false)(this._issuingCertificates),
       namespace: cdktf.stringToTerraform(this._namespace),
-      ocsp_servers: cdktf.listMapper(cdktf.stringToTerraform)(this._ocspServers),
+      ocsp_servers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ocspServers),
     };
   }
 }

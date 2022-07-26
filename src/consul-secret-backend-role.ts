@@ -114,7 +114,10 @@ export class ConsulSecretBackendRole extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._backend = config.backend;
     this._consulNamespace = config.consulNamespace;
@@ -331,14 +334,14 @@ export class ConsulSecretBackendRole extends cdktf.TerraformResource {
     return {
       backend: cdktf.stringToTerraform(this._backend),
       consul_namespace: cdktf.stringToTerraform(this._consulNamespace),
-      consul_roles: cdktf.listMapper(cdktf.stringToTerraform)(this._consulRoles),
+      consul_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._consulRoles),
       id: cdktf.stringToTerraform(this._id),
       local: cdktf.booleanToTerraform(this._local),
       max_ttl: cdktf.numberToTerraform(this._maxTtl),
       name: cdktf.stringToTerraform(this._name),
       namespace: cdktf.stringToTerraform(this._namespace),
       partition: cdktf.stringToTerraform(this._partition),
-      policies: cdktf.listMapper(cdktf.stringToTerraform)(this._policies),
+      policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._policies),
       token_type: cdktf.stringToTerraform(this._tokenType),
       ttl: cdktf.numberToTerraform(this._ttl),
     };

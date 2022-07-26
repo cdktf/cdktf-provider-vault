@@ -78,7 +78,10 @@ export class EgpPolicy extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._enforcementLevel = config.enforcementLevel;
     this._id = config.id;
@@ -186,7 +189,7 @@ export class EgpPolicy extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       namespace: cdktf.stringToTerraform(this._namespace),
-      paths: cdktf.listMapper(cdktf.stringToTerraform)(this._paths),
+      paths: cdktf.listMapper(cdktf.stringToTerraform, false)(this._paths),
       policy: cdktf.stringToTerraform(this._policy),
     };
   }

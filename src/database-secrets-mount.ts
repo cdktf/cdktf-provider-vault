@@ -282,10 +282,10 @@ export function databaseSecretsMountCassandraToTerraform(struct?: DatabaseSecret
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedRoles),
+    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedRoles),
     connect_timeout: cdktf.numberToTerraform(struct!.connectTimeout),
     data: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.data),
-    hosts: cdktf.listMapper(cdktf.stringToTerraform)(struct!.hosts),
+    hosts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.hosts),
     insecure_tls: cdktf.booleanToTerraform(struct!.insecureTls),
     name: cdktf.stringToTerraform(struct!.name),
     password: cdktf.stringToTerraform(struct!.password),
@@ -294,7 +294,7 @@ export function databaseSecretsMountCassandraToTerraform(struct?: DatabaseSecret
     plugin_name: cdktf.stringToTerraform(struct!.pluginName),
     port: cdktf.numberToTerraform(struct!.port),
     protocol_version: cdktf.numberToTerraform(struct!.protocolVersion),
-    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform)(struct!.rootRotationStatements),
+    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rootRotationStatements),
     tls: cdktf.booleanToTerraform(struct!.tls),
     username: cdktf.stringToTerraform(struct!.username),
     verify_connection: cdktf.booleanToTerraform(struct!.verifyConnection),
@@ -801,16 +801,16 @@ export function databaseSecretsMountCouchbaseToTerraform(struct?: DatabaseSecret
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedRoles),
+    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedRoles),
     base64_pem: cdktf.stringToTerraform(struct!.base64Pem),
     bucket_name: cdktf.stringToTerraform(struct!.bucketName),
     data: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.data),
-    hosts: cdktf.listMapper(cdktf.stringToTerraform)(struct!.hosts),
+    hosts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.hosts),
     insecure_tls: cdktf.booleanToTerraform(struct!.insecureTls),
     name: cdktf.stringToTerraform(struct!.name),
     password: cdktf.stringToTerraform(struct!.password),
     plugin_name: cdktf.stringToTerraform(struct!.pluginName),
-    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform)(struct!.rootRotationStatements),
+    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rootRotationStatements),
     tls: cdktf.booleanToTerraform(struct!.tls),
     username: cdktf.stringToTerraform(struct!.username),
     username_template: cdktf.stringToTerraform(struct!.usernameTemplate),
@@ -1277,7 +1277,7 @@ export function databaseSecretsMountElasticsearchToTerraform(struct?: DatabaseSe
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedRoles),
+    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedRoles),
     ca_cert: cdktf.stringToTerraform(struct!.caCert),
     ca_path: cdktf.stringToTerraform(struct!.caPath),
     client_cert: cdktf.stringToTerraform(struct!.clientCert),
@@ -1287,7 +1287,7 @@ export function databaseSecretsMountElasticsearchToTerraform(struct?: DatabaseSe
     name: cdktf.stringToTerraform(struct!.name),
     password: cdktf.stringToTerraform(struct!.password),
     plugin_name: cdktf.stringToTerraform(struct!.pluginName),
-    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform)(struct!.rootRotationStatements),
+    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rootRotationStatements),
     tls_server_name: cdktf.stringToTerraform(struct!.tlsServerName),
     url: cdktf.stringToTerraform(struct!.url),
     username: cdktf.stringToTerraform(struct!.username),
@@ -1781,7 +1781,7 @@ export function databaseSecretsMountHanaToTerraform(struct?: DatabaseSecretsMoun
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedRoles),
+    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedRoles),
     connection_url: cdktf.stringToTerraform(struct!.connectionUrl),
     data: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.data),
     disable_escaping: cdktf.booleanToTerraform(struct!.disableEscaping),
@@ -1791,7 +1791,7 @@ export function databaseSecretsMountHanaToTerraform(struct?: DatabaseSecretsMoun
     name: cdktf.stringToTerraform(struct!.name),
     password: cdktf.stringToTerraform(struct!.password),
     plugin_name: cdktf.stringToTerraform(struct!.pluginName),
-    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform)(struct!.rootRotationStatements),
+    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rootRotationStatements),
     username: cdktf.stringToTerraform(struct!.username),
     verify_connection: cdktf.booleanToTerraform(struct!.verifyConnection),
   }
@@ -2243,7 +2243,7 @@ export function databaseSecretsMountInfluxdbToTerraform(struct?: DatabaseSecrets
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedRoles),
+    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedRoles),
     connect_timeout: cdktf.numberToTerraform(struct!.connectTimeout),
     data: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.data),
     host: cdktf.stringToTerraform(struct!.host),
@@ -2254,7 +2254,7 @@ export function databaseSecretsMountInfluxdbToTerraform(struct?: DatabaseSecrets
     pem_json: cdktf.stringToTerraform(struct!.pemJson),
     plugin_name: cdktf.stringToTerraform(struct!.pluginName),
     port: cdktf.numberToTerraform(struct!.port),
-    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform)(struct!.rootRotationStatements),
+    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rootRotationStatements),
     tls: cdktf.booleanToTerraform(struct!.tls),
     username: cdktf.stringToTerraform(struct!.username),
     username_template: cdktf.stringToTerraform(struct!.usernameTemplate),
@@ -2747,7 +2747,7 @@ export function databaseSecretsMountMongodbToTerraform(struct?: DatabaseSecretsM
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedRoles),
+    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedRoles),
     connection_url: cdktf.stringToTerraform(struct!.connectionUrl),
     data: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.data),
     max_connection_lifetime: cdktf.numberToTerraform(struct!.maxConnectionLifetime),
@@ -2756,7 +2756,7 @@ export function databaseSecretsMountMongodbToTerraform(struct?: DatabaseSecretsM
     name: cdktf.stringToTerraform(struct!.name),
     password: cdktf.stringToTerraform(struct!.password),
     plugin_name: cdktf.stringToTerraform(struct!.pluginName),
-    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform)(struct!.rootRotationStatements),
+    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rootRotationStatements),
     username: cdktf.stringToTerraform(struct!.username),
     username_template: cdktf.stringToTerraform(struct!.usernameTemplate),
     verify_connection: cdktf.booleanToTerraform(struct!.verifyConnection),
@@ -3167,14 +3167,14 @@ export function databaseSecretsMountMongodbatlasToTerraform(struct?: DatabaseSec
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedRoles),
+    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedRoles),
     data: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.data),
     name: cdktf.stringToTerraform(struct!.name),
     plugin_name: cdktf.stringToTerraform(struct!.pluginName),
     private_key: cdktf.stringToTerraform(struct!.privateKey),
     project_id: cdktf.stringToTerraform(struct!.projectId),
     public_key: cdktf.stringToTerraform(struct!.publicKey),
-    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform)(struct!.rootRotationStatements),
+    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rootRotationStatements),
     verify_connection: cdktf.booleanToTerraform(struct!.verifyConnection),
   }
 }
@@ -3522,7 +3522,7 @@ export function databaseSecretsMountMssqlToTerraform(struct?: DatabaseSecretsMou
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedRoles),
+    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedRoles),
     connection_url: cdktf.stringToTerraform(struct!.connectionUrl),
     contained_db: cdktf.booleanToTerraform(struct!.containedDb),
     data: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.data),
@@ -3533,7 +3533,7 @@ export function databaseSecretsMountMssqlToTerraform(struct?: DatabaseSecretsMou
     name: cdktf.stringToTerraform(struct!.name),
     password: cdktf.stringToTerraform(struct!.password),
     plugin_name: cdktf.stringToTerraform(struct!.pluginName),
-    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform)(struct!.rootRotationStatements),
+    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rootRotationStatements),
     username: cdktf.stringToTerraform(struct!.username),
     username_template: cdktf.stringToTerraform(struct!.usernameTemplate),
     verify_connection: cdktf.booleanToTerraform(struct!.verifyConnection),
@@ -4024,7 +4024,7 @@ export function databaseSecretsMountMysqlToTerraform(struct?: DatabaseSecretsMou
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedRoles),
+    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedRoles),
     connection_url: cdktf.stringToTerraform(struct!.connectionUrl),
     data: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.data),
     max_connection_lifetime: cdktf.numberToTerraform(struct!.maxConnectionLifetime),
@@ -4033,7 +4033,7 @@ export function databaseSecretsMountMysqlToTerraform(struct?: DatabaseSecretsMou
     name: cdktf.stringToTerraform(struct!.name),
     password: cdktf.stringToTerraform(struct!.password),
     plugin_name: cdktf.stringToTerraform(struct!.pluginName),
-    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform)(struct!.rootRotationStatements),
+    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rootRotationStatements),
     tls_ca: cdktf.stringToTerraform(struct!.tlsCa),
     tls_certificate_key: cdktf.stringToTerraform(struct!.tlsCertificateKey),
     username: cdktf.stringToTerraform(struct!.username),
@@ -4514,7 +4514,7 @@ export function databaseSecretsMountMysqlAuroraToTerraform(struct?: DatabaseSecr
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedRoles),
+    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedRoles),
     connection_url: cdktf.stringToTerraform(struct!.connectionUrl),
     data: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.data),
     max_connection_lifetime: cdktf.numberToTerraform(struct!.maxConnectionLifetime),
@@ -4523,7 +4523,7 @@ export function databaseSecretsMountMysqlAuroraToTerraform(struct?: DatabaseSecr
     name: cdktf.stringToTerraform(struct!.name),
     password: cdktf.stringToTerraform(struct!.password),
     plugin_name: cdktf.stringToTerraform(struct!.pluginName),
-    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform)(struct!.rootRotationStatements),
+    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rootRotationStatements),
     username: cdktf.stringToTerraform(struct!.username),
     username_template: cdktf.stringToTerraform(struct!.usernameTemplate),
     verify_connection: cdktf.booleanToTerraform(struct!.verifyConnection),
@@ -4958,7 +4958,7 @@ export function databaseSecretsMountMysqlLegacyToTerraform(struct?: DatabaseSecr
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedRoles),
+    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedRoles),
     connection_url: cdktf.stringToTerraform(struct!.connectionUrl),
     data: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.data),
     max_connection_lifetime: cdktf.numberToTerraform(struct!.maxConnectionLifetime),
@@ -4967,7 +4967,7 @@ export function databaseSecretsMountMysqlLegacyToTerraform(struct?: DatabaseSecr
     name: cdktf.stringToTerraform(struct!.name),
     password: cdktf.stringToTerraform(struct!.password),
     plugin_name: cdktf.stringToTerraform(struct!.pluginName),
-    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform)(struct!.rootRotationStatements),
+    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rootRotationStatements),
     username: cdktf.stringToTerraform(struct!.username),
     username_template: cdktf.stringToTerraform(struct!.usernameTemplate),
     verify_connection: cdktf.booleanToTerraform(struct!.verifyConnection),
@@ -5402,7 +5402,7 @@ export function databaseSecretsMountMysqlRdsToTerraform(struct?: DatabaseSecrets
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedRoles),
+    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedRoles),
     connection_url: cdktf.stringToTerraform(struct!.connectionUrl),
     data: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.data),
     max_connection_lifetime: cdktf.numberToTerraform(struct!.maxConnectionLifetime),
@@ -5411,7 +5411,7 @@ export function databaseSecretsMountMysqlRdsToTerraform(struct?: DatabaseSecrets
     name: cdktf.stringToTerraform(struct!.name),
     password: cdktf.stringToTerraform(struct!.password),
     plugin_name: cdktf.stringToTerraform(struct!.pluginName),
-    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform)(struct!.rootRotationStatements),
+    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rootRotationStatements),
     username: cdktf.stringToTerraform(struct!.username),
     username_template: cdktf.stringToTerraform(struct!.usernameTemplate),
     verify_connection: cdktf.booleanToTerraform(struct!.verifyConnection),
@@ -5846,7 +5846,7 @@ export function databaseSecretsMountOracleToTerraform(struct?: DatabaseSecretsMo
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedRoles),
+    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedRoles),
     connection_url: cdktf.stringToTerraform(struct!.connectionUrl),
     data: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.data),
     max_connection_lifetime: cdktf.numberToTerraform(struct!.maxConnectionLifetime),
@@ -5855,7 +5855,7 @@ export function databaseSecretsMountOracleToTerraform(struct?: DatabaseSecretsMo
     name: cdktf.stringToTerraform(struct!.name),
     password: cdktf.stringToTerraform(struct!.password),
     plugin_name: cdktf.stringToTerraform(struct!.pluginName),
-    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform)(struct!.rootRotationStatements),
+    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rootRotationStatements),
     username: cdktf.stringToTerraform(struct!.username),
     username_template: cdktf.stringToTerraform(struct!.usernameTemplate),
     verify_connection: cdktf.booleanToTerraform(struct!.verifyConnection),
@@ -6296,7 +6296,7 @@ export function databaseSecretsMountPostgresqlToTerraform(struct?: DatabaseSecre
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedRoles),
+    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedRoles),
     connection_url: cdktf.stringToTerraform(struct!.connectionUrl),
     data: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.data),
     disable_escaping: cdktf.booleanToTerraform(struct!.disableEscaping),
@@ -6306,7 +6306,7 @@ export function databaseSecretsMountPostgresqlToTerraform(struct?: DatabaseSecre
     name: cdktf.stringToTerraform(struct!.name),
     password: cdktf.stringToTerraform(struct!.password),
     plugin_name: cdktf.stringToTerraform(struct!.pluginName),
-    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform)(struct!.rootRotationStatements),
+    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rootRotationStatements),
     username: cdktf.stringToTerraform(struct!.username),
     username_template: cdktf.stringToTerraform(struct!.usernameTemplate),
     verify_connection: cdktf.booleanToTerraform(struct!.verifyConnection),
@@ -6769,7 +6769,7 @@ export function databaseSecretsMountRedshiftToTerraform(struct?: DatabaseSecrets
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedRoles),
+    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedRoles),
     connection_url: cdktf.stringToTerraform(struct!.connectionUrl),
     data: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.data),
     disable_escaping: cdktf.booleanToTerraform(struct!.disableEscaping),
@@ -6779,7 +6779,7 @@ export function databaseSecretsMountRedshiftToTerraform(struct?: DatabaseSecrets
     name: cdktf.stringToTerraform(struct!.name),
     password: cdktf.stringToTerraform(struct!.password),
     plugin_name: cdktf.stringToTerraform(struct!.pluginName),
-    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform)(struct!.rootRotationStatements),
+    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rootRotationStatements),
     username: cdktf.stringToTerraform(struct!.username),
     username_template: cdktf.stringToTerraform(struct!.usernameTemplate),
     verify_connection: cdktf.booleanToTerraform(struct!.verifyConnection),
@@ -7236,7 +7236,7 @@ export function databaseSecretsMountSnowflakeToTerraform(struct?: DatabaseSecret
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedRoles),
+    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedRoles),
     connection_url: cdktf.stringToTerraform(struct!.connectionUrl),
     data: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.data),
     max_connection_lifetime: cdktf.numberToTerraform(struct!.maxConnectionLifetime),
@@ -7245,7 +7245,7 @@ export function databaseSecretsMountSnowflakeToTerraform(struct?: DatabaseSecret
     name: cdktf.stringToTerraform(struct!.name),
     password: cdktf.stringToTerraform(struct!.password),
     plugin_name: cdktf.stringToTerraform(struct!.pluginName),
-    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform)(struct!.rootRotationStatements),
+    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rootRotationStatements),
     username: cdktf.stringToTerraform(struct!.username),
     username_template: cdktf.stringToTerraform(struct!.usernameTemplate),
     verify_connection: cdktf.booleanToTerraform(struct!.verifyConnection),
@@ -7626,7 +7626,10 @@ export class DatabaseSecretsMount extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._auditNonHmacRequestKeys = config.auditNonHmacRequestKeys;
     this._auditNonHmacResponseKeys = config.auditNonHmacResponseKeys;
@@ -8123,8 +8126,8 @@ export class DatabaseSecretsMount extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      audit_non_hmac_request_keys: cdktf.listMapper(cdktf.stringToTerraform)(this._auditNonHmacRequestKeys),
-      audit_non_hmac_response_keys: cdktf.listMapper(cdktf.stringToTerraform)(this._auditNonHmacResponseKeys),
+      audit_non_hmac_request_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._auditNonHmacRequestKeys),
+      audit_non_hmac_response_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._auditNonHmacResponseKeys),
       default_lease_ttl_seconds: cdktf.numberToTerraform(this._defaultLeaseTtlSeconds),
       description: cdktf.stringToTerraform(this._description),
       external_entropy_access: cdktf.booleanToTerraform(this._externalEntropyAccess),
@@ -8135,22 +8138,22 @@ export class DatabaseSecretsMount extends cdktf.TerraformResource {
       options: cdktf.hashMapper(cdktf.stringToTerraform)(this._options),
       path: cdktf.stringToTerraform(this._path),
       seal_wrap: cdktf.booleanToTerraform(this._sealWrap),
-      cassandra: cdktf.listMapper(databaseSecretsMountCassandraToTerraform)(this._cassandra.internalValue),
-      couchbase: cdktf.listMapper(databaseSecretsMountCouchbaseToTerraform)(this._couchbase.internalValue),
-      elasticsearch: cdktf.listMapper(databaseSecretsMountElasticsearchToTerraform)(this._elasticsearch.internalValue),
-      hana: cdktf.listMapper(databaseSecretsMountHanaToTerraform)(this._hana.internalValue),
-      influxdb: cdktf.listMapper(databaseSecretsMountInfluxdbToTerraform)(this._influxdb.internalValue),
-      mongodb: cdktf.listMapper(databaseSecretsMountMongodbToTerraform)(this._mongodb.internalValue),
-      mongodbatlas: cdktf.listMapper(databaseSecretsMountMongodbatlasToTerraform)(this._mongodbatlas.internalValue),
-      mssql: cdktf.listMapper(databaseSecretsMountMssqlToTerraform)(this._mssql.internalValue),
-      mysql: cdktf.listMapper(databaseSecretsMountMysqlToTerraform)(this._mysql.internalValue),
-      mysql_aurora: cdktf.listMapper(databaseSecretsMountMysqlAuroraToTerraform)(this._mysqlAurora.internalValue),
-      mysql_legacy: cdktf.listMapper(databaseSecretsMountMysqlLegacyToTerraform)(this._mysqlLegacy.internalValue),
-      mysql_rds: cdktf.listMapper(databaseSecretsMountMysqlRdsToTerraform)(this._mysqlRds.internalValue),
-      oracle: cdktf.listMapper(databaseSecretsMountOracleToTerraform)(this._oracle.internalValue),
-      postgresql: cdktf.listMapper(databaseSecretsMountPostgresqlToTerraform)(this._postgresql.internalValue),
-      redshift: cdktf.listMapper(databaseSecretsMountRedshiftToTerraform)(this._redshift.internalValue),
-      snowflake: cdktf.listMapper(databaseSecretsMountSnowflakeToTerraform)(this._snowflake.internalValue),
+      cassandra: cdktf.listMapper(databaseSecretsMountCassandraToTerraform, true)(this._cassandra.internalValue),
+      couchbase: cdktf.listMapper(databaseSecretsMountCouchbaseToTerraform, true)(this._couchbase.internalValue),
+      elasticsearch: cdktf.listMapper(databaseSecretsMountElasticsearchToTerraform, true)(this._elasticsearch.internalValue),
+      hana: cdktf.listMapper(databaseSecretsMountHanaToTerraform, true)(this._hana.internalValue),
+      influxdb: cdktf.listMapper(databaseSecretsMountInfluxdbToTerraform, true)(this._influxdb.internalValue),
+      mongodb: cdktf.listMapper(databaseSecretsMountMongodbToTerraform, true)(this._mongodb.internalValue),
+      mongodbatlas: cdktf.listMapper(databaseSecretsMountMongodbatlasToTerraform, true)(this._mongodbatlas.internalValue),
+      mssql: cdktf.listMapper(databaseSecretsMountMssqlToTerraform, true)(this._mssql.internalValue),
+      mysql: cdktf.listMapper(databaseSecretsMountMysqlToTerraform, true)(this._mysql.internalValue),
+      mysql_aurora: cdktf.listMapper(databaseSecretsMountMysqlAuroraToTerraform, true)(this._mysqlAurora.internalValue),
+      mysql_legacy: cdktf.listMapper(databaseSecretsMountMysqlLegacyToTerraform, true)(this._mysqlLegacy.internalValue),
+      mysql_rds: cdktf.listMapper(databaseSecretsMountMysqlRdsToTerraform, true)(this._mysqlRds.internalValue),
+      oracle: cdktf.listMapper(databaseSecretsMountOracleToTerraform, true)(this._oracle.internalValue),
+      postgresql: cdktf.listMapper(databaseSecretsMountPostgresqlToTerraform, true)(this._postgresql.internalValue),
+      redshift: cdktf.listMapper(databaseSecretsMountRedshiftToTerraform, true)(this._redshift.internalValue),
+      snowflake: cdktf.listMapper(databaseSecretsMountSnowflakeToTerraform, true)(this._snowflake.internalValue),
     };
   }
 }

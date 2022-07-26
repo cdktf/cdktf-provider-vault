@@ -84,7 +84,10 @@ export class IdentityOidcProvider extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._allowedClientIds = config.allowedClientIds;
     this._httpsEnabled = config.httpsEnabled;
@@ -219,13 +222,13 @@ export class IdentityOidcProvider extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allowed_client_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._allowedClientIds),
+      allowed_client_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedClientIds),
       https_enabled: cdktf.booleanToTerraform(this._httpsEnabled),
       id: cdktf.stringToTerraform(this._id),
       issuer_host: cdktf.stringToTerraform(this._issuerHost),
       name: cdktf.stringToTerraform(this._name),
       namespace: cdktf.stringToTerraform(this._namespace),
-      scopes_supported: cdktf.listMapper(cdktf.stringToTerraform)(this._scopesSupported),
+      scopes_supported: cdktf.listMapper(cdktf.stringToTerraform, false)(this._scopesSupported),
     };
   }
 }

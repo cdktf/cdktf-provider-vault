@@ -120,7 +120,10 @@ export class AwsSecretBackendRole extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._backend = config.backend;
     this._credentialType = config.credentialType;
@@ -349,15 +352,15 @@ export class AwsSecretBackendRole extends cdktf.TerraformResource {
       backend: cdktf.stringToTerraform(this._backend),
       credential_type: cdktf.stringToTerraform(this._credentialType),
       default_sts_ttl: cdktf.numberToTerraform(this._defaultStsTtl),
-      iam_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._iamGroups),
+      iam_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._iamGroups),
       id: cdktf.stringToTerraform(this._id),
       max_sts_ttl: cdktf.numberToTerraform(this._maxStsTtl),
       name: cdktf.stringToTerraform(this._name),
       namespace: cdktf.stringToTerraform(this._namespace),
       permissions_boundary_arn: cdktf.stringToTerraform(this._permissionsBoundaryArn),
-      policy_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._policyArns),
+      policy_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._policyArns),
       policy_document: cdktf.stringToTerraform(this._policyDocument),
-      role_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._roleArns),
+      role_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._roleArns),
       user_path: cdktf.stringToTerraform(this._userPath),
     };
   }

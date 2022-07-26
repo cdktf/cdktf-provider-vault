@@ -96,7 +96,10 @@ export class TransformTransformation extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._allowedRoles = config.allowedRoles;
     this._id = config.id;
@@ -257,13 +260,13 @@ export class TransformTransformation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allowed_roles: cdktf.listMapper(cdktf.stringToTerraform)(this._allowedRoles),
+      allowed_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedRoles),
       id: cdktf.stringToTerraform(this._id),
       masking_character: cdktf.stringToTerraform(this._maskingCharacter),
       name: cdktf.stringToTerraform(this._name),
       path: cdktf.stringToTerraform(this._path),
       template: cdktf.stringToTerraform(this._template),
-      templates: cdktf.listMapper(cdktf.stringToTerraform)(this._templates),
+      templates: cdktf.listMapper(cdktf.stringToTerraform, false)(this._templates),
       tweak_source: cdktf.stringToTerraform(this._tweakSource),
       type: cdktf.stringToTerraform(this._type),
     };

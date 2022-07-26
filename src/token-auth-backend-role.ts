@@ -162,7 +162,10 @@ export class TokenAuthBackendRole extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._allowedEntityAliases = config.allowedEntityAliases;
     this._allowedPolicies = config.allowedPolicies;
@@ -513,24 +516,24 @@ export class TokenAuthBackendRole extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allowed_entity_aliases: cdktf.listMapper(cdktf.stringToTerraform)(this._allowedEntityAliases),
-      allowed_policies: cdktf.listMapper(cdktf.stringToTerraform)(this._allowedPolicies),
-      allowed_policies_glob: cdktf.listMapper(cdktf.stringToTerraform)(this._allowedPoliciesGlob),
-      disallowed_policies: cdktf.listMapper(cdktf.stringToTerraform)(this._disallowedPolicies),
-      disallowed_policies_glob: cdktf.listMapper(cdktf.stringToTerraform)(this._disallowedPoliciesGlob),
+      allowed_entity_aliases: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedEntityAliases),
+      allowed_policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedPolicies),
+      allowed_policies_glob: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedPoliciesGlob),
+      disallowed_policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._disallowedPolicies),
+      disallowed_policies_glob: cdktf.listMapper(cdktf.stringToTerraform, false)(this._disallowedPoliciesGlob),
       id: cdktf.stringToTerraform(this._id),
       namespace: cdktf.stringToTerraform(this._namespace),
       orphan: cdktf.booleanToTerraform(this._orphan),
       path_suffix: cdktf.stringToTerraform(this._pathSuffix),
       renewable: cdktf.booleanToTerraform(this._renewable),
       role_name: cdktf.stringToTerraform(this._roleName),
-      token_bound_cidrs: cdktf.listMapper(cdktf.stringToTerraform)(this._tokenBoundCidrs),
+      token_bound_cidrs: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tokenBoundCidrs),
       token_explicit_max_ttl: cdktf.numberToTerraform(this._tokenExplicitMaxTtl),
       token_max_ttl: cdktf.numberToTerraform(this._tokenMaxTtl),
       token_no_default_policy: cdktf.booleanToTerraform(this._tokenNoDefaultPolicy),
       token_num_uses: cdktf.numberToTerraform(this._tokenNumUses),
       token_period: cdktf.numberToTerraform(this._tokenPeriod),
-      token_policies: cdktf.listMapper(cdktf.stringToTerraform)(this._tokenPolicies),
+      token_policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tokenPolicies),
       token_ttl: cdktf.numberToTerraform(this._tokenTtl),
       token_type: cdktf.stringToTerraform(this._tokenType),
     };

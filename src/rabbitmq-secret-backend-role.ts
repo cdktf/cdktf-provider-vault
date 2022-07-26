@@ -395,7 +395,7 @@ export function rabbitmqSecretBackendRoleVhostTopicToTerraform(struct?: Rabbitmq
   }
   return {
     host: cdktf.stringToTerraform(struct!.host),
-    vhost: cdktf.listMapper(rabbitmqSecretBackendRoleVhostTopicVhostToTerraform)(struct!.vhost),
+    vhost: cdktf.listMapper(rabbitmqSecretBackendRoleVhostTopicVhostToTerraform, true)(struct!.vhost),
   }
 }
 
@@ -531,7 +531,10 @@ export class RabbitmqSecretBackendRole extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._backend = config.backend;
     this._id = config.id;
@@ -663,8 +666,8 @@ export class RabbitmqSecretBackendRole extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       namespace: cdktf.stringToTerraform(this._namespace),
       tags: cdktf.stringToTerraform(this._tags),
-      vhost: cdktf.listMapper(rabbitmqSecretBackendRoleVhostToTerraform)(this._vhost.internalValue),
-      vhost_topic: cdktf.listMapper(rabbitmqSecretBackendRoleVhostTopicToTerraform)(this._vhostTopic.internalValue),
+      vhost: cdktf.listMapper(rabbitmqSecretBackendRoleVhostToTerraform, true)(this._vhost.internalValue),
+      vhost_topic: cdktf.listMapper(rabbitmqSecretBackendRoleVhostTopicToTerraform, true)(this._vhostTopic.internalValue),
     };
   }
 }

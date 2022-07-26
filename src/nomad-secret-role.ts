@@ -84,7 +84,10 @@ export class NomadSecretRole extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._backend = config.backend;
     this._global = config.global;
@@ -215,7 +218,7 @@ export class NomadSecretRole extends cdktf.TerraformResource {
       global: cdktf.booleanToTerraform(this._global),
       id: cdktf.stringToTerraform(this._id),
       namespace: cdktf.stringToTerraform(this._namespace),
-      policies: cdktf.listMapper(cdktf.stringToTerraform)(this._policies),
+      policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._policies),
       role: cdktf.stringToTerraform(this._role),
       type: cdktf.stringToTerraform(this._type),
     };

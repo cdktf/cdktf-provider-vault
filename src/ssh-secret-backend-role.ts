@@ -139,7 +139,7 @@ export function sshSecretBackendRoleAllowedUserKeyConfigToTerraform(struct?: Ssh
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    lengths: cdktf.listMapper(cdktf.numberToTerraform)(struct!.lengths),
+    lengths: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.lengths),
     type: cdktf.stringToTerraform(struct!.type),
   }
 }
@@ -273,7 +273,10 @@ export class SshSecretBackendRole extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._algorithmSigner = config.algorithmSigner;
     this._allowBareDomains = config.allowBareDomains;
@@ -727,7 +730,7 @@ export class SshSecretBackendRole extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       namespace: cdktf.stringToTerraform(this._namespace),
       ttl: cdktf.stringToTerraform(this._ttl),
-      allowed_user_key_config: cdktf.listMapper(sshSecretBackendRoleAllowedUserKeyConfigToTerraform)(this._allowedUserKeyConfig.internalValue),
+      allowed_user_key_config: cdktf.listMapper(sshSecretBackendRoleAllowedUserKeyConfigToTerraform, true)(this._allowedUserKeyConfig.internalValue),
     };
   }
 }

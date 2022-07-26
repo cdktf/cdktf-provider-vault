@@ -90,7 +90,10 @@ export class AdSecretLibrary extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._backend = config.backend;
     this._disableCheckInEnforcement = config.disableCheckInEnforcement;
@@ -237,7 +240,7 @@ export class AdSecretLibrary extends cdktf.TerraformResource {
       max_ttl: cdktf.numberToTerraform(this._maxTtl),
       name: cdktf.stringToTerraform(this._name),
       namespace: cdktf.stringToTerraform(this._namespace),
-      service_account_names: cdktf.listMapper(cdktf.stringToTerraform)(this._serviceAccountNames),
+      service_account_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._serviceAccountNames),
       ttl: cdktf.numberToTerraform(this._ttl),
     };
   }

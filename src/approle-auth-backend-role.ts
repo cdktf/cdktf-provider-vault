@@ -150,7 +150,10 @@ export class ApproleAuthBackendRole extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._backend = config.backend;
     this._bindSecretId = config.bindSecretId;
@@ -473,16 +476,16 @@ export class ApproleAuthBackendRole extends cdktf.TerraformResource {
       namespace: cdktf.stringToTerraform(this._namespace),
       role_id: cdktf.stringToTerraform(this._roleId),
       role_name: cdktf.stringToTerraform(this._roleName),
-      secret_id_bound_cidrs: cdktf.listMapper(cdktf.stringToTerraform)(this._secretIdBoundCidrs),
+      secret_id_bound_cidrs: cdktf.listMapper(cdktf.stringToTerraform, false)(this._secretIdBoundCidrs),
       secret_id_num_uses: cdktf.numberToTerraform(this._secretIdNumUses),
       secret_id_ttl: cdktf.numberToTerraform(this._secretIdTtl),
-      token_bound_cidrs: cdktf.listMapper(cdktf.stringToTerraform)(this._tokenBoundCidrs),
+      token_bound_cidrs: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tokenBoundCidrs),
       token_explicit_max_ttl: cdktf.numberToTerraform(this._tokenExplicitMaxTtl),
       token_max_ttl: cdktf.numberToTerraform(this._tokenMaxTtl),
       token_no_default_policy: cdktf.booleanToTerraform(this._tokenNoDefaultPolicy),
       token_num_uses: cdktf.numberToTerraform(this._tokenNumUses),
       token_period: cdktf.numberToTerraform(this._tokenPeriod),
-      token_policies: cdktf.listMapper(cdktf.stringToTerraform)(this._tokenPolicies),
+      token_policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tokenPolicies),
       token_ttl: cdktf.numberToTerraform(this._tokenTtl),
       token_type: cdktf.stringToTerraform(this._tokenType),
     };

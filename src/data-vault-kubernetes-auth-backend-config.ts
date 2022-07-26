@@ -96,7 +96,10 @@ export class DataVaultKubernetesAuthBackendConfig extends cdktf.TerraformDataSou
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._backend = config.backend;
     this._disableIssValidation = config.disableIssValidation;
@@ -271,7 +274,7 @@ export class DataVaultKubernetesAuthBackendConfig extends cdktf.TerraformDataSou
       kubernetes_ca_cert: cdktf.stringToTerraform(this._kubernetesCaCert),
       kubernetes_host: cdktf.stringToTerraform(this._kubernetesHost),
       namespace: cdktf.stringToTerraform(this._namespace),
-      pem_keys: cdktf.listMapper(cdktf.stringToTerraform)(this._pemKeys),
+      pem_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._pemKeys),
     };
   }
 }

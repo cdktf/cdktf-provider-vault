@@ -156,7 +156,10 @@ export class CertAuthBackendRole extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._allowedCommonNames = config.allowedCommonNames;
     this._allowedDnsSans = config.allowedDnsSans;
@@ -555,27 +558,27 @@ export class CertAuthBackendRole extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allowed_common_names: cdktf.listMapper(cdktf.stringToTerraform)(this._allowedCommonNames),
-      allowed_dns_sans: cdktf.listMapper(cdktf.stringToTerraform)(this._allowedDnsSans),
-      allowed_email_sans: cdktf.listMapper(cdktf.stringToTerraform)(this._allowedEmailSans),
-      allowed_names: cdktf.listMapper(cdktf.stringToTerraform)(this._allowedNames),
-      allowed_organization_units: cdktf.listMapper(cdktf.stringToTerraform)(this._allowedOrganizationUnits),
-      allowed_organizational_units: cdktf.listMapper(cdktf.stringToTerraform)(this._allowedOrganizationalUnits),
-      allowed_uri_sans: cdktf.listMapper(cdktf.stringToTerraform)(this._allowedUriSans),
+      allowed_common_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedCommonNames),
+      allowed_dns_sans: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedDnsSans),
+      allowed_email_sans: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedEmailSans),
+      allowed_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedNames),
+      allowed_organization_units: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedOrganizationUnits),
+      allowed_organizational_units: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedOrganizationalUnits),
+      allowed_uri_sans: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedUriSans),
       backend: cdktf.stringToTerraform(this._backend),
       certificate: cdktf.stringToTerraform(this._certificate),
       display_name: cdktf.stringToTerraform(this._displayName),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       namespace: cdktf.stringToTerraform(this._namespace),
-      required_extensions: cdktf.listMapper(cdktf.stringToTerraform)(this._requiredExtensions),
-      token_bound_cidrs: cdktf.listMapper(cdktf.stringToTerraform)(this._tokenBoundCidrs),
+      required_extensions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._requiredExtensions),
+      token_bound_cidrs: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tokenBoundCidrs),
       token_explicit_max_ttl: cdktf.numberToTerraform(this._tokenExplicitMaxTtl),
       token_max_ttl: cdktf.numberToTerraform(this._tokenMaxTtl),
       token_no_default_policy: cdktf.booleanToTerraform(this._tokenNoDefaultPolicy),
       token_num_uses: cdktf.numberToTerraform(this._tokenNumUses),
       token_period: cdktf.numberToTerraform(this._tokenPeriod),
-      token_policies: cdktf.listMapper(cdktf.stringToTerraform)(this._tokenPolicies),
+      token_policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tokenPolicies),
       token_ttl: cdktf.numberToTerraform(this._tokenTtl),
       token_type: cdktf.stringToTerraform(this._tokenType),
     };
