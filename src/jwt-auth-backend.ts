@@ -446,7 +446,7 @@ export class JwtAuthBackend extends cdktf.TerraformResource {
       terraformResourceType: 'vault_jwt_auth_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.7.0',
+        providerVersion: '3.8.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

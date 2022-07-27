@@ -51,6 +51,12 @@ export interface KvSecretV2Config extends cdktf.TerraformMetaArguments {
   */
   readonly name: string;
   /**
+  * Target namespace. (requires Enterprise)
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#namespace KvSecretV2#namespace}
+  */
+  readonly namespace?: string;
+  /**
   * An object that holds option settings.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#options KvSecretV2#options}
@@ -84,7 +90,7 @@ export class KvSecretV2 extends cdktf.TerraformResource {
       terraformResourceType: 'vault_kv_secret_v2',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.7.0',
+        providerVersion: '3.8.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -102,6 +108,7 @@ export class KvSecretV2 extends cdktf.TerraformResource {
     this._id = config.id;
     this._mount = config.mount;
     this._name = config.name;
+    this._namespace = config.namespace;
     this._options = config.options;
   }
 
@@ -224,6 +231,22 @@ export class KvSecretV2 extends cdktf.TerraformResource {
     return this._name;
   }
 
+  // namespace - computed: false, optional: true, required: false
+  private _namespace?: string; 
+  public get namespace() {
+    return this.getStringAttribute('namespace');
+  }
+  public set namespace(value: string) {
+    this._namespace = value;
+  }
+  public resetNamespace() {
+    this._namespace = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get namespaceInput() {
+    return this._namespace;
+  }
+
   // options - computed: false, optional: true, required: false
   private _options?: { [key: string]: string }; 
   public get options() {
@@ -258,6 +281,7 @@ export class KvSecretV2 extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       mount: cdktf.stringToTerraform(this._mount),
       name: cdktf.stringToTerraform(this._name),
+      namespace: cdktf.stringToTerraform(this._namespace),
       options: cdktf.hashMapper(cdktf.stringToTerraform)(this._options),
     };
   }

@@ -21,6 +21,12 @@ export interface KvSecretConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Target namespace. (requires Enterprise)
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret#namespace KvSecret#namespace}
+  */
+  readonly namespace?: string;
+  /**
   * Full path of the KV-V1 secret.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret#path KvSecret#path}
@@ -54,7 +60,7 @@ export class KvSecret extends cdktf.TerraformResource {
       terraformResourceType: 'vault_kv_secret',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.7.0',
+        providerVersion: '3.8.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -67,6 +73,7 @@ export class KvSecret extends cdktf.TerraformResource {
     });
     this._dataJson = config.dataJson;
     this._id = config.id;
+    this._namespace = config.namespace;
     this._path = config.path;
   }
 
@@ -109,6 +116,22 @@ export class KvSecret extends cdktf.TerraformResource {
     return this._id;
   }
 
+  // namespace - computed: false, optional: true, required: false
+  private _namespace?: string; 
+  public get namespace() {
+    return this.getStringAttribute('namespace');
+  }
+  public set namespace(value: string) {
+    this._namespace = value;
+  }
+  public resetNamespace() {
+    this._namespace = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get namespaceInput() {
+    return this._namespace;
+  }
+
   // path - computed: false, optional: false, required: true
   private _path?: string; 
   public get path() {
@@ -130,6 +153,7 @@ export class KvSecret extends cdktf.TerraformResource {
     return {
       data_json: cdktf.stringToTerraform(this._dataJson),
       id: cdktf.stringToTerraform(this._id),
+      namespace: cdktf.stringToTerraform(this._namespace),
       path: cdktf.stringToTerraform(this._path),
     };
   }

@@ -66,7 +66,7 @@ export class GithubUser extends cdktf.TerraformResource {
       terraformResourceType: 'vault_github_user',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.7.0',
+        providerVersion: '3.8.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

@@ -20,6 +20,12 @@ export interface ConsulSecretBackendRoleConfig extends cdktf.TerraformMetaArgume
   */
   readonly consulNamespace?: string;
   /**
+  * List of Consul policies to associate with this role
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend_role#consul_policies ConsulSecretBackendRole#consul_policies}
+  */
+  readonly consulPolicies?: string[];
+  /**
   * Set of Consul roles to attach to the token. Applicable for Vault 1.10+ with Consul 1.5+
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend_role#consul_roles ConsulSecretBackendRole#consul_roles}
@@ -57,6 +63,13 @@ export interface ConsulSecretBackendRoleConfig extends cdktf.TerraformMetaArgume
   */
   readonly namespace?: string;
   /**
+  * Set of Consul node identities to attach to
+				the token. Applicable for Vault 1.11+ with Consul 1.8+
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend_role#node_identities ConsulSecretBackendRole#node_identities}
+  */
+  readonly nodeIdentities?: string[];
+  /**
   * The Consul admin partition that the token will be created in. Applicable for Vault 1.10+ and Consul 1.11+
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend_role#partition ConsulSecretBackendRole#partition}
@@ -68,6 +81,13 @@ export interface ConsulSecretBackendRoleConfig extends cdktf.TerraformMetaArgume
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend_role#policies ConsulSecretBackendRole#policies}
   */
   readonly policies?: string[];
+  /**
+  * Set of Consul service identities to attach to
+				the token. Applicable for Vault 1.11+ with Consul 1.5+
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend_role#service_identities ConsulSecretBackendRole#service_identities}
+  */
+  readonly serviceIdentities?: string[];
   /**
   * Specifies the type of token to create when using this role. Valid values are "client" or "management".
   * 
@@ -108,7 +128,7 @@ export class ConsulSecretBackendRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_consul_secret_backend_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.7.0',
+        providerVersion: '3.8.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -121,14 +141,17 @@ export class ConsulSecretBackendRole extends cdktf.TerraformResource {
     });
     this._backend = config.backend;
     this._consulNamespace = config.consulNamespace;
+    this._consulPolicies = config.consulPolicies;
     this._consulRoles = config.consulRoles;
     this._id = config.id;
     this._local = config.local;
     this._maxTtl = config.maxTtl;
     this._name = config.name;
     this._namespace = config.namespace;
+    this._nodeIdentities = config.nodeIdentities;
     this._partition = config.partition;
     this._policies = config.policies;
+    this._serviceIdentities = config.serviceIdentities;
     this._tokenType = config.tokenType;
     this._ttl = config.ttl;
   }
@@ -167,6 +190,22 @@ export class ConsulSecretBackendRole extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get consulNamespaceInput() {
     return this._consulNamespace;
+  }
+
+  // consul_policies - computed: false, optional: true, required: false
+  private _consulPolicies?: string[]; 
+  public get consulPolicies() {
+    return cdktf.Fn.tolist(this.getListAttribute('consul_policies'));
+  }
+  public set consulPolicies(value: string[]) {
+    this._consulPolicies = value;
+  }
+  public resetConsulPolicies() {
+    this._consulPolicies = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get consulPoliciesInput() {
+    return this._consulPolicies;
   }
 
   // consul_roles - computed: false, optional: true, required: false
@@ -262,6 +301,22 @@ export class ConsulSecretBackendRole extends cdktf.TerraformResource {
     return this._namespace;
   }
 
+  // node_identities - computed: false, optional: true, required: false
+  private _nodeIdentities?: string[]; 
+  public get nodeIdentities() {
+    return cdktf.Fn.tolist(this.getListAttribute('node_identities'));
+  }
+  public set nodeIdentities(value: string[]) {
+    this._nodeIdentities = value;
+  }
+  public resetNodeIdentities() {
+    this._nodeIdentities = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodeIdentitiesInput() {
+    return this._nodeIdentities;
+  }
+
   // partition - computed: true, optional: true, required: false
   private _partition?: string; 
   public get partition() {
@@ -292,6 +347,22 @@ export class ConsulSecretBackendRole extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get policiesInput() {
     return this._policies;
+  }
+
+  // service_identities - computed: false, optional: true, required: false
+  private _serviceIdentities?: string[]; 
+  public get serviceIdentities() {
+    return cdktf.Fn.tolist(this.getListAttribute('service_identities'));
+  }
+  public set serviceIdentities(value: string[]) {
+    this._serviceIdentities = value;
+  }
+  public resetServiceIdentities() {
+    this._serviceIdentities = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceIdentitiesInput() {
+    return this._serviceIdentities;
   }
 
   // token_type - computed: false, optional: true, required: false
@@ -334,14 +405,17 @@ export class ConsulSecretBackendRole extends cdktf.TerraformResource {
     return {
       backend: cdktf.stringToTerraform(this._backend),
       consul_namespace: cdktf.stringToTerraform(this._consulNamespace),
+      consul_policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._consulPolicies),
       consul_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._consulRoles),
       id: cdktf.stringToTerraform(this._id),
       local: cdktf.booleanToTerraform(this._local),
       max_ttl: cdktf.numberToTerraform(this._maxTtl),
       name: cdktf.stringToTerraform(this._name),
       namespace: cdktf.stringToTerraform(this._namespace),
+      node_identities: cdktf.listMapper(cdktf.stringToTerraform, false)(this._nodeIdentities),
       partition: cdktf.stringToTerraform(this._partition),
       policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._policies),
+      service_identities: cdktf.listMapper(cdktf.stringToTerraform, false)(this._serviceIdentities),
       token_type: cdktf.stringToTerraform(this._tokenType),
       ttl: cdktf.numberToTerraform(this._ttl),
     };

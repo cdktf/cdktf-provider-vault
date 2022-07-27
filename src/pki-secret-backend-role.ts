@@ -201,7 +201,7 @@ export interface PkiSecretBackendRoleConfig extends cdktf.TerraformMetaArguments
   */
   readonly ou?: string[];
   /**
-  * Specify the list of allowed policies IODs.
+  * Specify the list of allowed policies OIDs.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_role#policy_identifiers PkiSecretBackendRole#policy_identifiers}
   */
@@ -254,6 +254,166 @@ export interface PkiSecretBackendRoleConfig extends cdktf.TerraformMetaArguments
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_role#use_csr_sans PkiSecretBackendRole#use_csr_sans}
   */
   readonly useCsrSans?: boolean | cdktf.IResolvable;
+  /**
+  * policy_identifier block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_role#policy_identifier PkiSecretBackendRole#policy_identifier}
+  */
+  readonly policyIdentifier?: PkiSecretBackendRolePolicyIdentifier[] | cdktf.IResolvable;
+}
+export interface PkiSecretBackendRolePolicyIdentifier {
+  /**
+  * Optional CPS URL
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_role#cps PkiSecretBackendRole#cps}
+  */
+  readonly cps?: string;
+  /**
+  * Optional notice
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_role#notice PkiSecretBackendRole#notice}
+  */
+  readonly notice?: string;
+  /**
+  * OID
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_role#oid PkiSecretBackendRole#oid}
+  */
+  readonly oid: string;
+}
+
+export function pkiSecretBackendRolePolicyIdentifierToTerraform(struct?: PkiSecretBackendRolePolicyIdentifier | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    cps: cdktf.stringToTerraform(struct!.cps),
+    notice: cdktf.stringToTerraform(struct!.notice),
+    oid: cdktf.stringToTerraform(struct!.oid),
+  }
+}
+
+export class PkiSecretBackendRolePolicyIdentifierOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): PkiSecretBackendRolePolicyIdentifier | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._cps !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cps = this._cps;
+    }
+    if (this._notice !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.notice = this._notice;
+    }
+    if (this._oid !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.oid = this._oid;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PkiSecretBackendRolePolicyIdentifier | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._cps = undefined;
+      this._notice = undefined;
+      this._oid = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._cps = value.cps;
+      this._notice = value.notice;
+      this._oid = value.oid;
+    }
+  }
+
+  // cps - computed: false, optional: true, required: false
+  private _cps?: string; 
+  public get cps() {
+    return this.getStringAttribute('cps');
+  }
+  public set cps(value: string) {
+    this._cps = value;
+  }
+  public resetCps() {
+    this._cps = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cpsInput() {
+    return this._cps;
+  }
+
+  // notice - computed: false, optional: true, required: false
+  private _notice?: string; 
+  public get notice() {
+    return this.getStringAttribute('notice');
+  }
+  public set notice(value: string) {
+    this._notice = value;
+  }
+  public resetNotice() {
+    this._notice = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get noticeInput() {
+    return this._notice;
+  }
+
+  // oid - computed: false, optional: false, required: true
+  private _oid?: string; 
+  public get oid() {
+    return this.getStringAttribute('oid');
+  }
+  public set oid(value: string) {
+    this._oid = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oidInput() {
+    return this._oid;
+  }
+}
+
+export class PkiSecretBackendRolePolicyIdentifierList extends cdktf.ComplexList {
+  public internalValue? : PkiSecretBackendRolePolicyIdentifier[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): PkiSecretBackendRolePolicyIdentifierOutputReference {
+    return new PkiSecretBackendRolePolicyIdentifierOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 
 /**
@@ -282,7 +442,7 @@ export class PkiSecretBackendRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_pki_secret_backend_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.7.0',
+        providerVersion: '3.8.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -334,6 +494,7 @@ export class PkiSecretBackendRole extends cdktf.TerraformResource {
     this._ttl = config.ttl;
     this._useCsrCommonName = config.useCsrCommonName;
     this._useCsrSans = config.useCsrSans;
+    this._policyIdentifier.internalValue = config.policyIdentifier;
   }
 
   // ==========
@@ -990,6 +1151,22 @@ export class PkiSecretBackendRole extends cdktf.TerraformResource {
     return this._useCsrSans;
   }
 
+  // policy_identifier - computed: false, optional: true, required: false
+  private _policyIdentifier = new PkiSecretBackendRolePolicyIdentifierList(this, "policy_identifier", true);
+  public get policyIdentifier() {
+    return this._policyIdentifier;
+  }
+  public putPolicyIdentifier(value: PkiSecretBackendRolePolicyIdentifier[] | cdktf.IResolvable) {
+    this._policyIdentifier.internalValue = value;
+  }
+  public resetPolicyIdentifier() {
+    this._policyIdentifier.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyIdentifierInput() {
+    return this._policyIdentifier.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -1037,6 +1214,7 @@ export class PkiSecretBackendRole extends cdktf.TerraformResource {
       ttl: cdktf.stringToTerraform(this._ttl),
       use_csr_common_name: cdktf.booleanToTerraform(this._useCsrCommonName),
       use_csr_sans: cdktf.booleanToTerraform(this._useCsrSans),
+      policy_identifier: cdktf.listMapper(pkiSecretBackendRolePolicyIdentifierToTerraform, true)(this._policyIdentifier.internalValue),
     };
   }
 }

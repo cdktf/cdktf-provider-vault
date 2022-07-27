@@ -38,6 +38,12 @@ export interface KvSecretBackendV2Config extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_backend_v2#mount KvSecretBackendV2#mount}
   */
   readonly mount: string;
+  /**
+  * Target namespace. (requires Enterprise)
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_backend_v2#namespace KvSecretBackendV2#namespace}
+  */
+  readonly namespace?: string;
 }
 
 /**
@@ -66,7 +72,7 @@ export class KvSecretBackendV2 extends cdktf.TerraformResource {
       terraformResourceType: 'vault_kv_secret_backend_v2',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.7.0',
+        providerVersion: '3.8.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -82,6 +88,7 @@ export class KvSecretBackendV2 extends cdktf.TerraformResource {
     this._id = config.id;
     this._maxVersions = config.maxVersions;
     this._mount = config.mount;
+    this._namespace = config.namespace;
   }
 
   // ==========
@@ -165,6 +172,22 @@ export class KvSecretBackendV2 extends cdktf.TerraformResource {
     return this._mount;
   }
 
+  // namespace - computed: false, optional: true, required: false
+  private _namespace?: string; 
+  public get namespace() {
+    return this.getStringAttribute('namespace');
+  }
+  public set namespace(value: string) {
+    this._namespace = value;
+  }
+  public resetNamespace() {
+    this._namespace = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get namespaceInput() {
+    return this._namespace;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -176,6 +199,7 @@ export class KvSecretBackendV2 extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       max_versions: cdktf.numberToTerraform(this._maxVersions),
       mount: cdktf.stringToTerraform(this._mount),
+      namespace: cdktf.stringToTerraform(this._namespace),
     };
   }
 }

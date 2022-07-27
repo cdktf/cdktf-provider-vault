@@ -92,7 +92,7 @@ export class MfaOkta extends cdktf.TerraformResource {
       terraformResourceType: 'vault_mfa_okta',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.7.0',
+        providerVersion: '3.8.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
