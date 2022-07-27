@@ -85,7 +85,7 @@ export interface ConsulSecretBackendConfig extends cdktf.TerraformMetaArguments 
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend#token ConsulSecretBackend#token}
   */
-  readonly token: string;
+  readonly token?: string;
 }
 
 /**
@@ -114,7 +114,7 @@ export class ConsulSecretBackend extends cdktf.TerraformResource {
       terraformResourceType: 'vault_consul_secret_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.7.0',
+        providerVersion: '3.8.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -333,13 +333,16 @@ export class ConsulSecretBackend extends cdktf.TerraformResource {
     return this._scheme;
   }
 
-  // token - computed: false, optional: false, required: true
+  // token - computed: false, optional: true, required: false
   private _token?: string; 
   public get token() {
     return this.getStringAttribute('token');
   }
   public set token(value: string) {
     this._token = value;
+  }
+  public resetToken() {
+    this._token = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get tokenInput() {

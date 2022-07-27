@@ -64,7 +64,7 @@ export class LdapAuthBackendUser extends cdktf.TerraformResource {
       terraformResourceType: 'vault_ldap_auth_backend_user',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.7.0',
+        providerVersion: '3.8.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

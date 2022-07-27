@@ -54,6 +54,166 @@ export interface GcpAuthBackendConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/gcp_auth_backend#project_id GcpAuthBackend#project_id}
   */
   readonly projectId?: string;
+  /**
+  * custom_endpoint block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/gcp_auth_backend#custom_endpoint GcpAuthBackend#custom_endpoint}
+  */
+  readonly customEndpoint?: GcpAuthBackendCustomEndpoint;
+}
+export interface GcpAuthBackendCustomEndpoint {
+  /**
+  * Replaces the service endpoint used in API requests to https://www.googleapis.com.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/gcp_auth_backend#api GcpAuthBackend#api}
+  */
+  readonly api?: string;
+  /**
+  * Replaces the service endpoint used in API requests to `https://compute.googleapis.com`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/gcp_auth_backend#compute GcpAuthBackend#compute}
+  */
+  readonly compute?: string;
+  /**
+  * Replaces the service endpoint used in API requests to `https://cloudresourcemanager.googleapis.com`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/gcp_auth_backend#crm GcpAuthBackend#crm}
+  */
+  readonly crm?: string;
+  /**
+  * Replaces the service endpoint used in API requests to `https://iam.googleapis.com`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/gcp_auth_backend#iam GcpAuthBackend#iam}
+  */
+  readonly iam?: string;
+}
+
+export function gcpAuthBackendCustomEndpointToTerraform(struct?: GcpAuthBackendCustomEndpointOutputReference | GcpAuthBackendCustomEndpoint): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    api: cdktf.stringToTerraform(struct!.api),
+    compute: cdktf.stringToTerraform(struct!.compute),
+    crm: cdktf.stringToTerraform(struct!.crm),
+    iam: cdktf.stringToTerraform(struct!.iam),
+  }
+}
+
+export class GcpAuthBackendCustomEndpointOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GcpAuthBackendCustomEndpoint | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._api !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.api = this._api;
+    }
+    if (this._compute !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.compute = this._compute;
+    }
+    if (this._crm !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.crm = this._crm;
+    }
+    if (this._iam !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.iam = this._iam;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GcpAuthBackendCustomEndpoint | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._api = undefined;
+      this._compute = undefined;
+      this._crm = undefined;
+      this._iam = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._api = value.api;
+      this._compute = value.compute;
+      this._crm = value.crm;
+      this._iam = value.iam;
+    }
+  }
+
+  // api - computed: false, optional: true, required: false
+  private _api?: string; 
+  public get api() {
+    return this.getStringAttribute('api');
+  }
+  public set api(value: string) {
+    this._api = value;
+  }
+  public resetApi() {
+    this._api = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get apiInput() {
+    return this._api;
+  }
+
+  // compute - computed: false, optional: true, required: false
+  private _compute?: string; 
+  public get compute() {
+    return this.getStringAttribute('compute');
+  }
+  public set compute(value: string) {
+    this._compute = value;
+  }
+  public resetCompute() {
+    this._compute = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get computeInput() {
+    return this._compute;
+  }
+
+  // crm - computed: false, optional: true, required: false
+  private _crm?: string; 
+  public get crm() {
+    return this.getStringAttribute('crm');
+  }
+  public set crm(value: string) {
+    this._crm = value;
+  }
+  public resetCrm() {
+    this._crm = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get crmInput() {
+    return this._crm;
+  }
+
+  // iam - computed: false, optional: true, required: false
+  private _iam?: string; 
+  public get iam() {
+    return this.getStringAttribute('iam');
+  }
+  public set iam(value: string) {
+    this._iam = value;
+  }
+  public resetIam() {
+    this._iam = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get iamInput() {
+    return this._iam;
+  }
 }
 
 /**
@@ -82,7 +242,7 @@ export class GcpAuthBackend extends cdktf.TerraformResource {
       terraformResourceType: 'vault_gcp_auth_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.7.0',
+        providerVersion: '3.8.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -103,6 +263,7 @@ export class GcpAuthBackend extends cdktf.TerraformResource {
     this._path = config.path;
     this._privateKeyId = config.privateKeyId;
     this._projectId = config.projectId;
+    this._customEndpoint.internalValue = config.customEndpoint;
   }
 
   // ==========
@@ -269,6 +430,22 @@ export class GcpAuthBackend extends cdktf.TerraformResource {
     return this._projectId;
   }
 
+  // custom_endpoint - computed: false, optional: true, required: false
+  private _customEndpoint = new GcpAuthBackendCustomEndpointOutputReference(this, "custom_endpoint");
+  public get customEndpoint() {
+    return this._customEndpoint;
+  }
+  public putCustomEndpoint(value: GcpAuthBackendCustomEndpoint) {
+    this._customEndpoint.internalValue = value;
+  }
+  public resetCustomEndpoint() {
+    this._customEndpoint.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customEndpointInput() {
+    return this._customEndpoint.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -285,6 +462,7 @@ export class GcpAuthBackend extends cdktf.TerraformResource {
       path: cdktf.stringToTerraform(this._path),
       private_key_id: cdktf.stringToTerraform(this._privateKeyId),
       project_id: cdktf.stringToTerraform(this._projectId),
+      custom_endpoint: gcpAuthBackendCustomEndpointToTerraform(this._customEndpoint.internalValue),
     };
   }
 }

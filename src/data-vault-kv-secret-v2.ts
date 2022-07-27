@@ -27,6 +27,12 @@ export interface DataVaultKvSecretV2Config extends cdktf.TerraformMetaArguments 
   */
   readonly name: string;
   /**
+  * Target namespace. (requires Enterprise)
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/kv_secret_v2#namespace DataVaultKvSecretV2#namespace}
+  */
+  readonly namespace?: string;
+  /**
   * Version of the secret to retrieve
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/kv_secret_v2#version DataVaultKvSecretV2#version}
@@ -60,7 +66,7 @@ export class DataVaultKvSecretV2 extends cdktf.TerraformDataSource {
       terraformResourceType: 'vault_kv_secret_v2',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.7.0',
+        providerVersion: '3.8.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -74,6 +80,7 @@ export class DataVaultKvSecretV2 extends cdktf.TerraformDataSource {
     this._id = config.id;
     this._mount = config.mount;
     this._name = config.name;
+    this._namespace = config.namespace;
     this._version = config.version;
   }
 
@@ -149,6 +156,22 @@ export class DataVaultKvSecretV2 extends cdktf.TerraformDataSource {
     return this._name;
   }
 
+  // namespace - computed: false, optional: true, required: false
+  private _namespace?: string; 
+  public get namespace() {
+    return this.getStringAttribute('namespace');
+  }
+  public set namespace(value: string) {
+    this._namespace = value;
+  }
+  public resetNamespace() {
+    this._namespace = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get namespaceInput() {
+    return this._namespace;
+  }
+
   // path - computed: true, optional: false, required: false
   public get path() {
     return this.getStringAttribute('path');
@@ -179,6 +202,7 @@ export class DataVaultKvSecretV2 extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       mount: cdktf.stringToTerraform(this._mount),
       name: cdktf.stringToTerraform(this._name),
+      namespace: cdktf.stringToTerraform(this._namespace),
       version: cdktf.numberToTerraform(this._version),
     };
   }

@@ -81,6 +81,12 @@ export interface JwtAuthBackendRoleConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Specifies the allowable elapsed time in seconds since the last time the user was actively authenticated.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/jwt_auth_backend_role#max_age JwtAuthBackendRole#max_age}
+  */
+  readonly maxAge?: number;
+  /**
   * Target namespace. (requires Enterprise)
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/jwt_auth_backend_role#namespace JwtAuthBackendRole#namespace}
@@ -171,6 +177,12 @@ export interface JwtAuthBackendRoleConfig extends cdktf.TerraformMetaArguments {
   */
   readonly userClaim: string;
   /**
+  * Specifies if the user_claim value uses JSON pointer syntax for referencing claims. By default, the user_claim value will not use JSON pointer.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/jwt_auth_backend_role#user_claim_json_pointer JwtAuthBackendRole#user_claim_json_pointer}
+  */
+  readonly userClaimJsonPointer?: boolean | cdktf.IResolvable;
+  /**
   * Log received OIDC tokens and claims when debug-level logging is active. Not recommended in production since sensitive information may be present in OIDC responses.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/jwt_auth_backend_role#verbose_oidc_logging JwtAuthBackendRole#verbose_oidc_logging}
@@ -204,7 +216,7 @@ export class JwtAuthBackendRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_jwt_auth_backend_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.7.0',
+        providerVersion: '3.8.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -227,6 +239,7 @@ export class JwtAuthBackendRole extends cdktf.TerraformResource {
     this._expirationLeeway = config.expirationLeeway;
     this._groupsClaim = config.groupsClaim;
     this._id = config.id;
+    this._maxAge = config.maxAge;
     this._namespace = config.namespace;
     this._notBeforeLeeway = config.notBeforeLeeway;
     this._oidcScopes = config.oidcScopes;
@@ -242,6 +255,7 @@ export class JwtAuthBackendRole extends cdktf.TerraformResource {
     this._tokenTtl = config.tokenTtl;
     this._tokenType = config.tokenType;
     this._userClaim = config.userClaim;
+    this._userClaimJsonPointer = config.userClaimJsonPointer;
     this._verboseOidcLogging = config.verboseOidcLogging;
   }
 
@@ -439,6 +453,22 @@ export class JwtAuthBackendRole extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // max_age - computed: false, optional: true, required: false
+  private _maxAge?: number; 
+  public get maxAge() {
+    return this.getNumberAttribute('max_age');
+  }
+  public set maxAge(value: number) {
+    this._maxAge = value;
+  }
+  public resetMaxAge() {
+    this._maxAge = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxAgeInput() {
+    return this._maxAge;
   }
 
   // namespace - computed: false, optional: true, required: false
@@ -675,6 +705,22 @@ export class JwtAuthBackendRole extends cdktf.TerraformResource {
     return this._userClaim;
   }
 
+  // user_claim_json_pointer - computed: false, optional: true, required: false
+  private _userClaimJsonPointer?: boolean | cdktf.IResolvable; 
+  public get userClaimJsonPointer() {
+    return this.getBooleanAttribute('user_claim_json_pointer');
+  }
+  public set userClaimJsonPointer(value: boolean | cdktf.IResolvable) {
+    this._userClaimJsonPointer = value;
+  }
+  public resetUserClaimJsonPointer() {
+    this._userClaimJsonPointer = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userClaimJsonPointerInput() {
+    return this._userClaimJsonPointer;
+  }
+
   // verbose_oidc_logging - computed: false, optional: true, required: false
   private _verboseOidcLogging?: boolean | cdktf.IResolvable; 
   public get verboseOidcLogging() {
@@ -709,6 +755,7 @@ export class JwtAuthBackendRole extends cdktf.TerraformResource {
       expiration_leeway: cdktf.numberToTerraform(this._expirationLeeway),
       groups_claim: cdktf.stringToTerraform(this._groupsClaim),
       id: cdktf.stringToTerraform(this._id),
+      max_age: cdktf.numberToTerraform(this._maxAge),
       namespace: cdktf.stringToTerraform(this._namespace),
       not_before_leeway: cdktf.numberToTerraform(this._notBeforeLeeway),
       oidc_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._oidcScopes),
@@ -724,6 +771,7 @@ export class JwtAuthBackendRole extends cdktf.TerraformResource {
       token_ttl: cdktf.numberToTerraform(this._tokenTtl),
       token_type: cdktf.stringToTerraform(this._tokenType),
       user_claim: cdktf.stringToTerraform(this._userClaim),
+      user_claim_json_pointer: cdktf.booleanToTerraform(this._userClaimJsonPointer),
       verbose_oidc_logging: cdktf.booleanToTerraform(this._verboseOidcLogging),
     };
   }

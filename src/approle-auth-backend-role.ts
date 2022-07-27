@@ -144,7 +144,7 @@ export class ApproleAuthBackendRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_approle_auth_backend_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.7.0',
+        providerVersion: '3.8.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
