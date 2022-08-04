@@ -33,6 +33,12 @@ export interface TransformTransformationConfig extends cdktf.TerraformMetaArgume
   */
   readonly name: string;
   /**
+  * Target namespace. (requires Enterprise)
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_transformation#namespace TransformTransformation#namespace}
+  */
+  readonly namespace?: string;
+  /**
   * The mount path for a back-end, for example, the path given in "$ vault auth enable -path=my-aws aws".
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_transformation#path TransformTransformation#path}
@@ -90,7 +96,7 @@ export class TransformTransformation extends cdktf.TerraformResource {
       terraformResourceType: 'vault_transform_transformation',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.0',
+        providerVersion: '3.8.1',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -105,6 +111,7 @@ export class TransformTransformation extends cdktf.TerraformResource {
     this._id = config.id;
     this._maskingCharacter = config.maskingCharacter;
     this._name = config.name;
+    this._namespace = config.namespace;
     this._path = config.path;
     this._template = config.template;
     this._templates = config.templates;
@@ -175,6 +182,22 @@ export class TransformTransformation extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // namespace - computed: false, optional: true, required: false
+  private _namespace?: string; 
+  public get namespace() {
+    return this.getStringAttribute('namespace');
+  }
+  public set namespace(value: string) {
+    this._namespace = value;
+  }
+  public resetNamespace() {
+    this._namespace = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get namespaceInput() {
+    return this._namespace;
   }
 
   // path - computed: false, optional: false, required: true
@@ -264,6 +287,7 @@ export class TransformTransformation extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       masking_character: cdktf.stringToTerraform(this._maskingCharacter),
       name: cdktf.stringToTerraform(this._name),
+      namespace: cdktf.stringToTerraform(this._namespace),
       path: cdktf.stringToTerraform(this._path),
       template: cdktf.stringToTerraform(this._template),
       templates: cdktf.listMapper(cdktf.stringToTerraform, false)(this._templates),

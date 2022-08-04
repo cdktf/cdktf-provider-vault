@@ -221,7 +221,7 @@ export class VaultProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'vault',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.0',
+        providerVersion: '3.8.1',
         providerVersionConstraint: '~> 3.7'
       },
       terraformProviderSource: 'hashicorp/vault'

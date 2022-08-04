@@ -20,7 +20,7 @@ export interface PkiSecretBackendRootCertConfig extends cdktf.TerraformMetaArgum
   */
   readonly backend: string;
   /**
-  * CN of intermediate to create.
+  * CN of root to create.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_root_cert#common_name PkiSecretBackendRootCert#common_name}
   */
@@ -141,7 +141,7 @@ export interface PkiSecretBackendRootCertConfig extends cdktf.TerraformMetaArgum
   */
   readonly ttl?: string;
   /**
-  * Type of intermediate to create. Must be either "exported" or "internal".
+  * Type of root to create. Must be either "exported" or "internal".
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_root_cert#type PkiSecretBackendRootCert#type}
   */
@@ -180,7 +180,7 @@ export class PkiSecretBackendRootCert extends cdktf.TerraformResource {
       terraformResourceType: 'vault_pki_secret_backend_root_cert',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.0',
+        providerVersion: '3.8.1',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
