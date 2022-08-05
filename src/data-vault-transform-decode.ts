@@ -33,6 +33,12 @@ export interface DataVaultTransformDecodeConfig extends cdktf.TerraformMetaArgum
   */
   readonly id?: string;
   /**
+  * Target namespace. (requires Enterprise)
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/transform_decode#namespace DataVaultTransformDecode#namespace}
+  */
+  readonly namespace?: string;
+  /**
   * Path to backend from which to retrieve data.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/transform_decode#path DataVaultTransformDecode#path}
@@ -90,7 +96,7 @@ export class DataVaultTransformDecode extends cdktf.TerraformDataSource {
       terraformResourceType: 'vault_transform_decode',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.0',
+        providerVersion: '3.8.1',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -105,6 +111,7 @@ export class DataVaultTransformDecode extends cdktf.TerraformDataSource {
     this._batchResults = config.batchResults;
     this._decodedValue = config.decodedValue;
     this._id = config.id;
+    this._namespace = config.namespace;
     this._path = config.path;
     this._roleName = config.roleName;
     this._transformation = config.transformation;
@@ -178,6 +185,22 @@ export class DataVaultTransformDecode extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // namespace - computed: false, optional: true, required: false
+  private _namespace?: string; 
+  public get namespace() {
+    return this.getStringAttribute('namespace');
+  }
+  public set namespace(value: string) {
+    this._namespace = value;
+  }
+  public resetNamespace() {
+    this._namespace = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get namespaceInput() {
+    return this._namespace;
   }
 
   // path - computed: false, optional: false, required: true
@@ -264,6 +287,7 @@ export class DataVaultTransformDecode extends cdktf.TerraformDataSource {
       batch_results: cdktf.listMapper(cdktf.hashMapper(cdktf.stringToTerraform), false)(this._batchResults),
       decoded_value: cdktf.stringToTerraform(this._decodedValue),
       id: cdktf.stringToTerraform(this._id),
+      namespace: cdktf.stringToTerraform(this._namespace),
       path: cdktf.stringToTerraform(this._path),
       role_name: cdktf.stringToTerraform(this._roleName),
       transformation: cdktf.stringToTerraform(this._transformation),

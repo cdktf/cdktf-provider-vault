@@ -21,6 +21,12 @@ export interface TransformRoleConfig extends cdktf.TerraformMetaArguments {
   */
   readonly name: string;
   /**
+  * Target namespace. (requires Enterprise)
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_role#namespace TransformRole#namespace}
+  */
+  readonly namespace?: string;
+  /**
   * The mount path for a back-end, for example, the path given in "$ vault auth enable -path=my-aws aws".
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_role#path TransformRole#path}
@@ -60,7 +66,7 @@ export class TransformRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_transform_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.0',
+        providerVersion: '3.8.1',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -73,6 +79,7 @@ export class TransformRole extends cdktf.TerraformResource {
     });
     this._id = config.id;
     this._name = config.name;
+    this._namespace = config.namespace;
     this._path = config.path;
     this._transformations = config.transformations;
   }
@@ -108,6 +115,22 @@ export class TransformRole extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // namespace - computed: false, optional: true, required: false
+  private _namespace?: string; 
+  public get namespace() {
+    return this.getStringAttribute('namespace');
+  }
+  public set namespace(value: string) {
+    this._namespace = value;
+  }
+  public resetNamespace() {
+    this._namespace = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get namespaceInput() {
+    return this._namespace;
   }
 
   // path - computed: false, optional: false, required: true
@@ -147,6 +170,7 @@ export class TransformRole extends cdktf.TerraformResource {
     return {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
+      namespace: cdktf.stringToTerraform(this._namespace),
       path: cdktf.stringToTerraform(this._path),
       transformations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._transformations),
     };

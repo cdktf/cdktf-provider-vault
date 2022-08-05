@@ -574,7 +574,7 @@ export class DataVaultPolicyDocument extends cdktf.TerraformDataSource {
       terraformResourceType: 'vault_policy_document',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.0',
+        providerVersion: '3.8.1',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

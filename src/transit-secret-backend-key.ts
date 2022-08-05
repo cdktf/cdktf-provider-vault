@@ -120,7 +120,7 @@ export class TransitSecretBackendKey extends cdktf.TerraformResource {
       terraformResourceType: 'vault_transit_secret_backend_key',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.0',
+        providerVersion: '3.8.1',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
