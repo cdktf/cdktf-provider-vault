@@ -60,7 +60,7 @@ export class PasswordPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'vault_password_policy',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.0',
+        providerVersion: '3.8.1',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

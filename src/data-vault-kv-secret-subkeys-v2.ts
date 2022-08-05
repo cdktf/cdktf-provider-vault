@@ -72,7 +72,7 @@ export class DataVaultKvSecretSubkeysV2 extends cdktf.TerraformDataSource {
       terraformResourceType: 'vault_kv_secret_subkeys_v2',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.0',
+        providerVersion: '3.8.1',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
