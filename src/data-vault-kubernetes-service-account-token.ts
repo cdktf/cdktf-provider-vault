@@ -78,7 +78,7 @@ export class DataVaultKubernetesServiceAccountToken extends cdktf.TerraformDataS
       terraformResourceType: 'vault_kubernetes_service_account_token',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.1',
+        providerVersion: '3.8.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

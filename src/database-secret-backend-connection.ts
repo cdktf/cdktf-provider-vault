@@ -4354,7 +4354,7 @@ export class DatabaseSecretBackendConnection extends cdktf.TerraformResource {
       terraformResourceType: 'vault_database_secret_backend_connection',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.1',
+        providerVersion: '3.8.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

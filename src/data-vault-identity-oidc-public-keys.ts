@@ -54,7 +54,7 @@ export class DataVaultIdentityOidcPublicKeys extends cdktf.TerraformDataSource {
       terraformResourceType: 'vault_identity_oidc_public_keys',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.1',
+        providerVersion: '3.8.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

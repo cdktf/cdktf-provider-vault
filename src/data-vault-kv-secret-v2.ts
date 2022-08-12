@@ -66,7 +66,7 @@ export class DataVaultKvSecretV2 extends cdktf.TerraformDataSource {
       terraformResourceType: 'vault_kv_secret_v2',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.1',
+        providerVersion: '3.8.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -97,6 +97,12 @@ export class DataVaultKvSecretV2 extends cdktf.TerraformDataSource {
   private _customMetadata = new cdktf.StringMap(this, "custom_metadata");
   public get customMetadata() {
     return this._customMetadata;
+  }
+
+  // data - computed: true, optional: false, required: false
+  private _data = new cdktf.StringMap(this, "data");
+  public get data() {
+    return this._data;
   }
 
   // data_json - computed: true, optional: false, required: false

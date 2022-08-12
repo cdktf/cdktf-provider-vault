@@ -60,7 +60,7 @@ export class DataVaultNomadAccessToken extends cdktf.TerraformDataSource {
       terraformResourceType: 'vault_nomad_access_token',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.1',
+        providerVersion: '3.8.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

@@ -66,7 +66,7 @@ export class KmipSecretScope extends cdktf.TerraformResource {
       terraformResourceType: 'vault_kmip_secret_scope',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.1',
+        providerVersion: '3.8.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

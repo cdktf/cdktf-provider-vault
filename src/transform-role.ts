@@ -66,7 +66,7 @@ export class TransformRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_transform_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.1',
+        providerVersion: '3.8.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
