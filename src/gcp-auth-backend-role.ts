@@ -150,7 +150,7 @@ export class GcpAuthBackendRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_gcp_auth_backend_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.1',
+        providerVersion: '3.8.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

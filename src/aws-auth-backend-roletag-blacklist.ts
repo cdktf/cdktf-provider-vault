@@ -66,7 +66,7 @@ export class AwsAuthBackendRoletagBlacklist extends cdktf.TerraformResource {
       terraformResourceType: 'vault_aws_auth_backend_roletag_blacklist',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.1',
+        providerVersion: '3.8.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

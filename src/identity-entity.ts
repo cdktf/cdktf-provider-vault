@@ -78,7 +78,7 @@ export class IdentityEntity extends cdktf.TerraformResource {
       terraformResourceType: 'vault_identity_entity',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.1',
+        providerVersion: '3.8.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

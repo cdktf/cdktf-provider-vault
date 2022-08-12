@@ -54,7 +54,7 @@ export class DataVaultKvSecretsList extends cdktf.TerraformDataSource {
       terraformResourceType: 'vault_kv_secrets_list',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.1',
+        providerVersion: '3.8.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

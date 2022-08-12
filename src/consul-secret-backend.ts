@@ -14,6 +14,12 @@ export interface ConsulSecretBackendConfig extends cdktf.TerraformMetaArguments 
   */
   readonly address: string;
   /**
+  * Denotes a backend resource that is used to bootstrap the Consul ACL system. Only one resource may be used to bootstrap.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend#bootstrap ConsulSecretBackend#bootstrap}
+  */
+  readonly bootstrap?: boolean | cdktf.IResolvable;
+  /**
   * CA certificate to use when verifying Consul server certificate, must be x509 PEM encoded.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend#ca_cert ConsulSecretBackend#ca_cert}
@@ -81,7 +87,7 @@ export interface ConsulSecretBackendConfig extends cdktf.TerraformMetaArguments 
   */
   readonly scheme?: string;
   /**
-  * Specifies the Consul ACL token to use. This must be a management type token.
+  * Specifies the Consul token to use when managing or issuing new tokens.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend#token ConsulSecretBackend#token}
   */
@@ -114,7 +120,7 @@ export class ConsulSecretBackend extends cdktf.TerraformResource {
       terraformResourceType: 'vault_consul_secret_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.1',
+        providerVersion: '3.8.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -126,6 +132,7 @@ export class ConsulSecretBackend extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._address = config.address;
+    this._bootstrap = config.bootstrap;
     this._caCert = config.caCert;
     this._clientCert = config.clientCert;
     this._clientKey = config.clientKey;
@@ -155,6 +162,22 @@ export class ConsulSecretBackend extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get addressInput() {
     return this._address;
+  }
+
+  // bootstrap - computed: false, optional: true, required: false
+  private _bootstrap?: boolean | cdktf.IResolvable; 
+  public get bootstrap() {
+    return this.getBooleanAttribute('bootstrap');
+  }
+  public set bootstrap(value: boolean | cdktf.IResolvable) {
+    this._bootstrap = value;
+  }
+  public resetBootstrap() {
+    this._bootstrap = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bootstrapInput() {
+    return this._bootstrap;
   }
 
   // ca_cert - computed: false, optional: true, required: false
@@ -356,6 +379,7 @@ export class ConsulSecretBackend extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       address: cdktf.stringToTerraform(this._address),
+      bootstrap: cdktf.booleanToTerraform(this._bootstrap),
       ca_cert: cdktf.stringToTerraform(this._caCert),
       client_cert: cdktf.stringToTerraform(this._clientCert),
       client_key: cdktf.stringToTerraform(this._clientKey),

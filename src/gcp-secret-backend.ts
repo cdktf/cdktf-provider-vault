@@ -84,7 +84,7 @@ export class GcpSecretBackend extends cdktf.TerraformResource {
       terraformResourceType: 'vault_gcp_secret_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.1',
+        providerVersion: '3.8.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
