@@ -1075,9 +1075,9 @@ constant-case@^3.0.4:
     upper-case "^2.0.2"
 
 constructs@^10.0.0, constructs@^10.0.25:
-  version "10.1.116"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.116.tgz#ad00b81b7fe856ee7da8db6154ced20cfc64ae07"
-  integrity sha512-FFdxdNZo5zP82WX9/aDSd5KerHpTBVTnFd/U5qTiQB4YMpAm7UsYIuf2h0fovRRjHFC6dHX/oCGgF9+WT2RCtg==
+  version "10.1.117"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.117.tgz#89032da53dfbd57d22836b5933d2f0f190adeab4"
+  integrity sha512-6Y1Po8yr1M/WAtamLL4kKXIWygky2rYPD4cpea9fKoI6fqtSSOy5TWmYoWXtLMS9hpi/v3XnLY+MjPsa6bMooQ==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -2164,10 +2164,10 @@ jsii-diff@^1.69.0:
     log4js "^6.6.1"
     yargs "^16.2.0"
 
-jsii-docgen@^7.0.97:
-  version "7.0.97"
-  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-7.0.97.tgz#4f41a50571646d64629306d7d77a16148fa55a73"
-  integrity sha512-nCp5rJzPpfu3IYJcKLnD+1TSSk0SPC3JLUs1frXY+wDEN6JOmvFWrox6GBTEaFyxwZYaeeM1VEd+8TYwCdb+VA==
+jsii-docgen@^7.0.98:
+  version "7.0.98"
+  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-7.0.98.tgz#43157761c517602ea2a613a86308b71630fcfd41"
+  integrity sha512-ayyTgmbH70ZVGeyc/BHZXs+0W+Yb2W3Jv0ri0y/ylVUaBq4SmLAGm4baHlUH29+1XZqv0FRyA1nJvia9TRyW4Q==
   dependencies:
     "@jsii/spec" "^1.69.0"
     case "^1.6.3"
@@ -2228,9 +2228,9 @@ jsii-rosetta@^1.68.0, jsii-rosetta@^1.69.0:
     yargs "^16.2.0"
 
 jsii-srcmak@^0.1.686:
-  version "0.1.689"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.689.tgz#58ae4e4dfe7ab82a6bfc9136d007cdd96008af9d"
-  integrity sha512-LTM65XcIQ+BNXgpoZ9Ue90set7ESlJmJ2FGOA9tif9Ybh9W/Q4jwEHT5ec5h2vh+3fBnEVq617au1Zsq1CC0Yg==
+  version "0.1.690"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.690.tgz#fb44f258c33e3b5fda7a17fb97ed3fdd493cf450"
+  integrity sha512-Wr/4VkZtALPplodMfu7EmRwdyLOtLHg23Akjjl65W+WPHRUX/owhNDL0WLFPjdFjV9jz1LsY3J6n1NAJZX0Bgw==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.69.0"
