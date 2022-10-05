@@ -38,9 +38,9 @@ The Maven package is available at [https://mvnrepository.com/artifact/com.hashic
 
 ### Go
 
-The go package is generated into the [`github.com/hashicorp/cdktf-provider-vault-go`](https://github.com/hashicorp/cdktf-provider-vault-go) package.
+The go package is generated into the [`github.com/cdktf/cdktf-provider-vault-go`](https://github.com/cdktf/cdktf-provider-vault-go) package.
 
-`go get github.com/hashicorp/cdktf-provider-vault-go/vault`
+`go get github.com/cdktf/cdktf-provider-vault-go/vault`
 
 ## Docs
 
