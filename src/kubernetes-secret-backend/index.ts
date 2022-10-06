@@ -8,6 +8,12 @@ import * as cdktf from 'cdktf';
 
 export interface KubernetesSecretBackendConfig extends cdktf.TerraformMetaArguments {
   /**
+  * List of managed key registry entry names that the mount in question is allowed to access
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_secret_backend#allowed_managed_keys KubernetesSecretBackend#allowed_managed_keys}
+  */
+  readonly allowedManagedKeys?: string[];
+  /**
   * Specifies the list of keys that will not be HMAC'd by audit devices in the request data object.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_secret_backend#audit_non_hmac_request_keys KubernetesSecretBackend#audit_non_hmac_request_keys}
@@ -132,7 +138,7 @@ export class KubernetesSecretBackend extends cdktf.TerraformResource {
       terraformResourceType: 'vault_kubernetes_secret_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.2',
+        providerVersion: '3.9.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -143,6 +149,7 @@ export class KubernetesSecretBackend extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._allowedManagedKeys = config.allowedManagedKeys;
     this._auditNonHmacRequestKeys = config.auditNonHmacRequestKeys;
     this._auditNonHmacResponseKeys = config.auditNonHmacResponseKeys;
     this._defaultLeaseTtlSeconds = config.defaultLeaseTtlSeconds;
@@ -168,6 +175,22 @@ export class KubernetesSecretBackend extends cdktf.TerraformResource {
   // accessor - computed: true, optional: false, required: false
   public get accessor() {
     return this.getStringAttribute('accessor');
+  }
+
+  // allowed_managed_keys - computed: false, optional: true, required: false
+  private _allowedManagedKeys?: string[]; 
+  public get allowedManagedKeys() {
+    return cdktf.Fn.tolist(this.getListAttribute('allowed_managed_keys'));
+  }
+  public set allowedManagedKeys(value: string[]) {
+    this._allowedManagedKeys = value;
+  }
+  public resetAllowedManagedKeys() {
+    this._allowedManagedKeys = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedManagedKeysInput() {
+    return this._allowedManagedKeys;
   }
 
   // audit_non_hmac_request_keys - computed: true, optional: true, required: false
@@ -429,6 +452,7 @@ export class KubernetesSecretBackend extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      allowed_managed_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedManagedKeys),
       audit_non_hmac_request_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._auditNonHmacRequestKeys),
       audit_non_hmac_response_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._auditNonHmacResponseKeys),
       default_lease_ttl_seconds: cdktf.numberToTerraform(this._defaultLeaseTtlSeconds),

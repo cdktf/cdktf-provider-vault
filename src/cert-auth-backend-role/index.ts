@@ -150,7 +150,7 @@ export class CertAuthBackendRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_cert_auth_backend_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.2',
+        providerVersion: '3.9.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

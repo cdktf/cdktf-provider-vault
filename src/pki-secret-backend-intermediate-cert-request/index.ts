@@ -75,6 +75,18 @@ export interface PkiSecretBackendIntermediateCertRequestConfig extends cdktf.Ter
   */
   readonly locality?: string;
   /**
+  * The ID of the previously configured managed key.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_intermediate_cert_request#managed_key_id PkiSecretBackendIntermediateCertRequest#managed_key_id}
+  */
+  readonly managedKeyId?: string;
+  /**
+  * The name of the previously configured managed key.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_intermediate_cert_request#managed_key_name PkiSecretBackendIntermediateCertRequest#managed_key_name}
+  */
+  readonly managedKeyName?: string;
+  /**
   * Target namespace. (requires Enterprise)
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_intermediate_cert_request#namespace PkiSecretBackendIntermediateCertRequest#namespace}
@@ -162,7 +174,7 @@ export class PkiSecretBackendIntermediateCertRequest extends cdktf.TerraformReso
       terraformResourceType: 'vault_pki_secret_backend_intermediate_cert_request',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.2',
+        providerVersion: '3.9.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -184,6 +196,8 @@ export class PkiSecretBackendIntermediateCertRequest extends cdktf.TerraformReso
     this._keyBits = config.keyBits;
     this._keyType = config.keyType;
     this._locality = config.locality;
+    this._managedKeyId = config.managedKeyId;
+    this._managedKeyName = config.managedKeyName;
     this._namespace = config.namespace;
     this._organization = config.organization;
     this._otherSans = config.otherSans;
@@ -375,6 +389,38 @@ export class PkiSecretBackendIntermediateCertRequest extends cdktf.TerraformReso
     return this._locality;
   }
 
+  // managed_key_id - computed: false, optional: true, required: false
+  private _managedKeyId?: string; 
+  public get managedKeyId() {
+    return this.getStringAttribute('managed_key_id');
+  }
+  public set managedKeyId(value: string) {
+    this._managedKeyId = value;
+  }
+  public resetManagedKeyId() {
+    this._managedKeyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get managedKeyIdInput() {
+    return this._managedKeyId;
+  }
+
+  // managed_key_name - computed: false, optional: true, required: false
+  private _managedKeyName?: string; 
+  public get managedKeyName() {
+    return this.getStringAttribute('managed_key_name');
+  }
+  public set managedKeyName(value: string) {
+    this._managedKeyName = value;
+  }
+  public resetManagedKeyName() {
+    this._managedKeyName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get managedKeyNameInput() {
+    return this._managedKeyName;
+  }
+
   // namespace - computed: false, optional: true, required: false
   private _namespace?: string; 
   public get namespace() {
@@ -559,6 +605,8 @@ export class PkiSecretBackendIntermediateCertRequest extends cdktf.TerraformReso
       key_bits: cdktf.numberToTerraform(this._keyBits),
       key_type: cdktf.stringToTerraform(this._keyType),
       locality: cdktf.stringToTerraform(this._locality),
+      managed_key_id: cdktf.stringToTerraform(this._managedKeyId),
+      managed_key_name: cdktf.stringToTerraform(this._managedKeyName),
       namespace: cdktf.stringToTerraform(this._namespace),
       organization: cdktf.stringToTerraform(this._organization),
       other_sans: cdktf.listMapper(cdktf.stringToTerraform, false)(this._otherSans),

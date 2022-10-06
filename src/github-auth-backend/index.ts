@@ -20,6 +20,12 @@ export interface GithubAuthBackendConfig extends cdktf.TerraformMetaArguments {
   */
   readonly description?: string;
   /**
+  * If set, opts out of mount migration on path updates.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_auth_backend#disable_remount GithubAuthBackend#disable_remount}
+  */
+  readonly disableRemount?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_auth_backend#id GithubAuthBackend#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -422,7 +428,7 @@ export class GithubAuthBackend extends cdktf.TerraformResource {
       terraformResourceType: 'vault_github_auth_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.2',
+        providerVersion: '3.9.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -435,6 +441,7 @@ export class GithubAuthBackend extends cdktf.TerraformResource {
     });
     this._baseUrl = config.baseUrl;
     this._description = config.description;
+    this._disableRemount = config.disableRemount;
     this._id = config.id;
     this._namespace = config.namespace;
     this._organization = config.organization;
@@ -491,6 +498,22 @@ export class GithubAuthBackend extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
     return this._description;
+  }
+
+  // disable_remount - computed: false, optional: true, required: false
+  private _disableRemount?: boolean | cdktf.IResolvable; 
+  public get disableRemount() {
+    return this.getBooleanAttribute('disable_remount');
+  }
+  public set disableRemount(value: boolean | cdktf.IResolvable) {
+    this._disableRemount = value;
+  }
+  public resetDisableRemount() {
+    this._disableRemount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get disableRemountInput() {
+    return this._disableRemount;
   }
 
   // id - computed: true, optional: true, required: false
@@ -738,6 +761,7 @@ export class GithubAuthBackend extends cdktf.TerraformResource {
     return {
       base_url: cdktf.stringToTerraform(this._baseUrl),
       description: cdktf.stringToTerraform(this._description),
+      disable_remount: cdktf.booleanToTerraform(this._disableRemount),
       id: cdktf.stringToTerraform(this._id),
       namespace: cdktf.stringToTerraform(this._namespace),
       organization: cdktf.stringToTerraform(this._organization),

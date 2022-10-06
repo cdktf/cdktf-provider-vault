@@ -147,6 +147,12 @@ export interface DatabaseSecretBackendConnectionConfig extends cdktf.TerraformMe
   */
   readonly postgresql?: DatabaseSecretBackendConnectionPostgresql;
   /**
+  * redis_elasticache block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secret_backend_connection#redis_elasticache DatabaseSecretBackendConnection#redis_elasticache}
+  */
+  readonly redisElasticache?: DatabaseSecretBackendConnectionRedisElasticache;
+  /**
   * redshift block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secret_backend_connection#redshift DatabaseSecretBackendConnection#redshift}
@@ -3816,6 +3822,157 @@ export class DatabaseSecretBackendConnectionPostgresqlOutputReference extends cd
     return this._usernameTemplate;
   }
 }
+export interface DatabaseSecretBackendConnectionRedisElasticache {
+  /**
+  * The AWS secret key id to use to talk to ElastiCache. If omitted the credentials chain provider is used instead.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
+  */
+  readonly password?: string;
+  /**
+  * The AWS region where the ElastiCache cluster is hosted. If omitted the plugin tries to infer the region from the environment.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secret_backend_connection#region DatabaseSecretBackendConnection#region}
+  */
+  readonly region?: string;
+  /**
+  * The configuration endpoint for the ElastiCache cluster to connect to.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secret_backend_connection#url DatabaseSecretBackendConnection#url}
+  */
+  readonly url: string;
+  /**
+  * The AWS access key id to use to talk to ElastiCache. If omitted the credentials chain provider is used instead.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
+  */
+  readonly username?: string;
+}
+
+export function databaseSecretBackendConnectionRedisElasticacheToTerraform(struct?: DatabaseSecretBackendConnectionRedisElasticacheOutputReference | DatabaseSecretBackendConnectionRedisElasticache): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    password: cdktf.stringToTerraform(struct!.password),
+    region: cdktf.stringToTerraform(struct!.region),
+    url: cdktf.stringToTerraform(struct!.url),
+    username: cdktf.stringToTerraform(struct!.username),
+  }
+}
+
+export class DatabaseSecretBackendConnectionRedisElasticacheOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DatabaseSecretBackendConnectionRedisElasticache | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._password !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.password = this._password;
+    }
+    if (this._region !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.region = this._region;
+    }
+    if (this._url !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.url = this._url;
+    }
+    if (this._username !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.username = this._username;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DatabaseSecretBackendConnectionRedisElasticache | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._password = undefined;
+      this._region = undefined;
+      this._url = undefined;
+      this._username = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._password = value.password;
+      this._region = value.region;
+      this._url = value.url;
+      this._username = value.username;
+    }
+  }
+
+  // password - computed: false, optional: true, required: false
+  private _password?: string; 
+  public get password() {
+    return this.getStringAttribute('password');
+  }
+  public set password(value: string) {
+    this._password = value;
+  }
+  public resetPassword() {
+    this._password = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordInput() {
+    return this._password;
+  }
+
+  // region - computed: false, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
+  // url - computed: false, optional: false, required: true
+  private _url?: string; 
+  public get url() {
+    return this.getStringAttribute('url');
+  }
+  public set url(value: string) {
+    this._url = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get urlInput() {
+    return this._url;
+  }
+
+  // username - computed: false, optional: true, required: false
+  private _username?: string; 
+  public get username() {
+    return this.getStringAttribute('username');
+  }
+  public set username(value: string) {
+    this._username = value;
+  }
+  public resetUsername() {
+    this._username = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usernameInput() {
+    return this._username;
+  }
+}
 export interface DatabaseSecretBackendConnectionRedshift {
   /**
   * Connection string to use to connect to the database.
@@ -4354,7 +4511,7 @@ export class DatabaseSecretBackendConnection extends cdktf.TerraformResource {
       terraformResourceType: 'vault_database_secret_backend_connection',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.2',
+        providerVersion: '3.9.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -4388,6 +4545,7 @@ export class DatabaseSecretBackendConnection extends cdktf.TerraformResource {
     this._mysqlRds.internalValue = config.mysqlRds;
     this._oracle.internalValue = config.oracle;
     this._postgresql.internalValue = config.postgresql;
+    this._redisElasticache.internalValue = config.redisElasticache;
     this._redshift.internalValue = config.redshift;
     this._snowflake.internalValue = config.snowflake;
   }
@@ -4758,6 +4916,22 @@ export class DatabaseSecretBackendConnection extends cdktf.TerraformResource {
     return this._postgresql.internalValue;
   }
 
+  // redis_elasticache - computed: false, optional: true, required: false
+  private _redisElasticache = new DatabaseSecretBackendConnectionRedisElasticacheOutputReference(this, "redis_elasticache");
+  public get redisElasticache() {
+    return this._redisElasticache;
+  }
+  public putRedisElasticache(value: DatabaseSecretBackendConnectionRedisElasticache) {
+    this._redisElasticache.internalValue = value;
+  }
+  public resetRedisElasticache() {
+    this._redisElasticache.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get redisElasticacheInput() {
+    return this._redisElasticache.internalValue;
+  }
+
   // redshift - computed: false, optional: true, required: false
   private _redshift = new DatabaseSecretBackendConnectionRedshiftOutputReference(this, "redshift");
   public get redshift() {
@@ -4819,6 +4993,7 @@ export class DatabaseSecretBackendConnection extends cdktf.TerraformResource {
       mysql_rds: databaseSecretBackendConnectionMysqlRdsToTerraform(this._mysqlRds.internalValue),
       oracle: databaseSecretBackendConnectionOracleToTerraform(this._oracle.internalValue),
       postgresql: databaseSecretBackendConnectionPostgresqlToTerraform(this._postgresql.internalValue),
+      redis_elasticache: databaseSecretBackendConnectionRedisElasticacheToTerraform(this._redisElasticache.internalValue),
       redshift: databaseSecretBackendConnectionRedshiftToTerraform(this._redshift.internalValue),
       snowflake: databaseSecretBackendConnectionSnowflakeToTerraform(this._snowflake.internalValue),
     };

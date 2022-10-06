@@ -32,6 +32,12 @@ export interface KmipSecretBackendConfig extends cdktf.TerraformMetaArguments {
   */
   readonly description?: string;
   /**
+  * If set, opts out of mount migration on path updates.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kmip_secret_backend#disable_remount KmipSecretBackend#disable_remount}
+  */
+  readonly disableRemount?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kmip_secret_backend#id KmipSecretBackend#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -114,7 +120,7 @@ export class KmipSecretBackend extends cdktf.TerraformResource {
       terraformResourceType: 'vault_kmip_secret_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.2',
+        providerVersion: '3.9.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -129,6 +135,7 @@ export class KmipSecretBackend extends cdktf.TerraformResource {
     this._defaultTlsClientKeyType = config.defaultTlsClientKeyType;
     this._defaultTlsClientTtl = config.defaultTlsClientTtl;
     this._description = config.description;
+    this._disableRemount = config.disableRemount;
     this._id = config.id;
     this._listenAddrs = config.listenAddrs;
     this._namespace = config.namespace;
@@ -206,6 +213,22 @@ export class KmipSecretBackend extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
     return this._description;
+  }
+
+  // disable_remount - computed: false, optional: true, required: false
+  private _disableRemount?: boolean | cdktf.IResolvable; 
+  public get disableRemount() {
+    return this.getBooleanAttribute('disable_remount');
+  }
+  public set disableRemount(value: boolean | cdktf.IResolvable) {
+    this._disableRemount = value;
+  }
+  public resetDisableRemount() {
+    this._disableRemount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get disableRemountInput() {
+    return this._disableRemount;
   }
 
   // id - computed: true, optional: true, required: false
@@ -359,6 +382,7 @@ export class KmipSecretBackend extends cdktf.TerraformResource {
       default_tls_client_key_type: cdktf.stringToTerraform(this._defaultTlsClientKeyType),
       default_tls_client_ttl: cdktf.numberToTerraform(this._defaultTlsClientTtl),
       description: cdktf.stringToTerraform(this._description),
+      disable_remount: cdktf.booleanToTerraform(this._disableRemount),
       id: cdktf.stringToTerraform(this._id),
       listen_addrs: cdktf.listMapper(cdktf.stringToTerraform, false)(this._listenAddrs),
       namespace: cdktf.stringToTerraform(this._namespace),

@@ -84,7 +84,7 @@ export class AdSecretLibrary extends cdktf.TerraformResource {
       terraformResourceType: 'vault_ad_secret_library',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.2',
+        providerVersion: '3.9.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
