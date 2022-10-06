@@ -132,7 +132,7 @@ export class PkiSecretBackendCert extends cdktf.TerraformResource {
       terraformResourceType: 'vault_pki_secret_backend_cert',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.2',
+        providerVersion: '3.9.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -392,6 +392,11 @@ export class PkiSecretBackendCert extends cdktf.TerraformResource {
   // private_key_type - computed: true, optional: false, required: false
   public get privateKeyType() {
     return this.getStringAttribute('private_key_type');
+  }
+
+  // renew_pending - computed: true, optional: false, required: false
+  public get renewPending() {
+    return this.getBooleanAttribute('renew_pending');
   }
 
   // revoke - computed: false, optional: true, required: false

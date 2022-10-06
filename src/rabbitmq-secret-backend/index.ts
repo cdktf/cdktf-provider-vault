@@ -26,6 +26,12 @@ export interface RabbitmqSecretBackendConfig extends cdktf.TerraformMetaArgument
   */
   readonly description?: string;
   /**
+  * If set, opts out of mount migration on path updates.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/rabbitmq_secret_backend#disable_remount RabbitmqSecretBackend#disable_remount}
+  */
+  readonly disableRemount?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/rabbitmq_secret_backend#id RabbitmqSecretBackend#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -108,7 +114,7 @@ export class RabbitmqSecretBackend extends cdktf.TerraformResource {
       terraformResourceType: 'vault_rabbitmq_secret_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.2',
+        providerVersion: '3.9.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -122,6 +128,7 @@ export class RabbitmqSecretBackend extends cdktf.TerraformResource {
     this._connectionUri = config.connectionUri;
     this._defaultLeaseTtlSeconds = config.defaultLeaseTtlSeconds;
     this._description = config.description;
+    this._disableRemount = config.disableRemount;
     this._id = config.id;
     this._maxLeaseTtlSeconds = config.maxLeaseTtlSeconds;
     this._namespace = config.namespace;
@@ -180,6 +187,22 @@ export class RabbitmqSecretBackend extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
     return this._description;
+  }
+
+  // disable_remount - computed: false, optional: true, required: false
+  private _disableRemount?: boolean | cdktf.IResolvable; 
+  public get disableRemount() {
+    return this.getBooleanAttribute('disable_remount');
+  }
+  public set disableRemount(value: boolean | cdktf.IResolvable) {
+    this._disableRemount = value;
+  }
+  public resetDisableRemount() {
+    this._disableRemount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get disableRemountInput() {
+    return this._disableRemount;
   }
 
   // id - computed: true, optional: true, required: false
@@ -329,6 +352,7 @@ export class RabbitmqSecretBackend extends cdktf.TerraformResource {
       connection_uri: cdktf.stringToTerraform(this._connectionUri),
       default_lease_ttl_seconds: cdktf.numberToTerraform(this._defaultLeaseTtlSeconds),
       description: cdktf.stringToTerraform(this._description),
+      disable_remount: cdktf.booleanToTerraform(this._disableRemount),
       id: cdktf.stringToTerraform(this._id),
       max_lease_ttl_seconds: cdktf.numberToTerraform(this._maxLeaseTtlSeconds),
       namespace: cdktf.stringToTerraform(this._namespace),

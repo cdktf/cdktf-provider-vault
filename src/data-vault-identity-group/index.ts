@@ -78,7 +78,7 @@ export class DataVaultIdentityGroup extends cdktf.TerraformDataSource {
       terraformResourceType: 'vault_identity_group',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.2',
+        providerVersion: '3.9.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

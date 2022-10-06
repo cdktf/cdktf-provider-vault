@@ -72,7 +72,7 @@ export class GenericSecret extends cdktf.TerraformResource {
       terraformResourceType: 'vault_generic_secret',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.2',
+        providerVersion: '3.9.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

@@ -170,9 +170,13 @@ export class AzureSecretBackendRoleAzureGroupsList extends cdktf.ComplexList {
 }
 export interface AzureSecretBackendRoleAzureRoles {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/azure_secret_backend_role#role_id AzureSecretBackendRole#role_id}
+  */
+  readonly roleId?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/azure_secret_backend_role#role_name AzureSecretBackendRole#role_name}
   */
-  readonly roleName: string;
+  readonly roleName?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/azure_secret_backend_role#scope AzureSecretBackendRole#scope}
   */
@@ -185,6 +189,7 @@ export function azureSecretBackendRoleAzureRolesToTerraform(struct?: AzureSecret
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    role_id: cdktf.stringToTerraform(struct!.roleId),
     role_name: cdktf.stringToTerraform(struct!.roleName),
     scope: cdktf.stringToTerraform(struct!.scope),
   }
@@ -210,6 +215,10 @@ export class AzureSecretBackendRoleAzureRolesOutputReference extends cdktf.Compl
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._roleId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.roleId = this._roleId;
+    }
     if (this._roleName !== undefined) {
       hasAnyValues = true;
       internalValueResult.roleName = this._roleName;
@@ -225,6 +234,7 @@ export class AzureSecretBackendRoleAzureRolesOutputReference extends cdktf.Compl
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
+      this._roleId = undefined;
       this._roleName = undefined;
       this._scope = undefined;
     }
@@ -235,23 +245,38 @@ export class AzureSecretBackendRoleAzureRolesOutputReference extends cdktf.Compl
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
+      this._roleId = value.roleId;
       this._roleName = value.roleName;
       this._scope = value.scope;
     }
   }
 
-  // role_id - computed: true, optional: false, required: false
+  // role_id - computed: true, optional: true, required: false
+  private _roleId?: string; 
   public get roleId() {
     return this.getStringAttribute('role_id');
   }
+  public set roleId(value: string) {
+    this._roleId = value;
+  }
+  public resetRoleId() {
+    this._roleId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleIdInput() {
+    return this._roleId;
+  }
 
-  // role_name - computed: false, optional: false, required: true
+  // role_name - computed: true, optional: true, required: false
   private _roleName?: string; 
   public get roleName() {
     return this.getStringAttribute('role_name');
   }
   public set roleName(value: string) {
     this._roleName = value;
+  }
+  public resetRoleName() {
+    this._roleName = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get roleNameInput() {
@@ -318,7 +343,7 @@ export class AzureSecretBackendRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_azure_secret_backend_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.2',
+        providerVersion: '3.9.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

@@ -126,7 +126,7 @@ export class PkiSecretBackendSign extends cdktf.TerraformResource {
       terraformResourceType: 'vault_pki_secret_backend_sign',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.2',
+        providerVersion: '3.9.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -372,6 +372,11 @@ export class PkiSecretBackendSign extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get otherSansInput() {
     return this._otherSans;
+  }
+
+  // renew_pending - computed: true, optional: false, required: false
+  public get renewPending() {
+    return this.getBooleanAttribute('renew_pending');
   }
 
   // serial - computed: true, optional: false, required: false

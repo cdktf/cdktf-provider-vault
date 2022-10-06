@@ -16,7 +16,7 @@ export interface DataVaultAzureAccessCredentialsConfig extends cdktf.TerraformMe
   /**
   * The Azure environment to use during credential validation.
 Defaults to the environment configured in the Vault backend.
-Some possible values: AzurePublicCloud, AzureGovernmentCloud
+Some possible values: AzurePublicCloud, AzureUSGovernmentCloud
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/azure_access_credentials#environment DataVaultAzureAccessCredentials#environment}
   */
@@ -104,7 +104,7 @@ export class DataVaultAzureAccessCredentials extends cdktf.TerraformDataSource {
       terraformResourceType: 'vault_azure_access_credentials',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.2',
+        providerVersion: '3.9.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

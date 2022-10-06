@@ -40,6 +40,12 @@ export interface LdapAuthBackendConfig extends cdktf.TerraformMetaArguments {
   */
   readonly description?: string;
   /**
+  * If set, opts out of mount migration on path updates.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ldap_auth_backend#disable_remount LdapAuthBackend#disable_remount}
+  */
+  readonly disableRemount?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ldap_auth_backend#discoverdn LdapAuthBackend#discoverdn}
   */
   readonly discoverdn?: boolean | cdktf.IResolvable;
@@ -206,7 +212,7 @@ export class LdapAuthBackend extends cdktf.TerraformResource {
       terraformResourceType: 'vault_ldap_auth_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.2',
+        providerVersion: '3.9.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -225,6 +231,7 @@ export class LdapAuthBackend extends cdktf.TerraformResource {
     this._clientTlsKey = config.clientTlsKey;
     this._denyNullBind = config.denyNullBind;
     this._description = config.description;
+    this._disableRemount = config.disableRemount;
     this._discoverdn = config.discoverdn;
     this._groupattr = config.groupattr;
     this._groupdn = config.groupdn;
@@ -390,6 +397,22 @@ export class LdapAuthBackend extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
     return this._description;
+  }
+
+  // disable_remount - computed: false, optional: true, required: false
+  private _disableRemount?: boolean | cdktf.IResolvable; 
+  public get disableRemount() {
+    return this.getBooleanAttribute('disable_remount');
+  }
+  public set disableRemount(value: boolean | cdktf.IResolvable) {
+    this._disableRemount = value;
+  }
+  public resetDisableRemount() {
+    this._disableRemount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get disableRemountInput() {
+    return this._disableRemount;
   }
 
   // discoverdn - computed: true, optional: true, required: false
@@ -851,6 +874,7 @@ export class LdapAuthBackend extends cdktf.TerraformResource {
       client_tls_key: cdktf.stringToTerraform(this._clientTlsKey),
       deny_null_bind: cdktf.booleanToTerraform(this._denyNullBind),
       description: cdktf.stringToTerraform(this._description),
+      disable_remount: cdktf.booleanToTerraform(this._disableRemount),
       discoverdn: cdktf.booleanToTerraform(this._discoverdn),
       groupattr: cdktf.stringToTerraform(this._groupattr),
       groupdn: cdktf.stringToTerraform(this._groupdn),

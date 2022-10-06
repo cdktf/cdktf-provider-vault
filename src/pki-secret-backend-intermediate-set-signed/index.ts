@@ -60,7 +60,7 @@ export class PkiSecretBackendIntermediateSetSigned extends cdktf.TerraformResour
       terraformResourceType: 'vault_pki_secret_backend_intermediate_set_signed',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.2',
+        providerVersion: '3.9.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

@@ -96,7 +96,7 @@ export class TransformTransformation extends cdktf.TerraformResource {
       terraformResourceType: 'vault_transform_transformation',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.2',
+        providerVersion: '3.9.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

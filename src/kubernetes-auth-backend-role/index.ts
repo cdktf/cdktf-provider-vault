@@ -138,7 +138,7 @@ export class KubernetesAuthBackendRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_kubernetes_auth_backend_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.2',
+        providerVersion: '3.9.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

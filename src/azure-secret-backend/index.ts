@@ -26,6 +26,12 @@ export interface AzureSecretBackendConfig extends cdktf.TerraformMetaArguments {
   */
   readonly description?: string;
   /**
+  * If set, opts out of mount migration on path updates.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/azure_secret_backend#disable_remount AzureSecretBackend#disable_remount}
+  */
+  readonly disableRemount?: boolean | cdktf.IResolvable;
+  /**
   * The Azure cloud environment. Valid values: AzurePublicCloud, AzureUSGovernmentCloud, AzureChinaCloud, AzureGermanCloud.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/azure_secret_backend#environment AzureSecretBackend#environment}
@@ -96,7 +102,7 @@ export class AzureSecretBackend extends cdktf.TerraformResource {
       terraformResourceType: 'vault_azure_secret_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.2',
+        providerVersion: '3.9.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -110,6 +116,7 @@ export class AzureSecretBackend extends cdktf.TerraformResource {
     this._clientId = config.clientId;
     this._clientSecret = config.clientSecret;
     this._description = config.description;
+    this._disableRemount = config.disableRemount;
     this._environment = config.environment;
     this._id = config.id;
     this._namespace = config.namespace;
@@ -169,6 +176,22 @@ export class AzureSecretBackend extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
     return this._description;
+  }
+
+  // disable_remount - computed: false, optional: true, required: false
+  private _disableRemount?: boolean | cdktf.IResolvable; 
+  public get disableRemount() {
+    return this.getBooleanAttribute('disable_remount');
+  }
+  public set disableRemount(value: boolean | cdktf.IResolvable) {
+    this._disableRemount = value;
+  }
+  public resetDisableRemount() {
+    this._disableRemount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get disableRemountInput() {
+    return this._disableRemount;
   }
 
   // environment - computed: false, optional: true, required: false
@@ -286,6 +309,7 @@ export class AzureSecretBackend extends cdktf.TerraformResource {
       client_id: cdktf.stringToTerraform(this._clientId),
       client_secret: cdktf.stringToTerraform(this._clientSecret),
       description: cdktf.stringToTerraform(this._description),
+      disable_remount: cdktf.booleanToTerraform(this._disableRemount),
       environment: cdktf.stringToTerraform(this._environment),
       id: cdktf.stringToTerraform(this._id),
       namespace: cdktf.stringToTerraform(this._namespace),

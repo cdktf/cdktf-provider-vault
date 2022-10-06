@@ -26,6 +26,12 @@ export interface OktaAuthBackendConfig extends cdktf.TerraformMetaArguments {
   */
   readonly description?: string;
   /**
+  * If set, opts out of mount migration on path updates.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/okta_auth_backend#disable_remount OktaAuthBackend#disable_remount}
+  */
+  readonly disableRemount?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/okta_auth_backend#group OktaAuthBackend#group}
   */
   readonly group?: OktaAuthBackendGroup[] | cdktf.IResolvable;
@@ -379,7 +385,7 @@ export class OktaAuthBackend extends cdktf.TerraformResource {
       terraformResourceType: 'vault_okta_auth_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.2',
+        providerVersion: '3.9.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -393,6 +399,7 @@ export class OktaAuthBackend extends cdktf.TerraformResource {
     this._baseUrl = config.baseUrl;
     this._bypassOktaMfa = config.bypassOktaMfa;
     this._description = config.description;
+    this._disableRemount = config.disableRemount;
     this._group.internalValue = config.group;
     this._id = config.id;
     this._maxTtl = config.maxTtl;
@@ -459,6 +466,22 @@ export class OktaAuthBackend extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
     return this._description;
+  }
+
+  // disable_remount - computed: false, optional: true, required: false
+  private _disableRemount?: boolean | cdktf.IResolvable; 
+  public get disableRemount() {
+    return this.getBooleanAttribute('disable_remount');
+  }
+  public set disableRemount(value: boolean | cdktf.IResolvable) {
+    this._disableRemount = value;
+  }
+  public resetDisableRemount() {
+    this._disableRemount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get disableRemountInput() {
+    return this._disableRemount;
   }
 
   // group - computed: true, optional: true, required: false
@@ -611,6 +634,7 @@ export class OktaAuthBackend extends cdktf.TerraformResource {
       base_url: cdktf.stringToTerraform(this._baseUrl),
       bypass_okta_mfa: cdktf.booleanToTerraform(this._bypassOktaMfa),
       description: cdktf.stringToTerraform(this._description),
+      disable_remount: cdktf.booleanToTerraform(this._disableRemount),
       group: cdktf.listMapper(oktaAuthBackendGroupToTerraform, false)(this._group.internalValue),
       id: cdktf.stringToTerraform(this._id),
       max_ttl: cdktf.stringToTerraform(this._maxTtl),

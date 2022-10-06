@@ -38,6 +38,12 @@ export interface TerraformCloudSecretBackendConfig extends cdktf.TerraformMetaAr
   */
   readonly description?: string;
   /**
+  * If set, opts out of mount migration on path updates.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/terraform_cloud_secret_backend#disable_remount TerraformCloudSecretBackend#disable_remount}
+  */
+  readonly disableRemount?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/terraform_cloud_secret_backend#id TerraformCloudSecretBackend#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -90,7 +96,7 @@ export class TerraformCloudSecretBackend extends cdktf.TerraformResource {
       terraformResourceType: 'vault_terraform_cloud_secret_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.2',
+        providerVersion: '3.9.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -106,6 +112,7 @@ export class TerraformCloudSecretBackend extends cdktf.TerraformResource {
     this._basePath = config.basePath;
     this._defaultLeaseTtlSeconds = config.defaultLeaseTtlSeconds;
     this._description = config.description;
+    this._disableRemount = config.disableRemount;
     this._id = config.id;
     this._maxLeaseTtlSeconds = config.maxLeaseTtlSeconds;
     this._namespace = config.namespace;
@@ -196,6 +203,22 @@ export class TerraformCloudSecretBackend extends cdktf.TerraformResource {
     return this._description;
   }
 
+  // disable_remount - computed: false, optional: true, required: false
+  private _disableRemount?: boolean | cdktf.IResolvable; 
+  public get disableRemount() {
+    return this.getBooleanAttribute('disable_remount');
+  }
+  public set disableRemount(value: boolean | cdktf.IResolvable) {
+    this._disableRemount = value;
+  }
+  public resetDisableRemount() {
+    this._disableRemount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get disableRemountInput() {
+    return this._disableRemount;
+  }
+
   // id - computed: true, optional: true, required: false
   private _id?: string; 
   public get id() {
@@ -271,6 +294,7 @@ export class TerraformCloudSecretBackend extends cdktf.TerraformResource {
       base_path: cdktf.stringToTerraform(this._basePath),
       default_lease_ttl_seconds: cdktf.numberToTerraform(this._defaultLeaseTtlSeconds),
       description: cdktf.stringToTerraform(this._description),
+      disable_remount: cdktf.booleanToTerraform(this._disableRemount),
       id: cdktf.stringToTerraform(this._id),
       max_lease_ttl_seconds: cdktf.numberToTerraform(this._maxLeaseTtlSeconds),
       namespace: cdktf.stringToTerraform(this._namespace),

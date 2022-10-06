@@ -66,7 +66,7 @@ export class OktaAuthBackendGroupA extends cdktf.TerraformResource {
       terraformResourceType: 'vault_okta_auth_backend_group',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.8.2',
+        providerVersion: '3.9.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
