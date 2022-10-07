@@ -72,7 +72,7 @@ export class SshSecretBackendCa extends cdktf.TerraformResource {
       terraformResourceType: 'vault_ssh_secret_backend_ca',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.9.0',
+        providerVersion: '3.9.1',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
