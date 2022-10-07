@@ -120,7 +120,7 @@ export class DataVaultKubernetesAuthBackendRole extends cdktf.TerraformDataSourc
       terraformResourceType: 'vault_kubernetes_auth_backend_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.9.0',
+        providerVersion: '3.9.1',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

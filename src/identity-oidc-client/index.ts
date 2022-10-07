@@ -90,7 +90,7 @@ export class IdentityOidcClient extends cdktf.TerraformResource {
       terraformResourceType: 'vault_identity_oidc_client',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.9.0',
+        providerVersion: '3.9.1',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
