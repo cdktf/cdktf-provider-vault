@@ -62,6 +62,12 @@ export interface VaultProviderConfig {
   */
   readonly skipChildToken?: boolean | cdktf.IResolvable;
   /**
+  * Skip the dynamic fetching of the Vault server version.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault#skip_get_vault_version VaultProvider#skip_get_vault_version}
+  */
+  readonly skipGetVaultVersion?: boolean | cdktf.IResolvable;
+  /**
   * Set this to true only if the target Vault server is an insecure development instance.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault#skip_tls_verify VaultProvider#skip_tls_verify}
@@ -85,6 +91,12 @@ export interface VaultProviderConfig {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault#token_name VaultProvider#token_name}
   */
   readonly tokenName?: string;
+  /**
+  * Override the Vault server version, which is normally determined dynamically from the target Vault server
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault#vault_version_override VaultProvider#vault_version_override}
+  */
+  readonly vaultVersionOverride?: string;
   /**
   * Alias name
   * 
@@ -884,7 +896,7 @@ export class VaultProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'vault',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.9.1',
+        providerVersion: '3.10.0',
         providerVersionConstraint: '~> 3.7'
       },
       terraformProviderSource: 'hashicorp/vault'
@@ -898,10 +910,12 @@ export class VaultProvider extends cdktf.TerraformProvider {
     this._maxRetriesCcc = config.maxRetriesCcc;
     this._namespace = config.namespace;
     this._skipChildToken = config.skipChildToken;
+    this._skipGetVaultVersion = config.skipGetVaultVersion;
     this._skipTlsVerify = config.skipTlsVerify;
     this._tlsServerName = config.tlsServerName;
     this._token = config.token;
     this._tokenName = config.tokenName;
+    this._vaultVersionOverride = config.vaultVersionOverride;
     this._alias = config.alias;
     this._authLogin = config.authLogin;
     this._authLoginAws = config.authLoginAws;
@@ -1063,6 +1077,22 @@ export class VaultProvider extends cdktf.TerraformProvider {
     return this._skipChildToken;
   }
 
+  // skip_get_vault_version - computed: false, optional: true, required: false
+  private _skipGetVaultVersion?: boolean | cdktf.IResolvable; 
+  public get skipGetVaultVersion() {
+    return this._skipGetVaultVersion;
+  }
+  public set skipGetVaultVersion(value: boolean | cdktf.IResolvable | undefined) {
+    this._skipGetVaultVersion = value;
+  }
+  public resetSkipGetVaultVersion() {
+    this._skipGetVaultVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipGetVaultVersionInput() {
+    return this._skipGetVaultVersion;
+  }
+
   // skip_tls_verify - computed: false, optional: true, required: false
   private _skipTlsVerify?: boolean | cdktf.IResolvable; 
   public get skipTlsVerify() {
@@ -1125,6 +1155,22 @@ export class VaultProvider extends cdktf.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get tokenNameInput() {
     return this._tokenName;
+  }
+
+  // vault_version_override - computed: false, optional: true, required: false
+  private _vaultVersionOverride?: string; 
+  public get vaultVersionOverride() {
+    return this._vaultVersionOverride;
+  }
+  public set vaultVersionOverride(value: string | undefined) {
+    this._vaultVersionOverride = value;
+  }
+  public resetVaultVersionOverride() {
+    this._vaultVersionOverride = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vaultVersionOverrideInput() {
+    return this._vaultVersionOverride;
   }
 
   // alias - computed: false, optional: true, required: false
@@ -1366,10 +1412,12 @@ export class VaultProvider extends cdktf.TerraformProvider {
       max_retries_ccc: cdktf.numberToTerraform(this._maxRetriesCcc),
       namespace: cdktf.stringToTerraform(this._namespace),
       skip_child_token: cdktf.booleanToTerraform(this._skipChildToken),
+      skip_get_vault_version: cdktf.booleanToTerraform(this._skipGetVaultVersion),
       skip_tls_verify: cdktf.booleanToTerraform(this._skipTlsVerify),
       tls_server_name: cdktf.stringToTerraform(this._tlsServerName),
       token: cdktf.stringToTerraform(this._token),
       token_name: cdktf.stringToTerraform(this._tokenName),
+      vault_version_override: cdktf.stringToTerraform(this._vaultVersionOverride),
       alias: cdktf.stringToTerraform(this._alias),
       auth_login: vaultProviderAuthLoginToTerraform(this._authLogin),
       auth_login_aws: vaultProviderAuthLoginAwsToTerraform(this._authLoginAws),

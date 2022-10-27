@@ -206,7 +206,7 @@ export class GcpSecretRoleset extends cdktf.TerraformResource {
       terraformResourceType: 'vault_gcp_secret_roleset',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.9.1',
+        providerVersion: '3.10.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

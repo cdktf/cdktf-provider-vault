@@ -248,7 +248,7 @@ export class GcpAuthBackend extends cdktf.TerraformResource {
       terraformResourceType: 'vault_gcp_auth_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.9.1',
+        providerVersion: '3.10.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

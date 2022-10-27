@@ -84,7 +84,7 @@ export class AzureAuthBackendConfig extends cdktf.TerraformResource {
       terraformResourceType: 'vault_azure_auth_backend_config',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.9.1',
+        providerVersion: '3.10.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

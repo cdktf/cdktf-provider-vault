@@ -46,6 +46,7 @@ export * as identityEntityPolicies from './identity-entity-policies';
 export * as identityGroup from './identity-group';
 export * as identityGroupAlias from './identity-group-alias';
 export * as identityGroupMemberEntityIds from './identity-group-member-entity-ids';
+export * as identityGroupMemberGroupIds from './identity-group-member-group-ids';
 export * as identityGroupPolicies from './identity-group-policies';
 export * as identityMfaDuo from './identity-mfa-duo';
 export * as identityMfaLoginEnforcement from './identity-mfa-login-enforcement';

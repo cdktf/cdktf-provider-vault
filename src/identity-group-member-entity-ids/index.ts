@@ -8,8 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface IdentityGroupMemberEntityIdsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Should the resource manage member entity ids 
-exclusively? Beware of race conditions when disabling exclusive management
+  * If set to true, allows the resource to manage member entity ids
+exclusively. Beware of race conditions when disabling exclusive management
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group_member_entity_ids#exclusive IdentityGroupMemberEntityIds#exclusive}
   */
@@ -67,7 +67,7 @@ export class IdentityGroupMemberEntityIds extends cdktf.TerraformResource {
       terraformResourceType: 'vault_identity_group_member_entity_ids',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.9.1',
+        providerVersion: '3.10.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
