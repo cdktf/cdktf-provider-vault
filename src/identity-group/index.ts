@@ -8,11 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface IdentityGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Manage member entities externally through `vault_identity_group_policies_member_entity_ids`
+  * Manage member entities externally through `vault_identity_group_member_entity_ids`
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#external_member_entity_ids IdentityGroup#external_member_entity_ids}
   */
   readonly externalMemberEntityIds?: boolean | cdktf.IResolvable;
+  /**
+  * Manage member groups externally through `vault_identity_group_member_group_ids`
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#external_member_group_ids IdentityGroup#external_member_group_ids}
+  */
+  readonly externalMemberGroupIds?: boolean | cdktf.IResolvable;
   /**
   * Manage policies externally through `vault_identity_group_policies`, allows using group ID in assigned policies.
   * 
@@ -96,7 +102,7 @@ export class IdentityGroup extends cdktf.TerraformResource {
       terraformResourceType: 'vault_identity_group',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.9.1',
+        providerVersion: '3.10.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -108,6 +114,7 @@ export class IdentityGroup extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._externalMemberEntityIds = config.externalMemberEntityIds;
+    this._externalMemberGroupIds = config.externalMemberGroupIds;
     this._externalPolicies = config.externalPolicies;
     this._id = config.id;
     this._memberEntityIds = config.memberEntityIds;
@@ -137,6 +144,22 @@ export class IdentityGroup extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get externalMemberEntityIdsInput() {
     return this._externalMemberEntityIds;
+  }
+
+  // external_member_group_ids - computed: false, optional: true, required: false
+  private _externalMemberGroupIds?: boolean | cdktf.IResolvable; 
+  public get externalMemberGroupIds() {
+    return this.getBooleanAttribute('external_member_group_ids');
+  }
+  public set externalMemberGroupIds(value: boolean | cdktf.IResolvable) {
+    this._externalMemberGroupIds = value;
+  }
+  public resetExternalMemberGroupIds() {
+    this._externalMemberGroupIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get externalMemberGroupIdsInput() {
+    return this._externalMemberGroupIds;
   }
 
   // external_policies - computed: false, optional: true, required: false
@@ -290,6 +313,7 @@ export class IdentityGroup extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       external_member_entity_ids: cdktf.booleanToTerraform(this._externalMemberEntityIds),
+      external_member_group_ids: cdktf.booleanToTerraform(this._externalMemberGroupIds),
       external_policies: cdktf.booleanToTerraform(this._externalPolicies),
       id: cdktf.stringToTerraform(this._id),
       member_entity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._memberEntityIds),

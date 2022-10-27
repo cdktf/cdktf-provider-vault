@@ -126,7 +126,7 @@ export class ConsulSecretBackend extends cdktf.TerraformResource {
       terraformResourceType: 'vault_consul_secret_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.9.1',
+        providerVersion: '3.10.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

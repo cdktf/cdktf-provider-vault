@@ -72,7 +72,7 @@ export class EgpPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'vault_egp_policy',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.9.1',
+        providerVersion: '3.10.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
