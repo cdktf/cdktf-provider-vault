@@ -120,7 +120,7 @@ export class KmipSecretBackend extends cdktf.TerraformResource {
       terraformResourceType: 'vault_kmip_secret_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.10.0',
+        providerVersion: '3.11.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

@@ -147,6 +147,12 @@ export interface DatabaseSecretBackendConnectionConfig extends cdktf.TerraformMe
   */
   readonly postgresql?: DatabaseSecretBackendConnectionPostgresql;
   /**
+  * redis block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secret_backend_connection#redis DatabaseSecretBackendConnection#redis}
+  */
+  readonly redis?: DatabaseSecretBackendConnectionRedis;
+  /**
   * redis_elasticache block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secret_backend_connection#redis_elasticache DatabaseSecretBackendConnection#redis_elasticache}
@@ -3822,6 +3828,238 @@ export class DatabaseSecretBackendConnectionPostgresqlOutputReference extends cd
     return this._usernameTemplate;
   }
 }
+export interface DatabaseSecretBackendConnectionRedis {
+  /**
+  * The contents of a PEM-encoded CA cert file to use to verify the Redis server's identity.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secret_backend_connection#ca_cert DatabaseSecretBackendConnection#ca_cert}
+  */
+  readonly caCert?: string;
+  /**
+  * Specifies the host to connect to
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secret_backend_connection#host DatabaseSecretBackendConnection#host}
+  */
+  readonly host: string;
+  /**
+  * Specifies whether to skip verification of the server certificate when using TLS.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secret_backend_connection#insecure_tls DatabaseSecretBackendConnection#insecure_tls}
+  */
+  readonly insecureTls?: boolean | cdktf.IResolvable;
+  /**
+  * Specifies the password corresponding to the given username.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
+  */
+  readonly password: string;
+  /**
+  * The transport port to use to connect to Redis.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secret_backend_connection#port DatabaseSecretBackendConnection#port}
+  */
+  readonly port?: number;
+  /**
+  * Specifies whether to use TLS when connecting to Redis.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secret_backend_connection#tls DatabaseSecretBackendConnection#tls}
+  */
+  readonly tls?: boolean | cdktf.IResolvable;
+  /**
+  * Specifies the username for Vault to use.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
+  */
+  readonly username: string;
+}
+
+export function databaseSecretBackendConnectionRedisToTerraform(struct?: DatabaseSecretBackendConnectionRedisOutputReference | DatabaseSecretBackendConnectionRedis): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    ca_cert: cdktf.stringToTerraform(struct!.caCert),
+    host: cdktf.stringToTerraform(struct!.host),
+    insecure_tls: cdktf.booleanToTerraform(struct!.insecureTls),
+    password: cdktf.stringToTerraform(struct!.password),
+    port: cdktf.numberToTerraform(struct!.port),
+    tls: cdktf.booleanToTerraform(struct!.tls),
+    username: cdktf.stringToTerraform(struct!.username),
+  }
+}
+
+export class DatabaseSecretBackendConnectionRedisOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DatabaseSecretBackendConnectionRedis | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._caCert !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.caCert = this._caCert;
+    }
+    if (this._host !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.host = this._host;
+    }
+    if (this._insecureTls !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.insecureTls = this._insecureTls;
+    }
+    if (this._password !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.password = this._password;
+    }
+    if (this._port !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.port = this._port;
+    }
+    if (this._tls !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tls = this._tls;
+    }
+    if (this._username !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.username = this._username;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DatabaseSecretBackendConnectionRedis | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._caCert = undefined;
+      this._host = undefined;
+      this._insecureTls = undefined;
+      this._password = undefined;
+      this._port = undefined;
+      this._tls = undefined;
+      this._username = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._caCert = value.caCert;
+      this._host = value.host;
+      this._insecureTls = value.insecureTls;
+      this._password = value.password;
+      this._port = value.port;
+      this._tls = value.tls;
+      this._username = value.username;
+    }
+  }
+
+  // ca_cert - computed: false, optional: true, required: false
+  private _caCert?: string; 
+  public get caCert() {
+    return this.getStringAttribute('ca_cert');
+  }
+  public set caCert(value: string) {
+    this._caCert = value;
+  }
+  public resetCaCert() {
+    this._caCert = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get caCertInput() {
+    return this._caCert;
+  }
+
+  // host - computed: false, optional: false, required: true
+  private _host?: string; 
+  public get host() {
+    return this.getStringAttribute('host');
+  }
+  public set host(value: string) {
+    this._host = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hostInput() {
+    return this._host;
+  }
+
+  // insecure_tls - computed: false, optional: true, required: false
+  private _insecureTls?: boolean | cdktf.IResolvable; 
+  public get insecureTls() {
+    return this.getBooleanAttribute('insecure_tls');
+  }
+  public set insecureTls(value: boolean | cdktf.IResolvable) {
+    this._insecureTls = value;
+  }
+  public resetInsecureTls() {
+    this._insecureTls = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get insecureTlsInput() {
+    return this._insecureTls;
+  }
+
+  // password - computed: false, optional: false, required: true
+  private _password?: string; 
+  public get password() {
+    return this.getStringAttribute('password');
+  }
+  public set password(value: string) {
+    this._password = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordInput() {
+    return this._password;
+  }
+
+  // port - computed: false, optional: true, required: false
+  private _port?: number; 
+  public get port() {
+    return this.getNumberAttribute('port');
+  }
+  public set port(value: number) {
+    this._port = value;
+  }
+  public resetPort() {
+    this._port = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
+  }
+
+  // tls - computed: false, optional: true, required: false
+  private _tls?: boolean | cdktf.IResolvable; 
+  public get tls() {
+    return this.getBooleanAttribute('tls');
+  }
+  public set tls(value: boolean | cdktf.IResolvable) {
+    this._tls = value;
+  }
+  public resetTls() {
+    this._tls = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tlsInput() {
+    return this._tls;
+  }
+
+  // username - computed: false, optional: false, required: true
+  private _username?: string; 
+  public get username() {
+    return this.getStringAttribute('username');
+  }
+  public set username(value: string) {
+    this._username = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usernameInput() {
+    return this._username;
+  }
+}
 export interface DatabaseSecretBackendConnectionRedisElasticache {
   /**
   * The AWS secret key id to use to talk to ElastiCache. If omitted the credentials chain provider is used instead.
@@ -4511,7 +4749,7 @@ export class DatabaseSecretBackendConnection extends cdktf.TerraformResource {
       terraformResourceType: 'vault_database_secret_backend_connection',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.10.0',
+        providerVersion: '3.11.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -4545,6 +4783,7 @@ export class DatabaseSecretBackendConnection extends cdktf.TerraformResource {
     this._mysqlRds.internalValue = config.mysqlRds;
     this._oracle.internalValue = config.oracle;
     this._postgresql.internalValue = config.postgresql;
+    this._redis.internalValue = config.redis;
     this._redisElasticache.internalValue = config.redisElasticache;
     this._redshift.internalValue = config.redshift;
     this._snowflake.internalValue = config.snowflake;
@@ -4916,6 +5155,22 @@ export class DatabaseSecretBackendConnection extends cdktf.TerraformResource {
     return this._postgresql.internalValue;
   }
 
+  // redis - computed: false, optional: true, required: false
+  private _redis = new DatabaseSecretBackendConnectionRedisOutputReference(this, "redis");
+  public get redis() {
+    return this._redis;
+  }
+  public putRedis(value: DatabaseSecretBackendConnectionRedis) {
+    this._redis.internalValue = value;
+  }
+  public resetRedis() {
+    this._redis.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get redisInput() {
+    return this._redis.internalValue;
+  }
+
   // redis_elasticache - computed: false, optional: true, required: false
   private _redisElasticache = new DatabaseSecretBackendConnectionRedisElasticacheOutputReference(this, "redis_elasticache");
   public get redisElasticache() {
@@ -4993,6 +5248,7 @@ export class DatabaseSecretBackendConnection extends cdktf.TerraformResource {
       mysql_rds: databaseSecretBackendConnectionMysqlRdsToTerraform(this._mysqlRds.internalValue),
       oracle: databaseSecretBackendConnectionOracleToTerraform(this._oracle.internalValue),
       postgresql: databaseSecretBackendConnectionPostgresqlToTerraform(this._postgresql.internalValue),
+      redis: databaseSecretBackendConnectionRedisToTerraform(this._redis.internalValue),
       redis_elasticache: databaseSecretBackendConnectionRedisElasticacheToTerraform(this._redisElasticache.internalValue),
       redshift: databaseSecretBackendConnectionRedshiftToTerraform(this._redshift.internalValue),
       snowflake: databaseSecretBackendConnectionSnowflakeToTerraform(this._snowflake.internalValue),

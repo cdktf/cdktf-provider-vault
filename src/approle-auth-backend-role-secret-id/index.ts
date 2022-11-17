@@ -90,7 +90,7 @@ export class ApproleAuthBackendRoleSecretId extends cdktf.TerraformResource {
       terraformResourceType: 'vault_approle_auth_backend_role_secret_id',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.10.0',
+        providerVersion: '3.11.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
