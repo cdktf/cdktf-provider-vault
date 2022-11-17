@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface PkiSecretBackendIntermediateCertRequestConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Set 'CA: true' in a Basic Constraints extension. Only needed as
+a workaround in some compatibility scenarios with Active Directory Certificate Services.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_intermediate_cert_request#add_basic_constraints PkiSecretBackendIntermediateCertRequest#add_basic_constraints}
+  */
+  readonly addBasicConstraints?: boolean | cdktf.IResolvable;
+  /**
   * List of alternative names.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_intermediate_cert_request#alt_names PkiSecretBackendIntermediateCertRequest#alt_names}
@@ -174,7 +181,7 @@ export class PkiSecretBackendIntermediateCertRequest extends cdktf.TerraformReso
       terraformResourceType: 'vault_pki_secret_backend_intermediate_cert_request',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.10.0',
+        providerVersion: '3.11.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -185,6 +192,7 @@ export class PkiSecretBackendIntermediateCertRequest extends cdktf.TerraformReso
       connection: config.connection,
       forEach: config.forEach
     });
+    this._addBasicConstraints = config.addBasicConstraints;
     this._altNames = config.altNames;
     this._backend = config.backend;
     this._commonName = config.commonName;
@@ -213,6 +221,22 @@ export class PkiSecretBackendIntermediateCertRequest extends cdktf.TerraformReso
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // add_basic_constraints - computed: false, optional: true, required: false
+  private _addBasicConstraints?: boolean | cdktf.IResolvable; 
+  public get addBasicConstraints() {
+    return this.getBooleanAttribute('add_basic_constraints');
+  }
+  public set addBasicConstraints(value: boolean | cdktf.IResolvable) {
+    this._addBasicConstraints = value;
+  }
+  public resetAddBasicConstraints() {
+    this._addBasicConstraints = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get addBasicConstraintsInput() {
+    return this._addBasicConstraints;
+  }
 
   // alt_names - computed: false, optional: true, required: false
   private _altNames?: string[]; 
@@ -594,6 +618,7 @@ export class PkiSecretBackendIntermediateCertRequest extends cdktf.TerraformReso
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      add_basic_constraints: cdktf.booleanToTerraform(this._addBasicConstraints),
       alt_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._altNames),
       backend: cdktf.stringToTerraform(this._backend),
       common_name: cdktf.stringToTerraform(this._commonName),

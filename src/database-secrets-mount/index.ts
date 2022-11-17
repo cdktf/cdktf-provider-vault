@@ -171,6 +171,12 @@ export interface DatabaseSecretsMountConfig extends cdktf.TerraformMetaArguments
   */
   readonly postgresql?: DatabaseSecretsMountPostgresql[] | cdktf.IResolvable;
   /**
+  * redis block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#redis DatabaseSecretsMount#redis}
+  */
+  readonly redis?: DatabaseSecretsMountRedis[] | cdktf.IResolvable;
+  /**
   * redis_elasticache block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#redis_elasticache DatabaseSecretsMount#redis_elasticache}
@@ -6688,6 +6694,441 @@ export class DatabaseSecretsMountPostgresqlList extends cdktf.ComplexList {
     return new DatabaseSecretsMountPostgresqlOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DatabaseSecretsMountRedis {
+  /**
+  * A list of roles that are allowed to use this connection.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+  */
+  readonly allowedRoles?: string[];
+  /**
+  * The contents of a PEM-encoded CA cert file to use to verify the Redis server's identity.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#ca_cert DatabaseSecretsMount#ca_cert}
+  */
+  readonly caCert?: string;
+  /**
+  * A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#data DatabaseSecretsMount#data}
+  */
+  readonly data?: { [key: string]: string };
+  /**
+  * Specifies the host to connect to
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#host DatabaseSecretsMount#host}
+  */
+  readonly host: string;
+  /**
+  * Specifies whether to skip verification of the server certificate when using TLS.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#insecure_tls DatabaseSecretsMount#insecure_tls}
+  */
+  readonly insecureTls?: boolean | cdktf.IResolvable;
+  /**
+  * Name of the database connection.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#name DatabaseSecretsMount#name}
+  */
+  readonly name: string;
+  /**
+  * Specifies the password corresponding to the given username.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#password DatabaseSecretsMount#password}
+  */
+  readonly password: string;
+  /**
+  * Specifies the name of the plugin to use for this connection. Must be prefixed with the name of one of the supported database engine types.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+  */
+  readonly pluginName?: string;
+  /**
+  * The transport port to use to connect to Redis.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#port DatabaseSecretsMount#port}
+  */
+  readonly port?: number;
+  /**
+  * A list of database statements to be executed to rotate the root user's credentials.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+  */
+  readonly rootRotationStatements?: string[];
+  /**
+  * Specifies whether to use TLS when connecting to Redis.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#tls DatabaseSecretsMount#tls}
+  */
+  readonly tls?: boolean | cdktf.IResolvable;
+  /**
+  * Specifies the username for Vault to use.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#username DatabaseSecretsMount#username}
+  */
+  readonly username: string;
+  /**
+  * Specifies if the connection is verified during initial configuration.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+  */
+  readonly verifyConnection?: boolean | cdktf.IResolvable;
+}
+
+export function databaseSecretsMountRedisToTerraform(struct?: DatabaseSecretsMountRedis | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedRoles),
+    ca_cert: cdktf.stringToTerraform(struct!.caCert),
+    data: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.data),
+    host: cdktf.stringToTerraform(struct!.host),
+    insecure_tls: cdktf.booleanToTerraform(struct!.insecureTls),
+    name: cdktf.stringToTerraform(struct!.name),
+    password: cdktf.stringToTerraform(struct!.password),
+    plugin_name: cdktf.stringToTerraform(struct!.pluginName),
+    port: cdktf.numberToTerraform(struct!.port),
+    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rootRotationStatements),
+    tls: cdktf.booleanToTerraform(struct!.tls),
+    username: cdktf.stringToTerraform(struct!.username),
+    verify_connection: cdktf.booleanToTerraform(struct!.verifyConnection),
+  }
+}
+
+export class DatabaseSecretsMountRedisOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DatabaseSecretsMountRedis | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._allowedRoles !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowedRoles = this._allowedRoles;
+    }
+    if (this._caCert !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.caCert = this._caCert;
+    }
+    if (this._data !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.data = this._data;
+    }
+    if (this._host !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.host = this._host;
+    }
+    if (this._insecureTls !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.insecureTls = this._insecureTls;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._password !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.password = this._password;
+    }
+    if (this._pluginName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pluginName = this._pluginName;
+    }
+    if (this._port !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.port = this._port;
+    }
+    if (this._rootRotationStatements !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rootRotationStatements = this._rootRotationStatements;
+    }
+    if (this._tls !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tls = this._tls;
+    }
+    if (this._username !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.username = this._username;
+    }
+    if (this._verifyConnection !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.verifyConnection = this._verifyConnection;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DatabaseSecretsMountRedis | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._allowedRoles = undefined;
+      this._caCert = undefined;
+      this._data = undefined;
+      this._host = undefined;
+      this._insecureTls = undefined;
+      this._name = undefined;
+      this._password = undefined;
+      this._pluginName = undefined;
+      this._port = undefined;
+      this._rootRotationStatements = undefined;
+      this._tls = undefined;
+      this._username = undefined;
+      this._verifyConnection = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._allowedRoles = value.allowedRoles;
+      this._caCert = value.caCert;
+      this._data = value.data;
+      this._host = value.host;
+      this._insecureTls = value.insecureTls;
+      this._name = value.name;
+      this._password = value.password;
+      this._pluginName = value.pluginName;
+      this._port = value.port;
+      this._rootRotationStatements = value.rootRotationStatements;
+      this._tls = value.tls;
+      this._username = value.username;
+      this._verifyConnection = value.verifyConnection;
+    }
+  }
+
+  // allowed_roles - computed: false, optional: true, required: false
+  private _allowedRoles?: string[]; 
+  public get allowedRoles() {
+    return this.getListAttribute('allowed_roles');
+  }
+  public set allowedRoles(value: string[]) {
+    this._allowedRoles = value;
+  }
+  public resetAllowedRoles() {
+    this._allowedRoles = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedRolesInput() {
+    return this._allowedRoles;
+  }
+
+  // ca_cert - computed: false, optional: true, required: false
+  private _caCert?: string; 
+  public get caCert() {
+    return this.getStringAttribute('ca_cert');
+  }
+  public set caCert(value: string) {
+    this._caCert = value;
+  }
+  public resetCaCert() {
+    this._caCert = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get caCertInput() {
+    return this._caCert;
+  }
+
+  // data - computed: false, optional: true, required: false
+  private _data?: { [key: string]: string }; 
+  public get data() {
+    return this.getStringMapAttribute('data');
+  }
+  public set data(value: { [key: string]: string }) {
+    this._data = value;
+  }
+  public resetData() {
+    this._data = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataInput() {
+    return this._data;
+  }
+
+  // host - computed: false, optional: false, required: true
+  private _host?: string; 
+  public get host() {
+    return this.getStringAttribute('host');
+  }
+  public set host(value: string) {
+    this._host = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hostInput() {
+    return this._host;
+  }
+
+  // insecure_tls - computed: false, optional: true, required: false
+  private _insecureTls?: boolean | cdktf.IResolvable; 
+  public get insecureTls() {
+    return this.getBooleanAttribute('insecure_tls');
+  }
+  public set insecureTls(value: boolean | cdktf.IResolvable) {
+    this._insecureTls = value;
+  }
+  public resetInsecureTls() {
+    this._insecureTls = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get insecureTlsInput() {
+    return this._insecureTls;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // password - computed: false, optional: false, required: true
+  private _password?: string; 
+  public get password() {
+    return this.getStringAttribute('password');
+  }
+  public set password(value: string) {
+    this._password = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordInput() {
+    return this._password;
+  }
+
+  // plugin_name - computed: true, optional: true, required: false
+  private _pluginName?: string; 
+  public get pluginName() {
+    return this.getStringAttribute('plugin_name');
+  }
+  public set pluginName(value: string) {
+    this._pluginName = value;
+  }
+  public resetPluginName() {
+    this._pluginName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pluginNameInput() {
+    return this._pluginName;
+  }
+
+  // port - computed: false, optional: true, required: false
+  private _port?: number; 
+  public get port() {
+    return this.getNumberAttribute('port');
+  }
+  public set port(value: number) {
+    this._port = value;
+  }
+  public resetPort() {
+    this._port = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
+  }
+
+  // root_rotation_statements - computed: false, optional: true, required: false
+  private _rootRotationStatements?: string[]; 
+  public get rootRotationStatements() {
+    return this.getListAttribute('root_rotation_statements');
+  }
+  public set rootRotationStatements(value: string[]) {
+    this._rootRotationStatements = value;
+  }
+  public resetRootRotationStatements() {
+    this._rootRotationStatements = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rootRotationStatementsInput() {
+    return this._rootRotationStatements;
+  }
+
+  // tls - computed: false, optional: true, required: false
+  private _tls?: boolean | cdktf.IResolvable; 
+  public get tls() {
+    return this.getBooleanAttribute('tls');
+  }
+  public set tls(value: boolean | cdktf.IResolvable) {
+    this._tls = value;
+  }
+  public resetTls() {
+    this._tls = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tlsInput() {
+    return this._tls;
+  }
+
+  // username - computed: false, optional: false, required: true
+  private _username?: string; 
+  public get username() {
+    return this.getStringAttribute('username');
+  }
+  public set username(value: string) {
+    this._username = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usernameInput() {
+    return this._username;
+  }
+
+  // verify_connection - computed: false, optional: true, required: false
+  private _verifyConnection?: boolean | cdktf.IResolvable; 
+  public get verifyConnection() {
+    return this.getBooleanAttribute('verify_connection');
+  }
+  public set verifyConnection(value: boolean | cdktf.IResolvable) {
+    this._verifyConnection = value;
+  }
+  public resetVerifyConnection() {
+    this._verifyConnection = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get verifyConnectionInput() {
+    return this._verifyConnection;
+  }
+}
+
+export class DatabaseSecretsMountRedisList extends cdktf.ComplexList {
+  public internalValue? : DatabaseSecretsMountRedis[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DatabaseSecretsMountRedisOutputReference {
+    return new DatabaseSecretsMountRedisOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DatabaseSecretsMountRedisElasticache {
   /**
   * A list of roles that are allowed to use this connection.
@@ -7986,7 +8427,7 @@ export class DatabaseSecretsMount extends cdktf.TerraformResource {
       terraformResourceType: 'vault_database_secrets_mount',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.10.0',
+        providerVersion: '3.11.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -8024,6 +8465,7 @@ export class DatabaseSecretsMount extends cdktf.TerraformResource {
     this._mysqlRds.internalValue = config.mysqlRds;
     this._oracle.internalValue = config.oracle;
     this._postgresql.internalValue = config.postgresql;
+    this._redis.internalValue = config.redis;
     this._redisElasticache.internalValue = config.redisElasticache;
     this._redshift.internalValue = config.redshift;
     this._snowflake.internalValue = config.snowflake;
@@ -8472,6 +8914,22 @@ export class DatabaseSecretsMount extends cdktf.TerraformResource {
     return this._postgresql.internalValue;
   }
 
+  // redis - computed: false, optional: true, required: false
+  private _redis = new DatabaseSecretsMountRedisList(this, "redis", false);
+  public get redis() {
+    return this._redis;
+  }
+  public putRedis(value: DatabaseSecretsMountRedis[] | cdktf.IResolvable) {
+    this._redis.internalValue = value;
+  }
+  public resetRedis() {
+    this._redis.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get redisInput() {
+    return this._redis.internalValue;
+  }
+
   // redis_elasticache - computed: false, optional: true, required: false
   private _redisElasticache = new DatabaseSecretsMountRedisElasticacheList(this, "redis_elasticache", false);
   public get redisElasticache() {
@@ -8553,6 +9011,7 @@ export class DatabaseSecretsMount extends cdktf.TerraformResource {
       mysql_rds: cdktf.listMapper(databaseSecretsMountMysqlRdsToTerraform, true)(this._mysqlRds.internalValue),
       oracle: cdktf.listMapper(databaseSecretsMountOracleToTerraform, true)(this._oracle.internalValue),
       postgresql: cdktf.listMapper(databaseSecretsMountPostgresqlToTerraform, true)(this._postgresql.internalValue),
+      redis: cdktf.listMapper(databaseSecretsMountRedisToTerraform, true)(this._redis.internalValue),
       redis_elasticache: cdktf.listMapper(databaseSecretsMountRedisElasticacheToTerraform, true)(this._redisElasticache.internalValue),
       redshift: cdktf.listMapper(databaseSecretsMountRedshiftToTerraform, true)(this._redshift.internalValue),
       snowflake: cdktf.listMapper(databaseSecretsMountSnowflakeToTerraform, true)(this._snowflake.internalValue),
