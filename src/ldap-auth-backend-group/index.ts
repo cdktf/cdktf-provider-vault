@@ -60,7 +60,7 @@ export class LdapAuthBackendGroup extends cdktf.TerraformResource {
       terraformResourceType: 'vault_ldap_auth_backend_group',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.10.0',
+        providerVersion: '3.11.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
