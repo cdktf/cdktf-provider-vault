@@ -1452,7 +1452,7 @@ export class ManagedKeys extends cdktf.TerraformResource {
       terraformResourceType: 'vault_managed_keys',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.10.0',
+        providerVersion: '3.11.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
