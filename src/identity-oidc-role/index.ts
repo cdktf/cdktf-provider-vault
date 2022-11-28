@@ -78,7 +78,7 @@ export class IdentityOidcRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_identity_oidc_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.10.0',
+        providerVersion: '3.11.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
