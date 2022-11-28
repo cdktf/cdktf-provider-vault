@@ -14,6 +14,12 @@ export interface TransformTransformationConfig extends cdktf.TerraformMetaArgume
   */
   readonly allowedRoles?: string[];
   /**
+  * If true, this transform can be deleted. Otherwise deletion is blocked while this value remains false.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_transformation#deletion_allowed TransformTransformation#deletion_allowed}
+  */
+  readonly deletionAllowed?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_transformation#id TransformTransformation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -96,7 +102,7 @@ export class TransformTransformation extends cdktf.TerraformResource {
       terraformResourceType: 'vault_transform_transformation',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.10.0',
+        providerVersion: '3.11.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -108,6 +114,7 @@ export class TransformTransformation extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._allowedRoles = config.allowedRoles;
+    this._deletionAllowed = config.deletionAllowed;
     this._id = config.id;
     this._maskingCharacter = config.maskingCharacter;
     this._name = config.name;
@@ -137,6 +144,22 @@ export class TransformTransformation extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get allowedRolesInput() {
     return this._allowedRoles;
+  }
+
+  // deletion_allowed - computed: false, optional: true, required: false
+  private _deletionAllowed?: boolean | cdktf.IResolvable; 
+  public get deletionAllowed() {
+    return this.getBooleanAttribute('deletion_allowed');
+  }
+  public set deletionAllowed(value: boolean | cdktf.IResolvable) {
+    this._deletionAllowed = value;
+  }
+  public resetDeletionAllowed() {
+    this._deletionAllowed = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionAllowedInput() {
+    return this._deletionAllowed;
   }
 
   // id - computed: true, optional: true, required: false
@@ -284,6 +307,7 @@ export class TransformTransformation extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       allowed_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedRoles),
+      deletion_allowed: cdktf.booleanToTerraform(this._deletionAllowed),
       id: cdktf.stringToTerraform(this._id),
       masking_character: cdktf.stringToTerraform(this._maskingCharacter),
       name: cdktf.stringToTerraform(this._name),
