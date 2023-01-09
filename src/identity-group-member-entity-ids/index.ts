@@ -67,7 +67,7 @@ export class IdentityGroupMemberEntityIds extends cdktf.TerraformResource {
       terraformResourceType: 'vault_identity_group_member_entity_ids',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.11.0',
+        providerVersion: '3.12.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

@@ -20,6 +20,12 @@ export interface RaftAutopilotConfig extends cdktf.TerraformMetaArguments {
   */
   readonly deadServerLastContactThreshold?: string;
   /**
+  * Disables automatically upgrading Vault using autopilot. (Enterprise-only)
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_autopilot#disable_upgrade_migration RaftAutopilot#disable_upgrade_migration}
+  */
+  readonly disableUpgradeMigration?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_autopilot#id RaftAutopilot#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -84,7 +90,7 @@ export class RaftAutopilot extends cdktf.TerraformResource {
       terraformResourceType: 'vault_raft_autopilot',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.11.0',
+        providerVersion: '3.12.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -97,6 +103,7 @@ export class RaftAutopilot extends cdktf.TerraformResource {
     });
     this._cleanupDeadServers = config.cleanupDeadServers;
     this._deadServerLastContactThreshold = config.deadServerLastContactThreshold;
+    this._disableUpgradeMigration = config.disableUpgradeMigration;
     this._id = config.id;
     this._lastContactThreshold = config.lastContactThreshold;
     this._maxTrailingLogs = config.maxTrailingLogs;
@@ -139,6 +146,22 @@ export class RaftAutopilot extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get deadServerLastContactThresholdInput() {
     return this._deadServerLastContactThreshold;
+  }
+
+  // disable_upgrade_migration - computed: false, optional: true, required: false
+  private _disableUpgradeMigration?: boolean | cdktf.IResolvable; 
+  public get disableUpgradeMigration() {
+    return this.getBooleanAttribute('disable_upgrade_migration');
+  }
+  public set disableUpgradeMigration(value: boolean | cdktf.IResolvable) {
+    this._disableUpgradeMigration = value;
+  }
+  public resetDisableUpgradeMigration() {
+    this._disableUpgradeMigration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get disableUpgradeMigrationInput() {
+    return this._disableUpgradeMigration;
   }
 
   // id - computed: true, optional: true, required: false
@@ -245,6 +268,7 @@ export class RaftAutopilot extends cdktf.TerraformResource {
     return {
       cleanup_dead_servers: cdktf.booleanToTerraform(this._cleanupDeadServers),
       dead_server_last_contact_threshold: cdktf.stringToTerraform(this._deadServerLastContactThreshold),
+      disable_upgrade_migration: cdktf.booleanToTerraform(this._disableUpgradeMigration),
       id: cdktf.stringToTerraform(this._id),
       last_contact_threshold: cdktf.stringToTerraform(this._lastContactThreshold),
       max_trailing_logs: cdktf.numberToTerraform(this._maxTrailingLogs),
