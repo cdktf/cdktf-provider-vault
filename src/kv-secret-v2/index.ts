@@ -62,6 +62,166 @@ export interface KvSecretV2Config extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#options KvSecretV2#options}
   */
   readonly options?: { [key: string]: string };
+  /**
+  * custom_metadata block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#custom_metadata KvSecretV2#custom_metadata}
+  */
+  readonly customMetadata?: KvSecretV2CustomMetadata;
+}
+export interface KvSecretV2CustomMetadata {
+  /**
+  * If true, all keys will require the cas parameter to be set on all write requests.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#cas_required KvSecretV2#cas_required}
+  */
+  readonly casRequired?: boolean | cdktf.IResolvable;
+  /**
+  * A map of arbitrary string to string valued user-provided metadata meant to describe the secret.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#data KvSecretV2#data}
+  */
+  readonly data?: { [key: string]: string };
+  /**
+  * If set, specifies the length of time before a version is deleted.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#delete_version_after KvSecretV2#delete_version_after}
+  */
+  readonly deleteVersionAfter?: number;
+  /**
+  * The number of versions to keep per key.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#max_versions KvSecretV2#max_versions}
+  */
+  readonly maxVersions?: number;
+}
+
+export function kvSecretV2CustomMetadataToTerraform(struct?: KvSecretV2CustomMetadataOutputReference | KvSecretV2CustomMetadata): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    cas_required: cdktf.booleanToTerraform(struct!.casRequired),
+    data: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.data),
+    delete_version_after: cdktf.numberToTerraform(struct!.deleteVersionAfter),
+    max_versions: cdktf.numberToTerraform(struct!.maxVersions),
+  }
+}
+
+export class KvSecretV2CustomMetadataOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): KvSecretV2CustomMetadata | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._casRequired !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.casRequired = this._casRequired;
+    }
+    if (this._data !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.data = this._data;
+    }
+    if (this._deleteVersionAfter !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.deleteVersionAfter = this._deleteVersionAfter;
+    }
+    if (this._maxVersions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxVersions = this._maxVersions;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: KvSecretV2CustomMetadata | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._casRequired = undefined;
+      this._data = undefined;
+      this._deleteVersionAfter = undefined;
+      this._maxVersions = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._casRequired = value.casRequired;
+      this._data = value.data;
+      this._deleteVersionAfter = value.deleteVersionAfter;
+      this._maxVersions = value.maxVersions;
+    }
+  }
+
+  // cas_required - computed: false, optional: true, required: false
+  private _casRequired?: boolean | cdktf.IResolvable; 
+  public get casRequired() {
+    return this.getBooleanAttribute('cas_required');
+  }
+  public set casRequired(value: boolean | cdktf.IResolvable) {
+    this._casRequired = value;
+  }
+  public resetCasRequired() {
+    this._casRequired = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get casRequiredInput() {
+    return this._casRequired;
+  }
+
+  // data - computed: false, optional: true, required: false
+  private _data?: { [key: string]: string }; 
+  public get data() {
+    return this.getStringMapAttribute('data');
+  }
+  public set data(value: { [key: string]: string }) {
+    this._data = value;
+  }
+  public resetData() {
+    this._data = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataInput() {
+    return this._data;
+  }
+
+  // delete_version_after - computed: false, optional: true, required: false
+  private _deleteVersionAfter?: number; 
+  public get deleteVersionAfter() {
+    return this.getNumberAttribute('delete_version_after');
+  }
+  public set deleteVersionAfter(value: number) {
+    this._deleteVersionAfter = value;
+  }
+  public resetDeleteVersionAfter() {
+    this._deleteVersionAfter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteVersionAfterInput() {
+    return this._deleteVersionAfter;
+  }
+
+  // max_versions - computed: false, optional: true, required: false
+  private _maxVersions?: number; 
+  public get maxVersions() {
+    return this.getNumberAttribute('max_versions');
+  }
+  public set maxVersions(value: number) {
+    this._maxVersions = value;
+  }
+  public resetMaxVersions() {
+    this._maxVersions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxVersionsInput() {
+    return this._maxVersions;
+  }
 }
 
 /**
@@ -90,7 +250,7 @@ export class KvSecretV2 extends cdktf.TerraformResource {
       terraformResourceType: 'vault_kv_secret_v2',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.11.0',
+        providerVersion: '3.12.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -110,6 +270,7 @@ export class KvSecretV2 extends cdktf.TerraformResource {
     this._name = config.name;
     this._namespace = config.namespace;
     this._options = config.options;
+    this._customMetadata.internalValue = config.customMetadata;
   }
 
   // ==========
@@ -268,6 +429,22 @@ export class KvSecretV2 extends cdktf.TerraformResource {
     return this.getStringAttribute('path');
   }
 
+  // custom_metadata - computed: false, optional: true, required: false
+  private _customMetadata = new KvSecretV2CustomMetadataOutputReference(this, "custom_metadata");
+  public get customMetadata() {
+    return this._customMetadata;
+  }
+  public putCustomMetadata(value: KvSecretV2CustomMetadata) {
+    this._customMetadata.internalValue = value;
+  }
+  public resetCustomMetadata() {
+    this._customMetadata.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customMetadataInput() {
+    return this._customMetadata.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -283,6 +460,7 @@ export class KvSecretV2 extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       namespace: cdktf.stringToTerraform(this._namespace),
       options: cdktf.hashMapper(cdktf.stringToTerraform)(this._options),
+      custom_metadata: kvSecretV2CustomMetadataToTerraform(this._customMetadata.internalValue),
     };
   }
 }

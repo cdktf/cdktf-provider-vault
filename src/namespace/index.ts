@@ -26,6 +26,12 @@ export interface NamespaceConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/namespace#path Namespace#path}
   */
   readonly path: string;
+  /**
+  * The fully qualified namespace path.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/namespace#path_fq Namespace#path_fq}
+  */
+  readonly pathFq?: string;
 }
 
 /**
@@ -54,7 +60,7 @@ export class Namespace extends cdktf.TerraformResource {
       terraformResourceType: 'vault_namespace',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.11.0',
+        providerVersion: '3.12.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -68,6 +74,7 @@ export class Namespace extends cdktf.TerraformResource {
     this._id = config.id;
     this._namespace = config.namespace;
     this._path = config.path;
+    this._pathFq = config.pathFq;
   }
 
   // ==========
@@ -124,9 +131,20 @@ export class Namespace extends cdktf.TerraformResource {
     return this._path;
   }
 
-  // path_fq - computed: true, optional: false, required: false
+  // path_fq - computed: true, optional: true, required: false
+  private _pathFq?: string; 
   public get pathFq() {
     return this.getStringAttribute('path_fq');
+  }
+  public set pathFq(value: string) {
+    this._pathFq = value;
+  }
+  public resetPathFq() {
+    this._pathFq = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathFqInput() {
+    return this._pathFq;
   }
 
   // =========
@@ -138,6 +156,7 @@ export class Namespace extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       namespace: cdktf.stringToTerraform(this._namespace),
       path: cdktf.stringToTerraform(this._path),
+      path_fq: cdktf.stringToTerraform(this._pathFq),
     };
   }
 }
