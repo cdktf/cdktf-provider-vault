@@ -96,7 +96,7 @@ export class DataVaultTransformDecode extends cdktf.TerraformDataSource {
       terraformResourceType: 'vault_transform_decode',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.11.0',
+        providerVersion: '3.12.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

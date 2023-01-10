@@ -142,6 +142,7 @@ export * as dataVaultKvSecretsList from './data-vault-kv-secrets-list';
 export * as dataVaultKvSecretsListV2 from './data-vault-kv-secrets-list-v2';
 export * as dataVaultNomadAccessToken from './data-vault-nomad-access-token';
 export * as dataVaultPolicyDocument from './data-vault-policy-document';
+export * as dataVaultRaftAutopilotState from './data-vault-raft-autopilot-state';
 export * as dataVaultTransformDecode from './data-vault-transform-decode';
 export * as dataVaultTransformEncode from './data-vault-transform-encode';
 export * as dataVaultTransitDecrypt from './data-vault-transit-decrypt';
