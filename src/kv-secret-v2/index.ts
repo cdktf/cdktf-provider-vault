@@ -250,7 +250,7 @@ export class KvSecretV2 extends cdktf.TerraformResource {
       terraformResourceType: 'vault_kv_secret_v2',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.12.0',
+        providerVersion: '3.13.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
