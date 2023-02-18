@@ -96,7 +96,7 @@ export class TerraformCloudSecretBackend extends cdktf.TerraformResource {
       terraformResourceType: 'vault_terraform_cloud_secret_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.12.0',
+        providerVersion: '3.13.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

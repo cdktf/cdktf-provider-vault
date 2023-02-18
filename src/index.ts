@@ -10,6 +10,7 @@ export * as audit from './audit';
 export * as authBackend from './auth-backend';
 export * as awsAuthBackendCert from './aws-auth-backend-cert';
 export * as awsAuthBackendClient from './aws-auth-backend-client';
+export * as awsAuthBackendConfigIdentity from './aws-auth-backend-config-identity';
 export * as awsAuthBackendIdentityWhitelist from './aws-auth-backend-identity-whitelist';
 export * as awsAuthBackendLogin from './aws-auth-backend-login';
 export * as awsAuthBackendRole from './aws-auth-backend-role';

@@ -76,6 +76,10 @@ export interface SshSecretBackendRoleConfig extends cdktf.TerraformMetaArguments
   */
   readonly defaultUser?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ssh_secret_backend_role#default_user_template SshSecretBackendRole#default_user_template}
+  */
+  readonly defaultUserTemplate?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ssh_secret_backend_role#id SshSecretBackendRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -267,7 +271,7 @@ export class SshSecretBackendRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_ssh_secret_backend_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.12.0',
+        providerVersion: '3.13.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -295,6 +299,7 @@ export class SshSecretBackendRole extends cdktf.TerraformResource {
     this._defaultCriticalOptions = config.defaultCriticalOptions;
     this._defaultExtensions = config.defaultExtensions;
     this._defaultUser = config.defaultUser;
+    this._defaultUserTemplate = config.defaultUserTemplate;
     this._id = config.id;
     this._keyIdFormat = config.keyIdFormat;
     this._keyType = config.keyType;
@@ -578,6 +583,22 @@ export class SshSecretBackendRole extends cdktf.TerraformResource {
     return this._defaultUser;
   }
 
+  // default_user_template - computed: false, optional: true, required: false
+  private _defaultUserTemplate?: boolean | cdktf.IResolvable; 
+  public get defaultUserTemplate() {
+    return this.getBooleanAttribute('default_user_template');
+  }
+  public set defaultUserTemplate(value: boolean | cdktf.IResolvable) {
+    this._defaultUserTemplate = value;
+  }
+  public resetDefaultUserTemplate() {
+    this._defaultUserTemplate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultUserTemplateInput() {
+    return this._defaultUserTemplate;
+  }
+
   // id - computed: true, optional: true, required: false
   private _id?: string; 
   public get id() {
@@ -723,6 +744,7 @@ export class SshSecretBackendRole extends cdktf.TerraformResource {
       default_critical_options: cdktf.hashMapper(cdktf.stringToTerraform)(this._defaultCriticalOptions),
       default_extensions: cdktf.hashMapper(cdktf.stringToTerraform)(this._defaultExtensions),
       default_user: cdktf.stringToTerraform(this._defaultUser),
+      default_user_template: cdktf.booleanToTerraform(this._defaultUserTemplate),
       id: cdktf.stringToTerraform(this._id),
       key_id_format: cdktf.stringToTerraform(this._keyIdFormat),
       key_type: cdktf.stringToTerraform(this._keyType),
