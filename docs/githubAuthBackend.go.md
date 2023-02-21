@@ -1,0 +1,2213 @@
+# `githubAuthBackend` Submodule <a name="`githubAuthBackend` Submodule" id="@cdktf/provider-vault.githubAuthBackend"></a>
+
+## Constructs <a name="Constructs" id="Constructs"></a>
+
+### GithubAuthBackend <a name="GithubAuthBackend" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/vault/r/github_auth_backend vault_github_auth_backend}.
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-vault-go/vault/githubauthbackend"
+
+githubauthbackend.NewGithubAuthBackend(scope Construct, id *string, config GithubAuthBackendConfig) GithubAuthBackend
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig">GithubAuthBackendConfig</a></code> | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.Initializer.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.Initializer.parameter.id"></a>
+
+- *Type:* *string
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.Initializer.parameter.config"></a>
+
+- *Type:* <a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig">GithubAuthBackendConfig</a>
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.putTune">PutTune</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.resetBaseUrl">ResetBaseUrl</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.resetDescription">ResetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.resetDisableRemount">ResetDisableRemount</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.resetNamespace">ResetNamespace</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.resetOrganizationId">ResetOrganizationId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.resetPath">ResetPath</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.resetTokenBoundCidrs">ResetTokenBoundCidrs</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.resetTokenExplicitMaxTtl">ResetTokenExplicitMaxTtl</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.resetTokenMaxTtl">ResetTokenMaxTtl</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.resetTokenNoDefaultPolicy">ResetTokenNoDefaultPolicy</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.resetTokenNumUses">ResetTokenNumUses</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.resetTokenPeriod">ResetTokenPeriod</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.resetTokenPolicies">ResetTokenPolicies</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.resetTokenTtl">ResetTokenTtl</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.resetTokenType">ResetTokenType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.resetTune">ResetTune</a></code> | *No description.* |
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Returns a string representation of this construct.
+
+##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.addOverride"></a>
+
+```go
+func AddOverride(path *string, value interface{})
+```
+
+###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.addOverride.parameter.path"></a>
+
+- *Type:* *string
+
+---
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.addOverride.parameter.value"></a>
+
+- *Type:* interface{}
+
+---
+
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.overrideLogicalId"></a>
+
+```go
+func OverrideLogicalId(newLogicalId *string)
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* *string
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.resetOverrideLogicalId"></a>
+
+```go
+func ResetOverrideLogicalId()
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.toMetadata"></a>
+
+```go
+func ToMetadata() interface{}
+```
+
+##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.toTerraform"></a>
+
+```go
+func ToTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `PutTune` <a name="PutTune" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.putTune"></a>
+
+```go
+func PutTune(value interface{})
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.putTune.parameter.value"></a>
+
+- *Type:* interface{}
+
+---
+
+##### `ResetBaseUrl` <a name="ResetBaseUrl" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.resetBaseUrl"></a>
+
+```go
+func ResetBaseUrl()
+```
+
+##### `ResetDescription` <a name="ResetDescription" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.resetDescription"></a>
+
+```go
+func ResetDescription()
+```
+
+##### `ResetDisableRemount` <a name="ResetDisableRemount" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.resetDisableRemount"></a>
+
+```go
+func ResetDisableRemount()
+```
+
+##### `ResetId` <a name="ResetId" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.resetId"></a>
+
+```go
+func ResetId()
+```
+
+##### `ResetNamespace` <a name="ResetNamespace" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.resetNamespace"></a>
+
+```go
+func ResetNamespace()
+```
+
+##### `ResetOrganizationId` <a name="ResetOrganizationId" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.resetOrganizationId"></a>
+
+```go
+func ResetOrganizationId()
+```
+
+##### `ResetPath` <a name="ResetPath" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.resetPath"></a>
+
+```go
+func ResetPath()
+```
+
+##### `ResetTokenBoundCidrs` <a name="ResetTokenBoundCidrs" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.resetTokenBoundCidrs"></a>
+
+```go
+func ResetTokenBoundCidrs()
+```
+
+##### `ResetTokenExplicitMaxTtl` <a name="ResetTokenExplicitMaxTtl" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.resetTokenExplicitMaxTtl"></a>
+
+```go
+func ResetTokenExplicitMaxTtl()
+```
+
+##### `ResetTokenMaxTtl` <a name="ResetTokenMaxTtl" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.resetTokenMaxTtl"></a>
+
+```go
+func ResetTokenMaxTtl()
+```
+
+##### `ResetTokenNoDefaultPolicy` <a name="ResetTokenNoDefaultPolicy" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.resetTokenNoDefaultPolicy"></a>
+
+```go
+func ResetTokenNoDefaultPolicy()
+```
+
+##### `ResetTokenNumUses` <a name="ResetTokenNumUses" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.resetTokenNumUses"></a>
+
+```go
+func ResetTokenNumUses()
+```
+
+##### `ResetTokenPeriod` <a name="ResetTokenPeriod" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.resetTokenPeriod"></a>
+
+```go
+func ResetTokenPeriod()
+```
+
+##### `ResetTokenPolicies` <a name="ResetTokenPolicies" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.resetTokenPolicies"></a>
+
+```go
+func ResetTokenPolicies()
+```
+
+##### `ResetTokenTtl` <a name="ResetTokenTtl" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.resetTokenTtl"></a>
+
+```go
+func ResetTokenTtl()
+```
+
+##### `ResetTokenType` <a name="ResetTokenType" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.resetTokenType"></a>
+
+```go
+func ResetTokenType()
+```
+
+##### `ResetTune` <a name="ResetTune" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.resetTune"></a>
+
+```go
+func ResetTune()
+```
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+
+---
+
+##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.isConstruct"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-vault-go/vault/githubauthbackend"
+
+githubauthbackend.GithubAuthBackend_IsConstruct(x interface{}) *bool
+```
+
+Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.isConstruct.parameter.x"></a>
+
+- *Type:* interface{}
+
+Any object.
+
+---
+
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.isTerraformElement"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-vault-go/vault/githubauthbackend"
+
+githubauthbackend.GithubAuthBackend_IsTerraformElement(x interface{}) *bool
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.isTerraformElement.parameter.x"></a>
+
+- *Type:* interface{}
+
+---
+
+##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.isTerraformResource"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-vault-go/vault/githubauthbackend"
+
+githubauthbackend.GithubAuthBackend_IsTerraformResource(x interface{}) *bool
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.isTerraformResource.parameter.x"></a>
+
+- *Type:* interface{}
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.accessor">Accessor</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tune">Tune</a></code> | <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneList">GithubAuthBackendTuneList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.baseUrlInput">BaseUrlInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.disableRemountInput">DisableRemountInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.namespaceInput">NamespaceInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.organizationIdInput">OrganizationIdInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.organizationInput">OrganizationInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.pathInput">PathInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tokenBoundCidrsInput">TokenBoundCidrsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tokenExplicitMaxTtlInput">TokenExplicitMaxTtlInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tokenMaxTtlInput">TokenMaxTtlInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tokenNoDefaultPolicyInput">TokenNoDefaultPolicyInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tokenNumUsesInput">TokenNumUsesInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tokenPeriodInput">TokenPeriodInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tokenPoliciesInput">TokenPoliciesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tokenTtlInput">TokenTtlInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tokenTypeInput">TokenTypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tuneInput">TuneInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.baseUrl">BaseUrl</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.description">Description</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.disableRemount">DisableRemount</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.namespace">Namespace</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.organization">Organization</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.organizationId">OrganizationId</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.path">Path</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tokenBoundCidrs">TokenBoundCidrs</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tokenExplicitMaxTtl">TokenExplicitMaxTtl</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tokenMaxTtl">TokenMaxTtl</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tokenNoDefaultPolicy">TokenNoDefaultPolicy</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tokenNumUses">TokenNumUses</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tokenPeriod">TokenPeriod</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tokenPolicies">TokenPolicies</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tokenTtl">TokenTtl</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tokenType">TokenType</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.node"></a>
+
+```go
+func Node() Node
+```
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Node
+
+The tree node.
+
+---
+
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.cdktfStack"></a>
+
+```go
+func CdktfStack() TerraformStack
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.friendlyUniqueId"></a>
+
+```go
+func FriendlyUniqueId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.terraformMetaArguments"></a>
+
+```go
+func TerraformMetaArguments() *map[string]interface{}
+```
+
+- *Type:* *map[string]interface{}
+
+---
+
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.terraformResourceType"></a>
+
+```go
+func TerraformResourceType() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.terraformGeneratorMetadata"></a>
+
+```go
+func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata
+
+---
+
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.connection"></a>
+
+```go
+func Connection() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.count"></a>
+
+```go
+func Count() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.dependsOn"></a>
+
+```go
+func DependsOn() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.forEach"></a>
+
+```go
+func ForEach() ITerraformIterator
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+
+---
+
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.lifecycle"></a>
+
+```go
+func Lifecycle() TerraformResourceLifecycle
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+
+---
+
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.provider"></a>
+
+```go
+func Provider() TerraformProvider
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.provisioners"></a>
+
+```go
+func Provisioners() *[]interface{}
+```
+
+- *Type:* *[]interface{}
+
+---
+
+##### `Accessor`<sup>Required</sup> <a name="Accessor" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.accessor"></a>
+
+```go
+func Accessor() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Tune`<sup>Required</sup> <a name="Tune" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tune"></a>
+
+```go
+func Tune() GithubAuthBackendTuneList
+```
+
+- *Type:* <a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneList">GithubAuthBackendTuneList</a>
+
+---
+
+##### `BaseUrlInput`<sup>Optional</sup> <a name="BaseUrlInput" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.baseUrlInput"></a>
+
+```go
+func BaseUrlInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.descriptionInput"></a>
+
+```go
+func DescriptionInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DisableRemountInput`<sup>Optional</sup> <a name="DisableRemountInput" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.disableRemountInput"></a>
+
+```go
+func DisableRemountInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.idInput"></a>
+
+```go
+func IdInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `NamespaceInput`<sup>Optional</sup> <a name="NamespaceInput" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.namespaceInput"></a>
+
+```go
+func NamespaceInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `OrganizationIdInput`<sup>Optional</sup> <a name="OrganizationIdInput" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.organizationIdInput"></a>
+
+```go
+func OrganizationIdInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `OrganizationInput`<sup>Optional</sup> <a name="OrganizationInput" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.organizationInput"></a>
+
+```go
+func OrganizationInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `PathInput`<sup>Optional</sup> <a name="PathInput" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.pathInput"></a>
+
+```go
+func PathInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `TokenBoundCidrsInput`<sup>Optional</sup> <a name="TokenBoundCidrsInput" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tokenBoundCidrsInput"></a>
+
+```go
+func TokenBoundCidrsInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `TokenExplicitMaxTtlInput`<sup>Optional</sup> <a name="TokenExplicitMaxTtlInput" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tokenExplicitMaxTtlInput"></a>
+
+```go
+func TokenExplicitMaxTtlInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `TokenMaxTtlInput`<sup>Optional</sup> <a name="TokenMaxTtlInput" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tokenMaxTtlInput"></a>
+
+```go
+func TokenMaxTtlInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `TokenNoDefaultPolicyInput`<sup>Optional</sup> <a name="TokenNoDefaultPolicyInput" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tokenNoDefaultPolicyInput"></a>
+
+```go
+func TokenNoDefaultPolicyInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `TokenNumUsesInput`<sup>Optional</sup> <a name="TokenNumUsesInput" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tokenNumUsesInput"></a>
+
+```go
+func TokenNumUsesInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `TokenPeriodInput`<sup>Optional</sup> <a name="TokenPeriodInput" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tokenPeriodInput"></a>
+
+```go
+func TokenPeriodInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `TokenPoliciesInput`<sup>Optional</sup> <a name="TokenPoliciesInput" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tokenPoliciesInput"></a>
+
+```go
+func TokenPoliciesInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `TokenTtlInput`<sup>Optional</sup> <a name="TokenTtlInput" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tokenTtlInput"></a>
+
+```go
+func TokenTtlInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `TokenTypeInput`<sup>Optional</sup> <a name="TokenTypeInput" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tokenTypeInput"></a>
+
+```go
+func TokenTypeInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `TuneInput`<sup>Optional</sup> <a name="TuneInput" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tuneInput"></a>
+
+```go
+func TuneInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `BaseUrl`<sup>Required</sup> <a name="BaseUrl" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.baseUrl"></a>
+
+```go
+func BaseUrl() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Description`<sup>Required</sup> <a name="Description" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.description"></a>
+
+```go
+func Description() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DisableRemount`<sup>Required</sup> <a name="DisableRemount" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.disableRemount"></a>
+
+```go
+func DisableRemount() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Namespace`<sup>Required</sup> <a name="Namespace" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.namespace"></a>
+
+```go
+func Namespace() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Organization`<sup>Required</sup> <a name="Organization" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.organization"></a>
+
+```go
+func Organization() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `OrganizationId`<sup>Required</sup> <a name="OrganizationId" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.organizationId"></a>
+
+```go
+func OrganizationId() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `Path`<sup>Required</sup> <a name="Path" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.path"></a>
+
+```go
+func Path() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `TokenBoundCidrs`<sup>Required</sup> <a name="TokenBoundCidrs" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tokenBoundCidrs"></a>
+
+```go
+func TokenBoundCidrs() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `TokenExplicitMaxTtl`<sup>Required</sup> <a name="TokenExplicitMaxTtl" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tokenExplicitMaxTtl"></a>
+
+```go
+func TokenExplicitMaxTtl() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `TokenMaxTtl`<sup>Required</sup> <a name="TokenMaxTtl" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tokenMaxTtl"></a>
+
+```go
+func TokenMaxTtl() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `TokenNoDefaultPolicy`<sup>Required</sup> <a name="TokenNoDefaultPolicy" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tokenNoDefaultPolicy"></a>
+
+```go
+func TokenNoDefaultPolicy() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `TokenNumUses`<sup>Required</sup> <a name="TokenNumUses" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tokenNumUses"></a>
+
+```go
+func TokenNumUses() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `TokenPeriod`<sup>Required</sup> <a name="TokenPeriod" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tokenPeriod"></a>
+
+```go
+func TokenPeriod() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `TokenPolicies`<sup>Required</sup> <a name="TokenPolicies" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tokenPolicies"></a>
+
+```go
+func TokenPolicies() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `TokenTtl`<sup>Required</sup> <a name="TokenTtl" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tokenTtl"></a>
+
+```go
+func TokenTtl() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `TokenType`<sup>Required</sup> <a name="TokenType" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tokenType"></a>
+
+```go
+func TokenType() *string
+```
+
+- *Type:* *string
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend.property.tfResourceType"></a>
+
+```go
+func TfResourceType() *string
+```
+
+- *Type:* *string
+
+---
+
+## Structs <a name="Structs" id="Structs"></a>
+
+### GithubAuthBackendConfig <a name="GithubAuthBackendConfig" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-vault-go/vault/githubauthbackend"
+
+&githubauthbackend.GithubAuthBackendConfig {
+	Connection: interface{},
+	Count: *f64,
+	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
+	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
+	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
+	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
+	Provisioners: *[]interface{},
+	Organization: *string,
+	BaseUrl: *string,
+	Description: *string,
+	DisableRemount: interface{},
+	Id: *string,
+	Namespace: *string,
+	OrganizationId: *f64,
+	Path: *string,
+	TokenBoundCidrs: *[]*string,
+	TokenExplicitMaxTtl: *f64,
+	TokenMaxTtl: *f64,
+	TokenNoDefaultPolicy: interface{},
+	TokenNumUses: *f64,
+	TokenPeriod: *f64,
+	TokenPolicies: *[]*string,
+	TokenTtl: *f64,
+	TokenType: *string,
+	Tune: interface{},
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.organization">Organization</a></code> | <code>*string</code> | The organization users must be part of. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.baseUrl">BaseUrl</a></code> | <code>*string</code> | The API endpoint to use. Useful if you are running GitHub Enterprise or an API-compatible authentication server. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.description">Description</a></code> | <code>*string</code> | Specifies the description of the mount. This overrides the current stored value, if any. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.disableRemount">DisableRemount</a></code> | <code>interface{}</code> | If set, opts out of mount migration on path updates. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_auth_backend#id GithubAuthBackend#id}. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.organizationId">OrganizationId</a></code> | <code>*f64</code> | The ID of the organization users must be part of. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.path">Path</a></code> | <code>*string</code> | Path where the auth backend is mounted. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.tokenBoundCidrs">TokenBoundCidrs</a></code> | <code>*[]*string</code> | Specifies the blocks of IP addresses which are allowed to use the generated token. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.tokenExplicitMaxTtl">TokenExplicitMaxTtl</a></code> | <code>*f64</code> | Generated Token's Explicit Maximum TTL in seconds. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.tokenMaxTtl">TokenMaxTtl</a></code> | <code>*f64</code> | The maximum lifetime of the generated token. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.tokenNoDefaultPolicy">TokenNoDefaultPolicy</a></code> | <code>interface{}</code> | If true, the 'default' policy will not automatically be added to generated tokens. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.tokenNumUses">TokenNumUses</a></code> | <code>*f64</code> | The maximum number of times a token may be used, a value of zero means unlimited. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.tokenPeriod">TokenPeriod</a></code> | <code>*f64</code> | Generated Token's Period. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.tokenPolicies">TokenPolicies</a></code> | <code>*[]*string</code> | Generated Token's Policies. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.tokenTtl">TokenTtl</a></code> | <code>*f64</code> | The initial ttl of the token to generate in seconds. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.tokenType">TokenType</a></code> | <code>*string</code> | The type of token to generate, service or batch. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.tune">Tune</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_auth_backend#tune GithubAuthBackend#tune}. |
+
+---
+
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.connection"></a>
+
+```go
+Connection interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.count"></a>
+
+```go
+Count *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.dependsOn"></a>
+
+```go
+DependsOn *[]ITerraformDependable
+```
+
+- *Type:* *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable
+
+---
+
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.forEach"></a>
+
+```go
+ForEach ITerraformIterator
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+
+---
+
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.lifecycle"></a>
+
+```go
+Lifecycle TerraformResourceLifecycle
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+
+---
+
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.provider"></a>
+
+```go
+Provider TerraformProvider
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.provisioners"></a>
+
+```go
+Provisioners *[]interface{}
+```
+
+- *Type:* *[]interface{}
+
+---
+
+##### `Organization`<sup>Required</sup> <a name="Organization" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.organization"></a>
+
+```go
+Organization *string
+```
+
+- *Type:* *string
+
+The organization users must be part of.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_auth_backend#organization GithubAuthBackend#organization}
+
+---
+
+##### `BaseUrl`<sup>Optional</sup> <a name="BaseUrl" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.baseUrl"></a>
+
+```go
+BaseUrl *string
+```
+
+- *Type:* *string
+
+The API endpoint to use. Useful if you are running GitHub Enterprise or an API-compatible authentication server.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_auth_backend#base_url GithubAuthBackend#base_url}
+
+---
+
+##### `Description`<sup>Optional</sup> <a name="Description" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.description"></a>
+
+```go
+Description *string
+```
+
+- *Type:* *string
+
+Specifies the description of the mount. This overrides the current stored value, if any.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_auth_backend#description GithubAuthBackend#description}
+
+---
+
+##### `DisableRemount`<sup>Optional</sup> <a name="DisableRemount" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.disableRemount"></a>
+
+```go
+DisableRemount interface{}
+```
+
+- *Type:* interface{}
+
+If set, opts out of mount migration on path updates.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_auth_backend#disable_remount GithubAuthBackend#disable_remount}
+
+---
+
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.id"></a>
+
+```go
+Id *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_auth_backend#id GithubAuthBackend#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Namespace`<sup>Optional</sup> <a name="Namespace" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.namespace"></a>
+
+```go
+Namespace *string
+```
+
+- *Type:* *string
+
+Target namespace. (requires Enterprise).
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_auth_backend#namespace GithubAuthBackend#namespace}
+
+---
+
+##### `OrganizationId`<sup>Optional</sup> <a name="OrganizationId" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.organizationId"></a>
+
+```go
+OrganizationId *f64
+```
+
+- *Type:* *f64
+
+The ID of the organization users must be part of.
+
+Vault will attempt to fetch and set this value if it is not provided (vault-1.10+)
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_auth_backend#organization_id GithubAuthBackend#organization_id}
+
+---
+
+##### `Path`<sup>Optional</sup> <a name="Path" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.path"></a>
+
+```go
+Path *string
+```
+
+- *Type:* *string
+
+Path where the auth backend is mounted.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_auth_backend#path GithubAuthBackend#path}
+
+---
+
+##### `TokenBoundCidrs`<sup>Optional</sup> <a name="TokenBoundCidrs" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.tokenBoundCidrs"></a>
+
+```go
+TokenBoundCidrs *[]*string
+```
+
+- *Type:* *[]*string
+
+Specifies the blocks of IP addresses which are allowed to use the generated token.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_auth_backend#token_bound_cidrs GithubAuthBackend#token_bound_cidrs}
+
+---
+
+##### `TokenExplicitMaxTtl`<sup>Optional</sup> <a name="TokenExplicitMaxTtl" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.tokenExplicitMaxTtl"></a>
+
+```go
+TokenExplicitMaxTtl *f64
+```
+
+- *Type:* *f64
+
+Generated Token's Explicit Maximum TTL in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_auth_backend#token_explicit_max_ttl GithubAuthBackend#token_explicit_max_ttl}
+
+---
+
+##### `TokenMaxTtl`<sup>Optional</sup> <a name="TokenMaxTtl" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.tokenMaxTtl"></a>
+
+```go
+TokenMaxTtl *f64
+```
+
+- *Type:* *f64
+
+The maximum lifetime of the generated token.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_auth_backend#token_max_ttl GithubAuthBackend#token_max_ttl}
+
+---
+
+##### `TokenNoDefaultPolicy`<sup>Optional</sup> <a name="TokenNoDefaultPolicy" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.tokenNoDefaultPolicy"></a>
+
+```go
+TokenNoDefaultPolicy interface{}
+```
+
+- *Type:* interface{}
+
+If true, the 'default' policy will not automatically be added to generated tokens.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_auth_backend#token_no_default_policy GithubAuthBackend#token_no_default_policy}
+
+---
+
+##### `TokenNumUses`<sup>Optional</sup> <a name="TokenNumUses" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.tokenNumUses"></a>
+
+```go
+TokenNumUses *f64
+```
+
+- *Type:* *f64
+
+The maximum number of times a token may be used, a value of zero means unlimited.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_auth_backend#token_num_uses GithubAuthBackend#token_num_uses}
+
+---
+
+##### `TokenPeriod`<sup>Optional</sup> <a name="TokenPeriod" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.tokenPeriod"></a>
+
+```go
+TokenPeriod *f64
+```
+
+- *Type:* *f64
+
+Generated Token's Period.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_auth_backend#token_period GithubAuthBackend#token_period}
+
+---
+
+##### `TokenPolicies`<sup>Optional</sup> <a name="TokenPolicies" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.tokenPolicies"></a>
+
+```go
+TokenPolicies *[]*string
+```
+
+- *Type:* *[]*string
+
+Generated Token's Policies.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_auth_backend#token_policies GithubAuthBackend#token_policies}
+
+---
+
+##### `TokenTtl`<sup>Optional</sup> <a name="TokenTtl" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.tokenTtl"></a>
+
+```go
+TokenTtl *f64
+```
+
+- *Type:* *f64
+
+The initial ttl of the token to generate in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_auth_backend#token_ttl GithubAuthBackend#token_ttl}
+
+---
+
+##### `TokenType`<sup>Optional</sup> <a name="TokenType" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.tokenType"></a>
+
+```go
+TokenType *string
+```
+
+- *Type:* *string
+
+The type of token to generate, service or batch.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_auth_backend#token_type GithubAuthBackend#token_type}
+
+---
+
+##### `Tune`<sup>Optional</sup> <a name="Tune" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendConfig.property.tune"></a>
+
+```go
+Tune interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_auth_backend#tune GithubAuthBackend#tune}.
+
+---
+
+### GithubAuthBackendTune <a name="GithubAuthBackendTune" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTune"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTune.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-vault-go/vault/githubauthbackend"
+
+&githubauthbackend.GithubAuthBackendTune {
+	AllowedResponseHeaders: *[]*string,
+	AuditNonHmacRequestKeys: *[]*string,
+	AuditNonHmacResponseKeys: *[]*string,
+	DefaultLeaseTtl: *string,
+	ListingVisibility: *string,
+	MaxLeaseTtl: *string,
+	PassthroughRequestHeaders: *[]*string,
+	TokenType: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTune.property.allowedResponseHeaders">AllowedResponseHeaders</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_auth_backend#allowed_response_headers GithubAuthBackend#allowed_response_headers}. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTune.property.auditNonHmacRequestKeys">AuditNonHmacRequestKeys</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_auth_backend#audit_non_hmac_request_keys GithubAuthBackend#audit_non_hmac_request_keys}. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTune.property.auditNonHmacResponseKeys">AuditNonHmacResponseKeys</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_auth_backend#audit_non_hmac_response_keys GithubAuthBackend#audit_non_hmac_response_keys}. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTune.property.defaultLeaseTtl">DefaultLeaseTtl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_auth_backend#default_lease_ttl GithubAuthBackend#default_lease_ttl}. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTune.property.listingVisibility">ListingVisibility</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_auth_backend#listing_visibility GithubAuthBackend#listing_visibility}. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTune.property.maxLeaseTtl">MaxLeaseTtl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_auth_backend#max_lease_ttl GithubAuthBackend#max_lease_ttl}. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTune.property.passthroughRequestHeaders">PassthroughRequestHeaders</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_auth_backend#passthrough_request_headers GithubAuthBackend#passthrough_request_headers}. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTune.property.tokenType">TokenType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_auth_backend#token_type GithubAuthBackend#token_type}. |
+
+---
+
+##### `AllowedResponseHeaders`<sup>Optional</sup> <a name="AllowedResponseHeaders" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTune.property.allowedResponseHeaders"></a>
+
+```go
+AllowedResponseHeaders *[]*string
+```
+
+- *Type:* *[]*string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_auth_backend#allowed_response_headers GithubAuthBackend#allowed_response_headers}.
+
+---
+
+##### `AuditNonHmacRequestKeys`<sup>Optional</sup> <a name="AuditNonHmacRequestKeys" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTune.property.auditNonHmacRequestKeys"></a>
+
+```go
+AuditNonHmacRequestKeys *[]*string
+```
+
+- *Type:* *[]*string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_auth_backend#audit_non_hmac_request_keys GithubAuthBackend#audit_non_hmac_request_keys}.
+
+---
+
+##### `AuditNonHmacResponseKeys`<sup>Optional</sup> <a name="AuditNonHmacResponseKeys" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTune.property.auditNonHmacResponseKeys"></a>
+
+```go
+AuditNonHmacResponseKeys *[]*string
+```
+
+- *Type:* *[]*string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_auth_backend#audit_non_hmac_response_keys GithubAuthBackend#audit_non_hmac_response_keys}.
+
+---
+
+##### `DefaultLeaseTtl`<sup>Optional</sup> <a name="DefaultLeaseTtl" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTune.property.defaultLeaseTtl"></a>
+
+```go
+DefaultLeaseTtl *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_auth_backend#default_lease_ttl GithubAuthBackend#default_lease_ttl}.
+
+---
+
+##### `ListingVisibility`<sup>Optional</sup> <a name="ListingVisibility" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTune.property.listingVisibility"></a>
+
+```go
+ListingVisibility *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_auth_backend#listing_visibility GithubAuthBackend#listing_visibility}.
+
+---
+
+##### `MaxLeaseTtl`<sup>Optional</sup> <a name="MaxLeaseTtl" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTune.property.maxLeaseTtl"></a>
+
+```go
+MaxLeaseTtl *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_auth_backend#max_lease_ttl GithubAuthBackend#max_lease_ttl}.
+
+---
+
+##### `PassthroughRequestHeaders`<sup>Optional</sup> <a name="PassthroughRequestHeaders" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTune.property.passthroughRequestHeaders"></a>
+
+```go
+PassthroughRequestHeaders *[]*string
+```
+
+- *Type:* *[]*string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_auth_backend#passthrough_request_headers GithubAuthBackend#passthrough_request_headers}.
+
+---
+
+##### `TokenType`<sup>Optional</sup> <a name="TokenType" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTune.property.tokenType"></a>
+
+```go
+TokenType *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_auth_backend#token_type GithubAuthBackend#token_type}.
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### GithubAuthBackendTuneList <a name="GithubAuthBackendTuneList" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneList.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-vault-go/vault/githubauthbackend"
+
+githubauthbackend.NewGithubAuthBackendTuneList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GithubAuthBackendTuneList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneList.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneList.get"></a>
+
+```go
+func Get(index *f64) GithubAuthBackendTuneOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneList.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### GithubAuthBackendTuneOutputReference <a name="GithubAuthBackendTuneOutputReference" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-vault-go/vault/githubauthbackend"
+
+githubauthbackend.NewGithubAuthBackendTuneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GithubAuthBackendTuneOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.resetAllowedResponseHeaders">ResetAllowedResponseHeaders</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.resetAuditNonHmacRequestKeys">ResetAuditNonHmacRequestKeys</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.resetAuditNonHmacResponseKeys">ResetAuditNonHmacResponseKeys</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.resetDefaultLeaseTtl">ResetDefaultLeaseTtl</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.resetListingVisibility">ResetListingVisibility</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.resetMaxLeaseTtl">ResetMaxLeaseTtl</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.resetPassthroughRequestHeaders">ResetPassthroughRequestHeaders</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.resetTokenType">ResetTokenType</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetAllowedResponseHeaders` <a name="ResetAllowedResponseHeaders" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.resetAllowedResponseHeaders"></a>
+
+```go
+func ResetAllowedResponseHeaders()
+```
+
+##### `ResetAuditNonHmacRequestKeys` <a name="ResetAuditNonHmacRequestKeys" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.resetAuditNonHmacRequestKeys"></a>
+
+```go
+func ResetAuditNonHmacRequestKeys()
+```
+
+##### `ResetAuditNonHmacResponseKeys` <a name="ResetAuditNonHmacResponseKeys" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.resetAuditNonHmacResponseKeys"></a>
+
+```go
+func ResetAuditNonHmacResponseKeys()
+```
+
+##### `ResetDefaultLeaseTtl` <a name="ResetDefaultLeaseTtl" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.resetDefaultLeaseTtl"></a>
+
+```go
+func ResetDefaultLeaseTtl()
+```
+
+##### `ResetListingVisibility` <a name="ResetListingVisibility" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.resetListingVisibility"></a>
+
+```go
+func ResetListingVisibility()
+```
+
+##### `ResetMaxLeaseTtl` <a name="ResetMaxLeaseTtl" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.resetMaxLeaseTtl"></a>
+
+```go
+func ResetMaxLeaseTtl()
+```
+
+##### `ResetPassthroughRequestHeaders` <a name="ResetPassthroughRequestHeaders" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.resetPassthroughRequestHeaders"></a>
+
+```go
+func ResetPassthroughRequestHeaders()
+```
+
+##### `ResetTokenType` <a name="ResetTokenType" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.resetTokenType"></a>
+
+```go
+func ResetTokenType()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.property.allowedResponseHeadersInput">AllowedResponseHeadersInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.property.auditNonHmacRequestKeysInput">AuditNonHmacRequestKeysInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.property.auditNonHmacResponseKeysInput">AuditNonHmacResponseKeysInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.property.defaultLeaseTtlInput">DefaultLeaseTtlInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.property.listingVisibilityInput">ListingVisibilityInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.property.maxLeaseTtlInput">MaxLeaseTtlInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.property.passthroughRequestHeadersInput">PassthroughRequestHeadersInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.property.tokenTypeInput">TokenTypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.property.allowedResponseHeaders">AllowedResponseHeaders</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.property.auditNonHmacRequestKeys">AuditNonHmacRequestKeys</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.property.auditNonHmacResponseKeys">AuditNonHmacResponseKeys</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.property.defaultLeaseTtl">DefaultLeaseTtl</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.property.listingVisibility">ListingVisibility</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.property.maxLeaseTtl">MaxLeaseTtl</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.property.passthroughRequestHeaders">PassthroughRequestHeaders</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.property.tokenType">TokenType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AllowedResponseHeadersInput`<sup>Optional</sup> <a name="AllowedResponseHeadersInput" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.property.allowedResponseHeadersInput"></a>
+
+```go
+func AllowedResponseHeadersInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `AuditNonHmacRequestKeysInput`<sup>Optional</sup> <a name="AuditNonHmacRequestKeysInput" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.property.auditNonHmacRequestKeysInput"></a>
+
+```go
+func AuditNonHmacRequestKeysInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `AuditNonHmacResponseKeysInput`<sup>Optional</sup> <a name="AuditNonHmacResponseKeysInput" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.property.auditNonHmacResponseKeysInput"></a>
+
+```go
+func AuditNonHmacResponseKeysInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `DefaultLeaseTtlInput`<sup>Optional</sup> <a name="DefaultLeaseTtlInput" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.property.defaultLeaseTtlInput"></a>
+
+```go
+func DefaultLeaseTtlInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ListingVisibilityInput`<sup>Optional</sup> <a name="ListingVisibilityInput" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.property.listingVisibilityInput"></a>
+
+```go
+func ListingVisibilityInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `MaxLeaseTtlInput`<sup>Optional</sup> <a name="MaxLeaseTtlInput" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.property.maxLeaseTtlInput"></a>
+
+```go
+func MaxLeaseTtlInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `PassthroughRequestHeadersInput`<sup>Optional</sup> <a name="PassthroughRequestHeadersInput" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.property.passthroughRequestHeadersInput"></a>
+
+```go
+func PassthroughRequestHeadersInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `TokenTypeInput`<sup>Optional</sup> <a name="TokenTypeInput" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.property.tokenTypeInput"></a>
+
+```go
+func TokenTypeInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AllowedResponseHeaders`<sup>Required</sup> <a name="AllowedResponseHeaders" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.property.allowedResponseHeaders"></a>
+
+```go
+func AllowedResponseHeaders() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `AuditNonHmacRequestKeys`<sup>Required</sup> <a name="AuditNonHmacRequestKeys" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.property.auditNonHmacRequestKeys"></a>
+
+```go
+func AuditNonHmacRequestKeys() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `AuditNonHmacResponseKeys`<sup>Required</sup> <a name="AuditNonHmacResponseKeys" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.property.auditNonHmacResponseKeys"></a>
+
+```go
+func AuditNonHmacResponseKeys() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `DefaultLeaseTtl`<sup>Required</sup> <a name="DefaultLeaseTtl" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.property.defaultLeaseTtl"></a>
+
+```go
+func DefaultLeaseTtl() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ListingVisibility`<sup>Required</sup> <a name="ListingVisibility" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.property.listingVisibility"></a>
+
+```go
+func ListingVisibility() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `MaxLeaseTtl`<sup>Required</sup> <a name="MaxLeaseTtl" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.property.maxLeaseTtl"></a>
+
+```go
+func MaxLeaseTtl() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `PassthroughRequestHeaders`<sup>Required</sup> <a name="PassthroughRequestHeaders" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.property.passthroughRequestHeaders"></a>
+
+```go
+func PassthroughRequestHeaders() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `TokenType`<sup>Required</sup> <a name="TokenType" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.property.tokenType"></a>
+
+```go
+func TokenType() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.githubAuthBackend.GithubAuthBackendTuneOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+
