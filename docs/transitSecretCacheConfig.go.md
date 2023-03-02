@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/vault/r/transit_secr
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.transitSecretCacheConfig.TransitSecretCacheConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/transitsecretcacheconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/transitsecretcacheconfig"
 
 transitsecretcacheconfig.NewTransitSecretCacheConfig(scope Construct, id *string, config TransitSecretCacheConfigConfig) TransitSecretCacheConfig
 ```
@@ -280,7 +280,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.transitSecretCacheConfig.TransitSecretCacheConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/transitsecretcacheconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/transitsecretcacheconfig"
 
 transitsecretcacheconfig.TransitSecretCacheConfig_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.transitSecretCacheConfig.TransitSecretCacheConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/transitsecretcacheconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/transitsecretcacheconfig"
 
 transitsecretcacheconfig.TransitSecretCacheConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ transitsecretcacheconfig.TransitSecretCacheConfig_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.transitSecretCacheConfig.TransitSecretCacheConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/transitsecretcacheconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/transitsecretcacheconfig"
 
 transitsecretcacheconfig.TransitSecretCacheConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -613,7 +613,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.transitSecretCacheConfig.TransitSecretCacheConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/transitsecretcacheconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/transitsecretcacheconfig"
 
 &transitsecretcacheconfig.TransitSecretCacheConfigConfig {
 	Connection: interface{},
