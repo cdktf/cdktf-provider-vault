@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/vault/r/gcp_auth_bac
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/gcpauthbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/gcpauthbackend"
 
 gcpauthbackend.NewGcpAuthBackend(scope Construct, id *string, config GcpAuthBackendConfig) GcpAuthBackend
 ```
@@ -363,7 +363,7 @@ func ResetProjectId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/gcpauthbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/gcpauthbackend"
 
 gcpauthbackend.GcpAuthBackend_IsConstruct(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/gcpauthbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/gcpauthbackend"
 
 gcpauthbackend.GcpAuthBackend_IsTerraformElement(x interface{}) *bool
 ```
@@ -409,7 +409,7 @@ gcpauthbackend.GcpAuthBackend_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/gcpauthbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/gcpauthbackend"
 
 gcpauthbackend.GcpAuthBackend_IsTerraformResource(x interface{}) *bool
 ```
@@ -872,7 +872,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/gcpauthbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/gcpauthbackend"
 
 &gcpauthbackend.GcpAuthBackendConfig {
 	Connection: interface{},
@@ -885,7 +885,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/gcpauthbackend"
 	ClientEmail: *string,
 	ClientId: *string,
 	Credentials: *string,
-	CustomEndpoint: github.com/cdktf/cdktf-provider-vault-go/vault.gcpAuthBackend.GcpAuthBackendCustomEndpoint,
+	CustomEndpoint: github.com/cdktf/cdktf-provider-vault-go/vault/v5.gcpAuthBackend.GcpAuthBackendCustomEndpoint,
 	Description: *string,
 	DisableRemount: interface{},
 	Id: *string,
@@ -1153,7 +1153,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendCustomEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/gcpauthbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/gcpauthbackend"
 
 &gcpauthbackend.GcpAuthBackendCustomEndpoint {
 	Api: *string,
@@ -1237,7 +1237,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendCustomEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/gcpauthbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/gcpauthbackend"
 
 gcpauthbackend.NewGcpAuthBackendCustomEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GcpAuthBackendCustomEndpointOutputReference
 ```
