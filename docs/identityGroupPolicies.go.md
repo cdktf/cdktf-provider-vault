@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/vault/r/identity_gro
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.identityGroupPolicies.IdentityGroupPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/identitygrouppolicies"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identitygrouppolicies"
 
 identitygrouppolicies.NewIdentityGroupPolicies(scope Construct, id *string, config IdentityGroupPoliciesConfig) IdentityGroupPolicies
 ```
@@ -287,7 +287,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.identityGroupPolicies.IdentityGroupPolicies.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/identitygrouppolicies"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identitygrouppolicies"
 
 identitygrouppolicies.IdentityGroupPolicies_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.identityGroupPolicies.IdentityGroupPolicies.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/identitygrouppolicies"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identitygrouppolicies"
 
 identitygrouppolicies.IdentityGroupPolicies_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ identitygrouppolicies.IdentityGroupPolicies_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.identityGroupPolicies.IdentityGroupPolicies.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/identitygrouppolicies"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identitygrouppolicies"
 
 identitygrouppolicies.IdentityGroupPolicies_IsTerraformResource(x interface{}) *bool
 ```
@@ -653,7 +653,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.identityGroupPolicies.IdentityGroupPoliciesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/identitygrouppolicies"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identitygrouppolicies"
 
 &identitygrouppolicies.IdentityGroupPoliciesConfig {
 	Connection: interface{},
