@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/vault/r/consul_secre
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/consulsecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/consulsecretbackend"
 
 consulsecretbackend.NewConsulSecretBackend(scope Construct, id *string, config ConsulSecretBackendConfig) ConsulSecretBackend
 ```
@@ -364,7 +364,7 @@ func ResetToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/consulsecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/consulsecretbackend"
 
 consulsecretbackend.ConsulSecretBackend_IsConstruct(x interface{}) *bool
 ```
@@ -396,7 +396,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/consulsecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/consulsecretbackend"
 
 consulsecretbackend.ConsulSecretBackend_IsTerraformElement(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ consulsecretbackend.ConsulSecretBackend_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/consulsecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/consulsecretbackend"
 
 consulsecretbackend.ConsulSecretBackend_IsTerraformResource(x interface{}) *bool
 ```
@@ -939,7 +939,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/consulsecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/consulsecretbackend"
 
 &consulsecretbackend.ConsulSecretBackendConfig {
 	Connection: interface{},
