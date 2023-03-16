@@ -206,7 +206,7 @@ export class GcpSecretStaticAccount extends cdktf.TerraformResource {
       terraformResourceType: 'vault_gcp_secret_static_account',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.13.0',
+        providerVersion: '3.14.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

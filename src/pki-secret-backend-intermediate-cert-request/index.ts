@@ -181,7 +181,7 @@ export class PkiSecretBackendIntermediateCertRequest extends cdktf.TerraformReso
       terraformResourceType: 'vault_pki_secret_backend_intermediate_cert_request',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.13.0',
+        providerVersion: '3.14.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

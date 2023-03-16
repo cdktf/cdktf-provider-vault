@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/vault/r/password_pol
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.passwordPolicy.PasswordPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/passwordpolicy"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/passwordpolicy"
 
 passwordpolicy.NewPasswordPolicy(scope Construct, id *string, config PasswordPolicyConfig) PasswordPolicy
 ```
@@ -280,7 +280,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.passwordPolicy.PasswordPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/passwordpolicy"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/passwordpolicy"
 
 passwordpolicy.PasswordPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.passwordPolicy.PasswordPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/passwordpolicy"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/passwordpolicy"
 
 passwordpolicy.PasswordPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ passwordpolicy.PasswordPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.passwordPolicy.PasswordPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/passwordpolicy"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/passwordpolicy"
 
 passwordpolicy.PasswordPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -613,7 +613,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.passwordPolicy.PasswordPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/passwordpolicy"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/passwordpolicy"
 
 &passwordpolicy.PasswordPolicyConfig {
 	Connection: interface{},
