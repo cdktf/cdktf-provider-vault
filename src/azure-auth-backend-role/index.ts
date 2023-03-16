@@ -150,7 +150,7 @@ export class AzureAuthBackendRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_azure_auth_backend_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.13.0',
+        providerVersion: '3.14.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

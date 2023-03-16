@@ -54,7 +54,7 @@ export class DataVaultIdentityOidcClientCreds extends cdktf.TerraformDataSource 
       terraformResourceType: 'vault_identity_oidc_client_creds',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.13.0',
+        providerVersion: '3.14.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

@@ -24,6 +24,7 @@ pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig(
   backend: str,
   auto_rebuild: typing.Union[bool, IResolvable] = None,
   auto_rebuild_grace_period: str = None,
+  cross_cluster_revocation: typing.Union[bool, IResolvable] = None,
   delta_rebuild_interval: str = None,
   disable: typing.Union[bool, IResolvable] = None,
   enable_delta: typing.Union[bool, IResolvable] = None,
@@ -31,7 +32,9 @@ pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig(
   id: str = None,
   namespace: str = None,
   ocsp_disable: typing.Union[bool, IResolvable] = None,
-  ocsp_expiry: str = None
+  ocsp_expiry: str = None,
+  unified_crl: typing.Union[bool, IResolvable] = None,
+  unified_crl_on_existing_paths: typing.Union[bool, IResolvable] = None
 )
 ```
 
@@ -49,6 +52,7 @@ pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig(
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.Initializer.parameter.backend">backend</a></code> | <code>str</code> | The path of the PKI secret backend the resource belongs to. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.Initializer.parameter.autoRebuild">auto_rebuild</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enables or disables periodic rebuilding of the CRL upon expiry. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.Initializer.parameter.autoRebuildGracePeriod">auto_rebuild_grace_period</a></code> | <code>str</code> | Grace period before CRL expiry to attempt rebuild of CRL. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.Initializer.parameter.crossClusterRevocation">cross_cluster_revocation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable cross-cluster revocation request queues. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.Initializer.parameter.deltaRebuildInterval">delta_rebuild_interval</a></code> | <code>str</code> | Interval to check for new revocations on, to regenerate the delta CRL. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.Initializer.parameter.disable">disable</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disables or enables CRL building. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.Initializer.parameter.enableDelta">enable_delta</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enables or disables building of delta CRLs with up-to-date revocation information, augmenting the last complete CRL. |
@@ -57,6 +61,8 @@ pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig(
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.Initializer.parameter.ocspDisable">ocsp_disable</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disables or enables the OCSP responder in Vault. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.Initializer.parameter.ocspExpiry">ocsp_expiry</a></code> | <code>str</code> | The amount of time an OCSP response can be cached for, useful for OCSP stapling refresh durations. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.Initializer.parameter.unifiedCrl">unified_crl</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enables unified CRL and OCSP building. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.Initializer.parameter.unifiedCrlOnExistingPaths">unified_crl_on_existing_paths</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enables serving the unified CRL and OCSP on the existing, previously cluster-local paths. |
 
 ---
 
@@ -150,6 +156,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 ---
 
+##### `cross_cluster_revocation`<sup>Optional</sup> <a name="cross_cluster_revocation" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.Initializer.parameter.crossClusterRevocation"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Enable cross-cluster revocation request queues.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_crl_config#cross_cluster_revocation PkiSecretBackendCrlConfig#cross_cluster_revocation}
+
+---
+
 ##### `delta_rebuild_interval`<sup>Optional</sup> <a name="delta_rebuild_interval" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.Initializer.parameter.deltaRebuildInterval"></a>
 
 - *Type:* str
@@ -231,6 +247,26 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 ---
 
+##### `unified_crl`<sup>Optional</sup> <a name="unified_crl" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.Initializer.parameter.unifiedCrl"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Enables unified CRL and OCSP building.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_crl_config#unified_crl PkiSecretBackendCrlConfig#unified_crl}
+
+---
+
+##### `unified_crl_on_existing_paths`<sup>Optional</sup> <a name="unified_crl_on_existing_paths" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.Initializer.parameter.unifiedCrlOnExistingPaths"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Enables serving the unified CRL and OCSP on the existing, previously cluster-local paths.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_crl_config#unified_crl_on_existing_paths PkiSecretBackendCrlConfig#unified_crl_on_existing_paths}
+
+---
+
 #### Methods <a name="Methods" id="Methods"></a>
 
 | **Name** | **Description** |
@@ -253,6 +289,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.resetAutoRebuild">reset_auto_rebuild</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.resetAutoRebuildGracePeriod">reset_auto_rebuild_grace_period</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.resetCrossClusterRevocation">reset_cross_cluster_revocation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.resetDeltaRebuildInterval">reset_delta_rebuild_interval</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.resetDisable">reset_disable</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.resetEnableDelta">reset_enable_delta</a></code> | *No description.* |
@@ -261,6 +298,8 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.resetNamespace">reset_namespace</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.resetOcspDisable">reset_ocsp_disable</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.resetOcspExpiry">reset_ocsp_expiry</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.resetUnifiedCrl">reset_unified_crl</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.resetUnifiedCrlOnExistingPaths">reset_unified_crl_on_existing_paths</a></code> | *No description.* |
 
 ---
 
@@ -485,6 +524,12 @@ def reset_auto_rebuild() -> None
 def reset_auto_rebuild_grace_period() -> None
 ```
 
+##### `reset_cross_cluster_revocation` <a name="reset_cross_cluster_revocation" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.resetCrossClusterRevocation"></a>
+
+```python
+def reset_cross_cluster_revocation() -> None
+```
+
 ##### `reset_delta_rebuild_interval` <a name="reset_delta_rebuild_interval" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.resetDeltaRebuildInterval"></a>
 
 ```python
@@ -531,6 +576,18 @@ def reset_ocsp_disable() -> None
 
 ```python
 def reset_ocsp_expiry() -> None
+```
+
+##### `reset_unified_crl` <a name="reset_unified_crl" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.resetUnifiedCrl"></a>
+
+```python
+def reset_unified_crl() -> None
+```
+
+##### `reset_unified_crl_on_existing_paths` <a name="reset_unified_crl_on_existing_paths" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.resetUnifiedCrlOnExistingPaths"></a>
+
+```python
+def reset_unified_crl_on_existing_paths() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -630,6 +687,7 @@ pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.is_terraform_resource(
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.autoRebuildGracePeriodInput">auto_rebuild_grace_period_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.autoRebuildInput">auto_rebuild_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.backendInput">backend_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.crossClusterRevocationInput">cross_cluster_revocation_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.deltaRebuildIntervalInput">delta_rebuild_interval_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.disableInput">disable_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.enableDeltaInput">enable_delta_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -638,9 +696,12 @@ pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.is_terraform_resource(
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.namespaceInput">namespace_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.ocspDisableInput">ocsp_disable_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.ocspExpiryInput">ocsp_expiry_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.unifiedCrlInput">unified_crl_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.unifiedCrlOnExistingPathsInput">unified_crl_on_existing_paths_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.autoRebuild">auto_rebuild</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.autoRebuildGracePeriod">auto_rebuild_grace_period</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.backend">backend</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.crossClusterRevocation">cross_cluster_revocation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.deltaRebuildInterval">delta_rebuild_interval</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.disable">disable</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.enableDelta">enable_delta</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -649,6 +710,8 @@ pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.is_terraform_resource(
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.namespace">namespace</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.ocspDisable">ocsp_disable</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.ocspExpiry">ocsp_expiry</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.unifiedCrl">unified_crl</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.unifiedCrlOnExistingPaths">unified_crl_on_existing_paths</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 
 ---
 
@@ -824,6 +887,16 @@ backend_input: str
 
 ---
 
+##### `cross_cluster_revocation_input`<sup>Optional</sup> <a name="cross_cluster_revocation_input" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.crossClusterRevocationInput"></a>
+
+```python
+cross_cluster_revocation_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `delta_rebuild_interval_input`<sup>Optional</sup> <a name="delta_rebuild_interval_input" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.deltaRebuildIntervalInput"></a>
 
 ```python
@@ -904,6 +977,26 @@ ocsp_expiry_input: str
 
 ---
 
+##### `unified_crl_input`<sup>Optional</sup> <a name="unified_crl_input" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.unifiedCrlInput"></a>
+
+```python
+unified_crl_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `unified_crl_on_existing_paths_input`<sup>Optional</sup> <a name="unified_crl_on_existing_paths_input" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.unifiedCrlOnExistingPathsInput"></a>
+
+```python
+unified_crl_on_existing_paths_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `auto_rebuild`<sup>Required</sup> <a name="auto_rebuild" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.autoRebuild"></a>
 
 ```python
@@ -931,6 +1024,16 @@ backend: str
 ```
 
 - *Type:* str
+
+---
+
+##### `cross_cluster_revocation`<sup>Required</sup> <a name="cross_cluster_revocation" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.crossClusterRevocation"></a>
+
+```python
+cross_cluster_revocation: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
 
 ---
 
@@ -1014,6 +1117,26 @@ ocsp_expiry: str
 
 ---
 
+##### `unified_crl`<sup>Required</sup> <a name="unified_crl" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.unifiedCrl"></a>
+
+```python
+unified_crl: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `unified_crl_on_existing_paths`<sup>Required</sup> <a name="unified_crl_on_existing_paths" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.unifiedCrlOnExistingPaths"></a>
+
+```python
+unified_crl_on_existing_paths: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1052,6 +1175,7 @@ pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfigConfig(
   backend: str,
   auto_rebuild: typing.Union[bool, IResolvable] = None,
   auto_rebuild_grace_period: str = None,
+  cross_cluster_revocation: typing.Union[bool, IResolvable] = None,
   delta_rebuild_interval: str = None,
   disable: typing.Union[bool, IResolvable] = None,
   enable_delta: typing.Union[bool, IResolvable] = None,
@@ -1059,7 +1183,9 @@ pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfigConfig(
   id: str = None,
   namespace: str = None,
   ocsp_disable: typing.Union[bool, IResolvable] = None,
-  ocsp_expiry: str = None
+  ocsp_expiry: str = None,
+  unified_crl: typing.Union[bool, IResolvable] = None,
+  unified_crl_on_existing_paths: typing.Union[bool, IResolvable] = None
 )
 ```
 
@@ -1077,6 +1203,7 @@ pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfigConfig(
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfigConfig.property.backend">backend</a></code> | <code>str</code> | The path of the PKI secret backend the resource belongs to. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfigConfig.property.autoRebuild">auto_rebuild</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enables or disables periodic rebuilding of the CRL upon expiry. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfigConfig.property.autoRebuildGracePeriod">auto_rebuild_grace_period</a></code> | <code>str</code> | Grace period before CRL expiry to attempt rebuild of CRL. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfigConfig.property.crossClusterRevocation">cross_cluster_revocation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable cross-cluster revocation request queues. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfigConfig.property.deltaRebuildInterval">delta_rebuild_interval</a></code> | <code>str</code> | Interval to check for new revocations on, to regenerate the delta CRL. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfigConfig.property.disable">disable</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disables or enables CRL building. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfigConfig.property.enableDelta">enable_delta</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enables or disables building of delta CRLs with up-to-date revocation information, augmenting the last complete CRL. |
@@ -1085,6 +1212,8 @@ pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfigConfig(
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfigConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfigConfig.property.ocspDisable">ocsp_disable</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disables or enables the OCSP responder in Vault. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfigConfig.property.ocspExpiry">ocsp_expiry</a></code> | <code>str</code> | The amount of time an OCSP response can be cached for, useful for OCSP stapling refresh durations. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfigConfig.property.unifiedCrl">unified_crl</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enables unified CRL and OCSP building. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfigConfig.property.unifiedCrlOnExistingPaths">unified_crl_on_existing_paths</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enables serving the unified CRL and OCSP on the existing, previously cluster-local paths. |
 
 ---
 
@@ -1200,6 +1329,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 ---
 
+##### `cross_cluster_revocation`<sup>Optional</sup> <a name="cross_cluster_revocation" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfigConfig.property.crossClusterRevocation"></a>
+
+```python
+cross_cluster_revocation: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Enable cross-cluster revocation request queues.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_crl_config#cross_cluster_revocation PkiSecretBackendCrlConfig#cross_cluster_revocation}
+
+---
+
 ##### `delta_rebuild_interval`<sup>Optional</sup> <a name="delta_rebuild_interval" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfigConfig.property.deltaRebuildInterval"></a>
 
 ```python
@@ -1310,6 +1453,34 @@ ocsp_expiry: str
 The amount of time an OCSP response can be cached for, useful for OCSP stapling refresh durations.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_crl_config#ocsp_expiry PkiSecretBackendCrlConfig#ocsp_expiry}
+
+---
+
+##### `unified_crl`<sup>Optional</sup> <a name="unified_crl" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfigConfig.property.unifiedCrl"></a>
+
+```python
+unified_crl: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Enables unified CRL and OCSP building.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_crl_config#unified_crl PkiSecretBackendCrlConfig#unified_crl}
+
+---
+
+##### `unified_crl_on_existing_paths`<sup>Optional</sup> <a name="unified_crl_on_existing_paths" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfigConfig.property.unifiedCrlOnExistingPaths"></a>
+
+```python
+unified_crl_on_existing_paths: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Enables serving the unified CRL and OCSP on the existing, previously cluster-local paths.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_crl_config#unified_crl_on_existing_paths PkiSecretBackendCrlConfig#unified_crl_on_existing_paths}
 
 ---
 

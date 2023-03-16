@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.resetAutoRebuild">ResetAutoRebuild</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.resetAutoRebuildGracePeriod">ResetAutoRebuildGracePeriod</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.resetCrossClusterRevocation">ResetCrossClusterRevocation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.resetDeltaRebuildInterval">ResetDeltaRebuildInterval</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.resetDisable">ResetDisable</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.resetEnableDelta">ResetEnableDelta</a></code> | *No description.* |
@@ -76,6 +77,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.resetNamespace">ResetNamespace</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.resetOcspDisable">ResetOcspDisable</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.resetOcspExpiry">ResetOcspExpiry</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.resetUnifiedCrl">ResetUnifiedCrl</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.resetUnifiedCrlOnExistingPaths">ResetUnifiedCrlOnExistingPaths</a></code> | *No description.* |
 
 ---
 
@@ -275,6 +278,12 @@ private void ResetAutoRebuild()
 private void ResetAutoRebuildGracePeriod()
 ```
 
+##### `ResetCrossClusterRevocation` <a name="ResetCrossClusterRevocation" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.resetCrossClusterRevocation"></a>
+
+```csharp
+private void ResetCrossClusterRevocation()
+```
+
 ##### `ResetDeltaRebuildInterval` <a name="ResetDeltaRebuildInterval" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.resetDeltaRebuildInterval"></a>
 
 ```csharp
@@ -321,6 +330,18 @@ private void ResetOcspDisable()
 
 ```csharp
 private void ResetOcspExpiry()
+```
+
+##### `ResetUnifiedCrl` <a name="ResetUnifiedCrl" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.resetUnifiedCrl"></a>
+
+```csharp
+private void ResetUnifiedCrl()
+```
+
+##### `ResetUnifiedCrlOnExistingPaths` <a name="ResetUnifiedCrlOnExistingPaths" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.resetUnifiedCrlOnExistingPaths"></a>
+
+```csharp
+private void ResetUnifiedCrlOnExistingPaths()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -414,6 +435,7 @@ PkiSecretBackendCrlConfig.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.autoRebuildGracePeriodInput">AutoRebuildGracePeriodInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.autoRebuildInput">AutoRebuildInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.backendInput">BackendInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.crossClusterRevocationInput">CrossClusterRevocationInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.deltaRebuildIntervalInput">DeltaRebuildIntervalInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.disableInput">DisableInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.enableDeltaInput">EnableDeltaInput</a></code> | <code>object</code> | *No description.* |
@@ -422,9 +444,12 @@ PkiSecretBackendCrlConfig.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.namespaceInput">NamespaceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.ocspDisableInput">OcspDisableInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.ocspExpiryInput">OcspExpiryInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.unifiedCrlInput">UnifiedCrlInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.unifiedCrlOnExistingPathsInput">UnifiedCrlOnExistingPathsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.autoRebuild">AutoRebuild</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.autoRebuildGracePeriod">AutoRebuildGracePeriod</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.backend">Backend</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.crossClusterRevocation">CrossClusterRevocation</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.deltaRebuildInterval">DeltaRebuildInterval</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.disable">Disable</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.enableDelta">EnableDelta</a></code> | <code>object</code> | *No description.* |
@@ -433,6 +458,8 @@ PkiSecretBackendCrlConfig.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.namespace">Namespace</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.ocspDisable">OcspDisable</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.ocspExpiry">OcspExpiry</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.unifiedCrl">UnifiedCrl</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.unifiedCrlOnExistingPaths">UnifiedCrlOnExistingPaths</a></code> | <code>object</code> | *No description.* |
 
 ---
 
@@ -608,6 +635,16 @@ public string BackendInput { get; }
 
 ---
 
+##### `CrossClusterRevocationInput`<sup>Optional</sup> <a name="CrossClusterRevocationInput" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.crossClusterRevocationInput"></a>
+
+```csharp
+public object CrossClusterRevocationInput { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `DeltaRebuildIntervalInput`<sup>Optional</sup> <a name="DeltaRebuildIntervalInput" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.deltaRebuildIntervalInput"></a>
 
 ```csharp
@@ -688,6 +725,26 @@ public string OcspExpiryInput { get; }
 
 ---
 
+##### `UnifiedCrlInput`<sup>Optional</sup> <a name="UnifiedCrlInput" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.unifiedCrlInput"></a>
+
+```csharp
+public object UnifiedCrlInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `UnifiedCrlOnExistingPathsInput`<sup>Optional</sup> <a name="UnifiedCrlOnExistingPathsInput" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.unifiedCrlOnExistingPathsInput"></a>
+
+```csharp
+public object UnifiedCrlOnExistingPathsInput { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `AutoRebuild`<sup>Required</sup> <a name="AutoRebuild" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.autoRebuild"></a>
 
 ```csharp
@@ -715,6 +772,16 @@ public string Backend { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `CrossClusterRevocation`<sup>Required</sup> <a name="CrossClusterRevocation" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.crossClusterRevocation"></a>
+
+```csharp
+public object CrossClusterRevocation { get; }
+```
+
+- *Type:* object
 
 ---
 
@@ -798,6 +865,26 @@ public string OcspExpiry { get; }
 
 ---
 
+##### `UnifiedCrl`<sup>Required</sup> <a name="UnifiedCrl" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.unifiedCrl"></a>
+
+```csharp
+public object UnifiedCrl { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `UnifiedCrlOnExistingPaths`<sup>Required</sup> <a name="UnifiedCrlOnExistingPaths" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.property.unifiedCrlOnExistingPaths"></a>
+
+```csharp
+public object UnifiedCrlOnExistingPaths { get; }
+```
+
+- *Type:* object
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -836,6 +923,7 @@ new PkiSecretBackendCrlConfigConfig {
     string Backend,
     object AutoRebuild = null,
     string AutoRebuildGracePeriod = null,
+    object CrossClusterRevocation = null,
     string DeltaRebuildInterval = null,
     object Disable = null,
     object EnableDelta = null,
@@ -843,7 +931,9 @@ new PkiSecretBackendCrlConfigConfig {
     string Id = null,
     string Namespace = null,
     object OcspDisable = null,
-    string OcspExpiry = null
+    string OcspExpiry = null,
+    object UnifiedCrl = null,
+    object UnifiedCrlOnExistingPaths = null
 };
 ```
 
@@ -861,6 +951,7 @@ new PkiSecretBackendCrlConfigConfig {
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfigConfig.property.backend">Backend</a></code> | <code>string</code> | The path of the PKI secret backend the resource belongs to. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfigConfig.property.autoRebuild">AutoRebuild</a></code> | <code>object</code> | Enables or disables periodic rebuilding of the CRL upon expiry. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfigConfig.property.autoRebuildGracePeriod">AutoRebuildGracePeriod</a></code> | <code>string</code> | Grace period before CRL expiry to attempt rebuild of CRL. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfigConfig.property.crossClusterRevocation">CrossClusterRevocation</a></code> | <code>object</code> | Enable cross-cluster revocation request queues. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfigConfig.property.deltaRebuildInterval">DeltaRebuildInterval</a></code> | <code>string</code> | Interval to check for new revocations on, to regenerate the delta CRL. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfigConfig.property.disable">Disable</a></code> | <code>object</code> | Disables or enables CRL building. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfigConfig.property.enableDelta">EnableDelta</a></code> | <code>object</code> | Enables or disables building of delta CRLs with up-to-date revocation information, augmenting the last complete CRL. |
@@ -869,6 +960,8 @@ new PkiSecretBackendCrlConfigConfig {
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfigConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfigConfig.property.ocspDisable">OcspDisable</a></code> | <code>object</code> | Disables or enables the OCSP responder in Vault. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfigConfig.property.ocspExpiry">OcspExpiry</a></code> | <code>string</code> | The amount of time an OCSP response can be cached for, useful for OCSP stapling refresh durations. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfigConfig.property.unifiedCrl">UnifiedCrl</a></code> | <code>object</code> | Enables unified CRL and OCSP building. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfigConfig.property.unifiedCrlOnExistingPaths">UnifiedCrlOnExistingPaths</a></code> | <code>object</code> | Enables serving the unified CRL and OCSP on the existing, previously cluster-local paths. |
 
 ---
 
@@ -984,6 +1077,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 ---
 
+##### `CrossClusterRevocation`<sup>Optional</sup> <a name="CrossClusterRevocation" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfigConfig.property.crossClusterRevocation"></a>
+
+```csharp
+public object CrossClusterRevocation { get; set; }
+```
+
+- *Type:* object
+
+Enable cross-cluster revocation request queues.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_crl_config#cross_cluster_revocation PkiSecretBackendCrlConfig#cross_cluster_revocation}
+
+---
+
 ##### `DeltaRebuildInterval`<sup>Optional</sup> <a name="DeltaRebuildInterval" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfigConfig.property.deltaRebuildInterval"></a>
 
 ```csharp
@@ -1094,6 +1201,34 @@ public string OcspExpiry { get; set; }
 The amount of time an OCSP response can be cached for, useful for OCSP stapling refresh durations.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_crl_config#ocsp_expiry PkiSecretBackendCrlConfig#ocsp_expiry}
+
+---
+
+##### `UnifiedCrl`<sup>Optional</sup> <a name="UnifiedCrl" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfigConfig.property.unifiedCrl"></a>
+
+```csharp
+public object UnifiedCrl { get; set; }
+```
+
+- *Type:* object
+
+Enables unified CRL and OCSP building.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_crl_config#unified_crl PkiSecretBackendCrlConfig#unified_crl}
+
+---
+
+##### `UnifiedCrlOnExistingPaths`<sup>Optional</sup> <a name="UnifiedCrlOnExistingPaths" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfigConfig.property.unifiedCrlOnExistingPaths"></a>
+
+```csharp
+public object UnifiedCrlOnExistingPaths { get; set; }
+```
+
+- *Type:* object
+
+Enables serving the unified CRL and OCSP on the existing, previously cluster-local paths.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_crl_config#unified_crl_on_existing_paths PkiSecretBackendCrlConfig#unified_crl_on_existing_paths}
 
 ---
 

@@ -26,6 +26,12 @@ export interface PkiSecretBackendCrlConfigConfig extends cdktf.TerraformMetaArgu
   */
   readonly backend: string;
   /**
+  * Enable cross-cluster revocation request queues.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_crl_config#cross_cluster_revocation PkiSecretBackendCrlConfig#cross_cluster_revocation}
+  */
+  readonly crossClusterRevocation?: boolean | cdktf.IResolvable;
+  /**
   * Interval to check for new revocations on, to regenerate the delta CRL.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_crl_config#delta_rebuild_interval PkiSecretBackendCrlConfig#delta_rebuild_interval}
@@ -74,6 +80,18 @@ export interface PkiSecretBackendCrlConfigConfig extends cdktf.TerraformMetaArgu
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_crl_config#ocsp_expiry PkiSecretBackendCrlConfig#ocsp_expiry}
   */
   readonly ocspExpiry?: string;
+  /**
+  * Enables unified CRL and OCSP building.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_crl_config#unified_crl PkiSecretBackendCrlConfig#unified_crl}
+  */
+  readonly unifiedCrl?: boolean | cdktf.IResolvable;
+  /**
+  * Enables serving the unified CRL and OCSP on the existing, previously cluster-local paths.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_crl_config#unified_crl_on_existing_paths PkiSecretBackendCrlConfig#unified_crl_on_existing_paths}
+  */
+  readonly unifiedCrlOnExistingPaths?: boolean | cdktf.IResolvable;
 }
 
 /**
@@ -102,7 +120,7 @@ export class PkiSecretBackendCrlConfig extends cdktf.TerraformResource {
       terraformResourceType: 'vault_pki_secret_backend_crl_config',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.13.0',
+        providerVersion: '3.14.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -116,6 +134,7 @@ export class PkiSecretBackendCrlConfig extends cdktf.TerraformResource {
     this._autoRebuild = config.autoRebuild;
     this._autoRebuildGracePeriod = config.autoRebuildGracePeriod;
     this._backend = config.backend;
+    this._crossClusterRevocation = config.crossClusterRevocation;
     this._deltaRebuildInterval = config.deltaRebuildInterval;
     this._disable = config.disable;
     this._enableDelta = config.enableDelta;
@@ -124,6 +143,8 @@ export class PkiSecretBackendCrlConfig extends cdktf.TerraformResource {
     this._namespace = config.namespace;
     this._ocspDisable = config.ocspDisable;
     this._ocspExpiry = config.ocspExpiry;
+    this._unifiedCrl = config.unifiedCrl;
+    this._unifiedCrlOnExistingPaths = config.unifiedCrlOnExistingPaths;
   }
 
   // ==========
@@ -173,6 +194,22 @@ export class PkiSecretBackendCrlConfig extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get backendInput() {
     return this._backend;
+  }
+
+  // cross_cluster_revocation - computed: true, optional: true, required: false
+  private _crossClusterRevocation?: boolean | cdktf.IResolvable; 
+  public get crossClusterRevocation() {
+    return this.getBooleanAttribute('cross_cluster_revocation');
+  }
+  public set crossClusterRevocation(value: boolean | cdktf.IResolvable) {
+    this._crossClusterRevocation = value;
+  }
+  public resetCrossClusterRevocation() {
+    this._crossClusterRevocation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get crossClusterRevocationInput() {
+    return this._crossClusterRevocation;
   }
 
   // delta_rebuild_interval - computed: true, optional: true, required: false
@@ -303,6 +340,38 @@ export class PkiSecretBackendCrlConfig extends cdktf.TerraformResource {
     return this._ocspExpiry;
   }
 
+  // unified_crl - computed: true, optional: true, required: false
+  private _unifiedCrl?: boolean | cdktf.IResolvable; 
+  public get unifiedCrl() {
+    return this.getBooleanAttribute('unified_crl');
+  }
+  public set unifiedCrl(value: boolean | cdktf.IResolvable) {
+    this._unifiedCrl = value;
+  }
+  public resetUnifiedCrl() {
+    this._unifiedCrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get unifiedCrlInput() {
+    return this._unifiedCrl;
+  }
+
+  // unified_crl_on_existing_paths - computed: true, optional: true, required: false
+  private _unifiedCrlOnExistingPaths?: boolean | cdktf.IResolvable; 
+  public get unifiedCrlOnExistingPaths() {
+    return this.getBooleanAttribute('unified_crl_on_existing_paths');
+  }
+  public set unifiedCrlOnExistingPaths(value: boolean | cdktf.IResolvable) {
+    this._unifiedCrlOnExistingPaths = value;
+  }
+  public resetUnifiedCrlOnExistingPaths() {
+    this._unifiedCrlOnExistingPaths = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get unifiedCrlOnExistingPathsInput() {
+    return this._unifiedCrlOnExistingPaths;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -312,6 +381,7 @@ export class PkiSecretBackendCrlConfig extends cdktf.TerraformResource {
       auto_rebuild: cdktf.booleanToTerraform(this._autoRebuild),
       auto_rebuild_grace_period: cdktf.stringToTerraform(this._autoRebuildGracePeriod),
       backend: cdktf.stringToTerraform(this._backend),
+      cross_cluster_revocation: cdktf.booleanToTerraform(this._crossClusterRevocation),
       delta_rebuild_interval: cdktf.stringToTerraform(this._deltaRebuildInterval),
       disable: cdktf.booleanToTerraform(this._disable),
       enable_delta: cdktf.booleanToTerraform(this._enableDelta),
@@ -320,6 +390,8 @@ export class PkiSecretBackendCrlConfig extends cdktf.TerraformResource {
       namespace: cdktf.stringToTerraform(this._namespace),
       ocsp_disable: cdktf.booleanToTerraform(this._ocspDisable),
       ocsp_expiry: cdktf.stringToTerraform(this._ocspExpiry),
+      unified_crl: cdktf.booleanToTerraform(this._unifiedCrl),
+      unified_crl_on_existing_paths: cdktf.booleanToTerraform(this._unifiedCrlOnExistingPaths),
     };
   }
 }
