@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/vault/d/kubernetes_s
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultKubernetesServiceAccountToken.DataVaultKubernetesServiceAccountToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultkubernetesserviceaccounttoken"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/datavaultkubernetesserviceaccounttoken"
 
 datavaultkubernetesserviceaccounttoken.NewDataVaultKubernetesServiceAccountToken(scope Construct, id *string, config DataVaultKubernetesServiceAccountTokenConfig) DataVaultKubernetesServiceAccountToken
 ```
@@ -294,7 +294,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.dataVaultKubernetesServiceAccountToken.DataVaultKubernetesServiceAccountToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultkubernetesserviceaccounttoken"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/datavaultkubernetesserviceaccounttoken"
 
 datavaultkubernetesserviceaccounttoken.DataVaultKubernetesServiceAccountToken_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.dataVaultKubernetesServiceAccountToken.DataVaultKubernetesServiceAccountToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultkubernetesserviceaccounttoken"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/datavaultkubernetesserviceaccounttoken"
 
 datavaultkubernetesserviceaccounttoken.DataVaultKubernetesServiceAccountToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ datavaultkubernetesserviceaccounttoken.DataVaultKubernetesServiceAccountToken_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vault.dataVaultKubernetesServiceAccountToken.DataVaultKubernetesServiceAccountToken.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultkubernetesserviceaccounttoken"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/datavaultkubernetesserviceaccounttoken"
 
 datavaultkubernetesserviceaccounttoken.DataVaultKubernetesServiceAccountToken_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -737,7 +737,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.dataVaultKubernetesServiceAccountToken.DataVaultKubernetesServiceAccountTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultkubernetesserviceaccounttoken"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/datavaultkubernetesserviceaccounttoken"
 
 &datavaultkubernetesserviceaccounttoken.DataVaultKubernetesServiceAccountTokenConfig {
 	Connection: interface{},
