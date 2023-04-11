@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/vault/r/okta_auth_ba
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.oktaAuthBackendUser.OktaAuthBackendUserA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/oktaauthbackenduser"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/oktaauthbackenduser"
 
 oktaauthbackenduser.NewOktaAuthBackendUserA(scope Construct, id *string, config OktaAuthBackendUserAConfig) OktaAuthBackendUserA
 ```
@@ -294,7 +294,7 @@ func ResetPolicies()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.oktaAuthBackendUser.OktaAuthBackendUserA.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/oktaauthbackenduser"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/oktaauthbackenduser"
 
 oktaauthbackenduser.OktaAuthBackendUserA_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.oktaAuthBackendUser.OktaAuthBackendUserA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/oktaauthbackenduser"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/oktaauthbackenduser"
 
 oktaauthbackenduser.OktaAuthBackendUserA_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ oktaauthbackenduser.OktaAuthBackendUserA_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.oktaAuthBackendUser.OktaAuthBackendUserA.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/oktaauthbackenduser"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/oktaauthbackenduser"
 
 oktaauthbackenduser.OktaAuthBackendUserA_IsTerraformResource(x interface{}) *bool
 ```
@@ -671,7 +671,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.oktaAuthBackendUser.OktaAuthBackendUserAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/oktaauthbackenduser"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/oktaauthbackenduser"
 
 &oktaauthbackenduser.OktaAuthBackendUserAConfig {
 	Connection: interface{},

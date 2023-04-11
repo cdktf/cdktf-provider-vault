@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/vault/r/terraform_cl
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/terraformcloudsecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/terraformcloudsecretbackend"
 
 terraformcloudsecretbackend.NewTerraformCloudSecretBackend(scope Construct, id *string, config TerraformCloudSecretBackendConfig) TerraformCloudSecretBackend
 ```
@@ -336,7 +336,7 @@ func ResetToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/terraformcloudsecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/terraformcloudsecretbackend"
 
 terraformcloudsecretbackend.TerraformCloudSecretBackend_IsConstruct(x interface{}) *bool
 ```
@@ -368,7 +368,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/terraformcloudsecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/terraformcloudsecretbackend"
 
 terraformcloudsecretbackend.TerraformCloudSecretBackend_IsTerraformElement(x interface{}) *bool
 ```
@@ -382,7 +382,7 @@ terraformcloudsecretbackend.TerraformCloudSecretBackend_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/terraformcloudsecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/terraformcloudsecretbackend"
 
 terraformcloudsecretbackend.TerraformCloudSecretBackend_IsTerraformResource(x interface{}) *bool
 ```
@@ -801,7 +801,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/terraformcloudsecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/terraformcloudsecretbackend"
 
 &terraformcloudsecretbackend.TerraformCloudSecretBackendConfig {
 	Connection: interface{},
