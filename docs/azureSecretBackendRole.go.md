@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/vault/r/azure_secret
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/azuresecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/azuresecretbackendrole"
 
 azuresecretbackendrole.NewAzureSecretBackendRole(scope Construct, id *string, config AzureSecretBackendRoleConfig) AzureSecretBackendRole
 ```
@@ -355,7 +355,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/azuresecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/azuresecretbackendrole"
 
 azuresecretbackendrole.AzureSecretBackendRole_IsConstruct(x interface{}) *bool
 ```
@@ -387,7 +387,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/azuresecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/azuresecretbackendrole"
 
 azuresecretbackendrole.AzureSecretBackendRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -401,7 +401,7 @@ azuresecretbackendrole.AzureSecretBackendRole_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/azuresecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/azuresecretbackendrole"
 
 azuresecretbackendrole.AzureSecretBackendRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -820,7 +820,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/azuresecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/azuresecretbackendrole"
 
 &azuresecretbackendrole.AzureSecretBackendRoleAzureGroups {
 	GroupName: *string,
@@ -852,7 +852,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/azuresecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/azuresecretbackendrole"
 
 &azuresecretbackendrole.AzureSecretBackendRoleAzureRoles {
 	Scope: *string,
@@ -912,7 +912,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/azuresecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/azuresecretbackendrole"
 
 &azuresecretbackendrole.AzureSecretBackendRoleConfig {
 	Connection: interface{},
@@ -1177,7 +1177,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/azuresecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/azuresecretbackendrole"
 
 azuresecretbackendrole.NewAzureSecretBackendRoleAzureGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AzureSecretBackendRoleAzureGroupsList
 ```
@@ -1320,7 +1320,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/azuresecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/azuresecretbackendrole"
 
 azuresecretbackendrole.NewAzureSecretBackendRoleAzureGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AzureSecretBackendRoleAzureGroupsOutputReference
 ```
@@ -1620,7 +1620,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureRolesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/azuresecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/azuresecretbackendrole"
 
 azuresecretbackendrole.NewAzureSecretBackendRoleAzureRolesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AzureSecretBackendRoleAzureRolesList
 ```
@@ -1763,7 +1763,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureRolesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/azuresecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/azuresecretbackendrole"
 
 azuresecretbackendrole.NewAzureSecretBackendRoleAzureRolesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AzureSecretBackendRoleAzureRolesOutputReference
 ```

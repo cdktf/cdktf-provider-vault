@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/vault/d/generic_secr
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultGenericSecret.DataVaultGenericSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/datavaultgenericsecret"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultgenericsecret"
 
 datavaultgenericsecret.NewDataVaultGenericSecret(scope Construct, id *string, config DataVaultGenericSecretConfig) DataVaultGenericSecret
 ```
@@ -294,7 +294,7 @@ func ResetWithLeaseStartTime()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.dataVaultGenericSecret.DataVaultGenericSecret.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/datavaultgenericsecret"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultgenericsecret"
 
 datavaultgenericsecret.DataVaultGenericSecret_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.dataVaultGenericSecret.DataVaultGenericSecret.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/datavaultgenericsecret"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultgenericsecret"
 
 datavaultgenericsecret.DataVaultGenericSecret_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ datavaultgenericsecret.DataVaultGenericSecret_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vault.dataVaultGenericSecret.DataVaultGenericSecret.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/datavaultgenericsecret"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultgenericsecret"
 
 datavaultgenericsecret.DataVaultGenericSecret_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -693,7 +693,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.dataVaultGenericSecret.DataVaultGenericSecretConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/datavaultgenericsecret"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultgenericsecret"
 
 &datavaultgenericsecret.DataVaultGenericSecretConfig {
 	Connection: interface{},

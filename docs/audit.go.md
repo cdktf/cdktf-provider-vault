@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/vault/r/audit vault_
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.audit.Audit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/audit"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/audit"
 
 audit.NewAudit(scope Construct, id *string, config AuditConfig) Audit
 ```
@@ -301,7 +301,7 @@ func ResetPath()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.audit.Audit.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/audit"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/audit"
 
 audit.Audit_IsConstruct(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.audit.Audit.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/audit"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/audit"
 
 audit.Audit_IsTerraformElement(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ audit.Audit_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.audit.Audit.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/audit"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/audit"
 
 audit.Audit_IsTerraformResource(x interface{}) *bool
 ```
@@ -700,7 +700,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.audit.AuditConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/audit"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/audit"
 
 &audit.AuditConfig {
 	Connection: interface{},

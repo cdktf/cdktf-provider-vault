@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/vault/r/gcp_secret_i
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.gcpSecretImpersonatedAccount.GcpSecretImpersonatedAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/gcpsecretimpersonatedaccount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/gcpsecretimpersonatedaccount"
 
 gcpsecretimpersonatedaccount.NewGcpSecretImpersonatedAccount(scope Construct, id *string, config GcpSecretImpersonatedAccountConfig) GcpSecretImpersonatedAccount
 ```
@@ -287,7 +287,7 @@ func ResetTokenScopes()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.gcpSecretImpersonatedAccount.GcpSecretImpersonatedAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/gcpsecretimpersonatedaccount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/gcpsecretimpersonatedaccount"
 
 gcpsecretimpersonatedaccount.GcpSecretImpersonatedAccount_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.gcpSecretImpersonatedAccount.GcpSecretImpersonatedAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/gcpsecretimpersonatedaccount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/gcpsecretimpersonatedaccount"
 
 gcpsecretimpersonatedaccount.GcpSecretImpersonatedAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ gcpsecretimpersonatedaccount.GcpSecretImpersonatedAccount_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.gcpSecretImpersonatedAccount.GcpSecretImpersonatedAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/gcpsecretimpersonatedaccount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/gcpsecretimpersonatedaccount"
 
 gcpsecretimpersonatedaccount.GcpSecretImpersonatedAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -675,7 +675,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.gcpSecretImpersonatedAccount.GcpSecretImpersonatedAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/gcpsecretimpersonatedaccount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/gcpsecretimpersonatedaccount"
 
 &gcpsecretimpersonatedaccount.GcpSecretImpersonatedAccountConfig {
 	Connection: interface{},

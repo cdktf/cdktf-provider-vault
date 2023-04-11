@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/vault/r/github_user 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.githubUser.GithubUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/githubuser"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/githubuser"
 
 githubuser.NewGithubUser(scope Construct, id *string, config GithubUserConfig) GithubUser
 ```
@@ -294,7 +294,7 @@ func ResetPolicies()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.githubUser.GithubUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/githubuser"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/githubuser"
 
 githubuser.GithubUser_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.githubUser.GithubUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/githubuser"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/githubuser"
 
 githubuser.GithubUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ githubuser.GithubUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.githubUser.GithubUser.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/githubuser"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/githubuser"
 
 githubuser.GithubUser_IsTerraformResource(x interface{}) *bool
 ```
@@ -649,7 +649,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.githubUser.GithubUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/githubuser"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/githubuser"
 
 &githubuser.GithubUserConfig {
 	Connection: interface{},

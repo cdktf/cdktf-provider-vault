@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/vault/d/aws_access_c
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/datavaultawsaccesscredentials"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultawsaccesscredentials"
 
 datavaultawsaccesscredentials.NewDataVaultAwsAccessCredentials(scope Construct, id *string, config DataVaultAwsAccessCredentialsConfig) DataVaultAwsAccessCredentials
 ```
@@ -308,7 +308,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentials.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/datavaultawsaccesscredentials"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultawsaccesscredentials"
 
 datavaultawsaccesscredentials.DataVaultAwsAccessCredentials_IsConstruct(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentials.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/datavaultawsaccesscredentials"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultawsaccesscredentials"
 
 datavaultawsaccesscredentials.DataVaultAwsAccessCredentials_IsTerraformElement(x interface{}) *bool
 ```
@@ -354,7 +354,7 @@ datavaultawsaccesscredentials.DataVaultAwsAccessCredentials_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentials.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/datavaultawsaccesscredentials"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultawsaccesscredentials"
 
 datavaultawsaccesscredentials.DataVaultAwsAccessCredentials_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -784,7 +784,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentialsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/datavaultawsaccesscredentials"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultawsaccesscredentials"
 
 &datavaultawsaccesscredentials.DataVaultAwsAccessCredentialsConfig {
 	Connection: interface{},
