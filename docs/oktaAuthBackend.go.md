@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/vault/r/okta_auth_ba
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/oktaauthbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/oktaauthbackend"
 
 oktaauthbackend.NewOktaAuthBackend(scope Construct, id *string, config OktaAuthBackendConfig) OktaAuthBackend
 ```
@@ -376,7 +376,7 @@ func ResetUser()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/oktaauthbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/oktaauthbackend"
 
 oktaauthbackend.OktaAuthBackend_IsConstruct(x interface{}) *bool
 ```
@@ -408,7 +408,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/oktaauthbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/oktaauthbackend"
 
 oktaauthbackend.OktaAuthBackend_IsTerraformElement(x interface{}) *bool
 ```
@@ -422,7 +422,7 @@ oktaauthbackend.OktaAuthBackend_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/oktaauthbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/oktaauthbackend"
 
 oktaauthbackend.OktaAuthBackend_IsTerraformResource(x interface{}) *bool
 ```
@@ -918,7 +918,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/oktaauthbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/oktaauthbackend"
 
 &oktaauthbackend.OktaAuthBackendConfig {
 	Connection: interface{},
@@ -1229,7 +1229,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/oktaauthbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/oktaauthbackend"
 
 &oktaauthbackend.OktaAuthBackendGroup {
 	GroupName: *string,
@@ -1275,7 +1275,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/oktaauthbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/oktaauthbackend"
 
 &oktaauthbackend.OktaAuthBackendUser {
 	Groups: *[]*string,
@@ -1337,7 +1337,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendGroupList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/oktaauthbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/oktaauthbackend"
 
 oktaauthbackend.NewOktaAuthBackendGroupList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OktaAuthBackendGroupList
 ```
@@ -1480,7 +1480,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/oktaauthbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/oktaauthbackend"
 
 oktaauthbackend.NewOktaAuthBackendGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OktaAuthBackendGroupOutputReference
 ```
@@ -1805,7 +1805,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendUserList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/oktaauthbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/oktaauthbackend"
 
 oktaauthbackend.NewOktaAuthBackendUserList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OktaAuthBackendUserList
 ```
@@ -1948,7 +1948,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendUserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/oktaauthbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/oktaauthbackend"
 
 oktaauthbackend.NewOktaAuthBackendUserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OktaAuthBackendUserOutputReference
 ```
