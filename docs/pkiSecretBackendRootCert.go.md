@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_b
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/pkisecretbackendrootcert"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendrootcert"
 
 pkisecretbackendrootcert.NewPkiSecretBackendRootCert(scope Construct, id *string, config PkiSecretBackendRootCertConfig) PkiSecretBackendRootCert
 ```
@@ -427,7 +427,7 @@ func ResetUriSans()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/pkisecretbackendrootcert"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendrootcert"
 
 pkisecretbackendrootcert.PkiSecretBackendRootCert_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/pkisecretbackendrootcert"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendrootcert"
 
 pkisecretbackendrootcert.PkiSecretBackendRootCert_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ pkisecretbackendrootcert.PkiSecretBackendRootCert_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/pkisecretbackendrootcert"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendrootcert"
 
 pkisecretbackendrootcert.PkiSecretBackendRootCert_IsTerraformResource(x interface{}) *bool
 ```
@@ -1288,7 +1288,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCertConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/pkisecretbackendrootcert"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendrootcert"
 
 &pkisecretbackendrootcert.PkiSecretBackendRootCertConfig {
 	Connection: interface{},

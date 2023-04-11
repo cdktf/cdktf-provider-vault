@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/vault/r/nomad_secret
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.nomadSecretRole.NomadSecretRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/nomadsecretrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/nomadsecretrole"
 
 nomadsecretrole.NewNomadSecretRole(scope Construct, id *string, config NomadSecretRoleConfig) NomadSecretRole
 ```
@@ -301,7 +301,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.nomadSecretRole.NomadSecretRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/nomadsecretrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/nomadsecretrole"
 
 nomadsecretrole.NomadSecretRole_IsConstruct(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.nomadSecretRole.NomadSecretRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/nomadsecretrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/nomadsecretrole"
 
 nomadsecretrole.NomadSecretRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ nomadsecretrole.NomadSecretRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.nomadSecretRole.NomadSecretRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/nomadsecretrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/nomadsecretrole"
 
 nomadsecretrole.NomadSecretRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -700,7 +700,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.nomadSecretRole.NomadSecretRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v5/nomadsecretrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/nomadsecretrole"
 
 &nomadsecretrole.NomadSecretRoleConfig {
 	Connection: interface{},
