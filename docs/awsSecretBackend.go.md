@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/vault/r/aws_secret_b
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/awssecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awssecretbackend"
 
 awssecretbackend.NewAwsSecretBackend(scope Construct, id *string, config AwsSecretBackendConfig) AwsSecretBackend
 ```
@@ -357,7 +357,7 @@ func ResetUsernameTemplate()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/awssecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awssecretbackend"
 
 awssecretbackend.AwsSecretBackend_IsConstruct(x interface{}) *bool
 ```
@@ -389,7 +389,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/awssecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awssecretbackend"
 
 awssecretbackend.AwsSecretBackend_IsTerraformElement(x interface{}) *bool
 ```
@@ -403,7 +403,7 @@ awssecretbackend.AwsSecretBackend_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/awssecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awssecretbackend"
 
 awssecretbackend.AwsSecretBackend_IsTerraformResource(x interface{}) *bool
 ```
@@ -888,7 +888,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/awssecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awssecretbackend"
 
 &awssecretbackend.AwsSecretBackendConfig {
 	Connection: interface{},
