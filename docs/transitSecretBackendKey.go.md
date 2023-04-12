@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/vault/r/transit_secr
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/transitsecretbackendkey"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/transitsecretbackendkey"
 
 transitsecretbackendkey.NewTransitSecretBackendKey(scope Construct, id *string, config TransitSecretBackendKeyConfig) TransitSecretBackendKey
 ```
@@ -350,7 +350,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/transitsecretbackendkey"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/transitsecretbackendkey"
 
 transitsecretbackendkey.TransitSecretBackendKey_IsConstruct(x interface{}) *bool
 ```
@@ -382,7 +382,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/transitsecretbackendkey"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/transitsecretbackendkey"
 
 transitsecretbackendkey.TransitSecretBackendKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -396,7 +396,7 @@ transitsecretbackendkey.TransitSecretBackendKey_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/transitsecretbackendkey"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/transitsecretbackendkey"
 
 transitsecretbackendkey.TransitSecretBackendKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -980,7 +980,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/transitsecretbackendkey"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/transitsecretbackendkey"
 
 &transitsecretbackendkey.TransitSecretBackendKeyConfig {
 	Connection: interface{},

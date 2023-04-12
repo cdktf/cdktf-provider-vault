@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/vault/r/identity_oid
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.identityOidcClient.IdentityOidcClient.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/identityoidcclient"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/identityoidcclient"
 
 identityoidcclient.NewIdentityOidcClient(scope Construct, id *string, config IdentityOidcClientConfig) IdentityOidcClient
 ```
@@ -322,7 +322,7 @@ func ResetRedirectUris()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.identityOidcClient.IdentityOidcClient.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/identityoidcclient"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/identityoidcclient"
 
 identityoidcclient.IdentityOidcClient_IsConstruct(x interface{}) *bool
 ```
@@ -354,7 +354,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.identityOidcClient.IdentityOidcClient.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/identityoidcclient"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/identityoidcclient"
 
 identityoidcclient.IdentityOidcClient_IsTerraformElement(x interface{}) *bool
 ```
@@ -368,7 +368,7 @@ identityoidcclient.IdentityOidcClient_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.identityOidcClient.IdentityOidcClient.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/identityoidcclient"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/identityoidcclient"
 
 identityoidcclient.IdentityOidcClient_IsTerraformResource(x interface{}) *bool
 ```
@@ -787,7 +787,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.identityOidcClient.IdentityOidcClientConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/identityoidcclient"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/identityoidcclient"
 
 &identityoidcclient.IdentityOidcClientConfig {
 	Connection: interface{},

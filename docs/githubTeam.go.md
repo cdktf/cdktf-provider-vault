@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/vault/r/github_team 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.githubTeam.GithubTeam.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/githubteam"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/githubteam"
 
 githubteam.NewGithubTeam(scope Construct, id *string, config GithubTeamConfig) GithubTeam
 ```
@@ -294,7 +294,7 @@ func ResetPolicies()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.githubTeam.GithubTeam.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/githubteam"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/githubteam"
 
 githubteam.GithubTeam_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.githubTeam.GithubTeam.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/githubteam"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/githubteam"
 
 githubteam.GithubTeam_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ githubteam.GithubTeam_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.githubTeam.GithubTeam.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/githubteam"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/githubteam"
 
 githubteam.GithubTeam_IsTerraformResource(x interface{}) *bool
 ```
@@ -649,7 +649,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.githubTeam.GithubTeamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/githubteam"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/githubteam"
 
 &githubteam.GithubTeamConfig {
 	Connection: interface{},
