@@ -1,6 +1,6 @@
 # `vault_transform_template`
 
-Refer to the Terraform Registory for docs: [`vault_transform_template`](https://www.terraform.io/docs/providers/vault/r/transform_template).
+Refer to the Terraform Registory for docs: [`vault_transform_template`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_template).
 
 # `transformTemplate` Submodule <a name="`transformTemplate` Submodule" id="@cdktf/provider-vault.transformTemplate"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_transform_template`](https://
 
 ### TransformTemplate <a name="TransformTemplate" id="@cdktf/provider-vault.transformTemplate.TransformTemplate"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/transform_template vault_transform_template}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_template vault_transform_template}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.transformTemplate.TransformTemplate.Initializer"></a>
 
@@ -388,7 +388,7 @@ transformTemplate.TransformTemplate.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplate.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplate.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplate.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplate.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplate.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplate.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplate.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplate.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -500,10 +500,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.transformTemplate.TransformTemplate.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -772,7 +772,7 @@ const transformTemplateConfig: transformTemplate.TransformTemplateConfig = { ...
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplateConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplateConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplateConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplateConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplateConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplateConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -783,7 +783,7 @@ const transformTemplateConfig: transformTemplate.TransformTemplateConfig = { ...
 | <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplateConfig.property.alphabet">alphabet</a></code> | <code>string</code> | The alphabet to use for this template. This is only used during FPE transformations. |
 | <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplateConfig.property.decodeFormats">decodeFormats</a></code> | <code>{[ key: string ]: string}</code> | The map of regular expression templates used to customize decoded outputs. Only applicable to FPE transformations. |
 | <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplateConfig.property.encodeFormat">encodeFormat</a></code> | <code>string</code> | The regular expression template used for encoding values. Only applicable to FPE transformations. |
-| <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplateConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_template#id TransformTemplate#id}. |
+| <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplateConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_template#id TransformTemplate#id}. |
 | <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplateConfig.property.namespace">namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplateConfig.property.pattern">pattern</a></code> | <code>string</code> | The pattern used for matching. Currently, only regular expression pattern is supported. |
 | <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplateConfig.property.type">type</a></code> | <code>string</code> | The pattern type to use for match detection. Currently, only regex is supported. |
@@ -803,10 +803,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.transformTemplate.TransformTemplateConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -870,7 +870,7 @@ public readonly name: string;
 
 The name of the template.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_template#name TransformTemplate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_template#name TransformTemplate#name}
 
 ---
 
@@ -884,7 +884,7 @@ public readonly path: string;
 
 The mount path for a back-end, for example, the path given in "$ vault auth enable -path=my-aws aws".
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_template#path TransformTemplate#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_template#path TransformTemplate#path}
 
 ---
 
@@ -898,7 +898,7 @@ public readonly alphabet: string;
 
 The alphabet to use for this template. This is only used during FPE transformations.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_template#alphabet TransformTemplate#alphabet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_template#alphabet TransformTemplate#alphabet}
 
 ---
 
@@ -912,7 +912,7 @@ public readonly decodeFormats: {[ key: string ]: string};
 
 The map of regular expression templates used to customize decoded outputs. Only applicable to FPE transformations.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_template#decode_formats TransformTemplate#decode_formats}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_template#decode_formats TransformTemplate#decode_formats}
 
 ---
 
@@ -926,7 +926,7 @@ public readonly encodeFormat: string;
 
 The regular expression template used for encoding values. Only applicable to FPE transformations.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_template#encode_format TransformTemplate#encode_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_template#encode_format TransformTemplate#encode_format}
 
 ---
 
@@ -938,7 +938,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_template#id TransformTemplate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_template#id TransformTemplate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -955,7 +955,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_template#namespace TransformTemplate#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_template#namespace TransformTemplate#namespace}
 
 ---
 
@@ -969,7 +969,7 @@ public readonly pattern: string;
 
 The pattern used for matching. Currently, only regular expression pattern is supported.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_template#pattern TransformTemplate#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_template#pattern TransformTemplate#pattern}
 
 ---
 
@@ -983,7 +983,7 @@ public readonly type: string;
 
 The pattern type to use for match detection. Currently, only regex is supported.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_template#type TransformTemplate#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_template#type TransformTemplate#type}
 
 ---
 

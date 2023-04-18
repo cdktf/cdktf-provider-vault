@@ -1,6 +1,6 @@
 # `vault_identity_entity_alias`
 
-Refer to the Terraform Registory for docs: [`vault_identity_entity_alias`](https://www.terraform.io/docs/providers/vault/r/identity_entity_alias).
+Refer to the Terraform Registory for docs: [`vault_identity_entity_alias`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_entity_alias).
 
 # `identityEntityAlias` Submodule <a name="`identityEntityAlias` Submodule" id="@cdktf/provider-vault.identityEntityAlias"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_identity_entity_alias`](https
 
 ### IdentityEntityAlias <a name="IdentityEntityAlias" id="@cdktf/provider-vault.identityEntityAlias.IdentityEntityAlias"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/identity_entity_alias vault_identity_entity_alias}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_entity_alias vault_identity_entity_alias}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.identityEntityAlias.IdentityEntityAlias.Initializer"></a>
 
@@ -19,7 +19,7 @@ identityEntityAlias.IdentityEntityAlias(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -39,7 +39,7 @@ identityEntityAlias.IdentityEntityAlias(
 | <code><a href="#@cdktf/provider-vault.identityEntityAlias.IdentityEntityAlias.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-vault.identityEntityAlias.IdentityEntityAlias.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-vault.identityEntityAlias.IdentityEntityAlias.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityEntityAlias.IdentityEntityAlias.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.identityEntityAlias.IdentityEntityAlias.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityEntityAlias.IdentityEntityAlias.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityEntityAlias.IdentityEntityAlias.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityEntityAlias.IdentityEntityAlias.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -49,7 +49,7 @@ identityEntityAlias.IdentityEntityAlias(
 | <code><a href="#@cdktf/provider-vault.identityEntityAlias.IdentityEntityAlias.Initializer.parameter.mountAccessor">mount_accessor</a></code> | <code>str</code> | Mount accessor to which this alias belongs toMount accessor to which this alias belongs to. |
 | <code><a href="#@cdktf/provider-vault.identityEntityAlias.IdentityEntityAlias.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the entity alias. |
 | <code><a href="#@cdktf/provider-vault.identityEntityAlias.IdentityEntityAlias.Initializer.parameter.customMetadata">custom_metadata</a></code> | <code>typing.Mapping[str]</code> | Custom metadata to be associated with this alias. |
-| <code><a href="#@cdktf/provider-vault.identityEntityAlias.IdentityEntityAlias.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_entity_alias#id IdentityEntityAlias#id}. |
+| <code><a href="#@cdktf/provider-vault.identityEntityAlias.IdentityEntityAlias.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_entity_alias#id IdentityEntityAlias#id}. |
 | <code><a href="#@cdktf/provider-vault.identityEntityAlias.IdentityEntityAlias.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -80,7 +80,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.identityEntityAlias.IdentityEntityAlias.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 ID of the entity to which this is an alias.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_entity_alias#canonical_id IdentityEntityAlias#canonical_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_entity_alias#canonical_id IdentityEntityAlias#canonical_id}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Mount accessor to which this alias belongs toMount accessor to which this alias belongs to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_entity_alias#mount_accessor IdentityEntityAlias#mount_accessor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_entity_alias#mount_accessor IdentityEntityAlias#mount_accessor}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Name of the entity alias.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_entity_alias#name IdentityEntityAlias#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_entity_alias#name IdentityEntityAlias#name}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Custom metadata to be associated with this alias.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_entity_alias#custom_metadata IdentityEntityAlias#custom_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_entity_alias#custom_metadata IdentityEntityAlias#custom_metadata}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_entity_alias#id IdentityEntityAlias#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_entity_alias#id IdentityEntityAlias#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -171,7 +171,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_entity_alias#namespace IdentityEntityAlias#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_entity_alias#namespace IdentityEntityAlias#namespace}
 
 ---
 
@@ -516,7 +516,7 @@ identityEntityAlias.IdentityEntityAlias.is_terraform_resource(
 | <code><a href="#@cdktf/provider-vault.identityEntityAlias.IdentityEntityAlias.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityEntityAlias.IdentityEntityAlias.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityEntityAlias.IdentityEntityAlias.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityEntityAlias.IdentityEntityAlias.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.identityEntityAlias.IdentityEntityAlias.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityEntityAlias.IdentityEntityAlias.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityEntityAlias.IdentityEntityAlias.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityEntityAlias.IdentityEntityAlias.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -622,10 +622,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.identityEntityAlias.IdentityEntityAlias.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -828,7 +828,7 @@ from cdktf_cdktf_provider_vault import identity_entity_alias
 
 identityEntityAlias.IdentityEntityAliasConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -848,7 +848,7 @@ identityEntityAlias.IdentityEntityAliasConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.identityEntityAlias.IdentityEntityAliasConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityEntityAlias.IdentityEntityAliasConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.identityEntityAlias.IdentityEntityAliasConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityEntityAlias.IdentityEntityAliasConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityEntityAlias.IdentityEntityAliasConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityEntityAlias.IdentityEntityAliasConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -858,7 +858,7 @@ identityEntityAlias.IdentityEntityAliasConfig(
 | <code><a href="#@cdktf/provider-vault.identityEntityAlias.IdentityEntityAliasConfig.property.mountAccessor">mount_accessor</a></code> | <code>str</code> | Mount accessor to which this alias belongs toMount accessor to which this alias belongs to. |
 | <code><a href="#@cdktf/provider-vault.identityEntityAlias.IdentityEntityAliasConfig.property.name">name</a></code> | <code>str</code> | Name of the entity alias. |
 | <code><a href="#@cdktf/provider-vault.identityEntityAlias.IdentityEntityAliasConfig.property.customMetadata">custom_metadata</a></code> | <code>typing.Mapping[str]</code> | Custom metadata to be associated with this alias. |
-| <code><a href="#@cdktf/provider-vault.identityEntityAlias.IdentityEntityAliasConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_entity_alias#id IdentityEntityAlias#id}. |
+| <code><a href="#@cdktf/provider-vault.identityEntityAlias.IdentityEntityAliasConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_entity_alias#id IdentityEntityAlias#id}. |
 | <code><a href="#@cdktf/provider-vault.identityEntityAlias.IdentityEntityAliasConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -876,10 +876,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.identityEntityAlias.IdentityEntityAliasConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -943,7 +943,7 @@ canonical_id: str
 
 ID of the entity to which this is an alias.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_entity_alias#canonical_id IdentityEntityAlias#canonical_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_entity_alias#canonical_id IdentityEntityAlias#canonical_id}
 
 ---
 
@@ -957,7 +957,7 @@ mount_accessor: str
 
 Mount accessor to which this alias belongs toMount accessor to which this alias belongs to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_entity_alias#mount_accessor IdentityEntityAlias#mount_accessor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_entity_alias#mount_accessor IdentityEntityAlias#mount_accessor}
 
 ---
 
@@ -971,7 +971,7 @@ name: str
 
 Name of the entity alias.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_entity_alias#name IdentityEntityAlias#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_entity_alias#name IdentityEntityAlias#name}
 
 ---
 
@@ -985,7 +985,7 @@ custom_metadata: typing.Mapping[str]
 
 Custom metadata to be associated with this alias.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_entity_alias#custom_metadata IdentityEntityAlias#custom_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_entity_alias#custom_metadata IdentityEntityAlias#custom_metadata}
 
 ---
 
@@ -997,7 +997,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_entity_alias#id IdentityEntityAlias#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_entity_alias#id IdentityEntityAlias#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1014,7 +1014,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_entity_alias#namespace IdentityEntityAlias#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_entity_alias#namespace IdentityEntityAlias#namespace}
 
 ---
 

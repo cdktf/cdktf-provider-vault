@@ -1,6 +1,6 @@
 # `vault_transform_alphabet`
 
-Refer to the Terraform Registory for docs: [`vault_transform_alphabet`](https://www.terraform.io/docs/providers/vault/r/transform_alphabet).
+Refer to the Terraform Registory for docs: [`vault_transform_alphabet`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_alphabet).
 
 # `transformAlphabet` Submodule <a name="`transformAlphabet` Submodule" id="@cdktf/provider-vault.transformAlphabet"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_transform_alphabet`](https://
 
 ### TransformAlphabet <a name="TransformAlphabet" id="@cdktf/provider-vault.transformAlphabet.TransformAlphabet"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/transform_alphabet vault_transform_alphabet}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_alphabet vault_transform_alphabet}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.transformAlphabet.TransformAlphabet.Initializer"></a>
 
@@ -19,6 +19,7 @@ TransformAlphabet.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -39,7 +40,7 @@ TransformAlphabet.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabet.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabet.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabet.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabet.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabet.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabet.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabet.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabet.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -48,7 +49,7 @@ TransformAlphabet.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabet.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the alphabet. |
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabet.Initializer.parameter.path">path</a></code> | <code>java.lang.String</code> | The mount path for a back-end, for example, the path given in "$ vault auth enable -path=my-aws aws". |
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabet.Initializer.parameter.alphabet">alphabet</a></code> | <code>java.lang.String</code> | A string of characters that contains the alphabet set. |
-| <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabet.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_alphabet#id TransformAlphabet#id}. |
+| <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabet.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_alphabet#id TransformAlphabet#id}. |
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabet.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -79,7 +80,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.transformAlphabet.TransformAlphabet.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -119,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the alphabet.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_alphabet#name TransformAlphabet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_alphabet#name TransformAlphabet#name}
 
 ---
 
@@ -129,7 +130,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 The mount path for a back-end, for example, the path given in "$ vault auth enable -path=my-aws aws".
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_alphabet#path TransformAlphabet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_alphabet#path TransformAlphabet#path}
 
 ---
 
@@ -139,7 +140,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 A string of characters that contains the alphabet set.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_alphabet#alphabet TransformAlphabet#alphabet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_alphabet#alphabet TransformAlphabet#alphabet}
 
 ---
 
@@ -147,7 +148,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_alphabet#id TransformAlphabet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_alphabet#id TransformAlphabet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -160,7 +161,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_alphabet#namespace TransformAlphabet#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_alphabet#namespace TransformAlphabet#namespace}
 
 ---
 
@@ -474,7 +475,7 @@ TransformAlphabet.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabet.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabet.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabet.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabet.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabet.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabet.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabet.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabet.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -578,10 +579,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.transformAlphabet.TransformAlphabet.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -766,6 +767,7 @@ TransformAlphabetConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -786,7 +788,7 @@ TransformAlphabetConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabetConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabetConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabetConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabetConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabetConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabetConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -795,7 +797,7 @@ TransformAlphabetConfig.builder()
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabetConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the alphabet. |
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabetConfig.property.path">path</a></code> | <code>java.lang.String</code> | The mount path for a back-end, for example, the path given in "$ vault auth enable -path=my-aws aws". |
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabetConfig.property.alphabet">alphabet</a></code> | <code>java.lang.String</code> | A string of characters that contains the alphabet set. |
-| <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabetConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_alphabet#id TransformAlphabet#id}. |
+| <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabetConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_alphabet#id TransformAlphabet#id}. |
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabetConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -813,10 +815,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.transformAlphabet.TransformAlphabetConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -880,7 +882,7 @@ public java.lang.String getName();
 
 The name of the alphabet.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_alphabet#name TransformAlphabet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_alphabet#name TransformAlphabet#name}
 
 ---
 
@@ -894,7 +896,7 @@ public java.lang.String getPath();
 
 The mount path for a back-end, for example, the path given in "$ vault auth enable -path=my-aws aws".
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_alphabet#path TransformAlphabet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_alphabet#path TransformAlphabet#path}
 
 ---
 
@@ -908,7 +910,7 @@ public java.lang.String getAlphabet();
 
 A string of characters that contains the alphabet set.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_alphabet#alphabet TransformAlphabet#alphabet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_alphabet#alphabet TransformAlphabet#alphabet}
 
 ---
 
@@ -920,7 +922,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_alphabet#id TransformAlphabet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_alphabet#id TransformAlphabet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -937,7 +939,7 @@ public java.lang.String getNamespace();
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_alphabet#namespace TransformAlphabet#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_alphabet#namespace TransformAlphabet#namespace}
 
 ---
 

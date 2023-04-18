@@ -1,6 +1,6 @@
 # `data_vault_transform_encode`
 
-Refer to the Terraform Registory for docs: [`data_vault_transform_encode`](https://www.terraform.io/docs/providers/vault/d/transform_encode).
+Refer to the Terraform Registory for docs: [`data_vault_transform_encode`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_encode).
 
 # `dataVaultTransformEncode` Submodule <a name="`dataVaultTransformEncode` Submodule" id="@cdktf/provider-vault.dataVaultTransformEncode"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_vault_transform_encode`](https
 
 ### DataVaultTransformEncode <a name="DataVaultTransformEncode" id="@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/d/transform_encode vault_transform_encode}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_encode vault_transform_encode}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.Initializer"></a>
 
@@ -394,7 +394,7 @@ DataVaultTransformEncode.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -497,10 +497,10 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -773,7 +773,7 @@ using HashiCorp.Cdktf.Providers.Vault;
 
 new DataVaultTransformEncodeConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -797,7 +797,7 @@ new DataVaultTransformEncodeConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -808,7 +808,7 @@ new DataVaultTransformEncodeConfig {
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.batchInput">BatchInput</a></code> | <code>object</code> | Specifies a list of items to be encoded in a single batch. |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.batchResults">BatchResults</a></code> | <code>object</code> | The result of encoding batch_input. |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.encodedValue">EncodedValue</a></code> | <code>string</code> | The result of encoding a value. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/transform_encode#id DataVaultTransformEncode#id}. |
+| <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_encode#id DataVaultTransformEncode#id}. |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.transformation">Transformation</a></code> | <code>string</code> | The transformation to perform. |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.tweak">Tweak</a></code> | <code>string</code> | The tweak value to use. Only applicable for FPE transformations. |
@@ -829,10 +829,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -896,7 +896,7 @@ public string Path { get; set; }
 
 Path to backend from which to retrieve data.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/transform_encode#path DataVaultTransformEncode#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_encode#path DataVaultTransformEncode#path}
 
 ---
 
@@ -910,7 +910,7 @@ public string RoleName { get; set; }
 
 The name of the role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/transform_encode#role_name DataVaultTransformEncode#role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_encode#role_name DataVaultTransformEncode#role_name}
 
 ---
 
@@ -926,7 +926,7 @@ Specifies a list of items to be encoded in a single batch.
 
 If this parameter is set, the parameters 'value', 'transformation' and 'tweak' will be ignored. Each batch item within the list can specify these parameters instead.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/transform_encode#batch_input DataVaultTransformEncode#batch_input}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_encode#batch_input DataVaultTransformEncode#batch_input}
 
 ---
 
@@ -940,7 +940,7 @@ public object BatchResults { get; set; }
 
 The result of encoding batch_input.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/transform_encode#batch_results DataVaultTransformEncode#batch_results}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_encode#batch_results DataVaultTransformEncode#batch_results}
 
 ---
 
@@ -954,7 +954,7 @@ public string EncodedValue { get; set; }
 
 The result of encoding a value.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/transform_encode#encoded_value DataVaultTransformEncode#encoded_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_encode#encoded_value DataVaultTransformEncode#encoded_value}
 
 ---
 
@@ -966,7 +966,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/transform_encode#id DataVaultTransformEncode#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_encode#id DataVaultTransformEncode#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -983,7 +983,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/transform_encode#namespace DataVaultTransformEncode#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_encode#namespace DataVaultTransformEncode#namespace}
 
 ---
 
@@ -999,7 +999,7 @@ The transformation to perform.
 
 If no value is provided and the role contains a single transformation, this value will be inferred from the role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/transform_encode#transformation DataVaultTransformEncode#transformation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_encode#transformation DataVaultTransformEncode#transformation}
 
 ---
 
@@ -1013,7 +1013,7 @@ public string Tweak { get; set; }
 
 The tweak value to use. Only applicable for FPE transformations.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/transform_encode#tweak DataVaultTransformEncode#tweak}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_encode#tweak DataVaultTransformEncode#tweak}
 
 ---
 
@@ -1027,7 +1027,7 @@ public string Value { get; set; }
 
 The value in which to encode.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/transform_encode#value DataVaultTransformEncode#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_encode#value DataVaultTransformEncode#value}
 
 ---
 

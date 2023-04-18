@@ -1,6 +1,6 @@
 # `vault_namespace`
 
-Refer to the Terraform Registory for docs: [`vault_namespace`](https://www.terraform.io/docs/providers/vault/r/namespace).
+Refer to the Terraform Registory for docs: [`vault_namespace`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/namespace).
 
 # `namespace` Submodule <a name="`namespace` Submodule" id="@cdktf/provider-vault.namespace"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`vault_namespace`](https://www.terra
 
 ### Namespace <a name="Namespace" id="@cdktf/provider-vault.namespace.Namespace"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/namespace vault_namespace}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/namespace vault_namespace}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.namespace.Namespace.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/namespace"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/namespace"
 
 namespace.NewNamespace(scope Construct, id *string, config NamespaceConfig) Namespace
 ```
@@ -291,7 +291,7 @@ func ResetPathFq()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.namespace.Namespace.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/namespace"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/namespace"
 
 namespace.Namespace_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.namespace.Namespace.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/namespace"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/namespace"
 
 namespace.Namespace_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ namespace.Namespace_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.namespace.Namespace.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/namespace"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/namespace"
 
 namespace.Namespace_IsTerraformResource(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ namespace.Namespace_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-vault.namespace.Namespace.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.namespace.Namespace.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.namespace.Namespace.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.namespace.Namespace.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.namespace.Namespace.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.namespace.Namespace.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.namespace.Namespace.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.namespace.Namespace.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -463,10 +463,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.namespace.Namespace.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -635,11 +635,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.namespace.NamespaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/namespace"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/namespace"
 
 &namespace.NamespaceConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -657,14 +657,14 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/namespace"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.namespace.NamespaceConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.namespace.NamespaceConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.namespace.NamespaceConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.namespace.NamespaceConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.namespace.NamespaceConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.namespace.NamespaceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.namespace.NamespaceConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.namespace.NamespaceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.namespace.NamespaceConfig.property.path">Path</a></code> | <code>*string</code> | Namespace path. |
-| <code><a href="#@cdktf/provider-vault.namespace.NamespaceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/namespace#id Namespace#id}. |
+| <code><a href="#@cdktf/provider-vault.namespace.NamespaceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/namespace#id Namespace#id}. |
 | <code><a href="#@cdktf/provider-vault.namespace.NamespaceConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.namespace.NamespaceConfig.property.pathFq">PathFq</a></code> | <code>*string</code> | The fully qualified namespace path. |
 
@@ -683,10 +683,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.namespace.NamespaceConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -750,7 +750,7 @@ Path *string
 
 Namespace path.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/namespace#path Namespace#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/namespace#path Namespace#path}
 
 ---
 
@@ -762,7 +762,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/namespace#id Namespace#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/namespace#id Namespace#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -779,7 +779,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/namespace#namespace Namespace#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/namespace#namespace Namespace#namespace}
 
 ---
 
@@ -793,7 +793,7 @@ PathFq *string
 
 The fully qualified namespace path.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/namespace#path_fq Namespace#path_fq}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/namespace#path_fq Namespace#path_fq}
 
 ---
 

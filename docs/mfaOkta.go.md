@@ -1,6 +1,6 @@
 # `vault_mfa_okta`
 
-Refer to the Terraform Registory for docs: [`vault_mfa_okta`](https://www.terraform.io/docs/providers/vault/r/mfa_okta).
+Refer to the Terraform Registory for docs: [`vault_mfa_okta`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_okta).
 
 # `mfaOkta` Submodule <a name="`mfaOkta` Submodule" id="@cdktf/provider-vault.mfaOkta"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`vault_mfa_okta`](https://www.terraf
 
 ### MfaOkta <a name="MfaOkta" id="@cdktf/provider-vault.mfaOkta.MfaOkta"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/mfa_okta vault_mfa_okta}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_okta vault_mfa_okta}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.mfaOkta.MfaOkta.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/mfaokta"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/mfaokta"
 
 mfaokta.NewMfaOkta(scope Construct, id *string, config MfaOktaConfig) MfaOkta
 ```
@@ -305,7 +305,7 @@ func ResetUsernameFormat()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.mfaOkta.MfaOkta.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/mfaokta"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/mfaokta"
 
 mfaokta.MfaOkta_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.mfaOkta.MfaOkta.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/mfaokta"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/mfaokta"
 
 mfaokta.MfaOkta_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ mfaokta.MfaOkta_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.mfaOkta.MfaOkta.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/mfaokta"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/mfaokta"
 
 mfaokta.MfaOkta_IsTerraformResource(x interface{}) *bool
 ```
@@ -374,7 +374,7 @@ mfaokta.MfaOkta_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-vault.mfaOkta.MfaOkta.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaOkta.MfaOkta.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaOkta.MfaOkta.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.mfaOkta.MfaOkta.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mfaOkta.MfaOkta.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaOkta.MfaOkta.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaOkta.MfaOkta.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaOkta.MfaOkta.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -486,10 +486,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.mfaOkta.MfaOkta.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -748,11 +748,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.mfaOkta.MfaOktaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/mfaokta"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/mfaokta"
 
 &mfaokta.MfaOktaConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -775,7 +775,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/mfaokta"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.mfaOkta.MfaOktaConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.mfaOkta.MfaOktaConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mfaOkta.MfaOktaConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaOkta.MfaOktaConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaOkta.MfaOktaConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaOkta.MfaOktaConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -806,10 +806,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.mfaOkta.MfaOktaConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -873,7 +873,7 @@ ApiToken *string
 
 Okta API key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_okta#api_token MfaOkta#api_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_okta#api_token MfaOkta#api_token}
 
 ---
 
@@ -889,7 +889,7 @@ The mount to tie this method to for use in automatic mappings.
 
 The mapping will use the Name field of Aliases associated with this mount as the username in the mapping.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_okta#mount_accessor MfaOkta#mount_accessor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_okta#mount_accessor MfaOkta#mount_accessor}
 
 ---
 
@@ -903,7 +903,7 @@ Name *string
 
 Name of the MFA method.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_okta#name MfaOkta#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_okta#name MfaOkta#name}
 
 ---
 
@@ -917,7 +917,7 @@ OrgName *string
 
 Name of the organization to be used in the Okta API.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_okta#org_name MfaOkta#org_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_okta#org_name MfaOkta#org_name}
 
 ---
 
@@ -931,7 +931,7 @@ BaseUrl *string
 
 If set, will be used as the base domain for API requests.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_okta#base_url MfaOkta#base_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_okta#base_url MfaOkta#base_url}
 
 ---
 
@@ -945,7 +945,7 @@ Id *string
 
 ID computed by Vault.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_okta#id MfaOkta#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_okta#id MfaOkta#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -962,7 +962,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_okta#namespace MfaOkta#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_okta#namespace MfaOkta#namespace}
 
 ---
 
@@ -976,7 +976,7 @@ PrimaryEmail interface{}
 
 If set to true, the username will only match the primary email for the account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_okta#primary_email MfaOkta#primary_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_okta#primary_email MfaOkta#primary_email}
 
 ---
 
@@ -990,7 +990,7 @@ UsernameFormat *string
 
 A format string for mapping Identity names to MFA method names. Values to substitute should be placed in `{{}}`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_okta#username_format MfaOkta#username_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_okta#username_format MfaOkta#username_format}
 
 ---
 

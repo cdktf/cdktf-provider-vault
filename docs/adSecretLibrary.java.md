@@ -1,6 +1,6 @@
 # `vault_ad_secret_library`
 
-Refer to the Terraform Registory for docs: [`vault_ad_secret_library`](https://www.terraform.io/docs/providers/vault/r/ad_secret_library).
+Refer to the Terraform Registory for docs: [`vault_ad_secret_library`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library).
 
 # `adSecretLibrary` Submodule <a name="`adSecretLibrary` Submodule" id="@cdktf/provider-vault.adSecretLibrary"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_ad_secret_library`](https://w
 
 ### AdSecretLibrary <a name="AdSecretLibrary" id="@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_library vault_ad_secret_library}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library vault_ad_secret_library}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.Initializer"></a>
 
@@ -19,6 +19,7 @@ AdSecretLibrary.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -43,7 +44,7 @@ AdSecretLibrary.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -53,7 +54,7 @@ AdSecretLibrary.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the set of service accounts. |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.Initializer.parameter.serviceAccountNames">serviceAccountNames</a></code> | <code>java.util.List<java.lang.String></code> | The names of all the service accounts that can be checked out from this set. |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.Initializer.parameter.disableCheckInEnforcement">disableCheckInEnforcement</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Disable enforcing that service accounts must be checked in by the entity or client token that checked them out. |
-| <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_library#id AdSecretLibrary#id}. |
+| <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library#id AdSecretLibrary#id}. |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.Initializer.parameter.maxTtl">maxTtl</a></code> | <code>java.lang.Number</code> | The maximum amount of time, in seconds, a check-out last with renewal before Vault automatically checks it back in. |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.Initializer.parameter.ttl">ttl</a></code> | <code>java.lang.Number</code> | The amount of time, in seconds, a single check-out lasts before Vault automatically checks it back in. |
@@ -86,7 +87,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -126,7 +127,7 @@ Must be unique amongst siblings in the same scope
 
 The mount path for the AD backend.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_library#backend AdSecretLibrary#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library#backend AdSecretLibrary#backend}
 
 ---
 
@@ -136,7 +137,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 The name of the set of service accounts.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_library#name AdSecretLibrary#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library#name AdSecretLibrary#name}
 
 ---
 
@@ -148,7 +149,7 @@ The names of all the service accounts that can be checked out from this set.
 
 These service accounts must already exist in Active Directory.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_library#service_account_names AdSecretLibrary#service_account_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library#service_account_names AdSecretLibrary#service_account_names}
 
 ---
 
@@ -158,7 +159,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Disable enforcing that service accounts must be checked in by the entity or client token that checked them out.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_library#disable_check_in_enforcement AdSecretLibrary#disable_check_in_enforcement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library#disable_check_in_enforcement AdSecretLibrary#disable_check_in_enforcement}
 
 ---
 
@@ -166,7 +167,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_library#id AdSecretLibrary#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library#id AdSecretLibrary#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -179,7 +180,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The maximum amount of time, in seconds, a check-out last with renewal before Vault automatically checks it back in.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_library#max_ttl AdSecretLibrary#max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library#max_ttl AdSecretLibrary#max_ttl}
 
 ---
 
@@ -189,7 +190,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_library#namespace AdSecretLibrary#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library#namespace AdSecretLibrary#namespace}
 
 ---
 
@@ -199,7 +200,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 The amount of time, in seconds, a single check-out lasts before Vault automatically checks it back in.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_library#ttl AdSecretLibrary#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library#ttl AdSecretLibrary#ttl}
 
 ---
 
@@ -527,7 +528,7 @@ AdSecretLibrary.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -637,10 +638,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -885,6 +886,7 @@ AdSecretLibraryConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -909,7 +911,7 @@ AdSecretLibraryConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -919,7 +921,7 @@ AdSecretLibraryConfig.builder()
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the set of service accounts. |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig.property.serviceAccountNames">serviceAccountNames</a></code> | <code>java.util.List<java.lang.String></code> | The names of all the service accounts that can be checked out from this set. |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig.property.disableCheckInEnforcement">disableCheckInEnforcement</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Disable enforcing that service accounts must be checked in by the entity or client token that checked them out. |
-| <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_library#id AdSecretLibrary#id}. |
+| <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library#id AdSecretLibrary#id}. |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig.property.maxTtl">maxTtl</a></code> | <code>java.lang.Number</code> | The maximum amount of time, in seconds, a check-out last with renewal before Vault automatically checks it back in. |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig.property.ttl">ttl</a></code> | <code>java.lang.Number</code> | The amount of time, in seconds, a single check-out lasts before Vault automatically checks it back in. |
@@ -939,10 +941,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1006,7 +1008,7 @@ public java.lang.String getBackend();
 
 The mount path for the AD backend.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_library#backend AdSecretLibrary#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library#backend AdSecretLibrary#backend}
 
 ---
 
@@ -1020,7 +1022,7 @@ public java.lang.String getName();
 
 The name of the set of service accounts.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_library#name AdSecretLibrary#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library#name AdSecretLibrary#name}
 
 ---
 
@@ -1036,7 +1038,7 @@ The names of all the service accounts that can be checked out from this set.
 
 These service accounts must already exist in Active Directory.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_library#service_account_names AdSecretLibrary#service_account_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library#service_account_names AdSecretLibrary#service_account_names}
 
 ---
 
@@ -1050,7 +1052,7 @@ public java.lang.Object getDisableCheckInEnforcement();
 
 Disable enforcing that service accounts must be checked in by the entity or client token that checked them out.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_library#disable_check_in_enforcement AdSecretLibrary#disable_check_in_enforcement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library#disable_check_in_enforcement AdSecretLibrary#disable_check_in_enforcement}
 
 ---
 
@@ -1062,7 +1064,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_library#id AdSecretLibrary#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library#id AdSecretLibrary#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1079,7 +1081,7 @@ public java.lang.Number getMaxTtl();
 
 The maximum amount of time, in seconds, a check-out last with renewal before Vault automatically checks it back in.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_library#max_ttl AdSecretLibrary#max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library#max_ttl AdSecretLibrary#max_ttl}
 
 ---
 
@@ -1093,7 +1095,7 @@ public java.lang.String getNamespace();
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_library#namespace AdSecretLibrary#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library#namespace AdSecretLibrary#namespace}
 
 ---
 
@@ -1107,7 +1109,7 @@ public java.lang.Number getTtl();
 
 The amount of time, in seconds, a single check-out lasts before Vault automatically checks it back in.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_library#ttl AdSecretLibrary#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library#ttl AdSecretLibrary#ttl}
 
 ---
 

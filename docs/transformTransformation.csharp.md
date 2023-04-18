@@ -1,6 +1,6 @@
 # `vault_transform_transformation`
 
-Refer to the Terraform Registory for docs: [`vault_transform_transformation`](https://www.terraform.io/docs/providers/vault/r/transform_transformation).
+Refer to the Terraform Registory for docs: [`vault_transform_transformation`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_transformation).
 
 # `transformTransformation` Submodule <a name="`transformTransformation` Submodule" id="@cdktf/provider-vault.transformTransformation"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_transform_transformation`](ht
 
 ### TransformTransformation <a name="TransformTransformation" id="@cdktf/provider-vault.transformTransformation.TransformTransformation"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/transform_transformation vault_transform_transformation}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_transformation vault_transform_transformation}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.Initializer"></a>
 
@@ -402,7 +402,7 @@ TransformTransformation.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -518,10 +518,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -824,7 +824,7 @@ using HashiCorp.Cdktf.Providers.Vault;
 
 new TransformTransformationConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -849,7 +849,7 @@ new TransformTransformationConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -859,7 +859,7 @@ new TransformTransformationConfig {
 | <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.path">Path</a></code> | <code>string</code> | The mount path for a back-end, for example, the path given in "$ vault auth enable -path=my-aws aws". |
 | <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.allowedRoles">AllowedRoles</a></code> | <code>string[]</code> | The set of roles allowed to perform this transformation. |
 | <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.deletionAllowed">DeletionAllowed</a></code> | <code>object</code> | If true, this transform can be deleted. Otherwise deletion is blocked while this value remains false. |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_transformation#id TransformTransformation#id}. |
+| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_transformation#id TransformTransformation#id}. |
 | <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.maskingCharacter">MaskingCharacter</a></code> | <code>string</code> | The character used to replace data when in masking mode. |
 | <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.template">Template</a></code> | <code>string</code> | The name of the template to use. |
@@ -882,10 +882,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -949,7 +949,7 @@ public string Name { get; set; }
 
 The name of the transformation.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_transformation#name TransformTransformation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_transformation#name TransformTransformation#name}
 
 ---
 
@@ -963,7 +963,7 @@ public string Path { get; set; }
 
 The mount path for a back-end, for example, the path given in "$ vault auth enable -path=my-aws aws".
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_transformation#path TransformTransformation#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_transformation#path TransformTransformation#path}
 
 ---
 
@@ -977,7 +977,7 @@ public string[] AllowedRoles { get; set; }
 
 The set of roles allowed to perform this transformation.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_transformation#allowed_roles TransformTransformation#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_transformation#allowed_roles TransformTransformation#allowed_roles}
 
 ---
 
@@ -991,7 +991,7 @@ public object DeletionAllowed { get; set; }
 
 If true, this transform can be deleted. Otherwise deletion is blocked while this value remains false.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_transformation#deletion_allowed TransformTransformation#deletion_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_transformation#deletion_allowed TransformTransformation#deletion_allowed}
 
 ---
 
@@ -1003,7 +1003,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_transformation#id TransformTransformation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_transformation#id TransformTransformation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1020,7 +1020,7 @@ public string MaskingCharacter { get; set; }
 
 The character used to replace data when in masking mode.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_transformation#masking_character TransformTransformation#masking_character}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_transformation#masking_character TransformTransformation#masking_character}
 
 ---
 
@@ -1034,7 +1034,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_transformation#namespace TransformTransformation#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_transformation#namespace TransformTransformation#namespace}
 
 ---
 
@@ -1048,7 +1048,7 @@ public string Template { get; set; }
 
 The name of the template to use.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_transformation#template TransformTransformation#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_transformation#template TransformTransformation#template}
 
 ---
 
@@ -1062,7 +1062,7 @@ public string[] Templates { get; set; }
 
 Templates configured for transformation.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_transformation#templates TransformTransformation#templates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_transformation#templates TransformTransformation#templates}
 
 ---
 
@@ -1076,7 +1076,7 @@ public string TweakSource { get; set; }
 
 The source of where the tweak value comes from. Only valid when in FPE mode.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_transformation#tweak_source TransformTransformation#tweak_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_transformation#tweak_source TransformTransformation#tweak_source}
 
 ---
 
@@ -1090,7 +1090,7 @@ public string Type { get; set; }
 
 The type of transformation to perform.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_transformation#type TransformTransformation#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_transformation#type TransformTransformation#type}
 
 ---
 

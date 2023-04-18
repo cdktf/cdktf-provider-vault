@@ -1,3 +1,3 @@
 # `vault_rgp_policy`
 
-Refer to the Terraform Registory for docs: [`vault_rgp_policy`](https://www.terraform.io/docs/providers/vault/r/rgp_policy).
+Refer to the Terraform Registory for docs: [`vault_rgp_policy`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/rgp_policy).

@@ -1,6 +1,6 @@
 # `data_vault_aws_access_credentials`
 
-Refer to the Terraform Registory for docs: [`data_vault_aws_access_credentials`](https://www.terraform.io/docs/providers/vault/d/aws_access_credentials).
+Refer to the Terraform Registory for docs: [`data_vault_aws_access_credentials`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/aws_access_credentials).
 
 # `dataVaultAwsAccessCredentials` Submodule <a name="`dataVaultAwsAccessCredentials` Submodule" id="@cdktf/provider-vault.dataVaultAwsAccessCredentials"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_vault_aws_access_credentials`]
 
 ### DataVaultAwsAccessCredentials <a name="DataVaultAwsAccessCredentials" id="@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentials"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/d/aws_access_credentials vault_aws_access_credentials}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/aws_access_credentials vault_aws_access_credentials}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultawsaccesscredentials"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/datavaultawsaccesscredentials"
 
 datavaultawsaccesscredentials.NewDataVaultAwsAccessCredentials(scope Construct, id *string, config DataVaultAwsAccessCredentialsConfig) DataVaultAwsAccessCredentials
 ```
@@ -312,7 +312,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentials.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultawsaccesscredentials"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/datavaultawsaccesscredentials"
 
 datavaultawsaccesscredentials.DataVaultAwsAccessCredentials_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentials.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultawsaccesscredentials"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/datavaultawsaccesscredentials"
 
 datavaultawsaccesscredentials.DataVaultAwsAccessCredentials_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datavaultawsaccesscredentials.DataVaultAwsAccessCredentials_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentials.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultawsaccesscredentials"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/datavaultawsaccesscredentials"
 
 datavaultawsaccesscredentials.DataVaultAwsAccessCredentials_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -380,7 +380,7 @@ datavaultawsaccesscredentials.DataVaultAwsAccessCredentials_IsTerraformDataSourc
 | <code><a href="#@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentials.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentials.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentials.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentials.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentials.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentials.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentials.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentials.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -486,10 +486,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentials.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -788,11 +788,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentialsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultawsaccesscredentials"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/datavaultawsaccesscredentials"
 
 &datavaultawsaccesscredentials.DataVaultAwsAccessCredentialsConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -814,7 +814,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultawsaccesscred
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentialsConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentialsConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentialsConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentialsConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentialsConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentialsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -822,7 +822,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultawsaccesscred
 | <code><a href="#@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentialsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentialsConfig.property.backend">Backend</a></code> | <code>*string</code> | AWS Secret Backend to read credentials from. |
 | <code><a href="#@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentialsConfig.property.role">Role</a></code> | <code>*string</code> | AWS Secret Role to read credentials from. |
-| <code><a href="#@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentialsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/aws_access_credentials#id DataVaultAwsAccessCredentials#id}. |
+| <code><a href="#@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentialsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/aws_access_credentials#id DataVaultAwsAccessCredentials#id}. |
 | <code><a href="#@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentialsConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentialsConfig.property.region">Region</a></code> | <code>*string</code> | Region the read credentials belong to. |
 | <code><a href="#@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentialsConfig.property.roleArn">RoleArn</a></code> | <code>*string</code> | ARN to use if multiple are available in the role. Required if the role has multiple ARNs. |
@@ -844,10 +844,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentialsConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -911,7 +911,7 @@ Backend *string
 
 AWS Secret Backend to read credentials from.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/aws_access_credentials#backend DataVaultAwsAccessCredentials#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/aws_access_credentials#backend DataVaultAwsAccessCredentials#backend}
 
 ---
 
@@ -925,7 +925,7 @@ Role *string
 
 AWS Secret Role to read credentials from.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/aws_access_credentials#role DataVaultAwsAccessCredentials#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/aws_access_credentials#role DataVaultAwsAccessCredentials#role}
 
 ---
 
@@ -937,7 +937,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/aws_access_credentials#id DataVaultAwsAccessCredentials#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/aws_access_credentials#id DataVaultAwsAccessCredentials#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -954,7 +954,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/aws_access_credentials#namespace DataVaultAwsAccessCredentials#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/aws_access_credentials#namespace DataVaultAwsAccessCredentials#namespace}
 
 ---
 
@@ -968,7 +968,7 @@ Region *string
 
 Region the read credentials belong to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/aws_access_credentials#region DataVaultAwsAccessCredentials#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/aws_access_credentials#region DataVaultAwsAccessCredentials#region}
 
 ---
 
@@ -982,7 +982,7 @@ RoleArn *string
 
 ARN to use if multiple are available in the role. Required if the role has multiple ARNs.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/aws_access_credentials#role_arn DataVaultAwsAccessCredentials#role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/aws_access_credentials#role_arn DataVaultAwsAccessCredentials#role_arn}
 
 ---
 
@@ -996,7 +996,7 @@ Ttl *string
 
 User specified Time-To-Live for the STS token. Uses the Role defined default_sts_ttl when not specified.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/aws_access_credentials#ttl DataVaultAwsAccessCredentials#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/aws_access_credentials#ttl DataVaultAwsAccessCredentials#ttl}
 
 ---
 
@@ -1010,7 +1010,7 @@ Type *string
 
 Type of credentials to read. Must be either 'creds' for Access Key and Secret Key, or 'sts' for STS.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/aws_access_credentials#type DataVaultAwsAccessCredentials#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/aws_access_credentials#type DataVaultAwsAccessCredentials#type}
 
 ---
 

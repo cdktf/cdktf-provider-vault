@@ -1,6 +1,6 @@
 # `data_vault_transform_encode`
 
-Refer to the Terraform Registory for docs: [`data_vault_transform_encode`](https://www.terraform.io/docs/providers/vault/d/transform_encode).
+Refer to the Terraform Registory for docs: [`data_vault_transform_encode`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_encode).
 
 # `dataVaultTransformEncode` Submodule <a name="`dataVaultTransformEncode` Submodule" id="@cdktf/provider-vault.dataVaultTransformEncode"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_vault_transform_encode`](https
 
 ### DataVaultTransformEncode <a name="DataVaultTransformEncode" id="@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/d/transform_encode vault_transform_encode}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_encode vault_transform_encode}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.Initializer"></a>
 
@@ -394,13 +394,13 @@ dataVaultTransformEncode.DataVaultTransformEncode.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.property.batchInputInput">batchInputInput</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.property.batchResultsInput">batchResultsInput</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.property.batchInputInput">batchInputInput</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: string}[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.property.batchResultsInput">batchResultsInput</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: string}[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.property.encodedValueInput">encodedValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.property.namespaceInput">namespaceInput</a></code> | <code>string</code> | *No description.* |
@@ -409,8 +409,8 @@ dataVaultTransformEncode.DataVaultTransformEncode.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.property.transformationInput">transformationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.property.tweakInput">tweakInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.property.batchInput">batchInput</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.property.batchResults">batchResults</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.property.batchInput">batchInput</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: string}[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.property.batchResults">batchResults</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: string}[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.property.encodedValue">encodedValue</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.property.namespace">namespace</a></code> | <code>string</code> | *No description.* |
@@ -497,10 +497,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -547,20 +547,20 @@ public readonly provider: TerraformProvider;
 ##### `batchInputInput`<sup>Optional</sup> <a name="batchInputInput" id="@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.property.batchInputInput"></a>
 
 ```typescript
-public readonly batchInputInput: IResolvable | {[ key: string ]: string};
+public readonly batchInputInput: IResolvable | {[ key: string ]: string}[];
 ```
 
-- *Type:* cdktf.IResolvable | {[ key: string ]: string}
+- *Type:* cdktf.IResolvable | {[ key: string ]: string}[]
 
 ---
 
 ##### `batchResultsInput`<sup>Optional</sup> <a name="batchResultsInput" id="@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.property.batchResultsInput"></a>
 
 ```typescript
-public readonly batchResultsInput: IResolvable | {[ key: string ]: string};
+public readonly batchResultsInput: IResolvable | {[ key: string ]: string}[];
 ```
 
-- *Type:* cdktf.IResolvable | {[ key: string ]: string}
+- *Type:* cdktf.IResolvable | {[ key: string ]: string}[]
 
 ---
 
@@ -647,20 +647,20 @@ public readonly valueInput: string;
 ##### `batchInput`<sup>Required</sup> <a name="batchInput" id="@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.property.batchInput"></a>
 
 ```typescript
-public readonly batchInput: IResolvable | {[ key: string ]: string};
+public readonly batchInput: IResolvable | {[ key: string ]: string}[];
 ```
 
-- *Type:* cdktf.IResolvable | {[ key: string ]: string}
+- *Type:* cdktf.IResolvable | {[ key: string ]: string}[]
 
 ---
 
 ##### `batchResults`<sup>Required</sup> <a name="batchResults" id="@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.property.batchResults"></a>
 
 ```typescript
-public readonly batchResults: IResolvable | {[ key: string ]: string};
+public readonly batchResults: IResolvable | {[ key: string ]: string}[];
 ```
 
-- *Type:* cdktf.IResolvable | {[ key: string ]: string}
+- *Type:* cdktf.IResolvable | {[ key: string ]: string}[]
 
 ---
 
@@ -779,7 +779,7 @@ const dataVaultTransformEncodeConfig: dataVaultTransformEncode.DataVaultTransfor
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -787,10 +787,10 @@ const dataVaultTransformEncodeConfig: dataVaultTransformEncode.DataVaultTransfor
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.path">path</a></code> | <code>string</code> | Path to backend from which to retrieve data. |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.roleName">roleName</a></code> | <code>string</code> | The name of the role. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.batchInput">batchInput</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: string}</code> | Specifies a list of items to be encoded in a single batch. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.batchResults">batchResults</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: string}</code> | The result of encoding batch_input. |
+| <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.batchInput">batchInput</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: string}[]</code> | Specifies a list of items to be encoded in a single batch. |
+| <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.batchResults">batchResults</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: string}[]</code> | The result of encoding batch_input. |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.encodedValue">encodedValue</a></code> | <code>string</code> | The result of encoding a value. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/transform_encode#id DataVaultTransformEncode#id}. |
+| <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_encode#id DataVaultTransformEncode#id}. |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.namespace">namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.transformation">transformation</a></code> | <code>string</code> | The transformation to perform. |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.tweak">tweak</a></code> | <code>string</code> | The tweak value to use. Only applicable for FPE transformations. |
@@ -811,10 +811,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -878,7 +878,7 @@ public readonly path: string;
 
 Path to backend from which to retrieve data.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/transform_encode#path DataVaultTransformEncode#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_encode#path DataVaultTransformEncode#path}
 
 ---
 
@@ -892,37 +892,37 @@ public readonly roleName: string;
 
 The name of the role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/transform_encode#role_name DataVaultTransformEncode#role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_encode#role_name DataVaultTransformEncode#role_name}
 
 ---
 
 ##### `batchInput`<sup>Optional</sup> <a name="batchInput" id="@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.batchInput"></a>
 
 ```typescript
-public readonly batchInput: IResolvable | {[ key: string ]: string};
+public readonly batchInput: IResolvable | {[ key: string ]: string}[];
 ```
 
-- *Type:* cdktf.IResolvable | {[ key: string ]: string}
+- *Type:* cdktf.IResolvable | {[ key: string ]: string}[]
 
 Specifies a list of items to be encoded in a single batch.
 
 If this parameter is set, the parameters 'value', 'transformation' and 'tweak' will be ignored. Each batch item within the list can specify these parameters instead.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/transform_encode#batch_input DataVaultTransformEncode#batch_input}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_encode#batch_input DataVaultTransformEncode#batch_input}
 
 ---
 
 ##### `batchResults`<sup>Optional</sup> <a name="batchResults" id="@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.batchResults"></a>
 
 ```typescript
-public readonly batchResults: IResolvable | {[ key: string ]: string};
+public readonly batchResults: IResolvable | {[ key: string ]: string}[];
 ```
 
-- *Type:* cdktf.IResolvable | {[ key: string ]: string}
+- *Type:* cdktf.IResolvable | {[ key: string ]: string}[]
 
 The result of encoding batch_input.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/transform_encode#batch_results DataVaultTransformEncode#batch_results}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_encode#batch_results DataVaultTransformEncode#batch_results}
 
 ---
 
@@ -936,7 +936,7 @@ public readonly encodedValue: string;
 
 The result of encoding a value.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/transform_encode#encoded_value DataVaultTransformEncode#encoded_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_encode#encoded_value DataVaultTransformEncode#encoded_value}
 
 ---
 
@@ -948,7 +948,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/transform_encode#id DataVaultTransformEncode#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_encode#id DataVaultTransformEncode#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -965,7 +965,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/transform_encode#namespace DataVaultTransformEncode#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_encode#namespace DataVaultTransformEncode#namespace}
 
 ---
 
@@ -981,7 +981,7 @@ The transformation to perform.
 
 If no value is provided and the role contains a single transformation, this value will be inferred from the role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/transform_encode#transformation DataVaultTransformEncode#transformation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_encode#transformation DataVaultTransformEncode#transformation}
 
 ---
 
@@ -995,7 +995,7 @@ public readonly tweak: string;
 
 The tweak value to use. Only applicable for FPE transformations.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/transform_encode#tweak DataVaultTransformEncode#tweak}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_encode#tweak DataVaultTransformEncode#tweak}
 
 ---
 
@@ -1009,7 +1009,7 @@ public readonly value: string;
 
 The value in which to encode.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/transform_encode#value DataVaultTransformEncode#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_encode#value DataVaultTransformEncode#value}
 
 ---
 

@@ -1,3 +1,3 @@
 # `vault_identity_group`
 
-Refer to the Terraform Registory for docs: [`vault_identity_group`](https://www.terraform.io/docs/providers/vault/r/identity_group).
+Refer to the Terraform Registory for docs: [`vault_identity_group`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group).

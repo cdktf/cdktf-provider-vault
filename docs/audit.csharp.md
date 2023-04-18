@@ -1,6 +1,6 @@
 # `vault_audit`
 
-Refer to the Terraform Registory for docs: [`vault_audit`](https://www.terraform.io/docs/providers/vault/r/audit).
+Refer to the Terraform Registory for docs: [`vault_audit`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/audit).
 
 # `audit` Submodule <a name="`audit` Submodule" id="@cdktf/provider-vault.audit"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_audit`](https://www.terraform
 
 ### Audit <a name="Audit" id="@cdktf/provider-vault.audit.Audit"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/audit vault_audit}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/audit vault_audit}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.audit.Audit.Initializer"></a>
 
@@ -374,7 +374,7 @@ Audit.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-vault.audit.Audit.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.audit.Audit.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.audit.Audit.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.audit.Audit.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.audit.Audit.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.audit.Audit.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.audit.Audit.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.audit.Audit.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -482,10 +482,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.audit.Audit.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -708,7 +708,7 @@ using HashiCorp.Cdktf.Providers.Vault;
 
 new AuditConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -729,7 +729,7 @@ new AuditConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.audit.AuditConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.audit.AuditConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.audit.AuditConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.audit.AuditConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.audit.AuditConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.audit.AuditConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -738,7 +738,7 @@ new AuditConfig {
 | <code><a href="#@cdktf/provider-vault.audit.AuditConfig.property.options">Options</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Configuration options to pass to the audit device itself. |
 | <code><a href="#@cdktf/provider-vault.audit.AuditConfig.property.type">Type</a></code> | <code>string</code> | Type of the audit device, such as 'file'. |
 | <code><a href="#@cdktf/provider-vault.audit.AuditConfig.property.description">Description</a></code> | <code>string</code> | Human-friendly description of the audit device. |
-| <code><a href="#@cdktf/provider-vault.audit.AuditConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/audit#id Audit#id}. |
+| <code><a href="#@cdktf/provider-vault.audit.AuditConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/audit#id Audit#id}. |
 | <code><a href="#@cdktf/provider-vault.audit.AuditConfig.property.local">Local</a></code> | <code>object</code> | Specifies if the audit device is a local only. |
 | <code><a href="#@cdktf/provider-vault.audit.AuditConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.audit.AuditConfig.property.path">Path</a></code> | <code>string</code> | Path in which to enable the audit device. |
@@ -758,10 +758,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.audit.AuditConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -825,7 +825,7 @@ public System.Collections.Generic.IDictionary<string, string> Options { get; set
 
 Configuration options to pass to the audit device itself.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/audit#options Audit#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/audit#options Audit#options}
 
 ---
 
@@ -839,7 +839,7 @@ public string Type { get; set; }
 
 Type of the audit device, such as 'file'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/audit#type Audit#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/audit#type Audit#type}
 
 ---
 
@@ -853,7 +853,7 @@ public string Description { get; set; }
 
 Human-friendly description of the audit device.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/audit#description Audit#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/audit#description Audit#description}
 
 ---
 
@@ -865,7 +865,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/audit#id Audit#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/audit#id Audit#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -884,7 +884,7 @@ Specifies if the audit device is a local only.
 
 Local audit devices are not replicated nor (if a secondary) removed by replication.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/audit#local Audit#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/audit#local Audit#local}
 
 ---
 
@@ -898,7 +898,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/audit#namespace Audit#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/audit#namespace Audit#namespace}
 
 ---
 
@@ -912,7 +912,7 @@ public string Path { get; set; }
 
 Path in which to enable the audit device.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/audit#path Audit#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/audit#path Audit#path}
 
 ---
 

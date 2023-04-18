@@ -1,6 +1,6 @@
 # `vault_transform_template`
 
-Refer to the Terraform Registory for docs: [`vault_transform_template`](https://www.terraform.io/docs/providers/vault/r/transform_template).
+Refer to the Terraform Registory for docs: [`vault_transform_template`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_template).
 
 # `transformTemplate` Submodule <a name="`transformTemplate` Submodule" id="@cdktf/provider-vault.transformTemplate"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`vault_transform_template`](https://
 
 ### TransformTemplate <a name="TransformTemplate" id="@cdktf/provider-vault.transformTemplate.TransformTemplate"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/transform_template vault_transform_template}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_template vault_transform_template}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.transformTemplate.TransformTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/transformtemplate"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/transformtemplate"
 
 transformtemplate.NewTransformTemplate(scope Construct, id *string, config TransformTemplateConfig) TransformTemplate
 ```
@@ -319,7 +319,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.transformTemplate.TransformTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/transformtemplate"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/transformtemplate"
 
 transformtemplate.TransformTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.transformTemplate.TransformTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/transformtemplate"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/transformtemplate"
 
 transformtemplate.TransformTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ transformtemplate.TransformTemplate_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.transformTemplate.TransformTemplate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/transformtemplate"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/transformtemplate"
 
 transformtemplate.TransformTemplate_IsTerraformResource(x interface{}) *bool
 ```
@@ -388,7 +388,7 @@ transformtemplate.TransformTemplate_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplate.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplate.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplate.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplate.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplate.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplate.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplate.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplate.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -500,10 +500,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.transformTemplate.TransformTemplate.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -762,11 +762,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.transformTemplate.TransformTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/transformtemplate"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/transformtemplate"
 
 &transformtemplate.TransformTemplateConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -789,7 +789,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/transformtemplate"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplateConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplateConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplateConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplateConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplateConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplateConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -800,7 +800,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/transformtemplate"
 | <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplateConfig.property.alphabet">Alphabet</a></code> | <code>*string</code> | The alphabet to use for this template. This is only used during FPE transformations. |
 | <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplateConfig.property.decodeFormats">DecodeFormats</a></code> | <code>*map[string]*string</code> | The map of regular expression templates used to customize decoded outputs. Only applicable to FPE transformations. |
 | <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplateConfig.property.encodeFormat">EncodeFormat</a></code> | <code>*string</code> | The regular expression template used for encoding values. Only applicable to FPE transformations. |
-| <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_template#id TransformTemplate#id}. |
+| <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_template#id TransformTemplate#id}. |
 | <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplateConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplateConfig.property.pattern">Pattern</a></code> | <code>*string</code> | The pattern used for matching. Currently, only regular expression pattern is supported. |
 | <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplateConfig.property.type">Type</a></code> | <code>*string</code> | The pattern type to use for match detection. Currently, only regex is supported. |
@@ -820,10 +820,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.transformTemplate.TransformTemplateConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -887,7 +887,7 @@ Name *string
 
 The name of the template.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_template#name TransformTemplate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_template#name TransformTemplate#name}
 
 ---
 
@@ -901,7 +901,7 @@ Path *string
 
 The mount path for a back-end, for example, the path given in "$ vault auth enable -path=my-aws aws".
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_template#path TransformTemplate#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_template#path TransformTemplate#path}
 
 ---
 
@@ -915,7 +915,7 @@ Alphabet *string
 
 The alphabet to use for this template. This is only used during FPE transformations.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_template#alphabet TransformTemplate#alphabet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_template#alphabet TransformTemplate#alphabet}
 
 ---
 
@@ -929,7 +929,7 @@ DecodeFormats *map[string]*string
 
 The map of regular expression templates used to customize decoded outputs. Only applicable to FPE transformations.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_template#decode_formats TransformTemplate#decode_formats}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_template#decode_formats TransformTemplate#decode_formats}
 
 ---
 
@@ -943,7 +943,7 @@ EncodeFormat *string
 
 The regular expression template used for encoding values. Only applicable to FPE transformations.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_template#encode_format TransformTemplate#encode_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_template#encode_format TransformTemplate#encode_format}
 
 ---
 
@@ -955,7 +955,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_template#id TransformTemplate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_template#id TransformTemplate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -972,7 +972,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_template#namespace TransformTemplate#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_template#namespace TransformTemplate#namespace}
 
 ---
 
@@ -986,7 +986,7 @@ Pattern *string
 
 The pattern used for matching. Currently, only regular expression pattern is supported.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_template#pattern TransformTemplate#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_template#pattern TransformTemplate#pattern}
 
 ---
 
@@ -1000,7 +1000,7 @@ Type *string
 
 The pattern type to use for match detection. Currently, only regex is supported.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_template#type TransformTemplate#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_template#type TransformTemplate#type}
 
 ---
 

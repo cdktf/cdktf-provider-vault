@@ -1,6 +1,6 @@
 # `vault_token_auth_backend_role`
 
-Refer to the Terraform Registory for docs: [`vault_token_auth_backend_role`](https://www.terraform.io/docs/providers/vault/r/token_auth_backend_role).
+Refer to the Terraform Registory for docs: [`vault_token_auth_backend_role`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/token_auth_backend_role).
 
 # `tokenAuthBackendRole` Submodule <a name="`tokenAuthBackendRole` Submodule" id="@cdktf/provider-vault.tokenAuthBackendRole"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_token_auth_backend_role`](htt
 
 ### TokenAuthBackendRole <a name="TokenAuthBackendRole" id="@cdktf/provider-vault.tokenAuthBackendRole.TokenAuthBackendRole"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/token_auth_backend_role vault_token_auth_backend_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/token_auth_backend_role vault_token_auth_backend_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.tokenAuthBackendRole.TokenAuthBackendRole.Initializer"></a>
 
@@ -472,7 +472,7 @@ TokenAuthBackendRole.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-vault.tokenAuthBackendRole.TokenAuthBackendRole.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.tokenAuthBackendRole.TokenAuthBackendRole.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.tokenAuthBackendRole.TokenAuthBackendRole.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.tokenAuthBackendRole.TokenAuthBackendRole.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.tokenAuthBackendRole.TokenAuthBackendRole.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.tokenAuthBackendRole.TokenAuthBackendRole.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.tokenAuthBackendRole.TokenAuthBackendRole.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.tokenAuthBackendRole.TokenAuthBackendRole.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -606,10 +606,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.tokenAuthBackendRole.TokenAuthBackendRole.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -1092,7 +1092,7 @@ using HashiCorp.Cdktf.Providers.Vault;
 
 new TokenAuthBackendRoleConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -1126,7 +1126,7 @@ new TokenAuthBackendRoleConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.tokenAuthBackendRole.TokenAuthBackendRoleConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.tokenAuthBackendRole.TokenAuthBackendRoleConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.tokenAuthBackendRole.TokenAuthBackendRoleConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.tokenAuthBackendRole.TokenAuthBackendRoleConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.tokenAuthBackendRole.TokenAuthBackendRoleConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.tokenAuthBackendRole.TokenAuthBackendRoleConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1138,7 +1138,7 @@ new TokenAuthBackendRoleConfig {
 | <code><a href="#@cdktf/provider-vault.tokenAuthBackendRole.TokenAuthBackendRoleConfig.property.allowedPoliciesGlob">AllowedPoliciesGlob</a></code> | <code>string[]</code> | Set of allowed policies with glob match for given role. |
 | <code><a href="#@cdktf/provider-vault.tokenAuthBackendRole.TokenAuthBackendRoleConfig.property.disallowedPolicies">DisallowedPolicies</a></code> | <code>string[]</code> | List of disallowed policies for given role. |
 | <code><a href="#@cdktf/provider-vault.tokenAuthBackendRole.TokenAuthBackendRoleConfig.property.disallowedPoliciesGlob">DisallowedPoliciesGlob</a></code> | <code>string[]</code> | Set of disallowed policies with glob match for given role. |
-| <code><a href="#@cdktf/provider-vault.tokenAuthBackendRole.TokenAuthBackendRoleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/token_auth_backend_role#id TokenAuthBackendRole#id}. |
+| <code><a href="#@cdktf/provider-vault.tokenAuthBackendRole.TokenAuthBackendRoleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/token_auth_backend_role#id TokenAuthBackendRole#id}. |
 | <code><a href="#@cdktf/provider-vault.tokenAuthBackendRole.TokenAuthBackendRoleConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.tokenAuthBackendRole.TokenAuthBackendRoleConfig.property.orphan">Orphan</a></code> | <code>object</code> | If true, tokens created against this policy will be orphan tokens. |
 | <code><a href="#@cdktf/provider-vault.tokenAuthBackendRole.TokenAuthBackendRoleConfig.property.pathSuffix">PathSuffix</a></code> | <code>string</code> | Tokens created against this role will have the given suffix as part of their path in addition to the role name. |
@@ -1168,10 +1168,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.tokenAuthBackendRole.TokenAuthBackendRoleConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -1235,7 +1235,7 @@ public string RoleName { get; set; }
 
 Name of the role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/token_auth_backend_role#role_name TokenAuthBackendRole#role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/token_auth_backend_role#role_name TokenAuthBackendRole#role_name}
 
 ---
 
@@ -1249,7 +1249,7 @@ public string[] AllowedEntityAliases { get; set; }
 
 Set of allowed entity aliases for this role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/token_auth_backend_role#allowed_entity_aliases TokenAuthBackendRole#allowed_entity_aliases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/token_auth_backend_role#allowed_entity_aliases TokenAuthBackendRole#allowed_entity_aliases}
 
 ---
 
@@ -1263,7 +1263,7 @@ public string[] AllowedPolicies { get; set; }
 
 List of allowed policies for given role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/token_auth_backend_role#allowed_policies TokenAuthBackendRole#allowed_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/token_auth_backend_role#allowed_policies TokenAuthBackendRole#allowed_policies}
 
 ---
 
@@ -1277,7 +1277,7 @@ public string[] AllowedPoliciesGlob { get; set; }
 
 Set of allowed policies with glob match for given role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/token_auth_backend_role#allowed_policies_glob TokenAuthBackendRole#allowed_policies_glob}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/token_auth_backend_role#allowed_policies_glob TokenAuthBackendRole#allowed_policies_glob}
 
 ---
 
@@ -1291,7 +1291,7 @@ public string[] DisallowedPolicies { get; set; }
 
 List of disallowed policies for given role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/token_auth_backend_role#disallowed_policies TokenAuthBackendRole#disallowed_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/token_auth_backend_role#disallowed_policies TokenAuthBackendRole#disallowed_policies}
 
 ---
 
@@ -1305,7 +1305,7 @@ public string[] DisallowedPoliciesGlob { get; set; }
 
 Set of disallowed policies with glob match for given role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/token_auth_backend_role#disallowed_policies_glob TokenAuthBackendRole#disallowed_policies_glob}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/token_auth_backend_role#disallowed_policies_glob TokenAuthBackendRole#disallowed_policies_glob}
 
 ---
 
@@ -1317,7 +1317,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/token_auth_backend_role#id TokenAuthBackendRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/token_auth_backend_role#id TokenAuthBackendRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1334,7 +1334,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/token_auth_backend_role#namespace TokenAuthBackendRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/token_auth_backend_role#namespace TokenAuthBackendRole#namespace}
 
 ---
 
@@ -1348,7 +1348,7 @@ public object Orphan { get; set; }
 
 If true, tokens created against this policy will be orphan tokens.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/token_auth_backend_role#orphan TokenAuthBackendRole#orphan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/token_auth_backend_role#orphan TokenAuthBackendRole#orphan}
 
 ---
 
@@ -1362,7 +1362,7 @@ public string PathSuffix { get; set; }
 
 Tokens created against this role will have the given suffix as part of their path in addition to the role name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/token_auth_backend_role#path_suffix TokenAuthBackendRole#path_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/token_auth_backend_role#path_suffix TokenAuthBackendRole#path_suffix}
 
 ---
 
@@ -1376,7 +1376,7 @@ public object Renewable { get; set; }
 
 Whether to disable the ability of the token to be renewed past its initial TTL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/token_auth_backend_role#renewable TokenAuthBackendRole#renewable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/token_auth_backend_role#renewable TokenAuthBackendRole#renewable}
 
 ---
 
@@ -1390,7 +1390,7 @@ public string[] TokenBoundCidrs { get; set; }
 
 Specifies the blocks of IP addresses which are allowed to use the generated token.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/token_auth_backend_role#token_bound_cidrs TokenAuthBackendRole#token_bound_cidrs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/token_auth_backend_role#token_bound_cidrs TokenAuthBackendRole#token_bound_cidrs}
 
 ---
 
@@ -1404,7 +1404,7 @@ public double TokenExplicitMaxTtl { get; set; }
 
 Generated Token's Explicit Maximum TTL in seconds.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/token_auth_backend_role#token_explicit_max_ttl TokenAuthBackendRole#token_explicit_max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/token_auth_backend_role#token_explicit_max_ttl TokenAuthBackendRole#token_explicit_max_ttl}
 
 ---
 
@@ -1418,7 +1418,7 @@ public double TokenMaxTtl { get; set; }
 
 The maximum lifetime of the generated token.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/token_auth_backend_role#token_max_ttl TokenAuthBackendRole#token_max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/token_auth_backend_role#token_max_ttl TokenAuthBackendRole#token_max_ttl}
 
 ---
 
@@ -1432,7 +1432,7 @@ public object TokenNoDefaultPolicy { get; set; }
 
 If true, the 'default' policy will not automatically be added to generated tokens.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/token_auth_backend_role#token_no_default_policy TokenAuthBackendRole#token_no_default_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/token_auth_backend_role#token_no_default_policy TokenAuthBackendRole#token_no_default_policy}
 
 ---
 
@@ -1446,7 +1446,7 @@ public double TokenNumUses { get; set; }
 
 The maximum number of times a token may be used, a value of zero means unlimited.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/token_auth_backend_role#token_num_uses TokenAuthBackendRole#token_num_uses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/token_auth_backend_role#token_num_uses TokenAuthBackendRole#token_num_uses}
 
 ---
 
@@ -1460,7 +1460,7 @@ public double TokenPeriod { get; set; }
 
 Generated Token's Period.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/token_auth_backend_role#token_period TokenAuthBackendRole#token_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/token_auth_backend_role#token_period TokenAuthBackendRole#token_period}
 
 ---
 
@@ -1474,7 +1474,7 @@ public string[] TokenPolicies { get; set; }
 
 Generated Token's Policies.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/token_auth_backend_role#token_policies TokenAuthBackendRole#token_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/token_auth_backend_role#token_policies TokenAuthBackendRole#token_policies}
 
 ---
 
@@ -1488,7 +1488,7 @@ public double TokenTtl { get; set; }
 
 The initial ttl of the token to generate in seconds.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/token_auth_backend_role#token_ttl TokenAuthBackendRole#token_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/token_auth_backend_role#token_ttl TokenAuthBackendRole#token_ttl}
 
 ---
 
@@ -1502,7 +1502,7 @@ public string TokenType { get; set; }
 
 The type of token to generate, service or batch.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/token_auth_backend_role#token_type TokenAuthBackendRole#token_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/token_auth_backend_role#token_type TokenAuthBackendRole#token_type}
 
 ---
 

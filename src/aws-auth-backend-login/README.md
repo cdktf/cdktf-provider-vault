@@ -1,3 +1,3 @@
 # `vault_aws_auth_backend_login`
 
-Refer to the Terraform Registory for docs: [`vault_aws_auth_backend_login`](https://www.terraform.io/docs/providers/vault/r/aws_auth_backend_login).
+Refer to the Terraform Registory for docs: [`vault_aws_auth_backend_login`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/aws_auth_backend_login).

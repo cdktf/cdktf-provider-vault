@@ -1,3 +1,3 @@
 # `vault_generic_secret`
 
-Refer to the Terraform Registory for docs: [`vault_generic_secret`](https://www.terraform.io/docs/providers/vault/r/generic_secret).
+Refer to the Terraform Registory for docs: [`vault_generic_secret`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/generic_secret).

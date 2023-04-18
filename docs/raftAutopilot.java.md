@@ -1,6 +1,6 @@
 # `vault_raft_autopilot`
 
-Refer to the Terraform Registory for docs: [`vault_raft_autopilot`](https://www.terraform.io/docs/providers/vault/r/raft_autopilot).
+Refer to the Terraform Registory for docs: [`vault_raft_autopilot`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_autopilot).
 
 # `raftAutopilot` Submodule <a name="`raftAutopilot` Submodule" id="@cdktf/provider-vault.raftAutopilot"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_raft_autopilot`](https://www.
 
 ### RaftAutopilot <a name="RaftAutopilot" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/raft_autopilot vault_raft_autopilot}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_autopilot vault_raft_autopilot}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.Initializer"></a>
 
@@ -19,6 +19,7 @@ RaftAutopilot.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -45,7 +46,7 @@ RaftAutopilot.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -54,7 +55,7 @@ RaftAutopilot.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.Initializer.parameter.cleanupDeadServers">cleanupDeadServers</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies whether to remove dead server nodes periodically or when a new server joins. |
 | <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.Initializer.parameter.deadServerLastContactThreshold">deadServerLastContactThreshold</a></code> | <code>java.lang.String</code> | Limit the amount of time a server can go without leader contact before being considered failed. |
 | <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.Initializer.parameter.disableUpgradeMigration">disableUpgradeMigration</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Disables automatically upgrading Vault using autopilot. (Enterprise-only). |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_autopilot#id RaftAutopilot#id}. |
+| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_autopilot#id RaftAutopilot#id}. |
 | <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.Initializer.parameter.lastContactThreshold">lastContactThreshold</a></code> | <code>java.lang.String</code> | Limit the amount of time a server can go without leader contact before being considered unhealthy. |
 | <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.Initializer.parameter.maxTrailingLogs">maxTrailingLogs</a></code> | <code>java.lang.Number</code> | Maximum number of log entries in the Raft log that a server can be behind its leader before being considered unhealthy. |
 | <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.Initializer.parameter.minQuorum">minQuorum</a></code> | <code>java.lang.Number</code> | Minimum number of servers allowed in a cluster before autopilot can prune dead servers. |
@@ -89,7 +90,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -131,7 +132,7 @@ Specifies whether to remove dead server nodes periodically or when a new server 
 
 This requires that min-quorum is also set.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_autopilot#cleanup_dead_servers RaftAutopilot#cleanup_dead_servers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_autopilot#cleanup_dead_servers RaftAutopilot#cleanup_dead_servers}
 
 ---
 
@@ -143,7 +144,7 @@ Limit the amount of time a server can go without leader contact before being con
 
 This only takes effect when cleanup_dead_servers is set.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_autopilot#dead_server_last_contact_threshold RaftAutopilot#dead_server_last_contact_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_autopilot#dead_server_last_contact_threshold RaftAutopilot#dead_server_last_contact_threshold}
 
 ---
 
@@ -153,7 +154,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Disables automatically upgrading Vault using autopilot. (Enterprise-only).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_autopilot#disable_upgrade_migration RaftAutopilot#disable_upgrade_migration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_autopilot#disable_upgrade_migration RaftAutopilot#disable_upgrade_migration}
 
 ---
 
@@ -161,7 +162,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_autopilot#id RaftAutopilot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_autopilot#id RaftAutopilot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -174,7 +175,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Limit the amount of time a server can go without leader contact before being considered unhealthy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_autopilot#last_contact_threshold RaftAutopilot#last_contact_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_autopilot#last_contact_threshold RaftAutopilot#last_contact_threshold}
 
 ---
 
@@ -184,7 +185,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Maximum number of log entries in the Raft log that a server can be behind its leader before being considered unhealthy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_autopilot#max_trailing_logs RaftAutopilot#max_trailing_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_autopilot#max_trailing_logs RaftAutopilot#max_trailing_logs}
 
 ---
 
@@ -196,7 +197,7 @@ Minimum number of servers allowed in a cluster before autopilot can prune dead s
 
 This should at least be 3. Applicable only for voting nodes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_autopilot#min_quorum RaftAutopilot#min_quorum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_autopilot#min_quorum RaftAutopilot#min_quorum}
 
 ---
 
@@ -206,7 +207,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_autopilot#namespace RaftAutopilot#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_autopilot#namespace RaftAutopilot#namespace}
 
 ---
 
@@ -216,7 +217,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Minimum amount of time a server must be stable in the 'healthy' state before being added to the cluster.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_autopilot#server_stabilization_time RaftAutopilot#server_stabilization_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_autopilot#server_stabilization_time RaftAutopilot#server_stabilization_time}
 
 ---
 
@@ -572,7 +573,7 @@ RaftAutopilot.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -684,10 +685,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -952,6 +953,7 @@ RaftAutopilotConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -978,7 +980,7 @@ RaftAutopilotConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -987,7 +989,7 @@ RaftAutopilotConfig.builder()
 | <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.cleanupDeadServers">cleanupDeadServers</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies whether to remove dead server nodes periodically or when a new server joins. |
 | <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.deadServerLastContactThreshold">deadServerLastContactThreshold</a></code> | <code>java.lang.String</code> | Limit the amount of time a server can go without leader contact before being considered failed. |
 | <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.disableUpgradeMigration">disableUpgradeMigration</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Disables automatically upgrading Vault using autopilot. (Enterprise-only). |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_autopilot#id RaftAutopilot#id}. |
+| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_autopilot#id RaftAutopilot#id}. |
 | <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.lastContactThreshold">lastContactThreshold</a></code> | <code>java.lang.String</code> | Limit the amount of time a server can go without leader contact before being considered unhealthy. |
 | <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.maxTrailingLogs">maxTrailingLogs</a></code> | <code>java.lang.Number</code> | Maximum number of log entries in the Raft log that a server can be behind its leader before being considered unhealthy. |
 | <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.minQuorum">minQuorum</a></code> | <code>java.lang.Number</code> | Minimum number of servers allowed in a cluster before autopilot can prune dead servers. |
@@ -1009,10 +1011,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1078,7 +1080,7 @@ Specifies whether to remove dead server nodes periodically or when a new server 
 
 This requires that min-quorum is also set.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_autopilot#cleanup_dead_servers RaftAutopilot#cleanup_dead_servers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_autopilot#cleanup_dead_servers RaftAutopilot#cleanup_dead_servers}
 
 ---
 
@@ -1094,7 +1096,7 @@ Limit the amount of time a server can go without leader contact before being con
 
 This only takes effect when cleanup_dead_servers is set.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_autopilot#dead_server_last_contact_threshold RaftAutopilot#dead_server_last_contact_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_autopilot#dead_server_last_contact_threshold RaftAutopilot#dead_server_last_contact_threshold}
 
 ---
 
@@ -1108,7 +1110,7 @@ public java.lang.Object getDisableUpgradeMigration();
 
 Disables automatically upgrading Vault using autopilot. (Enterprise-only).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_autopilot#disable_upgrade_migration RaftAutopilot#disable_upgrade_migration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_autopilot#disable_upgrade_migration RaftAutopilot#disable_upgrade_migration}
 
 ---
 
@@ -1120,7 +1122,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_autopilot#id RaftAutopilot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_autopilot#id RaftAutopilot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1137,7 +1139,7 @@ public java.lang.String getLastContactThreshold();
 
 Limit the amount of time a server can go without leader contact before being considered unhealthy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_autopilot#last_contact_threshold RaftAutopilot#last_contact_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_autopilot#last_contact_threshold RaftAutopilot#last_contact_threshold}
 
 ---
 
@@ -1151,7 +1153,7 @@ public java.lang.Number getMaxTrailingLogs();
 
 Maximum number of log entries in the Raft log that a server can be behind its leader before being considered unhealthy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_autopilot#max_trailing_logs RaftAutopilot#max_trailing_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_autopilot#max_trailing_logs RaftAutopilot#max_trailing_logs}
 
 ---
 
@@ -1167,7 +1169,7 @@ Minimum number of servers allowed in a cluster before autopilot can prune dead s
 
 This should at least be 3. Applicable only for voting nodes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_autopilot#min_quorum RaftAutopilot#min_quorum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_autopilot#min_quorum RaftAutopilot#min_quorum}
 
 ---
 
@@ -1181,7 +1183,7 @@ public java.lang.String getNamespace();
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_autopilot#namespace RaftAutopilot#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_autopilot#namespace RaftAutopilot#namespace}
 
 ---
 
@@ -1195,7 +1197,7 @@ public java.lang.String getServerStabilizationTime();
 
 Minimum amount of time a server must be stable in the 'healthy' state before being added to the cluster.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_autopilot#server_stabilization_time RaftAutopilot#server_stabilization_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_autopilot#server_stabilization_time RaftAutopilot#server_stabilization_time}
 
 ---
 

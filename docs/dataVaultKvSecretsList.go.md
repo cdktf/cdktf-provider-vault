@@ -1,6 +1,6 @@
 # `data_vault_kv_secrets_list`
 
-Refer to the Terraform Registory for docs: [`data_vault_kv_secrets_list`](https://www.terraform.io/docs/providers/vault/d/kv_secrets_list).
+Refer to the Terraform Registory for docs: [`data_vault_kv_secrets_list`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/kv_secrets_list).
 
 # `dataVaultKvSecretsList` Submodule <a name="`dataVaultKvSecretsList` Submodule" id="@cdktf/provider-vault.dataVaultKvSecretsList"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_vault_kv_secrets_list`](https:
 
 ### DataVaultKvSecretsList <a name="DataVaultKvSecretsList" id="@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/d/kv_secrets_list vault_kv_secrets_list}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/kv_secrets_list vault_kv_secrets_list}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultkvsecretslist"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/datavaultkvsecretslist"
 
 datavaultkvsecretslist.NewDataVaultKvSecretsList(scope Construct, id *string, config DataVaultKvSecretsListConfig) DataVaultKvSecretsList
 ```
@@ -284,7 +284,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultkvsecretslist"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/datavaultkvsecretslist"
 
 datavaultkvsecretslist.DataVaultKvSecretsList_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultkvsecretslist"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/datavaultkvsecretslist"
 
 datavaultkvsecretslist.DataVaultKvSecretsList_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ datavaultkvsecretslist.DataVaultKvSecretsList_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultkvsecretslist"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/datavaultkvsecretslist"
 
 datavaultkvsecretslist.DataVaultKvSecretsList_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,7 +352,7 @@ datavaultkvsecretslist.DataVaultKvSecretsList_IsTerraformDataSource(x interface{
 | <code><a href="#@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -442,10 +442,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -584,11 +584,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsListConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultkvsecretslist"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/datavaultkvsecretslist"
 
 &datavaultkvsecretslist.DataVaultKvSecretsListConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -605,14 +605,14 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultkvsecretslist
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsListConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsListConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsListConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsListConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsListConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsListConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsListConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsListConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsListConfig.property.path">Path</a></code> | <code>*string</code> | Full KV-V1 path where secrets will be listed. |
-| <code><a href="#@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsListConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/kv_secrets_list#id DataVaultKvSecretsList#id}. |
+| <code><a href="#@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsListConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/kv_secrets_list#id DataVaultKvSecretsList#id}. |
 | <code><a href="#@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsListConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -630,10 +630,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsListConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -697,7 +697,7 @@ Path *string
 
 Full KV-V1 path where secrets will be listed.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/kv_secrets_list#path DataVaultKvSecretsList#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/kv_secrets_list#path DataVaultKvSecretsList#path}
 
 ---
 
@@ -709,7 +709,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/kv_secrets_list#id DataVaultKvSecretsList#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/kv_secrets_list#id DataVaultKvSecretsList#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -726,7 +726,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/kv_secrets_list#namespace DataVaultKvSecretsList#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/kv_secrets_list#namespace DataVaultKvSecretsList#namespace}
 
 ---
 

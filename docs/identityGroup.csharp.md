@@ -1,6 +1,6 @@
 # `vault_identity_group`
 
-Refer to the Terraform Registory for docs: [`vault_identity_group`](https://www.terraform.io/docs/providers/vault/r/identity_group).
+Refer to the Terraform Registory for docs: [`vault_identity_group`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group).
 
 # `identityGroup` Submodule <a name="`identityGroup` Submodule" id="@cdktf/provider-vault.identityGroup"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_identity_group`](https://www.
 
 ### IdentityGroup <a name="IdentityGroup" id="@cdktf/provider-vault.identityGroup.IdentityGroup"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/identity_group vault_identity_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group vault_identity_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.identityGroup.IdentityGroup.Initializer"></a>
 
@@ -416,7 +416,7 @@ IdentityGroup.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroup.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroup.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroup.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroup.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroup.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroup.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroup.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroup.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -532,10 +532,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.identityGroup.IdentityGroup.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -838,7 +838,7 @@ using HashiCorp.Cdktf.Providers.Vault;
 
 new IdentityGroupConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -863,7 +863,7 @@ new IdentityGroupConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -872,7 +872,7 @@ new IdentityGroupConfig {
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.externalMemberEntityIds">ExternalMemberEntityIds</a></code> | <code>object</code> | Manage member entities externally through `vault_identity_group_member_entity_ids`. |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.externalMemberGroupIds">ExternalMemberGroupIds</a></code> | <code>object</code> | Manage member groups externally through `vault_identity_group_member_group_ids`. |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.externalPolicies">ExternalPolicies</a></code> | <code>object</code> | Manage policies externally through `vault_identity_group_policies`, allows using group ID in assigned policies. |
-| <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#id IdentityGroup#id}. |
+| <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#id IdentityGroup#id}. |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.memberEntityIds">MemberEntityIds</a></code> | <code>string[]</code> | Entity IDs to be assigned as group members. |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.memberGroupIds">MemberGroupIds</a></code> | <code>string[]</code> | Group IDs to be assigned as group members. |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.metadata">Metadata</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Metadata to be associated with the group. |
@@ -896,10 +896,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -963,7 +963,7 @@ public object ExternalMemberEntityIds { get; set; }
 
 Manage member entities externally through `vault_identity_group_member_entity_ids`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#external_member_entity_ids IdentityGroup#external_member_entity_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#external_member_entity_ids IdentityGroup#external_member_entity_ids}
 
 ---
 
@@ -977,7 +977,7 @@ public object ExternalMemberGroupIds { get; set; }
 
 Manage member groups externally through `vault_identity_group_member_group_ids`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#external_member_group_ids IdentityGroup#external_member_group_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#external_member_group_ids IdentityGroup#external_member_group_ids}
 
 ---
 
@@ -991,7 +991,7 @@ public object ExternalPolicies { get; set; }
 
 Manage policies externally through `vault_identity_group_policies`, allows using group ID in assigned policies.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#external_policies IdentityGroup#external_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#external_policies IdentityGroup#external_policies}
 
 ---
 
@@ -1003,7 +1003,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#id IdentityGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#id IdentityGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1020,7 +1020,7 @@ public string[] MemberEntityIds { get; set; }
 
 Entity IDs to be assigned as group members.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#member_entity_ids IdentityGroup#member_entity_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#member_entity_ids IdentityGroup#member_entity_ids}
 
 ---
 
@@ -1034,7 +1034,7 @@ public string[] MemberGroupIds { get; set; }
 
 Group IDs to be assigned as group members.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#member_group_ids IdentityGroup#member_group_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#member_group_ids IdentityGroup#member_group_ids}
 
 ---
 
@@ -1048,7 +1048,7 @@ public System.Collections.Generic.IDictionary<string, string> Metadata { get; se
 
 Metadata to be associated with the group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#metadata IdentityGroup#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#metadata IdentityGroup#metadata}
 
 ---
 
@@ -1062,7 +1062,7 @@ public string Name { get; set; }
 
 Name of the group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#name IdentityGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#name IdentityGroup#name}
 
 ---
 
@@ -1076,7 +1076,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#namespace IdentityGroup#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#namespace IdentityGroup#namespace}
 
 ---
 
@@ -1090,7 +1090,7 @@ public string[] Policies { get; set; }
 
 Policies to be tied to the group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#policies IdentityGroup#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#policies IdentityGroup#policies}
 
 ---
 
@@ -1104,7 +1104,7 @@ public string Type { get; set; }
 
 Type of the group, internal or external. Defaults to internal.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#type IdentityGroup#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#type IdentityGroup#type}
 
 ---
 

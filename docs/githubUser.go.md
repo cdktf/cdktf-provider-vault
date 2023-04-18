@@ -1,6 +1,6 @@
 # `vault_github_user`
 
-Refer to the Terraform Registory for docs: [`vault_github_user`](https://www.terraform.io/docs/providers/vault/r/github_user).
+Refer to the Terraform Registory for docs: [`vault_github_user`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/github_user).
 
 # `githubUser` Submodule <a name="`githubUser` Submodule" id="@cdktf/provider-vault.githubUser"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`vault_github_user`](https://www.ter
 
 ### GithubUser <a name="GithubUser" id="@cdktf/provider-vault.githubUser.GithubUser"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/github_user vault_github_user}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/github_user vault_github_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.githubUser.GithubUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/githubuser"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/githubuser"
 
 githubuser.NewGithubUser(scope Construct, id *string, config GithubUserConfig) GithubUser
 ```
@@ -298,7 +298,7 @@ func ResetPolicies()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.githubUser.GithubUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/githubuser"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/githubuser"
 
 githubuser.GithubUser_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.githubUser.GithubUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/githubuser"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/githubuser"
 
 githubuser.GithubUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ githubuser.GithubUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.githubUser.GithubUser.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/githubuser"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/githubuser"
 
 githubuser.GithubUser_IsTerraformResource(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ githubuser.GithubUser_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-vault.githubUser.GithubUser.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.githubUser.GithubUser.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.githubUser.GithubUser.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.githubUser.GithubUser.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubUser.GithubUser.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.githubUser.GithubUser.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.githubUser.GithubUser.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.githubUser.GithubUser.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -471,10 +471,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.githubUser.GithubUser.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -653,11 +653,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.githubUser.GithubUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/githubuser"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/githubuser"
 
 &githubuser.GithubUserConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -676,7 +676,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/githubuser"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.githubUser.GithubUserConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.githubUser.GithubUserConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubUser.GithubUserConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.githubUser.GithubUserConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.githubUser.GithubUserConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.githubUser.GithubUserConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -684,7 +684,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/githubuser"
 | <code><a href="#@cdktf/provider-vault.githubUser.GithubUserConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.githubUser.GithubUserConfig.property.user">User</a></code> | <code>*string</code> | GitHub user name. |
 | <code><a href="#@cdktf/provider-vault.githubUser.GithubUserConfig.property.backend">Backend</a></code> | <code>*string</code> | Auth backend to which user mapping will be congigured. |
-| <code><a href="#@cdktf/provider-vault.githubUser.GithubUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_user#id GithubUser#id}. |
+| <code><a href="#@cdktf/provider-vault.githubUser.GithubUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/github_user#id GithubUser#id}. |
 | <code><a href="#@cdktf/provider-vault.githubUser.GithubUserConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.githubUser.GithubUserConfig.property.policies">Policies</a></code> | <code>*[]*string</code> | Policies to be assigned to this user. |
 
@@ -703,10 +703,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.githubUser.GithubUserConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -770,7 +770,7 @@ User *string
 
 GitHub user name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_user#user GithubUser#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/github_user#user GithubUser#user}
 
 ---
 
@@ -784,7 +784,7 @@ Backend *string
 
 Auth backend to which user mapping will be congigured.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_user#backend GithubUser#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/github_user#backend GithubUser#backend}
 
 ---
 
@@ -796,7 +796,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_user#id GithubUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/github_user#id GithubUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -813,7 +813,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_user#namespace GithubUser#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/github_user#namespace GithubUser#namespace}
 
 ---
 
@@ -827,7 +827,7 @@ Policies *[]*string
 
 Policies to be assigned to this user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_user#policies GithubUser#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/github_user#policies GithubUser#policies}
 
 ---
 

@@ -1,6 +1,6 @@
 # `vault_generic_endpoint`
 
-Refer to the Terraform Registory for docs: [`vault_generic_endpoint`](https://www.terraform.io/docs/providers/vault/r/generic_endpoint).
+Refer to the Terraform Registory for docs: [`vault_generic_endpoint`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/generic_endpoint).
 
 # `genericEndpoint` Submodule <a name="`genericEndpoint` Submodule" id="@cdktf/provider-vault.genericEndpoint"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_generic_endpoint`](https://ww
 
 ### GenericEndpoint <a name="GenericEndpoint" id="@cdktf/provider-vault.genericEndpoint.GenericEndpoint"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/generic_endpoint vault_generic_endpoint}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/generic_endpoint vault_generic_endpoint}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.genericEndpoint.GenericEndpoint.Initializer"></a>
 
@@ -19,6 +19,7 @@ GenericEndpoint.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -45,7 +46,7 @@ GenericEndpoint.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpoint.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpoint.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpoint.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpoint.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpoint.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpoint.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpoint.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpoint.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -55,7 +56,7 @@ GenericEndpoint.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpoint.Initializer.parameter.path">path</a></code> | <code>java.lang.String</code> | Full path where to the endpoint that will be written. |
 | <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpoint.Initializer.parameter.disableDelete">disableDelete</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Don't attempt to delete the path from Vault if true. |
 | <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpoint.Initializer.parameter.disableRead">disableRead</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Don't attempt to read the path from Vault if true; drift won't be detected. |
-| <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpoint.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/generic_endpoint#id GenericEndpoint#id}. |
+| <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpoint.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/generic_endpoint#id GenericEndpoint#id}. |
 | <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpoint.Initializer.parameter.ignoreAbsentFields">ignoreAbsentFields</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When reading, disregard fields not present in data_json. |
 | <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpoint.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpoint.Initializer.parameter.writeFields">writeFields</a></code> | <code>java.util.List<java.lang.String></code> | Top-level fields returned by write to persist in state. |
@@ -88,7 +89,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.genericEndpoint.GenericEndpoint.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -128,7 +129,7 @@ Must be unique amongst siblings in the same scope
 
 JSON-encoded data to write.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/generic_endpoint#data_json GenericEndpoint#data_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/generic_endpoint#data_json GenericEndpoint#data_json}
 
 ---
 
@@ -138,7 +139,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Full path where to the endpoint that will be written.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/generic_endpoint#path GenericEndpoint#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/generic_endpoint#path GenericEndpoint#path}
 
 ---
 
@@ -148,7 +149,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Don't attempt to delete the path from Vault if true.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/generic_endpoint#disable_delete GenericEndpoint#disable_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/generic_endpoint#disable_delete GenericEndpoint#disable_delete}
 
 ---
 
@@ -158,7 +159,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Don't attempt to read the path from Vault if true; drift won't be detected.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/generic_endpoint#disable_read GenericEndpoint#disable_read}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/generic_endpoint#disable_read GenericEndpoint#disable_read}
 
 ---
 
@@ -166,7 +167,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/generic_endpoint#id GenericEndpoint#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/generic_endpoint#id GenericEndpoint#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -179,7 +180,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 When reading, disregard fields not present in data_json.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/generic_endpoint#ignore_absent_fields GenericEndpoint#ignore_absent_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/generic_endpoint#ignore_absent_fields GenericEndpoint#ignore_absent_fields}
 
 ---
 
@@ -189,7 +190,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/generic_endpoint#namespace GenericEndpoint#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/generic_endpoint#namespace GenericEndpoint#namespace}
 
 ---
 
@@ -199,7 +200,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Top-level fields returned by write to persist in state.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/generic_endpoint#write_fields GenericEndpoint#write_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/generic_endpoint#write_fields GenericEndpoint#write_fields}
 
 ---
 
@@ -534,7 +535,7 @@ GenericEndpoint.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpoint.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpoint.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpoint.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpoint.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpoint.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpoint.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpoint.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpoint.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -646,10 +647,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.genericEndpoint.GenericEndpoint.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -914,6 +915,7 @@ GenericEndpointConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -940,7 +942,7 @@ GenericEndpointConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpointConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpointConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpointConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpointConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpointConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpointConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -950,7 +952,7 @@ GenericEndpointConfig.builder()
 | <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpointConfig.property.path">path</a></code> | <code>java.lang.String</code> | Full path where to the endpoint that will be written. |
 | <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpointConfig.property.disableDelete">disableDelete</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Don't attempt to delete the path from Vault if true. |
 | <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpointConfig.property.disableRead">disableRead</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Don't attempt to read the path from Vault if true; drift won't be detected. |
-| <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpointConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/generic_endpoint#id GenericEndpoint#id}. |
+| <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpointConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/generic_endpoint#id GenericEndpoint#id}. |
 | <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpointConfig.property.ignoreAbsentFields">ignoreAbsentFields</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When reading, disregard fields not present in data_json. |
 | <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpointConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpointConfig.property.writeFields">writeFields</a></code> | <code>java.util.List<java.lang.String></code> | Top-level fields returned by write to persist in state. |
@@ -970,10 +972,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.genericEndpoint.GenericEndpointConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1037,7 +1039,7 @@ public java.lang.String getDataJson();
 
 JSON-encoded data to write.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/generic_endpoint#data_json GenericEndpoint#data_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/generic_endpoint#data_json GenericEndpoint#data_json}
 
 ---
 
@@ -1051,7 +1053,7 @@ public java.lang.String getPath();
 
 Full path where to the endpoint that will be written.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/generic_endpoint#path GenericEndpoint#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/generic_endpoint#path GenericEndpoint#path}
 
 ---
 
@@ -1065,7 +1067,7 @@ public java.lang.Object getDisableDelete();
 
 Don't attempt to delete the path from Vault if true.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/generic_endpoint#disable_delete GenericEndpoint#disable_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/generic_endpoint#disable_delete GenericEndpoint#disable_delete}
 
 ---
 
@@ -1079,7 +1081,7 @@ public java.lang.Object getDisableRead();
 
 Don't attempt to read the path from Vault if true; drift won't be detected.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/generic_endpoint#disable_read GenericEndpoint#disable_read}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/generic_endpoint#disable_read GenericEndpoint#disable_read}
 
 ---
 
@@ -1091,7 +1093,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/generic_endpoint#id GenericEndpoint#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/generic_endpoint#id GenericEndpoint#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1108,7 +1110,7 @@ public java.lang.Object getIgnoreAbsentFields();
 
 When reading, disregard fields not present in data_json.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/generic_endpoint#ignore_absent_fields GenericEndpoint#ignore_absent_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/generic_endpoint#ignore_absent_fields GenericEndpoint#ignore_absent_fields}
 
 ---
 
@@ -1122,7 +1124,7 @@ public java.lang.String getNamespace();
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/generic_endpoint#namespace GenericEndpoint#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/generic_endpoint#namespace GenericEndpoint#namespace}
 
 ---
 
@@ -1136,7 +1138,7 @@ public java.util.List<java.lang.String> getWriteFields();
 
 Top-level fields returned by write to persist in state.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/generic_endpoint#write_fields GenericEndpoint#write_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/generic_endpoint#write_fields GenericEndpoint#write_fields}
 
 ---
 
