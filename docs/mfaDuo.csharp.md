@@ -1,3 +1,7 @@
+# `vault_mfa_duo`
+
+Refer to the Terraform Registory for docs: [`vault_mfa_duo`](https://www.terraform.io/docs/providers/vault/r/mfa_duo).
+
 # `mfaDuo` Submodule <a name="`mfaDuo` Submodule" id="@cdktf/provider-vault.mfaDuo"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

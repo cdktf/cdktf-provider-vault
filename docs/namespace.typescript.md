@@ -1,3 +1,7 @@
+# `vault_namespace`
+
+Refer to the Terraform Registory for docs: [`vault_namespace`](https://www.terraform.io/docs/providers/vault/r/namespace).
+
 # `namespace` Submodule <a name="`namespace` Submodule" id="@cdktf/provider-vault.namespace"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

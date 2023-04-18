@@ -1,3 +1,7 @@
+# `data_vault_auth_backend`
+
+Refer to the Terraform Registory for docs: [`data_vault_auth_backend`](https://www.terraform.io/docs/providers/vault/d/auth_backend).
+
 # `dataVaultAuthBackend` Submodule <a name="`dataVaultAuthBackend` Submodule" id="@cdktf/provider-vault.dataVaultAuthBackend"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

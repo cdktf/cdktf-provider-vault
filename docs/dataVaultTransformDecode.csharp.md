@@ -1,3 +1,7 @@
+# `data_vault_transform_decode`
+
+Refer to the Terraform Registory for docs: [`data_vault_transform_decode`](https://www.terraform.io/docs/providers/vault/d/transform_decode).
+
 # `dataVaultTransformDecode` Submodule <a name="`dataVaultTransformDecode` Submodule" id="@cdktf/provider-vault.dataVaultTransformDecode"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

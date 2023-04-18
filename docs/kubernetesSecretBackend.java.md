@@ -1,3 +1,7 @@
+# `vault_kubernetes_secret_backend`
+
+Refer to the Terraform Registory for docs: [`vault_kubernetes_secret_backend`](https://www.terraform.io/docs/providers/vault/r/kubernetes_secret_backend).
+
 # `kubernetesSecretBackend` Submodule <a name="`kubernetesSecretBackend` Submodule" id="@cdktf/provider-vault.kubernetesSecretBackend"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

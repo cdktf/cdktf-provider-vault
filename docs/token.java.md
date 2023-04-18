@@ -1,3 +1,7 @@
+# `vault_token`
+
+Refer to the Terraform Registory for docs: [`vault_token`](https://www.terraform.io/docs/providers/vault/r/token).
+
 # `token` Submodule <a name="`token` Submodule" id="@cdktf/provider-vault.token"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

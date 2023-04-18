@@ -1,3 +1,7 @@
+# `vault_generic_endpoint`
+
+Refer to the Terraform Registory for docs: [`vault_generic_endpoint`](https://www.terraform.io/docs/providers/vault/r/generic_endpoint).
+
 # `genericEndpoint` Submodule <a name="`genericEndpoint` Submodule" id="@cdktf/provider-vault.genericEndpoint"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `data_vault_identity_entity`
+
+Refer to the Terraform Registory for docs: [`data_vault_identity_entity`](https://www.terraform.io/docs/providers/vault/d/identity_entity).
+
 # `dataVaultIdentityEntity` Submodule <a name="`dataVaultIdentityEntity` Submodule" id="@cdktf/provider-vault.dataVaultIdentityEntity"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

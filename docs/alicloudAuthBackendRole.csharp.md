@@ -1,3 +1,7 @@
+# `vault_alicloud_auth_backend_role`
+
+Refer to the Terraform Registory for docs: [`vault_alicloud_auth_backend_role`](https://www.terraform.io/docs/providers/vault/r/alicloud_auth_backend_role).
+
 # `alicloudAuthBackendRole` Submodule <a name="`alicloudAuthBackendRole` Submodule" id="@cdktf/provider-vault.alicloudAuthBackendRole"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `vault_database_secret_backend_role`
+
+Refer to the Terraform Registory for docs: [`vault_database_secret_backend_role`](https://www.terraform.io/docs/providers/vault/r/database_secret_backend_role).
+
 # `databaseSecretBackendRole` Submodule <a name="`databaseSecretBackendRole` Submodule" id="@cdktf/provider-vault.databaseSecretBackendRole"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

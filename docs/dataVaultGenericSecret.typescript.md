@@ -1,3 +1,7 @@
+# `data_vault_generic_secret`
+
+Refer to the Terraform Registory for docs: [`data_vault_generic_secret`](https://www.terraform.io/docs/providers/vault/d/generic_secret).
+
 # `dataVaultGenericSecret` Submodule <a name="`dataVaultGenericSecret` Submodule" id="@cdktf/provider-vault.dataVaultGenericSecret"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

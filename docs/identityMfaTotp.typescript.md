@@ -1,3 +1,7 @@
+# `vault_identity_mfa_totp`
+
+Refer to the Terraform Registory for docs: [`vault_identity_mfa_totp`](https://www.terraform.io/docs/providers/vault/r/identity_mfa_totp).
+
 # `identityMfaTotp` Submodule <a name="`identityMfaTotp` Submodule" id="@cdktf/provider-vault.identityMfaTotp"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
