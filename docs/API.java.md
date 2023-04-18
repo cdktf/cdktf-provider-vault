@@ -113,6 +113,8 @@ The following submodules are available:
 - [mfaOkta](./mfaOkta.java.md)
 - [mfaPingid](./mfaPingid.java.md)
 - [mfaTotp](./mfaTotp.java.md)
+- [mongodbatlasSecretBackend](./mongodbatlasSecretBackend.java.md)
+- [mongodbatlasSecretRole](./mongodbatlasSecretRole.java.md)
 - [mount](./mount.java.md)
 - [namespace](./namespace.java.md)
 - [nomadSecretBackend](./nomadSecretBackend.java.md)

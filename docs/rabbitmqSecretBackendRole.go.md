@@ -13,7 +13,7 @@ Represents a {@link https://www.terraform.io/docs/providers/vault/r/rabbitmq_sec
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/rabbitmqsecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/rabbitmqsecretbackendrole"
 
 rabbitmqsecretbackendrole.NewRabbitmqSecretBackendRole(scope Construct, id *string, config RabbitmqSecretBackendRoleConfig) RabbitmqSecretBackendRole
 ```
@@ -331,7 +331,7 @@ func ResetVhostTopic()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/rabbitmqsecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/rabbitmqsecretbackendrole"
 
 rabbitmqsecretbackendrole.RabbitmqSecretBackendRole_IsConstruct(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/rabbitmqsecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/rabbitmqsecretbackendrole"
 
 rabbitmqsecretbackendrole.RabbitmqSecretBackendRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ rabbitmqsecretbackendrole.RabbitmqSecretBackendRole_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/rabbitmqsecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/rabbitmqsecretbackendrole"
 
 rabbitmqsecretbackendrole.RabbitmqSecretBackendRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -730,7 +730,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/rabbitmqsecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/rabbitmqsecretbackendrole"
 
 &rabbitmqsecretbackendrole.RabbitmqSecretBackendRoleConfig {
 	Connection: interface{},
@@ -945,7 +945,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhost.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/rabbitmqsecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/rabbitmqsecretbackendrole"
 
 &rabbitmqsecretbackendrole.RabbitmqSecretBackendRoleVhost {
 	Configure: *string,
@@ -1027,7 +1027,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopic.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/rabbitmqsecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/rabbitmqsecretbackendrole"
 
 &rabbitmqsecretbackendrole.RabbitmqSecretBackendRoleVhostTopic {
 	Host: *string,
@@ -1077,7 +1077,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopicVhost.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/rabbitmqsecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/rabbitmqsecretbackendrole"
 
 &rabbitmqsecretbackendrole.RabbitmqSecretBackendRoleVhostTopicVhost {
 	Read: *string,
@@ -1145,7 +1145,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/rabbitmqsecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/rabbitmqsecretbackendrole"
 
 rabbitmqsecretbackendrole.NewRabbitmqSecretBackendRoleVhostList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RabbitmqSecretBackendRoleVhostList
 ```
@@ -1288,7 +1288,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/rabbitmqsecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/rabbitmqsecretbackendrole"
 
 rabbitmqsecretbackendrole.NewRabbitmqSecretBackendRoleVhostOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RabbitmqSecretBackendRoleVhostOutputReference
 ```
@@ -1643,7 +1643,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopicList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/rabbitmqsecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/rabbitmqsecretbackendrole"
 
 rabbitmqsecretbackendrole.NewRabbitmqSecretBackendRoleVhostTopicList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RabbitmqSecretBackendRoleVhostTopicList
 ```
@@ -1786,7 +1786,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopicOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/rabbitmqsecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/rabbitmqsecretbackendrole"
 
 rabbitmqsecretbackendrole.NewRabbitmqSecretBackendRoleVhostTopicOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RabbitmqSecretBackendRoleVhostTopicOutputReference
 ```
@@ -2117,7 +2117,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopicVhostList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/rabbitmqsecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/rabbitmqsecretbackendrole"
 
 rabbitmqsecretbackendrole.NewRabbitmqSecretBackendRoleVhostTopicVhostList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RabbitmqSecretBackendRoleVhostTopicVhostList
 ```
@@ -2260,7 +2260,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopicVhostOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/rabbitmqsecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/rabbitmqsecretbackendrole"
 
 rabbitmqsecretbackendrole.NewRabbitmqSecretBackendRoleVhostTopicVhostOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RabbitmqSecretBackendRoleVhostTopicVhostOutputReference
 ```

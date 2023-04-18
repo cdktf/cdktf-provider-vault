@@ -57,6 +57,12 @@ export interface IdentityMfaTotpConfig extends cdktf.TerraformMetaArguments {
   */
   readonly period?: number;
   /**
+  * The pixel size of the generated square QR code.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_mfa_totp#qr_size IdentityMfaTotp#qr_size}
+  */
+  readonly qrSize?: number;
+  /**
   * The number of delay periods that are allowed when validating a TOTP token. This value can either be 0 or 1.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_mfa_totp#skew IdentityMfaTotp#skew}
@@ -90,7 +96,7 @@ export class IdentityMfaTotp extends cdktf.TerraformResource {
       terraformResourceType: 'vault_identity_mfa_totp',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.14.0',
+        providerVersion: '3.15.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -109,6 +115,7 @@ export class IdentityMfaTotp extends cdktf.TerraformResource {
     this._maxValidationAttempts = config.maxValidationAttempts;
     this._namespace = config.namespace;
     this._period = config.period;
+    this._qrSize = config.qrSize;
     this._skew = config.skew;
   }
 
@@ -266,9 +273,20 @@ export class IdentityMfaTotp extends cdktf.TerraformResource {
     return this._period;
   }
 
-  // qr_size - computed: true, optional: false, required: false
+  // qr_size - computed: true, optional: true, required: false
+  private _qrSize?: number; 
   public get qrSize() {
     return this.getNumberAttribute('qr_size');
+  }
+  public set qrSize(value: number) {
+    this._qrSize = value;
+  }
+  public resetQrSize() {
+    this._qrSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get qrSizeInput() {
+    return this._qrSize;
   }
 
   // skew - computed: false, optional: true, required: false
@@ -311,6 +329,7 @@ export class IdentityMfaTotp extends cdktf.TerraformResource {
       max_validation_attempts: cdktf.numberToTerraform(this._maxValidationAttempts),
       namespace: cdktf.stringToTerraform(this._namespace),
       period: cdktf.numberToTerraform(this._period),
+      qr_size: cdktf.numberToTerraform(this._qrSize),
       skew: cdktf.numberToTerraform(this._skew),
     };
   }

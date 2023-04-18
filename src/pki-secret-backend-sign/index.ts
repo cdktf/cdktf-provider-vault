@@ -126,7 +126,7 @@ export class PkiSecretBackendSign extends cdktf.TerraformResource {
       terraformResourceType: 'vault_pki_secret_backend_sign',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.14.0',
+        providerVersion: '3.15.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

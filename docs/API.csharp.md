@@ -113,6 +113,8 @@ The following submodules are available:
 - [mfaOkta](./mfaOkta.csharp.md)
 - [mfaPingid](./mfaPingid.csharp.md)
 - [mfaTotp](./mfaTotp.csharp.md)
+- [mongodbatlasSecretBackend](./mongodbatlasSecretBackend.csharp.md)
+- [mongodbatlasSecretRole](./mongodbatlasSecretRole.csharp.md)
 - [mount](./mount.csharp.md)
 - [namespace](./namespace.csharp.md)
 - [nomadSecretBackend](./nomadSecretBackend.csharp.md)

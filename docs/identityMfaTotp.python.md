@@ -33,6 +33,7 @@ identityMfaTotp.IdentityMfaTotp(
   max_validation_attempts: typing.Union[int, float] = None,
   namespace: str = None,
   period: typing.Union[int, float] = None,
+  qr_size: typing.Union[int, float] = None,
   skew: typing.Union[int, float] = None
 )
 ```
@@ -56,6 +57,7 @@ identityMfaTotp.IdentityMfaTotp(
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.Initializer.parameter.maxValidationAttempts">max_validation_attempts</a></code> | <code>typing.Union[int, float]</code> | The maximum number of consecutive failed validation attempts allowed. |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.Initializer.parameter.period">period</a></code> | <code>typing.Union[int, float]</code> | The length of time in seconds used to generate a counter for the TOTP token calculation. |
+| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.Initializer.parameter.qrSize">qr_size</a></code> | <code>typing.Union[int, float]</code> | The pixel size of the generated square QR code. |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.Initializer.parameter.skew">skew</a></code> | <code>typing.Union[int, float]</code> | The number of delay periods that are allowed when validating a TOTP token. |
 
 ---
@@ -201,6 +203,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 ---
 
+##### `qr_size`<sup>Optional</sup> <a name="qr_size" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.Initializer.parameter.qrSize"></a>
+
+- *Type:* typing.Union[int, float]
+
+The pixel size of the generated square QR code.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_mfa_totp#qr_size IdentityMfaTotp#qr_size}
+
+---
+
 ##### `skew`<sup>Optional</sup> <a name="skew" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.Initializer.parameter.skew"></a>
 
 - *Type:* typing.Union[int, float]
@@ -240,6 +252,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.resetMaxValidationAttempts">reset_max_validation_attempts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.resetNamespace">reset_namespace</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.resetPeriod">reset_period</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.resetQrSize">reset_qr_size</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.resetSkew">reset_skew</a></code> | *No description.* |
 
 ---
@@ -495,6 +508,12 @@ def reset_namespace() -> None
 def reset_period() -> None
 ```
 
+##### `reset_qr_size` <a name="reset_qr_size" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.resetQrSize"></a>
+
+```python
+def reset_qr_size() -> None
+```
+
 ##### `reset_skew` <a name="reset_skew" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.resetSkew"></a>
 
 ```python
@@ -600,7 +619,6 @@ identityMfaTotp.IdentityMfaTotp.is_terraform_resource(
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.namespaceId">namespace_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.namespacePath">namespace_path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.qrSize">qr_size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.uuid">uuid</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.algorithmInput">algorithm_input</a></code> | <code>str</code> | *No description.* |
@@ -611,6 +629,7 @@ identityMfaTotp.IdentityMfaTotp.is_terraform_resource(
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.maxValidationAttemptsInput">max_validation_attempts_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.namespaceInput">namespace_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.periodInput">period_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.qrSizeInput">qr_size_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.skewInput">skew_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.algorithm">algorithm</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.digits">digits</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -620,6 +639,7 @@ identityMfaTotp.IdentityMfaTotp.is_terraform_resource(
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.maxValidationAttempts">max_validation_attempts</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.namespace">namespace</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.period">period</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.qrSize">qr_size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.skew">skew</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 
 ---
@@ -816,16 +836,6 @@ namespace_path: str
 
 ---
 
-##### `qr_size`<sup>Required</sup> <a name="qr_size" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.qrSize"></a>
-
-```python
-qr_size: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
 ##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.type"></a>
 
 ```python
@@ -926,6 +936,16 @@ period_input: typing.Union[int, float]
 
 ---
 
+##### `qr_size_input`<sup>Optional</sup> <a name="qr_size_input" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.qrSizeInput"></a>
+
+```python
+qr_size_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `skew_input`<sup>Optional</sup> <a name="skew_input" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.skewInput"></a>
 
 ```python
@@ -1016,6 +1036,16 @@ period: typing.Union[int, float]
 
 ---
 
+##### `qr_size`<sup>Required</sup> <a name="qr_size" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.qrSize"></a>
+
+```python
+qr_size: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `skew`<sup>Required</sup> <a name="skew" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.skew"></a>
 
 ```python
@@ -1069,6 +1099,7 @@ identityMfaTotp.IdentityMfaTotpConfig(
   max_validation_attempts: typing.Union[int, float] = None,
   namespace: str = None,
   period: typing.Union[int, float] = None,
+  qr_size: typing.Union[int, float] = None,
   skew: typing.Union[int, float] = None
 )
 ```
@@ -1092,6 +1123,7 @@ identityMfaTotp.IdentityMfaTotpConfig(
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.maxValidationAttempts">max_validation_attempts</a></code> | <code>typing.Union[int, float]</code> | The maximum number of consecutive failed validation attempts allowed. |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.period">period</a></code> | <code>typing.Union[int, float]</code> | The length of time in seconds used to generate a counter for the TOTP token calculation. |
+| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.qrSize">qr_size</a></code> | <code>typing.Union[int, float]</code> | The pixel size of the generated square QR code. |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.skew">skew</a></code> | <code>typing.Union[int, float]</code> | The number of delay periods that are allowed when validating a TOTP token. |
 
 ---
@@ -1276,6 +1308,20 @@ period: typing.Union[int, float]
 The length of time in seconds used to generate a counter for the TOTP token calculation.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_mfa_totp#period IdentityMfaTotp#period}
+
+---
+
+##### `qr_size`<sup>Optional</sup> <a name="qr_size" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.qrSize"></a>
+
+```python
+qr_size: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+The pixel size of the generated square QR code.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_mfa_totp#qr_size IdentityMfaTotp#qr_size}
 
 ---
 

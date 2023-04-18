@@ -13,7 +13,7 @@ Represents a {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_ba
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/adsecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/adsecretbackend"
 
 adsecretbackend.NewAdSecretBackend(scope Construct, id *string, config AdSecretBackendConfig) AdSecretBackend
 ```
@@ -515,7 +515,7 @@ func ResetUseTokenGroups()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/adsecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/adsecretbackend"
 
 adsecretbackend.AdSecretBackend_IsConstruct(x interface{}) *bool
 ```
@@ -547,7 +547,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/adsecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/adsecretbackend"
 
 adsecretbackend.AdSecretBackend_IsTerraformElement(x interface{}) *bool
 ```
@@ -561,7 +561,7 @@ adsecretbackend.AdSecretBackend_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/adsecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/adsecretbackend"
 
 adsecretbackend.AdSecretBackend_IsTerraformResource(x interface{}) *bool
 ```
@@ -1574,7 +1574,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/adsecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/adsecretbackend"
 
 &adsecretbackend.AdSecretBackendConfig {
 	Connection: interface{},

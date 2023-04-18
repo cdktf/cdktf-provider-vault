@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.resetMaxValidationAttempts">ResetMaxValidationAttempts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.resetNamespace">ResetNamespace</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.resetPeriod">ResetPeriod</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.resetQrSize">ResetQrSize</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.resetSkew">ResetSkew</a></code> | *No description.* |
 
 ---
@@ -307,6 +308,12 @@ private void ResetNamespace()
 private void ResetPeriod()
 ```
 
+##### `ResetQrSize` <a name="ResetQrSize" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.resetQrSize"></a>
+
+```csharp
+private void ResetQrSize()
+```
+
 ##### `ResetSkew` <a name="ResetSkew" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.resetSkew"></a>
 
 ```csharp
@@ -406,7 +413,6 @@ IdentityMfaTotp.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.namespaceId">NamespaceId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.namespacePath">NamespacePath</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.qrSize">QrSize</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.type">Type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.uuid">Uuid</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.algorithmInput">AlgorithmInput</a></code> | <code>string</code> | *No description.* |
@@ -417,6 +423,7 @@ IdentityMfaTotp.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.maxValidationAttemptsInput">MaxValidationAttemptsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.namespaceInput">NamespaceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.periodInput">PeriodInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.qrSizeInput">QrSizeInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.skewInput">SkewInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.algorithm">Algorithm</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.digits">Digits</a></code> | <code>double</code> | *No description.* |
@@ -426,6 +433,7 @@ IdentityMfaTotp.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.maxValidationAttempts">MaxValidationAttempts</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.namespace">Namespace</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.period">Period</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.qrSize">QrSize</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.skew">Skew</a></code> | <code>double</code> | *No description.* |
 
 ---
@@ -622,16 +630,6 @@ public string NamespacePath { get; }
 
 ---
 
-##### `QrSize`<sup>Required</sup> <a name="QrSize" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.qrSize"></a>
-
-```csharp
-public double QrSize { get; }
-```
-
-- *Type:* double
-
----
-
 ##### `Type`<sup>Required</sup> <a name="Type" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.type"></a>
 
 ```csharp
@@ -732,6 +730,16 @@ public double PeriodInput { get; }
 
 ---
 
+##### `QrSizeInput`<sup>Optional</sup> <a name="QrSizeInput" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.qrSizeInput"></a>
+
+```csharp
+public double QrSizeInput { get; }
+```
+
+- *Type:* double
+
+---
+
 ##### `SkewInput`<sup>Optional</sup> <a name="SkewInput" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.skewInput"></a>
 
 ```csharp
@@ -822,6 +830,16 @@ public double Period { get; }
 
 ---
 
+##### `QrSize`<sup>Required</sup> <a name="QrSize" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.qrSize"></a>
+
+```csharp
+public double QrSize { get; }
+```
+
+- *Type:* double
+
+---
+
 ##### `Skew`<sup>Required</sup> <a name="Skew" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.skew"></a>
 
 ```csharp
@@ -875,6 +893,7 @@ new IdentityMfaTotpConfig {
     double MaxValidationAttempts = null,
     string Namespace = null,
     double Period = null,
+    double QrSize = null,
     double Skew = null
 };
 ```
@@ -898,6 +917,7 @@ new IdentityMfaTotpConfig {
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.maxValidationAttempts">MaxValidationAttempts</a></code> | <code>double</code> | The maximum number of consecutive failed validation attempts allowed. |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.period">Period</a></code> | <code>double</code> | The length of time in seconds used to generate a counter for the TOTP token calculation. |
+| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.qrSize">QrSize</a></code> | <code>double</code> | The pixel size of the generated square QR code. |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.skew">Skew</a></code> | <code>double</code> | The number of delay periods that are allowed when validating a TOTP token. |
 
 ---
@@ -1082,6 +1102,20 @@ public double Period { get; set; }
 The length of time in seconds used to generate a counter for the TOTP token calculation.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_mfa_totp#period IdentityMfaTotp#period}
+
+---
+
+##### `QrSize`<sup>Optional</sup> <a name="QrSize" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.qrSize"></a>
+
+```csharp
+public double QrSize { get; set; }
+```
+
+- *Type:* double
+
+The pixel size of the generated square QR code.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_mfa_totp#qr_size IdentityMfaTotp#qr_size}
 
 ---
 

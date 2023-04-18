@@ -13,7 +13,7 @@ Represents a {@link https://www.terraform.io/docs/providers/vault/d/identity_gro
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultIdentityGroup.DataVaultIdentityGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultidentitygroup"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentitygroup"
 
 datavaultidentitygroup.NewDataVaultIdentityGroup(scope Construct, id *string, config DataVaultIdentityGroupConfig) DataVaultIdentityGroup
 ```
@@ -319,7 +319,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.dataVaultIdentityGroup.DataVaultIdentityGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultidentitygroup"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentitygroup"
 
 datavaultidentitygroup.DataVaultIdentityGroup_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.dataVaultIdentityGroup.DataVaultIdentityGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultidentitygroup"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentitygroup"
 
 datavaultidentitygroup.DataVaultIdentityGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datavaultidentitygroup.DataVaultIdentityGroup_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vault.dataVaultIdentityGroup.DataVaultIdentityGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultidentitygroup"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentitygroup"
 
 datavaultidentitygroup.DataVaultIdentityGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -894,7 +894,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.dataVaultIdentityGroup.DataVaultIdentityGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultidentitygroup"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentitygroup"
 
 &datavaultidentitygroup.DataVaultIdentityGroupConfig {
 	Connection: interface{},

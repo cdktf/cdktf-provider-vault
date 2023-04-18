@@ -13,7 +13,7 @@ Represents a {@link https://www.terraform.io/docs/providers/vault/r/aws_auth_bac
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.awsAuthBackendConfigIdentity.AwsAuthBackendConfigIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/awsauthbackendconfigidentity"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendconfigidentity"
 
 awsauthbackendconfigidentity.NewAwsAuthBackendConfigIdentity(scope Construct, id *string, config AwsAuthBackendConfigIdentityConfig) AwsAuthBackendConfigIdentity
 ```
@@ -312,7 +312,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.awsAuthBackendConfigIdentity.AwsAuthBackendConfigIdentity.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/awsauthbackendconfigidentity"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendconfigidentity"
 
 awsauthbackendconfigidentity.AwsAuthBackendConfigIdentity_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.awsAuthBackendConfigIdentity.AwsAuthBackendConfigIdentity.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/awsauthbackendconfigidentity"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendconfigidentity"
 
 awsauthbackendconfigidentity.AwsAuthBackendConfigIdentity_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ awsauthbackendconfigidentity.AwsAuthBackendConfigIdentity_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.awsAuthBackendConfigIdentity.AwsAuthBackendConfigIdentity.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/awsauthbackendconfigidentity"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendconfigidentity"
 
 awsauthbackendconfigidentity.AwsAuthBackendConfigIdentity_IsTerraformResource(x interface{}) *bool
 ```
@@ -689,7 +689,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.awsAuthBackendConfigIdentity.AwsAuthBackendConfigIdentityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/awsauthbackendconfigidentity"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendconfigidentity"
 
 &awsauthbackendconfigidentity.AwsAuthBackendConfigIdentityConfig {
 	Connection: interface{},
