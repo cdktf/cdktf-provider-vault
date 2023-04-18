@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/identitymfaduo"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/identitymfaduo"
 
 identitymfaduo.NewIdentityMfaDuo(scope Construct, id *string, config IdentityMfaDuoConfig) IdentityMfaDuo
 ```
@@ -305,7 +305,7 @@ func ResetUsernameFormat()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuo.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/identitymfaduo"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/identitymfaduo"
 
 identitymfaduo.IdentityMfaDuo_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuo.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/identitymfaduo"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/identitymfaduo"
 
 identitymfaduo.IdentityMfaDuo_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ identitymfaduo.IdentityMfaDuo_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuo.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/identitymfaduo"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/identitymfaduo"
 
 identitymfaduo.IdentityMfaDuo_IsTerraformResource(x interface{}) *bool
 ```
@@ -803,7 +803,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuoConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/identitymfaduo"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/identitymfaduo"
 
 &identitymfaduo.IdentityMfaDuoConfig {
 	Connection: interface{},
