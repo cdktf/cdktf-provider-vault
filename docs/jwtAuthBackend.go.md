@@ -1,3 +1,7 @@
+# `vault_jwt_auth_backend`
+
+Refer to the Terraform Registory for docs: [`vault_jwt_auth_backend`](https://www.terraform.io/docs/providers/vault/r/jwt_auth_backend).
+
 # `jwtAuthBackend` Submodule <a name="`jwtAuthBackend` Submodule" id="@cdktf/provider-vault.jwtAuthBackend"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

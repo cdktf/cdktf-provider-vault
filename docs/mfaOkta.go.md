@@ -1,3 +1,7 @@
+# `vault_mfa_okta`
+
+Refer to the Terraform Registory for docs: [`vault_mfa_okta`](https://www.terraform.io/docs/providers/vault/r/mfa_okta).
+
 # `mfaOkta` Submodule <a name="`mfaOkta` Submodule" id="@cdktf/provider-vault.mfaOkta"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

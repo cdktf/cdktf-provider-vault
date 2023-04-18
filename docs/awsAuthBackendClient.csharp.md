@@ -1,3 +1,7 @@
+# `vault_aws_auth_backend_client`
+
+Refer to the Terraform Registory for docs: [`vault_aws_auth_backend_client`](https://www.terraform.io/docs/providers/vault/r/aws_auth_backend_client).
+
 # `awsAuthBackendClient` Submodule <a name="`awsAuthBackendClient` Submodule" id="@cdktf/provider-vault.awsAuthBackendClient"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

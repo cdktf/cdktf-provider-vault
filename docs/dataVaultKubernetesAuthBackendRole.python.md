@@ -1,3 +1,7 @@
+# `data_vault_kubernetes_auth_backend_role`
+
+Refer to the Terraform Registory for docs: [`data_vault_kubernetes_auth_backend_role`](https://www.terraform.io/docs/providers/vault/d/kubernetes_auth_backend_role).
+
 # `dataVaultKubernetesAuthBackendRole` Submodule <a name="`dataVaultKubernetesAuthBackendRole` Submodule" id="@cdktf/provider-vault.dataVaultKubernetesAuthBackendRole"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

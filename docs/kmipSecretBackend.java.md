@@ -1,3 +1,7 @@
+# `vault_kmip_secret_backend`
+
+Refer to the Terraform Registory for docs: [`vault_kmip_secret_backend`](https://www.terraform.io/docs/providers/vault/r/kmip_secret_backend).
+
 # `kmipSecretBackend` Submodule <a name="`kmipSecretBackend` Submodule" id="@cdktf/provider-vault.kmipSecretBackend"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

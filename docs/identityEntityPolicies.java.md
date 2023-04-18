@@ -1,3 +1,7 @@
+# `vault_identity_entity_policies`
+
+Refer to the Terraform Registory for docs: [`vault_identity_entity_policies`](https://www.terraform.io/docs/providers/vault/r/identity_entity_policies).
+
 # `identityEntityPolicies` Submodule <a name="`identityEntityPolicies` Submodule" id="@cdktf/provider-vault.identityEntityPolicies"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

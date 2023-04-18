@@ -1,3 +1,7 @@
+# `vault_identity_oidc_key_allowed_client_id`
+
+Refer to the Terraform Registory for docs: [`vault_identity_oidc_key_allowed_client_id`](https://www.terraform.io/docs/providers/vault/r/identity_oidc_key_allowed_client_id).
+
 # `identityOidcKeyAllowedClientId` Submodule <a name="`identityOidcKeyAllowedClientId` Submodule" id="@cdktf/provider-vault.identityOidcKeyAllowedClientId"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

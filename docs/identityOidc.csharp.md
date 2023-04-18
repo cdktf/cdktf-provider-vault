@@ -1,3 +1,7 @@
+# `vault_identity_oidc`
+
+Refer to the Terraform Registory for docs: [`vault_identity_oidc`](https://www.terraform.io/docs/providers/vault/r/identity_oidc).
+
 # `identityOidc` Submodule <a name="`identityOidc` Submodule" id="@cdktf/provider-vault.identityOidc"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

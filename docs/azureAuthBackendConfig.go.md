@@ -1,3 +1,7 @@
+# `vault_azure_auth_backend_config`
+
+Refer to the Terraform Registory for docs: [`vault_azure_auth_backend_config`](https://www.terraform.io/docs/providers/vault/r/azure_auth_backend_config).
+
 # `azureAuthBackendConfig` Submodule <a name="`azureAuthBackendConfig` Submodule" id="@cdktf/provider-vault.azureAuthBackendConfig"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

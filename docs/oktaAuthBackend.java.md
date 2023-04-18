@@ -1,3 +1,7 @@
+# `vault_okta_auth_backend`
+
+Refer to the Terraform Registory for docs: [`vault_okta_auth_backend`](https://www.terraform.io/docs/providers/vault/r/okta_auth_backend).
+
 # `oktaAuthBackend` Submodule <a name="`oktaAuthBackend` Submodule" id="@cdktf/provider-vault.oktaAuthBackend"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

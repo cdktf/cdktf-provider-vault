@@ -1,3 +1,7 @@
+# `data_vault_policy_document`
+
+Refer to the Terraform Registory for docs: [`data_vault_policy_document`](https://www.terraform.io/docs/providers/vault/d/policy_document).
+
 # `dataVaultPolicyDocument` Submodule <a name="`dataVaultPolicyDocument` Submodule" id="@cdktf/provider-vault.dataVaultPolicyDocument"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

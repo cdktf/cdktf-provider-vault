@@ -1,3 +1,7 @@
+# `data_vault_transit_encrypt`
+
+Refer to the Terraform Registory for docs: [`data_vault_transit_encrypt`](https://www.terraform.io/docs/providers/vault/d/transit_encrypt).
+
 # `dataVaultTransitEncrypt` Submodule <a name="`dataVaultTransitEncrypt` Submodule" id="@cdktf/provider-vault.dataVaultTransitEncrypt"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

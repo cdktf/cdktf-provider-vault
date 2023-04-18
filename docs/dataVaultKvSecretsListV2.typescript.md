@@ -1,3 +1,7 @@
+# `data_vault_kv_secrets_list_v2`
+
+Refer to the Terraform Registory for docs: [`data_vault_kv_secrets_list_v2`](https://www.terraform.io/docs/providers/vault/d/kv_secrets_list_v2).
+
 # `dataVaultKvSecretsListV2` Submodule <a name="`dataVaultKvSecretsListV2` Submodule" id="@cdktf/provider-vault.dataVaultKvSecretsListV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `vault_gcp_secret_backend`
+
+Refer to the Terraform Registory for docs: [`vault_gcp_secret_backend`](https://www.terraform.io/docs/providers/vault/r/gcp_secret_backend).
+
 # `gcpSecretBackend` Submodule <a name="`gcpSecretBackend` Submodule" id="@cdktf/provider-vault.gcpSecretBackend"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

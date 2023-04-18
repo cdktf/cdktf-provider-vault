@@ -1,3 +1,7 @@
+# `provider`
+
+Refer to the Terraform Registory for docs: [`vault`](https://www.terraform.io/docs/providers/vault).
+
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-vault.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
