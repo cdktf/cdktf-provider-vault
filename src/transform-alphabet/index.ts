@@ -66,7 +66,7 @@ export class TransformAlphabet extends cdktf.TerraformResource {
       terraformResourceType: 'vault_transform_alphabet',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.14.0',
+        providerVersion: '3.15.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

@@ -113,6 +113,8 @@ The following submodules are available:
 - [mfaOkta](./mfaOkta.go.md)
 - [mfaPingid](./mfaPingid.go.md)
 - [mfaTotp](./mfaTotp.go.md)
+- [mongodbatlasSecretBackend](./mongodbatlasSecretBackend.go.md)
+- [mongodbatlasSecretRole](./mongodbatlasSecretRole.go.md)
 - [mount](./mount.go.md)
 - [namespace](./namespace.go.md)
 - [nomadSecretBackend](./nomadSecretBackend.go.md)

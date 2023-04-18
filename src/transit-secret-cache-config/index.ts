@@ -60,7 +60,7 @@ export class TransitSecretCacheConfig extends cdktf.TerraformResource {
       terraformResourceType: 'vault_transit_secret_cache_config',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.14.0',
+        providerVersion: '3.15.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

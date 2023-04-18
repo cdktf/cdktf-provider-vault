@@ -90,7 +90,7 @@ export class RaftAutopilot extends cdktf.TerraformResource {
       terraformResourceType: 'vault_raft_autopilot',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.14.0',
+        providerVersion: '3.15.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

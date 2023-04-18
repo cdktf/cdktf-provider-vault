@@ -113,6 +113,8 @@ The following submodules are available:
 - [mfaOkta](./mfaOkta.typescript.md)
 - [mfaPingid](./mfaPingid.typescript.md)
 - [mfaTotp](./mfaTotp.typescript.md)
+- [mongodbatlasSecretBackend](./mongodbatlasSecretBackend.typescript.md)
+- [mongodbatlasSecretRole](./mongodbatlasSecretRole.typescript.md)
 - [mount](./mount.typescript.md)
 - [namespace](./namespace.typescript.md)
 - [nomadSecretBackend](./nomadSecretBackend.typescript.md)

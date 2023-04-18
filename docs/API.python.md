@@ -113,6 +113,8 @@ The following submodules are available:
 - [mfaOkta](./mfaOkta.python.md)
 - [mfaPingid](./mfaPingid.python.md)
 - [mfaTotp](./mfaTotp.python.md)
+- [mongodbatlasSecretBackend](./mongodbatlasSecretBackend.python.md)
+- [mongodbatlasSecretRole](./mongodbatlasSecretRole.python.md)
 - [mount](./mount.python.md)
 - [namespace](./namespace.python.md)
 - [nomadSecretBackend](./nomadSecretBackend.python.md)

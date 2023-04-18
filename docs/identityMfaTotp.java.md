@@ -34,6 +34,7 @@ IdentityMfaTotp.Builder.create(Construct scope, java.lang.String id)
 //  .maxValidationAttempts(java.lang.Number)
 //  .namespace(java.lang.String)
 //  .period(java.lang.Number)
+//  .qrSize(java.lang.Number)
 //  .skew(java.lang.Number)
     .build();
 ```
@@ -57,6 +58,7 @@ IdentityMfaTotp.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.Initializer.parameter.maxValidationAttempts">maxValidationAttempts</a></code> | <code>java.lang.Number</code> | The maximum number of consecutive failed validation attempts allowed. |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.Initializer.parameter.period">period</a></code> | <code>java.lang.Number</code> | The length of time in seconds used to generate a counter for the TOTP token calculation. |
+| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.Initializer.parameter.qrSize">qrSize</a></code> | <code>java.lang.Number</code> | The pixel size of the generated square QR code. |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.Initializer.parameter.skew">skew</a></code> | <code>java.lang.Number</code> | The number of delay periods that are allowed when validating a TOTP token. |
 
 ---
@@ -202,6 +204,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 ---
 
+##### `qrSize`<sup>Optional</sup> <a name="qrSize" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.Initializer.parameter.qrSize"></a>
+
+- *Type:* java.lang.Number
+
+The pixel size of the generated square QR code.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_mfa_totp#qr_size IdentityMfaTotp#qr_size}
+
+---
+
 ##### `skew`<sup>Optional</sup> <a name="skew" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.Initializer.parameter.skew"></a>
 
 - *Type:* java.lang.Number
@@ -241,6 +253,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.resetMaxValidationAttempts">resetMaxValidationAttempts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.resetNamespace">resetNamespace</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.resetPeriod">resetPeriod</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.resetQrSize">resetQrSize</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.resetSkew">resetSkew</a></code> | *No description.* |
 
 ---
@@ -471,6 +484,12 @@ public void resetNamespace()
 public void resetPeriod()
 ```
 
+##### `resetQrSize` <a name="resetQrSize" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.resetQrSize"></a>
+
+```java
+public void resetQrSize()
+```
+
 ##### `resetSkew` <a name="resetSkew" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.resetSkew"></a>
 
 ```java
@@ -570,7 +589,6 @@ IdentityMfaTotp.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.namespaceId">namespaceId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.namespacePath">namespacePath</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.qrSize">qrSize</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.uuid">uuid</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.algorithmInput">algorithmInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -581,6 +599,7 @@ IdentityMfaTotp.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.maxValidationAttemptsInput">maxValidationAttemptsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.namespaceInput">namespaceInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.periodInput">periodInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.qrSizeInput">qrSizeInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.skewInput">skewInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.algorithm">algorithm</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.digits">digits</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -590,6 +609,7 @@ IdentityMfaTotp.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.maxValidationAttempts">maxValidationAttempts</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.namespace">namespace</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.period">period</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.qrSize">qrSize</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.skew">skew</a></code> | <code>java.lang.Number</code> | *No description.* |
 
 ---
@@ -786,16 +806,6 @@ public java.lang.String getNamespacePath();
 
 ---
 
-##### `qrSize`<sup>Required</sup> <a name="qrSize" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.qrSize"></a>
-
-```java
-public java.lang.Number getQrSize();
-```
-
-- *Type:* java.lang.Number
-
----
-
 ##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.type"></a>
 
 ```java
@@ -896,6 +906,16 @@ public java.lang.Number getPeriodInput();
 
 ---
 
+##### `qrSizeInput`<sup>Optional</sup> <a name="qrSizeInput" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.qrSizeInput"></a>
+
+```java
+public java.lang.Number getQrSizeInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
 ##### `skewInput`<sup>Optional</sup> <a name="skewInput" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.skewInput"></a>
 
 ```java
@@ -986,6 +1006,16 @@ public java.lang.Number getPeriod();
 
 ---
 
+##### `qrSize`<sup>Required</sup> <a name="qrSize" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.qrSize"></a>
+
+```java
+public java.lang.Number getQrSize();
+```
+
+- *Type:* java.lang.Number
+
+---
+
 ##### `skew`<sup>Required</sup> <a name="skew" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.skew"></a>
 
 ```java
@@ -1042,6 +1072,7 @@ IdentityMfaTotpConfig.builder()
 //  .maxValidationAttempts(java.lang.Number)
 //  .namespace(java.lang.String)
 //  .period(java.lang.Number)
+//  .qrSize(java.lang.Number)
 //  .skew(java.lang.Number)
     .build();
 ```
@@ -1065,6 +1096,7 @@ IdentityMfaTotpConfig.builder()
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.maxValidationAttempts">maxValidationAttempts</a></code> | <code>java.lang.Number</code> | The maximum number of consecutive failed validation attempts allowed. |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.period">period</a></code> | <code>java.lang.Number</code> | The length of time in seconds used to generate a counter for the TOTP token calculation. |
+| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.qrSize">qrSize</a></code> | <code>java.lang.Number</code> | The pixel size of the generated square QR code. |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.skew">skew</a></code> | <code>java.lang.Number</code> | The number of delay periods that are allowed when validating a TOTP token. |
 
 ---
@@ -1249,6 +1281,20 @@ public java.lang.Number getPeriod();
 The length of time in seconds used to generate a counter for the TOTP token calculation.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_mfa_totp#period IdentityMfaTotp#period}
+
+---
+
+##### `qrSize`<sup>Optional</sup> <a name="qrSize" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.qrSize"></a>
+
+```java
+public java.lang.Number getQrSize();
+```
+
+- *Type:* java.lang.Number
+
+The pixel size of the generated square QR code.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_mfa_totp#qr_size IdentityMfaTotp#qr_size}
 
 ---
 

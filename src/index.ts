@@ -84,6 +84,8 @@ export * as mfaDuo from './mfa-duo';
 export * as mfaOkta from './mfa-okta';
 export * as mfaPingid from './mfa-pingid';
 export * as mfaTotp from './mfa-totp';
+export * as mongodbatlasSecretBackend from './mongodbatlas-secret-backend';
+export * as mongodbatlasSecretRole from './mongodbatlas-secret-role';
 export * as mount from './mount';
 export * as namespace from './namespace';
 export * as nomadSecretBackend from './nomad-secret-backend';
