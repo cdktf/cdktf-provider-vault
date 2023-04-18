@@ -1,6 +1,6 @@
 # `vault_identity_group_alias`
 
-Refer to the Terraform Registory for docs: [`vault_identity_group_alias`](https://www.terraform.io/docs/providers/vault/r/identity_group_alias).
+Refer to the Terraform Registory for docs: [`vault_identity_group_alias`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group_alias).
 
 # `identityGroupAlias` Submodule <a name="`identityGroupAlias` Submodule" id="@cdktf/provider-vault.identityGroupAlias"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_identity_group_alias`](https:
 
 ### IdentityGroupAlias <a name="IdentityGroupAlias" id="@cdktf/provider-vault.identityGroupAlias.IdentityGroupAlias"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/identity_group_alias vault_identity_group_alias}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group_alias vault_identity_group_alias}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.identityGroupAlias.IdentityGroupAlias.Initializer"></a>
 
@@ -19,6 +19,7 @@ IdentityGroupAlias.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -39,7 +40,7 @@ IdentityGroupAlias.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vault.identityGroupAlias.IdentityGroupAlias.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-vault.identityGroupAlias.IdentityGroupAlias.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-vault.identityGroupAlias.IdentityGroupAlias.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityGroupAlias.IdentityGroupAlias.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.identityGroupAlias.IdentityGroupAlias.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityGroupAlias.IdentityGroupAlias.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityGroupAlias.IdentityGroupAlias.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityGroupAlias.IdentityGroupAlias.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -48,7 +49,7 @@ IdentityGroupAlias.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vault.identityGroupAlias.IdentityGroupAlias.Initializer.parameter.canonicalId">canonicalId</a></code> | <code>java.lang.String</code> | ID of the group to which this is an alias. |
 | <code><a href="#@cdktf/provider-vault.identityGroupAlias.IdentityGroupAlias.Initializer.parameter.mountAccessor">mountAccessor</a></code> | <code>java.lang.String</code> | Mount accessor to which this alias belongs to. |
 | <code><a href="#@cdktf/provider-vault.identityGroupAlias.IdentityGroupAlias.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of the group alias. |
-| <code><a href="#@cdktf/provider-vault.identityGroupAlias.IdentityGroupAlias.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group_alias#id IdentityGroupAlias#id}. |
+| <code><a href="#@cdktf/provider-vault.identityGroupAlias.IdentityGroupAlias.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group_alias#id IdentityGroupAlias#id}. |
 | <code><a href="#@cdktf/provider-vault.identityGroupAlias.IdentityGroupAlias.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -79,7 +80,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.identityGroupAlias.IdentityGroupAlias.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -119,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 ID of the group to which this is an alias.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group_alias#canonical_id IdentityGroupAlias#canonical_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group_alias#canonical_id IdentityGroupAlias#canonical_id}
 
 ---
 
@@ -129,7 +130,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Mount accessor to which this alias belongs to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group_alias#mount_accessor IdentityGroupAlias#mount_accessor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group_alias#mount_accessor IdentityGroupAlias#mount_accessor}
 
 ---
 
@@ -139,7 +140,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Name of the group alias.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group_alias#name IdentityGroupAlias#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group_alias#name IdentityGroupAlias#name}
 
 ---
 
@@ -147,7 +148,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group_alias#id IdentityGroupAlias#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group_alias#id IdentityGroupAlias#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -160,7 +161,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group_alias#namespace IdentityGroupAlias#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group_alias#namespace IdentityGroupAlias#namespace}
 
 ---
 
@@ -467,7 +468,7 @@ IdentityGroupAlias.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-vault.identityGroupAlias.IdentityGroupAlias.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityGroupAlias.IdentityGroupAlias.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityGroupAlias.IdentityGroupAlias.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityGroupAlias.IdentityGroupAlias.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.identityGroupAlias.IdentityGroupAlias.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityGroupAlias.IdentityGroupAlias.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityGroupAlias.IdentityGroupAlias.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityGroupAlias.IdentityGroupAlias.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -571,10 +572,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.identityGroupAlias.IdentityGroupAlias.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -759,6 +760,7 @@ IdentityGroupAliasConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -779,7 +781,7 @@ IdentityGroupAliasConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.identityGroupAlias.IdentityGroupAliasConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityGroupAlias.IdentityGroupAliasConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.identityGroupAlias.IdentityGroupAliasConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityGroupAlias.IdentityGroupAliasConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityGroupAlias.IdentityGroupAliasConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityGroupAlias.IdentityGroupAliasConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -788,7 +790,7 @@ IdentityGroupAliasConfig.builder()
 | <code><a href="#@cdktf/provider-vault.identityGroupAlias.IdentityGroupAliasConfig.property.canonicalId">canonicalId</a></code> | <code>java.lang.String</code> | ID of the group to which this is an alias. |
 | <code><a href="#@cdktf/provider-vault.identityGroupAlias.IdentityGroupAliasConfig.property.mountAccessor">mountAccessor</a></code> | <code>java.lang.String</code> | Mount accessor to which this alias belongs to. |
 | <code><a href="#@cdktf/provider-vault.identityGroupAlias.IdentityGroupAliasConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of the group alias. |
-| <code><a href="#@cdktf/provider-vault.identityGroupAlias.IdentityGroupAliasConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group_alias#id IdentityGroupAlias#id}. |
+| <code><a href="#@cdktf/provider-vault.identityGroupAlias.IdentityGroupAliasConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group_alias#id IdentityGroupAlias#id}. |
 | <code><a href="#@cdktf/provider-vault.identityGroupAlias.IdentityGroupAliasConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -806,10 +808,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.identityGroupAlias.IdentityGroupAliasConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -873,7 +875,7 @@ public java.lang.String getCanonicalId();
 
 ID of the group to which this is an alias.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group_alias#canonical_id IdentityGroupAlias#canonical_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group_alias#canonical_id IdentityGroupAlias#canonical_id}
 
 ---
 
@@ -887,7 +889,7 @@ public java.lang.String getMountAccessor();
 
 Mount accessor to which this alias belongs to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group_alias#mount_accessor IdentityGroupAlias#mount_accessor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group_alias#mount_accessor IdentityGroupAlias#mount_accessor}
 
 ---
 
@@ -901,7 +903,7 @@ public java.lang.String getName();
 
 Name of the group alias.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group_alias#name IdentityGroupAlias#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group_alias#name IdentityGroupAlias#name}
 
 ---
 
@@ -913,7 +915,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group_alias#id IdentityGroupAlias#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group_alias#id IdentityGroupAlias#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -930,7 +932,7 @@ public java.lang.String getNamespace();
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group_alias#namespace IdentityGroupAlias#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group_alias#namespace IdentityGroupAlias#namespace}
 
 ---
 

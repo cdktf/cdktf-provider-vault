@@ -1,6 +1,6 @@
 # `vault_ad_secret_library`
 
-Refer to the Terraform Registory for docs: [`vault_ad_secret_library`](https://www.terraform.io/docs/providers/vault/r/ad_secret_library).
+Refer to the Terraform Registory for docs: [`vault_ad_secret_library`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library).
 
 # `adSecretLibrary` Submodule <a name="`adSecretLibrary` Submodule" id="@cdktf/provider-vault.adSecretLibrary"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_ad_secret_library`](https://w
 
 ### AdSecretLibrary <a name="AdSecretLibrary" id="@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_library vault_ad_secret_library}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library vault_ad_secret_library}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.Initializer"></a>
 
@@ -19,7 +19,7 @@ adSecretLibrary.AdSecretLibrary(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -41,7 +41,7 @@ adSecretLibrary.AdSecretLibrary(
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -51,7 +51,7 @@ adSecretLibrary.AdSecretLibrary(
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the set of service accounts. |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.Initializer.parameter.serviceAccountNames">service_account_names</a></code> | <code>typing.List[str]</code> | The names of all the service accounts that can be checked out from this set. |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.Initializer.parameter.disableCheckInEnforcement">disable_check_in_enforcement</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disable enforcing that service accounts must be checked in by the entity or client token that checked them out. |
-| <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_library#id AdSecretLibrary#id}. |
+| <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library#id AdSecretLibrary#id}. |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.Initializer.parameter.maxTtl">max_ttl</a></code> | <code>typing.Union[int, float]</code> | The maximum amount of time, in seconds, a check-out last with renewal before Vault automatically checks it back in. |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.Initializer.parameter.ttl">ttl</a></code> | <code>typing.Union[int, float]</code> | The amount of time, in seconds, a single check-out lasts before Vault automatically checks it back in. |
@@ -84,7 +84,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -124,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 The mount path for the AD backend.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_library#backend AdSecretLibrary#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library#backend AdSecretLibrary#backend}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 The name of the set of service accounts.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_library#name AdSecretLibrary#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library#name AdSecretLibrary#name}
 
 ---
 
@@ -146,7 +146,7 @@ The names of all the service accounts that can be checked out from this set.
 
 These service accounts must already exist in Active Directory.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_library#service_account_names AdSecretLibrary#service_account_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library#service_account_names AdSecretLibrary#service_account_names}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Disable enforcing that service accounts must be checked in by the entity or client token that checked them out.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_library#disable_check_in_enforcement AdSecretLibrary#disable_check_in_enforcement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library#disable_check_in_enforcement AdSecretLibrary#disable_check_in_enforcement}
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_library#id AdSecretLibrary#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library#id AdSecretLibrary#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -177,7 +177,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The maximum amount of time, in seconds, a check-out last with renewal before Vault automatically checks it back in.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_library#max_ttl AdSecretLibrary#max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library#max_ttl AdSecretLibrary#max_ttl}
 
 ---
 
@@ -187,7 +187,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_library#namespace AdSecretLibrary#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library#namespace AdSecretLibrary#namespace}
 
 ---
 
@@ -197,7 +197,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 The amount of time, in seconds, a single check-out lasts before Vault automatically checks it back in.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_library#ttl AdSecretLibrary#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library#ttl AdSecretLibrary#ttl}
 
 ---
 
@@ -556,7 +556,7 @@ adSecretLibrary.AdSecretLibrary.is_terraform_resource(
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -666,10 +666,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -912,7 +912,7 @@ from cdktf_cdktf_provider_vault import ad_secret_library
 
 adSecretLibrary.AdSecretLibraryConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -934,7 +934,7 @@ adSecretLibrary.AdSecretLibraryConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -944,7 +944,7 @@ adSecretLibrary.AdSecretLibraryConfig(
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig.property.name">name</a></code> | <code>str</code> | The name of the set of service accounts. |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig.property.serviceAccountNames">service_account_names</a></code> | <code>typing.List[str]</code> | The names of all the service accounts that can be checked out from this set. |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig.property.disableCheckInEnforcement">disable_check_in_enforcement</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disable enforcing that service accounts must be checked in by the entity or client token that checked them out. |
-| <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_library#id AdSecretLibrary#id}. |
+| <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library#id AdSecretLibrary#id}. |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig.property.maxTtl">max_ttl</a></code> | <code>typing.Union[int, float]</code> | The maximum amount of time, in seconds, a check-out last with renewal before Vault automatically checks it back in. |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig.property.ttl">ttl</a></code> | <code>typing.Union[int, float]</code> | The amount of time, in seconds, a single check-out lasts before Vault automatically checks it back in. |
@@ -964,10 +964,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1031,7 +1031,7 @@ backend: str
 
 The mount path for the AD backend.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_library#backend AdSecretLibrary#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library#backend AdSecretLibrary#backend}
 
 ---
 
@@ -1045,7 +1045,7 @@ name: str
 
 The name of the set of service accounts.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_library#name AdSecretLibrary#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library#name AdSecretLibrary#name}
 
 ---
 
@@ -1061,7 +1061,7 @@ The names of all the service accounts that can be checked out from this set.
 
 These service accounts must already exist in Active Directory.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_library#service_account_names AdSecretLibrary#service_account_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library#service_account_names AdSecretLibrary#service_account_names}
 
 ---
 
@@ -1075,7 +1075,7 @@ disable_check_in_enforcement: typing.Union[bool, IResolvable]
 
 Disable enforcing that service accounts must be checked in by the entity or client token that checked them out.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_library#disable_check_in_enforcement AdSecretLibrary#disable_check_in_enforcement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library#disable_check_in_enforcement AdSecretLibrary#disable_check_in_enforcement}
 
 ---
 
@@ -1087,7 +1087,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_library#id AdSecretLibrary#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library#id AdSecretLibrary#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1104,7 +1104,7 @@ max_ttl: typing.Union[int, float]
 
 The maximum amount of time, in seconds, a check-out last with renewal before Vault automatically checks it back in.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_library#max_ttl AdSecretLibrary#max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library#max_ttl AdSecretLibrary#max_ttl}
 
 ---
 
@@ -1118,7 +1118,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_library#namespace AdSecretLibrary#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library#namespace AdSecretLibrary#namespace}
 
 ---
 
@@ -1132,7 +1132,7 @@ ttl: typing.Union[int, float]
 
 The amount of time, in seconds, a single check-out lasts before Vault automatically checks it back in.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_library#ttl AdSecretLibrary#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library#ttl AdSecretLibrary#ttl}
 
 ---
 

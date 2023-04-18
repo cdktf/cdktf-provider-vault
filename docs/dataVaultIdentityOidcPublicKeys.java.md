@@ -1,6 +1,6 @@
 # `data_vault_identity_oidc_public_keys`
 
-Refer to the Terraform Registory for docs: [`data_vault_identity_oidc_public_keys`](https://www.terraform.io/docs/providers/vault/d/identity_oidc_public_keys).
+Refer to the Terraform Registory for docs: [`data_vault_identity_oidc_public_keys`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/identity_oidc_public_keys).
 
 # `dataVaultIdentityOidcPublicKeys` Submodule <a name="`dataVaultIdentityOidcPublicKeys` Submodule" id="@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_vault_identity_oidc_public_key
 
 ### DataVaultIdentityOidcPublicKeys <a name="DataVaultIdentityOidcPublicKeys" id="@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeys"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/d/identity_oidc_public_keys vault_identity_oidc_public_keys}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/identity_oidc_public_keys vault_identity_oidc_public_keys}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeys.Initializer"></a>
 
@@ -19,6 +19,7 @@ DataVaultIdentityOidcPublicKeys.Builder.create(Construct scope, java.lang.String
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -37,14 +38,14 @@ DataVaultIdentityOidcPublicKeys.Builder.create(Construct scope, java.lang.String
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeys.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeys.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeys.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeys.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeys.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeys.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeys.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeys.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeys.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeys.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeys.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the provider. |
-| <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeys.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/identity_oidc_public_keys#id DataVaultIdentityOidcPublicKeys#id}. |
+| <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeys.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/identity_oidc_public_keys#id DataVaultIdentityOidcPublicKeys#id}. |
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeys.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -75,7 +76,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeys.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -115,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the provider.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/identity_oidc_public_keys#name DataVaultIdentityOidcPublicKeys#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/identity_oidc_public_keys#name DataVaultIdentityOidcPublicKeys#name}
 
 ---
 
@@ -123,7 +124,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/identity_oidc_public_keys#id DataVaultIdentityOidcPublicKeys#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/identity_oidc_public_keys#id DataVaultIdentityOidcPublicKeys#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -136,7 +137,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/identity_oidc_public_keys#namespace DataVaultIdentityOidcPublicKeys#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/identity_oidc_public_keys#namespace DataVaultIdentityOidcPublicKeys#namespace}
 
 ---
 
@@ -442,7 +443,7 @@ DataVaultIdentityOidcPublicKeys.isTerraformDataSource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeys.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeys.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeys.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeys.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeys.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeys.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeys.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeys.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -532,10 +533,10 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeys.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -680,6 +681,7 @@ DataVaultIdentityOidcPublicKeysConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -698,14 +700,14 @@ DataVaultIdentityOidcPublicKeysConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeysConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeysConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeysConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeysConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeysConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeysConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeysConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeysConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeysConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the provider. |
-| <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeysConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/identity_oidc_public_keys#id DataVaultIdentityOidcPublicKeys#id}. |
+| <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeysConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/identity_oidc_public_keys#id DataVaultIdentityOidcPublicKeys#id}. |
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeysConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -723,10 +725,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeysConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -790,7 +792,7 @@ public java.lang.String getName();
 
 The name of the provider.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/identity_oidc_public_keys#name DataVaultIdentityOidcPublicKeys#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/identity_oidc_public_keys#name DataVaultIdentityOidcPublicKeys#name}
 
 ---
 
@@ -802,7 +804,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/identity_oidc_public_keys#id DataVaultIdentityOidcPublicKeys#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/identity_oidc_public_keys#id DataVaultIdentityOidcPublicKeys#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -819,7 +821,7 @@ public java.lang.String getNamespace();
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/identity_oidc_public_keys#namespace DataVaultIdentityOidcPublicKeys#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/identity_oidc_public_keys#namespace DataVaultIdentityOidcPublicKeys#namespace}
 
 ---
 

@@ -1,6 +1,6 @@
 # `vault_mfa_totp`
 
-Refer to the Terraform Registory for docs: [`vault_mfa_totp`](https://www.terraform.io/docs/providers/vault/r/mfa_totp).
+Refer to the Terraform Registory for docs: [`vault_mfa_totp`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_totp).
 
 # `mfaTotp` Submodule <a name="`mfaTotp` Submodule" id="@cdktf/provider-vault.mfaTotp"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_mfa_totp`](https://www.terraf
 
 ### MfaTotp <a name="MfaTotp" id="@cdktf/provider-vault.mfaTotp.MfaTotp"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/mfa_totp vault_mfa_totp}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_totp vault_mfa_totp}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.mfaTotp.MfaTotp.Initializer"></a>
 
@@ -19,7 +19,7 @@ mfaTotp.MfaTotp(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -43,7 +43,7 @@ mfaTotp.MfaTotp(
 | <code><a href="#@cdktf/provider-vault.mfaTotp.MfaTotp.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-vault.mfaTotp.MfaTotp.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-vault.mfaTotp.MfaTotp.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.mfaTotp.MfaTotp.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mfaTotp.MfaTotp.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaTotp.MfaTotp.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaTotp.MfaTotp.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaTotp.MfaTotp.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -88,7 +88,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.mfaTotp.MfaTotp.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -128,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the key's issuing organization.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_totp#issuer MfaTotp#issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_totp#issuer MfaTotp#issuer}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Name of the MFA method.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_totp#name MfaTotp#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_totp#name MfaTotp#name}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Specifies the hashing algorithm used to generate the TOTP code. Options include 'SHA1', 'SHA256' and 'SHA512'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_totp#algorithm MfaTotp#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_totp#algorithm MfaTotp#algorithm}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 The number of digits in the generated TOTP token. This value can either be 6 or 8.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_totp#digits MfaTotp#digits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_totp#digits MfaTotp#digits}
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 ID computed by Vault.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_totp#id MfaTotp#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_totp#id MfaTotp#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -181,7 +181,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Specifies the size in bytes of the generated key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_totp#key_size MfaTotp#key_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_totp#key_size MfaTotp#key_size}
 
 ---
 
@@ -191,7 +191,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_totp#namespace MfaTotp#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_totp#namespace MfaTotp#namespace}
 
 ---
 
@@ -201,7 +201,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 The length of time used to generate a counter for the TOTP token calculation.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_totp#period MfaTotp#period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_totp#period MfaTotp#period}
 
 ---
 
@@ -211,7 +211,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 The pixel size of the generated square QR code.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_totp#qr_size MfaTotp#qr_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_totp#qr_size MfaTotp#qr_size}
 
 ---
 
@@ -223,7 +223,7 @@ The number of delay periods that are allowed when validating a TOTP token.
 
 This value can either be 0 or 1.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_totp#skew MfaTotp#skew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_totp#skew MfaTotp#skew}
 
 ---
 
@@ -603,7 +603,7 @@ mfaTotp.MfaTotp.is_terraform_resource(
 | <code><a href="#@cdktf/provider-vault.mfaTotp.MfaTotp.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaTotp.MfaTotp.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaTotp.MfaTotp.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.mfaTotp.MfaTotp.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mfaTotp.MfaTotp.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaTotp.MfaTotp.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaTotp.MfaTotp.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaTotp.MfaTotp.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -717,10 +717,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.mfaTotp.MfaTotp.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1003,7 +1003,7 @@ from cdktf_cdktf_provider_vault import mfa_totp
 
 mfaTotp.MfaTotpConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -1027,7 +1027,7 @@ mfaTotp.MfaTotpConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.mfaTotp.MfaTotpConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.mfaTotp.MfaTotpConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mfaTotp.MfaTotpConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaTotp.MfaTotpConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaTotp.MfaTotpConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaTotp.MfaTotpConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1059,10 +1059,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.mfaTotp.MfaTotpConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1126,7 +1126,7 @@ issuer: str
 
 The name of the key's issuing organization.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_totp#issuer MfaTotp#issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_totp#issuer MfaTotp#issuer}
 
 ---
 
@@ -1140,7 +1140,7 @@ name: str
 
 Name of the MFA method.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_totp#name MfaTotp#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_totp#name MfaTotp#name}
 
 ---
 
@@ -1154,7 +1154,7 @@ algorithm: str
 
 Specifies the hashing algorithm used to generate the TOTP code. Options include 'SHA1', 'SHA256' and 'SHA512'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_totp#algorithm MfaTotp#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_totp#algorithm MfaTotp#algorithm}
 
 ---
 
@@ -1168,7 +1168,7 @@ digits: typing.Union[int, float]
 
 The number of digits in the generated TOTP token. This value can either be 6 or 8.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_totp#digits MfaTotp#digits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_totp#digits MfaTotp#digits}
 
 ---
 
@@ -1182,7 +1182,7 @@ id: str
 
 ID computed by Vault.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_totp#id MfaTotp#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_totp#id MfaTotp#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1199,7 +1199,7 @@ key_size: typing.Union[int, float]
 
 Specifies the size in bytes of the generated key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_totp#key_size MfaTotp#key_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_totp#key_size MfaTotp#key_size}
 
 ---
 
@@ -1213,7 +1213,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_totp#namespace MfaTotp#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_totp#namespace MfaTotp#namespace}
 
 ---
 
@@ -1227,7 +1227,7 @@ period: typing.Union[int, float]
 
 The length of time used to generate a counter for the TOTP token calculation.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_totp#period MfaTotp#period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_totp#period MfaTotp#period}
 
 ---
 
@@ -1241,7 +1241,7 @@ qr_size: typing.Union[int, float]
 
 The pixel size of the generated square QR code.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_totp#qr_size MfaTotp#qr_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_totp#qr_size MfaTotp#qr_size}
 
 ---
 
@@ -1257,7 +1257,7 @@ The number of delay periods that are allowed when validating a TOTP token.
 
 This value can either be 0 or 1.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_totp#skew MfaTotp#skew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_totp#skew MfaTotp#skew}
 
 ---
 

@@ -1,6 +1,6 @@
 # `vault_identity_oidc_assignment`
 
-Refer to the Terraform Registory for docs: [`vault_identity_oidc_assignment`](https://www.terraform.io/docs/providers/vault/r/identity_oidc_assignment).
+Refer to the Terraform Registory for docs: [`vault_identity_oidc_assignment`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_oidc_assignment).
 
 # `identityOidcAssignment` Submodule <a name="`identityOidcAssignment` Submodule" id="@cdktf/provider-vault.identityOidcAssignment"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_identity_oidc_assignment`](ht
 
 ### IdentityOidcAssignment <a name="IdentityOidcAssignment" id="@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/identity_oidc_assignment vault_identity_oidc_assignment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_oidc_assignment vault_identity_oidc_assignment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.Initializer"></a>
 
@@ -19,6 +19,7 @@ IdentityOidcAssignment.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -39,7 +40,7 @@ IdentityOidcAssignment.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -48,7 +49,7 @@ IdentityOidcAssignment.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the assignment. |
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.Initializer.parameter.entityIds">entityIds</a></code> | <code>java.util.List<java.lang.String></code> | A list of Vault entity IDs. |
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.Initializer.parameter.groupIds">groupIds</a></code> | <code>java.util.List<java.lang.String></code> | A list of Vault group IDs. |
-| <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_oidc_assignment#id IdentityOidcAssignment#id}. |
+| <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_oidc_assignment#id IdentityOidcAssignment#id}. |
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -79,7 +80,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -119,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the assignment.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_oidc_assignment#name IdentityOidcAssignment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_oidc_assignment#name IdentityOidcAssignment#name}
 
 ---
 
@@ -129,7 +130,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 A list of Vault entity IDs.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_oidc_assignment#entity_ids IdentityOidcAssignment#entity_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_oidc_assignment#entity_ids IdentityOidcAssignment#entity_ids}
 
 ---
 
@@ -139,7 +140,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 A list of Vault group IDs.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_oidc_assignment#group_ids IdentityOidcAssignment#group_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_oidc_assignment#group_ids IdentityOidcAssignment#group_ids}
 
 ---
 
@@ -147,7 +148,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_oidc_assignment#id IdentityOidcAssignment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_oidc_assignment#id IdentityOidcAssignment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -160,7 +161,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_oidc_assignment#namespace IdentityOidcAssignment#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_oidc_assignment#namespace IdentityOidcAssignment#namespace}
 
 ---
 
@@ -481,7 +482,7 @@ IdentityOidcAssignment.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -585,10 +586,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -773,6 +774,7 @@ IdentityOidcAssignmentConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -793,7 +795,7 @@ IdentityOidcAssignmentConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignmentConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignmentConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignmentConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignmentConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignmentConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignmentConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -802,7 +804,7 @@ IdentityOidcAssignmentConfig.builder()
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignmentConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the assignment. |
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignmentConfig.property.entityIds">entityIds</a></code> | <code>java.util.List<java.lang.String></code> | A list of Vault entity IDs. |
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignmentConfig.property.groupIds">groupIds</a></code> | <code>java.util.List<java.lang.String></code> | A list of Vault group IDs. |
-| <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignmentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_oidc_assignment#id IdentityOidcAssignment#id}. |
+| <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignmentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_oidc_assignment#id IdentityOidcAssignment#id}. |
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignmentConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -820,10 +822,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignmentConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -887,7 +889,7 @@ public java.lang.String getName();
 
 The name of the assignment.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_oidc_assignment#name IdentityOidcAssignment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_oidc_assignment#name IdentityOidcAssignment#name}
 
 ---
 
@@ -901,7 +903,7 @@ public java.util.List<java.lang.String> getEntityIds();
 
 A list of Vault entity IDs.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_oidc_assignment#entity_ids IdentityOidcAssignment#entity_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_oidc_assignment#entity_ids IdentityOidcAssignment#entity_ids}
 
 ---
 
@@ -915,7 +917,7 @@ public java.util.List<java.lang.String> getGroupIds();
 
 A list of Vault group IDs.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_oidc_assignment#group_ids IdentityOidcAssignment#group_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_oidc_assignment#group_ids IdentityOidcAssignment#group_ids}
 
 ---
 
@@ -927,7 +929,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_oidc_assignment#id IdentityOidcAssignment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_oidc_assignment#id IdentityOidcAssignment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -944,7 +946,7 @@ public java.lang.String getNamespace();
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_oidc_assignment#namespace IdentityOidcAssignment#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_oidc_assignment#namespace IdentityOidcAssignment#namespace}
 
 ---
 

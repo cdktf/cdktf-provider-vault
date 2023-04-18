@@ -1,6 +1,6 @@
 # `vault_kmip_secret_scope`
 
-Refer to the Terraform Registory for docs: [`vault_kmip_secret_scope`](https://www.terraform.io/docs/providers/vault/r/kmip_secret_scope).
+Refer to the Terraform Registory for docs: [`vault_kmip_secret_scope`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kmip_secret_scope).
 
 # `kmipSecretScope` Submodule <a name="`kmipSecretScope` Submodule" id="@cdktf/provider-vault.kmipSecretScope"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_kmip_secret_scope`](https://w
 
 ### KmipSecretScope <a name="KmipSecretScope" id="@cdktf/provider-vault.kmipSecretScope.KmipSecretScope"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/kmip_secret_scope vault_kmip_secret_scope}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kmip_secret_scope vault_kmip_secret_scope}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.kmipSecretScope.KmipSecretScope.Initializer"></a>
 
@@ -360,7 +360,7 @@ kmipSecretScope.KmipSecretScope.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-vault.kmipSecretScope.KmipSecretScope.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretScope.KmipSecretScope.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretScope.KmipSecretScope.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretScope.KmipSecretScope.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretScope.KmipSecretScope.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretScope.KmipSecretScope.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretScope.KmipSecretScope.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretScope.KmipSecretScope.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -464,10 +464,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.kmipSecretScope.KmipSecretScope.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -656,7 +656,7 @@ const kmipSecretScopeConfig: kmipSecretScope.KmipSecretScopeConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.kmipSecretScope.KmipSecretScopeConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretScope.KmipSecretScopeConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretScope.KmipSecretScopeConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretScope.KmipSecretScopeConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretScope.KmipSecretScopeConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretScope.KmipSecretScopeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -665,7 +665,7 @@ const kmipSecretScopeConfig: kmipSecretScope.KmipSecretScopeConfig = { ... }
 | <code><a href="#@cdktf/provider-vault.kmipSecretScope.KmipSecretScopeConfig.property.path">path</a></code> | <code>string</code> | Path where KMIP backend is mounted. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretScope.KmipSecretScopeConfig.property.scope">scope</a></code> | <code>string</code> | Name of the scope. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretScope.KmipSecretScopeConfig.property.force">force</a></code> | <code>boolean \| cdktf.IResolvable</code> | Force deletion even if there are managed objects in the scope. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretScope.KmipSecretScopeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kmip_secret_scope#id KmipSecretScope#id}. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretScope.KmipSecretScopeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kmip_secret_scope#id KmipSecretScope#id}. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretScope.KmipSecretScopeConfig.property.namespace">namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -683,10 +683,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.kmipSecretScope.KmipSecretScopeConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -750,7 +750,7 @@ public readonly path: string;
 
 Path where KMIP backend is mounted.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kmip_secret_scope#path KmipSecretScope#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kmip_secret_scope#path KmipSecretScope#path}
 
 ---
 
@@ -764,7 +764,7 @@ public readonly scope: string;
 
 Name of the scope.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kmip_secret_scope#scope KmipSecretScope#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kmip_secret_scope#scope KmipSecretScope#scope}
 
 ---
 
@@ -778,7 +778,7 @@ public readonly force: boolean | IResolvable;
 
 Force deletion even if there are managed objects in the scope.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kmip_secret_scope#force KmipSecretScope#force}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kmip_secret_scope#force KmipSecretScope#force}
 
 ---
 
@@ -790,7 +790,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kmip_secret_scope#id KmipSecretScope#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kmip_secret_scope#id KmipSecretScope#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -807,7 +807,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kmip_secret_scope#namespace KmipSecretScope#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kmip_secret_scope#namespace KmipSecretScope#namespace}
 
 ---
 

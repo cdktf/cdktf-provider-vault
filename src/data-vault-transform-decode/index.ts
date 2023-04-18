@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/vault/d/transform_decode
+// https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_decode
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,23 +10,23 @@ export interface DataVaultTransformDecodeConfig extends cdktf.TerraformMetaArgum
   /**
   * Specifies a list of items to be decoded in a single batch. If this parameter is set, the top-level parameters 'value', 'transformation' and 'tweak' will be ignored. Each batch item within the list can specify these parameters instead.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/transform_decode#batch_input DataVaultTransformDecode#batch_input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_decode#batch_input DataVaultTransformDecode#batch_input}
   */
-  readonly batchInput?: { [key: string]: string } | cdktf.IResolvable;
+  readonly batchInput?: { [key: string]: string }[] | cdktf.IResolvable;
   /**
   * The result of decoding batch_input.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/transform_decode#batch_results DataVaultTransformDecode#batch_results}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_decode#batch_results DataVaultTransformDecode#batch_results}
   */
-  readonly batchResults?: { [key: string]: string } | cdktf.IResolvable;
+  readonly batchResults?: { [key: string]: string }[] | cdktf.IResolvable;
   /**
   * The result of decoding a value.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/transform_decode#decoded_value DataVaultTransformDecode#decoded_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_decode#decoded_value DataVaultTransformDecode#decoded_value}
   */
   readonly decodedValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/transform_decode#id DataVaultTransformDecode#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_decode#id DataVaultTransformDecode#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -35,43 +35,43 @@ export interface DataVaultTransformDecodeConfig extends cdktf.TerraformMetaArgum
   /**
   * Target namespace. (requires Enterprise)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/transform_decode#namespace DataVaultTransformDecode#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_decode#namespace DataVaultTransformDecode#namespace}
   */
   readonly namespace?: string;
   /**
   * Path to backend from which to retrieve data.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/transform_decode#path DataVaultTransformDecode#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_decode#path DataVaultTransformDecode#path}
   */
   readonly path: string;
   /**
   * The name of the role.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/transform_decode#role_name DataVaultTransformDecode#role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_decode#role_name DataVaultTransformDecode#role_name}
   */
   readonly roleName: string;
   /**
   * The transformation to perform. If no value is provided and the role contains a single transformation, this value will be inferred from the role.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/transform_decode#transformation DataVaultTransformDecode#transformation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_decode#transformation DataVaultTransformDecode#transformation}
   */
   readonly transformation?: string;
   /**
   * The tweak value to use. Only applicable for FPE transformations
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/transform_decode#tweak DataVaultTransformDecode#tweak}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_decode#tweak DataVaultTransformDecode#tweak}
   */
   readonly tweak?: string;
   /**
   * The value in which to decode.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/transform_decode#value DataVaultTransformDecode#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_decode#value DataVaultTransformDecode#value}
   */
   readonly value?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/vault/d/transform_decode vault_transform_decode}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_decode vault_transform_decode}
 */
 export class DataVaultTransformDecode extends cdktf.TerraformDataSource {
 
@@ -85,7 +85,7 @@ export class DataVaultTransformDecode extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/vault/d/transform_decode vault_transform_decode} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_decode vault_transform_decode} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -124,11 +124,11 @@ export class DataVaultTransformDecode extends cdktf.TerraformDataSource {
   // ==========
 
   // batch_input - computed: false, optional: true, required: false
-  private _batchInput?: { [key: string]: string } | cdktf.IResolvable; 
+  private _batchInput?: { [key: string]: string }[] | cdktf.IResolvable; 
   public get batchInput() {
-    return this.getStringMapAttribute('batch_input');
+    return this.interpolationForAttribute('batch_input');
   }
-  public set batchInput(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set batchInput(value: { [key: string]: string }[] | cdktf.IResolvable) {
     this._batchInput = value;
   }
   public resetBatchInput() {
@@ -140,11 +140,11 @@ export class DataVaultTransformDecode extends cdktf.TerraformDataSource {
   }
 
   // batch_results - computed: true, optional: true, required: false
-  private _batchResults?: { [key: string]: string } | cdktf.IResolvable; 
+  private _batchResults?: { [key: string]: string }[] | cdktf.IResolvable; 
   public get batchResults() {
-    return this.getStringMapAttribute('batch_results');
+    return this.interpolationForAttribute('batch_results');
   }
-  public set batchResults(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set batchResults(value: { [key: string]: string }[] | cdktf.IResolvable) {
     this._batchResults = value;
   }
   public resetBatchResults() {

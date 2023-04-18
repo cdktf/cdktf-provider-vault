@@ -1,6 +1,6 @@
 # `vault_alicloud_auth_backend_role`
 
-Refer to the Terraform Registory for docs: [`vault_alicloud_auth_backend_role`](https://www.terraform.io/docs/providers/vault/r/alicloud_auth_backend_role).
+Refer to the Terraform Registory for docs: [`vault_alicloud_auth_backend_role`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/alicloud_auth_backend_role).
 
 # `alicloudAuthBackendRole` Submodule <a name="`alicloudAuthBackendRole` Submodule" id="@cdktf/provider-vault.alicloudAuthBackendRole"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_alicloud_auth_backend_role`](
 
 ### AlicloudAuthBackendRole <a name="AlicloudAuthBackendRole" id="@cdktf/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRole"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/alicloud_auth_backend_role vault_alicloud_auth_backend_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/alicloud_auth_backend_role vault_alicloud_auth_backend_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRole.Initializer"></a>
 
@@ -423,7 +423,7 @@ AlicloudAuthBackendRole.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRole.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRole.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRole.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRole.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRole.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRole.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRole.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRole.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -545,10 +545,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRole.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -911,7 +911,7 @@ using HashiCorp.Cdktf.Providers.Vault;
 
 new AlicloudAuthBackendRoleConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -939,7 +939,7 @@ new AlicloudAuthBackendRoleConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRoleConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRoleConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRoleConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRoleConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRoleConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRoleConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -948,7 +948,7 @@ new AlicloudAuthBackendRoleConfig {
 | <code><a href="#@cdktf/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRoleConfig.property.arn">Arn</a></code> | <code>string</code> | The role's arn. |
 | <code><a href="#@cdktf/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRoleConfig.property.role">Role</a></code> | <code>string</code> | Name of the role. Must correspond with the name of the role reflected in the arn. |
 | <code><a href="#@cdktf/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRoleConfig.property.backend">Backend</a></code> | <code>string</code> | Auth backend. |
-| <code><a href="#@cdktf/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRoleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/alicloud_auth_backend_role#id AlicloudAuthBackendRole#id}. |
+| <code><a href="#@cdktf/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRoleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/alicloud_auth_backend_role#id AlicloudAuthBackendRole#id}. |
 | <code><a href="#@cdktf/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRoleConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRoleConfig.property.tokenBoundCidrs">TokenBoundCidrs</a></code> | <code>string[]</code> | Specifies the blocks of IP addresses which are allowed to use the generated token. |
 | <code><a href="#@cdktf/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRoleConfig.property.tokenExplicitMaxTtl">TokenExplicitMaxTtl</a></code> | <code>double</code> | Generated Token's Explicit Maximum TTL in seconds. |
@@ -975,10 +975,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRoleConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -1042,7 +1042,7 @@ public string Arn { get; set; }
 
 The role's arn.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/alicloud_auth_backend_role#arn AlicloudAuthBackendRole#arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/alicloud_auth_backend_role#arn AlicloudAuthBackendRole#arn}
 
 ---
 
@@ -1056,7 +1056,7 @@ public string Role { get; set; }
 
 Name of the role. Must correspond with the name of the role reflected in the arn.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/alicloud_auth_backend_role#role AlicloudAuthBackendRole#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/alicloud_auth_backend_role#role AlicloudAuthBackendRole#role}
 
 ---
 
@@ -1070,7 +1070,7 @@ public string Backend { get; set; }
 
 Auth backend.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/alicloud_auth_backend_role#backend AlicloudAuthBackendRole#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/alicloud_auth_backend_role#backend AlicloudAuthBackendRole#backend}
 
 ---
 
@@ -1082,7 +1082,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/alicloud_auth_backend_role#id AlicloudAuthBackendRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/alicloud_auth_backend_role#id AlicloudAuthBackendRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1099,7 +1099,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/alicloud_auth_backend_role#namespace AlicloudAuthBackendRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/alicloud_auth_backend_role#namespace AlicloudAuthBackendRole#namespace}
 
 ---
 
@@ -1113,7 +1113,7 @@ public string[] TokenBoundCidrs { get; set; }
 
 Specifies the blocks of IP addresses which are allowed to use the generated token.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/alicloud_auth_backend_role#token_bound_cidrs AlicloudAuthBackendRole#token_bound_cidrs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/alicloud_auth_backend_role#token_bound_cidrs AlicloudAuthBackendRole#token_bound_cidrs}
 
 ---
 
@@ -1127,7 +1127,7 @@ public double TokenExplicitMaxTtl { get; set; }
 
 Generated Token's Explicit Maximum TTL in seconds.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/alicloud_auth_backend_role#token_explicit_max_ttl AlicloudAuthBackendRole#token_explicit_max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/alicloud_auth_backend_role#token_explicit_max_ttl AlicloudAuthBackendRole#token_explicit_max_ttl}
 
 ---
 
@@ -1141,7 +1141,7 @@ public double TokenMaxTtl { get; set; }
 
 The maximum lifetime of the generated token.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/alicloud_auth_backend_role#token_max_ttl AlicloudAuthBackendRole#token_max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/alicloud_auth_backend_role#token_max_ttl AlicloudAuthBackendRole#token_max_ttl}
 
 ---
 
@@ -1155,7 +1155,7 @@ public object TokenNoDefaultPolicy { get; set; }
 
 If true, the 'default' policy will not automatically be added to generated tokens.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/alicloud_auth_backend_role#token_no_default_policy AlicloudAuthBackendRole#token_no_default_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/alicloud_auth_backend_role#token_no_default_policy AlicloudAuthBackendRole#token_no_default_policy}
 
 ---
 
@@ -1169,7 +1169,7 @@ public double TokenNumUses { get; set; }
 
 The maximum number of times a token may be used, a value of zero means unlimited.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/alicloud_auth_backend_role#token_num_uses AlicloudAuthBackendRole#token_num_uses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/alicloud_auth_backend_role#token_num_uses AlicloudAuthBackendRole#token_num_uses}
 
 ---
 
@@ -1183,7 +1183,7 @@ public double TokenPeriod { get; set; }
 
 Generated Token's Period.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/alicloud_auth_backend_role#token_period AlicloudAuthBackendRole#token_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/alicloud_auth_backend_role#token_period AlicloudAuthBackendRole#token_period}
 
 ---
 
@@ -1197,7 +1197,7 @@ public string[] TokenPolicies { get; set; }
 
 Generated Token's Policies.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/alicloud_auth_backend_role#token_policies AlicloudAuthBackendRole#token_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/alicloud_auth_backend_role#token_policies AlicloudAuthBackendRole#token_policies}
 
 ---
 
@@ -1211,7 +1211,7 @@ public double TokenTtl { get; set; }
 
 The initial ttl of the token to generate in seconds.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/alicloud_auth_backend_role#token_ttl AlicloudAuthBackendRole#token_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/alicloud_auth_backend_role#token_ttl AlicloudAuthBackendRole#token_ttl}
 
 ---
 
@@ -1225,7 +1225,7 @@ public string TokenType { get; set; }
 
 The type of token to generate, service or batch.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/alicloud_auth_backend_role#token_type AlicloudAuthBackendRole#token_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/alicloud_auth_backend_role#token_type AlicloudAuthBackendRole#token_type}
 
 ---
 

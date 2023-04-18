@@ -1,6 +1,6 @@
 # `vault_raft_snapshot_agent_config`
 
-Refer to the Terraform Registory for docs: [`vault_raft_snapshot_agent_config`](https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config).
+Refer to the Terraform Registory for docs: [`vault_raft_snapshot_agent_config`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config).
 
 # `raftSnapshotAgentConfig` Submodule <a name="`raftSnapshotAgentConfig` Submodule" id="@cdktf/provider-vault.raftSnapshotAgentConfig"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_raft_snapshot_agent_config`](
 
 ### RaftSnapshotAgentConfig <a name="RaftSnapshotAgentConfig" id="@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config vault_raft_snapshot_agent_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config vault_raft_snapshot_agent_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig.Initializer"></a>
 
@@ -19,7 +19,7 @@ raftSnapshotAgentConfig.RaftSnapshotAgentConfig(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -62,7 +62,7 @@ raftSnapshotAgentConfig.RaftSnapshotAgentConfig(
 | <code><a href="#@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -93,7 +93,7 @@ raftSnapshotAgentConfig.RaftSnapshotAgentConfig(
 | <code><a href="#@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig.Initializer.parameter.googleEndpoint">google_endpoint</a></code> | <code>str</code> | GCS endpoint. This is typically only set when using a non-Google GCS implementation like fake-gcs-server. |
 | <code><a href="#@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig.Initializer.parameter.googleGcsBucket">google_gcs_bucket</a></code> | <code>str</code> | GCS bucket to write snapshots to. |
 | <code><a href="#@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig.Initializer.parameter.googleServiceAccountKey">google_service_account_key</a></code> | <code>str</code> | Google service account key in JSON format. |
-| <code><a href="#@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#id RaftSnapshotAgentConfig#id}. |
+| <code><a href="#@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#id RaftSnapshotAgentConfig#id}. |
 | <code><a href="#@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig.Initializer.parameter.localMaxSpace">local_max_space</a></code> | <code>typing.Union[int, float]</code> | The maximum space, in bytes, to use for snapshots. |
 | <code><a href="#@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig.Initializer.parameter.retain">retain</a></code> | <code>typing.Union[int, float]</code> | How many snapshots are to be kept. |
@@ -126,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -166,7 +166,7 @@ Must be unique amongst siblings in the same scope
 
 Number of seconds between snapshots.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#interval_seconds RaftSnapshotAgentConfig#interval_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#interval_seconds RaftSnapshotAgentConfig#interval_seconds}
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Name of the snapshot agent configuration.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#name RaftSnapshotAgentConfig#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#name RaftSnapshotAgentConfig#name}
 
 ---
 
@@ -186,7 +186,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 The directory or bucket prefix to to use.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#path_prefix RaftSnapshotAgentConfig#path_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#path_prefix RaftSnapshotAgentConfig#path_prefix}
 
 ---
 
@@ -196,7 +196,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 What storage service to send snapshots to. One of "local", "azure-blob", "aws-s3", or "google-gcs".
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#storage_type RaftSnapshotAgentConfig#storage_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#storage_type RaftSnapshotAgentConfig#storage_type}
 
 ---
 
@@ -206,7 +206,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 AWS access key ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#aws_access_key_id RaftSnapshotAgentConfig#aws_access_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#aws_access_key_id RaftSnapshotAgentConfig#aws_access_key_id}
 
 ---
 
@@ -216,7 +216,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 S3 bucket to write snapshots to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#aws_s3_bucket RaftSnapshotAgentConfig#aws_s3_bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#aws_s3_bucket RaftSnapshotAgentConfig#aws_s3_bucket}
 
 ---
 
@@ -226,7 +226,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Disable TLS for the S3 endpoint. This should only be used for testing purposes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#aws_s3_disable_tls RaftSnapshotAgentConfig#aws_s3_disable_tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#aws_s3_disable_tls RaftSnapshotAgentConfig#aws_s3_disable_tls}
 
 ---
 
@@ -236,7 +236,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Use KMS to encrypt bucket contents.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#aws_s3_enable_kms RaftSnapshotAgentConfig#aws_s3_enable_kms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#aws_s3_enable_kms RaftSnapshotAgentConfig#aws_s3_enable_kms}
 
 ---
 
@@ -246,7 +246,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 AWS endpoint. This is typically only set when using a non-AWS S3 implementation like Minio.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#aws_s3_endpoint RaftSnapshotAgentConfig#aws_s3_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#aws_s3_endpoint RaftSnapshotAgentConfig#aws_s3_endpoint}
 
 ---
 
@@ -256,7 +256,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Use the endpoint/bucket URL style instead of bucket.endpoint.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#aws_s3_force_path_style RaftSnapshotAgentConfig#aws_s3_force_path_style}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#aws_s3_force_path_style RaftSnapshotAgentConfig#aws_s3_force_path_style}
 
 ---
 
@@ -266,7 +266,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Use named KMS key, when aws_s3_enable_kms=true.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#aws_s3_kms_key RaftSnapshotAgentConfig#aws_s3_kms_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#aws_s3_kms_key RaftSnapshotAgentConfig#aws_s3_kms_key}
 
 ---
 
@@ -276,7 +276,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 AWS region bucket is in.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#aws_s3_region RaftSnapshotAgentConfig#aws_s3_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#aws_s3_region RaftSnapshotAgentConfig#aws_s3_region}
 
 ---
 
@@ -286,7 +286,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Use AES256 to encrypt bucket contents.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#aws_s3_server_side_encryption RaftSnapshotAgentConfig#aws_s3_server_side_encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#aws_s3_server_side_encryption RaftSnapshotAgentConfig#aws_s3_server_side_encryption}
 
 ---
 
@@ -296,7 +296,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 AWS secret access key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#aws_secret_access_key RaftSnapshotAgentConfig#aws_secret_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#aws_secret_access_key RaftSnapshotAgentConfig#aws_secret_access_key}
 
 ---
 
@@ -306,7 +306,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 AWS session token.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#aws_session_token RaftSnapshotAgentConfig#aws_session_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#aws_session_token RaftSnapshotAgentConfig#aws_session_token}
 
 ---
 
@@ -316,7 +316,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Azure account key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#azure_account_key RaftSnapshotAgentConfig#azure_account_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#azure_account_key RaftSnapshotAgentConfig#azure_account_key}
 
 ---
 
@@ -326,7 +326,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Azure account name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#azure_account_name RaftSnapshotAgentConfig#azure_account_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#azure_account_name RaftSnapshotAgentConfig#azure_account_name}
 
 ---
 
@@ -336,7 +336,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Azure blob environment.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#azure_blob_environment RaftSnapshotAgentConfig#azure_blob_environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#azure_blob_environment RaftSnapshotAgentConfig#azure_blob_environment}
 
 ---
 
@@ -346,7 +346,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Azure container name to write snapshots to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#azure_container_name RaftSnapshotAgentConfig#azure_container_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#azure_container_name RaftSnapshotAgentConfig#azure_container_name}
 
 ---
 
@@ -356,7 +356,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Azure blob storage endpoint. This is typically only set when using a non-Azure implementation like Azurite.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#azure_endpoint RaftSnapshotAgentConfig#azure_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#azure_endpoint RaftSnapshotAgentConfig#azure_endpoint}
 
 ---
 
@@ -366,7 +366,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 The file or object name of snapshot files will start with this string.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#file_prefix RaftSnapshotAgentConfig#file_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#file_prefix RaftSnapshotAgentConfig#file_prefix}
 
 ---
 
@@ -376,7 +376,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Disable TLS for the GCS endpoint.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#google_disable_tls RaftSnapshotAgentConfig#google_disable_tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#google_disable_tls RaftSnapshotAgentConfig#google_disable_tls}
 
 ---
 
@@ -386,7 +386,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 GCS endpoint. This is typically only set when using a non-Google GCS implementation like fake-gcs-server.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#google_endpoint RaftSnapshotAgentConfig#google_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#google_endpoint RaftSnapshotAgentConfig#google_endpoint}
 
 ---
 
@@ -396,7 +396,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 GCS bucket to write snapshots to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#google_gcs_bucket RaftSnapshotAgentConfig#google_gcs_bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#google_gcs_bucket RaftSnapshotAgentConfig#google_gcs_bucket}
 
 ---
 
@@ -406,7 +406,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Google service account key in JSON format.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#google_service_account_key RaftSnapshotAgentConfig#google_service_account_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#google_service_account_key RaftSnapshotAgentConfig#google_service_account_key}
 
 ---
 
@@ -414,7 +414,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#id RaftSnapshotAgentConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#id RaftSnapshotAgentConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -427,7 +427,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The maximum space, in bytes, to use for snapshots.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#local_max_space RaftSnapshotAgentConfig#local_max_space}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#local_max_space RaftSnapshotAgentConfig#local_max_space}
 
 ---
 
@@ -437,7 +437,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#namespace RaftSnapshotAgentConfig#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#namespace RaftSnapshotAgentConfig#namespace}
 
 ---
 
@@ -447,7 +447,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 How many snapshots are to be kept.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#retain RaftSnapshotAgentConfig#retain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#retain RaftSnapshotAgentConfig#retain}
 
 ---
 
@@ -946,7 +946,7 @@ raftSnapshotAgentConfig.RaftSnapshotAgentConfig.is_terraform_resource(
 | <code><a href="#@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1098,10 +1098,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1764,7 +1764,7 @@ from cdktf_cdktf_provider_vault import raft_snapshot_agent_config
 
 raftSnapshotAgentConfig.RaftSnapshotAgentConfigConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -1807,7 +1807,7 @@ raftSnapshotAgentConfig.RaftSnapshotAgentConfigConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfigConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfigConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfigConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfigConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfigConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfigConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1838,7 +1838,7 @@ raftSnapshotAgentConfig.RaftSnapshotAgentConfigConfig(
 | <code><a href="#@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfigConfig.property.googleEndpoint">google_endpoint</a></code> | <code>str</code> | GCS endpoint. This is typically only set when using a non-Google GCS implementation like fake-gcs-server. |
 | <code><a href="#@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfigConfig.property.googleGcsBucket">google_gcs_bucket</a></code> | <code>str</code> | GCS bucket to write snapshots to. |
 | <code><a href="#@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfigConfig.property.googleServiceAccountKey">google_service_account_key</a></code> | <code>str</code> | Google service account key in JSON format. |
-| <code><a href="#@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfigConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#id RaftSnapshotAgentConfig#id}. |
+| <code><a href="#@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfigConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#id RaftSnapshotAgentConfig#id}. |
 | <code><a href="#@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfigConfig.property.localMaxSpace">local_max_space</a></code> | <code>typing.Union[int, float]</code> | The maximum space, in bytes, to use for snapshots. |
 | <code><a href="#@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfigConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfigConfig.property.retain">retain</a></code> | <code>typing.Union[int, float]</code> | How many snapshots are to be kept. |
@@ -1858,10 +1858,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfigConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1925,7 +1925,7 @@ interval_seconds: typing.Union[int, float]
 
 Number of seconds between snapshots.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#interval_seconds RaftSnapshotAgentConfig#interval_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#interval_seconds RaftSnapshotAgentConfig#interval_seconds}
 
 ---
 
@@ -1939,7 +1939,7 @@ name: str
 
 Name of the snapshot agent configuration.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#name RaftSnapshotAgentConfig#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#name RaftSnapshotAgentConfig#name}
 
 ---
 
@@ -1953,7 +1953,7 @@ path_prefix: str
 
 The directory or bucket prefix to to use.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#path_prefix RaftSnapshotAgentConfig#path_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#path_prefix RaftSnapshotAgentConfig#path_prefix}
 
 ---
 
@@ -1967,7 +1967,7 @@ storage_type: str
 
 What storage service to send snapshots to. One of "local", "azure-blob", "aws-s3", or "google-gcs".
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#storage_type RaftSnapshotAgentConfig#storage_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#storage_type RaftSnapshotAgentConfig#storage_type}
 
 ---
 
@@ -1981,7 +1981,7 @@ aws_access_key_id: str
 
 AWS access key ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#aws_access_key_id RaftSnapshotAgentConfig#aws_access_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#aws_access_key_id RaftSnapshotAgentConfig#aws_access_key_id}
 
 ---
 
@@ -1995,7 +1995,7 @@ aws_s3_bucket: str
 
 S3 bucket to write snapshots to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#aws_s3_bucket RaftSnapshotAgentConfig#aws_s3_bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#aws_s3_bucket RaftSnapshotAgentConfig#aws_s3_bucket}
 
 ---
 
@@ -2009,7 +2009,7 @@ aws_s3_disable_tls: typing.Union[bool, IResolvable]
 
 Disable TLS for the S3 endpoint. This should only be used for testing purposes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#aws_s3_disable_tls RaftSnapshotAgentConfig#aws_s3_disable_tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#aws_s3_disable_tls RaftSnapshotAgentConfig#aws_s3_disable_tls}
 
 ---
 
@@ -2023,7 +2023,7 @@ aws_s3_enable_kms: typing.Union[bool, IResolvable]
 
 Use KMS to encrypt bucket contents.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#aws_s3_enable_kms RaftSnapshotAgentConfig#aws_s3_enable_kms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#aws_s3_enable_kms RaftSnapshotAgentConfig#aws_s3_enable_kms}
 
 ---
 
@@ -2037,7 +2037,7 @@ aws_s3_endpoint: str
 
 AWS endpoint. This is typically only set when using a non-AWS S3 implementation like Minio.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#aws_s3_endpoint RaftSnapshotAgentConfig#aws_s3_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#aws_s3_endpoint RaftSnapshotAgentConfig#aws_s3_endpoint}
 
 ---
 
@@ -2051,7 +2051,7 @@ aws_s3_force_path_style: typing.Union[bool, IResolvable]
 
 Use the endpoint/bucket URL style instead of bucket.endpoint.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#aws_s3_force_path_style RaftSnapshotAgentConfig#aws_s3_force_path_style}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#aws_s3_force_path_style RaftSnapshotAgentConfig#aws_s3_force_path_style}
 
 ---
 
@@ -2065,7 +2065,7 @@ aws_s3_kms_key: str
 
 Use named KMS key, when aws_s3_enable_kms=true.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#aws_s3_kms_key RaftSnapshotAgentConfig#aws_s3_kms_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#aws_s3_kms_key RaftSnapshotAgentConfig#aws_s3_kms_key}
 
 ---
 
@@ -2079,7 +2079,7 @@ aws_s3_region: str
 
 AWS region bucket is in.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#aws_s3_region RaftSnapshotAgentConfig#aws_s3_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#aws_s3_region RaftSnapshotAgentConfig#aws_s3_region}
 
 ---
 
@@ -2093,7 +2093,7 @@ aws_s3_server_side_encryption: typing.Union[bool, IResolvable]
 
 Use AES256 to encrypt bucket contents.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#aws_s3_server_side_encryption RaftSnapshotAgentConfig#aws_s3_server_side_encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#aws_s3_server_side_encryption RaftSnapshotAgentConfig#aws_s3_server_side_encryption}
 
 ---
 
@@ -2107,7 +2107,7 @@ aws_secret_access_key: str
 
 AWS secret access key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#aws_secret_access_key RaftSnapshotAgentConfig#aws_secret_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#aws_secret_access_key RaftSnapshotAgentConfig#aws_secret_access_key}
 
 ---
 
@@ -2121,7 +2121,7 @@ aws_session_token: str
 
 AWS session token.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#aws_session_token RaftSnapshotAgentConfig#aws_session_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#aws_session_token RaftSnapshotAgentConfig#aws_session_token}
 
 ---
 
@@ -2135,7 +2135,7 @@ azure_account_key: str
 
 Azure account key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#azure_account_key RaftSnapshotAgentConfig#azure_account_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#azure_account_key RaftSnapshotAgentConfig#azure_account_key}
 
 ---
 
@@ -2149,7 +2149,7 @@ azure_account_name: str
 
 Azure account name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#azure_account_name RaftSnapshotAgentConfig#azure_account_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#azure_account_name RaftSnapshotAgentConfig#azure_account_name}
 
 ---
 
@@ -2163,7 +2163,7 @@ azure_blob_environment: str
 
 Azure blob environment.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#azure_blob_environment RaftSnapshotAgentConfig#azure_blob_environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#azure_blob_environment RaftSnapshotAgentConfig#azure_blob_environment}
 
 ---
 
@@ -2177,7 +2177,7 @@ azure_container_name: str
 
 Azure container name to write snapshots to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#azure_container_name RaftSnapshotAgentConfig#azure_container_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#azure_container_name RaftSnapshotAgentConfig#azure_container_name}
 
 ---
 
@@ -2191,7 +2191,7 @@ azure_endpoint: str
 
 Azure blob storage endpoint. This is typically only set when using a non-Azure implementation like Azurite.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#azure_endpoint RaftSnapshotAgentConfig#azure_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#azure_endpoint RaftSnapshotAgentConfig#azure_endpoint}
 
 ---
 
@@ -2205,7 +2205,7 @@ file_prefix: str
 
 The file or object name of snapshot files will start with this string.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#file_prefix RaftSnapshotAgentConfig#file_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#file_prefix RaftSnapshotAgentConfig#file_prefix}
 
 ---
 
@@ -2219,7 +2219,7 @@ google_disable_tls: typing.Union[bool, IResolvable]
 
 Disable TLS for the GCS endpoint.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#google_disable_tls RaftSnapshotAgentConfig#google_disable_tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#google_disable_tls RaftSnapshotAgentConfig#google_disable_tls}
 
 ---
 
@@ -2233,7 +2233,7 @@ google_endpoint: str
 
 GCS endpoint. This is typically only set when using a non-Google GCS implementation like fake-gcs-server.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#google_endpoint RaftSnapshotAgentConfig#google_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#google_endpoint RaftSnapshotAgentConfig#google_endpoint}
 
 ---
 
@@ -2247,7 +2247,7 @@ google_gcs_bucket: str
 
 GCS bucket to write snapshots to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#google_gcs_bucket RaftSnapshotAgentConfig#google_gcs_bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#google_gcs_bucket RaftSnapshotAgentConfig#google_gcs_bucket}
 
 ---
 
@@ -2261,7 +2261,7 @@ google_service_account_key: str
 
 Google service account key in JSON format.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#google_service_account_key RaftSnapshotAgentConfig#google_service_account_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#google_service_account_key RaftSnapshotAgentConfig#google_service_account_key}
 
 ---
 
@@ -2273,7 +2273,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#id RaftSnapshotAgentConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#id RaftSnapshotAgentConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2290,7 +2290,7 @@ local_max_space: typing.Union[int, float]
 
 The maximum space, in bytes, to use for snapshots.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#local_max_space RaftSnapshotAgentConfig#local_max_space}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#local_max_space RaftSnapshotAgentConfig#local_max_space}
 
 ---
 
@@ -2304,7 +2304,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#namespace RaftSnapshotAgentConfig#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#namespace RaftSnapshotAgentConfig#namespace}
 
 ---
 
@@ -2318,7 +2318,7 @@ retain: typing.Union[int, float]
 
 How many snapshots are to be kept.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config#retain RaftSnapshotAgentConfig#retain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_snapshot_agent_config#retain RaftSnapshotAgentConfig#retain}
 
 ---
 

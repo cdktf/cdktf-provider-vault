@@ -1,6 +1,6 @@
 # `vault_identity_oidc`
 
-Refer to the Terraform Registory for docs: [`vault_identity_oidc`](https://www.terraform.io/docs/providers/vault/r/identity_oidc).
+Refer to the Terraform Registory for docs: [`vault_identity_oidc`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_oidc).
 
 # `identityOidc` Submodule <a name="`identityOidc` Submodule" id="@cdktf/provider-vault.identityOidc"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_identity_oidc`](https://www.t
 
 ### IdentityOidc <a name="IdentityOidc" id="@cdktf/provider-vault.identityOidc.IdentityOidc"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/identity_oidc vault_identity_oidc}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_oidc vault_identity_oidc}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.identityOidc.IdentityOidc.Initializer"></a>
 
@@ -360,7 +360,7 @@ IdentityOidc.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-vault.identityOidc.IdentityOidc.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityOidc.IdentityOidc.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityOidc.IdentityOidc.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityOidc.IdentityOidc.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.identityOidc.IdentityOidc.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityOidc.IdentityOidc.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityOidc.IdentityOidc.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityOidc.IdentityOidc.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -460,10 +460,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.identityOidc.IdentityOidc.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -606,7 +606,7 @@ using HashiCorp.Cdktf.Providers.Vault;
 
 new IdentityOidcConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -623,13 +623,13 @@ new IdentityOidcConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.identityOidc.IdentityOidcConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityOidc.IdentityOidcConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.identityOidc.IdentityOidcConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityOidc.IdentityOidcConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityOidc.IdentityOidcConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityOidc.IdentityOidcConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityOidc.IdentityOidcConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityOidc.IdentityOidcConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityOidc.IdentityOidcConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_oidc#id IdentityOidc#id}. |
+| <code><a href="#@cdktf/provider-vault.identityOidc.IdentityOidcConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_oidc#id IdentityOidc#id}. |
 | <code><a href="#@cdktf/provider-vault.identityOidc.IdentityOidcConfig.property.issuer">Issuer</a></code> | <code>string</code> | Issuer URL to be used in the iss claim of the token. |
 | <code><a href="#@cdktf/provider-vault.identityOidc.IdentityOidcConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 
@@ -648,10 +648,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.identityOidc.IdentityOidcConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -713,7 +713,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_oidc#id IdentityOidc#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_oidc#id IdentityOidc#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -732,7 +732,7 @@ Issuer URL to be used in the iss claim of the token.
 
 If not set, Vault's api_addr will be used. The issuer is a case sensitive URL using the https scheme that contains scheme, host, and optionally, port number and path components, but no query or fragment components.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_oidc#issuer IdentityOidc#issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_oidc#issuer IdentityOidc#issuer}
 
 ---
 
@@ -746,7 +746,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_oidc#namespace IdentityOidc#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_oidc#namespace IdentityOidc#namespace}
 
 ---
 

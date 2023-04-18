@@ -1,6 +1,6 @@
 # `vault_rgp_policy`
 
-Refer to the Terraform Registory for docs: [`vault_rgp_policy`](https://www.terraform.io/docs/providers/vault/r/rgp_policy).
+Refer to the Terraform Registory for docs: [`vault_rgp_policy`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/rgp_policy).
 
 # `rgpPolicy` Submodule <a name="`rgpPolicy` Submodule" id="@cdktf/provider-vault.rgpPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_rgp_policy`](https://www.terr
 
 ### RgpPolicy <a name="RgpPolicy" id="@cdktf/provider-vault.rgpPolicy.RgpPolicy"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/rgp_policy vault_rgp_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/rgp_policy vault_rgp_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.rgpPolicy.RgpPolicy.Initializer"></a>
 
@@ -353,7 +353,7 @@ RgpPolicy.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-vault.rgpPolicy.RgpPolicy.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rgpPolicy.RgpPolicy.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rgpPolicy.RgpPolicy.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.rgpPolicy.RgpPolicy.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rgpPolicy.RgpPolicy.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rgpPolicy.RgpPolicy.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rgpPolicy.RgpPolicy.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rgpPolicy.RgpPolicy.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -457,10 +457,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.rgpPolicy.RgpPolicy.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -643,7 +643,7 @@ using HashiCorp.Cdktf.Providers.Vault;
 
 new RgpPolicyConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -662,7 +662,7 @@ new RgpPolicyConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.rgpPolicy.RgpPolicyConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.rgpPolicy.RgpPolicyConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rgpPolicy.RgpPolicyConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rgpPolicy.RgpPolicyConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rgpPolicy.RgpPolicyConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rgpPolicy.RgpPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -671,7 +671,7 @@ new RgpPolicyConfig {
 | <code><a href="#@cdktf/provider-vault.rgpPolicy.RgpPolicyConfig.property.enforcementLevel">EnforcementLevel</a></code> | <code>string</code> | Enforcement level of Sentinel policy. Can be one of: 'advisory', 'soft-mandatory' or 'hard-mandatory'. |
 | <code><a href="#@cdktf/provider-vault.rgpPolicy.RgpPolicyConfig.property.name">Name</a></code> | <code>string</code> | Name of the policy. |
 | <code><a href="#@cdktf/provider-vault.rgpPolicy.RgpPolicyConfig.property.policy">Policy</a></code> | <code>string</code> | The policy document. |
-| <code><a href="#@cdktf/provider-vault.rgpPolicy.RgpPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/rgp_policy#id RgpPolicy#id}. |
+| <code><a href="#@cdktf/provider-vault.rgpPolicy.RgpPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/rgp_policy#id RgpPolicy#id}. |
 | <code><a href="#@cdktf/provider-vault.rgpPolicy.RgpPolicyConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -689,10 +689,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.rgpPolicy.RgpPolicyConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -756,7 +756,7 @@ public string EnforcementLevel { get; set; }
 
 Enforcement level of Sentinel policy. Can be one of: 'advisory', 'soft-mandatory' or 'hard-mandatory'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/rgp_policy#enforcement_level RgpPolicy#enforcement_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/rgp_policy#enforcement_level RgpPolicy#enforcement_level}
 
 ---
 
@@ -770,7 +770,7 @@ public string Name { get; set; }
 
 Name of the policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/rgp_policy#name RgpPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/rgp_policy#name RgpPolicy#name}
 
 ---
 
@@ -784,7 +784,7 @@ public string Policy { get; set; }
 
 The policy document.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/rgp_policy#policy RgpPolicy#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/rgp_policy#policy RgpPolicy#policy}
 
 ---
 
@@ -796,7 +796,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/rgp_policy#id RgpPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/rgp_policy#id RgpPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -813,7 +813,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/rgp_policy#namespace RgpPolicy#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/rgp_policy#namespace RgpPolicy#namespace}
 
 ---
 

@@ -1,6 +1,6 @@
 # `vault_github_team`
 
-Refer to the Terraform Registory for docs: [`vault_github_team`](https://www.terraform.io/docs/providers/vault/r/github_team).
+Refer to the Terraform Registory for docs: [`vault_github_team`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/github_team).
 
 # `githubTeam` Submodule <a name="`githubTeam` Submodule" id="@cdktf/provider-vault.githubTeam"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`vault_github_team`](https://www.ter
 
 ### GithubTeam <a name="GithubTeam" id="@cdktf/provider-vault.githubTeam.GithubTeam"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/github_team vault_github_team}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/github_team vault_github_team}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.githubTeam.GithubTeam.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/githubteam"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/githubteam"
 
 githubteam.NewGithubTeam(scope Construct, id *string, config GithubTeamConfig) GithubTeam
 ```
@@ -298,7 +298,7 @@ func ResetPolicies()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.githubTeam.GithubTeam.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/githubteam"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/githubteam"
 
 githubteam.GithubTeam_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.githubTeam.GithubTeam.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/githubteam"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/githubteam"
 
 githubteam.GithubTeam_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ githubteam.GithubTeam_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.githubTeam.GithubTeam.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/githubteam"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/githubteam"
 
 githubteam.GithubTeam_IsTerraformResource(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ githubteam.GithubTeam_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-vault.githubTeam.GithubTeam.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.githubTeam.GithubTeam.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.githubTeam.GithubTeam.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.githubTeam.GithubTeam.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubTeam.GithubTeam.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.githubTeam.GithubTeam.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.githubTeam.GithubTeam.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.githubTeam.GithubTeam.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -471,10 +471,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.githubTeam.GithubTeam.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -653,11 +653,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.githubTeam.GithubTeamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/githubteam"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/githubteam"
 
 &githubteam.GithubTeamConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -676,7 +676,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/githubteam"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.githubTeam.GithubTeamConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.githubTeam.GithubTeamConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.githubTeam.GithubTeamConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.githubTeam.GithubTeamConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.githubTeam.GithubTeamConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.githubTeam.GithubTeamConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -684,7 +684,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/githubteam"
 | <code><a href="#@cdktf/provider-vault.githubTeam.GithubTeamConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.githubTeam.GithubTeamConfig.property.team">Team</a></code> | <code>*string</code> | GitHub team name in "slugified" format. |
 | <code><a href="#@cdktf/provider-vault.githubTeam.GithubTeamConfig.property.backend">Backend</a></code> | <code>*string</code> | Auth backend to which team mapping will be congigured. |
-| <code><a href="#@cdktf/provider-vault.githubTeam.GithubTeamConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_team#id GithubTeam#id}. |
+| <code><a href="#@cdktf/provider-vault.githubTeam.GithubTeamConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/github_team#id GithubTeam#id}. |
 | <code><a href="#@cdktf/provider-vault.githubTeam.GithubTeamConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.githubTeam.GithubTeamConfig.property.policies">Policies</a></code> | <code>*[]*string</code> | Policies to be assigned to this team. |
 
@@ -703,10 +703,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.githubTeam.GithubTeamConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -770,7 +770,7 @@ Team *string
 
 GitHub team name in "slugified" format.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_team#team GithubTeam#team}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/github_team#team GithubTeam#team}
 
 ---
 
@@ -784,7 +784,7 @@ Backend *string
 
 Auth backend to which team mapping will be congigured.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_team#backend GithubTeam#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/github_team#backend GithubTeam#backend}
 
 ---
 
@@ -796,7 +796,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_team#id GithubTeam#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/github_team#id GithubTeam#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -813,7 +813,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_team#namespace GithubTeam#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/github_team#namespace GithubTeam#namespace}
 
 ---
 
@@ -827,7 +827,7 @@ Policies *[]*string
 
 Policies to be assigned to this team.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_team#policies GithubTeam#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/github_team#policies GithubTeam#policies}
 
 ---
 

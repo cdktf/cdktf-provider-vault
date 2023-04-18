@@ -1,6 +1,6 @@
 # `vault_identity_entity`
 
-Refer to the Terraform Registory for docs: [`vault_identity_entity`](https://www.terraform.io/docs/providers/vault/r/identity_entity).
+Refer to the Terraform Registory for docs: [`vault_identity_entity`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_entity).
 
 # `identityEntity` Submodule <a name="`identityEntity` Submodule" id="@cdktf/provider-vault.identityEntity"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_identity_entity`](https://www
 
 ### IdentityEntity <a name="IdentityEntity" id="@cdktf/provider-vault.identityEntity.IdentityEntity"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/identity_entity vault_identity_entity}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_entity vault_identity_entity}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.identityEntity.IdentityEntity.Initializer"></a>
 
@@ -19,6 +19,7 @@ IdentityEntity.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -43,7 +44,7 @@ IdentityEntity.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntity.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntity.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntity.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntity.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntity.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntity.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntity.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntity.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -51,7 +52,7 @@ IdentityEntity.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntity.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntity.Initializer.parameter.disabled">disabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether the entity is disabled. Disabled entities' associated tokens cannot be used, but are not revoked. |
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntity.Initializer.parameter.externalPolicies">externalPolicies</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Manage policies externally through `vault_identity_entity_policies`. |
-| <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntity.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_entity#id IdentityEntity#id}. |
+| <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntity.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_entity#id IdentityEntity#id}. |
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntity.Initializer.parameter.metadata">metadata</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Metadata to be associated with the entity. |
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntity.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of the entity. |
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntity.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
@@ -85,7 +86,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.identityEntity.IdentityEntity.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -125,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 Whether the entity is disabled. Disabled entities' associated tokens cannot be used, but are not revoked.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_entity#disabled IdentityEntity#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_entity#disabled IdentityEntity#disabled}
 
 ---
 
@@ -135,7 +136,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Manage policies externally through `vault_identity_entity_policies`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_entity#external_policies IdentityEntity#external_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_entity#external_policies IdentityEntity#external_policies}
 
 ---
 
@@ -143,7 +144,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_entity#id IdentityEntity#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_entity#id IdentityEntity#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -156,7 +157,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Metadata to be associated with the entity.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_entity#metadata IdentityEntity#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_entity#metadata IdentityEntity#metadata}
 
 ---
 
@@ -166,7 +167,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Name of the entity.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_entity#name IdentityEntity#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_entity#name IdentityEntity#name}
 
 ---
 
@@ -176,7 +177,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_entity#namespace IdentityEntity#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_entity#namespace IdentityEntity#namespace}
 
 ---
 
@@ -186,7 +187,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Policies to be tied to the entity.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_entity#policies IdentityEntity#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_entity#policies IdentityEntity#policies}
 
 ---
 
@@ -528,7 +529,7 @@ IdentityEntity.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntity.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntity.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntity.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntity.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntity.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntity.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntity.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntity.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -636,10 +637,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.identityEntity.IdentityEntity.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -864,6 +865,7 @@ IdentityEntityConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -888,7 +890,7 @@ IdentityEntityConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntityConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntityConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntityConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntityConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntityConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntityConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -896,7 +898,7 @@ IdentityEntityConfig.builder()
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntityConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntityConfig.property.disabled">disabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether the entity is disabled. Disabled entities' associated tokens cannot be used, but are not revoked. |
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntityConfig.property.externalPolicies">externalPolicies</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Manage policies externally through `vault_identity_entity_policies`. |
-| <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntityConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_entity#id IdentityEntity#id}. |
+| <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntityConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_entity#id IdentityEntity#id}. |
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntityConfig.property.metadata">metadata</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Metadata to be associated with the entity. |
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntityConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of the entity. |
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntityConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
@@ -917,10 +919,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.identityEntity.IdentityEntityConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -984,7 +986,7 @@ public java.lang.Object getDisabled();
 
 Whether the entity is disabled. Disabled entities' associated tokens cannot be used, but are not revoked.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_entity#disabled IdentityEntity#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_entity#disabled IdentityEntity#disabled}
 
 ---
 
@@ -998,7 +1000,7 @@ public java.lang.Object getExternalPolicies();
 
 Manage policies externally through `vault_identity_entity_policies`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_entity#external_policies IdentityEntity#external_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_entity#external_policies IdentityEntity#external_policies}
 
 ---
 
@@ -1010,7 +1012,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_entity#id IdentityEntity#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_entity#id IdentityEntity#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1027,7 +1029,7 @@ public java.util.Map<java.lang.String, java.lang.String> getMetadata();
 
 Metadata to be associated with the entity.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_entity#metadata IdentityEntity#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_entity#metadata IdentityEntity#metadata}
 
 ---
 
@@ -1041,7 +1043,7 @@ public java.lang.String getName();
 
 Name of the entity.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_entity#name IdentityEntity#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_entity#name IdentityEntity#name}
 
 ---
 
@@ -1055,7 +1057,7 @@ public java.lang.String getNamespace();
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_entity#namespace IdentityEntity#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_entity#namespace IdentityEntity#namespace}
 
 ---
 
@@ -1069,7 +1071,7 @@ public java.util.List<java.lang.String> getPolicies();
 
 Policies to be tied to the entity.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_entity#policies IdentityEntity#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_entity#policies IdentityEntity#policies}
 
 ---
 

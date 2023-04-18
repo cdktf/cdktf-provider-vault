@@ -1,6 +1,6 @@
 # `vault_aws_auth_backend_login`
 
-Refer to the Terraform Registory for docs: [`vault_aws_auth_backend_login`](https://www.terraform.io/docs/providers/vault/r/aws_auth_backend_login).
+Refer to the Terraform Registory for docs: [`vault_aws_auth_backend_login`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/aws_auth_backend_login).
 
 # `awsAuthBackendLogin` Submodule <a name="`awsAuthBackendLogin` Submodule" id="@cdktf/provider-vault.awsAuthBackendLogin"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_aws_auth_backend_login`](http
 
 ### AwsAuthBackendLogin <a name="AwsAuthBackendLogin" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/aws_auth_backend_login vault_aws_auth_backend_login}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/aws_auth_backend_login vault_aws_auth_backend_login}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.Initializer"></a>
 
@@ -423,7 +423,7 @@ awsAuthBackendLogin.AwsAuthBackendLogin.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -549,10 +549,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -961,7 +961,7 @@ const awsAuthBackendLoginConfig: awsAuthBackendLogin.AwsAuthBackendLoginConfig =
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -972,7 +972,7 @@ const awsAuthBackendLoginConfig: awsAuthBackendLogin.AwsAuthBackendLoginConfig =
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.iamRequestBody">iamRequestBody</a></code> | <code>string</code> | The Base64-encoded body of the signed request. |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.iamRequestHeaders">iamRequestHeaders</a></code> | <code>string</code> | The Base64-encoded, JSON serialized representation of the sts:GetCallerIdentity HTTP request headers. |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.iamRequestUrl">iamRequestUrl</a></code> | <code>string</code> | The Base64-encoded HTTP URL used in the signed request. |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/aws_auth_backend_login#id AwsAuthBackendLogin#id}. |
+| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/aws_auth_backend_login#id AwsAuthBackendLogin#id}. |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.identity">identity</a></code> | <code>string</code> | Base64-encoded EC2 instance identity document to authenticate with. |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.namespace">namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.nonce">nonce</a></code> | <code>string</code> | The nonce to be used for subsequent login requests. |
@@ -995,10 +995,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -1062,7 +1062,7 @@ public readonly backend: string;
 
 AWS Auth Backend to read the token from.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/aws_auth_backend_login#backend AwsAuthBackendLogin#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/aws_auth_backend_login#backend AwsAuthBackendLogin#backend}
 
 ---
 
@@ -1076,7 +1076,7 @@ public readonly iamHttpRequestMethod: string;
 
 The HTTP method used in the signed request.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/aws_auth_backend_login#iam_http_request_method AwsAuthBackendLogin#iam_http_request_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/aws_auth_backend_login#iam_http_request_method AwsAuthBackendLogin#iam_http_request_method}
 
 ---
 
@@ -1090,7 +1090,7 @@ public readonly iamRequestBody: string;
 
 The Base64-encoded body of the signed request.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/aws_auth_backend_login#iam_request_body AwsAuthBackendLogin#iam_request_body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/aws_auth_backend_login#iam_request_body AwsAuthBackendLogin#iam_request_body}
 
 ---
 
@@ -1104,7 +1104,7 @@ public readonly iamRequestHeaders: string;
 
 The Base64-encoded, JSON serialized representation of the sts:GetCallerIdentity HTTP request headers.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/aws_auth_backend_login#iam_request_headers AwsAuthBackendLogin#iam_request_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/aws_auth_backend_login#iam_request_headers AwsAuthBackendLogin#iam_request_headers}
 
 ---
 
@@ -1118,7 +1118,7 @@ public readonly iamRequestUrl: string;
 
 The Base64-encoded HTTP URL used in the signed request.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/aws_auth_backend_login#iam_request_url AwsAuthBackendLogin#iam_request_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/aws_auth_backend_login#iam_request_url AwsAuthBackendLogin#iam_request_url}
 
 ---
 
@@ -1130,7 +1130,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/aws_auth_backend_login#id AwsAuthBackendLogin#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/aws_auth_backend_login#id AwsAuthBackendLogin#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1147,7 +1147,7 @@ public readonly identity: string;
 
 Base64-encoded EC2 instance identity document to authenticate with.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/aws_auth_backend_login#identity AwsAuthBackendLogin#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/aws_auth_backend_login#identity AwsAuthBackendLogin#identity}
 
 ---
 
@@ -1161,7 +1161,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/aws_auth_backend_login#namespace AwsAuthBackendLogin#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/aws_auth_backend_login#namespace AwsAuthBackendLogin#namespace}
 
 ---
 
@@ -1175,7 +1175,7 @@ public readonly nonce: string;
 
 The nonce to be used for subsequent login requests.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/aws_auth_backend_login#nonce AwsAuthBackendLogin#nonce}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/aws_auth_backend_login#nonce AwsAuthBackendLogin#nonce}
 
 ---
 
@@ -1189,7 +1189,7 @@ public readonly pkcs7: string;
 
 PKCS7 signature of the identity document to authenticate with, with all newline characters removed.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/aws_auth_backend_login#pkcs7 AwsAuthBackendLogin#pkcs7}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/aws_auth_backend_login#pkcs7 AwsAuthBackendLogin#pkcs7}
 
 ---
 
@@ -1203,7 +1203,7 @@ public readonly role: string;
 
 AWS Auth Role to read the token from.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/aws_auth_backend_login#role AwsAuthBackendLogin#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/aws_auth_backend_login#role AwsAuthBackendLogin#role}
 
 ---
 
@@ -1217,7 +1217,7 @@ public readonly signature: string;
 
 Base64-encoded SHA256 RSA signature of the instance identtiy document to authenticate with.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/aws_auth_backend_login#signature AwsAuthBackendLogin#signature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/aws_auth_backend_login#signature AwsAuthBackendLogin#signature}
 
 ---
 

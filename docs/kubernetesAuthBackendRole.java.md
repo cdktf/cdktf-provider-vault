@@ -1,6 +1,6 @@
 # `vault_kubernetes_auth_backend_role`
 
-Refer to the Terraform Registory for docs: [`vault_kubernetes_auth_backend_role`](https://www.terraform.io/docs/providers/vault/r/kubernetes_auth_backend_role).
+Refer to the Terraform Registory for docs: [`vault_kubernetes_auth_backend_role`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kubernetes_auth_backend_role).
 
 # `kubernetesAuthBackendRole` Submodule <a name="`kubernetesAuthBackendRole` Submodule" id="@cdktf/provider-vault.kubernetesAuthBackendRole"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_kubernetes_auth_backend_role`
 
 ### KubernetesAuthBackendRole <a name="KubernetesAuthBackendRole" id="@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRole"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_auth_backend_role vault_kubernetes_auth_backend_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kubernetes_auth_backend_role vault_kubernetes_auth_backend_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRole.Initializer"></a>
 
@@ -19,6 +19,7 @@ KubernetesAuthBackendRole.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -52,7 +53,7 @@ KubernetesAuthBackendRole.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRole.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRole.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRole.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRole.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRole.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRole.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRole.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRole.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -64,7 +65,7 @@ KubernetesAuthBackendRole.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRole.Initializer.parameter.aliasNameSource">aliasNameSource</a></code> | <code>java.lang.String</code> | Configures how identity aliases are generated. Valid choices are: serviceaccount_uid, serviceaccount_name. |
 | <code><a href="#@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRole.Initializer.parameter.audience">audience</a></code> | <code>java.lang.String</code> | Optional Audience claim to verify in the JWT. |
 | <code><a href="#@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRole.Initializer.parameter.backend">backend</a></code> | <code>java.lang.String</code> | Unique name of the kubernetes backend to configure. |
-| <code><a href="#@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRole.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_auth_backend_role#id KubernetesAuthBackendRole#id}. |
+| <code><a href="#@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRole.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kubernetes_auth_backend_role#id KubernetesAuthBackendRole#id}. |
 | <code><a href="#@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRole.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRole.Initializer.parameter.tokenBoundCidrs">tokenBoundCidrs</a></code> | <code>java.util.List<java.lang.String></code> | Specifies the blocks of IP addresses which are allowed to use the generated token. |
 | <code><a href="#@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRole.Initializer.parameter.tokenExplicitMaxTtl">tokenExplicitMaxTtl</a></code> | <code>java.lang.Number</code> | Generated Token's Explicit Maximum TTL in seconds. |
@@ -104,7 +105,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRole.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -146,7 +147,7 @@ List of service account names able to access this role.
 
 If set to `["*"]` all names are allowed, both this and bound_service_account_namespaces can not be "*".
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_auth_backend_role#bound_service_account_names KubernetesAuthBackendRole#bound_service_account_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kubernetes_auth_backend_role#bound_service_account_names KubernetesAuthBackendRole#bound_service_account_names}
 
 ---
 
@@ -158,7 +159,7 @@ List of namespaces allowed to access this role.
 
 If set to `["*"]` all namespaces are allowed, both this and bound_service_account_names can not be set to "*".
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_auth_backend_role#bound_service_account_namespaces KubernetesAuthBackendRole#bound_service_account_namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kubernetes_auth_backend_role#bound_service_account_namespaces KubernetesAuthBackendRole#bound_service_account_namespaces}
 
 ---
 
@@ -168,7 +169,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Name of the role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_auth_backend_role#role_name KubernetesAuthBackendRole#role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kubernetes_auth_backend_role#role_name KubernetesAuthBackendRole#role_name}
 
 ---
 
@@ -178,7 +179,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Configures how identity aliases are generated. Valid choices are: serviceaccount_uid, serviceaccount_name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_auth_backend_role#alias_name_source KubernetesAuthBackendRole#alias_name_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kubernetes_auth_backend_role#alias_name_source KubernetesAuthBackendRole#alias_name_source}
 
 ---
 
@@ -188,7 +189,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Optional Audience claim to verify in the JWT.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_auth_backend_role#audience KubernetesAuthBackendRole#audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kubernetes_auth_backend_role#audience KubernetesAuthBackendRole#audience}
 
 ---
 
@@ -198,7 +199,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Unique name of the kubernetes backend to configure.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_auth_backend_role#backend KubernetesAuthBackendRole#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kubernetes_auth_backend_role#backend KubernetesAuthBackendRole#backend}
 
 ---
 
@@ -206,7 +207,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_auth_backend_role#id KubernetesAuthBackendRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kubernetes_auth_backend_role#id KubernetesAuthBackendRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -219,7 +220,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_auth_backend_role#namespace KubernetesAuthBackendRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kubernetes_auth_backend_role#namespace KubernetesAuthBackendRole#namespace}
 
 ---
 
@@ -229,7 +230,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Specifies the blocks of IP addresses which are allowed to use the generated token.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_auth_backend_role#token_bound_cidrs KubernetesAuthBackendRole#token_bound_cidrs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kubernetes_auth_backend_role#token_bound_cidrs KubernetesAuthBackendRole#token_bound_cidrs}
 
 ---
 
@@ -239,7 +240,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Generated Token's Explicit Maximum TTL in seconds.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_auth_backend_role#token_explicit_max_ttl KubernetesAuthBackendRole#token_explicit_max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kubernetes_auth_backend_role#token_explicit_max_ttl KubernetesAuthBackendRole#token_explicit_max_ttl}
 
 ---
 
@@ -249,7 +250,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 The maximum lifetime of the generated token.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_auth_backend_role#token_max_ttl KubernetesAuthBackendRole#token_max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kubernetes_auth_backend_role#token_max_ttl KubernetesAuthBackendRole#token_max_ttl}
 
 ---
 
@@ -259,7 +260,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 If true, the 'default' policy will not automatically be added to generated tokens.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_auth_backend_role#token_no_default_policy KubernetesAuthBackendRole#token_no_default_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kubernetes_auth_backend_role#token_no_default_policy KubernetesAuthBackendRole#token_no_default_policy}
 
 ---
 
@@ -269,7 +270,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 The maximum number of times a token may be used, a value of zero means unlimited.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_auth_backend_role#token_num_uses KubernetesAuthBackendRole#token_num_uses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kubernetes_auth_backend_role#token_num_uses KubernetesAuthBackendRole#token_num_uses}
 
 ---
 
@@ -279,7 +280,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Generated Token's Period.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_auth_backend_role#token_period KubernetesAuthBackendRole#token_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kubernetes_auth_backend_role#token_period KubernetesAuthBackendRole#token_period}
 
 ---
 
@@ -289,7 +290,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Generated Token's Policies.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_auth_backend_role#token_policies KubernetesAuthBackendRole#token_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kubernetes_auth_backend_role#token_policies KubernetesAuthBackendRole#token_policies}
 
 ---
 
@@ -299,7 +300,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 The initial ttl of the token to generate in seconds.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_auth_backend_role#token_ttl KubernetesAuthBackendRole#token_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kubernetes_auth_backend_role#token_ttl KubernetesAuthBackendRole#token_ttl}
 
 ---
 
@@ -309,7 +310,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 The type of token to generate, service or batch.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_auth_backend_role#token_type KubernetesAuthBackendRole#token_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kubernetes_auth_backend_role#token_type KubernetesAuthBackendRole#token_type}
 
 ---
 
@@ -700,7 +701,7 @@ KubernetesAuthBackendRole.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRole.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRole.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRole.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRole.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRole.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRole.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRole.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRole.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -828,10 +829,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRole.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1256,6 +1257,7 @@ KubernetesAuthBackendRoleConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -1289,7 +1291,7 @@ KubernetesAuthBackendRoleConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRoleConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRoleConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRoleConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRoleConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRoleConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRoleConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1301,7 +1303,7 @@ KubernetesAuthBackendRoleConfig.builder()
 | <code><a href="#@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRoleConfig.property.aliasNameSource">aliasNameSource</a></code> | <code>java.lang.String</code> | Configures how identity aliases are generated. Valid choices are: serviceaccount_uid, serviceaccount_name. |
 | <code><a href="#@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRoleConfig.property.audience">audience</a></code> | <code>java.lang.String</code> | Optional Audience claim to verify in the JWT. |
 | <code><a href="#@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRoleConfig.property.backend">backend</a></code> | <code>java.lang.String</code> | Unique name of the kubernetes backend to configure. |
-| <code><a href="#@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRoleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_auth_backend_role#id KubernetesAuthBackendRole#id}. |
+| <code><a href="#@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRoleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kubernetes_auth_backend_role#id KubernetesAuthBackendRole#id}. |
 | <code><a href="#@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRoleConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRoleConfig.property.tokenBoundCidrs">tokenBoundCidrs</a></code> | <code>java.util.List<java.lang.String></code> | Specifies the blocks of IP addresses which are allowed to use the generated token. |
 | <code><a href="#@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRoleConfig.property.tokenExplicitMaxTtl">tokenExplicitMaxTtl</a></code> | <code>java.lang.Number</code> | Generated Token's Explicit Maximum TTL in seconds. |
@@ -1328,10 +1330,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRoleConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1397,7 +1399,7 @@ List of service account names able to access this role.
 
 If set to `["*"]` all names are allowed, both this and bound_service_account_namespaces can not be "*".
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_auth_backend_role#bound_service_account_names KubernetesAuthBackendRole#bound_service_account_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kubernetes_auth_backend_role#bound_service_account_names KubernetesAuthBackendRole#bound_service_account_names}
 
 ---
 
@@ -1413,7 +1415,7 @@ List of namespaces allowed to access this role.
 
 If set to `["*"]` all namespaces are allowed, both this and bound_service_account_names can not be set to "*".
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_auth_backend_role#bound_service_account_namespaces KubernetesAuthBackendRole#bound_service_account_namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kubernetes_auth_backend_role#bound_service_account_namespaces KubernetesAuthBackendRole#bound_service_account_namespaces}
 
 ---
 
@@ -1427,7 +1429,7 @@ public java.lang.String getRoleName();
 
 Name of the role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_auth_backend_role#role_name KubernetesAuthBackendRole#role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kubernetes_auth_backend_role#role_name KubernetesAuthBackendRole#role_name}
 
 ---
 
@@ -1441,7 +1443,7 @@ public java.lang.String getAliasNameSource();
 
 Configures how identity aliases are generated. Valid choices are: serviceaccount_uid, serviceaccount_name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_auth_backend_role#alias_name_source KubernetesAuthBackendRole#alias_name_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kubernetes_auth_backend_role#alias_name_source KubernetesAuthBackendRole#alias_name_source}
 
 ---
 
@@ -1455,7 +1457,7 @@ public java.lang.String getAudience();
 
 Optional Audience claim to verify in the JWT.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_auth_backend_role#audience KubernetesAuthBackendRole#audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kubernetes_auth_backend_role#audience KubernetesAuthBackendRole#audience}
 
 ---
 
@@ -1469,7 +1471,7 @@ public java.lang.String getBackend();
 
 Unique name of the kubernetes backend to configure.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_auth_backend_role#backend KubernetesAuthBackendRole#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kubernetes_auth_backend_role#backend KubernetesAuthBackendRole#backend}
 
 ---
 
@@ -1481,7 +1483,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_auth_backend_role#id KubernetesAuthBackendRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kubernetes_auth_backend_role#id KubernetesAuthBackendRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1498,7 +1500,7 @@ public java.lang.String getNamespace();
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_auth_backend_role#namespace KubernetesAuthBackendRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kubernetes_auth_backend_role#namespace KubernetesAuthBackendRole#namespace}
 
 ---
 
@@ -1512,7 +1514,7 @@ public java.util.List<java.lang.String> getTokenBoundCidrs();
 
 Specifies the blocks of IP addresses which are allowed to use the generated token.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_auth_backend_role#token_bound_cidrs KubernetesAuthBackendRole#token_bound_cidrs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kubernetes_auth_backend_role#token_bound_cidrs KubernetesAuthBackendRole#token_bound_cidrs}
 
 ---
 
@@ -1526,7 +1528,7 @@ public java.lang.Number getTokenExplicitMaxTtl();
 
 Generated Token's Explicit Maximum TTL in seconds.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_auth_backend_role#token_explicit_max_ttl KubernetesAuthBackendRole#token_explicit_max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kubernetes_auth_backend_role#token_explicit_max_ttl KubernetesAuthBackendRole#token_explicit_max_ttl}
 
 ---
 
@@ -1540,7 +1542,7 @@ public java.lang.Number getTokenMaxTtl();
 
 The maximum lifetime of the generated token.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_auth_backend_role#token_max_ttl KubernetesAuthBackendRole#token_max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kubernetes_auth_backend_role#token_max_ttl KubernetesAuthBackendRole#token_max_ttl}
 
 ---
 
@@ -1554,7 +1556,7 @@ public java.lang.Object getTokenNoDefaultPolicy();
 
 If true, the 'default' policy will not automatically be added to generated tokens.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_auth_backend_role#token_no_default_policy KubernetesAuthBackendRole#token_no_default_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kubernetes_auth_backend_role#token_no_default_policy KubernetesAuthBackendRole#token_no_default_policy}
 
 ---
 
@@ -1568,7 +1570,7 @@ public java.lang.Number getTokenNumUses();
 
 The maximum number of times a token may be used, a value of zero means unlimited.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_auth_backend_role#token_num_uses KubernetesAuthBackendRole#token_num_uses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kubernetes_auth_backend_role#token_num_uses KubernetesAuthBackendRole#token_num_uses}
 
 ---
 
@@ -1582,7 +1584,7 @@ public java.lang.Number getTokenPeriod();
 
 Generated Token's Period.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_auth_backend_role#token_period KubernetesAuthBackendRole#token_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kubernetes_auth_backend_role#token_period KubernetesAuthBackendRole#token_period}
 
 ---
 
@@ -1596,7 +1598,7 @@ public java.util.List<java.lang.String> getTokenPolicies();
 
 Generated Token's Policies.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_auth_backend_role#token_policies KubernetesAuthBackendRole#token_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kubernetes_auth_backend_role#token_policies KubernetesAuthBackendRole#token_policies}
 
 ---
 
@@ -1610,7 +1612,7 @@ public java.lang.Number getTokenTtl();
 
 The initial ttl of the token to generate in seconds.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_auth_backend_role#token_ttl KubernetesAuthBackendRole#token_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kubernetes_auth_backend_role#token_ttl KubernetesAuthBackendRole#token_ttl}
 
 ---
 
@@ -1624,7 +1626,7 @@ public java.lang.String getTokenType();
 
 The type of token to generate, service or batch.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_auth_backend_role#token_type KubernetesAuthBackendRole#token_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kubernetes_auth_backend_role#token_type KubernetesAuthBackendRole#token_type}
 
 ---
 

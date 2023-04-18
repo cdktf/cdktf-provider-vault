@@ -1,6 +1,6 @@
 # `vault_identity_mfa_duo`
 
-Refer to the Terraform Registory for docs: [`vault_identity_mfa_duo`](https://www.terraform.io/docs/providers/vault/r/identity_mfa_duo).
+Refer to the Terraform Registory for docs: [`vault_identity_mfa_duo`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_mfa_duo).
 
 # `identityMfaDuo` Submodule <a name="`identityMfaDuo` Submodule" id="@cdktf/provider-vault.identityMfaDuo"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`vault_identity_mfa_duo`](https://ww
 
 ### IdentityMfaDuo <a name="IdentityMfaDuo" id="@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuo"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/identity_mfa_duo vault_identity_mfa_duo}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_mfa_duo vault_identity_mfa_duo}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/identitymfaduo"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identitymfaduo"
 
 identitymfaduo.NewIdentityMfaDuo(scope Construct, id *string, config IdentityMfaDuoConfig) IdentityMfaDuo
 ```
@@ -305,7 +305,7 @@ func ResetUsernameFormat()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuo.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/identitymfaduo"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identitymfaduo"
 
 identitymfaduo.IdentityMfaDuo_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuo.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/identitymfaduo"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identitymfaduo"
 
 identitymfaduo.IdentityMfaDuo_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ identitymfaduo.IdentityMfaDuo_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuo.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/identitymfaduo"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identitymfaduo"
 
 identitymfaduo.IdentityMfaDuo_IsTerraformResource(x interface{}) *bool
 ```
@@ -374,7 +374,7 @@ identitymfaduo.IdentityMfaDuo_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuo.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuo.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuo.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuo.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuo.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuo.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuo.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuo.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -491,10 +491,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuo.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -803,11 +803,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuoConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/identitymfaduo"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identitymfaduo"
 
 &identitymfaduo.IdentityMfaDuoConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -829,7 +829,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/identitymfaduo"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuoConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuoConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuoConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuoConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuoConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuoConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -838,7 +838,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/identitymfaduo"
 | <code><a href="#@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuoConfig.property.apiHostname">ApiHostname</a></code> | <code>*string</code> | API hostname for Duo. |
 | <code><a href="#@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuoConfig.property.integrationKey">IntegrationKey</a></code> | <code>*string</code> | Integration key for Duo. |
 | <code><a href="#@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuoConfig.property.secretKey">SecretKey</a></code> | <code>*string</code> | Secret key for Duo. |
-| <code><a href="#@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuoConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_mfa_duo#id IdentityMfaDuo#id}. |
+| <code><a href="#@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuoConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_mfa_duo#id IdentityMfaDuo#id}. |
 | <code><a href="#@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuoConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuoConfig.property.pushInfo">PushInfo</a></code> | <code>*string</code> | Push information for Duo. |
 | <code><a href="#@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuoConfig.property.usePasscode">UsePasscode</a></code> | <code>interface{}</code> | Require passcode upon MFA validation. |
@@ -859,10 +859,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuoConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -926,7 +926,7 @@ ApiHostname *string
 
 API hostname for Duo.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_mfa_duo#api_hostname IdentityMfaDuo#api_hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_mfa_duo#api_hostname IdentityMfaDuo#api_hostname}
 
 ---
 
@@ -940,7 +940,7 @@ IntegrationKey *string
 
 Integration key for Duo.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_mfa_duo#integration_key IdentityMfaDuo#integration_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_mfa_duo#integration_key IdentityMfaDuo#integration_key}
 
 ---
 
@@ -954,7 +954,7 @@ SecretKey *string
 
 Secret key for Duo.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_mfa_duo#secret_key IdentityMfaDuo#secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_mfa_duo#secret_key IdentityMfaDuo#secret_key}
 
 ---
 
@@ -966,7 +966,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_mfa_duo#id IdentityMfaDuo#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_mfa_duo#id IdentityMfaDuo#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -983,7 +983,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_mfa_duo#namespace IdentityMfaDuo#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_mfa_duo#namespace IdentityMfaDuo#namespace}
 
 ---
 
@@ -997,7 +997,7 @@ PushInfo *string
 
 Push information for Duo.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_mfa_duo#push_info IdentityMfaDuo#push_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_mfa_duo#push_info IdentityMfaDuo#push_info}
 
 ---
 
@@ -1011,7 +1011,7 @@ UsePasscode interface{}
 
 Require passcode upon MFA validation.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_mfa_duo#use_passcode IdentityMfaDuo#use_passcode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_mfa_duo#use_passcode IdentityMfaDuo#use_passcode}
 
 ---
 
@@ -1025,7 +1025,7 @@ UsernameFormat *string
 
 A template string for mapping Identity names to MFA methods.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_mfa_duo#username_format IdentityMfaDuo#username_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_mfa_duo#username_format IdentityMfaDuo#username_format}
 
 ---
 

@@ -1,6 +1,6 @@
 # `vault_kv_secret`
 
-Refer to the Terraform Registory for docs: [`vault_kv_secret`](https://www.terraform.io/docs/providers/vault/r/kv_secret).
+Refer to the Terraform Registory for docs: [`vault_kv_secret`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret).
 
 # `kvSecret` Submodule <a name="`kvSecret` Submodule" id="@cdktf/provider-vault.kvSecret"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_kv_secret`](https://www.terra
 
 ### KvSecret <a name="KvSecret" id="@cdktf/provider-vault.kvSecret.KvSecret"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/kv_secret vault_kv_secret}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret vault_kv_secret}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.kvSecret.KvSecret.Initializer"></a>
 
@@ -19,7 +19,7 @@ kvSecret.KvSecret(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -37,7 +37,7 @@ kvSecret.KvSecret(
 | <code><a href="#@cdktf/provider-vault.kvSecret.KvSecret.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-vault.kvSecret.KvSecret.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-vault.kvSecret.KvSecret.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kvSecret.KvSecret.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kvSecret.KvSecret.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecret.KvSecret.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecret.KvSecret.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecret.KvSecret.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -45,7 +45,7 @@ kvSecret.KvSecret(
 | <code><a href="#@cdktf/provider-vault.kvSecret.KvSecret.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecret.KvSecret.Initializer.parameter.dataJson">data_json</a></code> | <code>str</code> | JSON-encoded secret data to write. |
 | <code><a href="#@cdktf/provider-vault.kvSecret.KvSecret.Initializer.parameter.path">path</a></code> | <code>str</code> | Full path of the KV-V1 secret. |
-| <code><a href="#@cdktf/provider-vault.kvSecret.KvSecret.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret#id KvSecret#id}. |
+| <code><a href="#@cdktf/provider-vault.kvSecret.KvSecret.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret#id KvSecret#id}. |
 | <code><a href="#@cdktf/provider-vault.kvSecret.KvSecret.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -76,7 +76,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.kvSecret.KvSecret.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 JSON-encoded secret data to write.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret#data_json KvSecret#data_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret#data_json KvSecret#data_json}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Full path of the KV-V1 secret.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret#path KvSecret#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret#path KvSecret#path}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret#id KvSecret#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret#id KvSecret#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -147,7 +147,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret#namespace KvSecret#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret#namespace KvSecret#namespace}
 
 ---
 
@@ -485,7 +485,7 @@ kvSecret.KvSecret.is_terraform_resource(
 | <code><a href="#@cdktf/provider-vault.kvSecret.KvSecret.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecret.KvSecret.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecret.KvSecret.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kvSecret.KvSecret.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kvSecret.KvSecret.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecret.KvSecret.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecret.KvSecret.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecret.KvSecret.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -588,10 +588,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.kvSecret.KvSecret.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -764,7 +764,7 @@ from cdktf_cdktf_provider_vault import kv_secret
 
 kvSecret.KvSecretConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -782,7 +782,7 @@ kvSecret.KvSecretConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.kvSecret.KvSecretConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kvSecret.KvSecretConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kvSecret.KvSecretConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecret.KvSecretConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecret.KvSecretConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecret.KvSecretConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -790,7 +790,7 @@ kvSecret.KvSecretConfig(
 | <code><a href="#@cdktf/provider-vault.kvSecret.KvSecretConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecret.KvSecretConfig.property.dataJson">data_json</a></code> | <code>str</code> | JSON-encoded secret data to write. |
 | <code><a href="#@cdktf/provider-vault.kvSecret.KvSecretConfig.property.path">path</a></code> | <code>str</code> | Full path of the KV-V1 secret. |
-| <code><a href="#@cdktf/provider-vault.kvSecret.KvSecretConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret#id KvSecret#id}. |
+| <code><a href="#@cdktf/provider-vault.kvSecret.KvSecretConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret#id KvSecret#id}. |
 | <code><a href="#@cdktf/provider-vault.kvSecret.KvSecretConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -808,10 +808,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.kvSecret.KvSecretConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -875,7 +875,7 @@ data_json: str
 
 JSON-encoded secret data to write.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret#data_json KvSecret#data_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret#data_json KvSecret#data_json}
 
 ---
 
@@ -889,7 +889,7 @@ path: str
 
 Full path of the KV-V1 secret.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret#path KvSecret#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret#path KvSecret#path}
 
 ---
 
@@ -901,7 +901,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret#id KvSecret#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret#id KvSecret#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -918,7 +918,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret#namespace KvSecret#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret#namespace KvSecret#namespace}
 
 ---
 

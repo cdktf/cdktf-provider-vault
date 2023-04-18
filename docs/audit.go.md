@@ -1,6 +1,6 @@
 # `vault_audit`
 
-Refer to the Terraform Registory for docs: [`vault_audit`](https://www.terraform.io/docs/providers/vault/r/audit).
+Refer to the Terraform Registory for docs: [`vault_audit`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/audit).
 
 # `audit` Submodule <a name="`audit` Submodule" id="@cdktf/provider-vault.audit"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`vault_audit`](https://www.terraform
 
 ### Audit <a name="Audit" id="@cdktf/provider-vault.audit.Audit"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/audit vault_audit}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/audit vault_audit}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.audit.Audit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/audit"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/audit"
 
 audit.NewAudit(scope Construct, id *string, config AuditConfig) Audit
 ```
@@ -305,7 +305,7 @@ func ResetPath()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.audit.Audit.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/audit"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/audit"
 
 audit.Audit_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.audit.Audit.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/audit"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/audit"
 
 audit.Audit_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ audit.Audit_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.audit.Audit.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/audit"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/audit"
 
 audit.Audit_IsTerraformResource(x interface{}) *bool
 ```
@@ -374,7 +374,7 @@ audit.Audit_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-vault.audit.Audit.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.audit.Audit.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.audit.Audit.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.audit.Audit.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.audit.Audit.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.audit.Audit.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.audit.Audit.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.audit.Audit.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -482,10 +482,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.audit.Audit.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -704,11 +704,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.audit.AuditConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/audit"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/audit"
 
 &audit.AuditConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -729,7 +729,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/audit"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.audit.AuditConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.audit.AuditConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.audit.AuditConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.audit.AuditConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.audit.AuditConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.audit.AuditConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -738,7 +738,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/audit"
 | <code><a href="#@cdktf/provider-vault.audit.AuditConfig.property.options">Options</a></code> | <code>*map[string]*string</code> | Configuration options to pass to the audit device itself. |
 | <code><a href="#@cdktf/provider-vault.audit.AuditConfig.property.type">Type</a></code> | <code>*string</code> | Type of the audit device, such as 'file'. |
 | <code><a href="#@cdktf/provider-vault.audit.AuditConfig.property.description">Description</a></code> | <code>*string</code> | Human-friendly description of the audit device. |
-| <code><a href="#@cdktf/provider-vault.audit.AuditConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/audit#id Audit#id}. |
+| <code><a href="#@cdktf/provider-vault.audit.AuditConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/audit#id Audit#id}. |
 | <code><a href="#@cdktf/provider-vault.audit.AuditConfig.property.local">Local</a></code> | <code>interface{}</code> | Specifies if the audit device is a local only. |
 | <code><a href="#@cdktf/provider-vault.audit.AuditConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.audit.AuditConfig.property.path">Path</a></code> | <code>*string</code> | Path in which to enable the audit device. |
@@ -758,10 +758,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.audit.AuditConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -825,7 +825,7 @@ Options *map[string]*string
 
 Configuration options to pass to the audit device itself.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/audit#options Audit#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/audit#options Audit#options}
 
 ---
 
@@ -839,7 +839,7 @@ Type *string
 
 Type of the audit device, such as 'file'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/audit#type Audit#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/audit#type Audit#type}
 
 ---
 
@@ -853,7 +853,7 @@ Description *string
 
 Human-friendly description of the audit device.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/audit#description Audit#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/audit#description Audit#description}
 
 ---
 
@@ -865,7 +865,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/audit#id Audit#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/audit#id Audit#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -884,7 +884,7 @@ Specifies if the audit device is a local only.
 
 Local audit devices are not replicated nor (if a secondary) removed by replication.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/audit#local Audit#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/audit#local Audit#local}
 
 ---
 
@@ -898,7 +898,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/audit#namespace Audit#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/audit#namespace Audit#namespace}
 
 ---
 
@@ -912,7 +912,7 @@ Path *string
 
 Path in which to enable the audit device.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/audit#path Audit#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/audit#path Audit#path}
 
 ---
 

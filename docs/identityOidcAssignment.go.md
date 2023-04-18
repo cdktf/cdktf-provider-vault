@@ -1,6 +1,6 @@
 # `vault_identity_oidc_assignment`
 
-Refer to the Terraform Registory for docs: [`vault_identity_oidc_assignment`](https://www.terraform.io/docs/providers/vault/r/identity_oidc_assignment).
+Refer to the Terraform Registory for docs: [`vault_identity_oidc_assignment`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_oidc_assignment).
 
 # `identityOidcAssignment` Submodule <a name="`identityOidcAssignment` Submodule" id="@cdktf/provider-vault.identityOidcAssignment"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`vault_identity_oidc_assignment`](ht
 
 ### IdentityOidcAssignment <a name="IdentityOidcAssignment" id="@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/identity_oidc_assignment vault_identity_oidc_assignment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_oidc_assignment vault_identity_oidc_assignment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/identityoidcassignment"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identityoidcassignment"
 
 identityoidcassignment.NewIdentityOidcAssignment(scope Construct, id *string, config IdentityOidcAssignmentConfig) IdentityOidcAssignment
 ```
@@ -298,7 +298,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/identityoidcassignment"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identityoidcassignment"
 
 identityoidcassignment.IdentityOidcAssignment_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/identityoidcassignment"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identityoidcassignment"
 
 identityoidcassignment.IdentityOidcAssignment_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ identityoidcassignment.IdentityOidcAssignment_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/identityoidcassignment"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identityoidcassignment"
 
 identityoidcassignment.IdentityOidcAssignment_IsTerraformResource(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ identityoidcassignment.IdentityOidcAssignment_IsTerraformResource(x interface{})
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -471,10 +471,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -653,11 +653,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/identityoidcassignment"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identityoidcassignment"
 
 &identityoidcassignment.IdentityOidcAssignmentConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -676,7 +676,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/identityoidcassignment
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignmentConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignmentConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignmentConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignmentConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignmentConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignmentConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -685,7 +685,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/identityoidcassignment
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignmentConfig.property.name">Name</a></code> | <code>*string</code> | The name of the assignment. |
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignmentConfig.property.entityIds">EntityIds</a></code> | <code>*[]*string</code> | A list of Vault entity IDs. |
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignmentConfig.property.groupIds">GroupIds</a></code> | <code>*[]*string</code> | A list of Vault group IDs. |
-| <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_oidc_assignment#id IdentityOidcAssignment#id}. |
+| <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_oidc_assignment#id IdentityOidcAssignment#id}. |
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignmentConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -703,10 +703,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignmentConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -770,7 +770,7 @@ Name *string
 
 The name of the assignment.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_oidc_assignment#name IdentityOidcAssignment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_oidc_assignment#name IdentityOidcAssignment#name}
 
 ---
 
@@ -784,7 +784,7 @@ EntityIds *[]*string
 
 A list of Vault entity IDs.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_oidc_assignment#entity_ids IdentityOidcAssignment#entity_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_oidc_assignment#entity_ids IdentityOidcAssignment#entity_ids}
 
 ---
 
@@ -798,7 +798,7 @@ GroupIds *[]*string
 
 A list of Vault group IDs.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_oidc_assignment#group_ids IdentityOidcAssignment#group_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_oidc_assignment#group_ids IdentityOidcAssignment#group_ids}
 
 ---
 
@@ -810,7 +810,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_oidc_assignment#id IdentityOidcAssignment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_oidc_assignment#id IdentityOidcAssignment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -827,7 +827,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_oidc_assignment#namespace IdentityOidcAssignment#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_oidc_assignment#namespace IdentityOidcAssignment#namespace}
 
 ---
 

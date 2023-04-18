@@ -1,6 +1,6 @@
 # `vault_mfa_okta`
 
-Refer to the Terraform Registory for docs: [`vault_mfa_okta`](https://www.terraform.io/docs/providers/vault/r/mfa_okta).
+Refer to the Terraform Registory for docs: [`vault_mfa_okta`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_okta).
 
 # `mfaOkta` Submodule <a name="`mfaOkta` Submodule" id="@cdktf/provider-vault.mfaOkta"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_mfa_okta`](https://www.terraf
 
 ### MfaOkta <a name="MfaOkta" id="@cdktf/provider-vault.mfaOkta.MfaOkta"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/mfa_okta vault_mfa_okta}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_okta vault_mfa_okta}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.mfaOkta.MfaOkta.Initializer"></a>
 
@@ -19,7 +19,7 @@ mfaOkta.MfaOkta(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -42,7 +42,7 @@ mfaOkta.MfaOkta(
 | <code><a href="#@cdktf/provider-vault.mfaOkta.MfaOkta.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-vault.mfaOkta.MfaOkta.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-vault.mfaOkta.MfaOkta.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.mfaOkta.MfaOkta.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mfaOkta.MfaOkta.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaOkta.MfaOkta.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaOkta.MfaOkta.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaOkta.MfaOkta.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -86,7 +86,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.mfaOkta.MfaOkta.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -126,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 Okta API key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_okta#api_token MfaOkta#api_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_okta#api_token MfaOkta#api_token}
 
 ---
 
@@ -138,7 +138,7 @@ The mount to tie this method to for use in automatic mappings.
 
 The mapping will use the Name field of Aliases associated with this mount as the username in the mapping.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_okta#mount_accessor MfaOkta#mount_accessor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_okta#mount_accessor MfaOkta#mount_accessor}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Name of the MFA method.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_okta#name MfaOkta#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_okta#name MfaOkta#name}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Name of the organization to be used in the Okta API.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_okta#org_name MfaOkta#org_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_okta#org_name MfaOkta#org_name}
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 If set, will be used as the base domain for API requests.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_okta#base_url MfaOkta#base_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_okta#base_url MfaOkta#base_url}
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 ID computed by Vault.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_okta#id MfaOkta#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_okta#id MfaOkta#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -191,7 +191,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_okta#namespace MfaOkta#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_okta#namespace MfaOkta#namespace}
 
 ---
 
@@ -201,7 +201,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 If set to true, the username will only match the primary email for the account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_okta#primary_email MfaOkta#primary_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_okta#primary_email MfaOkta#primary_email}
 
 ---
 
@@ -211,7 +211,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 A format string for mapping Identity names to MFA method names. Values to substitute should be placed in `{{}}`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_okta#username_format MfaOkta#username_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_okta#username_format MfaOkta#username_format}
 
 ---
 
@@ -570,7 +570,7 @@ mfaOkta.MfaOkta.is_terraform_resource(
 | <code><a href="#@cdktf/provider-vault.mfaOkta.MfaOkta.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaOkta.MfaOkta.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaOkta.MfaOkta.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.mfaOkta.MfaOkta.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mfaOkta.MfaOkta.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaOkta.MfaOkta.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaOkta.MfaOkta.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaOkta.MfaOkta.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -682,10 +682,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.mfaOkta.MfaOkta.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -948,7 +948,7 @@ from cdktf_cdktf_provider_vault import mfa_okta
 
 mfaOkta.MfaOktaConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -971,7 +971,7 @@ mfaOkta.MfaOktaConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.mfaOkta.MfaOktaConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.mfaOkta.MfaOktaConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mfaOkta.MfaOktaConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaOkta.MfaOktaConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaOkta.MfaOktaConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaOkta.MfaOktaConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1002,10 +1002,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.mfaOkta.MfaOktaConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1069,7 +1069,7 @@ api_token: str
 
 Okta API key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_okta#api_token MfaOkta#api_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_okta#api_token MfaOkta#api_token}
 
 ---
 
@@ -1085,7 +1085,7 @@ The mount to tie this method to for use in automatic mappings.
 
 The mapping will use the Name field of Aliases associated with this mount as the username in the mapping.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_okta#mount_accessor MfaOkta#mount_accessor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_okta#mount_accessor MfaOkta#mount_accessor}
 
 ---
 
@@ -1099,7 +1099,7 @@ name: str
 
 Name of the MFA method.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_okta#name MfaOkta#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_okta#name MfaOkta#name}
 
 ---
 
@@ -1113,7 +1113,7 @@ org_name: str
 
 Name of the organization to be used in the Okta API.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_okta#org_name MfaOkta#org_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_okta#org_name MfaOkta#org_name}
 
 ---
 
@@ -1127,7 +1127,7 @@ base_url: str
 
 If set, will be used as the base domain for API requests.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_okta#base_url MfaOkta#base_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_okta#base_url MfaOkta#base_url}
 
 ---
 
@@ -1141,7 +1141,7 @@ id: str
 
 ID computed by Vault.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_okta#id MfaOkta#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_okta#id MfaOkta#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1158,7 +1158,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_okta#namespace MfaOkta#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_okta#namespace MfaOkta#namespace}
 
 ---
 
@@ -1172,7 +1172,7 @@ primary_email: typing.Union[bool, IResolvable]
 
 If set to true, the username will only match the primary email for the account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_okta#primary_email MfaOkta#primary_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_okta#primary_email MfaOkta#primary_email}
 
 ---
 
@@ -1186,7 +1186,7 @@ username_format: str
 
 A format string for mapping Identity names to MFA method names. Values to substitute should be placed in `{{}}`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_okta#username_format MfaOkta#username_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_okta#username_format MfaOkta#username_format}
 
 ---
 

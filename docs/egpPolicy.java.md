@@ -1,6 +1,6 @@
 # `vault_egp_policy`
 
-Refer to the Terraform Registory for docs: [`vault_egp_policy`](https://www.terraform.io/docs/providers/vault/r/egp_policy).
+Refer to the Terraform Registory for docs: [`vault_egp_policy`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/egp_policy).
 
 # `egpPolicy` Submodule <a name="`egpPolicy` Submodule" id="@cdktf/provider-vault.egpPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_egp_policy`](https://www.terr
 
 ### EgpPolicy <a name="EgpPolicy" id="@cdktf/provider-vault.egpPolicy.EgpPolicy"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/egp_policy vault_egp_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/egp_policy vault_egp_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.egpPolicy.EgpPolicy.Initializer"></a>
 
@@ -19,6 +19,7 @@ EgpPolicy.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -40,7 +41,7 @@ EgpPolicy.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -50,7 +51,7 @@ EgpPolicy.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of the policy. |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.Initializer.parameter.paths">paths</a></code> | <code>java.util.List<java.lang.String></code> | List of paths to which the policy will be applied. |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.Initializer.parameter.policy">policy</a></code> | <code>java.lang.String</code> | The policy document. |
-| <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/egp_policy#id EgpPolicy#id}. |
+| <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/egp_policy#id EgpPolicy#id}. |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -81,7 +82,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.egpPolicy.EgpPolicy.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -121,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 Enforcement level of Sentinel policy. Can be one of: 'advisory', 'soft-mandatory' or 'hard-mandatory'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/egp_policy#enforcement_level EgpPolicy#enforcement_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/egp_policy#enforcement_level EgpPolicy#enforcement_level}
 
 ---
 
@@ -131,7 +132,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Name of the policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/egp_policy#name EgpPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/egp_policy#name EgpPolicy#name}
 
 ---
 
@@ -141,7 +142,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 List of paths to which the policy will be applied.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/egp_policy#paths EgpPolicy#paths}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/egp_policy#paths EgpPolicy#paths}
 
 ---
 
@@ -151,7 +152,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 The policy document.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/egp_policy#policy EgpPolicy#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/egp_policy#policy EgpPolicy#policy}
 
 ---
 
@@ -159,7 +160,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/egp_policy#id EgpPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/egp_policy#id EgpPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -172,7 +173,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/egp_policy#namespace EgpPolicy#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/egp_policy#namespace EgpPolicy#namespace}
 
 ---
 
@@ -479,7 +480,7 @@ EgpPolicy.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -585,10 +586,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.egpPolicy.EgpPolicy.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -793,6 +794,7 @@ EgpPolicyConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -814,7 +816,7 @@ EgpPolicyConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicyConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicyConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicyConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicyConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicyConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -824,7 +826,7 @@ EgpPolicyConfig.builder()
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicyConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of the policy. |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicyConfig.property.paths">paths</a></code> | <code>java.util.List<java.lang.String></code> | List of paths to which the policy will be applied. |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicyConfig.property.policy">policy</a></code> | <code>java.lang.String</code> | The policy document. |
-| <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/egp_policy#id EgpPolicy#id}. |
+| <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/egp_policy#id EgpPolicy#id}. |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicyConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -842,10 +844,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.egpPolicy.EgpPolicyConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -909,7 +911,7 @@ public java.lang.String getEnforcementLevel();
 
 Enforcement level of Sentinel policy. Can be one of: 'advisory', 'soft-mandatory' or 'hard-mandatory'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/egp_policy#enforcement_level EgpPolicy#enforcement_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/egp_policy#enforcement_level EgpPolicy#enforcement_level}
 
 ---
 
@@ -923,7 +925,7 @@ public java.lang.String getName();
 
 Name of the policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/egp_policy#name EgpPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/egp_policy#name EgpPolicy#name}
 
 ---
 
@@ -937,7 +939,7 @@ public java.util.List<java.lang.String> getPaths();
 
 List of paths to which the policy will be applied.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/egp_policy#paths EgpPolicy#paths}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/egp_policy#paths EgpPolicy#paths}
 
 ---
 
@@ -951,7 +953,7 @@ public java.lang.String getPolicy();
 
 The policy document.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/egp_policy#policy EgpPolicy#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/egp_policy#policy EgpPolicy#policy}
 
 ---
 
@@ -963,7 +965,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/egp_policy#id EgpPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/egp_policy#id EgpPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -980,7 +982,7 @@ public java.lang.String getNamespace();
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/egp_policy#namespace EgpPolicy#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/egp_policy#namespace EgpPolicy#namespace}
 
 ---
 

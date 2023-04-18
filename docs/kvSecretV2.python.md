@@ -1,6 +1,6 @@
 # `vault_kv_secret_v2`
 
-Refer to the Terraform Registory for docs: [`vault_kv_secret_v2`](https://www.terraform.io/docs/providers/vault/r/kv_secret_v2).
+Refer to the Terraform Registory for docs: [`vault_kv_secret_v2`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret_v2).
 
 # `kvSecretV2` Submodule <a name="`kvSecretV2` Submodule" id="@cdktf/provider-vault.kvSecretV2"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_kv_secret_v2`](https://www.te
 
 ### KvSecretV2 <a name="KvSecretV2" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2 vault_kv_secret_v2}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret_v2 vault_kv_secret_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2.Initializer"></a>
 
@@ -19,7 +19,7 @@ kvSecretV2.KvSecretV2(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -43,7 +43,7 @@ kvSecretV2.KvSecretV2(
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -56,7 +56,7 @@ kvSecretV2.KvSecretV2(
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.Initializer.parameter.customMetadata">custom_metadata</a></code> | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2CustomMetadata">KvSecretV2CustomMetadata</a></code> | custom_metadata block. |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.Initializer.parameter.deleteAllVersions">delete_all_versions</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set to true, permanently deletes all versions for the specified key. |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.Initializer.parameter.disableRead">disable_read</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set to true, disables reading secret from Vault; note: drift won't be detected. |
-| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#id KvSecretV2#id}. |
+| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret_v2#id KvSecretV2#id}. |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.Initializer.parameter.options">options</a></code> | <code>typing.Mapping[str]</code> | An object that holds option settings. |
 
@@ -88,7 +88,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -128,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 JSON-encoded secret data to write.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#data_json KvSecretV2#data_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret_v2#data_json KvSecretV2#data_json}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Path where KV-V2 engine is mounted.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#mount KvSecretV2#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret_v2#mount KvSecretV2#mount}
 
 ---
 
@@ -150,7 +150,7 @@ Full name of the secret.
 
 For a nested secret, the name is the nested path excluding the mount and data prefix. For example, for a secret at 'kvv2/data/foo/bar/baz', the name is 'foo/bar/baz'
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#name KvSecretV2#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret_v2#name KvSecretV2#name}
 
 ---
 
@@ -162,7 +162,7 @@ This flag is required if cas_required is set to true on either the secret or the
 
 In order for a write to be successful, cas must be set to the current version of the secret.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#cas KvSecretV2#cas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret_v2#cas KvSecretV2#cas}
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 custom_metadata block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#custom_metadata KvSecretV2#custom_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret_v2#custom_metadata KvSecretV2#custom_metadata}
 
 ---
 
@@ -182,7 +182,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 If set to true, permanently deletes all versions for the specified key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#delete_all_versions KvSecretV2#delete_all_versions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret_v2#delete_all_versions KvSecretV2#delete_all_versions}
 
 ---
 
@@ -192,7 +192,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 If set to true, disables reading secret from Vault; note: drift won't be detected.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#disable_read KvSecretV2#disable_read}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret_v2#disable_read KvSecretV2#disable_read}
 
 ---
 
@@ -200,7 +200,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#id KvSecretV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret_v2#id KvSecretV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -213,7 +213,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#namespace KvSecretV2#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret_v2#namespace KvSecretV2#namespace}
 
 ---
 
@@ -223,7 +223,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 An object that holds option settings.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#options KvSecretV2#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret_v2#options KvSecretV2#options}
 
 ---
 
@@ -484,7 +484,7 @@ def put_custom_metadata(
 
 If true, all keys will require the cas parameter to be set on all write requests.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#cas_required KvSecretV2#cas_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret_v2#cas_required KvSecretV2#cas_required}
 
 ---
 
@@ -494,7 +494,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 A map of arbitrary string to string valued user-provided metadata meant to describe the secret.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#data KvSecretV2#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret_v2#data KvSecretV2#data}
 
 ---
 
@@ -504,7 +504,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 If set, specifies the length of time before a version is deleted.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#delete_version_after KvSecretV2#delete_version_after}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret_v2#delete_version_after KvSecretV2#delete_version_after}
 
 ---
 
@@ -514,7 +514,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 The number of versions to keep per key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#max_versions KvSecretV2#max_versions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret_v2#max_versions KvSecretV2#max_versions}
 
 ---
 
@@ -648,7 +648,7 @@ kvSecretV2.KvSecretV2.is_terraform_resource(
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -765,10 +765,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1081,7 +1081,7 @@ from cdktf_cdktf_provider_vault import kv_secret_v2
 
 kvSecretV2.KvSecretV2Config(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -1105,7 +1105,7 @@ kvSecretV2.KvSecretV2Config(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1118,7 +1118,7 @@ kvSecretV2.KvSecretV2Config(
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.customMetadata">custom_metadata</a></code> | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2CustomMetadata">KvSecretV2CustomMetadata</a></code> | custom_metadata block. |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.deleteAllVersions">delete_all_versions</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set to true, permanently deletes all versions for the specified key. |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.disableRead">disable_read</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set to true, disables reading secret from Vault; note: drift won't be detected. |
-| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#id KvSecretV2#id}. |
+| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret_v2#id KvSecretV2#id}. |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.options">options</a></code> | <code>typing.Mapping[str]</code> | An object that holds option settings. |
 
@@ -1137,10 +1137,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1204,7 +1204,7 @@ data_json: str
 
 JSON-encoded secret data to write.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#data_json KvSecretV2#data_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret_v2#data_json KvSecretV2#data_json}
 
 ---
 
@@ -1218,7 +1218,7 @@ mount: str
 
 Path where KV-V2 engine is mounted.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#mount KvSecretV2#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret_v2#mount KvSecretV2#mount}
 
 ---
 
@@ -1234,7 +1234,7 @@ Full name of the secret.
 
 For a nested secret, the name is the nested path excluding the mount and data prefix. For example, for a secret at 'kvv2/data/foo/bar/baz', the name is 'foo/bar/baz'
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#name KvSecretV2#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret_v2#name KvSecretV2#name}
 
 ---
 
@@ -1250,7 +1250,7 @@ This flag is required if cas_required is set to true on either the secret or the
 
 In order for a write to be successful, cas must be set to the current version of the secret.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#cas KvSecretV2#cas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret_v2#cas KvSecretV2#cas}
 
 ---
 
@@ -1264,7 +1264,7 @@ custom_metadata: KvSecretV2CustomMetadata
 
 custom_metadata block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#custom_metadata KvSecretV2#custom_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret_v2#custom_metadata KvSecretV2#custom_metadata}
 
 ---
 
@@ -1278,7 +1278,7 @@ delete_all_versions: typing.Union[bool, IResolvable]
 
 If set to true, permanently deletes all versions for the specified key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#delete_all_versions KvSecretV2#delete_all_versions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret_v2#delete_all_versions KvSecretV2#delete_all_versions}
 
 ---
 
@@ -1292,7 +1292,7 @@ disable_read: typing.Union[bool, IResolvable]
 
 If set to true, disables reading secret from Vault; note: drift won't be detected.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#disable_read KvSecretV2#disable_read}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret_v2#disable_read KvSecretV2#disable_read}
 
 ---
 
@@ -1304,7 +1304,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#id KvSecretV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret_v2#id KvSecretV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1321,7 +1321,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#namespace KvSecretV2#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret_v2#namespace KvSecretV2#namespace}
 
 ---
 
@@ -1335,7 +1335,7 @@ options: typing.Mapping[str]
 
 An object that holds option settings.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#options KvSecretV2#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret_v2#options KvSecretV2#options}
 
 ---
 
@@ -1375,7 +1375,7 @@ cas_required: typing.Union[bool, IResolvable]
 
 If true, all keys will require the cas parameter to be set on all write requests.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#cas_required KvSecretV2#cas_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret_v2#cas_required KvSecretV2#cas_required}
 
 ---
 
@@ -1389,7 +1389,7 @@ data: typing.Mapping[str]
 
 A map of arbitrary string to string valued user-provided metadata meant to describe the secret.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#data KvSecretV2#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret_v2#data KvSecretV2#data}
 
 ---
 
@@ -1403,7 +1403,7 @@ delete_version_after: typing.Union[int, float]
 
 If set, specifies the length of time before a version is deleted.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#delete_version_after KvSecretV2#delete_version_after}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret_v2#delete_version_after KvSecretV2#delete_version_after}
 
 ---
 
@@ -1417,7 +1417,7 @@ max_versions: typing.Union[int, float]
 
 The number of versions to keep per key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#max_versions KvSecretV2#max_versions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret_v2#max_versions KvSecretV2#max_versions}
 
 ---
 

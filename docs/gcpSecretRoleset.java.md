@@ -1,6 +1,6 @@
 # `vault_gcp_secret_roleset`
 
-Refer to the Terraform Registory for docs: [`vault_gcp_secret_roleset`](https://www.terraform.io/docs/providers/vault/r/gcp_secret_roleset).
+Refer to the Terraform Registory for docs: [`vault_gcp_secret_roleset`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/gcp_secret_roleset).
 
 # `gcpSecretRoleset` Submodule <a name="`gcpSecretRoleset` Submodule" id="@cdktf/provider-vault.gcpSecretRoleset"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_gcp_secret_roleset`](https://
 
 ### GcpSecretRoleset <a name="GcpSecretRoleset" id="@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRoleset"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/gcp_secret_roleset vault_gcp_secret_roleset}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/gcp_secret_roleset vault_gcp_secret_roleset}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRoleset.Initializer"></a>
 
@@ -19,6 +19,7 @@ GcpSecretRoleset.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -43,7 +44,7 @@ GcpSecretRoleset.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRoleset.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRoleset.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRoleset.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRoleset.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRoleset.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRoleset.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRoleset.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRoleset.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -53,7 +54,7 @@ GcpSecretRoleset.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRoleset.Initializer.parameter.binding">binding</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRolesetBinding">GcpSecretRolesetBinding</a>></code> | binding block. |
 | <code><a href="#@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRoleset.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Name of the GCP project that this roleset's service account will belong to. |
 | <code><a href="#@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRoleset.Initializer.parameter.roleset">roleset</a></code> | <code>java.lang.String</code> | Name of the RoleSet to create. |
-| <code><a href="#@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRoleset.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/gcp_secret_roleset#id GcpSecretRoleset#id}. |
+| <code><a href="#@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRoleset.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/gcp_secret_roleset#id GcpSecretRoleset#id}. |
 | <code><a href="#@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRoleset.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRoleset.Initializer.parameter.secretType">secretType</a></code> | <code>java.lang.String</code> | Type of secret generated for this role set. Defaults to `access_token`. Accepted values: `access_token`, `service_account_key`. |
 | <code><a href="#@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRoleset.Initializer.parameter.tokenScopes">tokenScopes</a></code> | <code>java.util.List<java.lang.String></code> | List of OAuth scopes to assign to `access_token` secrets generated under this role set (`access_token` role sets only). |
@@ -86,7 +87,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRoleset.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -126,7 +127,7 @@ Must be unique amongst siblings in the same scope
 
 Path where the GCP secrets engine is mounted.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/gcp_secret_roleset#backend GcpSecretRoleset#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/gcp_secret_roleset#backend GcpSecretRoleset#backend}
 
 ---
 
@@ -136,7 +137,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 binding block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/gcp_secret_roleset#binding GcpSecretRoleset#binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/gcp_secret_roleset#binding GcpSecretRoleset#binding}
 
 ---
 
@@ -146,7 +147,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Name of the GCP project that this roleset's service account will belong to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/gcp_secret_roleset#project GcpSecretRoleset#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/gcp_secret_roleset#project GcpSecretRoleset#project}
 
 ---
 
@@ -156,7 +157,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Name of the RoleSet to create.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/gcp_secret_roleset#roleset GcpSecretRoleset#roleset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/gcp_secret_roleset#roleset GcpSecretRoleset#roleset}
 
 ---
 
@@ -164,7 +165,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/gcp_secret_roleset#id GcpSecretRoleset#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/gcp_secret_roleset#id GcpSecretRoleset#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -177,7 +178,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/gcp_secret_roleset#namespace GcpSecretRoleset#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/gcp_secret_roleset#namespace GcpSecretRoleset#namespace}
 
 ---
 
@@ -187,7 +188,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Type of secret generated for this role set. Defaults to `access_token`. Accepted values: `access_token`, `service_account_key`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/gcp_secret_roleset#secret_type GcpSecretRoleset#secret_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/gcp_secret_roleset#secret_type GcpSecretRoleset#secret_type}
 
 ---
 
@@ -197,7 +198,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 List of OAuth scopes to assign to `access_token` secrets generated under this role set (`access_token` role sets only).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/gcp_secret_roleset#token_scopes GcpSecretRoleset#token_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/gcp_secret_roleset#token_scopes GcpSecretRoleset#token_scopes}
 
 ---
 
@@ -531,7 +532,7 @@ GcpSecretRoleset.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRoleset.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRoleset.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRoleset.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRoleset.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRoleset.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRoleset.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRoleset.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRoleset.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -642,10 +643,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRoleset.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -921,7 +922,7 @@ public java.lang.String getResource();
 
 Resource name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/gcp_secret_roleset#resource GcpSecretRoleset#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/gcp_secret_roleset#resource GcpSecretRoleset#resource}
 
 ---
 
@@ -935,7 +936,7 @@ public java.util.List<java.lang.String> getRoles();
 
 List of roles to apply to the resource.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/gcp_secret_roleset#roles GcpSecretRoleset#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/gcp_secret_roleset#roles GcpSecretRoleset#roles}
 
 ---
 
@@ -950,6 +951,7 @@ GcpSecretRolesetConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -974,7 +976,7 @@ GcpSecretRolesetConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRolesetConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRolesetConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRolesetConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRolesetConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRolesetConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRolesetConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -984,7 +986,7 @@ GcpSecretRolesetConfig.builder()
 | <code><a href="#@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRolesetConfig.property.binding">binding</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRolesetBinding">GcpSecretRolesetBinding</a>></code> | binding block. |
 | <code><a href="#@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRolesetConfig.property.project">project</a></code> | <code>java.lang.String</code> | Name of the GCP project that this roleset's service account will belong to. |
 | <code><a href="#@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRolesetConfig.property.roleset">roleset</a></code> | <code>java.lang.String</code> | Name of the RoleSet to create. |
-| <code><a href="#@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRolesetConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/gcp_secret_roleset#id GcpSecretRoleset#id}. |
+| <code><a href="#@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRolesetConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/gcp_secret_roleset#id GcpSecretRoleset#id}. |
 | <code><a href="#@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRolesetConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRolesetConfig.property.secretType">secretType</a></code> | <code>java.lang.String</code> | Type of secret generated for this role set. Defaults to `access_token`. Accepted values: `access_token`, `service_account_key`. |
 | <code><a href="#@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRolesetConfig.property.tokenScopes">tokenScopes</a></code> | <code>java.util.List<java.lang.String></code> | List of OAuth scopes to assign to `access_token` secrets generated under this role set (`access_token` role sets only). |
@@ -1004,10 +1006,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.gcpSecretRoleset.GcpSecretRolesetConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1071,7 +1073,7 @@ public java.lang.String getBackend();
 
 Path where the GCP secrets engine is mounted.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/gcp_secret_roleset#backend GcpSecretRoleset#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/gcp_secret_roleset#backend GcpSecretRoleset#backend}
 
 ---
 
@@ -1085,7 +1087,7 @@ public java.lang.Object getBinding();
 
 binding block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/gcp_secret_roleset#binding GcpSecretRoleset#binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/gcp_secret_roleset#binding GcpSecretRoleset#binding}
 
 ---
 
@@ -1099,7 +1101,7 @@ public java.lang.String getProject();
 
 Name of the GCP project that this roleset's service account will belong to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/gcp_secret_roleset#project GcpSecretRoleset#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/gcp_secret_roleset#project GcpSecretRoleset#project}
 
 ---
 
@@ -1113,7 +1115,7 @@ public java.lang.String getRoleset();
 
 Name of the RoleSet to create.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/gcp_secret_roleset#roleset GcpSecretRoleset#roleset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/gcp_secret_roleset#roleset GcpSecretRoleset#roleset}
 
 ---
 
@@ -1125,7 +1127,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/gcp_secret_roleset#id GcpSecretRoleset#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/gcp_secret_roleset#id GcpSecretRoleset#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1142,7 +1144,7 @@ public java.lang.String getNamespace();
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/gcp_secret_roleset#namespace GcpSecretRoleset#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/gcp_secret_roleset#namespace GcpSecretRoleset#namespace}
 
 ---
 
@@ -1156,7 +1158,7 @@ public java.lang.String getSecretType();
 
 Type of secret generated for this role set. Defaults to `access_token`. Accepted values: `access_token`, `service_account_key`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/gcp_secret_roleset#secret_type GcpSecretRoleset#secret_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/gcp_secret_roleset#secret_type GcpSecretRoleset#secret_type}
 
 ---
 
@@ -1170,7 +1172,7 @@ public java.util.List<java.lang.String> getTokenScopes();
 
 List of OAuth scopes to assign to `access_token` secrets generated under this role set (`access_token` role sets only).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/gcp_secret_roleset#token_scopes GcpSecretRoleset#token_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/gcp_secret_roleset#token_scopes GcpSecretRoleset#token_scopes}
 
 ---
 

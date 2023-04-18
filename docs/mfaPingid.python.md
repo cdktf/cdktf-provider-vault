@@ -1,6 +1,6 @@
 # `vault_mfa_pingid`
 
-Refer to the Terraform Registory for docs: [`vault_mfa_pingid`](https://www.terraform.io/docs/providers/vault/r/mfa_pingid).
+Refer to the Terraform Registory for docs: [`vault_mfa_pingid`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_pingid).
 
 # `mfaPingid` Submodule <a name="`mfaPingid` Submodule" id="@cdktf/provider-vault.mfaPingid"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_mfa_pingid`](https://www.terr
 
 ### MfaPingid <a name="MfaPingid" id="@cdktf/provider-vault.mfaPingid.MfaPingid"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/mfa_pingid vault_mfa_pingid}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_pingid vault_mfa_pingid}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.mfaPingid.MfaPingid.Initializer"></a>
 
@@ -19,7 +19,7 @@ mfaPingid.MfaPingid(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -39,7 +39,7 @@ mfaPingid.MfaPingid(
 | <code><a href="#@cdktf/provider-vault.mfaPingid.MfaPingid.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-vault.mfaPingid.MfaPingid.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-vault.mfaPingid.MfaPingid.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.mfaPingid.MfaPingid.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mfaPingid.MfaPingid.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaPingid.MfaPingid.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaPingid.MfaPingid.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaPingid.MfaPingid.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -80,7 +80,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.mfaPingid.MfaPingid.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -122,7 +122,7 @@ The mount to tie this method to for use in automatic mappings.
 
 The mapping will use the Name field of Aliases associated with this mount as the username in the mapping.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_pingid#mount_accessor MfaPingid#mount_accessor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_pingid#mount_accessor MfaPingid#mount_accessor}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Name of the MFA method.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_pingid#name MfaPingid#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_pingid#name MfaPingid#name}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 A base64-encoded third-party settings file retrieved from PingID's configuration page.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_pingid#settings_file_base64 MfaPingid#settings_file_base64}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_pingid#settings_file_base64 MfaPingid#settings_file_base64}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 ID computed by Vault.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_pingid#id MfaPingid#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_pingid#id MfaPingid#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -165,7 +165,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_pingid#namespace MfaPingid#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_pingid#namespace MfaPingid#namespace}
 
 ---
 
@@ -175,7 +175,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 A format string for mapping Identity names to MFA method names. Values to substitute should be placed in `{{}}`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_pingid#username_format MfaPingid#username_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_pingid#username_format MfaPingid#username_format}
 
 ---
 
@@ -520,7 +520,7 @@ mfaPingid.MfaPingid.is_terraform_resource(
 | <code><a href="#@cdktf/provider-vault.mfaPingid.MfaPingid.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaPingid.MfaPingid.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaPingid.MfaPingid.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.mfaPingid.MfaPingid.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mfaPingid.MfaPingid.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaPingid.MfaPingid.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaPingid.MfaPingid.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaPingid.MfaPingid.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -633,10 +633,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.mfaPingid.MfaPingid.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -909,7 +909,7 @@ from cdktf_cdktf_provider_vault import mfa_pingid
 
 mfaPingid.MfaPingidConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -929,7 +929,7 @@ mfaPingid.MfaPingidConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.mfaPingid.MfaPingidConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.mfaPingid.MfaPingidConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mfaPingid.MfaPingidConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaPingid.MfaPingidConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaPingid.MfaPingidConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaPingid.MfaPingidConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -957,10 +957,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.mfaPingid.MfaPingidConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1026,7 +1026,7 @@ The mount to tie this method to for use in automatic mappings.
 
 The mapping will use the Name field of Aliases associated with this mount as the username in the mapping.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_pingid#mount_accessor MfaPingid#mount_accessor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_pingid#mount_accessor MfaPingid#mount_accessor}
 
 ---
 
@@ -1040,7 +1040,7 @@ name: str
 
 Name of the MFA method.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_pingid#name MfaPingid#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_pingid#name MfaPingid#name}
 
 ---
 
@@ -1054,7 +1054,7 @@ settings_file_base64: str
 
 A base64-encoded third-party settings file retrieved from PingID's configuration page.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_pingid#settings_file_base64 MfaPingid#settings_file_base64}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_pingid#settings_file_base64 MfaPingid#settings_file_base64}
 
 ---
 
@@ -1068,7 +1068,7 @@ id: str
 
 ID computed by Vault.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_pingid#id MfaPingid#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_pingid#id MfaPingid#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1085,7 +1085,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_pingid#namespace MfaPingid#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_pingid#namespace MfaPingid#namespace}
 
 ---
 
@@ -1099,7 +1099,7 @@ username_format: str
 
 A format string for mapping Identity names to MFA method names. Values to substitute should be placed in `{{}}`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_pingid#username_format MfaPingid#username_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_pingid#username_format MfaPingid#username_format}
 
 ---
 

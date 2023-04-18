@@ -1,6 +1,6 @@
 # `vault_ssh_secret_backend_ca`
 
-Refer to the Terraform Registory for docs: [`vault_ssh_secret_backend_ca`](https://www.terraform.io/docs/providers/vault/r/ssh_secret_backend_ca).
+Refer to the Terraform Registory for docs: [`vault_ssh_secret_backend_ca`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ssh_secret_backend_ca).
 
 # `sshSecretBackendCa` Submodule <a name="`sshSecretBackendCa` Submodule" id="@cdktf/provider-vault.sshSecretBackendCa"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`vault_ssh_secret_backend_ca`](https
 
 ### SshSecretBackendCa <a name="SshSecretBackendCa" id="@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/ssh_secret_backend_ca vault_ssh_secret_backend_ca}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ssh_secret_backend_ca vault_ssh_secret_backend_ca}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/sshsecretbackendca"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/sshsecretbackendca"
 
 sshsecretbackendca.NewSshSecretBackendCa(scope Construct, id *string, config SshSecretBackendCaConfig) SshSecretBackendCa
 ```
@@ -312,7 +312,7 @@ func ResetPublicKey()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/sshsecretbackendca"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/sshsecretbackendca"
 
 sshsecretbackendca.SshSecretBackendCa_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/sshsecretbackendca"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/sshsecretbackendca"
 
 sshsecretbackendca.SshSecretBackendCa_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ sshsecretbackendca.SshSecretBackendCa_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/sshsecretbackendca"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/sshsecretbackendca"
 
 sshsecretbackendca.SshSecretBackendCa_IsTerraformResource(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ sshsecretbackendca.SshSecretBackendCa_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -487,10 +487,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -689,11 +689,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/sshsecretbackendca"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/sshsecretbackendca"
 
 &sshsecretbackendca.SshSecretBackendCaConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -713,7 +713,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/sshsecretbackendca"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCaConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCaConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCaConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCaConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCaConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCaConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -721,7 +721,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/sshsecretbackendca"
 | <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCaConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCaConfig.property.backend">Backend</a></code> | <code>*string</code> | The path of the SSH Secret Backend where the CA should be configured. |
 | <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCaConfig.property.generateSigningKey">GenerateSigningKey</a></code> | <code>interface{}</code> | Whether Vault should generate the signing key pair internally. |
-| <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCaConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ssh_secret_backend_ca#id SshSecretBackendCa#id}. |
+| <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCaConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ssh_secret_backend_ca#id SshSecretBackendCa#id}. |
 | <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCaConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCaConfig.property.privateKey">PrivateKey</a></code> | <code>*string</code> | Private key part the SSH CA key pair; required if generate_signing_key is false. |
 | <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCaConfig.property.publicKey">PublicKey</a></code> | <code>*string</code> | Public key part the SSH CA key pair; required if generate_signing_key is false. |
@@ -741,10 +741,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCaConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -808,7 +808,7 @@ Backend *string
 
 The path of the SSH Secret Backend where the CA should be configured.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ssh_secret_backend_ca#backend SshSecretBackendCa#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ssh_secret_backend_ca#backend SshSecretBackendCa#backend}
 
 ---
 
@@ -822,7 +822,7 @@ GenerateSigningKey interface{}
 
 Whether Vault should generate the signing key pair internally.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ssh_secret_backend_ca#generate_signing_key SshSecretBackendCa#generate_signing_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ssh_secret_backend_ca#generate_signing_key SshSecretBackendCa#generate_signing_key}
 
 ---
 
@@ -834,7 +834,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ssh_secret_backend_ca#id SshSecretBackendCa#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ssh_secret_backend_ca#id SshSecretBackendCa#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -851,7 +851,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ssh_secret_backend_ca#namespace SshSecretBackendCa#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ssh_secret_backend_ca#namespace SshSecretBackendCa#namespace}
 
 ---
 
@@ -865,7 +865,7 @@ PrivateKey *string
 
 Private key part the SSH CA key pair; required if generate_signing_key is false.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ssh_secret_backend_ca#private_key SshSecretBackendCa#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ssh_secret_backend_ca#private_key SshSecretBackendCa#private_key}
 
 ---
 
@@ -879,7 +879,7 @@ PublicKey *string
 
 Public key part the SSH CA key pair; required if generate_signing_key is false.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ssh_secret_backend_ca#public_key SshSecretBackendCa#public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ssh_secret_backend_ca#public_key SshSecretBackendCa#public_key}
 
 ---
 

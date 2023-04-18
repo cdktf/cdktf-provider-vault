@@ -1,6 +1,6 @@
 # `vault_auth_backend`
 
-Refer to the Terraform Registory for docs: [`vault_auth_backend`](https://www.terraform.io/docs/providers/vault/r/auth_backend).
+Refer to the Terraform Registory for docs: [`vault_auth_backend`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/auth_backend).
 
 # `authBackend` Submodule <a name="`authBackend` Submodule" id="@cdktf/provider-vault.authBackend"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_auth_backend`](https://www.te
 
 ### AuthBackend <a name="AuthBackend" id="@cdktf/provider-vault.authBackend.AuthBackend"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/auth_backend vault_auth_backend}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/auth_backend vault_auth_backend}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.authBackend.AuthBackend.Initializer"></a>
 
@@ -19,7 +19,7 @@ authBackend.AuthBackend(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -41,7 +41,7 @@ authBackend.AuthBackend(
 | <code><a href="#@cdktf/provider-vault.authBackend.AuthBackend.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-vault.authBackend.AuthBackend.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-vault.authBackend.AuthBackend.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.authBackend.AuthBackend.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.authBackend.AuthBackend.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.authBackend.AuthBackend.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.authBackend.AuthBackend.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.authBackend.AuthBackend.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -50,11 +50,11 @@ authBackend.AuthBackend(
 | <code><a href="#@cdktf/provider-vault.authBackend.AuthBackend.Initializer.parameter.type">type</a></code> | <code>str</code> | Name of the auth backend. |
 | <code><a href="#@cdktf/provider-vault.authBackend.AuthBackend.Initializer.parameter.description">description</a></code> | <code>str</code> | The description of the auth backend. |
 | <code><a href="#@cdktf/provider-vault.authBackend.AuthBackend.Initializer.parameter.disableRemount">disable_remount</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set, opts out of mount migration on path updates. |
-| <code><a href="#@cdktf/provider-vault.authBackend.AuthBackend.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/auth_backend#id AuthBackend#id}. |
+| <code><a href="#@cdktf/provider-vault.authBackend.AuthBackend.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/auth_backend#id AuthBackend#id}. |
 | <code><a href="#@cdktf/provider-vault.authBackend.AuthBackend.Initializer.parameter.local">local</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies if the auth method is local only. |
 | <code><a href="#@cdktf/provider-vault.authBackend.AuthBackend.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.authBackend.AuthBackend.Initializer.parameter.path">path</a></code> | <code>str</code> | path to mount the backend. This defaults to the type. |
-| <code><a href="#@cdktf/provider-vault.authBackend.AuthBackend.Initializer.parameter.tune">tune</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.authBackend.AuthBackendTune">AuthBackendTune</a>]]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/auth_backend#tune AuthBackend#tune}. |
+| <code><a href="#@cdktf/provider-vault.authBackend.AuthBackend.Initializer.parameter.tune">tune</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.authBackend.AuthBackendTune">AuthBackendTune</a>]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/auth_backend#tune AuthBackend#tune}. |
 
 ---
 
@@ -84,7 +84,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.authBackend.AuthBackend.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -124,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the auth backend.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/auth_backend#type AuthBackend#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/auth_backend#type AuthBackend#type}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 The description of the auth backend.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/auth_backend#description AuthBackend#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/auth_backend#description AuthBackend#description}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 If set, opts out of mount migration on path updates.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/auth_backend#disable_remount AuthBackend#disable_remount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/auth_backend#disable_remount AuthBackend#disable_remount}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/auth_backend#id AuthBackend#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/auth_backend#id AuthBackend#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -165,7 +165,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Specifies if the auth method is local only.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/auth_backend#local AuthBackend#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/auth_backend#local AuthBackend#local}
 
 ---
 
@@ -175,7 +175,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/auth_backend#namespace AuthBackend#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/auth_backend#namespace AuthBackend#namespace}
 
 ---
 
@@ -185,7 +185,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 path to mount the backend. This defaults to the type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/auth_backend#path AuthBackend#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/auth_backend#path AuthBackend#path}
 
 ---
 
@@ -193,7 +193,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 - *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.authBackend.AuthBackendTune">AuthBackendTune</a>]]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/auth_backend#tune AuthBackend#tune}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/auth_backend#tune AuthBackend#tune}.
 
 ---
 
@@ -581,7 +581,7 @@ authBackend.AuthBackend.is_terraform_resource(
 | <code><a href="#@cdktf/provider-vault.authBackend.AuthBackend.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.authBackend.AuthBackend.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.authBackend.AuthBackend.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.authBackend.AuthBackend.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.authBackend.AuthBackend.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.authBackend.AuthBackend.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.authBackend.AuthBackend.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.authBackend.AuthBackend.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -692,10 +692,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.authBackend.AuthBackend.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -948,7 +948,7 @@ from cdktf_cdktf_provider_vault import auth_backend
 
 authBackend.AuthBackendConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -970,7 +970,7 @@ authBackend.AuthBackendConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -979,11 +979,11 @@ authBackend.AuthBackendConfig(
 | <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendConfig.property.type">type</a></code> | <code>str</code> | Name of the auth backend. |
 | <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendConfig.property.description">description</a></code> | <code>str</code> | The description of the auth backend. |
 | <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendConfig.property.disableRemount">disable_remount</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set, opts out of mount migration on path updates. |
-| <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/auth_backend#id AuthBackend#id}. |
+| <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/auth_backend#id AuthBackend#id}. |
 | <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendConfig.property.local">local</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies if the auth method is local only. |
 | <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendConfig.property.path">path</a></code> | <code>str</code> | path to mount the backend. This defaults to the type. |
-| <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendConfig.property.tune">tune</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.authBackend.AuthBackendTune">AuthBackendTune</a>]]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/auth_backend#tune AuthBackend#tune}. |
+| <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendConfig.property.tune">tune</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.authBackend.AuthBackendTune">AuthBackendTune</a>]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/auth_backend#tune AuthBackend#tune}. |
 
 ---
 
@@ -1000,10 +1000,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.authBackend.AuthBackendConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1067,7 +1067,7 @@ type: str
 
 Name of the auth backend.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/auth_backend#type AuthBackend#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/auth_backend#type AuthBackend#type}
 
 ---
 
@@ -1081,7 +1081,7 @@ description: str
 
 The description of the auth backend.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/auth_backend#description AuthBackend#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/auth_backend#description AuthBackend#description}
 
 ---
 
@@ -1095,7 +1095,7 @@ disable_remount: typing.Union[bool, IResolvable]
 
 If set, opts out of mount migration on path updates.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/auth_backend#disable_remount AuthBackend#disable_remount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/auth_backend#disable_remount AuthBackend#disable_remount}
 
 ---
 
@@ -1107,7 +1107,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/auth_backend#id AuthBackend#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/auth_backend#id AuthBackend#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1124,7 +1124,7 @@ local: typing.Union[bool, IResolvable]
 
 Specifies if the auth method is local only.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/auth_backend#local AuthBackend#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/auth_backend#local AuthBackend#local}
 
 ---
 
@@ -1138,7 +1138,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/auth_backend#namespace AuthBackend#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/auth_backend#namespace AuthBackend#namespace}
 
 ---
 
@@ -1152,7 +1152,7 @@ path: str
 
 path to mount the backend. This defaults to the type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/auth_backend#path AuthBackend#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/auth_backend#path AuthBackend#path}
 
 ---
 
@@ -1164,7 +1164,7 @@ tune: typing.Union[IResolvable, typing.List[AuthBackendTune]]
 
 - *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.authBackend.AuthBackendTune">AuthBackendTune</a>]]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/auth_backend#tune AuthBackend#tune}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/auth_backend#tune AuthBackend#tune}.
 
 ---
 
@@ -1191,14 +1191,14 @@ authBackend.AuthBackendTune(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendTune.property.allowedResponseHeaders">allowed_response_headers</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/auth_backend#allowed_response_headers AuthBackend#allowed_response_headers}. |
-| <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendTune.property.auditNonHmacRequestKeys">audit_non_hmac_request_keys</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/auth_backend#audit_non_hmac_request_keys AuthBackend#audit_non_hmac_request_keys}. |
-| <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendTune.property.auditNonHmacResponseKeys">audit_non_hmac_response_keys</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/auth_backend#audit_non_hmac_response_keys AuthBackend#audit_non_hmac_response_keys}. |
-| <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendTune.property.defaultLeaseTtl">default_lease_ttl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/auth_backend#default_lease_ttl AuthBackend#default_lease_ttl}. |
-| <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendTune.property.listingVisibility">listing_visibility</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/auth_backend#listing_visibility AuthBackend#listing_visibility}. |
-| <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendTune.property.maxLeaseTtl">max_lease_ttl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/auth_backend#max_lease_ttl AuthBackend#max_lease_ttl}. |
-| <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendTune.property.passthroughRequestHeaders">passthrough_request_headers</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/auth_backend#passthrough_request_headers AuthBackend#passthrough_request_headers}. |
-| <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendTune.property.tokenType">token_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/auth_backend#token_type AuthBackend#token_type}. |
+| <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendTune.property.allowedResponseHeaders">allowed_response_headers</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/auth_backend#allowed_response_headers AuthBackend#allowed_response_headers}. |
+| <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendTune.property.auditNonHmacRequestKeys">audit_non_hmac_request_keys</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/auth_backend#audit_non_hmac_request_keys AuthBackend#audit_non_hmac_request_keys}. |
+| <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendTune.property.auditNonHmacResponseKeys">audit_non_hmac_response_keys</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/auth_backend#audit_non_hmac_response_keys AuthBackend#audit_non_hmac_response_keys}. |
+| <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendTune.property.defaultLeaseTtl">default_lease_ttl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/auth_backend#default_lease_ttl AuthBackend#default_lease_ttl}. |
+| <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendTune.property.listingVisibility">listing_visibility</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/auth_backend#listing_visibility AuthBackend#listing_visibility}. |
+| <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendTune.property.maxLeaseTtl">max_lease_ttl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/auth_backend#max_lease_ttl AuthBackend#max_lease_ttl}. |
+| <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendTune.property.passthroughRequestHeaders">passthrough_request_headers</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/auth_backend#passthrough_request_headers AuthBackend#passthrough_request_headers}. |
+| <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendTune.property.tokenType">token_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/auth_backend#token_type AuthBackend#token_type}. |
 
 ---
 
@@ -1210,7 +1210,7 @@ allowed_response_headers: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/auth_backend#allowed_response_headers AuthBackend#allowed_response_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/auth_backend#allowed_response_headers AuthBackend#allowed_response_headers}.
 
 ---
 
@@ -1222,7 +1222,7 @@ audit_non_hmac_request_keys: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/auth_backend#audit_non_hmac_request_keys AuthBackend#audit_non_hmac_request_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/auth_backend#audit_non_hmac_request_keys AuthBackend#audit_non_hmac_request_keys}.
 
 ---
 
@@ -1234,7 +1234,7 @@ audit_non_hmac_response_keys: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/auth_backend#audit_non_hmac_response_keys AuthBackend#audit_non_hmac_response_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/auth_backend#audit_non_hmac_response_keys AuthBackend#audit_non_hmac_response_keys}.
 
 ---
 
@@ -1246,7 +1246,7 @@ default_lease_ttl: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/auth_backend#default_lease_ttl AuthBackend#default_lease_ttl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/auth_backend#default_lease_ttl AuthBackend#default_lease_ttl}.
 
 ---
 
@@ -1258,7 +1258,7 @@ listing_visibility: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/auth_backend#listing_visibility AuthBackend#listing_visibility}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/auth_backend#listing_visibility AuthBackend#listing_visibility}.
 
 ---
 
@@ -1270,7 +1270,7 @@ max_lease_ttl: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/auth_backend#max_lease_ttl AuthBackend#max_lease_ttl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/auth_backend#max_lease_ttl AuthBackend#max_lease_ttl}.
 
 ---
 
@@ -1282,7 +1282,7 @@ passthrough_request_headers: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/auth_backend#passthrough_request_headers AuthBackend#passthrough_request_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/auth_backend#passthrough_request_headers AuthBackend#passthrough_request_headers}.
 
 ---
 
@@ -1294,7 +1294,7 @@ token_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/auth_backend#token_type AuthBackend#token_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/auth_backend#token_type AuthBackend#token_type}.
 
 ---
 

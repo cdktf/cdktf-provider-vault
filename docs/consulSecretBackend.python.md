@@ -1,6 +1,6 @@
 # `vault_consul_secret_backend`
 
-Refer to the Terraform Registory for docs: [`vault_consul_secret_backend`](https://www.terraform.io/docs/providers/vault/r/consul_secret_backend).
+Refer to the Terraform Registory for docs: [`vault_consul_secret_backend`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/consul_secret_backend).
 
 # `consulSecretBackend` Submodule <a name="`consulSecretBackend` Submodule" id="@cdktf/provider-vault.consulSecretBackend"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_consul_secret_backend`](https
 
 ### ConsulSecretBackend <a name="ConsulSecretBackend" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend vault_consul_secret_backend}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/consul_secret_backend vault_consul_secret_backend}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.Initializer"></a>
 
@@ -19,7 +19,7 @@ consulSecretBackend.ConsulSecretBackend(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -48,7 +48,7 @@ consulSecretBackend.ConsulSecretBackend(
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -62,7 +62,7 @@ consulSecretBackend.ConsulSecretBackend(
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.Initializer.parameter.defaultLeaseTtlSeconds">default_lease_ttl_seconds</a></code> | <code>typing.Union[int, float]</code> | Default lease duration for secrets in seconds. |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.Initializer.parameter.description">description</a></code> | <code>str</code> | Human-friendly description of the mount for the backend. |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.Initializer.parameter.disableRemount">disable_remount</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set, opts out of mount migration on path updates. |
-| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend#id ConsulSecretBackend#id}. |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/consul_secret_backend#id ConsulSecretBackend#id}. |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.Initializer.parameter.local">local</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies if the secret backend is local only. |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.Initializer.parameter.maxLeaseTtlSeconds">max_lease_ttl_seconds</a></code> | <code>typing.Union[int, float]</code> | Maximum possible lease duration for secrets in seconds. |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
@@ -98,7 +98,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -138,7 +138,7 @@ Must be unique amongst siblings in the same scope
 
 Specifies the address of the Consul instance, provided as "host:port" like "127.0.0.1:8500".
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend#address ConsulSecretBackend#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/consul_secret_backend#address ConsulSecretBackend#address}
 
 ---
 
@@ -150,7 +150,7 @@ Denotes a backend resource that is used to bootstrap the Consul ACL system.
 
 Only one resource may be used to bootstrap.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend#bootstrap ConsulSecretBackend#bootstrap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/consul_secret_backend#bootstrap ConsulSecretBackend#bootstrap}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 CA certificate to use when verifying Consul server certificate, must be x509 PEM encoded.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend#ca_cert ConsulSecretBackend#ca_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/consul_secret_backend#ca_cert ConsulSecretBackend#ca_cert}
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Client certificate used for Consul's TLS communication, must be x509 PEM encoded and if this is set you need to also set client_key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend#client_cert ConsulSecretBackend#client_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/consul_secret_backend#client_cert ConsulSecretBackend#client_cert}
 
 ---
 
@@ -180,7 +180,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Client key used for Consul's TLS communication, must be x509 PEM encoded and if this is set you need to also set client_cert.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend#client_key ConsulSecretBackend#client_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/consul_secret_backend#client_key ConsulSecretBackend#client_key}
 
 ---
 
@@ -190,7 +190,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Default lease duration for secrets in seconds.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend#default_lease_ttl_seconds ConsulSecretBackend#default_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/consul_secret_backend#default_lease_ttl_seconds ConsulSecretBackend#default_lease_ttl_seconds}
 
 ---
 
@@ -200,7 +200,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Human-friendly description of the mount for the backend.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend#description ConsulSecretBackend#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/consul_secret_backend#description ConsulSecretBackend#description}
 
 ---
 
@@ -210,7 +210,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 If set, opts out of mount migration on path updates.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend#disable_remount ConsulSecretBackend#disable_remount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/consul_secret_backend#disable_remount ConsulSecretBackend#disable_remount}
 
 ---
 
@@ -218,7 +218,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend#id ConsulSecretBackend#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/consul_secret_backend#id ConsulSecretBackend#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -231,7 +231,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Specifies if the secret backend is local only.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend#local ConsulSecretBackend#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/consul_secret_backend#local ConsulSecretBackend#local}
 
 ---
 
@@ -241,7 +241,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Maximum possible lease duration for secrets in seconds.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend#max_lease_ttl_seconds ConsulSecretBackend#max_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/consul_secret_backend#max_lease_ttl_seconds ConsulSecretBackend#max_lease_ttl_seconds}
 
 ---
 
@@ -251,7 +251,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend#namespace ConsulSecretBackend#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/consul_secret_backend#namespace ConsulSecretBackend#namespace}
 
 ---
 
@@ -261,7 +261,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Unique name of the Vault Consul mount to configure.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend#path ConsulSecretBackend#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/consul_secret_backend#path ConsulSecretBackend#path}
 
 ---
 
@@ -271,7 +271,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Specifies the URL scheme to use. Defaults to "http".
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend#scheme ConsulSecretBackend#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/consul_secret_backend#scheme ConsulSecretBackend#scheme}
 
 ---
 
@@ -281,7 +281,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Specifies the Consul token to use when managing or issuing new tokens.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend#token ConsulSecretBackend#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/consul_secret_backend#token ConsulSecretBackend#token}
 
 ---
 
@@ -703,7 +703,7 @@ consulSecretBackend.ConsulSecretBackend.is_terraform_resource(
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -827,10 +827,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1213,7 +1213,7 @@ from cdktf_cdktf_provider_vault import consul_secret_backend
 
 consulSecretBackend.ConsulSecretBackendConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -1242,7 +1242,7 @@ consulSecretBackend.ConsulSecretBackendConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1256,7 +1256,7 @@ consulSecretBackend.ConsulSecretBackendConfig(
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.defaultLeaseTtlSeconds">default_lease_ttl_seconds</a></code> | <code>typing.Union[int, float]</code> | Default lease duration for secrets in seconds. |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.description">description</a></code> | <code>str</code> | Human-friendly description of the mount for the backend. |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.disableRemount">disable_remount</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set, opts out of mount migration on path updates. |
-| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend#id ConsulSecretBackend#id}. |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/consul_secret_backend#id ConsulSecretBackend#id}. |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.local">local</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies if the secret backend is local only. |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.maxLeaseTtlSeconds">max_lease_ttl_seconds</a></code> | <code>typing.Union[int, float]</code> | Maximum possible lease duration for secrets in seconds. |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
@@ -1279,10 +1279,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1346,7 +1346,7 @@ address: str
 
 Specifies the address of the Consul instance, provided as "host:port" like "127.0.0.1:8500".
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend#address ConsulSecretBackend#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/consul_secret_backend#address ConsulSecretBackend#address}
 
 ---
 
@@ -1362,7 +1362,7 @@ Denotes a backend resource that is used to bootstrap the Consul ACL system.
 
 Only one resource may be used to bootstrap.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend#bootstrap ConsulSecretBackend#bootstrap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/consul_secret_backend#bootstrap ConsulSecretBackend#bootstrap}
 
 ---
 
@@ -1376,7 +1376,7 @@ ca_cert: str
 
 CA certificate to use when verifying Consul server certificate, must be x509 PEM encoded.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend#ca_cert ConsulSecretBackend#ca_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/consul_secret_backend#ca_cert ConsulSecretBackend#ca_cert}
 
 ---
 
@@ -1390,7 +1390,7 @@ client_cert: str
 
 Client certificate used for Consul's TLS communication, must be x509 PEM encoded and if this is set you need to also set client_key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend#client_cert ConsulSecretBackend#client_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/consul_secret_backend#client_cert ConsulSecretBackend#client_cert}
 
 ---
 
@@ -1404,7 +1404,7 @@ client_key: str
 
 Client key used for Consul's TLS communication, must be x509 PEM encoded and if this is set you need to also set client_cert.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend#client_key ConsulSecretBackend#client_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/consul_secret_backend#client_key ConsulSecretBackend#client_key}
 
 ---
 
@@ -1418,7 +1418,7 @@ default_lease_ttl_seconds: typing.Union[int, float]
 
 Default lease duration for secrets in seconds.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend#default_lease_ttl_seconds ConsulSecretBackend#default_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/consul_secret_backend#default_lease_ttl_seconds ConsulSecretBackend#default_lease_ttl_seconds}
 
 ---
 
@@ -1432,7 +1432,7 @@ description: str
 
 Human-friendly description of the mount for the backend.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend#description ConsulSecretBackend#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/consul_secret_backend#description ConsulSecretBackend#description}
 
 ---
 
@@ -1446,7 +1446,7 @@ disable_remount: typing.Union[bool, IResolvable]
 
 If set, opts out of mount migration on path updates.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend#disable_remount ConsulSecretBackend#disable_remount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/consul_secret_backend#disable_remount ConsulSecretBackend#disable_remount}
 
 ---
 
@@ -1458,7 +1458,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend#id ConsulSecretBackend#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/consul_secret_backend#id ConsulSecretBackend#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1475,7 +1475,7 @@ local: typing.Union[bool, IResolvable]
 
 Specifies if the secret backend is local only.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend#local ConsulSecretBackend#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/consul_secret_backend#local ConsulSecretBackend#local}
 
 ---
 
@@ -1489,7 +1489,7 @@ max_lease_ttl_seconds: typing.Union[int, float]
 
 Maximum possible lease duration for secrets in seconds.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend#max_lease_ttl_seconds ConsulSecretBackend#max_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/consul_secret_backend#max_lease_ttl_seconds ConsulSecretBackend#max_lease_ttl_seconds}
 
 ---
 
@@ -1503,7 +1503,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend#namespace ConsulSecretBackend#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/consul_secret_backend#namespace ConsulSecretBackend#namespace}
 
 ---
 
@@ -1517,7 +1517,7 @@ path: str
 
 Unique name of the Vault Consul mount to configure.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend#path ConsulSecretBackend#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/consul_secret_backend#path ConsulSecretBackend#path}
 
 ---
 
@@ -1531,7 +1531,7 @@ scheme: str
 
 Specifies the URL scheme to use. Defaults to "http".
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend#scheme ConsulSecretBackend#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/consul_secret_backend#scheme ConsulSecretBackend#scheme}
 
 ---
 
@@ -1545,7 +1545,7 @@ token: str
 
 Specifies the Consul token to use when managing or issuing new tokens.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/consul_secret_backend#token ConsulSecretBackend#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/consul_secret_backend#token ConsulSecretBackend#token}
 
 ---
 

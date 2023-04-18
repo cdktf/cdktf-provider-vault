@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/vault/r/identity_group
+// https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,23 +10,23 @@ export interface IdentityGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Manage member entities externally through `vault_identity_group_member_entity_ids`
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#external_member_entity_ids IdentityGroup#external_member_entity_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#external_member_entity_ids IdentityGroup#external_member_entity_ids}
   */
   readonly externalMemberEntityIds?: boolean | cdktf.IResolvable;
   /**
   * Manage member groups externally through `vault_identity_group_member_group_ids`
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#external_member_group_ids IdentityGroup#external_member_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#external_member_group_ids IdentityGroup#external_member_group_ids}
   */
   readonly externalMemberGroupIds?: boolean | cdktf.IResolvable;
   /**
   * Manage policies externally through `vault_identity_group_policies`, allows using group ID in assigned policies.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#external_policies IdentityGroup#external_policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#external_policies IdentityGroup#external_policies}
   */
   readonly externalPolicies?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#id IdentityGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#id IdentityGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -35,49 +35,49 @@ export interface IdentityGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Entity IDs to be assigned as group members.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#member_entity_ids IdentityGroup#member_entity_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#member_entity_ids IdentityGroup#member_entity_ids}
   */
   readonly memberEntityIds?: string[];
   /**
   * Group IDs to be assigned as group members.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#member_group_ids IdentityGroup#member_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#member_group_ids IdentityGroup#member_group_ids}
   */
   readonly memberGroupIds?: string[];
   /**
   * Metadata to be associated with the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#metadata IdentityGroup#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#metadata IdentityGroup#metadata}
   */
   readonly metadata?: { [key: string]: string };
   /**
   * Name of the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#name IdentityGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#name IdentityGroup#name}
   */
   readonly name?: string;
   /**
   * Target namespace. (requires Enterprise)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#namespace IdentityGroup#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#namespace IdentityGroup#namespace}
   */
   readonly namespace?: string;
   /**
   * Policies to be tied to the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#policies IdentityGroup#policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#policies IdentityGroup#policies}
   */
   readonly policies?: string[];
   /**
   * Type of the group, internal or external. Defaults to internal.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#type IdentityGroup#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#type IdentityGroup#type}
   */
   readonly type?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/vault/r/identity_group vault_identity_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group vault_identity_group}
 */
 export class IdentityGroup extends cdktf.TerraformResource {
 
@@ -91,7 +91,7 @@ export class IdentityGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/vault/r/identity_group vault_identity_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group vault_identity_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

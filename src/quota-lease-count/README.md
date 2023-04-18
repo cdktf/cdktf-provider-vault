@@ -1,3 +1,3 @@
 # `vault_quota_lease_count`
 
-Refer to the Terraform Registory for docs: [`vault_quota_lease_count`](https://www.terraform.io/docs/providers/vault/r/quota_lease_count).
+Refer to the Terraform Registory for docs: [`vault_quota_lease_count`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/quota_lease_count).

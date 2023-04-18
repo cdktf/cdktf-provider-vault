@@ -1,6 +1,6 @@
 # `vault_ad_secret_role`
 
-Refer to the Terraform Registory for docs: [`vault_ad_secret_role`](https://www.terraform.io/docs/providers/vault/r/ad_secret_role).
+Refer to the Terraform Registory for docs: [`vault_ad_secret_role`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_role).
 
 # `adSecretRole` Submodule <a name="`adSecretRole` Submodule" id="@cdktf/provider-vault.adSecretRole"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_ad_secret_role`](https://www.
 
 ### AdSecretRole <a name="AdSecretRole" id="@cdktf/provider-vault.adSecretRole.AdSecretRole"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_role vault_ad_secret_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_role vault_ad_secret_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.adSecretRole.AdSecretRole.Initializer"></a>
 
@@ -360,7 +360,7 @@ AdSecretRole.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-vault.adSecretRole.AdSecretRole.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretRole.AdSecretRole.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretRole.AdSecretRole.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.adSecretRole.AdSecretRole.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.adSecretRole.AdSecretRole.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretRole.AdSecretRole.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretRole.AdSecretRole.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretRole.AdSecretRole.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -468,10 +468,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.adSecretRole.AdSecretRole.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -694,7 +694,7 @@ using HashiCorp.Cdktf.Providers.Vault;
 
 new AdSecretRoleConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -714,7 +714,7 @@ new AdSecretRoleConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.adSecretRole.AdSecretRoleConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.adSecretRole.AdSecretRoleConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.adSecretRole.AdSecretRoleConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretRole.AdSecretRoleConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretRole.AdSecretRoleConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretRole.AdSecretRoleConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -723,7 +723,7 @@ new AdSecretRoleConfig {
 | <code><a href="#@cdktf/provider-vault.adSecretRole.AdSecretRoleConfig.property.backend">Backend</a></code> | <code>string</code> | The mount path for the AD backend. |
 | <code><a href="#@cdktf/provider-vault.adSecretRole.AdSecretRoleConfig.property.role">Role</a></code> | <code>string</code> | Name of the role. |
 | <code><a href="#@cdktf/provider-vault.adSecretRole.AdSecretRoleConfig.property.serviceAccountName">ServiceAccountName</a></code> | <code>string</code> | The username/logon name for the service account with which this role will be associated. |
-| <code><a href="#@cdktf/provider-vault.adSecretRole.AdSecretRoleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_role#id AdSecretRole#id}. |
+| <code><a href="#@cdktf/provider-vault.adSecretRole.AdSecretRoleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_role#id AdSecretRole#id}. |
 | <code><a href="#@cdktf/provider-vault.adSecretRole.AdSecretRoleConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.adSecretRole.AdSecretRoleConfig.property.ttl">Ttl</a></code> | <code>double</code> | In seconds, the default password time-to-live. |
 
@@ -742,10 +742,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.adSecretRole.AdSecretRoleConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -809,7 +809,7 @@ public string Backend { get; set; }
 
 The mount path for the AD backend.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_role#backend AdSecretRole#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_role#backend AdSecretRole#backend}
 
 ---
 
@@ -823,7 +823,7 @@ public string Role { get; set; }
 
 Name of the role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_role#role AdSecretRole#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_role#role AdSecretRole#role}
 
 ---
 
@@ -837,7 +837,7 @@ public string ServiceAccountName { get; set; }
 
 The username/logon name for the service account with which this role will be associated.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_role#service_account_name AdSecretRole#service_account_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_role#service_account_name AdSecretRole#service_account_name}
 
 ---
 
@@ -849,7 +849,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_role#id AdSecretRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_role#id AdSecretRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -866,7 +866,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_role#namespace AdSecretRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_role#namespace AdSecretRole#namespace}
 
 ---
 
@@ -880,7 +880,7 @@ public double Ttl { get; set; }
 
 In seconds, the default password time-to-live.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_role#ttl AdSecretRole#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_role#ttl AdSecretRole#ttl}
 
 ---
 

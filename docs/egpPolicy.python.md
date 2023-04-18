@@ -1,6 +1,6 @@
 # `vault_egp_policy`
 
-Refer to the Terraform Registory for docs: [`vault_egp_policy`](https://www.terraform.io/docs/providers/vault/r/egp_policy).
+Refer to the Terraform Registory for docs: [`vault_egp_policy`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/egp_policy).
 
 # `egpPolicy` Submodule <a name="`egpPolicy` Submodule" id="@cdktf/provider-vault.egpPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_egp_policy`](https://www.terr
 
 ### EgpPolicy <a name="EgpPolicy" id="@cdktf/provider-vault.egpPolicy.EgpPolicy"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/egp_policy vault_egp_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/egp_policy vault_egp_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.egpPolicy.EgpPolicy.Initializer"></a>
 
@@ -19,7 +19,7 @@ egpPolicy.EgpPolicy(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -39,7 +39,7 @@ egpPolicy.EgpPolicy(
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -49,7 +49,7 @@ egpPolicy.EgpPolicy(
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the policy. |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.Initializer.parameter.paths">paths</a></code> | <code>typing.List[str]</code> | List of paths to which the policy will be applied. |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.Initializer.parameter.policy">policy</a></code> | <code>str</code> | The policy document. |
-| <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/egp_policy#id EgpPolicy#id}. |
+| <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/egp_policy#id EgpPolicy#id}. |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -80,7 +80,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.egpPolicy.EgpPolicy.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 Enforcement level of Sentinel policy. Can be one of: 'advisory', 'soft-mandatory' or 'hard-mandatory'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/egp_policy#enforcement_level EgpPolicy#enforcement_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/egp_policy#enforcement_level EgpPolicy#enforcement_level}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Name of the policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/egp_policy#name EgpPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/egp_policy#name EgpPolicy#name}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 List of paths to which the policy will be applied.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/egp_policy#paths EgpPolicy#paths}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/egp_policy#paths EgpPolicy#paths}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 The policy document.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/egp_policy#policy EgpPolicy#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/egp_policy#policy EgpPolicy#policy}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/egp_policy#id EgpPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/egp_policy#id EgpPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -171,7 +171,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/egp_policy#namespace EgpPolicy#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/egp_policy#namespace EgpPolicy#namespace}
 
 ---
 
@@ -509,7 +509,7 @@ egpPolicy.EgpPolicy.is_terraform_resource(
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicy.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -615,10 +615,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.egpPolicy.EgpPolicy.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -821,7 +821,7 @@ from cdktf_cdktf_provider_vault import egp_policy
 
 egpPolicy.EgpPolicyConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -841,7 +841,7 @@ egpPolicy.EgpPolicyConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicyConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicyConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicyConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicyConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicyConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -851,7 +851,7 @@ egpPolicy.EgpPolicyConfig(
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicyConfig.property.name">name</a></code> | <code>str</code> | Name of the policy. |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicyConfig.property.paths">paths</a></code> | <code>typing.List[str]</code> | List of paths to which the policy will be applied. |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicyConfig.property.policy">policy</a></code> | <code>str</code> | The policy document. |
-| <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/egp_policy#id EgpPolicy#id}. |
+| <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/egp_policy#id EgpPolicy#id}. |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicyConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -869,10 +869,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.egpPolicy.EgpPolicyConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -936,7 +936,7 @@ enforcement_level: str
 
 Enforcement level of Sentinel policy. Can be one of: 'advisory', 'soft-mandatory' or 'hard-mandatory'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/egp_policy#enforcement_level EgpPolicy#enforcement_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/egp_policy#enforcement_level EgpPolicy#enforcement_level}
 
 ---
 
@@ -950,7 +950,7 @@ name: str
 
 Name of the policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/egp_policy#name EgpPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/egp_policy#name EgpPolicy#name}
 
 ---
 
@@ -964,7 +964,7 @@ paths: typing.List[str]
 
 List of paths to which the policy will be applied.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/egp_policy#paths EgpPolicy#paths}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/egp_policy#paths EgpPolicy#paths}
 
 ---
 
@@ -978,7 +978,7 @@ policy: str
 
 The policy document.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/egp_policy#policy EgpPolicy#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/egp_policy#policy EgpPolicy#policy}
 
 ---
 
@@ -990,7 +990,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/egp_policy#id EgpPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/egp_policy#id EgpPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1007,7 +1007,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/egp_policy#namespace EgpPolicy#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/egp_policy#namespace EgpPolicy#namespace}
 
 ---
 

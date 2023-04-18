@@ -1,6 +1,6 @@
 # `vault_mount`
 
-Refer to the Terraform Registory for docs: [`vault_mount`](https://www.terraform.io/docs/providers/vault/r/mount).
+Refer to the Terraform Registory for docs: [`vault_mount`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mount).
 
 # `mount` Submodule <a name="`mount` Submodule" id="@cdktf/provider-vault.mount"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_mount`](https://www.terraform
 
 ### Mount <a name="Mount" id="@cdktf/provider-vault.mount.Mount"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/mount vault_mount}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mount vault_mount}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.mount.Mount.Initializer"></a>
 
@@ -19,7 +19,7 @@ mount.Mount(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -47,7 +47,7 @@ mount.Mount(
 | <code><a href="#@cdktf/provider-vault.mount.Mount.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.mount.Mount.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -61,7 +61,7 @@ mount.Mount(
 | <code><a href="#@cdktf/provider-vault.mount.Mount.Initializer.parameter.defaultLeaseTtlSeconds">default_lease_ttl_seconds</a></code> | <code>typing.Union[int, float]</code> | Default lease duration for tokens and secrets in seconds. |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.Initializer.parameter.description">description</a></code> | <code>str</code> | Human-friendly description of the mount. |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.Initializer.parameter.externalEntropyAccess">external_entropy_access</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable the secrets engine to access Vault's external entropy source. |
-| <code><a href="#@cdktf/provider-vault.mount.Mount.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mount#id Mount#id}. |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mount#id Mount#id}. |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.Initializer.parameter.local">local</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Local mount flag that can be explicitly set to true to enforce local mount in HA environment. |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.Initializer.parameter.maxLeaseTtlSeconds">max_lease_ttl_seconds</a></code> | <code>typing.Union[int, float]</code> | Maximum possible lease duration for tokens and secrets in seconds. |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
@@ -96,7 +96,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.mount.Mount.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -136,7 +136,7 @@ Must be unique amongst siblings in the same scope
 
 Where the secret backend will be mounted.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mount#path Mount#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mount#path Mount#path}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Type of the backend, such as 'aws'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mount#type Mount#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mount#type Mount#type}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 List of managed key registry entry names that the mount in question is allowed to access.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mount#allowed_managed_keys Mount#allowed_managed_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mount#allowed_managed_keys Mount#allowed_managed_keys}
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Specifies the list of keys that will not be HMAC'd by audit devices in the request data object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mount#audit_non_hmac_request_keys Mount#audit_non_hmac_request_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mount#audit_non_hmac_request_keys Mount#audit_non_hmac_request_keys}
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Specifies the list of keys that will not be HMAC'd by audit devices in the response data object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mount#audit_non_hmac_response_keys Mount#audit_non_hmac_response_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mount#audit_non_hmac_response_keys Mount#audit_non_hmac_response_keys}
 
 ---
 
@@ -186,7 +186,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Default lease duration for tokens and secrets in seconds.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mount#default_lease_ttl_seconds Mount#default_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mount#default_lease_ttl_seconds Mount#default_lease_ttl_seconds}
 
 ---
 
@@ -196,7 +196,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Human-friendly description of the mount.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mount#description Mount#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mount#description Mount#description}
 
 ---
 
@@ -206,7 +206,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Enable the secrets engine to access Vault's external entropy source.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mount#external_entropy_access Mount#external_entropy_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mount#external_entropy_access Mount#external_entropy_access}
 
 ---
 
@@ -214,7 +214,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mount#id Mount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mount#id Mount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -227,7 +227,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Local mount flag that can be explicitly set to true to enforce local mount in HA environment.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mount#local Mount#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mount#local Mount#local}
 
 ---
 
@@ -237,7 +237,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Maximum possible lease duration for tokens and secrets in seconds.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mount#max_lease_ttl_seconds Mount#max_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mount#max_lease_ttl_seconds Mount#max_lease_ttl_seconds}
 
 ---
 
@@ -247,7 +247,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mount#namespace Mount#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mount#namespace Mount#namespace}
 
 ---
 
@@ -257,7 +257,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Specifies mount type specific options that are passed to the backend.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mount#options Mount#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mount#options Mount#options}
 
 ---
 
@@ -267,7 +267,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mount#seal_wrap Mount#seal_wrap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mount#seal_wrap Mount#seal_wrap}
 
 ---
 
@@ -675,7 +675,7 @@ mount.Mount.is_terraform_resource(
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.mount.Mount.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -798,10 +798,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.mount.Mount.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1174,7 +1174,7 @@ from cdktf_cdktf_provider_vault import mount
 
 mount.MountConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -1202,7 +1202,7 @@ mount.MountConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1216,7 +1216,7 @@ mount.MountConfig(
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.defaultLeaseTtlSeconds">default_lease_ttl_seconds</a></code> | <code>typing.Union[int, float]</code> | Default lease duration for tokens and secrets in seconds. |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.description">description</a></code> | <code>str</code> | Human-friendly description of the mount. |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.externalEntropyAccess">external_entropy_access</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable the secrets engine to access Vault's external entropy source. |
-| <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mount#id Mount#id}. |
+| <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mount#id Mount#id}. |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.local">local</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Local mount flag that can be explicitly set to true to enforce local mount in HA environment. |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.maxLeaseTtlSeconds">max_lease_ttl_seconds</a></code> | <code>typing.Union[int, float]</code> | Maximum possible lease duration for tokens and secrets in seconds. |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
@@ -1238,10 +1238,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.mount.MountConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1305,7 +1305,7 @@ path: str
 
 Where the secret backend will be mounted.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mount#path Mount#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mount#path Mount#path}
 
 ---
 
@@ -1319,7 +1319,7 @@ type: str
 
 Type of the backend, such as 'aws'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mount#type Mount#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mount#type Mount#type}
 
 ---
 
@@ -1333,7 +1333,7 @@ allowed_managed_keys: typing.List[str]
 
 List of managed key registry entry names that the mount in question is allowed to access.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mount#allowed_managed_keys Mount#allowed_managed_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mount#allowed_managed_keys Mount#allowed_managed_keys}
 
 ---
 
@@ -1347,7 +1347,7 @@ audit_non_hmac_request_keys: typing.List[str]
 
 Specifies the list of keys that will not be HMAC'd by audit devices in the request data object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mount#audit_non_hmac_request_keys Mount#audit_non_hmac_request_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mount#audit_non_hmac_request_keys Mount#audit_non_hmac_request_keys}
 
 ---
 
@@ -1361,7 +1361,7 @@ audit_non_hmac_response_keys: typing.List[str]
 
 Specifies the list of keys that will not be HMAC'd by audit devices in the response data object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mount#audit_non_hmac_response_keys Mount#audit_non_hmac_response_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mount#audit_non_hmac_response_keys Mount#audit_non_hmac_response_keys}
 
 ---
 
@@ -1375,7 +1375,7 @@ default_lease_ttl_seconds: typing.Union[int, float]
 
 Default lease duration for tokens and secrets in seconds.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mount#default_lease_ttl_seconds Mount#default_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mount#default_lease_ttl_seconds Mount#default_lease_ttl_seconds}
 
 ---
 
@@ -1389,7 +1389,7 @@ description: str
 
 Human-friendly description of the mount.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mount#description Mount#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mount#description Mount#description}
 
 ---
 
@@ -1403,7 +1403,7 @@ external_entropy_access: typing.Union[bool, IResolvable]
 
 Enable the secrets engine to access Vault's external entropy source.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mount#external_entropy_access Mount#external_entropy_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mount#external_entropy_access Mount#external_entropy_access}
 
 ---
 
@@ -1415,7 +1415,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mount#id Mount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mount#id Mount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1432,7 +1432,7 @@ local: typing.Union[bool, IResolvable]
 
 Local mount flag that can be explicitly set to true to enforce local mount in HA environment.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mount#local Mount#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mount#local Mount#local}
 
 ---
 
@@ -1446,7 +1446,7 @@ max_lease_ttl_seconds: typing.Union[int, float]
 
 Maximum possible lease duration for tokens and secrets in seconds.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mount#max_lease_ttl_seconds Mount#max_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mount#max_lease_ttl_seconds Mount#max_lease_ttl_seconds}
 
 ---
 
@@ -1460,7 +1460,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mount#namespace Mount#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mount#namespace Mount#namespace}
 
 ---
 
@@ -1474,7 +1474,7 @@ options: typing.Mapping[str]
 
 Specifies mount type specific options that are passed to the backend.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mount#options Mount#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mount#options Mount#options}
 
 ---
 
@@ -1488,7 +1488,7 @@ seal_wrap: typing.Union[bool, IResolvable]
 
 Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mount#seal_wrap Mount#seal_wrap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mount#seal_wrap Mount#seal_wrap}
 
 ---
 

@@ -1,6 +1,6 @@
 # `vault_azure_secret_backend_role`
 
-Refer to the Terraform Registory for docs: [`vault_azure_secret_backend_role`](https://www.terraform.io/docs/providers/vault/r/azure_secret_backend_role).
+Refer to the Terraform Registory for docs: [`vault_azure_secret_backend_role`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/azure_secret_backend_role).
 
 # `azureSecretBackendRole` Submodule <a name="`azureSecretBackendRole` Submodule" id="@cdktf/provider-vault.azureSecretBackendRole"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`vault_azure_secret_backend_role`](h
 
 ### AzureSecretBackendRole <a name="AzureSecretBackendRole" id="@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/azure_secret_backend_role vault_azure_secret_backend_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/azure_secret_backend_role vault_azure_secret_backend_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/azuresecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/azuresecretbackendrole"
 
 azuresecretbackendrole.NewAzureSecretBackendRole(scope Construct, id *string, config AzureSecretBackendRoleConfig) AzureSecretBackendRole
 ```
@@ -359,7 +359,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/azuresecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/azuresecretbackendrole"
 
 azuresecretbackendrole.AzureSecretBackendRole_IsConstruct(x interface{}) *bool
 ```
@@ -391,7 +391,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/azuresecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/azuresecretbackendrole"
 
 azuresecretbackendrole.AzureSecretBackendRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ azuresecretbackendrole.AzureSecretBackendRole_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/azuresecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/azuresecretbackendrole"
 
 azuresecretbackendrole.AzureSecretBackendRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -428,7 +428,7 @@ azuresecretbackendrole.AzureSecretBackendRole_IsTerraformResource(x interface{})
 | <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -542,10 +542,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -824,7 +824,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/azuresecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/azuresecretbackendrole"
 
 &azuresecretbackendrole.AzureSecretBackendRoleAzureGroups {
 	GroupName: *string,
@@ -835,7 +835,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/azuresecretbackendrole
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureGroups.property.groupName">GroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/azure_secret_backend_role#group_name AzureSecretBackendRole#group_name}. |
+| <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureGroups.property.groupName">GroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/azure_secret_backend_role#group_name AzureSecretBackendRole#group_name}. |
 
 ---
 
@@ -847,7 +847,7 @@ GroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/azure_secret_backend_role#group_name AzureSecretBackendRole#group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/azure_secret_backend_role#group_name AzureSecretBackendRole#group_name}.
 
 ---
 
@@ -856,7 +856,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/azuresecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/azuresecretbackendrole"
 
 &azuresecretbackendrole.AzureSecretBackendRoleAzureRoles {
 	Scope: *string,
@@ -869,9 +869,9 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/azuresecretbackendrole
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureRoles.property.scope">Scope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/azure_secret_backend_role#scope AzureSecretBackendRole#scope}. |
-| <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureRoles.property.roleId">RoleId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/azure_secret_backend_role#role_id AzureSecretBackendRole#role_id}. |
-| <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureRoles.property.roleName">RoleName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/azure_secret_backend_role#role_name AzureSecretBackendRole#role_name}. |
+| <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureRoles.property.scope">Scope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/azure_secret_backend_role#scope AzureSecretBackendRole#scope}. |
+| <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureRoles.property.roleId">RoleId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/azure_secret_backend_role#role_id AzureSecretBackendRole#role_id}. |
+| <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureRoles.property.roleName">RoleName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/azure_secret_backend_role#role_name AzureSecretBackendRole#role_name}. |
 
 ---
 
@@ -883,7 +883,7 @@ Scope *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/azure_secret_backend_role#scope AzureSecretBackendRole#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/azure_secret_backend_role#scope AzureSecretBackendRole#scope}.
 
 ---
 
@@ -895,7 +895,7 @@ RoleId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/azure_secret_backend_role#role_id AzureSecretBackendRole#role_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/azure_secret_backend_role#role_id AzureSecretBackendRole#role_id}.
 
 ---
 
@@ -907,7 +907,7 @@ RoleName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/azure_secret_backend_role#role_name AzureSecretBackendRole#role_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/azure_secret_backend_role#role_name AzureSecretBackendRole#role_name}.
 
 ---
 
@@ -916,11 +916,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/azuresecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/azuresecretbackendrole"
 
 &azuresecretbackendrole.AzureSecretBackendRoleConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -944,7 +944,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/azuresecretbackendrole
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -956,7 +956,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/azuresecretbackendrole
 | <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleConfig.property.azureRoles">AzureRoles</a></code> | <code>interface{}</code> | azure_roles block. |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleConfig.property.backend">Backend</a></code> | <code>*string</code> | Unique name of the auth backend to configure. |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleConfig.property.description">Description</a></code> | <code>*string</code> | Human-friendly description of the mount for the backend. |
-| <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/azure_secret_backend_role#id AzureSecretBackendRole#id}. |
+| <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/azure_secret_backend_role#id AzureSecretBackendRole#id}. |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleConfig.property.maxTtl">MaxTtl</a></code> | <code>*string</code> | Human-friendly description of the mount for the backend. |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleConfig.property.ttl">Ttl</a></code> | <code>*string</code> | Human-friendly description of the mount for the backend. |
@@ -976,10 +976,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -1043,7 +1043,7 @@ Role *string
 
 Name of the role to create.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/azure_secret_backend_role#role AzureSecretBackendRole#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/azure_secret_backend_role#role AzureSecretBackendRole#role}
 
 ---
 
@@ -1057,7 +1057,7 @@ ApplicationObjectId *string
 
 Application Object ID for an existing service principal that will be used instead of creating dynamic service principals.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/azure_secret_backend_role#application_object_id AzureSecretBackendRole#application_object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/azure_secret_backend_role#application_object_id AzureSecretBackendRole#application_object_id}
 
 ---
 
@@ -1071,7 +1071,7 @@ AzureGroups interface{}
 
 azure_groups block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/azure_secret_backend_role#azure_groups AzureSecretBackendRole#azure_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/azure_secret_backend_role#azure_groups AzureSecretBackendRole#azure_groups}
 
 ---
 
@@ -1085,7 +1085,7 @@ AzureRoles interface{}
 
 azure_roles block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/azure_secret_backend_role#azure_roles AzureSecretBackendRole#azure_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/azure_secret_backend_role#azure_roles AzureSecretBackendRole#azure_roles}
 
 ---
 
@@ -1099,7 +1099,7 @@ Backend *string
 
 Unique name of the auth backend to configure.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/azure_secret_backend_role#backend AzureSecretBackendRole#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/azure_secret_backend_role#backend AzureSecretBackendRole#backend}
 
 ---
 
@@ -1113,7 +1113,7 @@ Description *string
 
 Human-friendly description of the mount for the backend.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/azure_secret_backend_role#description AzureSecretBackendRole#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/azure_secret_backend_role#description AzureSecretBackendRole#description}
 
 ---
 
@@ -1125,7 +1125,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/azure_secret_backend_role#id AzureSecretBackendRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/azure_secret_backend_role#id AzureSecretBackendRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1142,7 +1142,7 @@ MaxTtl *string
 
 Human-friendly description of the mount for the backend.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/azure_secret_backend_role#max_ttl AzureSecretBackendRole#max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/azure_secret_backend_role#max_ttl AzureSecretBackendRole#max_ttl}
 
 ---
 
@@ -1156,7 +1156,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/azure_secret_backend_role#namespace AzureSecretBackendRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/azure_secret_backend_role#namespace AzureSecretBackendRole#namespace}
 
 ---
 
@@ -1170,7 +1170,7 @@ Ttl *string
 
 Human-friendly description of the mount for the backend.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/azure_secret_backend_role#ttl AzureSecretBackendRole#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/azure_secret_backend_role#ttl AzureSecretBackendRole#ttl}
 
 ---
 
@@ -1181,7 +1181,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/azuresecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/azuresecretbackendrole"
 
 azuresecretbackendrole.NewAzureSecretBackendRoleAzureGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AzureSecretBackendRoleAzureGroupsList
 ```
@@ -1324,7 +1324,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/azuresecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/azuresecretbackendrole"
 
 azuresecretbackendrole.NewAzureSecretBackendRoleAzureGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AzureSecretBackendRoleAzureGroupsOutputReference
 ```
@@ -1624,7 +1624,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureRolesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/azuresecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/azuresecretbackendrole"
 
 azuresecretbackendrole.NewAzureSecretBackendRoleAzureRolesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AzureSecretBackendRoleAzureRolesList
 ```
@@ -1767,7 +1767,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureRolesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/azuresecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/azuresecretbackendrole"
 
 azuresecretbackendrole.NewAzureSecretBackendRoleAzureRolesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AzureSecretBackendRoleAzureRolesOutputReference
 ```

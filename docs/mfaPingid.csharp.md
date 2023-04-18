@@ -1,6 +1,6 @@
 # `vault_mfa_pingid`
 
-Refer to the Terraform Registory for docs: [`vault_mfa_pingid`](https://www.terraform.io/docs/providers/vault/r/mfa_pingid).
+Refer to the Terraform Registory for docs: [`vault_mfa_pingid`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_pingid).
 
 # `mfaPingid` Submodule <a name="`mfaPingid` Submodule" id="@cdktf/provider-vault.mfaPingid"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_mfa_pingid`](https://www.terr
 
 ### MfaPingid <a name="MfaPingid" id="@cdktf/provider-vault.mfaPingid.MfaPingid"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/mfa_pingid vault_mfa_pingid}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_pingid vault_mfa_pingid}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.mfaPingid.MfaPingid.Initializer"></a>
 
@@ -360,7 +360,7 @@ MfaPingid.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-vault.mfaPingid.MfaPingid.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaPingid.MfaPingid.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaPingid.MfaPingid.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.mfaPingid.MfaPingid.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mfaPingid.MfaPingid.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaPingid.MfaPingid.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaPingid.MfaPingid.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaPingid.MfaPingid.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -473,10 +473,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.mfaPingid.MfaPingid.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -749,7 +749,7 @@ using HashiCorp.Cdktf.Providers.Vault;
 
 new MfaPingidConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -769,7 +769,7 @@ new MfaPingidConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.mfaPingid.MfaPingidConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.mfaPingid.MfaPingidConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mfaPingid.MfaPingidConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaPingid.MfaPingidConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaPingid.MfaPingidConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaPingid.MfaPingidConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -797,10 +797,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.mfaPingid.MfaPingidConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -866,7 +866,7 @@ The mount to tie this method to for use in automatic mappings.
 
 The mapping will use the Name field of Aliases associated with this mount as the username in the mapping.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_pingid#mount_accessor MfaPingid#mount_accessor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_pingid#mount_accessor MfaPingid#mount_accessor}
 
 ---
 
@@ -880,7 +880,7 @@ public string Name { get; set; }
 
 Name of the MFA method.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_pingid#name MfaPingid#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_pingid#name MfaPingid#name}
 
 ---
 
@@ -894,7 +894,7 @@ public string SettingsFileBase64 { get; set; }
 
 A base64-encoded third-party settings file retrieved from PingID's configuration page.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_pingid#settings_file_base64 MfaPingid#settings_file_base64}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_pingid#settings_file_base64 MfaPingid#settings_file_base64}
 
 ---
 
@@ -908,7 +908,7 @@ public string Id { get; set; }
 
 ID computed by Vault.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_pingid#id MfaPingid#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_pingid#id MfaPingid#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -925,7 +925,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_pingid#namespace MfaPingid#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_pingid#namespace MfaPingid#namespace}
 
 ---
 
@@ -939,7 +939,7 @@ public string UsernameFormat { get; set; }
 
 A format string for mapping Identity names to MFA method names. Values to substitute should be placed in `{{}}`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_pingid#username_format MfaPingid#username_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_pingid#username_format MfaPingid#username_format}
 
 ---
 

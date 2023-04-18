@@ -1,6 +1,6 @@
 # `vault_transform_role`
 
-Refer to the Terraform Registory for docs: [`vault_transform_role`](https://www.terraform.io/docs/providers/vault/r/transform_role).
+Refer to the Terraform Registory for docs: [`vault_transform_role`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_role).
 
 # `transformRole` Submodule <a name="`transformRole` Submodule" id="@cdktf/provider-vault.transformRole"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`vault_transform_role`](https://www.
 
 ### TransformRole <a name="TransformRole" id="@cdktf/provider-vault.transformRole.TransformRole"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/transform_role vault_transform_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_role vault_transform_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.transformRole.TransformRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/transformrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/transformrole"
 
 transformrole.NewTransformRole(scope Construct, id *string, config TransformRoleConfig) TransformRole
 ```
@@ -291,7 +291,7 @@ func ResetTransformations()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.transformRole.TransformRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/transformrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/transformrole"
 
 transformrole.TransformRole_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.transformRole.TransformRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/transformrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/transformrole"
 
 transformrole.TransformRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ transformrole.TransformRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.transformRole.TransformRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/transformrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/transformrole"
 
 transformrole.TransformRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ transformrole.TransformRole_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-vault.transformRole.TransformRole.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformRole.TransformRole.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformRole.TransformRole.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformRole.TransformRole.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.transformRole.TransformRole.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformRole.TransformRole.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformRole.TransformRole.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformRole.TransformRole.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -464,10 +464,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.transformRole.TransformRole.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -646,11 +646,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.transformRole.TransformRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/transformrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/transformrole"
 
 &transformrole.TransformRoleConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -669,7 +669,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/transformrole"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.transformRole.TransformRoleConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformRole.TransformRoleConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.transformRole.TransformRoleConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformRole.TransformRoleConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformRole.TransformRoleConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformRole.TransformRoleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -677,7 +677,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/transformrole"
 | <code><a href="#@cdktf/provider-vault.transformRole.TransformRoleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformRole.TransformRoleConfig.property.name">Name</a></code> | <code>*string</code> | The name of the role. |
 | <code><a href="#@cdktf/provider-vault.transformRole.TransformRoleConfig.property.path">Path</a></code> | <code>*string</code> | The mount path for a back-end, for example, the path given in "$ vault auth enable -path=my-aws aws". |
-| <code><a href="#@cdktf/provider-vault.transformRole.TransformRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_role#id TransformRole#id}. |
+| <code><a href="#@cdktf/provider-vault.transformRole.TransformRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_role#id TransformRole#id}. |
 | <code><a href="#@cdktf/provider-vault.transformRole.TransformRoleConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.transformRole.TransformRoleConfig.property.transformations">Transformations</a></code> | <code>*[]*string</code> | A comma separated string or slice of transformations to use. |
 
@@ -696,10 +696,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.transformRole.TransformRoleConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -763,7 +763,7 @@ Name *string
 
 The name of the role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_role#name TransformRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_role#name TransformRole#name}
 
 ---
 
@@ -777,7 +777,7 @@ Path *string
 
 The mount path for a back-end, for example, the path given in "$ vault auth enable -path=my-aws aws".
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_role#path TransformRole#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_role#path TransformRole#path}
 
 ---
 
@@ -789,7 +789,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_role#id TransformRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_role#id TransformRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -806,7 +806,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_role#namespace TransformRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_role#namespace TransformRole#namespace}
 
 ---
 
@@ -820,7 +820,7 @@ Transformations *[]*string
 
 A comma separated string or slice of transformations to use.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_role#transformations TransformRole#transformations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_role#transformations TransformRole#transformations}
 
 ---
 

@@ -1,6 +1,6 @@
 # `vault_transform_alphabet`
 
-Refer to the Terraform Registory for docs: [`vault_transform_alphabet`](https://www.terraform.io/docs/providers/vault/r/transform_alphabet).
+Refer to the Terraform Registory for docs: [`vault_transform_alphabet`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_alphabet).
 
 # `transformAlphabet` Submodule <a name="`transformAlphabet` Submodule" id="@cdktf/provider-vault.transformAlphabet"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_transform_alphabet`](https://
 
 ### TransformAlphabet <a name="TransformAlphabet" id="@cdktf/provider-vault.transformAlphabet.TransformAlphabet"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/transform_alphabet vault_transform_alphabet}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_alphabet vault_transform_alphabet}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.transformAlphabet.TransformAlphabet.Initializer"></a>
 
@@ -360,7 +360,7 @@ transformAlphabet.TransformAlphabet.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabet.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabet.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabet.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabet.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabet.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabet.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabet.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabet.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -464,10 +464,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.transformAlphabet.TransformAlphabet.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -656,7 +656,7 @@ const transformAlphabetConfig: transformAlphabet.TransformAlphabetConfig = { ...
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabetConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabetConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabetConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabetConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabetConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -665,7 +665,7 @@ const transformAlphabetConfig: transformAlphabet.TransformAlphabetConfig = { ...
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabetConfig.property.name">name</a></code> | <code>string</code> | The name of the alphabet. |
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabetConfig.property.path">path</a></code> | <code>string</code> | The mount path for a back-end, for example, the path given in "$ vault auth enable -path=my-aws aws". |
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabetConfig.property.alphabet">alphabet</a></code> | <code>string</code> | A string of characters that contains the alphabet set. |
-| <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabetConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_alphabet#id TransformAlphabet#id}. |
+| <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabetConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_alphabet#id TransformAlphabet#id}. |
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabetConfig.property.namespace">namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -683,10 +683,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.transformAlphabet.TransformAlphabetConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -750,7 +750,7 @@ public readonly name: string;
 
 The name of the alphabet.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_alphabet#name TransformAlphabet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_alphabet#name TransformAlphabet#name}
 
 ---
 
@@ -764,7 +764,7 @@ public readonly path: string;
 
 The mount path for a back-end, for example, the path given in "$ vault auth enable -path=my-aws aws".
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_alphabet#path TransformAlphabet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_alphabet#path TransformAlphabet#path}
 
 ---
 
@@ -778,7 +778,7 @@ public readonly alphabet: string;
 
 A string of characters that contains the alphabet set.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_alphabet#alphabet TransformAlphabet#alphabet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_alphabet#alphabet TransformAlphabet#alphabet}
 
 ---
 
@@ -790,7 +790,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_alphabet#id TransformAlphabet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_alphabet#id TransformAlphabet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -807,7 +807,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_alphabet#namespace TransformAlphabet#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_alphabet#namespace TransformAlphabet#namespace}
 
 ---
 

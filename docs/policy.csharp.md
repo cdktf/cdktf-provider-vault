@@ -1,6 +1,6 @@
 # `vault_policy`
 
-Refer to the Terraform Registory for docs: [`vault_policy`](https://www.terraform.io/docs/providers/vault/r/policy).
+Refer to the Terraform Registory for docs: [`vault_policy`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/policy).
 
 # `policy` Submodule <a name="`policy` Submodule" id="@cdktf/provider-vault.policy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_policy`](https://www.terrafor
 
 ### Policy <a name="Policy" id="@cdktf/provider-vault.policy.Policy"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/policy vault_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/policy vault_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.policy.Policy.Initializer"></a>
 
@@ -353,7 +353,7 @@ Policy.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-vault.policy.Policy.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.policy.Policy.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.policy.Policy.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.policy.Policy.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.policy.Policy.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.policy.Policy.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.policy.Policy.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.policy.Policy.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -455,10 +455,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.policy.Policy.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -621,7 +621,7 @@ using HashiCorp.Cdktf.Providers.Vault;
 
 new PolicyConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -639,7 +639,7 @@ new PolicyConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.policy.PolicyConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.policy.PolicyConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.policy.PolicyConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.policy.PolicyConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.policy.PolicyConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.policy.PolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -647,7 +647,7 @@ new PolicyConfig {
 | <code><a href="#@cdktf/provider-vault.policy.PolicyConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.policy.PolicyConfig.property.name">Name</a></code> | <code>string</code> | Name of the policy. |
 | <code><a href="#@cdktf/provider-vault.policy.PolicyConfig.property.policy">Policy</a></code> | <code>string</code> | The policy document. |
-| <code><a href="#@cdktf/provider-vault.policy.PolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/policy#id Policy#id}. |
+| <code><a href="#@cdktf/provider-vault.policy.PolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/policy#id Policy#id}. |
 | <code><a href="#@cdktf/provider-vault.policy.PolicyConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -665,10 +665,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.policy.PolicyConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -732,7 +732,7 @@ public string Name { get; set; }
 
 Name of the policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/policy#name Policy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/policy#name Policy#name}
 
 ---
 
@@ -746,7 +746,7 @@ public string Policy { get; set; }
 
 The policy document.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/policy#policy Policy#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/policy#policy Policy#policy}
 
 ---
 
@@ -758,7 +758,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/policy#id Policy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/policy#id Policy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -775,7 +775,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/policy#namespace Policy#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/policy#namespace Policy#namespace}
 
 ---
 

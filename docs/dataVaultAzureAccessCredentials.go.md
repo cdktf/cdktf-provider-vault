@@ -1,6 +1,6 @@
 # `data_vault_azure_access_credentials`
 
-Refer to the Terraform Registory for docs: [`data_vault_azure_access_credentials`](https://www.terraform.io/docs/providers/vault/d/azure_access_credentials).
+Refer to the Terraform Registory for docs: [`data_vault_azure_access_credentials`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/azure_access_credentials).
 
 # `dataVaultAzureAccessCredentials` Submodule <a name="`dataVaultAzureAccessCredentials` Submodule" id="@cdktf/provider-vault.dataVaultAzureAccessCredentials"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_vault_azure_access_credentials
 
 ### DataVaultAzureAccessCredentials <a name="DataVaultAzureAccessCredentials" id="@cdktf/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentials"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/d/azure_access_credentials vault_azure_access_credentials}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/azure_access_credentials vault_azure_access_credentials}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultazureaccesscredentials"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultazureaccesscredentials"
 
 datavaultazureaccesscredentials.NewDataVaultAzureAccessCredentials(scope Construct, id *string, config DataVaultAzureAccessCredentialsConfig) DataVaultAzureAccessCredentials
 ```
@@ -333,7 +333,7 @@ func ResetValidateCreds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentials.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultazureaccesscredentials"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultazureaccesscredentials"
 
 datavaultazureaccesscredentials.DataVaultAzureAccessCredentials_IsConstruct(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentials.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultazureaccesscredentials"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultazureaccesscredentials"
 
 datavaultazureaccesscredentials.DataVaultAzureAccessCredentials_IsTerraformElement(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datavaultazureaccesscredentials.DataVaultAzureAccessCredentials_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentials.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultazureaccesscredentials"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultazureaccesscredentials"
 
 datavaultazureaccesscredentials.DataVaultAzureAccessCredentials_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -401,7 +401,7 @@ datavaultazureaccesscredentials.DataVaultAzureAccessCredentials_IsTerraformDataS
 | <code><a href="#@cdktf/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentials.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentials.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentials.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentials.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentials.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentials.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentials.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentials.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -512,10 +512,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentials.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -864,11 +864,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentialsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultazureaccesscredentials"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultazureaccesscredentials"
 
 &datavaultazureaccesscredentials.DataVaultAzureAccessCredentialsConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -893,7 +893,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultazureaccesscr
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentialsConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentialsConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentialsConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentialsConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentialsConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentialsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -902,7 +902,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultazureaccesscr
 | <code><a href="#@cdktf/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentialsConfig.property.backend">Backend</a></code> | <code>*string</code> | Azure Secret Backend to read credentials from. |
 | <code><a href="#@cdktf/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentialsConfig.property.role">Role</a></code> | <code>*string</code> | Azure Secret Role to read credentials from. |
 | <code><a href="#@cdktf/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentialsConfig.property.environment">Environment</a></code> | <code>*string</code> | The Azure environment to use during credential validation. |
-| <code><a href="#@cdktf/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentialsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/azure_access_credentials#id DataVaultAzureAccessCredentials#id}. |
+| <code><a href="#@cdktf/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentialsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/azure_access_credentials#id DataVaultAzureAccessCredentials#id}. |
 | <code><a href="#@cdktf/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentialsConfig.property.maxCredValidationSeconds">MaxCredValidationSeconds</a></code> | <code>*f64</code> | If 'validate_creds' is true, the number of seconds after which to give up validating credentials. |
 | <code><a href="#@cdktf/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentialsConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentialsConfig.property.numSecondsBetweenTests">NumSecondsBetweenTests</a></code> | <code>*f64</code> | If 'validate_creds' is true, the number of seconds to wait between each test of generated credentials. |
@@ -926,10 +926,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentialsConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -993,7 +993,7 @@ Backend *string
 
 Azure Secret Backend to read credentials from.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/azure_access_credentials#backend DataVaultAzureAccessCredentials#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/azure_access_credentials#backend DataVaultAzureAccessCredentials#backend}
 
 ---
 
@@ -1007,7 +1007,7 @@ Role *string
 
 Azure Secret Role to read credentials from.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/azure_access_credentials#role DataVaultAzureAccessCredentials#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/azure_access_credentials#role DataVaultAzureAccessCredentials#role}
 
 ---
 
@@ -1024,7 +1024,7 @@ The Azure environment to use during credential validation.
 Defaults to the environment configured in the Vault backend.
 Some possible values: AzurePublicCloud, AzureUSGovernmentCloud
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/azure_access_credentials#environment DataVaultAzureAccessCredentials#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/azure_access_credentials#environment DataVaultAzureAccessCredentials#environment}
 
 ---
 
@@ -1036,7 +1036,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/azure_access_credentials#id DataVaultAzureAccessCredentials#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/azure_access_credentials#id DataVaultAzureAccessCredentials#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1053,7 +1053,7 @@ MaxCredValidationSeconds *f64
 
 If 'validate_creds' is true, the number of seconds after which to give up validating credentials.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/azure_access_credentials#max_cred_validation_seconds DataVaultAzureAccessCredentials#max_cred_validation_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/azure_access_credentials#max_cred_validation_seconds DataVaultAzureAccessCredentials#max_cred_validation_seconds}
 
 ---
 
@@ -1067,7 +1067,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/azure_access_credentials#namespace DataVaultAzureAccessCredentials#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/azure_access_credentials#namespace DataVaultAzureAccessCredentials#namespace}
 
 ---
 
@@ -1081,7 +1081,7 @@ NumSecondsBetweenTests *f64
 
 If 'validate_creds' is true, the number of seconds to wait between each test of generated credentials.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/azure_access_credentials#num_seconds_between_tests DataVaultAzureAccessCredentials#num_seconds_between_tests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/azure_access_credentials#num_seconds_between_tests DataVaultAzureAccessCredentials#num_seconds_between_tests}
 
 ---
 
@@ -1095,7 +1095,7 @@ NumSequentialSuccesses *f64
 
 If 'validate_creds' is true, the number of sequential successes required to validate generated credentials.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/azure_access_credentials#num_sequential_successes DataVaultAzureAccessCredentials#num_sequential_successes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/azure_access_credentials#num_sequential_successes DataVaultAzureAccessCredentials#num_sequential_successes}
 
 ---
 
@@ -1109,7 +1109,7 @@ SubscriptionId *string
 
 The subscription ID to use during credential validation. Defaults to the subscription ID configured in the Vault backend.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/azure_access_credentials#subscription_id DataVaultAzureAccessCredentials#subscription_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/azure_access_credentials#subscription_id DataVaultAzureAccessCredentials#subscription_id}
 
 ---
 
@@ -1123,7 +1123,7 @@ TenantId *string
 
 The tenant ID to use during credential validation. Defaults to the tenant ID configured in the Vault backend.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/azure_access_credentials#tenant_id DataVaultAzureAccessCredentials#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/azure_access_credentials#tenant_id DataVaultAzureAccessCredentials#tenant_id}
 
 ---
 
@@ -1137,7 +1137,7 @@ ValidateCreds interface{}
 
 Whether generated credentials should be validated before being returned.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/azure_access_credentials#validate_creds DataVaultAzureAccessCredentials#validate_creds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/azure_access_credentials#validate_creds DataVaultAzureAccessCredentials#validate_creds}
 
 ---
 

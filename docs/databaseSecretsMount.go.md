@@ -1,6 +1,6 @@
 # `vault_database_secrets_mount`
 
-Refer to the Terraform Registory for docs: [`vault_database_secrets_mount`](https://www.terraform.io/docs/providers/vault/r/database_secrets_mount).
+Refer to the Terraform Registory for docs: [`vault_database_secrets_mount`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount).
 
 # `databaseSecretsMount` Submodule <a name="`databaseSecretsMount` Submodule" id="@cdktf/provider-vault.databaseSecretsMount"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`vault_database_secrets_mount`](http
 
 ### DatabaseSecretsMount <a name="DatabaseSecretsMount" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount vault_database_secrets_mount}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount vault_database_secrets_mount}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMount(scope Construct, id *string, config DatabaseSecretsMountConfig) DatabaseSecretsMount
 ```
@@ -714,7 +714,7 @@ func ResetSnowflake()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 databasesecretsmount.DatabaseSecretsMount_IsConstruct(x interface{}) *bool
 ```
@@ -746,7 +746,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 databasesecretsmount.DatabaseSecretsMount_IsTerraformElement(x interface{}) *bool
 ```
@@ -760,7 +760,7 @@ databasesecretsmount.DatabaseSecretsMount_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 databasesecretsmount.DatabaseSecretsMount_IsTerraformResource(x interface{}) *bool
 ```
@@ -783,7 +783,7 @@ databasesecretsmount.DatabaseSecretsMount_IsTerraformResource(x interface{}) *bo
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -941,10 +941,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -1663,7 +1663,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 &databasesecretsmount.DatabaseSecretsMountCassandra {
 	Name: *string,
@@ -1718,7 +1718,7 @@ Name *string
 
 Name of the database connection.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#name DatabaseSecretsMount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
 
 ---
 
@@ -1732,7 +1732,7 @@ AllowedRoles *[]*string
 
 A list of roles that are allowed to use this connection.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
 
 ---
 
@@ -1746,7 +1746,7 @@ ConnectTimeout *f64
 
 The number of seconds to use as a connection timeout.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#connect_timeout DatabaseSecretsMount#connect_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#connect_timeout DatabaseSecretsMount#connect_timeout}
 
 ---
 
@@ -1760,7 +1760,7 @@ Data *map[string]*string
 
 A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#data DatabaseSecretsMount#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
 
 ---
 
@@ -1774,7 +1774,7 @@ Hosts *[]*string
 
 Cassandra hosts to connect to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#hosts DatabaseSecretsMount#hosts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#hosts DatabaseSecretsMount#hosts}
 
 ---
 
@@ -1788,7 +1788,7 @@ InsecureTls interface{}
 
 Whether to skip verification of the server certificate when using TLS.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#insecure_tls DatabaseSecretsMount#insecure_tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#insecure_tls DatabaseSecretsMount#insecure_tls}
 
 ---
 
@@ -1802,7 +1802,7 @@ Password *string
 
 The password to use when authenticating with Cassandra.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#password DatabaseSecretsMount#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
 
 ---
 
@@ -1818,7 +1818,7 @@ Concatenated PEM blocks containing a certificate and private key;
 
 a certificate, private key, and issuing CA certificate; or just a CA certificate.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#pem_bundle DatabaseSecretsMount#pem_bundle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#pem_bundle DatabaseSecretsMount#pem_bundle}
 
 ---
 
@@ -1834,7 +1834,7 @@ Specifies JSON containing a certificate and private key;
 
 a certificate, private key, and issuing CA certificate; or just a CA certificate.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#pem_json DatabaseSecretsMount#pem_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#pem_json DatabaseSecretsMount#pem_json}
 
 ---
 
@@ -1850,7 +1850,7 @@ Specifies the name of the plugin to use for this connection.
 
 Must be prefixed with the name of one of the supported database engine types.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
 
 ---
 
@@ -1864,7 +1864,7 @@ Port *f64
 
 The transport port to use to connect to Cassandra.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#port DatabaseSecretsMount#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#port DatabaseSecretsMount#port}
 
 ---
 
@@ -1878,7 +1878,7 @@ ProtocolVersion *f64
 
 The CQL protocol version to use.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#protocol_version DatabaseSecretsMount#protocol_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#protocol_version DatabaseSecretsMount#protocol_version}
 
 ---
 
@@ -1892,7 +1892,7 @@ RootRotationStatements *[]*string
 
 A list of database statements to be executed to rotate the root user's credentials.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
 
 ---
 
@@ -1906,7 +1906,7 @@ Tls interface{}
 
 Whether to use TLS when connecting to Cassandra.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#tls DatabaseSecretsMount#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#tls DatabaseSecretsMount#tls}
 
 ---
 
@@ -1920,7 +1920,7 @@ Username *string
 
 The username to use when authenticating with Cassandra.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#username DatabaseSecretsMount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
 
 ---
 
@@ -1934,7 +1934,7 @@ VerifyConnection interface{}
 
 Specifies if the connection is verified during initial configuration.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
 
 ---
 
@@ -1943,11 +1943,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 &databasesecretsmount.DatabaseSecretsMountConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -1992,7 +1992,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -2009,7 +2009,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.elasticsearch">Elasticsearch</a></code> | <code>interface{}</code> | elasticsearch block. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.externalEntropyAccess">ExternalEntropyAccess</a></code> | <code>interface{}</code> | Enable the secrets engine to access Vault's external entropy source. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.hana">Hana</a></code> | <code>interface{}</code> | hana block. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#id DatabaseSecretsMount#id}. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#id DatabaseSecretsMount#id}. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.influxdb">Influxdb</a></code> | <code>interface{}</code> | influxdb block. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.local">Local</a></code> | <code>interface{}</code> | Local mount flag that can be explicitly set to true to enforce local mount in HA environment. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.maxLeaseTtlSeconds">MaxLeaseTtlSeconds</a></code> | <code>*f64</code> | Maximum possible lease duration for tokens and secrets in seconds. |
@@ -2045,10 +2045,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -2112,7 +2112,7 @@ Path *string
 
 Where the secret backend will be mounted.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#path DatabaseSecretsMount#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#path DatabaseSecretsMount#path}
 
 ---
 
@@ -2126,7 +2126,7 @@ AllowedManagedKeys *[]*string
 
 List of managed key registry entry names that the mount in question is allowed to access.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#allowed_managed_keys DatabaseSecretsMount#allowed_managed_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#allowed_managed_keys DatabaseSecretsMount#allowed_managed_keys}
 
 ---
 
@@ -2140,7 +2140,7 @@ AuditNonHmacRequestKeys *[]*string
 
 Specifies the list of keys that will not be HMAC'd by audit devices in the request data object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#audit_non_hmac_request_keys DatabaseSecretsMount#audit_non_hmac_request_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#audit_non_hmac_request_keys DatabaseSecretsMount#audit_non_hmac_request_keys}
 
 ---
 
@@ -2154,7 +2154,7 @@ AuditNonHmacResponseKeys *[]*string
 
 Specifies the list of keys that will not be HMAC'd by audit devices in the response data object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#audit_non_hmac_response_keys DatabaseSecretsMount#audit_non_hmac_response_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#audit_non_hmac_response_keys DatabaseSecretsMount#audit_non_hmac_response_keys}
 
 ---
 
@@ -2168,7 +2168,7 @@ Cassandra interface{}
 
 cassandra block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#cassandra DatabaseSecretsMount#cassandra}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#cassandra DatabaseSecretsMount#cassandra}
 
 ---
 
@@ -2182,7 +2182,7 @@ Couchbase interface{}
 
 couchbase block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#couchbase DatabaseSecretsMount#couchbase}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#couchbase DatabaseSecretsMount#couchbase}
 
 ---
 
@@ -2196,7 +2196,7 @@ DefaultLeaseTtlSeconds *f64
 
 Default lease duration for tokens and secrets in seconds.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#default_lease_ttl_seconds DatabaseSecretsMount#default_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#default_lease_ttl_seconds DatabaseSecretsMount#default_lease_ttl_seconds}
 
 ---
 
@@ -2210,7 +2210,7 @@ Description *string
 
 Human-friendly description of the mount.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#description DatabaseSecretsMount#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#description DatabaseSecretsMount#description}
 
 ---
 
@@ -2224,7 +2224,7 @@ Elasticsearch interface{}
 
 elasticsearch block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#elasticsearch DatabaseSecretsMount#elasticsearch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#elasticsearch DatabaseSecretsMount#elasticsearch}
 
 ---
 
@@ -2238,7 +2238,7 @@ ExternalEntropyAccess interface{}
 
 Enable the secrets engine to access Vault's external entropy source.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#external_entropy_access DatabaseSecretsMount#external_entropy_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#external_entropy_access DatabaseSecretsMount#external_entropy_access}
 
 ---
 
@@ -2252,7 +2252,7 @@ Hana interface{}
 
 hana block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#hana DatabaseSecretsMount#hana}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#hana DatabaseSecretsMount#hana}
 
 ---
 
@@ -2264,7 +2264,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#id DatabaseSecretsMount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#id DatabaseSecretsMount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2281,7 +2281,7 @@ Influxdb interface{}
 
 influxdb block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#influxdb DatabaseSecretsMount#influxdb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#influxdb DatabaseSecretsMount#influxdb}
 
 ---
 
@@ -2295,7 +2295,7 @@ Local interface{}
 
 Local mount flag that can be explicitly set to true to enforce local mount in HA environment.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#local DatabaseSecretsMount#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#local DatabaseSecretsMount#local}
 
 ---
 
@@ -2309,7 +2309,7 @@ MaxLeaseTtlSeconds *f64
 
 Maximum possible lease duration for tokens and secrets in seconds.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#max_lease_ttl_seconds DatabaseSecretsMount#max_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#max_lease_ttl_seconds DatabaseSecretsMount#max_lease_ttl_seconds}
 
 ---
 
@@ -2323,7 +2323,7 @@ Mongodb interface{}
 
 mongodb block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#mongodb DatabaseSecretsMount#mongodb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#mongodb DatabaseSecretsMount#mongodb}
 
 ---
 
@@ -2337,7 +2337,7 @@ Mongodbatlas interface{}
 
 mongodbatlas block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#mongodbatlas DatabaseSecretsMount#mongodbatlas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#mongodbatlas DatabaseSecretsMount#mongodbatlas}
 
 ---
 
@@ -2351,7 +2351,7 @@ Mssql interface{}
 
 mssql block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#mssql DatabaseSecretsMount#mssql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#mssql DatabaseSecretsMount#mssql}
 
 ---
 
@@ -2365,7 +2365,7 @@ Mysql interface{}
 
 mysql block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#mysql DatabaseSecretsMount#mysql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#mysql DatabaseSecretsMount#mysql}
 
 ---
 
@@ -2379,7 +2379,7 @@ MysqlAurora interface{}
 
 mysql_aurora block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#mysql_aurora DatabaseSecretsMount#mysql_aurora}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#mysql_aurora DatabaseSecretsMount#mysql_aurora}
 
 ---
 
@@ -2393,7 +2393,7 @@ MysqlLegacy interface{}
 
 mysql_legacy block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#mysql_legacy DatabaseSecretsMount#mysql_legacy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#mysql_legacy DatabaseSecretsMount#mysql_legacy}
 
 ---
 
@@ -2407,7 +2407,7 @@ MysqlRds interface{}
 
 mysql_rds block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#mysql_rds DatabaseSecretsMount#mysql_rds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#mysql_rds DatabaseSecretsMount#mysql_rds}
 
 ---
 
@@ -2421,7 +2421,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#namespace DatabaseSecretsMount#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#namespace DatabaseSecretsMount#namespace}
 
 ---
 
@@ -2435,7 +2435,7 @@ Options *map[string]*string
 
 Specifies mount type specific options that are passed to the backend.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#options DatabaseSecretsMount#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#options DatabaseSecretsMount#options}
 
 ---
 
@@ -2449,7 +2449,7 @@ Oracle interface{}
 
 oracle block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#oracle DatabaseSecretsMount#oracle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#oracle DatabaseSecretsMount#oracle}
 
 ---
 
@@ -2463,7 +2463,7 @@ Postgresql interface{}
 
 postgresql block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#postgresql DatabaseSecretsMount#postgresql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#postgresql DatabaseSecretsMount#postgresql}
 
 ---
 
@@ -2477,7 +2477,7 @@ Redis interface{}
 
 redis block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#redis DatabaseSecretsMount#redis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#redis DatabaseSecretsMount#redis}
 
 ---
 
@@ -2491,7 +2491,7 @@ RedisElasticache interface{}
 
 redis_elasticache block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#redis_elasticache DatabaseSecretsMount#redis_elasticache}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#redis_elasticache DatabaseSecretsMount#redis_elasticache}
 
 ---
 
@@ -2505,7 +2505,7 @@ Redshift interface{}
 
 redshift block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#redshift DatabaseSecretsMount#redshift}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#redshift DatabaseSecretsMount#redshift}
 
 ---
 
@@ -2519,7 +2519,7 @@ SealWrap interface{}
 
 Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#seal_wrap DatabaseSecretsMount#seal_wrap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#seal_wrap DatabaseSecretsMount#seal_wrap}
 
 ---
 
@@ -2533,7 +2533,7 @@ Snowflake interface{}
 
 snowflake block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#snowflake DatabaseSecretsMount#snowflake}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#snowflake DatabaseSecretsMount#snowflake}
 
 ---
 
@@ -2542,7 +2542,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 &databasesecretsmount.DatabaseSecretsMountCouchbase {
 	Hosts: *[]*string,
@@ -2593,7 +2593,7 @@ Hosts *[]*string
 
 A set of Couchbase URIs to connect to. Must use `couchbases://` scheme if `tls` is `true`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#hosts DatabaseSecretsMount#hosts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#hosts DatabaseSecretsMount#hosts}
 
 ---
 
@@ -2607,7 +2607,7 @@ Name *string
 
 Name of the database connection.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#name DatabaseSecretsMount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
 
 ---
 
@@ -2621,7 +2621,7 @@ Password *string
 
 Specifies the password corresponding to the given username.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#password DatabaseSecretsMount#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
 
 ---
 
@@ -2635,7 +2635,7 @@ Username *string
 
 Specifies the username for Vault to use.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#username DatabaseSecretsMount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
 
 ---
 
@@ -2649,7 +2649,7 @@ AllowedRoles *[]*string
 
 A list of roles that are allowed to use this connection.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
 
 ---
 
@@ -2665,7 +2665,7 @@ Required if `tls` is `true`.
 
 Specifies the certificate authority of the Couchbase server, as a PEM certificate that has been base64 encoded.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#base64_pem DatabaseSecretsMount#base64_pem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#base64_pem DatabaseSecretsMount#base64_pem}
 
 ---
 
@@ -2679,7 +2679,7 @@ BucketName *string
 
 Required for Couchbase versions prior to 6.5.0. This is only used to verify vault's connection to the server.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#bucket_name DatabaseSecretsMount#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#bucket_name DatabaseSecretsMount#bucket_name}
 
 ---
 
@@ -2693,7 +2693,7 @@ Data *map[string]*string
 
 A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#data DatabaseSecretsMount#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
 
 ---
 
@@ -2707,7 +2707,7 @@ InsecureTls interface{}
 
 Specifies whether to skip verification of the server certificate when using TLS.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#insecure_tls DatabaseSecretsMount#insecure_tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#insecure_tls DatabaseSecretsMount#insecure_tls}
 
 ---
 
@@ -2723,7 +2723,7 @@ Specifies the name of the plugin to use for this connection.
 
 Must be prefixed with the name of one of the supported database engine types.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
 
 ---
 
@@ -2737,7 +2737,7 @@ RootRotationStatements *[]*string
 
 A list of database statements to be executed to rotate the root user's credentials.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
 
 ---
 
@@ -2751,7 +2751,7 @@ Tls interface{}
 
 Specifies whether to use TLS when connecting to Couchbase.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#tls DatabaseSecretsMount#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#tls DatabaseSecretsMount#tls}
 
 ---
 
@@ -2765,7 +2765,7 @@ UsernameTemplate *string
 
 Template describing how dynamic usernames are generated.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
 
 ---
 
@@ -2779,7 +2779,7 @@ VerifyConnection interface{}
 
 Specifies if the connection is verified during initial configuration.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
 
 ---
 
@@ -2788,7 +2788,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 &databasesecretsmount.DatabaseSecretsMountElasticsearch {
 	Name: *string,
@@ -2843,7 +2843,7 @@ Name *string
 
 Name of the database connection.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#name DatabaseSecretsMount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
 
 ---
 
@@ -2857,7 +2857,7 @@ Password *string
 
 The password to be used in the connection URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#password DatabaseSecretsMount#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
 
 ---
 
@@ -2871,7 +2871,7 @@ Url *string
 
 The URL for Elasticsearch's API.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#url DatabaseSecretsMount#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#url DatabaseSecretsMount#url}
 
 ---
 
@@ -2885,7 +2885,7 @@ Username *string
 
 The username to be used in the connection URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#username DatabaseSecretsMount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
 
 ---
 
@@ -2899,7 +2899,7 @@ AllowedRoles *[]*string
 
 A list of roles that are allowed to use this connection.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
 
 ---
 
@@ -2913,7 +2913,7 @@ CaCert *string
 
 The path to a PEM-encoded CA cert file to use to verify the Elasticsearch server's identity.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#ca_cert DatabaseSecretsMount#ca_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#ca_cert DatabaseSecretsMount#ca_cert}
 
 ---
 
@@ -2927,7 +2927,7 @@ CaPath *string
 
 The path to a directory of PEM-encoded CA cert files to use to verify the Elasticsearch server's identity.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#ca_path DatabaseSecretsMount#ca_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#ca_path DatabaseSecretsMount#ca_path}
 
 ---
 
@@ -2941,7 +2941,7 @@ ClientCert *string
 
 The path to the certificate for the Elasticsearch client to present for communication.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#client_cert DatabaseSecretsMount#client_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#client_cert DatabaseSecretsMount#client_cert}
 
 ---
 
@@ -2955,7 +2955,7 @@ ClientKey *string
 
 The path to the key for the Elasticsearch client to use for communication.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#client_key DatabaseSecretsMount#client_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#client_key DatabaseSecretsMount#client_key}
 
 ---
 
@@ -2969,7 +2969,7 @@ Data *map[string]*string
 
 A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#data DatabaseSecretsMount#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
 
 ---
 
@@ -2983,7 +2983,7 @@ Insecure interface{}
 
 Whether to disable certificate verification.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#insecure DatabaseSecretsMount#insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#insecure DatabaseSecretsMount#insecure}
 
 ---
 
@@ -2999,7 +2999,7 @@ Specifies the name of the plugin to use for this connection.
 
 Must be prefixed with the name of one of the supported database engine types.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
 
 ---
 
@@ -3013,7 +3013,7 @@ RootRotationStatements *[]*string
 
 A list of database statements to be executed to rotate the root user's credentials.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
 
 ---
 
@@ -3027,7 +3027,7 @@ TlsServerName *string
 
 This, if set, is used to set the SNI host when connecting via TLS.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#tls_server_name DatabaseSecretsMount#tls_server_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#tls_server_name DatabaseSecretsMount#tls_server_name}
 
 ---
 
@@ -3041,7 +3041,7 @@ UsernameTemplate *string
 
 Template describing how dynamic usernames are generated.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
 
 ---
 
@@ -3055,7 +3055,7 @@ VerifyConnection interface{}
 
 Specifies if the connection is verified during initial configuration.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
 
 ---
 
@@ -3064,7 +3064,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 &databasesecretsmount.DatabaseSecretsMountHana {
 	Name: *string,
@@ -3113,7 +3113,7 @@ Name *string
 
 Name of the database connection.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#name DatabaseSecretsMount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
 
 ---
 
@@ -3127,7 +3127,7 @@ AllowedRoles *[]*string
 
 A list of roles that are allowed to use this connection.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
 
 ---
 
@@ -3141,7 +3141,7 @@ ConnectionUrl *string
 
 Connection string to use to connect to the database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
 
 ---
 
@@ -3155,7 +3155,7 @@ Data *map[string]*string
 
 A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#data DatabaseSecretsMount#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
 
 ---
 
@@ -3169,7 +3169,7 @@ DisableEscaping interface{}
 
 Disable special character escaping in username and password.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#disable_escaping DatabaseSecretsMount#disable_escaping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#disable_escaping DatabaseSecretsMount#disable_escaping}
 
 ---
 
@@ -3183,7 +3183,7 @@ MaxConnectionLifetime *f64
 
 Maximum number of seconds a connection may be reused.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
 
 ---
 
@@ -3197,7 +3197,7 @@ MaxIdleConnections *f64
 
 Maximum number of idle connections to the database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
 
 ---
 
@@ -3211,7 +3211,7 @@ MaxOpenConnections *f64
 
 Maximum number of open connections to the database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
 
 ---
 
@@ -3225,7 +3225,7 @@ Password *string
 
 The root credential password used in the connection URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#password DatabaseSecretsMount#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
 
 ---
 
@@ -3241,7 +3241,7 @@ Specifies the name of the plugin to use for this connection.
 
 Must be prefixed with the name of one of the supported database engine types.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
 
 ---
 
@@ -3255,7 +3255,7 @@ RootRotationStatements *[]*string
 
 A list of database statements to be executed to rotate the root user's credentials.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
 
 ---
 
@@ -3269,7 +3269,7 @@ Username *string
 
 The root credential username used in the connection URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#username DatabaseSecretsMount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
 
 ---
 
@@ -3283,7 +3283,7 @@ VerifyConnection interface{}
 
 Specifies if the connection is verified during initial configuration.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
 
 ---
 
@@ -3292,7 +3292,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 &databasesecretsmount.DatabaseSecretsMountInfluxdb {
 	Host: *string,
@@ -3347,7 +3347,7 @@ Host *string
 
 Influxdb host to connect to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#host DatabaseSecretsMount#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#host DatabaseSecretsMount#host}
 
 ---
 
@@ -3361,7 +3361,7 @@ Name *string
 
 Name of the database connection.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#name DatabaseSecretsMount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
 
 ---
 
@@ -3375,7 +3375,7 @@ Password *string
 
 Specifies the password corresponding to the given username.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#password DatabaseSecretsMount#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
 
 ---
 
@@ -3389,7 +3389,7 @@ Username *string
 
 Specifies the username to use for superuser access.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#username DatabaseSecretsMount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
 
 ---
 
@@ -3403,7 +3403,7 @@ AllowedRoles *[]*string
 
 A list of roles that are allowed to use this connection.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
 
 ---
 
@@ -3417,7 +3417,7 @@ ConnectTimeout *f64
 
 The number of seconds to use as a connection timeout.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#connect_timeout DatabaseSecretsMount#connect_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#connect_timeout DatabaseSecretsMount#connect_timeout}
 
 ---
 
@@ -3431,7 +3431,7 @@ Data *map[string]*string
 
 A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#data DatabaseSecretsMount#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
 
 ---
 
@@ -3445,7 +3445,7 @@ InsecureTls interface{}
 
 Whether to skip verification of the server certificate when using TLS.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#insecure_tls DatabaseSecretsMount#insecure_tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#insecure_tls DatabaseSecretsMount#insecure_tls}
 
 ---
 
@@ -3461,7 +3461,7 @@ Concatenated PEM blocks containing a certificate and private key;
 
 a certificate, private key, and issuing CA certificate; or just a CA certificate.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#pem_bundle DatabaseSecretsMount#pem_bundle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#pem_bundle DatabaseSecretsMount#pem_bundle}
 
 ---
 
@@ -3477,7 +3477,7 @@ Specifies JSON containing a certificate and private key;
 
 a certificate, private key, and issuing CA certificate; or just a CA certificate.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#pem_json DatabaseSecretsMount#pem_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#pem_json DatabaseSecretsMount#pem_json}
 
 ---
 
@@ -3493,7 +3493,7 @@ Specifies the name of the plugin to use for this connection.
 
 Must be prefixed with the name of one of the supported database engine types.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
 
 ---
 
@@ -3507,7 +3507,7 @@ Port *f64
 
 The transport port to use to connect to Influxdb.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#port DatabaseSecretsMount#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#port DatabaseSecretsMount#port}
 
 ---
 
@@ -3521,7 +3521,7 @@ RootRotationStatements *[]*string
 
 A list of database statements to be executed to rotate the root user's credentials.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
 
 ---
 
@@ -3535,7 +3535,7 @@ Tls interface{}
 
 Whether to use TLS when connecting to Influxdb.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#tls DatabaseSecretsMount#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#tls DatabaseSecretsMount#tls}
 
 ---
 
@@ -3549,7 +3549,7 @@ UsernameTemplate *string
 
 Template describing how dynamic usernames are generated.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
 
 ---
 
@@ -3563,7 +3563,7 @@ VerifyConnection interface{}
 
 Specifies if the connection is verified during initial configuration.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
 
 ---
 
@@ -3572,7 +3572,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 &databasesecretsmount.DatabaseSecretsMountMongodb {
 	Name: *string,
@@ -3621,7 +3621,7 @@ Name *string
 
 Name of the database connection.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#name DatabaseSecretsMount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
 
 ---
 
@@ -3635,7 +3635,7 @@ AllowedRoles *[]*string
 
 A list of roles that are allowed to use this connection.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
 
 ---
 
@@ -3649,7 +3649,7 @@ ConnectionUrl *string
 
 Connection string to use to connect to the database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
 
 ---
 
@@ -3663,7 +3663,7 @@ Data *map[string]*string
 
 A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#data DatabaseSecretsMount#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
 
 ---
 
@@ -3677,7 +3677,7 @@ MaxConnectionLifetime *f64
 
 Maximum number of seconds a connection may be reused.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
 
 ---
 
@@ -3691,7 +3691,7 @@ MaxIdleConnections *f64
 
 Maximum number of idle connections to the database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
 
 ---
 
@@ -3705,7 +3705,7 @@ MaxOpenConnections *f64
 
 Maximum number of open connections to the database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
 
 ---
 
@@ -3719,7 +3719,7 @@ Password *string
 
 The root credential password used in the connection URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#password DatabaseSecretsMount#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
 
 ---
 
@@ -3735,7 +3735,7 @@ Specifies the name of the plugin to use for this connection.
 
 Must be prefixed with the name of one of the supported database engine types.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
 
 ---
 
@@ -3749,7 +3749,7 @@ RootRotationStatements *[]*string
 
 A list of database statements to be executed to rotate the root user's credentials.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
 
 ---
 
@@ -3763,7 +3763,7 @@ Username *string
 
 The root credential username used in the connection URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#username DatabaseSecretsMount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
 
 ---
 
@@ -3777,7 +3777,7 @@ UsernameTemplate *string
 
 Username generation template.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
 
 ---
 
@@ -3791,7 +3791,7 @@ VerifyConnection interface{}
 
 Specifies if the connection is verified during initial configuration.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
 
 ---
 
@@ -3800,7 +3800,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 &databasesecretsmount.DatabaseSecretsMountMongodbatlas {
 	Name: *string,
@@ -3841,7 +3841,7 @@ Name *string
 
 Name of the database connection.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#name DatabaseSecretsMount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
 
 ---
 
@@ -3855,7 +3855,7 @@ PrivateKey *string
 
 The Private Programmatic API Key used to connect with MongoDB Atlas API.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#private_key DatabaseSecretsMount#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#private_key DatabaseSecretsMount#private_key}
 
 ---
 
@@ -3869,7 +3869,7 @@ ProjectId *string
 
 The Project ID the Database User should be created within.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#project_id DatabaseSecretsMount#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#project_id DatabaseSecretsMount#project_id}
 
 ---
 
@@ -3883,7 +3883,7 @@ PublicKey *string
 
 The Public Programmatic API Key used to authenticate with the MongoDB Atlas API.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#public_key DatabaseSecretsMount#public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#public_key DatabaseSecretsMount#public_key}
 
 ---
 
@@ -3897,7 +3897,7 @@ AllowedRoles *[]*string
 
 A list of roles that are allowed to use this connection.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
 
 ---
 
@@ -3911,7 +3911,7 @@ Data *map[string]*string
 
 A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#data DatabaseSecretsMount#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
 
 ---
 
@@ -3927,7 +3927,7 @@ Specifies the name of the plugin to use for this connection.
 
 Must be prefixed with the name of one of the supported database engine types.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
 
 ---
 
@@ -3941,7 +3941,7 @@ RootRotationStatements *[]*string
 
 A list of database statements to be executed to rotate the root user's credentials.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
 
 ---
 
@@ -3955,7 +3955,7 @@ VerifyConnection interface{}
 
 Specifies if the connection is verified during initial configuration.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
 
 ---
 
@@ -3964,7 +3964,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 &databasesecretsmount.DatabaseSecretsMountMssql {
 	Name: *string,
@@ -4017,7 +4017,7 @@ Name *string
 
 Name of the database connection.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#name DatabaseSecretsMount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
 
 ---
 
@@ -4031,7 +4031,7 @@ AllowedRoles *[]*string
 
 A list of roles that are allowed to use this connection.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
 
 ---
 
@@ -4045,7 +4045,7 @@ ConnectionUrl *string
 
 Connection string to use to connect to the database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
 
 ---
 
@@ -4059,7 +4059,7 @@ ContainedDb interface{}
 
 Set to true when the target is a Contained Database, e.g. AzureSQL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#contained_db DatabaseSecretsMount#contained_db}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#contained_db DatabaseSecretsMount#contained_db}
 
 ---
 
@@ -4073,7 +4073,7 @@ Data *map[string]*string
 
 A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#data DatabaseSecretsMount#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
 
 ---
 
@@ -4087,7 +4087,7 @@ DisableEscaping interface{}
 
 Disable special character escaping in username and password.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#disable_escaping DatabaseSecretsMount#disable_escaping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#disable_escaping DatabaseSecretsMount#disable_escaping}
 
 ---
 
@@ -4101,7 +4101,7 @@ MaxConnectionLifetime *f64
 
 Maximum number of seconds a connection may be reused.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
 
 ---
 
@@ -4115,7 +4115,7 @@ MaxIdleConnections *f64
 
 Maximum number of idle connections to the database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
 
 ---
 
@@ -4129,7 +4129,7 @@ MaxOpenConnections *f64
 
 Maximum number of open connections to the database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
 
 ---
 
@@ -4143,7 +4143,7 @@ Password *string
 
 The root credential password used in the connection URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#password DatabaseSecretsMount#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
 
 ---
 
@@ -4159,7 +4159,7 @@ Specifies the name of the plugin to use for this connection.
 
 Must be prefixed with the name of one of the supported database engine types.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
 
 ---
 
@@ -4173,7 +4173,7 @@ RootRotationStatements *[]*string
 
 A list of database statements to be executed to rotate the root user's credentials.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
 
 ---
 
@@ -4187,7 +4187,7 @@ Username *string
 
 The root credential username used in the connection URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#username DatabaseSecretsMount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
 
 ---
 
@@ -4201,7 +4201,7 @@ UsernameTemplate *string
 
 Username generation template.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
 
 ---
 
@@ -4215,7 +4215,7 @@ VerifyConnection interface{}
 
 Specifies if the connection is verified during initial configuration.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
 
 ---
 
@@ -4224,7 +4224,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 &databasesecretsmount.DatabaseSecretsMountMysql {
 	Name: *string,
@@ -4277,7 +4277,7 @@ Name *string
 
 Name of the database connection.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#name DatabaseSecretsMount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
 
 ---
 
@@ -4291,7 +4291,7 @@ AllowedRoles *[]*string
 
 A list of roles that are allowed to use this connection.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
 
 ---
 
@@ -4305,7 +4305,7 @@ ConnectionUrl *string
 
 Connection string to use to connect to the database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
 
 ---
 
@@ -4319,7 +4319,7 @@ Data *map[string]*string
 
 A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#data DatabaseSecretsMount#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
 
 ---
 
@@ -4333,7 +4333,7 @@ MaxConnectionLifetime *f64
 
 Maximum number of seconds a connection may be reused.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
 
 ---
 
@@ -4347,7 +4347,7 @@ MaxIdleConnections *f64
 
 Maximum number of idle connections to the database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
 
 ---
 
@@ -4361,7 +4361,7 @@ MaxOpenConnections *f64
 
 Maximum number of open connections to the database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
 
 ---
 
@@ -4375,7 +4375,7 @@ Password *string
 
 The root credential password used in the connection URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#password DatabaseSecretsMount#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
 
 ---
 
@@ -4391,7 +4391,7 @@ Specifies the name of the plugin to use for this connection.
 
 Must be prefixed with the name of one of the supported database engine types.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
 
 ---
 
@@ -4405,7 +4405,7 @@ RootRotationStatements *[]*string
 
 A list of database statements to be executed to rotate the root user's credentials.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
 
 ---
 
@@ -4419,7 +4419,7 @@ TlsCa *string
 
 x509 CA file for validating the certificate presented by the MySQL server. Must be PEM encoded.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#tls_ca DatabaseSecretsMount#tls_ca}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#tls_ca DatabaseSecretsMount#tls_ca}
 
 ---
 
@@ -4435,7 +4435,7 @@ x509 certificate for connecting to the database.
 
 This must be a PEM encoded version of the private key and the certificate combined.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#tls_certificate_key DatabaseSecretsMount#tls_certificate_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#tls_certificate_key DatabaseSecretsMount#tls_certificate_key}
 
 ---
 
@@ -4449,7 +4449,7 @@ Username *string
 
 The root credential username used in the connection URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#username DatabaseSecretsMount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
 
 ---
 
@@ -4463,7 +4463,7 @@ UsernameTemplate *string
 
 Username generation template.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
 
 ---
 
@@ -4477,7 +4477,7 @@ VerifyConnection interface{}
 
 Specifies if the connection is verified during initial configuration.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
 
 ---
 
@@ -4486,7 +4486,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 &databasesecretsmount.DatabaseSecretsMountMysqlAurora {
 	Name: *string,
@@ -4535,7 +4535,7 @@ Name *string
 
 Name of the database connection.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#name DatabaseSecretsMount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
 
 ---
 
@@ -4549,7 +4549,7 @@ AllowedRoles *[]*string
 
 A list of roles that are allowed to use this connection.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
 
 ---
 
@@ -4563,7 +4563,7 @@ ConnectionUrl *string
 
 Connection string to use to connect to the database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
 
 ---
 
@@ -4577,7 +4577,7 @@ Data *map[string]*string
 
 A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#data DatabaseSecretsMount#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
 
 ---
 
@@ -4591,7 +4591,7 @@ MaxConnectionLifetime *f64
 
 Maximum number of seconds a connection may be reused.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
 
 ---
 
@@ -4605,7 +4605,7 @@ MaxIdleConnections *f64
 
 Maximum number of idle connections to the database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
 
 ---
 
@@ -4619,7 +4619,7 @@ MaxOpenConnections *f64
 
 Maximum number of open connections to the database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
 
 ---
 
@@ -4633,7 +4633,7 @@ Password *string
 
 The root credential password used in the connection URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#password DatabaseSecretsMount#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
 
 ---
 
@@ -4649,7 +4649,7 @@ Specifies the name of the plugin to use for this connection.
 
 Must be prefixed with the name of one of the supported database engine types.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
 
 ---
 
@@ -4663,7 +4663,7 @@ RootRotationStatements *[]*string
 
 A list of database statements to be executed to rotate the root user's credentials.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
 
 ---
 
@@ -4677,7 +4677,7 @@ Username *string
 
 The root credential username used in the connection URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#username DatabaseSecretsMount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
 
 ---
 
@@ -4691,7 +4691,7 @@ UsernameTemplate *string
 
 Username generation template.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
 
 ---
 
@@ -4705,7 +4705,7 @@ VerifyConnection interface{}
 
 Specifies if the connection is verified during initial configuration.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
 
 ---
 
@@ -4714,7 +4714,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 &databasesecretsmount.DatabaseSecretsMountMysqlLegacy {
 	Name: *string,
@@ -4763,7 +4763,7 @@ Name *string
 
 Name of the database connection.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#name DatabaseSecretsMount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
 
 ---
 
@@ -4777,7 +4777,7 @@ AllowedRoles *[]*string
 
 A list of roles that are allowed to use this connection.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
 
 ---
 
@@ -4791,7 +4791,7 @@ ConnectionUrl *string
 
 Connection string to use to connect to the database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
 
 ---
 
@@ -4805,7 +4805,7 @@ Data *map[string]*string
 
 A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#data DatabaseSecretsMount#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
 
 ---
 
@@ -4819,7 +4819,7 @@ MaxConnectionLifetime *f64
 
 Maximum number of seconds a connection may be reused.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
 
 ---
 
@@ -4833,7 +4833,7 @@ MaxIdleConnections *f64
 
 Maximum number of idle connections to the database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
 
 ---
 
@@ -4847,7 +4847,7 @@ MaxOpenConnections *f64
 
 Maximum number of open connections to the database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
 
 ---
 
@@ -4861,7 +4861,7 @@ Password *string
 
 The root credential password used in the connection URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#password DatabaseSecretsMount#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
 
 ---
 
@@ -4877,7 +4877,7 @@ Specifies the name of the plugin to use for this connection.
 
 Must be prefixed with the name of one of the supported database engine types.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
 
 ---
 
@@ -4891,7 +4891,7 @@ RootRotationStatements *[]*string
 
 A list of database statements to be executed to rotate the root user's credentials.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
 
 ---
 
@@ -4905,7 +4905,7 @@ Username *string
 
 The root credential username used in the connection URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#username DatabaseSecretsMount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
 
 ---
 
@@ -4919,7 +4919,7 @@ UsernameTemplate *string
 
 Username generation template.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
 
 ---
 
@@ -4933,7 +4933,7 @@ VerifyConnection interface{}
 
 Specifies if the connection is verified during initial configuration.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
 
 ---
 
@@ -4942,7 +4942,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 &databasesecretsmount.DatabaseSecretsMountMysqlRds {
 	Name: *string,
@@ -4991,7 +4991,7 @@ Name *string
 
 Name of the database connection.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#name DatabaseSecretsMount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
 
 ---
 
@@ -5005,7 +5005,7 @@ AllowedRoles *[]*string
 
 A list of roles that are allowed to use this connection.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
 
 ---
 
@@ -5019,7 +5019,7 @@ ConnectionUrl *string
 
 Connection string to use to connect to the database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
 
 ---
 
@@ -5033,7 +5033,7 @@ Data *map[string]*string
 
 A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#data DatabaseSecretsMount#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
 
 ---
 
@@ -5047,7 +5047,7 @@ MaxConnectionLifetime *f64
 
 Maximum number of seconds a connection may be reused.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
 
 ---
 
@@ -5061,7 +5061,7 @@ MaxIdleConnections *f64
 
 Maximum number of idle connections to the database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
 
 ---
 
@@ -5075,7 +5075,7 @@ MaxOpenConnections *f64
 
 Maximum number of open connections to the database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
 
 ---
 
@@ -5089,7 +5089,7 @@ Password *string
 
 The root credential password used in the connection URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#password DatabaseSecretsMount#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
 
 ---
 
@@ -5105,7 +5105,7 @@ Specifies the name of the plugin to use for this connection.
 
 Must be prefixed with the name of one of the supported database engine types.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
 
 ---
 
@@ -5119,7 +5119,7 @@ RootRotationStatements *[]*string
 
 A list of database statements to be executed to rotate the root user's credentials.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
 
 ---
 
@@ -5133,7 +5133,7 @@ Username *string
 
 The root credential username used in the connection URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#username DatabaseSecretsMount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
 
 ---
 
@@ -5147,7 +5147,7 @@ UsernameTemplate *string
 
 Username generation template.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
 
 ---
 
@@ -5161,7 +5161,7 @@ VerifyConnection interface{}
 
 Specifies if the connection is verified during initial configuration.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
 
 ---
 
@@ -5170,7 +5170,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 &databasesecretsmount.DatabaseSecretsMountOracle {
 	Name: *string,
@@ -5219,7 +5219,7 @@ Name *string
 
 Name of the database connection.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#name DatabaseSecretsMount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
 
 ---
 
@@ -5233,7 +5233,7 @@ AllowedRoles *[]*string
 
 A list of roles that are allowed to use this connection.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
 
 ---
 
@@ -5247,7 +5247,7 @@ ConnectionUrl *string
 
 Connection string to use to connect to the database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
 
 ---
 
@@ -5261,7 +5261,7 @@ Data *map[string]*string
 
 A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#data DatabaseSecretsMount#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
 
 ---
 
@@ -5275,7 +5275,7 @@ MaxConnectionLifetime *f64
 
 Maximum number of seconds a connection may be reused.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
 
 ---
 
@@ -5289,7 +5289,7 @@ MaxIdleConnections *f64
 
 Maximum number of idle connections to the database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
 
 ---
 
@@ -5303,7 +5303,7 @@ MaxOpenConnections *f64
 
 Maximum number of open connections to the database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
 
 ---
 
@@ -5317,7 +5317,7 @@ Password *string
 
 The root credential password used in the connection URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#password DatabaseSecretsMount#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
 
 ---
 
@@ -5333,7 +5333,7 @@ Specifies the name of the plugin to use for this connection.
 
 Must be prefixed with the name of one of the supported database engine types.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
 
 ---
 
@@ -5347,7 +5347,7 @@ RootRotationStatements *[]*string
 
 A list of database statements to be executed to rotate the root user's credentials.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
 
 ---
 
@@ -5361,7 +5361,7 @@ Username *string
 
 The root credential username used in the connection URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#username DatabaseSecretsMount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
 
 ---
 
@@ -5375,7 +5375,7 @@ UsernameTemplate *string
 
 Username generation template.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
 
 ---
 
@@ -5389,7 +5389,7 @@ VerifyConnection interface{}
 
 Specifies if the connection is verified during initial configuration.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
 
 ---
 
@@ -5398,7 +5398,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 &databasesecretsmount.DatabaseSecretsMountPostgresql {
 	Name: *string,
@@ -5449,7 +5449,7 @@ Name *string
 
 Name of the database connection.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#name DatabaseSecretsMount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
 
 ---
 
@@ -5463,7 +5463,7 @@ AllowedRoles *[]*string
 
 A list of roles that are allowed to use this connection.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
 
 ---
 
@@ -5477,7 +5477,7 @@ ConnectionUrl *string
 
 Connection string to use to connect to the database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
 
 ---
 
@@ -5491,7 +5491,7 @@ Data *map[string]*string
 
 A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#data DatabaseSecretsMount#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
 
 ---
 
@@ -5505,7 +5505,7 @@ DisableEscaping interface{}
 
 Disable special character escaping in username and password.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#disable_escaping DatabaseSecretsMount#disable_escaping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#disable_escaping DatabaseSecretsMount#disable_escaping}
 
 ---
 
@@ -5519,7 +5519,7 @@ MaxConnectionLifetime *f64
 
 Maximum number of seconds a connection may be reused.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
 
 ---
 
@@ -5533,7 +5533,7 @@ MaxIdleConnections *f64
 
 Maximum number of idle connections to the database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
 
 ---
 
@@ -5547,7 +5547,7 @@ MaxOpenConnections *f64
 
 Maximum number of open connections to the database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
 
 ---
 
@@ -5561,7 +5561,7 @@ Password *string
 
 The root credential password used in the connection URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#password DatabaseSecretsMount#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
 
 ---
 
@@ -5577,7 +5577,7 @@ Specifies the name of the plugin to use for this connection.
 
 Must be prefixed with the name of one of the supported database engine types.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
 
 ---
 
@@ -5591,7 +5591,7 @@ RootRotationStatements *[]*string
 
 A list of database statements to be executed to rotate the root user's credentials.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
 
 ---
 
@@ -5605,7 +5605,7 @@ Username *string
 
 The root credential username used in the connection URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#username DatabaseSecretsMount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
 
 ---
 
@@ -5619,7 +5619,7 @@ UsernameTemplate *string
 
 Username generation template.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
 
 ---
 
@@ -5633,7 +5633,7 @@ VerifyConnection interface{}
 
 Specifies if the connection is verified during initial configuration.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
 
 ---
 
@@ -5642,7 +5642,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 &databasesecretsmount.DatabaseSecretsMountRedis {
 	Host: *string,
@@ -5691,7 +5691,7 @@ Host *string
 
 Specifies the host to connect to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#host DatabaseSecretsMount#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#host DatabaseSecretsMount#host}
 
 ---
 
@@ -5705,7 +5705,7 @@ Name *string
 
 Name of the database connection.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#name DatabaseSecretsMount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
 
 ---
 
@@ -5719,7 +5719,7 @@ Password *string
 
 Specifies the password corresponding to the given username.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#password DatabaseSecretsMount#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
 
 ---
 
@@ -5733,7 +5733,7 @@ Username *string
 
 Specifies the username for Vault to use.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#username DatabaseSecretsMount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
 
 ---
 
@@ -5747,7 +5747,7 @@ AllowedRoles *[]*string
 
 A list of roles that are allowed to use this connection.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
 
 ---
 
@@ -5761,7 +5761,7 @@ CaCert *string
 
 The contents of a PEM-encoded CA cert file to use to verify the Redis server's identity.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#ca_cert DatabaseSecretsMount#ca_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#ca_cert DatabaseSecretsMount#ca_cert}
 
 ---
 
@@ -5775,7 +5775,7 @@ Data *map[string]*string
 
 A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#data DatabaseSecretsMount#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
 
 ---
 
@@ -5789,7 +5789,7 @@ InsecureTls interface{}
 
 Specifies whether to skip verification of the server certificate when using TLS.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#insecure_tls DatabaseSecretsMount#insecure_tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#insecure_tls DatabaseSecretsMount#insecure_tls}
 
 ---
 
@@ -5805,7 +5805,7 @@ Specifies the name of the plugin to use for this connection.
 
 Must be prefixed with the name of one of the supported database engine types.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
 
 ---
 
@@ -5819,7 +5819,7 @@ Port *f64
 
 The transport port to use to connect to Redis.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#port DatabaseSecretsMount#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#port DatabaseSecretsMount#port}
 
 ---
 
@@ -5833,7 +5833,7 @@ RootRotationStatements *[]*string
 
 A list of database statements to be executed to rotate the root user's credentials.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
 
 ---
 
@@ -5847,7 +5847,7 @@ Tls interface{}
 
 Specifies whether to use TLS when connecting to Redis.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#tls DatabaseSecretsMount#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#tls DatabaseSecretsMount#tls}
 
 ---
 
@@ -5861,7 +5861,7 @@ VerifyConnection interface{}
 
 Specifies if the connection is verified during initial configuration.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
 
 ---
 
@@ -5870,7 +5870,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 &databasesecretsmount.DatabaseSecretsMountRedisElasticache {
 	Name: *string,
@@ -5913,7 +5913,7 @@ Name *string
 
 Name of the database connection.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#name DatabaseSecretsMount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
 
 ---
 
@@ -5927,7 +5927,7 @@ Url *string
 
 The configuration endpoint for the ElastiCache cluster to connect to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#url DatabaseSecretsMount#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#url DatabaseSecretsMount#url}
 
 ---
 
@@ -5941,7 +5941,7 @@ AllowedRoles *[]*string
 
 A list of roles that are allowed to use this connection.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
 
 ---
 
@@ -5955,7 +5955,7 @@ Data *map[string]*string
 
 A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#data DatabaseSecretsMount#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
 
 ---
 
@@ -5971,7 +5971,7 @@ The AWS secret key id to use to talk to ElastiCache.
 
 If omitted the credentials chain provider is used instead.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#password DatabaseSecretsMount#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
 
 ---
 
@@ -5987,7 +5987,7 @@ Specifies the name of the plugin to use for this connection.
 
 Must be prefixed with the name of one of the supported database engine types.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
 
 ---
 
@@ -6003,7 +6003,7 @@ The AWS region where the ElastiCache cluster is hosted.
 
 If omitted the plugin tries to infer the region from the environment.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#region DatabaseSecretsMount#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#region DatabaseSecretsMount#region}
 
 ---
 
@@ -6017,7 +6017,7 @@ RootRotationStatements *[]*string
 
 A list of database statements to be executed to rotate the root user's credentials.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
 
 ---
 
@@ -6033,7 +6033,7 @@ The AWS access key id to use to talk to ElastiCache.
 
 If omitted the credentials chain provider is used instead.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#username DatabaseSecretsMount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
 
 ---
 
@@ -6047,7 +6047,7 @@ VerifyConnection interface{}
 
 Specifies if the connection is verified during initial configuration.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
 
 ---
 
@@ -6056,7 +6056,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 &databasesecretsmount.DatabaseSecretsMountRedshift {
 	Name: *string,
@@ -6107,7 +6107,7 @@ Name *string
 
 Name of the database connection.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#name DatabaseSecretsMount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
 
 ---
 
@@ -6121,7 +6121,7 @@ AllowedRoles *[]*string
 
 A list of roles that are allowed to use this connection.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
 
 ---
 
@@ -6135,7 +6135,7 @@ ConnectionUrl *string
 
 Connection string to use to connect to the database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
 
 ---
 
@@ -6149,7 +6149,7 @@ Data *map[string]*string
 
 A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#data DatabaseSecretsMount#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
 
 ---
 
@@ -6163,7 +6163,7 @@ DisableEscaping interface{}
 
 Disable special character escaping in username and password.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#disable_escaping DatabaseSecretsMount#disable_escaping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#disable_escaping DatabaseSecretsMount#disable_escaping}
 
 ---
 
@@ -6177,7 +6177,7 @@ MaxConnectionLifetime *f64
 
 Maximum number of seconds a connection may be reused.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
 
 ---
 
@@ -6191,7 +6191,7 @@ MaxIdleConnections *f64
 
 Maximum number of idle connections to the database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
 
 ---
 
@@ -6205,7 +6205,7 @@ MaxOpenConnections *f64
 
 Maximum number of open connections to the database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
 
 ---
 
@@ -6219,7 +6219,7 @@ Password *string
 
 The root credential password used in the connection URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#password DatabaseSecretsMount#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
 
 ---
 
@@ -6235,7 +6235,7 @@ Specifies the name of the plugin to use for this connection.
 
 Must be prefixed with the name of one of the supported database engine types.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
 
 ---
 
@@ -6249,7 +6249,7 @@ RootRotationStatements *[]*string
 
 A list of database statements to be executed to rotate the root user's credentials.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
 
 ---
 
@@ -6263,7 +6263,7 @@ Username *string
 
 The root credential username used in the connection URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#username DatabaseSecretsMount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
 
 ---
 
@@ -6277,7 +6277,7 @@ UsernameTemplate *string
 
 Username generation template.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
 
 ---
 
@@ -6291,7 +6291,7 @@ VerifyConnection interface{}
 
 Specifies if the connection is verified during initial configuration.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
 
 ---
 
@@ -6300,7 +6300,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 &databasesecretsmount.DatabaseSecretsMountSnowflake {
 	Name: *string,
@@ -6349,7 +6349,7 @@ Name *string
 
 Name of the database connection.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#name DatabaseSecretsMount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
 
 ---
 
@@ -6363,7 +6363,7 @@ AllowedRoles *[]*string
 
 A list of roles that are allowed to use this connection.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
 
 ---
 
@@ -6377,7 +6377,7 @@ ConnectionUrl *string
 
 Connection string to use to connect to the database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
 
 ---
 
@@ -6391,7 +6391,7 @@ Data *map[string]*string
 
 A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#data DatabaseSecretsMount#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
 
 ---
 
@@ -6405,7 +6405,7 @@ MaxConnectionLifetime *f64
 
 Maximum number of seconds a connection may be reused.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
 
 ---
 
@@ -6419,7 +6419,7 @@ MaxIdleConnections *f64
 
 Maximum number of idle connections to the database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
 
 ---
 
@@ -6433,7 +6433,7 @@ MaxOpenConnections *f64
 
 Maximum number of open connections to the database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
 
 ---
 
@@ -6447,7 +6447,7 @@ Password *string
 
 The root credential password used in the connection URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#password DatabaseSecretsMount#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
 
 ---
 
@@ -6463,7 +6463,7 @@ Specifies the name of the plugin to use for this connection.
 
 Must be prefixed with the name of one of the supported database engine types.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
 
 ---
 
@@ -6477,7 +6477,7 @@ RootRotationStatements *[]*string
 
 A list of database statements to be executed to rotate the root user's credentials.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
 
 ---
 
@@ -6491,7 +6491,7 @@ Username *string
 
 The root credential username used in the connection URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#username DatabaseSecretsMount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
 
 ---
 
@@ -6505,7 +6505,7 @@ UsernameTemplate *string
 
 Username generation template.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
 
 ---
 
@@ -6519,7 +6519,7 @@ VerifyConnection interface{}
 
 Specifies if the connection is verified during initial configuration.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
 
 ---
 
@@ -6530,7 +6530,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountCassandraList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountCassandraList
 ```
@@ -6673,7 +6673,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountCassandraOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseSecretsMountCassandraOutputReference
 ```
@@ -7397,7 +7397,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountCouchbaseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountCouchbaseList
 ```
@@ -7540,7 +7540,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountCouchbaseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseSecretsMountCouchbaseOutputReference
 ```
@@ -8185,7 +8185,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountElasticsearchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountElasticsearchList
 ```
@@ -8328,7 +8328,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountElasticsearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseSecretsMountElasticsearchOutputReference
 ```
@@ -9031,7 +9031,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountHanaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountHanaList
 ```
@@ -9174,7 +9174,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountHanaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseSecretsMountHanaOutputReference
 ```
@@ -9811,7 +9811,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountInfluxdbList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountInfluxdbList
 ```
@@ -9954,7 +9954,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountInfluxdbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseSecretsMountInfluxdbOutputReference
 ```
@@ -10657,7 +10657,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountMongodbatlasList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountMongodbatlasList
 ```
@@ -10800,7 +10800,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountMongodbatlasOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseSecretsMountMongodbatlasOutputReference
 ```
@@ -11300,7 +11300,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountMongodbList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountMongodbList
 ```
@@ -11443,7 +11443,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountMongodbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseSecretsMountMongodbOutputReference
 ```
@@ -12080,7 +12080,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountMssqlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountMssqlList
 ```
@@ -12223,7 +12223,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountMssqlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseSecretsMountMssqlOutputReference
 ```
@@ -12918,7 +12918,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountMysqlAuroraList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountMysqlAuroraList
 ```
@@ -13061,7 +13061,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountMysqlAuroraOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseSecretsMountMysqlAuroraOutputReference
 ```
@@ -13698,7 +13698,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountMysqlLegacyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountMysqlLegacyList
 ```
@@ -13841,7 +13841,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountMysqlLegacyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseSecretsMountMysqlLegacyOutputReference
 ```
@@ -14478,7 +14478,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountMysqlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountMysqlList
 ```
@@ -14621,7 +14621,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountMysqlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseSecretsMountMysqlOutputReference
 ```
@@ -15316,7 +15316,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountMysqlRdsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountMysqlRdsList
 ```
@@ -15459,7 +15459,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountMysqlRdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseSecretsMountMysqlRdsOutputReference
 ```
@@ -16096,7 +16096,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountOracleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountOracleList
 ```
@@ -16239,7 +16239,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountOracleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseSecretsMountOracleOutputReference
 ```
@@ -16876,7 +16876,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountPostgresqlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountPostgresqlList
 ```
@@ -17019,7 +17019,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountPostgresqlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseSecretsMountPostgresqlOutputReference
 ```
@@ -17685,7 +17685,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountRedisElasticacheList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountRedisElasticacheList
 ```
@@ -17828,7 +17828,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountRedisElasticacheOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseSecretsMountRedisElasticacheOutputReference
 ```
@@ -18371,7 +18371,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountRedisList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountRedisList
 ```
@@ -18514,7 +18514,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountRedisOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseSecretsMountRedisOutputReference
 ```
@@ -19130,7 +19130,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountRedshiftList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountRedshiftList
 ```
@@ -19273,7 +19273,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountRedshiftOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseSecretsMountRedshiftOutputReference
 ```
@@ -19939,7 +19939,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountSnowflakeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountSnowflakeList
 ```
@@ -20082,7 +20082,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountSnowflakeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseSecretsMountSnowflakeOutputReference
 ```

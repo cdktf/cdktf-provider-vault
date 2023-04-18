@@ -1,6 +1,6 @@
 # `vault_mongodbatlas_secret_role`
 
-Refer to the Terraform Registory for docs: [`vault_mongodbatlas_secret_role`](https://www.terraform.io/docs/providers/vault/r/mongodbatlas_secret_role).
+Refer to the Terraform Registory for docs: [`vault_mongodbatlas_secret_role`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mongodbatlas_secret_role).
 
 # `mongodbatlasSecretRole` Submodule <a name="`mongodbatlasSecretRole` Submodule" id="@cdktf/provider-vault.mongodbatlasSecretRole"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_mongodbatlas_secret_role`](ht
 
 ### MongodbatlasSecretRole <a name="MongodbatlasSecretRole" id="@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRole"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/mongodbatlas_secret_role vault_mongodbatlas_secret_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mongodbatlas_secret_role vault_mongodbatlas_secret_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRole.Initializer"></a>
 
@@ -19,7 +19,7 @@ mongodbatlasSecretRole.MongodbatlasSecretRole(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -45,7 +45,7 @@ mongodbatlasSecretRole.MongodbatlasSecretRole(
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRole.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRole.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRole.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRole.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRole.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRole.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRole.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRole.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -55,7 +55,7 @@ mongodbatlasSecretRole.MongodbatlasSecretRole(
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRole.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the role. |
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRole.Initializer.parameter.roles">roles</a></code> | <code>typing.List[str]</code> | List of roles that the API Key needs to have. |
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRole.Initializer.parameter.cidrBlocks">cidr_blocks</a></code> | <code>typing.List[str]</code> | Whitelist entry in CIDR notation to be added for the API key. |
-| <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRole.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mongodbatlas_secret_role#id MongodbatlasSecretRole#id}. |
+| <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRole.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mongodbatlas_secret_role#id MongodbatlasSecretRole#id}. |
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRole.Initializer.parameter.ipAddresses">ip_addresses</a></code> | <code>typing.List[str]</code> | IP address to be added to the whitelist for the API key. |
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRole.Initializer.parameter.maxTtl">max_ttl</a></code> | <code>str</code> | The maximum allowed lifetime of credentials issued using this role. |
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRole.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
@@ -92,7 +92,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRole.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -132,7 +132,7 @@ Must be unique amongst siblings in the same scope
 
 Path where MongoDB Atlas secret backend is mounted.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mongodbatlas_secret_role#mount MongodbatlasSecretRole#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mongodbatlas_secret_role#mount MongodbatlasSecretRole#mount}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Name of the role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mongodbatlas_secret_role#name MongodbatlasSecretRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mongodbatlas_secret_role#name MongodbatlasSecretRole#name}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 List of roles that the API Key needs to have.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mongodbatlas_secret_role#roles MongodbatlasSecretRole#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mongodbatlas_secret_role#roles MongodbatlasSecretRole#roles}
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Whitelist entry in CIDR notation to be added for the API key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mongodbatlas_secret_role#cidr_blocks MongodbatlasSecretRole#cidr_blocks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mongodbatlas_secret_role#cidr_blocks MongodbatlasSecretRole#cidr_blocks}
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mongodbatlas_secret_role#id MongodbatlasSecretRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mongodbatlas_secret_role#id MongodbatlasSecretRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -183,7 +183,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 IP address to be added to the whitelist for the API key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mongodbatlas_secret_role#ip_addresses MongodbatlasSecretRole#ip_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mongodbatlas_secret_role#ip_addresses MongodbatlasSecretRole#ip_addresses}
 
 ---
 
@@ -193,7 +193,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 The maximum allowed lifetime of credentials issued using this role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mongodbatlas_secret_role#max_ttl MongodbatlasSecretRole#max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mongodbatlas_secret_role#max_ttl MongodbatlasSecretRole#max_ttl}
 
 ---
 
@@ -203,7 +203,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mongodbatlas_secret_role#namespace MongodbatlasSecretRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mongodbatlas_secret_role#namespace MongodbatlasSecretRole#namespace}
 
 ---
 
@@ -213,7 +213,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 ID for the organization to which the target API Key belongs.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mongodbatlas_secret_role#organization_id MongodbatlasSecretRole#organization_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mongodbatlas_secret_role#organization_id MongodbatlasSecretRole#organization_id}
 
 ---
 
@@ -223,7 +223,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 ID for the project to which the target API Key belongs.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mongodbatlas_secret_role#project_id MongodbatlasSecretRole#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mongodbatlas_secret_role#project_id MongodbatlasSecretRole#project_id}
 
 ---
 
@@ -233,7 +233,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Roles assigned when an org API key is assigned to a project API key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mongodbatlas_secret_role#project_roles MongodbatlasSecretRole#project_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mongodbatlas_secret_role#project_roles MongodbatlasSecretRole#project_roles}
 
 ---
 
@@ -243,7 +243,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Duration in seconds after which the issued credential should expire.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mongodbatlas_secret_role#ttl MongodbatlasSecretRole#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mongodbatlas_secret_role#ttl MongodbatlasSecretRole#ttl}
 
 ---
 
@@ -630,7 +630,7 @@ mongodbatlasSecretRole.MongodbatlasSecretRole.is_terraform_resource(
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRole.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRole.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRole.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRole.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRole.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRole.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRole.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRole.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -748,10 +748,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRole.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1074,7 +1074,7 @@ from cdktf_cdktf_provider_vault import mongodbatlas_secret_role
 
 mongodbatlasSecretRole.MongodbatlasSecretRoleConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -1100,7 +1100,7 @@ mongodbatlasSecretRole.MongodbatlasSecretRoleConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRoleConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRoleConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRoleConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRoleConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRoleConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRoleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1110,7 +1110,7 @@ mongodbatlasSecretRole.MongodbatlasSecretRoleConfig(
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRoleConfig.property.name">name</a></code> | <code>str</code> | Name of the role. |
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRoleConfig.property.roles">roles</a></code> | <code>typing.List[str]</code> | List of roles that the API Key needs to have. |
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRoleConfig.property.cidrBlocks">cidr_blocks</a></code> | <code>typing.List[str]</code> | Whitelist entry in CIDR notation to be added for the API key. |
-| <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mongodbatlas_secret_role#id MongodbatlasSecretRole#id}. |
+| <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mongodbatlas_secret_role#id MongodbatlasSecretRole#id}. |
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRoleConfig.property.ipAddresses">ip_addresses</a></code> | <code>typing.List[str]</code> | IP address to be added to the whitelist for the API key. |
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRoleConfig.property.maxTtl">max_ttl</a></code> | <code>str</code> | The maximum allowed lifetime of credentials issued using this role. |
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRoleConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
@@ -1134,10 +1134,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRoleConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1201,7 +1201,7 @@ mount: str
 
 Path where MongoDB Atlas secret backend is mounted.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mongodbatlas_secret_role#mount MongodbatlasSecretRole#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mongodbatlas_secret_role#mount MongodbatlasSecretRole#mount}
 
 ---
 
@@ -1215,7 +1215,7 @@ name: str
 
 Name of the role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mongodbatlas_secret_role#name MongodbatlasSecretRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mongodbatlas_secret_role#name MongodbatlasSecretRole#name}
 
 ---
 
@@ -1229,7 +1229,7 @@ roles: typing.List[str]
 
 List of roles that the API Key needs to have.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mongodbatlas_secret_role#roles MongodbatlasSecretRole#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mongodbatlas_secret_role#roles MongodbatlasSecretRole#roles}
 
 ---
 
@@ -1243,7 +1243,7 @@ cidr_blocks: typing.List[str]
 
 Whitelist entry in CIDR notation to be added for the API key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mongodbatlas_secret_role#cidr_blocks MongodbatlasSecretRole#cidr_blocks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mongodbatlas_secret_role#cidr_blocks MongodbatlasSecretRole#cidr_blocks}
 
 ---
 
@@ -1255,7 +1255,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mongodbatlas_secret_role#id MongodbatlasSecretRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mongodbatlas_secret_role#id MongodbatlasSecretRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1272,7 +1272,7 @@ ip_addresses: typing.List[str]
 
 IP address to be added to the whitelist for the API key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mongodbatlas_secret_role#ip_addresses MongodbatlasSecretRole#ip_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mongodbatlas_secret_role#ip_addresses MongodbatlasSecretRole#ip_addresses}
 
 ---
 
@@ -1286,7 +1286,7 @@ max_ttl: str
 
 The maximum allowed lifetime of credentials issued using this role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mongodbatlas_secret_role#max_ttl MongodbatlasSecretRole#max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mongodbatlas_secret_role#max_ttl MongodbatlasSecretRole#max_ttl}
 
 ---
 
@@ -1300,7 +1300,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mongodbatlas_secret_role#namespace MongodbatlasSecretRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mongodbatlas_secret_role#namespace MongodbatlasSecretRole#namespace}
 
 ---
 
@@ -1314,7 +1314,7 @@ organization_id: str
 
 ID for the organization to which the target API Key belongs.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mongodbatlas_secret_role#organization_id MongodbatlasSecretRole#organization_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mongodbatlas_secret_role#organization_id MongodbatlasSecretRole#organization_id}
 
 ---
 
@@ -1328,7 +1328,7 @@ project_id: str
 
 ID for the project to which the target API Key belongs.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mongodbatlas_secret_role#project_id MongodbatlasSecretRole#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mongodbatlas_secret_role#project_id MongodbatlasSecretRole#project_id}
 
 ---
 
@@ -1342,7 +1342,7 @@ project_roles: typing.List[str]
 
 Roles assigned when an org API key is assigned to a project API key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mongodbatlas_secret_role#project_roles MongodbatlasSecretRole#project_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mongodbatlas_secret_role#project_roles MongodbatlasSecretRole#project_roles}
 
 ---
 
@@ -1356,7 +1356,7 @@ ttl: str
 
 Duration in seconds after which the issued credential should expire.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mongodbatlas_secret_role#ttl MongodbatlasSecretRole#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mongodbatlas_secret_role#ttl MongodbatlasSecretRole#ttl}
 
 ---
 

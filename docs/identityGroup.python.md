@@ -1,6 +1,6 @@
 # `vault_identity_group`
 
-Refer to the Terraform Registory for docs: [`vault_identity_group`](https://www.terraform.io/docs/providers/vault/r/identity_group).
+Refer to the Terraform Registory for docs: [`vault_identity_group`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group).
 
 # `identityGroup` Submodule <a name="`identityGroup` Submodule" id="@cdktf/provider-vault.identityGroup"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_identity_group`](https://www.
 
 ### IdentityGroup <a name="IdentityGroup" id="@cdktf/provider-vault.identityGroup.IdentityGroup"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/identity_group vault_identity_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group vault_identity_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.identityGroup.IdentityGroup.Initializer"></a>
 
@@ -19,7 +19,7 @@ identityGroup.IdentityGroup(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -44,7 +44,7 @@ identityGroup.IdentityGroup(
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroup.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroup.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroup.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroup.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroup.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroup.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroup.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroup.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -53,7 +53,7 @@ identityGroup.IdentityGroup(
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroup.Initializer.parameter.externalMemberEntityIds">external_member_entity_ids</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Manage member entities externally through `vault_identity_group_member_entity_ids`. |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroup.Initializer.parameter.externalMemberGroupIds">external_member_group_ids</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Manage member groups externally through `vault_identity_group_member_group_ids`. |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroup.Initializer.parameter.externalPolicies">external_policies</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Manage policies externally through `vault_identity_group_policies`, allows using group ID in assigned policies. |
-| <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroup.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#id IdentityGroup#id}. |
+| <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroup.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#id IdentityGroup#id}. |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroup.Initializer.parameter.memberEntityIds">member_entity_ids</a></code> | <code>typing.List[str]</code> | Entity IDs to be assigned as group members. |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroup.Initializer.parameter.memberGroupIds">member_group_ids</a></code> | <code>typing.List[str]</code> | Group IDs to be assigned as group members. |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroup.Initializer.parameter.metadata">metadata</a></code> | <code>typing.Mapping[str]</code> | Metadata to be associated with the group. |
@@ -90,7 +90,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.identityGroup.IdentityGroup.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -130,7 +130,7 @@ Must be unique amongst siblings in the same scope
 
 Manage member entities externally through `vault_identity_group_member_entity_ids`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#external_member_entity_ids IdentityGroup#external_member_entity_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#external_member_entity_ids IdentityGroup#external_member_entity_ids}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Manage member groups externally through `vault_identity_group_member_group_ids`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#external_member_group_ids IdentityGroup#external_member_group_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#external_member_group_ids IdentityGroup#external_member_group_ids}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Manage policies externally through `vault_identity_group_policies`, allows using group ID in assigned policies.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#external_policies IdentityGroup#external_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#external_policies IdentityGroup#external_policies}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#id IdentityGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#id IdentityGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -171,7 +171,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Entity IDs to be assigned as group members.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#member_entity_ids IdentityGroup#member_entity_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#member_entity_ids IdentityGroup#member_entity_ids}
 
 ---
 
@@ -181,7 +181,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Group IDs to be assigned as group members.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#member_group_ids IdentityGroup#member_group_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#member_group_ids IdentityGroup#member_group_ids}
 
 ---
 
@@ -191,7 +191,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Metadata to be associated with the group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#metadata IdentityGroup#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#metadata IdentityGroup#metadata}
 
 ---
 
@@ -201,7 +201,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Name of the group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#name IdentityGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#name IdentityGroup#name}
 
 ---
 
@@ -211,7 +211,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#namespace IdentityGroup#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#namespace IdentityGroup#namespace}
 
 ---
 
@@ -221,7 +221,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Policies to be tied to the group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#policies IdentityGroup#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#policies IdentityGroup#policies}
 
 ---
 
@@ -231,7 +231,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Type of the group, internal or external. Defaults to internal.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#type IdentityGroup#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#type IdentityGroup#type}
 
 ---
 
@@ -632,7 +632,7 @@ identityGroup.IdentityGroup.is_terraform_resource(
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroup.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroup.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroup.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroup.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroup.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroup.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroup.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroup.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -748,10 +748,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.identityGroup.IdentityGroup.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1054,7 +1054,7 @@ from cdktf_cdktf_provider_vault import identity_group
 
 identityGroup.IdentityGroupConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -1079,7 +1079,7 @@ identityGroup.IdentityGroupConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1088,7 +1088,7 @@ identityGroup.IdentityGroupConfig(
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.externalMemberEntityIds">external_member_entity_ids</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Manage member entities externally through `vault_identity_group_member_entity_ids`. |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.externalMemberGroupIds">external_member_group_ids</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Manage member groups externally through `vault_identity_group_member_group_ids`. |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.externalPolicies">external_policies</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Manage policies externally through `vault_identity_group_policies`, allows using group ID in assigned policies. |
-| <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#id IdentityGroup#id}. |
+| <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#id IdentityGroup#id}. |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.memberEntityIds">member_entity_ids</a></code> | <code>typing.List[str]</code> | Entity IDs to be assigned as group members. |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.memberGroupIds">member_group_ids</a></code> | <code>typing.List[str]</code> | Group IDs to be assigned as group members. |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.metadata">metadata</a></code> | <code>typing.Mapping[str]</code> | Metadata to be associated with the group. |
@@ -1112,10 +1112,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1179,7 +1179,7 @@ external_member_entity_ids: typing.Union[bool, IResolvable]
 
 Manage member entities externally through `vault_identity_group_member_entity_ids`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#external_member_entity_ids IdentityGroup#external_member_entity_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#external_member_entity_ids IdentityGroup#external_member_entity_ids}
 
 ---
 
@@ -1193,7 +1193,7 @@ external_member_group_ids: typing.Union[bool, IResolvable]
 
 Manage member groups externally through `vault_identity_group_member_group_ids`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#external_member_group_ids IdentityGroup#external_member_group_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#external_member_group_ids IdentityGroup#external_member_group_ids}
 
 ---
 
@@ -1207,7 +1207,7 @@ external_policies: typing.Union[bool, IResolvable]
 
 Manage policies externally through `vault_identity_group_policies`, allows using group ID in assigned policies.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#external_policies IdentityGroup#external_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#external_policies IdentityGroup#external_policies}
 
 ---
 
@@ -1219,7 +1219,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#id IdentityGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#id IdentityGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1236,7 +1236,7 @@ member_entity_ids: typing.List[str]
 
 Entity IDs to be assigned as group members.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#member_entity_ids IdentityGroup#member_entity_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#member_entity_ids IdentityGroup#member_entity_ids}
 
 ---
 
@@ -1250,7 +1250,7 @@ member_group_ids: typing.List[str]
 
 Group IDs to be assigned as group members.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#member_group_ids IdentityGroup#member_group_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#member_group_ids IdentityGroup#member_group_ids}
 
 ---
 
@@ -1264,7 +1264,7 @@ metadata: typing.Mapping[str]
 
 Metadata to be associated with the group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#metadata IdentityGroup#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#metadata IdentityGroup#metadata}
 
 ---
 
@@ -1278,7 +1278,7 @@ name: str
 
 Name of the group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#name IdentityGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#name IdentityGroup#name}
 
 ---
 
@@ -1292,7 +1292,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#namespace IdentityGroup#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#namespace IdentityGroup#namespace}
 
 ---
 
@@ -1306,7 +1306,7 @@ policies: typing.List[str]
 
 Policies to be tied to the group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#policies IdentityGroup#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#policies IdentityGroup#policies}
 
 ---
 
@@ -1320,7 +1320,7 @@ type: str
 
 Type of the group, internal or external. Defaults to internal.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#type IdentityGroup#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group#type IdentityGroup#type}
 
 ---
 

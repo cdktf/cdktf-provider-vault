@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/vault/r/ssh_secret_backend_ca
+// https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ssh_secret_backend_ca
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,17 +10,17 @@ export interface SshSecretBackendCaConfig extends cdktf.TerraformMetaArguments {
   /**
   * The path of the SSH Secret Backend where the CA should be configured
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ssh_secret_backend_ca#backend SshSecretBackendCa#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ssh_secret_backend_ca#backend SshSecretBackendCa#backend}
   */
   readonly backend?: string;
   /**
   * Whether Vault should generate the signing key pair internally.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ssh_secret_backend_ca#generate_signing_key SshSecretBackendCa#generate_signing_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ssh_secret_backend_ca#generate_signing_key SshSecretBackendCa#generate_signing_key}
   */
   readonly generateSigningKey?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ssh_secret_backend_ca#id SshSecretBackendCa#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ssh_secret_backend_ca#id SshSecretBackendCa#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,25 +29,25 @@ export interface SshSecretBackendCaConfig extends cdktf.TerraformMetaArguments {
   /**
   * Target namespace. (requires Enterprise)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ssh_secret_backend_ca#namespace SshSecretBackendCa#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ssh_secret_backend_ca#namespace SshSecretBackendCa#namespace}
   */
   readonly namespace?: string;
   /**
   * Private key part the SSH CA key pair; required if generate_signing_key is false.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ssh_secret_backend_ca#private_key SshSecretBackendCa#private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ssh_secret_backend_ca#private_key SshSecretBackendCa#private_key}
   */
   readonly privateKey?: string;
   /**
   * Public key part the SSH CA key pair; required if generate_signing_key is false.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ssh_secret_backend_ca#public_key SshSecretBackendCa#public_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ssh_secret_backend_ca#public_key SshSecretBackendCa#public_key}
   */
   readonly publicKey?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/vault/r/ssh_secret_backend_ca vault_ssh_secret_backend_ca}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ssh_secret_backend_ca vault_ssh_secret_backend_ca}
 */
 export class SshSecretBackendCa extends cdktf.TerraformResource {
 
@@ -61,7 +61,7 @@ export class SshSecretBackendCa extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/vault/r/ssh_secret_backend_ca vault_ssh_secret_backend_ca} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ssh_secret_backend_ca vault_ssh_secret_backend_ca} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

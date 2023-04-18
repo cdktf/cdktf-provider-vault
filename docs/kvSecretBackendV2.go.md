@@ -1,6 +1,6 @@
 # `vault_kv_secret_backend_v2`
 
-Refer to the Terraform Registory for docs: [`vault_kv_secret_backend_v2`](https://www.terraform.io/docs/providers/vault/r/kv_secret_backend_v2).
+Refer to the Terraform Registory for docs: [`vault_kv_secret_backend_v2`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret_backend_v2).
 
 # `kvSecretBackendV2` Submodule <a name="`kvSecretBackendV2` Submodule" id="@cdktf/provider-vault.kvSecretBackendV2"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`vault_kv_secret_backend_v2`](https:
 
 ### KvSecretBackendV2 <a name="KvSecretBackendV2" id="@cdktf/provider-vault.kvSecretBackendV2.KvSecretBackendV2"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_backend_v2 vault_kv_secret_backend_v2}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret_backend_v2 vault_kv_secret_backend_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.kvSecretBackendV2.KvSecretBackendV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/kvsecretbackendv2"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/kvsecretbackendv2"
 
 kvsecretbackendv2.NewKvSecretBackendV2(scope Construct, id *string, config KvSecretBackendV2Config) KvSecretBackendV2
 ```
@@ -305,7 +305,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.kvSecretBackendV2.KvSecretBackendV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/kvsecretbackendv2"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/kvsecretbackendv2"
 
 kvsecretbackendv2.KvSecretBackendV2_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.kvSecretBackendV2.KvSecretBackendV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/kvsecretbackendv2"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/kvsecretbackendv2"
 
 kvsecretbackendv2.KvSecretBackendV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ kvsecretbackendv2.KvSecretBackendV2_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.kvSecretBackendV2.KvSecretBackendV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/kvsecretbackendv2"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/kvsecretbackendv2"
 
 kvsecretbackendv2.KvSecretBackendV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -374,7 +374,7 @@ kvsecretbackendv2.KvSecretBackendV2_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-vault.kvSecretBackendV2.KvSecretBackendV2.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretBackendV2.KvSecretBackendV2.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretBackendV2.KvSecretBackendV2.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kvSecretBackendV2.KvSecretBackendV2.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kvSecretBackendV2.KvSecretBackendV2.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretBackendV2.KvSecretBackendV2.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretBackendV2.KvSecretBackendV2.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretBackendV2.KvSecretBackendV2.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -480,10 +480,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.kvSecretBackendV2.KvSecretBackendV2.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -682,11 +682,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.kvSecretBackendV2.KvSecretBackendV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/kvsecretbackendv2"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/kvsecretbackendv2"
 
 &kvsecretbackendv2.KvSecretBackendV2Config {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -706,7 +706,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/kvsecretbackendv2"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.kvSecretBackendV2.KvSecretBackendV2Config.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kvSecretBackendV2.KvSecretBackendV2Config.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kvSecretBackendV2.KvSecretBackendV2Config.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretBackendV2.KvSecretBackendV2Config.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretBackendV2.KvSecretBackendV2Config.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretBackendV2.KvSecretBackendV2Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -715,7 +715,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v6/kvsecretbackendv2"
 | <code><a href="#@cdktf/provider-vault.kvSecretBackendV2.KvSecretBackendV2Config.property.mount">Mount</a></code> | <code>*string</code> | Path where KV-V2 engine is mounted. |
 | <code><a href="#@cdktf/provider-vault.kvSecretBackendV2.KvSecretBackendV2Config.property.casRequired">CasRequired</a></code> | <code>interface{}</code> | If true, all keys will require the cas parameter to be set on all write requests. |
 | <code><a href="#@cdktf/provider-vault.kvSecretBackendV2.KvSecretBackendV2Config.property.deleteVersionAfter">DeleteVersionAfter</a></code> | <code>*f64</code> | If set, specifies the length of time before a version is deleted. |
-| <code><a href="#@cdktf/provider-vault.kvSecretBackendV2.KvSecretBackendV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_backend_v2#id KvSecretBackendV2#id}. |
+| <code><a href="#@cdktf/provider-vault.kvSecretBackendV2.KvSecretBackendV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret_backend_v2#id KvSecretBackendV2#id}. |
 | <code><a href="#@cdktf/provider-vault.kvSecretBackendV2.KvSecretBackendV2Config.property.maxVersions">MaxVersions</a></code> | <code>*f64</code> | The number of versions to keep per key. |
 | <code><a href="#@cdktf/provider-vault.kvSecretBackendV2.KvSecretBackendV2Config.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 
@@ -734,10 +734,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.kvSecretBackendV2.KvSecretBackendV2Config.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -801,7 +801,7 @@ Mount *string
 
 Path where KV-V2 engine is mounted.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_backend_v2#mount KvSecretBackendV2#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret_backend_v2#mount KvSecretBackendV2#mount}
 
 ---
 
@@ -815,7 +815,7 @@ CasRequired interface{}
 
 If true, all keys will require the cas parameter to be set on all write requests.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_backend_v2#cas_required KvSecretBackendV2#cas_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret_backend_v2#cas_required KvSecretBackendV2#cas_required}
 
 ---
 
@@ -829,7 +829,7 @@ DeleteVersionAfter *f64
 
 If set, specifies the length of time before a version is deleted.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_backend_v2#delete_version_after KvSecretBackendV2#delete_version_after}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret_backend_v2#delete_version_after KvSecretBackendV2#delete_version_after}
 
 ---
 
@@ -841,7 +841,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_backend_v2#id KvSecretBackendV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret_backend_v2#id KvSecretBackendV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -858,7 +858,7 @@ MaxVersions *f64
 
 The number of versions to keep per key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_backend_v2#max_versions KvSecretBackendV2#max_versions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret_backend_v2#max_versions KvSecretBackendV2#max_versions}
 
 ---
 
@@ -872,7 +872,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_backend_v2#namespace KvSecretBackendV2#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/kv_secret_backend_v2#namespace KvSecretBackendV2#namespace}
 
 ---
 

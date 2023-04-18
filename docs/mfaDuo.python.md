@@ -1,6 +1,6 @@
 # `vault_mfa_duo`
 
-Refer to the Terraform Registory for docs: [`vault_mfa_duo`](https://www.terraform.io/docs/providers/vault/r/mfa_duo).
+Refer to the Terraform Registory for docs: [`vault_mfa_duo`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_duo).
 
 # `mfaDuo` Submodule <a name="`mfaDuo` Submodule" id="@cdktf/provider-vault.mfaDuo"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_mfa_duo`](https://www.terrafo
 
 ### MfaDuo <a name="MfaDuo" id="@cdktf/provider-vault.mfaDuo.MfaDuo"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vault/r/mfa_duo vault_mfa_duo}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_duo vault_mfa_duo}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.mfaDuo.MfaDuo.Initializer"></a>
 
@@ -19,7 +19,7 @@ mfaDuo.MfaDuo(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -42,7 +42,7 @@ mfaDuo.MfaDuo(
 | <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuo.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuo.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuo.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuo.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuo.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuo.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuo.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuo.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -53,7 +53,7 @@ mfaDuo.MfaDuo(
 | <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuo.Initializer.parameter.mountAccessor">mount_accessor</a></code> | <code>str</code> | The mount to tie this method to for use in automatic mappings. |
 | <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuo.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the MFA method. |
 | <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuo.Initializer.parameter.secretKey">secret_key</a></code> | <code>str</code> | Secret key for Duo. |
-| <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuo.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_duo#id MfaDuo#id}. |
+| <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuo.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_duo#id MfaDuo#id}. |
 | <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuo.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuo.Initializer.parameter.pushInfo">push_info</a></code> | <code>str</code> | Push information for Duo. |
 | <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuo.Initializer.parameter.usernameFormat">username_format</a></code> | <code>str</code> | A format string for mapping Identity names to MFA method names. Values to substitute should be placed in `{{}}`. |
@@ -86,7 +86,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.mfaDuo.MfaDuo.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -126,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 API hostname for Duo.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_duo#api_hostname MfaDuo#api_hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_duo#api_hostname MfaDuo#api_hostname}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Integration key for Duo.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_duo#integration_key MfaDuo#integration_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_duo#integration_key MfaDuo#integration_key}
 
 ---
 
@@ -148,7 +148,7 @@ The mount to tie this method to for use in automatic mappings.
 
 The mapping will use the Name field of Aliases associated with this mount as the username in the mapping.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_duo#mount_accessor MfaDuo#mount_accessor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_duo#mount_accessor MfaDuo#mount_accessor}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Name of the MFA method.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_duo#name MfaDuo#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_duo#name MfaDuo#name}
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Secret key for Duo.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_duo#secret_key MfaDuo#secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_duo#secret_key MfaDuo#secret_key}
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_duo#id MfaDuo#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_duo#id MfaDuo#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -189,7 +189,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_duo#namespace MfaDuo#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_duo#namespace MfaDuo#namespace}
 
 ---
 
@@ -199,7 +199,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 Push information for Duo.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_duo#push_info MfaDuo#push_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_duo#push_info MfaDuo#push_info}
 
 ---
 
@@ -209,7 +209,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault
 
 A format string for mapping Identity names to MFA method names. Values to substitute should be placed in `{{}}`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_duo#username_format MfaDuo#username_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_duo#username_format MfaDuo#username_format}
 
 ---
 
@@ -561,7 +561,7 @@ mfaDuo.MfaDuo.is_terraform_resource(
 | <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuo.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuo.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuo.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuo.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuo.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuo.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuo.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuo.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -673,10 +673,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.mfaDuo.MfaDuo.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -939,7 +939,7 @@ from cdktf_cdktf_provider_vault import mfa_duo
 
 mfaDuo.MfaDuoConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -962,7 +962,7 @@ mfaDuo.MfaDuoConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuoConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuoConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuoConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuoConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuoConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuoConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -973,7 +973,7 @@ mfaDuo.MfaDuoConfig(
 | <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuoConfig.property.mountAccessor">mount_accessor</a></code> | <code>str</code> | The mount to tie this method to for use in automatic mappings. |
 | <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuoConfig.property.name">name</a></code> | <code>str</code> | Name of the MFA method. |
 | <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuoConfig.property.secretKey">secret_key</a></code> | <code>str</code> | Secret key for Duo. |
-| <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuoConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_duo#id MfaDuo#id}. |
+| <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuoConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_duo#id MfaDuo#id}. |
 | <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuoConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuoConfig.property.pushInfo">push_info</a></code> | <code>str</code> | Push information for Duo. |
 | <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuoConfig.property.usernameFormat">username_format</a></code> | <code>str</code> | A format string for mapping Identity names to MFA method names. Values to substitute should be placed in `{{}}`. |
@@ -993,10 +993,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.mfaDuo.MfaDuoConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1060,7 +1060,7 @@ api_hostname: str
 
 API hostname for Duo.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_duo#api_hostname MfaDuo#api_hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_duo#api_hostname MfaDuo#api_hostname}
 
 ---
 
@@ -1074,7 +1074,7 @@ integration_key: str
 
 Integration key for Duo.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_duo#integration_key MfaDuo#integration_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_duo#integration_key MfaDuo#integration_key}
 
 ---
 
@@ -1090,7 +1090,7 @@ The mount to tie this method to for use in automatic mappings.
 
 The mapping will use the Name field of Aliases associated with this mount as the username in the mapping.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_duo#mount_accessor MfaDuo#mount_accessor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_duo#mount_accessor MfaDuo#mount_accessor}
 
 ---
 
@@ -1104,7 +1104,7 @@ name: str
 
 Name of the MFA method.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_duo#name MfaDuo#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_duo#name MfaDuo#name}
 
 ---
 
@@ -1118,7 +1118,7 @@ secret_key: str
 
 Secret key for Duo.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_duo#secret_key MfaDuo#secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_duo#secret_key MfaDuo#secret_key}
 
 ---
 
@@ -1130,7 +1130,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_duo#id MfaDuo#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_duo#id MfaDuo#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1147,7 +1147,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_duo#namespace MfaDuo#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_duo#namespace MfaDuo#namespace}
 
 ---
 
@@ -1161,7 +1161,7 @@ push_info: str
 
 Push information for Duo.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_duo#push_info MfaDuo#push_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_duo#push_info MfaDuo#push_info}
 
 ---
 
@@ -1175,7 +1175,7 @@ username_format: str
 
 A format string for mapping Identity names to MFA method names. Values to substitute should be placed in `{{}}`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mfa_duo#username_format MfaDuo#username_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_duo#username_format MfaDuo#username_format}
 
 ---
 

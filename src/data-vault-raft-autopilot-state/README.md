@@ -1,3 +1,3 @@
 # `data_vault_raft_autopilot_state`
 
-Refer to the Terraform Registory for docs: [`data_vault_raft_autopilot_state`](https://www.terraform.io/docs/providers/vault/d/raft_autopilot_state).
+Refer to the Terraform Registory for docs: [`data_vault_raft_autopilot_state`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/raft_autopilot_state).
