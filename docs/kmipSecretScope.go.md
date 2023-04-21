@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.kmipSecretScope.KmipSecretScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/kmipsecretscope"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/kmipsecretscope"
 
 kmipsecretscope.NewKmipSecretScope(scope Construct, id *string, config KmipSecretScopeConfig) KmipSecretScope
 ```
@@ -291,7 +291,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.kmipSecretScope.KmipSecretScope.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/kmipsecretscope"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/kmipsecretscope"
 
 kmipsecretscope.KmipSecretScope_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.kmipSecretScope.KmipSecretScope.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/kmipsecretscope"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/kmipsecretscope"
 
 kmipsecretscope.KmipSecretScope_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ kmipsecretscope.KmipSecretScope_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.kmipSecretScope.KmipSecretScope.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/kmipsecretscope"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/kmipsecretscope"
 
 kmipsecretscope.KmipSecretScope_IsTerraformResource(x interface{}) *bool
 ```
@@ -646,7 +646,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.kmipSecretScope.KmipSecretScopeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/kmipsecretscope"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/kmipsecretscope"
 
 &kmipsecretscope.KmipSecretScopeConfig {
 	Connection: interface{},
