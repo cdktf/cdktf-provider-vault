@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.kubernetesAuthBackendConfig.KubernetesAuthBackendConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/kubernetesauthbackendconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/kubernetesauthbackendconfig"
 
 kubernetesauthbackendconfig.NewKubernetesAuthBackendConfig(scope Construct, id *string, config KubernetesAuthBackendConfigConfig) KubernetesAuthBackendConfig
 ```
@@ -333,7 +333,7 @@ func ResetTokenReviewerJwt()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.kubernetesAuthBackendConfig.KubernetesAuthBackendConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/kubernetesauthbackendconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/kubernetesauthbackendconfig"
 
 kubernetesauthbackendconfig.KubernetesAuthBackendConfig_IsConstruct(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.kubernetesAuthBackendConfig.KubernetesAuthBackendConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/kubernetesauthbackendconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/kubernetesauthbackendconfig"
 
 kubernetesauthbackendconfig.KubernetesAuthBackendConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ kubernetesauthbackendconfig.KubernetesAuthBackendConfig_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.kubernetesAuthBackendConfig.KubernetesAuthBackendConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/kubernetesauthbackendconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/kubernetesauthbackendconfig"
 
 kubernetesauthbackendconfig.KubernetesAuthBackendConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -798,7 +798,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.kubernetesAuthBackendConfig.KubernetesAuthBackendConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/kubernetesauthbackendconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/kubernetesauthbackendconfig"
 
 &kubernetesauthbackendconfig.KubernetesAuthBackendConfigConfig {
 	Connection: interface{},
