@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_template
+// https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/transform_template
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,25 +10,25 @@ export interface TransformTemplateConfig extends cdktf.TerraformMetaArguments {
   /**
   * The alphabet to use for this template. This is only used during FPE transformations.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_template#alphabet TransformTemplate#alphabet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/transform_template#alphabet TransformTemplate#alphabet}
   */
   readonly alphabet?: string;
   /**
   * The map of regular expression templates used to customize decoded outputs.
 Only applicable to FPE transformations.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_template#decode_formats TransformTemplate#decode_formats}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/transform_template#decode_formats TransformTemplate#decode_formats}
   */
   readonly decodeFormats?: { [key: string]: string };
   /**
   * The regular expression template used for encoding values.
 Only applicable to FPE transformations.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_template#encode_format TransformTemplate#encode_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/transform_template#encode_format TransformTemplate#encode_format}
   */
   readonly encodeFormat?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_template#id TransformTemplate#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/transform_template#id TransformTemplate#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -37,37 +37,37 @@ Only applicable to FPE transformations.
   /**
   * The name of the template.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_template#name TransformTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/transform_template#name TransformTemplate#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_template#namespace TransformTemplate#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/transform_template#namespace TransformTemplate#namespace}
   */
   readonly namespace?: string;
   /**
   * The mount path for a back-end, for example, the path given in "$ vault auth enable -path=my-aws aws".
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_template#path TransformTemplate#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/transform_template#path TransformTemplate#path}
   */
   readonly path: string;
   /**
   * The pattern used for matching. Currently, only regular expression pattern is supported.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_template#pattern TransformTemplate#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/transform_template#pattern TransformTemplate#pattern}
   */
   readonly pattern?: string;
   /**
   * The pattern type to use for match detection. Currently, only regex is supported.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_template#type TransformTemplate#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/transform_template#type TransformTemplate#type}
   */
   readonly type?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_template vault_transform_template}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/transform_template vault_transform_template}
 */
 export class TransformTemplate extends cdktf.TerraformResource {
 
@@ -81,7 +81,7 @@ export class TransformTemplate extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_template vault_transform_template} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/transform_template vault_transform_template} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -92,7 +92,7 @@ export class TransformTemplate extends cdktf.TerraformResource {
       terraformResourceType: 'vault_transform_template',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.15.0',
+        providerVersion: '3.15.1',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

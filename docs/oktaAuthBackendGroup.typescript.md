@@ -1,6 +1,6 @@
 # `vault_okta_auth_backend_group`
 
-Refer to the Terraform Registory for docs: [`vault_okta_auth_backend_group`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/okta_auth_backend_group).
+Refer to the Terraform Registory for docs: [`vault_okta_auth_backend_group`](https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/okta_auth_backend_group).
 
 # `oktaAuthBackendGroup` Submodule <a name="`oktaAuthBackendGroup` Submodule" id="@cdktf/provider-vault.oktaAuthBackendGroup"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_okta_auth_backend_group`](htt
 
 ### OktaAuthBackendGroupA <a name="OktaAuthBackendGroupA" id="@cdktf/provider-vault.oktaAuthBackendGroup.OktaAuthBackendGroupA"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/okta_auth_backend_group vault_okta_auth_backend_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/okta_auth_backend_group vault_okta_auth_backend_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.oktaAuthBackendGroup.OktaAuthBackendGroupA.Initializer"></a>
 
@@ -664,7 +664,7 @@ const oktaAuthBackendGroupAConfig: oktaAuthBackendGroup.OktaAuthBackendGroupACon
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackendGroup.OktaAuthBackendGroupAConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackendGroup.OktaAuthBackendGroupAConfig.property.groupName">groupName</a></code> | <code>string</code> | Name of the Okta group. |
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackendGroup.OktaAuthBackendGroupAConfig.property.path">path</a></code> | <code>string</code> | Path to the Okta auth backend. |
-| <code><a href="#@cdktf/provider-vault.oktaAuthBackendGroup.OktaAuthBackendGroupAConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/okta_auth_backend_group#id OktaAuthBackendGroupA#id}. |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackendGroup.OktaAuthBackendGroupAConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/okta_auth_backend_group#id OktaAuthBackendGroupA#id}. |
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackendGroup.OktaAuthBackendGroupAConfig.property.namespace">namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackendGroup.OktaAuthBackendGroupAConfig.property.policies">policies</a></code> | <code>string[]</code> | Policies to associate with this group. |
 
@@ -750,7 +750,7 @@ public readonly groupName: string;
 
 Name of the Okta group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/okta_auth_backend_group#group_name OktaAuthBackendGroupA#group_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/okta_auth_backend_group#group_name OktaAuthBackendGroupA#group_name}
 
 ---
 
@@ -764,7 +764,7 @@ public readonly path: string;
 
 Path to the Okta auth backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/okta_auth_backend_group#path OktaAuthBackendGroupA#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/okta_auth_backend_group#path OktaAuthBackendGroupA#path}
 
 ---
 
@@ -776,7 +776,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/okta_auth_backend_group#id OktaAuthBackendGroupA#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/okta_auth_backend_group#id OktaAuthBackendGroupA#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -793,7 +793,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/okta_auth_backend_group#namespace OktaAuthBackendGroupA#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/okta_auth_backend_group#namespace OktaAuthBackendGroupA#namespace}
 
 ---
 
@@ -807,7 +807,7 @@ public readonly policies: string[];
 
 Policies to associate with this group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/okta_auth_backend_group#policies OktaAuthBackendGroupA#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/okta_auth_backend_group#policies OktaAuthBackendGroupA#policies}
 
 ---
 
