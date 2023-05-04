@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_role
+// https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/transform_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface TransformRoleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_role#id TransformRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/transform_role#id TransformRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,31 +17,31 @@ export interface TransformRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the role.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_role#name TransformRole#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/transform_role#name TransformRole#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_role#namespace TransformRole#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/transform_role#namespace TransformRole#namespace}
   */
   readonly namespace?: string;
   /**
   * The mount path for a back-end, for example, the path given in "$ vault auth enable -path=my-aws aws".
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_role#path TransformRole#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/transform_role#path TransformRole#path}
   */
   readonly path: string;
   /**
   * A comma separated string or slice of transformations to use.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_role#transformations TransformRole#transformations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/transform_role#transformations TransformRole#transformations}
   */
   readonly transformations?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_role vault_transform_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/transform_role vault_transform_role}
 */
 export class TransformRole extends cdktf.TerraformResource {
 
@@ -55,7 +55,7 @@ export class TransformRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transform_role vault_transform_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/transform_role vault_transform_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class TransformRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_transform_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.15.0',
+        providerVersion: '3.15.1',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

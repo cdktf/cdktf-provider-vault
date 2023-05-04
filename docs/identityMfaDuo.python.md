@@ -1,6 +1,6 @@
 # `vault_identity_mfa_duo`
 
-Refer to the Terraform Registory for docs: [`vault_identity_mfa_duo`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_mfa_duo).
+Refer to the Terraform Registory for docs: [`vault_identity_mfa_duo`](https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/identity_mfa_duo).
 
 # `identityMfaDuo` Submodule <a name="`identityMfaDuo` Submodule" id="@cdktf/provider-vault.identityMfaDuo"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_identity_mfa_duo`](https://re
 
 ### IdentityMfaDuo <a name="IdentityMfaDuo" id="@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuo"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_mfa_duo vault_identity_mfa_duo}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/identity_mfa_duo vault_identity_mfa_duo}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuo.Initializer"></a>
 
@@ -50,7 +50,7 @@ identityMfaDuo.IdentityMfaDuo(
 | <code><a href="#@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuo.Initializer.parameter.apiHostname">api_hostname</a></code> | <code>str</code> | API hostname for Duo. |
 | <code><a href="#@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuo.Initializer.parameter.integrationKey">integration_key</a></code> | <code>str</code> | Integration key for Duo. |
 | <code><a href="#@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuo.Initializer.parameter.secretKey">secret_key</a></code> | <code>str</code> | Secret key for Duo. |
-| <code><a href="#@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuo.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_mfa_duo#id IdentityMfaDuo#id}. |
+| <code><a href="#@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuo.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/identity_mfa_duo#id IdentityMfaDuo#id}. |
 | <code><a href="#@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuo.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuo.Initializer.parameter.pushInfo">push_info</a></code> | <code>str</code> | Push information for Duo. |
 | <code><a href="#@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuo.Initializer.parameter.usePasscode">use_passcode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Require passcode upon MFA validation. |
@@ -124,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 API hostname for Duo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_mfa_duo#api_hostname IdentityMfaDuo#api_hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/identity_mfa_duo#api_hostname IdentityMfaDuo#api_hostname}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Integration key for Duo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_mfa_duo#integration_key IdentityMfaDuo#integration_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/identity_mfa_duo#integration_key IdentityMfaDuo#integration_key}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Secret key for Duo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_mfa_duo#secret_key IdentityMfaDuo#secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/identity_mfa_duo#secret_key IdentityMfaDuo#secret_key}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_mfa_duo#id IdentityMfaDuo#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/identity_mfa_duo#id IdentityMfaDuo#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -165,7 +165,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_mfa_duo#namespace IdentityMfaDuo#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/identity_mfa_duo#namespace IdentityMfaDuo#namespace}
 
 ---
 
@@ -175,7 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Push information for Duo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_mfa_duo#push_info IdentityMfaDuo#push_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/identity_mfa_duo#push_info IdentityMfaDuo#push_info}
 
 ---
 
@@ -185,7 +185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Require passcode upon MFA validation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_mfa_duo#use_passcode IdentityMfaDuo#use_passcode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/identity_mfa_duo#use_passcode IdentityMfaDuo#use_passcode}
 
 ---
 
@@ -195,7 +195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A template string for mapping Identity names to MFA methods.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_mfa_duo#username_format IdentityMfaDuo#username_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/identity_mfa_duo#username_format IdentityMfaDuo#username_format}
 
 ---
 
@@ -1018,7 +1018,7 @@ identityMfaDuo.IdentityMfaDuoConfig(
 | <code><a href="#@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuoConfig.property.apiHostname">api_hostname</a></code> | <code>str</code> | API hostname for Duo. |
 | <code><a href="#@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuoConfig.property.integrationKey">integration_key</a></code> | <code>str</code> | Integration key for Duo. |
 | <code><a href="#@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuoConfig.property.secretKey">secret_key</a></code> | <code>str</code> | Secret key for Duo. |
-| <code><a href="#@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuoConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_mfa_duo#id IdentityMfaDuo#id}. |
+| <code><a href="#@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuoConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/identity_mfa_duo#id IdentityMfaDuo#id}. |
 | <code><a href="#@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuoConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuoConfig.property.pushInfo">push_info</a></code> | <code>str</code> | Push information for Duo. |
 | <code><a href="#@cdktf/provider-vault.identityMfaDuo.IdentityMfaDuoConfig.property.usePasscode">use_passcode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Require passcode upon MFA validation. |
@@ -1106,7 +1106,7 @@ api_hostname: str
 
 API hostname for Duo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_mfa_duo#api_hostname IdentityMfaDuo#api_hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/identity_mfa_duo#api_hostname IdentityMfaDuo#api_hostname}
 
 ---
 
@@ -1120,7 +1120,7 @@ integration_key: str
 
 Integration key for Duo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_mfa_duo#integration_key IdentityMfaDuo#integration_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/identity_mfa_duo#integration_key IdentityMfaDuo#integration_key}
 
 ---
 
@@ -1134,7 +1134,7 @@ secret_key: str
 
 Secret key for Duo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_mfa_duo#secret_key IdentityMfaDuo#secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/identity_mfa_duo#secret_key IdentityMfaDuo#secret_key}
 
 ---
 
@@ -1146,7 +1146,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_mfa_duo#id IdentityMfaDuo#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/identity_mfa_duo#id IdentityMfaDuo#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1163,7 +1163,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_mfa_duo#namespace IdentityMfaDuo#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/identity_mfa_duo#namespace IdentityMfaDuo#namespace}
 
 ---
 
@@ -1177,7 +1177,7 @@ push_info: str
 
 Push information for Duo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_mfa_duo#push_info IdentityMfaDuo#push_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/identity_mfa_duo#push_info IdentityMfaDuo#push_info}
 
 ---
 
@@ -1191,7 +1191,7 @@ use_passcode: typing.Union[bool, IResolvable]
 
 Require passcode upon MFA validation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_mfa_duo#use_passcode IdentityMfaDuo#use_passcode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/identity_mfa_duo#use_passcode IdentityMfaDuo#use_passcode}
 
 ---
 
@@ -1205,7 +1205,7 @@ username_format: str
 
 A template string for mapping Identity names to MFA methods.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_mfa_duo#username_format IdentityMfaDuo#username_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/identity_mfa_duo#username_format IdentityMfaDuo#username_format}
 
 ---
 

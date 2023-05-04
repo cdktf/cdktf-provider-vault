@@ -1,3 +1,3 @@
 # `vault_mfa_duo`
 
-Refer to the Terraform Registory for docs: [`vault_mfa_duo`](https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mfa_duo).
+Refer to the Terraform Registory for docs: [`vault_mfa_duo`](https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/mfa_duo).

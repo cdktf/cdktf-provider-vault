@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secret_backend_static_role
+// https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/database_secret_backend_static_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,17 +10,17 @@ export interface DatabaseSecretBackendStaticRoleConfig extends cdktf.TerraformMe
   /**
   * The path of the Database Secret Backend the role belongs to.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secret_backend_static_role#backend DatabaseSecretBackendStaticRole#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/database_secret_backend_static_role#backend DatabaseSecretBackendStaticRole#backend}
   */
   readonly backend: string;
   /**
   * Database connection to use for this role.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secret_backend_static_role#db_name DatabaseSecretBackendStaticRole#db_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/database_secret_backend_static_role#db_name DatabaseSecretBackendStaticRole#db_name}
   */
   readonly dbName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secret_backend_static_role#id DatabaseSecretBackendStaticRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/database_secret_backend_static_role#id DatabaseSecretBackendStaticRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,37 +29,37 @@ export interface DatabaseSecretBackendStaticRoleConfig extends cdktf.TerraformMe
   /**
   * Unique name for the static role.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secret_backend_static_role#name DatabaseSecretBackendStaticRole#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/database_secret_backend_static_role#name DatabaseSecretBackendStaticRole#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secret_backend_static_role#namespace DatabaseSecretBackendStaticRole#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/database_secret_backend_static_role#namespace DatabaseSecretBackendStaticRole#namespace}
   */
   readonly namespace?: string;
   /**
   * The amount of time Vault should wait before rotating the password, in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secret_backend_static_role#rotation_period DatabaseSecretBackendStaticRole#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/database_secret_backend_static_role#rotation_period DatabaseSecretBackendStaticRole#rotation_period}
   */
   readonly rotationPeriod: number;
   /**
   * Database statements to execute to rotate the password for the configured database user.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secret_backend_static_role#rotation_statements DatabaseSecretBackendStaticRole#rotation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/database_secret_backend_static_role#rotation_statements DatabaseSecretBackendStaticRole#rotation_statements}
   */
   readonly rotationStatements?: string[];
   /**
   * The database username that this role corresponds to.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secret_backend_static_role#username DatabaseSecretBackendStaticRole#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/database_secret_backend_static_role#username DatabaseSecretBackendStaticRole#username}
   */
   readonly username: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secret_backend_static_role vault_database_secret_backend_static_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/database_secret_backend_static_role vault_database_secret_backend_static_role}
 */
 export class DatabaseSecretBackendStaticRole extends cdktf.TerraformResource {
 
@@ -73,7 +73,7 @@ export class DatabaseSecretBackendStaticRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/database_secret_backend_static_role vault_database_secret_backend_static_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/database_secret_backend_static_role vault_database_secret_backend_static_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class DatabaseSecretBackendStaticRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_database_secret_backend_static_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.15.0',
+        providerVersion: '3.15.1',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
