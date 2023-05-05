@@ -1,6 +1,6 @@
 # `vault_identity_mfa_okta`
 
-Refer to the Terraform Registory for docs: [`vault_identity_mfa_okta`](https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/identity_mfa_okta).
+Refer to the Terraform Registory for docs: [`vault_identity_mfa_okta`](https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/identity_mfa_okta).
 
 # `identityMfaOkta` Submodule <a name="`identityMfaOkta` Submodule" id="@cdktf/provider-vault.identityMfaOkta"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`vault_identity_mfa_okta`](https://r
 
 ### IdentityMfaOkta <a name="IdentityMfaOkta" id="@cdktf/provider-vault.identityMfaOkta.IdentityMfaOkta"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/identity_mfa_okta vault_identity_mfa_okta}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/identity_mfa_okta vault_identity_mfa_okta}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.identityMfaOkta.IdentityMfaOkta.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/identitymfaokta"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identitymfaokta"
 
 identitymfaokta.NewIdentityMfaOkta(scope Construct, id *string, config IdentityMfaOktaConfig) IdentityMfaOkta
 ```
@@ -305,7 +305,7 @@ func ResetUsernameFormat()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.identityMfaOkta.IdentityMfaOkta.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/identitymfaokta"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identitymfaokta"
 
 identitymfaokta.IdentityMfaOkta_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.identityMfaOkta.IdentityMfaOkta.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/identitymfaokta"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identitymfaokta"
 
 identitymfaokta.IdentityMfaOkta_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ identitymfaokta.IdentityMfaOkta_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.identityMfaOkta.IdentityMfaOkta.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/identitymfaokta"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identitymfaokta"
 
 identitymfaokta.IdentityMfaOkta_IsTerraformResource(x interface{}) *bool
 ```
@@ -781,7 +781,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.identityMfaOkta.IdentityMfaOktaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/identitymfaokta"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identitymfaokta"
 
 &identitymfaokta.IdentityMfaOktaConfig {
 	Connection: interface{},
@@ -815,7 +815,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/identitymfaokta"
 | <code><a href="#@cdktf/provider-vault.identityMfaOkta.IdentityMfaOktaConfig.property.apiToken">ApiToken</a></code> | <code>*string</code> | Okta API token. |
 | <code><a href="#@cdktf/provider-vault.identityMfaOkta.IdentityMfaOktaConfig.property.orgName">OrgName</a></code> | <code>*string</code> | Name of the organization to be used in the Okta API. |
 | <code><a href="#@cdktf/provider-vault.identityMfaOkta.IdentityMfaOktaConfig.property.baseUrl">BaseUrl</a></code> | <code>*string</code> | The base domain to use for API requests. |
-| <code><a href="#@cdktf/provider-vault.identityMfaOkta.IdentityMfaOktaConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/identity_mfa_okta#id IdentityMfaOkta#id}. |
+| <code><a href="#@cdktf/provider-vault.identityMfaOkta.IdentityMfaOktaConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/identity_mfa_okta#id IdentityMfaOkta#id}. |
 | <code><a href="#@cdktf/provider-vault.identityMfaOkta.IdentityMfaOktaConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.identityMfaOkta.IdentityMfaOktaConfig.property.primaryEmail">PrimaryEmail</a></code> | <code>interface{}</code> | Only match the primary email for the account. |
 | <code><a href="#@cdktf/provider-vault.identityMfaOkta.IdentityMfaOktaConfig.property.usernameFormat">UsernameFormat</a></code> | <code>*string</code> | A template string for mapping Identity names to MFA methods. |
@@ -902,7 +902,7 @@ ApiToken *string
 
 Okta API token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/identity_mfa_okta#api_token IdentityMfaOkta#api_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/identity_mfa_okta#api_token IdentityMfaOkta#api_token}
 
 ---
 
@@ -916,7 +916,7 @@ OrgName *string
 
 Name of the organization to be used in the Okta API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/identity_mfa_okta#org_name IdentityMfaOkta#org_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/identity_mfa_okta#org_name IdentityMfaOkta#org_name}
 
 ---
 
@@ -930,7 +930,7 @@ BaseUrl *string
 
 The base domain to use for API requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/identity_mfa_okta#base_url IdentityMfaOkta#base_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/identity_mfa_okta#base_url IdentityMfaOkta#base_url}
 
 ---
 
@@ -942,7 +942,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/identity_mfa_okta#id IdentityMfaOkta#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/identity_mfa_okta#id IdentityMfaOkta#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -959,7 +959,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/identity_mfa_okta#namespace IdentityMfaOkta#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/identity_mfa_okta#namespace IdentityMfaOkta#namespace}
 
 ---
 
@@ -973,7 +973,7 @@ PrimaryEmail interface{}
 
 Only match the primary email for the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/identity_mfa_okta#primary_email IdentityMfaOkta#primary_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/identity_mfa_okta#primary_email IdentityMfaOkta#primary_email}
 
 ---
 
@@ -987,7 +987,7 @@ UsernameFormat *string
 
 A template string for mapping Identity names to MFA methods.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/identity_mfa_okta#username_format IdentityMfaOkta#username_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/identity_mfa_okta#username_format IdentityMfaOkta#username_format}
 
 ---
 

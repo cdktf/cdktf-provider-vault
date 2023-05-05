@@ -1,6 +1,6 @@
 # `vault_token`
 
-Refer to the Terraform Registory for docs: [`vault_token`](https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/token).
+Refer to the Terraform Registory for docs: [`vault_token`](https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/token).
 
 # `token` Submodule <a name="`token` Submodule" id="@cdktf/provider-vault.token"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_token`](https://registry.terr
 
 ### Token <a name="Token" id="@cdktf/provider-vault.token.Token"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/token vault_token}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/token vault_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.token.Token.Initializer"></a>
 
@@ -57,7 +57,7 @@ token.Token(
 | <code><a href="#@cdktf/provider-vault.token.Token.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.token.Token.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | The display name of the token. |
 | <code><a href="#@cdktf/provider-vault.token.Token.Initializer.parameter.explicitMaxTtl">explicit_max_ttl</a></code> | <code>str</code> | The explicit max TTL of the token. |
-| <code><a href="#@cdktf/provider-vault.token.Token.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/token#id Token#id}. |
+| <code><a href="#@cdktf/provider-vault.token.Token.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/token#id Token#id}. |
 | <code><a href="#@cdktf/provider-vault.token.Token.Initializer.parameter.metadata">metadata</a></code> | <code>typing.Mapping[str]</code> | Metadata to be associated with the token. |
 | <code><a href="#@cdktf/provider-vault.token.Token.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.token.Token.Initializer.parameter.noDefaultPolicy">no_default_policy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Flag to disable the default policy. |
@@ -140,7 +140,7 @@ Must be unique amongst siblings in the same scope
 
 The display name of the token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/token#display_name Token#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/token#display_name Token#display_name}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The explicit max TTL of the token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/token#explicit_max_ttl Token#explicit_max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/token#explicit_max_ttl Token#explicit_max_ttl}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/token#id Token#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/token#id Token#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -171,7 +171,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Metadata to be associated with the token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/token#metadata Token#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/token#metadata Token#metadata}
 
 ---
 
@@ -181,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/token#namespace Token#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/token#namespace Token#namespace}
 
 ---
 
@@ -191,7 +191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Flag to disable the default policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/token#no_default_policy Token#no_default_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/token#no_default_policy Token#no_default_policy}
 
 ---
 
@@ -201,7 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Flag to create a token without parent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/token#no_parent Token#no_parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/token#no_parent Token#no_parent}
 
 ---
 
@@ -211,7 +211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The number of allowed uses of the token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/token#num_uses Token#num_uses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/token#num_uses Token#num_uses}
 
 ---
 
@@ -221,7 +221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The period of the token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/token#period Token#period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/token#period Token#period}
 
 ---
 
@@ -231,7 +231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/token#policies Token#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/token#policies Token#policies}
 
 ---
 
@@ -241,7 +241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Flag to allow the token to be renewed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/token#renewable Token#renewable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/token#renewable Token#renewable}
 
 ---
 
@@ -251,7 +251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The renew increment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/token#renew_increment Token#renew_increment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/token#renew_increment Token#renew_increment}
 
 ---
 
@@ -261,7 +261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The minimum lease to renew token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/token#renew_min_lease Token#renew_min_lease}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/token#renew_min_lease Token#renew_min_lease}
 
 ---
 
@@ -271,7 +271,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The token role name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/token#role_name Token#role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/token#role_name Token#role_name}
 
 ---
 
@@ -281,7 +281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The TTL period of the token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/token#ttl Token#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/token#ttl Token#ttl}
 
 ---
 
@@ -291,7 +291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The TTL period of the wrapped token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/token#wrapping_ttl Token#wrapping_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/token#wrapping_ttl Token#wrapping_ttl}
 
 ---
 
@@ -1352,7 +1352,7 @@ token.TokenConfig(
 | <code><a href="#@cdktf/provider-vault.token.TokenConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.token.TokenConfig.property.displayName">display_name</a></code> | <code>str</code> | The display name of the token. |
 | <code><a href="#@cdktf/provider-vault.token.TokenConfig.property.explicitMaxTtl">explicit_max_ttl</a></code> | <code>str</code> | The explicit max TTL of the token. |
-| <code><a href="#@cdktf/provider-vault.token.TokenConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/token#id Token#id}. |
+| <code><a href="#@cdktf/provider-vault.token.TokenConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/token#id Token#id}. |
 | <code><a href="#@cdktf/provider-vault.token.TokenConfig.property.metadata">metadata</a></code> | <code>typing.Mapping[str]</code> | Metadata to be associated with the token. |
 | <code><a href="#@cdktf/provider-vault.token.TokenConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.token.TokenConfig.property.noDefaultPolicy">no_default_policy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Flag to disable the default policy. |
@@ -1449,7 +1449,7 @@ display_name: str
 
 The display name of the token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/token#display_name Token#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/token#display_name Token#display_name}
 
 ---
 
@@ -1463,7 +1463,7 @@ explicit_max_ttl: str
 
 The explicit max TTL of the token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/token#explicit_max_ttl Token#explicit_max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/token#explicit_max_ttl Token#explicit_max_ttl}
 
 ---
 
@@ -1475,7 +1475,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/token#id Token#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/token#id Token#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1492,7 +1492,7 @@ metadata: typing.Mapping[str]
 
 Metadata to be associated with the token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/token#metadata Token#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/token#metadata Token#metadata}
 
 ---
 
@@ -1506,7 +1506,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/token#namespace Token#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/token#namespace Token#namespace}
 
 ---
 
@@ -1520,7 +1520,7 @@ no_default_policy: typing.Union[bool, IResolvable]
 
 Flag to disable the default policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/token#no_default_policy Token#no_default_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/token#no_default_policy Token#no_default_policy}
 
 ---
 
@@ -1534,7 +1534,7 @@ no_parent: typing.Union[bool, IResolvable]
 
 Flag to create a token without parent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/token#no_parent Token#no_parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/token#no_parent Token#no_parent}
 
 ---
 
@@ -1548,7 +1548,7 @@ num_uses: typing.Union[int, float]
 
 The number of allowed uses of the token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/token#num_uses Token#num_uses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/token#num_uses Token#num_uses}
 
 ---
 
@@ -1562,7 +1562,7 @@ period: str
 
 The period of the token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/token#period Token#period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/token#period Token#period}
 
 ---
 
@@ -1576,7 +1576,7 @@ policies: typing.List[str]
 
 List of policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/token#policies Token#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/token#policies Token#policies}
 
 ---
 
@@ -1590,7 +1590,7 @@ renewable: typing.Union[bool, IResolvable]
 
 Flag to allow the token to be renewed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/token#renewable Token#renewable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/token#renewable Token#renewable}
 
 ---
 
@@ -1604,7 +1604,7 @@ renew_increment: typing.Union[int, float]
 
 The renew increment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/token#renew_increment Token#renew_increment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/token#renew_increment Token#renew_increment}
 
 ---
 
@@ -1618,7 +1618,7 @@ renew_min_lease: typing.Union[int, float]
 
 The minimum lease to renew token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/token#renew_min_lease Token#renew_min_lease}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/token#renew_min_lease Token#renew_min_lease}
 
 ---
 
@@ -1632,7 +1632,7 @@ role_name: str
 
 The token role name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/token#role_name Token#role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/token#role_name Token#role_name}
 
 ---
 
@@ -1646,7 +1646,7 @@ ttl: str
 
 The TTL period of the token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/token#ttl Token#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/token#ttl Token#ttl}
 
 ---
 
@@ -1660,7 +1660,7 @@ wrapping_ttl: str
 
 The TTL period of the wrapped token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/token#wrapping_ttl Token#wrapping_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/token#wrapping_ttl Token#wrapping_ttl}
 
 ---
 

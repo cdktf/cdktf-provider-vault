@@ -1,6 +1,6 @@
 # `vault_github_user`
 
-Refer to the Terraform Registory for docs: [`vault_github_user`](https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/github_user).
+Refer to the Terraform Registory for docs: [`vault_github_user`](https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/github_user).
 
 # `githubUser` Submodule <a name="`githubUser` Submodule" id="@cdktf/provider-vault.githubUser"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_github_user`](https://registr
 
 ### GithubUser <a name="GithubUser" id="@cdktf/provider-vault.githubUser.GithubUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/github_user vault_github_user}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/github_user vault_github_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.githubUser.GithubUser.Initializer"></a>
 
@@ -46,7 +46,7 @@ githubUser.GithubUser(
 | <code><a href="#@cdktf/provider-vault.githubUser.GithubUser.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.githubUser.GithubUser.Initializer.parameter.user">user</a></code> | <code>str</code> | GitHub user name. |
 | <code><a href="#@cdktf/provider-vault.githubUser.GithubUser.Initializer.parameter.backend">backend</a></code> | <code>str</code> | Auth backend to which user mapping will be congigured. |
-| <code><a href="#@cdktf/provider-vault.githubUser.GithubUser.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/github_user#id GithubUser#id}. |
+| <code><a href="#@cdktf/provider-vault.githubUser.GithubUser.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/github_user#id GithubUser#id}. |
 | <code><a href="#@cdktf/provider-vault.githubUser.GithubUser.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.githubUser.GithubUser.Initializer.parameter.policies">policies</a></code> | <code>typing.List[str]</code> | Policies to be assigned to this user. |
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 GitHub user name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/github_user#user GithubUser#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/github_user#user GithubUser#user}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Auth backend to which user mapping will be congigured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/github_user#backend GithubUser#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/github_user#backend GithubUser#backend}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/github_user#id GithubUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/github_user#id GithubUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -149,7 +149,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/github_user#namespace GithubUser#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/github_user#namespace GithubUser#namespace}
 
 ---
 
@@ -159,7 +159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Policies to be assigned to this user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/github_user#policies GithubUser#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/github_user#policies GithubUser#policies}
 
 ---
 
@@ -828,7 +828,7 @@ githubUser.GithubUserConfig(
 | <code><a href="#@cdktf/provider-vault.githubUser.GithubUserConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.githubUser.GithubUserConfig.property.user">user</a></code> | <code>str</code> | GitHub user name. |
 | <code><a href="#@cdktf/provider-vault.githubUser.GithubUserConfig.property.backend">backend</a></code> | <code>str</code> | Auth backend to which user mapping will be congigured. |
-| <code><a href="#@cdktf/provider-vault.githubUser.GithubUserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/github_user#id GithubUser#id}. |
+| <code><a href="#@cdktf/provider-vault.githubUser.GithubUserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/github_user#id GithubUser#id}. |
 | <code><a href="#@cdktf/provider-vault.githubUser.GithubUserConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.githubUser.GithubUserConfig.property.policies">policies</a></code> | <code>typing.List[str]</code> | Policies to be assigned to this user. |
 
@@ -914,7 +914,7 @@ user: str
 
 GitHub user name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/github_user#user GithubUser#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/github_user#user GithubUser#user}
 
 ---
 
@@ -928,7 +928,7 @@ backend: str
 
 Auth backend to which user mapping will be congigured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/github_user#backend GithubUser#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/github_user#backend GithubUser#backend}
 
 ---
 
@@ -940,7 +940,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/github_user#id GithubUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/github_user#id GithubUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -957,7 +957,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/github_user#namespace GithubUser#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/github_user#namespace GithubUser#namespace}
 
 ---
 
@@ -971,7 +971,7 @@ policies: typing.List[str]
 
 Policies to be assigned to this user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/github_user#policies GithubUser#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/github_user#policies GithubUser#policies}
 
 ---
 

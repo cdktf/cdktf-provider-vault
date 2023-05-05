@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/ldap_auth_backend_group
+// https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/ldap_auth_backend_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,15 +8,15 @@ import * as cdktf from 'cdktf';
 
 export interface LdapAuthBackendGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/ldap_auth_backend_group#backend LdapAuthBackendGroup#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/ldap_auth_backend_group#backend LdapAuthBackendGroup#backend}
   */
   readonly backend?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/ldap_auth_backend_group#groupname LdapAuthBackendGroup#groupname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/ldap_auth_backend_group#groupname LdapAuthBackendGroup#groupname}
   */
   readonly groupname: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/ldap_auth_backend_group#id LdapAuthBackendGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/ldap_auth_backend_group#id LdapAuthBackendGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -25,17 +25,17 @@ export interface LdapAuthBackendGroupConfig extends cdktf.TerraformMetaArguments
   /**
   * Target namespace. (requires Enterprise)
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/ldap_auth_backend_group#namespace LdapAuthBackendGroup#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/ldap_auth_backend_group#namespace LdapAuthBackendGroup#namespace}
   */
   readonly namespace?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/ldap_auth_backend_group#policies LdapAuthBackendGroup#policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/ldap_auth_backend_group#policies LdapAuthBackendGroup#policies}
   */
   readonly policies?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/ldap_auth_backend_group vault_ldap_auth_backend_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/ldap_auth_backend_group vault_ldap_auth_backend_group}
 */
 export class LdapAuthBackendGroup extends cdktf.TerraformResource {
 
@@ -49,7 +49,7 @@ export class LdapAuthBackendGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/ldap_auth_backend_group vault_ldap_auth_backend_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/ldap_auth_backend_group vault_ldap_auth_backend_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +60,7 @@ export class LdapAuthBackendGroup extends cdktf.TerraformResource {
       terraformResourceType: 'vault_ldap_auth_backend_group',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.15.1',
+        providerVersion: '3.15.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

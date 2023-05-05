@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/data-sources/generic_secret
+// https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/data-sources/generic_secret
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataVaultGenericSecretConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/data-sources/generic_secret#id DataVaultGenericSecret#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/data-sources/generic_secret#id DataVaultGenericSecret#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,29 +17,29 @@ export interface DataVaultGenericSecretConfig extends cdktf.TerraformMetaArgumen
   /**
   * Target namespace. (requires Enterprise)
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/data-sources/generic_secret#namespace DataVaultGenericSecret#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/data-sources/generic_secret#namespace DataVaultGenericSecret#namespace}
   */
   readonly namespace?: string;
   /**
   * Full path from which a secret will be read.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/data-sources/generic_secret#path DataVaultGenericSecret#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/data-sources/generic_secret#path DataVaultGenericSecret#path}
   */
   readonly path: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/data-sources/generic_secret#version DataVaultGenericSecret#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/data-sources/generic_secret#version DataVaultGenericSecret#version}
   */
   readonly version?: number;
   /**
   * If set to true, stores 'lease_start_time' in the TF state.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/data-sources/generic_secret#with_lease_start_time DataVaultGenericSecret#with_lease_start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/data-sources/generic_secret#with_lease_start_time DataVaultGenericSecret#with_lease_start_time}
   */
   readonly withLeaseStartTime?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/data-sources/generic_secret vault_generic_secret}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/data-sources/generic_secret vault_generic_secret}
 */
 export class DataVaultGenericSecret extends cdktf.TerraformDataSource {
 
@@ -53,7 +53,7 @@ export class DataVaultGenericSecret extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/data-sources/generic_secret vault_generic_secret} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/data-sources/generic_secret vault_generic_secret} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -64,7 +64,7 @@ export class DataVaultGenericSecret extends cdktf.TerraformDataSource {
       terraformResourceType: 'vault_generic_secret',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.15.1',
+        providerVersion: '3.15.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

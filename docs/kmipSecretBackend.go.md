@@ -1,6 +1,6 @@
 # `vault_kmip_secret_backend`
 
-Refer to the Terraform Registory for docs: [`vault_kmip_secret_backend`](https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/kmip_secret_backend).
+Refer to the Terraform Registory for docs: [`vault_kmip_secret_backend`](https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/kmip_secret_backend).
 
 # `kmipSecretBackend` Submodule <a name="`kmipSecretBackend` Submodule" id="@cdktf/provider-vault.kmipSecretBackend"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`vault_kmip_secret_backend`](https:/
 
 ### KmipSecretBackend <a name="KmipSecretBackend" id="@cdktf/provider-vault.kmipSecretBackend.KmipSecretBackend"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/kmip_secret_backend vault_kmip_secret_backend}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/kmip_secret_backend vault_kmip_secret_backend}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.kmipSecretBackend.KmipSecretBackend.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/kmipsecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/kmipsecretbackend"
 
 kmipsecretbackend.NewKmipSecretBackend(scope Construct, id *string, config KmipSecretBackendConfig) KmipSecretBackend
 ```
@@ -361,7 +361,7 @@ func ResetTlsMinVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.kmipSecretBackend.KmipSecretBackend.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/kmipsecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/kmipsecretbackend"
 
 kmipsecretbackend.KmipSecretBackend_IsConstruct(x interface{}) *bool
 ```
@@ -393,7 +393,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.kmipSecretBackend.KmipSecretBackend.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/kmipsecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/kmipsecretbackend"
 
 kmipsecretbackend.KmipSecretBackend_IsTerraformElement(x interface{}) *bool
 ```
@@ -407,7 +407,7 @@ kmipsecretbackend.KmipSecretBackend_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.kmipSecretBackend.KmipSecretBackend.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/kmipsecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/kmipsecretbackend"
 
 kmipsecretbackend.KmipSecretBackend_IsTerraformResource(x interface{}) *bool
 ```
@@ -914,7 +914,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.kmipSecretBackend.KmipSecretBackendConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/kmipsecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/kmipsecretbackend"
 
 &kmipsecretbackend.KmipSecretBackendConfig {
 	Connection: interface{},
@@ -958,7 +958,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/kmipsecretbackend"
 | <code><a href="#@cdktf/provider-vault.kmipSecretBackend.KmipSecretBackendConfig.property.defaultTlsClientTtl">DefaultTlsClientTtl</a></code> | <code>*f64</code> | Client certificate TTL in seconds. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretBackend.KmipSecretBackendConfig.property.description">Description</a></code> | <code>*string</code> | Human-friendly description of the mount for the backend. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretBackend.KmipSecretBackendConfig.property.disableRemount">DisableRemount</a></code> | <code>interface{}</code> | If set, opts out of mount migration on path updates. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretBackend.KmipSecretBackendConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/kmip_secret_backend#id KmipSecretBackend#id}. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretBackend.KmipSecretBackendConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/kmip_secret_backend#id KmipSecretBackend#id}. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretBackend.KmipSecretBackendConfig.property.listenAddrs">ListenAddrs</a></code> | <code>*[]*string</code> | Addresses the KMIP server should listen on (host:port). |
 | <code><a href="#@cdktf/provider-vault.kmipSecretBackend.KmipSecretBackendConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.kmipSecretBackend.KmipSecretBackendConfig.property.serverHostnames">ServerHostnames</a></code> | <code>*[]*string</code> | Hostnames to include in the server's TLS certificate as SAN DNS names. |
@@ -1049,7 +1049,7 @@ Path *string
 
 Path where KMIP secret backend will be mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/kmip_secret_backend#path KmipSecretBackend#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/kmip_secret_backend#path KmipSecretBackend#path}
 
 ---
 
@@ -1063,7 +1063,7 @@ DefaultTlsClientKeyBits *f64
 
 Client certificate key bits, valid values depend on key type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/kmip_secret_backend#default_tls_client_key_bits KmipSecretBackend#default_tls_client_key_bits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/kmip_secret_backend#default_tls_client_key_bits KmipSecretBackend#default_tls_client_key_bits}
 
 ---
 
@@ -1077,7 +1077,7 @@ DefaultTlsClientKeyType *string
 
 Client certificate key type, rsa or ec.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/kmip_secret_backend#default_tls_client_key_type KmipSecretBackend#default_tls_client_key_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/kmip_secret_backend#default_tls_client_key_type KmipSecretBackend#default_tls_client_key_type}
 
 ---
 
@@ -1091,7 +1091,7 @@ DefaultTlsClientTtl *f64
 
 Client certificate TTL in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/kmip_secret_backend#default_tls_client_ttl KmipSecretBackend#default_tls_client_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/kmip_secret_backend#default_tls_client_ttl KmipSecretBackend#default_tls_client_ttl}
 
 ---
 
@@ -1105,7 +1105,7 @@ Description *string
 
 Human-friendly description of the mount for the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/kmip_secret_backend#description KmipSecretBackend#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/kmip_secret_backend#description KmipSecretBackend#description}
 
 ---
 
@@ -1119,7 +1119,7 @@ DisableRemount interface{}
 
 If set, opts out of mount migration on path updates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/kmip_secret_backend#disable_remount KmipSecretBackend#disable_remount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/kmip_secret_backend#disable_remount KmipSecretBackend#disable_remount}
 
 ---
 
@@ -1131,7 +1131,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/kmip_secret_backend#id KmipSecretBackend#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/kmip_secret_backend#id KmipSecretBackend#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1148,7 +1148,7 @@ ListenAddrs *[]*string
 
 Addresses the KMIP server should listen on (host:port).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/kmip_secret_backend#listen_addrs KmipSecretBackend#listen_addrs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/kmip_secret_backend#listen_addrs KmipSecretBackend#listen_addrs}
 
 ---
 
@@ -1162,7 +1162,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/kmip_secret_backend#namespace KmipSecretBackend#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/kmip_secret_backend#namespace KmipSecretBackend#namespace}
 
 ---
 
@@ -1178,7 +1178,7 @@ Hostnames to include in the server's TLS certificate as SAN DNS names.
 
 The first will be used as the common name (CN)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/kmip_secret_backend#server_hostnames KmipSecretBackend#server_hostnames}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/kmip_secret_backend#server_hostnames KmipSecretBackend#server_hostnames}
 
 ---
 
@@ -1192,7 +1192,7 @@ ServerIps *[]*string
 
 IPs to include in the server's TLS certificate as SAN IP addresses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/kmip_secret_backend#server_ips KmipSecretBackend#server_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/kmip_secret_backend#server_ips KmipSecretBackend#server_ips}
 
 ---
 
@@ -1206,7 +1206,7 @@ TlsCaKeyBits *f64
 
 CA key bits, valid values depend on key type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/kmip_secret_backend#tls_ca_key_bits KmipSecretBackend#tls_ca_key_bits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/kmip_secret_backend#tls_ca_key_bits KmipSecretBackend#tls_ca_key_bits}
 
 ---
 
@@ -1220,7 +1220,7 @@ TlsCaKeyType *string
 
 CA key type, rsa or ec.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/kmip_secret_backend#tls_ca_key_type KmipSecretBackend#tls_ca_key_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/kmip_secret_backend#tls_ca_key_type KmipSecretBackend#tls_ca_key_type}
 
 ---
 
@@ -1234,7 +1234,7 @@ TlsMinVersion *string
 
 Minimum TLS version to accept.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/kmip_secret_backend#tls_min_version KmipSecretBackend#tls_min_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/kmip_secret_backend#tls_min_version KmipSecretBackend#tls_min_version}
 
 ---
 
