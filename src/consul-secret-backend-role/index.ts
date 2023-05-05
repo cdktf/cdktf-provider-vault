@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/consul_secret_backend_role
+// https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/consul_secret_backend_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,29 +10,29 @@ export interface ConsulSecretBackendRoleConfig extends cdktf.TerraformMetaArgume
   /**
   * The path of the Consul Secret Backend the role belongs to.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/consul_secret_backend_role#backend ConsulSecretBackendRole#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/consul_secret_backend_role#backend ConsulSecretBackendRole#backend}
   */
   readonly backend?: string;
   /**
   * The Consul namespace that the token will be created in. Applicable for Vault 1.10+ and Consul 1.7+
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/consul_secret_backend_role#consul_namespace ConsulSecretBackendRole#consul_namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/consul_secret_backend_role#consul_namespace ConsulSecretBackendRole#consul_namespace}
   */
   readonly consulNamespace?: string;
   /**
   * List of Consul policies to associate with this role
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/consul_secret_backend_role#consul_policies ConsulSecretBackendRole#consul_policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/consul_secret_backend_role#consul_policies ConsulSecretBackendRole#consul_policies}
   */
   readonly consulPolicies?: string[];
   /**
   * Set of Consul roles to attach to the token. Applicable for Vault 1.10+ with Consul 1.5+
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/consul_secret_backend_role#consul_roles ConsulSecretBackendRole#consul_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/consul_secret_backend_role#consul_roles ConsulSecretBackendRole#consul_roles}
   */
   readonly consulRoles?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/consul_secret_backend_role#id ConsulSecretBackendRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/consul_secret_backend_role#id ConsulSecretBackendRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -41,69 +41,69 @@ export interface ConsulSecretBackendRoleConfig extends cdktf.TerraformMetaArgume
   /**
   * Indicates that the token should not be replicated globally and instead be local to the current datacenter.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/consul_secret_backend_role#local ConsulSecretBackendRole#local}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/consul_secret_backend_role#local ConsulSecretBackendRole#local}
   */
   readonly local?: boolean | cdktf.IResolvable;
   /**
   * Maximum TTL for leases associated with this role, in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/consul_secret_backend_role#max_ttl ConsulSecretBackendRole#max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/consul_secret_backend_role#max_ttl ConsulSecretBackendRole#max_ttl}
   */
   readonly maxTtl?: number;
   /**
   * The name of an existing role against which to create this Consul credential
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/consul_secret_backend_role#name ConsulSecretBackendRole#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/consul_secret_backend_role#name ConsulSecretBackendRole#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/consul_secret_backend_role#namespace ConsulSecretBackendRole#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/consul_secret_backend_role#namespace ConsulSecretBackendRole#namespace}
   */
   readonly namespace?: string;
   /**
   * Set of Consul node identities to attach to
 				the token. Applicable for Vault 1.11+ with Consul 1.8+
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/consul_secret_backend_role#node_identities ConsulSecretBackendRole#node_identities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/consul_secret_backend_role#node_identities ConsulSecretBackendRole#node_identities}
   */
   readonly nodeIdentities?: string[];
   /**
   * The Consul admin partition that the token will be created in. Applicable for Vault 1.10+ and Consul 1.11+
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/consul_secret_backend_role#partition ConsulSecretBackendRole#partition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/consul_secret_backend_role#partition ConsulSecretBackendRole#partition}
   */
   readonly partition?: string;
   /**
   * List of Consul policies to associate with this role
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/consul_secret_backend_role#policies ConsulSecretBackendRole#policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/consul_secret_backend_role#policies ConsulSecretBackendRole#policies}
   */
   readonly policies?: string[];
   /**
   * Set of Consul service identities to attach to
 				the token. Applicable for Vault 1.11+ with Consul 1.5+
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/consul_secret_backend_role#service_identities ConsulSecretBackendRole#service_identities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/consul_secret_backend_role#service_identities ConsulSecretBackendRole#service_identities}
   */
   readonly serviceIdentities?: string[];
   /**
   * Specifies the type of token to create when using this role. Valid values are "client" or "management".
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/consul_secret_backend_role#token_type ConsulSecretBackendRole#token_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/consul_secret_backend_role#token_type ConsulSecretBackendRole#token_type}
   */
   readonly tokenType?: string;
   /**
   * Specifies the TTL for this role.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/consul_secret_backend_role#ttl ConsulSecretBackendRole#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/consul_secret_backend_role#ttl ConsulSecretBackendRole#ttl}
   */
   readonly ttl?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/consul_secret_backend_role vault_consul_secret_backend_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/consul_secret_backend_role vault_consul_secret_backend_role}
 */
 export class ConsulSecretBackendRole extends cdktf.TerraformResource {
 
@@ -117,7 +117,7 @@ export class ConsulSecretBackendRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/consul_secret_backend_role vault_consul_secret_backend_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/consul_secret_backend_role vault_consul_secret_backend_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -128,7 +128,7 @@ export class ConsulSecretBackendRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_consul_secret_backend_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.15.1',
+        providerVersion: '3.15.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

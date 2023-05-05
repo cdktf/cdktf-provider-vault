@@ -1,6 +1,6 @@
 # `vault_mfa_pingid`
 
-Refer to the Terraform Registory for docs: [`vault_mfa_pingid`](https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/mfa_pingid).
+Refer to the Terraform Registory for docs: [`vault_mfa_pingid`](https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/mfa_pingid).
 
 # `mfaPingid` Submodule <a name="`mfaPingid` Submodule" id="@cdktf/provider-vault.mfaPingid"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_mfa_pingid`](https://registry
 
 ### MfaPingid <a name="MfaPingid" id="@cdktf/provider-vault.mfaPingid.MfaPingid"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/mfa_pingid vault_mfa_pingid}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/mfa_pingid vault_mfa_pingid}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.mfaPingid.MfaPingid.Initializer"></a>
 
@@ -866,7 +866,7 @@ The mount to tie this method to for use in automatic mappings.
 
 The mapping will use the Name field of Aliases associated with this mount as the username in the mapping.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/mfa_pingid#mount_accessor MfaPingid#mount_accessor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/mfa_pingid#mount_accessor MfaPingid#mount_accessor}
 
 ---
 
@@ -880,7 +880,7 @@ Name *string
 
 Name of the MFA method.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/mfa_pingid#name MfaPingid#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/mfa_pingid#name MfaPingid#name}
 
 ---
 
@@ -894,7 +894,7 @@ SettingsFileBase64 *string
 
 A base64-encoded third-party settings file retrieved from PingID's configuration page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/mfa_pingid#settings_file_base64 MfaPingid#settings_file_base64}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/mfa_pingid#settings_file_base64 MfaPingid#settings_file_base64}
 
 ---
 
@@ -908,7 +908,7 @@ Id *string
 
 ID computed by Vault.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/mfa_pingid#id MfaPingid#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/mfa_pingid#id MfaPingid#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -925,7 +925,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/mfa_pingid#namespace MfaPingid#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/mfa_pingid#namespace MfaPingid#namespace}
 
 ---
 
@@ -939,7 +939,7 @@ UsernameFormat *string
 
 A format string for mapping Identity names to MFA method names. Values to substitute should be placed in `{{}}`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/mfa_pingid#username_format MfaPingid#username_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/mfa_pingid#username_format MfaPingid#username_format}
 
 ---
 

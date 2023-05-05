@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/data-sources/raft_autopilot_state
+// https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/data-sources/raft_autopilot_state
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataVaultRaftAutopilotStateConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/data-sources/raft_autopilot_state#id DataVaultRaftAutopilotState#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/data-sources/raft_autopilot_state#id DataVaultRaftAutopilotState#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,13 +17,13 @@ export interface DataVaultRaftAutopilotStateConfig extends cdktf.TerraformMetaAr
   /**
   * Target namespace. (requires Enterprise)
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/data-sources/raft_autopilot_state#namespace DataVaultRaftAutopilotState#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/data-sources/raft_autopilot_state#namespace DataVaultRaftAutopilotState#namespace}
   */
   readonly namespace?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/data-sources/raft_autopilot_state vault_raft_autopilot_state}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/data-sources/raft_autopilot_state vault_raft_autopilot_state}
 */
 export class DataVaultRaftAutopilotState extends cdktf.TerraformDataSource {
 
@@ -37,7 +37,7 @@ export class DataVaultRaftAutopilotState extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/data-sources/raft_autopilot_state vault_raft_autopilot_state} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/data-sources/raft_autopilot_state vault_raft_autopilot_state} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -48,7 +48,7 @@ export class DataVaultRaftAutopilotState extends cdktf.TerraformDataSource {
       terraformResourceType: 'vault_raft_autopilot_state',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.15.1',
+        providerVersion: '3.15.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
