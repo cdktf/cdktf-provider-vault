@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/identity_group_member_group_ids
+// https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_group_member_group_ids
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,17 +11,17 @@ export interface IdentityGroupMemberGroupIdsConfig extends cdktf.TerraformMetaAr
   * If set to true, allows the resource to manage member group ids
 exclusively. Beware of race conditions when disabling exclusive management
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/identity_group_member_group_ids#exclusive IdentityGroupMemberGroupIds#exclusive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_group_member_group_ids#exclusive IdentityGroupMemberGroupIds#exclusive}
   */
   readonly exclusive?: boolean | cdktf.IResolvable;
   /**
   * ID of the group.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/identity_group_member_group_ids#group_id IdentityGroupMemberGroupIds#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_group_member_group_ids#group_id IdentityGroupMemberGroupIds#group_id}
   */
   readonly groupId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/identity_group_member_group_ids#id IdentityGroupMemberGroupIds#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_group_member_group_ids#id IdentityGroupMemberGroupIds#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -35,19 +30,19 @@ exclusively. Beware of race conditions when disabling exclusive management
   /**
   * Group IDs to be assigned as group members.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/identity_group_member_group_ids#member_group_ids IdentityGroupMemberGroupIds#member_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_group_member_group_ids#member_group_ids IdentityGroupMemberGroupIds#member_group_ids}
   */
   readonly memberGroupIds?: string[];
   /**
   * Target namespace. (requires Enterprise)
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/identity_group_member_group_ids#namespace IdentityGroupMemberGroupIds#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_group_member_group_ids#namespace IdentityGroupMemberGroupIds#namespace}
   */
   readonly namespace?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/identity_group_member_group_ids vault_identity_group_member_group_ids}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_group_member_group_ids vault_identity_group_member_group_ids}
 */
 export class IdentityGroupMemberGroupIds extends cdktf.TerraformResource {
 
@@ -61,7 +56,7 @@ export class IdentityGroupMemberGroupIds extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/identity_group_member_group_ids vault_identity_group_member_group_ids} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_group_member_group_ids vault_identity_group_member_group_ids} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +67,7 @@ export class IdentityGroupMemberGroupIds extends cdktf.TerraformResource {
       terraformResourceType: 'vault_identity_group_member_group_ids',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.15.2',
+        providerVersion: '3.16.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

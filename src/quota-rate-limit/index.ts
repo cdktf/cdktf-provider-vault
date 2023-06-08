@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/quota_rate_limit
+// https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/quota_rate_limit
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface QuotaRateLimitConfig extends cdktf.TerraformMetaArguments {
   /**
   * If set, when a client reaches a rate limit threshold, the client will be prohibited from any further requests until after the 'block_interval' in seconds has elapsed.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/quota_rate_limit#block_interval QuotaRateLimit#block_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/quota_rate_limit#block_interval QuotaRateLimit#block_interval}
   */
   readonly blockInterval?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/quota_rate_limit#id QuotaRateLimit#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/quota_rate_limit#id QuotaRateLimit#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,37 +23,37 @@ export interface QuotaRateLimitConfig extends cdktf.TerraformMetaArguments {
   /**
   * The duration in seconds to enforce rate limiting for.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/quota_rate_limit#interval QuotaRateLimit#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/quota_rate_limit#interval QuotaRateLimit#interval}
   */
   readonly interval?: number;
   /**
   * The name of the quota.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/quota_rate_limit#name QuotaRateLimit#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/quota_rate_limit#name QuotaRateLimit#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/quota_rate_limit#namespace QuotaRateLimit#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/quota_rate_limit#namespace QuotaRateLimit#namespace}
   */
   readonly namespace?: string;
   /**
   * Path of the mount or namespace to apply the quota. A blank path configures a global rate limit quota.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/quota_rate_limit#path QuotaRateLimit#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/quota_rate_limit#path QuotaRateLimit#path}
   */
   readonly path?: string;
   /**
   * The maximum number of requests at any given second to be allowed by the quota rule. The rate must be positive.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/quota_rate_limit#rate QuotaRateLimit#rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/quota_rate_limit#rate QuotaRateLimit#rate}
   */
   readonly rate: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/quota_rate_limit vault_quota_rate_limit}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/quota_rate_limit vault_quota_rate_limit}
 */
 export class QuotaRateLimit extends cdktf.TerraformResource {
 
@@ -72,7 +67,7 @@ export class QuotaRateLimit extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/quota_rate_limit vault_quota_rate_limit} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/quota_rate_limit vault_quota_rate_limit} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +78,7 @@ export class QuotaRateLimit extends cdktf.TerraformResource {
       terraformResourceType: 'vault_quota_rate_limit',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.15.2',
+        providerVersion: '3.16.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

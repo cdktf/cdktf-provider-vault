@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/identity_group_alias
+// https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_group_alias
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface IdentityGroupAliasConfig extends cdktf.TerraformMetaArguments {
   /**
   * ID of the group to which this is an alias.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/identity_group_alias#canonical_id IdentityGroupAlias#canonical_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_group_alias#canonical_id IdentityGroupAlias#canonical_id}
   */
   readonly canonicalId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/identity_group_alias#id IdentityGroupAlias#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_group_alias#id IdentityGroupAlias#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,25 +23,25 @@ export interface IdentityGroupAliasConfig extends cdktf.TerraformMetaArguments {
   /**
   * Mount accessor to which this alias belongs to.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/identity_group_alias#mount_accessor IdentityGroupAlias#mount_accessor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_group_alias#mount_accessor IdentityGroupAlias#mount_accessor}
   */
   readonly mountAccessor: string;
   /**
   * Name of the group alias.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/identity_group_alias#name IdentityGroupAlias#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_group_alias#name IdentityGroupAlias#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/identity_group_alias#namespace IdentityGroupAlias#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_group_alias#namespace IdentityGroupAlias#namespace}
   */
   readonly namespace?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/identity_group_alias vault_identity_group_alias}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_group_alias vault_identity_group_alias}
 */
 export class IdentityGroupAlias extends cdktf.TerraformResource {
 
@@ -60,7 +55,7 @@ export class IdentityGroupAlias extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/identity_group_alias vault_identity_group_alias} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_group_alias vault_identity_group_alias} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +66,7 @@ export class IdentityGroupAlias extends cdktf.TerraformResource {
       terraformResourceType: 'vault_identity_group_alias',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.15.2',
+        providerVersion: '3.16.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
