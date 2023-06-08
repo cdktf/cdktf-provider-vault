@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/identity_entity
+// https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_entity
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface IdentityEntityConfig extends cdktf.TerraformMetaArguments {
   /**
   * Whether the entity is disabled. Disabled entities' associated tokens cannot be used, but are not revoked.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/identity_entity#disabled IdentityEntity#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_entity#disabled IdentityEntity#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
   * Manage policies externally through `vault_identity_entity_policies`.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/identity_entity#external_policies IdentityEntity#external_policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_entity#external_policies IdentityEntity#external_policies}
   */
   readonly externalPolicies?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/identity_entity#id IdentityEntity#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_entity#id IdentityEntity#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,31 +34,31 @@ export interface IdentityEntityConfig extends cdktf.TerraformMetaArguments {
   /**
   * Metadata to be associated with the entity.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/identity_entity#metadata IdentityEntity#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_entity#metadata IdentityEntity#metadata}
   */
   readonly metadata?: { [key: string]: string };
   /**
   * Name of the entity.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/identity_entity#name IdentityEntity#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_entity#name IdentityEntity#name}
   */
   readonly name?: string;
   /**
   * Target namespace. (requires Enterprise)
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/identity_entity#namespace IdentityEntity#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_entity#namespace IdentityEntity#namespace}
   */
   readonly namespace?: string;
   /**
   * Policies to be tied to the entity.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/identity_entity#policies IdentityEntity#policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_entity#policies IdentityEntity#policies}
   */
   readonly policies?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/identity_entity vault_identity_entity}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_entity vault_identity_entity}
 */
 export class IdentityEntity extends cdktf.TerraformResource {
 
@@ -72,7 +72,7 @@ export class IdentityEntity extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/identity_entity vault_identity_entity} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_entity vault_identity_entity} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,7 @@ export class IdentityEntity extends cdktf.TerraformResource {
       terraformResourceType: 'vault_identity_entity',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.15.2',
+        providerVersion: '3.16.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
