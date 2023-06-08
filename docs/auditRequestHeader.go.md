@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.auditRequestHeader.AuditRequestHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/auditrequestheader"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/auditrequestheader"
 
 auditrequestheader.NewAuditRequestHeader(scope Construct, id *string, config AuditRequestHeaderConfig) AuditRequestHeader
 ```
@@ -291,7 +291,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.auditRequestHeader.AuditRequestHeader.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/auditrequestheader"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/auditrequestheader"
 
 auditrequestheader.AuditRequestHeader_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.auditRequestHeader.AuditRequestHeader.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/auditrequestheader"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/auditrequestheader"
 
 auditrequestheader.AuditRequestHeader_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ auditrequestheader.AuditRequestHeader_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.auditRequestHeader.AuditRequestHeader.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/auditrequestheader"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/auditrequestheader"
 
 auditrequestheader.AuditRequestHeader_IsTerraformResource(x interface{}) *bool
 ```
@@ -624,7 +624,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.auditRequestHeader.AuditRequestHeaderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/auditrequestheader"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v7/auditrequestheader"
 
 &auditrequestheader.AuditRequestHeaderConfig {
 	Connection: interface{},
