@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v8/datavaulttransitdecrypt"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/datavaulttransitdecrypt"
 
 datavaulttransitdecrypt.NewDataVaultTransitDecrypt(scope Construct, id *string, config DataVaultTransitDecryptConfig) DataVaultTransitDecrypt
 ```
@@ -291,7 +291,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v8/datavaulttransitdecrypt"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/datavaulttransitdecrypt"
 
 datavaulttransitdecrypt.DataVaultTransitDecrypt_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v8/datavaulttransitdecrypt"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/datavaulttransitdecrypt"
 
 datavaulttransitdecrypt.DataVaultTransitDecrypt_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ datavaulttransitdecrypt.DataVaultTransitDecrypt_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v8/datavaulttransitdecrypt"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/datavaulttransitdecrypt"
 
 datavaulttransitdecrypt.DataVaultTransitDecrypt_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -657,7 +657,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecryptConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v8/datavaulttransitdecrypt"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/datavaulttransitdecrypt"
 
 &datavaulttransitdecrypt.DataVaultTransitDecryptConfig {
 	Connection: interface{},

@@ -1778,7 +1778,7 @@ def reset_token_type() -> None
 | <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendTuneOutputReference.property.maxLeaseTtl">max_lease_ttl</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendTuneOutputReference.property.passthroughRequestHeaders">passthrough_request_headers</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendTuneOutputReference.property.tokenType">token_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendTuneOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-vault.authBackend.AuthBackendTune">AuthBackendTune</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendTuneOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-vault.authBackend.AuthBackendTune">AuthBackendTune</a>]</code> | *No description.* |
 
 ---
 
@@ -1969,10 +1969,10 @@ token_type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-vault.authBackend.AuthBackendTuneOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[AuthBackendTune, IResolvable]
+internal_value: typing.Union[IResolvable, AuthBackendTune]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-vault.authBackend.AuthBackendTune">AuthBackendTune</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-vault.authBackend.AuthBackendTune">AuthBackendTune</a>]
 
 ---
 

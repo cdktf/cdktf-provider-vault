@@ -1538,7 +1538,7 @@ public resetTokenType(): void
 | <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendTuneOutputReference.property.maxLeaseTtl">maxLeaseTtl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendTuneOutputReference.property.passthroughRequestHeaders">passthroughRequestHeaders</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendTuneOutputReference.property.tokenType">tokenType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendTuneOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendTune">AuthBackendTune</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.authBackend.AuthBackendTuneOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-vault.authBackend.AuthBackendTune">AuthBackendTune</a></code> | *No description.* |
 
 ---
 
@@ -1729,10 +1729,10 @@ public readonly tokenType: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-vault.authBackend.AuthBackendTuneOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AuthBackendTune | IResolvable;
+public readonly internalValue: IResolvable | AuthBackendTune;
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.authBackend.AuthBackendTune">AuthBackendTune</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-vault.authBackend.AuthBackendTune">AuthBackendTune</a>
 
 ---
 
