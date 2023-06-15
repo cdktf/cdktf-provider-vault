@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/azuresecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v8/azuresecretbackend"
 
 azuresecretbackend.NewAzureSecretBackend(scope Construct, id *string, config AzureSecretBackendConfig) AzureSecretBackend
 ```
@@ -333,7 +333,7 @@ func ResetUseMicrosoftGraphApi()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/azuresecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v8/azuresecretbackend"
 
 azuresecretbackend.AzureSecretBackend_IsConstruct(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/azuresecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v8/azuresecretbackend"
 
 azuresecretbackend.AzureSecretBackend_IsTerraformElement(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ azuresecretbackend.AzureSecretBackend_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/azuresecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v8/azuresecretbackend"
 
 azuresecretbackend.AzureSecretBackend_IsTerraformResource(x interface{}) *bool
 ```
@@ -820,7 +820,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.azureSecretBackend.AzureSecretBackendConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/azuresecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v8/azuresecretbackend"
 
 &azuresecretbackend.AzureSecretBackendConfig {
 	Connection: interface{},
