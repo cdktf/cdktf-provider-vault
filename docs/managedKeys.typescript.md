@@ -1998,7 +1998,7 @@ public resetRegion(): void
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.region">region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.secretKey">secretKey</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a></code> | *No description.* |
 
 ---
 
@@ -2299,10 +2299,10 @@ public readonly secretKey: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ManagedKeysAws | IResolvable;
+public readonly internalValue: IResolvable | ManagedKeysAws;
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a>
 
 ---
 
@@ -2756,7 +2756,7 @@ public resetResource(): void
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.resource">resource</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.tenantId">tenantId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.vaultName">vaultName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a></code> | *No description.* |
 
 ---
 
@@ -3077,10 +3077,10 @@ public readonly vaultName: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ManagedKeysAzure | IResolvable;
+public readonly internalValue: IResolvable | ManagedKeysAzure;
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a>
 
 ---
 
@@ -3550,7 +3550,7 @@ public resetTokenLabel(): void
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.pin">pin</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.slot">slot</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.tokenLabel">tokenLabel</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a></code> | *No description.* |
 
 ---
 
@@ -3891,10 +3891,10 @@ public readonly tokenLabel: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ManagedKeysPkcs | IResolvable;
+public readonly internalValue: IResolvable | ManagedKeysPkcs;
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a>
 
 ---
 

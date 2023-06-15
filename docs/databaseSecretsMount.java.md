@@ -7538,7 +7538,7 @@ public void resetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.tls">tls</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.username">username</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.verifyConnection">verifyConnection</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra">DatabaseSecretsMountCassandra</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra">DatabaseSecretsMountCassandra</a></code> | *No description.* |
 
 ---
 
@@ -7892,7 +7892,7 @@ public java.lang.Object getVerifyConnection();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra">DatabaseSecretsMountCassandra</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra">DatabaseSecretsMountCassandra</a>
 
 ---
 
@@ -8366,7 +8366,7 @@ public void resetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.username">username</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.usernameTemplate">usernameTemplate</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.verifyConnection">verifyConnection</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase">DatabaseSecretsMountCouchbase</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase">DatabaseSecretsMountCouchbase</a></code> | *No description.* |
 
 ---
 
@@ -8680,7 +8680,7 @@ public java.lang.Object getVerifyConnection();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase">DatabaseSecretsMountCouchbase</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase">DatabaseSecretsMountCouchbase</a>
 
 ---
 
@@ -9172,7 +9172,7 @@ public void resetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.username">username</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.usernameTemplate">usernameTemplate</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.verifyConnection">verifyConnection</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch">DatabaseSecretsMountElasticsearch</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch">DatabaseSecretsMountElasticsearch</a></code> | *No description.* |
 
 ---
 
@@ -9526,7 +9526,7 @@ public java.lang.Object getVerifyConnection();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch">DatabaseSecretsMountElasticsearch</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch">DatabaseSecretsMountElasticsearch</a>
 
 ---
 
@@ -10012,7 +10012,7 @@ public void resetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.rootRotationStatements">rootRotationStatements</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.username">username</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.verifyConnection">verifyConnection</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana">DatabaseSecretsMountHana</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana">DatabaseSecretsMountHana</a></code> | *No description.* |
 
 ---
 
@@ -10306,7 +10306,7 @@ public java.lang.Object getVerifyConnection();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana">DatabaseSecretsMountHana</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana">DatabaseSecretsMountHana</a>
 
 ---
 
@@ -10798,7 +10798,7 @@ public void resetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.username">username</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.usernameTemplate">usernameTemplate</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.verifyConnection">verifyConnection</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb">DatabaseSecretsMountInfluxdb</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb">DatabaseSecretsMountInfluxdb</a></code> | *No description.* |
 
 ---
 
@@ -11152,7 +11152,7 @@ public java.lang.Object getVerifyConnection();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb">DatabaseSecretsMountInfluxdb</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb">DatabaseSecretsMountInfluxdb</a>
 
 ---
 
@@ -11581,7 +11581,7 @@ public void resetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.publicKey">publicKey</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.rootRotationStatements">rootRotationStatements</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.verifyConnection">verifyConnection</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas">DatabaseSecretsMountMongodbatlas</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas">DatabaseSecretsMountMongodbatlas</a></code> | *No description.* |
 
 ---
 
@@ -11795,7 +11795,7 @@ public java.lang.Object getVerifyConnection();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas">DatabaseSecretsMountMongodbatlas</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas">DatabaseSecretsMountMongodbatlas</a>
 
 ---
 
@@ -12281,7 +12281,7 @@ public void resetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.username">username</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.usernameTemplate">usernameTemplate</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.verifyConnection">verifyConnection</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb">DatabaseSecretsMountMongodb</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb">DatabaseSecretsMountMongodb</a></code> | *No description.* |
 
 ---
 
@@ -12575,7 +12575,7 @@ public java.lang.Object getVerifyConnection();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb">DatabaseSecretsMountMongodb</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb">DatabaseSecretsMountMongodb</a>
 
 ---
 
@@ -13079,7 +13079,7 @@ public void resetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.username">username</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.usernameTemplate">usernameTemplate</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.verifyConnection">verifyConnection</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql">DatabaseSecretsMountMssql</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql">DatabaseSecretsMountMssql</a></code> | *No description.* |
 
 ---
 
@@ -13413,7 +13413,7 @@ public java.lang.Object getVerifyConnection();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql">DatabaseSecretsMountMssql</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql">DatabaseSecretsMountMssql</a>
 
 ---
 
@@ -13899,7 +13899,7 @@ public void resetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.username">username</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.usernameTemplate">usernameTemplate</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.verifyConnection">verifyConnection</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora">DatabaseSecretsMountMysqlAurora</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora">DatabaseSecretsMountMysqlAurora</a></code> | *No description.* |
 
 ---
 
@@ -14193,7 +14193,7 @@ public java.lang.Object getVerifyConnection();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora">DatabaseSecretsMountMysqlAurora</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora">DatabaseSecretsMountMysqlAurora</a>
 
 ---
 
@@ -14679,7 +14679,7 @@ public void resetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.username">username</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.usernameTemplate">usernameTemplate</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.verifyConnection">verifyConnection</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy">DatabaseSecretsMountMysqlLegacy</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy">DatabaseSecretsMountMysqlLegacy</a></code> | *No description.* |
 
 ---
 
@@ -14973,7 +14973,7 @@ public java.lang.Object getVerifyConnection();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy">DatabaseSecretsMountMysqlLegacy</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy">DatabaseSecretsMountMysqlLegacy</a>
 
 ---
 
@@ -15477,7 +15477,7 @@ public void resetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.username">username</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.usernameTemplate">usernameTemplate</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.verifyConnection">verifyConnection</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql">DatabaseSecretsMountMysql</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql">DatabaseSecretsMountMysql</a></code> | *No description.* |
 
 ---
 
@@ -15811,7 +15811,7 @@ public java.lang.Object getVerifyConnection();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql">DatabaseSecretsMountMysql</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql">DatabaseSecretsMountMysql</a>
 
 ---
 
@@ -16297,7 +16297,7 @@ public void resetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.username">username</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.usernameTemplate">usernameTemplate</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.verifyConnection">verifyConnection</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds">DatabaseSecretsMountMysqlRds</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds">DatabaseSecretsMountMysqlRds</a></code> | *No description.* |
 
 ---
 
@@ -16591,7 +16591,7 @@ public java.lang.Object getVerifyConnection();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds">DatabaseSecretsMountMysqlRds</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds">DatabaseSecretsMountMysqlRds</a>
 
 ---
 
@@ -17077,7 +17077,7 @@ public void resetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.username">username</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.usernameTemplate">usernameTemplate</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.verifyConnection">verifyConnection</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle">DatabaseSecretsMountOracle</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle">DatabaseSecretsMountOracle</a></code> | *No description.* |
 
 ---
 
@@ -17371,7 +17371,7 @@ public java.lang.Object getVerifyConnection();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle">DatabaseSecretsMountOracle</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle">DatabaseSecretsMountOracle</a>
 
 ---
 
@@ -17866,7 +17866,7 @@ public void resetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.username">username</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.usernameTemplate">usernameTemplate</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.verifyConnection">verifyConnection</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql">DatabaseSecretsMountPostgresql</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql">DatabaseSecretsMountPostgresql</a></code> | *No description.* |
 
 ---
 
@@ -18180,7 +18180,7 @@ public java.lang.Object getVerifyConnection();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql">DatabaseSecretsMountPostgresql</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql">DatabaseSecretsMountPostgresql</a>
 
 ---
 
@@ -18632,7 +18632,7 @@ public void resetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.url">url</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.username">username</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.verifyConnection">verifyConnection</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache">DatabaseSecretsMountRedisElasticache</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache">DatabaseSecretsMountRedisElasticache</a></code> | *No description.* |
 
 ---
 
@@ -18866,7 +18866,7 @@ public java.lang.Object getVerifyConnection();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache">DatabaseSecretsMountRedisElasticache</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache">DatabaseSecretsMountRedisElasticache</a>
 
 ---
 
@@ -19331,7 +19331,7 @@ public void resetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.tls">tls</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.username">username</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.verifyConnection">verifyConnection</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis">DatabaseSecretsMountRedis</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis">DatabaseSecretsMountRedis</a></code> | *No description.* |
 
 ---
 
@@ -19625,7 +19625,7 @@ public java.lang.Object getVerifyConnection();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis">DatabaseSecretsMountRedis</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis">DatabaseSecretsMountRedis</a>
 
 ---
 
@@ -20120,7 +20120,7 @@ public void resetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.username">username</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.usernameTemplate">usernameTemplate</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.verifyConnection">verifyConnection</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift">DatabaseSecretsMountRedshift</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift">DatabaseSecretsMountRedshift</a></code> | *No description.* |
 
 ---
 
@@ -20434,7 +20434,7 @@ public java.lang.Object getVerifyConnection();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift">DatabaseSecretsMountRedshift</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift">DatabaseSecretsMountRedshift</a>
 
 ---
 
@@ -20920,7 +20920,7 @@ public void resetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.username">username</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.usernameTemplate">usernameTemplate</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.verifyConnection">verifyConnection</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake">DatabaseSecretsMountSnowflake</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake">DatabaseSecretsMountSnowflake</a></code> | *No description.* |
 
 ---
 
@@ -21214,7 +21214,7 @@ public java.lang.Object getVerifyConnection();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake">DatabaseSecretsMountSnowflake</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake">DatabaseSecretsMountSnowflake</a>
 
 ---
 

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v8/quotaratelimit"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/quotaratelimit"
 
 quotaratelimit.NewQuotaRateLimit(scope Construct, id *string, config QuotaRateLimitConfig) QuotaRateLimit
 ```
@@ -305,7 +305,7 @@ func ResetPath()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v8/quotaratelimit"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/quotaratelimit"
 
 quotaratelimit.QuotaRateLimit_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v8/quotaratelimit"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/quotaratelimit"
 
 quotaratelimit.QuotaRateLimit_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ quotaratelimit.QuotaRateLimit_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v8/quotaratelimit"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/quotaratelimit"
 
 quotaratelimit.QuotaRateLimit_IsTerraformResource(x interface{}) *bool
 ```
@@ -704,7 +704,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.quotaRateLimit.QuotaRateLimitConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v8/quotaratelimit"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/quotaratelimit"
 
 &quotaratelimit.QuotaRateLimitConfig {
 	Connection: interface{},

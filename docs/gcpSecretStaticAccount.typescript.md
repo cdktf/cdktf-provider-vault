@@ -1384,7 +1384,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-vault.gcpSecretStaticAccount.GcpSecretStaticAccountBindingOutputReference.property.rolesInput">rolesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretStaticAccount.GcpSecretStaticAccountBindingOutputReference.property.resource">resource</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretStaticAccount.GcpSecretStaticAccountBindingOutputReference.property.roles">roles</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.gcpSecretStaticAccount.GcpSecretStaticAccountBindingOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-vault.gcpSecretStaticAccount.GcpSecretStaticAccountBinding">GcpSecretStaticAccountBinding</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpSecretStaticAccount.GcpSecretStaticAccountBindingOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-vault.gcpSecretStaticAccount.GcpSecretStaticAccountBinding">GcpSecretStaticAccountBinding</a></code> | *No description.* |
 
 ---
 
@@ -1455,10 +1455,10 @@ public readonly roles: string[];
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-vault.gcpSecretStaticAccount.GcpSecretStaticAccountBindingOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: GcpSecretStaticAccountBinding | IResolvable;
+public readonly internalValue: IResolvable | GcpSecretStaticAccountBinding;
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.gcpSecretStaticAccount.GcpSecretStaticAccountBinding">GcpSecretStaticAccountBinding</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-vault.gcpSecretStaticAccount.GcpSecretStaticAccountBinding">GcpSecretStaticAccountBinding</a>
 
 ---
 

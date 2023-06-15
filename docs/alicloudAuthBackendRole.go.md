@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v8/alicloudauthbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/alicloudauthbackendrole"
 
 alicloudauthbackendrole.NewAlicloudAuthBackendRole(scope Construct, id *string, config AlicloudAuthBackendRoleConfig) AlicloudAuthBackendRole
 ```
@@ -354,7 +354,7 @@ func ResetTokenType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v8/alicloudauthbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/alicloudauthbackendrole"
 
 alicloudauthbackendrole.AlicloudAuthBackendRole_IsConstruct(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v8/alicloudauthbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/alicloudauthbackendrole"
 
 alicloudauthbackendrole.AlicloudAuthBackendRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -400,7 +400,7 @@ alicloudauthbackendrole.AlicloudAuthBackendRole_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v8/alicloudauthbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/alicloudauthbackendrole"
 
 alicloudauthbackendrole.AlicloudAuthBackendRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -907,7 +907,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v8/alicloudauthbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/alicloudauthbackendrole"
 
 &alicloudauthbackendrole.AlicloudAuthBackendRoleConfig {
 	Connection: interface{},
