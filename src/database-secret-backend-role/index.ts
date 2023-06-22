@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/database_secret_backend_role
+// https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/database_secret_backend_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +15,41 @@ export interface DatabaseSecretBackendRoleConfig extends cdktf.TerraformMetaArgu
   /**
   * The path of the Database Secret Backend the role belongs to.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/database_secret_backend_role#backend DatabaseSecretBackendRole#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/database_secret_backend_role#backend DatabaseSecretBackendRole#backend}
   */
   readonly backend: string;
   /**
   * Database statements to execute to create and configure a user.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/database_secret_backend_role#creation_statements DatabaseSecretBackendRole#creation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/database_secret_backend_role#creation_statements DatabaseSecretBackendRole#creation_statements}
   */
   readonly creationStatements: string[];
   /**
+  * Specifies the configuration for the given credential_type.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/database_secret_backend_role#credential_config DatabaseSecretBackendRole#credential_config}
+  */
+  readonly credentialConfig?: { [key: string]: string };
+  /**
+  * Specifies the type of credential that will be generated for the role.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/database_secret_backend_role#credential_type DatabaseSecretBackendRole#credential_type}
+  */
+  readonly credentialType?: string;
+  /**
   * Database connection to use for this role.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/database_secret_backend_role#db_name DatabaseSecretBackendRole#db_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/database_secret_backend_role#db_name DatabaseSecretBackendRole#db_name}
   */
   readonly dbName: string;
   /**
   * Default TTL for leases associated with this role, in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/database_secret_backend_role#default_ttl DatabaseSecretBackendRole#default_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/database_secret_backend_role#default_ttl DatabaseSecretBackendRole#default_ttl}
   */
   readonly defaultTtl?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/database_secret_backend_role#id DatabaseSecretBackendRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/database_secret_backend_role#id DatabaseSecretBackendRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,43 +58,43 @@ export interface DatabaseSecretBackendRoleConfig extends cdktf.TerraformMetaArgu
   /**
   * Maximum TTL for leases associated with this role, in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/database_secret_backend_role#max_ttl DatabaseSecretBackendRole#max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/database_secret_backend_role#max_ttl DatabaseSecretBackendRole#max_ttl}
   */
   readonly maxTtl?: number;
   /**
   * Unique name for the role.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/database_secret_backend_role#name DatabaseSecretBackendRole#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/database_secret_backend_role#name DatabaseSecretBackendRole#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/database_secret_backend_role#namespace DatabaseSecretBackendRole#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/database_secret_backend_role#namespace DatabaseSecretBackendRole#namespace}
   */
   readonly namespace?: string;
   /**
   * Database statements to execute to renew a user.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/database_secret_backend_role#renew_statements DatabaseSecretBackendRole#renew_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/database_secret_backend_role#renew_statements DatabaseSecretBackendRole#renew_statements}
   */
   readonly renewStatements?: string[];
   /**
   * Database statements to execute to revoke a user.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/database_secret_backend_role#revocation_statements DatabaseSecretBackendRole#revocation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/database_secret_backend_role#revocation_statements DatabaseSecretBackendRole#revocation_statements}
   */
   readonly revocationStatements?: string[];
   /**
   * Database statements to execute to rollback a create operation in the event of an error.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/database_secret_backend_role#rollback_statements DatabaseSecretBackendRole#rollback_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/database_secret_backend_role#rollback_statements DatabaseSecretBackendRole#rollback_statements}
   */
   readonly rollbackStatements?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/database_secret_backend_role vault_database_secret_backend_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/database_secret_backend_role vault_database_secret_backend_role}
 */
 export class DatabaseSecretBackendRole extends cdktf.TerraformResource {
 
@@ -96,7 +108,7 @@ export class DatabaseSecretBackendRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/database_secret_backend_role vault_database_secret_backend_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/database_secret_backend_role vault_database_secret_backend_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -107,7 +119,7 @@ export class DatabaseSecretBackendRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_database_secret_backend_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.16.0',
+        providerVersion: '3.17.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -120,6 +132,8 @@ export class DatabaseSecretBackendRole extends cdktf.TerraformResource {
     });
     this._backend = config.backend;
     this._creationStatements = config.creationStatements;
+    this._credentialConfig = config.credentialConfig;
+    this._credentialType = config.credentialType;
     this._dbName = config.dbName;
     this._defaultTtl = config.defaultTtl;
     this._id = config.id;
@@ -159,6 +173,38 @@ export class DatabaseSecretBackendRole extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get creationStatementsInput() {
     return this._creationStatements;
+  }
+
+  // credential_config - computed: false, optional: true, required: false
+  private _credentialConfig?: { [key: string]: string }; 
+  public get credentialConfig() {
+    return this.getStringMapAttribute('credential_config');
+  }
+  public set credentialConfig(value: { [key: string]: string }) {
+    this._credentialConfig = value;
+  }
+  public resetCredentialConfig() {
+    this._credentialConfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get credentialConfigInput() {
+    return this._credentialConfig;
+  }
+
+  // credential_type - computed: true, optional: true, required: false
+  private _credentialType?: string; 
+  public get credentialType() {
+    return this.getStringAttribute('credential_type');
+  }
+  public set credentialType(value: string) {
+    this._credentialType = value;
+  }
+  public resetCredentialType() {
+    this._credentialType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get credentialTypeInput() {
+    return this._credentialType;
   }
 
   // db_name - computed: false, optional: false, required: true
@@ -307,6 +353,8 @@ export class DatabaseSecretBackendRole extends cdktf.TerraformResource {
     return {
       backend: cdktf.stringToTerraform(this._backend),
       creation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(this._creationStatements),
+      credential_config: cdktf.hashMapper(cdktf.stringToTerraform)(this._credentialConfig),
+      credential_type: cdktf.stringToTerraform(this._credentialType),
       db_name: cdktf.stringToTerraform(this._dbName),
       default_ttl: cdktf.numberToTerraform(this._defaultTtl),
       id: cdktf.stringToTerraform(this._id),

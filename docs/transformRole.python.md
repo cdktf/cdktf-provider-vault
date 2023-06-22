@@ -1,6 +1,6 @@
 # `vault_transform_role`
 
-Refer to the Terraform Registory for docs: [`vault_transform_role`](https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/transform_role).
+Refer to the Terraform Registory for docs: [`vault_transform_role`](https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/transform_role).
 
 # `transformRole` Submodule <a name="`transformRole` Submodule" id="@cdktf/provider-vault.transformRole"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_transform_role`](https://regi
 
 ### TransformRole <a name="TransformRole" id="@cdktf/provider-vault.transformRole.TransformRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/transform_role vault_transform_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/transform_role vault_transform_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.transformRole.TransformRole.Initializer"></a>
 
@@ -46,7 +46,7 @@ transformRole.TransformRole(
 | <code><a href="#@cdktf/provider-vault.transformRole.TransformRole.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformRole.TransformRole.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the role. |
 | <code><a href="#@cdktf/provider-vault.transformRole.TransformRole.Initializer.parameter.path">path</a></code> | <code>str</code> | The mount path for a back-end, for example, the path given in "$ vault auth enable -path=my-aws aws". |
-| <code><a href="#@cdktf/provider-vault.transformRole.TransformRole.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/transform_role#id TransformRole#id}. |
+| <code><a href="#@cdktf/provider-vault.transformRole.TransformRole.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/transform_role#id TransformRole#id}. |
 | <code><a href="#@cdktf/provider-vault.transformRole.TransformRole.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.transformRole.TransformRole.Initializer.parameter.transformations">transformations</a></code> | <code>typing.List[str]</code> | A comma separated string or slice of transformations to use. |
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/transform_role#name TransformRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/transform_role#name TransformRole#name}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The mount path for a back-end, for example, the path given in "$ vault auth enable -path=my-aws aws".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/transform_role#path TransformRole#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/transform_role#path TransformRole#path}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/transform_role#id TransformRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/transform_role#id TransformRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -149,7 +149,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/transform_role#namespace TransformRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/transform_role#namespace TransformRole#namespace}
 
 ---
 
@@ -159,7 +159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A comma separated string or slice of transformations to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/transform_role#transformations TransformRole#transformations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/transform_role#transformations TransformRole#transformations}
 
 ---
 
@@ -821,7 +821,7 @@ transformRole.TransformRoleConfig(
 | <code><a href="#@cdktf/provider-vault.transformRole.TransformRoleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transformRole.TransformRoleConfig.property.name">name</a></code> | <code>str</code> | The name of the role. |
 | <code><a href="#@cdktf/provider-vault.transformRole.TransformRoleConfig.property.path">path</a></code> | <code>str</code> | The mount path for a back-end, for example, the path given in "$ vault auth enable -path=my-aws aws". |
-| <code><a href="#@cdktf/provider-vault.transformRole.TransformRoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/transform_role#id TransformRole#id}. |
+| <code><a href="#@cdktf/provider-vault.transformRole.TransformRoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/transform_role#id TransformRole#id}. |
 | <code><a href="#@cdktf/provider-vault.transformRole.TransformRoleConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.transformRole.TransformRoleConfig.property.transformations">transformations</a></code> | <code>typing.List[str]</code> | A comma separated string or slice of transformations to use. |
 
@@ -907,7 +907,7 @@ name: str
 
 The name of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/transform_role#name TransformRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/transform_role#name TransformRole#name}
 
 ---
 
@@ -921,7 +921,7 @@ path: str
 
 The mount path for a back-end, for example, the path given in "$ vault auth enable -path=my-aws aws".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/transform_role#path TransformRole#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/transform_role#path TransformRole#path}
 
 ---
 
@@ -933,7 +933,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/transform_role#id TransformRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/transform_role#id TransformRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -950,7 +950,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/transform_role#namespace TransformRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/transform_role#namespace TransformRole#namespace}
 
 ---
 
@@ -964,7 +964,7 @@ transformations: typing.List[str]
 
 A comma separated string or slice of transformations to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/transform_role#transformations TransformRole#transformations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/transform_role#transformations TransformRole#transformations}
 
 ---
 

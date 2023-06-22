@@ -1,3 +1,3 @@
 # `data_vault_transform_encode`
 
-Refer to the Terraform Registory for docs: [`data_vault_transform_encode`](https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/data-sources/transform_encode).
+Refer to the Terraform Registory for docs: [`data_vault_transform_encode`](https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/transform_encode).

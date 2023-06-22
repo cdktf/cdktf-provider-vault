@@ -1,6 +1,6 @@
 # `vault_identity_entity`
 
-Refer to the Terraform Registory for docs: [`vault_identity_entity`](https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_entity).
+Refer to the Terraform Registory for docs: [`vault_identity_entity`](https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_entity).
 
 # `identityEntity` Submodule <a name="`identityEntity` Submodule" id="@cdktf/provider-vault.identityEntity"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_identity_entity`](https://reg
 
 ### IdentityEntity <a name="IdentityEntity" id="@cdktf/provider-vault.identityEntity.IdentityEntity"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_entity vault_identity_entity}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_entity vault_identity_entity}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.identityEntity.IdentityEntity.Initializer"></a>
 
@@ -48,7 +48,7 @@ identityEntity.IdentityEntity(
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntity.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntity.Initializer.parameter.disabled">disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the entity is disabled. Disabled entities' associated tokens cannot be used, but are not revoked. |
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntity.Initializer.parameter.externalPolicies">external_policies</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Manage policies externally through `vault_identity_entity_policies`. |
-| <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntity.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_entity#id IdentityEntity#id}. |
+| <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntity.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_entity#id IdentityEntity#id}. |
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntity.Initializer.parameter.metadata">metadata</a></code> | <code>typing.Mapping[str]</code> | Metadata to be associated with the entity. |
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntity.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the entity. |
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntity.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 Whether the entity is disabled. Disabled entities' associated tokens cannot be used, but are not revoked.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_entity#disabled IdentityEntity#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_entity#disabled IdentityEntity#disabled}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Manage policies externally through `vault_identity_entity_policies`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_entity#external_policies IdentityEntity#external_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_entity#external_policies IdentityEntity#external_policies}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_entity#id IdentityEntity#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_entity#id IdentityEntity#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -153,7 +153,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Metadata to be associated with the entity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_entity#metadata IdentityEntity#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_entity#metadata IdentityEntity#metadata}
 
 ---
 
@@ -163,7 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the entity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_entity#name IdentityEntity#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_entity#name IdentityEntity#name}
 
 ---
 
@@ -173,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_entity#namespace IdentityEntity#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_entity#namespace IdentityEntity#namespace}
 
 ---
 
@@ -183,7 +183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Policies to be tied to the entity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_entity#policies IdentityEntity#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_entity#policies IdentityEntity#policies}
 
 ---
 
@@ -919,7 +919,7 @@ identityEntity.IdentityEntityConfig(
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntityConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntityConfig.property.disabled">disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the entity is disabled. Disabled entities' associated tokens cannot be used, but are not revoked. |
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntityConfig.property.externalPolicies">external_policies</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Manage policies externally through `vault_identity_entity_policies`. |
-| <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntityConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_entity#id IdentityEntity#id}. |
+| <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntityConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_entity#id IdentityEntity#id}. |
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntityConfig.property.metadata">metadata</a></code> | <code>typing.Mapping[str]</code> | Metadata to be associated with the entity. |
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntityConfig.property.name">name</a></code> | <code>str</code> | Name of the entity. |
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntityConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
@@ -1007,7 +1007,7 @@ disabled: typing.Union[bool, IResolvable]
 
 Whether the entity is disabled. Disabled entities' associated tokens cannot be used, but are not revoked.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_entity#disabled IdentityEntity#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_entity#disabled IdentityEntity#disabled}
 
 ---
 
@@ -1021,7 +1021,7 @@ external_policies: typing.Union[bool, IResolvable]
 
 Manage policies externally through `vault_identity_entity_policies`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_entity#external_policies IdentityEntity#external_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_entity#external_policies IdentityEntity#external_policies}
 
 ---
 
@@ -1033,7 +1033,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_entity#id IdentityEntity#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_entity#id IdentityEntity#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1050,7 +1050,7 @@ metadata: typing.Mapping[str]
 
 Metadata to be associated with the entity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_entity#metadata IdentityEntity#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_entity#metadata IdentityEntity#metadata}
 
 ---
 
@@ -1064,7 +1064,7 @@ name: str
 
 Name of the entity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_entity#name IdentityEntity#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_entity#name IdentityEntity#name}
 
 ---
 
@@ -1078,7 +1078,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_entity#namespace IdentityEntity#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_entity#namespace IdentityEntity#namespace}
 
 ---
 
@@ -1092,7 +1092,7 @@ policies: typing.List[str]
 
 Policies to be tied to the entity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_entity#policies IdentityEntity#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_entity#policies IdentityEntity#policies}
 
 ---
 

@@ -1,6 +1,6 @@
 # `vault_kmip_secret_role`
 
-Refer to the Terraform Registory for docs: [`vault_kmip_secret_role`](https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/kmip_secret_role).
+Refer to the Terraform Registory for docs: [`vault_kmip_secret_role`](https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/kmip_secret_role).
 
 # `kmipSecretRole` Submodule <a name="`kmipSecretRole` Submodule" id="@cdktf/provider-vault.kmipSecretRole"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_kmip_secret_role`](https://re
 
 ### KmipSecretRole <a name="KmipSecretRole" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/kmip_secret_role vault_kmip_secret_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/kmip_secret_role vault_kmip_secret_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer"></a>
 
@@ -1151,7 +1151,7 @@ const kmipSecretRoleConfig: kmipSecretRole.KmipSecretRoleConfig = { ... }
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.path">path</a></code> | <code>string</code> | Path where KMIP backend is mounted. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.role">role</a></code> | <code>string</code> | Name of the role. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.scope">scope</a></code> | <code>string</code> | Name of the scope. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/kmip_secret_role#id KmipSecretRole#id}. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/kmip_secret_role#id KmipSecretRole#id}. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.namespace">namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationActivate">operationActivate</a></code> | <code>boolean \| cdktf.IResolvable</code> | Grant permission to use the KMIP Activate operation. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationAddAttribute">operationAddAttribute</a></code> | <code>boolean \| cdktf.IResolvable</code> | Grant permission to use the KMIP Add Attribute operation. |
@@ -1253,7 +1253,7 @@ public readonly path: string;
 
 Path where KMIP backend is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/kmip_secret_role#path KmipSecretRole#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/kmip_secret_role#path KmipSecretRole#path}
 
 ---
 
@@ -1267,7 +1267,7 @@ public readonly role: string;
 
 Name of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/kmip_secret_role#role KmipSecretRole#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/kmip_secret_role#role KmipSecretRole#role}
 
 ---
 
@@ -1281,7 +1281,7 @@ public readonly scope: string;
 
 Name of the scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/kmip_secret_role#scope KmipSecretRole#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/kmip_secret_role#scope KmipSecretRole#scope}
 
 ---
 
@@ -1293,7 +1293,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/kmip_secret_role#id KmipSecretRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/kmip_secret_role#id KmipSecretRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1310,7 +1310,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/kmip_secret_role#namespace KmipSecretRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/kmip_secret_role#namespace KmipSecretRole#namespace}
 
 ---
 
@@ -1324,7 +1324,7 @@ public readonly operationActivate: boolean | IResolvable;
 
 Grant permission to use the KMIP Activate operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/kmip_secret_role#operation_activate KmipSecretRole#operation_activate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/kmip_secret_role#operation_activate KmipSecretRole#operation_activate}
 
 ---
 
@@ -1338,7 +1338,7 @@ public readonly operationAddAttribute: boolean | IResolvable;
 
 Grant permission to use the KMIP Add Attribute operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/kmip_secret_role#operation_add_attribute KmipSecretRole#operation_add_attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/kmip_secret_role#operation_add_attribute KmipSecretRole#operation_add_attribute}
 
 ---
 
@@ -1352,7 +1352,7 @@ public readonly operationAll: boolean | IResolvable;
 
 Grant all permissions to this role. May not be specified with any other operation_* params.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/kmip_secret_role#operation_all KmipSecretRole#operation_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/kmip_secret_role#operation_all KmipSecretRole#operation_all}
 
 ---
 
@@ -1366,7 +1366,7 @@ public readonly operationCreate: boolean | IResolvable;
 
 Grant permission to use the KMIP Create operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/kmip_secret_role#operation_create KmipSecretRole#operation_create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/kmip_secret_role#operation_create KmipSecretRole#operation_create}
 
 ---
 
@@ -1380,7 +1380,7 @@ public readonly operationDestroy: boolean | IResolvable;
 
 Grant permission to use the KMIP Destroy operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/kmip_secret_role#operation_destroy KmipSecretRole#operation_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/kmip_secret_role#operation_destroy KmipSecretRole#operation_destroy}
 
 ---
 
@@ -1394,7 +1394,7 @@ public readonly operationDiscoverVersions: boolean | IResolvable;
 
 Grant permission to use the KMIP Discover Version operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/kmip_secret_role#operation_discover_versions KmipSecretRole#operation_discover_versions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/kmip_secret_role#operation_discover_versions KmipSecretRole#operation_discover_versions}
 
 ---
 
@@ -1408,7 +1408,7 @@ public readonly operationGet: boolean | IResolvable;
 
 Grant permission to use the KMIP Get operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/kmip_secret_role#operation_get KmipSecretRole#operation_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/kmip_secret_role#operation_get KmipSecretRole#operation_get}
 
 ---
 
@@ -1422,7 +1422,7 @@ public readonly operationGetAttributeList: boolean | IResolvable;
 
 Grant permission to use the KMIP Get Attribute List operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/kmip_secret_role#operation_get_attribute_list KmipSecretRole#operation_get_attribute_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/kmip_secret_role#operation_get_attribute_list KmipSecretRole#operation_get_attribute_list}
 
 ---
 
@@ -1436,7 +1436,7 @@ public readonly operationGetAttributes: boolean | IResolvable;
 
 Grant permission to use the KMIP Get Attributes operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/kmip_secret_role#operation_get_attributes KmipSecretRole#operation_get_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/kmip_secret_role#operation_get_attributes KmipSecretRole#operation_get_attributes}
 
 ---
 
@@ -1450,7 +1450,7 @@ public readonly operationLocate: boolean | IResolvable;
 
 Grant permission to use the KMIP Locate operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/kmip_secret_role#operation_locate KmipSecretRole#operation_locate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/kmip_secret_role#operation_locate KmipSecretRole#operation_locate}
 
 ---
 
@@ -1464,7 +1464,7 @@ public readonly operationNone: boolean | IResolvable;
 
 Remove all permissions from this role. May not be specified with any other operation_* params.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/kmip_secret_role#operation_none KmipSecretRole#operation_none}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/kmip_secret_role#operation_none KmipSecretRole#operation_none}
 
 ---
 
@@ -1478,7 +1478,7 @@ public readonly operationRegister: boolean | IResolvable;
 
 Grant permission to use the KMIP Register operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/kmip_secret_role#operation_register KmipSecretRole#operation_register}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/kmip_secret_role#operation_register KmipSecretRole#operation_register}
 
 ---
 
@@ -1492,7 +1492,7 @@ public readonly operationRekey: boolean | IResolvable;
 
 Grant permission to use the KMIP Rekey operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/kmip_secret_role#operation_rekey KmipSecretRole#operation_rekey}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/kmip_secret_role#operation_rekey KmipSecretRole#operation_rekey}
 
 ---
 
@@ -1506,7 +1506,7 @@ public readonly operationRevoke: boolean | IResolvable;
 
 Grant permission to use the KMIP Revoke operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/kmip_secret_role#operation_revoke KmipSecretRole#operation_revoke}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/kmip_secret_role#operation_revoke KmipSecretRole#operation_revoke}
 
 ---
 
@@ -1520,7 +1520,7 @@ public readonly tlsClientKeyBits: number;
 
 Client certificate key bits, valid values depend on key type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/kmip_secret_role#tls_client_key_bits KmipSecretRole#tls_client_key_bits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/kmip_secret_role#tls_client_key_bits KmipSecretRole#tls_client_key_bits}
 
 ---
 
@@ -1534,7 +1534,7 @@ public readonly tlsClientKeyType: string;
 
 Client certificate key type, rsa or ec.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/kmip_secret_role#tls_client_key_type KmipSecretRole#tls_client_key_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/kmip_secret_role#tls_client_key_type KmipSecretRole#tls_client_key_type}
 
 ---
 
@@ -1548,7 +1548,7 @@ public readonly tlsClientTtl: number;
 
 Client certificate TTL in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/kmip_secret_role#tls_client_ttl KmipSecretRole#tls_client_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/kmip_secret_role#tls_client_ttl KmipSecretRole#tls_client_ttl}
 
 ---
 

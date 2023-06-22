@@ -1,6 +1,6 @@
 # `vault_kmip_secret_scope`
 
-Refer to the Terraform Registory for docs: [`vault_kmip_secret_scope`](https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/kmip_secret_scope).
+Refer to the Terraform Registory for docs: [`vault_kmip_secret_scope`](https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/kmip_secret_scope).
 
 # `kmipSecretScope` Submodule <a name="`kmipSecretScope` Submodule" id="@cdktf/provider-vault.kmipSecretScope"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_kmip_secret_scope`](https://r
 
 ### KmipSecretScope <a name="KmipSecretScope" id="@cdktf/provider-vault.kmipSecretScope.KmipSecretScope"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/kmip_secret_scope vault_kmip_secret_scope}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/kmip_secret_scope vault_kmip_secret_scope}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.kmipSecretScope.KmipSecretScope.Initializer"></a>
 
@@ -678,7 +678,7 @@ new KmipSecretScopeConfig {
 | <code><a href="#@cdktf/provider-vault.kmipSecretScope.KmipSecretScopeConfig.property.path">Path</a></code> | <code>string</code> | Path where KMIP backend is mounted. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretScope.KmipSecretScopeConfig.property.scope">Scope</a></code> | <code>string</code> | Name of the scope. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretScope.KmipSecretScopeConfig.property.force">Force</a></code> | <code>object</code> | Force deletion even if there are managed objects in the scope. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretScope.KmipSecretScopeConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/kmip_secret_scope#id KmipSecretScope#id}. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretScope.KmipSecretScopeConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/kmip_secret_scope#id KmipSecretScope#id}. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretScope.KmipSecretScopeConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -763,7 +763,7 @@ public string Path { get; set; }
 
 Path where KMIP backend is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/kmip_secret_scope#path KmipSecretScope#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/kmip_secret_scope#path KmipSecretScope#path}
 
 ---
 
@@ -777,7 +777,7 @@ public string Scope { get; set; }
 
 Name of the scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/kmip_secret_scope#scope KmipSecretScope#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/kmip_secret_scope#scope KmipSecretScope#scope}
 
 ---
 
@@ -791,7 +791,7 @@ public object Force { get; set; }
 
 Force deletion even if there are managed objects in the scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/kmip_secret_scope#force KmipSecretScope#force}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/kmip_secret_scope#force KmipSecretScope#force}
 
 ---
 
@@ -803,7 +803,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/kmip_secret_scope#id KmipSecretScope#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/kmip_secret_scope#id KmipSecretScope#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -820,7 +820,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/kmip_secret_scope#namespace KmipSecretScope#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/kmip_secret_scope#namespace KmipSecretScope#namespace}
 
 ---
 

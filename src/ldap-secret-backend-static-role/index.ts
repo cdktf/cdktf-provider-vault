@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/ldap_secret_backend_static_role
+// https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend_static_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface LdapSecretBackendStaticRoleConfig extends cdktf.TerraformMetaAr
   /**
   * Distinguished name (DN) of the existing LDAP entry to manage password rotation for.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/ldap_secret_backend_static_role#dn LdapSecretBackendStaticRole#dn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend_static_role#dn LdapSecretBackendStaticRole#dn}
   */
   readonly dn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/ldap_secret_backend_static_role#id LdapSecretBackendStaticRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend_static_role#id LdapSecretBackendStaticRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,37 +28,37 @@ export interface LdapSecretBackendStaticRoleConfig extends cdktf.TerraformMetaAr
   /**
   * The path where the LDAP secrets backend is mounted.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/ldap_secret_backend_static_role#mount LdapSecretBackendStaticRole#mount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend_static_role#mount LdapSecretBackendStaticRole#mount}
   */
   readonly mount?: string;
   /**
   * Target namespace. (requires Enterprise)
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/ldap_secret_backend_static_role#namespace LdapSecretBackendStaticRole#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend_static_role#namespace LdapSecretBackendStaticRole#namespace}
   */
   readonly namespace?: string;
   /**
   * Name of the role.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/ldap_secret_backend_static_role#role_name LdapSecretBackendStaticRole#role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend_static_role#role_name LdapSecretBackendStaticRole#role_name}
   */
   readonly roleName: string;
   /**
   * How often Vault should rotate the password of the user entry.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/ldap_secret_backend_static_role#rotation_period LdapSecretBackendStaticRole#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend_static_role#rotation_period LdapSecretBackendStaticRole#rotation_period}
   */
   readonly rotationPeriod: number;
   /**
   * The username of the existing LDAP entry to manage password rotation for.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/ldap_secret_backend_static_role#username LdapSecretBackendStaticRole#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend_static_role#username LdapSecretBackendStaticRole#username}
   */
   readonly username: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/ldap_secret_backend_static_role vault_ldap_secret_backend_static_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend_static_role vault_ldap_secret_backend_static_role}
 */
 export class LdapSecretBackendStaticRole extends cdktf.TerraformResource {
 
@@ -72,7 +72,7 @@ export class LdapSecretBackendStaticRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/ldap_secret_backend_static_role vault_ldap_secret_backend_static_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend_static_role vault_ldap_secret_backend_static_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,7 @@ export class LdapSecretBackendStaticRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_ldap_secret_backend_static_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.16.0',
+        providerVersion: '3.17.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
