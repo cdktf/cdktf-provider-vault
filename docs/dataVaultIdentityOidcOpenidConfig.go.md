@@ -1,6 +1,6 @@
 # `data_vault_identity_oidc_openid_config`
 
-Refer to the Terraform Registory for docs: [`data_vault_identity_oidc_openid_config`](https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/data-sources/identity_oidc_openid_config).
+Refer to the Terraform Registory for docs: [`data_vault_identity_oidc_openid_config`](https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/identity_oidc_openid_config).
 
 # `dataVaultIdentityOidcOpenidConfig` Submodule <a name="`dataVaultIdentityOidcOpenidConfig` Submodule" id="@cdktf/provider-vault.dataVaultIdentityOidcOpenidConfig"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_vault_identity_oidc_openid_con
 
 ### DataVaultIdentityOidcOpenidConfig <a name="DataVaultIdentityOidcOpenidConfig" id="@cdktf/provider-vault.dataVaultIdentityOidcOpenidConfig.DataVaultIdentityOidcOpenidConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/data-sources/identity_oidc_openid_config vault_identity_oidc_openid_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/identity_oidc_openid_config vault_identity_oidc_openid_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultIdentityOidcOpenidConfig.DataVaultIdentityOidcOpenidConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/datavaultidentityoidcopenidconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentityoidcopenidconfig"
 
 datavaultidentityoidcopenidconfig.NewDataVaultIdentityOidcOpenidConfig(scope Construct, id *string, config DataVaultIdentityOidcOpenidConfigConfig) DataVaultIdentityOidcOpenidConfig
 ```
@@ -284,7 +284,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.dataVaultIdentityOidcOpenidConfig.DataVaultIdentityOidcOpenidConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/datavaultidentityoidcopenidconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentityoidcopenidconfig"
 
 datavaultidentityoidcopenidconfig.DataVaultIdentityOidcOpenidConfig_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.dataVaultIdentityOidcOpenidConfig.DataVaultIdentityOidcOpenidConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/datavaultidentityoidcopenidconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentityoidcopenidconfig"
 
 datavaultidentityoidcopenidconfig.DataVaultIdentityOidcOpenidConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ datavaultidentityoidcopenidconfig.DataVaultIdentityOidcOpenidConfig_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vault.dataVaultIdentityOidcOpenidConfig.DataVaultIdentityOidcOpenidConfig.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/datavaultidentityoidcopenidconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentityoidcopenidconfig"
 
 datavaultidentityoidcopenidconfig.DataVaultIdentityOidcOpenidConfig_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -705,7 +705,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.dataVaultIdentityOidcOpenidConfig.DataVaultIdentityOidcOpenidConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/datavaultidentityoidcopenidconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentityoidcopenidconfig"
 
 &datavaultidentityoidcopenidconfig.DataVaultIdentityOidcOpenidConfigConfig {
 	Connection: interface{},
@@ -733,7 +733,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/datavaultidentityoidco
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcOpenidConfig.DataVaultIdentityOidcOpenidConfigConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcOpenidConfig.DataVaultIdentityOidcOpenidConfigConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcOpenidConfig.DataVaultIdentityOidcOpenidConfigConfig.property.name">Name</a></code> | <code>*string</code> | The name of the provider. |
-| <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcOpenidConfig.DataVaultIdentityOidcOpenidConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/data-sources/identity_oidc_openid_config#id DataVaultIdentityOidcOpenidConfig#id}. |
+| <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcOpenidConfig.DataVaultIdentityOidcOpenidConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/identity_oidc_openid_config#id DataVaultIdentityOidcOpenidConfig#id}. |
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcOpenidConfig.DataVaultIdentityOidcOpenidConfigConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -818,7 +818,7 @@ Name *string
 
 The name of the provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/data-sources/identity_oidc_openid_config#name DataVaultIdentityOidcOpenidConfig#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/identity_oidc_openid_config#name DataVaultIdentityOidcOpenidConfig#name}
 
 ---
 
@@ -830,7 +830,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/data-sources/identity_oidc_openid_config#id DataVaultIdentityOidcOpenidConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/identity_oidc_openid_config#id DataVaultIdentityOidcOpenidConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -847,7 +847,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/data-sources/identity_oidc_openid_config#namespace DataVaultIdentityOidcOpenidConfig#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/identity_oidc_openid_config#namespace DataVaultIdentityOidcOpenidConfig#namespace}
 
 ---
 

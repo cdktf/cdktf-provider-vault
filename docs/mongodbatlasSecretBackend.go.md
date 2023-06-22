@@ -1,6 +1,6 @@
 # `vault_mongodbatlas_secret_backend`
 
-Refer to the Terraform Registory for docs: [`vault_mongodbatlas_secret_backend`](https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/mongodbatlas_secret_backend).
+Refer to the Terraform Registory for docs: [`vault_mongodbatlas_secret_backend`](https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/mongodbatlas_secret_backend).
 
 # `mongodbatlasSecretBackend` Submodule <a name="`mongodbatlasSecretBackend` Submodule" id="@cdktf/provider-vault.mongodbatlasSecretBackend"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`vault_mongodbatlas_secret_backend`]
 
 ### MongodbatlasSecretBackend <a name="MongodbatlasSecretBackend" id="@cdktf/provider-vault.mongodbatlasSecretBackend.MongodbatlasSecretBackend"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/mongodbatlas_secret_backend vault_mongodbatlas_secret_backend}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/mongodbatlas_secret_backend vault_mongodbatlas_secret_backend}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.mongodbatlasSecretBackend.MongodbatlasSecretBackend.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/mongodbatlassecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/mongodbatlassecretbackend"
 
 mongodbatlassecretbackend.NewMongodbatlasSecretBackend(scope Construct, id *string, config MongodbatlasSecretBackendConfig) MongodbatlasSecretBackend
 ```
@@ -284,7 +284,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.mongodbatlasSecretBackend.MongodbatlasSecretBackend.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/mongodbatlassecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/mongodbatlassecretbackend"
 
 mongodbatlassecretbackend.MongodbatlasSecretBackend_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.mongodbatlasSecretBackend.MongodbatlasSecretBackend.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/mongodbatlassecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/mongodbatlassecretbackend"
 
 mongodbatlassecretbackend.MongodbatlasSecretBackend_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ mongodbatlassecretbackend.MongodbatlasSecretBackend_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.mongodbatlasSecretBackend.MongodbatlasSecretBackend.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/mongodbatlassecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/mongodbatlassecretbackend"
 
 mongodbatlassecretbackend.MongodbatlasSecretBackend_IsTerraformResource(x interface{}) *bool
 ```
@@ -650,7 +650,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.mongodbatlasSecretBackend.MongodbatlasSecretBackendConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/mongodbatlassecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/mongodbatlassecretbackend"
 
 &mongodbatlassecretbackend.MongodbatlasSecretBackendConfig {
 	Connection: interface{},
@@ -682,7 +682,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/mongodbatlassecretback
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretBackend.MongodbatlasSecretBackendConfig.property.mount">Mount</a></code> | <code>*string</code> | Path where MongoDB Atlas secret backend is mounted. |
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretBackend.MongodbatlasSecretBackendConfig.property.privateKey">PrivateKey</a></code> | <code>*string</code> | The Private Programmatic API Key used to connect with MongoDB Atlas API. |
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretBackend.MongodbatlasSecretBackendConfig.property.publicKey">PublicKey</a></code> | <code>*string</code> | The Public Programmatic API Key used to authenticate with the MongoDB Atlas API. |
-| <code><a href="#@cdktf/provider-vault.mongodbatlasSecretBackend.MongodbatlasSecretBackendConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/mongodbatlas_secret_backend#id MongodbatlasSecretBackend#id}. |
+| <code><a href="#@cdktf/provider-vault.mongodbatlasSecretBackend.MongodbatlasSecretBackendConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/mongodbatlas_secret_backend#id MongodbatlasSecretBackend#id}. |
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretBackend.MongodbatlasSecretBackendConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -767,7 +767,7 @@ Mount *string
 
 Path where MongoDB Atlas secret backend is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/mongodbatlas_secret_backend#mount MongodbatlasSecretBackend#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/mongodbatlas_secret_backend#mount MongodbatlasSecretBackend#mount}
 
 ---
 
@@ -781,7 +781,7 @@ PrivateKey *string
 
 The Private Programmatic API Key used to connect with MongoDB Atlas API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/mongodbatlas_secret_backend#private_key MongodbatlasSecretBackend#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/mongodbatlas_secret_backend#private_key MongodbatlasSecretBackend#private_key}
 
 ---
 
@@ -795,7 +795,7 @@ PublicKey *string
 
 The Public Programmatic API Key used to authenticate with the MongoDB Atlas API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/mongodbatlas_secret_backend#public_key MongodbatlasSecretBackend#public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/mongodbatlas_secret_backend#public_key MongodbatlasSecretBackend#public_key}
 
 ---
 
@@ -807,7 +807,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/mongodbatlas_secret_backend#id MongodbatlasSecretBackend#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/mongodbatlas_secret_backend#id MongodbatlasSecretBackend#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -824,7 +824,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/mongodbatlas_secret_backend#namespace MongodbatlasSecretBackend#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/mongodbatlas_secret_backend#namespace MongodbatlasSecretBackend#namespace}
 
 ---
 

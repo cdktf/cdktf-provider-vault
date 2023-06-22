@@ -1,6 +1,6 @@
 # `vault_identity_oidc_scope`
 
-Refer to the Terraform Registory for docs: [`vault_identity_oidc_scope`](https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_oidc_scope).
+Refer to the Terraform Registory for docs: [`vault_identity_oidc_scope`](https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_oidc_scope).
 
 # `identityOidcScope` Submodule <a name="`identityOidcScope` Submodule" id="@cdktf/provider-vault.identityOidcScope"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_identity_oidc_scope`](https:/
 
 ### IdentityOidcScope <a name="IdentityOidcScope" id="@cdktf/provider-vault.identityOidcScope.IdentityOidcScope"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_oidc_scope vault_identity_oidc_scope}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_oidc_scope vault_identity_oidc_scope}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.identityOidcScope.IdentityOidcScope.Initializer"></a>
 
@@ -46,7 +46,7 @@ identityOidcScope.IdentityOidcScope(
 | <code><a href="#@cdktf/provider-vault.identityOidcScope.IdentityOidcScope.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityOidcScope.IdentityOidcScope.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the scope. The openid scope name is reserved. |
 | <code><a href="#@cdktf/provider-vault.identityOidcScope.IdentityOidcScope.Initializer.parameter.description">description</a></code> | <code>str</code> | The scope's description. |
-| <code><a href="#@cdktf/provider-vault.identityOidcScope.IdentityOidcScope.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_oidc_scope#id IdentityOidcScope#id}. |
+| <code><a href="#@cdktf/provider-vault.identityOidcScope.IdentityOidcScope.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_oidc_scope#id IdentityOidcScope#id}. |
 | <code><a href="#@cdktf/provider-vault.identityOidcScope.IdentityOidcScope.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.identityOidcScope.IdentityOidcScope.Initializer.parameter.template">template</a></code> | <code>str</code> | The template string for the scope. This may be provided as escaped JSON or base64 encoded JSON. |
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the scope. The openid scope name is reserved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_oidc_scope#name IdentityOidcScope#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_oidc_scope#name IdentityOidcScope#name}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The scope's description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_oidc_scope#description IdentityOidcScope#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_oidc_scope#description IdentityOidcScope#description}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_oidc_scope#id IdentityOidcScope#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_oidc_scope#id IdentityOidcScope#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -149,7 +149,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_oidc_scope#namespace IdentityOidcScope#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_oidc_scope#namespace IdentityOidcScope#namespace}
 
 ---
 
@@ -159,7 +159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The template string for the scope. This may be provided as escaped JSON or base64 encoded JSON.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_oidc_scope#template IdentityOidcScope#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_oidc_scope#template IdentityOidcScope#template}
 
 ---
 
@@ -828,7 +828,7 @@ identityOidcScope.IdentityOidcScopeConfig(
 | <code><a href="#@cdktf/provider-vault.identityOidcScope.IdentityOidcScopeConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityOidcScope.IdentityOidcScopeConfig.property.name">name</a></code> | <code>str</code> | The name of the scope. The openid scope name is reserved. |
 | <code><a href="#@cdktf/provider-vault.identityOidcScope.IdentityOidcScopeConfig.property.description">description</a></code> | <code>str</code> | The scope's description. |
-| <code><a href="#@cdktf/provider-vault.identityOidcScope.IdentityOidcScopeConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_oidc_scope#id IdentityOidcScope#id}. |
+| <code><a href="#@cdktf/provider-vault.identityOidcScope.IdentityOidcScopeConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_oidc_scope#id IdentityOidcScope#id}. |
 | <code><a href="#@cdktf/provider-vault.identityOidcScope.IdentityOidcScopeConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.identityOidcScope.IdentityOidcScopeConfig.property.template">template</a></code> | <code>str</code> | The template string for the scope. This may be provided as escaped JSON or base64 encoded JSON. |
 
@@ -914,7 +914,7 @@ name: str
 
 The name of the scope. The openid scope name is reserved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_oidc_scope#name IdentityOidcScope#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_oidc_scope#name IdentityOidcScope#name}
 
 ---
 
@@ -928,7 +928,7 @@ description: str
 
 The scope's description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_oidc_scope#description IdentityOidcScope#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_oidc_scope#description IdentityOidcScope#description}
 
 ---
 
@@ -940,7 +940,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_oidc_scope#id IdentityOidcScope#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_oidc_scope#id IdentityOidcScope#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -957,7 +957,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_oidc_scope#namespace IdentityOidcScope#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_oidc_scope#namespace IdentityOidcScope#namespace}
 
 ---
 
@@ -971,7 +971,7 @@ template: str
 
 The template string for the scope. This may be provided as escaped JSON or base64 encoded JSON.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_oidc_scope#template IdentityOidcScope#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_oidc_scope#template IdentityOidcScope#template}
 
 ---
 

@@ -1,6 +1,6 @@
 # `vault_identity_entity_alias`
 
-Refer to the Terraform Registory for docs: [`vault_identity_entity_alias`](https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_entity_alias).
+Refer to the Terraform Registory for docs: [`vault_identity_entity_alias`](https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_entity_alias).
 
 # `identityEntityAlias` Submodule <a name="`identityEntityAlias` Submodule" id="@cdktf/provider-vault.identityEntityAlias"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_identity_entity_alias`](https
 
 ### IdentityEntityAlias <a name="IdentityEntityAlias" id="@cdktf/provider-vault.identityEntityAlias.IdentityEntityAlias"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_entity_alias vault_identity_entity_alias}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_entity_alias vault_identity_entity_alias}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.identityEntityAlias.IdentityEntityAlias.Initializer"></a>
 
@@ -688,7 +688,7 @@ const identityEntityAliasConfig: identityEntityAlias.IdentityEntityAliasConfig =
 | <code><a href="#@cdktf/provider-vault.identityEntityAlias.IdentityEntityAliasConfig.property.mountAccessor">mountAccessor</a></code> | <code>string</code> | Mount accessor to which this alias belongs toMount accessor to which this alias belongs to. |
 | <code><a href="#@cdktf/provider-vault.identityEntityAlias.IdentityEntityAliasConfig.property.name">name</a></code> | <code>string</code> | Name of the entity alias. |
 | <code><a href="#@cdktf/provider-vault.identityEntityAlias.IdentityEntityAliasConfig.property.customMetadata">customMetadata</a></code> | <code>{[ key: string ]: string}</code> | Custom metadata to be associated with this alias. |
-| <code><a href="#@cdktf/provider-vault.identityEntityAlias.IdentityEntityAliasConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_entity_alias#id IdentityEntityAlias#id}. |
+| <code><a href="#@cdktf/provider-vault.identityEntityAlias.IdentityEntityAliasConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_entity_alias#id IdentityEntityAlias#id}. |
 | <code><a href="#@cdktf/provider-vault.identityEntityAlias.IdentityEntityAliasConfig.property.namespace">namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -773,7 +773,7 @@ public readonly canonicalId: string;
 
 ID of the entity to which this is an alias.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_entity_alias#canonical_id IdentityEntityAlias#canonical_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_entity_alias#canonical_id IdentityEntityAlias#canonical_id}
 
 ---
 
@@ -787,7 +787,7 @@ public readonly mountAccessor: string;
 
 Mount accessor to which this alias belongs toMount accessor to which this alias belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_entity_alias#mount_accessor IdentityEntityAlias#mount_accessor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_entity_alias#mount_accessor IdentityEntityAlias#mount_accessor}
 
 ---
 
@@ -801,7 +801,7 @@ public readonly name: string;
 
 Name of the entity alias.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_entity_alias#name IdentityEntityAlias#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_entity_alias#name IdentityEntityAlias#name}
 
 ---
 
@@ -815,7 +815,7 @@ public readonly customMetadata: {[ key: string ]: string};
 
 Custom metadata to be associated with this alias.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_entity_alias#custom_metadata IdentityEntityAlias#custom_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_entity_alias#custom_metadata IdentityEntityAlias#custom_metadata}
 
 ---
 
@@ -827,7 +827,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_entity_alias#id IdentityEntityAlias#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_entity_alias#id IdentityEntityAlias#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -844,7 +844,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_entity_alias#namespace IdentityEntityAlias#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_entity_alias#namespace IdentityEntityAlias#namespace}
 
 ---
 

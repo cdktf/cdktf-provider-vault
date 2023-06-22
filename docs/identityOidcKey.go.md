@@ -1,6 +1,6 @@
 # `vault_identity_oidc_key`
 
-Refer to the Terraform Registory for docs: [`vault_identity_oidc_key`](https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_oidc_key).
+Refer to the Terraform Registory for docs: [`vault_identity_oidc_key`](https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_oidc_key).
 
 # `identityOidcKey` Submodule <a name="`identityOidcKey` Submodule" id="@cdktf/provider-vault.identityOidcKey"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`vault_identity_oidc_key`](https://r
 
 ### IdentityOidcKey <a name="IdentityOidcKey" id="@cdktf/provider-vault.identityOidcKey.IdentityOidcKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_oidc_key vault_identity_oidc_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_oidc_key vault_identity_oidc_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.identityOidcKey.IdentityOidcKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/identityoidckey"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identityoidckey"
 
 identityoidckey.NewIdentityOidcKey(scope Construct, id *string, config IdentityOidcKeyConfig) IdentityOidcKey
 ```
@@ -312,7 +312,7 @@ func ResetVerificationTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.identityOidcKey.IdentityOidcKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/identityoidckey"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identityoidckey"
 
 identityoidckey.IdentityOidcKey_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.identityOidcKey.IdentityOidcKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/identityoidckey"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identityoidckey"
 
 identityoidckey.IdentityOidcKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ identityoidckey.IdentityOidcKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.identityOidcKey.IdentityOidcKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/identityoidckey"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identityoidckey"
 
 identityoidckey.IdentityOidcKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -711,7 +711,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.identityOidcKey.IdentityOidcKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/identityoidckey"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identityoidckey"
 
 &identityoidckey.IdentityOidcKeyConfig {
 	Connection: interface{},
@@ -745,7 +745,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/identityoidckey"
 | <code><a href="#@cdktf/provider-vault.identityOidcKey.IdentityOidcKeyConfig.property.name">Name</a></code> | <code>*string</code> | Name of the key. |
 | <code><a href="#@cdktf/provider-vault.identityOidcKey.IdentityOidcKeyConfig.property.algorithm">Algorithm</a></code> | <code>*string</code> | Signing algorithm to use. Signing algorithm to use. Allowed values are: RS256 (default), RS384, RS512, ES256, ES384, ES512, EdDSA. |
 | <code><a href="#@cdktf/provider-vault.identityOidcKey.IdentityOidcKeyConfig.property.allowedClientIds">AllowedClientIds</a></code> | <code>*[]*string</code> | Array of role client ids allowed to use this key for signing. |
-| <code><a href="#@cdktf/provider-vault.identityOidcKey.IdentityOidcKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_oidc_key#id IdentityOidcKey#id}. |
+| <code><a href="#@cdktf/provider-vault.identityOidcKey.IdentityOidcKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_oidc_key#id IdentityOidcKey#id}. |
 | <code><a href="#@cdktf/provider-vault.identityOidcKey.IdentityOidcKeyConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.identityOidcKey.IdentityOidcKeyConfig.property.rotationPeriod">RotationPeriod</a></code> | <code>*f64</code> | How often to generate a new signing key in number of seconds. |
 | <code><a href="#@cdktf/provider-vault.identityOidcKey.IdentityOidcKeyConfig.property.verificationTtl">VerificationTtl</a></code> | <code>*f64</code> | Controls how long the public portion of a signing key will be available for verification after being rotated in seconds. |
@@ -832,7 +832,7 @@ Name *string
 
 Name of the key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_oidc_key#name IdentityOidcKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_oidc_key#name IdentityOidcKey#name}
 
 ---
 
@@ -846,7 +846,7 @@ Algorithm *string
 
 Signing algorithm to use. Signing algorithm to use. Allowed values are: RS256 (default), RS384, RS512, ES256, ES384, ES512, EdDSA.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_oidc_key#algorithm IdentityOidcKey#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_oidc_key#algorithm IdentityOidcKey#algorithm}
 
 ---
 
@@ -862,7 +862,7 @@ Array of role client ids allowed to use this key for signing.
 
 If empty, no roles are allowed. If "*", all roles are allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_oidc_key#allowed_client_ids IdentityOidcKey#allowed_client_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_oidc_key#allowed_client_ids IdentityOidcKey#allowed_client_ids}
 
 ---
 
@@ -874,7 +874,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_oidc_key#id IdentityOidcKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_oidc_key#id IdentityOidcKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -891,7 +891,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_oidc_key#namespace IdentityOidcKey#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_oidc_key#namespace IdentityOidcKey#namespace}
 
 ---
 
@@ -905,7 +905,7 @@ RotationPeriod *f64
 
 How often to generate a new signing key in number of seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_oidc_key#rotation_period IdentityOidcKey#rotation_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_oidc_key#rotation_period IdentityOidcKey#rotation_period}
 
 ---
 
@@ -919,7 +919,7 @@ VerificationTtl *f64
 
 Controls how long the public portion of a signing key will be available for verification after being rotated in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_oidc_key#verification_ttl IdentityOidcKey#verification_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_oidc_key#verification_ttl IdentityOidcKey#verification_ttl}
 
 ---
 

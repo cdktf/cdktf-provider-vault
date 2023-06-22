@@ -1,6 +1,6 @@
 # `vault_kv_secret`
 
-Refer to the Terraform Registory for docs: [`vault_kv_secret`](https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/kv_secret).
+Refer to the Terraform Registory for docs: [`vault_kv_secret`](https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/kv_secret).
 
 # `kvSecret` Submodule <a name="`kvSecret` Submodule" id="@cdktf/provider-vault.kvSecret"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_kv_secret`](https://registry.
 
 ### KvSecret <a name="KvSecret" id="@cdktf/provider-vault.kvSecret.KvSecret"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/kv_secret vault_kv_secret}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/kv_secret vault_kv_secret}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.kvSecret.KvSecret.Initializer"></a>
 
@@ -658,7 +658,7 @@ new KvSecretConfig {
 | <code><a href="#@cdktf/provider-vault.kvSecret.KvSecretConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecret.KvSecretConfig.property.dataJson">DataJson</a></code> | <code>string</code> | JSON-encoded secret data to write. |
 | <code><a href="#@cdktf/provider-vault.kvSecret.KvSecretConfig.property.path">Path</a></code> | <code>string</code> | Full path of the KV-V1 secret. |
-| <code><a href="#@cdktf/provider-vault.kvSecret.KvSecretConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/kv_secret#id KvSecret#id}. |
+| <code><a href="#@cdktf/provider-vault.kvSecret.KvSecretConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/kv_secret#id KvSecret#id}. |
 | <code><a href="#@cdktf/provider-vault.kvSecret.KvSecretConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -743,7 +743,7 @@ public string DataJson { get; set; }
 
 JSON-encoded secret data to write.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/kv_secret#data_json KvSecret#data_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/kv_secret#data_json KvSecret#data_json}
 
 ---
 
@@ -757,7 +757,7 @@ public string Path { get; set; }
 
 Full path of the KV-V1 secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/kv_secret#path KvSecret#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/kv_secret#path KvSecret#path}
 
 ---
 
@@ -769,7 +769,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/kv_secret#id KvSecret#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/kv_secret#id KvSecret#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -786,7 +786,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/kv_secret#namespace KvSecret#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/kv_secret#namespace KvSecret#namespace}
 
 ---
 

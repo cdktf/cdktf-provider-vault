@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_mfa_totp
+// https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_mfa_totp
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface IdentityMfaTotpConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies the hashing algorithm used to generate the TOTP code. Options include SHA1, SHA256, SHA512.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_mfa_totp#algorithm IdentityMfaTotp#algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_mfa_totp#algorithm IdentityMfaTotp#algorithm}
   */
   readonly algorithm?: string;
   /**
   * The number of digits in the generated TOTP token. This value can either be 6 or 8
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_mfa_totp#digits IdentityMfaTotp#digits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_mfa_totp#digits IdentityMfaTotp#digits}
   */
   readonly digits?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_mfa_totp#id IdentityMfaTotp#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_mfa_totp#id IdentityMfaTotp#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,49 +29,49 @@ export interface IdentityMfaTotpConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the key's issuing organization.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_mfa_totp#issuer IdentityMfaTotp#issuer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_mfa_totp#issuer IdentityMfaTotp#issuer}
   */
   readonly issuer: string;
   /**
   * Specifies the size in bytes of the generated key.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_mfa_totp#key_size IdentityMfaTotp#key_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_mfa_totp#key_size IdentityMfaTotp#key_size}
   */
   readonly keySize?: number;
   /**
   * The maximum number of consecutive failed validation attempts allowed.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_mfa_totp#max_validation_attempts IdentityMfaTotp#max_validation_attempts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_mfa_totp#max_validation_attempts IdentityMfaTotp#max_validation_attempts}
   */
   readonly maxValidationAttempts?: number;
   /**
   * Target namespace. (requires Enterprise)
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_mfa_totp#namespace IdentityMfaTotp#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_mfa_totp#namespace IdentityMfaTotp#namespace}
   */
   readonly namespace?: string;
   /**
   * The length of time in seconds used to generate a counter for the TOTP token calculation.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_mfa_totp#period IdentityMfaTotp#period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_mfa_totp#period IdentityMfaTotp#period}
   */
   readonly period?: number;
   /**
   * The pixel size of the generated square QR code.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_mfa_totp#qr_size IdentityMfaTotp#qr_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_mfa_totp#qr_size IdentityMfaTotp#qr_size}
   */
   readonly qrSize?: number;
   /**
   * The number of delay periods that are allowed when validating a TOTP token. This value can either be 0 or 1.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_mfa_totp#skew IdentityMfaTotp#skew}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_mfa_totp#skew IdentityMfaTotp#skew}
   */
   readonly skew?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_mfa_totp vault_identity_mfa_totp}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_mfa_totp vault_identity_mfa_totp}
 */
 export class IdentityMfaTotp extends cdktf.TerraformResource {
 
@@ -90,7 +85,7 @@ export class IdentityMfaTotp extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_mfa_totp vault_identity_mfa_totp} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_mfa_totp vault_identity_mfa_totp} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -101,7 +96,7 @@ export class IdentityMfaTotp extends cdktf.TerraformResource {
       terraformResourceType: 'vault_identity_mfa_totp',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.16.0',
+        providerVersion: '3.17.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

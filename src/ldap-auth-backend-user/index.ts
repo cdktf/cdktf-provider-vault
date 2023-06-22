@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/ldap_auth_backend_user
+// https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_auth_backend_user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,15 +8,15 @@ import * as cdktf from 'cdktf';
 
 export interface LdapAuthBackendUserConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/ldap_auth_backend_user#backend LdapAuthBackendUser#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_auth_backend_user#backend LdapAuthBackendUser#backend}
   */
   readonly backend?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/ldap_auth_backend_user#groups LdapAuthBackendUser#groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_auth_backend_user#groups LdapAuthBackendUser#groups}
   */
   readonly groups?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/ldap_auth_backend_user#id LdapAuthBackendUser#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_auth_backend_user#id LdapAuthBackendUser#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,21 +25,21 @@ export interface LdapAuthBackendUserConfig extends cdktf.TerraformMetaArguments 
   /**
   * Target namespace. (requires Enterprise)
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/ldap_auth_backend_user#namespace LdapAuthBackendUser#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_auth_backend_user#namespace LdapAuthBackendUser#namespace}
   */
   readonly namespace?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/ldap_auth_backend_user#policies LdapAuthBackendUser#policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_auth_backend_user#policies LdapAuthBackendUser#policies}
   */
   readonly policies?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/ldap_auth_backend_user#username LdapAuthBackendUser#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_auth_backend_user#username LdapAuthBackendUser#username}
   */
   readonly username: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/ldap_auth_backend_user vault_ldap_auth_backend_user}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_auth_backend_user vault_ldap_auth_backend_user}
 */
 export class LdapAuthBackendUser extends cdktf.TerraformResource {
 
@@ -58,7 +53,7 @@ export class LdapAuthBackendUser extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/ldap_auth_backend_user vault_ldap_auth_backend_user} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_auth_backend_user vault_ldap_auth_backend_user} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -69,7 +64,7 @@ export class LdapAuthBackendUser extends cdktf.TerraformResource {
       terraformResourceType: 'vault_ldap_auth_backend_user',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.16.0',
+        providerVersion: '3.17.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

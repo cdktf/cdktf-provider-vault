@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/data-sources/ldap_dynamic_credentials
+// https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/ldap_dynamic_credentials
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataVaultLdapDynamicCredentialsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/data-sources/ldap_dynamic_credentials#id DataVaultLdapDynamicCredentials#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/ldap_dynamic_credentials#id DataVaultLdapDynamicCredentials#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,25 +17,25 @@ export interface DataVaultLdapDynamicCredentialsConfig extends cdktf.TerraformMe
   /**
   * LDAP Secret Backend to read credentials from.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/data-sources/ldap_dynamic_credentials#mount DataVaultLdapDynamicCredentials#mount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/ldap_dynamic_credentials#mount DataVaultLdapDynamicCredentials#mount}
   */
   readonly mount: string;
   /**
   * Target namespace. (requires Enterprise)
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/data-sources/ldap_dynamic_credentials#namespace DataVaultLdapDynamicCredentials#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/ldap_dynamic_credentials#namespace DataVaultLdapDynamicCredentials#namespace}
   */
   readonly namespace?: string;
   /**
   * Name of the role.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/data-sources/ldap_dynamic_credentials#role_name DataVaultLdapDynamicCredentials#role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/ldap_dynamic_credentials#role_name DataVaultLdapDynamicCredentials#role_name}
   */
   readonly roleName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/data-sources/ldap_dynamic_credentials vault_ldap_dynamic_credentials}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/ldap_dynamic_credentials vault_ldap_dynamic_credentials}
 */
 export class DataVaultLdapDynamicCredentials extends cdktf.TerraformDataSource {
 
@@ -54,7 +49,7 @@ export class DataVaultLdapDynamicCredentials extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/data-sources/ldap_dynamic_credentials vault_ldap_dynamic_credentials} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/ldap_dynamic_credentials vault_ldap_dynamic_credentials} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +60,7 @@ export class DataVaultLdapDynamicCredentials extends cdktf.TerraformDataSource {
       terraformResourceType: 'vault_ldap_dynamic_credentials',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.16.0',
+        providerVersion: '3.17.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

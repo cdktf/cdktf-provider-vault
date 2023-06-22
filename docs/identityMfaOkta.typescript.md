@@ -1,6 +1,6 @@
 # `vault_identity_mfa_okta`
 
-Refer to the Terraform Registory for docs: [`vault_identity_mfa_okta`](https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_mfa_okta).
+Refer to the Terraform Registory for docs: [`vault_identity_mfa_okta`](https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_mfa_okta).
 
 # `identityMfaOkta` Submodule <a name="`identityMfaOkta` Submodule" id="@cdktf/provider-vault.identityMfaOkta"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_identity_mfa_okta`](https://r
 
 ### IdentityMfaOkta <a name="IdentityMfaOkta" id="@cdktf/provider-vault.identityMfaOkta.IdentityMfaOkta"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_mfa_okta vault_identity_mfa_okta}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_mfa_okta vault_identity_mfa_okta}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.identityMfaOkta.IdentityMfaOkta.Initializer"></a>
 
@@ -800,7 +800,7 @@ const identityMfaOktaConfig: identityMfaOkta.IdentityMfaOktaConfig = { ... }
 | <code><a href="#@cdktf/provider-vault.identityMfaOkta.IdentityMfaOktaConfig.property.apiToken">apiToken</a></code> | <code>string</code> | Okta API token. |
 | <code><a href="#@cdktf/provider-vault.identityMfaOkta.IdentityMfaOktaConfig.property.orgName">orgName</a></code> | <code>string</code> | Name of the organization to be used in the Okta API. |
 | <code><a href="#@cdktf/provider-vault.identityMfaOkta.IdentityMfaOktaConfig.property.baseUrl">baseUrl</a></code> | <code>string</code> | The base domain to use for API requests. |
-| <code><a href="#@cdktf/provider-vault.identityMfaOkta.IdentityMfaOktaConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_mfa_okta#id IdentityMfaOkta#id}. |
+| <code><a href="#@cdktf/provider-vault.identityMfaOkta.IdentityMfaOktaConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_mfa_okta#id IdentityMfaOkta#id}. |
 | <code><a href="#@cdktf/provider-vault.identityMfaOkta.IdentityMfaOktaConfig.property.namespace">namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.identityMfaOkta.IdentityMfaOktaConfig.property.primaryEmail">primaryEmail</a></code> | <code>boolean \| cdktf.IResolvable</code> | Only match the primary email for the account. |
 | <code><a href="#@cdktf/provider-vault.identityMfaOkta.IdentityMfaOktaConfig.property.usernameFormat">usernameFormat</a></code> | <code>string</code> | A template string for mapping Identity names to MFA methods. |
@@ -887,7 +887,7 @@ public readonly apiToken: string;
 
 Okta API token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_mfa_okta#api_token IdentityMfaOkta#api_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_mfa_okta#api_token IdentityMfaOkta#api_token}
 
 ---
 
@@ -901,7 +901,7 @@ public readonly orgName: string;
 
 Name of the organization to be used in the Okta API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_mfa_okta#org_name IdentityMfaOkta#org_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_mfa_okta#org_name IdentityMfaOkta#org_name}
 
 ---
 
@@ -915,7 +915,7 @@ public readonly baseUrl: string;
 
 The base domain to use for API requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_mfa_okta#base_url IdentityMfaOkta#base_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_mfa_okta#base_url IdentityMfaOkta#base_url}
 
 ---
 
@@ -927,7 +927,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_mfa_okta#id IdentityMfaOkta#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_mfa_okta#id IdentityMfaOkta#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -944,7 +944,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_mfa_okta#namespace IdentityMfaOkta#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_mfa_okta#namespace IdentityMfaOkta#namespace}
 
 ---
 
@@ -958,7 +958,7 @@ public readonly primaryEmail: boolean | IResolvable;
 
 Only match the primary email for the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_mfa_okta#primary_email IdentityMfaOkta#primary_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_mfa_okta#primary_email IdentityMfaOkta#primary_email}
 
 ---
 
@@ -972,7 +972,7 @@ public readonly usernameFormat: string;
 
 A template string for mapping Identity names to MFA methods.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_mfa_okta#username_format IdentityMfaOkta#username_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_mfa_okta#username_format IdentityMfaOkta#username_format}
 
 ---
 
