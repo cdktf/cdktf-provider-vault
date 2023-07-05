@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/datavaultidentityentity"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentityentity"
 
 datavaultidentityentity.NewDataVaultIdentityEntity(scope Construct, id *string, config DataVaultIdentityEntityConfig) DataVaultIdentityEntity
 ```
@@ -319,7 +319,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntity.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/datavaultidentityentity"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentityentity"
 
 datavaultidentityentity.DataVaultIdentityEntity_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntity.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/datavaultidentityentity"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentityentity"
 
 datavaultidentityentity.DataVaultIdentityEntity_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datavaultidentityentity.DataVaultIdentityEntity_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntity.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/datavaultidentityentity"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentityentity"
 
 datavaultidentityentity.DataVaultIdentityEntity_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -828,7 +828,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntityAliases.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/datavaultidentityentity"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentityentity"
 
 &datavaultidentityentity.DataVaultIdentityEntityAliases {
 
@@ -841,7 +841,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/datavaultidentityentit
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/datavaultidentityentity"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentityentity"
 
 &datavaultidentityentity.DataVaultIdentityEntityConfig {
 	Connection: interface{},
@@ -1058,7 +1058,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntityAliasesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/datavaultidentityentity"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentityentity"
 
 datavaultidentityentity.NewDataVaultIdentityEntityAliasesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataVaultIdentityEntityAliasesList
 ```
@@ -1190,7 +1190,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntityAliasesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/datavaultidentityentity"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentityentity"
 
 datavaultidentityentity.NewDataVaultIdentityEntityAliasesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataVaultIdentityEntityAliasesOutputReference
 ```
