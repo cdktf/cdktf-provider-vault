@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/terraform_cloud_secret_creds
 // generated from terraform resource schema
 
