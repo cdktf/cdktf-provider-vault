@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/nomad_secret_role
+// https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/nomad_secret_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface NomadSecretRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The mount path for the Nomad backend.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/nomad_secret_role#backend NomadSecretRole#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/nomad_secret_role#backend NomadSecretRole#backend}
   */
   readonly backend: string;
   /**
   * Specifies if the token should be global.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/nomad_secret_role#global NomadSecretRole#global}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/nomad_secret_role#global NomadSecretRole#global}
   */
   readonly global?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/nomad_secret_role#id NomadSecretRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/nomad_secret_role#id NomadSecretRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,31 +29,31 @@ export interface NomadSecretRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Target namespace. (requires Enterprise)
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/nomad_secret_role#namespace NomadSecretRole#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/nomad_secret_role#namespace NomadSecretRole#namespace}
   */
   readonly namespace?: string;
   /**
   * Comma separated list of Nomad policies the token is going to be created against. These need to be created beforehand in Nomad.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/nomad_secret_role#policies NomadSecretRole#policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/nomad_secret_role#policies NomadSecretRole#policies}
   */
   readonly policies?: string[];
   /**
   * Name of the role.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/nomad_secret_role#role NomadSecretRole#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/nomad_secret_role#role NomadSecretRole#role}
   */
   readonly role: string;
   /**
   * Specifies the type of token to create when using this role. Valid values are "client" or "management".
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/nomad_secret_role#type NomadSecretRole#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/nomad_secret_role#type NomadSecretRole#type}
   */
   readonly type?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/nomad_secret_role vault_nomad_secret_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/nomad_secret_role vault_nomad_secret_role}
 */
 export class NomadSecretRole extends cdktf.TerraformResource {
 
@@ -72,7 +67,7 @@ export class NomadSecretRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/nomad_secret_role vault_nomad_secret_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/nomad_secret_role vault_nomad_secret_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +78,7 @@ export class NomadSecretRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_nomad_secret_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.17.0',
+        providerVersion: '3.18.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

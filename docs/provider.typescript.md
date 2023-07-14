@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`vault`](https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs).
+Refer to the Terraform Registory for docs: [`vault`](https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-vault.provider"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault`](https://registry.terraform.
 
 ### VaultProvider <a name="VaultProvider" id="@cdktf/provider-vault.provider.VaultProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs vault}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs vault}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.provider.VaultProvider.Initializer"></a>
 
@@ -72,6 +72,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.resetAuthLoginOci">resetAuthLoginOci</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.resetAuthLoginOidc">resetAuthLoginOidc</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.resetAuthLoginRadius">resetAuthLoginRadius</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.resetAuthLoginTokenFile">resetAuthLoginTokenFile</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.resetAuthLoginUserpass">resetAuthLoginUserpass</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.resetCaCertDir">resetCaCertDir</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.resetCaCertFile">resetCaCertFile</a></code> | *No description.* |
@@ -225,6 +226,12 @@ public resetAuthLoginOidc(): void
 
 ```typescript
 public resetAuthLoginRadius(): void
+```
+
+##### `resetAuthLoginTokenFile` <a name="resetAuthLoginTokenFile" id="@cdktf/provider-vault.provider.VaultProvider.resetAuthLoginTokenFile"></a>
+
+```typescript
+public resetAuthLoginTokenFile(): void
 ```
 
 ##### `resetAuthLoginUserpass` <a name="resetAuthLoginUserpass" id="@cdktf/provider-vault.provider.VaultProvider.resetAuthLoginUserpass"></a>
@@ -419,6 +426,7 @@ provider.VaultProvider.isTerraformProvider(x: any)
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginOciInput">authLoginOciInput</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginOidcInput">authLoginOidcInput</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginRadiusInput">authLoginRadiusInput</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginTokenFileInput">authLoginTokenFileInput</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginUserpassInput">authLoginUserpassInput</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.caCertDirInput">caCertDirInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.caCertFileInput">caCertFileInput</a></code> | <code>string</code> | *No description.* |
@@ -447,6 +455,7 @@ provider.VaultProvider.isTerraformProvider(x: any)
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginOci">authLoginOci</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginOidc">authLoginOidc</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginRadius">authLoginRadius</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginTokenFile">authLoginTokenFile</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginUserpass">authLoginUserpass</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.caCertDir">caCertDir</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.caCertFile">caCertFile</a></code> | <code>string</code> | *No description.* |
@@ -685,6 +694,16 @@ public readonly authLoginRadiusInput: VaultProviderAuthLoginRadius;
 ```
 
 - *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>
+
+---
+
+##### `authLoginTokenFileInput`<sup>Optional</sup> <a name="authLoginTokenFileInput" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginTokenFileInput"></a>
+
+```typescript
+public readonly authLoginTokenFileInput: VaultProviderAuthLoginTokenFile;
+```
+
+- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>
 
 ---
 
@@ -968,6 +987,16 @@ public readonly authLoginRadius: VaultProviderAuthLoginRadius;
 
 ---
 
+##### `authLoginTokenFile`<sup>Optional</sup> <a name="authLoginTokenFile" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginTokenFile"></a>
+
+```typescript
+public readonly authLoginTokenFile: VaultProviderAuthLoginTokenFile;
+```
+
+- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>
+
+---
+
 ##### `authLoginUserpass`<sup>Optional</sup> <a name="authLoginUserpass" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginUserpass"></a>
 
 ```typescript
@@ -1162,10 +1191,10 @@ const vaultProviderAuthLogin: provider.VaultProviderAuthLogin = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.path">path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#path VaultProvider#path}. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.method">method</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#method VaultProvider#method}. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.namespace">namespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#namespace VaultProvider#namespace}. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.parameters">parameters</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#parameters VaultProvider#parameters}. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.path">path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#path VaultProvider#path}. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.method">method</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#method VaultProvider#method}. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.namespace">namespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#namespace VaultProvider#namespace}. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.parameters">parameters</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#parameters VaultProvider#parameters}. |
 
 ---
 
@@ -1177,7 +1206,7 @@ public readonly path: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#path VaultProvider#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#path VaultProvider#path}.
 
 ---
 
@@ -1189,7 +1218,7 @@ public readonly method: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#method VaultProvider#method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#method VaultProvider#method}.
 
 ---
 
@@ -1201,7 +1230,7 @@ public readonly namespace: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#namespace VaultProvider#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#namespace VaultProvider#namespace}.
 
 ---
 
@@ -1213,7 +1242,7 @@ public readonly parameters: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#parameters VaultProvider#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#parameters VaultProvider#parameters}.
 
 ---
 
@@ -1259,7 +1288,7 @@ public readonly role: string;
 
 The Vault role to use when logging into Vault.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#role VaultProvider#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#role VaultProvider#role}
 
 ---
 
@@ -1273,7 +1302,7 @@ public readonly awsAccessKeyId: string;
 
 The AWS access key ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#aws_access_key_id VaultProvider#aws_access_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#aws_access_key_id VaultProvider#aws_access_key_id}
 
 ---
 
@@ -1287,7 +1316,7 @@ public readonly awsIamEndpoint: string;
 
 The IAM endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#aws_iam_endpoint VaultProvider#aws_iam_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#aws_iam_endpoint VaultProvider#aws_iam_endpoint}
 
 ---
 
@@ -1301,7 +1330,7 @@ public readonly awsProfile: string;
 
 The name of the AWS profile.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#aws_profile VaultProvider#aws_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#aws_profile VaultProvider#aws_profile}
 
 ---
 
@@ -1315,7 +1344,7 @@ public readonly awsRegion: string;
 
 The AWS region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#aws_region VaultProvider#aws_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#aws_region VaultProvider#aws_region}
 
 ---
 
@@ -1329,7 +1358,7 @@ public readonly awsRoleArn: string;
 
 The ARN of the AWS Role to assume.Used during STS AssumeRole.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#aws_role_arn VaultProvider#aws_role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#aws_role_arn VaultProvider#aws_role_arn}
 
 ---
 
@@ -1343,7 +1372,7 @@ public readonly awsRoleSessionName: string;
 
 Specifies the name to attach to the AWS role session. Used during STS AssumeRole.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#aws_role_session_name VaultProvider#aws_role_session_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#aws_role_session_name VaultProvider#aws_role_session_name}
 
 ---
 
@@ -1357,7 +1386,7 @@ public readonly awsSecretAccessKey: string;
 
 The AWS secret access key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#aws_secret_access_key VaultProvider#aws_secret_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#aws_secret_access_key VaultProvider#aws_secret_access_key}
 
 ---
 
@@ -1371,7 +1400,7 @@ public readonly awsSessionToken: string;
 
 The AWS session token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#aws_session_token VaultProvider#aws_session_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#aws_session_token VaultProvider#aws_session_token}
 
 ---
 
@@ -1385,7 +1414,7 @@ public readonly awsSharedCredentialsFile: string;
 
 Path to the AWS shared credentials file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#aws_shared_credentials_file VaultProvider#aws_shared_credentials_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#aws_shared_credentials_file VaultProvider#aws_shared_credentials_file}
 
 ---
 
@@ -1399,7 +1428,7 @@ public readonly awsStsEndpoint: string;
 
 The STS endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#aws_sts_endpoint VaultProvider#aws_sts_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#aws_sts_endpoint VaultProvider#aws_sts_endpoint}
 
 ---
 
@@ -1413,7 +1442,7 @@ public readonly awsWebIdentityTokenFile: string;
 
 Path to the file containing an OAuth 2.0 access token or OpenID Connect ID token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#aws_web_identity_token_file VaultProvider#aws_web_identity_token_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#aws_web_identity_token_file VaultProvider#aws_web_identity_token_file}
 
 ---
 
@@ -1427,7 +1456,7 @@ public readonly headerValue: string;
 
 The Vault header value to include in the STS signing request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#header_value VaultProvider#header_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#header_value VaultProvider#header_value}
 
 ---
 
@@ -1441,7 +1470,7 @@ public readonly mount: string;
 
 The path where the authentication engine is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#mount VaultProvider#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#mount VaultProvider#mount}
 
 ---
 
@@ -1455,7 +1484,7 @@ public readonly namespace: string;
 
 The authentication engine's namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#namespace VaultProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#namespace VaultProvider#namespace}
 
 ---
 
@@ -1497,7 +1526,7 @@ public readonly resourceGroupName: string;
 
 The resource group for the machine that generated the MSI token. This information can be obtained through instance metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#resource_group_name VaultProvider#resource_group_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#resource_group_name VaultProvider#resource_group_name}
 
 ---
 
@@ -1511,7 +1540,7 @@ public readonly role: string;
 
 Name of the login role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#role VaultProvider#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#role VaultProvider#role}
 
 ---
 
@@ -1525,7 +1554,7 @@ public readonly subscriptionId: string;
 
 The subscription ID for the machine that generated the MSI token. This information can be obtained through instance metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#subscription_id VaultProvider#subscription_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#subscription_id VaultProvider#subscription_id}
 
 ---
 
@@ -1539,7 +1568,7 @@ public readonly clientId: string;
 
 The identity's client ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#client_id VaultProvider#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#client_id VaultProvider#client_id}
 
 ---
 
@@ -1553,7 +1582,7 @@ public readonly jwt: string;
 
 A signed JSON Web Token. If not specified on will be created automatically.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#jwt VaultProvider#jwt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#jwt VaultProvider#jwt}
 
 ---
 
@@ -1567,7 +1596,7 @@ public readonly mount: string;
 
 The path where the authentication engine is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#mount VaultProvider#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#mount VaultProvider#mount}
 
 ---
 
@@ -1581,7 +1610,7 @@ public readonly namespace: string;
 
 The authentication engine's namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#namespace VaultProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#namespace VaultProvider#namespace}
 
 ---
 
@@ -1595,7 +1624,7 @@ public readonly scope: string;
 
 The scopes to include in the token request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#scope VaultProvider#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#scope VaultProvider#scope}
 
 ---
 
@@ -1609,7 +1638,7 @@ public readonly tenantId: string;
 
 Provides the tenant ID to use in a multi-tenant authentication scenario.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#tenant_id VaultProvider#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#tenant_id VaultProvider#tenant_id}
 
 ---
 
@@ -1625,7 +1654,7 @@ The virtual machine name for the machine that generated the MSI token.
 
 This information can be obtained through instance metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#vm_name VaultProvider#vm_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#vm_name VaultProvider#vm_name}
 
 ---
 
@@ -1641,7 +1670,7 @@ The virtual machine scale set name for the machine that generated the MSI token.
 
 This information can be obtained through instance metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#vmss_name VaultProvider#vmss_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#vmss_name VaultProvider#vmss_name}
 
 ---
 
@@ -1677,7 +1706,7 @@ public readonly certFile: string;
 
 Path to a file containing the client certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#cert_file VaultProvider#cert_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#cert_file VaultProvider#cert_file}
 
 ---
 
@@ -1691,7 +1720,7 @@ public readonly keyFile: string;
 
 Path to a file containing the private key that the certificate was issued for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#key_file VaultProvider#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#key_file VaultProvider#key_file}
 
 ---
 
@@ -1705,7 +1734,7 @@ public readonly mount: string;
 
 The path where the authentication engine is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#mount VaultProvider#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#mount VaultProvider#mount}
 
 ---
 
@@ -1719,7 +1748,7 @@ public readonly name: string;
 
 Name of the certificate's role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#name VaultProvider#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#name VaultProvider#name}
 
 ---
 
@@ -1733,7 +1762,7 @@ public readonly namespace: string;
 
 The authentication engine's namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#namespace VaultProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#namespace VaultProvider#namespace}
 
 ---
 
@@ -1770,7 +1799,7 @@ public readonly role: string;
 
 Name of the login role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#role VaultProvider#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#role VaultProvider#role}
 
 ---
 
@@ -1784,7 +1813,7 @@ public readonly credentials: string;
 
 Path to the Google Cloud credentials file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#credentials VaultProvider#credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#credentials VaultProvider#credentials}
 
 ---
 
@@ -1798,7 +1827,7 @@ public readonly jwt: string;
 
 A signed JSON Web Token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#jwt VaultProvider#jwt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#jwt VaultProvider#jwt}
 
 ---
 
@@ -1812,7 +1841,7 @@ public readonly mount: string;
 
 The path where the authentication engine is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#mount VaultProvider#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#mount VaultProvider#mount}
 
 ---
 
@@ -1826,7 +1855,7 @@ public readonly namespace: string;
 
 The authentication engine's namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#namespace VaultProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#namespace VaultProvider#namespace}
 
 ---
 
@@ -1840,7 +1869,7 @@ public readonly serviceAccount: string;
 
 IAM service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#service_account VaultProvider#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#service_account VaultProvider#service_account}
 
 ---
 
@@ -1875,7 +1904,7 @@ public readonly jwt: string;
 
 A signed JSON Web Token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#jwt VaultProvider#jwt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#jwt VaultProvider#jwt}
 
 ---
 
@@ -1889,7 +1918,7 @@ public readonly role: string;
 
 Name of the login role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#role VaultProvider#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#role VaultProvider#role}
 
 ---
 
@@ -1903,7 +1932,7 @@ public readonly mount: string;
 
 The path where the authentication engine is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#mount VaultProvider#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#mount VaultProvider#mount}
 
 ---
 
@@ -1917,7 +1946,7 @@ public readonly namespace: string;
 
 The authentication engine's namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#namespace VaultProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#namespace VaultProvider#namespace}
 
 ---
 
@@ -1958,7 +1987,7 @@ public readonly disableFastNegotiation: boolean | IResolvable;
 
 Disable the Kerberos FAST negotiation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#disable_fast_negotiation VaultProvider#disable_fast_negotiation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#disable_fast_negotiation VaultProvider#disable_fast_negotiation}
 
 ---
 
@@ -1972,7 +2001,7 @@ public readonly keytabPath: string;
 
 The Kerberos keytab file containing the entry of the login entity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#keytab_path VaultProvider#keytab_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#keytab_path VaultProvider#keytab_path}
 
 ---
 
@@ -1986,7 +2015,7 @@ public readonly krb5ConfPath: string;
 
 A valid Kerberos configuration file e.g. /etc/krb5.conf.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#krb5conf_path VaultProvider#krb5conf_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#krb5conf_path VaultProvider#krb5conf_path}
 
 ---
 
@@ -2000,7 +2029,7 @@ public readonly mount: string;
 
 The path where the authentication engine is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#mount VaultProvider#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#mount VaultProvider#mount}
 
 ---
 
@@ -2014,7 +2043,7 @@ public readonly namespace: string;
 
 The authentication engine's namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#namespace VaultProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#namespace VaultProvider#namespace}
 
 ---
 
@@ -2028,7 +2057,7 @@ public readonly realm: string;
 
 The Kerberos server's authoritative authentication domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#realm VaultProvider#realm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#realm VaultProvider#realm}
 
 ---
 
@@ -2042,7 +2071,7 @@ public readonly removeInstanceName: boolean | IResolvable;
 
 Strip the host from the username found in the keytab.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#remove_instance_name VaultProvider#remove_instance_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#remove_instance_name VaultProvider#remove_instance_name}
 
 ---
 
@@ -2056,7 +2085,7 @@ public readonly service: string;
 
 The service principle name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#service VaultProvider#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#service VaultProvider#service}
 
 ---
 
@@ -2070,7 +2099,7 @@ public readonly token: string;
 
 Simple and Protected GSSAPI Negotiation Mechanism (SPNEGO) token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#token VaultProvider#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#token VaultProvider#token}
 
 ---
 
@@ -2084,7 +2113,7 @@ public readonly username: string;
 
 The username to login into Kerberos with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#username VaultProvider#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#username VaultProvider#username}
 
 ---
 
@@ -2119,7 +2148,7 @@ public readonly authType: string;
 
 Authentication type to use when getting OCI credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#auth_type VaultProvider#auth_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#auth_type VaultProvider#auth_type}
 
 ---
 
@@ -2133,7 +2162,7 @@ public readonly role: string;
 
 Name of the login role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#role VaultProvider#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#role VaultProvider#role}
 
 ---
 
@@ -2147,7 +2176,7 @@ public readonly mount: string;
 
 The path where the authentication engine is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#mount VaultProvider#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#mount VaultProvider#mount}
 
 ---
 
@@ -2161,7 +2190,7 @@ public readonly namespace: string;
 
 The authentication engine's namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#namespace VaultProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#namespace VaultProvider#namespace}
 
 ---
 
@@ -2197,7 +2226,7 @@ public readonly role: string;
 
 Name of the login role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#role VaultProvider#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#role VaultProvider#role}
 
 ---
 
@@ -2211,7 +2240,7 @@ public readonly callbackAddress: string;
 
 The callback address. Must be a valid URI without the path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#callback_address VaultProvider#callback_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#callback_address VaultProvider#callback_address}
 
 ---
 
@@ -2225,7 +2254,7 @@ public readonly callbackListenerAddress: string;
 
 The callback listener's address. Must be a valid URI without the path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#callback_listener_address VaultProvider#callback_listener_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#callback_listener_address VaultProvider#callback_listener_address}
 
 ---
 
@@ -2239,7 +2268,7 @@ public readonly mount: string;
 
 The path where the authentication engine is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#mount VaultProvider#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#mount VaultProvider#mount}
 
 ---
 
@@ -2253,7 +2282,7 @@ public readonly namespace: string;
 
 The authentication engine's namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#namespace VaultProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#namespace VaultProvider#namespace}
 
 ---
 
@@ -2288,7 +2317,7 @@ public readonly password: string;
 
 The Radius password for username.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#password VaultProvider#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#password VaultProvider#password}
 
 ---
 
@@ -2302,7 +2331,7 @@ public readonly username: string;
 
 The Radius username.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#username VaultProvider#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#username VaultProvider#username}
 
 ---
 
@@ -2316,7 +2345,7 @@ public readonly mount: string;
 
 The path where the authentication engine is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#mount VaultProvider#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#mount VaultProvider#mount}
 
 ---
 
@@ -2330,7 +2359,54 @@ public readonly namespace: string;
 
 The authentication engine's namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#namespace VaultProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#namespace VaultProvider#namespace}
+
+---
+
+### VaultProviderAuthLoginTokenFile <a name="VaultProviderAuthLoginTokenFile" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile.Initializer"></a>
+
+```typescript
+import { provider } from '@cdktf/provider-vault'
+
+const vaultProviderAuthLoginTokenFile: provider.VaultProviderAuthLoginTokenFile = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile.property.filename">filename</a></code> | <code>string</code> | The name of a file containing a single line that is a valid Vault token. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile.property.namespace">namespace</a></code> | <code>string</code> | The authentication engine's namespace. |
+
+---
+
+##### `filename`<sup>Required</sup> <a name="filename" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile.property.filename"></a>
+
+```typescript
+public readonly filename: string;
+```
+
+- *Type:* string
+
+The name of a file containing a single line that is a valid Vault token.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#filename VaultProvider#filename}
+
+---
+
+##### `namespace`<sup>Optional</sup> <a name="namespace" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile.property.namespace"></a>
+
+```typescript
+public readonly namespace: string;
+```
+
+- *Type:* string
+
+The authentication engine's namespace.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#namespace VaultProvider#namespace}
 
 ---
 
@@ -2366,7 +2442,7 @@ public readonly username: string;
 
 Login with username.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#username VaultProvider#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#username VaultProvider#username}
 
 ---
 
@@ -2380,7 +2456,7 @@ public readonly mount: string;
 
 The path where the authentication engine is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#mount VaultProvider#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#mount VaultProvider#mount}
 
 ---
 
@@ -2394,7 +2470,7 @@ public readonly namespace: string;
 
 The authentication engine's namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#namespace VaultProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#namespace VaultProvider#namespace}
 
 ---
 
@@ -2408,7 +2484,7 @@ public readonly password: string;
 
 Login with password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#password VaultProvider#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#password VaultProvider#password}
 
 ---
 
@@ -2422,7 +2498,7 @@ public readonly passwordFile: string;
 
 Login with password from a file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#password_file VaultProvider#password_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#password_file VaultProvider#password_file}
 
 ---
 
@@ -2455,7 +2531,7 @@ public readonly certFile: string;
 
 Path to a file containing the client certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#cert_file VaultProvider#cert_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#cert_file VaultProvider#cert_file}
 
 ---
 
@@ -2469,7 +2545,7 @@ public readonly keyFile: string;
 
 Path to a file containing the private key that the certificate was issued for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#key_file VaultProvider#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#key_file VaultProvider#key_file}
 
 ---
 
@@ -2500,6 +2576,7 @@ const vaultProviderConfig: provider.VaultProviderConfig = { ... }
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginOci">authLoginOci</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a></code> | auth_login_oci block. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginOidc">authLoginOidc</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a></code> | auth_login_oidc block. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginRadius">authLoginRadius</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a></code> | auth_login_radius block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginTokenFile">authLoginTokenFile</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a></code> | auth_login_token_file block. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginUserpass">authLoginUserpass</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a></code> | auth_login_userpass block. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.caCertDir">caCertDir</a></code> | <code>string</code> | Path to directory containing CA certificate files to validate the server's certificate. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.caCertFile">caCertFile</a></code> | <code>string</code> | Path to a CA certificate file to validate the server's certificate. |
@@ -2529,7 +2606,7 @@ public readonly address: string;
 
 URL of the root of the target Vault server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#address VaultProvider#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#address VaultProvider#address}
 
 ---
 
@@ -2543,7 +2620,7 @@ public readonly addAddressToEnv: string;
 
 If true, adds the value of the `address` argument to the Terraform process environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#add_address_to_env VaultProvider#add_address_to_env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#add_address_to_env VaultProvider#add_address_to_env}
 
 ---
 
@@ -2557,7 +2634,7 @@ public readonly alias: string;
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#alias VaultProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#alias VaultProvider#alias}
 
 ---
 
@@ -2571,7 +2648,7 @@ public readonly authLogin: VaultProviderAuthLogin;
 
 auth_login block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#auth_login VaultProvider#auth_login}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#auth_login VaultProvider#auth_login}
 
 ---
 
@@ -2585,7 +2662,7 @@ public readonly authLoginAws: VaultProviderAuthLoginAws;
 
 auth_login_aws block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#auth_login_aws VaultProvider#auth_login_aws}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#auth_login_aws VaultProvider#auth_login_aws}
 
 ---
 
@@ -2599,7 +2676,7 @@ public readonly authLoginAzure: VaultProviderAuthLoginAzure;
 
 auth_login_azure block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#auth_login_azure VaultProvider#auth_login_azure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#auth_login_azure VaultProvider#auth_login_azure}
 
 ---
 
@@ -2613,7 +2690,7 @@ public readonly authLoginCert: VaultProviderAuthLoginCert;
 
 auth_login_cert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#auth_login_cert VaultProvider#auth_login_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#auth_login_cert VaultProvider#auth_login_cert}
 
 ---
 
@@ -2627,7 +2704,7 @@ public readonly authLoginGcp: VaultProviderAuthLoginGcp;
 
 auth_login_gcp block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#auth_login_gcp VaultProvider#auth_login_gcp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#auth_login_gcp VaultProvider#auth_login_gcp}
 
 ---
 
@@ -2641,7 +2718,7 @@ public readonly authLoginJwt: VaultProviderAuthLoginJwt;
 
 auth_login_jwt block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#auth_login_jwt VaultProvider#auth_login_jwt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#auth_login_jwt VaultProvider#auth_login_jwt}
 
 ---
 
@@ -2655,7 +2732,7 @@ public readonly authLoginKerberos: VaultProviderAuthLoginKerberos;
 
 auth_login_kerberos block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#auth_login_kerberos VaultProvider#auth_login_kerberos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#auth_login_kerberos VaultProvider#auth_login_kerberos}
 
 ---
 
@@ -2669,7 +2746,7 @@ public readonly authLoginOci: VaultProviderAuthLoginOci;
 
 auth_login_oci block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#auth_login_oci VaultProvider#auth_login_oci}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#auth_login_oci VaultProvider#auth_login_oci}
 
 ---
 
@@ -2683,7 +2760,7 @@ public readonly authLoginOidc: VaultProviderAuthLoginOidc;
 
 auth_login_oidc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#auth_login_oidc VaultProvider#auth_login_oidc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#auth_login_oidc VaultProvider#auth_login_oidc}
 
 ---
 
@@ -2697,7 +2774,21 @@ public readonly authLoginRadius: VaultProviderAuthLoginRadius;
 
 auth_login_radius block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#auth_login_radius VaultProvider#auth_login_radius}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#auth_login_radius VaultProvider#auth_login_radius}
+
+---
+
+##### `authLoginTokenFile`<sup>Optional</sup> <a name="authLoginTokenFile" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginTokenFile"></a>
+
+```typescript
+public readonly authLoginTokenFile: VaultProviderAuthLoginTokenFile;
+```
+
+- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>
+
+auth_login_token_file block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#auth_login_token_file VaultProvider#auth_login_token_file}
 
 ---
 
@@ -2711,7 +2802,7 @@ public readonly authLoginUserpass: VaultProviderAuthLoginUserpass;
 
 auth_login_userpass block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#auth_login_userpass VaultProvider#auth_login_userpass}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#auth_login_userpass VaultProvider#auth_login_userpass}
 
 ---
 
@@ -2725,7 +2816,7 @@ public readonly caCertDir: string;
 
 Path to directory containing CA certificate files to validate the server's certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#ca_cert_dir VaultProvider#ca_cert_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#ca_cert_dir VaultProvider#ca_cert_dir}
 
 ---
 
@@ -2739,7 +2830,7 @@ public readonly caCertFile: string;
 
 Path to a CA certificate file to validate the server's certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#ca_cert_file VaultProvider#ca_cert_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#ca_cert_file VaultProvider#ca_cert_file}
 
 ---
 
@@ -2753,7 +2844,7 @@ public readonly clientAuth: VaultProviderClientAuth;
 
 client_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#client_auth VaultProvider#client_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#client_auth VaultProvider#client_auth}
 
 ---
 
@@ -2767,7 +2858,7 @@ public readonly headers: IResolvable | VaultProviderHeaders[];
 
 headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#headers VaultProvider#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#headers VaultProvider#headers}
 
 ---
 
@@ -2781,7 +2872,7 @@ public readonly maxLeaseTtlSeconds: number;
 
 Maximum TTL for secret leases requested by this provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#max_lease_ttl_seconds VaultProvider#max_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#max_lease_ttl_seconds VaultProvider#max_lease_ttl_seconds}
 
 ---
 
@@ -2795,7 +2886,7 @@ public readonly maxRetries: number;
 
 Maximum number of retries when a 5xx error code is encountered.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#max_retries VaultProvider#max_retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#max_retries VaultProvider#max_retries}
 
 ---
 
@@ -2809,7 +2900,7 @@ public readonly maxRetriesCcc: number;
 
 Maximum number of retries for Client Controlled Consistency related operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#max_retries_ccc VaultProvider#max_retries_ccc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#max_retries_ccc VaultProvider#max_retries_ccc}
 
 ---
 
@@ -2823,7 +2914,7 @@ public readonly namespace: string;
 
 The namespace to use. Available only for Vault Enterprise.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#namespace VaultProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#namespace VaultProvider#namespace}
 
 ---
 
@@ -2837,7 +2928,7 @@ public readonly skipChildToken: boolean | IResolvable;
 
 Set this to true to prevent the creation of ephemeral child token used by this provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#skip_child_token VaultProvider#skip_child_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#skip_child_token VaultProvider#skip_child_token}
 
 ---
 
@@ -2851,7 +2942,7 @@ public readonly skipGetVaultVersion: boolean | IResolvable;
 
 Skip the dynamic fetching of the Vault server version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#skip_get_vault_version VaultProvider#skip_get_vault_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#skip_get_vault_version VaultProvider#skip_get_vault_version}
 
 ---
 
@@ -2865,7 +2956,7 @@ public readonly skipTlsVerify: boolean | IResolvable;
 
 Set this to true only if the target Vault server is an insecure development instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#skip_tls_verify VaultProvider#skip_tls_verify}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#skip_tls_verify VaultProvider#skip_tls_verify}
 
 ---
 
@@ -2879,7 +2970,7 @@ public readonly tlsServerName: string;
 
 Name to use as the SNI host when connecting via TLS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#tls_server_name VaultProvider#tls_server_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#tls_server_name VaultProvider#tls_server_name}
 
 ---
 
@@ -2893,7 +2984,7 @@ public readonly token: string;
 
 Token to use to authenticate to Vault.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#token VaultProvider#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#token VaultProvider#token}
 
 ---
 
@@ -2907,7 +2998,7 @@ public readonly tokenName: string;
 
 Token name to use for creating the Vault child token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#token_name VaultProvider#token_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#token_name VaultProvider#token_name}
 
 ---
 
@@ -2921,7 +3012,7 @@ public readonly vaultVersionOverride: string;
 
 Override the Vault server version, which is normally determined dynamically from the target Vault server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#vault_version_override VaultProvider#vault_version_override}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#vault_version_override VaultProvider#vault_version_override}
 
 ---
 
@@ -2954,7 +3045,7 @@ public readonly name: string;
 
 The header name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#name VaultProvider#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#name VaultProvider#name}
 
 ---
 
@@ -2968,7 +3059,7 @@ public readonly value: string;
 
 The header value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs#value VaultProvider#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs#value VaultProvider#value}
 
 ---
 

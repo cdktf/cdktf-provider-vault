@@ -1,6 +1,6 @@
 # `vault_transit_secret_cache_config`
 
-Refer to the Terraform Registory for docs: [`vault_transit_secret_cache_config`](https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/transit_secret_cache_config).
+Refer to the Terraform Registory for docs: [`vault_transit_secret_cache_config`](https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/transit_secret_cache_config).
 
 # `transitSecretCacheConfig` Submodule <a name="`transitSecretCacheConfig` Submodule" id="@cdktf/provider-vault.transitSecretCacheConfig"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_transit_secret_cache_config`]
 
 ### TransitSecretCacheConfig <a name="TransitSecretCacheConfig" id="@cdktf/provider-vault.transitSecretCacheConfig.TransitSecretCacheConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/transit_secret_cache_config vault_transit_secret_cache_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/transit_secret_cache_config vault_transit_secret_cache_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.transitSecretCacheConfig.TransitSecretCacheConfig.Initializer"></a>
 
@@ -647,7 +647,7 @@ new TransitSecretCacheConfigConfig {
 | <code><a href="#@cdktf/provider-vault.transitSecretCacheConfig.TransitSecretCacheConfigConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transitSecretCacheConfig.TransitSecretCacheConfigConfig.property.backend">Backend</a></code> | <code>string</code> | The Transit secret backend the resource belongs to. |
 | <code><a href="#@cdktf/provider-vault.transitSecretCacheConfig.TransitSecretCacheConfigConfig.property.size">Size</a></code> | <code>double</code> | Number of cache entries. A size of 0 mean unlimited. |
-| <code><a href="#@cdktf/provider-vault.transitSecretCacheConfig.TransitSecretCacheConfigConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/transit_secret_cache_config#id TransitSecretCacheConfig#id}. |
+| <code><a href="#@cdktf/provider-vault.transitSecretCacheConfig.TransitSecretCacheConfigConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/transit_secret_cache_config#id TransitSecretCacheConfig#id}. |
 | <code><a href="#@cdktf/provider-vault.transitSecretCacheConfig.TransitSecretCacheConfigConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -732,7 +732,7 @@ public string Backend { get; set; }
 
 The Transit secret backend the resource belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/transit_secret_cache_config#backend TransitSecretCacheConfig#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/transit_secret_cache_config#backend TransitSecretCacheConfig#backend}
 
 ---
 
@@ -746,7 +746,7 @@ public double Size { get; set; }
 
 Number of cache entries. A size of 0 mean unlimited.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/transit_secret_cache_config#size TransitSecretCacheConfig#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/transit_secret_cache_config#size TransitSecretCacheConfig#size}
 
 ---
 
@@ -758,7 +758,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/transit_secret_cache_config#id TransitSecretCacheConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/transit_secret_cache_config#id TransitSecretCacheConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -775,7 +775,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/transit_secret_cache_config#namespace TransitSecretCacheConfig#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/transit_secret_cache_config#namespace TransitSecretCacheConfig#namespace}
 
 ---
 
