@@ -138,6 +138,7 @@ The following submodules are available:
 - [passwordPolicy](./passwordPolicy.java.md)
 - [pkiSecretBackendCert](./pkiSecretBackendCert.java.md)
 - [pkiSecretBackendConfigCa](./pkiSecretBackendConfigCa.java.md)
+- [pkiSecretBackendConfigIssuers](./pkiSecretBackendConfigIssuers.java.md)
 - [pkiSecretBackendConfigUrls](./pkiSecretBackendConfigUrls.java.md)
 - [pkiSecretBackendCrlConfig](./pkiSecretBackendCrlConfig.java.md)
 - [pkiSecretBackendIntermediateCertRequest](./pkiSecretBackendIntermediateCertRequest.java.md)
