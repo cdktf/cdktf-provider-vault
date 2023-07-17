@@ -138,6 +138,7 @@ The following submodules are available:
 - [passwordPolicy](./passwordPolicy.go.md)
 - [pkiSecretBackendCert](./pkiSecretBackendCert.go.md)
 - [pkiSecretBackendConfigCa](./pkiSecretBackendConfigCa.go.md)
+- [pkiSecretBackendConfigIssuers](./pkiSecretBackendConfigIssuers.go.md)
 - [pkiSecretBackendConfigUrls](./pkiSecretBackendConfigUrls.go.md)
 - [pkiSecretBackendCrlConfig](./pkiSecretBackendCrlConfig.go.md)
 - [pkiSecretBackendIntermediateCertRequest](./pkiSecretBackendIntermediateCertRequest.go.md)

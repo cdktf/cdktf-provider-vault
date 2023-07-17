@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_oidc_role
+// https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface IdentityOidcRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The value that will be included in the `aud` field of all the OIDC identity tokens issued by this role
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_oidc_role#client_id IdentityOidcRole#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_role#client_id IdentityOidcRole#client_id}
   */
   readonly clientId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_oidc_role#id IdentityOidcRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_role#id IdentityOidcRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,37 +23,37 @@ export interface IdentityOidcRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * A configured named key, the key must already exist.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_oidc_role#key IdentityOidcRole#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_role#key IdentityOidcRole#key}
   */
   readonly key: string;
   /**
   * Name of the role.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_oidc_role#name IdentityOidcRole#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_role#name IdentityOidcRole#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_oidc_role#namespace IdentityOidcRole#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_role#namespace IdentityOidcRole#namespace}
   */
   readonly namespace?: string;
   /**
   * The template string to use for generating tokens. This may be in string-ified JSON or base64 format.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_oidc_role#template IdentityOidcRole#template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_role#template IdentityOidcRole#template}
   */
   readonly template?: string;
   /**
   * TTL of the tokens generated against the role in number of seconds.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_oidc_role#ttl IdentityOidcRole#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_role#ttl IdentityOidcRole#ttl}
   */
   readonly ttl?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_oidc_role vault_identity_oidc_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_role vault_identity_oidc_role}
 */
 export class IdentityOidcRole extends cdktf.TerraformResource {
 
@@ -72,7 +67,7 @@ export class IdentityOidcRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_oidc_role vault_identity_oidc_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_role vault_identity_oidc_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +78,7 @@ export class IdentityOidcRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_identity_oidc_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.17.0',
+        providerVersion: '3.18.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

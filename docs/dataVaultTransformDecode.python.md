@@ -1,6 +1,6 @@
 # `data_vault_transform_decode`
 
-Refer to the Terraform Registory for docs: [`data_vault_transform_decode`](https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/transform_decode).
+Refer to the Terraform Registory for docs: [`data_vault_transform_decode`](https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_decode).
 
 # `dataVaultTransformDecode` Submodule <a name="`dataVaultTransformDecode` Submodule" id="@cdktf/provider-vault.dataVaultTransformDecode"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_vault_transform_decode`](https
 
 ### DataVaultTransformDecode <a name="DataVaultTransformDecode" id="@cdktf/provider-vault.dataVaultTransformDecode.DataVaultTransformDecode"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/transform_decode vault_transform_decode}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_decode vault_transform_decode}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultTransformDecode.DataVaultTransformDecode.Initializer"></a>
 
@@ -54,7 +54,7 @@ dataVaultTransformDecode.DataVaultTransformDecode(
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformDecode.DataVaultTransformDecode.Initializer.parameter.batchInput">batch_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[typing.Mapping[str]]]</code> | Specifies a list of items to be decoded in a single batch. |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformDecode.DataVaultTransformDecode.Initializer.parameter.batchResults">batch_results</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[typing.Mapping[str]]]</code> | The result of decoding batch_input. |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformDecode.DataVaultTransformDecode.Initializer.parameter.decodedValue">decoded_value</a></code> | <code>str</code> | The result of decoding a value. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransformDecode.DataVaultTransformDecode.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/transform_decode#id DataVaultTransformDecode#id}. |
+| <code><a href="#@cdktf/provider-vault.dataVaultTransformDecode.DataVaultTransformDecode.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_decode#id DataVaultTransformDecode#id}. |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformDecode.DataVaultTransformDecode.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformDecode.DataVaultTransformDecode.Initializer.parameter.transformation">transformation</a></code> | <code>str</code> | The transformation to perform. |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformDecode.DataVaultTransformDecode.Initializer.parameter.tweak">tweak</a></code> | <code>str</code> | The tweak value to use. Only applicable for FPE transformations. |
@@ -128,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 Path to backend from which to retrieve data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/transform_decode#path DataVaultTransformDecode#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_decode#path DataVaultTransformDecode#path}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/transform_decode#role_name DataVaultTransformDecode#role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_decode#role_name DataVaultTransformDecode#role_name}
 
 ---
 
@@ -150,7 +150,7 @@ Specifies a list of items to be decoded in a single batch.
 
 If this parameter is set, the top-level parameters 'value', 'transformation' and 'tweak' will be ignored. Each batch item within the list can specify these parameters instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/transform_decode#batch_input DataVaultTransformDecode#batch_input}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_decode#batch_input DataVaultTransformDecode#batch_input}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The result of decoding batch_input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/transform_decode#batch_results DataVaultTransformDecode#batch_results}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_decode#batch_results DataVaultTransformDecode#batch_results}
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The result of decoding a value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/transform_decode#decoded_value DataVaultTransformDecode#decoded_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_decode#decoded_value DataVaultTransformDecode#decoded_value}
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/transform_decode#id DataVaultTransformDecode#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_decode#id DataVaultTransformDecode#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -191,7 +191,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/transform_decode#namespace DataVaultTransformDecode#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_decode#namespace DataVaultTransformDecode#namespace}
 
 ---
 
@@ -203,7 +203,7 @@ The transformation to perform.
 
 If no value is provided and the role contains a single transformation, this value will be inferred from the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/transform_decode#transformation DataVaultTransformDecode#transformation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_decode#transformation DataVaultTransformDecode#transformation}
 
 ---
 
@@ -213,7 +213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The tweak value to use. Only applicable for FPE transformations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/transform_decode#tweak DataVaultTransformDecode#tweak}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_decode#tweak DataVaultTransformDecode#tweak}
 
 ---
 
@@ -223,7 +223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The value in which to decode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/transform_decode#value DataVaultTransformDecode#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_decode#value DataVaultTransformDecode#value}
 
 ---
 
@@ -1016,7 +1016,7 @@ dataVaultTransformDecode.DataVaultTransformDecodeConfig(
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformDecode.DataVaultTransformDecodeConfig.property.batchInput">batch_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[typing.Mapping[str]]]</code> | Specifies a list of items to be decoded in a single batch. |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformDecode.DataVaultTransformDecodeConfig.property.batchResults">batch_results</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[typing.Mapping[str]]]</code> | The result of decoding batch_input. |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformDecode.DataVaultTransformDecodeConfig.property.decodedValue">decoded_value</a></code> | <code>str</code> | The result of decoding a value. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransformDecode.DataVaultTransformDecodeConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/transform_decode#id DataVaultTransformDecode#id}. |
+| <code><a href="#@cdktf/provider-vault.dataVaultTransformDecode.DataVaultTransformDecodeConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_decode#id DataVaultTransformDecode#id}. |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformDecode.DataVaultTransformDecodeConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformDecode.DataVaultTransformDecodeConfig.property.transformation">transformation</a></code> | <code>str</code> | The transformation to perform. |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformDecode.DataVaultTransformDecodeConfig.property.tweak">tweak</a></code> | <code>str</code> | The tweak value to use. Only applicable for FPE transformations. |
@@ -1104,7 +1104,7 @@ path: str
 
 Path to backend from which to retrieve data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/transform_decode#path DataVaultTransformDecode#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_decode#path DataVaultTransformDecode#path}
 
 ---
 
@@ -1118,7 +1118,7 @@ role_name: str
 
 The name of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/transform_decode#role_name DataVaultTransformDecode#role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_decode#role_name DataVaultTransformDecode#role_name}
 
 ---
 
@@ -1134,7 +1134,7 @@ Specifies a list of items to be decoded in a single batch.
 
 If this parameter is set, the top-level parameters 'value', 'transformation' and 'tweak' will be ignored. Each batch item within the list can specify these parameters instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/transform_decode#batch_input DataVaultTransformDecode#batch_input}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_decode#batch_input DataVaultTransformDecode#batch_input}
 
 ---
 
@@ -1148,7 +1148,7 @@ batch_results: typing.Union[IResolvable, typing.List[typing.Mapping[str]]]
 
 The result of decoding batch_input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/transform_decode#batch_results DataVaultTransformDecode#batch_results}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_decode#batch_results DataVaultTransformDecode#batch_results}
 
 ---
 
@@ -1162,7 +1162,7 @@ decoded_value: str
 
 The result of decoding a value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/transform_decode#decoded_value DataVaultTransformDecode#decoded_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_decode#decoded_value DataVaultTransformDecode#decoded_value}
 
 ---
 
@@ -1174,7 +1174,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/transform_decode#id DataVaultTransformDecode#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_decode#id DataVaultTransformDecode#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1191,7 +1191,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/transform_decode#namespace DataVaultTransformDecode#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_decode#namespace DataVaultTransformDecode#namespace}
 
 ---
 
@@ -1207,7 +1207,7 @@ The transformation to perform.
 
 If no value is provided and the role contains a single transformation, this value will be inferred from the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/transform_decode#transformation DataVaultTransformDecode#transformation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_decode#transformation DataVaultTransformDecode#transformation}
 
 ---
 
@@ -1221,7 +1221,7 @@ tweak: str
 
 The tweak value to use. Only applicable for FPE transformations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/transform_decode#tweak DataVaultTransformDecode#tweak}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_decode#tweak DataVaultTransformDecode#tweak}
 
 ---
 
@@ -1235,7 +1235,7 @@ value: str
 
 The value in which to decode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/transform_decode#value DataVaultTransformDecode#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_decode#value DataVaultTransformDecode#value}
 
 ---
 

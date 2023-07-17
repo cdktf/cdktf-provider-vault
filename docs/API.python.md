@@ -138,6 +138,7 @@ The following submodules are available:
 - [passwordPolicy](./passwordPolicy.python.md)
 - [pkiSecretBackendCert](./pkiSecretBackendCert.python.md)
 - [pkiSecretBackendConfigCa](./pkiSecretBackendConfigCa.python.md)
+- [pkiSecretBackendConfigIssuers](./pkiSecretBackendConfigIssuers.python.md)
 - [pkiSecretBackendConfigUrls](./pkiSecretBackendConfigUrls.python.md)
 - [pkiSecretBackendCrlConfig](./pkiSecretBackendCrlConfig.python.md)
 - [pkiSecretBackendIntermediateCertRequest](./pkiSecretBackendIntermediateCertRequest.python.md)
