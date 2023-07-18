@@ -1,6 +1,6 @@
 # `vault_ldap_secret_backend`
 
-Refer to the Terraform Registory for docs: [`vault_ldap_secret_backend`](https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend).
+Refer to the Terraform Registory for docs: [`vault_ldap_secret_backend`](https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend).
 
 # `ldapSecretBackend` Submodule <a name="`ldapSecretBackend` Submodule" id="@cdktf/provider-vault.ldapSecretBackend"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_ldap_secret_backend`](https:/
 
 ### LdapSecretBackend <a name="LdapSecretBackend" id="@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend vault_ldap_secret_backend}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend vault_ldap_secret_backend}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.Initializer"></a>
 
@@ -1449,7 +1449,7 @@ new LdapSecretBackendConfig {
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackendConfig.property.description">Description</a></code> | <code>string</code> | Human-friendly description of the mount. |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackendConfig.property.disableRemount">DisableRemount</a></code> | <code>object</code> | If set, opts out of mount migration on path updates. |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackendConfig.property.externalEntropyAccess">ExternalEntropyAccess</a></code> | <code>object</code> | Enable the secrets engine to access Vault's external entropy source. |
-| <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackendConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend#id LdapSecretBackend#id}. |
+| <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackendConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#id LdapSecretBackend#id}. |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackendConfig.property.insecureTls">InsecureTls</a></code> | <code>object</code> | Skip LDAP server SSL Certificate verification - insecure and not recommended for production use. |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackendConfig.property.length">Length</a></code> | <code>double</code> | The desired length of passwords that Vault generates. |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackendConfig.property.local">Local</a></code> | <code>object</code> | Local mount flag that can be explicitly set to true to enforce local mount in HA environment. |
@@ -1549,7 +1549,7 @@ public string Binddn { get; set; }
 
 Distinguished name of object to bind when performing user and group search.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend#binddn LdapSecretBackend#binddn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#binddn LdapSecretBackend#binddn}
 
 ---
 
@@ -1563,7 +1563,7 @@ public string Bindpass { get; set; }
 
 LDAP password for searching for the user DN.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend#bindpass LdapSecretBackend#bindpass}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#bindpass LdapSecretBackend#bindpass}
 
 ---
 
@@ -1577,7 +1577,7 @@ public string[] AllowedManagedKeys { get; set; }
 
 List of managed key registry entry names that the mount in question is allowed to access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend#allowed_managed_keys LdapSecretBackend#allowed_managed_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#allowed_managed_keys LdapSecretBackend#allowed_managed_keys}
 
 ---
 
@@ -1591,7 +1591,7 @@ public string[] AuditNonHmacRequestKeys { get; set; }
 
 Specifies the list of keys that will not be HMAC'd by audit devices in the request data object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend#audit_non_hmac_request_keys LdapSecretBackend#audit_non_hmac_request_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#audit_non_hmac_request_keys LdapSecretBackend#audit_non_hmac_request_keys}
 
 ---
 
@@ -1605,7 +1605,7 @@ public string[] AuditNonHmacResponseKeys { get; set; }
 
 Specifies the list of keys that will not be HMAC'd by audit devices in the response data object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend#audit_non_hmac_response_keys LdapSecretBackend#audit_non_hmac_response_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#audit_non_hmac_response_keys LdapSecretBackend#audit_non_hmac_response_keys}
 
 ---
 
@@ -1619,7 +1619,7 @@ public string Certificate { get; set; }
 
 CA certificate to use when verifying LDAP server certificate, must be x509 PEM encoded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend#certificate LdapSecretBackend#certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#certificate LdapSecretBackend#certificate}
 
 ---
 
@@ -1633,7 +1633,7 @@ public string ClientTlsCert { get; set; }
 
 Client certificate to provide to the LDAP server, must be x509 PEM encoded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend#client_tls_cert LdapSecretBackend#client_tls_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#client_tls_cert LdapSecretBackend#client_tls_cert}
 
 ---
 
@@ -1647,7 +1647,7 @@ public string ClientTlsKey { get; set; }
 
 Client certificate key to provide to the LDAP server, must be x509 PEM encoded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend#client_tls_key LdapSecretBackend#client_tls_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#client_tls_key LdapSecretBackend#client_tls_key}
 
 ---
 
@@ -1661,7 +1661,7 @@ public double ConnectionTimeout { get; set; }
 
 Timeout, in seconds, when attempting to connect to the LDAP server before trying the next URL in the configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend#connection_timeout LdapSecretBackend#connection_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#connection_timeout LdapSecretBackend#connection_timeout}
 
 ---
 
@@ -1675,7 +1675,7 @@ public double DefaultLeaseTtlSeconds { get; set; }
 
 Default lease duration for tokens and secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend#default_lease_ttl_seconds LdapSecretBackend#default_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#default_lease_ttl_seconds LdapSecretBackend#default_lease_ttl_seconds}
 
 ---
 
@@ -1689,7 +1689,7 @@ public string Description { get; set; }
 
 Human-friendly description of the mount.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend#description LdapSecretBackend#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#description LdapSecretBackend#description}
 
 ---
 
@@ -1703,7 +1703,7 @@ public object DisableRemount { get; set; }
 
 If set, opts out of mount migration on path updates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend#disable_remount LdapSecretBackend#disable_remount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#disable_remount LdapSecretBackend#disable_remount}
 
 ---
 
@@ -1717,7 +1717,7 @@ public object ExternalEntropyAccess { get; set; }
 
 Enable the secrets engine to access Vault's external entropy source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend#external_entropy_access LdapSecretBackend#external_entropy_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#external_entropy_access LdapSecretBackend#external_entropy_access}
 
 ---
 
@@ -1729,7 +1729,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend#id LdapSecretBackend#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#id LdapSecretBackend#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1746,7 +1746,7 @@ public object InsecureTls { get; set; }
 
 Skip LDAP server SSL Certificate verification - insecure and not recommended for production use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend#insecure_tls LdapSecretBackend#insecure_tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#insecure_tls LdapSecretBackend#insecure_tls}
 
 ---
 
@@ -1760,7 +1760,7 @@ public double Length { get; set; }
 
 The desired length of passwords that Vault generates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend#length LdapSecretBackend#length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#length LdapSecretBackend#length}
 
 ---
 
@@ -1774,7 +1774,7 @@ public object Local { get; set; }
 
 Local mount flag that can be explicitly set to true to enforce local mount in HA environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend#local LdapSecretBackend#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#local LdapSecretBackend#local}
 
 ---
 
@@ -1788,7 +1788,7 @@ public double MaxLeaseTtlSeconds { get; set; }
 
 Maximum possible lease duration for tokens and secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend#max_lease_ttl_seconds LdapSecretBackend#max_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#max_lease_ttl_seconds LdapSecretBackend#max_lease_ttl_seconds}
 
 ---
 
@@ -1802,7 +1802,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend#namespace LdapSecretBackend#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#namespace LdapSecretBackend#namespace}
 
 ---
 
@@ -1816,7 +1816,7 @@ public System.Collections.Generic.IDictionary<string, string> Options { get; set
 
 Specifies mount type specific options that are passed to the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend#options LdapSecretBackend#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#options LdapSecretBackend#options}
 
 ---
 
@@ -1830,7 +1830,7 @@ public string PasswordPolicy { get; set; }
 
 Name of the password policy to use to generate passwords.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend#password_policy LdapSecretBackend#password_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#password_policy LdapSecretBackend#password_policy}
 
 ---
 
@@ -1844,7 +1844,7 @@ public string Path { get; set; }
 
 The path where the LDAP secrets backend is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend#path LdapSecretBackend#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#path LdapSecretBackend#path}
 
 ---
 
@@ -1858,7 +1858,7 @@ public double RequestTimeout { get; set; }
 
 Timeout, in seconds, for the connection when making requests against the server before returning back an error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend#request_timeout LdapSecretBackend#request_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#request_timeout LdapSecretBackend#request_timeout}
 
 ---
 
@@ -1872,7 +1872,7 @@ public string Schema { get; set; }
 
 The LDAP schema to use when storing entry passwords. Valid schemas include openldap, ad, and racf.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend#schema LdapSecretBackend#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#schema LdapSecretBackend#schema}
 
 ---
 
@@ -1886,7 +1886,7 @@ public object SealWrap { get; set; }
 
 Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend#seal_wrap LdapSecretBackend#seal_wrap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#seal_wrap LdapSecretBackend#seal_wrap}
 
 ---
 
@@ -1900,7 +1900,7 @@ public object Starttls { get; set; }
 
 Issue a StartTLS command after establishing unencrypted connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend#starttls LdapSecretBackend#starttls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#starttls LdapSecretBackend#starttls}
 
 ---
 
@@ -1914,7 +1914,7 @@ public string Upndomain { get; set; }
 
 Enables userPrincipalDomain login with [username]@UPNDomain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend#upndomain LdapSecretBackend#upndomain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#upndomain LdapSecretBackend#upndomain}
 
 ---
 
@@ -1928,7 +1928,7 @@ public string Url { get; set; }
 
 LDAP URL to connect to (default: ldap://127.0.0.1). Multiple URLs can be specified by concatenating them with commas; they will be tried in-order.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend#url LdapSecretBackend#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#url LdapSecretBackend#url}
 
 ---
 
@@ -1942,7 +1942,7 @@ public string Userattr { get; set; }
 
 Attribute used for users (default: cn).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend#userattr LdapSecretBackend#userattr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#userattr LdapSecretBackend#userattr}
 
 ---
 
@@ -1956,7 +1956,7 @@ public string Userdn { get; set; }
 
 LDAP domain to use for users (eg: ou=People,dc=example,dc=org).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend#userdn LdapSecretBackend#userdn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#userdn LdapSecretBackend#userdn}
 
 ---
 

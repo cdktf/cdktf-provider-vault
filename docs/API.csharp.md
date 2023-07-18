@@ -138,6 +138,7 @@ The following submodules are available:
 - [passwordPolicy](./passwordPolicy.csharp.md)
 - [pkiSecretBackendCert](./pkiSecretBackendCert.csharp.md)
 - [pkiSecretBackendConfigCa](./pkiSecretBackendConfigCa.csharp.md)
+- [pkiSecretBackendConfigIssuers](./pkiSecretBackendConfigIssuers.csharp.md)
 - [pkiSecretBackendConfigUrls](./pkiSecretBackendConfigUrls.csharp.md)
 - [pkiSecretBackendCrlConfig](./pkiSecretBackendCrlConfig.csharp.md)
 - [pkiSecretBackendIntermediateCertRequest](./pkiSecretBackendIntermediateCertRequest.csharp.md)

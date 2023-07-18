@@ -1,6 +1,6 @@
 # `vault_mount`
 
-Refer to the Terraform Registory for docs: [`vault_mount`](https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/mount).
+Refer to the Terraform Registory for docs: [`vault_mount`](https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mount).
 
 # `mount` Submodule <a name="`mount` Submodule" id="@cdktf/provider-vault.mount"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`vault_mount`](https://registry.terr
 
 ### Mount <a name="Mount" id="@cdktf/provider-vault.mount.Mount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/mount vault_mount}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mount vault_mount}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.mount.Mount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/mount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/mount"
 
 mount.NewMount(scope Construct, id *string, config MountConfig) Mount
 ```
@@ -354,7 +354,7 @@ func ResetSealWrap()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.mount.Mount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/mount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/mount"
 
 mount.Mount_IsConstruct(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.mount.Mount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/mount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/mount"
 
 mount.Mount_IsTerraformElement(x interface{}) *bool
 ```
@@ -400,7 +400,7 @@ mount.Mount_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.mount.Mount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/mount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/mount"
 
 mount.Mount_IsTerraformResource(x interface{}) *bool
 ```
@@ -918,7 +918,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.mount.MountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/mount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/mount"
 
 &mount.MountConfig {
 	Connection: interface{},
@@ -964,7 +964,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/mount"
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.defaultLeaseTtlSeconds">DefaultLeaseTtlSeconds</a></code> | <code>*f64</code> | Default lease duration for tokens and secrets in seconds. |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.description">Description</a></code> | <code>*string</code> | Human-friendly description of the mount. |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.externalEntropyAccess">ExternalEntropyAccess</a></code> | <code>interface{}</code> | Enable the secrets engine to access Vault's external entropy source. |
-| <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/mount#id Mount#id}. |
+| <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mount#id Mount#id}. |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.local">Local</a></code> | <code>interface{}</code> | Local mount flag that can be explicitly set to true to enforce local mount in HA environment. |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.maxLeaseTtlSeconds">MaxLeaseTtlSeconds</a></code> | <code>*f64</code> | Maximum possible lease duration for tokens and secrets in seconds. |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
@@ -1053,7 +1053,7 @@ Path *string
 
 Where the secret backend will be mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/mount#path Mount#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mount#path Mount#path}
 
 ---
 
@@ -1067,7 +1067,7 @@ Type *string
 
 Type of the backend, such as 'aws'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/mount#type Mount#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mount#type Mount#type}
 
 ---
 
@@ -1081,7 +1081,7 @@ AllowedManagedKeys *[]*string
 
 List of managed key registry entry names that the mount in question is allowed to access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/mount#allowed_managed_keys Mount#allowed_managed_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mount#allowed_managed_keys Mount#allowed_managed_keys}
 
 ---
 
@@ -1095,7 +1095,7 @@ AuditNonHmacRequestKeys *[]*string
 
 Specifies the list of keys that will not be HMAC'd by audit devices in the request data object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/mount#audit_non_hmac_request_keys Mount#audit_non_hmac_request_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mount#audit_non_hmac_request_keys Mount#audit_non_hmac_request_keys}
 
 ---
 
@@ -1109,7 +1109,7 @@ AuditNonHmacResponseKeys *[]*string
 
 Specifies the list of keys that will not be HMAC'd by audit devices in the response data object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/mount#audit_non_hmac_response_keys Mount#audit_non_hmac_response_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mount#audit_non_hmac_response_keys Mount#audit_non_hmac_response_keys}
 
 ---
 
@@ -1123,7 +1123,7 @@ DefaultLeaseTtlSeconds *f64
 
 Default lease duration for tokens and secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/mount#default_lease_ttl_seconds Mount#default_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mount#default_lease_ttl_seconds Mount#default_lease_ttl_seconds}
 
 ---
 
@@ -1137,7 +1137,7 @@ Description *string
 
 Human-friendly description of the mount.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/mount#description Mount#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mount#description Mount#description}
 
 ---
 
@@ -1151,7 +1151,7 @@ ExternalEntropyAccess interface{}
 
 Enable the secrets engine to access Vault's external entropy source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/mount#external_entropy_access Mount#external_entropy_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mount#external_entropy_access Mount#external_entropy_access}
 
 ---
 
@@ -1163,7 +1163,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/mount#id Mount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mount#id Mount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1180,7 +1180,7 @@ Local interface{}
 
 Local mount flag that can be explicitly set to true to enforce local mount in HA environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/mount#local Mount#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mount#local Mount#local}
 
 ---
 
@@ -1194,7 +1194,7 @@ MaxLeaseTtlSeconds *f64
 
 Maximum possible lease duration for tokens and secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/mount#max_lease_ttl_seconds Mount#max_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mount#max_lease_ttl_seconds Mount#max_lease_ttl_seconds}
 
 ---
 
@@ -1208,7 +1208,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/mount#namespace Mount#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mount#namespace Mount#namespace}
 
 ---
 
@@ -1222,7 +1222,7 @@ Options *map[string]*string
 
 Specifies mount type specific options that are passed to the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/mount#options Mount#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mount#options Mount#options}
 
 ---
 
@@ -1236,7 +1236,7 @@ SealWrap interface{}
 
 Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/mount#seal_wrap Mount#seal_wrap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mount#seal_wrap Mount#seal_wrap}
 
 ---
 
