@@ -138,6 +138,7 @@ The following submodules are available:
 - [passwordPolicy](./passwordPolicy.typescript.md)
 - [pkiSecretBackendCert](./pkiSecretBackendCert.typescript.md)
 - [pkiSecretBackendConfigCa](./pkiSecretBackendConfigCa.typescript.md)
+- [pkiSecretBackendConfigIssuers](./pkiSecretBackendConfigIssuers.typescript.md)
 - [pkiSecretBackendConfigUrls](./pkiSecretBackendConfigUrls.typescript.md)
 - [pkiSecretBackendCrlConfig](./pkiSecretBackendCrlConfig.typescript.md)
 - [pkiSecretBackendIntermediateCertRequest](./pkiSecretBackendIntermediateCertRequest.typescript.md)

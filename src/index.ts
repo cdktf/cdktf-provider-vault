@@ -106,6 +106,7 @@ export * as oktaAuthBackendUser from './okta-auth-backend-user';
 export * as passwordPolicy from './password-policy';
 export * as pkiSecretBackendCert from './pki-secret-backend-cert';
 export * as pkiSecretBackendConfigCa from './pki-secret-backend-config-ca';
+export * as pkiSecretBackendConfigIssuers from './pki-secret-backend-config-issuers';
 export * as pkiSecretBackendConfigUrls from './pki-secret-backend-config-urls';
 export * as pkiSecretBackendCrlConfig from './pki-secret-backend-crl-config';
 export * as pkiSecretBackendIntermediateCertRequest from './pki-secret-backend-intermediate-cert-request';

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/transform_encode
+// https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_encode
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface DataVaultTransformEncodeConfig extends cdktf.TerraformMetaArgum
   /**
   * Specifies a list of items to be encoded in a single batch. If this parameter is set, the parameters 'value', 'transformation' and 'tweak' will be ignored. Each batch item within the list can specify these parameters instead.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/transform_encode#batch_input DataVaultTransformEncode#batch_input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_encode#batch_input DataVaultTransformEncode#batch_input}
   */
   readonly batchInput?: { [key: string]: string }[] | cdktf.IResolvable;
   /**
   * The result of encoding batch_input.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/transform_encode#batch_results DataVaultTransformEncode#batch_results}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_encode#batch_results DataVaultTransformEncode#batch_results}
   */
   readonly batchResults?: { [key: string]: string }[] | cdktf.IResolvable;
   /**
   * The result of encoding a value.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/transform_encode#encoded_value DataVaultTransformEncode#encoded_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_encode#encoded_value DataVaultTransformEncode#encoded_value}
   */
   readonly encodedValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/transform_encode#id DataVaultTransformEncode#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_encode#id DataVaultTransformEncode#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,43 +40,43 @@ export interface DataVaultTransformEncodeConfig extends cdktf.TerraformMetaArgum
   /**
   * Target namespace. (requires Enterprise)
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/transform_encode#namespace DataVaultTransformEncode#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_encode#namespace DataVaultTransformEncode#namespace}
   */
   readonly namespace?: string;
   /**
   * Path to backend from which to retrieve data.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/transform_encode#path DataVaultTransformEncode#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_encode#path DataVaultTransformEncode#path}
   */
   readonly path: string;
   /**
   * The name of the role.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/transform_encode#role_name DataVaultTransformEncode#role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_encode#role_name DataVaultTransformEncode#role_name}
   */
   readonly roleName: string;
   /**
   * The transformation to perform. If no value is provided and the role contains a single transformation, this value will be inferred from the role.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/transform_encode#transformation DataVaultTransformEncode#transformation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_encode#transformation DataVaultTransformEncode#transformation}
   */
   readonly transformation?: string;
   /**
   * The tweak value to use. Only applicable for FPE transformations
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/transform_encode#tweak DataVaultTransformEncode#tweak}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_encode#tweak DataVaultTransformEncode#tweak}
   */
   readonly tweak?: string;
   /**
   * The value in which to encode.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/transform_encode#value DataVaultTransformEncode#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_encode#value DataVaultTransformEncode#value}
   */
   readonly value?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/transform_encode vault_transform_encode}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_encode vault_transform_encode}
 */
 export class DataVaultTransformEncode extends cdktf.TerraformDataSource {
 
@@ -90,7 +90,7 @@ export class DataVaultTransformEncode extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/transform_encode vault_transform_encode} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_encode vault_transform_encode} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -101,7 +101,7 @@ export class DataVaultTransformEncode extends cdktf.TerraformDataSource {
       terraformResourceType: 'vault_transform_encode',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.17.0',
+        providerVersion: '3.18.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

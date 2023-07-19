@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/mfa_okta
+// https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mfa_okta
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface MfaOktaConfig extends cdktf.TerraformMetaArguments {
   /**
   * Okta API key.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/mfa_okta#api_token MfaOkta#api_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mfa_okta#api_token MfaOkta#api_token}
   */
   readonly apiToken: string;
   /**
   * If set, will be used as the base domain for API requests.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/mfa_okta#base_url MfaOkta#base_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mfa_okta#base_url MfaOkta#base_url}
   */
   readonly baseUrl?: string;
   /**
   * ID computed by Vault.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/mfa_okta#id MfaOkta#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mfa_okta#id MfaOkta#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -36,43 +36,43 @@ export interface MfaOktaConfig extends cdktf.TerraformMetaArguments {
   /**
   * The mount to tie this method to for use in automatic mappings. The mapping will use the Name field of Aliases associated with this mount as the username in the mapping.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/mfa_okta#mount_accessor MfaOkta#mount_accessor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mfa_okta#mount_accessor MfaOkta#mount_accessor}
   */
   readonly mountAccessor: string;
   /**
   * Name of the MFA method.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/mfa_okta#name MfaOkta#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mfa_okta#name MfaOkta#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/mfa_okta#namespace MfaOkta#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mfa_okta#namespace MfaOkta#namespace}
   */
   readonly namespace?: string;
   /**
   * Name of the organization to be used in the Okta API.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/mfa_okta#org_name MfaOkta#org_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mfa_okta#org_name MfaOkta#org_name}
   */
   readonly orgName: string;
   /**
   * If set to true, the username will only match the primary email for the account.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/mfa_okta#primary_email MfaOkta#primary_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mfa_okta#primary_email MfaOkta#primary_email}
   */
   readonly primaryEmail?: boolean | cdktf.IResolvable;
   /**
   * A format string for mapping Identity names to MFA method names. Values to substitute should be placed in `{{}}`.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/mfa_okta#username_format MfaOkta#username_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mfa_okta#username_format MfaOkta#username_format}
   */
   readonly usernameFormat?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/mfa_okta vault_mfa_okta}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mfa_okta vault_mfa_okta}
 */
 export class MfaOkta extends cdktf.TerraformResource {
 
@@ -86,7 +86,7 @@ export class MfaOkta extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/mfa_okta vault_mfa_okta} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mfa_okta vault_mfa_okta} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -97,7 +97,7 @@ export class MfaOkta extends cdktf.TerraformResource {
       terraformResourceType: 'vault_mfa_okta',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.17.0',
+        providerVersion: '3.18.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
