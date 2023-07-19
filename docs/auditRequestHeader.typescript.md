@@ -1,6 +1,6 @@
 # `vault_audit_request_header`
 
-Refer to the Terraform Registory for docs: [`vault_audit_request_header`](https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/audit_request_header).
+Refer to the Terraform Registory for docs: [`vault_audit_request_header`](https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/audit_request_header).
 
 # `auditRequestHeader` Submodule <a name="`auditRequestHeader` Submodule" id="@cdktf/provider-vault.auditRequestHeader"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_audit_request_header`](https:
 
 ### AuditRequestHeader <a name="AuditRequestHeader" id="@cdktf/provider-vault.auditRequestHeader.AuditRequestHeader"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/audit_request_header vault_audit_request_header}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/audit_request_header vault_audit_request_header}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.auditRequestHeader.AuditRequestHeader.Initializer"></a>
 
@@ -642,7 +642,7 @@ const auditRequestHeaderConfig: auditRequestHeader.AuditRequestHeaderConfig = { 
 | <code><a href="#@cdktf/provider-vault.auditRequestHeader.AuditRequestHeaderConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.auditRequestHeader.AuditRequestHeaderConfig.property.name">name</a></code> | <code>string</code> | The name of the request header to audit. |
 | <code><a href="#@cdktf/provider-vault.auditRequestHeader.AuditRequestHeaderConfig.property.hmac">hmac</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether this header's value should be HMAC'd in the audit logs. |
-| <code><a href="#@cdktf/provider-vault.auditRequestHeader.AuditRequestHeaderConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/audit_request_header#id AuditRequestHeader#id}. |
+| <code><a href="#@cdktf/provider-vault.auditRequestHeader.AuditRequestHeaderConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/audit_request_header#id AuditRequestHeader#id}. |
 | <code><a href="#@cdktf/provider-vault.auditRequestHeader.AuditRequestHeaderConfig.property.namespace">namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -727,7 +727,7 @@ public readonly name: string;
 
 The name of the request header to audit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/audit_request_header#name AuditRequestHeader#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/audit_request_header#name AuditRequestHeader#name}
 
 ---
 
@@ -741,7 +741,7 @@ public readonly hmac: boolean | IResolvable;
 
 Whether this header's value should be HMAC'd in the audit logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/audit_request_header#hmac AuditRequestHeader#hmac}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/audit_request_header#hmac AuditRequestHeader#hmac}
 
 ---
 
@@ -753,7 +753,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/audit_request_header#id AuditRequestHeader#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/audit_request_header#id AuditRequestHeader#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -770,7 +770,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/audit_request_header#namespace AuditRequestHeader#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/audit_request_header#namespace AuditRequestHeader#namespace}
 
 ---
 

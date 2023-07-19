@@ -1,6 +1,6 @@
 # `vault_pki_secret_backend_key`
 
-Refer to the Terraform Registory for docs: [`vault_pki_secret_backend_key`](https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/pki_secret_backend_key).
+Refer to the Terraform Registory for docs: [`vault_pki_secret_backend_key`](https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_key).
 
 # `pkiSecretBackendKey` Submodule <a name="`pkiSecretBackendKey` Submodule" id="@cdktf/provider-vault.pkiSecretBackendKey"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`vault_pki_secret_backend_key`](http
 
 ### PkiSecretBackendKey <a name="PkiSecretBackendKey" id="@cdktf/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/pki_secret_backend_key vault_pki_secret_backend_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_key vault_pki_secret_backend_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/pkisecretbackendkey"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendkey"
 
 pkisecretbackendkey.NewPkiSecretBackendKey(scope Construct, id *string, config PkiSecretBackendKeyConfig) PkiSecretBackendKey
 ```
@@ -319,7 +319,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/pkisecretbackendkey"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendkey"
 
 pkisecretbackendkey.PkiSecretBackendKey_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/pkisecretbackendkey"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendkey"
 
 pkisecretbackendkey.PkiSecretBackendKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ pkisecretbackendkey.PkiSecretBackendKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/pkisecretbackendkey"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendkey"
 
 pkisecretbackendkey.PkiSecretBackendKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -773,7 +773,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.pkiSecretBackendKey.PkiSecretBackendKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/pkisecretbackendkey"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendkey"
 
 &pkisecretbackendkey.PkiSecretBackendKeyConfig {
 	Connection: interface{},
@@ -808,7 +808,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/pkisecretbackendkey"
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendKey.PkiSecretBackendKeyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendKey.PkiSecretBackendKeyConfig.property.backend">Backend</a></code> | <code>*string</code> | Full path where PKI backend is mounted. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendKey.PkiSecretBackendKeyConfig.property.type">Type</a></code> | <code>*string</code> | Specifies the type of the key to create. |
-| <code><a href="#@cdktf/provider-vault.pkiSecretBackendKey.PkiSecretBackendKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/pki_secret_backend_key#id PkiSecretBackendKey#id}. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendKey.PkiSecretBackendKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_key#id PkiSecretBackendKey#id}. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendKey.PkiSecretBackendKeyConfig.property.keyBits">KeyBits</a></code> | <code>*f64</code> | Specifies the number of bits to use for the generated keys. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendKey.PkiSecretBackendKeyConfig.property.keyName">KeyName</a></code> | <code>*string</code> | When a new key is created with this request, optionally specifies the name for this. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendKey.PkiSecretBackendKeyConfig.property.keyType">KeyType</a></code> | <code>*string</code> | Specifies the desired key type; must be 'rsa', 'ed25519' or 'ec'. |
@@ -898,7 +898,7 @@ Backend *string
 
 Full path where PKI backend is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/pki_secret_backend_key#backend PkiSecretBackendKey#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_key#backend PkiSecretBackendKey#backend}
 
 ---
 
@@ -912,7 +912,7 @@ Type *string
 
 Specifies the type of the key to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/pki_secret_backend_key#type PkiSecretBackendKey#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_key#type PkiSecretBackendKey#type}
 
 ---
 
@@ -924,7 +924,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/pki_secret_backend_key#id PkiSecretBackendKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_key#id PkiSecretBackendKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -941,7 +941,7 @@ KeyBits *f64
 
 Specifies the number of bits to use for the generated keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/pki_secret_backend_key#key_bits PkiSecretBackendKey#key_bits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_key#key_bits PkiSecretBackendKey#key_bits}
 
 ---
 
@@ -955,7 +955,7 @@ KeyName *string
 
 When a new key is created with this request, optionally specifies the name for this.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/pki_secret_backend_key#key_name PkiSecretBackendKey#key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_key#key_name PkiSecretBackendKey#key_name}
 
 ---
 
@@ -969,7 +969,7 @@ KeyType *string
 
 Specifies the desired key type; must be 'rsa', 'ed25519' or 'ec'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/pki_secret_backend_key#key_type PkiSecretBackendKey#key_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_key#key_type PkiSecretBackendKey#key_type}
 
 ---
 
@@ -983,7 +983,7 @@ ManagedKeyId *string
 
 The managed key's UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/pki_secret_backend_key#managed_key_id PkiSecretBackendKey#managed_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_key#managed_key_id PkiSecretBackendKey#managed_key_id}
 
 ---
 
@@ -997,7 +997,7 @@ ManagedKeyName *string
 
 The managed key's configured name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/pki_secret_backend_key#managed_key_name PkiSecretBackendKey#managed_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_key#managed_key_name PkiSecretBackendKey#managed_key_name}
 
 ---
 
@@ -1011,7 +1011,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/pki_secret_backend_key#namespace PkiSecretBackendKey#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_key#namespace PkiSecretBackendKey#namespace}
 
 ---
 

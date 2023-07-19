@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/azure_auth_backend_config
+// https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_auth_backend_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +10,29 @@ export interface AzureAuthBackendConfigConfig extends cdktf.TerraformMetaArgumen
   /**
   * Unique name of the auth backend to configure.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/azure_auth_backend_config#backend AzureAuthBackendConfig#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_auth_backend_config#backend AzureAuthBackendConfig#backend}
   */
   readonly backend?: string;
   /**
   * The client id for credentials to query the Azure APIs. Currently read permissions to query compute resources are required.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/azure_auth_backend_config#client_id AzureAuthBackendConfig#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_auth_backend_config#client_id AzureAuthBackendConfig#client_id}
   */
   readonly clientId?: string;
   /**
   * The client secret for credentials to query the Azure APIs
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/azure_auth_backend_config#client_secret AzureAuthBackendConfig#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_auth_backend_config#client_secret AzureAuthBackendConfig#client_secret}
   */
   readonly clientSecret?: string;
   /**
   * The Azure cloud environment. Valid values: AzurePublicCloud, AzureUSGovernmentCloud, AzureChinaCloud, AzureGermanCloud.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/azure_auth_backend_config#environment AzureAuthBackendConfig#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_auth_backend_config#environment AzureAuthBackendConfig#environment}
   */
   readonly environment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/azure_auth_backend_config#id AzureAuthBackendConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_auth_backend_config#id AzureAuthBackendConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,25 +41,25 @@ export interface AzureAuthBackendConfigConfig extends cdktf.TerraformMetaArgumen
   /**
   * Target namespace. (requires Enterprise)
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/azure_auth_backend_config#namespace AzureAuthBackendConfig#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_auth_backend_config#namespace AzureAuthBackendConfig#namespace}
   */
   readonly namespace?: string;
   /**
   * The configured URL for the application registered in Azure Active Directory.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/azure_auth_backend_config#resource AzureAuthBackendConfig#resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_auth_backend_config#resource AzureAuthBackendConfig#resource}
   */
   readonly resource: string;
   /**
   * The tenant id for the Azure Active Directory organization.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/azure_auth_backend_config#tenant_id AzureAuthBackendConfig#tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_auth_backend_config#tenant_id AzureAuthBackendConfig#tenant_id}
   */
   readonly tenantId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config}
 */
 export class AzureAuthBackendConfig extends cdktf.TerraformResource {
 
@@ -78,7 +73,7 @@ export class AzureAuthBackendConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -89,7 +84,7 @@ export class AzureAuthBackendConfig extends cdktf.TerraformResource {
       terraformResourceType: 'vault_azure_auth_backend_config',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.17.0',
+        providerVersion: '3.18.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
