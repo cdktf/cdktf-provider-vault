@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface NomadSecretRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The mount path for the Nomad backend.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/nomad_secret_role#backend NomadSecretRole#backend}
   */
   readonly backend: string;
   /**
   * Specifies if the token should be global.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/nomad_secret_role#global NomadSecretRole#global}
   */
   readonly global?: boolean | cdktf.IResolvable;
@@ -33,25 +33,25 @@ export interface NomadSecretRoleConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/nomad_secret_role#namespace NomadSecretRole#namespace}
   */
   readonly namespace?: string;
   /**
   * Comma separated list of Nomad policies the token is going to be created against. These need to be created beforehand in Nomad.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/nomad_secret_role#policies NomadSecretRole#policies}
   */
   readonly policies?: string[];
   /**
   * Name of the role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/nomad_secret_role#role NomadSecretRole#role}
   */
   readonly role: string;
   /**
   * Specifies the type of token to create when using this role. Valid values are "client" or "management".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/nomad_secret_role#type NomadSecretRole#type}
   */
   readonly type?: string;

@@ -21,13 +21,13 @@ export interface IdentityOidcConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Issuer URL to be used in the iss claim of the token. If not set, Vault's api_addr will be used. The issuer is a case sensitive URL using the https scheme that contains scheme, host, and optionally, port number and path components, but no query or fragment components.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc#issuer IdentityOidc#issuer}
   */
   readonly issuer?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc#namespace IdentityOidc#namespace}
   */
   readonly namespace?: string;

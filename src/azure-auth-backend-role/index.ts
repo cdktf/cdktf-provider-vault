@@ -14,43 +14,43 @@ import * as cdktf from 'cdktf';
 export interface AzureAuthBackendRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Unique name of the auth backend to configure.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_auth_backend_role#backend AzureAuthBackendRole#backend}
   */
   readonly backend?: string;
   /**
   * The list of group ids that login is restricted to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_auth_backend_role#bound_group_ids AzureAuthBackendRole#bound_group_ids}
   */
   readonly boundGroupIds?: string[];
   /**
   * The list of locations that login is restricted to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_auth_backend_role#bound_locations AzureAuthBackendRole#bound_locations}
   */
   readonly boundLocations?: string[];
   /**
   * The list of resource groups that login is restricted to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_auth_backend_role#bound_resource_groups AzureAuthBackendRole#bound_resource_groups}
   */
   readonly boundResourceGroups?: string[];
   /**
   * The list of scale set names that the login is restricted to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_auth_backend_role#bound_scale_sets AzureAuthBackendRole#bound_scale_sets}
   */
   readonly boundScaleSets?: string[];
   /**
   * The list of Service Principal IDs that login is restricted to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_auth_backend_role#bound_service_principal_ids AzureAuthBackendRole#bound_service_principal_ids}
   */
   readonly boundServicePrincipalIds?: string[];
   /**
   * The list of subscription IDs that login is restricted to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_auth_backend_role#bound_subscription_ids AzureAuthBackendRole#bound_subscription_ids}
   */
   readonly boundSubscriptionIds?: string[];
@@ -63,67 +63,67 @@ export interface AzureAuthBackendRoleConfig extends cdktf.TerraformMetaArguments
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_auth_backend_role#namespace AzureAuthBackendRole#namespace}
   */
   readonly namespace?: string;
   /**
   * Name of the role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_auth_backend_role#role AzureAuthBackendRole#role}
   */
   readonly role: string;
   /**
   * Specifies the blocks of IP addresses which are allowed to use the generated token
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_auth_backend_role#token_bound_cidrs AzureAuthBackendRole#token_bound_cidrs}
   */
   readonly tokenBoundCidrs?: string[];
   /**
   * Generated Token's Explicit Maximum TTL in seconds
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_auth_backend_role#token_explicit_max_ttl AzureAuthBackendRole#token_explicit_max_ttl}
   */
   readonly tokenExplicitMaxTtl?: number;
   /**
   * The maximum lifetime of the generated token
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_auth_backend_role#token_max_ttl AzureAuthBackendRole#token_max_ttl}
   */
   readonly tokenMaxTtl?: number;
   /**
   * If true, the 'default' policy will not automatically be added to generated tokens
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_auth_backend_role#token_no_default_policy AzureAuthBackendRole#token_no_default_policy}
   */
   readonly tokenNoDefaultPolicy?: boolean | cdktf.IResolvable;
   /**
   * The maximum number of times a token may be used, a value of zero means unlimited
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_auth_backend_role#token_num_uses AzureAuthBackendRole#token_num_uses}
   */
   readonly tokenNumUses?: number;
   /**
   * Generated Token's Period
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_auth_backend_role#token_period AzureAuthBackendRole#token_period}
   */
   readonly tokenPeriod?: number;
   /**
   * Generated Token's Policies
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_auth_backend_role#token_policies AzureAuthBackendRole#token_policies}
   */
   readonly tokenPolicies?: string[];
   /**
   * The initial ttl of the token to generate in seconds
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_auth_backend_role#token_ttl AzureAuthBackendRole#token_ttl}
   */
   readonly tokenTtl?: number;
   /**
   * The type of token to generate, service or batch
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_auth_backend_role#token_type AzureAuthBackendRole#token_type}
   */
   readonly tokenType?: string;

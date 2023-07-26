@@ -21,13 +21,13 @@ export interface DataVaultKvSecretConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/kv_secret#namespace DataVaultKvSecret#namespace}
   */
   readonly namespace?: string;
   /**
   * Full path of the KV-V1 secret.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/kv_secret#path DataVaultKvSecret#path}
   */
   readonly path: string;

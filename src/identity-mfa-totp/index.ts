@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface IdentityMfaTotpConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies the hashing algorithm used to generate the TOTP code. Options include SHA1, SHA256, SHA512.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_mfa_totp#algorithm IdentityMfaTotp#algorithm}
   */
   readonly algorithm?: string;
   /**
   * The number of digits in the generated TOTP token. This value can either be 6 or 8
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_mfa_totp#digits IdentityMfaTotp#digits}
   */
   readonly digits?: number;
@@ -33,43 +33,43 @@ export interface IdentityMfaTotpConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The name of the key's issuing organization.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_mfa_totp#issuer IdentityMfaTotp#issuer}
   */
   readonly issuer: string;
   /**
   * Specifies the size in bytes of the generated key.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_mfa_totp#key_size IdentityMfaTotp#key_size}
   */
   readonly keySize?: number;
   /**
   * The maximum number of consecutive failed validation attempts allowed.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_mfa_totp#max_validation_attempts IdentityMfaTotp#max_validation_attempts}
   */
   readonly maxValidationAttempts?: number;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_mfa_totp#namespace IdentityMfaTotp#namespace}
   */
   readonly namespace?: string;
   /**
   * The length of time in seconds used to generate a counter for the TOTP token calculation.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_mfa_totp#period IdentityMfaTotp#period}
   */
   readonly period?: number;
   /**
   * The pixel size of the generated square QR code.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_mfa_totp#qr_size IdentityMfaTotp#qr_size}
   */
   readonly qrSize?: number;
   /**
   * The number of delay periods that are allowed when validating a TOTP token. This value can either be 0 or 1.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_mfa_totp#skew IdentityMfaTotp#skew}
   */
   readonly skew?: number;

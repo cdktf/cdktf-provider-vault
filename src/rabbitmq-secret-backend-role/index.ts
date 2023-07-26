@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface RabbitmqSecretBackendRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The path of the Rabbitmq Secret Backend the role belongs to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/rabbitmq_secret_backend_role#backend RabbitmqSecretBackendRole#backend}
   */
   readonly backend: string;
@@ -27,31 +27,31 @@ export interface RabbitmqSecretBackendRoleConfig extends cdktf.TerraformMetaArgu
   readonly id?: string;
   /**
   * Unique name for the role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/rabbitmq_secret_backend_role#name RabbitmqSecretBackendRole#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/rabbitmq_secret_backend_role#namespace RabbitmqSecretBackendRole#namespace}
   */
   readonly namespace?: string;
   /**
   * Specifies a comma-separated RabbitMQ management tags.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/rabbitmq_secret_backend_role#tags RabbitmqSecretBackendRole#tags}
   */
   readonly tags?: string;
   /**
   * vhost block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/rabbitmq_secret_backend_role#vhost RabbitmqSecretBackendRole#vhost}
   */
   readonly vhost?: RabbitmqSecretBackendRoleVhost[] | cdktf.IResolvable;
   /**
   * vhost_topic block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/rabbitmq_secret_backend_role#vhost_topic RabbitmqSecretBackendRole#vhost_topic}
   */
   readonly vhostTopic?: RabbitmqSecretBackendRoleVhostTopic[] | cdktf.IResolvable;
@@ -59,25 +59,25 @@ export interface RabbitmqSecretBackendRoleConfig extends cdktf.TerraformMetaArgu
 export interface RabbitmqSecretBackendRoleVhost {
   /**
   * The configure permissions for this vhost.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/rabbitmq_secret_backend_role#configure RabbitmqSecretBackendRole#configure}
   */
   readonly configure: string;
   /**
   * The vhost to set permissions for.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/rabbitmq_secret_backend_role#host RabbitmqSecretBackendRole#host}
   */
   readonly host: string;
   /**
   * The read permissions for this vhost.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/rabbitmq_secret_backend_role#read RabbitmqSecretBackendRole#read}
   */
   readonly read: string;
   /**
   * The write permissions for this vhost.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/rabbitmq_secret_backend_role#write RabbitmqSecretBackendRole#write}
   */
   readonly write: string;
@@ -233,19 +233,19 @@ export class RabbitmqSecretBackendRoleVhostList extends cdktf.ComplexList {
 export interface RabbitmqSecretBackendRoleVhostTopicVhost {
   /**
   * The read permissions for this vhost.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/rabbitmq_secret_backend_role#read RabbitmqSecretBackendRole#read}
   */
   readonly read: string;
   /**
   * The vhost to set permissions for.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/rabbitmq_secret_backend_role#topic RabbitmqSecretBackendRole#topic}
   */
   readonly topic: string;
   /**
   * The write permissions for this vhost.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/rabbitmq_secret_backend_role#write RabbitmqSecretBackendRole#write}
   */
   readonly write: string;
@@ -381,13 +381,13 @@ export class RabbitmqSecretBackendRoleVhostTopicVhostList extends cdktf.ComplexL
 export interface RabbitmqSecretBackendRoleVhostTopic {
   /**
   * The vhost to set permissions for.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/rabbitmq_secret_backend_role#host RabbitmqSecretBackendRole#host}
   */
   readonly host: string;
   /**
   * vhost block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/rabbitmq_secret_backend_role#vhost RabbitmqSecretBackendRole#vhost}
   */
   readonly vhost?: RabbitmqSecretBackendRoleVhostTopicVhost[] | cdktf.IResolvable;

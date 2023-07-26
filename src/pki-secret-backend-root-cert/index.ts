@@ -14,37 +14,37 @@ import * as cdktf from 'cdktf';
 export interface PkiSecretBackendRootCertConfig extends cdktf.TerraformMetaArguments {
   /**
   * List of alternative names.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_root_cert#alt_names PkiSecretBackendRootCert#alt_names}
   */
   readonly altNames?: string[];
   /**
   * The PKI secret backend the resource belongs to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_root_cert#backend PkiSecretBackendRootCert#backend}
   */
   readonly backend: string;
   /**
   * CN of root to create.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_root_cert#common_name PkiSecretBackendRootCert#common_name}
   */
   readonly commonName: string;
   /**
   * The country.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_root_cert#country PkiSecretBackendRootCert#country}
   */
   readonly country?: string;
   /**
   * Flag to exclude CN from SANs.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_root_cert#exclude_cn_from_sans PkiSecretBackendRootCert#exclude_cn_from_sans}
   */
   readonly excludeCnFromSans?: boolean | cdktf.IResolvable;
   /**
   * The format of data.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_root_cert#format PkiSecretBackendRootCert#format}
   */
   readonly format?: string;
@@ -57,133 +57,133 @@ export interface PkiSecretBackendRootCertConfig extends cdktf.TerraformMetaArgum
   readonly id?: string;
   /**
   * List of alternative IPs.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_root_cert#ip_sans PkiSecretBackendRootCert#ip_sans}
   */
   readonly ipSans?: string[];
   /**
   * Provides a name to the specified issuer. The name must be unique across all issuers and not be the reserved value 'default'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_root_cert#issuer_name PkiSecretBackendRootCert#issuer_name}
   */
   readonly issuerName?: string;
   /**
   * The number of bits to use.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_root_cert#key_bits PkiSecretBackendRootCert#key_bits}
   */
   readonly keyBits?: number;
   /**
   * When a new key is created with this request, optionally specifies the name for this.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_root_cert#key_name PkiSecretBackendRootCert#key_name}
   */
   readonly keyName?: string;
   /**
   * Specifies the key to use for generating this request.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_root_cert#key_ref PkiSecretBackendRootCert#key_ref}
   */
   readonly keyRef?: string;
   /**
   * The desired key type.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_root_cert#key_type PkiSecretBackendRootCert#key_type}
   */
   readonly keyType?: string;
   /**
   * The locality.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_root_cert#locality PkiSecretBackendRootCert#locality}
   */
   readonly locality?: string;
   /**
   * The ID of the previously configured managed key.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_root_cert#managed_key_id PkiSecretBackendRootCert#managed_key_id}
   */
   readonly managedKeyId?: string;
   /**
   * The name of the previously configured managed key.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_root_cert#managed_key_name PkiSecretBackendRootCert#managed_key_name}
   */
   readonly managedKeyName?: string;
   /**
   * The maximum path length to encode in the generated certificate.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_root_cert#max_path_length PkiSecretBackendRootCert#max_path_length}
   */
   readonly maxPathLength?: number;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_root_cert#namespace PkiSecretBackendRootCert#namespace}
   */
   readonly namespace?: string;
   /**
   * The organization.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_root_cert#organization PkiSecretBackendRootCert#organization}
   */
   readonly organization?: string;
   /**
   * List of other SANs.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_root_cert#other_sans PkiSecretBackendRootCert#other_sans}
   */
   readonly otherSans?: string[];
   /**
   * The organization unit.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_root_cert#ou PkiSecretBackendRootCert#ou}
   */
   readonly ou?: string;
   /**
   * List of domains for which certificates are allowed to be issued.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_root_cert#permitted_dns_domains PkiSecretBackendRootCert#permitted_dns_domains}
   */
   readonly permittedDnsDomains?: string[];
   /**
   * The postal code.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_root_cert#postal_code PkiSecretBackendRootCert#postal_code}
   */
   readonly postalCode?: string;
   /**
   * The private key format.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_root_cert#private_key_format PkiSecretBackendRootCert#private_key_format}
   */
   readonly privateKeyFormat?: string;
   /**
   * The province.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_root_cert#province PkiSecretBackendRootCert#province}
   */
   readonly province?: string;
   /**
   * The street address.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_root_cert#street_address PkiSecretBackendRootCert#street_address}
   */
   readonly streetAddress?: string;
   /**
   * Time to live.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_root_cert#ttl PkiSecretBackendRootCert#ttl}
   */
   readonly ttl?: string;
   /**
   * Type of root to create. Must be either "existing", "exported", "internal" or "kms"
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_root_cert#type PkiSecretBackendRootCert#type}
   */
   readonly type: string;
   /**
   * List of alternative URIs.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_root_cert#uri_sans PkiSecretBackendRootCert#uri_sans}
   */
   readonly uriSans?: string[];

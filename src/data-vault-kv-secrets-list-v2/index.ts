@@ -21,19 +21,19 @@ export interface DataVaultKvSecretsListV2Config extends cdktf.TerraformMetaArgum
   readonly id?: string;
   /**
   * Path where KV-V2 engine is mounted
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/kv_secrets_list_v2#mount DataVaultKvSecretsListV2#mount}
   */
   readonly mount: string;
   /**
   * Full named path of the secret. For a nested secret, the name is the nested path excluding the mount and data prefix. For example, for a secret at 'kvv2/data/foo/bar/baz', the name is 'foo/bar/baz'
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/kv_secrets_list_v2#name DataVaultKvSecretsListV2#name}
   */
   readonly name?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/kv_secrets_list_v2#namespace DataVaultKvSecretsListV2#namespace}
   */
   readonly namespace?: string;

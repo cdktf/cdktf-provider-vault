@@ -21,19 +21,19 @@ export interface NamespaceConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/namespace#namespace Namespace#namespace}
   */
   readonly namespace?: string;
   /**
   * Namespace path.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/namespace#path Namespace#path}
   */
   readonly path: string;
   /**
   * The fully qualified namespace path.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/namespace#path_fq Namespace#path_fq}
   */
   readonly pathFq?: string;

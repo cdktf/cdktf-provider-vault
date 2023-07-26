@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface TerraformCloudSecretRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The path of the Terraform Cloud Secret Backend the role belongs to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/terraform_cloud_secret_role#backend TerraformCloudSecretRole#backend}
   */
   readonly backend?: string;
@@ -27,43 +27,43 @@ export interface TerraformCloudSecretRoleConfig extends cdktf.TerraformMetaArgum
   readonly id?: string;
   /**
   * Maximum allowed lease for generated credentials. If not set or set to 0, will use system default.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/terraform_cloud_secret_role#max_ttl TerraformCloudSecretRole#max_ttl}
   */
   readonly maxTtl?: number;
   /**
   * The name of an existing role against which to create this Terraform Cloud credential
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/terraform_cloud_secret_role#name TerraformCloudSecretRole#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/terraform_cloud_secret_role#namespace TerraformCloudSecretRole#namespace}
   */
   readonly namespace?: string;
   /**
   * Name of the Terraform Cloud or Enterprise organization
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/terraform_cloud_secret_role#organization TerraformCloudSecretRole#organization}
   */
   readonly organization?: string;
   /**
   * ID of the Terraform Cloud or Enterprise team under organization (e.g., settings/teams/team-xxxxxxxxxxxxx)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/terraform_cloud_secret_role#team_id TerraformCloudSecretRole#team_id}
   */
   readonly teamId?: string;
   /**
   * Default lease for generated credentials. If not set or set to 0, will use system default.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/terraform_cloud_secret_role#ttl TerraformCloudSecretRole#ttl}
   */
   readonly ttl?: number;
   /**
   * ID of the Terraform Cloud or Enterprise user (e.g., user-xxxxxxxxxxxxxxxx)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/terraform_cloud_secret_role#user_id TerraformCloudSecretRole#user_id}
   */
   readonly userId?: string;

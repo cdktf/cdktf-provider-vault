@@ -21,13 +21,13 @@ export interface DataVaultPolicyDocumentConfig extends cdktf.TerraformMetaArgume
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/policy_document#namespace DataVaultPolicyDocument#namespace}
   */
   readonly namespace?: string;
   /**
   * rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/policy_document#rule DataVaultPolicyDocument#rule}
   */
   readonly rule?: DataVaultPolicyDocumentRule[] | cdktf.IResolvable;
@@ -295,13 +295,13 @@ export interface DataVaultPolicyDocumentRule {
   readonly requiredParameters?: string[];
   /**
   * allowed_parameter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/policy_document#allowed_parameter DataVaultPolicyDocument#allowed_parameter}
   */
   readonly allowedParameter?: DataVaultPolicyDocumentRuleAllowedParameter[] | cdktf.IResolvable;
   /**
   * denied_parameter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/policy_document#denied_parameter DataVaultPolicyDocument#denied_parameter}
   */
   readonly deniedParameter?: DataVaultPolicyDocumentRuleDeniedParameter[] | cdktf.IResolvable;

@@ -14,19 +14,19 @@ import * as cdktf from 'cdktf';
 export interface AwsAuthBackendRoleTagConfig extends cdktf.TerraformMetaArguments {
   /**
   * Allows migration of the underlying instance where the client resides.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_auth_backend_role_tag#allow_instance_migration AwsAuthBackendRoleTag#allow_instance_migration}
   */
   readonly allowInstanceMigration?: boolean | cdktf.IResolvable;
   /**
   * AWS auth backend to read tags from.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_auth_backend_role_tag#backend AwsAuthBackendRoleTag#backend}
   */
   readonly backend?: string;
   /**
   * Only allow a single token to be granted per instance ID.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_auth_backend_role_tag#disallow_reauthentication AwsAuthBackendRoleTag#disallow_reauthentication}
   */
   readonly disallowReauthentication?: boolean | cdktf.IResolvable;
@@ -39,31 +39,31 @@ export interface AwsAuthBackendRoleTagConfig extends cdktf.TerraformMetaArgument
   readonly id?: string;
   /**
   * Instance ID for which this tag is intended. The created tag can only be used by the instance with the given ID.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_auth_backend_role_tag#instance_id AwsAuthBackendRoleTag#instance_id}
   */
   readonly instanceId?: string;
   /**
   * The maximum allowed lifetime of tokens issued using this role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_auth_backend_role_tag#max_ttl AwsAuthBackendRoleTag#max_ttl}
   */
   readonly maxTtl?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_auth_backend_role_tag#namespace AwsAuthBackendRoleTag#namespace}
   */
   readonly namespace?: string;
   /**
   * Policies to be associated with the tag.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_auth_backend_role_tag#policies AwsAuthBackendRoleTag#policies}
   */
   readonly policies?: string[];
   /**
   * Name of the role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_auth_backend_role_tag#role AwsAuthBackendRoleTag#role}
   */
   readonly role: string;

@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface TerraformCloudSecretCredsConfig extends cdktf.TerraformMetaArguments {
   /**
   * Terraform Cloud secret backend to generate tokens from
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/terraform_cloud_secret_creds#backend TerraformCloudSecretCreds#backend}
   */
   readonly backend: string;
@@ -27,13 +27,13 @@ export interface TerraformCloudSecretCredsConfig extends cdktf.TerraformMetaArgu
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/terraform_cloud_secret_creds#namespace TerraformCloudSecretCreds#namespace}
   */
   readonly namespace?: string;
   /**
   * Name of the role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/terraform_cloud_secret_creds#role TerraformCloudSecretCreds#role}
   */
   readonly role: string;

@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface PkiSecretBackendKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Full path where PKI backend is mounted.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_key#backend PkiSecretBackendKey#backend}
   */
   readonly backend: string;
@@ -27,43 +27,43 @@ export interface PkiSecretBackendKeyConfig extends cdktf.TerraformMetaArguments 
   readonly id?: string;
   /**
   * Specifies the number of bits to use for the generated keys.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_key#key_bits PkiSecretBackendKey#key_bits}
   */
   readonly keyBits?: number;
   /**
   * When a new key is created with this request, optionally specifies the name for this.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_key#key_name PkiSecretBackendKey#key_name}
   */
   readonly keyName?: string;
   /**
   * Specifies the desired key type; must be 'rsa', 'ed25519' or 'ec'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_key#key_type PkiSecretBackendKey#key_type}
   */
   readonly keyType?: string;
   /**
   * The managed key's UUID.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_key#managed_key_id PkiSecretBackendKey#managed_key_id}
   */
   readonly managedKeyId?: string;
   /**
   * The managed key's configured name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_key#managed_key_name PkiSecretBackendKey#managed_key_name}
   */
   readonly managedKeyName?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_key#namespace PkiSecretBackendKey#namespace}
   */
   readonly namespace?: string;
   /**
   * Specifies the type of the key to create.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_key#type PkiSecretBackendKey#type}
   */
   readonly type: string;

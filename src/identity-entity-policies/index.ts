@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface IdentityEntityPoliciesConfig extends cdktf.TerraformMetaArguments {
   /**
   * ID of the entity.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_entity_policies#entity_id IdentityEntityPolicies#entity_id}
   */
   readonly entityId: string;
   /**
   * Should the resource manage policies exclusively
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_entity_policies#exclusive IdentityEntityPolicies#exclusive}
   */
   readonly exclusive?: boolean | cdktf.IResolvable;
@@ -33,13 +33,13 @@ export interface IdentityEntityPoliciesConfig extends cdktf.TerraformMetaArgumen
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_entity_policies#namespace IdentityEntityPolicies#namespace}
   */
   readonly namespace?: string;
   /**
   * Policies to be tied to the entity.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_entity_policies#policies IdentityEntityPolicies#policies}
   */
   readonly policies: string[];

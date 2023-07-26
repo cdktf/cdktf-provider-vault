@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface PkiSecretBackendConfigCaConfig extends cdktf.TerraformMetaArguments {
   /**
   * The PKI secret backend the resource belongs to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_config_ca#backend PkiSecretBackendConfigCa#backend}
   */
   readonly backend: string;
@@ -27,13 +27,13 @@ export interface PkiSecretBackendConfigCaConfig extends cdktf.TerraformMetaArgum
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_config_ca#namespace PkiSecretBackendConfigCa#namespace}
   */
   readonly namespace?: string;
   /**
   * The key and certificate PEM bundle.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_config_ca#pem_bundle PkiSecretBackendConfigCa#pem_bundle}
   */
   readonly pemBundle: string;

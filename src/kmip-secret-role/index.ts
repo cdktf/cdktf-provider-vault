@@ -21,127 +21,127 @@ export interface KmipSecretRoleConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kmip_secret_role#namespace KmipSecretRole#namespace}
   */
   readonly namespace?: string;
   /**
   * Grant permission to use the KMIP Activate operation
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kmip_secret_role#operation_activate KmipSecretRole#operation_activate}
   */
   readonly operationActivate?: boolean | cdktf.IResolvable;
   /**
   * Grant permission to use the KMIP Add Attribute operation
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kmip_secret_role#operation_add_attribute KmipSecretRole#operation_add_attribute}
   */
   readonly operationAddAttribute?: boolean | cdktf.IResolvable;
   /**
   * Grant all permissions to this role. May not be specified with any other operation_* params
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kmip_secret_role#operation_all KmipSecretRole#operation_all}
   */
   readonly operationAll?: boolean | cdktf.IResolvable;
   /**
   * Grant permission to use the KMIP Create operation
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kmip_secret_role#operation_create KmipSecretRole#operation_create}
   */
   readonly operationCreate?: boolean | cdktf.IResolvable;
   /**
   * Grant permission to use the KMIP Destroy operation
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kmip_secret_role#operation_destroy KmipSecretRole#operation_destroy}
   */
   readonly operationDestroy?: boolean | cdktf.IResolvable;
   /**
   * Grant permission to use the KMIP Discover Version operation
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kmip_secret_role#operation_discover_versions KmipSecretRole#operation_discover_versions}
   */
   readonly operationDiscoverVersions?: boolean | cdktf.IResolvable;
   /**
   * Grant permission to use the KMIP Get operation
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kmip_secret_role#operation_get KmipSecretRole#operation_get}
   */
   readonly operationGet?: boolean | cdktf.IResolvable;
   /**
   * Grant permission to use the KMIP Get Attribute List operation
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kmip_secret_role#operation_get_attribute_list KmipSecretRole#operation_get_attribute_list}
   */
   readonly operationGetAttributeList?: boolean | cdktf.IResolvable;
   /**
   * Grant permission to use the KMIP Get Attributes operation
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kmip_secret_role#operation_get_attributes KmipSecretRole#operation_get_attributes}
   */
   readonly operationGetAttributes?: boolean | cdktf.IResolvable;
   /**
   * Grant permission to use the KMIP Locate operation
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kmip_secret_role#operation_locate KmipSecretRole#operation_locate}
   */
   readonly operationLocate?: boolean | cdktf.IResolvable;
   /**
   * Remove all permissions from this role. May not be specified with any other operation_* params
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kmip_secret_role#operation_none KmipSecretRole#operation_none}
   */
   readonly operationNone?: boolean | cdktf.IResolvable;
   /**
   * Grant permission to use the KMIP Register operation
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kmip_secret_role#operation_register KmipSecretRole#operation_register}
   */
   readonly operationRegister?: boolean | cdktf.IResolvable;
   /**
   * Grant permission to use the KMIP Rekey operation
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kmip_secret_role#operation_rekey KmipSecretRole#operation_rekey}
   */
   readonly operationRekey?: boolean | cdktf.IResolvable;
   /**
   * Grant permission to use the KMIP Revoke operation
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kmip_secret_role#operation_revoke KmipSecretRole#operation_revoke}
   */
   readonly operationRevoke?: boolean | cdktf.IResolvable;
   /**
   * Path where KMIP backend is mounted
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kmip_secret_role#path KmipSecretRole#path}
   */
   readonly path: string;
   /**
   * Name of the role
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kmip_secret_role#role KmipSecretRole#role}
   */
   readonly role: string;
   /**
   * Name of the scope
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kmip_secret_role#scope KmipSecretRole#scope}
   */
   readonly scope: string;
   /**
   * Client certificate key bits, valid values depend on key type
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kmip_secret_role#tls_client_key_bits KmipSecretRole#tls_client_key_bits}
   */
   readonly tlsClientKeyBits?: number;
   /**
   * Client certificate key type, rsa or ec
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kmip_secret_role#tls_client_key_type KmipSecretRole#tls_client_key_type}
   */
   readonly tlsClientKeyType?: string;
   /**
   * Client certificate TTL in seconds
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kmip_secret_role#tls_client_ttl KmipSecretRole#tls_client_ttl}
   */
   readonly tlsClientTtl?: number;

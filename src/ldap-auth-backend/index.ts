@@ -46,7 +46,7 @@ export interface LdapAuthBackendConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   /**
   * If set, opts out of mount migration on path updates.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#disable_remount LdapAuthBackend#disable_remount}
   */
   readonly disableRemount?: boolean | cdktf.IResolvable;
@@ -79,7 +79,7 @@ export interface LdapAuthBackendConfig extends cdktf.TerraformMetaArguments {
   readonly insecureTls?: boolean | cdktf.IResolvable;
   /**
   * Specifies if the auth method is local only
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#local LdapAuthBackend#local}
   */
   readonly local?: boolean | cdktf.IResolvable;
@@ -89,7 +89,7 @@ export interface LdapAuthBackendConfig extends cdktf.TerraformMetaArguments {
   readonly maxPageSize?: number;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#namespace LdapAuthBackend#namespace}
   */
   readonly namespace?: string;
@@ -111,55 +111,55 @@ export interface LdapAuthBackendConfig extends cdktf.TerraformMetaArguments {
   readonly tlsMinVersion?: string;
   /**
   * Specifies the blocks of IP addresses which are allowed to use the generated token
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#token_bound_cidrs LdapAuthBackend#token_bound_cidrs}
   */
   readonly tokenBoundCidrs?: string[];
   /**
   * Generated Token's Explicit Maximum TTL in seconds
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#token_explicit_max_ttl LdapAuthBackend#token_explicit_max_ttl}
   */
   readonly tokenExplicitMaxTtl?: number;
   /**
   * The maximum lifetime of the generated token
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#token_max_ttl LdapAuthBackend#token_max_ttl}
   */
   readonly tokenMaxTtl?: number;
   /**
   * If true, the 'default' policy will not automatically be added to generated tokens
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#token_no_default_policy LdapAuthBackend#token_no_default_policy}
   */
   readonly tokenNoDefaultPolicy?: boolean | cdktf.IResolvable;
   /**
   * The maximum number of times a token may be used, a value of zero means unlimited
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#token_num_uses LdapAuthBackend#token_num_uses}
   */
   readonly tokenNumUses?: number;
   /**
   * Generated Token's Period
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#token_period LdapAuthBackend#token_period}
   */
   readonly tokenPeriod?: number;
   /**
   * Generated Token's Policies
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#token_policies LdapAuthBackend#token_policies}
   */
   readonly tokenPolicies?: string[];
   /**
   * The initial ttl of the token to generate in seconds
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#token_ttl LdapAuthBackend#token_ttl}
   */
   readonly tokenTtl?: number;
   /**
   * The type of token to generate, service or batch
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#token_type LdapAuthBackend#token_type}
   */
   readonly tokenType?: string;
@@ -189,7 +189,7 @@ export interface LdapAuthBackendConfig extends cdktf.TerraformMetaArguments {
   readonly userfilter?: string;
   /**
   * Force the auth method to use the username passed by the user as the alias name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#username_as_alias LdapAuthBackend#username_as_alias}
   */
   readonly usernameAsAlias?: boolean | cdktf.IResolvable;

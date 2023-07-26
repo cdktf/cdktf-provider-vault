@@ -14,19 +14,19 @@ import * as cdktf from 'cdktf';
 export interface DataVaultTransformEncodeConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies a list of items to be encoded in a single batch. If this parameter is set, the parameters 'value', 'transformation' and 'tweak' will be ignored. Each batch item within the list can specify these parameters instead.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_encode#batch_input DataVaultTransformEncode#batch_input}
   */
   readonly batchInput?: { [key: string]: string }[] | cdktf.IResolvable;
   /**
   * The result of encoding batch_input.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_encode#batch_results DataVaultTransformEncode#batch_results}
   */
   readonly batchResults?: { [key: string]: string }[] | cdktf.IResolvable;
   /**
   * The result of encoding a value.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_encode#encoded_value DataVaultTransformEncode#encoded_value}
   */
   readonly encodedValue?: string;
@@ -39,37 +39,37 @@ export interface DataVaultTransformEncodeConfig extends cdktf.TerraformMetaArgum
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_encode#namespace DataVaultTransformEncode#namespace}
   */
   readonly namespace?: string;
   /**
   * Path to backend from which to retrieve data.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_encode#path DataVaultTransformEncode#path}
   */
   readonly path: string;
   /**
   * The name of the role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_encode#role_name DataVaultTransformEncode#role_name}
   */
   readonly roleName: string;
   /**
   * The transformation to perform. If no value is provided and the role contains a single transformation, this value will be inferred from the role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_encode#transformation DataVaultTransformEncode#transformation}
   */
   readonly transformation?: string;
   /**
   * The tweak value to use. Only applicable for FPE transformations
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_encode#tweak DataVaultTransformEncode#tweak}
   */
   readonly tweak?: string;
   /**
   * The value in which to encode.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_encode#value DataVaultTransformEncode#value}
   */
   readonly value?: string;

@@ -14,19 +14,19 @@ import * as cdktf from 'cdktf';
 export interface RaftAutopilotConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies whether to remove dead server nodes periodically or when a new server joins. This requires that min-quorum is also set.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/raft_autopilot#cleanup_dead_servers RaftAutopilot#cleanup_dead_servers}
   */
   readonly cleanupDeadServers?: boolean | cdktf.IResolvable;
   /**
   * Limit the amount of time a server can go without leader contact before being considered failed. This only takes effect when cleanup_dead_servers is set.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/raft_autopilot#dead_server_last_contact_threshold RaftAutopilot#dead_server_last_contact_threshold}
   */
   readonly deadServerLastContactThreshold?: string;
   /**
   * Disables automatically upgrading Vault using autopilot. (Enterprise-only)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/raft_autopilot#disable_upgrade_migration RaftAutopilot#disable_upgrade_migration}
   */
   readonly disableUpgradeMigration?: boolean | cdktf.IResolvable;
@@ -39,31 +39,31 @@ export interface RaftAutopilotConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Limit the amount of time a server can go without leader contact before being considered unhealthy.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/raft_autopilot#last_contact_threshold RaftAutopilot#last_contact_threshold}
   */
   readonly lastContactThreshold?: string;
   /**
   * Maximum number of log entries in the Raft log that a server can be behind its leader before being considered unhealthy.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/raft_autopilot#max_trailing_logs RaftAutopilot#max_trailing_logs}
   */
   readonly maxTrailingLogs?: number;
   /**
   * Minimum number of servers allowed in a cluster before autopilot can prune dead servers. This should at least be 3. Applicable only for voting nodes.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/raft_autopilot#min_quorum RaftAutopilot#min_quorum}
   */
   readonly minQuorum?: number;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/raft_autopilot#namespace RaftAutopilot#namespace}
   */
   readonly namespace?: string;
   /**
   * Minimum amount of time a server must be stable in the 'healthy' state before being added to the cluster.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/raft_autopilot#server_stabilization_time RaftAutopilot#server_stabilization_time}
   */
   readonly serverStabilizationTime?: string;

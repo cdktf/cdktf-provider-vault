@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface IdentityOidcRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The value that will be included in the `aud` field of all the OIDC identity tokens issued by this role
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_role#client_id IdentityOidcRole#client_id}
   */
   readonly clientId?: string;
@@ -27,31 +27,31 @@ export interface IdentityOidcRoleConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * A configured named key, the key must already exist.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_role#key IdentityOidcRole#key}
   */
   readonly key: string;
   /**
   * Name of the role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_role#name IdentityOidcRole#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_role#namespace IdentityOidcRole#namespace}
   */
   readonly namespace?: string;
   /**
   * The template string to use for generating tokens. This may be in string-ified JSON or base64 format.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_role#template IdentityOidcRole#template}
   */
   readonly template?: string;
   /**
   * TTL of the tokens generated against the role in number of seconds.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_role#ttl IdentityOidcRole#ttl}
   */
   readonly ttl?: number;

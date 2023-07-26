@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface MfaPingidConfig extends cdktf.TerraformMetaArguments {
   /**
   * ID computed by Vault.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mfa_pingid#id MfaPingid#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -23,31 +23,31 @@ export interface MfaPingidConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The mount to tie this method to for use in automatic mappings. The mapping will use the Name field of Aliases associated with this mount as the username in the mapping.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mfa_pingid#mount_accessor MfaPingid#mount_accessor}
   */
   readonly mountAccessor: string;
   /**
   * Name of the MFA method.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mfa_pingid#name MfaPingid#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mfa_pingid#namespace MfaPingid#namespace}
   */
   readonly namespace?: string;
   /**
   * A base64-encoded third-party settings file retrieved from PingID's configuration page.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mfa_pingid#settings_file_base64 MfaPingid#settings_file_base64}
   */
   readonly settingsFileBase64: string;
   /**
   * A format string for mapping Identity names to MFA method names. Values to substitute should be placed in `{{}}`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mfa_pingid#username_format MfaPingid#username_format}
   */
   readonly usernameFormat?: string;

@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface AdSecretRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The mount path for the AD backend.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ad_secret_role#backend AdSecretRole#backend}
   */
   readonly backend: string;
@@ -27,25 +27,25 @@ export interface AdSecretRoleConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ad_secret_role#namespace AdSecretRole#namespace}
   */
   readonly namespace?: string;
   /**
   * Name of the role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ad_secret_role#role AdSecretRole#role}
   */
   readonly role: string;
   /**
   * The username/logon name for the service account with which this role will be associated.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ad_secret_role#service_account_name AdSecretRole#service_account_name}
   */
   readonly serviceAccountName: string;
   /**
   * In seconds, the default password time-to-live.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ad_secret_role#ttl AdSecretRole#ttl}
   */
   readonly ttl?: number;

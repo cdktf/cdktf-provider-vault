@@ -21,19 +21,19 @@ export interface IdentityMfaPingidConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_mfa_pingid#namespace IdentityMfaPingid#namespace}
   */
   readonly namespace?: string;
   /**
   * A base64-encoded third-party settings contents as retrieved from PingID's configuration page.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_mfa_pingid#settings_file_base64 IdentityMfaPingid#settings_file_base64}
   */
   readonly settingsFileBase64: string;
   /**
   * A template string for mapping Identity names to MFA methods.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_mfa_pingid#username_format IdentityMfaPingid#username_format}
   */
   readonly usernameFormat?: string;

@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface AuthBackendConfig extends cdktf.TerraformMetaArguments {
   /**
   * The description of the auth backend
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/auth_backend#description AuthBackend#description}
   */
   readonly description?: string;
   /**
   * If set, opts out of mount migration on path updates.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/auth_backend#disable_remount AuthBackend#disable_remount}
   */
   readonly disableRemount?: boolean | cdktf.IResolvable;
@@ -33,19 +33,19 @@ export interface AuthBackendConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Specifies if the auth method is local only
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/auth_backend#local AuthBackend#local}
   */
   readonly local?: boolean | cdktf.IResolvable;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/auth_backend#namespace AuthBackend#namespace}
   */
   readonly namespace?: string;
   /**
   * path to mount the backend. This defaults to the type.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/auth_backend#path AuthBackend#path}
   */
   readonly path?: string;
@@ -55,7 +55,7 @@ export interface AuthBackendConfig extends cdktf.TerraformMetaArguments {
   readonly tune?: AuthBackendTune[] | cdktf.IResolvable;
   /**
   * Name of the auth backend
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/auth_backend#type AuthBackend#type}
   */
   readonly type: string;

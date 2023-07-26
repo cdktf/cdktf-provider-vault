@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface KmipSecretScopeConfig extends cdktf.TerraformMetaArguments {
   /**
   * Force deletion even if there are managed objects in the scope
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kmip_secret_scope#force KmipSecretScope#force}
   */
   readonly force?: boolean | cdktf.IResolvable;
@@ -27,19 +27,19 @@ export interface KmipSecretScopeConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kmip_secret_scope#namespace KmipSecretScope#namespace}
   */
   readonly namespace?: string;
   /**
   * Path where KMIP backend is mounted
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kmip_secret_scope#path KmipSecretScope#path}
   */
   readonly path: string;
   /**
   * Name of the scope
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kmip_secret_scope#scope KmipSecretScope#scope}
   */
   readonly scope: string;

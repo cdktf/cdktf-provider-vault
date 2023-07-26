@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface EgpPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Enforcement level of Sentinel policy. Can be one of: 'advisory', 'soft-mandatory' or 'hard-mandatory'
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/egp_policy#enforcement_level EgpPolicy#enforcement_level}
   */
   readonly enforcementLevel: string;
@@ -27,25 +27,25 @@ export interface EgpPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Name of the policy
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/egp_policy#name EgpPolicy#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/egp_policy#namespace EgpPolicy#namespace}
   */
   readonly namespace?: string;
   /**
   * List of paths to which the policy will be applied
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/egp_policy#paths EgpPolicy#paths}
   */
   readonly paths: string[];
   /**
   * The policy document
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/egp_policy#policy EgpPolicy#policy}
   */
   readonly policy: string;

@@ -14,31 +14,31 @@ import * as cdktf from 'cdktf';
 export interface AwsAuthBackendLoginConfig extends cdktf.TerraformMetaArguments {
   /**
   * AWS Auth Backend to read the token from.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_auth_backend_login#backend AwsAuthBackendLogin#backend}
   */
   readonly backend?: string;
   /**
   * The HTTP method used in the signed request.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_auth_backend_login#iam_http_request_method AwsAuthBackendLogin#iam_http_request_method}
   */
   readonly iamHttpRequestMethod?: string;
   /**
   * The Base64-encoded body of the signed request.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_auth_backend_login#iam_request_body AwsAuthBackendLogin#iam_request_body}
   */
   readonly iamRequestBody?: string;
   /**
   * The Base64-encoded, JSON serialized representation of the sts:GetCallerIdentity HTTP request headers.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_auth_backend_login#iam_request_headers AwsAuthBackendLogin#iam_request_headers}
   */
   readonly iamRequestHeaders?: string;
   /**
   * The Base64-encoded HTTP URL used in the signed request.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_auth_backend_login#iam_request_url AwsAuthBackendLogin#iam_request_url}
   */
   readonly iamRequestUrl?: string;
@@ -51,37 +51,37 @@ export interface AwsAuthBackendLoginConfig extends cdktf.TerraformMetaArguments 
   readonly id?: string;
   /**
   * Base64-encoded EC2 instance identity document to authenticate with.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_auth_backend_login#identity AwsAuthBackendLogin#identity}
   */
   readonly identity?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_auth_backend_login#namespace AwsAuthBackendLogin#namespace}
   */
   readonly namespace?: string;
   /**
   * The nonce to be used for subsequent login requests.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_auth_backend_login#nonce AwsAuthBackendLogin#nonce}
   */
   readonly nonce?: string;
   /**
   * PKCS7 signature of the identity document to authenticate with, with all newline characters removed.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_auth_backend_login#pkcs7 AwsAuthBackendLogin#pkcs7}
   */
   readonly pkcs7?: string;
   /**
   * AWS Auth Role to read the token from.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_auth_backend_login#role AwsAuthBackendLogin#role}
   */
   readonly role?: string;
   /**
   * Base64-encoded SHA256 RSA signature of the instance identtiy document to authenticate with.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_auth_backend_login#signature AwsAuthBackendLogin#signature}
   */
   readonly signature?: string;

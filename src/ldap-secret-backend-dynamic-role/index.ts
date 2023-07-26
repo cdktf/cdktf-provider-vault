@@ -14,19 +14,19 @@ import * as cdktf from 'cdktf';
 export interface LdapSecretBackendDynamicRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * A templatized LDIF string used to create a user account. May contain multiple entries.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend_dynamic_role#creation_ldif LdapSecretBackendDynamicRole#creation_ldif}
   */
   readonly creationLdif: string;
   /**
   * Specifies the TTL for the leases associated with this role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend_dynamic_role#default_ttl LdapSecretBackendDynamicRole#default_ttl}
   */
   readonly defaultTtl?: number;
   /**
   * A templatized LDIF string used to delete the user account once its TTL has expired. This may contain multiple LDIF entries.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend_dynamic_role#deletion_ldif LdapSecretBackendDynamicRole#deletion_ldif}
   */
   readonly deletionLdif: string;
@@ -39,37 +39,37 @@ export interface LdapSecretBackendDynamicRoleConfig extends cdktf.TerraformMetaA
   readonly id?: string;
   /**
   * Specifies the maximum TTL for the leases associated with this role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend_dynamic_role#max_ttl LdapSecretBackendDynamicRole#max_ttl}
   */
   readonly maxTtl?: number;
   /**
   * The path where the LDAP secrets backend is mounted.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend_dynamic_role#mount LdapSecretBackendDynamicRole#mount}
   */
   readonly mount?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend_dynamic_role#namespace LdapSecretBackendDynamicRole#namespace}
   */
   readonly namespace?: string;
   /**
   * Name of the role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend_dynamic_role#role_name LdapSecretBackendDynamicRole#role_name}
   */
   readonly roleName: string;
   /**
   * A templatized LDIF string used to attempt to rollback any changes in the event that execution of the creation_ldif results in an error. This may contain multiple LDIF entries.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend_dynamic_role#rollback_ldif LdapSecretBackendDynamicRole#rollback_ldif}
   */
   readonly rollbackLdif?: string;
   /**
   * A template used to generate a dynamic username. This will be used to fill in the .Username field within the creation_ldif string.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend_dynamic_role#username_template LdapSecretBackendDynamicRole#username_template}
   */
   readonly usernameTemplate?: string;

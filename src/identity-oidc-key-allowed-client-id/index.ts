@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface IdentityOidcKeyAllowedClientIdConfig extends cdktf.TerraformMetaArguments {
   /**
   * Role Client ID allowed to use the key for signing.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_key_allowed_client_id#allowed_client_id IdentityOidcKeyAllowedClientId#allowed_client_id}
   */
   readonly allowedClientId: string;
@@ -27,13 +27,13 @@ export interface IdentityOidcKeyAllowedClientIdConfig extends cdktf.TerraformMet
   readonly id?: string;
   /**
   * Name of the key.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_key_allowed_client_id#key_name IdentityOidcKeyAllowedClientId#key_name}
   */
   readonly keyName: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_key_allowed_client_id#namespace IdentityOidcKeyAllowedClientId#namespace}
   */
   readonly namespace?: string;

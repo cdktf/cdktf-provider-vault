@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface DataVaultKubernetesAuthBackendRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Optional Audience claim to verify in the JWT.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/kubernetes_auth_backend_role#audience DataVaultKubernetesAuthBackendRole#audience}
   */
   readonly audience?: string;
   /**
   * Unique name of the kubernetes backend to configure.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/kubernetes_auth_backend_role#backend DataVaultKubernetesAuthBackendRole#backend}
   */
   readonly backend?: string;
@@ -33,67 +33,67 @@ export interface DataVaultKubernetesAuthBackendRoleConfig extends cdktf.Terrafor
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/kubernetes_auth_backend_role#namespace DataVaultKubernetesAuthBackendRole#namespace}
   */
   readonly namespace?: string;
   /**
   * Name of the role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/kubernetes_auth_backend_role#role_name DataVaultKubernetesAuthBackendRole#role_name}
   */
   readonly roleName: string;
   /**
   * Specifies the blocks of IP addresses which are allowed to use the generated token
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/kubernetes_auth_backend_role#token_bound_cidrs DataVaultKubernetesAuthBackendRole#token_bound_cidrs}
   */
   readonly tokenBoundCidrs?: string[];
   /**
   * Generated Token's Explicit Maximum TTL in seconds
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/kubernetes_auth_backend_role#token_explicit_max_ttl DataVaultKubernetesAuthBackendRole#token_explicit_max_ttl}
   */
   readonly tokenExplicitMaxTtl?: number;
   /**
   * The maximum lifetime of the generated token
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/kubernetes_auth_backend_role#token_max_ttl DataVaultKubernetesAuthBackendRole#token_max_ttl}
   */
   readonly tokenMaxTtl?: number;
   /**
   * If true, the 'default' policy will not automatically be added to generated tokens
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/kubernetes_auth_backend_role#token_no_default_policy DataVaultKubernetesAuthBackendRole#token_no_default_policy}
   */
   readonly tokenNoDefaultPolicy?: boolean | cdktf.IResolvable;
   /**
   * The maximum number of times a token may be used, a value of zero means unlimited
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/kubernetes_auth_backend_role#token_num_uses DataVaultKubernetesAuthBackendRole#token_num_uses}
   */
   readonly tokenNumUses?: number;
   /**
   * Generated Token's Period
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/kubernetes_auth_backend_role#token_period DataVaultKubernetesAuthBackendRole#token_period}
   */
   readonly tokenPeriod?: number;
   /**
   * Generated Token's Policies
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/kubernetes_auth_backend_role#token_policies DataVaultKubernetesAuthBackendRole#token_policies}
   */
   readonly tokenPolicies?: string[];
   /**
   * The initial ttl of the token to generate in seconds
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/kubernetes_auth_backend_role#token_ttl DataVaultKubernetesAuthBackendRole#token_ttl}
   */
   readonly tokenTtl?: number;
   /**
   * The type of token to generate, service or batch
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/kubernetes_auth_backend_role#token_type DataVaultKubernetesAuthBackendRole#token_type}
   */
   readonly tokenType?: string;

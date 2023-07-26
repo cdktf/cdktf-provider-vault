@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface AwsAuthBackendStsRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * AWS account ID to be associated with STS role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_auth_backend_sts_role#account_id AwsAuthBackendStsRole#account_id}
   */
   readonly accountId: string;
   /**
   * Unique name of the auth backend to configure.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_auth_backend_sts_role#backend AwsAuthBackendStsRole#backend}
   */
   readonly backend?: string;
@@ -33,13 +33,13 @@ export interface AwsAuthBackendStsRoleConfig extends cdktf.TerraformMetaArgument
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_auth_backend_sts_role#namespace AwsAuthBackendStsRole#namespace}
   */
   readonly namespace?: string;
   /**
   * AWS ARN for STS role to be assumed when interacting with the account specified.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_auth_backend_sts_role#sts_role AwsAuthBackendStsRole#sts_role}
   */
   readonly stsRole: string;

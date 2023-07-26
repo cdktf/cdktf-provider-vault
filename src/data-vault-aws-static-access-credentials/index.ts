@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface DataVaultAwsStaticAccessCredentialsConfig extends cdktf.TerraformMetaArguments {
   /**
   * AWS Secret Backend to read credentials from.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/aws_static_access_credentials#backend DataVaultAwsStaticAccessCredentials#backend}
   */
   readonly backend: string;
@@ -27,13 +27,13 @@ export interface DataVaultAwsStaticAccessCredentialsConfig extends cdktf.Terrafo
   readonly id?: string;
   /**
   * Name of the role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/aws_static_access_credentials#name DataVaultAwsStaticAccessCredentials#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/aws_static_access_credentials#namespace DataVaultAwsStaticAccessCredentials#namespace}
   */
   readonly namespace?: string;

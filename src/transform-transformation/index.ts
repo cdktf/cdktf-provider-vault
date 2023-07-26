@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface TransformTransformationConfig extends cdktf.TerraformMetaArguments {
   /**
   * The set of roles allowed to perform this transformation.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/transform_transformation#allowed_roles TransformTransformation#allowed_roles}
   */
   readonly allowedRoles?: string[];
   /**
   * If true, this transform can be deleted. Otherwise deletion is blocked while this value remains false.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/transform_transformation#deletion_allowed TransformTransformation#deletion_allowed}
   */
   readonly deletionAllowed?: boolean | cdktf.IResolvable;
@@ -33,49 +33,49 @@ export interface TransformTransformationConfig extends cdktf.TerraformMetaArgume
   readonly id?: string;
   /**
   * The character used to replace data when in masking mode
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/transform_transformation#masking_character TransformTransformation#masking_character}
   */
   readonly maskingCharacter?: string;
   /**
   * The name of the transformation.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/transform_transformation#name TransformTransformation#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/transform_transformation#namespace TransformTransformation#namespace}
   */
   readonly namespace?: string;
   /**
   * The mount path for a back-end, for example, the path given in "$ vault auth enable -path=my-aws aws".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/transform_transformation#path TransformTransformation#path}
   */
   readonly path: string;
   /**
   * The name of the template to use.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/transform_transformation#template TransformTransformation#template}
   */
   readonly template?: string;
   /**
   * Templates configured for transformation.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/transform_transformation#templates TransformTransformation#templates}
   */
   readonly templates?: string[];
   /**
   * The source of where the tweak value comes from. Only valid when in FPE mode.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/transform_transformation#tweak_source TransformTransformation#tweak_source}
   */
   readonly tweakSource?: string;
   /**
   * The type of transformation to perform.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/transform_transformation#type TransformTransformation#type}
   */
   readonly type?: string;

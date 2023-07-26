@@ -14,19 +14,19 @@ import * as cdktf from 'cdktf';
 export interface IdentityOidcClientConfig extends cdktf.TerraformMetaArguments {
   /**
   * The time-to-live for access tokens obtained by the client.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_client#access_token_ttl IdentityOidcClient#access_token_ttl}
   */
   readonly accessTokenTtl?: number;
   /**
   * A list of assignment resources associated with the client.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_client#assignments IdentityOidcClient#assignments}
   */
   readonly assignments?: string[];
   /**
   * The client type based on its ability to maintain confidentiality of credentials.Defaults to 'confidential'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_client#client_type IdentityOidcClient#client_type}
   */
   readonly clientType?: string;
@@ -39,31 +39,31 @@ export interface IdentityOidcClientConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The time-to-live for ID tokens obtained by the client. The value should be less than the verification_ttl on the key.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_client#id_token_ttl IdentityOidcClient#id_token_ttl}
   */
   readonly idTokenTtl?: number;
   /**
   * A reference to a named key resource in Vault. This cannot be modified after creation.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_client#key IdentityOidcClient#key}
   */
   readonly key?: string;
   /**
   * The name of the client.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_client#name IdentityOidcClient#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_client#namespace IdentityOidcClient#namespace}
   */
   readonly namespace?: string;
   /**
   * Redirection URI values used by the client. One of these values must exactly match the redirect_uri parameter value used in each authentication request.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_client#redirect_uris IdentityOidcClient#redirect_uris}
   */
   readonly redirectUris?: string[];

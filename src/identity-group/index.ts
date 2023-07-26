@@ -14,19 +14,19 @@ import * as cdktf from 'cdktf';
 export interface IdentityGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Manage member entities externally through `vault_identity_group_member_entity_ids`
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_group#external_member_entity_ids IdentityGroup#external_member_entity_ids}
   */
   readonly externalMemberEntityIds?: boolean | cdktf.IResolvable;
   /**
   * Manage member groups externally through `vault_identity_group_member_group_ids`
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_group#external_member_group_ids IdentityGroup#external_member_group_ids}
   */
   readonly externalMemberGroupIds?: boolean | cdktf.IResolvable;
   /**
   * Manage policies externally through `vault_identity_group_policies`, allows using group ID in assigned policies.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_group#external_policies IdentityGroup#external_policies}
   */
   readonly externalPolicies?: boolean | cdktf.IResolvable;
@@ -39,43 +39,43 @@ export interface IdentityGroupConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Entity IDs to be assigned as group members.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_group#member_entity_ids IdentityGroup#member_entity_ids}
   */
   readonly memberEntityIds?: string[];
   /**
   * Group IDs to be assigned as group members.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_group#member_group_ids IdentityGroup#member_group_ids}
   */
   readonly memberGroupIds?: string[];
   /**
   * Metadata to be associated with the group.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_group#metadata IdentityGroup#metadata}
   */
   readonly metadata?: { [key: string]: string };
   /**
   * Name of the group.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_group#name IdentityGroup#name}
   */
   readonly name?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_group#namespace IdentityGroup#namespace}
   */
   readonly namespace?: string;
   /**
   * Policies to be tied to the group.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_group#policies IdentityGroup#policies}
   */
   readonly policies?: string[];
   /**
   * Type of the group, internal or external. Defaults to internal.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_group#type IdentityGroup#type}
   */
   readonly type?: string;

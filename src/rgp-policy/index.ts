@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface RgpPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Enforcement level of Sentinel policy. Can be one of: 'advisory', 'soft-mandatory' or 'hard-mandatory'
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/rgp_policy#enforcement_level RgpPolicy#enforcement_level}
   */
   readonly enforcementLevel: string;
@@ -27,19 +27,19 @@ export interface RgpPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Name of the policy
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/rgp_policy#name RgpPolicy#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/rgp_policy#namespace RgpPolicy#namespace}
   */
   readonly namespace?: string;
   /**
   * The policy document
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/rgp_policy#policy RgpPolicy#policy}
   */
   readonly policy: string;

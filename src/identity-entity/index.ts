@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface IdentityEntityConfig extends cdktf.TerraformMetaArguments {
   /**
   * Whether the entity is disabled. Disabled entities' associated tokens cannot be used, but are not revoked.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_entity#disabled IdentityEntity#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
   * Manage policies externally through `vault_identity_entity_policies`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_entity#external_policies IdentityEntity#external_policies}
   */
   readonly externalPolicies?: boolean | cdktf.IResolvable;
@@ -33,25 +33,25 @@ export interface IdentityEntityConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Metadata to be associated with the entity.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_entity#metadata IdentityEntity#metadata}
   */
   readonly metadata?: { [key: string]: string };
   /**
   * Name of the entity.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_entity#name IdentityEntity#name}
   */
   readonly name?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_entity#namespace IdentityEntity#namespace}
   */
   readonly namespace?: string;
   /**
   * Policies to be tied to the entity.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_entity#policies IdentityEntity#policies}
   */
   readonly policies?: string[];

@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface IdentityGroupPoliciesConfig extends cdktf.TerraformMetaArguments {
   /**
   * Should the resource manage policies exclusively? Beware of race conditions when disabling exclusive management
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_group_policies#exclusive IdentityGroupPolicies#exclusive}
   */
   readonly exclusive?: boolean | cdktf.IResolvable;
   /**
   * ID of the group.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_group_policies#group_id IdentityGroupPolicies#group_id}
   */
   readonly groupId: string;
@@ -33,13 +33,13 @@ export interface IdentityGroupPoliciesConfig extends cdktf.TerraformMetaArgument
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_group_policies#namespace IdentityGroupPolicies#namespace}
   */
   readonly namespace?: string;
   /**
   * Policies to be tied to the group.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_group_policies#policies IdentityGroupPolicies#policies}
   */
   readonly policies: string[];

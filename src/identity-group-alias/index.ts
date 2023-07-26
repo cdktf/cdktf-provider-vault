@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface IdentityGroupAliasConfig extends cdktf.TerraformMetaArguments {
   /**
   * ID of the group to which this is an alias.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_group_alias#canonical_id IdentityGroupAlias#canonical_id}
   */
   readonly canonicalId: string;
@@ -27,19 +27,19 @@ export interface IdentityGroupAliasConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Mount accessor to which this alias belongs to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_group_alias#mount_accessor IdentityGroupAlias#mount_accessor}
   */
   readonly mountAccessor: string;
   /**
   * Name of the group alias.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_group_alias#name IdentityGroupAlias#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_group_alias#namespace IdentityGroupAlias#namespace}
   */
   readonly namespace?: string;

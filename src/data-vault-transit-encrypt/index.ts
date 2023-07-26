@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface DataVaultTransitEncryptConfig extends cdktf.TerraformMetaArguments {
   /**
   * The Transit secret backend the key belongs to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transit_encrypt#backend DataVaultTransitEncrypt#backend}
   */
   readonly backend: string;
   /**
   * Specifies the context for key derivation
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transit_encrypt#context DataVaultTransitEncrypt#context}
   */
   readonly context?: string;
@@ -33,25 +33,25 @@ export interface DataVaultTransitEncryptConfig extends cdktf.TerraformMetaArgume
   readonly id?: string;
   /**
   * Name of the encryption key to use.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transit_encrypt#key DataVaultTransitEncrypt#key}
   */
   readonly key: string;
   /**
   * The version of the key to use for encryption
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transit_encrypt#key_version DataVaultTransitEncrypt#key_version}
   */
   readonly keyVersion?: number;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transit_encrypt#namespace DataVaultTransitEncrypt#namespace}
   */
   readonly namespace?: string;
   /**
   * Map of strings read from Vault.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transit_encrypt#plaintext DataVaultTransitEncrypt#plaintext}
   */
   readonly plaintext: string;

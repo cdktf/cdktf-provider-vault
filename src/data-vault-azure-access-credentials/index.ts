@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface DataVaultAzureAccessCredentialsConfig extends cdktf.TerraformMetaArguments {
   /**
   * Azure Secret Backend to read credentials from.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/azure_access_credentials#backend DataVaultAzureAccessCredentials#backend}
   */
   readonly backend: string;
@@ -22,7 +22,7 @@ export interface DataVaultAzureAccessCredentialsConfig extends cdktf.TerraformMe
   * The Azure environment to use during credential validation.
 Defaults to the environment configured in the Vault backend.
 Some possible values: AzurePublicCloud, AzureUSGovernmentCloud
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/azure_access_credentials#environment DataVaultAzureAccessCredentials#environment}
   */
   readonly environment?: string;
@@ -35,49 +35,49 @@ Some possible values: AzurePublicCloud, AzureUSGovernmentCloud
   readonly id?: string;
   /**
   * If 'validate_creds' is true, the number of seconds after which to give up validating credentials.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/azure_access_credentials#max_cred_validation_seconds DataVaultAzureAccessCredentials#max_cred_validation_seconds}
   */
   readonly maxCredValidationSeconds?: number;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/azure_access_credentials#namespace DataVaultAzureAccessCredentials#namespace}
   */
   readonly namespace?: string;
   /**
   * If 'validate_creds' is true, the number of seconds to wait between each test of generated credentials.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/azure_access_credentials#num_seconds_between_tests DataVaultAzureAccessCredentials#num_seconds_between_tests}
   */
   readonly numSecondsBetweenTests?: number;
   /**
   * If 'validate_creds' is true, the number of sequential successes required to validate generated credentials.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/azure_access_credentials#num_sequential_successes DataVaultAzureAccessCredentials#num_sequential_successes}
   */
   readonly numSequentialSuccesses?: number;
   /**
   * Azure Secret Role to read credentials from.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/azure_access_credentials#role DataVaultAzureAccessCredentials#role}
   */
   readonly role: string;
   /**
   * The subscription ID to use during credential validation. Defaults to the subscription ID configured in the Vault backend
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/azure_access_credentials#subscription_id DataVaultAzureAccessCredentials#subscription_id}
   */
   readonly subscriptionId?: string;
   /**
   * The tenant ID to use during credential validation. Defaults to the tenant ID configured in the Vault backend
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/azure_access_credentials#tenant_id DataVaultAzureAccessCredentials#tenant_id}
   */
   readonly tenantId?: string;
   /**
   * Whether generated credentials should be validated before being returned.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/azure_access_credentials#validate_creds DataVaultAzureAccessCredentials#validate_creds}
   */
   readonly validateCreds?: boolean | cdktf.IResolvable;

@@ -21,13 +21,13 @@ export interface DataVaultAuthBackendConfig extends cdktf.TerraformMetaArguments
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/auth_backend#namespace DataVaultAuthBackend#namespace}
   */
   readonly namespace?: string;
   /**
   * The auth backend mount point.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/auth_backend#path DataVaultAuthBackend#path}
   */
   readonly path: string;

@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface DataVaultAdAccessCredentialsConfig extends cdktf.TerraformMetaArguments {
   /**
   * AD Secret Backend to read credentials from.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/ad_access_credentials#backend DataVaultAdAccessCredentials#backend}
   */
   readonly backend: string;
@@ -27,13 +27,13 @@ export interface DataVaultAdAccessCredentialsConfig extends cdktf.TerraformMetaA
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/ad_access_credentials#namespace DataVaultAdAccessCredentials#namespace}
   */
   readonly namespace?: string;
   /**
   * Name of the role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/ad_access_credentials#role DataVaultAdAccessCredentials#role}
   */
   readonly role: string;

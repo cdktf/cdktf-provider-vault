@@ -14,31 +14,31 @@ import * as cdktf from 'cdktf';
 export interface AwsSecretBackendConfig extends cdktf.TerraformMetaArguments {
   /**
   * The AWS Access Key ID to use when generating new credentials.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_secret_backend#access_key AwsSecretBackend#access_key}
   */
   readonly accessKey?: string;
   /**
   * Default lease duration for secrets in seconds
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_secret_backend#default_lease_ttl_seconds AwsSecretBackend#default_lease_ttl_seconds}
   */
   readonly defaultLeaseTtlSeconds?: number;
   /**
   * Human-friendly description of the mount for the backend.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_secret_backend#description AwsSecretBackend#description}
   */
   readonly description?: string;
   /**
   * If set, opts out of mount migration on path updates.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_secret_backend#disable_remount AwsSecretBackend#disable_remount}
   */
   readonly disableRemount?: boolean | cdktf.IResolvable;
   /**
   * Specifies a custom HTTP IAM endpoint to use.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_secret_backend#iam_endpoint AwsSecretBackend#iam_endpoint}
   */
   readonly iamEndpoint?: string;
@@ -51,43 +51,43 @@ export interface AwsSecretBackendConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Maximum possible lease duration for secrets in seconds
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_secret_backend#max_lease_ttl_seconds AwsSecretBackend#max_lease_ttl_seconds}
   */
   readonly maxLeaseTtlSeconds?: number;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_secret_backend#namespace AwsSecretBackend#namespace}
   */
   readonly namespace?: string;
   /**
   * Path to mount the backend at.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_secret_backend#path AwsSecretBackend#path}
   */
   readonly path?: string;
   /**
   * The AWS region to make API calls against. Defaults to us-east-1.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_secret_backend#region AwsSecretBackend#region}
   */
   readonly region?: string;
   /**
   * The AWS Secret Access Key to use when generating new credentials.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_secret_backend#secret_key AwsSecretBackend#secret_key}
   */
   readonly secretKey?: string;
   /**
   * Specifies a custom HTTP STS endpoint to use.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_secret_backend#sts_endpoint AwsSecretBackend#sts_endpoint}
   */
   readonly stsEndpoint?: string;
   /**
   * Template describing how dynamic usernames are generated.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_secret_backend#username_template AwsSecretBackend#username_template}
   */
   readonly usernameTemplate?: string;

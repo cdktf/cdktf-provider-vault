@@ -14,37 +14,37 @@ import * as cdktf from 'cdktf';
 export interface MountConfig extends cdktf.TerraformMetaArguments {
   /**
   * List of managed key registry entry names that the mount in question is allowed to access
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mount#allowed_managed_keys Mount#allowed_managed_keys}
   */
   readonly allowedManagedKeys?: string[];
   /**
   * Specifies the list of keys that will not be HMAC'd by audit devices in the request data object.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mount#audit_non_hmac_request_keys Mount#audit_non_hmac_request_keys}
   */
   readonly auditNonHmacRequestKeys?: string[];
   /**
   * Specifies the list of keys that will not be HMAC'd by audit devices in the response data object.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mount#audit_non_hmac_response_keys Mount#audit_non_hmac_response_keys}
   */
   readonly auditNonHmacResponseKeys?: string[];
   /**
   * Default lease duration for tokens and secrets in seconds
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mount#default_lease_ttl_seconds Mount#default_lease_ttl_seconds}
   */
   readonly defaultLeaseTtlSeconds?: number;
   /**
   * Human-friendly description of the mount
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mount#description Mount#description}
   */
   readonly description?: string;
   /**
   * Enable the secrets engine to access Vault's external entropy source
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mount#external_entropy_access Mount#external_entropy_access}
   */
   readonly externalEntropyAccess?: boolean | cdktf.IResolvable;
@@ -57,43 +57,43 @@ export interface MountConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Local mount flag that can be explicitly set to true to enforce local mount in HA environment
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mount#local Mount#local}
   */
   readonly local?: boolean | cdktf.IResolvable;
   /**
   * Maximum possible lease duration for tokens and secrets in seconds
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mount#max_lease_ttl_seconds Mount#max_lease_ttl_seconds}
   */
   readonly maxLeaseTtlSeconds?: number;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mount#namespace Mount#namespace}
   */
   readonly namespace?: string;
   /**
   * Specifies mount type specific options that are passed to the backend
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mount#options Mount#options}
   */
   readonly options?: { [key: string]: string };
   /**
   * Where the secret backend will be mounted
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mount#path Mount#path}
   */
   readonly path: string;
   /**
   * Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mount#seal_wrap Mount#seal_wrap}
   */
   readonly sealWrap?: boolean | cdktf.IResolvable;
   /**
   * Type of the backend, such as 'aws'
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mount#type Mount#type}
   */
   readonly type: string;

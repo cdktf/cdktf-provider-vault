@@ -15,13 +15,13 @@ export interface IdentityGroupMemberGroupIdsConfig extends cdktf.TerraformMetaAr
   /**
   * If set to true, allows the resource to manage member group ids
 exclusively. Beware of race conditions when disabling exclusive management
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_group_member_group_ids#exclusive IdentityGroupMemberGroupIds#exclusive}
   */
   readonly exclusive?: boolean | cdktf.IResolvable;
   /**
   * ID of the group.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_group_member_group_ids#group_id IdentityGroupMemberGroupIds#group_id}
   */
   readonly groupId: string;
@@ -34,13 +34,13 @@ exclusively. Beware of race conditions when disabling exclusive management
   readonly id?: string;
   /**
   * Group IDs to be assigned as group members.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_group_member_group_ids#member_group_ids IdentityGroupMemberGroupIds#member_group_ids}
   */
   readonly memberGroupIds?: string[];
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_group_member_group_ids#namespace IdentityGroupMemberGroupIds#namespace}
   */
   readonly namespace?: string;

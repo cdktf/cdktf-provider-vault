@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GcpSecretRolesetConfig extends cdktf.TerraformMetaArguments {
   /**
   * Path where the GCP secrets engine is mounted.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/gcp_secret_roleset#backend GcpSecretRoleset#backend}
   */
   readonly backend: string;
@@ -27,37 +27,37 @@ export interface GcpSecretRolesetConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/gcp_secret_roleset#namespace GcpSecretRoleset#namespace}
   */
   readonly namespace?: string;
   /**
   * Name of the GCP project that this roleset's service account will belong to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/gcp_secret_roleset#project GcpSecretRoleset#project}
   */
   readonly project: string;
   /**
   * Name of the RoleSet to create
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/gcp_secret_roleset#roleset GcpSecretRoleset#roleset}
   */
   readonly roleset: string;
   /**
   * Type of secret generated for this role set. Defaults to `access_token`. Accepted values: `access_token`, `service_account_key`
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/gcp_secret_roleset#secret_type GcpSecretRoleset#secret_type}
   */
   readonly secretType?: string;
   /**
   * List of OAuth scopes to assign to `access_token` secrets generated under this role set (`access_token` role sets only) 
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/gcp_secret_roleset#token_scopes GcpSecretRoleset#token_scopes}
   */
   readonly tokenScopes?: string[];
   /**
   * binding block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/gcp_secret_roleset#binding GcpSecretRoleset#binding}
   */
   readonly binding: GcpSecretRolesetBinding[] | cdktf.IResolvable;
@@ -65,13 +65,13 @@ export interface GcpSecretRolesetConfig extends cdktf.TerraformMetaArguments {
 export interface GcpSecretRolesetBinding {
   /**
   * Resource name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/gcp_secret_roleset#resource GcpSecretRoleset#resource}
   */
   readonly resource: string;
   /**
   * List of roles to apply to the resource
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/gcp_secret_roleset#roles GcpSecretRoleset#roles}
   */
   readonly roles: string[];

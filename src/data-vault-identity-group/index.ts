@@ -14,31 +14,31 @@ import * as cdktf from 'cdktf';
 export interface DataVaultIdentityGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * ID of the alias.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/identity_group#alias_id DataVaultIdentityGroup#alias_id}
   */
   readonly aliasId?: string;
   /**
   * Accessor of the mount to which the alias belongs to. This should be supplied in conjunction with `alias_name`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/identity_group#alias_mount_accessor DataVaultIdentityGroup#alias_mount_accessor}
   */
   readonly aliasMountAccessor?: string;
   /**
   * Name of the alias. This should be supplied in conjunction with `alias_mount_accessor`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/identity_group#alias_name DataVaultIdentityGroup#alias_name}
   */
   readonly aliasName?: string;
   /**
   * ID of the group.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/identity_group#group_id DataVaultIdentityGroup#group_id}
   */
   readonly groupId?: string;
   /**
   * Name of the group.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/identity_group#group_name DataVaultIdentityGroup#group_name}
   */
   readonly groupName?: string;
@@ -51,7 +51,7 @@ export interface DataVaultIdentityGroupConfig extends cdktf.TerraformMetaArgumen
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/identity_group#namespace DataVaultIdentityGroup#namespace}
   */
   readonly namespace?: string;

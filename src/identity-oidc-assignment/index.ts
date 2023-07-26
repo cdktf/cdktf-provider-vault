@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface IdentityOidcAssignmentConfig extends cdktf.TerraformMetaArguments {
   /**
   * A list of Vault entity IDs.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_assignment#entity_ids IdentityOidcAssignment#entity_ids}
   */
   readonly entityIds?: string[];
   /**
   * A list of Vault group IDs.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_assignment#group_ids IdentityOidcAssignment#group_ids}
   */
   readonly groupIds?: string[];
@@ -33,13 +33,13 @@ export interface IdentityOidcAssignmentConfig extends cdktf.TerraformMetaArgumen
   readonly id?: string;
   /**
   * The name of the assignment.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_assignment#name IdentityOidcAssignment#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_assignment#namespace IdentityOidcAssignment#namespace}
   */
   readonly namespace?: string;

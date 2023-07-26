@@ -14,31 +14,31 @@ import * as cdktf from 'cdktf';
 export interface AwsAuthBackendClientConfig extends cdktf.TerraformMetaArguments {
   /**
   * AWS Access key with permissions to query AWS APIs.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_auth_backend_client#access_key AwsAuthBackendClient#access_key}
   */
   readonly accessKey?: string;
   /**
   * Unique name of the auth backend to configure.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_auth_backend_client#backend AwsAuthBackendClient#backend}
   */
   readonly backend?: string;
   /**
   * URL to override the default generated endpoint for making AWS EC2 API calls.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_auth_backend_client#ec2_endpoint AwsAuthBackendClient#ec2_endpoint}
   */
   readonly ec2Endpoint?: string;
   /**
   * URL to override the default generated endpoint for making AWS IAM API calls.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_auth_backend_client#iam_endpoint AwsAuthBackendClient#iam_endpoint}
   */
   readonly iamEndpoint?: string;
   /**
   * The value to require in the X-Vault-AWS-IAM-Server-ID header as part of GetCallerIdentity requests that are used in the iam auth method.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_auth_backend_client#iam_server_id_header_value AwsAuthBackendClient#iam_server_id_header_value}
   */
   readonly iamServerIdHeaderValue?: string;
@@ -51,25 +51,25 @@ export interface AwsAuthBackendClientConfig extends cdktf.TerraformMetaArguments
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_auth_backend_client#namespace AwsAuthBackendClient#namespace}
   */
   readonly namespace?: string;
   /**
   * AWS Secret key with permissions to query AWS APIs.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_auth_backend_client#secret_key AwsAuthBackendClient#secret_key}
   */
   readonly secretKey?: string;
   /**
   * URL to override the default generated endpoint for making AWS STS API calls.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_auth_backend_client#sts_endpoint AwsAuthBackendClient#sts_endpoint}
   */
   readonly stsEndpoint?: string;
   /**
   * Region to override the default region for making AWS STS API calls.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_auth_backend_client#sts_region AwsAuthBackendClient#sts_region}
   */
   readonly stsRegion?: string;

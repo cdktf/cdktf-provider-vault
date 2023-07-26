@@ -21,19 +21,19 @@ export interface DataVaultLdapStaticCredentialsConfig extends cdktf.TerraformMet
   readonly id?: string;
   /**
   * LDAP Secret Backend to read credentials from.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/ldap_static_credentials#mount DataVaultLdapStaticCredentials#mount}
   */
   readonly mount: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/ldap_static_credentials#namespace DataVaultLdapStaticCredentials#namespace}
   */
   readonly namespace?: string;
   /**
   * Name of the role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/ldap_static_credentials#role_name DataVaultLdapStaticCredentials#role_name}
   */
   readonly roleName: string;

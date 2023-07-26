@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface AdSecretLibraryConfig extends cdktf.TerraformMetaArguments {
   /**
   * The mount path for the AD backend.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ad_secret_library#backend AdSecretLibrary#backend}
   */
   readonly backend: string;
   /**
   * Disable enforcing that service accounts must be checked in by the entity or client token that checked them out.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ad_secret_library#disable_check_in_enforcement AdSecretLibrary#disable_check_in_enforcement}
   */
   readonly disableCheckInEnforcement?: boolean | cdktf.IResolvable;
@@ -33,31 +33,31 @@ export interface AdSecretLibraryConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The maximum amount of time, in seconds, a check-out last with renewal before Vault automatically checks it back in.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ad_secret_library#max_ttl AdSecretLibrary#max_ttl}
   */
   readonly maxTtl?: number;
   /**
   * The name of the set of service accounts.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ad_secret_library#name AdSecretLibrary#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ad_secret_library#namespace AdSecretLibrary#namespace}
   */
   readonly namespace?: string;
   /**
   * The names of all the service accounts that can be checked out from this set. These service accounts must already exist in Active Directory.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ad_secret_library#service_account_names AdSecretLibrary#service_account_names}
   */
   readonly serviceAccountNames: string[];
   /**
   * The amount of time, in seconds, a single check-out lasts before Vault automatically checks it back in.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ad_secret_library#ttl AdSecretLibrary#ttl}
   */
   readonly ttl?: number;

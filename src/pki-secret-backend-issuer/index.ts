@@ -14,19 +14,19 @@ import * as cdktf from 'cdktf';
 export interface PkiSecretBackendIssuerConfig extends cdktf.TerraformMetaArguments {
   /**
   * Full path where PKI backend is mounted.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_issuer#backend PkiSecretBackendIssuer#backend}
   */
   readonly backend: string;
   /**
   * Specifies the URL values for the CRL Distribution Points field.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_issuer#crl_distribution_points PkiSecretBackendIssuer#crl_distribution_points}
   */
   readonly crlDistributionPoints?: string[];
   /**
   * Specifies that the AIA URL values should be templated.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_issuer#enable_aia_url_templating PkiSecretBackendIssuer#enable_aia_url_templating}
   */
   readonly enableAiaUrlTemplating?: boolean | cdktf.IResolvable;
@@ -39,55 +39,55 @@ export interface PkiSecretBackendIssuerConfig extends cdktf.TerraformMetaArgumen
   readonly id?: string;
   /**
   * Reference to an existing issuer.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_issuer#issuer_name PkiSecretBackendIssuer#issuer_name}
   */
   readonly issuerName?: string;
   /**
   * Reference to an existing issuer.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_issuer#issuer_ref PkiSecretBackendIssuer#issuer_ref}
   */
   readonly issuerRef: string;
   /**
   * Specifies the URL values for the Issuing Certificate field.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_issuer#issuing_certificates PkiSecretBackendIssuer#issuing_certificates}
   */
   readonly issuingCertificates?: string[];
   /**
   * Behavior of a leaf's 'NotAfter' field during issuance.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_issuer#leaf_not_after_behavior PkiSecretBackendIssuer#leaf_not_after_behavior}
   */
   readonly leafNotAfterBehavior?: string;
   /**
   * Chain of issuer references to build this issuer's computed CAChain field from, when non-empty.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_issuer#manual_chain PkiSecretBackendIssuer#manual_chain}
   */
   readonly manualChain?: string[];
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_issuer#namespace PkiSecretBackendIssuer#namespace}
   */
   readonly namespace?: string;
   /**
   * Specifies the URL values for the OCSP Servers field.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_issuer#ocsp_servers PkiSecretBackendIssuer#ocsp_servers}
   */
   readonly ocspServers?: string[];
   /**
   * Which signature algorithm to use when building CRLs.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_issuer#revocation_signature_algorithm PkiSecretBackendIssuer#revocation_signature_algorithm}
   */
   readonly revocationSignatureAlgorithm?: string;
   /**
   * Comma-separated list of allowed usages for this issuer.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_issuer#usage PkiSecretBackendIssuer#usage}
   */
   readonly usage?: string;

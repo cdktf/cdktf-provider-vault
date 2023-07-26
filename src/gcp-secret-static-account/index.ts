@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GcpSecretStaticAccountConfig extends cdktf.TerraformMetaArguments {
   /**
   * Path where the GCP secrets engine is mounted.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/gcp_secret_static_account#backend GcpSecretStaticAccount#backend}
   */
   readonly backend: string;
@@ -27,37 +27,37 @@ export interface GcpSecretStaticAccountConfig extends cdktf.TerraformMetaArgumen
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/gcp_secret_static_account#namespace GcpSecretStaticAccount#namespace}
   */
   readonly namespace?: string;
   /**
   * Type of secret generated for this static account. Defaults to `access_token`. Accepted values: `access_token`, `service_account_key`
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/gcp_secret_static_account#secret_type GcpSecretStaticAccount#secret_type}
   */
   readonly secretType?: string;
   /**
   * Email of the GCP service account.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/gcp_secret_static_account#service_account_email GcpSecretStaticAccount#service_account_email}
   */
   readonly serviceAccountEmail: string;
   /**
   * Name of the Static Account to create
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/gcp_secret_static_account#static_account GcpSecretStaticAccount#static_account}
   */
   readonly staticAccount: string;
   /**
   * List of OAuth scopes to assign to `access_token` secrets generated under this static account (`access_token` static accounts only) 
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/gcp_secret_static_account#token_scopes GcpSecretStaticAccount#token_scopes}
   */
   readonly tokenScopes?: string[];
   /**
   * binding block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/gcp_secret_static_account#binding GcpSecretStaticAccount#binding}
   */
   readonly binding?: GcpSecretStaticAccountBinding[] | cdktf.IResolvable;
@@ -65,13 +65,13 @@ export interface GcpSecretStaticAccountConfig extends cdktf.TerraformMetaArgumen
 export interface GcpSecretStaticAccountBinding {
   /**
   * Resource name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/gcp_secret_static_account#resource GcpSecretStaticAccount#resource}
   */
   readonly resource: string;
   /**
   * List of roles to apply to the resource
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/gcp_secret_static_account#roles GcpSecretStaticAccount#roles}
   */
   readonly roles: string[];

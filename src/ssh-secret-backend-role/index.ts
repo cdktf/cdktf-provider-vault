@@ -109,13 +109,13 @@ export interface SshSecretBackendRoleConfig extends cdktf.TerraformMetaArguments
   readonly maxTtl?: string;
   /**
   * Unique name for the role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ssh_secret_backend_role#name SshSecretBackendRole#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ssh_secret_backend_role#namespace SshSecretBackendRole#namespace}
   */
   readonly namespace?: string;
@@ -125,7 +125,7 @@ export interface SshSecretBackendRoleConfig extends cdktf.TerraformMetaArguments
   readonly ttl?: string;
   /**
   * allowed_user_key_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ssh_secret_backend_role#allowed_user_key_config SshSecretBackendRole#allowed_user_key_config}
   */
   readonly allowedUserKeyConfig?: SshSecretBackendRoleAllowedUserKeyConfig[] | cdktf.IResolvable;
@@ -133,14 +133,14 @@ export interface SshSecretBackendRoleConfig extends cdktf.TerraformMetaArguments
 export interface SshSecretBackendRoleAllowedUserKeyConfig {
   /**
   * List of allowed key lengths, vault-1.10 and above
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ssh_secret_backend_role#lengths SshSecretBackendRole#lengths}
   */
   readonly lengths: number[];
   /**
   * Key type, choices:
 rsa, ecdsa, ec, dsa, ed25519, ssh-rsa, ssh-dss, ssh-ed25519, ecdsa-sha2-nistp256, ecdsa-sha2-nistp384, ecdsa-sha2-nistp521
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ssh_secret_backend_role#type SshSecretBackendRole#type}
   */
   readonly type: string;

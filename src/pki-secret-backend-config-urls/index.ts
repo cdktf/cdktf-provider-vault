@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface PkiSecretBackendConfigUrlsConfig extends cdktf.TerraformMetaArguments {
   /**
   * The path of the PKI secret backend the resource belongs to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_config_urls#backend PkiSecretBackendConfigUrls#backend}
   */
   readonly backend: string;
   /**
   * Specifies the URL values for the CRL Distribution Points field.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_config_urls#crl_distribution_points PkiSecretBackendConfigUrls#crl_distribution_points}
   */
   readonly crlDistributionPoints?: string[];
@@ -33,19 +33,19 @@ export interface PkiSecretBackendConfigUrlsConfig extends cdktf.TerraformMetaArg
   readonly id?: string;
   /**
   * Specifies the URL values for the Issuing Certificate field.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_config_urls#issuing_certificates PkiSecretBackendConfigUrls#issuing_certificates}
   */
   readonly issuingCertificates?: string[];
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_config_urls#namespace PkiSecretBackendConfigUrls#namespace}
   */
   readonly namespace?: string;
   /**
   * Specifies the URL values for the OCSP Servers field.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_config_urls#ocsp_servers PkiSecretBackendConfigUrls#ocsp_servers}
   */
   readonly ocspServers?: string[];

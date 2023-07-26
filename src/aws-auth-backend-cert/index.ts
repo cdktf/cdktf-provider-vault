@@ -14,19 +14,19 @@ import * as cdktf from 'cdktf';
 export interface AwsAuthBackendCertConfig extends cdktf.TerraformMetaArguments {
   /**
   * Base64 encoded AWS Public key required to verify PKCS7 signature of the EC2 instance metadata.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_auth_backend_cert#aws_public_cert AwsAuthBackendCert#aws_public_cert}
   */
   readonly awsPublicCert: string;
   /**
   * Unique name of the auth backend to configure.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_auth_backend_cert#backend AwsAuthBackendCert#backend}
   */
   readonly backend?: string;
   /**
   * Name of the certificate to configure.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_auth_backend_cert#cert_name AwsAuthBackendCert#cert_name}
   */
   readonly certName: string;
@@ -39,13 +39,13 @@ export interface AwsAuthBackendCertConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_auth_backend_cert#namespace AwsAuthBackendCert#namespace}
   */
   readonly namespace?: string;
   /**
   * The type of document that can be verified using the certificate. Must be either "pkcs7" or "identity".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_auth_backend_cert#type AwsAuthBackendCert#type}
   */
   readonly type?: string;

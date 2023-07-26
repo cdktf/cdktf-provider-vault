@@ -14,31 +14,31 @@ import * as cdktf from 'cdktf';
 export interface DataVaultIdentityEntityConfig extends cdktf.TerraformMetaArguments {
   /**
   * ID of the alias.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/identity_entity#alias_id DataVaultIdentityEntity#alias_id}
   */
   readonly aliasId?: string;
   /**
   * Accessor of the mount to which the alias belongs to. This should be supplied in conjunction with `alias_name`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/identity_entity#alias_mount_accessor DataVaultIdentityEntity#alias_mount_accessor}
   */
   readonly aliasMountAccessor?: string;
   /**
   * Name of the alias. This should be supplied in conjunction with `alias_mount_accessor`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/identity_entity#alias_name DataVaultIdentityEntity#alias_name}
   */
   readonly aliasName?: string;
   /**
   * ID of the entity.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/identity_entity#entity_id DataVaultIdentityEntity#entity_id}
   */
   readonly entityId?: string;
   /**
   * Name of the entity.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/identity_entity#entity_name DataVaultIdentityEntity#entity_name}
   */
   readonly entityName?: string;
@@ -51,7 +51,7 @@ export interface DataVaultIdentityEntityConfig extends cdktf.TerraformMetaArgume
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/identity_entity#namespace DataVaultIdentityEntity#namespace}
   */
   readonly namespace?: string;

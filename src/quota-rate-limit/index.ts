@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface QuotaRateLimitConfig extends cdktf.TerraformMetaArguments {
   /**
   * If set, when a client reaches a rate limit threshold, the client will be prohibited from any further requests until after the 'block_interval' in seconds has elapsed.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/quota_rate_limit#block_interval QuotaRateLimit#block_interval}
   */
   readonly blockInterval?: number;
@@ -27,31 +27,31 @@ export interface QuotaRateLimitConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The duration in seconds to enforce rate limiting for.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/quota_rate_limit#interval QuotaRateLimit#interval}
   */
   readonly interval?: number;
   /**
   * The name of the quota.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/quota_rate_limit#name QuotaRateLimit#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/quota_rate_limit#namespace QuotaRateLimit#namespace}
   */
   readonly namespace?: string;
   /**
   * Path of the mount or namespace to apply the quota. A blank path configures a global rate limit quota.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/quota_rate_limit#path QuotaRateLimit#path}
   */
   readonly path?: string;
   /**
   * The maximum number of requests at any given second to be allowed by the quota rule. The rate must be positive.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/quota_rate_limit#rate QuotaRateLimit#rate}
   */
   readonly rate: number;
