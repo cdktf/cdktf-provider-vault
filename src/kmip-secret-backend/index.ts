@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kmip_secret_backend
 // generated from terraform resource schema
 
@@ -14,31 +9,31 @@ import * as cdktf from 'cdktf';
 export interface KmipSecretBackendConfig extends cdktf.TerraformMetaArguments {
   /**
   * Client certificate key bits, valid values depend on key type
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kmip_secret_backend#default_tls_client_key_bits KmipSecretBackend#default_tls_client_key_bits}
   */
   readonly defaultTlsClientKeyBits?: number;
   /**
   * Client certificate key type, rsa or ec
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kmip_secret_backend#default_tls_client_key_type KmipSecretBackend#default_tls_client_key_type}
   */
   readonly defaultTlsClientKeyType?: string;
   /**
   * Client certificate TTL in seconds
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kmip_secret_backend#default_tls_client_ttl KmipSecretBackend#default_tls_client_ttl}
   */
   readonly defaultTlsClientTtl?: number;
   /**
   * Human-friendly description of the mount for the backend
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kmip_secret_backend#description KmipSecretBackend#description}
   */
   readonly description?: string;
   /**
   * If set, opts out of mount migration on path updates.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kmip_secret_backend#disable_remount KmipSecretBackend#disable_remount}
   */
   readonly disableRemount?: boolean | cdktf.IResolvable;
@@ -51,49 +46,49 @@ export interface KmipSecretBackendConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Addresses the KMIP server should listen on (host:port)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kmip_secret_backend#listen_addrs KmipSecretBackend#listen_addrs}
   */
   readonly listenAddrs?: string[];
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kmip_secret_backend#namespace KmipSecretBackend#namespace}
   */
   readonly namespace?: string;
   /**
   * Path where KMIP secret backend will be mounted
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kmip_secret_backend#path KmipSecretBackend#path}
   */
   readonly path: string;
   /**
   * Hostnames to include in the server's TLS certificate as SAN DNS names. The first will be used as the common name (CN)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kmip_secret_backend#server_hostnames KmipSecretBackend#server_hostnames}
   */
   readonly serverHostnames?: string[];
   /**
   * IPs to include in the server's TLS certificate as SAN IP addresses
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kmip_secret_backend#server_ips KmipSecretBackend#server_ips}
   */
   readonly serverIps?: string[];
   /**
   * CA key bits, valid values depend on key type
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kmip_secret_backend#tls_ca_key_bits KmipSecretBackend#tls_ca_key_bits}
   */
   readonly tlsCaKeyBits?: number;
   /**
   * CA key type, rsa or ec
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kmip_secret_backend#tls_ca_key_type KmipSecretBackend#tls_ca_key_type}
   */
   readonly tlsCaKeyType?: string;
   /**
   * Minimum TLS version to accept
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kmip_secret_backend#tls_min_version KmipSecretBackend#tls_min_version}
   */
   readonly tlsMinVersion?: string;

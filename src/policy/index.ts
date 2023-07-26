@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/policy
 // generated from terraform resource schema
 
@@ -21,19 +16,19 @@ export interface PolicyConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Name of the policy
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/policy#name Policy#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/policy#namespace Policy#namespace}
   */
   readonly namespace?: string;
   /**
   * The policy document
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/policy#policy Policy#policy}
   */
   readonly policy: string;

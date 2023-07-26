@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/audit
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface AuditConfig extends cdktf.TerraformMetaArguments {
   /**
   * Human-friendly description of the audit device.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/audit#description Audit#description}
   */
   readonly description?: string;
@@ -27,31 +22,31 @@ export interface AuditConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Specifies if the audit device is a local only. Local audit devices are not replicated nor (if a secondary) removed by replication.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/audit#local Audit#local}
   */
   readonly local?: boolean | cdktf.IResolvable;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/audit#namespace Audit#namespace}
   */
   readonly namespace?: string;
   /**
   * Configuration options to pass to the audit device itself.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/audit#options Audit#options}
   */
   readonly options: { [key: string]: string };
   /**
   * Path in which to enable the audit device.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/audit#path Audit#path}
   */
   readonly path?: string;
   /**
   * Type of the audit device, such as 'file'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/audit#type Audit#type}
   */
   readonly type: string;

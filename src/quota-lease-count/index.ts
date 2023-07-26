@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/quota_lease_count
 // generated from terraform resource schema
 
@@ -21,25 +16,25 @@ export interface QuotaLeaseCountConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The maximum number of leases to be allowed by the quota rule. The max_leases must be positive.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/quota_lease_count#max_leases QuotaLeaseCount#max_leases}
   */
   readonly maxLeases: number;
   /**
   * The name of the quota.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/quota_lease_count#name QuotaLeaseCount#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/quota_lease_count#namespace QuotaLeaseCount#namespace}
   */
   readonly namespace?: string;
   /**
   * Path of the mount or namespace to apply the quota. A blank path configures a global lease count quota.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/quota_lease_count#path QuotaLeaseCount#path}
   */
   readonly path?: string;

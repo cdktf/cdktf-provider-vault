@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/nomad_access_token
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface DataVaultNomadAccessTokenConfig extends cdktf.TerraformMetaArguments {
   /**
   * Nomad secret backend to generate tokens from.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/nomad_access_token#backend DataVaultNomadAccessToken#backend}
   */
   readonly backend: string;
@@ -27,13 +22,13 @@ export interface DataVaultNomadAccessTokenConfig extends cdktf.TerraformMetaArgu
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/nomad_access_token#namespace DataVaultNomadAccessToken#namespace}
   */
   readonly namespace?: string;
   /**
   * Name of the role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/nomad_access_token#role DataVaultNomadAccessToken#role}
   */
   readonly role: string;

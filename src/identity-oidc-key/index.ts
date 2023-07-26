@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_key
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface IdentityOidcKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Signing algorithm to use. Signing algorithm to use. Allowed values are: RS256 (default), RS384, RS512, ES256, ES384, ES512, EdDSA.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_key#algorithm IdentityOidcKey#algorithm}
   */
   readonly algorithm?: string;
   /**
   * Array of role client ids allowed to use this key for signing. If empty, no roles are allowed. If "*", all roles are allowed.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_key#allowed_client_ids IdentityOidcKey#allowed_client_ids}
   */
   readonly allowedClientIds?: string[];
@@ -33,25 +28,25 @@ export interface IdentityOidcKeyConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Name of the key.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_key#name IdentityOidcKey#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_key#namespace IdentityOidcKey#namespace}
   */
   readonly namespace?: string;
   /**
   * How often to generate a new signing key in number of seconds
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_key#rotation_period IdentityOidcKey#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * Controls how long the public portion of a signing key will be available for verification after being rotated in seconds.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_key#verification_ttl IdentityOidcKey#verification_ttl}
   */
   readonly verificationTtl?: number;

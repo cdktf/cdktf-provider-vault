@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/pki_secret_backend_issuers
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface DataVaultPkiSecretBackendIssuersConfig extends cdktf.TerraformMetaArguments {
   /**
   * Full path where PKI backend is mounted.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/pki_secret_backend_issuers#backend DataVaultPkiSecretBackendIssuers#backend}
   */
   readonly backend: string;
@@ -27,7 +22,7 @@ export interface DataVaultPkiSecretBackendIssuersConfig extends cdktf.TerraformM
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/pki_secret_backend_issuers#namespace DataVaultPkiSecretBackendIssuers#namespace}
   */
   readonly namespace?: string;

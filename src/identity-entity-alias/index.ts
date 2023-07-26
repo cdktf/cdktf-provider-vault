@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_entity_alias
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface IdentityEntityAliasConfig extends cdktf.TerraformMetaArguments {
   /**
   * ID of the entity to which this is an alias.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_entity_alias#canonical_id IdentityEntityAlias#canonical_id}
   */
   readonly canonicalId: string;
   /**
   * Custom metadata to be associated with this alias.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_entity_alias#custom_metadata IdentityEntityAlias#custom_metadata}
   */
   readonly customMetadata?: { [key: string]: string };
@@ -33,19 +28,19 @@ export interface IdentityEntityAliasConfig extends cdktf.TerraformMetaArguments 
   readonly id?: string;
   /**
   * Mount accessor to which this alias belongs toMount accessor to which this alias belongs to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_entity_alias#mount_accessor IdentityEntityAlias#mount_accessor}
   */
   readonly mountAccessor: string;
   /**
   * Name of the entity alias.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_entity_alias#name IdentityEntityAlias#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_entity_alias#namespace IdentityEntityAlias#namespace}
   */
   readonly namespace?: string;

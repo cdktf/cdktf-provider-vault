@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/approle_auth_backend_login
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface ApproleAuthBackendLoginConfig extends cdktf.TerraformMetaArguments {
   /**
   * Unique name of the auth backend to configure.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/approle_auth_backend_login#backend ApproleAuthBackendLogin#backend}
   */
   readonly backend?: string;
@@ -27,19 +22,19 @@ export interface ApproleAuthBackendLoginConfig extends cdktf.TerraformMetaArgume
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/approle_auth_backend_login#namespace ApproleAuthBackendLogin#namespace}
   */
   readonly namespace?: string;
   /**
   * The RoleID to log in with.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/approle_auth_backend_login#role_id ApproleAuthBackendLogin#role_id}
   */
   readonly roleId: string;
   /**
   * The SecretID to log in with.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/approle_auth_backend_login#secret_id ApproleAuthBackendLogin#secret_id}
   */
   readonly secretId?: string;

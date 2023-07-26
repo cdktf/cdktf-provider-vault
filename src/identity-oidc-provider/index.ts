@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_provider
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface IdentityOidcProviderConfig extends cdktf.TerraformMetaArguments {
   /**
   * The client IDs that are permitted to use the provider. If empty, no clients are allowed. If "*", all clients are allowed.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_provider#allowed_client_ids IdentityOidcProvider#allowed_client_ids}
   */
   readonly allowedClientIds?: string[];
   /**
   * Set to true if the issuer endpoint uses HTTPS.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_provider#https_enabled IdentityOidcProvider#https_enabled}
   */
   readonly httpsEnabled?: boolean | cdktf.IResolvable;
@@ -33,25 +28,25 @@ export interface IdentityOidcProviderConfig extends cdktf.TerraformMetaArguments
   readonly id?: string;
   /**
   * The host for the issuer. Can be either host or host:port.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_provider#issuer_host IdentityOidcProvider#issuer_host}
   */
   readonly issuerHost?: string;
   /**
   * The name of the provider.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_provider#name IdentityOidcProvider#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_provider#namespace IdentityOidcProvider#namespace}
   */
   readonly namespace?: string;
   /**
   * The scopes available for requesting on the provider.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_provider#scopes_supported IdentityOidcProvider#scopes_supported}
   */
   readonly scopesSupported?: string[];

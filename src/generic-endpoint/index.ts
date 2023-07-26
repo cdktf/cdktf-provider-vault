@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/generic_endpoint
 // generated from terraform resource schema
 
@@ -14,19 +9,19 @@ import * as cdktf from 'cdktf';
 export interface GenericEndpointConfig extends cdktf.TerraformMetaArguments {
   /**
   * JSON-encoded data to write.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/generic_endpoint#data_json GenericEndpoint#data_json}
   */
   readonly dataJson: string;
   /**
   * Don't attempt to delete the path from Vault if true
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/generic_endpoint#disable_delete GenericEndpoint#disable_delete}
   */
   readonly disableDelete?: boolean | cdktf.IResolvable;
   /**
   * Don't attempt to read the path from Vault if true; drift won't be detected
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/generic_endpoint#disable_read GenericEndpoint#disable_read}
   */
   readonly disableRead?: boolean | cdktf.IResolvable;
@@ -39,25 +34,25 @@ export interface GenericEndpointConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * When reading, disregard fields not present in data_json
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/generic_endpoint#ignore_absent_fields GenericEndpoint#ignore_absent_fields}
   */
   readonly ignoreAbsentFields?: boolean | cdktf.IResolvable;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/generic_endpoint#namespace GenericEndpoint#namespace}
   */
   readonly namespace?: string;
   /**
   * Full path where to the endpoint that will be written
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/generic_endpoint#path GenericEndpoint#path}
   */
   readonly path: string;
   /**
   * Top-level fields returned by write to persist in state
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/generic_endpoint#write_fields GenericEndpoint#write_fields}
   */
   readonly writeFields?: string[];

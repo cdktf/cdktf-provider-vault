@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/kv_secret_v2
 // generated from terraform resource schema
 
@@ -21,25 +16,25 @@ export interface DataVaultKvSecretV2Config extends cdktf.TerraformMetaArguments 
   readonly id?: string;
   /**
   * Path where KV-V2 engine is mounted
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/kv_secret_v2#mount DataVaultKvSecretV2#mount}
   */
   readonly mount: string;
   /**
   * Full name of the secret. For a nested secret, the name is the nested path excluding the mount and data prefix. For example, for a secret at 'kvv2/data/foo/bar/baz', the name is 'foo/bar/baz'
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/kv_secret_v2#name DataVaultKvSecretV2#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/kv_secret_v2#namespace DataVaultKvSecretV2#namespace}
   */
   readonly namespace?: string;
   /**
   * Version of the secret to retrieve
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/kv_secret_v2#version DataVaultKvSecretV2#version}
   */
   readonly version?: number;

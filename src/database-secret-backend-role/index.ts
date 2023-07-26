@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/database_secret_backend_role
 // generated from terraform resource schema
 
@@ -14,37 +9,37 @@ import * as cdktf from 'cdktf';
 export interface DatabaseSecretBackendRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The path of the Database Secret Backend the role belongs to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/database_secret_backend_role#backend DatabaseSecretBackendRole#backend}
   */
   readonly backend: string;
   /**
   * Database statements to execute to create and configure a user.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/database_secret_backend_role#creation_statements DatabaseSecretBackendRole#creation_statements}
   */
   readonly creationStatements: string[];
   /**
   * Specifies the configuration for the given credential_type.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/database_secret_backend_role#credential_config DatabaseSecretBackendRole#credential_config}
   */
   readonly credentialConfig?: { [key: string]: string };
   /**
   * Specifies the type of credential that will be generated for the role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/database_secret_backend_role#credential_type DatabaseSecretBackendRole#credential_type}
   */
   readonly credentialType?: string;
   /**
   * Database connection to use for this role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/database_secret_backend_role#db_name DatabaseSecretBackendRole#db_name}
   */
   readonly dbName: string;
   /**
   * Default TTL for leases associated with this role, in seconds.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/database_secret_backend_role#default_ttl DatabaseSecretBackendRole#default_ttl}
   */
   readonly defaultTtl?: number;
@@ -57,37 +52,37 @@ export interface DatabaseSecretBackendRoleConfig extends cdktf.TerraformMetaArgu
   readonly id?: string;
   /**
   * Maximum TTL for leases associated with this role, in seconds.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/database_secret_backend_role#max_ttl DatabaseSecretBackendRole#max_ttl}
   */
   readonly maxTtl?: number;
   /**
   * Unique name for the role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/database_secret_backend_role#name DatabaseSecretBackendRole#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/database_secret_backend_role#namespace DatabaseSecretBackendRole#namespace}
   */
   readonly namespace?: string;
   /**
   * Database statements to execute to renew a user.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/database_secret_backend_role#renew_statements DatabaseSecretBackendRole#renew_statements}
   */
   readonly renewStatements?: string[];
   /**
   * Database statements to execute to revoke a user.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/database_secret_backend_role#revocation_statements DatabaseSecretBackendRole#revocation_statements}
   */
   readonly revocationStatements?: string[];
   /**
   * Database statements to execute to rollback a create operation in the event of an error.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/database_secret_backend_role#rollback_statements DatabaseSecretBackendRole#rollback_statements}
   */
   readonly rollbackStatements?: string[];

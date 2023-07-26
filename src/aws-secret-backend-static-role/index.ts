@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_secret_backend_static_role
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface AwsSecretBackendStaticRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The path where the AWS secrets backend is mounted.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_secret_backend_static_role#backend AwsSecretBackendStaticRole#backend}
   */
   readonly backend?: string;
@@ -27,25 +22,25 @@ export interface AwsSecretBackendStaticRoleConfig extends cdktf.TerraformMetaArg
   readonly id?: string;
   /**
   * Name of the role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_secret_backend_static_role#name AwsSecretBackendStaticRole#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_secret_backend_static_role#namespace AwsSecretBackendStaticRole#namespace}
   */
   readonly namespace?: string;
   /**
   * How often Vault should rotate the password of the user entry.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_secret_backend_static_role#rotation_period AwsSecretBackendStaticRole#rotation_period}
   */
   readonly rotationPeriod: number;
   /**
   * The username of the existing AWS IAM user to manage password rotation for.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_secret_backend_static_role#username AwsSecretBackendStaticRole#username}
   */
   readonly username: string;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mfa_duo
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface MfaDuoConfig extends cdktf.TerraformMetaArguments {
   /**
   * API hostname for Duo.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mfa_duo#api_hostname MfaDuo#api_hostname}
   */
   readonly apiHostname: string;
@@ -27,43 +22,43 @@ export interface MfaDuoConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Integration key for Duo.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mfa_duo#integration_key MfaDuo#integration_key}
   */
   readonly integrationKey: string;
   /**
   * The mount to tie this method to for use in automatic mappings. The mapping will use the Name field of Aliases associated with this mount as the username in the mapping.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mfa_duo#mount_accessor MfaDuo#mount_accessor}
   */
   readonly mountAccessor: string;
   /**
   * Name of the MFA method.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mfa_duo#name MfaDuo#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mfa_duo#namespace MfaDuo#namespace}
   */
   readonly namespace?: string;
   /**
   * Push information for Duo.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mfa_duo#push_info MfaDuo#push_info}
   */
   readonly pushInfo?: string;
   /**
   * Secret key for Duo.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mfa_duo#secret_key MfaDuo#secret_key}
   */
   readonly secretKey: string;
   /**
   * A format string for mapping Identity names to MFA method names. Values to substitute should be placed in `{{}}`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mfa_duo#username_format MfaDuo#username_format}
   */
   readonly usernameFormat?: string;

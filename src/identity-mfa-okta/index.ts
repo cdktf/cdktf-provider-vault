@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_mfa_okta
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface IdentityMfaOktaConfig extends cdktf.TerraformMetaArguments {
   /**
   * Okta API token.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_mfa_okta#api_token IdentityMfaOkta#api_token}
   */
   readonly apiToken: string;
   /**
   * The base domain to use for API requests.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_mfa_okta#base_url IdentityMfaOkta#base_url}
   */
   readonly baseUrl?: string;
@@ -33,25 +28,25 @@ export interface IdentityMfaOktaConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_mfa_okta#namespace IdentityMfaOkta#namespace}
   */
   readonly namespace?: string;
   /**
   * Name of the organization to be used in the Okta API.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_mfa_okta#org_name IdentityMfaOkta#org_name}
   */
   readonly orgName: string;
   /**
   * Only match the primary email for the account.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_mfa_okta#primary_email IdentityMfaOkta#primary_email}
   */
   readonly primaryEmail?: boolean | cdktf.IResolvable;
   /**
   * A template string for mapping Identity names to MFA methods.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_mfa_okta#username_format IdentityMfaOkta#username_format}
   */
   readonly usernameFormat?: string;

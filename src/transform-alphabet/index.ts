@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/transform_alphabet
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface TransformAlphabetConfig extends cdktf.TerraformMetaArguments {
   /**
   * A string of characters that contains the alphabet set.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/transform_alphabet#alphabet TransformAlphabet#alphabet}
   */
   readonly alphabet?: string;
@@ -27,19 +22,19 @@ export interface TransformAlphabetConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The name of the alphabet.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/transform_alphabet#name TransformAlphabet#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/transform_alphabet#namespace TransformAlphabet#namespace}
   */
   readonly namespace?: string;
   /**
   * The mount path for a back-end, for example, the path given in "$ vault auth enable -path=my-aws aws".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/transform_alphabet#path TransformAlphabet#path}
   */
   readonly path: string;

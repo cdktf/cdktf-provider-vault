@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kv_secret
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface KvSecretConfig extends cdktf.TerraformMetaArguments {
   /**
   * JSON-encoded secret data to write.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kv_secret#data_json KvSecret#data_json}
   */
   readonly dataJson: string;
@@ -27,13 +22,13 @@ export interface KvSecretConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kv_secret#namespace KvSecret#namespace}
   */
   readonly namespace?: string;
   /**
   * Full path of the KV-V1 secret.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kv_secret#path KvSecret#path}
   */
   readonly path: string;

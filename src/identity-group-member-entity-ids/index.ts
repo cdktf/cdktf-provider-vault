@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_group_member_entity_ids
 // generated from terraform resource schema
 
@@ -15,13 +10,13 @@ export interface IdentityGroupMemberEntityIdsConfig extends cdktf.TerraformMetaA
   /**
   * If set to true, allows the resource to manage member entity ids
 exclusively. Beware of race conditions when disabling exclusive management
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_group_member_entity_ids#exclusive IdentityGroupMemberEntityIds#exclusive}
   */
   readonly exclusive?: boolean | cdktf.IResolvable;
   /**
   * ID of the group.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_group_member_entity_ids#group_id IdentityGroupMemberEntityIds#group_id}
   */
   readonly groupId: string;
@@ -34,13 +29,13 @@ exclusively. Beware of race conditions when disabling exclusive management
   readonly id?: string;
   /**
   * Entity IDs to be assigned as group members.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_group_member_entity_ids#member_entity_ids IdentityGroupMemberEntityIds#member_entity_ids}
   */
   readonly memberEntityIds?: string[];
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_group_member_entity_ids#namespace IdentityGroupMemberEntityIds#namespace}
   */
   readonly namespace?: string;

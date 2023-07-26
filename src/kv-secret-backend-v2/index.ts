@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kv_secret_backend_v2
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface KvSecretBackendV2Config extends cdktf.TerraformMetaArguments {
   /**
   * If true, all keys will require the cas parameter to be set on all write requests.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kv_secret_backend_v2#cas_required KvSecretBackendV2#cas_required}
   */
   readonly casRequired?: boolean | cdktf.IResolvable;
   /**
   * If set, specifies the length of time before a version is deleted
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kv_secret_backend_v2#delete_version_after KvSecretBackendV2#delete_version_after}
   */
   readonly deleteVersionAfter?: number;
@@ -33,19 +28,19 @@ export interface KvSecretBackendV2Config extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The number of versions to keep per key.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kv_secret_backend_v2#max_versions KvSecretBackendV2#max_versions}
   */
   readonly maxVersions?: number;
   /**
   * Path where KV-V2 engine is mounted.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kv_secret_backend_v2#mount KvSecretBackendV2#mount}
   */
   readonly mount: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/kv_secret_backend_v2#namespace KvSecretBackendV2#namespace}
   */
   readonly namespace?: string;

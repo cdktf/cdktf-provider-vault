@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend
 // generated from terraform resource schema
 
@@ -14,79 +9,79 @@ import * as cdktf from 'cdktf';
 export interface LdapSecretBackendConfig extends cdktf.TerraformMetaArguments {
   /**
   * List of managed key registry entry names that the mount in question is allowed to access
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#allowed_managed_keys LdapSecretBackend#allowed_managed_keys}
   */
   readonly allowedManagedKeys?: string[];
   /**
   * Specifies the list of keys that will not be HMAC'd by audit devices in the request data object.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#audit_non_hmac_request_keys LdapSecretBackend#audit_non_hmac_request_keys}
   */
   readonly auditNonHmacRequestKeys?: string[];
   /**
   * Specifies the list of keys that will not be HMAC'd by audit devices in the response data object.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#audit_non_hmac_response_keys LdapSecretBackend#audit_non_hmac_response_keys}
   */
   readonly auditNonHmacResponseKeys?: string[];
   /**
   * Distinguished name of object to bind when performing user and group search.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#binddn LdapSecretBackend#binddn}
   */
   readonly binddn: string;
   /**
   * LDAP password for searching for the user DN.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#bindpass LdapSecretBackend#bindpass}
   */
   readonly bindpass: string;
   /**
   * CA certificate to use when verifying LDAP server certificate, must be x509 PEM encoded.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#certificate LdapSecretBackend#certificate}
   */
   readonly certificate?: string;
   /**
   * Client certificate to provide to the LDAP server, must be x509 PEM encoded.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#client_tls_cert LdapSecretBackend#client_tls_cert}
   */
   readonly clientTlsCert?: string;
   /**
   * Client certificate key to provide to the LDAP server, must be x509 PEM encoded.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#client_tls_key LdapSecretBackend#client_tls_key}
   */
   readonly clientTlsKey?: string;
   /**
   * Timeout, in seconds, when attempting to connect to the LDAP server before trying the next URL in the configuration.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#connection_timeout LdapSecretBackend#connection_timeout}
   */
   readonly connectionTimeout?: number;
   /**
   * Default lease duration for tokens and secrets in seconds
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#default_lease_ttl_seconds LdapSecretBackend#default_lease_ttl_seconds}
   */
   readonly defaultLeaseTtlSeconds?: number;
   /**
   * Human-friendly description of the mount
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#description LdapSecretBackend#description}
   */
   readonly description?: string;
   /**
   * If set, opts out of mount migration on path updates.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#disable_remount LdapSecretBackend#disable_remount}
   */
   readonly disableRemount?: boolean | cdktf.IResolvable;
   /**
   * Enable the secrets engine to access Vault's external entropy source
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#external_entropy_access LdapSecretBackend#external_entropy_access}
   */
   readonly externalEntropyAccess?: boolean | cdktf.IResolvable;
@@ -99,97 +94,97 @@ export interface LdapSecretBackendConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Skip LDAP server SSL Certificate verification - insecure and not recommended for production use.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#insecure_tls LdapSecretBackend#insecure_tls}
   */
   readonly insecureTls?: boolean | cdktf.IResolvable;
   /**
   * The desired length of passwords that Vault generates.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#length LdapSecretBackend#length}
   */
   readonly length?: number;
   /**
   * Local mount flag that can be explicitly set to true to enforce local mount in HA environment
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#local LdapSecretBackend#local}
   */
   readonly local?: boolean | cdktf.IResolvable;
   /**
   * Maximum possible lease duration for tokens and secrets in seconds
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#max_lease_ttl_seconds LdapSecretBackend#max_lease_ttl_seconds}
   */
   readonly maxLeaseTtlSeconds?: number;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#namespace LdapSecretBackend#namespace}
   */
   readonly namespace?: string;
   /**
   * Specifies mount type specific options that are passed to the backend
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#options LdapSecretBackend#options}
   */
   readonly options?: { [key: string]: string };
   /**
   * Name of the password policy to use to generate passwords.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#password_policy LdapSecretBackend#password_policy}
   */
   readonly passwordPolicy?: string;
   /**
   * The path where the LDAP secrets backend is mounted.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#path LdapSecretBackend#path}
   */
   readonly path?: string;
   /**
   * Timeout, in seconds, for the connection when making requests against the server before returning back an error.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#request_timeout LdapSecretBackend#request_timeout}
   */
   readonly requestTimeout?: number;
   /**
   * The LDAP schema to use when storing entry passwords. Valid schemas include openldap, ad, and racf.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#schema LdapSecretBackend#schema}
   */
   readonly schema?: string;
   /**
   * Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#seal_wrap LdapSecretBackend#seal_wrap}
   */
   readonly sealWrap?: boolean | cdktf.IResolvable;
   /**
   * Issue a StartTLS command after establishing unencrypted connection.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#starttls LdapSecretBackend#starttls}
   */
   readonly starttls?: boolean | cdktf.IResolvable;
   /**
   * Enables userPrincipalDomain login with [username]@UPNDomain.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#upndomain LdapSecretBackend#upndomain}
   */
   readonly upndomain?: string;
   /**
   * LDAP URL to connect to (default: ldap://127.0.0.1). Multiple URLs can be specified by concatenating them with commas; they will be tried in-order.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#url LdapSecretBackend#url}
   */
   readonly url?: string;
   /**
   * Attribute used for users (default: cn)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#userattr LdapSecretBackend#userattr}
   */
   readonly userattr?: string;
   /**
   * LDAP domain to use for users (eg: ou=People,dc=example,dc=org)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend#userdn LdapSecretBackend#userdn}
   */
   readonly userdn?: string;

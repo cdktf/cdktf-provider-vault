@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/database_secret_backend_static_role
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface DatabaseSecretBackendStaticRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The path of the Database Secret Backend the role belongs to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/database_secret_backend_static_role#backend DatabaseSecretBackendStaticRole#backend}
   */
   readonly backend: string;
   /**
   * Database connection to use for this role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/database_secret_backend_static_role#db_name DatabaseSecretBackendStaticRole#db_name}
   */
   readonly dbName: string;
@@ -33,31 +28,31 @@ export interface DatabaseSecretBackendStaticRoleConfig extends cdktf.TerraformMe
   readonly id?: string;
   /**
   * Unique name for the static role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/database_secret_backend_static_role#name DatabaseSecretBackendStaticRole#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/database_secret_backend_static_role#namespace DatabaseSecretBackendStaticRole#namespace}
   */
   readonly namespace?: string;
   /**
   * The amount of time Vault should wait before rotating the password, in seconds.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/database_secret_backend_static_role#rotation_period DatabaseSecretBackendStaticRole#rotation_period}
   */
   readonly rotationPeriod: number;
   /**
   * Database statements to execute to rotate the password for the configured database user.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/database_secret_backend_static_role#rotation_statements DatabaseSecretBackendStaticRole#rotation_statements}
   */
   readonly rotationStatements?: string[];
   /**
   * The database username that this role corresponds to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/database_secret_backend_static_role#username DatabaseSecretBackendStaticRole#username}
   */
   readonly username: string;

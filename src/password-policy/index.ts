@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/password_policy
 // generated from terraform resource schema
 
@@ -21,19 +16,19 @@ export interface PasswordPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Name of the password policy.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/password_policy#name PasswordPolicy#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/password_policy#namespace PasswordPolicy#namespace}
   */
   readonly namespace?: string;
   /**
   * The password policy document
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/password_policy#policy PasswordPolicy#policy}
   */
   readonly policy: string;

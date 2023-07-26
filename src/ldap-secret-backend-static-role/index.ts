@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend_static_role
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface LdapSecretBackendStaticRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Distinguished name (DN) of the existing LDAP entry to manage password rotation for.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend_static_role#dn LdapSecretBackendStaticRole#dn}
   */
   readonly dn?: string;
@@ -27,31 +22,31 @@ export interface LdapSecretBackendStaticRoleConfig extends cdktf.TerraformMetaAr
   readonly id?: string;
   /**
   * The path where the LDAP secrets backend is mounted.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend_static_role#mount LdapSecretBackendStaticRole#mount}
   */
   readonly mount?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend_static_role#namespace LdapSecretBackendStaticRole#namespace}
   */
   readonly namespace?: string;
   /**
   * Name of the role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend_static_role#role_name LdapSecretBackendStaticRole#role_name}
   */
   readonly roleName: string;
   /**
   * How often Vault should rotate the password of the user entry.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend_static_role#rotation_period LdapSecretBackendStaticRole#rotation_period}
   */
   readonly rotationPeriod: number;
   /**
   * The username of the existing LDAP entry to manage password rotation for.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_secret_backend_static_role#username LdapSecretBackendStaticRole#username}
   */
   readonly username: string;

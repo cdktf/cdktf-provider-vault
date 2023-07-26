@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mongodbatlas_secret_role
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface MongodbatlasSecretRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Whitelist entry in CIDR notation to be added for the API key
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mongodbatlas_secret_role#cidr_blocks MongodbatlasSecretRole#cidr_blocks}
   */
   readonly cidrBlocks?: string[];
@@ -27,61 +22,61 @@ export interface MongodbatlasSecretRoleConfig extends cdktf.TerraformMetaArgumen
   readonly id?: string;
   /**
   * IP address to be added to the whitelist for the API key
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mongodbatlas_secret_role#ip_addresses MongodbatlasSecretRole#ip_addresses}
   */
   readonly ipAddresses?: string[];
   /**
   * The maximum allowed lifetime of credentials issued using this role
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mongodbatlas_secret_role#max_ttl MongodbatlasSecretRole#max_ttl}
   */
   readonly maxTtl?: string;
   /**
   * Path where MongoDB Atlas secret backend is mounted
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mongodbatlas_secret_role#mount MongodbatlasSecretRole#mount}
   */
   readonly mount: string;
   /**
   * Name of the role
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mongodbatlas_secret_role#name MongodbatlasSecretRole#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mongodbatlas_secret_role#namespace MongodbatlasSecretRole#namespace}
   */
   readonly namespace?: string;
   /**
   * ID for the organization to which the target API Key belongs
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mongodbatlas_secret_role#organization_id MongodbatlasSecretRole#organization_id}
   */
   readonly organizationId?: string;
   /**
   * ID for the project to which the target API Key belongs
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mongodbatlas_secret_role#project_id MongodbatlasSecretRole#project_id}
   */
   readonly projectId?: string;
   /**
   * Roles assigned when an org API key is assigned to a project API key
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mongodbatlas_secret_role#project_roles MongodbatlasSecretRole#project_roles}
   */
   readonly projectRoles?: string[];
   /**
   * List of roles that the API Key needs to have
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mongodbatlas_secret_role#roles MongodbatlasSecretRole#roles}
   */
   readonly roles: string[];
   /**
   * Duration in seconds after which the issued credential should expire
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mongodbatlas_secret_role#ttl MongodbatlasSecretRole#ttl}
   */
   readonly ttl?: string;

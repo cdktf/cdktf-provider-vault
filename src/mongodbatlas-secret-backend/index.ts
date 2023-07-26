@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mongodbatlas_secret_backend
 // generated from terraform resource schema
 
@@ -21,25 +16,25 @@ export interface MongodbatlasSecretBackendConfig extends cdktf.TerraformMetaArgu
   readonly id?: string;
   /**
   * Path where MongoDB Atlas secret backend is mounted
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mongodbatlas_secret_backend#mount MongodbatlasSecretBackend#mount}
   */
   readonly mount: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mongodbatlas_secret_backend#namespace MongodbatlasSecretBackend#namespace}
   */
   readonly namespace?: string;
   /**
   * The Private Programmatic API Key used to connect with MongoDB Atlas API
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mongodbatlas_secret_backend#private_key MongodbatlasSecretBackend#private_key}
   */
   readonly privateKey: string;
   /**
   * The Public Programmatic API Key used to authenticate with the MongoDB Atlas API
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mongodbatlas_secret_backend#public_key MongodbatlasSecretBackend#public_key}
   */
   readonly publicKey: string;

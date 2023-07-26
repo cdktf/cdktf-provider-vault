@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/github_team
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface GithubTeamConfig extends cdktf.TerraformMetaArguments {
   /**
   * Auth backend to which team mapping will be configured.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/github_team#backend GithubTeam#backend}
   */
   readonly backend?: string;
@@ -27,19 +22,19 @@ export interface GithubTeamConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/github_team#namespace GithubTeam#namespace}
   */
   readonly namespace?: string;
   /**
   * Policies to be assigned to this team.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/github_team#policies GithubTeam#policies}
   */
   readonly policies?: string[];
   /**
   * GitHub team name in "slugified" format.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/github_team#team GithubTeam#team}
   */
   readonly team: string;

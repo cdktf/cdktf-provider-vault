@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/audit_request_header
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface AuditRequestHeaderConfig extends cdktf.TerraformMetaArguments {
   /**
   * Whether this header's value should be HMAC'd in the audit logs.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/audit_request_header#hmac AuditRequestHeader#hmac}
   */
   readonly hmac?: boolean | cdktf.IResolvable;
@@ -27,13 +22,13 @@ export interface AuditRequestHeaderConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The name of the request header to audit.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/audit_request_header#name AuditRequestHeader#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/audit_request_header#namespace AuditRequestHeader#namespace}
   */
   readonly namespace?: string;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/rabbitmq_secret_backend
 // generated from terraform resource schema
 
@@ -14,25 +9,25 @@ import * as cdktf from 'cdktf';
 export interface RabbitmqSecretBackendConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies the RabbitMQ connection URI.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/rabbitmq_secret_backend#connection_uri RabbitmqSecretBackend#connection_uri}
   */
   readonly connectionUri: string;
   /**
   * Default lease duration for secrets in seconds
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/rabbitmq_secret_backend#default_lease_ttl_seconds RabbitmqSecretBackend#default_lease_ttl_seconds}
   */
   readonly defaultLeaseTtlSeconds?: number;
   /**
   * Human-friendly description of the mount for the backend.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/rabbitmq_secret_backend#description RabbitmqSecretBackend#description}
   */
   readonly description?: string;
   /**
   * If set, opts out of mount migration on path updates.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/rabbitmq_secret_backend#disable_remount RabbitmqSecretBackend#disable_remount}
   */
   readonly disableRemount?: boolean | cdktf.IResolvable;
@@ -45,49 +40,49 @@ export interface RabbitmqSecretBackendConfig extends cdktf.TerraformMetaArgument
   readonly id?: string;
   /**
   * Maximum possible lease duration for secrets in seconds
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/rabbitmq_secret_backend#max_lease_ttl_seconds RabbitmqSecretBackend#max_lease_ttl_seconds}
   */
   readonly maxLeaseTtlSeconds?: number;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/rabbitmq_secret_backend#namespace RabbitmqSecretBackend#namespace}
   */
   readonly namespace?: string;
   /**
   * Specifies the RabbitMQ management administrator password
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/rabbitmq_secret_backend#password RabbitmqSecretBackend#password}
   */
   readonly password: string;
   /**
   * Specifies a password policy to use when creating dynamic credentials. Defaults to generating an alphanumeric password if not set.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/rabbitmq_secret_backend#password_policy RabbitmqSecretBackend#password_policy}
   */
   readonly passwordPolicy?: string;
   /**
   * The path of the RabbitMQ Secret Backend where the connection should be configured
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/rabbitmq_secret_backend#path RabbitmqSecretBackend#path}
   */
   readonly path?: string;
   /**
   * Specifies the RabbitMQ management administrator username
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/rabbitmq_secret_backend#username RabbitmqSecretBackend#username}
   */
   readonly username: string;
   /**
   * Template describing how dynamic usernames are generated.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/rabbitmq_secret_backend#username_template RabbitmqSecretBackend#username_template}
   */
   readonly usernameTemplate?: string;
   /**
   * Specifies whether to verify connection URI, username, and password.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/rabbitmq_secret_backend#verify_connection RabbitmqSecretBackend#verify_connection}
   */
   readonly verifyConnection?: boolean | cdktf.IResolvable;

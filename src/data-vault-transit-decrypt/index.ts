@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transit_decrypt
 // generated from terraform resource schema
 
@@ -14,19 +9,19 @@ import * as cdktf from 'cdktf';
 export interface DataVaultTransitDecryptConfig extends cdktf.TerraformMetaArguments {
   /**
   * The Transit secret backend the key belongs to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transit_decrypt#backend DataVaultTransitDecrypt#backend}
   */
   readonly backend: string;
   /**
   * Transit encrypted cipher text.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transit_decrypt#ciphertext DataVaultTransitDecrypt#ciphertext}
   */
   readonly ciphertext: string;
   /**
   * Specifies the context for key derivation
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transit_decrypt#context DataVaultTransitDecrypt#context}
   */
   readonly context?: string;
@@ -39,13 +34,13 @@ export interface DataVaultTransitDecryptConfig extends cdktf.TerraformMetaArgume
   readonly id?: string;
   /**
   * Name of the decryption key to use.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transit_decrypt#key DataVaultTransitDecrypt#key}
   */
   readonly key: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transit_decrypt#namespace DataVaultTransitDecrypt#namespace}
   */
   readonly namespace?: string;

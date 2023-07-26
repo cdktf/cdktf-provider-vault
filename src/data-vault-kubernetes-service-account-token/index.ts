@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/kubernetes_service_account_token
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface DataVaultKubernetesServiceAccountTokenConfig extends cdktf.TerraformMetaArguments {
   /**
   * The Kubernetes secret backend to generate service account tokens from.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/kubernetes_service_account_token#backend DataVaultKubernetesServiceAccountToken#backend}
   */
   readonly backend: string;
   /**
   * If true, generate a ClusterRoleBinding to grant permissions across the whole cluster instead of within a namespace.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/kubernetes_service_account_token#cluster_role_binding DataVaultKubernetesServiceAccountToken#cluster_role_binding}
   */
   readonly clusterRoleBinding?: boolean | cdktf.IResolvable;
@@ -33,25 +28,25 @@ export interface DataVaultKubernetesServiceAccountTokenConfig extends cdktf.Terr
   readonly id?: string;
   /**
   * The name of the Kubernetes namespace in which to generate the credentials.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/kubernetes_service_account_token#kubernetes_namespace DataVaultKubernetesServiceAccountToken#kubernetes_namespace}
   */
   readonly kubernetesNamespace: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/kubernetes_service_account_token#namespace DataVaultKubernetesServiceAccountToken#namespace}
   */
   readonly namespace?: string;
   /**
   * The name of the role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/kubernetes_service_account_token#role DataVaultKubernetesServiceAccountToken#role}
   */
   readonly role: string;
   /**
   * The TTL of the generated Kubernetes service account token, specified in seconds or as a Go duration format string
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/kubernetes_service_account_token#ttl DataVaultKubernetesServiceAccountToken#ttl}
   */
   readonly ttl?: string;

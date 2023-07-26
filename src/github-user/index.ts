@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/github_user
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface GithubUserConfig extends cdktf.TerraformMetaArguments {
   /**
   * Auth backend to which user mapping will be congigured.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/github_user#backend GithubUser#backend}
   */
   readonly backend?: string;
@@ -27,19 +22,19 @@ export interface GithubUserConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/github_user#namespace GithubUser#namespace}
   */
   readonly namespace?: string;
   /**
   * Policies to be assigned to this user.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/github_user#policies GithubUser#policies}
   */
   readonly policies?: string[];
   /**
   * GitHub user name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/github_user#user GithubUser#user}
   */
   readonly user: string;

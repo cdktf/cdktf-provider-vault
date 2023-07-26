@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/aws_access_credentials
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface DataVaultAwsAccessCredentialsConfig extends cdktf.TerraformMetaArguments {
   /**
   * AWS Secret Backend to read credentials from.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/aws_access_credentials#backend DataVaultAwsAccessCredentials#backend}
   */
   readonly backend: string;
@@ -27,37 +22,37 @@ export interface DataVaultAwsAccessCredentialsConfig extends cdktf.TerraformMeta
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/aws_access_credentials#namespace DataVaultAwsAccessCredentials#namespace}
   */
   readonly namespace?: string;
   /**
   * Region the read credentials belong to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/aws_access_credentials#region DataVaultAwsAccessCredentials#region}
   */
   readonly region?: string;
   /**
   * AWS Secret Role to read credentials from.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/aws_access_credentials#role DataVaultAwsAccessCredentials#role}
   */
   readonly role: string;
   /**
   * ARN to use if multiple are available in the role. Required if the role has multiple ARNs.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/aws_access_credentials#role_arn DataVaultAwsAccessCredentials#role_arn}
   */
   readonly roleArn?: string;
   /**
   * User specified Time-To-Live for the STS token. Uses the Role defined default_sts_ttl when not specified
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/aws_access_credentials#ttl DataVaultAwsAccessCredentials#ttl}
   */
   readonly ttl?: string;
   /**
   * Type of credentials to read. Must be either 'creds' for Access Key and Secret Key, or 'sts' for STS.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/aws_access_credentials#type DataVaultAwsAccessCredentials#type}
   */
   readonly type?: string;

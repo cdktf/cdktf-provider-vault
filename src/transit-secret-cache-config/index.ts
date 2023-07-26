@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/transit_secret_cache_config
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface TransitSecretCacheConfigConfig extends cdktf.TerraformMetaArguments {
   /**
   * The Transit secret backend the resource belongs to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/transit_secret_cache_config#backend TransitSecretCacheConfig#backend}
   */
   readonly backend: string;
@@ -27,13 +22,13 @@ export interface TransitSecretCacheConfigConfig extends cdktf.TerraformMetaArgum
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/transit_secret_cache_config#namespace TransitSecretCacheConfig#namespace}
   */
   readonly namespace?: string;
   /**
   * Number of cache entries. A size of 0 mean unlimited.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/transit_secret_cache_config#size TransitSecretCacheConfig#size}
   */
   readonly size: number;

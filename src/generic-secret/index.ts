@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/generic_secret
 // generated from terraform resource schema
 
@@ -14,19 +9,19 @@ import * as cdktf from 'cdktf';
 export interface GenericSecretConfig extends cdktf.TerraformMetaArguments {
   /**
   * JSON-encoded secret data to write.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/generic_secret#data_json GenericSecret#data_json}
   */
   readonly dataJson: string;
   /**
   * Only applicable for kv-v2 stores. If set, permanently deletes all versions for the specified key.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/generic_secret#delete_all_versions GenericSecret#delete_all_versions}
   */
   readonly deleteAllVersions?: boolean | cdktf.IResolvable;
   /**
   * Don't attempt to read the token from Vault if true; drift won't be detected.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/generic_secret#disable_read GenericSecret#disable_read}
   */
   readonly disableRead?: boolean | cdktf.IResolvable;
@@ -39,13 +34,13 @@ export interface GenericSecretConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/generic_secret#namespace GenericSecret#namespace}
   */
   readonly namespace?: string;
   /**
   * Full path where the generic secret will be written.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/generic_secret#path GenericSecret#path}
   */
   readonly path: string;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert
 // generated from terraform resource schema
 
@@ -14,37 +9,37 @@ import * as cdktf from 'cdktf';
 export interface PkiSecretBackendCertConfig extends cdktf.TerraformMetaArguments {
   /**
   * List of alternative names.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#alt_names PkiSecretBackendCert#alt_names}
   */
   readonly altNames?: string[];
   /**
   * If enabled, a new certificate will be generated if the expiration is within min_seconds_remaining
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#auto_renew PkiSecretBackendCert#auto_renew}
   */
   readonly autoRenew?: boolean | cdktf.IResolvable;
   /**
   * The PKI secret backend the resource belongs to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#backend PkiSecretBackendCert#backend}
   */
   readonly backend: string;
   /**
   * CN of the certificate to create.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#common_name PkiSecretBackendCert#common_name}
   */
   readonly commonName: string;
   /**
   * Flag to exclude CN from SANs.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#exclude_cn_from_sans PkiSecretBackendCert#exclude_cn_from_sans}
   */
   readonly excludeCnFromSans?: boolean | cdktf.IResolvable;
   /**
   * The format of data.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#format PkiSecretBackendCert#format}
   */
   readonly format?: string;
@@ -57,61 +52,61 @@ export interface PkiSecretBackendCertConfig extends cdktf.TerraformMetaArguments
   readonly id?: string;
   /**
   * List of alternative IPs.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#ip_sans PkiSecretBackendCert#ip_sans}
   */
   readonly ipSans?: string[];
   /**
   * Specifies the default issuer of this request.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#issuer_ref PkiSecretBackendCert#issuer_ref}
   */
   readonly issuerRef?: string;
   /**
   * Generate a new certificate when the expiration is within this number of seconds
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#min_seconds_remaining PkiSecretBackendCert#min_seconds_remaining}
   */
   readonly minSecondsRemaining?: number;
   /**
   * Name of the role to create the certificate against.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#name PkiSecretBackendCert#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#namespace PkiSecretBackendCert#namespace}
   */
   readonly namespace?: string;
   /**
   * List of other SANs.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#other_sans PkiSecretBackendCert#other_sans}
   */
   readonly otherSans?: string[];
   /**
   * The private key format.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#private_key_format PkiSecretBackendCert#private_key_format}
   */
   readonly privateKeyFormat?: string;
   /**
   * Revoke the certificate upon resource destruction.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#revoke PkiSecretBackendCert#revoke}
   */
   readonly revoke?: boolean | cdktf.IResolvable;
   /**
   * Time to live.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#ttl PkiSecretBackendCert#ttl}
   */
   readonly ttl?: string;
   /**
   * List of alternative URIs.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#uri_sans PkiSecretBackendCert#uri_sans}
   */
   readonly uriSans?: string[];

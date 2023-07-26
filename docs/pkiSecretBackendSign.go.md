@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.18
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.pkiSecretBackendSign.PkiSecretBackendSign.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/pkisecretbackendsign"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendsign"
 
 pkisecretbackendsign.NewPkiSecretBackendSign(scope Construct, id *string, config PkiSecretBackendSignConfig) PkiSecretBackendSign
 ```
@@ -354,7 +354,7 @@ func ResetUriSans()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.pkiSecretBackendSign.PkiSecretBackendSign.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/pkisecretbackendsign"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendsign"
 
 pkisecretbackendsign.PkiSecretBackendSign_IsConstruct(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.pkiSecretBackendSign.PkiSecretBackendSign.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/pkisecretbackendsign"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendsign"
 
 pkisecretbackendsign.PkiSecretBackendSign_IsTerraformElement(x interface{}) *bool
 ```
@@ -400,7 +400,7 @@ pkisecretbackendsign.PkiSecretBackendSign_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.pkiSecretBackendSign.PkiSecretBackendSign.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/pkisecretbackendsign"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendsign"
 
 pkisecretbackendsign.PkiSecretBackendSign_IsTerraformResource(x interface{}) *bool
 ```
@@ -1028,7 +1028,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.pkiSecretBackendSign.PkiSecretBackendSignConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/pkisecretbackendsign"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendsign"
 
 &pkisecretbackendsign.PkiSecretBackendSignConfig {
 	Connection: interface{},

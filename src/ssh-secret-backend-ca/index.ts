@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ssh_secret_backend_ca
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface SshSecretBackendCaConfig extends cdktf.TerraformMetaArguments {
   /**
   * The path of the SSH Secret Backend where the CA should be configured
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ssh_secret_backend_ca#backend SshSecretBackendCa#backend}
   */
   readonly backend?: string;
   /**
   * Whether Vault should generate the signing key pair internally.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ssh_secret_backend_ca#generate_signing_key SshSecretBackendCa#generate_signing_key}
   */
   readonly generateSigningKey?: boolean | cdktf.IResolvable;
@@ -33,19 +28,19 @@ export interface SshSecretBackendCaConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ssh_secret_backend_ca#namespace SshSecretBackendCa#namespace}
   */
   readonly namespace?: string;
   /**
   * Private key part the SSH CA key pair; required if generate_signing_key is false.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ssh_secret_backend_ca#private_key SshSecretBackendCa#private_key}
   */
   readonly privateKey?: string;
   /**
   * Public key part the SSH CA key pair; required if generate_signing_key is false.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ssh_secret_backend_ca#public_key SshSecretBackendCa#public_key}
   */
   readonly publicKey?: string;

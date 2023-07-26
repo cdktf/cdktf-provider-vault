@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_auth_backend_config
 // generated from terraform resource schema
 
@@ -14,25 +9,25 @@ import * as cdktf from 'cdktf';
 export interface AzureAuthBackendConfigConfig extends cdktf.TerraformMetaArguments {
   /**
   * Unique name of the auth backend to configure.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_auth_backend_config#backend AzureAuthBackendConfig#backend}
   */
   readonly backend?: string;
   /**
   * The client id for credentials to query the Azure APIs. Currently read permissions to query compute resources are required.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_auth_backend_config#client_id AzureAuthBackendConfig#client_id}
   */
   readonly clientId?: string;
   /**
   * The client secret for credentials to query the Azure APIs
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_auth_backend_config#client_secret AzureAuthBackendConfig#client_secret}
   */
   readonly clientSecret?: string;
   /**
   * The Azure cloud environment. Valid values: AzurePublicCloud, AzureUSGovernmentCloud, AzureChinaCloud, AzureGermanCloud.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_auth_backend_config#environment AzureAuthBackendConfig#environment}
   */
   readonly environment?: string;
@@ -45,19 +40,19 @@ export interface AzureAuthBackendConfigConfig extends cdktf.TerraformMetaArgumen
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_auth_backend_config#namespace AzureAuthBackendConfig#namespace}
   */
   readonly namespace?: string;
   /**
   * The configured URL for the application registered in Azure Active Directory.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_auth_backend_config#resource AzureAuthBackendConfig#resource}
   */
   readonly resource: string;
   /**
   * The tenant id for the Azure Active Directory organization.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_auth_backend_config#tenant_id AzureAuthBackendConfig#tenant_id}
   */
   readonly tenantId: string;

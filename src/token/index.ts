@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/token
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface TokenConfig extends cdktf.TerraformMetaArguments {
   /**
   * The display name of the token.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/token#display_name Token#display_name}
   */
   readonly displayName?: string;
   /**
   * The explicit max TTL of the token.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/token#explicit_max_ttl Token#explicit_max_ttl}
   */
   readonly explicitMaxTtl?: string;
@@ -33,79 +28,79 @@ export interface TokenConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Metadata to be associated with the token.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/token#metadata Token#metadata}
   */
   readonly metadata?: { [key: string]: string };
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/token#namespace Token#namespace}
   */
   readonly namespace?: string;
   /**
   * Flag to disable the default policy.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/token#no_default_policy Token#no_default_policy}
   */
   readonly noDefaultPolicy?: boolean | cdktf.IResolvable;
   /**
   * Flag to create a token without parent.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/token#no_parent Token#no_parent}
   */
   readonly noParent?: boolean | cdktf.IResolvable;
   /**
   * The number of allowed uses of the token.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/token#num_uses Token#num_uses}
   */
   readonly numUses?: number;
   /**
   * The period of the token.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/token#period Token#period}
   */
   readonly period?: string;
   /**
   * List of policies.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/token#policies Token#policies}
   */
   readonly policies?: string[];
   /**
   * The renew increment.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/token#renew_increment Token#renew_increment}
   */
   readonly renewIncrement?: number;
   /**
   * The minimum lease to renew token.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/token#renew_min_lease Token#renew_min_lease}
   */
   readonly renewMinLease?: number;
   /**
   * Flag to allow the token to be renewed
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/token#renewable Token#renewable}
   */
   readonly renewable?: boolean | cdktf.IResolvable;
   /**
   * The token role name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/token#role_name Token#role_name}
   */
   readonly roleName?: string;
   /**
   * The TTL period of the token.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/token#ttl Token#ttl}
   */
   readonly ttl?: string;
   /**
   * The TTL period of the wrapped token.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/token#wrapping_ttl Token#wrapping_ttl}
   */
   readonly wrappingTtl?: string;

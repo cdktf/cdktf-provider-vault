@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/consul_secret_backend
 // generated from terraform resource schema
 
@@ -14,49 +9,49 @@ import * as cdktf from 'cdktf';
 export interface ConsulSecretBackendConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies the address of the Consul instance, provided as "host:port" like "127.0.0.1:8500".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/consul_secret_backend#address ConsulSecretBackend#address}
   */
   readonly address: string;
   /**
   * Denotes a backend resource that is used to bootstrap the Consul ACL system. Only one resource may be used to bootstrap.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/consul_secret_backend#bootstrap ConsulSecretBackend#bootstrap}
   */
   readonly bootstrap?: boolean | cdktf.IResolvable;
   /**
   * CA certificate to use when verifying Consul server certificate, must be x509 PEM encoded.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/consul_secret_backend#ca_cert ConsulSecretBackend#ca_cert}
   */
   readonly caCert?: string;
   /**
   * Client certificate used for Consul's TLS communication, must be x509 PEM encoded and if this is set you need to also set client_key.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/consul_secret_backend#client_cert ConsulSecretBackend#client_cert}
   */
   readonly clientCert?: string;
   /**
   * Client key used for Consul's TLS communication, must be x509 PEM encoded and if this is set you need to also set client_cert.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/consul_secret_backend#client_key ConsulSecretBackend#client_key}
   */
   readonly clientKey?: string;
   /**
   * Default lease duration for secrets in seconds
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/consul_secret_backend#default_lease_ttl_seconds ConsulSecretBackend#default_lease_ttl_seconds}
   */
   readonly defaultLeaseTtlSeconds?: number;
   /**
   * Human-friendly description of the mount for the backend.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/consul_secret_backend#description ConsulSecretBackend#description}
   */
   readonly description?: string;
   /**
   * If set, opts out of mount migration on path updates.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/consul_secret_backend#disable_remount ConsulSecretBackend#disable_remount}
   */
   readonly disableRemount?: boolean | cdktf.IResolvable;
@@ -69,37 +64,37 @@ export interface ConsulSecretBackendConfig extends cdktf.TerraformMetaArguments 
   readonly id?: string;
   /**
   * Specifies if the secret backend is local only
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/consul_secret_backend#local ConsulSecretBackend#local}
   */
   readonly local?: boolean | cdktf.IResolvable;
   /**
   * Maximum possible lease duration for secrets in seconds
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/consul_secret_backend#max_lease_ttl_seconds ConsulSecretBackend#max_lease_ttl_seconds}
   */
   readonly maxLeaseTtlSeconds?: number;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/consul_secret_backend#namespace ConsulSecretBackend#namespace}
   */
   readonly namespace?: string;
   /**
   * Unique name of the Vault Consul mount to configure
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/consul_secret_backend#path ConsulSecretBackend#path}
   */
   readonly path?: string;
   /**
   * Specifies the URL scheme to use. Defaults to "http".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/consul_secret_backend#scheme ConsulSecretBackend#scheme}
   */
   readonly scheme?: string;
   /**
   * Specifies the Consul token to use when managing or issuing new tokens.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/consul_secret_backend#token ConsulSecretBackend#token}
   */
   readonly token?: string;

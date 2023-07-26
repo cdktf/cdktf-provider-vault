@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_crl_config
 // generated from terraform resource schema
 
@@ -14,49 +9,49 @@ import * as cdktf from 'cdktf';
 export interface PkiSecretBackendCrlConfigConfig extends cdktf.TerraformMetaArguments {
   /**
   * Enables or disables periodic rebuilding of the CRL upon expiry.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_crl_config#auto_rebuild PkiSecretBackendCrlConfig#auto_rebuild}
   */
   readonly autoRebuild?: boolean | cdktf.IResolvable;
   /**
   * Grace period before CRL expiry to attempt rebuild of CRL.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_crl_config#auto_rebuild_grace_period PkiSecretBackendCrlConfig#auto_rebuild_grace_period}
   */
   readonly autoRebuildGracePeriod?: string;
   /**
   * The path of the PKI secret backend the resource belongs to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_crl_config#backend PkiSecretBackendCrlConfig#backend}
   */
   readonly backend: string;
   /**
   * Enable cross-cluster revocation request queues.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_crl_config#cross_cluster_revocation PkiSecretBackendCrlConfig#cross_cluster_revocation}
   */
   readonly crossClusterRevocation?: boolean | cdktf.IResolvable;
   /**
   * Interval to check for new revocations on, to regenerate the delta CRL.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_crl_config#delta_rebuild_interval PkiSecretBackendCrlConfig#delta_rebuild_interval}
   */
   readonly deltaRebuildInterval?: string;
   /**
   * Disables or enables CRL building
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_crl_config#disable PkiSecretBackendCrlConfig#disable}
   */
   readonly disable?: boolean | cdktf.IResolvable;
   /**
   * Enables or disables building of delta CRLs with up-to-date revocation information, augmenting the last complete CRL.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_crl_config#enable_delta PkiSecretBackendCrlConfig#enable_delta}
   */
   readonly enableDelta?: boolean | cdktf.IResolvable;
   /**
   * Specifies the time until expiration.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_crl_config#expiry PkiSecretBackendCrlConfig#expiry}
   */
   readonly expiry?: string;
@@ -69,31 +64,31 @@ export interface PkiSecretBackendCrlConfigConfig extends cdktf.TerraformMetaArgu
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_crl_config#namespace PkiSecretBackendCrlConfig#namespace}
   */
   readonly namespace?: string;
   /**
   * Disables or enables the OCSP responder in Vault.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_crl_config#ocsp_disable PkiSecretBackendCrlConfig#ocsp_disable}
   */
   readonly ocspDisable?: boolean | cdktf.IResolvable;
   /**
   * The amount of time an OCSP response can be cached for, useful for OCSP stapling refresh durations.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_crl_config#ocsp_expiry PkiSecretBackendCrlConfig#ocsp_expiry}
   */
   readonly ocspExpiry?: string;
   /**
   * Enables unified CRL and OCSP building.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_crl_config#unified_crl PkiSecretBackendCrlConfig#unified_crl}
   */
   readonly unifiedCrl?: boolean | cdktf.IResolvable;
   /**
   * Enables serving the unified CRL and OCSP on the existing, previously cluster-local paths.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_crl_config#unified_crl_on_existing_paths PkiSecretBackendCrlConfig#unified_crl_on_existing_paths}
   */
   readonly unifiedCrlOnExistingPaths?: boolean | cdktf.IResolvable;

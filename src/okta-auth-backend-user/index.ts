@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/okta_auth_backend_user
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface OktaAuthBackendUserAConfig extends cdktf.TerraformMetaArguments {
   /**
   * Groups within the Okta auth backend to associate with this user
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/okta_auth_backend_user#groups OktaAuthBackendUserA#groups}
   */
   readonly groups?: string[];
@@ -27,25 +22,25 @@ export interface OktaAuthBackendUserAConfig extends cdktf.TerraformMetaArguments
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/okta_auth_backend_user#namespace OktaAuthBackendUserA#namespace}
   */
   readonly namespace?: string;
   /**
   * Path to the Okta auth backend
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/okta_auth_backend_user#path OktaAuthBackendUserA#path}
   */
   readonly path: string;
   /**
   * Policies to associate with this user
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/okta_auth_backend_user#policies OktaAuthBackendUserA#policies}
   */
   readonly policies?: string[];
   /**
   * Name of the user within Okta
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/okta_auth_backend_user#username OktaAuthBackendUserA#username}
   */
   readonly username: string;

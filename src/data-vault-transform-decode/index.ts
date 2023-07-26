@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_decode
 // generated from terraform resource schema
 
@@ -14,19 +9,19 @@ import * as cdktf from 'cdktf';
 export interface DataVaultTransformDecodeConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies a list of items to be decoded in a single batch. If this parameter is set, the top-level parameters 'value', 'transformation' and 'tweak' will be ignored. Each batch item within the list can specify these parameters instead.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_decode#batch_input DataVaultTransformDecode#batch_input}
   */
   readonly batchInput?: { [key: string]: string }[] | cdktf.IResolvable;
   /**
   * The result of decoding batch_input.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_decode#batch_results DataVaultTransformDecode#batch_results}
   */
   readonly batchResults?: { [key: string]: string }[] | cdktf.IResolvable;
   /**
   * The result of decoding a value.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_decode#decoded_value DataVaultTransformDecode#decoded_value}
   */
   readonly decodedValue?: string;
@@ -39,37 +34,37 @@ export interface DataVaultTransformDecodeConfig extends cdktf.TerraformMetaArgum
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_decode#namespace DataVaultTransformDecode#namespace}
   */
   readonly namespace?: string;
   /**
   * Path to backend from which to retrieve data.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_decode#path DataVaultTransformDecode#path}
   */
   readonly path: string;
   /**
   * The name of the role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_decode#role_name DataVaultTransformDecode#role_name}
   */
   readonly roleName: string;
   /**
   * The transformation to perform. If no value is provided and the role contains a single transformation, this value will be inferred from the role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_decode#transformation DataVaultTransformDecode#transformation}
   */
   readonly transformation?: string;
   /**
   * The tweak value to use. Only applicable for FPE transformations
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_decode#tweak DataVaultTransformDecode#tweak}
   */
   readonly tweak?: string;
   /**
   * The value in which to decode.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/transform_decode#value DataVaultTransformDecode#value}
   */
   readonly value?: string;

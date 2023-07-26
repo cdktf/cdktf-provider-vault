@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/gcp_auth_backend
 // generated from terraform resource schema
 
@@ -30,7 +25,7 @@ export interface GcpAuthBackendConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   /**
   * If set, opts out of mount migration on path updates.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/gcp_auth_backend#disable_remount GcpAuthBackend#disable_remount}
   */
   readonly disableRemount?: boolean | cdktf.IResolvable;
@@ -43,13 +38,13 @@ export interface GcpAuthBackendConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Specifies if the auth method is local only
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/gcp_auth_backend#local GcpAuthBackend#local}
   */
   readonly local?: boolean | cdktf.IResolvable;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/gcp_auth_backend#namespace GcpAuthBackend#namespace}
   */
   readonly namespace?: string;
@@ -67,7 +62,7 @@ export interface GcpAuthBackendConfig extends cdktf.TerraformMetaArguments {
   readonly projectId?: string;
   /**
   * custom_endpoint block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/gcp_auth_backend#custom_endpoint GcpAuthBackend#custom_endpoint}
   */
   readonly customEndpoint?: GcpAuthBackendCustomEndpoint;
@@ -75,25 +70,25 @@ export interface GcpAuthBackendConfig extends cdktf.TerraformMetaArguments {
 export interface GcpAuthBackendCustomEndpoint {
   /**
   * Replaces the service endpoint used in API requests to https://www.googleapis.com.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/gcp_auth_backend#api GcpAuthBackend#api}
   */
   readonly api?: string;
   /**
   * Replaces the service endpoint used in API requests to `https://compute.googleapis.com`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/gcp_auth_backend#compute GcpAuthBackend#compute}
   */
   readonly compute?: string;
   /**
   * Replaces the service endpoint used in API requests to `https://cloudresourcemanager.googleapis.com`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/gcp_auth_backend#crm GcpAuthBackend#crm}
   */
   readonly crm?: string;
   /**
   * Replaces the service endpoint used in API requests to `https://iam.googleapis.com`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/gcp_auth_backend#iam GcpAuthBackend#iam}
   */
   readonly iam?: string;

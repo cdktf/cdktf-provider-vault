@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.18
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.transformAlphabet.TransformAlphabet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/transformalphabet"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/transformalphabet"
 
 transformalphabet.NewTransformAlphabet(scope Construct, id *string, config TransformAlphabetConfig) TransformAlphabet
 ```
@@ -291,7 +291,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.transformAlphabet.TransformAlphabet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/transformalphabet"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/transformalphabet"
 
 transformalphabet.TransformAlphabet_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.transformAlphabet.TransformAlphabet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/transformalphabet"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/transformalphabet"
 
 transformalphabet.TransformAlphabet_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ transformalphabet.TransformAlphabet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.transformAlphabet.TransformAlphabet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/transformalphabet"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/transformalphabet"
 
 transformalphabet.TransformAlphabet_IsTerraformResource(x interface{}) *bool
 ```
@@ -646,7 +646,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.transformAlphabet.TransformAlphabetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/transformalphabet"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/transformalphabet"
 
 &transformalphabet.TransformAlphabetConfig {
 	Connection: interface{},

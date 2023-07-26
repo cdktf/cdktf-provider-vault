@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/transform_template
 // generated from terraform resource schema
 
@@ -14,21 +9,21 @@ import * as cdktf from 'cdktf';
 export interface TransformTemplateConfig extends cdktf.TerraformMetaArguments {
   /**
   * The alphabet to use for this template. This is only used during FPE transformations.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/transform_template#alphabet TransformTemplate#alphabet}
   */
   readonly alphabet?: string;
   /**
   * The map of regular expression templates used to customize decoded outputs.
 Only applicable to FPE transformations.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/transform_template#decode_formats TransformTemplate#decode_formats}
   */
   readonly decodeFormats?: { [key: string]: string };
   /**
   * The regular expression template used for encoding values.
 Only applicable to FPE transformations.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/transform_template#encode_format TransformTemplate#encode_format}
   */
   readonly encodeFormat?: string;
@@ -41,31 +36,31 @@ Only applicable to FPE transformations.
   readonly id?: string;
   /**
   * The name of the template.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/transform_template#name TransformTemplate#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/transform_template#namespace TransformTemplate#namespace}
   */
   readonly namespace?: string;
   /**
   * The mount path for a back-end, for example, the path given in "$ vault auth enable -path=my-aws aws".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/transform_template#path TransformTemplate#path}
   */
   readonly path: string;
   /**
   * The pattern used for matching. Currently, only regular expression pattern is supported.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/transform_template#pattern TransformTemplate#pattern}
   */
   readonly pattern?: string;
   /**
   * The pattern type to use for match detection. Currently, only regex is supported.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/transform_template#type TransformTemplate#type}
   */
   readonly type?: string;

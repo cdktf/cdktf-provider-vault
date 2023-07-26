@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/generic_secret
 // generated from terraform resource schema
 
@@ -21,13 +16,13 @@ export interface DataVaultGenericSecretConfig extends cdktf.TerraformMetaArgumen
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/generic_secret#namespace DataVaultGenericSecret#namespace}
   */
   readonly namespace?: string;
   /**
   * Full path from which a secret will be read.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/generic_secret#path DataVaultGenericSecret#path}
   */
   readonly path: string;
@@ -37,7 +32,7 @@ export interface DataVaultGenericSecretConfig extends cdktf.TerraformMetaArgumen
   readonly version?: number;
   /**
   * If set to true, stores 'lease_start_time' in the TF state.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/generic_secret#with_lease_start_time DataVaultGenericSecret#with_lease_start_time}
   */
   readonly withLeaseStartTime?: boolean | cdktf.IResolvable;

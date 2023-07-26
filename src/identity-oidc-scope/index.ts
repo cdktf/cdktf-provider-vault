@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_scope
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface IdentityOidcScopeConfig extends cdktf.TerraformMetaArguments {
   /**
   * The scope's description.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_scope#description IdentityOidcScope#description}
   */
   readonly description?: string;
@@ -27,19 +22,19 @@ export interface IdentityOidcScopeConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The name of the scope. The openid scope name is reserved.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_scope#name IdentityOidcScope#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_scope#namespace IdentityOidcScope#namespace}
   */
   readonly namespace?: string;
   /**
   * The template string for the scope. This may be provided as escaped JSON or base64 encoded JSON.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_scope#template IdentityOidcScope#template}
   */
   readonly template?: string;

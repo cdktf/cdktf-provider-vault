@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend_user
 // generated from terraform resource schema
 
@@ -29,7 +24,7 @@ export interface LdapAuthBackendUserConfig extends cdktf.TerraformMetaArguments 
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend_user#namespace LdapAuthBackendUser#namespace}
   */
   readonly namespace?: string;

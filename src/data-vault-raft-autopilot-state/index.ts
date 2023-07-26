@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/raft_autopilot_state
 // generated from terraform resource schema
 
@@ -21,7 +16,7 @@ export interface DataVaultRaftAutopilotStateConfig extends cdktf.TerraformMetaAr
   readonly id?: string;
   /**
   * Target namespace. (requires Enterprise)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/raft_autopilot_state#namespace DataVaultRaftAutopilotState#namespace}
   */
   readonly namespace?: string;
