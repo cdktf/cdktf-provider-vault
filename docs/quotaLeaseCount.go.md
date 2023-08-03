@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.19
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/quotaleasecount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/quotaleasecount"
 
 quotaleasecount.NewQuotaLeaseCount(scope Construct, id *string, config QuotaLeaseCountConfig) QuotaLeaseCount
 ```
@@ -291,7 +291,7 @@ func ResetPath()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/quotaleasecount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/quotaleasecount"
 
 quotaleasecount.QuotaLeaseCount_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/quotaleasecount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/quotaleasecount"
 
 quotaleasecount.QuotaLeaseCount_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ quotaleasecount.QuotaLeaseCount_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/quotaleasecount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/quotaleasecount"
 
 quotaleasecount.QuotaLeaseCount_IsTerraformResource(x interface{}) *bool
 ```
@@ -646,7 +646,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/quotaleasecount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/quotaleasecount"
 
 &quotaleasecount.QuotaLeaseCountConfig {
 	Connection: interface{},

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.19
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultAuthBackends.DataVaultAuthBackends.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultauthbackends"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/datavaultauthbackends"
 
 datavaultauthbackends.NewDataVaultAuthBackends(scope Construct, id *string, config DataVaultAuthBackendsConfig) DataVaultAuthBackends
 ```
@@ -291,7 +291,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.dataVaultAuthBackends.DataVaultAuthBackends.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultauthbackends"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/datavaultauthbackends"
 
 datavaultauthbackends.DataVaultAuthBackends_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.dataVaultAuthBackends.DataVaultAuthBackends.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultauthbackends"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/datavaultauthbackends"
 
 datavaultauthbackends.DataVaultAuthBackends_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ datavaultauthbackends.DataVaultAuthBackends_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vault.dataVaultAuthBackends.DataVaultAuthBackends.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultauthbackends"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/datavaultauthbackends"
 
 datavaultauthbackends.DataVaultAuthBackends_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -602,7 +602,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.dataVaultAuthBackends.DataVaultAuthBackendsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultauthbackends"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/datavaultauthbackends"
 
 &datavaultauthbackends.DataVaultAuthBackendsConfig {
 	Connection: interface{},
