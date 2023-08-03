@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_secret_backend_static_role
+// https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/aws_secret_backend_static_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface AwsSecretBackendStaticRoleConfig extends cdktf.TerraformMetaArg
   /**
   * The path where the AWS secrets backend is mounted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_secret_backend_static_role#backend AwsSecretBackendStaticRole#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/aws_secret_backend_static_role#backend AwsSecretBackendStaticRole#backend}
   */
   readonly backend?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_secret_backend_static_role#id AwsSecretBackendStaticRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/aws_secret_backend_static_role#id AwsSecretBackendStaticRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,31 +28,31 @@ export interface AwsSecretBackendStaticRoleConfig extends cdktf.TerraformMetaArg
   /**
   * Name of the role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_secret_backend_static_role#name AwsSecretBackendStaticRole#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/aws_secret_backend_static_role#name AwsSecretBackendStaticRole#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_secret_backend_static_role#namespace AwsSecretBackendStaticRole#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/aws_secret_backend_static_role#namespace AwsSecretBackendStaticRole#namespace}
   */
   readonly namespace?: string;
   /**
   * How often Vault should rotate the password of the user entry.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_secret_backend_static_role#rotation_period AwsSecretBackendStaticRole#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/aws_secret_backend_static_role#rotation_period AwsSecretBackendStaticRole#rotation_period}
   */
   readonly rotationPeriod: number;
   /**
   * The username of the existing AWS IAM user to manage password rotation for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_secret_backend_static_role#username AwsSecretBackendStaticRole#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/aws_secret_backend_static_role#username AwsSecretBackendStaticRole#username}
   */
   readonly username: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_secret_backend_static_role vault_aws_secret_backend_static_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/aws_secret_backend_static_role vault_aws_secret_backend_static_role}
 */
 export class AwsSecretBackendStaticRole extends cdktf.TerraformResource {
 
@@ -66,7 +66,7 @@ export class AwsSecretBackendStaticRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_secret_backend_static_role vault_aws_secret_backend_static_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/aws_secret_backend_static_role vault_aws_secret_backend_static_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +77,7 @@ export class AwsSecretBackendStaticRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_aws_secret_backend_static_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.18.0',
+        providerVersion: '3.19.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

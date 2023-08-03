@@ -1,6 +1,6 @@
 # `data_vault_identity_entity`
 
-Refer to the Terraform Registory for docs: [`data_vault_identity_entity`](https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/identity_entity).
+Refer to the Terraform Registory for docs: [`data_vault_identity_entity`](https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/data-sources/identity_entity).
 
 # `dataVaultIdentityEntity` Submodule <a name="`dataVaultIdentityEntity` Submodule" id="@cdktf/provider-vault.dataVaultIdentityEntity"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_vault_identity_entity`](https:
 
 ### DataVaultIdentityEntity <a name="DataVaultIdentityEntity" id="@cdktf/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntity"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/identity_entity vault_identity_entity}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/data-sources/identity_entity vault_identity_entity}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntity.Initializer"></a>
 
@@ -51,7 +51,7 @@ dataVaultIdentityEntity.DataVaultIdentityEntity(
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntity.Initializer.parameter.aliasName">alias_name</a></code> | <code>str</code> | Name of the alias. This should be supplied in conjunction with `alias_mount_accessor`. |
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntity.Initializer.parameter.entityId">entity_id</a></code> | <code>str</code> | ID of the entity. |
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntity.Initializer.parameter.entityName">entity_name</a></code> | <code>str</code> | Name of the entity. |
-| <code><a href="#@cdktf/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntity.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/identity_entity#id DataVaultIdentityEntity#id}. |
+| <code><a href="#@cdktf/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntity.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/data-sources/identity_entity#id DataVaultIdentityEntity#id}. |
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntity.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 ID of the alias.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/identity_entity#alias_id DataVaultIdentityEntity#alias_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/data-sources/identity_entity#alias_id DataVaultIdentityEntity#alias_id}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Accessor of the mount to which the alias belongs to. This should be supplied in conjunction with `alias_name`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/identity_entity#alias_mount_accessor DataVaultIdentityEntity#alias_mount_accessor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/data-sources/identity_entity#alias_mount_accessor DataVaultIdentityEntity#alias_mount_accessor}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the alias. This should be supplied in conjunction with `alias_mount_accessor`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/identity_entity#alias_name DataVaultIdentityEntity#alias_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/data-sources/identity_entity#alias_name DataVaultIdentityEntity#alias_name}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ID of the entity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/identity_entity#entity_id DataVaultIdentityEntity#entity_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/data-sources/identity_entity#entity_id DataVaultIdentityEntity#entity_id}
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the entity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/identity_entity#entity_name DataVaultIdentityEntity#entity_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/data-sources/identity_entity#entity_name DataVaultIdentityEntity#entity_name}
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/identity_entity#id DataVaultIdentityEntity#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/data-sources/identity_entity#id DataVaultIdentityEntity#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -183,7 +183,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/identity_entity#namespace DataVaultIdentityEntity#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/data-sources/identity_entity#namespace DataVaultIdentityEntity#namespace}
 
 ---
 
@@ -1043,7 +1043,7 @@ dataVaultIdentityEntity.DataVaultIdentityEntityConfig(
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntityConfig.property.aliasName">alias_name</a></code> | <code>str</code> | Name of the alias. This should be supplied in conjunction with `alias_mount_accessor`. |
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntityConfig.property.entityId">entity_id</a></code> | <code>str</code> | ID of the entity. |
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntityConfig.property.entityName">entity_name</a></code> | <code>str</code> | Name of the entity. |
-| <code><a href="#@cdktf/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntityConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/identity_entity#id DataVaultIdentityEntity#id}. |
+| <code><a href="#@cdktf/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntityConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/data-sources/identity_entity#id DataVaultIdentityEntity#id}. |
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntityConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -1128,7 +1128,7 @@ alias_id: str
 
 ID of the alias.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/identity_entity#alias_id DataVaultIdentityEntity#alias_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/data-sources/identity_entity#alias_id DataVaultIdentityEntity#alias_id}
 
 ---
 
@@ -1142,7 +1142,7 @@ alias_mount_accessor: str
 
 Accessor of the mount to which the alias belongs to. This should be supplied in conjunction with `alias_name`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/identity_entity#alias_mount_accessor DataVaultIdentityEntity#alias_mount_accessor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/data-sources/identity_entity#alias_mount_accessor DataVaultIdentityEntity#alias_mount_accessor}
 
 ---
 
@@ -1156,7 +1156,7 @@ alias_name: str
 
 Name of the alias. This should be supplied in conjunction with `alias_mount_accessor`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/identity_entity#alias_name DataVaultIdentityEntity#alias_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/data-sources/identity_entity#alias_name DataVaultIdentityEntity#alias_name}
 
 ---
 
@@ -1170,7 +1170,7 @@ entity_id: str
 
 ID of the entity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/identity_entity#entity_id DataVaultIdentityEntity#entity_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/data-sources/identity_entity#entity_id DataVaultIdentityEntity#entity_id}
 
 ---
 
@@ -1184,7 +1184,7 @@ entity_name: str
 
 Name of the entity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/identity_entity#entity_name DataVaultIdentityEntity#entity_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/data-sources/identity_entity#entity_name DataVaultIdentityEntity#entity_name}
 
 ---
 
@@ -1196,7 +1196,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/identity_entity#id DataVaultIdentityEntity#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/data-sources/identity_entity#id DataVaultIdentityEntity#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1213,7 +1213,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/identity_entity#namespace DataVaultIdentityEntity#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/data-sources/identity_entity#namespace DataVaultIdentityEntity#namespace}
 
 ---
 

@@ -1,3 +1,3 @@
 # `vault_identity_oidc_key_allowed_client_id`
 
-Refer to the Terraform Registory for docs: [`vault_identity_oidc_key_allowed_client_id`](https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_key_allowed_client_id).
+Refer to the Terraform Registory for docs: [`vault_identity_oidc_key_allowed_client_id`](https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/identity_oidc_key_allowed_client_id).

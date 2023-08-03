@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_secret_backend_role
+// https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/azure_secret_backend_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface AzureSecretBackendRoleConfig extends cdktf.TerraformMetaArgumen
   /**
   * Application Object ID for an existing service principal that will be used instead of creating dynamic service principals.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_secret_backend_role#application_object_id AzureSecretBackendRole#application_object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/azure_secret_backend_role#application_object_id AzureSecretBackendRole#application_object_id}
   */
   readonly applicationObjectId?: string;
   /**
   * Unique name of the auth backend to configure.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_secret_backend_role#backend AzureSecretBackendRole#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/azure_secret_backend_role#backend AzureSecretBackendRole#backend}
   */
   readonly backend?: string;
   /**
   * Human-friendly description of the mount for the backend.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_secret_backend_role#description AzureSecretBackendRole#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/azure_secret_backend_role#description AzureSecretBackendRole#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_secret_backend_role#id AzureSecretBackendRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/azure_secret_backend_role#id AzureSecretBackendRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,43 +40,43 @@ export interface AzureSecretBackendRoleConfig extends cdktf.TerraformMetaArgumen
   /**
   * Human-friendly description of the mount for the backend.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_secret_backend_role#max_ttl AzureSecretBackendRole#max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/azure_secret_backend_role#max_ttl AzureSecretBackendRole#max_ttl}
   */
   readonly maxTtl?: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_secret_backend_role#namespace AzureSecretBackendRole#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/azure_secret_backend_role#namespace AzureSecretBackendRole#namespace}
   */
   readonly namespace?: string;
   /**
   * Name of the role to create
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_secret_backend_role#role AzureSecretBackendRole#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/azure_secret_backend_role#role AzureSecretBackendRole#role}
   */
   readonly role: string;
   /**
   * Human-friendly description of the mount for the backend.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_secret_backend_role#ttl AzureSecretBackendRole#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/azure_secret_backend_role#ttl AzureSecretBackendRole#ttl}
   */
   readonly ttl?: string;
   /**
   * azure_groups block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_secret_backend_role#azure_groups AzureSecretBackendRole#azure_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/azure_secret_backend_role#azure_groups AzureSecretBackendRole#azure_groups}
   */
   readonly azureGroups?: AzureSecretBackendRoleAzureGroups[] | cdktf.IResolvable;
   /**
   * azure_roles block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_secret_backend_role#azure_roles AzureSecretBackendRole#azure_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/azure_secret_backend_role#azure_roles AzureSecretBackendRole#azure_roles}
   */
   readonly azureRoles?: AzureSecretBackendRoleAzureRoles[] | cdktf.IResolvable;
 }
 export interface AzureSecretBackendRoleAzureGroups {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_secret_backend_role#group_name AzureSecretBackendRole#group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/azure_secret_backend_role#group_name AzureSecretBackendRole#group_name}
   */
   readonly groupName: string;
 }
@@ -175,15 +175,15 @@ export class AzureSecretBackendRoleAzureGroupsList extends cdktf.ComplexList {
 }
 export interface AzureSecretBackendRoleAzureRoles {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_secret_backend_role#role_id AzureSecretBackendRole#role_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/azure_secret_backend_role#role_id AzureSecretBackendRole#role_id}
   */
   readonly roleId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_secret_backend_role#role_name AzureSecretBackendRole#role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/azure_secret_backend_role#role_name AzureSecretBackendRole#role_name}
   */
   readonly roleName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_secret_backend_role#scope AzureSecretBackendRole#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/azure_secret_backend_role#scope AzureSecretBackendRole#scope}
   */
   readonly scope: string;
 }
@@ -323,7 +323,7 @@ export class AzureSecretBackendRoleAzureRolesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_secret_backend_role vault_azure_secret_backend_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/azure_secret_backend_role vault_azure_secret_backend_role}
 */
 export class AzureSecretBackendRole extends cdktf.TerraformResource {
 
@@ -337,7 +337,7 @@ export class AzureSecretBackendRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/azure_secret_backend_role vault_azure_secret_backend_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/azure_secret_backend_role vault_azure_secret_backend_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -348,7 +348,7 @@ export class AzureSecretBackendRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_azure_secret_backend_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.18.0',
+        providerVersion: '3.19.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
