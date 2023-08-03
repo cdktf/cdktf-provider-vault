@@ -1,6 +1,6 @@
 # `vault_nomad_secret_role`
 
-Refer to the Terraform Registory for docs: [`vault_nomad_secret_role`](https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/nomad_secret_role).
+Refer to the Terraform Registory for docs: [`vault_nomad_secret_role`](https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/nomad_secret_role).
 
 # `nomadSecretRole` Submodule <a name="`nomadSecretRole` Submodule" id="@cdktf/provider-vault.nomadSecretRole"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_nomad_secret_role`](https://r
 
 ### NomadSecretRole <a name="NomadSecretRole" id="@cdktf/provider-vault.nomadSecretRole.NomadSecretRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/nomad_secret_role vault_nomad_secret_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/nomad_secret_role vault_nomad_secret_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.nomadSecretRole.NomadSecretRole.Initializer"></a>
 
@@ -49,7 +49,7 @@ nomadSecretRole.NomadSecretRole(
 | <code><a href="#@cdktf/provider-vault.nomadSecretRole.NomadSecretRole.Initializer.parameter.backend">backend</a></code> | <code>str</code> | The mount path for the Nomad backend. |
 | <code><a href="#@cdktf/provider-vault.nomadSecretRole.NomadSecretRole.Initializer.parameter.role">role</a></code> | <code>str</code> | Name of the role. |
 | <code><a href="#@cdktf/provider-vault.nomadSecretRole.NomadSecretRole.Initializer.parameter.global">global</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies if the token should be global. |
-| <code><a href="#@cdktf/provider-vault.nomadSecretRole.NomadSecretRole.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/nomad_secret_role#id NomadSecretRole#id}. |
+| <code><a href="#@cdktf/provider-vault.nomadSecretRole.NomadSecretRole.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/nomad_secret_role#id NomadSecretRole#id}. |
 | <code><a href="#@cdktf/provider-vault.nomadSecretRole.NomadSecretRole.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.nomadSecretRole.NomadSecretRole.Initializer.parameter.policies">policies</a></code> | <code>typing.List[str]</code> | Comma separated list of Nomad policies the token is going to be created against. |
 | <code><a href="#@cdktf/provider-vault.nomadSecretRole.NomadSecretRole.Initializer.parameter.type">type</a></code> | <code>str</code> | Specifies the type of token to create when using this role. Valid values are "client" or "management". |
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 The mount path for the Nomad backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/nomad_secret_role#backend NomadSecretRole#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/nomad_secret_role#backend NomadSecretRole#backend}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/nomad_secret_role#role NomadSecretRole#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/nomad_secret_role#role NomadSecretRole#role}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies if the token should be global.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/nomad_secret_role#global NomadSecretRole#global}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/nomad_secret_role#global NomadSecretRole#global}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/nomad_secret_role#id NomadSecretRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/nomad_secret_role#id NomadSecretRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -163,7 +163,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/nomad_secret_role#namespace NomadSecretRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/nomad_secret_role#namespace NomadSecretRole#namespace}
 
 ---
 
@@ -175,7 +175,7 @@ Comma separated list of Nomad policies the token is going to be created against.
 
 These need to be created beforehand in Nomad.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/nomad_secret_role#policies NomadSecretRole#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/nomad_secret_role#policies NomadSecretRole#policies}
 
 ---
 
@@ -185,7 +185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the type of token to create when using this role. Valid values are "client" or "management".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/nomad_secret_role#type NomadSecretRole#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/nomad_secret_role#type NomadSecretRole#type}
 
 ---
 
@@ -908,7 +908,7 @@ nomadSecretRole.NomadSecretRoleConfig(
 | <code><a href="#@cdktf/provider-vault.nomadSecretRole.NomadSecretRoleConfig.property.backend">backend</a></code> | <code>str</code> | The mount path for the Nomad backend. |
 | <code><a href="#@cdktf/provider-vault.nomadSecretRole.NomadSecretRoleConfig.property.role">role</a></code> | <code>str</code> | Name of the role. |
 | <code><a href="#@cdktf/provider-vault.nomadSecretRole.NomadSecretRoleConfig.property.global">global</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies if the token should be global. |
-| <code><a href="#@cdktf/provider-vault.nomadSecretRole.NomadSecretRoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/nomad_secret_role#id NomadSecretRole#id}. |
+| <code><a href="#@cdktf/provider-vault.nomadSecretRole.NomadSecretRoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/nomad_secret_role#id NomadSecretRole#id}. |
 | <code><a href="#@cdktf/provider-vault.nomadSecretRole.NomadSecretRoleConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.nomadSecretRole.NomadSecretRoleConfig.property.policies">policies</a></code> | <code>typing.List[str]</code> | Comma separated list of Nomad policies the token is going to be created against. |
 | <code><a href="#@cdktf/provider-vault.nomadSecretRole.NomadSecretRoleConfig.property.type">type</a></code> | <code>str</code> | Specifies the type of token to create when using this role. Valid values are "client" or "management". |
@@ -995,7 +995,7 @@ backend: str
 
 The mount path for the Nomad backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/nomad_secret_role#backend NomadSecretRole#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/nomad_secret_role#backend NomadSecretRole#backend}
 
 ---
 
@@ -1009,7 +1009,7 @@ role: str
 
 Name of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/nomad_secret_role#role NomadSecretRole#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/nomad_secret_role#role NomadSecretRole#role}
 
 ---
 
@@ -1023,7 +1023,7 @@ global: typing.Union[bool, IResolvable]
 
 Specifies if the token should be global.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/nomad_secret_role#global NomadSecretRole#global}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/nomad_secret_role#global NomadSecretRole#global}
 
 ---
 
@@ -1035,7 +1035,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/nomad_secret_role#id NomadSecretRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/nomad_secret_role#id NomadSecretRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1052,7 +1052,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/nomad_secret_role#namespace NomadSecretRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/nomad_secret_role#namespace NomadSecretRole#namespace}
 
 ---
 
@@ -1068,7 +1068,7 @@ Comma separated list of Nomad policies the token is going to be created against.
 
 These need to be created beforehand in Nomad.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/nomad_secret_role#policies NomadSecretRole#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/nomad_secret_role#policies NomadSecretRole#policies}
 
 ---
 
@@ -1082,7 +1082,7 @@ type: str
 
 Specifies the type of token to create when using this role. Valid values are "client" or "management".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/nomad_secret_role#type NomadSecretRole#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/nomad_secret_role#type NomadSecretRole#type}
 
 ---
 

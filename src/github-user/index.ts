@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/github_user
+// https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/github_user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface GithubUserConfig extends cdktf.TerraformMetaArguments {
   /**
   * Auth backend to which user mapping will be congigured.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/github_user#backend GithubUser#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/github_user#backend GithubUser#backend}
   */
   readonly backend?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/github_user#id GithubUser#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/github_user#id GithubUser#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,25 +23,25 @@ export interface GithubUserConfig extends cdktf.TerraformMetaArguments {
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/github_user#namespace GithubUser#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/github_user#namespace GithubUser#namespace}
   */
   readonly namespace?: string;
   /**
   * Policies to be assigned to this user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/github_user#policies GithubUser#policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/github_user#policies GithubUser#policies}
   */
   readonly policies?: string[];
   /**
   * GitHub user name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/github_user#user GithubUser#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/github_user#user GithubUser#user}
   */
   readonly user: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/github_user vault_github_user}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/github_user vault_github_user}
 */
 export class GithubUser extends cdktf.TerraformResource {
 
@@ -60,7 +55,7 @@ export class GithubUser extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/github_user vault_github_user} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/github_user vault_github_user} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +66,7 @@ export class GithubUser extends cdktf.TerraformResource {
       terraformResourceType: 'vault_github_user',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.18.0',
+        providerVersion: '3.19.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

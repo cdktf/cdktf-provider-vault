@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend
+// https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/ldap_auth_backend
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,190 +8,190 @@ import * as cdktf from 'cdktf';
 
 export interface LdapAuthBackendConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#binddn LdapAuthBackend#binddn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/ldap_auth_backend#binddn LdapAuthBackend#binddn}
   */
   readonly binddn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#bindpass LdapAuthBackend#bindpass}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/ldap_auth_backend#bindpass LdapAuthBackend#bindpass}
   */
   readonly bindpass?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#case_sensitive_names LdapAuthBackend#case_sensitive_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/ldap_auth_backend#case_sensitive_names LdapAuthBackend#case_sensitive_names}
   */
   readonly caseSensitiveNames?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#certificate LdapAuthBackend#certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/ldap_auth_backend#certificate LdapAuthBackend#certificate}
   */
   readonly certificate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#client_tls_cert LdapAuthBackend#client_tls_cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/ldap_auth_backend#client_tls_cert LdapAuthBackend#client_tls_cert}
   */
   readonly clientTlsCert?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#client_tls_key LdapAuthBackend#client_tls_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/ldap_auth_backend#client_tls_key LdapAuthBackend#client_tls_key}
   */
   readonly clientTlsKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#deny_null_bind LdapAuthBackend#deny_null_bind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/ldap_auth_backend#deny_null_bind LdapAuthBackend#deny_null_bind}
   */
   readonly denyNullBind?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#description LdapAuthBackend#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/ldap_auth_backend#description LdapAuthBackend#description}
   */
   readonly description?: string;
   /**
   * If set, opts out of mount migration on path updates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#disable_remount LdapAuthBackend#disable_remount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/ldap_auth_backend#disable_remount LdapAuthBackend#disable_remount}
   */
   readonly disableRemount?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#discoverdn LdapAuthBackend#discoverdn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/ldap_auth_backend#discoverdn LdapAuthBackend#discoverdn}
   */
   readonly discoverdn?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#groupattr LdapAuthBackend#groupattr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/ldap_auth_backend#groupattr LdapAuthBackend#groupattr}
   */
   readonly groupattr?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#groupdn LdapAuthBackend#groupdn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/ldap_auth_backend#groupdn LdapAuthBackend#groupdn}
   */
   readonly groupdn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#groupfilter LdapAuthBackend#groupfilter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/ldap_auth_backend#groupfilter LdapAuthBackend#groupfilter}
   */
   readonly groupfilter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#id LdapAuthBackend#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/ldap_auth_backend#id LdapAuthBackend#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#insecure_tls LdapAuthBackend#insecure_tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/ldap_auth_backend#insecure_tls LdapAuthBackend#insecure_tls}
   */
   readonly insecureTls?: boolean | cdktf.IResolvable;
   /**
   * Specifies if the auth method is local only
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#local LdapAuthBackend#local}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/ldap_auth_backend#local LdapAuthBackend#local}
   */
   readonly local?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#max_page_size LdapAuthBackend#max_page_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/ldap_auth_backend#max_page_size LdapAuthBackend#max_page_size}
   */
   readonly maxPageSize?: number;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#namespace LdapAuthBackend#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/ldap_auth_backend#namespace LdapAuthBackend#namespace}
   */
   readonly namespace?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#path LdapAuthBackend#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/ldap_auth_backend#path LdapAuthBackend#path}
   */
   readonly path?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#starttls LdapAuthBackend#starttls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/ldap_auth_backend#starttls LdapAuthBackend#starttls}
   */
   readonly starttls?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#tls_max_version LdapAuthBackend#tls_max_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/ldap_auth_backend#tls_max_version LdapAuthBackend#tls_max_version}
   */
   readonly tlsMaxVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#tls_min_version LdapAuthBackend#tls_min_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/ldap_auth_backend#tls_min_version LdapAuthBackend#tls_min_version}
   */
   readonly tlsMinVersion?: string;
   /**
   * Specifies the blocks of IP addresses which are allowed to use the generated token
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#token_bound_cidrs LdapAuthBackend#token_bound_cidrs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/ldap_auth_backend#token_bound_cidrs LdapAuthBackend#token_bound_cidrs}
   */
   readonly tokenBoundCidrs?: string[];
   /**
   * Generated Token's Explicit Maximum TTL in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#token_explicit_max_ttl LdapAuthBackend#token_explicit_max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/ldap_auth_backend#token_explicit_max_ttl LdapAuthBackend#token_explicit_max_ttl}
   */
   readonly tokenExplicitMaxTtl?: number;
   /**
   * The maximum lifetime of the generated token
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#token_max_ttl LdapAuthBackend#token_max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/ldap_auth_backend#token_max_ttl LdapAuthBackend#token_max_ttl}
   */
   readonly tokenMaxTtl?: number;
   /**
   * If true, the 'default' policy will not automatically be added to generated tokens
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#token_no_default_policy LdapAuthBackend#token_no_default_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/ldap_auth_backend#token_no_default_policy LdapAuthBackend#token_no_default_policy}
   */
   readonly tokenNoDefaultPolicy?: boolean | cdktf.IResolvable;
   /**
   * The maximum number of times a token may be used, a value of zero means unlimited
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#token_num_uses LdapAuthBackend#token_num_uses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/ldap_auth_backend#token_num_uses LdapAuthBackend#token_num_uses}
   */
   readonly tokenNumUses?: number;
   /**
   * Generated Token's Period
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#token_period LdapAuthBackend#token_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/ldap_auth_backend#token_period LdapAuthBackend#token_period}
   */
   readonly tokenPeriod?: number;
   /**
   * Generated Token's Policies
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#token_policies LdapAuthBackend#token_policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/ldap_auth_backend#token_policies LdapAuthBackend#token_policies}
   */
   readonly tokenPolicies?: string[];
   /**
   * The initial ttl of the token to generate in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#token_ttl LdapAuthBackend#token_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/ldap_auth_backend#token_ttl LdapAuthBackend#token_ttl}
   */
   readonly tokenTtl?: number;
   /**
   * The type of token to generate, service or batch
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#token_type LdapAuthBackend#token_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/ldap_auth_backend#token_type LdapAuthBackend#token_type}
   */
   readonly tokenType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#upndomain LdapAuthBackend#upndomain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/ldap_auth_backend#upndomain LdapAuthBackend#upndomain}
   */
   readonly upndomain?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#url LdapAuthBackend#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/ldap_auth_backend#url LdapAuthBackend#url}
   */
   readonly url: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#use_token_groups LdapAuthBackend#use_token_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/ldap_auth_backend#use_token_groups LdapAuthBackend#use_token_groups}
   */
   readonly useTokenGroups?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#userattr LdapAuthBackend#userattr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/ldap_auth_backend#userattr LdapAuthBackend#userattr}
   */
   readonly userattr?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#userdn LdapAuthBackend#userdn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/ldap_auth_backend#userdn LdapAuthBackend#userdn}
   */
   readonly userdn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#userfilter LdapAuthBackend#userfilter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/ldap_auth_backend#userfilter LdapAuthBackend#userfilter}
   */
   readonly userfilter?: string;
   /**
   * Force the auth method to use the username passed by the user as the alias name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend#username_as_alias LdapAuthBackend#username_as_alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/ldap_auth_backend#username_as_alias LdapAuthBackend#username_as_alias}
   */
   readonly usernameAsAlias?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend vault_ldap_auth_backend}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/ldap_auth_backend vault_ldap_auth_backend}
 */
 export class LdapAuthBackend extends cdktf.TerraformResource {
 
@@ -210,7 +205,7 @@ export class LdapAuthBackend extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/ldap_auth_backend vault_ldap_auth_backend} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/ldap_auth_backend vault_ldap_auth_backend} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -221,7 +216,7 @@ export class LdapAuthBackend extends cdktf.TerraformResource {
       terraformResourceType: 'vault_ldap_auth_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.18.0',
+        providerVersion: '3.19.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

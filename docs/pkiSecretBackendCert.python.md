@@ -1,6 +1,6 @@
 # `vault_pki_secret_backend_cert`
 
-Refer to the Terraform Registory for docs: [`vault_pki_secret_backend_cert`](https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert).
+Refer to the Terraform Registory for docs: [`vault_pki_secret_backend_cert`](https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert).
 
 # `pkiSecretBackendCert` Submodule <a name="`pkiSecretBackendCert` Submodule" id="@cdktf/provider-vault.pkiSecretBackendCert"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_pki_secret_backend_cert`](htt
 
 ### PkiSecretBackendCert <a name="PkiSecretBackendCert" id="@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert vault_pki_secret_backend_cert}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert vault_pki_secret_backend_cert}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer"></a>
 
@@ -41,7 +41,8 @@ pkiSecretBackendCert.PkiSecretBackendCert(
   private_key_format: str = None,
   revoke: typing.Union[bool, IResolvable] = None,
   ttl: str = None,
-  uri_sans: typing.List[str] = None
+  uri_sans: typing.List[str] = None,
+  user_ids: typing.List[str] = None
 )
 ```
 
@@ -63,7 +64,7 @@ pkiSecretBackendCert.PkiSecretBackendCert(
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer.parameter.autoRenew">auto_renew</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If enabled, a new certificate will be generated if the expiration is within min_seconds_remaining. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer.parameter.excludeCnFromSans">exclude_cn_from_sans</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Flag to exclude CN from SANs. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer.parameter.format">format</a></code> | <code>str</code> | The format of data. |
-| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#id PkiSecretBackendCert#id}. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert#id PkiSecretBackendCert#id}. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer.parameter.ipSans">ip_sans</a></code> | <code>typing.List[str]</code> | List of alternative IPs. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer.parameter.issuerRef">issuer_ref</a></code> | <code>str</code> | Specifies the default issuer of this request. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer.parameter.minSecondsRemaining">min_seconds_remaining</a></code> | <code>typing.Union[int, float]</code> | Generate a new certificate when the expiration is within this number of seconds. |
@@ -73,6 +74,7 @@ pkiSecretBackendCert.PkiSecretBackendCert(
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer.parameter.revoke">revoke</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Revoke the certificate upon resource destruction. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer.parameter.ttl">ttl</a></code> | <code>str</code> | Time to live. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer.parameter.uriSans">uri_sans</a></code> | <code>typing.List[str]</code> | List of alternative URIs. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer.parameter.userIds">user_ids</a></code> | <code>typing.List[str]</code> | List of Subject User IDs. |
 
 ---
 
@@ -142,7 +144,7 @@ Must be unique amongst siblings in the same scope
 
 The PKI secret backend the resource belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#backend PkiSecretBackendCert#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert#backend PkiSecretBackendCert#backend}
 
 ---
 
@@ -152,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 CN of the certificate to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#common_name PkiSecretBackendCert#common_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert#common_name PkiSecretBackendCert#common_name}
 
 ---
 
@@ -162,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the role to create the certificate against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#name PkiSecretBackendCert#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert#name PkiSecretBackendCert#name}
 
 ---
 
@@ -172,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of alternative names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#alt_names PkiSecretBackendCert#alt_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert#alt_names PkiSecretBackendCert#alt_names}
 
 ---
 
@@ -182,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If enabled, a new certificate will be generated if the expiration is within min_seconds_remaining.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#auto_renew PkiSecretBackendCert#auto_renew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert#auto_renew PkiSecretBackendCert#auto_renew}
 
 ---
 
@@ -192,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Flag to exclude CN from SANs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#exclude_cn_from_sans PkiSecretBackendCert#exclude_cn_from_sans}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert#exclude_cn_from_sans PkiSecretBackendCert#exclude_cn_from_sans}
 
 ---
 
@@ -202,7 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The format of data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#format PkiSecretBackendCert#format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert#format PkiSecretBackendCert#format}
 
 ---
 
@@ -210,7 +212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#id PkiSecretBackendCert#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert#id PkiSecretBackendCert#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -223,7 +225,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 List of alternative IPs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#ip_sans PkiSecretBackendCert#ip_sans}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert#ip_sans PkiSecretBackendCert#ip_sans}
 
 ---
 
@@ -233,7 +235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the default issuer of this request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#issuer_ref PkiSecretBackendCert#issuer_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert#issuer_ref PkiSecretBackendCert#issuer_ref}
 
 ---
 
@@ -243,7 +245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Generate a new certificate when the expiration is within this number of seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#min_seconds_remaining PkiSecretBackendCert#min_seconds_remaining}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert#min_seconds_remaining PkiSecretBackendCert#min_seconds_remaining}
 
 ---
 
@@ -253,7 +255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#namespace PkiSecretBackendCert#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert#namespace PkiSecretBackendCert#namespace}
 
 ---
 
@@ -263,7 +265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of other SANs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#other_sans PkiSecretBackendCert#other_sans}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert#other_sans PkiSecretBackendCert#other_sans}
 
 ---
 
@@ -273,7 +275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The private key format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#private_key_format PkiSecretBackendCert#private_key_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert#private_key_format PkiSecretBackendCert#private_key_format}
 
 ---
 
@@ -283,7 +285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Revoke the certificate upon resource destruction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#revoke PkiSecretBackendCert#revoke}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert#revoke PkiSecretBackendCert#revoke}
 
 ---
 
@@ -293,7 +295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Time to live.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#ttl PkiSecretBackendCert#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert#ttl PkiSecretBackendCert#ttl}
 
 ---
 
@@ -303,7 +305,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of alternative URIs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#uri_sans PkiSecretBackendCert#uri_sans}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert#uri_sans PkiSecretBackendCert#uri_sans}
+
+---
+
+##### `user_ids`<sup>Optional</sup> <a name="user_ids" id="@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer.parameter.userIds"></a>
+
+- *Type:* typing.List[str]
+
+List of Subject User IDs.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert#user_ids PkiSecretBackendCert#user_ids}
 
 ---
 
@@ -341,6 +353,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetRevoke">reset_revoke</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetTtl">reset_ttl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetUriSans">reset_uri_sans</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetUserIds">reset_user_ids</a></code> | *No description.* |
 
 ---
 
@@ -637,6 +650,12 @@ def reset_ttl() -> None
 def reset_uri_sans() -> None
 ```
 
+##### `reset_user_ids` <a name="reset_user_ids" id="@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetUserIds"></a>
+
+```python
+def reset_user_ids() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -756,6 +775,7 @@ pkiSecretBackendCert.PkiSecretBackendCert.is_terraform_resource(
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.revokeInput">revoke_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.ttlInput">ttl_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.uriSansInput">uri_sans_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.userIdsInput">user_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.altNames">alt_names</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.autoRenew">auto_renew</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.backend">backend</a></code> | <code>str</code> | *No description.* |
@@ -773,6 +793,7 @@ pkiSecretBackendCert.PkiSecretBackendCert.is_terraform_resource(
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.revoke">revoke</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.ttl">ttl</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.uriSans">uri_sans</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.userIds">user_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
 
 ---
 
@@ -1168,6 +1189,16 @@ uri_sans_input: typing.List[str]
 
 ---
 
+##### `user_ids_input`<sup>Optional</sup> <a name="user_ids_input" id="@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.userIdsInput"></a>
+
+```python
+user_ids_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 ##### `alt_names`<sup>Required</sup> <a name="alt_names" id="@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.altNames"></a>
 
 ```python
@@ -1338,6 +1369,16 @@ uri_sans: typing.List[str]
 
 ---
 
+##### `user_ids`<sup>Required</sup> <a name="user_ids" id="@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.userIds"></a>
+
+```python
+user_ids: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1389,7 +1430,8 @@ pkiSecretBackendCert.PkiSecretBackendCertConfig(
   private_key_format: str = None,
   revoke: typing.Union[bool, IResolvable] = None,
   ttl: str = None,
-  uri_sans: typing.List[str] = None
+  uri_sans: typing.List[str] = None,
+  user_ids: typing.List[str] = None
 )
 ```
 
@@ -1411,7 +1453,7 @@ pkiSecretBackendCert.PkiSecretBackendCertConfig(
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.autoRenew">auto_renew</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If enabled, a new certificate will be generated if the expiration is within min_seconds_remaining. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.excludeCnFromSans">exclude_cn_from_sans</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Flag to exclude CN from SANs. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.format">format</a></code> | <code>str</code> | The format of data. |
-| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#id PkiSecretBackendCert#id}. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert#id PkiSecretBackendCert#id}. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.ipSans">ip_sans</a></code> | <code>typing.List[str]</code> | List of alternative IPs. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.issuerRef">issuer_ref</a></code> | <code>str</code> | Specifies the default issuer of this request. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.minSecondsRemaining">min_seconds_remaining</a></code> | <code>typing.Union[int, float]</code> | Generate a new certificate when the expiration is within this number of seconds. |
@@ -1421,6 +1463,7 @@ pkiSecretBackendCert.PkiSecretBackendCertConfig(
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.revoke">revoke</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Revoke the certificate upon resource destruction. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.ttl">ttl</a></code> | <code>str</code> | Time to live. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.uriSans">uri_sans</a></code> | <code>typing.List[str]</code> | List of alternative URIs. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.userIds">user_ids</a></code> | <code>typing.List[str]</code> | List of Subject User IDs. |
 
 ---
 
@@ -1504,7 +1547,7 @@ backend: str
 
 The PKI secret backend the resource belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#backend PkiSecretBackendCert#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert#backend PkiSecretBackendCert#backend}
 
 ---
 
@@ -1518,7 +1561,7 @@ common_name: str
 
 CN of the certificate to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#common_name PkiSecretBackendCert#common_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert#common_name PkiSecretBackendCert#common_name}
 
 ---
 
@@ -1532,7 +1575,7 @@ name: str
 
 Name of the role to create the certificate against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#name PkiSecretBackendCert#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert#name PkiSecretBackendCert#name}
 
 ---
 
@@ -1546,7 +1589,7 @@ alt_names: typing.List[str]
 
 List of alternative names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#alt_names PkiSecretBackendCert#alt_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert#alt_names PkiSecretBackendCert#alt_names}
 
 ---
 
@@ -1560,7 +1603,7 @@ auto_renew: typing.Union[bool, IResolvable]
 
 If enabled, a new certificate will be generated if the expiration is within min_seconds_remaining.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#auto_renew PkiSecretBackendCert#auto_renew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert#auto_renew PkiSecretBackendCert#auto_renew}
 
 ---
 
@@ -1574,7 +1617,7 @@ exclude_cn_from_sans: typing.Union[bool, IResolvable]
 
 Flag to exclude CN from SANs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#exclude_cn_from_sans PkiSecretBackendCert#exclude_cn_from_sans}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert#exclude_cn_from_sans PkiSecretBackendCert#exclude_cn_from_sans}
 
 ---
 
@@ -1588,7 +1631,7 @@ format: str
 
 The format of data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#format PkiSecretBackendCert#format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert#format PkiSecretBackendCert#format}
 
 ---
 
@@ -1600,7 +1643,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#id PkiSecretBackendCert#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert#id PkiSecretBackendCert#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1617,7 +1660,7 @@ ip_sans: typing.List[str]
 
 List of alternative IPs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#ip_sans PkiSecretBackendCert#ip_sans}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert#ip_sans PkiSecretBackendCert#ip_sans}
 
 ---
 
@@ -1631,7 +1674,7 @@ issuer_ref: str
 
 Specifies the default issuer of this request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#issuer_ref PkiSecretBackendCert#issuer_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert#issuer_ref PkiSecretBackendCert#issuer_ref}
 
 ---
 
@@ -1645,7 +1688,7 @@ min_seconds_remaining: typing.Union[int, float]
 
 Generate a new certificate when the expiration is within this number of seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#min_seconds_remaining PkiSecretBackendCert#min_seconds_remaining}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert#min_seconds_remaining PkiSecretBackendCert#min_seconds_remaining}
 
 ---
 
@@ -1659,7 +1702,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#namespace PkiSecretBackendCert#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert#namespace PkiSecretBackendCert#namespace}
 
 ---
 
@@ -1673,7 +1716,7 @@ other_sans: typing.List[str]
 
 List of other SANs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#other_sans PkiSecretBackendCert#other_sans}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert#other_sans PkiSecretBackendCert#other_sans}
 
 ---
 
@@ -1687,7 +1730,7 @@ private_key_format: str
 
 The private key format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#private_key_format PkiSecretBackendCert#private_key_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert#private_key_format PkiSecretBackendCert#private_key_format}
 
 ---
 
@@ -1701,7 +1744,7 @@ revoke: typing.Union[bool, IResolvable]
 
 Revoke the certificate upon resource destruction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#revoke PkiSecretBackendCert#revoke}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert#revoke PkiSecretBackendCert#revoke}
 
 ---
 
@@ -1715,7 +1758,7 @@ ttl: str
 
 Time to live.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#ttl PkiSecretBackendCert#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert#ttl PkiSecretBackendCert#ttl}
 
 ---
 
@@ -1729,7 +1772,21 @@ uri_sans: typing.List[str]
 
 List of alternative URIs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert#uri_sans PkiSecretBackendCert#uri_sans}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert#uri_sans PkiSecretBackendCert#uri_sans}
+
+---
+
+##### `user_ids`<sup>Optional</sup> <a name="user_ids" id="@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.userIds"></a>
+
+```python
+user_ids: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+List of Subject User IDs.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert#user_ids PkiSecretBackendCert#user_ids}
 
 ---
 

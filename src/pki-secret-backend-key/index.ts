@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_key
+// https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface PkiSecretBackendKeyConfig extends cdktf.TerraformMetaArguments 
   /**
   * Full path where PKI backend is mounted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_key#backend PkiSecretBackendKey#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_key#backend PkiSecretBackendKey#backend}
   */
   readonly backend: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_key#id PkiSecretBackendKey#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_key#id PkiSecretBackendKey#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,49 +23,49 @@ export interface PkiSecretBackendKeyConfig extends cdktf.TerraformMetaArguments 
   /**
   * Specifies the number of bits to use for the generated keys.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_key#key_bits PkiSecretBackendKey#key_bits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_key#key_bits PkiSecretBackendKey#key_bits}
   */
   readonly keyBits?: number;
   /**
   * When a new key is created with this request, optionally specifies the name for this.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_key#key_name PkiSecretBackendKey#key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_key#key_name PkiSecretBackendKey#key_name}
   */
   readonly keyName?: string;
   /**
   * Specifies the desired key type; must be 'rsa', 'ed25519' or 'ec'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_key#key_type PkiSecretBackendKey#key_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_key#key_type PkiSecretBackendKey#key_type}
   */
   readonly keyType?: string;
   /**
   * The managed key's UUID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_key#managed_key_id PkiSecretBackendKey#managed_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_key#managed_key_id PkiSecretBackendKey#managed_key_id}
   */
   readonly managedKeyId?: string;
   /**
   * The managed key's configured name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_key#managed_key_name PkiSecretBackendKey#managed_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_key#managed_key_name PkiSecretBackendKey#managed_key_name}
   */
   readonly managedKeyName?: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_key#namespace PkiSecretBackendKey#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_key#namespace PkiSecretBackendKey#namespace}
   */
   readonly namespace?: string;
   /**
   * Specifies the type of the key to create.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_key#type PkiSecretBackendKey#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_key#type PkiSecretBackendKey#type}
   */
   readonly type: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_key vault_pki_secret_backend_key}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_key vault_pki_secret_backend_key}
 */
 export class PkiSecretBackendKey extends cdktf.TerraformResource {
 
@@ -84,7 +79,7 @@ export class PkiSecretBackendKey extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_key vault_pki_secret_backend_key} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_key vault_pki_secret_backend_key} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -95,7 +90,7 @@ export class PkiSecretBackendKey extends cdktf.TerraformResource {
       terraformResourceType: 'vault_pki_secret_backend_key',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.18.0',
+        providerVersion: '3.19.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

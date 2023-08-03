@@ -1,6 +1,6 @@
 # `vault_pki_secret_backend_role`
 
-Refer to the Terraform Registory for docs: [`vault_pki_secret_backend_role`](https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role).
+Refer to the Terraform Registory for docs: [`vault_pki_secret_backend_role`](https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role).
 
 # `pkiSecretBackendRole` Submodule <a name="`pkiSecretBackendRole` Submodule" id="@cdktf/provider-vault.pkiSecretBackendRole"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`vault_pki_secret_backend_role`](htt
 
 ### PkiSecretBackendRole <a name="PkiSecretBackendRole" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/pkisecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendrole"
 
 pkisecretbackendrole.NewPkiSecretBackendRole(scope Construct, id *string, config PkiSecretBackendRoleConfig) PkiSecretBackendRole
 ```
@@ -79,6 +79,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.resetAllowedSerialNumbers">ResetAllowedSerialNumbers</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.resetAllowedUriSans">ResetAllowedUriSans</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.resetAllowedUriSansTemplate">ResetAllowedUriSansTemplate</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.resetAllowedUserIds">ResetAllowedUserIds</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.resetAllowGlobDomains">ResetAllowGlobDomains</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.resetAllowIpSans">ResetAllowIpSans</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.resetAllowLocalhost">ResetAllowLocalhost</a></code> | *No description.* |
@@ -361,6 +362,12 @@ func ResetAllowedUriSans()
 func ResetAllowedUriSansTemplate()
 ```
 
+##### `ResetAllowedUserIds` <a name="ResetAllowedUserIds" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.resetAllowedUserIds"></a>
+
+```go
+func ResetAllowedUserIds()
+```
+
 ##### `ResetAllowGlobDomains` <a name="ResetAllowGlobDomains" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.resetAllowGlobDomains"></a>
 
 ```go
@@ -584,7 +591,7 @@ func ResetUseCsrSans()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/pkisecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendrole"
 
 pkisecretbackendrole.PkiSecretBackendRole_IsConstruct(x interface{}) *bool
 ```
@@ -616,7 +623,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/pkisecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendrole"
 
 pkisecretbackendrole.PkiSecretBackendRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -630,7 +637,7 @@ pkisecretbackendrole.PkiSecretBackendRole_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/pkisecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendrole"
 
 pkisecretbackendrole.PkiSecretBackendRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -668,6 +675,7 @@ pkisecretbackendrole.PkiSecretBackendRole_IsTerraformResource(x interface{}) *bo
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.allowedSerialNumbersInput">AllowedSerialNumbersInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.allowedUriSansInput">AllowedUriSansInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.allowedUriSansTemplateInput">AllowedUriSansTemplateInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.allowedUserIdsInput">AllowedUserIdsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.allowGlobDomainsInput">AllowGlobDomainsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.allowIpSansInput">AllowIpSansInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.allowLocalhostInput">AllowLocalhostInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -713,6 +721,7 @@ pkisecretbackendrole.PkiSecretBackendRole_IsTerraformResource(x interface{}) *bo
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.allowedSerialNumbers">AllowedSerialNumbers</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.allowedUriSans">AllowedUriSans</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.allowedUriSansTemplate">AllowedUriSansTemplate</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.allowedUserIds">AllowedUserIds</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.allowGlobDomains">AllowGlobDomains</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.allowIpSans">AllowIpSans</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.allowLocalhost">AllowLocalhost</a></code> | <code>interface{}</code> | *No description.* |
@@ -981,6 +990,16 @@ func AllowedUriSansTemplateInput() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `AllowedUserIdsInput`<sup>Optional</sup> <a name="AllowedUserIdsInput" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.allowedUserIdsInput"></a>
+
+```go
+func AllowedUserIdsInput() *[]*string
+```
+
+- *Type:* *[]*string
 
 ---
 
@@ -1434,6 +1453,16 @@ func AllowedUriSansTemplate() interface{}
 
 ---
 
+##### `AllowedUserIds`<sup>Required</sup> <a name="AllowedUserIds" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.allowedUserIds"></a>
+
+```go
+func AllowedUserIds() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
 ##### `AllowGlobDomains`<sup>Required</sup> <a name="AllowGlobDomains" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.allowGlobDomains"></a>
 
 ```go
@@ -1819,7 +1848,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/pkisecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendrole"
 
 &pkisecretbackendrole.PkiSecretBackendRoleConfig {
 	Connection: interface{},
@@ -1839,6 +1868,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/pkisecretbackendrole"
 	AllowedSerialNumbers: *[]*string,
 	AllowedUriSans: *[]*string,
 	AllowedUriSansTemplate: interface{},
+	AllowedUserIds: *[]*string,
 	AllowGlobDomains: interface{},
 	AllowIpSans: interface{},
 	AllowLocalhost: interface{},
@@ -1898,6 +1928,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/pkisecretbackendrole"
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.allowedSerialNumbers">AllowedSerialNumbers</a></code> | <code>*[]*string</code> | Defines allowed Subject serial numbers. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.allowedUriSans">AllowedUriSans</a></code> | <code>*[]*string</code> | Defines allowed URI SANs. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.allowedUriSansTemplate">AllowedUriSansTemplate</a></code> | <code>interface{}</code> | Flag to indicate that `allowed_uri_sans` specifies a template expression (e.g. {{identity.entity.aliases.<mount accessor>.name}}). |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.allowedUserIds">AllowedUserIds</a></code> | <code>*[]*string</code> | The allowed User ID's. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.allowGlobDomains">AllowGlobDomains</a></code> | <code>interface{}</code> | Flag to allow names containing glob patterns. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.allowIpSans">AllowIpSans</a></code> | <code>interface{}</code> | Flag to allow IP SANs. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.allowLocalhost">AllowLocalhost</a></code> | <code>interface{}</code> | Flag to allow certificates for localhost. |
@@ -1911,7 +1942,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/pkisecretbackendrole"
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.enforceHostnames">EnforceHostnames</a></code> | <code>interface{}</code> | Flag to allow only valid host names. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.extKeyUsage">ExtKeyUsage</a></code> | <code>*[]*string</code> | Specify the allowed extended key usage constraint on issued certificates. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.generateLease">GenerateLease</a></code> | <code>interface{}</code> | Flag to generate leases with certificates. |
-| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#id PkiSecretBackendRole#id}. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#id PkiSecretBackendRole#id}. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.issuerRef">IssuerRef</a></code> | <code>*string</code> | Specifies the default issuer of this request. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.keyBits">KeyBits</a></code> | <code>*f64</code> | The number of bits of generated keys. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.keyType">KeyType</a></code> | <code>*string</code> | The generated key type. |
@@ -2016,7 +2047,7 @@ Backend *string
 
 The path of the PKI secret backend the resource belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#backend PkiSecretBackendRole#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#backend PkiSecretBackendRole#backend}
 
 ---
 
@@ -2030,7 +2061,7 @@ Name *string
 
 Unique name for the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#name PkiSecretBackendRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#name PkiSecretBackendRole#name}
 
 ---
 
@@ -2044,7 +2075,7 @@ AllowAnyName interface{}
 
 Flag to allow any name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#allow_any_name PkiSecretBackendRole#allow_any_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#allow_any_name PkiSecretBackendRole#allow_any_name}
 
 ---
 
@@ -2058,7 +2089,7 @@ AllowBareDomains interface{}
 
 Flag to allow certificates matching the actual domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#allow_bare_domains PkiSecretBackendRole#allow_bare_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#allow_bare_domains PkiSecretBackendRole#allow_bare_domains}
 
 ---
 
@@ -2072,7 +2103,7 @@ AllowedDomains *[]*string
 
 The domains of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#allowed_domains PkiSecretBackendRole#allowed_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#allowed_domains PkiSecretBackendRole#allowed_domains}
 
 ---
 
@@ -2086,7 +2117,7 @@ AllowedDomainsTemplate interface{}
 
 Flag to indicate that `allowed_domains` specifies a template expression (e.g. {{identity.entity.aliases.<mount accessor>.name}}).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#allowed_domains_template PkiSecretBackendRole#allowed_domains_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#allowed_domains_template PkiSecretBackendRole#allowed_domains_template}
 
 ---
 
@@ -2100,7 +2131,7 @@ AllowedOtherSans *[]*string
 
 Defines allowed custom SANs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#allowed_other_sans PkiSecretBackendRole#allowed_other_sans}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#allowed_other_sans PkiSecretBackendRole#allowed_other_sans}
 
 ---
 
@@ -2114,7 +2145,7 @@ AllowedSerialNumbers *[]*string
 
 Defines allowed Subject serial numbers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#allowed_serial_numbers PkiSecretBackendRole#allowed_serial_numbers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#allowed_serial_numbers PkiSecretBackendRole#allowed_serial_numbers}
 
 ---
 
@@ -2128,7 +2159,7 @@ AllowedUriSans *[]*string
 
 Defines allowed URI SANs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#allowed_uri_sans PkiSecretBackendRole#allowed_uri_sans}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#allowed_uri_sans PkiSecretBackendRole#allowed_uri_sans}
 
 ---
 
@@ -2142,7 +2173,21 @@ AllowedUriSansTemplate interface{}
 
 Flag to indicate that `allowed_uri_sans` specifies a template expression (e.g. {{identity.entity.aliases.<mount accessor>.name}}).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#allowed_uri_sans_template PkiSecretBackendRole#allowed_uri_sans_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#allowed_uri_sans_template PkiSecretBackendRole#allowed_uri_sans_template}
+
+---
+
+##### `AllowedUserIds`<sup>Optional</sup> <a name="AllowedUserIds" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.allowedUserIds"></a>
+
+```go
+AllowedUserIds *[]*string
+```
+
+- *Type:* *[]*string
+
+The allowed User ID's.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#allowed_user_ids PkiSecretBackendRole#allowed_user_ids}
 
 ---
 
@@ -2156,7 +2201,7 @@ AllowGlobDomains interface{}
 
 Flag to allow names containing glob patterns.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#allow_glob_domains PkiSecretBackendRole#allow_glob_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#allow_glob_domains PkiSecretBackendRole#allow_glob_domains}
 
 ---
 
@@ -2170,7 +2215,7 @@ AllowIpSans interface{}
 
 Flag to allow IP SANs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#allow_ip_sans PkiSecretBackendRole#allow_ip_sans}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#allow_ip_sans PkiSecretBackendRole#allow_ip_sans}
 
 ---
 
@@ -2184,7 +2229,7 @@ AllowLocalhost interface{}
 
 Flag to allow certificates for localhost.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#allow_localhost PkiSecretBackendRole#allow_localhost}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#allow_localhost PkiSecretBackendRole#allow_localhost}
 
 ---
 
@@ -2198,7 +2243,7 @@ AllowSubdomains interface{}
 
 Flag to allow certificates matching subdomains.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#allow_subdomains PkiSecretBackendRole#allow_subdomains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#allow_subdomains PkiSecretBackendRole#allow_subdomains}
 
 ---
 
@@ -2212,7 +2257,7 @@ AllowWildcardCertificates interface{}
 
 Flag to allow wildcard certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#allow_wildcard_certificates PkiSecretBackendRole#allow_wildcard_certificates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#allow_wildcard_certificates PkiSecretBackendRole#allow_wildcard_certificates}
 
 ---
 
@@ -2226,7 +2271,7 @@ BasicConstraintsValidForNonCa interface{}
 
 Flag to mark basic constraints valid when issuing non-CA certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#basic_constraints_valid_for_non_ca PkiSecretBackendRole#basic_constraints_valid_for_non_ca}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#basic_constraints_valid_for_non_ca PkiSecretBackendRole#basic_constraints_valid_for_non_ca}
 
 ---
 
@@ -2240,7 +2285,7 @@ ClientFlag interface{}
 
 Flag to specify certificates for client use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#client_flag PkiSecretBackendRole#client_flag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#client_flag PkiSecretBackendRole#client_flag}
 
 ---
 
@@ -2254,7 +2299,7 @@ CodeSigningFlag interface{}
 
 Flag to specify certificates for code signing use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#code_signing_flag PkiSecretBackendRole#code_signing_flag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#code_signing_flag PkiSecretBackendRole#code_signing_flag}
 
 ---
 
@@ -2268,7 +2313,7 @@ Country *[]*string
 
 The country of generated certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#country PkiSecretBackendRole#country}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#country PkiSecretBackendRole#country}
 
 ---
 
@@ -2282,7 +2327,7 @@ EmailProtectionFlag interface{}
 
 Flag to specify certificates for email protection use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#email_protection_flag PkiSecretBackendRole#email_protection_flag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#email_protection_flag PkiSecretBackendRole#email_protection_flag}
 
 ---
 
@@ -2296,7 +2341,7 @@ EnforceHostnames interface{}
 
 Flag to allow only valid host names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#enforce_hostnames PkiSecretBackendRole#enforce_hostnames}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#enforce_hostnames PkiSecretBackendRole#enforce_hostnames}
 
 ---
 
@@ -2310,7 +2355,7 @@ ExtKeyUsage *[]*string
 
 Specify the allowed extended key usage constraint on issued certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#ext_key_usage PkiSecretBackendRole#ext_key_usage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#ext_key_usage PkiSecretBackendRole#ext_key_usage}
 
 ---
 
@@ -2324,7 +2369,7 @@ GenerateLease interface{}
 
 Flag to generate leases with certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#generate_lease PkiSecretBackendRole#generate_lease}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#generate_lease PkiSecretBackendRole#generate_lease}
 
 ---
 
@@ -2336,7 +2381,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#id PkiSecretBackendRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#id PkiSecretBackendRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2353,7 +2398,7 @@ IssuerRef *string
 
 Specifies the default issuer of this request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#issuer_ref PkiSecretBackendRole#issuer_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#issuer_ref PkiSecretBackendRole#issuer_ref}
 
 ---
 
@@ -2367,7 +2412,7 @@ KeyBits *f64
 
 The number of bits of generated keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#key_bits PkiSecretBackendRole#key_bits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#key_bits PkiSecretBackendRole#key_bits}
 
 ---
 
@@ -2381,7 +2426,7 @@ KeyType *string
 
 The generated key type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#key_type PkiSecretBackendRole#key_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#key_type PkiSecretBackendRole#key_type}
 
 ---
 
@@ -2395,7 +2440,7 @@ KeyUsage *[]*string
 
 Specify the allowed key usage constraint on issued certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#key_usage PkiSecretBackendRole#key_usage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#key_usage PkiSecretBackendRole#key_usage}
 
 ---
 
@@ -2409,7 +2454,7 @@ Locality *[]*string
 
 The locality of generated certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#locality PkiSecretBackendRole#locality}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#locality PkiSecretBackendRole#locality}
 
 ---
 
@@ -2423,7 +2468,7 @@ MaxTtl *string
 
 The maximum TTL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#max_ttl PkiSecretBackendRole#max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#max_ttl PkiSecretBackendRole#max_ttl}
 
 ---
 
@@ -2437,7 +2482,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#namespace PkiSecretBackendRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#namespace PkiSecretBackendRole#namespace}
 
 ---
 
@@ -2451,7 +2496,7 @@ NoStore interface{}
 
 Flag to not store certificates in the storage backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#no_store PkiSecretBackendRole#no_store}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#no_store PkiSecretBackendRole#no_store}
 
 ---
 
@@ -2465,7 +2510,7 @@ NotBeforeDuration *string
 
 Specifies the duration by which to backdate the NotBefore property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#not_before_duration PkiSecretBackendRole#not_before_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#not_before_duration PkiSecretBackendRole#not_before_duration}
 
 ---
 
@@ -2479,7 +2524,7 @@ Organization *[]*string
 
 The organization of generated certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#organization PkiSecretBackendRole#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#organization PkiSecretBackendRole#organization}
 
 ---
 
@@ -2493,7 +2538,7 @@ Ou *[]*string
 
 The organization unit of generated certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#ou PkiSecretBackendRole#ou}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#ou PkiSecretBackendRole#ou}
 
 ---
 
@@ -2507,7 +2552,7 @@ PolicyIdentifier interface{}
 
 policy_identifier block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#policy_identifier PkiSecretBackendRole#policy_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#policy_identifier PkiSecretBackendRole#policy_identifier}
 
 ---
 
@@ -2521,7 +2566,7 @@ PolicyIdentifiers *[]*string
 
 Specify the list of allowed policies OIDs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#policy_identifiers PkiSecretBackendRole#policy_identifiers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#policy_identifiers PkiSecretBackendRole#policy_identifiers}
 
 ---
 
@@ -2535,7 +2580,7 @@ PostalCode *[]*string
 
 The postal code of generated certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#postal_code PkiSecretBackendRole#postal_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#postal_code PkiSecretBackendRole#postal_code}
 
 ---
 
@@ -2549,7 +2594,7 @@ Province *[]*string
 
 The province of generated certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#province PkiSecretBackendRole#province}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#province PkiSecretBackendRole#province}
 
 ---
 
@@ -2563,7 +2608,7 @@ RequireCn interface{}
 
 Flag to force CN usage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#require_cn PkiSecretBackendRole#require_cn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#require_cn PkiSecretBackendRole#require_cn}
 
 ---
 
@@ -2577,7 +2622,7 @@ ServerFlag interface{}
 
 Flag to specify certificates for server use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#server_flag PkiSecretBackendRole#server_flag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#server_flag PkiSecretBackendRole#server_flag}
 
 ---
 
@@ -2591,7 +2636,7 @@ StreetAddress *[]*string
 
 The street address of generated certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#street_address PkiSecretBackendRole#street_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#street_address PkiSecretBackendRole#street_address}
 
 ---
 
@@ -2605,7 +2650,7 @@ Ttl *string
 
 The TTL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#ttl PkiSecretBackendRole#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#ttl PkiSecretBackendRole#ttl}
 
 ---
 
@@ -2619,7 +2664,7 @@ UseCsrCommonName interface{}
 
 Flag to use the CN in the CSR.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#use_csr_common_name PkiSecretBackendRole#use_csr_common_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#use_csr_common_name PkiSecretBackendRole#use_csr_common_name}
 
 ---
 
@@ -2633,7 +2678,7 @@ UseCsrSans interface{}
 
 Flag to use the SANs in the CSR.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#use_csr_sans PkiSecretBackendRole#use_csr_sans}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#use_csr_sans PkiSecretBackendRole#use_csr_sans}
 
 ---
 
@@ -2642,7 +2687,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRolePolicyIdentifier.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/pkisecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendrole"
 
 &pkisecretbackendrole.PkiSecretBackendRolePolicyIdentifier {
 	Oid: *string,
@@ -2671,7 +2716,7 @@ Oid *string
 
 OID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#oid PkiSecretBackendRole#oid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#oid PkiSecretBackendRole#oid}
 
 ---
 
@@ -2685,7 +2730,7 @@ Cps *string
 
 Optional CPS URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#cps PkiSecretBackendRole#cps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#cps PkiSecretBackendRole#cps}
 
 ---
 
@@ -2699,7 +2744,7 @@ Notice *string
 
 Optional notice.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role#notice PkiSecretBackendRole#notice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role#notice PkiSecretBackendRole#notice}
 
 ---
 
@@ -2710,7 +2755,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRolePolicyIdentifierList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/pkisecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendrole"
 
 pkisecretbackendrole.NewPkiSecretBackendRolePolicyIdentifierList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PkiSecretBackendRolePolicyIdentifierList
 ```
@@ -2853,7 +2898,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRolePolicyIdentifierOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/pkisecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendrole"
 
 pkisecretbackendrole.NewPkiSecretBackendRolePolicyIdentifierOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PkiSecretBackendRolePolicyIdentifierOutputReference
 ```

@@ -1,6 +1,6 @@
 # `data_vault_kv_secrets_list`
 
-Refer to the Terraform Registory for docs: [`data_vault_kv_secrets_list`](https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/kv_secrets_list).
+Refer to the Terraform Registory for docs: [`data_vault_kv_secrets_list`](https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/data-sources/kv_secrets_list).
 
 # `dataVaultKvSecretsList` Submodule <a name="`dataVaultKvSecretsList` Submodule" id="@cdktf/provider-vault.dataVaultKvSecretsList"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_vault_kv_secrets_list`](https:
 
 ### DataVaultKvSecretsList <a name="DataVaultKvSecretsList" id="@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/kv_secrets_list vault_kv_secrets_list}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/data-sources/kv_secrets_list vault_kv_secrets_list}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/datavaultkvsecretslist"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultkvsecretslist"
 
 datavaultkvsecretslist.NewDataVaultKvSecretsList(scope Construct, id *string, config DataVaultKvSecretsListConfig) DataVaultKvSecretsList
 ```
@@ -284,7 +284,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/datavaultkvsecretslist"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultkvsecretslist"
 
 datavaultkvsecretslist.DataVaultKvSecretsList_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/datavaultkvsecretslist"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultkvsecretslist"
 
 datavaultkvsecretslist.DataVaultKvSecretsList_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ datavaultkvsecretslist.DataVaultKvSecretsList_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/datavaultkvsecretslist"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultkvsecretslist"
 
 datavaultkvsecretslist.DataVaultKvSecretsList_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsListConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/datavaultkvsecretslist"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultkvsecretslist"
 
 &datavaultkvsecretslist.DataVaultKvSecretsListConfig {
 	Connection: interface{},
@@ -612,7 +612,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/datavaultkvsecretslist
 | <code><a href="#@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsListConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsListConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsListConfig.property.path">Path</a></code> | <code>*string</code> | Full KV-V1 path where secrets will be listed. |
-| <code><a href="#@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsListConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/kv_secrets_list#id DataVaultKvSecretsList#id}. |
+| <code><a href="#@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsListConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/data-sources/kv_secrets_list#id DataVaultKvSecretsList#id}. |
 | <code><a href="#@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsListConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -697,7 +697,7 @@ Path *string
 
 Full KV-V1 path where secrets will be listed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/kv_secrets_list#path DataVaultKvSecretsList#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/data-sources/kv_secrets_list#path DataVaultKvSecretsList#path}
 
 ---
 
@@ -709,7 +709,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/kv_secrets_list#id DataVaultKvSecretsList#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/data-sources/kv_secrets_list#id DataVaultKvSecretsList#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -726,7 +726,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/kv_secrets_list#namespace DataVaultKvSecretsList#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/data-sources/kv_secrets_list#namespace DataVaultKvSecretsList#namespace}
 
 ---
 

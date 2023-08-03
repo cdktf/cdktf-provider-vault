@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_config_issuers
+// https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_config_issuers
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +10,23 @@ export interface PkiSecretBackendConfigIssuersConfig extends cdktf.TerraformMeta
   /**
   * Full path where PKI backend is mounted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_config_issuers#backend PkiSecretBackendConfigIssuers#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_config_issuers#backend PkiSecretBackendConfigIssuers#backend}
   */
   readonly backend: string;
   /**
   * Specifies the default issuer by ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_config_issuers#default PkiSecretBackendConfigIssuers#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_config_issuers#default PkiSecretBackendConfigIssuers#default}
   */
   readonly default?: string;
   /**
   * Specifies whether a root creation or an issuer import operation updates the default issuer to the newly added issuer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_config_issuers#default_follows_latest_issuer PkiSecretBackendConfigIssuers#default_follows_latest_issuer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_config_issuers#default_follows_latest_issuer PkiSecretBackendConfigIssuers#default_follows_latest_issuer}
   */
   readonly defaultFollowsLatestIssuer?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_config_issuers#id PkiSecretBackendConfigIssuers#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_config_issuers#id PkiSecretBackendConfigIssuers#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,13 +35,13 @@ export interface PkiSecretBackendConfigIssuersConfig extends cdktf.TerraformMeta
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_config_issuers#namespace PkiSecretBackendConfigIssuers#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_config_issuers#namespace PkiSecretBackendConfigIssuers#namespace}
   */
   readonly namespace?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_config_issuers vault_pki_secret_backend_config_issuers}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_config_issuers vault_pki_secret_backend_config_issuers}
 */
 export class PkiSecretBackendConfigIssuers extends cdktf.TerraformResource {
 
@@ -60,7 +55,7 @@ export class PkiSecretBackendConfigIssuers extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_config_issuers vault_pki_secret_backend_config_issuers} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_config_issuers vault_pki_secret_backend_config_issuers} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +66,7 @@ export class PkiSecretBackendConfigIssuers extends cdktf.TerraformResource {
       terraformResourceType: 'vault_pki_secret_backend_config_issuers',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.18.0',
+        providerVersion: '3.19.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
