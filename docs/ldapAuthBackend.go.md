@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.19
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/ldapauthbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/ldapauthbackend"
 
 ldapauthbackend.NewLdapAuthBackend(scope Construct, id *string, config LdapAuthBackendConfig) LdapAuthBackend
 ```
@@ -529,7 +529,7 @@ func ResetUseTokenGroups()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/ldapauthbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/ldapauthbackend"
 
 ldapauthbackend.LdapAuthBackend_IsConstruct(x interface{}) *bool
 ```
@@ -561,7 +561,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/ldapauthbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/ldapauthbackend"
 
 ldapauthbackend.LdapAuthBackend_IsTerraformElement(x interface{}) *bool
 ```
@@ -575,7 +575,7 @@ ldapauthbackend.LdapAuthBackend_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/ldapauthbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/ldapauthbackend"
 
 ldapauthbackend.LdapAuthBackend_IsTerraformResource(x interface{}) *bool
 ```
@@ -1621,7 +1621,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/ldapauthbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/ldapauthbackend"
 
 &ldapauthbackend.LdapAuthBackendConfig {
 	Connection: interface{},
