@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.19
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/nomadsecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/nomadsecretbackend"
 
 nomadsecretbackend.NewNomadSecretBackend(scope Construct, id *string, config NomadSecretBackendConfig) NomadSecretBackend
 ```
@@ -382,7 +382,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/nomadsecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/nomadsecretbackend"
 
 nomadsecretbackend.NomadSecretBackend_IsConstruct(x interface{}) *bool
 ```
@@ -414,7 +414,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/nomadsecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/nomadsecretbackend"
 
 nomadsecretbackend.NomadSecretBackend_IsTerraformElement(x interface{}) *bool
 ```
@@ -428,7 +428,7 @@ nomadsecretbackend.NomadSecretBackend_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/nomadsecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/nomadsecretbackend"
 
 nomadsecretbackend.NomadSecretBackend_IsTerraformResource(x interface{}) *bool
 ```
@@ -979,7 +979,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v9/nomadsecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/nomadsecretbackend"
 
 &nomadsecretbackend.NomadSecretBackendConfig {
 	Connection: interface{},
