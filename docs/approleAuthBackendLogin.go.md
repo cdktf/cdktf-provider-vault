@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.19
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.approleAuthBackendLogin.ApproleAuthBackendLogin.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/approleauthbackendlogin"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/approleauthbackendlogin"
 
 approleauthbackendlogin.NewApproleAuthBackendLogin(scope Construct, id *string, config ApproleAuthBackendLoginConfig) ApproleAuthBackendLogin
 ```
@@ -298,7 +298,7 @@ func ResetSecretId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.approleAuthBackendLogin.ApproleAuthBackendLogin.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/approleauthbackendlogin"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/approleauthbackendlogin"
 
 approleauthbackendlogin.ApproleAuthBackendLogin_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.approleAuthBackendLogin.ApproleAuthBackendLogin.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/approleauthbackendlogin"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/approleauthbackendlogin"
 
 approleauthbackendlogin.ApproleAuthBackendLogin_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ approleauthbackendlogin.ApproleAuthBackendLogin_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.approleAuthBackendLogin.ApproleAuthBackendLogin.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/approleauthbackendlogin"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/approleauthbackendlogin"
 
 approleauthbackendlogin.ApproleAuthBackendLogin_IsTerraformResource(x interface{}) *bool
 ```
@@ -730,7 +730,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.approleAuthBackendLogin.ApproleAuthBackendLoginConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/approleauthbackendlogin"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/approleauthbackendlogin"
 
 &approleauthbackendlogin.ApproleAuthBackendLoginConfig {
 	Connection: interface{},

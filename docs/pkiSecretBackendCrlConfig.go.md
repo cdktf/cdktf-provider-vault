@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.19
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendcrlconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/pkisecretbackendcrlconfig"
 
 pkisecretbackendcrlconfig.NewPkiSecretBackendCrlConfig(scope Construct, id *string, config PkiSecretBackendCrlConfigConfig) PkiSecretBackendCrlConfig
 ```
@@ -361,7 +361,7 @@ func ResetUnifiedCrlOnExistingPaths()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendcrlconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/pkisecretbackendcrlconfig"
 
 pkisecretbackendcrlconfig.PkiSecretBackendCrlConfig_IsConstruct(x interface{}) *bool
 ```
@@ -393,7 +393,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendcrlconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/pkisecretbackendcrlconfig"
 
 pkisecretbackendcrlconfig.PkiSecretBackendCrlConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -407,7 +407,7 @@ pkisecretbackendcrlconfig.PkiSecretBackendCrlConfig_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendcrlconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/pkisecretbackendcrlconfig"
 
 pkisecretbackendcrlconfig.PkiSecretBackendCrlConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -914,7 +914,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig.PkiSecretBackendCrlConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendcrlconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/pkisecretbackendcrlconfig"
 
 &pkisecretbackendcrlconfig.PkiSecretBackendCrlConfigConfig {
 	Connection: interface{},
