@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/terraform_cloud_secret_backend
+// https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/terraform_cloud_secret_backend
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,41 +15,41 @@ export interface TerraformCloudSecretBackendConfig extends cdktf.TerraformMetaAr
   /**
   * Specifies the address of the Terraform Cloud instance, provided as "host:port" like "127.0.0.1:8500".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/terraform_cloud_secret_backend#address TerraformCloudSecretBackend#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/terraform_cloud_secret_backend#address TerraformCloudSecretBackend#address}
   */
   readonly address?: string;
   /**
   * Unique name of the Vault Terraform Cloud mount to configure
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/terraform_cloud_secret_backend#backend TerraformCloudSecretBackend#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/terraform_cloud_secret_backend#backend TerraformCloudSecretBackend#backend}
   */
   readonly backend?: string;
   /**
   * Specifies the base path for the Terraform Cloud or Enterprise API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/terraform_cloud_secret_backend#base_path TerraformCloudSecretBackend#base_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/terraform_cloud_secret_backend#base_path TerraformCloudSecretBackend#base_path}
   */
   readonly basePath?: string;
   /**
   * Default lease duration for secrets in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/terraform_cloud_secret_backend#default_lease_ttl_seconds TerraformCloudSecretBackend#default_lease_ttl_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/terraform_cloud_secret_backend#default_lease_ttl_seconds TerraformCloudSecretBackend#default_lease_ttl_seconds}
   */
   readonly defaultLeaseTtlSeconds?: number;
   /**
   * Human-friendly description of the mount for the backend.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/terraform_cloud_secret_backend#description TerraformCloudSecretBackend#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/terraform_cloud_secret_backend#description TerraformCloudSecretBackend#description}
   */
   readonly description?: string;
   /**
   * If set, opts out of mount migration on path updates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/terraform_cloud_secret_backend#disable_remount TerraformCloudSecretBackend#disable_remount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/terraform_cloud_secret_backend#disable_remount TerraformCloudSecretBackend#disable_remount}
   */
   readonly disableRemount?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/terraform_cloud_secret_backend#id TerraformCloudSecretBackend#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/terraform_cloud_secret_backend#id TerraformCloudSecretBackend#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,25 +58,25 @@ export interface TerraformCloudSecretBackendConfig extends cdktf.TerraformMetaAr
   /**
   * Maximum possible lease duration for secrets in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/terraform_cloud_secret_backend#max_lease_ttl_seconds TerraformCloudSecretBackend#max_lease_ttl_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/terraform_cloud_secret_backend#max_lease_ttl_seconds TerraformCloudSecretBackend#max_lease_ttl_seconds}
   */
   readonly maxLeaseTtlSeconds?: number;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/terraform_cloud_secret_backend#namespace TerraformCloudSecretBackend#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/terraform_cloud_secret_backend#namespace TerraformCloudSecretBackend#namespace}
   */
   readonly namespace?: string;
   /**
   * Specifies the Terraform Cloud access token to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/terraform_cloud_secret_backend#token TerraformCloudSecretBackend#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/terraform_cloud_secret_backend#token TerraformCloudSecretBackend#token}
   */
   readonly token?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/terraform_cloud_secret_backend vault_terraform_cloud_secret_backend}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/terraform_cloud_secret_backend vault_terraform_cloud_secret_backend}
 */
 export class TerraformCloudSecretBackend extends cdktf.TerraformResource {
 
@@ -90,7 +90,7 @@ export class TerraformCloudSecretBackend extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/terraform_cloud_secret_backend vault_terraform_cloud_secret_backend} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/terraform_cloud_secret_backend vault_terraform_cloud_secret_backend} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -101,7 +101,7 @@ export class TerraformCloudSecretBackend extends cdktf.TerraformResource {
       terraformResourceType: 'vault_terraform_cloud_secret_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.19.0',
+        providerVersion: '3.20.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

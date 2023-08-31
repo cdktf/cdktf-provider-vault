@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/identity_mfa_pingid
+// https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/identity_mfa_pingid
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface IdentityMfaPingidConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/identity_mfa_pingid#id IdentityMfaPingid#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/identity_mfa_pingid#id IdentityMfaPingid#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,25 +22,25 @@ export interface IdentityMfaPingidConfig extends cdktf.TerraformMetaArguments {
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/identity_mfa_pingid#namespace IdentityMfaPingid#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/identity_mfa_pingid#namespace IdentityMfaPingid#namespace}
   */
   readonly namespace?: string;
   /**
   * A base64-encoded third-party settings contents as retrieved from PingID's configuration page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/identity_mfa_pingid#settings_file_base64 IdentityMfaPingid#settings_file_base64}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/identity_mfa_pingid#settings_file_base64 IdentityMfaPingid#settings_file_base64}
   */
   readonly settingsFileBase64: string;
   /**
   * A template string for mapping Identity names to MFA methods.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/identity_mfa_pingid#username_format IdentityMfaPingid#username_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/identity_mfa_pingid#username_format IdentityMfaPingid#username_format}
   */
   readonly usernameFormat?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/identity_mfa_pingid vault_identity_mfa_pingid}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/identity_mfa_pingid vault_identity_mfa_pingid}
 */
 export class IdentityMfaPingid extends cdktf.TerraformResource {
 
@@ -54,7 +54,7 @@ export class IdentityMfaPingid extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/identity_mfa_pingid vault_identity_mfa_pingid} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/identity_mfa_pingid vault_identity_mfa_pingid} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +65,7 @@ export class IdentityMfaPingid extends cdktf.TerraformResource {
       terraformResourceType: 'vault_identity_mfa_pingid',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.19.0',
+        providerVersion: '3.20.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

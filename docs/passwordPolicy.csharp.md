@@ -1,6 +1,6 @@
 # `vault_password_policy`
 
-Refer to the Terraform Registory for docs: [`vault_password_policy`](https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/password_policy).
+Refer to the Terraform Registory for docs: [`vault_password_policy`](https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/password_policy).
 
 # `passwordPolicy` Submodule <a name="`passwordPolicy` Submodule" id="@cdktf/provider-vault.passwordPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_password_policy`](https://reg
 
 ### PasswordPolicy <a name="PasswordPolicy" id="@cdktf/provider-vault.passwordPolicy.PasswordPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/password_policy vault_password_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/password_policy vault_password_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.passwordPolicy.PasswordPolicy.Initializer"></a>
 
@@ -647,7 +647,7 @@ new PasswordPolicyConfig {
 | <code><a href="#@cdktf/provider-vault.passwordPolicy.PasswordPolicyConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.passwordPolicy.PasswordPolicyConfig.property.name">Name</a></code> | <code>string</code> | Name of the password policy. |
 | <code><a href="#@cdktf/provider-vault.passwordPolicy.PasswordPolicyConfig.property.policy">Policy</a></code> | <code>string</code> | The password policy document. |
-| <code><a href="#@cdktf/provider-vault.passwordPolicy.PasswordPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/password_policy#id PasswordPolicy#id}. |
+| <code><a href="#@cdktf/provider-vault.passwordPolicy.PasswordPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/password_policy#id PasswordPolicy#id}. |
 | <code><a href="#@cdktf/provider-vault.passwordPolicy.PasswordPolicyConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -732,7 +732,7 @@ public string Name { get; set; }
 
 Name of the password policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/password_policy#name PasswordPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/password_policy#name PasswordPolicy#name}
 
 ---
 
@@ -746,7 +746,7 @@ public string Policy { get; set; }
 
 The password policy document.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/password_policy#policy PasswordPolicy#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/password_policy#policy PasswordPolicy#policy}
 
 ---
 
@@ -758,7 +758,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/password_policy#id PasswordPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/password_policy#id PasswordPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -775,7 +775,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/password_policy#namespace PasswordPolicy#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/password_policy#namespace PasswordPolicy#namespace}
 
 ---
 

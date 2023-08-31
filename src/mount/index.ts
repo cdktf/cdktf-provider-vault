@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/mount
+// https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/mount
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,41 +15,41 @@ export interface MountConfig extends cdktf.TerraformMetaArguments {
   /**
   * List of managed key registry entry names that the mount in question is allowed to access
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/mount#allowed_managed_keys Mount#allowed_managed_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/mount#allowed_managed_keys Mount#allowed_managed_keys}
   */
   readonly allowedManagedKeys?: string[];
   /**
   * Specifies the list of keys that will not be HMAC'd by audit devices in the request data object.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/mount#audit_non_hmac_request_keys Mount#audit_non_hmac_request_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/mount#audit_non_hmac_request_keys Mount#audit_non_hmac_request_keys}
   */
   readonly auditNonHmacRequestKeys?: string[];
   /**
   * Specifies the list of keys that will not be HMAC'd by audit devices in the response data object.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/mount#audit_non_hmac_response_keys Mount#audit_non_hmac_response_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/mount#audit_non_hmac_response_keys Mount#audit_non_hmac_response_keys}
   */
   readonly auditNonHmacResponseKeys?: string[];
   /**
   * Default lease duration for tokens and secrets in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/mount#default_lease_ttl_seconds Mount#default_lease_ttl_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/mount#default_lease_ttl_seconds Mount#default_lease_ttl_seconds}
   */
   readonly defaultLeaseTtlSeconds?: number;
   /**
   * Human-friendly description of the mount
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/mount#description Mount#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/mount#description Mount#description}
   */
   readonly description?: string;
   /**
   * Enable the secrets engine to access Vault's external entropy source
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/mount#external_entropy_access Mount#external_entropy_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/mount#external_entropy_access Mount#external_entropy_access}
   */
   readonly externalEntropyAccess?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/mount#id Mount#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/mount#id Mount#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,49 +58,49 @@ export interface MountConfig extends cdktf.TerraformMetaArguments {
   /**
   * Local mount flag that can be explicitly set to true to enforce local mount in HA environment
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/mount#local Mount#local}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/mount#local Mount#local}
   */
   readonly local?: boolean | cdktf.IResolvable;
   /**
   * Maximum possible lease duration for tokens and secrets in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/mount#max_lease_ttl_seconds Mount#max_lease_ttl_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/mount#max_lease_ttl_seconds Mount#max_lease_ttl_seconds}
   */
   readonly maxLeaseTtlSeconds?: number;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/mount#namespace Mount#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/mount#namespace Mount#namespace}
   */
   readonly namespace?: string;
   /**
   * Specifies mount type specific options that are passed to the backend
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/mount#options Mount#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/mount#options Mount#options}
   */
   readonly options?: { [key: string]: string };
   /**
   * Where the secret backend will be mounted
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/mount#path Mount#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/mount#path Mount#path}
   */
   readonly path: string;
   /**
   * Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/mount#seal_wrap Mount#seal_wrap}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/mount#seal_wrap Mount#seal_wrap}
   */
   readonly sealWrap?: boolean | cdktf.IResolvable;
   /**
   * Type of the backend, such as 'aws'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/mount#type Mount#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/mount#type Mount#type}
   */
   readonly type: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/mount vault_mount}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/mount vault_mount}
 */
 export class Mount extends cdktf.TerraformResource {
 
@@ -114,7 +114,7 @@ export class Mount extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/mount vault_mount} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/mount vault_mount} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -125,7 +125,7 @@ export class Mount extends cdktf.TerraformResource {
       terraformResourceType: 'vault_mount',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.19.0',
+        providerVersion: '3.20.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

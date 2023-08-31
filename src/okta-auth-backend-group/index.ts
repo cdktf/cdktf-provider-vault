@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/okta_auth_backend_group
+// https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/okta_auth_backend_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface OktaAuthBackendGroupAConfig extends cdktf.TerraformMetaArgument
   /**
   * Name of the Okta group
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/okta_auth_backend_group#group_name OktaAuthBackendGroupA#group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/okta_auth_backend_group#group_name OktaAuthBackendGroupA#group_name}
   */
   readonly groupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/okta_auth_backend_group#id OktaAuthBackendGroupA#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/okta_auth_backend_group#id OktaAuthBackendGroupA#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,25 +28,25 @@ export interface OktaAuthBackendGroupAConfig extends cdktf.TerraformMetaArgument
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/okta_auth_backend_group#namespace OktaAuthBackendGroupA#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/okta_auth_backend_group#namespace OktaAuthBackendGroupA#namespace}
   */
   readonly namespace?: string;
   /**
   * Path to the Okta auth backend
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/okta_auth_backend_group#path OktaAuthBackendGroupA#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/okta_auth_backend_group#path OktaAuthBackendGroupA#path}
   */
   readonly path: string;
   /**
   * Policies to associate with this group
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/okta_auth_backend_group#policies OktaAuthBackendGroupA#policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/okta_auth_backend_group#policies OktaAuthBackendGroupA#policies}
   */
   readonly policies?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/okta_auth_backend_group vault_okta_auth_backend_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/okta_auth_backend_group vault_okta_auth_backend_group}
 */
 export class OktaAuthBackendGroupA extends cdktf.TerraformResource {
 
@@ -60,7 +60,7 @@ export class OktaAuthBackendGroupA extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/okta_auth_backend_group vault_okta_auth_backend_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/okta_auth_backend_group vault_okta_auth_backend_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,7 @@ export class OktaAuthBackendGroupA extends cdktf.TerraformResource {
       terraformResourceType: 'vault_okta_auth_backend_group',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.19.0',
+        providerVersion: '3.20.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

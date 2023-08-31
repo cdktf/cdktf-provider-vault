@@ -1,6 +1,6 @@
 # `vault_aws_auth_backend_client`
 
-Refer to the Terraform Registory for docs: [`vault_aws_auth_backend_client`](https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/aws_auth_backend_client).
+Refer to the Terraform Registory for docs: [`vault_aws_auth_backend_client`](https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/aws_auth_backend_client).
 
 # `awsAuthBackendClient` Submodule <a name="`awsAuthBackendClient` Submodule" id="@cdktf/provider-vault.awsAuthBackendClient"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_aws_auth_backend_client`](htt
 
 ### AwsAuthBackendClient <a name="AwsAuthBackendClient" id="@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.Initializer"></a>
 
@@ -80,6 +80,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.resetSecretKey">ResetSecretKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.resetStsEndpoint">ResetStsEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.resetStsRegion">ResetStsRegion</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.resetUseStsRegionFromClient">ResetUseStsRegionFromClient</a></code> | *No description.* |
 
 ---
 
@@ -327,6 +328,12 @@ func ResetStsEndpoint()
 func ResetStsRegion()
 ```
 
+##### `ResetUseStsRegionFromClient` <a name="ResetUseStsRegionFromClient" id="@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.resetUseStsRegionFromClient"></a>
+
+```go
+func ResetUseStsRegionFromClient()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -425,6 +432,7 @@ awsauthbackendclient.AwsAuthBackendClient_IsTerraformResource(x interface{}) *bo
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.property.secretKeyInput">SecretKeyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.property.stsEndpointInput">StsEndpointInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.property.stsRegionInput">StsRegionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.property.useStsRegionFromClientInput">UseStsRegionFromClientInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.property.accessKey">AccessKey</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.property.backend">Backend</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.property.ec2Endpoint">Ec2Endpoint</a></code> | <code>*string</code> | *No description.* |
@@ -435,6 +443,7 @@ awsauthbackendclient.AwsAuthBackendClient_IsTerraformResource(x interface{}) *bo
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.property.secretKey">SecretKey</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.property.stsEndpoint">StsEndpoint</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.property.stsRegion">StsRegion</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.property.useStsRegionFromClient">UseStsRegionFromClient</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
@@ -680,6 +689,16 @@ func StsRegionInput() *string
 
 ---
 
+##### `UseStsRegionFromClientInput`<sup>Optional</sup> <a name="UseStsRegionFromClientInput" id="@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.property.useStsRegionFromClientInput"></a>
+
+```go
+func UseStsRegionFromClientInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `AccessKey`<sup>Required</sup> <a name="AccessKey" id="@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.property.accessKey"></a>
 
 ```go
@@ -780,6 +799,16 @@ func StsRegion() *string
 
 ---
 
+##### `UseStsRegionFromClient`<sup>Required</sup> <a name="UseStsRegionFromClient" id="@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.property.useStsRegionFromClient"></a>
+
+```go
+func UseStsRegionFromClient() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -825,6 +854,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/awsauthbackendclient"
 	SecretKey: *string,
 	StsEndpoint: *string,
 	StsRegion: *string,
+	UseStsRegionFromClient: interface{},
 }
 ```
 
@@ -844,11 +874,12 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/awsauthbackendclient"
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClientConfig.property.ec2Endpoint">Ec2Endpoint</a></code> | <code>*string</code> | URL to override the default generated endpoint for making AWS EC2 API calls. |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClientConfig.property.iamEndpoint">IamEndpoint</a></code> | <code>*string</code> | URL to override the default generated endpoint for making AWS IAM API calls. |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClientConfig.property.iamServerIdHeaderValue">IamServerIdHeaderValue</a></code> | <code>*string</code> | The value to require in the X-Vault-AWS-IAM-Server-ID header as part of GetCallerIdentity requests that are used in the iam auth method. |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClientConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/aws_auth_backend_client#id AwsAuthBackendClient#id}. |
+| <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClientConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/aws_auth_backend_client#id AwsAuthBackendClient#id}. |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClientConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClientConfig.property.secretKey">SecretKey</a></code> | <code>*string</code> | AWS Secret key with permissions to query AWS APIs. |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClientConfig.property.stsEndpoint">StsEndpoint</a></code> | <code>*string</code> | URL to override the default generated endpoint for making AWS STS API calls. |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClientConfig.property.stsRegion">StsRegion</a></code> | <code>*string</code> | Region to override the default region for making AWS STS API calls. |
+| <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClientConfig.property.useStsRegionFromClient">UseStsRegionFromClient</a></code> | <code>interface{}</code> | If set, will override sts_region and use the region from the client request's header. |
 
 ---
 
@@ -932,7 +963,7 @@ AccessKey *string
 
 AWS Access key with permissions to query AWS APIs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/aws_auth_backend_client#access_key AwsAuthBackendClient#access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/aws_auth_backend_client#access_key AwsAuthBackendClient#access_key}
 
 ---
 
@@ -946,7 +977,7 @@ Backend *string
 
 Unique name of the auth backend to configure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/aws_auth_backend_client#backend AwsAuthBackendClient#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/aws_auth_backend_client#backend AwsAuthBackendClient#backend}
 
 ---
 
@@ -960,7 +991,7 @@ Ec2Endpoint *string
 
 URL to override the default generated endpoint for making AWS EC2 API calls.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/aws_auth_backend_client#ec2_endpoint AwsAuthBackendClient#ec2_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/aws_auth_backend_client#ec2_endpoint AwsAuthBackendClient#ec2_endpoint}
 
 ---
 
@@ -974,7 +1005,7 @@ IamEndpoint *string
 
 URL to override the default generated endpoint for making AWS IAM API calls.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/aws_auth_backend_client#iam_endpoint AwsAuthBackendClient#iam_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/aws_auth_backend_client#iam_endpoint AwsAuthBackendClient#iam_endpoint}
 
 ---
 
@@ -988,7 +1019,7 @@ IamServerIdHeaderValue *string
 
 The value to require in the X-Vault-AWS-IAM-Server-ID header as part of GetCallerIdentity requests that are used in the iam auth method.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/aws_auth_backend_client#iam_server_id_header_value AwsAuthBackendClient#iam_server_id_header_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/aws_auth_backend_client#iam_server_id_header_value AwsAuthBackendClient#iam_server_id_header_value}
 
 ---
 
@@ -1000,7 +1031,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/aws_auth_backend_client#id AwsAuthBackendClient#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/aws_auth_backend_client#id AwsAuthBackendClient#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1017,7 +1048,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/aws_auth_backend_client#namespace AwsAuthBackendClient#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/aws_auth_backend_client#namespace AwsAuthBackendClient#namespace}
 
 ---
 
@@ -1031,7 +1062,7 @@ SecretKey *string
 
 AWS Secret key with permissions to query AWS APIs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/aws_auth_backend_client#secret_key AwsAuthBackendClient#secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/aws_auth_backend_client#secret_key AwsAuthBackendClient#secret_key}
 
 ---
 
@@ -1045,7 +1076,7 @@ StsEndpoint *string
 
 URL to override the default generated endpoint for making AWS STS API calls.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/aws_auth_backend_client#sts_endpoint AwsAuthBackendClient#sts_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/aws_auth_backend_client#sts_endpoint AwsAuthBackendClient#sts_endpoint}
 
 ---
 
@@ -1059,7 +1090,21 @@ StsRegion *string
 
 Region to override the default region for making AWS STS API calls.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/aws_auth_backend_client#sts_region AwsAuthBackendClient#sts_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/aws_auth_backend_client#sts_region AwsAuthBackendClient#sts_region}
+
+---
+
+##### `UseStsRegionFromClient`<sup>Optional</sup> <a name="UseStsRegionFromClient" id="@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClientConfig.property.useStsRegionFromClient"></a>
+
+```go
+UseStsRegionFromClient interface{}
+```
+
+- *Type:* interface{}
+
+If set, will override sts_region and use the region from the client request's header.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/aws_auth_backend_client#use_sts_region_from_client AwsAuthBackendClient#use_sts_region_from_client}
 
 ---
 

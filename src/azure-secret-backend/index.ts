@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/azure_secret_backend
+// https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/azure_secret_backend
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,35 +15,35 @@ export interface AzureSecretBackendConfig extends cdktf.TerraformMetaArguments {
   /**
   * The client id for credentials to query the Azure APIs. Currently read permissions to query compute resources are required.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/azure_secret_backend#client_id AzureSecretBackend#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/azure_secret_backend#client_id AzureSecretBackend#client_id}
   */
   readonly clientId?: string;
   /**
   * The client secret for credentials to query the Azure APIs
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/azure_secret_backend#client_secret AzureSecretBackend#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/azure_secret_backend#client_secret AzureSecretBackend#client_secret}
   */
   readonly clientSecret?: string;
   /**
   * Human-friendly description of the mount for the backend.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/azure_secret_backend#description AzureSecretBackend#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/azure_secret_backend#description AzureSecretBackend#description}
   */
   readonly description?: string;
   /**
   * If set, opts out of mount migration on path updates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/azure_secret_backend#disable_remount AzureSecretBackend#disable_remount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/azure_secret_backend#disable_remount AzureSecretBackend#disable_remount}
   */
   readonly disableRemount?: boolean | cdktf.IResolvable;
   /**
   * The Azure cloud environment. Valid values: AzurePublicCloud, AzureUSGovernmentCloud, AzureChinaCloud, AzureGermanCloud.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/azure_secret_backend#environment AzureSecretBackend#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/azure_secret_backend#environment AzureSecretBackend#environment}
   */
   readonly environment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/azure_secret_backend#id AzureSecretBackend#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/azure_secret_backend#id AzureSecretBackend#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -52,37 +52,37 @@ export interface AzureSecretBackendConfig extends cdktf.TerraformMetaArguments {
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/azure_secret_backend#namespace AzureSecretBackend#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/azure_secret_backend#namespace AzureSecretBackend#namespace}
   */
   readonly namespace?: string;
   /**
   * Path to mount the backend at.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/azure_secret_backend#path AzureSecretBackend#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/azure_secret_backend#path AzureSecretBackend#path}
   */
   readonly path?: string;
   /**
   * The subscription id for the Azure Active Directory.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/azure_secret_backend#subscription_id AzureSecretBackend#subscription_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/azure_secret_backend#subscription_id AzureSecretBackend#subscription_id}
   */
   readonly subscriptionId: string;
   /**
   * The tenant id for the Azure Active Directory organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/azure_secret_backend#tenant_id AzureSecretBackend#tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/azure_secret_backend#tenant_id AzureSecretBackend#tenant_id}
   */
   readonly tenantId: string;
   /**
   * Use the Microsoft Graph API. Should be set to true on vault-1.10+
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/azure_secret_backend#use_microsoft_graph_api AzureSecretBackend#use_microsoft_graph_api}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/azure_secret_backend#use_microsoft_graph_api AzureSecretBackend#use_microsoft_graph_api}
   */
   readonly useMicrosoftGraphApi?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/azure_secret_backend vault_azure_secret_backend}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/azure_secret_backend vault_azure_secret_backend}
 */
 export class AzureSecretBackend extends cdktf.TerraformResource {
 
@@ -96,7 +96,7 @@ export class AzureSecretBackend extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/azure_secret_backend vault_azure_secret_backend} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/azure_secret_backend vault_azure_secret_backend} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -107,7 +107,7 @@ export class AzureSecretBackend extends cdktf.TerraformResource {
       terraformResourceType: 'vault_azure_secret_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.19.0',
+        providerVersion: '3.20.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
