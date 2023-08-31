@@ -1,6 +1,6 @@
 # `vault_mfa_totp`
 
-Refer to the Terraform Registory for docs: [`vault_mfa_totp`](https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/mfa_totp).
+Refer to the Terraform Registory for docs: [`vault_mfa_totp`](https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/mfa_totp).
 
 # `mfaTotp` Submodule <a name="`mfaTotp` Submodule" id="@cdktf/provider-vault.mfaTotp"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_mfa_totp`](https://registry.t
 
 ### MfaTotp <a name="MfaTotp" id="@cdktf/provider-vault.mfaTotp.MfaTotp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/mfa_totp vault_mfa_totp}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/mfa_totp vault_mfa_totp}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.mfaTotp.MfaTotp.Initializer"></a>
 
@@ -900,7 +900,7 @@ public readonly issuer: string;
 
 The name of the key's issuing organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/mfa_totp#issuer MfaTotp#issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/mfa_totp#issuer MfaTotp#issuer}
 
 ---
 
@@ -914,7 +914,7 @@ public readonly name: string;
 
 Name of the MFA method.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/mfa_totp#name MfaTotp#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/mfa_totp#name MfaTotp#name}
 
 ---
 
@@ -928,7 +928,7 @@ public readonly algorithm: string;
 
 Specifies the hashing algorithm used to generate the TOTP code. Options include 'SHA1', 'SHA256' and 'SHA512'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/mfa_totp#algorithm MfaTotp#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/mfa_totp#algorithm MfaTotp#algorithm}
 
 ---
 
@@ -942,7 +942,7 @@ public readonly digits: number;
 
 The number of digits in the generated TOTP token. This value can either be 6 or 8.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/mfa_totp#digits MfaTotp#digits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/mfa_totp#digits MfaTotp#digits}
 
 ---
 
@@ -956,7 +956,7 @@ public readonly id: string;
 
 ID computed by Vault.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/mfa_totp#id MfaTotp#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/mfa_totp#id MfaTotp#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -973,7 +973,7 @@ public readonly keySize: number;
 
 Specifies the size in bytes of the generated key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/mfa_totp#key_size MfaTotp#key_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/mfa_totp#key_size MfaTotp#key_size}
 
 ---
 
@@ -987,7 +987,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/mfa_totp#namespace MfaTotp#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/mfa_totp#namespace MfaTotp#namespace}
 
 ---
 
@@ -1001,7 +1001,7 @@ public readonly period: number;
 
 The length of time used to generate a counter for the TOTP token calculation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/mfa_totp#period MfaTotp#period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/mfa_totp#period MfaTotp#period}
 
 ---
 
@@ -1015,7 +1015,7 @@ public readonly qrSize: number;
 
 The pixel size of the generated square QR code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/mfa_totp#qr_size MfaTotp#qr_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/mfa_totp#qr_size MfaTotp#qr_size}
 
 ---
 
@@ -1031,7 +1031,7 @@ The number of delay periods that are allowed when validating a TOTP token.
 
 This value can either be 0 or 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/mfa_totp#skew MfaTotp#skew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/mfa_totp#skew MfaTotp#skew}
 
 ---
 
