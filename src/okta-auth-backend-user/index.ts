@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/okta_auth_backend_user
+// https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/okta_auth_backend_user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface OktaAuthBackendUserAConfig extends cdktf.TerraformMetaArguments
   /**
   * Groups within the Okta auth backend to associate with this user
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/okta_auth_backend_user#groups OktaAuthBackendUserA#groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/okta_auth_backend_user#groups OktaAuthBackendUserA#groups}
   */
   readonly groups?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/okta_auth_backend_user#id OktaAuthBackendUserA#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/okta_auth_backend_user#id OktaAuthBackendUserA#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,31 +28,31 @@ export interface OktaAuthBackendUserAConfig extends cdktf.TerraformMetaArguments
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/okta_auth_backend_user#namespace OktaAuthBackendUserA#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/okta_auth_backend_user#namespace OktaAuthBackendUserA#namespace}
   */
   readonly namespace?: string;
   /**
   * Path to the Okta auth backend
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/okta_auth_backend_user#path OktaAuthBackendUserA#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/okta_auth_backend_user#path OktaAuthBackendUserA#path}
   */
   readonly path: string;
   /**
   * Policies to associate with this user
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/okta_auth_backend_user#policies OktaAuthBackendUserA#policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/okta_auth_backend_user#policies OktaAuthBackendUserA#policies}
   */
   readonly policies?: string[];
   /**
   * Name of the user within Okta
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/okta_auth_backend_user#username OktaAuthBackendUserA#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/okta_auth_backend_user#username OktaAuthBackendUserA#username}
   */
   readonly username: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/okta_auth_backend_user vault_okta_auth_backend_user}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/okta_auth_backend_user vault_okta_auth_backend_user}
 */
 export class OktaAuthBackendUserA extends cdktf.TerraformResource {
 
@@ -66,7 +66,7 @@ export class OktaAuthBackendUserA extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/okta_auth_backend_user vault_okta_auth_backend_user} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/okta_auth_backend_user vault_okta_auth_backend_user} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +77,7 @@ export class OktaAuthBackendUserA extends cdktf.TerraformResource {
       terraformResourceType: 'vault_okta_auth_backend_user',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.20.0',
+        providerVersion: '3.20.1',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

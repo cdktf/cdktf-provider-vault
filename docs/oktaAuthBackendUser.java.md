@@ -1,6 +1,6 @@
 # `vault_okta_auth_backend_user`
 
-Refer to the Terraform Registory for docs: [`vault_okta_auth_backend_user`](https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/okta_auth_backend_user).
+Refer to the Terraform Registory for docs: [`vault_okta_auth_backend_user`](https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/okta_auth_backend_user).
 
 # `oktaAuthBackendUser` Submodule <a name="`oktaAuthBackendUser` Submodule" id="@cdktf/provider-vault.oktaAuthBackendUser"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_okta_auth_backend_user`](http
 
 ### OktaAuthBackendUserA <a name="OktaAuthBackendUserA" id="@cdktf/provider-vault.oktaAuthBackendUser.OktaAuthBackendUserA"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/okta_auth_backend_user vault_okta_auth_backend_user}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/okta_auth_backend_user vault_okta_auth_backend_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.oktaAuthBackendUser.OktaAuthBackendUserA.Initializer"></a>
 
@@ -50,7 +50,7 @@ OktaAuthBackendUserA.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackendUser.OktaAuthBackendUserA.Initializer.parameter.path">path</a></code> | <code>java.lang.String</code> | Path to the Okta auth backend. |
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackendUser.OktaAuthBackendUserA.Initializer.parameter.username">username</a></code> | <code>java.lang.String</code> | Name of the user within Okta. |
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackendUser.OktaAuthBackendUserA.Initializer.parameter.groups">groups</a></code> | <code>java.util.List<java.lang.String></code> | Groups within the Okta auth backend to associate with this user. |
-| <code><a href="#@cdktf/provider-vault.oktaAuthBackendUser.OktaAuthBackendUserA.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/okta_auth_backend_user#id OktaAuthBackendUserA#id}. |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackendUser.OktaAuthBackendUserA.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/okta_auth_backend_user#id OktaAuthBackendUserA#id}. |
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackendUser.OktaAuthBackendUserA.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackendUser.OktaAuthBackendUserA.Initializer.parameter.policies">policies</a></code> | <code>java.util.List<java.lang.String></code> | Policies to associate with this user. |
 
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 Path to the Okta auth backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/okta_auth_backend_user#path OktaAuthBackendUserA#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/okta_auth_backend_user#path OktaAuthBackendUserA#path}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the user within Okta.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/okta_auth_backend_user#username OktaAuthBackendUserA#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/okta_auth_backend_user#username OktaAuthBackendUserA#username}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Groups within the Okta auth backend to associate with this user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/okta_auth_backend_user#groups OktaAuthBackendUserA#groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/okta_auth_backend_user#groups OktaAuthBackendUserA#groups}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/okta_auth_backend_user#id OktaAuthBackendUserA#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/okta_auth_backend_user#id OktaAuthBackendUserA#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -163,7 +163,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/okta_auth_backend_user#namespace OktaAuthBackendUserA#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/okta_auth_backend_user#namespace OktaAuthBackendUserA#namespace}
 
 ---
 
@@ -173,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Policies to associate with this user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/okta_auth_backend_user#policies OktaAuthBackendUserA#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/okta_auth_backend_user#policies OktaAuthBackendUserA#policies}
 
 ---
 
@@ -839,7 +839,7 @@ OktaAuthBackendUserAConfig.builder()
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackendUser.OktaAuthBackendUserAConfig.property.path">path</a></code> | <code>java.lang.String</code> | Path to the Okta auth backend. |
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackendUser.OktaAuthBackendUserAConfig.property.username">username</a></code> | <code>java.lang.String</code> | Name of the user within Okta. |
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackendUser.OktaAuthBackendUserAConfig.property.groups">groups</a></code> | <code>java.util.List<java.lang.String></code> | Groups within the Okta auth backend to associate with this user. |
-| <code><a href="#@cdktf/provider-vault.oktaAuthBackendUser.OktaAuthBackendUserAConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/okta_auth_backend_user#id OktaAuthBackendUserA#id}. |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackendUser.OktaAuthBackendUserAConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/okta_auth_backend_user#id OktaAuthBackendUserA#id}. |
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackendUser.OktaAuthBackendUserAConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackendUser.OktaAuthBackendUserAConfig.property.policies">policies</a></code> | <code>java.util.List<java.lang.String></code> | Policies to associate with this user. |
 
@@ -925,7 +925,7 @@ public java.lang.String getPath();
 
 Path to the Okta auth backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/okta_auth_backend_user#path OktaAuthBackendUserA#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/okta_auth_backend_user#path OktaAuthBackendUserA#path}
 
 ---
 
@@ -939,7 +939,7 @@ public java.lang.String getUsername();
 
 Name of the user within Okta.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/okta_auth_backend_user#username OktaAuthBackendUserA#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/okta_auth_backend_user#username OktaAuthBackendUserA#username}
 
 ---
 
@@ -953,7 +953,7 @@ public java.util.List<java.lang.String> getGroups();
 
 Groups within the Okta auth backend to associate with this user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/okta_auth_backend_user#groups OktaAuthBackendUserA#groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/okta_auth_backend_user#groups OktaAuthBackendUserA#groups}
 
 ---
 
@@ -965,7 +965,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/okta_auth_backend_user#id OktaAuthBackendUserA#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/okta_auth_backend_user#id OktaAuthBackendUserA#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -982,7 +982,7 @@ public java.lang.String getNamespace();
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/okta_auth_backend_user#namespace OktaAuthBackendUserA#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/okta_auth_backend_user#namespace OktaAuthBackendUserA#namespace}
 
 ---
 
@@ -996,7 +996,7 @@ public java.util.List<java.lang.String> getPolicies();
 
 Policies to associate with this user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/okta_auth_backend_user#policies OktaAuthBackendUserA#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/okta_auth_backend_user#policies OktaAuthBackendUserA#policies}
 
 ---
 

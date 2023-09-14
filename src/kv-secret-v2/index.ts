@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/kv_secret_v2
+// https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/kv_secret_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +15,29 @@ export interface KvSecretV2Config extends cdktf.TerraformMetaArguments {
   /**
   * This flag is required if cas_required is set to true on either the secret or the engine's config. In order for a write to be successful, cas must be set to the current version of the secret.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/kv_secret_v2#cas KvSecretV2#cas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/kv_secret_v2#cas KvSecretV2#cas}
   */
   readonly cas?: number;
   /**
   * JSON-encoded secret data to write.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/kv_secret_v2#data_json KvSecretV2#data_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/kv_secret_v2#data_json KvSecretV2#data_json}
   */
   readonly dataJson: string;
   /**
   * If set to true, permanently deletes all versions for the specified key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/kv_secret_v2#delete_all_versions KvSecretV2#delete_all_versions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/kv_secret_v2#delete_all_versions KvSecretV2#delete_all_versions}
   */
   readonly deleteAllVersions?: boolean | cdktf.IResolvable;
   /**
   * If set to true, disables reading secret from Vault; note: drift won't be detected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/kv_secret_v2#disable_read KvSecretV2#disable_read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/kv_secret_v2#disable_read KvSecretV2#disable_read}
   */
   readonly disableRead?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/kv_secret_v2#id KvSecretV2#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/kv_secret_v2#id KvSecretV2#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,31 +46,31 @@ export interface KvSecretV2Config extends cdktf.TerraformMetaArguments {
   /**
   * Path where KV-V2 engine is mounted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/kv_secret_v2#mount KvSecretV2#mount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/kv_secret_v2#mount KvSecretV2#mount}
   */
   readonly mount: string;
   /**
   * Full name of the secret. For a nested secret, the name is the nested path excluding the mount and data prefix. For example, for a secret at 'kvv2/data/foo/bar/baz', the name is 'foo/bar/baz'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/kv_secret_v2#name KvSecretV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/kv_secret_v2#name KvSecretV2#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/kv_secret_v2#namespace KvSecretV2#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/kv_secret_v2#namespace KvSecretV2#namespace}
   */
   readonly namespace?: string;
   /**
   * An object that holds option settings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/kv_secret_v2#options KvSecretV2#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/kv_secret_v2#options KvSecretV2#options}
   */
   readonly options?: { [key: string]: string };
   /**
   * custom_metadata block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/kv_secret_v2#custom_metadata KvSecretV2#custom_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/kv_secret_v2#custom_metadata KvSecretV2#custom_metadata}
   */
   readonly customMetadata?: KvSecretV2CustomMetadata;
 }
@@ -78,25 +78,25 @@ export interface KvSecretV2CustomMetadata {
   /**
   * If true, all keys will require the cas parameter to be set on all write requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/kv_secret_v2#cas_required KvSecretV2#cas_required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/kv_secret_v2#cas_required KvSecretV2#cas_required}
   */
   readonly casRequired?: boolean | cdktf.IResolvable;
   /**
   * A map of arbitrary string to string valued user-provided metadata meant to describe the secret.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/kv_secret_v2#data KvSecretV2#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/kv_secret_v2#data KvSecretV2#data}
   */
   readonly data?: { [key: string]: string };
   /**
   * If set, specifies the length of time before a version is deleted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/kv_secret_v2#delete_version_after KvSecretV2#delete_version_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/kv_secret_v2#delete_version_after KvSecretV2#delete_version_after}
   */
   readonly deleteVersionAfter?: number;
   /**
   * The number of versions to keep per key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/kv_secret_v2#max_versions KvSecretV2#max_versions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/kv_secret_v2#max_versions KvSecretV2#max_versions}
   */
   readonly maxVersions?: number;
 }
@@ -230,7 +230,7 @@ export class KvSecretV2CustomMetadataOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/kv_secret_v2 vault_kv_secret_v2}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/kv_secret_v2 vault_kv_secret_v2}
 */
 export class KvSecretV2 extends cdktf.TerraformResource {
 
@@ -244,7 +244,7 @@ export class KvSecretV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/kv_secret_v2 vault_kv_secret_v2} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/kv_secret_v2 vault_kv_secret_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -255,7 +255,7 @@ export class KvSecretV2 extends cdktf.TerraformResource {
       terraformResourceType: 'vault_kv_secret_v2',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.20.0',
+        providerVersion: '3.20.1',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

@@ -1,6 +1,6 @@
 # `vault_identity_mfa_totp`
 
-Refer to the Terraform Registory for docs: [`vault_identity_mfa_totp`](https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/identity_mfa_totp).
+Refer to the Terraform Registory for docs: [`vault_identity_mfa_totp`](https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_mfa_totp).
 
 # `identityMfaTotp` Submodule <a name="`identityMfaTotp` Submodule" id="@cdktf/provider-vault.identityMfaTotp"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_identity_mfa_totp`](https://r
 
 ### IdentityMfaTotp <a name="IdentityMfaTotp" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/identity_mfa_totp vault_identity_mfa_totp}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_mfa_totp vault_identity_mfa_totp}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.Initializer"></a>
 
@@ -912,7 +912,7 @@ new IdentityMfaTotpConfig {
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.issuer">Issuer</a></code> | <code>string</code> | The name of the key's issuing organization. |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.algorithm">Algorithm</a></code> | <code>string</code> | Specifies the hashing algorithm used to generate the TOTP code. Options include SHA1, SHA256, SHA512. |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.digits">Digits</a></code> | <code>double</code> | The number of digits in the generated TOTP token. This value can either be 6 or 8. |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/identity_mfa_totp#id IdentityMfaTotp#id}. |
+| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_mfa_totp#id IdentityMfaTotp#id}. |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.keySize">KeySize</a></code> | <code>double</code> | Specifies the size in bytes of the generated key. |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.maxValidationAttempts">MaxValidationAttempts</a></code> | <code>double</code> | The maximum number of consecutive failed validation attempts allowed. |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
@@ -1002,7 +1002,7 @@ public string Issuer { get; set; }
 
 The name of the key's issuing organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/identity_mfa_totp#issuer IdentityMfaTotp#issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_mfa_totp#issuer IdentityMfaTotp#issuer}
 
 ---
 
@@ -1016,7 +1016,7 @@ public string Algorithm { get; set; }
 
 Specifies the hashing algorithm used to generate the TOTP code. Options include SHA1, SHA256, SHA512.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/identity_mfa_totp#algorithm IdentityMfaTotp#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_mfa_totp#algorithm IdentityMfaTotp#algorithm}
 
 ---
 
@@ -1030,7 +1030,7 @@ public double Digits { get; set; }
 
 The number of digits in the generated TOTP token. This value can either be 6 or 8.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/identity_mfa_totp#digits IdentityMfaTotp#digits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_mfa_totp#digits IdentityMfaTotp#digits}
 
 ---
 
@@ -1042,7 +1042,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/identity_mfa_totp#id IdentityMfaTotp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_mfa_totp#id IdentityMfaTotp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1059,7 +1059,7 @@ public double KeySize { get; set; }
 
 Specifies the size in bytes of the generated key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/identity_mfa_totp#key_size IdentityMfaTotp#key_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_mfa_totp#key_size IdentityMfaTotp#key_size}
 
 ---
 
@@ -1073,7 +1073,7 @@ public double MaxValidationAttempts { get; set; }
 
 The maximum number of consecutive failed validation attempts allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/identity_mfa_totp#max_validation_attempts IdentityMfaTotp#max_validation_attempts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_mfa_totp#max_validation_attempts IdentityMfaTotp#max_validation_attempts}
 
 ---
 
@@ -1087,7 +1087,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/identity_mfa_totp#namespace IdentityMfaTotp#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_mfa_totp#namespace IdentityMfaTotp#namespace}
 
 ---
 
@@ -1101,7 +1101,7 @@ public double Period { get; set; }
 
 The length of time in seconds used to generate a counter for the TOTP token calculation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/identity_mfa_totp#period IdentityMfaTotp#period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_mfa_totp#period IdentityMfaTotp#period}
 
 ---
 
@@ -1115,7 +1115,7 @@ public double QrSize { get; set; }
 
 The pixel size of the generated square QR code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/identity_mfa_totp#qr_size IdentityMfaTotp#qr_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_mfa_totp#qr_size IdentityMfaTotp#qr_size}
 
 ---
 
@@ -1131,7 +1131,7 @@ The number of delay periods that are allowed when validating a TOTP token.
 
 This value can either be 0 or 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/identity_mfa_totp#skew IdentityMfaTotp#skew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_mfa_totp#skew IdentityMfaTotp#skew}
 
 ---
 

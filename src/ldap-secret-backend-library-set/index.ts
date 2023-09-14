@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/ldap_secret_backend_library_set
+// https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/ldap_secret_backend_library_set
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface LdapSecretBackendLibrarySetConfig extends cdktf.TerraformMetaAr
   /**
   * Disable enforcing that service accounts must be checked in by the entity or client token that checked them out.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/ldap_secret_backend_library_set#disable_check_in_enforcement LdapSecretBackendLibrarySet#disable_check_in_enforcement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/ldap_secret_backend_library_set#disable_check_in_enforcement LdapSecretBackendLibrarySet#disable_check_in_enforcement}
   */
   readonly disableCheckInEnforcement?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/ldap_secret_backend_library_set#id LdapSecretBackendLibrarySet#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/ldap_secret_backend_library_set#id LdapSecretBackendLibrarySet#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,43 +28,43 @@ export interface LdapSecretBackendLibrarySetConfig extends cdktf.TerraformMetaAr
   /**
   * The maximum amount of time a check-out last with renewal before Vault automatically checks it back in. Defaults to 24 hours.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/ldap_secret_backend_library_set#max_ttl LdapSecretBackendLibrarySet#max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/ldap_secret_backend_library_set#max_ttl LdapSecretBackendLibrarySet#max_ttl}
   */
   readonly maxTtl?: number;
   /**
   * The path where the LDAP secrets backend is mounted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/ldap_secret_backend_library_set#mount LdapSecretBackendLibrarySet#mount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/ldap_secret_backend_library_set#mount LdapSecretBackendLibrarySet#mount}
   */
   readonly mount?: string;
   /**
   * The name of the set of service accounts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/ldap_secret_backend_library_set#name LdapSecretBackendLibrarySet#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/ldap_secret_backend_library_set#name LdapSecretBackendLibrarySet#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/ldap_secret_backend_library_set#namespace LdapSecretBackendLibrarySet#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/ldap_secret_backend_library_set#namespace LdapSecretBackendLibrarySet#namespace}
   */
   readonly namespace?: string;
   /**
   * The names of all the service accounts that can be checked out from this set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/ldap_secret_backend_library_set#service_account_names LdapSecretBackendLibrarySet#service_account_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/ldap_secret_backend_library_set#service_account_names LdapSecretBackendLibrarySet#service_account_names}
   */
   readonly serviceAccountNames: string[];
   /**
   * The maximum amount of time a single check-out lasts before Vault automatically checks it back in. Defaults to 24 hours.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/ldap_secret_backend_library_set#ttl LdapSecretBackendLibrarySet#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/ldap_secret_backend_library_set#ttl LdapSecretBackendLibrarySet#ttl}
   */
   readonly ttl?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/ldap_secret_backend_library_set vault_ldap_secret_backend_library_set}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/ldap_secret_backend_library_set vault_ldap_secret_backend_library_set}
 */
 export class LdapSecretBackendLibrarySet extends cdktf.TerraformResource {
 
@@ -78,7 +78,7 @@ export class LdapSecretBackendLibrarySet extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/ldap_secret_backend_library_set vault_ldap_secret_backend_library_set} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/ldap_secret_backend_library_set vault_ldap_secret_backend_library_set} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -89,7 +89,7 @@ export class LdapSecretBackendLibrarySet extends cdktf.TerraformResource {
       terraformResourceType: 'vault_ldap_secret_backend_library_set',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.20.0',
+        providerVersion: '3.20.1',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
