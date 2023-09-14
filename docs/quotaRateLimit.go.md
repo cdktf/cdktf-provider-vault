@@ -1,6 +1,6 @@
 # `vault_quota_rate_limit`
 
-Refer to the Terraform Registory for docs: [`vault_quota_rate_limit`](https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/quota_rate_limit).
+Refer to the Terraform Registory for docs: [`vault_quota_rate_limit`](https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/quota_rate_limit).
 
 # `quotaRateLimit` Submodule <a name="`quotaRateLimit` Submodule" id="@cdktf/provider-vault.quotaRateLimit"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`vault_quota_rate_limit`](https://re
 
 ### QuotaRateLimit <a name="QuotaRateLimit" id="@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/quota_rate_limit vault_quota_rate_limit}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/quota_rate_limit vault_quota_rate_limit}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/quotaratelimit"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/quotaratelimit"
 
 quotaratelimit.NewQuotaRateLimit(scope Construct, id *string, config QuotaRateLimitConfig) QuotaRateLimit
 ```
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.resetInterval">ResetInterval</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.resetNamespace">ResetNamespace</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.resetPath">ResetPath</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.resetRole">ResetRole</a></code> | *No description.* |
 
 ---
 
@@ -292,6 +293,12 @@ func ResetNamespace()
 func ResetPath()
 ```
 
+##### `ResetRole` <a name="ResetRole" id="@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.resetRole"></a>
+
+```go
+func ResetRole()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -305,7 +312,7 @@ func ResetPath()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/quotaratelimit"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/quotaratelimit"
 
 quotaratelimit.QuotaRateLimit_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/quotaratelimit"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/quotaratelimit"
 
 quotaratelimit.QuotaRateLimit_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +358,7 @@ quotaratelimit.QuotaRateLimit_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/quotaratelimit"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/quotaratelimit"
 
 quotaratelimit.QuotaRateLimit_IsTerraformResource(x interface{}) *bool
 ```
@@ -387,6 +394,7 @@ quotaratelimit.QuotaRateLimit_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.namespaceInput">NamespaceInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.pathInput">PathInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.rateInput">RateInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.roleInput">RoleInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.blockInterval">BlockInterval</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.interval">Interval</a></code> | <code>*f64</code> | *No description.* |
@@ -394,6 +402,7 @@ quotaratelimit.QuotaRateLimit_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.namespace">Namespace</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.path">Path</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.rate">Rate</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.role">Role</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -609,6 +618,16 @@ func RateInput() *f64
 
 ---
 
+##### `RoleInput`<sup>Optional</sup> <a name="RoleInput" id="@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.roleInput"></a>
+
+```go
+func RoleInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `BlockInterval`<sup>Required</sup> <a name="BlockInterval" id="@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.blockInterval"></a>
 
 ```go
@@ -679,6 +698,16 @@ func Rate() *f64
 
 ---
 
+##### `Role`<sup>Required</sup> <a name="Role" id="@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.role"></a>
+
+```go
+func Role() *string
+```
+
+- *Type:* *string
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -704,7 +733,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.quotaRateLimit.QuotaRateLimitConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/quotaratelimit"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/quotaratelimit"
 
 &quotaratelimit.QuotaRateLimitConfig {
 	Connection: interface{},
@@ -721,6 +750,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/quotaratelimit"
 	Interval: *f64,
 	Namespace: *string,
 	Path: *string,
+	Role: *string,
 }
 ```
 
@@ -738,10 +768,11 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/quotaratelimit"
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimitConfig.property.name">Name</a></code> | <code>*string</code> | The name of the quota. |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimitConfig.property.rate">Rate</a></code> | <code>*f64</code> | The maximum number of requests at any given second to be allowed by the quota rule. |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimitConfig.property.blockInterval">BlockInterval</a></code> | <code>*f64</code> | If set, when a client reaches a rate limit threshold, the client will be prohibited from any further requests until after the 'block_interval' in seconds has elapsed. |
-| <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimitConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/quota_rate_limit#id QuotaRateLimit#id}. |
+| <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimitConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/quota_rate_limit#id QuotaRateLimit#id}. |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimitConfig.property.interval">Interval</a></code> | <code>*f64</code> | The duration in seconds to enforce rate limiting for. |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimitConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimitConfig.property.path">Path</a></code> | <code>*string</code> | Path of the mount or namespace to apply the quota. A blank path configures a global rate limit quota. |
+| <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimitConfig.property.role">Role</a></code> | <code>*string</code> | If set on a quota where path is set to an auth mount with a concept of roles (such as /auth/approle/), this will make the quota restrict login requests to that mount that are made with the specified role. |
 
 ---
 
@@ -825,7 +856,7 @@ Name *string
 
 The name of the quota.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/quota_rate_limit#name QuotaRateLimit#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/quota_rate_limit#name QuotaRateLimit#name}
 
 ---
 
@@ -841,7 +872,7 @@ The maximum number of requests at any given second to be allowed by the quota ru
 
 The rate must be positive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/quota_rate_limit#rate QuotaRateLimit#rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/quota_rate_limit#rate QuotaRateLimit#rate}
 
 ---
 
@@ -855,7 +886,7 @@ BlockInterval *f64
 
 If set, when a client reaches a rate limit threshold, the client will be prohibited from any further requests until after the 'block_interval' in seconds has elapsed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/quota_rate_limit#block_interval QuotaRateLimit#block_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/quota_rate_limit#block_interval QuotaRateLimit#block_interval}
 
 ---
 
@@ -867,7 +898,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/quota_rate_limit#id QuotaRateLimit#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/quota_rate_limit#id QuotaRateLimit#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -884,7 +915,7 @@ Interval *f64
 
 The duration in seconds to enforce rate limiting for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/quota_rate_limit#interval QuotaRateLimit#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/quota_rate_limit#interval QuotaRateLimit#interval}
 
 ---
 
@@ -898,7 +929,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/quota_rate_limit#namespace QuotaRateLimit#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/quota_rate_limit#namespace QuotaRateLimit#namespace}
 
 ---
 
@@ -912,7 +943,21 @@ Path *string
 
 Path of the mount or namespace to apply the quota. A blank path configures a global rate limit quota.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/quota_rate_limit#path QuotaRateLimit#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/quota_rate_limit#path QuotaRateLimit#path}
+
+---
+
+##### `Role`<sup>Optional</sup> <a name="Role" id="@cdktf/provider-vault.quotaRateLimit.QuotaRateLimitConfig.property.role"></a>
+
+```go
+Role *string
+```
+
+- *Type:* *string
+
+If set on a quota where path is set to an auth mount with a concept of roles (such as /auth/approle/), this will make the quota restrict login requests to that mount that are made with the specified role.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/quota_rate_limit#role QuotaRateLimit#role}
 
 ---
 

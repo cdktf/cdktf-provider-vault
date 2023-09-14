@@ -1,6 +1,6 @@
 # `vault_identity_oidc_scope`
 
-Refer to the Terraform Registory for docs: [`vault_identity_oidc_scope`](https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/identity_oidc_scope).
+Refer to the Terraform Registory for docs: [`vault_identity_oidc_scope`](https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_oidc_scope).
 
 # `identityOidcScope` Submodule <a name="`identityOidcScope` Submodule" id="@cdktf/provider-vault.identityOidcScope"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`vault_identity_oidc_scope`](https:/
 
 ### IdentityOidcScope <a name="IdentityOidcScope" id="@cdktf/provider-vault.identityOidcScope.IdentityOidcScope"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/identity_oidc_scope vault_identity_oidc_scope}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_oidc_scope vault_identity_oidc_scope}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.identityOidcScope.IdentityOidcScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/identityoidcscope"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identityoidcscope"
 
 identityoidcscope.NewIdentityOidcScope(scope Construct, id *string, config IdentityOidcScopeConfig) IdentityOidcScope
 ```
@@ -298,7 +298,7 @@ func ResetTemplate()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.identityOidcScope.IdentityOidcScope.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/identityoidcscope"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identityoidcscope"
 
 identityoidcscope.IdentityOidcScope_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.identityOidcScope.IdentityOidcScope.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/identityoidcscope"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identityoidcscope"
 
 identityoidcscope.IdentityOidcScope_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ identityoidcscope.IdentityOidcScope_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.identityOidcScope.IdentityOidcScope.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/identityoidcscope"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identityoidcscope"
 
 identityoidcscope.IdentityOidcScope_IsTerraformResource(x interface{}) *bool
 ```
@@ -653,7 +653,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.identityOidcScope.IdentityOidcScopeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/identityoidcscope"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identityoidcscope"
 
 &identityoidcscope.IdentityOidcScopeConfig {
 	Connection: interface{},
@@ -684,7 +684,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/identityoidcscope"
 | <code><a href="#@cdktf/provider-vault.identityOidcScope.IdentityOidcScopeConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityOidcScope.IdentityOidcScopeConfig.property.name">Name</a></code> | <code>*string</code> | The name of the scope. The openid scope name is reserved. |
 | <code><a href="#@cdktf/provider-vault.identityOidcScope.IdentityOidcScopeConfig.property.description">Description</a></code> | <code>*string</code> | The scope's description. |
-| <code><a href="#@cdktf/provider-vault.identityOidcScope.IdentityOidcScopeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/identity_oidc_scope#id IdentityOidcScope#id}. |
+| <code><a href="#@cdktf/provider-vault.identityOidcScope.IdentityOidcScopeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_oidc_scope#id IdentityOidcScope#id}. |
 | <code><a href="#@cdktf/provider-vault.identityOidcScope.IdentityOidcScopeConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.identityOidcScope.IdentityOidcScopeConfig.property.template">Template</a></code> | <code>*string</code> | The template string for the scope. This may be provided as escaped JSON or base64 encoded JSON. |
 
@@ -770,7 +770,7 @@ Name *string
 
 The name of the scope. The openid scope name is reserved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/identity_oidc_scope#name IdentityOidcScope#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_oidc_scope#name IdentityOidcScope#name}
 
 ---
 
@@ -784,7 +784,7 @@ Description *string
 
 The scope's description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/identity_oidc_scope#description IdentityOidcScope#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_oidc_scope#description IdentityOidcScope#description}
 
 ---
 
@@ -796,7 +796,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/identity_oidc_scope#id IdentityOidcScope#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_oidc_scope#id IdentityOidcScope#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -813,7 +813,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/identity_oidc_scope#namespace IdentityOidcScope#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_oidc_scope#namespace IdentityOidcScope#namespace}
 
 ---
 
@@ -827,7 +827,7 @@ Template *string
 
 The template string for the scope. This may be provided as escaped JSON or base64 encoded JSON.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/identity_oidc_scope#template IdentityOidcScope#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_oidc_scope#template IdentityOidcScope#template}
 
 ---
 

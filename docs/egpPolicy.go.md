@@ -1,6 +1,6 @@
 # `vault_egp_policy`
 
-Refer to the Terraform Registory for docs: [`vault_egp_policy`](https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/egp_policy).
+Refer to the Terraform Registory for docs: [`vault_egp_policy`](https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/egp_policy).
 
 # `egpPolicy` Submodule <a name="`egpPolicy` Submodule" id="@cdktf/provider-vault.egpPolicy"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`vault_egp_policy`](https://registry
 
 ### EgpPolicy <a name="EgpPolicy" id="@cdktf/provider-vault.egpPolicy.EgpPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/egp_policy vault_egp_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/egp_policy vault_egp_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.egpPolicy.EgpPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/egppolicy"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/egppolicy"
 
 egppolicy.NewEgpPolicy(scope Construct, id *string, config EgpPolicyConfig) EgpPolicy
 ```
@@ -284,7 +284,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.egpPolicy.EgpPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/egppolicy"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/egppolicy"
 
 egppolicy.EgpPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.egpPolicy.EgpPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/egppolicy"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/egppolicy"
 
 egppolicy.EgpPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ egppolicy.EgpPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.egpPolicy.EgpPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/egppolicy"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/egppolicy"
 
 egppolicy.EgpPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -661,7 +661,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.egpPolicy.EgpPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/egppolicy"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/egppolicy"
 
 &egppolicy.EgpPolicyConfig {
 	Connection: interface{},
@@ -695,7 +695,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/egppolicy"
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Name of the policy. |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicyConfig.property.paths">Paths</a></code> | <code>*[]*string</code> | List of paths to which the policy will be applied. |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | The policy document. |
-| <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/egp_policy#id EgpPolicy#id}. |
+| <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/egp_policy#id EgpPolicy#id}. |
 | <code><a href="#@cdktf/provider-vault.egpPolicy.EgpPolicyConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -780,7 +780,7 @@ EnforcementLevel *string
 
 Enforcement level of Sentinel policy. Can be one of: 'advisory', 'soft-mandatory' or 'hard-mandatory'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/egp_policy#enforcement_level EgpPolicy#enforcement_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/egp_policy#enforcement_level EgpPolicy#enforcement_level}
 
 ---
 
@@ -794,7 +794,7 @@ Name *string
 
 Name of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/egp_policy#name EgpPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/egp_policy#name EgpPolicy#name}
 
 ---
 
@@ -808,7 +808,7 @@ Paths *[]*string
 
 List of paths to which the policy will be applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/egp_policy#paths EgpPolicy#paths}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/egp_policy#paths EgpPolicy#paths}
 
 ---
 
@@ -822,7 +822,7 @@ Policy *string
 
 The policy document.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/egp_policy#policy EgpPolicy#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/egp_policy#policy EgpPolicy#policy}
 
 ---
 
@@ -834,7 +834,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/egp_policy#id EgpPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/egp_policy#id EgpPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -851,7 +851,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/egp_policy#namespace EgpPolicy#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/egp_policy#namespace EgpPolicy#namespace}
 
 ---
 
