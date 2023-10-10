@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/terraform_cloud_secret_role
+// https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/terraform_cloud_secret_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface TerraformCloudSecretRoleConfig extends cdktf.TerraformMetaArgum
   /**
   * The path of the Terraform Cloud Secret Backend the role belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/terraform_cloud_secret_role#backend TerraformCloudSecretRole#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/terraform_cloud_secret_role#backend TerraformCloudSecretRole#backend}
   */
   readonly backend?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/terraform_cloud_secret_role#id TerraformCloudSecretRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/terraform_cloud_secret_role#id TerraformCloudSecretRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,49 +23,49 @@ export interface TerraformCloudSecretRoleConfig extends cdktf.TerraformMetaArgum
   /**
   * Maximum allowed lease for generated credentials. If not set or set to 0, will use system default.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/terraform_cloud_secret_role#max_ttl TerraformCloudSecretRole#max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/terraform_cloud_secret_role#max_ttl TerraformCloudSecretRole#max_ttl}
   */
   readonly maxTtl?: number;
   /**
   * The name of an existing role against which to create this Terraform Cloud credential
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/terraform_cloud_secret_role#name TerraformCloudSecretRole#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/terraform_cloud_secret_role#name TerraformCloudSecretRole#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/terraform_cloud_secret_role#namespace TerraformCloudSecretRole#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/terraform_cloud_secret_role#namespace TerraformCloudSecretRole#namespace}
   */
   readonly namespace?: string;
   /**
   * Name of the Terraform Cloud or Enterprise organization
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/terraform_cloud_secret_role#organization TerraformCloudSecretRole#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/terraform_cloud_secret_role#organization TerraformCloudSecretRole#organization}
   */
   readonly organization?: string;
   /**
   * ID of the Terraform Cloud or Enterprise team under organization (e.g., settings/teams/team-xxxxxxxxxxxxx)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/terraform_cloud_secret_role#team_id TerraformCloudSecretRole#team_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/terraform_cloud_secret_role#team_id TerraformCloudSecretRole#team_id}
   */
   readonly teamId?: string;
   /**
   * Default lease for generated credentials. If not set or set to 0, will use system default.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/terraform_cloud_secret_role#ttl TerraformCloudSecretRole#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/terraform_cloud_secret_role#ttl TerraformCloudSecretRole#ttl}
   */
   readonly ttl?: number;
   /**
   * ID of the Terraform Cloud or Enterprise user (e.g., user-xxxxxxxxxxxxxxxx)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/terraform_cloud_secret_role#user_id TerraformCloudSecretRole#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/terraform_cloud_secret_role#user_id TerraformCloudSecretRole#user_id}
   */
   readonly userId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/terraform_cloud_secret_role vault_terraform_cloud_secret_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/terraform_cloud_secret_role vault_terraform_cloud_secret_role}
 */
 export class TerraformCloudSecretRole extends cdktf.TerraformResource {
 
@@ -84,7 +79,7 @@ export class TerraformCloudSecretRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/terraform_cloud_secret_role vault_terraform_cloud_secret_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/terraform_cloud_secret_role vault_terraform_cloud_secret_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -95,7 +90,7 @@ export class TerraformCloudSecretRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_terraform_cloud_secret_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.20.1',
+        providerVersion: '3.21.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

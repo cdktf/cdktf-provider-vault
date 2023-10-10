@@ -1,6 +1,6 @@
 # `data_vault_nomad_access_token`
 
-Refer to the Terraform Registory for docs: [`data_vault_nomad_access_token`](https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/data-sources/nomad_access_token).
+Refer to the Terraform Registory for docs: [`data_vault_nomad_access_token`](https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/nomad_access_token).
 
 # `dataVaultNomadAccessToken` Submodule <a name="`dataVaultNomadAccessToken` Submodule" id="@cdktf/provider-vault.dataVaultNomadAccessToken"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_vault_nomad_access_token`](htt
 
 ### DataVaultNomadAccessToken <a name="DataVaultNomadAccessToken" id="@cdktf/provider-vault.dataVaultNomadAccessToken.DataVaultNomadAccessToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/data-sources/nomad_access_token vault_nomad_access_token}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/nomad_access_token vault_nomad_access_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultNomadAccessToken.DataVaultNomadAccessToken.Initializer"></a>
 
@@ -647,7 +647,7 @@ new DataVaultNomadAccessTokenConfig {
 | <code><a href="#@cdktf/provider-vault.dataVaultNomadAccessToken.DataVaultNomadAccessTokenConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultNomadAccessToken.DataVaultNomadAccessTokenConfig.property.backend">Backend</a></code> | <code>string</code> | Nomad secret backend to generate tokens from. |
 | <code><a href="#@cdktf/provider-vault.dataVaultNomadAccessToken.DataVaultNomadAccessTokenConfig.property.role">Role</a></code> | <code>string</code> | Name of the role. |
-| <code><a href="#@cdktf/provider-vault.dataVaultNomadAccessToken.DataVaultNomadAccessTokenConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/data-sources/nomad_access_token#id DataVaultNomadAccessToken#id}. |
+| <code><a href="#@cdktf/provider-vault.dataVaultNomadAccessToken.DataVaultNomadAccessTokenConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/nomad_access_token#id DataVaultNomadAccessToken#id}. |
 | <code><a href="#@cdktf/provider-vault.dataVaultNomadAccessToken.DataVaultNomadAccessTokenConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -732,7 +732,7 @@ public string Backend { get; set; }
 
 Nomad secret backend to generate tokens from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/data-sources/nomad_access_token#backend DataVaultNomadAccessToken#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/nomad_access_token#backend DataVaultNomadAccessToken#backend}
 
 ---
 
@@ -746,7 +746,7 @@ public string Role { get; set; }
 
 Name of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/data-sources/nomad_access_token#role DataVaultNomadAccessToken#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/nomad_access_token#role DataVaultNomadAccessToken#role}
 
 ---
 
@@ -758,7 +758,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/data-sources/nomad_access_token#id DataVaultNomadAccessToken#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/nomad_access_token#id DataVaultNomadAccessToken#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -775,7 +775,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/data-sources/nomad_access_token#namespace DataVaultNomadAccessToken#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/nomad_access_token#namespace DataVaultNomadAccessToken#namespace}
 
 ---
 

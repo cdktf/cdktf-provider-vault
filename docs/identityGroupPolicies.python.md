@@ -1,6 +1,6 @@
 # `vault_identity_group_policies`
 
-Refer to the Terraform Registory for docs: [`vault_identity_group_policies`](https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_group_policies).
+Refer to the Terraform Registory for docs: [`vault_identity_group_policies`](https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_group_policies).
 
 # `identityGroupPolicies` Submodule <a name="`identityGroupPolicies` Submodule" id="@cdktf/provider-vault.identityGroupPolicies"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_identity_group_policies`](htt
 
 ### IdentityGroupPolicies <a name="IdentityGroupPolicies" id="@cdktf/provider-vault.identityGroupPolicies.IdentityGroupPolicies"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_group_policies vault_identity_group_policies}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_group_policies vault_identity_group_policies}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.identityGroupPolicies.IdentityGroupPolicies.Initializer"></a>
 
@@ -47,7 +47,7 @@ identityGroupPolicies.IdentityGroupPolicies(
 | <code><a href="#@cdktf/provider-vault.identityGroupPolicies.IdentityGroupPolicies.Initializer.parameter.groupId">group_id</a></code> | <code>str</code> | ID of the group. |
 | <code><a href="#@cdktf/provider-vault.identityGroupPolicies.IdentityGroupPolicies.Initializer.parameter.policies">policies</a></code> | <code>typing.List[str]</code> | Policies to be tied to the group. |
 | <code><a href="#@cdktf/provider-vault.identityGroupPolicies.IdentityGroupPolicies.Initializer.parameter.exclusive">exclusive</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Should the resource manage policies exclusively? Beware of race conditions when disabling exclusive management. |
-| <code><a href="#@cdktf/provider-vault.identityGroupPolicies.IdentityGroupPolicies.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_group_policies#id IdentityGroupPolicies#id}. |
+| <code><a href="#@cdktf/provider-vault.identityGroupPolicies.IdentityGroupPolicies.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_group_policies#id IdentityGroupPolicies#id}. |
 | <code><a href="#@cdktf/provider-vault.identityGroupPolicies.IdentityGroupPolicies.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 ID of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_group_policies#group_id IdentityGroupPolicies#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_group_policies#group_id IdentityGroupPolicies#group_id}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Policies to be tied to the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_group_policies#policies IdentityGroupPolicies#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_group_policies#policies IdentityGroupPolicies#policies}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Should the resource manage policies exclusively? Beware of race conditions when disabling exclusive management.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_group_policies#exclusive IdentityGroupPolicies#exclusive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_group_policies#exclusive IdentityGroupPolicies#exclusive}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_group_policies#id IdentityGroupPolicies#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_group_policies#id IdentityGroupPolicies#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -159,7 +159,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_group_policies#namespace IdentityGroupPolicies#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_group_policies#namespace IdentityGroupPolicies#namespace}
 
 ---
 
@@ -833,7 +833,7 @@ identityGroupPolicies.IdentityGroupPoliciesConfig(
 | <code><a href="#@cdktf/provider-vault.identityGroupPolicies.IdentityGroupPoliciesConfig.property.groupId">group_id</a></code> | <code>str</code> | ID of the group. |
 | <code><a href="#@cdktf/provider-vault.identityGroupPolicies.IdentityGroupPoliciesConfig.property.policies">policies</a></code> | <code>typing.List[str]</code> | Policies to be tied to the group. |
 | <code><a href="#@cdktf/provider-vault.identityGroupPolicies.IdentityGroupPoliciesConfig.property.exclusive">exclusive</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Should the resource manage policies exclusively? Beware of race conditions when disabling exclusive management. |
-| <code><a href="#@cdktf/provider-vault.identityGroupPolicies.IdentityGroupPoliciesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_group_policies#id IdentityGroupPolicies#id}. |
+| <code><a href="#@cdktf/provider-vault.identityGroupPolicies.IdentityGroupPoliciesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_group_policies#id IdentityGroupPolicies#id}. |
 | <code><a href="#@cdktf/provider-vault.identityGroupPolicies.IdentityGroupPoliciesConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -918,7 +918,7 @@ group_id: str
 
 ID of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_group_policies#group_id IdentityGroupPolicies#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_group_policies#group_id IdentityGroupPolicies#group_id}
 
 ---
 
@@ -932,7 +932,7 @@ policies: typing.List[str]
 
 Policies to be tied to the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_group_policies#policies IdentityGroupPolicies#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_group_policies#policies IdentityGroupPolicies#policies}
 
 ---
 
@@ -946,7 +946,7 @@ exclusive: typing.Union[bool, IResolvable]
 
 Should the resource manage policies exclusively? Beware of race conditions when disabling exclusive management.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_group_policies#exclusive IdentityGroupPolicies#exclusive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_group_policies#exclusive IdentityGroupPolicies#exclusive}
 
 ---
 
@@ -958,7 +958,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_group_policies#id IdentityGroupPolicies#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_group_policies#id IdentityGroupPolicies#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -975,7 +975,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_group_policies#namespace IdentityGroupPolicies#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_group_policies#namespace IdentityGroupPolicies#namespace}
 
 ---
 

@@ -1,6 +1,6 @@
 # `data_vault_auth_backend`
 
-Refer to the Terraform Registory for docs: [`data_vault_auth_backend`](https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/data-sources/auth_backend).
+Refer to the Terraform Registory for docs: [`data_vault_auth_backend`](https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/auth_backend).
 
 # `dataVaultAuthBackend` Submodule <a name="`dataVaultAuthBackend` Submodule" id="@cdktf/provider-vault.dataVaultAuthBackend"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_vault_auth_backend`](https://r
 
 ### DataVaultAuthBackend <a name="DataVaultAuthBackend" id="@cdktf/provider-vault.dataVaultAuthBackend.DataVaultAuthBackend"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/data-sources/auth_backend vault_auth_backend}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/auth_backend vault_auth_backend}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultAuthBackend.DataVaultAuthBackend.Initializer"></a>
 
@@ -45,7 +45,7 @@ DataVaultAuthBackend.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vault.dataVaultAuthBackend.DataVaultAuthBackend.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultAuthBackend.DataVaultAuthBackend.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultAuthBackend.DataVaultAuthBackend.Initializer.parameter.path">path</a></code> | <code>java.lang.String</code> | The auth backend mount point. |
-| <code><a href="#@cdktf/provider-vault.dataVaultAuthBackend.DataVaultAuthBackend.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/data-sources/auth_backend#id DataVaultAuthBackend#id}. |
+| <code><a href="#@cdktf/provider-vault.dataVaultAuthBackend.DataVaultAuthBackend.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/auth_backend#id DataVaultAuthBackend#id}. |
 | <code><a href="#@cdktf/provider-vault.dataVaultAuthBackend.DataVaultAuthBackend.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The auth backend mount point.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/data-sources/auth_backend#path DataVaultAuthBackend#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/auth_backend#path DataVaultAuthBackend#path}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/data-sources/auth_backend#id DataVaultAuthBackend#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/auth_backend#id DataVaultAuthBackend#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -137,7 +137,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/data-sources/auth_backend#namespace DataVaultAuthBackend#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/auth_backend#namespace DataVaultAuthBackend#namespace}
 
 ---
 
@@ -773,7 +773,7 @@ DataVaultAuthBackendConfig.builder()
 | <code><a href="#@cdktf/provider-vault.dataVaultAuthBackend.DataVaultAuthBackendConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultAuthBackend.DataVaultAuthBackendConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultAuthBackend.DataVaultAuthBackendConfig.property.path">path</a></code> | <code>java.lang.String</code> | The auth backend mount point. |
-| <code><a href="#@cdktf/provider-vault.dataVaultAuthBackend.DataVaultAuthBackendConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/data-sources/auth_backend#id DataVaultAuthBackend#id}. |
+| <code><a href="#@cdktf/provider-vault.dataVaultAuthBackend.DataVaultAuthBackendConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/auth_backend#id DataVaultAuthBackend#id}. |
 | <code><a href="#@cdktf/provider-vault.dataVaultAuthBackend.DataVaultAuthBackendConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -858,7 +858,7 @@ public java.lang.String getPath();
 
 The auth backend mount point.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/data-sources/auth_backend#path DataVaultAuthBackend#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/auth_backend#path DataVaultAuthBackend#path}
 
 ---
 
@@ -870,7 +870,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/data-sources/auth_backend#id DataVaultAuthBackend#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/auth_backend#id DataVaultAuthBackend#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -887,7 +887,7 @@ public java.lang.String getNamespace();
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/data-sources/auth_backend#namespace DataVaultAuthBackend#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/auth_backend#namespace DataVaultAuthBackend#namespace}
 
 ---
 

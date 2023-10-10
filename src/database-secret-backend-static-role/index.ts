@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/database_secret_backend_static_role
+// https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/database_secret_backend_static_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface DatabaseSecretBackendStaticRoleConfig extends cdktf.TerraformMe
   /**
   * The path of the Database Secret Backend the role belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/database_secret_backend_static_role#backend DatabaseSecretBackendStaticRole#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/database_secret_backend_static_role#backend DatabaseSecretBackendStaticRole#backend}
   */
   readonly backend: string;
   /**
   * Database connection to use for this role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/database_secret_backend_static_role#db_name DatabaseSecretBackendStaticRole#db_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/database_secret_backend_static_role#db_name DatabaseSecretBackendStaticRole#db_name}
   */
   readonly dbName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/database_secret_backend_static_role#id DatabaseSecretBackendStaticRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/database_secret_backend_static_role#id DatabaseSecretBackendStaticRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,37 +29,49 @@ export interface DatabaseSecretBackendStaticRoleConfig extends cdktf.TerraformMe
   /**
   * Unique name for the static role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/database_secret_backend_static_role#name DatabaseSecretBackendStaticRole#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/database_secret_backend_static_role#name DatabaseSecretBackendStaticRole#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/database_secret_backend_static_role#namespace DatabaseSecretBackendStaticRole#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/database_secret_backend_static_role#namespace DatabaseSecretBackendStaticRole#namespace}
   */
   readonly namespace?: string;
   /**
   * The amount of time Vault should wait before rotating the password, in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/database_secret_backend_static_role#rotation_period DatabaseSecretBackendStaticRole#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/database_secret_backend_static_role#rotation_period DatabaseSecretBackendStaticRole#rotation_period}
   */
-  readonly rotationPeriod: number;
+  readonly rotationPeriod?: number;
+  /**
+  * A cron-style string that will define the schedule on which rotations should occur.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/database_secret_backend_static_role#rotation_schedule DatabaseSecretBackendStaticRole#rotation_schedule}
+  */
+  readonly rotationSchedule?: string;
   /**
   * Database statements to execute to rotate the password for the configured database user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/database_secret_backend_static_role#rotation_statements DatabaseSecretBackendStaticRole#rotation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/database_secret_backend_static_role#rotation_statements DatabaseSecretBackendStaticRole#rotation_statements}
   */
   readonly rotationStatements?: string[];
   /**
+  * The amount of time in seconds in which the rotations are allowed to occur starting from a given rotation_schedule.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/database_secret_backend_static_role#rotation_window DatabaseSecretBackendStaticRole#rotation_window}
+  */
+  readonly rotationWindow?: number;
+  /**
   * The database username that this role corresponds to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/database_secret_backend_static_role#username DatabaseSecretBackendStaticRole#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/database_secret_backend_static_role#username DatabaseSecretBackendStaticRole#username}
   */
   readonly username: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/database_secret_backend_static_role vault_database_secret_backend_static_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/database_secret_backend_static_role vault_database_secret_backend_static_role}
 */
 export class DatabaseSecretBackendStaticRole extends cdktf.TerraformResource {
 
@@ -78,7 +85,7 @@ export class DatabaseSecretBackendStaticRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/database_secret_backend_static_role vault_database_secret_backend_static_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/database_secret_backend_static_role vault_database_secret_backend_static_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -89,7 +96,7 @@ export class DatabaseSecretBackendStaticRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_database_secret_backend_static_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.20.1',
+        providerVersion: '3.21.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -106,7 +113,9 @@ export class DatabaseSecretBackendStaticRole extends cdktf.TerraformResource {
     this._name = config.name;
     this._namespace = config.namespace;
     this._rotationPeriod = config.rotationPeriod;
+    this._rotationSchedule = config.rotationSchedule;
     this._rotationStatements = config.rotationStatements;
+    this._rotationWindow = config.rotationWindow;
     this._username = config.username;
   }
 
@@ -185,7 +194,7 @@ export class DatabaseSecretBackendStaticRole extends cdktf.TerraformResource {
     return this._namespace;
   }
 
-  // rotation_period - computed: false, optional: false, required: true
+  // rotation_period - computed: false, optional: true, required: false
   private _rotationPeriod?: number; 
   public get rotationPeriod() {
     return this.getNumberAttribute('rotation_period');
@@ -193,9 +202,28 @@ export class DatabaseSecretBackendStaticRole extends cdktf.TerraformResource {
   public set rotationPeriod(value: number) {
     this._rotationPeriod = value;
   }
+  public resetRotationPeriod() {
+    this._rotationPeriod = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get rotationPeriodInput() {
     return this._rotationPeriod;
+  }
+
+  // rotation_schedule - computed: false, optional: true, required: false
+  private _rotationSchedule?: string; 
+  public get rotationSchedule() {
+    return this.getStringAttribute('rotation_schedule');
+  }
+  public set rotationSchedule(value: string) {
+    this._rotationSchedule = value;
+  }
+  public resetRotationSchedule() {
+    this._rotationSchedule = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rotationScheduleInput() {
+    return this._rotationSchedule;
   }
 
   // rotation_statements - computed: false, optional: true, required: false
@@ -212,6 +240,22 @@ export class DatabaseSecretBackendStaticRole extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get rotationStatementsInput() {
     return this._rotationStatements;
+  }
+
+  // rotation_window - computed: false, optional: true, required: false
+  private _rotationWindow?: number; 
+  public get rotationWindow() {
+    return this.getNumberAttribute('rotation_window');
+  }
+  public set rotationWindow(value: number) {
+    this._rotationWindow = value;
+  }
+  public resetRotationWindow() {
+    this._rotationWindow = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rotationWindowInput() {
+    return this._rotationWindow;
   }
 
   // username - computed: false, optional: false, required: true
@@ -239,7 +283,9 @@ export class DatabaseSecretBackendStaticRole extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       namespace: cdktf.stringToTerraform(this._namespace),
       rotation_period: cdktf.numberToTerraform(this._rotationPeriod),
+      rotation_schedule: cdktf.stringToTerraform(this._rotationSchedule),
       rotation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(this._rotationStatements),
+      rotation_window: cdktf.numberToTerraform(this._rotationWindow),
       username: cdktf.stringToTerraform(this._username),
     };
   }

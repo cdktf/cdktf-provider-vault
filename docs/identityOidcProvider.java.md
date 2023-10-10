@@ -1,6 +1,6 @@
 # `vault_identity_oidc_provider`
 
-Refer to the Terraform Registory for docs: [`vault_identity_oidc_provider`](https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_oidc_provider).
+Refer to the Terraform Registory for docs: [`vault_identity_oidc_provider`](https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_oidc_provider).
 
 # `identityOidcProvider` Submodule <a name="`identityOidcProvider` Submodule" id="@cdktf/provider-vault.identityOidcProvider"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_identity_oidc_provider`](http
 
 ### IdentityOidcProvider <a name="IdentityOidcProvider" id="@cdktf/provider-vault.identityOidcProvider.IdentityOidcProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_oidc_provider vault_identity_oidc_provider}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_oidc_provider vault_identity_oidc_provider}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.identityOidcProvider.IdentityOidcProvider.Initializer"></a>
 
@@ -52,7 +52,7 @@ IdentityOidcProvider.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vault.identityOidcProvider.IdentityOidcProvider.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the provider. |
 | <code><a href="#@cdktf/provider-vault.identityOidcProvider.IdentityOidcProvider.Initializer.parameter.allowedClientIds">allowedClientIds</a></code> | <code>java.util.List<java.lang.String></code> | The client IDs that are permitted to use the provider. |
 | <code><a href="#@cdktf/provider-vault.identityOidcProvider.IdentityOidcProvider.Initializer.parameter.httpsEnabled">httpsEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set to true if the issuer endpoint uses HTTPS. |
-| <code><a href="#@cdktf/provider-vault.identityOidcProvider.IdentityOidcProvider.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_oidc_provider#id IdentityOidcProvider#id}. |
+| <code><a href="#@cdktf/provider-vault.identityOidcProvider.IdentityOidcProvider.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_oidc_provider#id IdentityOidcProvider#id}. |
 | <code><a href="#@cdktf/provider-vault.identityOidcProvider.IdentityOidcProvider.Initializer.parameter.issuerHost">issuerHost</a></code> | <code>java.lang.String</code> | The host for the issuer. Can be either host or host:port. |
 | <code><a href="#@cdktf/provider-vault.identityOidcProvider.IdentityOidcProvider.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.identityOidcProvider.IdentityOidcProvider.Initializer.parameter.scopesSupported">scopesSupported</a></code> | <code>java.util.List<java.lang.String></code> | The scopes available for requesting on the provider. |
@@ -125,7 +125,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_oidc_provider#name IdentityOidcProvider#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_oidc_provider#name IdentityOidcProvider#name}
 
 ---
 
@@ -137,7 +137,7 @@ The client IDs that are permitted to use the provider.
 
 If empty, no clients are allowed. If "*", all clients are allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_oidc_provider#allowed_client_ids IdentityOidcProvider#allowed_client_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_oidc_provider#allowed_client_ids IdentityOidcProvider#allowed_client_ids}
 
 ---
 
@@ -147,7 +147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Set to true if the issuer endpoint uses HTTPS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_oidc_provider#https_enabled IdentityOidcProvider#https_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_oidc_provider#https_enabled IdentityOidcProvider#https_enabled}
 
 ---
 
@@ -155,7 +155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_oidc_provider#id IdentityOidcProvider#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_oidc_provider#id IdentityOidcProvider#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -168,7 +168,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The host for the issuer. Can be either host or host:port.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_oidc_provider#issuer_host IdentityOidcProvider#issuer_host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_oidc_provider#issuer_host IdentityOidcProvider#issuer_host}
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_oidc_provider#namespace IdentityOidcProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_oidc_provider#namespace IdentityOidcProvider#namespace}
 
 ---
 
@@ -188,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The scopes available for requesting on the provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_oidc_provider#scopes_supported IdentityOidcProvider#scopes_supported}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_oidc_provider#scopes_supported IdentityOidcProvider#scopes_supported}
 
 ---
 
@@ -903,7 +903,7 @@ IdentityOidcProviderConfig.builder()
 | <code><a href="#@cdktf/provider-vault.identityOidcProvider.IdentityOidcProviderConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the provider. |
 | <code><a href="#@cdktf/provider-vault.identityOidcProvider.IdentityOidcProviderConfig.property.allowedClientIds">allowedClientIds</a></code> | <code>java.util.List<java.lang.String></code> | The client IDs that are permitted to use the provider. |
 | <code><a href="#@cdktf/provider-vault.identityOidcProvider.IdentityOidcProviderConfig.property.httpsEnabled">httpsEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set to true if the issuer endpoint uses HTTPS. |
-| <code><a href="#@cdktf/provider-vault.identityOidcProvider.IdentityOidcProviderConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_oidc_provider#id IdentityOidcProvider#id}. |
+| <code><a href="#@cdktf/provider-vault.identityOidcProvider.IdentityOidcProviderConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_oidc_provider#id IdentityOidcProvider#id}. |
 | <code><a href="#@cdktf/provider-vault.identityOidcProvider.IdentityOidcProviderConfig.property.issuerHost">issuerHost</a></code> | <code>java.lang.String</code> | The host for the issuer. Can be either host or host:port. |
 | <code><a href="#@cdktf/provider-vault.identityOidcProvider.IdentityOidcProviderConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.identityOidcProvider.IdentityOidcProviderConfig.property.scopesSupported">scopesSupported</a></code> | <code>java.util.List<java.lang.String></code> | The scopes available for requesting on the provider. |
@@ -990,7 +990,7 @@ public java.lang.String getName();
 
 The name of the provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_oidc_provider#name IdentityOidcProvider#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_oidc_provider#name IdentityOidcProvider#name}
 
 ---
 
@@ -1006,7 +1006,7 @@ The client IDs that are permitted to use the provider.
 
 If empty, no clients are allowed. If "*", all clients are allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_oidc_provider#allowed_client_ids IdentityOidcProvider#allowed_client_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_oidc_provider#allowed_client_ids IdentityOidcProvider#allowed_client_ids}
 
 ---
 
@@ -1020,7 +1020,7 @@ public java.lang.Object getHttpsEnabled();
 
 Set to true if the issuer endpoint uses HTTPS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_oidc_provider#https_enabled IdentityOidcProvider#https_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_oidc_provider#https_enabled IdentityOidcProvider#https_enabled}
 
 ---
 
@@ -1032,7 +1032,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_oidc_provider#id IdentityOidcProvider#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_oidc_provider#id IdentityOidcProvider#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1049,7 +1049,7 @@ public java.lang.String getIssuerHost();
 
 The host for the issuer. Can be either host or host:port.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_oidc_provider#issuer_host IdentityOidcProvider#issuer_host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_oidc_provider#issuer_host IdentityOidcProvider#issuer_host}
 
 ---
 
@@ -1063,7 +1063,7 @@ public java.lang.String getNamespace();
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_oidc_provider#namespace IdentityOidcProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_oidc_provider#namespace IdentityOidcProvider#namespace}
 
 ---
 
@@ -1077,7 +1077,7 @@ public java.util.List<java.lang.String> getScopesSupported();
 
 The scopes available for requesting on the provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_oidc_provider#scopes_supported IdentityOidcProvider#scopes_supported}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_oidc_provider#scopes_supported IdentityOidcProvider#scopes_supported}
 
 ---
 

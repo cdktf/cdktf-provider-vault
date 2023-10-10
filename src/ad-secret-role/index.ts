@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/ad_secret_role
+// https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/ad_secret_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface AdSecretRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The mount path for the AD backend.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/ad_secret_role#backend AdSecretRole#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/ad_secret_role#backend AdSecretRole#backend}
   */
   readonly backend: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/ad_secret_role#id AdSecretRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/ad_secret_role#id AdSecretRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,31 +23,31 @@ export interface AdSecretRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/ad_secret_role#namespace AdSecretRole#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/ad_secret_role#namespace AdSecretRole#namespace}
   */
   readonly namespace?: string;
   /**
   * Name of the role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/ad_secret_role#role AdSecretRole#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/ad_secret_role#role AdSecretRole#role}
   */
   readonly role: string;
   /**
   * The username/logon name for the service account with which this role will be associated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/ad_secret_role#service_account_name AdSecretRole#service_account_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/ad_secret_role#service_account_name AdSecretRole#service_account_name}
   */
   readonly serviceAccountName: string;
   /**
   * In seconds, the default password time-to-live.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/ad_secret_role#ttl AdSecretRole#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/ad_secret_role#ttl AdSecretRole#ttl}
   */
   readonly ttl?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/ad_secret_role vault_ad_secret_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/ad_secret_role vault_ad_secret_role}
 */
 export class AdSecretRole extends cdktf.TerraformResource {
 
@@ -66,7 +61,7 @@ export class AdSecretRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/ad_secret_role vault_ad_secret_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/ad_secret_role vault_ad_secret_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +72,7 @@ export class AdSecretRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_ad_secret_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.20.1',
+        providerVersion: '3.21.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
