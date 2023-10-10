@@ -1,6 +1,6 @@
 # `data_vault_pki_secret_backend_issuers`
 
-Refer to the Terraform Registory for docs: [`data_vault_pki_secret_backend_issuers`](https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/data-sources/pki_secret_backend_issuers).
+Refer to the Terraform Registory for docs: [`data_vault_pki_secret_backend_issuers`](https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/pki_secret_backend_issuers).
 
 # `dataVaultPkiSecretBackendIssuers` Submodule <a name="`dataVaultPkiSecretBackendIssuers` Submodule" id="@cdktf/provider-vault.dataVaultPkiSecretBackendIssuers"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_vault_pki_secret_backend_issue
 
 ### DataVaultPkiSecretBackendIssuers <a name="DataVaultPkiSecretBackendIssuers" id="@cdktf/provider-vault.dataVaultPkiSecretBackendIssuers.DataVaultPkiSecretBackendIssuers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/data-sources/pki_secret_backend_issuers vault_pki_secret_backend_issuers}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/pki_secret_backend_issuers vault_pki_secret_backend_issuers}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultPkiSecretBackendIssuers.DataVaultPkiSecretBackendIssuers.Initializer"></a>
 
@@ -634,7 +634,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/datavaultpkisecretbac
 | <code><a href="#@cdktf/provider-vault.dataVaultPkiSecretBackendIssuers.DataVaultPkiSecretBackendIssuersConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultPkiSecretBackendIssuers.DataVaultPkiSecretBackendIssuersConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultPkiSecretBackendIssuers.DataVaultPkiSecretBackendIssuersConfig.property.backend">Backend</a></code> | <code>*string</code> | Full path where PKI backend is mounted. |
-| <code><a href="#@cdktf/provider-vault.dataVaultPkiSecretBackendIssuers.DataVaultPkiSecretBackendIssuersConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/data-sources/pki_secret_backend_issuers#id DataVaultPkiSecretBackendIssuers#id}. |
+| <code><a href="#@cdktf/provider-vault.dataVaultPkiSecretBackendIssuers.DataVaultPkiSecretBackendIssuersConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/pki_secret_backend_issuers#id DataVaultPkiSecretBackendIssuers#id}. |
 | <code><a href="#@cdktf/provider-vault.dataVaultPkiSecretBackendIssuers.DataVaultPkiSecretBackendIssuersConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -719,7 +719,7 @@ Backend *string
 
 Full path where PKI backend is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/data-sources/pki_secret_backend_issuers#backend DataVaultPkiSecretBackendIssuers#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/pki_secret_backend_issuers#backend DataVaultPkiSecretBackendIssuers#backend}
 
 ---
 
@@ -731,7 +731,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/data-sources/pki_secret_backend_issuers#id DataVaultPkiSecretBackendIssuers#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/pki_secret_backend_issuers#id DataVaultPkiSecretBackendIssuers#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -748,7 +748,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/data-sources/pki_secret_backend_issuers#namespace DataVaultPkiSecretBackendIssuers#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/pki_secret_backend_issuers#namespace DataVaultPkiSecretBackendIssuers#namespace}
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/data-sources/auth_backend
+// https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/auth_backend
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataVaultAuthBackendConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/data-sources/auth_backend#id DataVaultAuthBackend#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/auth_backend#id DataVaultAuthBackend#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +22,19 @@ export interface DataVaultAuthBackendConfig extends cdktf.TerraformMetaArguments
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/data-sources/auth_backend#namespace DataVaultAuthBackend#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/auth_backend#namespace DataVaultAuthBackend#namespace}
   */
   readonly namespace?: string;
   /**
   * The auth backend mount point.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/data-sources/auth_backend#path DataVaultAuthBackend#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/auth_backend#path DataVaultAuthBackend#path}
   */
   readonly path: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/data-sources/auth_backend vault_auth_backend}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/auth_backend vault_auth_backend}
 */
 export class DataVaultAuthBackend extends cdktf.TerraformDataSource {
 
@@ -48,7 +48,7 @@ export class DataVaultAuthBackend extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/data-sources/auth_backend vault_auth_backend} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/auth_backend vault_auth_backend} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +59,7 @@ export class DataVaultAuthBackend extends cdktf.TerraformDataSource {
       terraformResourceType: 'vault_auth_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.20.1',
+        providerVersion: '3.21.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
