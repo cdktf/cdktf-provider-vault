@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.approleAuthBackendRole.ApproleAuthBackendRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/approleauthbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/approleauthbackendrole"
 
 approleauthbackendrole.NewApproleAuthBackendRole(scope Construct, id *string, config ApproleAuthBackendRoleConfig) ApproleAuthBackendRole
 ```
@@ -389,7 +389,7 @@ func ResetTokenType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.approleAuthBackendRole.ApproleAuthBackendRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/approleauthbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/approleauthbackendrole"
 
 approleauthbackendrole.ApproleAuthBackendRole_IsConstruct(x interface{}) *bool
 ```
@@ -421,7 +421,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.approleAuthBackendRole.ApproleAuthBackendRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/approleauthbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/approleauthbackendrole"
 
 approleauthbackendrole.ApproleAuthBackendRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -435,7 +435,7 @@ approleauthbackendrole.ApproleAuthBackendRole_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.approleAuthBackendRole.ApproleAuthBackendRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/approleauthbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/approleauthbackendrole"
 
 approleauthbackendrole.ApproleAuthBackendRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -1030,7 +1030,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.approleAuthBackendRole.ApproleAuthBackendRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/approleauthbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/approleauthbackendrole"
 
 &approleauthbackendrole.ApproleAuthBackendRoleConfig {
 	Connection: interface{},
