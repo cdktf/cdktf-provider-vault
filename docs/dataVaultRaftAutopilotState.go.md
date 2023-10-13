@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultRaftAutopilotState.DataVaultRaftAutopilotState.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/datavaultraftautopilotstate"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultraftautopilotstate"
 
 datavaultraftautopilotstate.NewDataVaultRaftAutopilotState(scope Construct, id *string, config DataVaultRaftAutopilotStateConfig) DataVaultRaftAutopilotState
 ```
@@ -284,7 +284,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.dataVaultRaftAutopilotState.DataVaultRaftAutopilotState.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/datavaultraftautopilotstate"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultraftautopilotstate"
 
 datavaultraftautopilotstate.DataVaultRaftAutopilotState_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.dataVaultRaftAutopilotState.DataVaultRaftAutopilotState.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/datavaultraftautopilotstate"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultraftautopilotstate"
 
 datavaultraftautopilotstate.DataVaultRaftAutopilotState_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ datavaultraftautopilotstate.DataVaultRaftAutopilotState_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vault.dataVaultRaftAutopilotState.DataVaultRaftAutopilotState.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/datavaultraftautopilotstate"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultraftautopilotstate"
 
 datavaultraftautopilotstate.DataVaultRaftAutopilotState_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -672,7 +672,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.dataVaultRaftAutopilotState.DataVaultRaftAutopilotStateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/datavaultraftautopilotstate"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultraftautopilotstate"
 
 &datavaultraftautopilotstate.DataVaultRaftAutopilotStateConfig {
 	Connection: interface{},
