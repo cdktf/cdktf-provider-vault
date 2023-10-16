@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultPkiSecretBackendKeys.DataVaultPkiSecretBackendKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/datavaultpkisecretbackendkeys"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultpkisecretbackendkeys"
 
 datavaultpkisecretbackendkeys.NewDataVaultPkiSecretBackendKeys(scope Construct, id *string, config DataVaultPkiSecretBackendKeysConfig) DataVaultPkiSecretBackendKeys
 ```
@@ -284,7 +284,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.dataVaultPkiSecretBackendKeys.DataVaultPkiSecretBackendKeys.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/datavaultpkisecretbackendkeys"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultpkisecretbackendkeys"
 
 datavaultpkisecretbackendkeys.DataVaultPkiSecretBackendKeys_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.dataVaultPkiSecretBackendKeys.DataVaultPkiSecretBackendKeys.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/datavaultpkisecretbackendkeys"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultpkisecretbackendkeys"
 
 datavaultpkisecretbackendkeys.DataVaultPkiSecretBackendKeys_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ datavaultpkisecretbackendkeys.DataVaultPkiSecretBackendKeys_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vault.dataVaultPkiSecretBackendKeys.DataVaultPkiSecretBackendKeys.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/datavaultpkisecretbackendkeys"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultpkisecretbackendkeys"
 
 datavaultpkisecretbackendkeys.DataVaultPkiSecretBackendKeys_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -606,7 +606,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.dataVaultPkiSecretBackendKeys.DataVaultPkiSecretBackendKeysConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v10/datavaultpkisecretbackendkeys"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultpkisecretbackendkeys"
 
 &datavaultpkisecretbackendkeys.DataVaultPkiSecretBackendKeysConfig {
 	Connection: interface{},
