@@ -53,6 +53,20 @@ export class DataVaultGenericSecret extends cdktf.TerraformDataSource {
   // =================
   public static readonly tfResourceType = "vault_generic_secret";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataVaultGenericSecret resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataVaultGenericSecret to import
+  * @param importFromId The id of the existing DataVaultGenericSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/generic_secret#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataVaultGenericSecret to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_generic_secret", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

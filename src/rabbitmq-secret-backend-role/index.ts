@@ -514,6 +514,20 @@ export class RabbitmqSecretBackendRole extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "vault_rabbitmq_secret_backend_role";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a RabbitmqSecretBackendRole resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the RabbitmqSecretBackendRole to import
+  * @param importFromId The id of the existing RabbitmqSecretBackendRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/rabbitmq_secret_backend_role#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the RabbitmqSecretBackendRole to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_rabbitmq_secret_backend_role", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

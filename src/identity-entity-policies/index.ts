@@ -55,6 +55,20 @@ export class IdentityEntityPolicies extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "vault_identity_entity_policies";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a IdentityEntityPolicies resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the IdentityEntityPolicies to import
+  * @param importFromId The id of the existing IdentityEntityPolicies that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_entity_policies#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the IdentityEntityPolicies to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_identity_entity_policies", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========
