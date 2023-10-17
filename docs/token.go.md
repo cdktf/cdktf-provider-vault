@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.token.Token.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/token"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/token"
 
 token.NewToken(scope Construct, id *string, config TokenConfig) Token
 ```
@@ -444,7 +444,7 @@ func ResetWrappingTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.token.Token.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/token"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/token"
 
 token.Token_IsConstruct(x interface{}) *bool
 ```
@@ -476,7 +476,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.token.Token.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/token"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/token"
 
 token.Token_IsTerraformElement(x interface{}) *bool
 ```
@@ -490,7 +490,7 @@ token.Token_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.token.Token.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/token"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/token"
 
 token.Token_IsTerraformResource(x interface{}) *bool
 ```
@@ -504,7 +504,7 @@ token.Token_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.token.Token.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/token"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/token"
 
 token.Token_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1140,7 +1140,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.token.TokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/token"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/token"
 
 &token.TokenConfig {
 	Connection: interface{},
