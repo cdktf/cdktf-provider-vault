@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_group_member_entity_ids
 // generated from terraform resource schema
 
@@ -55,6 +50,20 @@ export class IdentityGroupMemberEntityIds extends cdktf.TerraformResource {
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "vault_identity_group_member_entity_ids";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a IdentityGroupMemberEntityIds resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the IdentityGroupMemberEntityIds to import
+  * @param importFromId The id of the existing IdentityGroupMemberEntityIds that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_group_member_entity_ids#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the IdentityGroupMemberEntityIds to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_identity_group_member_entity_ids", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER
