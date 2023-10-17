@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.kvSecretBackendV2.KvSecretBackendV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/kvsecretbackendv2"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/kvsecretbackendv2"
 
 kvsecretbackendv2.NewKvSecretBackendV2(scope Construct, id *string, config KvSecretBackendV2Config) KvSecretBackendV2
 ```
@@ -367,7 +367,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.kvSecretBackendV2.KvSecretBackendV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/kvsecretbackendv2"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/kvsecretbackendv2"
 
 kvsecretbackendv2.KvSecretBackendV2_IsConstruct(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.kvSecretBackendV2.KvSecretBackendV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/kvsecretbackendv2"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/kvsecretbackendv2"
 
 kvsecretbackendv2.KvSecretBackendV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ kvsecretbackendv2.KvSecretBackendV2_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.kvSecretBackendV2.KvSecretBackendV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/kvsecretbackendv2"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/kvsecretbackendv2"
 
 kvsecretbackendv2.KvSecretBackendV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -427,7 +427,7 @@ kvsecretbackendv2.KvSecretBackendV2_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.kvSecretBackendV2.KvSecretBackendV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/kvsecretbackendv2"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/kvsecretbackendv2"
 
 kvsecretbackendv2.KvSecretBackendV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -788,7 +788,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.kvSecretBackendV2.KvSecretBackendV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/kvsecretbackendv2"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/kvsecretbackendv2"
 
 &kvsecretbackendv2.KvSecretBackendV2Config {
 	Connection: interface{},
