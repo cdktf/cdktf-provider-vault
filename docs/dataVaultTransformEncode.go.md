@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaulttransformencode"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaulttransformencode"
 
 datavaulttransformencode.NewDataVaultTransformEncode(scope Construct, id *string, config DataVaultTransformEncodeConfig) DataVaultTransformEncode
 ```
@@ -327,7 +327,7 @@ func ResetValue()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaulttransformencode"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaulttransformencode"
 
 datavaulttransformencode.DataVaultTransformEncode_IsConstruct(x interface{}) *bool
 ```
@@ -359,7 +359,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaulttransformencode"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaulttransformencode"
 
 datavaulttransformencode.DataVaultTransformEncode_IsTerraformElement(x interface{}) *bool
 ```
@@ -373,7 +373,7 @@ datavaulttransformencode.DataVaultTransformEncode_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaulttransformencode"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaulttransformencode"
 
 datavaulttransformencode.DataVaultTransformEncode_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -387,7 +387,7 @@ datavaulttransformencode.DataVaultTransformEncode_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaulttransformencode"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaulttransformencode"
 
 datavaulttransformencode.DataVaultTransformEncode_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -814,7 +814,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaulttransformencode"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaulttransformencode"
 
 &datavaulttransformencode.DataVaultTransformEncodeConfig {
 	Connection: interface{},

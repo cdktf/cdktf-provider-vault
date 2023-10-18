@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultLdapStaticCredentials.DataVaultLdapStaticCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultldapstaticcredentials"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultldapstaticcredentials"
 
 datavaultldapstaticcredentials.NewDataVaultLdapStaticCredentials(scope Construct, id *string, config DataVaultLdapStaticCredentialsConfig) DataVaultLdapStaticCredentials
 ```
@@ -285,7 +285,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.dataVaultLdapStaticCredentials.DataVaultLdapStaticCredentials.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultldapstaticcredentials"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultldapstaticcredentials"
 
 datavaultldapstaticcredentials.DataVaultLdapStaticCredentials_IsConstruct(x interface{}) *bool
 ```
@@ -317,7 +317,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.dataVaultLdapStaticCredentials.DataVaultLdapStaticCredentials.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultldapstaticcredentials"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultldapstaticcredentials"
 
 datavaultldapstaticcredentials.DataVaultLdapStaticCredentials_IsTerraformElement(x interface{}) *bool
 ```
@@ -331,7 +331,7 @@ datavaultldapstaticcredentials.DataVaultLdapStaticCredentials_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vault.dataVaultLdapStaticCredentials.DataVaultLdapStaticCredentials.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultldapstaticcredentials"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultldapstaticcredentials"
 
 datavaultldapstaticcredentials.DataVaultLdapStaticCredentials_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ datavaultldapstaticcredentials.DataVaultLdapStaticCredentials_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.dataVaultLdapStaticCredentials.DataVaultLdapStaticCredentials.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultldapstaticcredentials"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultldapstaticcredentials"
 
 datavaultldapstaticcredentials.DataVaultLdapStaticCredentials_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -717,7 +717,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.dataVaultLdapStaticCredentials.DataVaultLdapStaticCredentialsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultldapstaticcredentials"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultldapstaticcredentials"
 
 &datavaultldapstaticcredentials.DataVaultLdapStaticCredentialsConfig {
 	Connection: interface{},
