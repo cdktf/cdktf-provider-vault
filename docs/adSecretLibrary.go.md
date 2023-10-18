@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/adsecretlibrary"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/adsecretlibrary"
 
 adsecretlibrary.NewAdSecretLibrary(scope Construct, id *string, config AdSecretLibraryConfig) AdSecretLibrary
 ```
@@ -367,7 +367,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/adsecretlibrary"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/adsecretlibrary"
 
 adsecretlibrary.AdSecretLibrary_IsConstruct(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/adsecretlibrary"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/adsecretlibrary"
 
 adsecretlibrary.AdSecretLibrary_IsTerraformElement(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ adsecretlibrary.AdSecretLibrary_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/adsecretlibrary"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/adsecretlibrary"
 
 adsecretlibrary.AdSecretLibrary_IsTerraformResource(x interface{}) *bool
 ```
@@ -427,7 +427,7 @@ adsecretlibrary.AdSecretLibrary_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/adsecretlibrary"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/adsecretlibrary"
 
 adsecretlibrary.AdSecretLibrary_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -832,7 +832,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/adsecretlibrary"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/adsecretlibrary"
 
 &adsecretlibrary.AdSecretLibraryConfig {
 	Connection: interface{},
