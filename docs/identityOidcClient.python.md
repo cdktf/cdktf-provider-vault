@@ -1,6 +1,6 @@
 # `vault_identity_oidc_client`
 
-Refer to the Terraform Registory for docs: [`vault_identity_oidc_client`](https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_oidc_client).
+Refer to the Terraform Registory for docs: [`vault_identity_oidc_client`](https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_oidc_client).
 
 # `identityOidcClient` Submodule <a name="`identityOidcClient` Submodule" id="@cdktf/provider-vault.identityOidcClient"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_identity_oidc_client`](https:
 
 ### IdentityOidcClient <a name="IdentityOidcClient" id="@cdktf/provider-vault.identityOidcClient.IdentityOidcClient"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_oidc_client vault_identity_oidc_client}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_oidc_client vault_identity_oidc_client}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.identityOidcClient.IdentityOidcClient.Initializer"></a>
 
@@ -52,7 +52,7 @@ identityOidcClient.IdentityOidcClient(
 | <code><a href="#@cdktf/provider-vault.identityOidcClient.IdentityOidcClient.Initializer.parameter.accessTokenTtl">access_token_ttl</a></code> | <code>typing.Union[int, float]</code> | The time-to-live for access tokens obtained by the client. |
 | <code><a href="#@cdktf/provider-vault.identityOidcClient.IdentityOidcClient.Initializer.parameter.assignments">assignments</a></code> | <code>typing.List[str]</code> | A list of assignment resources associated with the client. |
 | <code><a href="#@cdktf/provider-vault.identityOidcClient.IdentityOidcClient.Initializer.parameter.clientType">client_type</a></code> | <code>str</code> | The client type based on its ability to maintain confidentiality of credentials.Defaults to 'confidential'. |
-| <code><a href="#@cdktf/provider-vault.identityOidcClient.IdentityOidcClient.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_oidc_client#id IdentityOidcClient#id}. |
+| <code><a href="#@cdktf/provider-vault.identityOidcClient.IdentityOidcClient.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_oidc_client#id IdentityOidcClient#id}. |
 | <code><a href="#@cdktf/provider-vault.identityOidcClient.IdentityOidcClient.Initializer.parameter.idTokenTtl">id_token_ttl</a></code> | <code>typing.Union[int, float]</code> | The time-to-live for ID tokens obtained by the client. |
 | <code><a href="#@cdktf/provider-vault.identityOidcClient.IdentityOidcClient.Initializer.parameter.key">key</a></code> | <code>str</code> | A reference to a named key resource in Vault. This cannot be modified after creation. |
 | <code><a href="#@cdktf/provider-vault.identityOidcClient.IdentityOidcClient.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
@@ -126,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_oidc_client#name IdentityOidcClient#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_oidc_client#name IdentityOidcClient#name}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The time-to-live for access tokens obtained by the client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_oidc_client#access_token_ttl IdentityOidcClient#access_token_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_oidc_client#access_token_ttl IdentityOidcClient#access_token_ttl}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A list of assignment resources associated with the client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_oidc_client#assignments IdentityOidcClient#assignments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_oidc_client#assignments IdentityOidcClient#assignments}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The client type based on its ability to maintain confidentiality of credentials.Defaults to 'confidential'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_oidc_client#client_type IdentityOidcClient#client_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_oidc_client#client_type IdentityOidcClient#client_type}
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_oidc_client#id IdentityOidcClient#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_oidc_client#id IdentityOidcClient#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -179,7 +179,7 @@ The time-to-live for ID tokens obtained by the client.
 
 The value should be less than the verification_ttl on the key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_oidc_client#id_token_ttl IdentityOidcClient#id_token_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_oidc_client#id_token_ttl IdentityOidcClient#id_token_ttl}
 
 ---
 
@@ -189,7 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A reference to a named key resource in Vault. This cannot be modified after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_oidc_client#key IdentityOidcClient#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_oidc_client#key IdentityOidcClient#key}
 
 ---
 
@@ -199,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_oidc_client#namespace IdentityOidcClient#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_oidc_client#namespace IdentityOidcClient#namespace}
 
 ---
 
@@ -211,7 +211,7 @@ Redirection URI values used by the client.
 
 One of these values must exactly match the redirect_uri parameter value used in each authentication request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_oidc_client#redirect_uris IdentityOidcClient#redirect_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_oidc_client#redirect_uris IdentityOidcClient#redirect_uris}
 
 ---
 
@@ -686,7 +686,7 @@ The construct id used in the generated config for the IdentityOidcClient to impo
 
 The id of the existing IdentityOidcClient that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_oidc_client#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_oidc_client#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1143,7 +1143,7 @@ identityOidcClient.IdentityOidcClientConfig(
 | <code><a href="#@cdktf/provider-vault.identityOidcClient.IdentityOidcClientConfig.property.accessTokenTtl">access_token_ttl</a></code> | <code>typing.Union[int, float]</code> | The time-to-live for access tokens obtained by the client. |
 | <code><a href="#@cdktf/provider-vault.identityOidcClient.IdentityOidcClientConfig.property.assignments">assignments</a></code> | <code>typing.List[str]</code> | A list of assignment resources associated with the client. |
 | <code><a href="#@cdktf/provider-vault.identityOidcClient.IdentityOidcClientConfig.property.clientType">client_type</a></code> | <code>str</code> | The client type based on its ability to maintain confidentiality of credentials.Defaults to 'confidential'. |
-| <code><a href="#@cdktf/provider-vault.identityOidcClient.IdentityOidcClientConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_oidc_client#id IdentityOidcClient#id}. |
+| <code><a href="#@cdktf/provider-vault.identityOidcClient.IdentityOidcClientConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_oidc_client#id IdentityOidcClient#id}. |
 | <code><a href="#@cdktf/provider-vault.identityOidcClient.IdentityOidcClientConfig.property.idTokenTtl">id_token_ttl</a></code> | <code>typing.Union[int, float]</code> | The time-to-live for ID tokens obtained by the client. |
 | <code><a href="#@cdktf/provider-vault.identityOidcClient.IdentityOidcClientConfig.property.key">key</a></code> | <code>str</code> | A reference to a named key resource in Vault. This cannot be modified after creation. |
 | <code><a href="#@cdktf/provider-vault.identityOidcClient.IdentityOidcClientConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
@@ -1231,7 +1231,7 @@ name: str
 
 The name of the client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_oidc_client#name IdentityOidcClient#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_oidc_client#name IdentityOidcClient#name}
 
 ---
 
@@ -1245,7 +1245,7 @@ access_token_ttl: typing.Union[int, float]
 
 The time-to-live for access tokens obtained by the client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_oidc_client#access_token_ttl IdentityOidcClient#access_token_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_oidc_client#access_token_ttl IdentityOidcClient#access_token_ttl}
 
 ---
 
@@ -1259,7 +1259,7 @@ assignments: typing.List[str]
 
 A list of assignment resources associated with the client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_oidc_client#assignments IdentityOidcClient#assignments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_oidc_client#assignments IdentityOidcClient#assignments}
 
 ---
 
@@ -1273,7 +1273,7 @@ client_type: str
 
 The client type based on its ability to maintain confidentiality of credentials.Defaults to 'confidential'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_oidc_client#client_type IdentityOidcClient#client_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_oidc_client#client_type IdentityOidcClient#client_type}
 
 ---
 
@@ -1285,7 +1285,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_oidc_client#id IdentityOidcClient#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_oidc_client#id IdentityOidcClient#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1304,7 +1304,7 @@ The time-to-live for ID tokens obtained by the client.
 
 The value should be less than the verification_ttl on the key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_oidc_client#id_token_ttl IdentityOidcClient#id_token_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_oidc_client#id_token_ttl IdentityOidcClient#id_token_ttl}
 
 ---
 
@@ -1318,7 +1318,7 @@ key: str
 
 A reference to a named key resource in Vault. This cannot be modified after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_oidc_client#key IdentityOidcClient#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_oidc_client#key IdentityOidcClient#key}
 
 ---
 
@@ -1332,7 +1332,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_oidc_client#namespace IdentityOidcClient#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_oidc_client#namespace IdentityOidcClient#namespace}
 
 ---
 
@@ -1348,7 +1348,7 @@ Redirection URI values used by the client.
 
 One of these values must exactly match the redirect_uri parameter value used in each authentication request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_oidc_client#redirect_uris IdentityOidcClient#redirect_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_oidc_client#redirect_uris IdentityOidcClient#redirect_uris}
 
 ---
 

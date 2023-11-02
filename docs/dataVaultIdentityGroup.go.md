@@ -1,6 +1,6 @@
 # `data_vault_identity_group`
 
-Refer to the Terraform Registory for docs: [`data_vault_identity_group`](https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/identity_group).
+Refer to the Terraform Registory for docs: [`data_vault_identity_group`](https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/identity_group).
 
 # `dataVaultIdentityGroup` Submodule <a name="`dataVaultIdentityGroup` Submodule" id="@cdktf/provider-vault.dataVaultIdentityGroup"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_vault_identity_group`](https:/
 
 ### DataVaultIdentityGroup <a name="DataVaultIdentityGroup" id="@cdktf/provider-vault.dataVaultIdentityGroup.DataVaultIdentityGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/identity_group vault_identity_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/identity_group vault_identity_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultIdentityGroup.DataVaultIdentityGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultidentitygroup"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentitygroup"
 
 datavaultidentitygroup.NewDataVaultIdentityGroup(scope Construct, id *string, config DataVaultIdentityGroupConfig) DataVaultIdentityGroup
 ```
@@ -320,7 +320,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.dataVaultIdentityGroup.DataVaultIdentityGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultidentitygroup"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentitygroup"
 
 datavaultidentitygroup.DataVaultIdentityGroup_IsConstruct(x interface{}) *bool
 ```
@@ -352,7 +352,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.dataVaultIdentityGroup.DataVaultIdentityGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultidentitygroup"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentitygroup"
 
 datavaultidentitygroup.DataVaultIdentityGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -366,7 +366,7 @@ datavaultidentitygroup.DataVaultIdentityGroup_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vault.dataVaultIdentityGroup.DataVaultIdentityGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultidentitygroup"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentitygroup"
 
 datavaultidentitygroup.DataVaultIdentityGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -380,7 +380,7 @@ datavaultidentitygroup.DataVaultIdentityGroup_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.dataVaultIdentityGroup.DataVaultIdentityGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultidentitygroup"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentitygroup"
 
 datavaultidentitygroup.DataVaultIdentityGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -409,7 +409,7 @@ The construct id used in the generated config for the DataVaultIdentityGroup to 
 
 The id of the existing DataVaultIdentityGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/identity_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/identity_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -939,7 +939,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.dataVaultIdentityGroup.DataVaultIdentityGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultidentitygroup"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentitygroup"
 
 &datavaultidentitygroup.DataVaultIdentityGroupConfig {
 	Connection: interface{},
@@ -975,7 +975,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultidentitygrou
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityGroup.DataVaultIdentityGroupConfig.property.aliasName">AliasName</a></code> | <code>*string</code> | Name of the alias. This should be supplied in conjunction with `alias_mount_accessor`. |
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityGroup.DataVaultIdentityGroupConfig.property.groupId">GroupId</a></code> | <code>*string</code> | ID of the group. |
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityGroup.DataVaultIdentityGroupConfig.property.groupName">GroupName</a></code> | <code>*string</code> | Name of the group. |
-| <code><a href="#@cdktf/provider-vault.dataVaultIdentityGroup.DataVaultIdentityGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/identity_group#id DataVaultIdentityGroup#id}. |
+| <code><a href="#@cdktf/provider-vault.dataVaultIdentityGroup.DataVaultIdentityGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/identity_group#id DataVaultIdentityGroup#id}. |
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityGroup.DataVaultIdentityGroupConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -1060,7 +1060,7 @@ AliasId *string
 
 ID of the alias.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/identity_group#alias_id DataVaultIdentityGroup#alias_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/identity_group#alias_id DataVaultIdentityGroup#alias_id}
 
 ---
 
@@ -1074,7 +1074,7 @@ AliasMountAccessor *string
 
 Accessor of the mount to which the alias belongs to. This should be supplied in conjunction with `alias_name`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/identity_group#alias_mount_accessor DataVaultIdentityGroup#alias_mount_accessor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/identity_group#alias_mount_accessor DataVaultIdentityGroup#alias_mount_accessor}
 
 ---
 
@@ -1088,7 +1088,7 @@ AliasName *string
 
 Name of the alias. This should be supplied in conjunction with `alias_mount_accessor`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/identity_group#alias_name DataVaultIdentityGroup#alias_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/identity_group#alias_name DataVaultIdentityGroup#alias_name}
 
 ---
 
@@ -1102,7 +1102,7 @@ GroupId *string
 
 ID of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/identity_group#group_id DataVaultIdentityGroup#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/identity_group#group_id DataVaultIdentityGroup#group_id}
 
 ---
 
@@ -1116,7 +1116,7 @@ GroupName *string
 
 Name of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/identity_group#group_name DataVaultIdentityGroup#group_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/identity_group#group_name DataVaultIdentityGroup#group_name}
 
 ---
 
@@ -1128,7 +1128,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/identity_group#id DataVaultIdentityGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/identity_group#id DataVaultIdentityGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1145,7 +1145,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/identity_group#namespace DataVaultIdentityGroup#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/identity_group#namespace DataVaultIdentityGroup#namespace}
 
 ---
 

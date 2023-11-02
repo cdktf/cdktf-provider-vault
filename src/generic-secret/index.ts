@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/generic_secret
+// https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/generic_secret
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +10,23 @@ export interface GenericSecretConfig extends cdktf.TerraformMetaArguments {
   /**
   * JSON-encoded secret data to write.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/generic_secret#data_json GenericSecret#data_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/generic_secret#data_json GenericSecret#data_json}
   */
   readonly dataJson: string;
   /**
   * Only applicable for kv-v2 stores. If set, permanently deletes all versions for the specified key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/generic_secret#delete_all_versions GenericSecret#delete_all_versions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/generic_secret#delete_all_versions GenericSecret#delete_all_versions}
   */
   readonly deleteAllVersions?: boolean | cdktf.IResolvable;
   /**
   * Don't attempt to read the token from Vault if true; drift won't be detected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/generic_secret#disable_read GenericSecret#disable_read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/generic_secret#disable_read GenericSecret#disable_read}
   */
   readonly disableRead?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/generic_secret#id GenericSecret#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/generic_secret#id GenericSecret#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,19 +35,19 @@ export interface GenericSecretConfig extends cdktf.TerraformMetaArguments {
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/generic_secret#namespace GenericSecret#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/generic_secret#namespace GenericSecret#namespace}
   */
   readonly namespace?: string;
   /**
   * Full path where the generic secret will be written.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/generic_secret#path GenericSecret#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/generic_secret#path GenericSecret#path}
   */
   readonly path: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/generic_secret vault_generic_secret}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/generic_secret vault_generic_secret}
 */
 export class GenericSecret extends cdktf.TerraformResource {
 
@@ -68,7 +63,7 @@ export class GenericSecret extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GenericSecret resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GenericSecret to import
-  * @param importFromId The id of the existing GenericSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/generic_secret#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GenericSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/generic_secret#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GenericSecret to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -80,7 +75,7 @@ export class GenericSecret extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/generic_secret vault_generic_secret} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/generic_secret vault_generic_secret} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -91,7 +86,7 @@ export class GenericSecret extends cdktf.TerraformResource {
       terraformResourceType: 'vault_generic_secret',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.21.0',
+        providerVersion: '3.22.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

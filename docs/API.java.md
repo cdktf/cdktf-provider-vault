@@ -158,6 +158,8 @@ The following submodules are available:
 - [raftAutopilot](./raftAutopilot.java.md)
 - [raftSnapshotAgentConfig](./raftSnapshotAgentConfig.java.md)
 - [rgpPolicy](./rgpPolicy.java.md)
+- [samlAuthBackend](./samlAuthBackend.java.md)
+- [samlAuthBackendRole](./samlAuthBackendRole.java.md)
 - [sshSecretBackendCa](./sshSecretBackendCa.java.md)
 - [sshSecretBackendRole](./sshSecretBackendRole.java.md)
 - [terraformCloudSecretBackend](./terraformCloudSecretBackend.java.md)

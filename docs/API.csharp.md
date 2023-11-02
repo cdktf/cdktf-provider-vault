@@ -158,6 +158,8 @@ The following submodules are available:
 - [raftAutopilot](./raftAutopilot.csharp.md)
 - [raftSnapshotAgentConfig](./raftSnapshotAgentConfig.csharp.md)
 - [rgpPolicy](./rgpPolicy.csharp.md)
+- [samlAuthBackend](./samlAuthBackend.csharp.md)
+- [samlAuthBackendRole](./samlAuthBackendRole.csharp.md)
 - [sshSecretBackendCa](./sshSecretBackendCa.csharp.md)
 - [sshSecretBackendRole](./sshSecretBackendRole.csharp.md)
 - [terraformCloudSecretBackend](./terraformCloudSecretBackend.csharp.md)

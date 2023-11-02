@@ -1,6 +1,6 @@
 # `vault_identity_group`
 
-Refer to the Terraform Registory for docs: [`vault_identity_group`](https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_group).
+Refer to the Terraform Registory for docs: [`vault_identity_group`](https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_group).
 
 # `identityGroup` Submodule <a name="`identityGroup` Submodule" id="@cdktf/provider-vault.identityGroup"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`vault_identity_group`](https://regi
 
 ### IdentityGroup <a name="IdentityGroup" id="@cdktf/provider-vault.identityGroup.IdentityGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_group vault_identity_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_group vault_identity_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.identityGroup.IdentityGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/identitygroup"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identitygroup"
 
 identitygroup.NewIdentityGroup(scope Construct, id *string, config IdentityGroupConfig) IdentityGroup
 ```
@@ -409,7 +409,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.identityGroup.IdentityGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/identitygroup"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identitygroup"
 
 identitygroup.IdentityGroup_IsConstruct(x interface{}) *bool
 ```
@@ -441,7 +441,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.identityGroup.IdentityGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/identitygroup"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identitygroup"
 
 identitygroup.IdentityGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -455,7 +455,7 @@ identitygroup.IdentityGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.identityGroup.IdentityGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/identitygroup"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identitygroup"
 
 identitygroup.IdentityGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -469,7 +469,7 @@ identitygroup.IdentityGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.identityGroup.IdentityGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/identitygroup"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identitygroup"
 
 identitygroup.IdentityGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -498,7 +498,7 @@ The construct id used in the generated config for the IdentityGroup to import.
 
 The id of the existing IdentityGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -940,7 +940,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.identityGroup.IdentityGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/identitygroup"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identitygroup"
 
 &identitygroup.IdentityGroupConfig {
 	Connection: interface{},
@@ -978,7 +978,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/identitygroup"
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.externalMemberEntityIds">ExternalMemberEntityIds</a></code> | <code>interface{}</code> | Manage member entities externally through `vault_identity_group_member_entity_ids`. |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.externalMemberGroupIds">ExternalMemberGroupIds</a></code> | <code>interface{}</code> | Manage member groups externally through `vault_identity_group_member_group_ids`. |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.externalPolicies">ExternalPolicies</a></code> | <code>interface{}</code> | Manage policies externally through `vault_identity_group_policies`, allows using group ID in assigned policies. |
-| <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_group#id IdentityGroup#id}. |
+| <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_group#id IdentityGroup#id}. |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.memberEntityIds">MemberEntityIds</a></code> | <code>*[]*string</code> | Entity IDs to be assigned as group members. |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.memberGroupIds">MemberGroupIds</a></code> | <code>*[]*string</code> | Group IDs to be assigned as group members. |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.metadata">Metadata</a></code> | <code>*map[string]*string</code> | Metadata to be associated with the group. |
@@ -1069,7 +1069,7 @@ ExternalMemberEntityIds interface{}
 
 Manage member entities externally through `vault_identity_group_member_entity_ids`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_group#external_member_entity_ids IdentityGroup#external_member_entity_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_group#external_member_entity_ids IdentityGroup#external_member_entity_ids}
 
 ---
 
@@ -1083,7 +1083,7 @@ ExternalMemberGroupIds interface{}
 
 Manage member groups externally through `vault_identity_group_member_group_ids`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_group#external_member_group_ids IdentityGroup#external_member_group_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_group#external_member_group_ids IdentityGroup#external_member_group_ids}
 
 ---
 
@@ -1097,7 +1097,7 @@ ExternalPolicies interface{}
 
 Manage policies externally through `vault_identity_group_policies`, allows using group ID in assigned policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_group#external_policies IdentityGroup#external_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_group#external_policies IdentityGroup#external_policies}
 
 ---
 
@@ -1109,7 +1109,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_group#id IdentityGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_group#id IdentityGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1126,7 +1126,7 @@ MemberEntityIds *[]*string
 
 Entity IDs to be assigned as group members.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_group#member_entity_ids IdentityGroup#member_entity_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_group#member_entity_ids IdentityGroup#member_entity_ids}
 
 ---
 
@@ -1140,7 +1140,7 @@ MemberGroupIds *[]*string
 
 Group IDs to be assigned as group members.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_group#member_group_ids IdentityGroup#member_group_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_group#member_group_ids IdentityGroup#member_group_ids}
 
 ---
 
@@ -1154,7 +1154,7 @@ Metadata *map[string]*string
 
 Metadata to be associated with the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_group#metadata IdentityGroup#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_group#metadata IdentityGroup#metadata}
 
 ---
 
@@ -1168,7 +1168,7 @@ Name *string
 
 Name of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_group#name IdentityGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_group#name IdentityGroup#name}
 
 ---
 
@@ -1182,7 +1182,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_group#namespace IdentityGroup#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_group#namespace IdentityGroup#namespace}
 
 ---
 
@@ -1196,7 +1196,7 @@ Policies *[]*string
 
 Policies to be tied to the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_group#policies IdentityGroup#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_group#policies IdentityGroup#policies}
 
 ---
 
@@ -1210,7 +1210,7 @@ Type *string
 
 Type of the group, internal or external. Defaults to internal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_group#type IdentityGroup#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_group#type IdentityGroup#type}
 
 ---
 

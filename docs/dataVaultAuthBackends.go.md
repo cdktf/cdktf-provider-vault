@@ -1,6 +1,6 @@
 # `data_vault_auth_backends`
 
-Refer to the Terraform Registory for docs: [`data_vault_auth_backends`](https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/auth_backends).
+Refer to the Terraform Registory for docs: [`data_vault_auth_backends`](https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/auth_backends).
 
 # `dataVaultAuthBackends` Submodule <a name="`dataVaultAuthBackends` Submodule" id="@cdktf/provider-vault.dataVaultAuthBackends"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_vault_auth_backends`](https://
 
 ### DataVaultAuthBackends <a name="DataVaultAuthBackends" id="@cdktf/provider-vault.dataVaultAuthBackends.DataVaultAuthBackends"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/auth_backends vault_auth_backends}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/auth_backends vault_auth_backends}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultAuthBackends.DataVaultAuthBackends.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultauthbackends"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultauthbackends"
 
 datavaultauthbackends.NewDataVaultAuthBackends(scope Construct, id *string, config DataVaultAuthBackendsConfig) DataVaultAuthBackends
 ```
@@ -292,7 +292,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.dataVaultAuthBackends.DataVaultAuthBackends.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultauthbackends"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultauthbackends"
 
 datavaultauthbackends.DataVaultAuthBackends_IsConstruct(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.dataVaultAuthBackends.DataVaultAuthBackends.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultauthbackends"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultauthbackends"
 
 datavaultauthbackends.DataVaultAuthBackends_IsTerraformElement(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ datavaultauthbackends.DataVaultAuthBackends_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vault.dataVaultAuthBackends.DataVaultAuthBackends.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultauthbackends"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultauthbackends"
 
 datavaultauthbackends.DataVaultAuthBackends_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,7 +352,7 @@ datavaultauthbackends.DataVaultAuthBackends_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.dataVaultAuthBackends.DataVaultAuthBackends.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultauthbackends"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultauthbackends"
 
 datavaultauthbackends.DataVaultAuthBackends_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -381,7 +381,7 @@ The construct id used in the generated config for the DataVaultAuthBackends to i
 
 The id of the existing DataVaultAuthBackends that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/auth_backends#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/auth_backends#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -647,7 +647,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.dataVaultAuthBackends.DataVaultAuthBackendsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultauthbackends"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultauthbackends"
 
 &datavaultauthbackends.DataVaultAuthBackendsConfig {
 	Connection: interface{},
@@ -674,7 +674,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultauthbackends
 | <code><a href="#@cdktf/provider-vault.dataVaultAuthBackends.DataVaultAuthBackendsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultAuthBackends.DataVaultAuthBackendsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultAuthBackends.DataVaultAuthBackendsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultAuthBackends.DataVaultAuthBackendsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/auth_backends#id DataVaultAuthBackends#id}. |
+| <code><a href="#@cdktf/provider-vault.dataVaultAuthBackends.DataVaultAuthBackendsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/auth_backends#id DataVaultAuthBackends#id}. |
 | <code><a href="#@cdktf/provider-vault.dataVaultAuthBackends.DataVaultAuthBackendsConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.dataVaultAuthBackends.DataVaultAuthBackendsConfig.property.type">Type</a></code> | <code>*string</code> | The type of the auth backend. |
 
@@ -758,7 +758,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/auth_backends#id DataVaultAuthBackends#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/auth_backends#id DataVaultAuthBackends#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -775,7 +775,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/auth_backends#namespace DataVaultAuthBackends#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/auth_backends#namespace DataVaultAuthBackends#namespace}
 
 ---
 
@@ -789,7 +789,7 @@ Type *string
 
 The type of the auth backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/auth_backends#type DataVaultAuthBackends#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/auth_backends#type DataVaultAuthBackends#type}
 
 ---
 

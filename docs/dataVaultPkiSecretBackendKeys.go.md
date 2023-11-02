@@ -1,6 +1,6 @@
 # `data_vault_pki_secret_backend_keys`
 
-Refer to the Terraform Registory for docs: [`data_vault_pki_secret_backend_keys`](https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/pki_secret_backend_keys).
+Refer to the Terraform Registory for docs: [`data_vault_pki_secret_backend_keys`](https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/pki_secret_backend_keys).
 
 # `dataVaultPkiSecretBackendKeys` Submodule <a name="`dataVaultPkiSecretBackendKeys` Submodule" id="@cdktf/provider-vault.dataVaultPkiSecretBackendKeys"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_vault_pki_secret_backend_keys`
 
 ### DataVaultPkiSecretBackendKeys <a name="DataVaultPkiSecretBackendKeys" id="@cdktf/provider-vault.dataVaultPkiSecretBackendKeys.DataVaultPkiSecretBackendKeys"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/pki_secret_backend_keys vault_pki_secret_backend_keys}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/pki_secret_backend_keys vault_pki_secret_backend_keys}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultPkiSecretBackendKeys.DataVaultPkiSecretBackendKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultpkisecretbackendkeys"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultpkisecretbackendkeys"
 
 datavaultpkisecretbackendkeys.NewDataVaultPkiSecretBackendKeys(scope Construct, id *string, config DataVaultPkiSecretBackendKeysConfig) DataVaultPkiSecretBackendKeys
 ```
@@ -285,7 +285,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.dataVaultPkiSecretBackendKeys.DataVaultPkiSecretBackendKeys.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultpkisecretbackendkeys"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultpkisecretbackendkeys"
 
 datavaultpkisecretbackendkeys.DataVaultPkiSecretBackendKeys_IsConstruct(x interface{}) *bool
 ```
@@ -317,7 +317,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.dataVaultPkiSecretBackendKeys.DataVaultPkiSecretBackendKeys.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultpkisecretbackendkeys"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultpkisecretbackendkeys"
 
 datavaultpkisecretbackendkeys.DataVaultPkiSecretBackendKeys_IsTerraformElement(x interface{}) *bool
 ```
@@ -331,7 +331,7 @@ datavaultpkisecretbackendkeys.DataVaultPkiSecretBackendKeys_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vault.dataVaultPkiSecretBackendKeys.DataVaultPkiSecretBackendKeys.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultpkisecretbackendkeys"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultpkisecretbackendkeys"
 
 datavaultpkisecretbackendkeys.DataVaultPkiSecretBackendKeys_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ datavaultpkisecretbackendkeys.DataVaultPkiSecretBackendKeys_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.dataVaultPkiSecretBackendKeys.DataVaultPkiSecretBackendKeys.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultpkisecretbackendkeys"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultpkisecretbackendkeys"
 
 datavaultpkisecretbackendkeys.DataVaultPkiSecretBackendKeys_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -374,7 +374,7 @@ The construct id used in the generated config for the DataVaultPkiSecretBackendK
 
 The id of the existing DataVaultPkiSecretBackendKeys that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/pki_secret_backend_keys#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/pki_secret_backend_keys#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -651,7 +651,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.dataVaultPkiSecretBackendKeys.DataVaultPkiSecretBackendKeysConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultpkisecretbackendkeys"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultpkisecretbackendkeys"
 
 &datavaultpkisecretbackendkeys.DataVaultPkiSecretBackendKeysConfig {
 	Connection: interface{},
@@ -679,7 +679,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultpkisecretbac
 | <code><a href="#@cdktf/provider-vault.dataVaultPkiSecretBackendKeys.DataVaultPkiSecretBackendKeysConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultPkiSecretBackendKeys.DataVaultPkiSecretBackendKeysConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultPkiSecretBackendKeys.DataVaultPkiSecretBackendKeysConfig.property.backend">Backend</a></code> | <code>*string</code> | Full path where PKI backend is mounted. |
-| <code><a href="#@cdktf/provider-vault.dataVaultPkiSecretBackendKeys.DataVaultPkiSecretBackendKeysConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/pki_secret_backend_keys#id DataVaultPkiSecretBackendKeys#id}. |
+| <code><a href="#@cdktf/provider-vault.dataVaultPkiSecretBackendKeys.DataVaultPkiSecretBackendKeysConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/pki_secret_backend_keys#id DataVaultPkiSecretBackendKeys#id}. |
 | <code><a href="#@cdktf/provider-vault.dataVaultPkiSecretBackendKeys.DataVaultPkiSecretBackendKeysConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -764,7 +764,7 @@ Backend *string
 
 Full path where PKI backend is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/pki_secret_backend_keys#backend DataVaultPkiSecretBackendKeys#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/pki_secret_backend_keys#backend DataVaultPkiSecretBackendKeys#backend}
 
 ---
 
@@ -776,7 +776,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/pki_secret_backend_keys#id DataVaultPkiSecretBackendKeys#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/pki_secret_backend_keys#id DataVaultPkiSecretBackendKeys#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -793,7 +793,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/pki_secret_backend_keys#namespace DataVaultPkiSecretBackendKeys#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/pki_secret_backend_keys#namespace DataVaultPkiSecretBackendKeys#namespace}
 
 ---
 

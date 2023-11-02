@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/policy_document
+// https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/policy_document
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataVaultPolicyDocumentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/policy_document#id DataVaultPolicyDocument#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/policy_document#id DataVaultPolicyDocument#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,23 +17,23 @@ export interface DataVaultPolicyDocumentConfig extends cdktf.TerraformMetaArgume
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/policy_document#namespace DataVaultPolicyDocument#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/policy_document#namespace DataVaultPolicyDocument#namespace}
   */
   readonly namespace?: string;
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/policy_document#rule DataVaultPolicyDocument#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/policy_document#rule DataVaultPolicyDocument#rule}
   */
   readonly rule?: DataVaultPolicyDocumentRule[] | cdktf.IResolvable;
 }
 export interface DataVaultPolicyDocumentRuleAllowedParameter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/policy_document#key DataVaultPolicyDocument#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/policy_document#key DataVaultPolicyDocument#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/policy_document#value DataVaultPolicyDocument#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/policy_document#value DataVaultPolicyDocument#value}
   */
   readonly value: string[];
 }
@@ -152,11 +147,11 @@ export class DataVaultPolicyDocumentRuleAllowedParameterList extends cdktf.Compl
 }
 export interface DataVaultPolicyDocumentRuleDeniedParameter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/policy_document#key DataVaultPolicyDocument#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/policy_document#key DataVaultPolicyDocument#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/policy_document#value DataVaultPolicyDocument#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/policy_document#value DataVaultPolicyDocument#value}
   */
   readonly value: string[];
 }
@@ -270,39 +265,39 @@ export class DataVaultPolicyDocumentRuleDeniedParameterList extends cdktf.Comple
 }
 export interface DataVaultPolicyDocumentRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/policy_document#capabilities DataVaultPolicyDocument#capabilities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/policy_document#capabilities DataVaultPolicyDocument#capabilities}
   */
   readonly capabilities: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/policy_document#description DataVaultPolicyDocument#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/policy_document#description DataVaultPolicyDocument#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/policy_document#max_wrapping_ttl DataVaultPolicyDocument#max_wrapping_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/policy_document#max_wrapping_ttl DataVaultPolicyDocument#max_wrapping_ttl}
   */
   readonly maxWrappingTtl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/policy_document#min_wrapping_ttl DataVaultPolicyDocument#min_wrapping_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/policy_document#min_wrapping_ttl DataVaultPolicyDocument#min_wrapping_ttl}
   */
   readonly minWrappingTtl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/policy_document#path DataVaultPolicyDocument#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/policy_document#path DataVaultPolicyDocument#path}
   */
   readonly path: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/policy_document#required_parameters DataVaultPolicyDocument#required_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/policy_document#required_parameters DataVaultPolicyDocument#required_parameters}
   */
   readonly requiredParameters?: string[];
   /**
   * allowed_parameter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/policy_document#allowed_parameter DataVaultPolicyDocument#allowed_parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/policy_document#allowed_parameter DataVaultPolicyDocument#allowed_parameter}
   */
   readonly allowedParameter?: DataVaultPolicyDocumentRuleAllowedParameter[] | cdktf.IResolvable;
   /**
   * denied_parameter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/policy_document#denied_parameter DataVaultPolicyDocument#denied_parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/policy_document#denied_parameter DataVaultPolicyDocument#denied_parameter}
   */
   readonly deniedParameter?: DataVaultPolicyDocumentRuleDeniedParameter[] | cdktf.IResolvable;
 }
@@ -554,7 +549,7 @@ export class DataVaultPolicyDocumentRuleList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/policy_document vault_policy_document}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/policy_document vault_policy_document}
 */
 export class DataVaultPolicyDocument extends cdktf.TerraformDataSource {
 
@@ -570,7 +565,7 @@ export class DataVaultPolicyDocument extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataVaultPolicyDocument resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataVaultPolicyDocument to import
-  * @param importFromId The id of the existing DataVaultPolicyDocument that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/policy_document#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataVaultPolicyDocument that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/policy_document#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataVaultPolicyDocument to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -582,7 +577,7 @@ export class DataVaultPolicyDocument extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/policy_document vault_policy_document} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/policy_document vault_policy_document} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -593,7 +588,7 @@ export class DataVaultPolicyDocument extends cdktf.TerraformDataSource {
       terraformResourceType: 'vault_policy_document',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.21.0',
+        providerVersion: '3.22.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

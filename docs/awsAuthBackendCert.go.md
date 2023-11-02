@@ -1,6 +1,6 @@
 # `vault_aws_auth_backend_cert`
 
-Refer to the Terraform Registory for docs: [`vault_aws_auth_backend_cert`](https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/aws_auth_backend_cert).
+Refer to the Terraform Registory for docs: [`vault_aws_auth_backend_cert`](https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_auth_backend_cert).
 
 # `awsAuthBackendCert` Submodule <a name="`awsAuthBackendCert` Submodule" id="@cdktf/provider-vault.awsAuthBackendCert"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`vault_aws_auth_backend_cert`](https
 
 ### AwsAuthBackendCert <a name="AwsAuthBackendCert" id="@cdktf/provider-vault.awsAuthBackendCert.AwsAuthBackendCert"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/aws_auth_backend_cert vault_aws_auth_backend_cert}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_auth_backend_cert vault_aws_auth_backend_cert}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.awsAuthBackendCert.AwsAuthBackendCert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/awsauthbackendcert"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendcert"
 
 awsauthbackendcert.NewAwsAuthBackendCert(scope Construct, id *string, config AwsAuthBackendCertConfig) AwsAuthBackendCert
 ```
@@ -360,7 +360,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.awsAuthBackendCert.AwsAuthBackendCert.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/awsauthbackendcert"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendcert"
 
 awsauthbackendcert.AwsAuthBackendCert_IsConstruct(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.awsAuthBackendCert.AwsAuthBackendCert.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/awsauthbackendcert"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendcert"
 
 awsauthbackendcert.AwsAuthBackendCert_IsTerraformElement(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ awsauthbackendcert.AwsAuthBackendCert_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.awsAuthBackendCert.AwsAuthBackendCert.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/awsauthbackendcert"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendcert"
 
 awsauthbackendcert.AwsAuthBackendCert_IsTerraformResource(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ awsauthbackendcert.AwsAuthBackendCert_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.awsAuthBackendCert.AwsAuthBackendCert.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/awsauthbackendcert"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendcert"
 
 awsauthbackendcert.AwsAuthBackendCert_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -449,7 +449,7 @@ The construct id used in the generated config for the AwsAuthBackendCert to impo
 
 The id of the existing AwsAuthBackendCert that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/aws_auth_backend_cert#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_auth_backend_cert#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -781,7 +781,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.awsAuthBackendCert.AwsAuthBackendCertConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/awsauthbackendcert"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendcert"
 
 &awsauthbackendcert.AwsAuthBackendCertConfig {
 	Connection: interface{},
@@ -814,7 +814,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/awsauthbackendcert"
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendCert.AwsAuthBackendCertConfig.property.awsPublicCert">AwsPublicCert</a></code> | <code>*string</code> | Base64 encoded AWS Public key required to verify PKCS7 signature of the EC2 instance metadata. |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendCert.AwsAuthBackendCertConfig.property.certName">CertName</a></code> | <code>*string</code> | Name of the certificate to configure. |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendCert.AwsAuthBackendCertConfig.property.backend">Backend</a></code> | <code>*string</code> | Unique name of the auth backend to configure. |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendCert.AwsAuthBackendCertConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/aws_auth_backend_cert#id AwsAuthBackendCert#id}. |
+| <code><a href="#@cdktf/provider-vault.awsAuthBackendCert.AwsAuthBackendCertConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_auth_backend_cert#id AwsAuthBackendCert#id}. |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendCert.AwsAuthBackendCertConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendCert.AwsAuthBackendCertConfig.property.type">Type</a></code> | <code>*string</code> | The type of document that can be verified using the certificate. Must be either "pkcs7" or "identity". |
 
@@ -900,7 +900,7 @@ AwsPublicCert *string
 
 Base64 encoded AWS Public key required to verify PKCS7 signature of the EC2 instance metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/aws_auth_backend_cert#aws_public_cert AwsAuthBackendCert#aws_public_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_auth_backend_cert#aws_public_cert AwsAuthBackendCert#aws_public_cert}
 
 ---
 
@@ -914,7 +914,7 @@ CertName *string
 
 Name of the certificate to configure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/aws_auth_backend_cert#cert_name AwsAuthBackendCert#cert_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_auth_backend_cert#cert_name AwsAuthBackendCert#cert_name}
 
 ---
 
@@ -928,7 +928,7 @@ Backend *string
 
 Unique name of the auth backend to configure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/aws_auth_backend_cert#backend AwsAuthBackendCert#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_auth_backend_cert#backend AwsAuthBackendCert#backend}
 
 ---
 
@@ -940,7 +940,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/aws_auth_backend_cert#id AwsAuthBackendCert#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_auth_backend_cert#id AwsAuthBackendCert#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -957,7 +957,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/aws_auth_backend_cert#namespace AwsAuthBackendCert#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_auth_backend_cert#namespace AwsAuthBackendCert#namespace}
 
 ---
 
@@ -971,7 +971,7 @@ Type *string
 
 The type of document that can be verified using the certificate. Must be either "pkcs7" or "identity".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/aws_auth_backend_cert#type AwsAuthBackendCert#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_auth_backend_cert#type AwsAuthBackendCert#type}
 
 ---
 

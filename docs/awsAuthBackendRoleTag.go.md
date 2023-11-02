@@ -1,6 +1,6 @@
 # `vault_aws_auth_backend_role_tag`
 
-Refer to the Terraform Registory for docs: [`vault_aws_auth_backend_role_tag`](https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/aws_auth_backend_role_tag).
+Refer to the Terraform Registory for docs: [`vault_aws_auth_backend_role_tag`](https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_auth_backend_role_tag).
 
 # `awsAuthBackendRoleTag` Submodule <a name="`awsAuthBackendRoleTag` Submodule" id="@cdktf/provider-vault.awsAuthBackendRoleTag"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`vault_aws_auth_backend_role_tag`](h
 
 ### AwsAuthBackendRoleTag <a name="AwsAuthBackendRoleTag" id="@cdktf/provider-vault.awsAuthBackendRoleTag.AwsAuthBackendRoleTag"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/aws_auth_backend_role_tag vault_aws_auth_backend_role_tag}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_auth_backend_role_tag vault_aws_auth_backend_role_tag}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.awsAuthBackendRoleTag.AwsAuthBackendRoleTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/awsauthbackendroletag"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendroletag"
 
 awsauthbackendroletag.NewAwsAuthBackendRoleTag(scope Construct, id *string, config AwsAuthBackendRoleTagConfig) AwsAuthBackendRoleTag
 ```
@@ -388,7 +388,7 @@ func ResetPolicies()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.awsAuthBackendRoleTag.AwsAuthBackendRoleTag.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/awsauthbackendroletag"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendroletag"
 
 awsauthbackendroletag.AwsAuthBackendRoleTag_IsConstruct(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.awsAuthBackendRoleTag.AwsAuthBackendRoleTag.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/awsauthbackendroletag"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendroletag"
 
 awsauthbackendroletag.AwsAuthBackendRoleTag_IsTerraformElement(x interface{}) *bool
 ```
@@ -434,7 +434,7 @@ awsauthbackendroletag.AwsAuthBackendRoleTag_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.awsAuthBackendRoleTag.AwsAuthBackendRoleTag.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/awsauthbackendroletag"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendroletag"
 
 awsauthbackendroletag.AwsAuthBackendRoleTag_IsTerraformResource(x interface{}) *bool
 ```
@@ -448,7 +448,7 @@ awsauthbackendroletag.AwsAuthBackendRoleTag_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.awsAuthBackendRoleTag.AwsAuthBackendRoleTag.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/awsauthbackendroletag"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendroletag"
 
 awsauthbackendroletag.AwsAuthBackendRoleTag_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -477,7 +477,7 @@ The construct id used in the generated config for the AwsAuthBackendRoleTag to i
 
 The id of the existing AwsAuthBackendRoleTag that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/aws_auth_backend_role_tag#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_auth_backend_role_tag#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -897,7 +897,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.awsAuthBackendRoleTag.AwsAuthBackendRoleTagConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/awsauthbackendroletag"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendroletag"
 
 &awsauthbackendroletag.AwsAuthBackendRoleTagConfig {
 	Connection: interface{},
@@ -934,7 +934,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/awsauthbackendroletag
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendRoleTag.AwsAuthBackendRoleTagConfig.property.allowInstanceMigration">AllowInstanceMigration</a></code> | <code>interface{}</code> | Allows migration of the underlying instance where the client resides. |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendRoleTag.AwsAuthBackendRoleTagConfig.property.backend">Backend</a></code> | <code>*string</code> | AWS auth backend to read tags from. |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendRoleTag.AwsAuthBackendRoleTagConfig.property.disallowReauthentication">DisallowReauthentication</a></code> | <code>interface{}</code> | Only allow a single token to be granted per instance ID. |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendRoleTag.AwsAuthBackendRoleTagConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/aws_auth_backend_role_tag#id AwsAuthBackendRoleTag#id}. |
+| <code><a href="#@cdktf/provider-vault.awsAuthBackendRoleTag.AwsAuthBackendRoleTagConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_auth_backend_role_tag#id AwsAuthBackendRoleTag#id}. |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendRoleTag.AwsAuthBackendRoleTagConfig.property.instanceId">InstanceId</a></code> | <code>*string</code> | Instance ID for which this tag is intended. |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendRoleTag.AwsAuthBackendRoleTagConfig.property.maxTtl">MaxTtl</a></code> | <code>*string</code> | The maximum allowed lifetime of tokens issued using this role. |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendRoleTag.AwsAuthBackendRoleTagConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
@@ -1022,7 +1022,7 @@ Role *string
 
 Name of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/aws_auth_backend_role_tag#role AwsAuthBackendRoleTag#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_auth_backend_role_tag#role AwsAuthBackendRoleTag#role}
 
 ---
 
@@ -1036,7 +1036,7 @@ AllowInstanceMigration interface{}
 
 Allows migration of the underlying instance where the client resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/aws_auth_backend_role_tag#allow_instance_migration AwsAuthBackendRoleTag#allow_instance_migration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_auth_backend_role_tag#allow_instance_migration AwsAuthBackendRoleTag#allow_instance_migration}
 
 ---
 
@@ -1050,7 +1050,7 @@ Backend *string
 
 AWS auth backend to read tags from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/aws_auth_backend_role_tag#backend AwsAuthBackendRoleTag#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_auth_backend_role_tag#backend AwsAuthBackendRoleTag#backend}
 
 ---
 
@@ -1064,7 +1064,7 @@ DisallowReauthentication interface{}
 
 Only allow a single token to be granted per instance ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/aws_auth_backend_role_tag#disallow_reauthentication AwsAuthBackendRoleTag#disallow_reauthentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_auth_backend_role_tag#disallow_reauthentication AwsAuthBackendRoleTag#disallow_reauthentication}
 
 ---
 
@@ -1076,7 +1076,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/aws_auth_backend_role_tag#id AwsAuthBackendRoleTag#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_auth_backend_role_tag#id AwsAuthBackendRoleTag#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1095,7 +1095,7 @@ Instance ID for which this tag is intended.
 
 The created tag can only be used by the instance with the given ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/aws_auth_backend_role_tag#instance_id AwsAuthBackendRoleTag#instance_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_auth_backend_role_tag#instance_id AwsAuthBackendRoleTag#instance_id}
 
 ---
 
@@ -1109,7 +1109,7 @@ MaxTtl *string
 
 The maximum allowed lifetime of tokens issued using this role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/aws_auth_backend_role_tag#max_ttl AwsAuthBackendRoleTag#max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_auth_backend_role_tag#max_ttl AwsAuthBackendRoleTag#max_ttl}
 
 ---
 
@@ -1123,7 +1123,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/aws_auth_backend_role_tag#namespace AwsAuthBackendRoleTag#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_auth_backend_role_tag#namespace AwsAuthBackendRoleTag#namespace}
 
 ---
 
@@ -1137,7 +1137,7 @@ Policies *[]*string
 
 Policies to be associated with the tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/aws_auth_backend_role_tag#policies AwsAuthBackendRoleTag#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_auth_backend_role_tag#policies AwsAuthBackendRoleTag#policies}
 
 ---
 

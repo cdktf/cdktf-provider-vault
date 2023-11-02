@@ -1,6 +1,6 @@
 # `vault_generic_endpoint`
 
-Refer to the Terraform Registory for docs: [`vault_generic_endpoint`](https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/generic_endpoint).
+Refer to the Terraform Registory for docs: [`vault_generic_endpoint`](https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/generic_endpoint).
 
 # `genericEndpoint` Submodule <a name="`genericEndpoint` Submodule" id="@cdktf/provider-vault.genericEndpoint"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`vault_generic_endpoint`](https://re
 
 ### GenericEndpoint <a name="GenericEndpoint" id="@cdktf/provider-vault.genericEndpoint.GenericEndpoint"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/generic_endpoint vault_generic_endpoint}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/generic_endpoint vault_generic_endpoint}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.genericEndpoint.GenericEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/genericendpoint"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/genericendpoint"
 
 genericendpoint.NewGenericEndpoint(scope Construct, id *string, config GenericEndpointConfig) GenericEndpoint
 ```
@@ -374,7 +374,7 @@ func ResetWriteFields()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.genericEndpoint.GenericEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/genericendpoint"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/genericendpoint"
 
 genericendpoint.GenericEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.genericEndpoint.GenericEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/genericendpoint"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/genericendpoint"
 
 genericendpoint.GenericEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ genericendpoint.GenericEndpoint_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.genericEndpoint.GenericEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/genericendpoint"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/genericendpoint"
 
 genericendpoint.GenericEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -434,7 +434,7 @@ genericendpoint.GenericEndpoint_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.genericEndpoint.GenericEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/genericendpoint"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/genericendpoint"
 
 genericendpoint.GenericEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -463,7 +463,7 @@ The construct id used in the generated config for the GenericEndpoint to import.
 
 The id of the existing GenericEndpoint that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/generic_endpoint#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/generic_endpoint#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -861,7 +861,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.genericEndpoint.GenericEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/genericendpoint"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/genericendpoint"
 
 &genericendpoint.GenericEndpointConfig {
 	Connection: interface{},
@@ -897,7 +897,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/genericendpoint"
 | <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpointConfig.property.path">Path</a></code> | <code>*string</code> | Full path where to the endpoint that will be written. |
 | <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpointConfig.property.disableDelete">DisableDelete</a></code> | <code>interface{}</code> | Don't attempt to delete the path from Vault if true. |
 | <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpointConfig.property.disableRead">DisableRead</a></code> | <code>interface{}</code> | Don't attempt to read the path from Vault if true; drift won't be detected. |
-| <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpointConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/generic_endpoint#id GenericEndpoint#id}. |
+| <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpointConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/generic_endpoint#id GenericEndpoint#id}. |
 | <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpointConfig.property.ignoreAbsentFields">IgnoreAbsentFields</a></code> | <code>interface{}</code> | When reading, disregard fields not present in data_json. |
 | <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpointConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpointConfig.property.writeFields">WriteFields</a></code> | <code>*[]*string</code> | Top-level fields returned by write to persist in state. |
@@ -984,7 +984,7 @@ DataJson *string
 
 JSON-encoded data to write.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/generic_endpoint#data_json GenericEndpoint#data_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/generic_endpoint#data_json GenericEndpoint#data_json}
 
 ---
 
@@ -998,7 +998,7 @@ Path *string
 
 Full path where to the endpoint that will be written.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/generic_endpoint#path GenericEndpoint#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/generic_endpoint#path GenericEndpoint#path}
 
 ---
 
@@ -1012,7 +1012,7 @@ DisableDelete interface{}
 
 Don't attempt to delete the path from Vault if true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/generic_endpoint#disable_delete GenericEndpoint#disable_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/generic_endpoint#disable_delete GenericEndpoint#disable_delete}
 
 ---
 
@@ -1026,7 +1026,7 @@ DisableRead interface{}
 
 Don't attempt to read the path from Vault if true; drift won't be detected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/generic_endpoint#disable_read GenericEndpoint#disable_read}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/generic_endpoint#disable_read GenericEndpoint#disable_read}
 
 ---
 
@@ -1038,7 +1038,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/generic_endpoint#id GenericEndpoint#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/generic_endpoint#id GenericEndpoint#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1055,7 +1055,7 @@ IgnoreAbsentFields interface{}
 
 When reading, disregard fields not present in data_json.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/generic_endpoint#ignore_absent_fields GenericEndpoint#ignore_absent_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/generic_endpoint#ignore_absent_fields GenericEndpoint#ignore_absent_fields}
 
 ---
 
@@ -1069,7 +1069,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/generic_endpoint#namespace GenericEndpoint#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/generic_endpoint#namespace GenericEndpoint#namespace}
 
 ---
 
@@ -1083,7 +1083,7 @@ WriteFields *[]*string
 
 Top-level fields returned by write to persist in state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/generic_endpoint#write_fields GenericEndpoint#write_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/generic_endpoint#write_fields GenericEndpoint#write_fields}
 
 ---
 
