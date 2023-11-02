@@ -1,6 +1,6 @@
 # `data_vault_aws_access_credentials`
 
-Refer to the Terraform Registory for docs: [`data_vault_aws_access_credentials`](https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/aws_access_credentials).
+Refer to the Terraform Registory for docs: [`data_vault_aws_access_credentials`](https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/aws_access_credentials).
 
 # `dataVaultAwsAccessCredentials` Submodule <a name="`dataVaultAwsAccessCredentials` Submodule" id="@cdktf/provider-vault.dataVaultAwsAccessCredentials"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_vault_aws_access_credentials`]
 
 ### DataVaultAwsAccessCredentials <a name="DataVaultAwsAccessCredentials" id="@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentials"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/aws_access_credentials vault_aws_access_credentials}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/aws_access_credentials vault_aws_access_credentials}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentials.Initializer"></a>
 
@@ -402,7 +402,7 @@ The construct id used in the generated config for the DataVaultAwsAccessCredenti
 
 The id of the existing DataVaultAwsAccessCredentials that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/aws_access_credentials#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/aws_access_credentials#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -867,7 +867,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultawsaccesscre
 | <code><a href="#@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentialsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentialsConfig.property.backend">Backend</a></code> | <code>*string</code> | AWS Secret Backend to read credentials from. |
 | <code><a href="#@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentialsConfig.property.role">Role</a></code> | <code>*string</code> | AWS Secret Role to read credentials from. |
-| <code><a href="#@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentialsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/aws_access_credentials#id DataVaultAwsAccessCredentials#id}. |
+| <code><a href="#@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentialsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/aws_access_credentials#id DataVaultAwsAccessCredentials#id}. |
 | <code><a href="#@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentialsConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentialsConfig.property.region">Region</a></code> | <code>*string</code> | Region the read credentials belong to. |
 | <code><a href="#@cdktf/provider-vault.dataVaultAwsAccessCredentials.DataVaultAwsAccessCredentialsConfig.property.roleArn">RoleArn</a></code> | <code>*string</code> | ARN to use if multiple are available in the role. Required if the role has multiple ARNs. |
@@ -956,7 +956,7 @@ Backend *string
 
 AWS Secret Backend to read credentials from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/aws_access_credentials#backend DataVaultAwsAccessCredentials#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/aws_access_credentials#backend DataVaultAwsAccessCredentials#backend}
 
 ---
 
@@ -970,7 +970,7 @@ Role *string
 
 AWS Secret Role to read credentials from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/aws_access_credentials#role DataVaultAwsAccessCredentials#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/aws_access_credentials#role DataVaultAwsAccessCredentials#role}
 
 ---
 
@@ -982,7 +982,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/aws_access_credentials#id DataVaultAwsAccessCredentials#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/aws_access_credentials#id DataVaultAwsAccessCredentials#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -999,7 +999,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/aws_access_credentials#namespace DataVaultAwsAccessCredentials#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/aws_access_credentials#namespace DataVaultAwsAccessCredentials#namespace}
 
 ---
 
@@ -1013,7 +1013,7 @@ Region *string
 
 Region the read credentials belong to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/aws_access_credentials#region DataVaultAwsAccessCredentials#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/aws_access_credentials#region DataVaultAwsAccessCredentials#region}
 
 ---
 
@@ -1027,7 +1027,7 @@ RoleArn *string
 
 ARN to use if multiple are available in the role. Required if the role has multiple ARNs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/aws_access_credentials#role_arn DataVaultAwsAccessCredentials#role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/aws_access_credentials#role_arn DataVaultAwsAccessCredentials#role_arn}
 
 ---
 
@@ -1041,7 +1041,7 @@ Ttl *string
 
 User specified Time-To-Live for the STS token. Uses the Role defined default_sts_ttl when not specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/aws_access_credentials#ttl DataVaultAwsAccessCredentials#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/aws_access_credentials#ttl DataVaultAwsAccessCredentials#ttl}
 
 ---
 
@@ -1055,7 +1055,7 @@ Type *string
 
 Type of credentials to read. Must be either 'creds' for Access Key and Secret Key, or 'sts' for STS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/data-sources/aws_access_credentials#type DataVaultAwsAccessCredentials#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/data-sources/aws_access_credentials#type DataVaultAwsAccessCredentials#type}
 
 ---
 

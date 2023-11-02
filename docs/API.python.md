@@ -158,6 +158,8 @@ The following submodules are available:
 - [raftAutopilot](./raftAutopilot.python.md)
 - [raftSnapshotAgentConfig](./raftSnapshotAgentConfig.python.md)
 - [rgpPolicy](./rgpPolicy.python.md)
+- [samlAuthBackend](./samlAuthBackend.python.md)
+- [samlAuthBackendRole](./samlAuthBackendRole.python.md)
 - [sshSecretBackendCa](./sshSecretBackendCa.python.md)
 - [sshSecretBackendRole](./sshSecretBackendRole.python.md)
 - [terraformCloudSecretBackend](./terraformCloudSecretBackend.python.md)

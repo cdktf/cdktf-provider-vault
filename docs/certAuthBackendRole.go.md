@@ -1,6 +1,6 @@
 # `vault_cert_auth_backend_role`
 
-Refer to the Terraform Registory for docs: [`vault_cert_auth_backend_role`](https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role).
+Refer to the Terraform Registory for docs: [`vault_cert_auth_backend_role`](https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role).
 
 # `certAuthBackendRole` Submodule <a name="`certAuthBackendRole` Submodule" id="@cdktf/provider-vault.certAuthBackendRole"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_cert_auth_backend_role`](http
 
 ### CertAuthBackendRole <a name="CertAuthBackendRole" id="@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.Initializer"></a>
 
@@ -84,6 +84,11 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.resetDisplayName">ResetDisplayName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.resetNamespace">ResetNamespace</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.resetOcspCaCertificates">ResetOcspCaCertificates</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.resetOcspEnabled">ResetOcspEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.resetOcspFailOpen">ResetOcspFailOpen</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.resetOcspQueryAllServers">ResetOcspQueryAllServers</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.resetOcspServersOverride">ResetOcspServersOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.resetRequiredExtensions">ResetRequiredExtensions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.resetTokenBoundCidrs">ResetTokenBoundCidrs</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.resetTokenExplicitMaxTtl">ResetTokenExplicitMaxTtl</a></code> | *No description.* |
@@ -405,6 +410,36 @@ func ResetId()
 func ResetNamespace()
 ```
 
+##### `ResetOcspCaCertificates` <a name="ResetOcspCaCertificates" id="@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.resetOcspCaCertificates"></a>
+
+```go
+func ResetOcspCaCertificates()
+```
+
+##### `ResetOcspEnabled` <a name="ResetOcspEnabled" id="@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.resetOcspEnabled"></a>
+
+```go
+func ResetOcspEnabled()
+```
+
+##### `ResetOcspFailOpen` <a name="ResetOcspFailOpen" id="@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.resetOcspFailOpen"></a>
+
+```go
+func ResetOcspFailOpen()
+```
+
+##### `ResetOcspQueryAllServers` <a name="ResetOcspQueryAllServers" id="@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.resetOcspQueryAllServers"></a>
+
+```go
+func ResetOcspQueryAllServers()
+```
+
+##### `ResetOcspServersOverride` <a name="ResetOcspServersOverride" id="@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.resetOcspServersOverride"></a>
+
+```go
+func ResetOcspServersOverride()
+```
+
 ##### `ResetRequiredExtensions` <a name="ResetRequiredExtensions" id="@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.resetRequiredExtensions"></a>
 
 ```go
@@ -568,7 +603,7 @@ The construct id used in the generated config for the CertAuthBackendRole to imp
 
 The id of the existing CertAuthBackendRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -611,6 +646,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.21
 | <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.property.namespaceInput">NamespaceInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.property.ocspCaCertificatesInput">OcspCaCertificatesInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.property.ocspEnabledInput">OcspEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.property.ocspFailOpenInput">OcspFailOpenInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.property.ocspQueryAllServersInput">OcspQueryAllServersInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.property.ocspServersOverrideInput">OcspServersOverrideInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.property.requiredExtensionsInput">RequiredExtensionsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.property.tokenBoundCidrsInput">TokenBoundCidrsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.property.tokenExplicitMaxTtlInput">TokenExplicitMaxTtlInput</a></code> | <code>*f64</code> | *No description.* |
@@ -634,6 +674,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.21
 | <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.property.namespace">Namespace</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.property.ocspCaCertificates">OcspCaCertificates</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.property.ocspEnabled">OcspEnabled</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.property.ocspFailOpen">OcspFailOpen</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.property.ocspQueryAllServers">OcspQueryAllServers</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.property.ocspServersOverride">OcspServersOverride</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.property.requiredExtensions">RequiredExtensions</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.property.tokenBoundCidrs">TokenBoundCidrs</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.property.tokenExplicitMaxTtl">TokenExplicitMaxTtl</a></code> | <code>*f64</code> | *No description.* |
@@ -919,6 +964,56 @@ func NamespaceInput() *string
 
 ---
 
+##### `OcspCaCertificatesInput`<sup>Optional</sup> <a name="OcspCaCertificatesInput" id="@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.property.ocspCaCertificatesInput"></a>
+
+```go
+func OcspCaCertificatesInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `OcspEnabledInput`<sup>Optional</sup> <a name="OcspEnabledInput" id="@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.property.ocspEnabledInput"></a>
+
+```go
+func OcspEnabledInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `OcspFailOpenInput`<sup>Optional</sup> <a name="OcspFailOpenInput" id="@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.property.ocspFailOpenInput"></a>
+
+```go
+func OcspFailOpenInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `OcspQueryAllServersInput`<sup>Optional</sup> <a name="OcspQueryAllServersInput" id="@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.property.ocspQueryAllServersInput"></a>
+
+```go
+func OcspQueryAllServersInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `OcspServersOverrideInput`<sup>Optional</sup> <a name="OcspServersOverrideInput" id="@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.property.ocspServersOverrideInput"></a>
+
+```go
+func OcspServersOverrideInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
 ##### `RequiredExtensionsInput`<sup>Optional</sup> <a name="RequiredExtensionsInput" id="@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.property.requiredExtensionsInput"></a>
 
 ```go
@@ -1149,6 +1244,56 @@ func Namespace() *string
 
 ---
 
+##### `OcspCaCertificates`<sup>Required</sup> <a name="OcspCaCertificates" id="@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.property.ocspCaCertificates"></a>
+
+```go
+func OcspCaCertificates() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `OcspEnabled`<sup>Required</sup> <a name="OcspEnabled" id="@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.property.ocspEnabled"></a>
+
+```go
+func OcspEnabled() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `OcspFailOpen`<sup>Required</sup> <a name="OcspFailOpen" id="@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.property.ocspFailOpen"></a>
+
+```go
+func OcspFailOpen() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `OcspQueryAllServers`<sup>Required</sup> <a name="OcspQueryAllServers" id="@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.property.ocspQueryAllServers"></a>
+
+```go
+func OcspQueryAllServers() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `OcspServersOverride`<sup>Required</sup> <a name="OcspServersOverride" id="@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.property.ocspServersOverride"></a>
+
+```go
+func OcspServersOverride() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
 ##### `RequiredExtensions`<sup>Required</sup> <a name="RequiredExtensions" id="@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole.property.requiredExtensions"></a>
 
 ```go
@@ -1297,6 +1442,11 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/certauthbackendrole"
 	DisplayName: *string,
 	Id: *string,
 	Namespace: *string,
+	OcspCaCertificates: *string,
+	OcspEnabled: interface{},
+	OcspFailOpen: interface{},
+	OcspQueryAllServers: interface{},
+	OcspServersOverride: *[]*string,
 	RequiredExtensions: *[]*string,
 	TokenBoundCidrs: *[]*string,
 	TokenExplicitMaxTtl: *f64,
@@ -1321,20 +1471,25 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/certauthbackendrole"
 | <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.certificate">Certificate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role#certificate CertAuthBackendRole#certificate}. |
-| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role#name CertAuthBackendRole#name}. |
-| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.allowedCommonNames">AllowedCommonNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role#allowed_common_names CertAuthBackendRole#allowed_common_names}. |
-| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.allowedDnsSans">AllowedDnsSans</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role#allowed_dns_sans CertAuthBackendRole#allowed_dns_sans}. |
-| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.allowedEmailSans">AllowedEmailSans</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role#allowed_email_sans CertAuthBackendRole#allowed_email_sans}. |
-| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.allowedNames">AllowedNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role#allowed_names CertAuthBackendRole#allowed_names}. |
-| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.allowedOrganizationalUnits">AllowedOrganizationalUnits</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role#allowed_organizational_units CertAuthBackendRole#allowed_organizational_units}. |
-| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.allowedOrganizationUnits">AllowedOrganizationUnits</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role#allowed_organization_units CertAuthBackendRole#allowed_organization_units}. |
-| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.allowedUriSans">AllowedUriSans</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role#allowed_uri_sans CertAuthBackendRole#allowed_uri_sans}. |
-| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.backend">Backend</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role#backend CertAuthBackendRole#backend}. |
-| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role#display_name CertAuthBackendRole#display_name}. |
-| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role#id CertAuthBackendRole#id}. |
+| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.certificate">Certificate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#certificate CertAuthBackendRole#certificate}. |
+| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#name CertAuthBackendRole#name}. |
+| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.allowedCommonNames">AllowedCommonNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#allowed_common_names CertAuthBackendRole#allowed_common_names}. |
+| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.allowedDnsSans">AllowedDnsSans</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#allowed_dns_sans CertAuthBackendRole#allowed_dns_sans}. |
+| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.allowedEmailSans">AllowedEmailSans</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#allowed_email_sans CertAuthBackendRole#allowed_email_sans}. |
+| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.allowedNames">AllowedNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#allowed_names CertAuthBackendRole#allowed_names}. |
+| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.allowedOrganizationalUnits">AllowedOrganizationalUnits</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#allowed_organizational_units CertAuthBackendRole#allowed_organizational_units}. |
+| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.allowedOrganizationUnits">AllowedOrganizationUnits</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#allowed_organization_units CertAuthBackendRole#allowed_organization_units}. |
+| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.allowedUriSans">AllowedUriSans</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#allowed_uri_sans CertAuthBackendRole#allowed_uri_sans}. |
+| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.backend">Backend</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#backend CertAuthBackendRole#backend}. |
+| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#display_name CertAuthBackendRole#display_name}. |
+| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#id CertAuthBackendRole#id}. |
 | <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
-| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.requiredExtensions">RequiredExtensions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role#required_extensions CertAuthBackendRole#required_extensions}. |
+| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.ocspCaCertificates">OcspCaCertificates</a></code> | <code>*string</code> | Any additional CA certificates needed to verify OCSP responses. Provided as base64 encoded PEM data. |
+| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.ocspEnabled">OcspEnabled</a></code> | <code>interface{}</code> | If enabled, validate certificates' revocation status using OCSP. |
+| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.ocspFailOpen">OcspFailOpen</a></code> | <code>interface{}</code> | If true and an OCSP response cannot be fetched or is of an unknown status, the login will proceed as if the certificate has not been revoked. |
+| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.ocspQueryAllServers">OcspQueryAllServers</a></code> | <code>interface{}</code> | If set to true, rather than accepting the first successful OCSP response, query all servers and consider the certificate valid only if all servers agree. |
+| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.ocspServersOverride">OcspServersOverride</a></code> | <code>*[]*string</code> | A comma-separated list of OCSP server addresses. |
+| <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.requiredExtensions">RequiredExtensions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#required_extensions CertAuthBackendRole#required_extensions}. |
 | <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.tokenBoundCidrs">TokenBoundCidrs</a></code> | <code>*[]*string</code> | Specifies the blocks of IP addresses which are allowed to use the generated token. |
 | <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.tokenExplicitMaxTtl">TokenExplicitMaxTtl</a></code> | <code>*f64</code> | Generated Token's Explicit Maximum TTL in seconds. |
 | <code><a href="#@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.tokenMaxTtl">TokenMaxTtl</a></code> | <code>*f64</code> | The maximum lifetime of the generated token. |
@@ -1425,7 +1580,7 @@ Certificate *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role#certificate CertAuthBackendRole#certificate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#certificate CertAuthBackendRole#certificate}.
 
 ---
 
@@ -1437,7 +1592,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role#name CertAuthBackendRole#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#name CertAuthBackendRole#name}.
 
 ---
 
@@ -1449,7 +1604,7 @@ AllowedCommonNames *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role#allowed_common_names CertAuthBackendRole#allowed_common_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#allowed_common_names CertAuthBackendRole#allowed_common_names}.
 
 ---
 
@@ -1461,7 +1616,7 @@ AllowedDnsSans *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role#allowed_dns_sans CertAuthBackendRole#allowed_dns_sans}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#allowed_dns_sans CertAuthBackendRole#allowed_dns_sans}.
 
 ---
 
@@ -1473,7 +1628,7 @@ AllowedEmailSans *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role#allowed_email_sans CertAuthBackendRole#allowed_email_sans}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#allowed_email_sans CertAuthBackendRole#allowed_email_sans}.
 
 ---
 
@@ -1485,7 +1640,7 @@ AllowedNames *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role#allowed_names CertAuthBackendRole#allowed_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#allowed_names CertAuthBackendRole#allowed_names}.
 
 ---
 
@@ -1497,7 +1652,7 @@ AllowedOrganizationalUnits *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role#allowed_organizational_units CertAuthBackendRole#allowed_organizational_units}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#allowed_organizational_units CertAuthBackendRole#allowed_organizational_units}.
 
 ---
 
@@ -1509,7 +1664,7 @@ AllowedOrganizationUnits *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role#allowed_organization_units CertAuthBackendRole#allowed_organization_units}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#allowed_organization_units CertAuthBackendRole#allowed_organization_units}.
 
 ---
 
@@ -1521,7 +1676,7 @@ AllowedUriSans *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role#allowed_uri_sans CertAuthBackendRole#allowed_uri_sans}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#allowed_uri_sans CertAuthBackendRole#allowed_uri_sans}.
 
 ---
 
@@ -1533,7 +1688,7 @@ Backend *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role#backend CertAuthBackendRole#backend}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#backend CertAuthBackendRole#backend}.
 
 ---
 
@@ -1545,7 +1700,7 @@ DisplayName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role#display_name CertAuthBackendRole#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#display_name CertAuthBackendRole#display_name}.
 
 ---
 
@@ -1557,7 +1712,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role#id CertAuthBackendRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#id CertAuthBackendRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1574,7 +1729,79 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role#namespace CertAuthBackendRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#namespace CertAuthBackendRole#namespace}
+
+---
+
+##### `OcspCaCertificates`<sup>Optional</sup> <a name="OcspCaCertificates" id="@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.ocspCaCertificates"></a>
+
+```go
+OcspCaCertificates *string
+```
+
+- *Type:* *string
+
+Any additional CA certificates needed to verify OCSP responses. Provided as base64 encoded PEM data.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#ocsp_ca_certificates CertAuthBackendRole#ocsp_ca_certificates}
+
+---
+
+##### `OcspEnabled`<sup>Optional</sup> <a name="OcspEnabled" id="@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.ocspEnabled"></a>
+
+```go
+OcspEnabled interface{}
+```
+
+- *Type:* interface{}
+
+If enabled, validate certificates' revocation status using OCSP.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#ocsp_enabled CertAuthBackendRole#ocsp_enabled}
+
+---
+
+##### `OcspFailOpen`<sup>Optional</sup> <a name="OcspFailOpen" id="@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.ocspFailOpen"></a>
+
+```go
+OcspFailOpen interface{}
+```
+
+- *Type:* interface{}
+
+If true and an OCSP response cannot be fetched or is of an unknown status, the login will proceed as if the certificate has not been revoked.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#ocsp_fail_open CertAuthBackendRole#ocsp_fail_open}
+
+---
+
+##### `OcspQueryAllServers`<sup>Optional</sup> <a name="OcspQueryAllServers" id="@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.ocspQueryAllServers"></a>
+
+```go
+OcspQueryAllServers interface{}
+```
+
+- *Type:* interface{}
+
+If set to true, rather than accepting the first successful OCSP response, query all servers and consider the certificate valid only if all servers agree.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#ocsp_query_all_servers CertAuthBackendRole#ocsp_query_all_servers}
+
+---
+
+##### `OcspServersOverride`<sup>Optional</sup> <a name="OcspServersOverride" id="@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRoleConfig.property.ocspServersOverride"></a>
+
+```go
+OcspServersOverride *[]*string
+```
+
+- *Type:* *[]*string
+
+A comma-separated list of OCSP server addresses.
+
+If unset, the OCSP server is determined from the AuthorityInformationAccess extension on the certificate being inspected.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#ocsp_servers_override CertAuthBackendRole#ocsp_servers_override}
 
 ---
 
@@ -1586,7 +1813,7 @@ RequiredExtensions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role#required_extensions CertAuthBackendRole#required_extensions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#required_extensions CertAuthBackendRole#required_extensions}.
 
 ---
 
@@ -1600,7 +1827,7 @@ TokenBoundCidrs *[]*string
 
 Specifies the blocks of IP addresses which are allowed to use the generated token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role#token_bound_cidrs CertAuthBackendRole#token_bound_cidrs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#token_bound_cidrs CertAuthBackendRole#token_bound_cidrs}
 
 ---
 
@@ -1614,7 +1841,7 @@ TokenExplicitMaxTtl *f64
 
 Generated Token's Explicit Maximum TTL in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role#token_explicit_max_ttl CertAuthBackendRole#token_explicit_max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#token_explicit_max_ttl CertAuthBackendRole#token_explicit_max_ttl}
 
 ---
 
@@ -1628,7 +1855,7 @@ TokenMaxTtl *f64
 
 The maximum lifetime of the generated token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role#token_max_ttl CertAuthBackendRole#token_max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#token_max_ttl CertAuthBackendRole#token_max_ttl}
 
 ---
 
@@ -1642,7 +1869,7 @@ TokenNoDefaultPolicy interface{}
 
 If true, the 'default' policy will not automatically be added to generated tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role#token_no_default_policy CertAuthBackendRole#token_no_default_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#token_no_default_policy CertAuthBackendRole#token_no_default_policy}
 
 ---
 
@@ -1656,7 +1883,7 @@ TokenNumUses *f64
 
 The maximum number of times a token may be used, a value of zero means unlimited.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role#token_num_uses CertAuthBackendRole#token_num_uses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#token_num_uses CertAuthBackendRole#token_num_uses}
 
 ---
 
@@ -1670,7 +1897,7 @@ TokenPeriod *f64
 
 Generated Token's Period.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role#token_period CertAuthBackendRole#token_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#token_period CertAuthBackendRole#token_period}
 
 ---
 
@@ -1684,7 +1911,7 @@ TokenPolicies *[]*string
 
 Generated Token's Policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role#token_policies CertAuthBackendRole#token_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#token_policies CertAuthBackendRole#token_policies}
 
 ---
 
@@ -1698,7 +1925,7 @@ TokenTtl *f64
 
 The initial ttl of the token to generate in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role#token_ttl CertAuthBackendRole#token_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#token_ttl CertAuthBackendRole#token_ttl}
 
 ---
 
@@ -1712,7 +1939,7 @@ TokenType *string
 
 The type of token to generate, service or batch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role#token_type CertAuthBackendRole#token_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role#token_type CertAuthBackendRole#token_type}
 
 ---
 

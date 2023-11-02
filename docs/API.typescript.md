@@ -158,6 +158,8 @@ The following submodules are available:
 - [raftAutopilot](./raftAutopilot.typescript.md)
 - [raftSnapshotAgentConfig](./raftSnapshotAgentConfig.typescript.md)
 - [rgpPolicy](./rgpPolicy.typescript.md)
+- [samlAuthBackend](./samlAuthBackend.typescript.md)
+- [samlAuthBackendRole](./samlAuthBackendRole.typescript.md)
 - [sshSecretBackendCa](./sshSecretBackendCa.typescript.md)
 - [sshSecretBackendRole](./sshSecretBackendRole.typescript.md)
 - [terraformCloudSecretBackend](./terraformCloudSecretBackend.typescript.md)

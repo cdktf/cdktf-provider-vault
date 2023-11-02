@@ -1,6 +1,6 @@
 # `vault_identity_group_member_entity_ids`
 
-Refer to the Terraform Registory for docs: [`vault_identity_group_member_entity_ids`](https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_group_member_entity_ids).
+Refer to the Terraform Registory for docs: [`vault_identity_group_member_entity_ids`](https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_group_member_entity_ids).
 
 # `identityGroupMemberEntityIds` Submodule <a name="`identityGroupMemberEntityIds` Submodule" id="@cdktf/provider-vault.identityGroupMemberEntityIds"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_identity_group_member_entity_
 
 ### IdentityGroupMemberEntityIds <a name="IdentityGroupMemberEntityIds" id="@cdktf/provider-vault.identityGroupMemberEntityIds.IdentityGroupMemberEntityIds"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_group_member_entity_ids vault_identity_group_member_entity_ids}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_group_member_entity_ids vault_identity_group_member_entity_ids}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.identityGroupMemberEntityIds.IdentityGroupMemberEntityIds.Initializer"></a>
 
@@ -449,7 +449,7 @@ The construct id used in the generated config for the IdentityGroupMemberEntityI
 
 The id of the existing IdentityGroupMemberEntityIds that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_group_member_entity_ids#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_group_member_entity_ids#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -801,7 +801,7 @@ new IdentityGroupMemberEntityIdsConfig {
 | <code><a href="#@cdktf/provider-vault.identityGroupMemberEntityIds.IdentityGroupMemberEntityIdsConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityGroupMemberEntityIds.IdentityGroupMemberEntityIdsConfig.property.groupId">GroupId</a></code> | <code>string</code> | ID of the group. |
 | <code><a href="#@cdktf/provider-vault.identityGroupMemberEntityIds.IdentityGroupMemberEntityIdsConfig.property.exclusive">Exclusive</a></code> | <code>object</code> | If set to true, allows the resource to manage member entity ids exclusively. |
-| <code><a href="#@cdktf/provider-vault.identityGroupMemberEntityIds.IdentityGroupMemberEntityIdsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_group_member_entity_ids#id IdentityGroupMemberEntityIds#id}. |
+| <code><a href="#@cdktf/provider-vault.identityGroupMemberEntityIds.IdentityGroupMemberEntityIdsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_group_member_entity_ids#id IdentityGroupMemberEntityIds#id}. |
 | <code><a href="#@cdktf/provider-vault.identityGroupMemberEntityIds.IdentityGroupMemberEntityIdsConfig.property.memberEntityIds">MemberEntityIds</a></code> | <code>string[]</code> | Entity IDs to be assigned as group members. |
 | <code><a href="#@cdktf/provider-vault.identityGroupMemberEntityIds.IdentityGroupMemberEntityIdsConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 
@@ -887,7 +887,7 @@ public string GroupId { get; set; }
 
 ID of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_group_member_entity_ids#group_id IdentityGroupMemberEntityIds#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_group_member_entity_ids#group_id IdentityGroupMemberEntityIds#group_id}
 
 ---
 
@@ -903,7 +903,7 @@ If set to true, allows the resource to manage member entity ids exclusively.
 
 Beware of race conditions when disabling exclusive management
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_group_member_entity_ids#exclusive IdentityGroupMemberEntityIds#exclusive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_group_member_entity_ids#exclusive IdentityGroupMemberEntityIds#exclusive}
 
 ---
 
@@ -915,7 +915,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_group_member_entity_ids#id IdentityGroupMemberEntityIds#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_group_member_entity_ids#id IdentityGroupMemberEntityIds#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -932,7 +932,7 @@ public string[] MemberEntityIds { get; set; }
 
 Entity IDs to be assigned as group members.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_group_member_entity_ids#member_entity_ids IdentityGroupMemberEntityIds#member_entity_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_group_member_entity_ids#member_entity_ids IdentityGroupMemberEntityIds#member_entity_ids}
 
 ---
 
@@ -946,7 +946,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/identity_group_member_entity_ids#namespace IdentityGroupMemberEntityIds#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_group_member_entity_ids#namespace IdentityGroupMemberEntityIds#namespace}
 
 ---
 

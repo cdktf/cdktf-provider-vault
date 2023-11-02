@@ -125,6 +125,8 @@ export * as rabbitmqSecretBackendRole from './rabbitmq-secret-backend-role';
 export * as raftAutopilot from './raft-autopilot';
 export * as raftSnapshotAgentConfig from './raft-snapshot-agent-config';
 export * as rgpPolicy from './rgp-policy';
+export * as samlAuthBackend from './saml-auth-backend';
+export * as samlAuthBackendRole from './saml-auth-backend-role';
 export * as sshSecretBackendCa from './ssh-secret-backend-ca';
 export * as sshSecretBackendRole from './ssh-secret-backend-role';
 export * as terraformCloudSecretBackend from './terraform-cloud-secret-backend';

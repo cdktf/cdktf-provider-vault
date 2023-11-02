@@ -1,6 +1,6 @@
 # `vault_consul_secret_backend`
 
-Refer to the Terraform Registory for docs: [`vault_consul_secret_backend`](https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/consul_secret_backend).
+Refer to the Terraform Registory for docs: [`vault_consul_secret_backend`](https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/consul_secret_backend).
 
 # `consulSecretBackend` Submodule <a name="`consulSecretBackend` Submodule" id="@cdktf/provider-vault.consulSecretBackend"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_consul_secret_backend`](https
 
 ### ConsulSecretBackend <a name="ConsulSecretBackend" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/consul_secret_backend vault_consul_secret_backend}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/consul_secret_backend vault_consul_secret_backend}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.Initializer"></a>
 
@@ -519,7 +519,7 @@ The construct id used in the generated config for the ConsulSecretBackend to imp
 
 The id of the existing ConsulSecretBackend that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/consul_secret_backend#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/consul_secret_backend#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1096,7 +1096,7 @@ new ConsulSecretBackendConfig {
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.defaultLeaseTtlSeconds">DefaultLeaseTtlSeconds</a></code> | <code>double</code> | Default lease duration for secrets in seconds. |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.description">Description</a></code> | <code>string</code> | Human-friendly description of the mount for the backend. |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.disableRemount">DisableRemount</a></code> | <code>object</code> | If set, opts out of mount migration on path updates. |
-| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/consul_secret_backend#id ConsulSecretBackend#id}. |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/consul_secret_backend#id ConsulSecretBackend#id}. |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.local">Local</a></code> | <code>object</code> | Specifies if the secret backend is local only. |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.maxLeaseTtlSeconds">MaxLeaseTtlSeconds</a></code> | <code>double</code> | Maximum possible lease duration for secrets in seconds. |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
@@ -1186,7 +1186,7 @@ public string Address { get; set; }
 
 Specifies the address of the Consul instance, provided as "host:port" like "127.0.0.1:8500".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/consul_secret_backend#address ConsulSecretBackend#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/consul_secret_backend#address ConsulSecretBackend#address}
 
 ---
 
@@ -1202,7 +1202,7 @@ Denotes a backend resource that is used to bootstrap the Consul ACL system.
 
 Only one resource may be used to bootstrap.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/consul_secret_backend#bootstrap ConsulSecretBackend#bootstrap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/consul_secret_backend#bootstrap ConsulSecretBackend#bootstrap}
 
 ---
 
@@ -1216,7 +1216,7 @@ public string CaCert { get; set; }
 
 CA certificate to use when verifying Consul server certificate, must be x509 PEM encoded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/consul_secret_backend#ca_cert ConsulSecretBackend#ca_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/consul_secret_backend#ca_cert ConsulSecretBackend#ca_cert}
 
 ---
 
@@ -1230,7 +1230,7 @@ public string ClientCert { get; set; }
 
 Client certificate used for Consul's TLS communication, must be x509 PEM encoded and if this is set you need to also set client_key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/consul_secret_backend#client_cert ConsulSecretBackend#client_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/consul_secret_backend#client_cert ConsulSecretBackend#client_cert}
 
 ---
 
@@ -1244,7 +1244,7 @@ public string ClientKey { get; set; }
 
 Client key used for Consul's TLS communication, must be x509 PEM encoded and if this is set you need to also set client_cert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/consul_secret_backend#client_key ConsulSecretBackend#client_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/consul_secret_backend#client_key ConsulSecretBackend#client_key}
 
 ---
 
@@ -1258,7 +1258,7 @@ public double DefaultLeaseTtlSeconds { get; set; }
 
 Default lease duration for secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/consul_secret_backend#default_lease_ttl_seconds ConsulSecretBackend#default_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/consul_secret_backend#default_lease_ttl_seconds ConsulSecretBackend#default_lease_ttl_seconds}
 
 ---
 
@@ -1272,7 +1272,7 @@ public string Description { get; set; }
 
 Human-friendly description of the mount for the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/consul_secret_backend#description ConsulSecretBackend#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/consul_secret_backend#description ConsulSecretBackend#description}
 
 ---
 
@@ -1286,7 +1286,7 @@ public object DisableRemount { get; set; }
 
 If set, opts out of mount migration on path updates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/consul_secret_backend#disable_remount ConsulSecretBackend#disable_remount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/consul_secret_backend#disable_remount ConsulSecretBackend#disable_remount}
 
 ---
 
@@ -1298,7 +1298,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/consul_secret_backend#id ConsulSecretBackend#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/consul_secret_backend#id ConsulSecretBackend#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1315,7 +1315,7 @@ public object Local { get; set; }
 
 Specifies if the secret backend is local only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/consul_secret_backend#local ConsulSecretBackend#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/consul_secret_backend#local ConsulSecretBackend#local}
 
 ---
 
@@ -1329,7 +1329,7 @@ public double MaxLeaseTtlSeconds { get; set; }
 
 Maximum possible lease duration for secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/consul_secret_backend#max_lease_ttl_seconds ConsulSecretBackend#max_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/consul_secret_backend#max_lease_ttl_seconds ConsulSecretBackend#max_lease_ttl_seconds}
 
 ---
 
@@ -1343,7 +1343,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/consul_secret_backend#namespace ConsulSecretBackend#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/consul_secret_backend#namespace ConsulSecretBackend#namespace}
 
 ---
 
@@ -1357,7 +1357,7 @@ public string Path { get; set; }
 
 Unique name of the Vault Consul mount to configure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/consul_secret_backend#path ConsulSecretBackend#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/consul_secret_backend#path ConsulSecretBackend#path}
 
 ---
 
@@ -1371,7 +1371,7 @@ public string Scheme { get; set; }
 
 Specifies the URL scheme to use. Defaults to "http".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/consul_secret_backend#scheme ConsulSecretBackend#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/consul_secret_backend#scheme ConsulSecretBackend#scheme}
 
 ---
 
@@ -1385,7 +1385,7 @@ public string Token { get; set; }
 
 Specifies the Consul token to use when managing or issuing new tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/consul_secret_backend#token ConsulSecretBackend#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/consul_secret_backend#token ConsulSecretBackend#token}
 
 ---
 
