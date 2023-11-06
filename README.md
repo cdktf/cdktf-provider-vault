@@ -1,7 +1,9 @@
 
-# Terraform CDK vault Provider ~> 3.7
+# Terraform CDK vault Provider tracks ~> 3.7
 
 This repo builds and publishes the Terraform vault Provider bindings for [CDK for Terraform](https://cdk.tf).
+
+Is based directly on vault 3.22.0
 
 ## Available Packages
 
@@ -61,7 +63,7 @@ This project is explicitly not tracking the Terraform vault Provider version 1:1
 These are the upstream dependencies:
 
 - [Terraform CDK](https://cdk.tf)
-- [Terraform vault Provider](https://registry.terraform.io/providers/hashicorp/vault/3.7.0)
+- [Terraform vault Provider](https://registry.terraform.io/providers/hashicorp/vault/3.22.0)
     - This links to the minimum version being tracked, you can find the latest released version [in our releases](https://github.com/cdktf/cdktf-provider-vault/releases)
 - [Terraform Engine](https://terraform.io)
 
