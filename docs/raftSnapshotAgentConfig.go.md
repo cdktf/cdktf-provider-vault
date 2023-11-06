@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.22
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/raftsnapshotagentconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/raftsnapshotagentconfig"
 
 raftsnapshotagentconfig.NewRaftSnapshotAgentConfig(scope Construct, id *string, config RaftSnapshotAgentConfigConfig) RaftSnapshotAgentConfig
 ```
@@ -507,7 +507,7 @@ func ResetRetain()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/raftsnapshotagentconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/raftsnapshotagentconfig"
 
 raftsnapshotagentconfig.RaftSnapshotAgentConfig_IsConstruct(x interface{}) *bool
 ```
@@ -539,7 +539,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/raftsnapshotagentconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/raftsnapshotagentconfig"
 
 raftsnapshotagentconfig.RaftSnapshotAgentConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -553,7 +553,7 @@ raftsnapshotagentconfig.RaftSnapshotAgentConfig_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/raftsnapshotagentconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/raftsnapshotagentconfig"
 
 raftsnapshotagentconfig.RaftSnapshotAgentConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -567,7 +567,7 @@ raftsnapshotagentconfig.RaftSnapshotAgentConfig_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/raftsnapshotagentconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/raftsnapshotagentconfig"
 
 raftsnapshotagentconfig.RaftSnapshotAgentConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1434,7 +1434,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.raftSnapshotAgentConfig.RaftSnapshotAgentConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/raftsnapshotagentconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/raftsnapshotagentconfig"
 
 &raftsnapshotagentconfig.RaftSnapshotAgentConfigConfig {
 	Connection: interface{},
