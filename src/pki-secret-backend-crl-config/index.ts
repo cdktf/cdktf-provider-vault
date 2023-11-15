@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/pki_secret_backend_crl_config
 // generated from terraform resource schema
 
