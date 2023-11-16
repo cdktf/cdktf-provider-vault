@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/token
+// https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface TokenConfig extends cdktf.TerraformMetaArguments {
   /**
   * The display name of the token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/token#display_name Token#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/token#display_name Token#display_name}
   */
   readonly displayName?: string;
   /**
   * The explicit max TTL of the token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/token#explicit_max_ttl Token#explicit_max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/token#explicit_max_ttl Token#explicit_max_ttl}
   */
   readonly explicitMaxTtl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/token#id Token#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/token#id Token#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,85 +29,85 @@ export interface TokenConfig extends cdktf.TerraformMetaArguments {
   /**
   * Metadata to be associated with the token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/token#metadata Token#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/token#metadata Token#metadata}
   */
   readonly metadata?: { [key: string]: string };
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/token#namespace Token#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/token#namespace Token#namespace}
   */
   readonly namespace?: string;
   /**
   * Flag to disable the default policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/token#no_default_policy Token#no_default_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/token#no_default_policy Token#no_default_policy}
   */
   readonly noDefaultPolicy?: boolean | cdktf.IResolvable;
   /**
   * Flag to create a token without parent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/token#no_parent Token#no_parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/token#no_parent Token#no_parent}
   */
   readonly noParent?: boolean | cdktf.IResolvable;
   /**
   * The number of allowed uses of the token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/token#num_uses Token#num_uses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/token#num_uses Token#num_uses}
   */
   readonly numUses?: number;
   /**
   * The period of the token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/token#period Token#period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/token#period Token#period}
   */
   readonly period?: string;
   /**
   * List of policies.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/token#policies Token#policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/token#policies Token#policies}
   */
   readonly policies?: string[];
   /**
   * The renew increment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/token#renew_increment Token#renew_increment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/token#renew_increment Token#renew_increment}
   */
   readonly renewIncrement?: number;
   /**
   * The minimum lease to renew token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/token#renew_min_lease Token#renew_min_lease}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/token#renew_min_lease Token#renew_min_lease}
   */
   readonly renewMinLease?: number;
   /**
   * Flag to allow the token to be renewed
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/token#renewable Token#renewable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/token#renewable Token#renewable}
   */
   readonly renewable?: boolean | cdktf.IResolvable;
   /**
   * The token role name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/token#role_name Token#role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/token#role_name Token#role_name}
   */
   readonly roleName?: string;
   /**
   * The TTL period of the token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/token#ttl Token#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/token#ttl Token#ttl}
   */
   readonly ttl?: string;
   /**
   * The TTL period of the wrapped token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/token#wrapping_ttl Token#wrapping_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/token#wrapping_ttl Token#wrapping_ttl}
   */
   readonly wrappingTtl?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/token vault_token}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/token vault_token}
 */
 export class Token extends cdktf.TerraformResource {
 
@@ -128,7 +123,7 @@ export class Token extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Token resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Token to import
-  * @param importFromId The id of the existing Token that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/token#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Token that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/token#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Token to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -140,7 +135,7 @@ export class Token extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/token vault_token} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/token vault_token} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -151,7 +146,7 @@ export class Token extends cdktf.TerraformResource {
       terraformResourceType: 'vault_token',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.22.0',
+        providerVersion: '3.23.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

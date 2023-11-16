@@ -1,6 +1,6 @@
 # `vault_ad_secret_library`
 
-Refer to the Terraform Registory for docs: [`vault_ad_secret_library`](https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/ad_secret_library).
+Refer to the Terraform Registory for docs: [`vault_ad_secret_library`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/ad_secret_library).
 
 # `adSecretLibrary` Submodule <a name="`adSecretLibrary` Submodule" id="@cdktf/provider-vault.adSecretLibrary"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`vault_ad_secret_library`](https://r
 
 ### AdSecretLibrary <a name="AdSecretLibrary" id="@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/ad_secret_library vault_ad_secret_library}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/ad_secret_library vault_ad_secret_library}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/adsecretlibrary"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/adsecretlibrary"
 
 adsecretlibrary.NewAdSecretLibrary(scope Construct, id *string, config AdSecretLibraryConfig) AdSecretLibrary
 ```
@@ -367,7 +367,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/adsecretlibrary"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/adsecretlibrary"
 
 adsecretlibrary.AdSecretLibrary_IsConstruct(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/adsecretlibrary"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/adsecretlibrary"
 
 adsecretlibrary.AdSecretLibrary_IsTerraformElement(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ adsecretlibrary.AdSecretLibrary_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/adsecretlibrary"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/adsecretlibrary"
 
 adsecretlibrary.AdSecretLibrary_IsTerraformResource(x interface{}) *bool
 ```
@@ -427,7 +427,7 @@ adsecretlibrary.AdSecretLibrary_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/adsecretlibrary"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/adsecretlibrary"
 
 adsecretlibrary.AdSecretLibrary_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -456,7 +456,7 @@ The construct id used in the generated config for the AdSecretLibrary to import.
 
 The id of the existing AdSecretLibrary that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/ad_secret_library#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/ad_secret_library#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -832,7 +832,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/adsecretlibrary"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/adsecretlibrary"
 
 &adsecretlibrary.AdSecretLibraryConfig {
 	Connection: interface{},
@@ -868,7 +868,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/adsecretlibrary"
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig.property.name">Name</a></code> | <code>*string</code> | The name of the set of service accounts. |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig.property.serviceAccountNames">ServiceAccountNames</a></code> | <code>*[]*string</code> | The names of all the service accounts that can be checked out from this set. |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig.property.disableCheckInEnforcement">DisableCheckInEnforcement</a></code> | <code>interface{}</code> | Disable enforcing that service accounts must be checked in by the entity or client token that checked them out. |
-| <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/ad_secret_library#id AdSecretLibrary#id}. |
+| <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/ad_secret_library#id AdSecretLibrary#id}. |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig.property.maxTtl">MaxTtl</a></code> | <code>*f64</code> | The maximum amount of time, in seconds, a check-out last with renewal before Vault automatically checks it back in. |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig.property.ttl">Ttl</a></code> | <code>*f64</code> | The amount of time, in seconds, a single check-out lasts before Vault automatically checks it back in. |
@@ -955,7 +955,7 @@ Backend *string
 
 The mount path for the AD backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/ad_secret_library#backend AdSecretLibrary#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/ad_secret_library#backend AdSecretLibrary#backend}
 
 ---
 
@@ -969,7 +969,7 @@ Name *string
 
 The name of the set of service accounts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/ad_secret_library#name AdSecretLibrary#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/ad_secret_library#name AdSecretLibrary#name}
 
 ---
 
@@ -985,7 +985,7 @@ The names of all the service accounts that can be checked out from this set.
 
 These service accounts must already exist in Active Directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/ad_secret_library#service_account_names AdSecretLibrary#service_account_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/ad_secret_library#service_account_names AdSecretLibrary#service_account_names}
 
 ---
 
@@ -999,7 +999,7 @@ DisableCheckInEnforcement interface{}
 
 Disable enforcing that service accounts must be checked in by the entity or client token that checked them out.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/ad_secret_library#disable_check_in_enforcement AdSecretLibrary#disable_check_in_enforcement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/ad_secret_library#disable_check_in_enforcement AdSecretLibrary#disable_check_in_enforcement}
 
 ---
 
@@ -1011,7 +1011,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/ad_secret_library#id AdSecretLibrary#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/ad_secret_library#id AdSecretLibrary#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1028,7 +1028,7 @@ MaxTtl *f64
 
 The maximum amount of time, in seconds, a check-out last with renewal before Vault automatically checks it back in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/ad_secret_library#max_ttl AdSecretLibrary#max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/ad_secret_library#max_ttl AdSecretLibrary#max_ttl}
 
 ---
 
@@ -1042,7 +1042,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/ad_secret_library#namespace AdSecretLibrary#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/ad_secret_library#namespace AdSecretLibrary#namespace}
 
 ---
 
@@ -1056,7 +1056,7 @@ Ttl *f64
 
 The amount of time, in seconds, a single check-out lasts before Vault automatically checks it back in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/ad_secret_library#ttl AdSecretLibrary#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/ad_secret_library#ttl AdSecretLibrary#ttl}
 
 ---
 

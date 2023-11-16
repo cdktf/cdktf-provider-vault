@@ -1,6 +1,6 @@
 # `vault_kubernetes_secret_backend`
 
-Refer to the Terraform Registory for docs: [`vault_kubernetes_secret_backend`](https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_secret_backend).
+Refer to the Terraform Registory for docs: [`vault_kubernetes_secret_backend`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_secret_backend).
 
 # `kubernetesSecretBackend` Submodule <a name="`kubernetesSecretBackend` Submodule" id="@cdktf/provider-vault.kubernetesSecretBackend"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_kubernetes_secret_backend`](h
 
 ### KubernetesSecretBackend <a name="KubernetesSecretBackend" id="@cdktf/provider-vault.kubernetesSecretBackend.KubernetesSecretBackend"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_secret_backend vault_kubernetes_secret_backend}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_secret_backend vault_kubernetes_secret_backend}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.kubernetesSecretBackend.KubernetesSecretBackend.Initializer"></a>
 
@@ -533,7 +533,7 @@ The construct id used in the generated config for the KubernetesSecretBackend to
 
 The id of the existing KubernetesSecretBackend that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_secret_backend#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_secret_backend#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1142,7 +1142,7 @@ const kubernetesSecretBackendConfig: kubernetesSecretBackend.KubernetesSecretBac
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackend.KubernetesSecretBackendConfig.property.description">description</a></code> | <code>string</code> | Human-friendly description of the mount. |
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackend.KubernetesSecretBackendConfig.property.disableLocalCaJwt">disableLocalCaJwt</a></code> | <code>boolean \| cdktf.IResolvable</code> | Disable defaulting to the local CA certificate and service account JWT when running in a Kubernetes pod. |
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackend.KubernetesSecretBackendConfig.property.externalEntropyAccess">externalEntropyAccess</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable the secrets engine to access Vault's external entropy source. |
-| <code><a href="#@cdktf/provider-vault.kubernetesSecretBackend.KubernetesSecretBackendConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_secret_backend#id KubernetesSecretBackend#id}. |
+| <code><a href="#@cdktf/provider-vault.kubernetesSecretBackend.KubernetesSecretBackendConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_secret_backend#id KubernetesSecretBackend#id}. |
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackend.KubernetesSecretBackendConfig.property.kubernetesCaCert">kubernetesCaCert</a></code> | <code>string</code> | A PEM-encoded CA certificate used by the secret engine to verify the Kubernetes API server certificate. |
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackend.KubernetesSecretBackendConfig.property.kubernetesHost">kubernetesHost</a></code> | <code>string</code> | The Kubernetes API URL to connect to. |
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackend.KubernetesSecretBackendConfig.property.local">local</a></code> | <code>boolean \| cdktf.IResolvable</code> | Local mount flag that can be explicitly set to true to enforce local mount in HA environment. |
@@ -1234,7 +1234,7 @@ public readonly path: string;
 
 Where the secret backend will be mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_secret_backend#path KubernetesSecretBackend#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_secret_backend#path KubernetesSecretBackend#path}
 
 ---
 
@@ -1248,7 +1248,7 @@ public readonly allowedManagedKeys: string[];
 
 List of managed key registry entry names that the mount in question is allowed to access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_secret_backend#allowed_managed_keys KubernetesSecretBackend#allowed_managed_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_secret_backend#allowed_managed_keys KubernetesSecretBackend#allowed_managed_keys}
 
 ---
 
@@ -1262,7 +1262,7 @@ public readonly auditNonHmacRequestKeys: string[];
 
 Specifies the list of keys that will not be HMAC'd by audit devices in the request data object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_secret_backend#audit_non_hmac_request_keys KubernetesSecretBackend#audit_non_hmac_request_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_secret_backend#audit_non_hmac_request_keys KubernetesSecretBackend#audit_non_hmac_request_keys}
 
 ---
 
@@ -1276,7 +1276,7 @@ public readonly auditNonHmacResponseKeys: string[];
 
 Specifies the list of keys that will not be HMAC'd by audit devices in the response data object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_secret_backend#audit_non_hmac_response_keys KubernetesSecretBackend#audit_non_hmac_response_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_secret_backend#audit_non_hmac_response_keys KubernetesSecretBackend#audit_non_hmac_response_keys}
 
 ---
 
@@ -1290,7 +1290,7 @@ public readonly defaultLeaseTtlSeconds: number;
 
 Default lease duration for tokens and secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_secret_backend#default_lease_ttl_seconds KubernetesSecretBackend#default_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_secret_backend#default_lease_ttl_seconds KubernetesSecretBackend#default_lease_ttl_seconds}
 
 ---
 
@@ -1304,7 +1304,7 @@ public readonly description: string;
 
 Human-friendly description of the mount.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_secret_backend#description KubernetesSecretBackend#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_secret_backend#description KubernetesSecretBackend#description}
 
 ---
 
@@ -1318,7 +1318,7 @@ public readonly disableLocalCaJwt: boolean | IResolvable;
 
 Disable defaulting to the local CA certificate and service account JWT when running in a Kubernetes pod.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_secret_backend#disable_local_ca_jwt KubernetesSecretBackend#disable_local_ca_jwt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_secret_backend#disable_local_ca_jwt KubernetesSecretBackend#disable_local_ca_jwt}
 
 ---
 
@@ -1332,7 +1332,7 @@ public readonly externalEntropyAccess: boolean | IResolvable;
 
 Enable the secrets engine to access Vault's external entropy source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_secret_backend#external_entropy_access KubernetesSecretBackend#external_entropy_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_secret_backend#external_entropy_access KubernetesSecretBackend#external_entropy_access}
 
 ---
 
@@ -1344,7 +1344,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_secret_backend#id KubernetesSecretBackend#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_secret_backend#id KubernetesSecretBackend#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1363,7 +1363,7 @@ A PEM-encoded CA certificate used by the secret engine to verify the Kubernetes 
 
 Defaults to the local pod’s CA if found, or otherwise the host's root CA set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_secret_backend#kubernetes_ca_cert KubernetesSecretBackend#kubernetes_ca_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_secret_backend#kubernetes_ca_cert KubernetesSecretBackend#kubernetes_ca_cert}
 
 ---
 
@@ -1377,7 +1377,7 @@ public readonly kubernetesHost: string;
 
 The Kubernetes API URL to connect to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_secret_backend#kubernetes_host KubernetesSecretBackend#kubernetes_host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_secret_backend#kubernetes_host KubernetesSecretBackend#kubernetes_host}
 
 ---
 
@@ -1391,7 +1391,7 @@ public readonly local: boolean | IResolvable;
 
 Local mount flag that can be explicitly set to true to enforce local mount in HA environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_secret_backend#local KubernetesSecretBackend#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_secret_backend#local KubernetesSecretBackend#local}
 
 ---
 
@@ -1405,7 +1405,7 @@ public readonly maxLeaseTtlSeconds: number;
 
 Maximum possible lease duration for tokens and secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_secret_backend#max_lease_ttl_seconds KubernetesSecretBackend#max_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_secret_backend#max_lease_ttl_seconds KubernetesSecretBackend#max_lease_ttl_seconds}
 
 ---
 
@@ -1419,7 +1419,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_secret_backend#namespace KubernetesSecretBackend#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_secret_backend#namespace KubernetesSecretBackend#namespace}
 
 ---
 
@@ -1433,7 +1433,7 @@ public readonly options: {[ key: string ]: string};
 
 Specifies mount type specific options that are passed to the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_secret_backend#options KubernetesSecretBackend#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_secret_backend#options KubernetesSecretBackend#options}
 
 ---
 
@@ -1447,7 +1447,7 @@ public readonly sealWrap: boolean | IResolvable;
 
 Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_secret_backend#seal_wrap KubernetesSecretBackend#seal_wrap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_secret_backend#seal_wrap KubernetesSecretBackend#seal_wrap}
 
 ---
 
@@ -1463,7 +1463,7 @@ The JSON web token of the service account used by the secrets engine to manage K
 
 Defaults to the local pod’s JWT if found.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_secret_backend#service_account_jwt KubernetesSecretBackend#service_account_jwt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_secret_backend#service_account_jwt KubernetesSecretBackend#service_account_jwt}
 
 ---
 

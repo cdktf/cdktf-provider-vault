@@ -1,6 +1,6 @@
 # `vault_namespace`
 
-Refer to the Terraform Registory for docs: [`vault_namespace`](https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/namespace).
+Refer to the Terraform Registory for docs: [`vault_namespace`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/namespace).
 
 # `namespace` Submodule <a name="`namespace` Submodule" id="@cdktf/provider-vault.namespace"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_namespace`](https://registry.
 
 ### Namespace <a name="Namespace" id="@cdktf/provider-vault.namespace.Namespace"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/namespace vault_namespace}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/namespace vault_namespace}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.namespace.Namespace.Initializer"></a>
 
@@ -449,7 +449,7 @@ The construct id used in the generated config for the Namespace to import.
 
 The id of the existing Namespace that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/namespace#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/namespace#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -801,7 +801,7 @@ new NamespaceConfig {
 | <code><a href="#@cdktf/provider-vault.namespace.NamespaceConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.namespace.NamespaceConfig.property.path">Path</a></code> | <code>string</code> | Namespace path. |
 | <code><a href="#@cdktf/provider-vault.namespace.NamespaceConfig.property.customMetadata">CustomMetadata</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Custom metadata describing this namespace. Value type is map[string]string. |
-| <code><a href="#@cdktf/provider-vault.namespace.NamespaceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/namespace#id Namespace#id}. |
+| <code><a href="#@cdktf/provider-vault.namespace.NamespaceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/namespace#id Namespace#id}. |
 | <code><a href="#@cdktf/provider-vault.namespace.NamespaceConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.namespace.NamespaceConfig.property.pathFq">PathFq</a></code> | <code>string</code> | The fully qualified namespace path. |
 
@@ -887,7 +887,7 @@ public string Path { get; set; }
 
 Namespace path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/namespace#path Namespace#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/namespace#path Namespace#path}
 
 ---
 
@@ -901,7 +901,7 @@ public System.Collections.Generic.IDictionary<string, string> CustomMetadata { g
 
 Custom metadata describing this namespace. Value type is map[string]string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/namespace#custom_metadata Namespace#custom_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/namespace#custom_metadata Namespace#custom_metadata}
 
 ---
 
@@ -913,7 +913,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/namespace#id Namespace#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/namespace#id Namespace#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -930,7 +930,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/namespace#namespace Namespace#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/namespace#namespace Namespace#namespace}
 
 ---
 
@@ -944,7 +944,7 @@ public string PathFq { get; set; }
 
 The fully qualified namespace path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/namespace#path_fq Namespace#path_fq}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/namespace#path_fq Namespace#path_fq}
 
 ---
 

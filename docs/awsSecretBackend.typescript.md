@@ -1,6 +1,6 @@
 # `vault_aws_secret_backend`
 
-Refer to the Terraform Registory for docs: [`vault_aws_secret_backend`](https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_secret_backend).
+Refer to the Terraform Registory for docs: [`vault_aws_secret_backend`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/aws_secret_backend).
 
 # `awsSecretBackend` Submodule <a name="`awsSecretBackend` Submodule" id="@cdktf/provider-vault.awsSecretBackend"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_aws_secret_backend`](https://
 
 ### AwsSecretBackend <a name="AwsSecretBackend" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_secret_backend vault_aws_secret_backend}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/aws_secret_backend vault_aws_secret_backend}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer"></a>
 
@@ -519,7 +519,7 @@ The construct id used in the generated config for the AwsSecretBackend to import
 
 The id of the existing AwsSecretBackend that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_secret_backend#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/aws_secret_backend#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1048,7 +1048,7 @@ const awsSecretBackendConfig: awsSecretBackend.AwsSecretBackendConfig = { ... }
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.description">description</a></code> | <code>string</code> | Human-friendly description of the mount for the backend. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.disableRemount">disableRemount</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set, opts out of mount migration on path updates. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.iamEndpoint">iamEndpoint</a></code> | <code>string</code> | Specifies a custom HTTP IAM endpoint to use. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_secret_backend#id AwsSecretBackend#id}. |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/aws_secret_backend#id AwsSecretBackend#id}. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.local">local</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies if the secret backend is local only. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.maxLeaseTtlSeconds">maxLeaseTtlSeconds</a></code> | <code>number</code> | Maximum possible lease duration for secrets in seconds. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.namespace">namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
@@ -1140,7 +1140,7 @@ public readonly accessKey: string;
 
 The AWS Access Key ID to use when generating new credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_secret_backend#access_key AwsSecretBackend#access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/aws_secret_backend#access_key AwsSecretBackend#access_key}
 
 ---
 
@@ -1154,7 +1154,7 @@ public readonly defaultLeaseTtlSeconds: number;
 
 Default lease duration for secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_secret_backend#default_lease_ttl_seconds AwsSecretBackend#default_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/aws_secret_backend#default_lease_ttl_seconds AwsSecretBackend#default_lease_ttl_seconds}
 
 ---
 
@@ -1168,7 +1168,7 @@ public readonly description: string;
 
 Human-friendly description of the mount for the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_secret_backend#description AwsSecretBackend#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/aws_secret_backend#description AwsSecretBackend#description}
 
 ---
 
@@ -1182,7 +1182,7 @@ public readonly disableRemount: boolean | IResolvable;
 
 If set, opts out of mount migration on path updates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_secret_backend#disable_remount AwsSecretBackend#disable_remount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/aws_secret_backend#disable_remount AwsSecretBackend#disable_remount}
 
 ---
 
@@ -1196,7 +1196,7 @@ public readonly iamEndpoint: string;
 
 Specifies a custom HTTP IAM endpoint to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_secret_backend#iam_endpoint AwsSecretBackend#iam_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/aws_secret_backend#iam_endpoint AwsSecretBackend#iam_endpoint}
 
 ---
 
@@ -1208,7 +1208,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_secret_backend#id AwsSecretBackend#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/aws_secret_backend#id AwsSecretBackend#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1225,7 +1225,7 @@ public readonly local: boolean | IResolvable;
 
 Specifies if the secret backend is local only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_secret_backend#local AwsSecretBackend#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/aws_secret_backend#local AwsSecretBackend#local}
 
 ---
 
@@ -1239,7 +1239,7 @@ public readonly maxLeaseTtlSeconds: number;
 
 Maximum possible lease duration for secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_secret_backend#max_lease_ttl_seconds AwsSecretBackend#max_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/aws_secret_backend#max_lease_ttl_seconds AwsSecretBackend#max_lease_ttl_seconds}
 
 ---
 
@@ -1253,7 +1253,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_secret_backend#namespace AwsSecretBackend#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/aws_secret_backend#namespace AwsSecretBackend#namespace}
 
 ---
 
@@ -1267,7 +1267,7 @@ public readonly path: string;
 
 Path to mount the backend at.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_secret_backend#path AwsSecretBackend#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/aws_secret_backend#path AwsSecretBackend#path}
 
 ---
 
@@ -1281,7 +1281,7 @@ public readonly region: string;
 
 The AWS region to make API calls against. Defaults to us-east-1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_secret_backend#region AwsSecretBackend#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/aws_secret_backend#region AwsSecretBackend#region}
 
 ---
 
@@ -1295,7 +1295,7 @@ public readonly secretKey: string;
 
 The AWS Secret Access Key to use when generating new credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_secret_backend#secret_key AwsSecretBackend#secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/aws_secret_backend#secret_key AwsSecretBackend#secret_key}
 
 ---
 
@@ -1309,7 +1309,7 @@ public readonly stsEndpoint: string;
 
 Specifies a custom HTTP STS endpoint to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_secret_backend#sts_endpoint AwsSecretBackend#sts_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/aws_secret_backend#sts_endpoint AwsSecretBackend#sts_endpoint}
 
 ---
 
@@ -1323,7 +1323,7 @@ public readonly usernameTemplate: string;
 
 Template describing how dynamic usernames are generated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_secret_backend#username_template AwsSecretBackend#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/aws_secret_backend#username_template AwsSecretBackend#username_template}
 
 ---
 

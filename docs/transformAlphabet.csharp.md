@@ -1,6 +1,6 @@
 # `vault_transform_alphabet`
 
-Refer to the Terraform Registory for docs: [`vault_transform_alphabet`](https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/transform_alphabet).
+Refer to the Terraform Registory for docs: [`vault_transform_alphabet`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/transform_alphabet).
 
 # `transformAlphabet` Submodule <a name="`transformAlphabet` Submodule" id="@cdktf/provider-vault.transformAlphabet"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_transform_alphabet`](https://
 
 ### TransformAlphabet <a name="TransformAlphabet" id="@cdktf/provider-vault.transformAlphabet.TransformAlphabet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/transform_alphabet vault_transform_alphabet}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/transform_alphabet vault_transform_alphabet}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.transformAlphabet.TransformAlphabet.Initializer"></a>
 
@@ -442,7 +442,7 @@ The construct id used in the generated config for the TransformAlphabet to impor
 
 The id of the existing TransformAlphabet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/transform_alphabet#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/transform_alphabet#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -784,7 +784,7 @@ new TransformAlphabetConfig {
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabetConfig.property.name">Name</a></code> | <code>string</code> | The name of the alphabet. |
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabetConfig.property.path">Path</a></code> | <code>string</code> | The mount path for a back-end, for example, the path given in "$ vault auth enable -path=my-aws aws". |
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabetConfig.property.alphabet">Alphabet</a></code> | <code>string</code> | A string of characters that contains the alphabet set. |
-| <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabetConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/transform_alphabet#id TransformAlphabet#id}. |
+| <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabetConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/transform_alphabet#id TransformAlphabet#id}. |
 | <code><a href="#@cdktf/provider-vault.transformAlphabet.TransformAlphabetConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -869,7 +869,7 @@ public string Name { get; set; }
 
 The name of the alphabet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/transform_alphabet#name TransformAlphabet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/transform_alphabet#name TransformAlphabet#name}
 
 ---
 
@@ -883,7 +883,7 @@ public string Path { get; set; }
 
 The mount path for a back-end, for example, the path given in "$ vault auth enable -path=my-aws aws".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/transform_alphabet#path TransformAlphabet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/transform_alphabet#path TransformAlphabet#path}
 
 ---
 
@@ -897,7 +897,7 @@ public string Alphabet { get; set; }
 
 A string of characters that contains the alphabet set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/transform_alphabet#alphabet TransformAlphabet#alphabet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/transform_alphabet#alphabet TransformAlphabet#alphabet}
 
 ---
 
@@ -909,7 +909,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/transform_alphabet#id TransformAlphabet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/transform_alphabet#id TransformAlphabet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -926,7 +926,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/transform_alphabet#namespace TransformAlphabet#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/transform_alphabet#namespace TransformAlphabet#namespace}
 
 ---
 

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_oidc_provider
+// https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/identity_oidc_provider
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface IdentityOidcProviderConfig extends cdktf.TerraformMetaArguments
   /**
   * The client IDs that are permitted to use the provider. If empty, no clients are allowed. If "*", all clients are allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_oidc_provider#allowed_client_ids IdentityOidcProvider#allowed_client_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/identity_oidc_provider#allowed_client_ids IdentityOidcProvider#allowed_client_ids}
   */
   readonly allowedClientIds?: string[];
   /**
   * Set to true if the issuer endpoint uses HTTPS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_oidc_provider#https_enabled IdentityOidcProvider#https_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/identity_oidc_provider#https_enabled IdentityOidcProvider#https_enabled}
   */
   readonly httpsEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_oidc_provider#id IdentityOidcProvider#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/identity_oidc_provider#id IdentityOidcProvider#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,31 +29,31 @@ export interface IdentityOidcProviderConfig extends cdktf.TerraformMetaArguments
   /**
   * The host for the issuer. Can be either host or host:port.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_oidc_provider#issuer_host IdentityOidcProvider#issuer_host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/identity_oidc_provider#issuer_host IdentityOidcProvider#issuer_host}
   */
   readonly issuerHost?: string;
   /**
   * The name of the provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_oidc_provider#name IdentityOidcProvider#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/identity_oidc_provider#name IdentityOidcProvider#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_oidc_provider#namespace IdentityOidcProvider#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/identity_oidc_provider#namespace IdentityOidcProvider#namespace}
   */
   readonly namespace?: string;
   /**
   * The scopes available for requesting on the provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_oidc_provider#scopes_supported IdentityOidcProvider#scopes_supported}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/identity_oidc_provider#scopes_supported IdentityOidcProvider#scopes_supported}
   */
   readonly scopesSupported?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_oidc_provider vault_identity_oidc_provider}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/identity_oidc_provider vault_identity_oidc_provider}
 */
 export class IdentityOidcProvider extends cdktf.TerraformResource {
 
@@ -74,7 +69,7 @@ export class IdentityOidcProvider extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a IdentityOidcProvider resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IdentityOidcProvider to import
-  * @param importFromId The id of the existing IdentityOidcProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_oidc_provider#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IdentityOidcProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/identity_oidc_provider#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IdentityOidcProvider to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -86,7 +81,7 @@ export class IdentityOidcProvider extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_oidc_provider vault_identity_oidc_provider} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/identity_oidc_provider vault_identity_oidc_provider} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -97,7 +92,7 @@ export class IdentityOidcProvider extends cdktf.TerraformResource {
       terraformResourceType: 'vault_identity_oidc_provider',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.22.0',
+        providerVersion: '3.23.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

@@ -1,6 +1,6 @@
 # `vault_identity_group_alias`
 
-Refer to the Terraform Registory for docs: [`vault_identity_group_alias`](https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_group_alias).
+Refer to the Terraform Registory for docs: [`vault_identity_group_alias`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/identity_group_alias).
 
 # `identityGroupAlias` Submodule <a name="`identityGroupAlias` Submodule" id="@cdktf/provider-vault.identityGroupAlias"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`vault_identity_group_alias`](https:
 
 ### IdentityGroupAlias <a name="IdentityGroupAlias" id="@cdktf/provider-vault.identityGroupAlias.IdentityGroupAlias"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_group_alias vault_identity_group_alias}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/identity_group_alias vault_identity_group_alias}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.identityGroupAlias.IdentityGroupAlias.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/identitygroupalias"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identitygroupalias"
 
 identitygroupalias.NewIdentityGroupAlias(scope Construct, id *string, config IdentityGroupAliasConfig) IdentityGroupAlias
 ```
@@ -346,7 +346,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.identityGroupAlias.IdentityGroupAlias.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/identitygroupalias"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identitygroupalias"
 
 identitygroupalias.IdentityGroupAlias_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.identityGroupAlias.IdentityGroupAlias.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/identitygroupalias"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identitygroupalias"
 
 identitygroupalias.IdentityGroupAlias_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ identitygroupalias.IdentityGroupAlias_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.identityGroupAlias.IdentityGroupAlias.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/identitygroupalias"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identitygroupalias"
 
 identitygroupalias.IdentityGroupAlias_IsTerraformResource(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ identitygroupalias.IdentityGroupAlias_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.identityGroupAlias.IdentityGroupAlias.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/identitygroupalias"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identitygroupalias"
 
 identitygroupalias.IdentityGroupAlias_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -435,7 +435,7 @@ The construct id used in the generated config for the IdentityGroupAlias to impo
 
 The id of the existing IdentityGroupAlias that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_group_alias#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/identity_group_alias#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -745,7 +745,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.identityGroupAlias.IdentityGroupAliasConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/identitygroupalias"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identitygroupalias"
 
 &identitygroupalias.IdentityGroupAliasConfig {
 	Connection: interface{},
@@ -777,7 +777,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/identitygroupalias"
 | <code><a href="#@cdktf/provider-vault.identityGroupAlias.IdentityGroupAliasConfig.property.canonicalId">CanonicalId</a></code> | <code>*string</code> | ID of the group to which this is an alias. |
 | <code><a href="#@cdktf/provider-vault.identityGroupAlias.IdentityGroupAliasConfig.property.mountAccessor">MountAccessor</a></code> | <code>*string</code> | Mount accessor to which this alias belongs to. |
 | <code><a href="#@cdktf/provider-vault.identityGroupAlias.IdentityGroupAliasConfig.property.name">Name</a></code> | <code>*string</code> | Name of the group alias. |
-| <code><a href="#@cdktf/provider-vault.identityGroupAlias.IdentityGroupAliasConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_group_alias#id IdentityGroupAlias#id}. |
+| <code><a href="#@cdktf/provider-vault.identityGroupAlias.IdentityGroupAliasConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/identity_group_alias#id IdentityGroupAlias#id}. |
 | <code><a href="#@cdktf/provider-vault.identityGroupAlias.IdentityGroupAliasConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -862,7 +862,7 @@ CanonicalId *string
 
 ID of the group to which this is an alias.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_group_alias#canonical_id IdentityGroupAlias#canonical_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/identity_group_alias#canonical_id IdentityGroupAlias#canonical_id}
 
 ---
 
@@ -876,7 +876,7 @@ MountAccessor *string
 
 Mount accessor to which this alias belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_group_alias#mount_accessor IdentityGroupAlias#mount_accessor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/identity_group_alias#mount_accessor IdentityGroupAlias#mount_accessor}
 
 ---
 
@@ -890,7 +890,7 @@ Name *string
 
 Name of the group alias.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_group_alias#name IdentityGroupAlias#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/identity_group_alias#name IdentityGroupAlias#name}
 
 ---
 
@@ -902,7 +902,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_group_alias#id IdentityGroupAlias#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/identity_group_alias#id IdentityGroupAlias#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -919,7 +919,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/identity_group_alias#namespace IdentityGroupAlias#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/identity_group_alias#namespace IdentityGroupAlias#namespace}
 
 ---
 

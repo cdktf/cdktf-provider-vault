@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_auth_backend_role
+// https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_auth_backend_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,35 +10,35 @@ export interface KubernetesAuthBackendRoleConfig extends cdktf.TerraformMetaArgu
   /**
   * Configures how identity aliases are generated. Valid choices are: serviceaccount_uid, serviceaccount_name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_auth_backend_role#alias_name_source KubernetesAuthBackendRole#alias_name_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_auth_backend_role#alias_name_source KubernetesAuthBackendRole#alias_name_source}
   */
   readonly aliasNameSource?: string;
   /**
   * Optional Audience claim to verify in the JWT.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_auth_backend_role#audience KubernetesAuthBackendRole#audience}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_auth_backend_role#audience KubernetesAuthBackendRole#audience}
   */
   readonly audience?: string;
   /**
   * Unique name of the kubernetes backend to configure.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_auth_backend_role#backend KubernetesAuthBackendRole#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_auth_backend_role#backend KubernetesAuthBackendRole#backend}
   */
   readonly backend?: string;
   /**
   * List of service account names able to access this role. If set to `["*"]` all names are allowed, both this and bound_service_account_namespaces can not be "*".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_auth_backend_role#bound_service_account_names KubernetesAuthBackendRole#bound_service_account_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_auth_backend_role#bound_service_account_names KubernetesAuthBackendRole#bound_service_account_names}
   */
   readonly boundServiceAccountNames: string[];
   /**
   * List of namespaces allowed to access this role. If set to `["*"]` all namespaces are allowed, both this and bound_service_account_names can not be set to "*".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_auth_backend_role#bound_service_account_namespaces KubernetesAuthBackendRole#bound_service_account_namespaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_auth_backend_role#bound_service_account_namespaces KubernetesAuthBackendRole#bound_service_account_namespaces}
   */
   readonly boundServiceAccountNamespaces: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_auth_backend_role#id KubernetesAuthBackendRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_auth_backend_role#id KubernetesAuthBackendRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -52,73 +47,73 @@ export interface KubernetesAuthBackendRoleConfig extends cdktf.TerraformMetaArgu
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_auth_backend_role#namespace KubernetesAuthBackendRole#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_auth_backend_role#namespace KubernetesAuthBackendRole#namespace}
   */
   readonly namespace?: string;
   /**
   * Name of the role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_auth_backend_role#role_name KubernetesAuthBackendRole#role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_auth_backend_role#role_name KubernetesAuthBackendRole#role_name}
   */
   readonly roleName: string;
   /**
   * Specifies the blocks of IP addresses which are allowed to use the generated token
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_auth_backend_role#token_bound_cidrs KubernetesAuthBackendRole#token_bound_cidrs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_auth_backend_role#token_bound_cidrs KubernetesAuthBackendRole#token_bound_cidrs}
   */
   readonly tokenBoundCidrs?: string[];
   /**
   * Generated Token's Explicit Maximum TTL in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_auth_backend_role#token_explicit_max_ttl KubernetesAuthBackendRole#token_explicit_max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_auth_backend_role#token_explicit_max_ttl KubernetesAuthBackendRole#token_explicit_max_ttl}
   */
   readonly tokenExplicitMaxTtl?: number;
   /**
   * The maximum lifetime of the generated token
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_auth_backend_role#token_max_ttl KubernetesAuthBackendRole#token_max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_auth_backend_role#token_max_ttl KubernetesAuthBackendRole#token_max_ttl}
   */
   readonly tokenMaxTtl?: number;
   /**
   * If true, the 'default' policy will not automatically be added to generated tokens
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_auth_backend_role#token_no_default_policy KubernetesAuthBackendRole#token_no_default_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_auth_backend_role#token_no_default_policy KubernetesAuthBackendRole#token_no_default_policy}
   */
   readonly tokenNoDefaultPolicy?: boolean | cdktf.IResolvable;
   /**
   * The maximum number of times a token may be used, a value of zero means unlimited
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_auth_backend_role#token_num_uses KubernetesAuthBackendRole#token_num_uses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_auth_backend_role#token_num_uses KubernetesAuthBackendRole#token_num_uses}
   */
   readonly tokenNumUses?: number;
   /**
   * Generated Token's Period
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_auth_backend_role#token_period KubernetesAuthBackendRole#token_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_auth_backend_role#token_period KubernetesAuthBackendRole#token_period}
   */
   readonly tokenPeriod?: number;
   /**
   * Generated Token's Policies
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_auth_backend_role#token_policies KubernetesAuthBackendRole#token_policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_auth_backend_role#token_policies KubernetesAuthBackendRole#token_policies}
   */
   readonly tokenPolicies?: string[];
   /**
   * The initial ttl of the token to generate in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_auth_backend_role#token_ttl KubernetesAuthBackendRole#token_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_auth_backend_role#token_ttl KubernetesAuthBackendRole#token_ttl}
   */
   readonly tokenTtl?: number;
   /**
   * The type of token to generate, service or batch
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_auth_backend_role#token_type KubernetesAuthBackendRole#token_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_auth_backend_role#token_type KubernetesAuthBackendRole#token_type}
   */
   readonly tokenType?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_auth_backend_role vault_kubernetes_auth_backend_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_auth_backend_role vault_kubernetes_auth_backend_role}
 */
 export class KubernetesAuthBackendRole extends cdktf.TerraformResource {
 
@@ -134,7 +129,7 @@ export class KubernetesAuthBackendRole extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a KubernetesAuthBackendRole resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KubernetesAuthBackendRole to import
-  * @param importFromId The id of the existing KubernetesAuthBackendRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_auth_backend_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KubernetesAuthBackendRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_auth_backend_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KubernetesAuthBackendRole to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -146,7 +141,7 @@ export class KubernetesAuthBackendRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/kubernetes_auth_backend_role vault_kubernetes_auth_backend_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_auth_backend_role vault_kubernetes_auth_backend_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -157,7 +152,7 @@ export class KubernetesAuthBackendRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_kubernetes_auth_backend_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.22.0',
+        providerVersion: '3.23.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

@@ -1,6 +1,6 @@
 # `vault_mongodbatlas_secret_role`
 
-Refer to the Terraform Registory for docs: [`vault_mongodbatlas_secret_role`](https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/mongodbatlas_secret_role).
+Refer to the Terraform Registory for docs: [`vault_mongodbatlas_secret_role`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/mongodbatlas_secret_role).
 
 # `mongodbatlasSecretRole` Submodule <a name="`mongodbatlasSecretRole` Submodule" id="@cdktf/provider-vault.mongodbatlasSecretRole"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vault_mongodbatlas_secret_role`](ht
 
 ### MongodbatlasSecretRole <a name="MongodbatlasSecretRole" id="@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/mongodbatlas_secret_role vault_mongodbatlas_secret_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/mongodbatlas_secret_role vault_mongodbatlas_secret_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRole.Initializer"></a>
 
@@ -57,7 +57,7 @@ MongodbatlasSecretRole.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRole.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of the role. |
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRole.Initializer.parameter.roles">roles</a></code> | <code>java.util.List<java.lang.String></code> | List of roles that the API Key needs to have. |
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRole.Initializer.parameter.cidrBlocks">cidrBlocks</a></code> | <code>java.util.List<java.lang.String></code> | Whitelist entry in CIDR notation to be added for the API key. |
-| <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRole.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/mongodbatlas_secret_role#id MongodbatlasSecretRole#id}. |
+| <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRole.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/mongodbatlas_secret_role#id MongodbatlasSecretRole#id}. |
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRole.Initializer.parameter.ipAddresses">ipAddresses</a></code> | <code>java.util.List<java.lang.String></code> | IP address to be added to the whitelist for the API key. |
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRole.Initializer.parameter.maxTtl">maxTtl</a></code> | <code>java.lang.String</code> | The maximum allowed lifetime of credentials issued using this role. |
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRole.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
@@ -134,7 +134,7 @@ Must be unique amongst siblings in the same scope
 
 Path where MongoDB Atlas secret backend is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/mongodbatlas_secret_role#mount MongodbatlasSecretRole#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/mongodbatlas_secret_role#mount MongodbatlasSecretRole#mount}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/mongodbatlas_secret_role#name MongodbatlasSecretRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/mongodbatlas_secret_role#name MongodbatlasSecretRole#name}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of roles that the API Key needs to have.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/mongodbatlas_secret_role#roles MongodbatlasSecretRole#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/mongodbatlas_secret_role#roles MongodbatlasSecretRole#roles}
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Whitelist entry in CIDR notation to be added for the API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/mongodbatlas_secret_role#cidr_blocks MongodbatlasSecretRole#cidr_blocks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/mongodbatlas_secret_role#cidr_blocks MongodbatlasSecretRole#cidr_blocks}
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/mongodbatlas_secret_role#id MongodbatlasSecretRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/mongodbatlas_secret_role#id MongodbatlasSecretRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -185,7 +185,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 IP address to be added to the whitelist for the API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/mongodbatlas_secret_role#ip_addresses MongodbatlasSecretRole#ip_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/mongodbatlas_secret_role#ip_addresses MongodbatlasSecretRole#ip_addresses}
 
 ---
 
@@ -195,7 +195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The maximum allowed lifetime of credentials issued using this role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/mongodbatlas_secret_role#max_ttl MongodbatlasSecretRole#max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/mongodbatlas_secret_role#max_ttl MongodbatlasSecretRole#max_ttl}
 
 ---
 
@@ -205,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/mongodbatlas_secret_role#namespace MongodbatlasSecretRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/mongodbatlas_secret_role#namespace MongodbatlasSecretRole#namespace}
 
 ---
 
@@ -215,7 +215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ID for the organization to which the target API Key belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/mongodbatlas_secret_role#organization_id MongodbatlasSecretRole#organization_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/mongodbatlas_secret_role#organization_id MongodbatlasSecretRole#organization_id}
 
 ---
 
@@ -225,7 +225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ID for the project to which the target API Key belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/mongodbatlas_secret_role#project_id MongodbatlasSecretRole#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/mongodbatlas_secret_role#project_id MongodbatlasSecretRole#project_id}
 
 ---
 
@@ -235,7 +235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Roles assigned when an org API key is assigned to a project API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/mongodbatlas_secret_role#project_roles MongodbatlasSecretRole#project_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/mongodbatlas_secret_role#project_roles MongodbatlasSecretRole#project_roles}
 
 ---
 
@@ -245,7 +245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Duration in seconds after which the issued credential should expire.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/mongodbatlas_secret_role#ttl MongodbatlasSecretRole#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/mongodbatlas_secret_role#ttl MongodbatlasSecretRole#ttl}
 
 ---
 
@@ -685,7 +685,7 @@ The construct id used in the generated config for the MongodbatlasSecretRole to 
 
 The id of the existing MongodbatlasSecretRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/mongodbatlas_secret_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/mongodbatlas_secret_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1193,7 +1193,7 @@ MongodbatlasSecretRoleConfig.builder()
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRoleConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of the role. |
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRoleConfig.property.roles">roles</a></code> | <code>java.util.List<java.lang.String></code> | List of roles that the API Key needs to have. |
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRoleConfig.property.cidrBlocks">cidrBlocks</a></code> | <code>java.util.List<java.lang.String></code> | Whitelist entry in CIDR notation to be added for the API key. |
-| <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRoleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/mongodbatlas_secret_role#id MongodbatlasSecretRole#id}. |
+| <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRoleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/mongodbatlas_secret_role#id MongodbatlasSecretRole#id}. |
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRoleConfig.property.ipAddresses">ipAddresses</a></code> | <code>java.util.List<java.lang.String></code> | IP address to be added to the whitelist for the API key. |
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRoleConfig.property.maxTtl">maxTtl</a></code> | <code>java.lang.String</code> | The maximum allowed lifetime of credentials issued using this role. |
 | <code><a href="#@cdktf/provider-vault.mongodbatlasSecretRole.MongodbatlasSecretRoleConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
@@ -1284,7 +1284,7 @@ public java.lang.String getMount();
 
 Path where MongoDB Atlas secret backend is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/mongodbatlas_secret_role#mount MongodbatlasSecretRole#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/mongodbatlas_secret_role#mount MongodbatlasSecretRole#mount}
 
 ---
 
@@ -1298,7 +1298,7 @@ public java.lang.String getName();
 
 Name of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/mongodbatlas_secret_role#name MongodbatlasSecretRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/mongodbatlas_secret_role#name MongodbatlasSecretRole#name}
 
 ---
 
@@ -1312,7 +1312,7 @@ public java.util.List<java.lang.String> getRoles();
 
 List of roles that the API Key needs to have.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/mongodbatlas_secret_role#roles MongodbatlasSecretRole#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/mongodbatlas_secret_role#roles MongodbatlasSecretRole#roles}
 
 ---
 
@@ -1326,7 +1326,7 @@ public java.util.List<java.lang.String> getCidrBlocks();
 
 Whitelist entry in CIDR notation to be added for the API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/mongodbatlas_secret_role#cidr_blocks MongodbatlasSecretRole#cidr_blocks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/mongodbatlas_secret_role#cidr_blocks MongodbatlasSecretRole#cidr_blocks}
 
 ---
 
@@ -1338,7 +1338,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/mongodbatlas_secret_role#id MongodbatlasSecretRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/mongodbatlas_secret_role#id MongodbatlasSecretRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1355,7 +1355,7 @@ public java.util.List<java.lang.String> getIpAddresses();
 
 IP address to be added to the whitelist for the API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/mongodbatlas_secret_role#ip_addresses MongodbatlasSecretRole#ip_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/mongodbatlas_secret_role#ip_addresses MongodbatlasSecretRole#ip_addresses}
 
 ---
 
@@ -1369,7 +1369,7 @@ public java.lang.String getMaxTtl();
 
 The maximum allowed lifetime of credentials issued using this role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/mongodbatlas_secret_role#max_ttl MongodbatlasSecretRole#max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/mongodbatlas_secret_role#max_ttl MongodbatlasSecretRole#max_ttl}
 
 ---
 
@@ -1383,7 +1383,7 @@ public java.lang.String getNamespace();
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/mongodbatlas_secret_role#namespace MongodbatlasSecretRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/mongodbatlas_secret_role#namespace MongodbatlasSecretRole#namespace}
 
 ---
 
@@ -1397,7 +1397,7 @@ public java.lang.String getOrganizationId();
 
 ID for the organization to which the target API Key belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/mongodbatlas_secret_role#organization_id MongodbatlasSecretRole#organization_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/mongodbatlas_secret_role#organization_id MongodbatlasSecretRole#organization_id}
 
 ---
 
@@ -1411,7 +1411,7 @@ public java.lang.String getProjectId();
 
 ID for the project to which the target API Key belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/mongodbatlas_secret_role#project_id MongodbatlasSecretRole#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/mongodbatlas_secret_role#project_id MongodbatlasSecretRole#project_id}
 
 ---
 
@@ -1425,7 +1425,7 @@ public java.util.List<java.lang.String> getProjectRoles();
 
 Roles assigned when an org API key is assigned to a project API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/mongodbatlas_secret_role#project_roles MongodbatlasSecretRole#project_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/mongodbatlas_secret_role#project_roles MongodbatlasSecretRole#project_roles}
 
 ---
 
@@ -1439,7 +1439,7 @@ public java.lang.String getTtl();
 
 Duration in seconds after which the issued credential should expire.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/mongodbatlas_secret_role#ttl MongodbatlasSecretRole#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/mongodbatlas_secret_role#ttl MongodbatlasSecretRole#ttl}
 
 ---
 

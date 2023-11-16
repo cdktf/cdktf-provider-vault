@@ -1,6 +1,6 @@
 # `vault_approle_auth_backend_role`
 
-Refer to the Terraform Registory for docs: [`vault_approle_auth_backend_role`](https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/approle_auth_backend_role).
+Refer to the Terraform Registory for docs: [`vault_approle_auth_backend_role`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/approle_auth_backend_role).
 
 # `approleAuthBackendRole` Submodule <a name="`approleAuthBackendRole` Submodule" id="@cdktf/provider-vault.approleAuthBackendRole"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`vault_approle_auth_backend_role`](h
 
 ### ApproleAuthBackendRole <a name="ApproleAuthBackendRole" id="@cdktf/provider-vault.approleAuthBackendRole.ApproleAuthBackendRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/approle_auth_backend_role vault_approle_auth_backend_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/approle_auth_backend_role vault_approle_auth_backend_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.approleAuthBackendRole.ApproleAuthBackendRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/approleauthbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/approleauthbackendrole"
 
 approleauthbackendrole.NewApproleAuthBackendRole(scope Construct, id *string, config ApproleAuthBackendRoleConfig) ApproleAuthBackendRole
 ```
@@ -451,7 +451,7 @@ func ResetTokenType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.approleAuthBackendRole.ApproleAuthBackendRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/approleauthbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/approleauthbackendrole"
 
 approleauthbackendrole.ApproleAuthBackendRole_IsConstruct(x interface{}) *bool
 ```
@@ -483,7 +483,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.approleAuthBackendRole.ApproleAuthBackendRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/approleauthbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/approleauthbackendrole"
 
 approleauthbackendrole.ApproleAuthBackendRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -497,7 +497,7 @@ approleauthbackendrole.ApproleAuthBackendRole_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.approleAuthBackendRole.ApproleAuthBackendRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/approleauthbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/approleauthbackendrole"
 
 approleauthbackendrole.ApproleAuthBackendRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -511,7 +511,7 @@ approleauthbackendrole.ApproleAuthBackendRole_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.approleAuthBackendRole.ApproleAuthBackendRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/approleauthbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/approleauthbackendrole"
 
 approleauthbackendrole.ApproleAuthBackendRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -540,7 +540,7 @@ The construct id used in the generated config for the ApproleAuthBackendRole to 
 
 The id of the existing ApproleAuthBackendRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/approle_auth_backend_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/approle_auth_backend_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1136,7 +1136,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.approleAuthBackendRole.ApproleAuthBackendRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/approleauthbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/approleauthbackendrole"
 
 &approleauthbackendrole.ApproleAuthBackendRoleConfig {
 	Connection: interface{},
@@ -1181,7 +1181,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/approleauthbackendrol
 | <code><a href="#@cdktf/provider-vault.approleAuthBackendRole.ApproleAuthBackendRoleConfig.property.roleName">RoleName</a></code> | <code>*string</code> | Name of the role. |
 | <code><a href="#@cdktf/provider-vault.approleAuthBackendRole.ApproleAuthBackendRoleConfig.property.backend">Backend</a></code> | <code>*string</code> | Unique name of the auth backend to configure. |
 | <code><a href="#@cdktf/provider-vault.approleAuthBackendRole.ApproleAuthBackendRoleConfig.property.bindSecretId">BindSecretId</a></code> | <code>interface{}</code> | Whether or not to require secret_id to be present when logging in using this AppRole. |
-| <code><a href="#@cdktf/provider-vault.approleAuthBackendRole.ApproleAuthBackendRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/approle_auth_backend_role#id ApproleAuthBackendRole#id}. |
+| <code><a href="#@cdktf/provider-vault.approleAuthBackendRole.ApproleAuthBackendRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/approle_auth_backend_role#id ApproleAuthBackendRole#id}. |
 | <code><a href="#@cdktf/provider-vault.approleAuthBackendRole.ApproleAuthBackendRoleConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.approleAuthBackendRole.ApproleAuthBackendRoleConfig.property.roleId">RoleId</a></code> | <code>*string</code> | The RoleID of the role. Autogenerated if not set. |
 | <code><a href="#@cdktf/provider-vault.approleAuthBackendRole.ApproleAuthBackendRoleConfig.property.secretIdBoundCidrs">SecretIdBoundCidrs</a></code> | <code>*[]*string</code> | List of CIDR blocks that can log in using the AppRole. |
@@ -1279,7 +1279,7 @@ RoleName *string
 
 Name of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/approle_auth_backend_role#role_name ApproleAuthBackendRole#role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/approle_auth_backend_role#role_name ApproleAuthBackendRole#role_name}
 
 ---
 
@@ -1293,7 +1293,7 @@ Backend *string
 
 Unique name of the auth backend to configure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/approle_auth_backend_role#backend ApproleAuthBackendRole#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/approle_auth_backend_role#backend ApproleAuthBackendRole#backend}
 
 ---
 
@@ -1307,7 +1307,7 @@ BindSecretId interface{}
 
 Whether or not to require secret_id to be present when logging in using this AppRole.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/approle_auth_backend_role#bind_secret_id ApproleAuthBackendRole#bind_secret_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/approle_auth_backend_role#bind_secret_id ApproleAuthBackendRole#bind_secret_id}
 
 ---
 
@@ -1319,7 +1319,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/approle_auth_backend_role#id ApproleAuthBackendRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/approle_auth_backend_role#id ApproleAuthBackendRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1336,7 +1336,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/approle_auth_backend_role#namespace ApproleAuthBackendRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/approle_auth_backend_role#namespace ApproleAuthBackendRole#namespace}
 
 ---
 
@@ -1350,7 +1350,7 @@ RoleId *string
 
 The RoleID of the role. Autogenerated if not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/approle_auth_backend_role#role_id ApproleAuthBackendRole#role_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/approle_auth_backend_role#role_id ApproleAuthBackendRole#role_id}
 
 ---
 
@@ -1364,7 +1364,7 @@ SecretIdBoundCidrs *[]*string
 
 List of CIDR blocks that can log in using the AppRole.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/approle_auth_backend_role#secret_id_bound_cidrs ApproleAuthBackendRole#secret_id_bound_cidrs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/approle_auth_backend_role#secret_id_bound_cidrs ApproleAuthBackendRole#secret_id_bound_cidrs}
 
 ---
 
@@ -1380,7 +1380,7 @@ Number of times which a particular SecretID can be used to fetch a token from th
 
 Leaving this unset or setting it to 0 will allow unlimited uses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/approle_auth_backend_role#secret_id_num_uses ApproleAuthBackendRole#secret_id_num_uses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/approle_auth_backend_role#secret_id_num_uses ApproleAuthBackendRole#secret_id_num_uses}
 
 ---
 
@@ -1394,7 +1394,7 @@ SecretIdTtl *f64
 
 Number of seconds a SecretID remains valid for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/approle_auth_backend_role#secret_id_ttl ApproleAuthBackendRole#secret_id_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/approle_auth_backend_role#secret_id_ttl ApproleAuthBackendRole#secret_id_ttl}
 
 ---
 
@@ -1408,7 +1408,7 @@ TokenBoundCidrs *[]*string
 
 Specifies the blocks of IP addresses which are allowed to use the generated token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/approle_auth_backend_role#token_bound_cidrs ApproleAuthBackendRole#token_bound_cidrs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/approle_auth_backend_role#token_bound_cidrs ApproleAuthBackendRole#token_bound_cidrs}
 
 ---
 
@@ -1422,7 +1422,7 @@ TokenExplicitMaxTtl *f64
 
 Generated Token's Explicit Maximum TTL in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/approle_auth_backend_role#token_explicit_max_ttl ApproleAuthBackendRole#token_explicit_max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/approle_auth_backend_role#token_explicit_max_ttl ApproleAuthBackendRole#token_explicit_max_ttl}
 
 ---
 
@@ -1436,7 +1436,7 @@ TokenMaxTtl *f64
 
 The maximum lifetime of the generated token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/approle_auth_backend_role#token_max_ttl ApproleAuthBackendRole#token_max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/approle_auth_backend_role#token_max_ttl ApproleAuthBackendRole#token_max_ttl}
 
 ---
 
@@ -1450,7 +1450,7 @@ TokenNoDefaultPolicy interface{}
 
 If true, the 'default' policy will not automatically be added to generated tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/approle_auth_backend_role#token_no_default_policy ApproleAuthBackendRole#token_no_default_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/approle_auth_backend_role#token_no_default_policy ApproleAuthBackendRole#token_no_default_policy}
 
 ---
 
@@ -1464,7 +1464,7 @@ TokenNumUses *f64
 
 The maximum number of times a token may be used, a value of zero means unlimited.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/approle_auth_backend_role#token_num_uses ApproleAuthBackendRole#token_num_uses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/approle_auth_backend_role#token_num_uses ApproleAuthBackendRole#token_num_uses}
 
 ---
 
@@ -1478,7 +1478,7 @@ TokenPeriod *f64
 
 Generated Token's Period.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/approle_auth_backend_role#token_period ApproleAuthBackendRole#token_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/approle_auth_backend_role#token_period ApproleAuthBackendRole#token_period}
 
 ---
 
@@ -1492,7 +1492,7 @@ TokenPolicies *[]*string
 
 Generated Token's Policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/approle_auth_backend_role#token_policies ApproleAuthBackendRole#token_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/approle_auth_backend_role#token_policies ApproleAuthBackendRole#token_policies}
 
 ---
 
@@ -1506,7 +1506,7 @@ TokenTtl *f64
 
 The initial ttl of the token to generate in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/approle_auth_backend_role#token_ttl ApproleAuthBackendRole#token_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/approle_auth_backend_role#token_ttl ApproleAuthBackendRole#token_ttl}
 
 ---
 
@@ -1520,7 +1520,7 @@ TokenType *string
 
 The type of token to generate, service or batch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/approle_auth_backend_role#token_type ApproleAuthBackendRole#token_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/approle_auth_backend_role#token_type ApproleAuthBackendRole#token_type}
 
 ---
 

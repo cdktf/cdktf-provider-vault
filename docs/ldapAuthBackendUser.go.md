@@ -1,6 +1,6 @@
 # `vault_ldap_auth_backend_user`
 
-Refer to the Terraform Registory for docs: [`vault_ldap_auth_backend_user`](https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/ldap_auth_backend_user).
+Refer to the Terraform Registory for docs: [`vault_ldap_auth_backend_user`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/ldap_auth_backend_user).
 
 # `ldapAuthBackendUser` Submodule <a name="`ldapAuthBackendUser` Submodule" id="@cdktf/provider-vault.ldapAuthBackendUser"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`vault_ldap_auth_backend_user`](http
 
 ### LdapAuthBackendUser <a name="LdapAuthBackendUser" id="@cdktf/provider-vault.ldapAuthBackendUser.LdapAuthBackendUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/ldap_auth_backend_user vault_ldap_auth_backend_user}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/ldap_auth_backend_user vault_ldap_auth_backend_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.ldapAuthBackendUser.LdapAuthBackendUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/ldapauthbackenduser"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/ldapauthbackenduser"
 
 ldapauthbackenduser.NewLdapAuthBackendUser(scope Construct, id *string, config LdapAuthBackendUserConfig) LdapAuthBackendUser
 ```
@@ -367,7 +367,7 @@ func ResetPolicies()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.ldapAuthBackendUser.LdapAuthBackendUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/ldapauthbackenduser"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/ldapauthbackenduser"
 
 ldapauthbackenduser.LdapAuthBackendUser_IsConstruct(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.ldapAuthBackendUser.LdapAuthBackendUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/ldapauthbackenduser"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/ldapauthbackenduser"
 
 ldapauthbackenduser.LdapAuthBackendUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ ldapauthbackenduser.LdapAuthBackendUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.ldapAuthBackendUser.LdapAuthBackendUser.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/ldapauthbackenduser"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/ldapauthbackenduser"
 
 ldapauthbackenduser.LdapAuthBackendUser_IsTerraformResource(x interface{}) *bool
 ```
@@ -427,7 +427,7 @@ ldapauthbackenduser.LdapAuthBackendUser_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.ldapAuthBackendUser.LdapAuthBackendUser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/ldapauthbackenduser"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/ldapauthbackenduser"
 
 ldapauthbackenduser.LdapAuthBackendUser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -456,7 +456,7 @@ The construct id used in the generated config for the LdapAuthBackendUser to imp
 
 The id of the existing LdapAuthBackendUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/ldap_auth_backend_user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/ldap_auth_backend_user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -788,7 +788,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.ldapAuthBackendUser.LdapAuthBackendUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/ldapauthbackenduser"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/ldapauthbackenduser"
 
 &ldapauthbackenduser.LdapAuthBackendUserConfig {
 	Connection: interface{},
@@ -818,12 +818,12 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/ldapauthbackenduser"
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackendUser.LdapAuthBackendUserConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackendUser.LdapAuthBackendUserConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackendUser.LdapAuthBackendUserConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.ldapAuthBackendUser.LdapAuthBackendUserConfig.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/ldap_auth_backend_user#username LdapAuthBackendUser#username}. |
-| <code><a href="#@cdktf/provider-vault.ldapAuthBackendUser.LdapAuthBackendUserConfig.property.backend">Backend</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/ldap_auth_backend_user#backend LdapAuthBackendUser#backend}. |
-| <code><a href="#@cdktf/provider-vault.ldapAuthBackendUser.LdapAuthBackendUserConfig.property.groups">Groups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/ldap_auth_backend_user#groups LdapAuthBackendUser#groups}. |
-| <code><a href="#@cdktf/provider-vault.ldapAuthBackendUser.LdapAuthBackendUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/ldap_auth_backend_user#id LdapAuthBackendUser#id}. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackendUser.LdapAuthBackendUserConfig.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/ldap_auth_backend_user#username LdapAuthBackendUser#username}. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackendUser.LdapAuthBackendUserConfig.property.backend">Backend</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/ldap_auth_backend_user#backend LdapAuthBackendUser#backend}. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackendUser.LdapAuthBackendUserConfig.property.groups">Groups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/ldap_auth_backend_user#groups LdapAuthBackendUser#groups}. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackendUser.LdapAuthBackendUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/ldap_auth_backend_user#id LdapAuthBackendUser#id}. |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackendUser.LdapAuthBackendUserConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
-| <code><a href="#@cdktf/provider-vault.ldapAuthBackendUser.LdapAuthBackendUserConfig.property.policies">Policies</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/ldap_auth_backend_user#policies LdapAuthBackendUser#policies}. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackendUser.LdapAuthBackendUserConfig.property.policies">Policies</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/ldap_auth_backend_user#policies LdapAuthBackendUser#policies}. |
 
 ---
 
@@ -905,7 +905,7 @@ Username *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/ldap_auth_backend_user#username LdapAuthBackendUser#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/ldap_auth_backend_user#username LdapAuthBackendUser#username}.
 
 ---
 
@@ -917,7 +917,7 @@ Backend *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/ldap_auth_backend_user#backend LdapAuthBackendUser#backend}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/ldap_auth_backend_user#backend LdapAuthBackendUser#backend}.
 
 ---
 
@@ -929,7 +929,7 @@ Groups *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/ldap_auth_backend_user#groups LdapAuthBackendUser#groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/ldap_auth_backend_user#groups LdapAuthBackendUser#groups}.
 
 ---
 
@@ -941,7 +941,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/ldap_auth_backend_user#id LdapAuthBackendUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/ldap_auth_backend_user#id LdapAuthBackendUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -958,7 +958,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/ldap_auth_backend_user#namespace LdapAuthBackendUser#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/ldap_auth_backend_user#namespace LdapAuthBackendUser#namespace}
 
 ---
 
@@ -970,7 +970,7 @@ Policies *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/ldap_auth_backend_user#policies LdapAuthBackendUser#policies}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/ldap_auth_backend_user#policies LdapAuthBackendUser#policies}.
 
 ---
 
