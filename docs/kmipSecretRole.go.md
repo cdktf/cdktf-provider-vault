@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/kmipsecretrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/kmipsecretrole"
 
 kmipsecretrole.NewKmipSecretRole(scope Construct, id *string, config KmipSecretRoleConfig) KmipSecretRole
 ```
@@ -465,7 +465,7 @@ func ResetTlsClientTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/kmipsecretrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/kmipsecretrole"
 
 kmipsecretrole.KmipSecretRole_IsConstruct(x interface{}) *bool
 ```
@@ -497,7 +497,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/kmipsecretrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/kmipsecretrole"
 
 kmipsecretrole.KmipSecretRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -511,7 +511,7 @@ kmipsecretrole.KmipSecretRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/kmipsecretrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/kmipsecretrole"
 
 kmipsecretrole.KmipSecretRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -525,7 +525,7 @@ kmipsecretrole.KmipSecretRole_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/kmipsecretrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/kmipsecretrole"
 
 kmipsecretrole.KmipSecretRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1238,7 +1238,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/kmipsecretrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/kmipsecretrole"
 
 &kmipsecretrole.KmipSecretRoleConfig {
 	Connection: interface{},
