@@ -1,7 +1,3 @@
-# `vault_kmip_secret_scope`
-
-Refer to the Terraform Registory for docs: [`vault_kmip_secret_scope`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kmip_secret_scope).
-
 # `kmipSecretScope` Submodule <a name="`kmipSecretScope` Submodule" id="@cdktf/provider-vault.kmipSecretScope"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

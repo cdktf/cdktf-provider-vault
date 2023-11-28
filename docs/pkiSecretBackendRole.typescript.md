@@ -1,7 +1,3 @@
-# `vault_pki_secret_backend_role`
-
-Refer to the Terraform Registory for docs: [`vault_pki_secret_backend_role`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/pki_secret_backend_role).
-
 # `pkiSecretBackendRole` Submodule <a name="`pkiSecretBackendRole` Submodule" id="@cdktf/provider-vault.pkiSecretBackendRole"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

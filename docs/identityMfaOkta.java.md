@@ -1,7 +1,3 @@
-# `vault_identity_mfa_okta`
-
-Refer to the Terraform Registory for docs: [`vault_identity_mfa_okta`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/identity_mfa_okta).
-
 # `identityMfaOkta` Submodule <a name="`identityMfaOkta` Submodule" id="@cdktf/provider-vault.identityMfaOkta"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

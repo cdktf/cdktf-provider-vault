@@ -1,7 +1,3 @@
-# `vault_aws_auth_backend_sts_role`
-
-Refer to the Terraform Registory for docs: [`vault_aws_auth_backend_sts_role`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/aws_auth_backend_sts_role).
-
 # `awsAuthBackendStsRole` Submodule <a name="`awsAuthBackendStsRole` Submodule" id="@cdktf/provider-vault.awsAuthBackendStsRole"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.awsAuthBackendStsRole.AwsAuthBackendStsRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/awsauthbackendstsrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendstsrole"
 
 awsauthbackendstsrole.NewAwsAuthBackendStsRole(scope Construct, id *string, config AwsAuthBackendStsRoleConfig) AwsAuthBackendStsRole
 ```
@@ -353,7 +349,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.awsAuthBackendStsRole.AwsAuthBackendStsRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/awsauthbackendstsrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendstsrole"
 
 awsauthbackendstsrole.AwsAuthBackendStsRole_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.awsAuthBackendStsRole.AwsAuthBackendStsRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/awsauthbackendstsrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendstsrole"
 
 awsauthbackendstsrole.AwsAuthBackendStsRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ awsauthbackendstsrole.AwsAuthBackendStsRole_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.awsAuthBackendStsRole.AwsAuthBackendStsRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/awsauthbackendstsrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendstsrole"
 
 awsauthbackendstsrole.AwsAuthBackendStsRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +409,7 @@ awsauthbackendstsrole.AwsAuthBackendStsRole_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.awsAuthBackendStsRole.AwsAuthBackendStsRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/awsauthbackendstsrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendstsrole"
 
 awsauthbackendstsrole.AwsAuthBackendStsRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -752,7 +748,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.awsAuthBackendStsRole.AwsAuthBackendStsRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/awsauthbackendstsrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendstsrole"
 
 &awsauthbackendstsrole.AwsAuthBackendStsRoleConfig {
 	Connection: interface{},

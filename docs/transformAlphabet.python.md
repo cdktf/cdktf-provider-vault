@@ -1,7 +1,3 @@
-# `vault_transform_alphabet`
-
-Refer to the Terraform Registory for docs: [`vault_transform_alphabet`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/transform_alphabet).
-
 # `transformAlphabet` Submodule <a name="`transformAlphabet` Submodule" id="@cdktf/provider-vault.transformAlphabet"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

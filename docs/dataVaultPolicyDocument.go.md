@@ -1,7 +1,3 @@
-# `data_vault_policy_document`
-
-Refer to the Terraform Registory for docs: [`data_vault_policy_document`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/data-sources/policy_document).
-
 # `dataVaultPolicyDocument` Submodule <a name="`dataVaultPolicyDocument` Submodule" id="@cdktf/provider-vault.dataVaultPolicyDocument"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultPolicyDocument.DataVaultPolicyDocument.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultpolicydocument"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultpolicydocument"
 
 datavaultpolicydocument.NewDataVaultPolicyDocument(scope Construct, id *string, config DataVaultPolicyDocumentConfig) DataVaultPolicyDocument
 ```
@@ -305,7 +301,7 @@ func ResetRule()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.dataVaultPolicyDocument.DataVaultPolicyDocument.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultpolicydocument"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultpolicydocument"
 
 datavaultpolicydocument.DataVaultPolicyDocument_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +333,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.dataVaultPolicyDocument.DataVaultPolicyDocument.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultpolicydocument"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultpolicydocument"
 
 datavaultpolicydocument.DataVaultPolicyDocument_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +347,7 @@ datavaultpolicydocument.DataVaultPolicyDocument_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vault.dataVaultPolicyDocument.DataVaultPolicyDocument.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultpolicydocument"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultpolicydocument"
 
 datavaultpolicydocument.DataVaultPolicyDocument_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +361,7 @@ datavaultpolicydocument.DataVaultPolicyDocument_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.dataVaultPolicyDocument.DataVaultPolicyDocument.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultpolicydocument"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultpolicydocument"
 
 datavaultpolicydocument.DataVaultPolicyDocument_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -649,7 +645,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.dataVaultPolicyDocument.DataVaultPolicyDocumentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultpolicydocument"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultpolicydocument"
 
 &datavaultpolicydocument.DataVaultPolicyDocumentConfig {
 	Connection: interface{},
@@ -800,7 +796,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.dataVaultPolicyDocument.DataVaultPolicyDocumentRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultpolicydocument"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultpolicydocument"
 
 &datavaultpolicydocument.DataVaultPolicyDocumentRule {
 	Capabilities: *[]*string,
@@ -934,7 +930,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.dataVaultPolicyDocument.DataVaultPolicyDocumentRuleAllowedParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultpolicydocument"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultpolicydocument"
 
 &datavaultpolicydocument.DataVaultPolicyDocumentRuleAllowedParameter {
 	Key: *string,
@@ -980,7 +976,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.dataVaultPolicyDocument.DataVaultPolicyDocumentRuleDeniedParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultpolicydocument"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultpolicydocument"
 
 &datavaultpolicydocument.DataVaultPolicyDocumentRuleDeniedParameter {
 	Key: *string,
@@ -1028,7 +1024,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultPolicyDocument.DataVaultPolicyDocumentRuleAllowedParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultpolicydocument"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultpolicydocument"
 
 datavaultpolicydocument.NewDataVaultPolicyDocumentRuleAllowedParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataVaultPolicyDocumentRuleAllowedParameterList
 ```
@@ -1171,7 +1167,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultPolicyDocument.DataVaultPolicyDocumentRuleAllowedParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultpolicydocument"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultpolicydocument"
 
 datavaultpolicydocument.NewDataVaultPolicyDocumentRuleAllowedParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataVaultPolicyDocumentRuleAllowedParameterOutputReference
 ```
@@ -1482,7 +1478,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultPolicyDocument.DataVaultPolicyDocumentRuleDeniedParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultpolicydocument"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultpolicydocument"
 
 datavaultpolicydocument.NewDataVaultPolicyDocumentRuleDeniedParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataVaultPolicyDocumentRuleDeniedParameterList
 ```
@@ -1625,7 +1621,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultPolicyDocument.DataVaultPolicyDocumentRuleDeniedParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultpolicydocument"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultpolicydocument"
 
 datavaultpolicydocument.NewDataVaultPolicyDocumentRuleDeniedParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataVaultPolicyDocumentRuleDeniedParameterOutputReference
 ```
@@ -1936,7 +1932,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultPolicyDocument.DataVaultPolicyDocumentRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultpolicydocument"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultpolicydocument"
 
 datavaultpolicydocument.NewDataVaultPolicyDocumentRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataVaultPolicyDocumentRuleList
 ```
@@ -2079,7 +2075,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultPolicyDocument.DataVaultPolicyDocumentRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultpolicydocument"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultpolicydocument"
 
 datavaultpolicydocument.NewDataVaultPolicyDocumentRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataVaultPolicyDocumentRuleOutputReference
 ```

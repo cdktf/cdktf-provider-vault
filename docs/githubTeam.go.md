@@ -1,7 +1,3 @@
-# `vault_github_team`
-
-Refer to the Terraform Registory for docs: [`vault_github_team`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/github_team).
-
 # `githubTeam` Submodule <a name="`githubTeam` Submodule" id="@cdktf/provider-vault.githubTeam"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.githubTeam.GithubTeam.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/githubteam"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/githubteam"
 
 githubteam.NewGithubTeam(scope Construct, id *string, config GithubTeamConfig) GithubTeam
 ```
@@ -360,7 +356,7 @@ func ResetPolicies()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.githubTeam.GithubTeam.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/githubteam"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/githubteam"
 
 githubteam.GithubTeam_IsConstruct(x interface{}) *bool
 ```
@@ -392,7 +388,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.githubTeam.GithubTeam.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/githubteam"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/githubteam"
 
 githubteam.GithubTeam_IsTerraformElement(x interface{}) *bool
 ```
@@ -406,7 +402,7 @@ githubteam.GithubTeam_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.githubTeam.GithubTeam.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/githubteam"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/githubteam"
 
 githubteam.GithubTeam_IsTerraformResource(x interface{}) *bool
 ```
@@ -420,7 +416,7 @@ githubteam.GithubTeam_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.githubTeam.GithubTeam.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/githubteam"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/githubteam"
 
 githubteam.GithubTeam_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -759,7 +755,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.githubTeam.GithubTeamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/githubteam"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/githubteam"
 
 &githubteam.GithubTeamConfig {
 	Connection: interface{},

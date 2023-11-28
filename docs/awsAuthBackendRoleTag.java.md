@@ -1,7 +1,3 @@
-# `vault_aws_auth_backend_role_tag`
-
-Refer to the Terraform Registory for docs: [`vault_aws_auth_backend_role_tag`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/aws_auth_backend_role_tag).
-
 # `awsAuthBackendRoleTag` Submodule <a name="`awsAuthBackendRoleTag` Submodule" id="@cdktf/provider-vault.awsAuthBackendRoleTag"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

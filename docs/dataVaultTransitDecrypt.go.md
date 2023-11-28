@@ -1,7 +1,3 @@
-# `data_vault_transit_decrypt`
-
-Refer to the Terraform Registory for docs: [`data_vault_transit_decrypt`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/data-sources/transit_decrypt).
-
 # `dataVaultTransitDecrypt` Submodule <a name="`dataVaultTransitDecrypt` Submodule" id="@cdktf/provider-vault.dataVaultTransitDecrypt"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaulttransitdecrypt"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaulttransitdecrypt"
 
 datavaulttransitdecrypt.NewDataVaultTransitDecrypt(scope Construct, id *string, config DataVaultTransitDecryptConfig) DataVaultTransitDecrypt
 ```
@@ -292,7 +288,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaulttransitdecrypt"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaulttransitdecrypt"
 
 datavaulttransitdecrypt.DataVaultTransitDecrypt_IsConstruct(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaulttransitdecrypt"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaulttransitdecrypt"
 
 datavaulttransitdecrypt.DataVaultTransitDecrypt_IsTerraformElement(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ datavaulttransitdecrypt.DataVaultTransitDecrypt_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaulttransitdecrypt"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaulttransitdecrypt"
 
 datavaulttransitdecrypt.DataVaultTransitDecrypt_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,7 +348,7 @@ datavaulttransitdecrypt.DataVaultTransitDecrypt_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaulttransitdecrypt"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaulttransitdecrypt"
 
 datavaulttransitdecrypt.DataVaultTransitDecrypt_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -702,7 +698,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecryptConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaulttransitdecrypt"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaulttransitdecrypt"
 
 &datavaulttransitdecrypt.DataVaultTransitDecryptConfig {
 	Connection: interface{},

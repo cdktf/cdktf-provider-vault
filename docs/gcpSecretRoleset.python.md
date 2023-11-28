@@ -1,7 +1,3 @@
-# `vault_gcp_secret_roleset`
-
-Refer to the Terraform Registory for docs: [`vault_gcp_secret_roleset`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/gcp_secret_roleset).
-
 # `gcpSecretRoleset` Submodule <a name="`gcpSecretRoleset` Submodule" id="@cdktf/provider-vault.gcpSecretRoleset"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

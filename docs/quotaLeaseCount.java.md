@@ -1,7 +1,3 @@
-# `vault_quota_lease_count`
-
-Refer to the Terraform Registory for docs: [`vault_quota_lease_count`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/quota_lease_count).
-
 # `quotaLeaseCount` Submodule <a name="`quotaLeaseCount` Submodule" id="@cdktf/provider-vault.quotaLeaseCount"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

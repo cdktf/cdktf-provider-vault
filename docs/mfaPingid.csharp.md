@@ -1,7 +1,3 @@
-# `vault_mfa_pingid`
-
-Refer to the Terraform Registory for docs: [`vault_mfa_pingid`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/mfa_pingid).
-
 # `mfaPingid` Submodule <a name="`mfaPingid` Submodule" id="@cdktf/provider-vault.mfaPingid"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `vault_aws_auth_backend_cert`
-
-Refer to the Terraform Registory for docs: [`vault_aws_auth_backend_cert`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/aws_auth_backend_cert).
-
 # `awsAuthBackendCert` Submodule <a name="`awsAuthBackendCert` Submodule" id="@cdktf/provider-vault.awsAuthBackendCert"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

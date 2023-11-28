@@ -1,7 +1,3 @@
-# `vault_identity_group_policies`
-
-Refer to the Terraform Registory for docs: [`vault_identity_group_policies`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/identity_group_policies).
-
 # `identityGroupPolicies` Submodule <a name="`identityGroupPolicies` Submodule" id="@cdktf/provider-vault.identityGroupPolicies"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

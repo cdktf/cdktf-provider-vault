@@ -1,7 +1,3 @@
-# `vault_kubernetes_secret_backend`
-
-Refer to the Terraform Registory for docs: [`vault_kubernetes_secret_backend`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_secret_backend).
-
 # `kubernetesSecretBackend` Submodule <a name="`kubernetesSecretBackend` Submodule" id="@cdktf/provider-vault.kubernetesSecretBackend"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.kubernetesSecretBackend.KubernetesSecretBackend.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/kubernetessecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/kubernetessecretbackend"
 
 kubernetessecretbackend.NewKubernetesSecretBackend(scope Construct, id *string, config KubernetesSecretBackendConfig) KubernetesSecretBackend
 ```
@@ -444,7 +440,7 @@ func ResetServiceAccountJwt()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.kubernetesSecretBackend.KubernetesSecretBackend.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/kubernetessecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/kubernetessecretbackend"
 
 kubernetessecretbackend.KubernetesSecretBackend_IsConstruct(x interface{}) *bool
 ```
@@ -476,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.kubernetesSecretBackend.KubernetesSecretBackend.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/kubernetessecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/kubernetessecretbackend"
 
 kubernetessecretbackend.KubernetesSecretBackend_IsTerraformElement(x interface{}) *bool
 ```
@@ -490,7 +486,7 @@ kubernetessecretbackend.KubernetesSecretBackend_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.kubernetesSecretBackend.KubernetesSecretBackend.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/kubernetessecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/kubernetessecretbackend"
 
 kubernetessecretbackend.KubernetesSecretBackend_IsTerraformResource(x interface{}) *bool
 ```
@@ -504,7 +500,7 @@ kubernetessecretbackend.KubernetesSecretBackend_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.kubernetesSecretBackend.KubernetesSecretBackend.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/kubernetessecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/kubernetessecretbackend"
 
 kubernetessecretbackend.KubernetesSecretBackend_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1118,7 +1114,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.kubernetesSecretBackend.KubernetesSecretBackendConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/kubernetessecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/kubernetessecretbackend"
 
 &kubernetessecretbackend.KubernetesSecretBackendConfig {
 	Connection: interface{},

@@ -1,7 +1,3 @@
-# `vault_transform_template`
-
-Refer to the Terraform Registory for docs: [`vault_transform_template`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/transform_template).
-
 # `transformTemplate` Submodule <a name="`transformTemplate` Submodule" id="@cdktf/provider-vault.transformTemplate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.transformTemplate.TransformTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/transformtemplate"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/transformtemplate"
 
 transformtemplate.NewTransformTemplate(scope Construct, id *string, config TransformTemplateConfig) TransformTemplate
 ```
@@ -381,7 +377,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.transformTemplate.TransformTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/transformtemplate"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/transformtemplate"
 
 transformtemplate.TransformTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -413,7 +409,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.transformTemplate.TransformTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/transformtemplate"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/transformtemplate"
 
 transformtemplate.TransformTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -427,7 +423,7 @@ transformtemplate.TransformTemplate_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.transformTemplate.TransformTemplate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/transformtemplate"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/transformtemplate"
 
 transformtemplate.TransformTemplate_IsTerraformResource(x interface{}) *bool
 ```
@@ -441,7 +437,7 @@ transformtemplate.TransformTemplate_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.transformTemplate.TransformTemplate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/transformtemplate"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/transformtemplate"
 
 transformtemplate.TransformTemplate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -868,7 +864,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.transformTemplate.TransformTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/transformtemplate"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/transformtemplate"
 
 &transformtemplate.TransformTemplateConfig {
 	Connection: interface{},

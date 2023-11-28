@@ -1,7 +1,3 @@
-# `vault_mfa_pingid`
-
-Refer to the Terraform Registory for docs: [`vault_mfa_pingid`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/mfa_pingid).
-
 # `mfaPingid` Submodule <a name="`mfaPingid` Submodule" id="@cdktf/provider-vault.mfaPingid"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.mfaPingid.MfaPingid.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/mfapingid"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/mfapingid"
 
 mfapingid.NewMfaPingid(scope Construct, id *string, config MfaPingidConfig) MfaPingid
 ```
@@ -353,7 +349,7 @@ func ResetUsernameFormat()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.mfaPingid.MfaPingid.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/mfapingid"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/mfapingid"
 
 mfapingid.MfaPingid_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.mfaPingid.MfaPingid.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/mfapingid"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/mfapingid"
 
 mfapingid.MfaPingid_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ mfapingid.MfaPingid_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.mfaPingid.MfaPingid.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/mfapingid"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/mfapingid"
 
 mfapingid.MfaPingid_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +409,7 @@ mfapingid.MfaPingid_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.mfaPingid.MfaPingid.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/mfapingid"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/mfapingid"
 
 mfapingid.MfaPingid_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -851,7 +847,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.mfaPingid.MfaPingidConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/mfapingid"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/mfapingid"
 
 &mfapingid.MfaPingidConfig {
 	Connection: interface{},

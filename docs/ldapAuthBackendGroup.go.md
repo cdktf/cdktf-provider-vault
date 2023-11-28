@@ -1,7 +1,3 @@
-# `vault_ldap_auth_backend_group`
-
-Refer to the Terraform Registory for docs: [`vault_ldap_auth_backend_group`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/ldap_auth_backend_group).
-
 # `ldapAuthBackendGroup` Submodule <a name="`ldapAuthBackendGroup` Submodule" id="@cdktf/provider-vault.ldapAuthBackendGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.ldapAuthBackendGroup.LdapAuthBackendGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/ldapauthbackendgroup"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/ldapauthbackendgroup"
 
 ldapauthbackendgroup.NewLdapAuthBackendGroup(scope Construct, id *string, config LdapAuthBackendGroupConfig) LdapAuthBackendGroup
 ```
@@ -360,7 +356,7 @@ func ResetPolicies()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.ldapAuthBackendGroup.LdapAuthBackendGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/ldapauthbackendgroup"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/ldapauthbackendgroup"
 
 ldapauthbackendgroup.LdapAuthBackendGroup_IsConstruct(x interface{}) *bool
 ```
@@ -392,7 +388,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.ldapAuthBackendGroup.LdapAuthBackendGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/ldapauthbackendgroup"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/ldapauthbackendgroup"
 
 ldapauthbackendgroup.LdapAuthBackendGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -406,7 +402,7 @@ ldapauthbackendgroup.LdapAuthBackendGroup_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.ldapAuthBackendGroup.LdapAuthBackendGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/ldapauthbackendgroup"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/ldapauthbackendgroup"
 
 ldapauthbackendgroup.LdapAuthBackendGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -420,7 +416,7 @@ ldapauthbackendgroup.LdapAuthBackendGroup_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.ldapAuthBackendGroup.LdapAuthBackendGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/ldapauthbackendgroup"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/ldapauthbackendgroup"
 
 ldapauthbackendgroup.LdapAuthBackendGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -759,7 +755,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.ldapAuthBackendGroup.LdapAuthBackendGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/ldapauthbackendgroup"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/ldapauthbackendgroup"
 
 &ldapauthbackendgroup.LdapAuthBackendGroupConfig {
 	Connection: interface{},

@@ -1,7 +1,3 @@
-# `vault_audit`
-
-Refer to the Terraform Registory for docs: [`vault_audit`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/audit).
-
 # `audit` Submodule <a name="`audit` Submodule" id="@cdktf/provider-vault.audit"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `vault_aws_auth_backend_identity_whitelist`
-
-Refer to the Terraform Registory for docs: [`vault_aws_auth_backend_identity_whitelist`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/aws_auth_backend_identity_whitelist).
-
 # `awsAuthBackendIdentityWhitelist` Submodule <a name="`awsAuthBackendIdentityWhitelist` Submodule" id="@cdktf/provider-vault.awsAuthBackendIdentityWhitelist"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.awsAuthBackendIdentityWhitelist.AwsAuthBackendIdentityWhitelist.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/awsauthbackendidentitywhitelist"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendidentitywhitelist"
 
 awsauthbackendidentitywhitelist.NewAwsAuthBackendIdentityWhitelist(scope Construct, id *string, config AwsAuthBackendIdentityWhitelistConfig) AwsAuthBackendIdentityWhitelist
 ```
@@ -367,7 +363,7 @@ func ResetSafetyBuffer()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.awsAuthBackendIdentityWhitelist.AwsAuthBackendIdentityWhitelist.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/awsauthbackendidentitywhitelist"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendidentitywhitelist"
 
 awsauthbackendidentitywhitelist.AwsAuthBackendIdentityWhitelist_IsConstruct(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.awsAuthBackendIdentityWhitelist.AwsAuthBackendIdentityWhitelist.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/awsauthbackendidentitywhitelist"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendidentitywhitelist"
 
 awsauthbackendidentitywhitelist.AwsAuthBackendIdentityWhitelist_IsTerraformElement(x interface{}) *bool
 ```
@@ -413,7 +409,7 @@ awsauthbackendidentitywhitelist.AwsAuthBackendIdentityWhitelist_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.awsAuthBackendIdentityWhitelist.AwsAuthBackendIdentityWhitelist.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/awsauthbackendidentitywhitelist"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendidentitywhitelist"
 
 awsauthbackendidentitywhitelist.AwsAuthBackendIdentityWhitelist_IsTerraformResource(x interface{}) *bool
 ```
@@ -427,7 +423,7 @@ awsauthbackendidentitywhitelist.AwsAuthBackendIdentityWhitelist_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.awsAuthBackendIdentityWhitelist.AwsAuthBackendIdentityWhitelist.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/awsauthbackendidentitywhitelist"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendidentitywhitelist"
 
 awsauthbackendidentitywhitelist.AwsAuthBackendIdentityWhitelist_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -766,7 +762,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.awsAuthBackendIdentityWhitelist.AwsAuthBackendIdentityWhitelistConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/awsauthbackendidentitywhitelist"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendidentitywhitelist"
 
 &awsauthbackendidentitywhitelist.AwsAuthBackendIdentityWhitelistConfig {
 	Connection: interface{},

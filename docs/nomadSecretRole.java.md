@@ -1,7 +1,3 @@
-# `vault_nomad_secret_role`
-
-Refer to the Terraform Registory for docs: [`vault_nomad_secret_role`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/nomad_secret_role).
-
 # `nomadSecretRole` Submodule <a name="`nomadSecretRole` Submodule" id="@cdktf/provider-vault.nomadSecretRole"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `vault_generic_endpoint`
-
-Refer to the Terraform Registory for docs: [`vault_generic_endpoint`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/generic_endpoint).
-
 # `genericEndpoint` Submodule <a name="`genericEndpoint` Submodule" id="@cdktf/provider-vault.genericEndpoint"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

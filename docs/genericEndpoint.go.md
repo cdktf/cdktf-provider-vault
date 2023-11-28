@@ -1,7 +1,3 @@
-# `vault_generic_endpoint`
-
-Refer to the Terraform Registory for docs: [`vault_generic_endpoint`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/generic_endpoint).
-
 # `genericEndpoint` Submodule <a name="`genericEndpoint` Submodule" id="@cdktf/provider-vault.genericEndpoint"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.genericEndpoint.GenericEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/genericendpoint"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/genericendpoint"
 
 genericendpoint.NewGenericEndpoint(scope Construct, id *string, config GenericEndpointConfig) GenericEndpoint
 ```
@@ -374,7 +370,7 @@ func ResetWriteFields()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.genericEndpoint.GenericEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/genericendpoint"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/genericendpoint"
 
 genericendpoint.GenericEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -406,7 +402,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.genericEndpoint.GenericEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/genericendpoint"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/genericendpoint"
 
 genericendpoint.GenericEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -420,7 +416,7 @@ genericendpoint.GenericEndpoint_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.genericEndpoint.GenericEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/genericendpoint"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/genericendpoint"
 
 genericendpoint.GenericEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -434,7 +430,7 @@ genericendpoint.GenericEndpoint_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.genericEndpoint.GenericEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/genericendpoint"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/genericendpoint"
 
 genericendpoint.GenericEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -861,7 +857,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.genericEndpoint.GenericEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/genericendpoint"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/genericendpoint"
 
 &genericendpoint.GenericEndpointConfig {
 	Connection: interface{},

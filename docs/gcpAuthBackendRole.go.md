@@ -1,7 +1,3 @@
-# `vault_gcp_auth_backend_role`
-
-Refer to the Terraform Registory for docs: [`vault_gcp_auth_backend_role`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/gcp_auth_backend_role).
-
 # `gcpAuthBackendRole` Submodule <a name="`gcpAuthBackendRole` Submodule" id="@cdktf/provider-vault.gcpAuthBackendRole"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.gcpAuthBackendRole.GcpAuthBackendRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/gcpauthbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/gcpauthbackendrole"
 
 gcpauthbackendrole.NewGcpAuthBackendRole(scope Construct, id *string, config GcpAuthBackendRoleConfig) GcpAuthBackendRole
 ```
@@ -479,7 +475,7 @@ func ResetTokenType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.gcpAuthBackendRole.GcpAuthBackendRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/gcpauthbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/gcpauthbackendrole"
 
 gcpauthbackendrole.GcpAuthBackendRole_IsConstruct(x interface{}) *bool
 ```
@@ -511,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.gcpAuthBackendRole.GcpAuthBackendRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/gcpauthbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/gcpauthbackendrole"
 
 gcpauthbackendrole.GcpAuthBackendRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -525,7 +521,7 @@ gcpauthbackendrole.GcpAuthBackendRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.gcpAuthBackendRole.GcpAuthBackendRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/gcpauthbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/gcpauthbackendrole"
 
 gcpauthbackendrole.GcpAuthBackendRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -539,7 +535,7 @@ gcpauthbackendrole.GcpAuthBackendRole_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.gcpAuthBackendRole.GcpAuthBackendRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/gcpauthbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/gcpauthbackendrole"
 
 gcpauthbackendrole.GcpAuthBackendRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1274,7 +1270,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.gcpAuthBackendRole.GcpAuthBackendRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/gcpauthbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/gcpauthbackendrole"
 
 &gcpauthbackendrole.GcpAuthBackendRoleConfig {
 	Connection: interface{},

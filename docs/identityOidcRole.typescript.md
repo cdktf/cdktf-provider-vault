@@ -1,7 +1,3 @@
-# `vault_identity_oidc_role`
-
-Refer to the Terraform Registory for docs: [`vault_identity_oidc_role`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/identity_oidc_role).
-
 # `identityOidcRole` Submodule <a name="`identityOidcRole` Submodule" id="@cdktf/provider-vault.identityOidcRole"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

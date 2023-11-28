@@ -1,7 +1,3 @@
-# `vault_jwt_auth_backend_role`
-
-Refer to the Terraform Registory for docs: [`vault_jwt_auth_backend_role`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/jwt_auth_backend_role).
-
 # `jwtAuthBackendRole` Submodule <a name="`jwtAuthBackendRole` Submodule" id="@cdktf/provider-vault.jwtAuthBackendRole"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

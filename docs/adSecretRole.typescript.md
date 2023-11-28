@@ -1,7 +1,3 @@
-# `vault_ad_secret_role`
-
-Refer to the Terraform Registory for docs: [`vault_ad_secret_role`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/ad_secret_role).
-
 # `adSecretRole` Submodule <a name="`adSecretRole` Submodule" id="@cdktf/provider-vault.adSecretRole"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

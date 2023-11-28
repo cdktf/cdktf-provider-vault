@@ -1,7 +1,3 @@
-# `vault_kv_secret_v2`
-
-Refer to the Terraform Registory for docs: [`vault_kv_secret_v2`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kv_secret_v2).
-
 # `kvSecretV2` Submodule <a name="`kvSecretV2` Submodule" id="@cdktf/provider-vault.kvSecretV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
