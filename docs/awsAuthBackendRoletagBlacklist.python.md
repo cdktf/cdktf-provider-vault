@@ -1,7 +1,3 @@
-# `vault_aws_auth_backend_roletag_blacklist`
-
-Refer to the Terraform Registory for docs: [`vault_aws_auth_backend_roletag_blacklist`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/aws_auth_backend_roletag_blacklist).
-
 # `awsAuthBackendRoletagBlacklist` Submodule <a name="`awsAuthBackendRoletagBlacklist` Submodule" id="@cdktf/provider-vault.awsAuthBackendRoletagBlacklist"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

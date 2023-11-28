@@ -1,7 +1,3 @@
-# `vault_cert_auth_backend_role`
-
-Refer to the Terraform Registory for docs: [`vault_cert_auth_backend_role`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/cert_auth_backend_role).
-
 # `certAuthBackendRole` Submodule <a name="`certAuthBackendRole` Submodule" id="@cdktf/provider-vault.certAuthBackendRole"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

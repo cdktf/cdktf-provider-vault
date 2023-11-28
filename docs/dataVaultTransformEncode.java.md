@@ -1,7 +1,3 @@
-# `data_vault_transform_encode`
-
-Refer to the Terraform Registory for docs: [`data_vault_transform_encode`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/data-sources/transform_encode).
-
 # `dataVaultTransformEncode` Submodule <a name="`dataVaultTransformEncode` Submodule" id="@cdktf/provider-vault.dataVaultTransformEncode"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

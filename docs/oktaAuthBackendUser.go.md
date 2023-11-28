@@ -1,7 +1,3 @@
-# `vault_okta_auth_backend_user`
-
-Refer to the Terraform Registory for docs: [`vault_okta_auth_backend_user`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/okta_auth_backend_user).
-
 # `oktaAuthBackendUser` Submodule <a name="`oktaAuthBackendUser` Submodule" id="@cdktf/provider-vault.oktaAuthBackendUser"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

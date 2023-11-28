@@ -1,7 +1,3 @@
-# `data_vault_raft_autopilot_state`
-
-Refer to the Terraform Registory for docs: [`data_vault_raft_autopilot_state`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/data-sources/raft_autopilot_state).
-
 # `dataVaultRaftAutopilotState` Submodule <a name="`dataVaultRaftAutopilotState` Submodule" id="@cdktf/provider-vault.dataVaultRaftAutopilotState"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

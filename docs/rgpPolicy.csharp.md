@@ -1,7 +1,3 @@
-# `vault_rgp_policy`
-
-Refer to the Terraform Registory for docs: [`vault_rgp_policy`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/rgp_policy).
-
 # `rgpPolicy` Submodule <a name="`rgpPolicy` Submodule" id="@cdktf/provider-vault.rgpPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

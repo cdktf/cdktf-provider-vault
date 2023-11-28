@@ -1,7 +1,3 @@
-# `vault_aws_auth_backend_sts_role`
-
-Refer to the Terraform Registory for docs: [`vault_aws_auth_backend_sts_role`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/aws_auth_backend_sts_role).
-
 # `awsAuthBackendStsRole` Submodule <a name="`awsAuthBackendStsRole` Submodule" id="@cdktf/provider-vault.awsAuthBackendStsRole"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

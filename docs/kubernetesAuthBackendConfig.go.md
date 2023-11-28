@@ -1,7 +1,3 @@
-# `vault_kubernetes_auth_backend_config`
-
-Refer to the Terraform Registory for docs: [`vault_kubernetes_auth_backend_config`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_auth_backend_config).
-
 # `kubernetesAuthBackendConfig` Submodule <a name="`kubernetesAuthBackendConfig` Submodule" id="@cdktf/provider-vault.kubernetesAuthBackendConfig"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

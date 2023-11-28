@@ -1,7 +1,3 @@
-# `vault_mongodbatlas_secret_backend`
-
-Refer to the Terraform Registory for docs: [`vault_mongodbatlas_secret_backend`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/mongodbatlas_secret_backend).
-
 # `mongodbatlasSecretBackend` Submodule <a name="`mongodbatlasSecretBackend` Submodule" id="@cdktf/provider-vault.mongodbatlasSecretBackend"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `data_vault_ldap_static_credentials`
-
-Refer to the Terraform Registory for docs: [`data_vault_ldap_static_credentials`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/data-sources/ldap_static_credentials).
-
 # `dataVaultLdapStaticCredentials` Submodule <a name="`dataVaultLdapStaticCredentials` Submodule" id="@cdktf/provider-vault.dataVaultLdapStaticCredentials"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

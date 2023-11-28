@@ -1,7 +1,3 @@
-# `vault_aws_secret_backend_static_role`
-
-Refer to the Terraform Registory for docs: [`vault_aws_secret_backend_static_role`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/aws_secret_backend_static_role).
-
 # `awsSecretBackendStaticRole` Submodule <a name="`awsSecretBackendStaticRole` Submodule" id="@cdktf/provider-vault.awsSecretBackendStaticRole"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

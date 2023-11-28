@@ -1,7 +1,3 @@
-# `data_vault_gcp_auth_backend_role`
-
-Refer to the Terraform Registory for docs: [`data_vault_gcp_auth_backend_role`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/data-sources/gcp_auth_backend_role).
-
 # `dataVaultGcpAuthBackendRole` Submodule <a name="`dataVaultGcpAuthBackendRole` Submodule" id="@cdktf/provider-vault.dataVaultGcpAuthBackendRole"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

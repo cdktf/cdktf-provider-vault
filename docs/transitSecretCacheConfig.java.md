@@ -1,7 +1,3 @@
-# `vault_transit_secret_cache_config`
-
-Refer to the Terraform Registory for docs: [`vault_transit_secret_cache_config`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/transit_secret_cache_config).
-
 # `transitSecretCacheConfig` Submodule <a name="`transitSecretCacheConfig` Submodule" id="@cdktf/provider-vault.transitSecretCacheConfig"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

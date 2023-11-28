@@ -1,7 +1,3 @@
-# `vault_ldap_secret_backend_static_role`
-
-Refer to the Terraform Registory for docs: [`vault_ldap_secret_backend_static_role`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/ldap_secret_backend_static_role).
-
 # `ldapSecretBackendStaticRole` Submodule <a name="`ldapSecretBackendStaticRole` Submodule" id="@cdktf/provider-vault.ldapSecretBackendStaticRole"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `vault_ssh_secret_backend_role`
-
-Refer to the Terraform Registory for docs: [`vault_ssh_secret_backend_role`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/ssh_secret_backend_role).
-
 # `sshSecretBackendRole` Submodule <a name="`sshSecretBackendRole` Submodule" id="@cdktf/provider-vault.sshSecretBackendRole"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

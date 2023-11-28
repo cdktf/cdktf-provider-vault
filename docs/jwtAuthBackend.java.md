@@ -1,7 +1,3 @@
-# `vault_jwt_auth_backend`
-
-Refer to the Terraform Registory for docs: [`vault_jwt_auth_backend`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/jwt_auth_backend).
-
 # `jwtAuthBackend` Submodule <a name="`jwtAuthBackend` Submodule" id="@cdktf/provider-vault.jwtAuthBackend"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

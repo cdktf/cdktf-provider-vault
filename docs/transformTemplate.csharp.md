@@ -1,7 +1,3 @@
-# `vault_transform_template`
-
-Refer to the Terraform Registory for docs: [`vault_transform_template`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/transform_template).
-
 # `transformTemplate` Submodule <a name="`transformTemplate` Submodule" id="@cdktf/provider-vault.transformTemplate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

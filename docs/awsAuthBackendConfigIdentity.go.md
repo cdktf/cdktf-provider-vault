@@ -1,7 +1,3 @@
-# `vault_aws_auth_backend_config_identity`
-
-Refer to the Terraform Registory for docs: [`vault_aws_auth_backend_config_identity`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/aws_auth_backend_config_identity).
-
 # `awsAuthBackendConfigIdentity` Submodule <a name="`awsAuthBackendConfigIdentity` Submodule" id="@cdktf/provider-vault.awsAuthBackendConfigIdentity"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

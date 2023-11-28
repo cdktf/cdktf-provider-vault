@@ -1,7 +1,3 @@
-# `vault_password_policy`
-
-Refer to the Terraform Registory for docs: [`vault_password_policy`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/password_policy).
-
 # `passwordPolicy` Submodule <a name="`passwordPolicy` Submodule" id="@cdktf/provider-vault.passwordPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

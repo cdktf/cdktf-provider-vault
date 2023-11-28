@@ -1,7 +1,3 @@
-# `vault_identity_oidc_assignment`
-
-Refer to the Terraform Registory for docs: [`vault_identity_oidc_assignment`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/identity_oidc_assignment).
-
 # `identityOidcAssignment` Submodule <a name="`identityOidcAssignment` Submodule" id="@cdktf/provider-vault.identityOidcAssignment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

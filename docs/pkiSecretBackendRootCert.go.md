@@ -1,7 +1,3 @@
-# `vault_pki_secret_backend_root_cert`
-
-Refer to the Terraform Registory for docs: [`vault_pki_secret_backend_root_cert`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/pki_secret_backend_root_cert).
-
 # `pkiSecretBackendRootCert` Submodule <a name="`pkiSecretBackendRootCert` Submodule" id="@cdktf/provider-vault.pkiSecretBackendRootCert"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

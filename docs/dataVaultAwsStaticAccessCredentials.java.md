@@ -1,7 +1,3 @@
-# `data_vault_aws_static_access_credentials`
-
-Refer to the Terraform Registory for docs: [`data_vault_aws_static_access_credentials`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/data-sources/aws_static_access_credentials).
-
 # `dataVaultAwsStaticAccessCredentials` Submodule <a name="`dataVaultAwsStaticAccessCredentials` Submodule" id="@cdktf/provider-vault.dataVaultAwsStaticAccessCredentials"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

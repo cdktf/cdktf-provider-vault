@@ -1,7 +1,3 @@
-# `vault_approle_auth_backend_role`
-
-Refer to the Terraform Registory for docs: [`vault_approle_auth_backend_role`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/approle_auth_backend_role).
-
 # `approleAuthBackendRole` Submodule <a name="`approleAuthBackendRole` Submodule" id="@cdktf/provider-vault.approleAuthBackendRole"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

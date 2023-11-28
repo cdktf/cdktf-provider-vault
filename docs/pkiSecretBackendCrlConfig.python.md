@@ -1,7 +1,3 @@
-# `vault_pki_secret_backend_crl_config`
-
-Refer to the Terraform Registory for docs: [`vault_pki_secret_backend_crl_config`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/pki_secret_backend_crl_config).
-
 # `pkiSecretBackendCrlConfig` Submodule <a name="`pkiSecretBackendCrlConfig` Submodule" id="@cdktf/provider-vault.pkiSecretBackendCrlConfig"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `vault_kmip_secret_role`
-
-Refer to the Terraform Registory for docs: [`vault_kmip_secret_role`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kmip_secret_role).
-
 # `kmipSecretRole` Submodule <a name="`kmipSecretRole` Submodule" id="@cdktf/provider-vault.kmipSecretRole"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

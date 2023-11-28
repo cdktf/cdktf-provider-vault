@@ -1,7 +1,3 @@
-# `data_vault_kv_secret_subkeys_v2`
-
-Refer to the Terraform Registory for docs: [`data_vault_kv_secret_subkeys_v2`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/data-sources/kv_secret_subkeys_v2).
-
 # `dataVaultKvSecretSubkeysV2` Submodule <a name="`dataVaultKvSecretSubkeysV2` Submodule" id="@cdktf/provider-vault.dataVaultKvSecretSubkeysV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
