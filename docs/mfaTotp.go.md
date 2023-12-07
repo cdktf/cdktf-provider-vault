@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.mfaTotp.MfaTotp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/mfatotp"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/mfatotp"
 
 mfatotp.NewMfaTotp(scope Construct, id *string, config MfaTotpConfig) MfaTotp
 ```
@@ -427,7 +427,7 @@ func ResetSkew()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.mfaTotp.MfaTotp.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/mfatotp"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/mfatotp"
 
 mfatotp.MfaTotp_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.mfaTotp.MfaTotp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/mfatotp"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/mfatotp"
 
 mfatotp.MfaTotp_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ mfatotp.MfaTotp_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.mfaTotp.MfaTotp.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/mfatotp"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/mfatotp"
 
 mfatotp.MfaTotp_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ mfatotp.MfaTotp_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.mfaTotp.MfaTotp.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/mfatotp"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/mfatotp"
 
 mfatotp.MfaTotp_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -936,7 +936,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.mfaTotp.MfaTotpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/mfatotp"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/mfatotp"
 
 &mfatotp.MfaTotpConfig {
 	Connection: interface{},
