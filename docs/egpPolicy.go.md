@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.egpPolicy.EgpPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/egppolicy"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/egppolicy"
 
 egppolicy.NewEgpPolicy(scope Construct, id *string, config EgpPolicyConfig) EgpPolicy
 ```
@@ -385,7 +385,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.egpPolicy.EgpPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/egppolicy"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/egppolicy"
 
 egppolicy.EgpPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.egpPolicy.EgpPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/egppolicy"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/egppolicy"
 
 egppolicy.EgpPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ egppolicy.EgpPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.egpPolicy.EgpPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/egppolicy"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/egppolicy"
 
 egppolicy.EgpPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ egppolicy.EgpPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.egpPolicy.EgpPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/egppolicy"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/egppolicy"
 
 egppolicy.EgpPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -806,7 +806,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.egpPolicy.EgpPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/egppolicy"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/egppolicy"
 
 &egppolicy.EgpPolicyConfig {
 	Connection: interface{},
