@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultIdentityOidcOpenidConfig.DataVaultIdentityOidcOpenidConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultidentityoidcopenidconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentityoidcopenidconfig"
 
 datavaultidentityoidcopenidconfig.NewDataVaultIdentityOidcOpenidConfig(scope Construct, id *string, config DataVaultIdentityOidcOpenidConfigConfig) DataVaultIdentityOidcOpenidConfig
 ```
@@ -281,7 +281,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.dataVaultIdentityOidcOpenidConfig.DataVaultIdentityOidcOpenidConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultidentityoidcopenidconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentityoidcopenidconfig"
 
 datavaultidentityoidcopenidconfig.DataVaultIdentityOidcOpenidConfig_IsConstruct(x interface{}) *bool
 ```
@@ -313,7 +313,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.dataVaultIdentityOidcOpenidConfig.DataVaultIdentityOidcOpenidConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultidentityoidcopenidconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentityoidcopenidconfig"
 
 datavaultidentityoidcopenidconfig.DataVaultIdentityOidcOpenidConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -327,7 +327,7 @@ datavaultidentityoidcopenidconfig.DataVaultIdentityOidcOpenidConfig_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vault.dataVaultIdentityOidcOpenidConfig.DataVaultIdentityOidcOpenidConfig.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultidentityoidcopenidconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentityoidcopenidconfig"
 
 datavaultidentityoidcopenidconfig.DataVaultIdentityOidcOpenidConfig_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ datavaultidentityoidcopenidconfig.DataVaultIdentityOidcOpenidConfig_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.dataVaultIdentityOidcOpenidConfig.DataVaultIdentityOidcOpenidConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultidentityoidcopenidconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentityoidcopenidconfig"
 
 datavaultidentityoidcopenidconfig.DataVaultIdentityOidcOpenidConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -746,7 +746,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.dataVaultIdentityOidcOpenidConfig.DataVaultIdentityOidcOpenidConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultidentityoidcopenidconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentityoidcopenidconfig"
 
 &datavaultidentityoidcopenidconfig.DataVaultIdentityOidcOpenidConfigConfig {
 	Connection: interface{},
