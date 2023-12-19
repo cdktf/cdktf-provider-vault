@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/awssecretbackendstaticrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awssecretbackendstaticrole"
 
 awssecretbackendstaticrole.NewAwsSecretBackendStaticRole(scope Construct, id *string, config AwsSecretBackendStaticRoleConfig) AwsSecretBackendStaticRole
 ```
@@ -392,7 +392,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/awssecretbackendstaticrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awssecretbackendstaticrole"
 
 awssecretbackendstaticrole.AwsSecretBackendStaticRole_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/awssecretbackendstaticrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awssecretbackendstaticrole"
 
 awssecretbackendstaticrole.AwsSecretBackendStaticRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ awssecretbackendstaticrole.AwsSecretBackendStaticRole_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/awssecretbackendstaticrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awssecretbackendstaticrole"
 
 awssecretbackendstaticrole.AwsSecretBackendStaticRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ awssecretbackendstaticrole.AwsSecretBackendStaticRole_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/awssecretbackendstaticrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awssecretbackendstaticrole"
 
 awssecretbackendstaticrole.AwsSecretBackendStaticRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -813,7 +813,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/awssecretbackendstaticrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awssecretbackendstaticrole"
 
 &awssecretbackendstaticrole.AwsSecretBackendStaticRoleConfig {
 	Connection: interface{},
