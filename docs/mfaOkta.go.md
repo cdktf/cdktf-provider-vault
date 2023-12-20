@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.mfaOkta.MfaOkta.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/mfaokta"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/mfaokta"
 
 mfaokta.NewMfaOkta(scope Construct, id *string, config MfaOktaConfig) MfaOkta
 ```
@@ -406,7 +406,7 @@ func ResetUsernameFormat()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.mfaOkta.MfaOkta.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/mfaokta"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/mfaokta"
 
 mfaokta.MfaOkta_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.mfaOkta.MfaOkta.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/mfaokta"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/mfaokta"
 
 mfaokta.MfaOkta_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ mfaokta.MfaOkta_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.mfaOkta.MfaOkta.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/mfaokta"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/mfaokta"
 
 mfaokta.MfaOkta_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ mfaokta.MfaOkta_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.mfaOkta.MfaOkta.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/mfaokta"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/mfaokta"
 
 mfaokta.MfaOkta_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -893,7 +893,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.mfaOkta.MfaOktaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/mfaokta"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/mfaokta"
 
 &mfaokta.MfaOktaConfig {
 	Connection: interface{},
