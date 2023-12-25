@@ -1,6 +1,9 @@
-# Submodules <a name="Submodules" id="submodules"></a>
+# API Reference <a name="API Reference" id="api-reference"></a>
+
+## Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+
 - [adSecretBackend](./adSecretBackend.csharp.md)
 - [adSecretLibrary](./adSecretLibrary.csharp.md)
 - [adSecretRole](./adSecretRole.csharp.md)
@@ -173,3 +176,8 @@ The following submodules are available:
 - [transformTransformation](./transformTransformation.csharp.md)
 - [transitSecretBackendKey](./transitSecretBackendKey.csharp.md)
 - [transitSecretCacheConfig](./transitSecretCacheConfig.csharp.md)
+
+
+
+
+

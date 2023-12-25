@@ -1,6 +1,9 @@
-# Submodules <a name="Submodules" id="submodules"></a>
+# API Reference <a name="API Reference" id="api-reference"></a>
+
+## Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+
 - [adSecretBackend](./adSecretBackend.typescript.md)
 - [adSecretLibrary](./adSecretLibrary.typescript.md)
 - [adSecretRole](./adSecretRole.typescript.md)
@@ -173,3 +176,8 @@ The following submodules are available:
 - [transformTransformation](./transformTransformation.typescript.md)
 - [transitSecretBackendKey](./transitSecretBackendKey.typescript.md)
 - [transitSecretCacheConfig](./transitSecretCacheConfig.typescript.md)
+
+
+
+
+
