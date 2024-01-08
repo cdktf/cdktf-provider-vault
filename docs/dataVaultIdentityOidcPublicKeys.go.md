@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentityoidcpublickeys"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultidentityoidcpublickeys"
 
 datavaultidentityoidcpublickeys.NewDataVaultIdentityOidcPublicKeys(scope Construct, id *string, config DataVaultIdentityOidcPublicKeysConfig) DataVaultIdentityOidcPublicKeys
 ```
@@ -281,7 +281,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeys.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentityoidcpublickeys"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultidentityoidcpublickeys"
 
 datavaultidentityoidcpublickeys.DataVaultIdentityOidcPublicKeys_IsConstruct(x interface{}) *bool
 ```
@@ -313,7 +313,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeys.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentityoidcpublickeys"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultidentityoidcpublickeys"
 
 datavaultidentityoidcpublickeys.DataVaultIdentityOidcPublicKeys_IsTerraformElement(x interface{}) *bool
 ```
@@ -327,7 +327,7 @@ datavaultidentityoidcpublickeys.DataVaultIdentityOidcPublicKeys_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeys.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentityoidcpublickeys"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultidentityoidcpublickeys"
 
 datavaultidentityoidcpublickeys.DataVaultIdentityOidcPublicKeys_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ datavaultidentityoidcpublickeys.DataVaultIdentityOidcPublicKeys_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeys.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentityoidcpublickeys"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultidentityoidcpublickeys"
 
 datavaultidentityoidcpublickeys.DataVaultIdentityOidcPublicKeys_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -625,7 +625,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeysConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentityoidcpublickeys"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultidentityoidcpublickeys"
 
 &datavaultidentityoidcpublickeys.DataVaultIdentityOidcPublicKeysConfig {
 	Connection: interface{},
