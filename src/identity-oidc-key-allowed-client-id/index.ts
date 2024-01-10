@@ -170,4 +170,36 @@ export class IdentityOidcKeyAllowedClientId extends cdktf.TerraformResource {
       namespace: cdktf.stringToTerraform(this._namespace),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      allowed_client_id: {
+        value: cdktf.stringToHclTerraform(this._allowedClientId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      key_name: {
+        value: cdktf.stringToHclTerraform(this._keyName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

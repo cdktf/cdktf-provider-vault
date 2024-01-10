@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.identityOidcRole.IdentityOidcRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/identityoidcrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/identityoidcrole"
 
 identityoidcrole.NewIdentityOidcRole(scope Construct, id *string, config IdentityOidcRoleConfig) IdentityOidcRole
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.identityOidcRole.IdentityOidcRole.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityOidcRole.IdentityOidcRole.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-vault.identityOidcRole.IdentityOidcRole.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-vault.identityOidcRole.IdentityOidcRole.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityOidcRole.IdentityOidcRole.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityOidcRole.IdentityOidcRole.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-vault.identityOidcRole.IdentityOidcRole.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -129,6 +130,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-vault.identityOidcRole.IdentityOidcRole.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-vault.identityOidcRole.IdentityOidcRole.toMetadata"></a>
 
@@ -406,7 +413,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.identityOidcRole.IdentityOidcRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/identityoidcrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/identityoidcrole"
 
 identityoidcrole.IdentityOidcRole_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.identityOidcRole.IdentityOidcRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/identityoidcrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/identityoidcrole"
 
 identityoidcrole.IdentityOidcRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +459,7 @@ identityoidcrole.IdentityOidcRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.identityOidcRole.IdentityOidcRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/identityoidcrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/identityoidcrole"
 
 identityoidcrole.IdentityOidcRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +473,7 @@ identityoidcrole.IdentityOidcRole_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.identityOidcRole.IdentityOidcRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/identityoidcrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/identityoidcrole"
 
 identityoidcrole.IdentityOidcRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -849,7 +856,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.identityOidcRole.IdentityOidcRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/identityoidcrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/identityoidcrole"
 
 &identityoidcrole.IdentityOidcRoleConfig {
 	Connection: interface{},

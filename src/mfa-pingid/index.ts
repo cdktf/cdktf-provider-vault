@@ -252,4 +252,48 @@ export class MfaPingid extends cdktf.TerraformResource {
       username_format: cdktf.stringToTerraform(this._usernameFormat),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mount_accessor: {
+        value: cdktf.stringToHclTerraform(this._mountAccessor),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      settings_file_base64: {
+        value: cdktf.stringToHclTerraform(this._settingsFileBase64),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      username_format: {
+        value: cdktf.stringToHclTerraform(this._usernameFormat),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

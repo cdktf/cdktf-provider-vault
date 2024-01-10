@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -172,6 +173,12 @@ private void ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.toHclTerraform"></a>
+
+```csharp
+private object ToHclTerraform()
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.toMetadata"></a>
 
@@ -6780,10 +6787,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
 
 ---
 
@@ -7647,10 +7671,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
 
 ---
 
@@ -8435,10 +8476,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
 
 ---
 
@@ -9281,10 +9339,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
 
 ---
 
@@ -10061,10 +10136,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
 
 ---
 
@@ -10907,10 +10999,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
 
 ---
 
@@ -11550,10 +11659,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
 
 ---
 
@@ -12330,10 +12456,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
 
 ---
 
@@ -13168,10 +13311,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
 
 ---
 
@@ -13948,10 +14108,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
 
 ---
 
@@ -14728,10 +14905,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
 
 ---
 
@@ -15624,10 +15818,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
 
 ---
 
@@ -16404,10 +16615,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
 
 ---
 
@@ -17184,10 +17412,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
 
 ---
 
@@ -18051,10 +18296,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
 
 ---
 
@@ -18737,10 +18999,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
 
 ---
 
@@ -19496,10 +19775,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
 
 ---
 
@@ -20305,10 +20601,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
 
 ---
 

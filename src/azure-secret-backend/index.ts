@@ -338,4 +338,78 @@ export class AzureSecretBackend extends cdktf.TerraformResource {
       use_microsoft_graph_api: cdktf.booleanToTerraform(this._useMicrosoftGraphApi),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      client_id: {
+        value: cdktf.stringToHclTerraform(this._clientId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      client_secret: {
+        value: cdktf.stringToHclTerraform(this._clientSecret),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disable_remount: {
+        value: cdktf.booleanToHclTerraform(this._disableRemount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      environment: {
+        value: cdktf.stringToHclTerraform(this._environment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      path: {
+        value: cdktf.stringToHclTerraform(this._path),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      subscription_id: {
+        value: cdktf.stringToHclTerraform(this._subscriptionId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tenant_id: {
+        value: cdktf.stringToHclTerraform(this._tenantId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      use_microsoft_graph_api: {
+        value: cdktf.booleanToHclTerraform(this._useMicrosoftGraphApi),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

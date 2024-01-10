@@ -197,4 +197,42 @@ export class PkiSecretBackendConfigIssuers extends cdktf.TerraformResource {
       namespace: cdktf.stringToTerraform(this._namespace),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      backend: {
+        value: cdktf.stringToHclTerraform(this._backend),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default: {
+        value: cdktf.stringToHclTerraform(this._default),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default_follows_latest_issuer: {
+        value: cdktf.booleanToHclTerraform(this._defaultFollowsLatestIssuer),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

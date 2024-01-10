@@ -764,4 +764,186 @@ export class RaftSnapshotAgentConfig extends cdktf.TerraformResource {
       storage_type: cdktf.stringToTerraform(this._storageType),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      aws_access_key_id: {
+        value: cdktf.stringToHclTerraform(this._awsAccessKeyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      aws_s3_bucket: {
+        value: cdktf.stringToHclTerraform(this._awsS3Bucket),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      aws_s3_disable_tls: {
+        value: cdktf.booleanToHclTerraform(this._awsS3DisableTls),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      aws_s3_enable_kms: {
+        value: cdktf.booleanToHclTerraform(this._awsS3EnableKms),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      aws_s3_endpoint: {
+        value: cdktf.stringToHclTerraform(this._awsS3Endpoint),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      aws_s3_force_path_style: {
+        value: cdktf.booleanToHclTerraform(this._awsS3ForcePathStyle),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      aws_s3_kms_key: {
+        value: cdktf.stringToHclTerraform(this._awsS3KmsKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      aws_s3_region: {
+        value: cdktf.stringToHclTerraform(this._awsS3Region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      aws_s3_server_side_encryption: {
+        value: cdktf.booleanToHclTerraform(this._awsS3ServerSideEncryption),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      aws_secret_access_key: {
+        value: cdktf.stringToHclTerraform(this._awsSecretAccessKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      aws_session_token: {
+        value: cdktf.stringToHclTerraform(this._awsSessionToken),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      azure_account_key: {
+        value: cdktf.stringToHclTerraform(this._azureAccountKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      azure_account_name: {
+        value: cdktf.stringToHclTerraform(this._azureAccountName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      azure_blob_environment: {
+        value: cdktf.stringToHclTerraform(this._azureBlobEnvironment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      azure_container_name: {
+        value: cdktf.stringToHclTerraform(this._azureContainerName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      azure_endpoint: {
+        value: cdktf.stringToHclTerraform(this._azureEndpoint),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      file_prefix: {
+        value: cdktf.stringToHclTerraform(this._filePrefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      google_disable_tls: {
+        value: cdktf.booleanToHclTerraform(this._googleDisableTls),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      google_endpoint: {
+        value: cdktf.stringToHclTerraform(this._googleEndpoint),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      google_gcs_bucket: {
+        value: cdktf.stringToHclTerraform(this._googleGcsBucket),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      google_service_account_key: {
+        value: cdktf.stringToHclTerraform(this._googleServiceAccountKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      interval_seconds: {
+        value: cdktf.numberToHclTerraform(this._intervalSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      local_max_space: {
+        value: cdktf.numberToHclTerraform(this._localMaxSpace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      path_prefix: {
+        value: cdktf.stringToHclTerraform(this._pathPrefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      retain: {
+        value: cdktf.numberToHclTerraform(this._retain),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      storage_type: {
+        value: cdktf.stringToHclTerraform(this._storageType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

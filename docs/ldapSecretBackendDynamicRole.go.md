@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/ldapsecretbackenddynamicrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/ldapsecretbackenddynamicrole"
 
 ldapsecretbackenddynamicrole.NewLdapSecretBackendDynamicRole(scope Construct, id *string, config LdapSecretBackendDynamicRoleConfig) LdapSecretBackendDynamicRole
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -131,6 +132,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.toMetadata"></a>
 
@@ -420,7 +427,7 @@ func ResetUsernameTemplate()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/ldapsecretbackenddynamicrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/ldapsecretbackenddynamicrole"
 
 ldapsecretbackenddynamicrole.LdapSecretBackendDynamicRole_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/ldapsecretbackenddynamicrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/ldapsecretbackenddynamicrole"
 
 ldapsecretbackenddynamicrole.LdapSecretBackendDynamicRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +473,7 @@ ldapsecretbackenddynamicrole.LdapSecretBackendDynamicRole_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/ldapsecretbackenddynamicrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/ldapsecretbackenddynamicrole"
 
 ldapsecretbackenddynamicrole.LdapSecretBackendDynamicRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +487,7 @@ ldapsecretbackenddynamicrole.LdapSecretBackendDynamicRole_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/ldapsecretbackenddynamicrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/ldapsecretbackenddynamicrole"
 
 ldapsecretbackenddynamicrole.LdapSecretBackendDynamicRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -929,7 +936,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/ldapsecretbackenddynamicrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/ldapsecretbackenddynamicrole"
 
 &ldapsecretbackenddynamicrole.LdapSecretBackendDynamicRoleConfig {
 	Connection: interface{},

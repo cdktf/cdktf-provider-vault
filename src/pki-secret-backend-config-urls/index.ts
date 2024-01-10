@@ -221,4 +221,48 @@ export class PkiSecretBackendConfigUrls extends cdktf.TerraformResource {
       ocsp_servers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ocspServers),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      backend: {
+        value: cdktf.stringToHclTerraform(this._backend),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      crl_distribution_points: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._crlDistributionPoints),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      issuing_certificates: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._issuingCertificates),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ocsp_servers: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ocspServers),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

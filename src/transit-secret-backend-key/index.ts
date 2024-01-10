@@ -470,4 +470,102 @@ export class TransitSecretBackendKey extends cdktf.TerraformResource {
       type: cdktf.stringToTerraform(this._type),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      allow_plaintext_backup: {
+        value: cdktf.booleanToHclTerraform(this._allowPlaintextBackup),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      auto_rotate_interval: {
+        value: cdktf.numberToHclTerraform(this._autoRotateInterval),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      auto_rotate_period: {
+        value: cdktf.numberToHclTerraform(this._autoRotatePeriod),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      backend: {
+        value: cdktf.stringToHclTerraform(this._backend),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      convergent_encryption: {
+        value: cdktf.booleanToHclTerraform(this._convergentEncryption),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      deletion_allowed: {
+        value: cdktf.booleanToHclTerraform(this._deletionAllowed),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      derived: {
+        value: cdktf.booleanToHclTerraform(this._derived),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      exportable: {
+        value: cdktf.booleanToHclTerraform(this._exportable),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      key_size: {
+        value: cdktf.numberToHclTerraform(this._keySize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      min_decryption_version: {
+        value: cdktf.numberToHclTerraform(this._minDecryptionVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      min_encryption_version: {
+        value: cdktf.numberToHclTerraform(this._minEncryptionVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

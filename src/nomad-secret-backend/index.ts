@@ -464,4 +464,108 @@ export class NomadSecretBackend extends cdktf.TerraformResource {
       ttl: cdktf.numberToTerraform(this._ttl),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      address: {
+        value: cdktf.stringToHclTerraform(this._address),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      backend: {
+        value: cdktf.stringToHclTerraform(this._backend),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ca_cert: {
+        value: cdktf.stringToHclTerraform(this._caCert),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      client_cert: {
+        value: cdktf.stringToHclTerraform(this._clientCert),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      client_key: {
+        value: cdktf.stringToHclTerraform(this._clientKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default_lease_ttl_seconds: {
+        value: cdktf.numberToHclTerraform(this._defaultLeaseTtlSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disable_remount: {
+        value: cdktf.booleanToHclTerraform(this._disableRemount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      local: {
+        value: cdktf.booleanToHclTerraform(this._local),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      max_lease_ttl_seconds: {
+        value: cdktf.numberToHclTerraform(this._maxLeaseTtlSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      max_token_name_length: {
+        value: cdktf.numberToHclTerraform(this._maxTokenNameLength),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      max_ttl: {
+        value: cdktf.numberToHclTerraform(this._maxTtl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      token: {
+        value: cdktf.stringToHclTerraform(this._token),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ttl: {
+        value: cdktf.numberToHclTerraform(this._ttl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

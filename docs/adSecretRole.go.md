@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.adSecretRole.AdSecretRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/adsecretrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/adsecretrole"
 
 adsecretrole.NewAdSecretRole(scope Construct, id *string, config AdSecretRoleConfig) AdSecretRole
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.adSecretRole.AdSecretRole.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretRole.AdSecretRole.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-vault.adSecretRole.AdSecretRole.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-vault.adSecretRole.AdSecretRole.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretRole.AdSecretRole.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretRole.AdSecretRole.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-vault.adSecretRole.AdSecretRole.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -127,6 +128,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-vault.adSecretRole.AdSecretRole.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-vault.adSecretRole.AdSecretRole.toMetadata"></a>
 
@@ -392,7 +399,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.adSecretRole.AdSecretRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/adsecretrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/adsecretrole"
 
 adsecretrole.AdSecretRole_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.adSecretRole.AdSecretRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/adsecretrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/adsecretrole"
 
 adsecretrole.AdSecretRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +445,7 @@ adsecretrole.AdSecretRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.adSecretRole.AdSecretRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/adsecretrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/adsecretrole"
 
 adsecretrole.AdSecretRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +459,7 @@ adsecretrole.AdSecretRole_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.adSecretRole.AdSecretRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/adsecretrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/adsecretrole"
 
 adsecretrole.AdSecretRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -835,7 +842,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.adSecretRole.AdSecretRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/adsecretrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/adsecretrole"
 
 &adsecretrole.AdSecretRoleConfig {
 	Connection: interface{},

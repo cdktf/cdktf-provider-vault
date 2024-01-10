@@ -794,4 +794,192 @@ export class JwtAuthBackendRole extends cdktf.TerraformResource {
       verbose_oidc_logging: cdktf.booleanToTerraform(this._verboseOidcLogging),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      allowed_redirect_uris: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedRedirectUris),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      backend: {
+        value: cdktf.stringToHclTerraform(this._backend),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      bound_audiences: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._boundAudiences),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      bound_claims: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._boundClaims),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      bound_claims_type: {
+        value: cdktf.stringToHclTerraform(this._boundClaimsType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      bound_subject: {
+        value: cdktf.stringToHclTerraform(this._boundSubject),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      claim_mappings: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._claimMappings),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      clock_skew_leeway: {
+        value: cdktf.numberToHclTerraform(this._clockSkewLeeway),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      disable_bound_claims_parsing: {
+        value: cdktf.booleanToHclTerraform(this._disableBoundClaimsParsing),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      expiration_leeway: {
+        value: cdktf.numberToHclTerraform(this._expirationLeeway),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      groups_claim: {
+        value: cdktf.stringToHclTerraform(this._groupsClaim),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_age: {
+        value: cdktf.numberToHclTerraform(this._maxAge),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      not_before_leeway: {
+        value: cdktf.numberToHclTerraform(this._notBeforeLeeway),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      oidc_scopes: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._oidcScopes),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      role_name: {
+        value: cdktf.stringToHclTerraform(this._roleName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_type: {
+        value: cdktf.stringToHclTerraform(this._roleType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      token_bound_cidrs: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tokenBoundCidrs),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      token_explicit_max_ttl: {
+        value: cdktf.numberToHclTerraform(this._tokenExplicitMaxTtl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      token_max_ttl: {
+        value: cdktf.numberToHclTerraform(this._tokenMaxTtl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      token_no_default_policy: {
+        value: cdktf.booleanToHclTerraform(this._tokenNoDefaultPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      token_num_uses: {
+        value: cdktf.numberToHclTerraform(this._tokenNumUses),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      token_period: {
+        value: cdktf.numberToHclTerraform(this._tokenPeriod),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      token_policies: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tokenPolicies),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      token_ttl: {
+        value: cdktf.numberToHclTerraform(this._tokenTtl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      token_type: {
+        value: cdktf.stringToHclTerraform(this._tokenType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user_claim: {
+        value: cdktf.stringToHclTerraform(this._userClaim),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user_claim_json_pointer: {
+        value: cdktf.booleanToHclTerraform(this._userClaimJsonPointer),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      verbose_oidc_logging: {
+        value: cdktf.booleanToHclTerraform(this._verboseOidcLogging),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

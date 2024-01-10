@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.managedKeys.ManagedKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/managedkeys"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/managedkeys"
 
 managedkeys.NewManagedKeys(scope Construct, id *string, config ManagedKeysConfig) ManagedKeys
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -132,6 +133,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-vault.managedKeys.ManagedKeys.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-vault.managedKeys.ManagedKeys.toMetadata"></a>
 
@@ -445,7 +452,7 @@ func ResetPkcs()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.managedKeys.ManagedKeys.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/managedkeys"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/managedkeys"
 
 managedkeys.ManagedKeys_IsConstruct(x interface{}) *bool
 ```
@@ -477,7 +484,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.managedKeys.ManagedKeys.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/managedkeys"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/managedkeys"
 
 managedkeys.ManagedKeys_IsTerraformElement(x interface{}) *bool
 ```
@@ -491,7 +498,7 @@ managedkeys.ManagedKeys_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.managedKeys.ManagedKeys.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/managedkeys"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/managedkeys"
 
 managedkeys.ManagedKeys_IsTerraformResource(x interface{}) *bool
 ```
@@ -505,7 +512,7 @@ managedkeys.ManagedKeys_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.managedKeys.ManagedKeys.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/managedkeys"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/managedkeys"
 
 managedkeys.ManagedKeys_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -844,7 +851,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.managedKeys.ManagedKeysAws.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/managedkeys"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/managedkeys"
 
 &managedkeys.ManagedKeysAws {
 	AccessKey: *string,
@@ -1070,7 +1077,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.managedKeys.ManagedKeysAzure.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/managedkeys"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/managedkeys"
 
 &managedkeys.ManagedKeysAzure {
 	ClientId: *string,
@@ -1314,7 +1321,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.managedKeys.ManagedKeysConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/managedkeys"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/managedkeys"
 
 &managedkeys.ManagedKeysConfig {
 	Connection: interface{},
@@ -1497,7 +1504,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.managedKeys.ManagedKeysPkcs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/managedkeys"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/managedkeys"
 
 &managedkeys.ManagedKeysPkcs {
 	KeyId: *string,
@@ -1759,7 +1766,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.managedKeys.ManagedKeysAwsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/managedkeys"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/managedkeys"
 
 managedkeys.NewManagedKeysAwsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedKeysAwsList
 ```
@@ -1800,10 +1807,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-vault.managedKeys.ManagedKeysAwsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-vault.managedKeys.ManagedKeysAwsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1902,7 +1926,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/managedkeys"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/managedkeys"
 
 managedkeys.NewManagedKeysAwsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedKeysAwsOutputReference
 ```
@@ -2515,7 +2539,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.managedKeys.ManagedKeysAzureList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/managedkeys"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/managedkeys"
 
 managedkeys.NewManagedKeysAzureList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedKeysAzureList
 ```
@@ -2556,10 +2580,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-vault.managedKeys.ManagedKeysAzureList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-vault.managedKeys.ManagedKeysAzureList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -2658,7 +2699,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/managedkeys"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/managedkeys"
 
 managedkeys.NewManagedKeysAzureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedKeysAzureOutputReference
 ```
@@ -3293,7 +3334,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.managedKeys.ManagedKeysPkcsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/managedkeys"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/managedkeys"
 
 managedkeys.NewManagedKeysPkcsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedKeysPkcsList
 ```
@@ -3334,10 +3375,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-vault.managedKeys.ManagedKeysPkcsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-vault.managedKeys.ManagedKeysPkcsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -3436,7 +3494,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/managedkeys"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/managedkeys"
 
 managedkeys.NewManagedKeysPkcsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedKeysPkcsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.pkiSecretBackendConfigIssuers.PkiSecretBackendConfigIssuers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/pkisecretbackendconfigissuers"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/pkisecretbackendconfigissuers"
 
 pkisecretbackendconfigissuers.NewPkiSecretBackendConfigIssuers(scope Construct, id *string, config PkiSecretBackendConfigIssuersConfig) PkiSecretBackendConfigIssuers
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendConfigIssuers.PkiSecretBackendConfigIssuers.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendConfigIssuers.PkiSecretBackendConfigIssuers.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendConfigIssuers.PkiSecretBackendConfigIssuers.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendConfigIssuers.PkiSecretBackendConfigIssuers.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendConfigIssuers.PkiSecretBackendConfigIssuers.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendConfigIssuers.PkiSecretBackendConfigIssuers.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendConfigIssuers.PkiSecretBackendConfigIssuers.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -128,6 +129,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-vault.pkiSecretBackendConfigIssuers.PkiSecretBackendConfigIssuers.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-vault.pkiSecretBackendConfigIssuers.PkiSecretBackendConfigIssuers.toMetadata"></a>
 
@@ -399,7 +406,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.pkiSecretBackendConfigIssuers.PkiSecretBackendConfigIssuers.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/pkisecretbackendconfigissuers"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/pkisecretbackendconfigissuers"
 
 pkisecretbackendconfigissuers.PkiSecretBackendConfigIssuers_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.pkiSecretBackendConfigIssuers.PkiSecretBackendConfigIssuers.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/pkisecretbackendconfigissuers"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/pkisecretbackendconfigissuers"
 
 pkisecretbackendconfigissuers.PkiSecretBackendConfigIssuers_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +452,7 @@ pkisecretbackendconfigissuers.PkiSecretBackendConfigIssuers_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.pkiSecretBackendConfigIssuers.PkiSecretBackendConfigIssuers.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/pkisecretbackendconfigissuers"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/pkisecretbackendconfigissuers"
 
 pkisecretbackendconfigissuers.PkiSecretBackendConfigIssuers_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +466,7 @@ pkisecretbackendconfigissuers.PkiSecretBackendConfigIssuers_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.pkiSecretBackendConfigIssuers.PkiSecretBackendConfigIssuers.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/pkisecretbackendconfigissuers"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/pkisecretbackendconfigissuers"
 
 pkisecretbackendconfigissuers.PkiSecretBackendConfigIssuers_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -798,7 +805,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.pkiSecretBackendConfigIssuers.PkiSecretBackendConfigIssuersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/pkisecretbackendconfigissuers"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/pkisecretbackendconfigissuers"
 
 &pkisecretbackendconfigissuers.PkiSecretBackendConfigIssuersConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultkvsecretslist"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/datavaultkvsecretslist"
 
 datavaultkvsecretslist.NewDataVaultKvSecretsList(scope Construct, id *string, config DataVaultKvSecretsListConfig) DataVaultKvSecretsList
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -120,6 +121,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList.toMetadata"></a>
 
@@ -281,7 +290,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultkvsecretslist"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/datavaultkvsecretslist"
 
 datavaultkvsecretslist.DataVaultKvSecretsList_IsConstruct(x interface{}) *bool
 ```
@@ -313,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultkvsecretslist"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/datavaultkvsecretslist"
 
 datavaultkvsecretslist.DataVaultKvSecretsList_IsTerraformElement(x interface{}) *bool
 ```
@@ -327,7 +336,7 @@ datavaultkvsecretslist.DataVaultKvSecretsList_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultkvsecretslist"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/datavaultkvsecretslist"
 
 datavaultkvsecretslist.DataVaultKvSecretsList_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,7 +350,7 @@ datavaultkvsecretslist.DataVaultKvSecretsList_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultkvsecretslist"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/datavaultkvsecretslist"
 
 datavaultkvsecretslist.DataVaultKvSecretsList_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -625,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsListConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultkvsecretslist"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/datavaultkvsecretslist"
 
 &datavaultkvsecretslist.DataVaultKvSecretsListConfig {
 	Connection: interface{},

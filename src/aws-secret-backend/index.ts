@@ -416,4 +416,96 @@ export class AwsSecretBackend extends cdktf.TerraformResource {
       username_template: cdktf.stringToTerraform(this._usernameTemplate),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      access_key: {
+        value: cdktf.stringToHclTerraform(this._accessKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default_lease_ttl_seconds: {
+        value: cdktf.numberToHclTerraform(this._defaultLeaseTtlSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disable_remount: {
+        value: cdktf.booleanToHclTerraform(this._disableRemount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      iam_endpoint: {
+        value: cdktf.stringToHclTerraform(this._iamEndpoint),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      local: {
+        value: cdktf.booleanToHclTerraform(this._local),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      max_lease_ttl_seconds: {
+        value: cdktf.numberToHclTerraform(this._maxLeaseTtlSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      path: {
+        value: cdktf.stringToHclTerraform(this._path),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secret_key: {
+        value: cdktf.stringToHclTerraform(this._secretKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sts_endpoint: {
+        value: cdktf.stringToHclTerraform(this._stsEndpoint),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      username_template: {
+        value: cdktf.stringToHclTerraform(this._usernameTemplate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

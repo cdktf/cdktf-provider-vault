@@ -196,6 +196,67 @@ export function jwtAuthBackendTuneToTerraform(struct?: JwtAuthBackendTune | cdkt
   }
 }
 
+
+export function jwtAuthBackendTuneToHclTerraform(struct?: JwtAuthBackendTune | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allowed_response_headers: {
+      value: struct!.allowedResponseHeaders === undefined ? null : cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedResponseHeaders),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    audit_non_hmac_request_keys: {
+      value: struct!.auditNonHmacRequestKeys === undefined ? null : cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.auditNonHmacRequestKeys),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    audit_non_hmac_response_keys: {
+      value: struct!.auditNonHmacResponseKeys === undefined ? null : cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.auditNonHmacResponseKeys),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    default_lease_ttl: {
+      value: struct!.defaultLeaseTtl === undefined ? null : cdktf.stringToHclTerraform(struct!.defaultLeaseTtl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    listing_visibility: {
+      value: struct!.listingVisibility === undefined ? null : cdktf.stringToHclTerraform(struct!.listingVisibility),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    max_lease_ttl: {
+      value: struct!.maxLeaseTtl === undefined ? null : cdktf.stringToHclTerraform(struct!.maxLeaseTtl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    passthrough_request_headers: {
+      value: struct!.passthroughRequestHeaders === undefined ? null : cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.passthroughRequestHeaders),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    token_type: {
+      value: struct!.tokenType === undefined ? null : cdktf.stringToHclTerraform(struct!.tokenType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class JwtAuthBackendTuneOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -896,5 +957,145 @@ export class JwtAuthBackend extends cdktf.TerraformResource {
       tune: cdktf.listMapper(jwtAuthBackendTuneToTerraform, false)(this._tune.internalValue),
       type: cdktf.stringToTerraform(this._type),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      bound_issuer: {
+        value: cdktf.stringToHclTerraform(this._boundIssuer),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default_role: {
+        value: cdktf.stringToHclTerraform(this._defaultRole),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disable_remount: {
+        value: cdktf.booleanToHclTerraform(this._disableRemount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      jwks_ca_pem: {
+        value: cdktf.stringToHclTerraform(this._jwksCaPem),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      jwks_url: {
+        value: cdktf.stringToHclTerraform(this._jwksUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      jwt_supported_algs: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._jwtSupportedAlgs),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      jwt_validation_pubkeys: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._jwtValidationPubkeys),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      local: {
+        value: cdktf.booleanToHclTerraform(this._local),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace_in_state: {
+        value: cdktf.booleanToHclTerraform(this._namespaceInState),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      oidc_client_id: {
+        value: cdktf.stringToHclTerraform(this._oidcClientId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      oidc_client_secret: {
+        value: cdktf.stringToHclTerraform(this._oidcClientSecret),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      oidc_discovery_ca_pem: {
+        value: cdktf.stringToHclTerraform(this._oidcDiscoveryCaPem),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      oidc_discovery_url: {
+        value: cdktf.stringToHclTerraform(this._oidcDiscoveryUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      oidc_response_mode: {
+        value: cdktf.stringToHclTerraform(this._oidcResponseMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      oidc_response_types: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._oidcResponseTypes),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      path: {
+        value: cdktf.stringToHclTerraform(this._path),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      provider_config: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._providerConfig),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tune: {
+        value: cdktf.listMapperHcl(jwtAuthBackendTuneToHclTerraform, false)(this._tune.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "JwtAuthBackendTuneList",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

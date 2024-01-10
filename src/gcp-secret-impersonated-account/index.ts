@@ -220,4 +220,48 @@ export class GcpSecretImpersonatedAccount extends cdktf.TerraformResource {
       token_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tokenScopes),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      backend: {
+        value: cdktf.stringToHclTerraform(this._backend),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      impersonated_account: {
+        value: cdktf.stringToHclTerraform(this._impersonatedAccount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_account_email: {
+        value: cdktf.stringToHclTerraform(this._serviceAccountEmail),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      token_scopes: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tokenScopes),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

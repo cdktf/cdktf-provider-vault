@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.awsAuthBackendIdentityWhitelist.AwsAuthBackendIdentityWhitelist.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/awsauthbackendidentitywhitelist"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/awsauthbackendidentitywhitelist"
 
 awsauthbackendidentitywhitelist.NewAwsAuthBackendIdentityWhitelist(scope Construct, id *string, config AwsAuthBackendIdentityWhitelistConfig) AwsAuthBackendIdentityWhitelist
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendIdentityWhitelist.AwsAuthBackendIdentityWhitelist.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendIdentityWhitelist.AwsAuthBackendIdentityWhitelist.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendIdentityWhitelist.AwsAuthBackendIdentityWhitelist.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-vault.awsAuthBackendIdentityWhitelist.AwsAuthBackendIdentityWhitelist.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendIdentityWhitelist.AwsAuthBackendIdentityWhitelist.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendIdentityWhitelist.AwsAuthBackendIdentityWhitelist.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendIdentityWhitelist.AwsAuthBackendIdentityWhitelist.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -129,6 +130,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-vault.awsAuthBackendIdentityWhitelist.AwsAuthBackendIdentityWhitelist.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-vault.awsAuthBackendIdentityWhitelist.AwsAuthBackendIdentityWhitelist.toMetadata"></a>
 
@@ -406,7 +413,7 @@ func ResetSafetyBuffer()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.awsAuthBackendIdentityWhitelist.AwsAuthBackendIdentityWhitelist.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/awsauthbackendidentitywhitelist"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/awsauthbackendidentitywhitelist"
 
 awsauthbackendidentitywhitelist.AwsAuthBackendIdentityWhitelist_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.awsAuthBackendIdentityWhitelist.AwsAuthBackendIdentityWhitelist.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/awsauthbackendidentitywhitelist"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/awsauthbackendidentitywhitelist"
 
 awsauthbackendidentitywhitelist.AwsAuthBackendIdentityWhitelist_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +459,7 @@ awsauthbackendidentitywhitelist.AwsAuthBackendIdentityWhitelist_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.awsAuthBackendIdentityWhitelist.AwsAuthBackendIdentityWhitelist.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/awsauthbackendidentitywhitelist"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/awsauthbackendidentitywhitelist"
 
 awsauthbackendidentitywhitelist.AwsAuthBackendIdentityWhitelist_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +473,7 @@ awsauthbackendidentitywhitelist.AwsAuthBackendIdentityWhitelist_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.awsAuthBackendIdentityWhitelist.AwsAuthBackendIdentityWhitelist.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/awsauthbackendidentitywhitelist"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/awsauthbackendidentitywhitelist"
 
 awsauthbackendidentitywhitelist.AwsAuthBackendIdentityWhitelist_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -805,7 +812,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.awsAuthBackendIdentityWhitelist.AwsAuthBackendIdentityWhitelistConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/awsauthbackendidentitywhitelist"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/awsauthbackendidentitywhitelist"
 
 &awsauthbackendidentitywhitelist.AwsAuthBackendIdentityWhitelistConfig {
 	Connection: interface{},

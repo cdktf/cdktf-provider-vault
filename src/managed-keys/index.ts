@@ -147,6 +147,97 @@ export function managedKeysAwsToTerraform(struct?: ManagedKeysAws | cdktf.IResol
   }
 }
 
+
+export function managedKeysAwsToHclTerraform(struct?: ManagedKeysAws | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    access_key: {
+      value: cdktf.stringToHclTerraform(struct!.accessKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    allow_generate_key: {
+      value: cdktf.booleanToHclTerraform(struct!.allowGenerateKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    allow_replace_key: {
+      value: cdktf.booleanToHclTerraform(struct!.allowReplaceKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    allow_store_key: {
+      value: cdktf.booleanToHclTerraform(struct!.allowStoreKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    any_mount: {
+      value: cdktf.booleanToHclTerraform(struct!.anyMount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    curve: {
+      value: cdktf.stringToHclTerraform(struct!.curve),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    endpoint: {
+      value: cdktf.stringToHclTerraform(struct!.endpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key_bits: {
+      value: cdktf.stringToHclTerraform(struct!.keyBits),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key_type: {
+      value: cdktf.stringToHclTerraform(struct!.keyType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kms_key: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    region: {
+      value: cdktf.stringToHclTerraform(struct!.region),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    secret_key: {
+      value: cdktf.stringToHclTerraform(struct!.secretKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ManagedKeysAwsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -586,6 +677,103 @@ export function managedKeysAzureToTerraform(struct?: ManagedKeysAzure | cdktf.IR
     tenant_id: cdktf.stringToTerraform(struct!.tenantId),
     vault_name: cdktf.stringToTerraform(struct!.vaultName),
   }
+}
+
+
+export function managedKeysAzureToHclTerraform(struct?: ManagedKeysAzure | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allow_generate_key: {
+      value: cdktf.booleanToHclTerraform(struct!.allowGenerateKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    allow_replace_key: {
+      value: cdktf.booleanToHclTerraform(struct!.allowReplaceKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    allow_store_key: {
+      value: cdktf.booleanToHclTerraform(struct!.allowStoreKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    any_mount: {
+      value: cdktf.booleanToHclTerraform(struct!.anyMount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    client_id: {
+      value: cdktf.stringToHclTerraform(struct!.clientId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_secret: {
+      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    environment: {
+      value: cdktf.stringToHclTerraform(struct!.environment),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key_bits: {
+      value: cdktf.stringToHclTerraform(struct!.keyBits),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key_name: {
+      value: cdktf.stringToHclTerraform(struct!.keyName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key_type: {
+      value: cdktf.stringToHclTerraform(struct!.keyType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resource: {
+      value: cdktf.stringToHclTerraform(struct!.resource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tenant_id: {
+      value: cdktf.stringToHclTerraform(struct!.tenantId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    vault_name: {
+      value: cdktf.stringToHclTerraform(struct!.vaultName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ManagedKeysAzureOutputReference extends cdktf.ComplexObject {
@@ -1053,6 +1241,109 @@ export function managedKeysPkcsToTerraform(struct?: ManagedKeysPkcs | cdktf.IRes
     slot: cdktf.stringToTerraform(struct!.slot),
     token_label: cdktf.stringToTerraform(struct!.tokenLabel),
   }
+}
+
+
+export function managedKeysPkcsToHclTerraform(struct?: ManagedKeysPkcs | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allow_generate_key: {
+      value: cdktf.booleanToHclTerraform(struct!.allowGenerateKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    allow_replace_key: {
+      value: cdktf.booleanToHclTerraform(struct!.allowReplaceKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    allow_store_key: {
+      value: cdktf.booleanToHclTerraform(struct!.allowStoreKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    any_mount: {
+      value: cdktf.booleanToHclTerraform(struct!.anyMount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    curve: {
+      value: cdktf.stringToHclTerraform(struct!.curve),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    force_rw_session: {
+      value: cdktf.stringToHclTerraform(struct!.forceRwSession),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key_bits: {
+      value: cdktf.stringToHclTerraform(struct!.keyBits),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key_id: {
+      value: cdktf.stringToHclTerraform(struct!.keyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key_label: {
+      value: cdktf.stringToHclTerraform(struct!.keyLabel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    library: {
+      value: cdktf.stringToHclTerraform(struct!.library),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    mechanism: {
+      value: cdktf.stringToHclTerraform(struct!.mechanism),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    pin: {
+      value: cdktf.stringToHclTerraform(struct!.pin),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    slot: {
+      value: cdktf.stringToHclTerraform(struct!.slot),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    token_label: {
+      value: cdktf.stringToHclTerraform(struct!.tokenLabel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ManagedKeysPkcsOutputReference extends cdktf.ComplexObject {
@@ -1585,5 +1876,43 @@ export class ManagedKeys extends cdktf.TerraformResource {
       azure: cdktf.listMapper(managedKeysAzureToTerraform, true)(this._azure.internalValue),
       pkcs: cdktf.listMapper(managedKeysPkcsToTerraform, true)(this._pkcs.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      aws: {
+        value: cdktf.listMapperHcl(managedKeysAwsToHclTerraform, true)(this._aws.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "ManagedKeysAwsList",
+      },
+      azure: {
+        value: cdktf.listMapperHcl(managedKeysAzureToHclTerraform, true)(this._azure.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "ManagedKeysAzureList",
+      },
+      pkcs: {
+        value: cdktf.listMapperHcl(managedKeysPkcsToHclTerraform, true)(this._pkcs.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "ManagedKeysPkcsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

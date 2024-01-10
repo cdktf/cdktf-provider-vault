@@ -221,4 +221,48 @@ export class KvSecretBackendV2 extends cdktf.TerraformResource {
       namespace: cdktf.stringToTerraform(this._namespace),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cas_required: {
+        value: cdktf.booleanToHclTerraform(this._casRequired),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      delete_version_after: {
+        value: cdktf.numberToHclTerraform(this._deleteVersionAfter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_versions: {
+        value: cdktf.numberToHclTerraform(this._maxVersions),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      mount: {
+        value: cdktf.stringToHclTerraform(this._mount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

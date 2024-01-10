@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultGcpAuthBackendRole.DataVaultGcpAuthBackendRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultgcpauthbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/datavaultgcpauthbackendrole"
 
 datavaultgcpauthbackendrole.NewDataVaultGcpAuthBackendRole(scope Construct, id *string, config DataVaultGcpAuthBackendRoleConfig) DataVaultGcpAuthBackendRole
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.dataVaultGcpAuthBackendRole.DataVaultGcpAuthBackendRole.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultGcpAuthBackendRole.DataVaultGcpAuthBackendRole.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-vault.dataVaultGcpAuthBackendRole.DataVaultGcpAuthBackendRole.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-vault.dataVaultGcpAuthBackendRole.DataVaultGcpAuthBackendRole.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-vault.dataVaultGcpAuthBackendRole.DataVaultGcpAuthBackendRole.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultGcpAuthBackendRole.DataVaultGcpAuthBackendRole.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-vault.dataVaultGcpAuthBackendRole.DataVaultGcpAuthBackendRole.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -130,6 +131,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-vault.dataVaultGcpAuthBackendRole.DataVaultGcpAuthBackendRole.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-vault.dataVaultGcpAuthBackendRole.DataVaultGcpAuthBackendRole.toMetadata"></a>
 
@@ -351,7 +360,7 @@ func ResetTokenType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.dataVaultGcpAuthBackendRole.DataVaultGcpAuthBackendRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultgcpauthbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/datavaultgcpauthbackendrole"
 
 datavaultgcpauthbackendrole.DataVaultGcpAuthBackendRole_IsConstruct(x interface{}) *bool
 ```
@@ -383,7 +392,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.dataVaultGcpAuthBackendRole.DataVaultGcpAuthBackendRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultgcpauthbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/datavaultgcpauthbackendrole"
 
 datavaultgcpauthbackendrole.DataVaultGcpAuthBackendRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -397,7 +406,7 @@ datavaultgcpauthbackendrole.DataVaultGcpAuthBackendRole_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vault.dataVaultGcpAuthBackendRole.DataVaultGcpAuthBackendRole.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultgcpauthbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/datavaultgcpauthbackendrole"
 
 datavaultgcpauthbackendrole.DataVaultGcpAuthBackendRole_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -411,7 +420,7 @@ datavaultgcpauthbackendrole.DataVaultGcpAuthBackendRole_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.dataVaultGcpAuthBackendRole.DataVaultGcpAuthBackendRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultgcpauthbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/datavaultgcpauthbackendrole"
 
 datavaultgcpauthbackendrole.DataVaultGcpAuthBackendRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -992,7 +1001,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.dataVaultGcpAuthBackendRole.DataVaultGcpAuthBackendRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultgcpauthbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/datavaultgcpauthbackendrole"
 
 &datavaultgcpauthbackendrole.DataVaultGcpAuthBackendRoleConfig {
 	Connection: interface{},

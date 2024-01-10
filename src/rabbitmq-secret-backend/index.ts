@@ -383,4 +383,90 @@ export class RabbitmqSecretBackend extends cdktf.TerraformResource {
       verify_connection: cdktf.booleanToTerraform(this._verifyConnection),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      connection_uri: {
+        value: cdktf.stringToHclTerraform(this._connectionUri),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default_lease_ttl_seconds: {
+        value: cdktf.numberToHclTerraform(this._defaultLeaseTtlSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disable_remount: {
+        value: cdktf.booleanToHclTerraform(this._disableRemount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_lease_ttl_seconds: {
+        value: cdktf.numberToHclTerraform(this._maxLeaseTtlSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      password: {
+        value: cdktf.stringToHclTerraform(this._password),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      password_policy: {
+        value: cdktf.stringToHclTerraform(this._passwordPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      path: {
+        value: cdktf.stringToHclTerraform(this._path),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      username: {
+        value: cdktf.stringToHclTerraform(this._username),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      username_template: {
+        value: cdktf.stringToHclTerraform(this._usernameTemplate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      verify_connection: {
+        value: cdktf.booleanToHclTerraform(this._verifyConnection),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

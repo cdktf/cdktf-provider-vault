@@ -391,4 +391,90 @@ export class PkiSecretBackendIssuer extends cdktf.TerraformResource {
       usage: cdktf.stringToTerraform(this._usage),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      backend: {
+        value: cdktf.stringToHclTerraform(this._backend),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      crl_distribution_points: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._crlDistributionPoints),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      enable_aia_url_templating: {
+        value: cdktf.booleanToHclTerraform(this._enableAiaUrlTemplating),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      issuer_name: {
+        value: cdktf.stringToHclTerraform(this._issuerName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      issuer_ref: {
+        value: cdktf.stringToHclTerraform(this._issuerRef),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      issuing_certificates: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._issuingCertificates),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      leaf_not_after_behavior: {
+        value: cdktf.stringToHclTerraform(this._leafNotAfterBehavior),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      manual_chain: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._manualChain),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ocsp_servers: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ocspServers),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      revocation_signature_algorithm: {
+        value: cdktf.stringToHclTerraform(this._revocationSignatureAlgorithm),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      usage: {
+        value: cdktf.stringToHclTerraform(this._usage),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

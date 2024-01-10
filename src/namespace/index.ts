@@ -202,4 +202,42 @@ export class Namespace extends cdktf.TerraformResource {
       path_fq: cdktf.stringToTerraform(this._pathFq),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      custom_metadata: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._customMetadata),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      path: {
+        value: cdktf.stringToHclTerraform(this._path),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      path_fq: {
+        value: cdktf.stringToHclTerraform(this._pathFq),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

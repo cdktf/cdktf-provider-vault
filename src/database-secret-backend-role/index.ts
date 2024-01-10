@@ -380,4 +380,90 @@ export class DatabaseSecretBackendRole extends cdktf.TerraformResource {
       rollback_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(this._rollbackStatements),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      backend: {
+        value: cdktf.stringToHclTerraform(this._backend),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      creation_statements: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._creationStatements),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      credential_config: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._credentialConfig),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      credential_type: {
+        value: cdktf.stringToHclTerraform(this._credentialType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      db_name: {
+        value: cdktf.stringToHclTerraform(this._dbName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default_ttl: {
+        value: cdktf.numberToHclTerraform(this._defaultTtl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_ttl: {
+        value: cdktf.numberToHclTerraform(this._maxTtl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      renew_statements: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._renewStatements),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      revocation_statements: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._revocationStatements),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      rollback_statements: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._rollbackStatements),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

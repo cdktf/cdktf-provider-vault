@@ -489,4 +489,108 @@ export class Token extends cdktf.TerraformResource {
       wrapping_ttl: cdktf.stringToTerraform(this._wrappingTtl),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      explicit_max_ttl: {
+        value: cdktf.stringToHclTerraform(this._explicitMaxTtl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      metadata: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._metadata),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      no_default_policy: {
+        value: cdktf.booleanToHclTerraform(this._noDefaultPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      no_parent: {
+        value: cdktf.booleanToHclTerraform(this._noParent),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      num_uses: {
+        value: cdktf.numberToHclTerraform(this._numUses),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      period: {
+        value: cdktf.stringToHclTerraform(this._period),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policies: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._policies),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      renew_increment: {
+        value: cdktf.numberToHclTerraform(this._renewIncrement),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      renew_min_lease: {
+        value: cdktf.numberToHclTerraform(this._renewMinLease),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      renewable: {
+        value: cdktf.booleanToHclTerraform(this._renewable),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      role_name: {
+        value: cdktf.stringToHclTerraform(this._roleName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ttl: {
+        value: cdktf.stringToHclTerraform(this._ttl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      wrapping_ttl: {
+        value: cdktf.stringToHclTerraform(this._wrappingTtl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

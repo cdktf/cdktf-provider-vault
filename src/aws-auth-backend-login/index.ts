@@ -409,4 +409,84 @@ export class AwsAuthBackendLogin extends cdktf.TerraformResource {
       signature: cdktf.stringToTerraform(this._signature),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      backend: {
+        value: cdktf.stringToHclTerraform(this._backend),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      iam_http_request_method: {
+        value: cdktf.stringToHclTerraform(this._iamHttpRequestMethod),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      iam_request_body: {
+        value: cdktf.stringToHclTerraform(this._iamRequestBody),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      iam_request_headers: {
+        value: cdktf.stringToHclTerraform(this._iamRequestHeaders),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      iam_request_url: {
+        value: cdktf.stringToHclTerraform(this._iamRequestUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      identity: {
+        value: cdktf.stringToHclTerraform(this._identity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      nonce: {
+        value: cdktf.stringToHclTerraform(this._nonce),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      pkcs7: {
+        value: cdktf.stringToHclTerraform(this._pkcs7),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role: {
+        value: cdktf.stringToHclTerraform(this._role),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      signature: {
+        value: cdktf.stringToHclTerraform(this._signature),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

@@ -248,4 +248,54 @@ export class IdentityEntity extends cdktf.TerraformResource {
       policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._policies),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      disabled: {
+        value: cdktf.booleanToHclTerraform(this._disabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      external_policies: {
+        value: cdktf.booleanToHclTerraform(this._externalPolicies),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      metadata: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._metadata),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policies: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._policies),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

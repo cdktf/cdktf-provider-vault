@@ -239,4 +239,54 @@ export class LdapSecretBackendStaticRole extends cdktf.TerraformResource {
       username: cdktf.stringToTerraform(this._username),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      dn: {
+        value: cdktf.stringToHclTerraform(this._dn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mount: {
+        value: cdktf.stringToHclTerraform(this._mount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_name: {
+        value: cdktf.stringToHclTerraform(this._roleName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rotation_period: {
+        value: cdktf.numberToHclTerraform(this._rotationPeriod),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      username: {
+        value: cdktf.stringToHclTerraform(this._username),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

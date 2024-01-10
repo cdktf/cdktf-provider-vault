@@ -277,4 +277,60 @@ export class GenericEndpoint extends cdktf.TerraformResource {
       write_fields: cdktf.listMapper(cdktf.stringToTerraform, false)(this._writeFields),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      data_json: {
+        value: cdktf.stringToHclTerraform(this._dataJson),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disable_delete: {
+        value: cdktf.booleanToHclTerraform(this._disableDelete),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      disable_read: {
+        value: cdktf.booleanToHclTerraform(this._disableRead),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ignore_absent_fields: {
+        value: cdktf.booleanToHclTerraform(this._ignoreAbsentFields),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      path: {
+        value: cdktf.stringToHclTerraform(this._path),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      write_fields: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._writeFields),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

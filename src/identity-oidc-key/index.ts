@@ -245,4 +245,54 @@ export class IdentityOidcKey extends cdktf.TerraformResource {
       verification_ttl: cdktf.numberToTerraform(this._verificationTtl),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      algorithm: {
+        value: cdktf.stringToHclTerraform(this._algorithm),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      allowed_client_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedClientIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rotation_period: {
+        value: cdktf.numberToHclTerraform(this._rotationPeriod),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      verification_ttl: {
+        value: cdktf.numberToHclTerraform(this._verificationTtl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

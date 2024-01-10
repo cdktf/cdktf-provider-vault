@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.addOverride">addOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.toHclTerraform">toHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.toMetadata">toMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -132,6 +133,12 @@ public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-vault.managedKeys.ManagedKeys.toHclTerraform"></a>
+
+```typescript
+public toHclTerraform(): any
+```
 
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-vault.managedKeys.ManagedKeys.toMetadata"></a>
 
@@ -1742,10 +1749,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsList.computeFqn">computeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-vault.managedKeys.ManagedKeysAwsList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-vault.managedKeys.ManagedKeysAwsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
 
 ---
 
@@ -2498,10 +2522,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureList.computeFqn">computeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureList.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-vault.managedKeys.ManagedKeysAzureList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-vault.managedKeys.ManagedKeysAzureList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
 
 ---
 
@@ -3276,10 +3317,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsList.computeFqn">computeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-vault.managedKeys.ManagedKeysPkcsList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-vault.managedKeys.ManagedKeysPkcsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
 
 ---
 

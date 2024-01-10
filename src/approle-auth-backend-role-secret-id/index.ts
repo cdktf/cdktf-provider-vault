@@ -308,4 +308,66 @@ export class ApproleAuthBackendRoleSecretId extends cdktf.TerraformResource {
       wrapping_ttl: cdktf.stringToTerraform(this._wrappingTtl),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      backend: {
+        value: cdktf.stringToHclTerraform(this._backend),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cidr_list: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._cidrList),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      metadata: {
+        value: cdktf.stringToHclTerraform(this._metadata),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_name: {
+        value: cdktf.stringToHclTerraform(this._roleName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secret_id: {
+        value: cdktf.stringToHclTerraform(this._secretId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      with_wrapped_accessor: {
+        value: cdktf.booleanToHclTerraform(this._withWrappedAccessor),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      wrapping_ttl: {
+        value: cdktf.stringToHclTerraform(this._wrappingTtl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

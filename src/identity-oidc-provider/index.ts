@@ -250,4 +250,54 @@ export class IdentityOidcProvider extends cdktf.TerraformResource {
       scopes_supported: cdktf.listMapper(cdktf.stringToTerraform, false)(this._scopesSupported),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      allowed_client_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedClientIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      https_enabled: {
+        value: cdktf.booleanToHclTerraform(this._httpsEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      issuer_host: {
+        value: cdktf.stringToHclTerraform(this._issuerHost),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scopes_supported: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._scopesSupported),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

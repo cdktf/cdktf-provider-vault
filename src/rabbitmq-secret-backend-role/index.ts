@@ -96,6 +96,43 @@ export function rabbitmqSecretBackendRoleVhostToTerraform(struct?: RabbitmqSecre
   }
 }
 
+
+export function rabbitmqSecretBackendRoleVhostToHclTerraform(struct?: RabbitmqSecretBackendRoleVhost | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    configure: {
+      value: cdktf.stringToHclTerraform(struct!.configure),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    host: {
+      value: cdktf.stringToHclTerraform(struct!.host),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    read: {
+      value: cdktf.stringToHclTerraform(struct!.read),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    write: {
+      value: cdktf.stringToHclTerraform(struct!.write),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class RabbitmqSecretBackendRoleVhostOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -263,6 +300,37 @@ export function rabbitmqSecretBackendRoleVhostTopicVhostToTerraform(struct?: Rab
   }
 }
 
+
+export function rabbitmqSecretBackendRoleVhostTopicVhostToHclTerraform(struct?: RabbitmqSecretBackendRoleVhostTopicVhost | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    read: {
+      value: cdktf.stringToHclTerraform(struct!.read),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    topic: {
+      value: cdktf.stringToHclTerraform(struct!.topic),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    write: {
+      value: cdktf.stringToHclTerraform(struct!.write),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class RabbitmqSecretBackendRoleVhostTopicVhostOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -402,6 +470,31 @@ export function rabbitmqSecretBackendRoleVhostTopicToTerraform(struct?: Rabbitmq
     host: cdktf.stringToTerraform(struct!.host),
     vhost: cdktf.listMapper(rabbitmqSecretBackendRoleVhostTopicVhostToTerraform, true)(struct!.vhost),
   }
+}
+
+
+export function rabbitmqSecretBackendRoleVhostTopicToHclTerraform(struct?: RabbitmqSecretBackendRoleVhostTopic | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    host: {
+      value: cdktf.stringToHclTerraform(struct!.host),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    vhost: {
+      value: cdktf.listMapperHcl(rabbitmqSecretBackendRoleVhostTopicVhostToHclTerraform, true)(struct!.vhost),
+      isBlock: true,
+      type: "list",
+      storageClassType: "RabbitmqSecretBackendRoleVhostTopicVhostList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class RabbitmqSecretBackendRoleVhostTopicOutputReference extends cdktf.ComplexObject {
@@ -688,5 +781,55 @@ export class RabbitmqSecretBackendRole extends cdktf.TerraformResource {
       vhost: cdktf.listMapper(rabbitmqSecretBackendRoleVhostToTerraform, true)(this._vhost.internalValue),
       vhost_topic: cdktf.listMapper(rabbitmqSecretBackendRoleVhostTopicToTerraform, true)(this._vhostTopic.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      backend: {
+        value: cdktf.stringToHclTerraform(this._backend),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.stringToHclTerraform(this._tags),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vhost: {
+        value: cdktf.listMapperHcl(rabbitmqSecretBackendRoleVhostToHclTerraform, true)(this._vhost.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "RabbitmqSecretBackendRoleVhostList",
+      },
+      vhost_topic: {
+        value: cdktf.listMapperHcl(rabbitmqSecretBackendRoleVhostTopicToHclTerraform, true)(this._vhostTopic.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "RabbitmqSecretBackendRoleVhostTopicList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

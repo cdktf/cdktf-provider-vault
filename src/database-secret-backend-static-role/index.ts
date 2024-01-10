@@ -308,4 +308,72 @@ export class DatabaseSecretBackendStaticRole extends cdktf.TerraformResource {
       username: cdktf.stringToTerraform(this._username),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      backend: {
+        value: cdktf.stringToHclTerraform(this._backend),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      db_name: {
+        value: cdktf.stringToHclTerraform(this._dbName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rotation_period: {
+        value: cdktf.numberToHclTerraform(this._rotationPeriod),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      rotation_schedule: {
+        value: cdktf.stringToHclTerraform(this._rotationSchedule),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rotation_statements: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._rotationStatements),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      rotation_window: {
+        value: cdktf.numberToHclTerraform(this._rotationWindow),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      username: {
+        value: cdktf.stringToHclTerraform(this._username),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

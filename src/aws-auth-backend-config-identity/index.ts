@@ -248,4 +248,54 @@ export class AwsAuthBackendConfigIdentity extends cdktf.TerraformResource {
       namespace: cdktf.stringToTerraform(this._namespace),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      backend: {
+        value: cdktf.stringToHclTerraform(this._backend),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ec2_alias: {
+        value: cdktf.stringToHclTerraform(this._ec2Alias),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ec2_metadata: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ec2Metadata),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      iam_alias: {
+        value: cdktf.stringToHclTerraform(this._iamAlias),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      iam_metadata: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._iamMetadata),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

@@ -415,4 +415,96 @@ export class Mount extends cdktf.TerraformResource {
       type: cdktf.stringToTerraform(this._type),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      allowed_managed_keys: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedManagedKeys),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      audit_non_hmac_request_keys: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._auditNonHmacRequestKeys),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      audit_non_hmac_response_keys: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._auditNonHmacResponseKeys),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      default_lease_ttl_seconds: {
+        value: cdktf.numberToHclTerraform(this._defaultLeaseTtlSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      external_entropy_access: {
+        value: cdktf.booleanToHclTerraform(this._externalEntropyAccess),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      local: {
+        value: cdktf.booleanToHclTerraform(this._local),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      max_lease_ttl_seconds: {
+        value: cdktf.numberToHclTerraform(this._maxLeaseTtlSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      options: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._options),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      path: {
+        value: cdktf.stringToHclTerraform(this._path),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      seal_wrap: {
+        value: cdktf.booleanToHclTerraform(this._sealWrap),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

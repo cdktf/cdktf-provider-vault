@@ -314,4 +314,72 @@ export class DataVaultTransformDecode extends cdktf.TerraformDataSource {
       value: cdktf.stringToTerraform(this._value),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      batch_input: {
+        value: cdktf.listMapperHcl(cdktf.hashMapperHcl(cdktf.stringToHclTerraform), false)(this._batchInput),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringMapList",
+      },
+      batch_results: {
+        value: cdktf.listMapperHcl(cdktf.hashMapperHcl(cdktf.stringToHclTerraform), false)(this._batchResults),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringMapList",
+      },
+      decoded_value: {
+        value: cdktf.stringToHclTerraform(this._decodedValue),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      path: {
+        value: cdktf.stringToHclTerraform(this._path),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_name: {
+        value: cdktf.stringToHclTerraform(this._roleName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      transformation: {
+        value: cdktf.stringToHclTerraform(this._transformation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tweak: {
+        value: cdktf.stringToHclTerraform(this._tweak),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      value: {
+        value: cdktf.stringToHclTerraform(this._value),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

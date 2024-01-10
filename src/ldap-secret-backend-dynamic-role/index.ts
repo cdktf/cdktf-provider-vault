@@ -311,4 +311,72 @@ export class LdapSecretBackendDynamicRole extends cdktf.TerraformResource {
       username_template: cdktf.stringToTerraform(this._usernameTemplate),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      creation_ldif: {
+        value: cdktf.stringToHclTerraform(this._creationLdif),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default_ttl: {
+        value: cdktf.numberToHclTerraform(this._defaultTtl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      deletion_ldif: {
+        value: cdktf.stringToHclTerraform(this._deletionLdif),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_ttl: {
+        value: cdktf.numberToHclTerraform(this._maxTtl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      mount: {
+        value: cdktf.stringToHclTerraform(this._mount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_name: {
+        value: cdktf.stringToHclTerraform(this._roleName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rollback_ldif: {
+        value: cdktf.stringToHclTerraform(this._rollbackLdif),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      username_template: {
+        value: cdktf.stringToHclTerraform(this._usernameTemplate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

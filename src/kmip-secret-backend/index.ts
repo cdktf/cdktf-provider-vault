@@ -413,4 +413,96 @@ export class KmipSecretBackend extends cdktf.TerraformResource {
       tls_min_version: cdktf.stringToTerraform(this._tlsMinVersion),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      default_tls_client_key_bits: {
+        value: cdktf.numberToHclTerraform(this._defaultTlsClientKeyBits),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      default_tls_client_key_type: {
+        value: cdktf.stringToHclTerraform(this._defaultTlsClientKeyType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default_tls_client_ttl: {
+        value: cdktf.numberToHclTerraform(this._defaultTlsClientTtl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disable_remount: {
+        value: cdktf.booleanToHclTerraform(this._disableRemount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      listen_addrs: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._listenAddrs),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      path: {
+        value: cdktf.stringToHclTerraform(this._path),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      server_hostnames: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._serverHostnames),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      server_ips: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._serverIps),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      tls_ca_key_bits: {
+        value: cdktf.numberToHclTerraform(this._tlsCaKeyBits),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      tls_ca_key_type: {
+        value: cdktf.stringToHclTerraform(this._tlsCaKeyType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tls_min_version: {
+        value: cdktf.stringToHclTerraform(this._tlsMinVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

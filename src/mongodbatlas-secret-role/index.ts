@@ -359,4 +359,84 @@ export class MongodbatlasSecretRole extends cdktf.TerraformResource {
       ttl: cdktf.stringToTerraform(this._ttl),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cidr_blocks: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._cidrBlocks),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ip_addresses: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ipAddresses),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      max_ttl: {
+        value: cdktf.stringToHclTerraform(this._maxTtl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mount: {
+        value: cdktf.stringToHclTerraform(this._mount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      organization_id: {
+        value: cdktf.stringToHclTerraform(this._organizationId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_roles: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._projectRoles),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      roles: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._roles),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      ttl: {
+        value: cdktf.stringToHclTerraform(this._ttl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

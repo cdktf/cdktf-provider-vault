@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/rabbitmqsecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/rabbitmqsecretbackendrole"
 
 rabbitmqsecretbackendrole.NewRabbitmqSecretBackendRole(scope Construct, id *string, config RabbitmqSecretBackendRoleConfig) RabbitmqSecretBackendRole
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRole.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRole.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRole.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRole.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRole.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRole.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRole.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -131,6 +132,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRole.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRole.toMetadata"></a>
 
@@ -432,7 +439,7 @@ func ResetVhostTopic()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/rabbitmqsecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/rabbitmqsecretbackendrole"
 
 rabbitmqsecretbackendrole.RabbitmqSecretBackendRole_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/rabbitmqsecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/rabbitmqsecretbackendrole"
 
 rabbitmqsecretbackendrole.RabbitmqSecretBackendRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +485,7 @@ rabbitmqsecretbackendrole.RabbitmqSecretBackendRole_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/rabbitmqsecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/rabbitmqsecretbackendrole"
 
 rabbitmqsecretbackendrole.RabbitmqSecretBackendRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +499,7 @@ rabbitmqsecretbackendrole.RabbitmqSecretBackendRole_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/rabbitmqsecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/rabbitmqsecretbackendrole"
 
 rabbitmqsecretbackendrole.RabbitmqSecretBackendRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -875,7 +882,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/rabbitmqsecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/rabbitmqsecretbackendrole"
 
 &rabbitmqsecretbackendrole.RabbitmqSecretBackendRoleConfig {
 	Connection: interface{},
@@ -1090,7 +1097,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhost.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/rabbitmqsecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/rabbitmqsecretbackendrole"
 
 &rabbitmqsecretbackendrole.RabbitmqSecretBackendRoleVhost {
 	Configure: *string,
@@ -1172,7 +1179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopic.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/rabbitmqsecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/rabbitmqsecretbackendrole"
 
 &rabbitmqsecretbackendrole.RabbitmqSecretBackendRoleVhostTopic {
 	Host: *string,
@@ -1222,7 +1229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopicVhost.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/rabbitmqsecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/rabbitmqsecretbackendrole"
 
 &rabbitmqsecretbackendrole.RabbitmqSecretBackendRoleVhostTopicVhost {
 	Read: *string,
@@ -1290,7 +1297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/rabbitmqsecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/rabbitmqsecretbackendrole"
 
 rabbitmqsecretbackendrole.NewRabbitmqSecretBackendRoleVhostList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RabbitmqSecretBackendRoleVhostList
 ```
@@ -1331,10 +1338,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1433,7 +1457,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/rabbitmqsecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/rabbitmqsecretbackendrole"
 
 rabbitmqsecretbackendrole.NewRabbitmqSecretBackendRoleVhostOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RabbitmqSecretBackendRoleVhostOutputReference
 ```
@@ -1788,7 +1812,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopicList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/rabbitmqsecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/rabbitmqsecretbackendrole"
 
 rabbitmqsecretbackendrole.NewRabbitmqSecretBackendRoleVhostTopicList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RabbitmqSecretBackendRoleVhostTopicList
 ```
@@ -1829,10 +1853,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopicList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopicList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopicList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopicList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopicList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopicList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopicList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1931,7 +1972,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopicOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/rabbitmqsecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/rabbitmqsecretbackendrole"
 
 rabbitmqsecretbackendrole.NewRabbitmqSecretBackendRoleVhostTopicOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RabbitmqSecretBackendRoleVhostTopicOutputReference
 ```
@@ -2262,7 +2303,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopicVhostList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/rabbitmqsecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/rabbitmqsecretbackendrole"
 
 rabbitmqsecretbackendrole.NewRabbitmqSecretBackendRoleVhostTopicVhostList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RabbitmqSecretBackendRoleVhostTopicVhostList
 ```
@@ -2303,10 +2344,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopicVhostList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopicVhostList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopicVhostList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopicVhostList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopicVhostList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopicVhostList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopicVhostList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -2405,7 +2463,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleVhostTopicVhostOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/rabbitmqsecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/rabbitmqsecretbackendrole"
 
 rabbitmqsecretbackendrole.NewRabbitmqSecretBackendRoleVhostTopicVhostOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RabbitmqSecretBackendRoleVhostTopicVhostOutputReference
 ```
