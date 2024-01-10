@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/pki_secret_backend_root_sign_intermediate
 // generated from terraform resource schema
 
@@ -676,5 +671,157 @@ export class PkiSecretBackendRootSignIntermediate extends cdktf.TerraformResourc
       uri_sans: cdktf.listMapper(cdktf.stringToTerraform, false)(this._uriSans),
       use_csr_values: cdktf.booleanToTerraform(this._useCsrValues),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      alt_names: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._altNames),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      backend: {
+        value: cdktf.stringToHclTerraform(this._backend),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      common_name: {
+        value: cdktf.stringToHclTerraform(this._commonName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      country: {
+        value: cdktf.stringToHclTerraform(this._country),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      csr: {
+        value: cdktf.stringToHclTerraform(this._csr),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      exclude_cn_from_sans: {
+        value: cdktf.booleanToHclTerraform(this._excludeCnFromSans),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      format: {
+        value: cdktf.stringToHclTerraform(this._format),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ip_sans: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ipSans),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      issuer_ref: {
+        value: cdktf.stringToHclTerraform(this._issuerRef),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      locality: {
+        value: cdktf.stringToHclTerraform(this._locality),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_path_length: {
+        value: cdktf.numberToHclTerraform(this._maxPathLength),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      organization: {
+        value: cdktf.stringToHclTerraform(this._organization),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      other_sans: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._otherSans),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      ou: {
+        value: cdktf.stringToHclTerraform(this._ou),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      permitted_dns_domains: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._permittedDnsDomains),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      postal_code: {
+        value: cdktf.stringToHclTerraform(this._postalCode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      province: {
+        value: cdktf.stringToHclTerraform(this._province),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      revoke: {
+        value: cdktf.booleanToHclTerraform(this._revoke),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      street_address: {
+        value: cdktf.stringToHclTerraform(this._streetAddress),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ttl: {
+        value: cdktf.stringToHclTerraform(this._ttl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      uri_sans: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._uriSans),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      use_csr_values: {
+        value: cdktf.booleanToHclTerraform(this._useCsrValues),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

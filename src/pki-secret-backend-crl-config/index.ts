@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/pki_secret_backend_crl_config
 // generated from terraform resource schema
 
@@ -412,5 +407,97 @@ export class PkiSecretBackendCrlConfig extends cdktf.TerraformResource {
       unified_crl: cdktf.booleanToTerraform(this._unifiedCrl),
       unified_crl_on_existing_paths: cdktf.booleanToTerraform(this._unifiedCrlOnExistingPaths),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      auto_rebuild: {
+        value: cdktf.booleanToHclTerraform(this._autoRebuild),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      auto_rebuild_grace_period: {
+        value: cdktf.stringToHclTerraform(this._autoRebuildGracePeriod),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      backend: {
+        value: cdktf.stringToHclTerraform(this._backend),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cross_cluster_revocation: {
+        value: cdktf.booleanToHclTerraform(this._crossClusterRevocation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      delta_rebuild_interval: {
+        value: cdktf.stringToHclTerraform(this._deltaRebuildInterval),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disable: {
+        value: cdktf.booleanToHclTerraform(this._disable),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      enable_delta: {
+        value: cdktf.booleanToHclTerraform(this._enableDelta),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      expiry: {
+        value: cdktf.stringToHclTerraform(this._expiry),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ocsp_disable: {
+        value: cdktf.booleanToHclTerraform(this._ocspDisable),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      ocsp_expiry: {
+        value: cdktf.stringToHclTerraform(this._ocspExpiry),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      unified_crl: {
+        value: cdktf.booleanToHclTerraform(this._unifiedCrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      unified_crl_on_existing_paths: {
+        value: cdktf.booleanToHclTerraform(this._unifiedCrlOnExistingPaths),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

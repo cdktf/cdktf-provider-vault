@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/aws_auth_backend_role
 // generated from terraform resource schema
 
@@ -777,5 +772,187 @@ export class AwsAuthBackendRole extends cdktf.TerraformResource {
       token_ttl: cdktf.numberToTerraform(this._tokenTtl),
       token_type: cdktf.stringToTerraform(this._tokenType),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      allow_instance_migration: {
+        value: cdktf.booleanToHclTerraform(this._allowInstanceMigration),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      auth_type: {
+        value: cdktf.stringToHclTerraform(this._authType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      backend: {
+        value: cdktf.stringToHclTerraform(this._backend),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      bound_account_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._boundAccountIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      bound_ami_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._boundAmiIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      bound_ec2_instance_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._boundEc2InstanceIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      bound_iam_instance_profile_arns: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._boundIamInstanceProfileArns),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      bound_iam_principal_arns: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._boundIamPrincipalArns),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      bound_iam_role_arns: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._boundIamRoleArns),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      bound_regions: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._boundRegions),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      bound_subnet_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._boundSubnetIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      bound_vpc_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._boundVpcIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      disallow_reauthentication: {
+        value: cdktf.booleanToHclTerraform(this._disallowReauthentication),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      inferred_aws_region: {
+        value: cdktf.stringToHclTerraform(this._inferredAwsRegion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      inferred_entity_type: {
+        value: cdktf.stringToHclTerraform(this._inferredEntityType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resolve_aws_unique_ids: {
+        value: cdktf.booleanToHclTerraform(this._resolveAwsUniqueIds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      role: {
+        value: cdktf.stringToHclTerraform(this._role),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_tag: {
+        value: cdktf.stringToHclTerraform(this._roleTag),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      token_bound_cidrs: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tokenBoundCidrs),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      token_explicit_max_ttl: {
+        value: cdktf.numberToHclTerraform(this._tokenExplicitMaxTtl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      token_max_ttl: {
+        value: cdktf.numberToHclTerraform(this._tokenMaxTtl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      token_no_default_policy: {
+        value: cdktf.booleanToHclTerraform(this._tokenNoDefaultPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      token_num_uses: {
+        value: cdktf.numberToHclTerraform(this._tokenNumUses),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      token_period: {
+        value: cdktf.numberToHclTerraform(this._tokenPeriod),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      token_policies: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tokenPolicies),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      token_ttl: {
+        value: cdktf.numberToHclTerraform(this._tokenTtl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      token_type: {
+        value: cdktf.stringToHclTerraform(this._tokenType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

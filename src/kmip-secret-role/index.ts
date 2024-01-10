@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kmip_secret_role
 // generated from terraform resource schema
 
@@ -598,5 +593,145 @@ export class KmipSecretRole extends cdktf.TerraformResource {
       tls_client_key_type: cdktf.stringToTerraform(this._tlsClientKeyType),
       tls_client_ttl: cdktf.numberToTerraform(this._tlsClientTtl),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      operation_activate: {
+        value: cdktf.booleanToHclTerraform(this._operationActivate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      operation_add_attribute: {
+        value: cdktf.booleanToHclTerraform(this._operationAddAttribute),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      operation_all: {
+        value: cdktf.booleanToHclTerraform(this._operationAll),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      operation_create: {
+        value: cdktf.booleanToHclTerraform(this._operationCreate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      operation_destroy: {
+        value: cdktf.booleanToHclTerraform(this._operationDestroy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      operation_discover_versions: {
+        value: cdktf.booleanToHclTerraform(this._operationDiscoverVersions),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      operation_get: {
+        value: cdktf.booleanToHclTerraform(this._operationGet),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      operation_get_attribute_list: {
+        value: cdktf.booleanToHclTerraform(this._operationGetAttributeList),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      operation_get_attributes: {
+        value: cdktf.booleanToHclTerraform(this._operationGetAttributes),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      operation_locate: {
+        value: cdktf.booleanToHclTerraform(this._operationLocate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      operation_none: {
+        value: cdktf.booleanToHclTerraform(this._operationNone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      operation_register: {
+        value: cdktf.booleanToHclTerraform(this._operationRegister),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      operation_rekey: {
+        value: cdktf.booleanToHclTerraform(this._operationRekey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      operation_revoke: {
+        value: cdktf.booleanToHclTerraform(this._operationRevoke),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      path: {
+        value: cdktf.stringToHclTerraform(this._path),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role: {
+        value: cdktf.stringToHclTerraform(this._role),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scope: {
+        value: cdktf.stringToHclTerraform(this._scope),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tls_client_key_bits: {
+        value: cdktf.numberToHclTerraform(this._tlsClientKeyBits),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      tls_client_key_type: {
+        value: cdktf.stringToHclTerraform(this._tlsClientKeyType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tls_client_ttl: {
+        value: cdktf.numberToHclTerraform(this._tlsClientTtl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

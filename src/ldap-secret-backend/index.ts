@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/ldap_secret_backend
 // generated from terraform resource schema
 
@@ -798,5 +793,193 @@ export class LdapSecretBackend extends cdktf.TerraformResource {
       userattr: cdktf.stringToTerraform(this._userattr),
       userdn: cdktf.stringToTerraform(this._userdn),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      allowed_managed_keys: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedManagedKeys),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      audit_non_hmac_request_keys: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._auditNonHmacRequestKeys),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      audit_non_hmac_response_keys: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._auditNonHmacResponseKeys),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      binddn: {
+        value: cdktf.stringToHclTerraform(this._binddn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      bindpass: {
+        value: cdktf.stringToHclTerraform(this._bindpass),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      certificate: {
+        value: cdktf.stringToHclTerraform(this._certificate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      client_tls_cert: {
+        value: cdktf.stringToHclTerraform(this._clientTlsCert),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      client_tls_key: {
+        value: cdktf.stringToHclTerraform(this._clientTlsKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      connection_timeout: {
+        value: cdktf.numberToHclTerraform(this._connectionTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      default_lease_ttl_seconds: {
+        value: cdktf.numberToHclTerraform(this._defaultLeaseTtlSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disable_remount: {
+        value: cdktf.booleanToHclTerraform(this._disableRemount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      external_entropy_access: {
+        value: cdktf.booleanToHclTerraform(this._externalEntropyAccess),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      insecure_tls: {
+        value: cdktf.booleanToHclTerraform(this._insecureTls),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      length: {
+        value: cdktf.numberToHclTerraform(this._length),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      local: {
+        value: cdktf.booleanToHclTerraform(this._local),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      max_lease_ttl_seconds: {
+        value: cdktf.numberToHclTerraform(this._maxLeaseTtlSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      options: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._options),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      password_policy: {
+        value: cdktf.stringToHclTerraform(this._passwordPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      path: {
+        value: cdktf.stringToHclTerraform(this._path),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      request_timeout: {
+        value: cdktf.numberToHclTerraform(this._requestTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      schema: {
+        value: cdktf.stringToHclTerraform(this._schema),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      seal_wrap: {
+        value: cdktf.booleanToHclTerraform(this._sealWrap),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      starttls: {
+        value: cdktf.booleanToHclTerraform(this._starttls),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      upndomain: {
+        value: cdktf.stringToHclTerraform(this._upndomain),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      url: {
+        value: cdktf.stringToHclTerraform(this._url),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      userattr: {
+        value: cdktf.stringToHclTerraform(this._userattr),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      userdn: {
+        value: cdktf.stringToHclTerraform(this._userdn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

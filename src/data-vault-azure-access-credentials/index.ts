@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/data-sources/azure_access_credentials
 // generated from terraform resource schema
 
@@ -369,5 +364,79 @@ export class DataVaultAzureAccessCredentials extends cdktf.TerraformDataSource {
       tenant_id: cdktf.stringToTerraform(this._tenantId),
       validate_creds: cdktf.booleanToTerraform(this._validateCreds),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      backend: {
+        value: cdktf.stringToHclTerraform(this._backend),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      environment: {
+        value: cdktf.stringToHclTerraform(this._environment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_cred_validation_seconds: {
+        value: cdktf.numberToHclTerraform(this._maxCredValidationSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      num_seconds_between_tests: {
+        value: cdktf.numberToHclTerraform(this._numSecondsBetweenTests),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      num_sequential_successes: {
+        value: cdktf.numberToHclTerraform(this._numSequentialSuccesses),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      role: {
+        value: cdktf.stringToHclTerraform(this._role),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      subscription_id: {
+        value: cdktf.stringToHclTerraform(this._subscriptionId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tenant_id: {
+        value: cdktf.stringToHclTerraform(this._tenantId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      validate_creds: {
+        value: cdktf.booleanToHclTerraform(this._validateCreds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

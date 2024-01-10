@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/aws_auth_backend_client
 // generated from terraform resource schema
 
@@ -343,5 +338,79 @@ export class AwsAuthBackendClient extends cdktf.TerraformResource {
       sts_region: cdktf.stringToTerraform(this._stsRegion),
       use_sts_region_from_client: cdktf.booleanToTerraform(this._useStsRegionFromClient),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      access_key: {
+        value: cdktf.stringToHclTerraform(this._accessKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      backend: {
+        value: cdktf.stringToHclTerraform(this._backend),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ec2_endpoint: {
+        value: cdktf.stringToHclTerraform(this._ec2Endpoint),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      iam_endpoint: {
+        value: cdktf.stringToHclTerraform(this._iamEndpoint),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      iam_server_id_header_value: {
+        value: cdktf.stringToHclTerraform(this._iamServerIdHeaderValue),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secret_key: {
+        value: cdktf.stringToHclTerraform(this._secretKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sts_endpoint: {
+        value: cdktf.stringToHclTerraform(this._stsEndpoint),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sts_region: {
+        value: cdktf.stringToHclTerraform(this._stsRegion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      use_sts_region_from_client: {
+        value: cdktf.booleanToHclTerraform(this._useStsRegionFromClient),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

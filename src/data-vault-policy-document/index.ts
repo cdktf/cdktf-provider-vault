@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/data-sources/policy_document
 // generated from terraform resource schema
 
@@ -52,6 +47,31 @@ export function dataVaultPolicyDocumentRuleAllowedParameterToTerraform(struct?: 
     key: cdktf.stringToTerraform(struct!.key),
     value: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.value),
   }
+}
+
+
+export function dataVaultPolicyDocumentRuleAllowedParameterToHclTerraform(struct?: DataVaultPolicyDocumentRuleAllowedParameter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.value),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataVaultPolicyDocumentRuleAllowedParameterOutputReference extends cdktf.ComplexObject {
@@ -170,6 +190,31 @@ export function dataVaultPolicyDocumentRuleDeniedParameterToTerraform(struct?: D
     key: cdktf.stringToTerraform(struct!.key),
     value: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.value),
   }
+}
+
+
+export function dataVaultPolicyDocumentRuleDeniedParameterToHclTerraform(struct?: DataVaultPolicyDocumentRuleDeniedParameter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.value),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataVaultPolicyDocumentRuleDeniedParameterOutputReference extends cdktf.ComplexObject {
@@ -322,6 +367,67 @@ export function dataVaultPolicyDocumentRuleToTerraform(struct?: DataVaultPolicyD
     allowed_parameter: cdktf.listMapper(dataVaultPolicyDocumentRuleAllowedParameterToTerraform, true)(struct!.allowedParameter),
     denied_parameter: cdktf.listMapper(dataVaultPolicyDocumentRuleDeniedParameterToTerraform, true)(struct!.deniedParameter),
   }
+}
+
+
+export function dataVaultPolicyDocumentRuleToHclTerraform(struct?: DataVaultPolicyDocumentRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    capabilities: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.capabilities),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    max_wrapping_ttl: {
+      value: cdktf.stringToHclTerraform(struct!.maxWrappingTtl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    min_wrapping_ttl: {
+      value: cdktf.stringToHclTerraform(struct!.minWrappingTtl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    path: {
+      value: cdktf.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    required_parameters: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.requiredParameters),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    allowed_parameter: {
+      value: cdktf.listMapperHcl(dataVaultPolicyDocumentRuleAllowedParameterToHclTerraform, true)(struct!.allowedParameter),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataVaultPolicyDocumentRuleAllowedParameterList",
+    },
+    denied_parameter: {
+      value: cdktf.listMapperHcl(dataVaultPolicyDocumentRuleDeniedParameterToHclTerraform, true)(struct!.deniedParameter),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataVaultPolicyDocumentRuleDeniedParameterList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataVaultPolicyDocumentRuleOutputReference extends cdktf.ComplexObject {
@@ -676,5 +782,31 @@ export class DataVaultPolicyDocument extends cdktf.TerraformDataSource {
       namespace: cdktf.stringToTerraform(this._namespace),
       rule: cdktf.listMapper(dataVaultPolicyDocumentRuleToTerraform, true)(this._rule.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rule: {
+        value: cdktf.listMapperHcl(dataVaultPolicyDocumentRuleToHclTerraform, true)(this._rule.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataVaultPolicyDocumentRuleList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

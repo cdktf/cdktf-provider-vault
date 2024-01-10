@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/aws_secret_backend_role
 // generated from terraform resource schema
 
@@ -382,5 +377,91 @@ export class AwsSecretBackendRole extends cdktf.TerraformResource {
       role_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._roleArns),
       user_path: cdktf.stringToTerraform(this._userPath),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      backend: {
+        value: cdktf.stringToHclTerraform(this._backend),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      credential_type: {
+        value: cdktf.stringToHclTerraform(this._credentialType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default_sts_ttl: {
+        value: cdktf.numberToHclTerraform(this._defaultStsTtl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      iam_groups: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._iamGroups),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_sts_ttl: {
+        value: cdktf.numberToHclTerraform(this._maxStsTtl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      permissions_boundary_arn: {
+        value: cdktf.stringToHclTerraform(this._permissionsBoundaryArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policy_arns: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._policyArns),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      policy_document: {
+        value: cdktf.stringToHclTerraform(this._policyDocument),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_arns: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._roleArns),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      user_path: {
+        value: cdktf.stringToHclTerraform(this._userPath),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

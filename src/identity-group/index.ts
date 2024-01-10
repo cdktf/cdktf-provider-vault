@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/identity_group
 // generated from terraform resource schema
 
@@ -343,5 +338,79 @@ export class IdentityGroup extends cdktf.TerraformResource {
       policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._policies),
       type: cdktf.stringToTerraform(this._type),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      external_member_entity_ids: {
+        value: cdktf.booleanToHclTerraform(this._externalMemberEntityIds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      external_member_group_ids: {
+        value: cdktf.booleanToHclTerraform(this._externalMemberGroupIds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      external_policies: {
+        value: cdktf.booleanToHclTerraform(this._externalPolicies),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      member_entity_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._memberEntityIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      member_group_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._memberGroupIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      metadata: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._metadata),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policies: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._policies),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

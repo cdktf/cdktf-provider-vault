@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs
 // generated from terraform resource schema
 
@@ -240,6 +235,49 @@ export function vaultProviderAuthLoginToTerraform(struct?: VaultProviderAuthLogi
   }
 }
 
+
+export function vaultProviderAuthLoginToHclTerraform(struct?: VaultProviderAuthLogin): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    method: {
+      value: cdktf.stringToHclTerraform(struct!.method),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    namespace: {
+      value: cdktf.stringToHclTerraform(struct!.namespace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parameters: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.parameters),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    path: {
+      value: cdktf.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    use_root_namespace: {
+      value: cdktf.booleanToHclTerraform(struct!.useRootNamespace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export interface VaultProviderAuthLoginAws {
   /**
   * The AWS access key ID.
@@ -364,6 +402,115 @@ export function vaultProviderAuthLoginAwsToTerraform(struct?: VaultProviderAuthL
   }
 }
 
+
+export function vaultProviderAuthLoginAwsToHclTerraform(struct?: VaultProviderAuthLoginAws): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aws_access_key_id: {
+      value: cdktf.stringToHclTerraform(struct!.awsAccessKeyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    aws_iam_endpoint: {
+      value: cdktf.stringToHclTerraform(struct!.awsIamEndpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    aws_profile: {
+      value: cdktf.stringToHclTerraform(struct!.awsProfile),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    aws_region: {
+      value: cdktf.stringToHclTerraform(struct!.awsRegion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    aws_role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.awsRoleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    aws_role_session_name: {
+      value: cdktf.stringToHclTerraform(struct!.awsRoleSessionName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    aws_secret_access_key: {
+      value: cdktf.stringToHclTerraform(struct!.awsSecretAccessKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    aws_session_token: {
+      value: cdktf.stringToHclTerraform(struct!.awsSessionToken),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    aws_shared_credentials_file: {
+      value: cdktf.stringToHclTerraform(struct!.awsSharedCredentialsFile),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    aws_sts_endpoint: {
+      value: cdktf.stringToHclTerraform(struct!.awsStsEndpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    aws_web_identity_token_file: {
+      value: cdktf.stringToHclTerraform(struct!.awsWebIdentityTokenFile),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    header_value: {
+      value: cdktf.stringToHclTerraform(struct!.headerValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    mount: {
+      value: cdktf.stringToHclTerraform(struct!.mount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    namespace: {
+      value: cdktf.stringToHclTerraform(struct!.namespace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role: {
+      value: cdktf.stringToHclTerraform(struct!.role),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    use_root_namespace: {
+      value: cdktf.booleanToHclTerraform(struct!.useRootNamespace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export interface VaultProviderAuthLoginAzure {
   /**
   * The identity's client ID.
@@ -460,6 +607,91 @@ export function vaultProviderAuthLoginAzureToTerraform(struct?: VaultProviderAut
   }
 }
 
+
+export function vaultProviderAuthLoginAzureToHclTerraform(struct?: VaultProviderAuthLoginAzure): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    client_id: {
+      value: cdktf.stringToHclTerraform(struct!.clientId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    jwt: {
+      value: cdktf.stringToHclTerraform(struct!.jwt),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    mount: {
+      value: cdktf.stringToHclTerraform(struct!.mount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    namespace: {
+      value: cdktf.stringToHclTerraform(struct!.namespace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resource_group_name: {
+      value: cdktf.stringToHclTerraform(struct!.resourceGroupName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role: {
+      value: cdktf.stringToHclTerraform(struct!.role),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    scope: {
+      value: cdktf.stringToHclTerraform(struct!.scope),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    subscription_id: {
+      value: cdktf.stringToHclTerraform(struct!.subscriptionId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tenant_id: {
+      value: cdktf.stringToHclTerraform(struct!.tenantId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    use_root_namespace: {
+      value: cdktf.booleanToHclTerraform(struct!.useRootNamespace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    vm_name: {
+      value: cdktf.stringToHclTerraform(struct!.vmName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    vmss_name: {
+      value: cdktf.stringToHclTerraform(struct!.vmssName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export interface VaultProviderAuthLoginCert {
   /**
   * Path to a file containing the client certificate.
@@ -512,6 +744,55 @@ export function vaultProviderAuthLoginCertToTerraform(struct?: VaultProviderAuth
     namespace: cdktf.stringToTerraform(struct!.namespace),
     use_root_namespace: cdktf.booleanToTerraform(struct!.useRootNamespace),
   }
+}
+
+
+export function vaultProviderAuthLoginCertToHclTerraform(struct?: VaultProviderAuthLoginCert): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cert_file: {
+      value: cdktf.stringToHclTerraform(struct!.certFile),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key_file: {
+      value: cdktf.stringToHclTerraform(struct!.keyFile),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    mount: {
+      value: cdktf.stringToHclTerraform(struct!.mount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    namespace: {
+      value: cdktf.stringToHclTerraform(struct!.namespace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    use_root_namespace: {
+      value: cdktf.booleanToHclTerraform(struct!.useRootNamespace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export interface VaultProviderAuthLoginGcp {
@@ -575,6 +856,61 @@ export function vaultProviderAuthLoginGcpToTerraform(struct?: VaultProviderAuthL
   }
 }
 
+
+export function vaultProviderAuthLoginGcpToHclTerraform(struct?: VaultProviderAuthLoginGcp): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    credentials: {
+      value: cdktf.stringToHclTerraform(struct!.credentials),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    jwt: {
+      value: cdktf.stringToHclTerraform(struct!.jwt),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    mount: {
+      value: cdktf.stringToHclTerraform(struct!.mount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    namespace: {
+      value: cdktf.stringToHclTerraform(struct!.namespace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role: {
+      value: cdktf.stringToHclTerraform(struct!.role),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service_account: {
+      value: cdktf.stringToHclTerraform(struct!.serviceAccount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    use_root_namespace: {
+      value: cdktf.booleanToHclTerraform(struct!.useRootNamespace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export interface VaultProviderAuthLoginJwt {
   /**
   * A signed JSON Web Token.
@@ -620,6 +956,49 @@ export function vaultProviderAuthLoginJwtToTerraform(struct?: VaultProviderAuthL
     role: cdktf.stringToTerraform(struct!.role),
     use_root_namespace: cdktf.booleanToTerraform(struct!.useRootNamespace),
   }
+}
+
+
+export function vaultProviderAuthLoginJwtToHclTerraform(struct?: VaultProviderAuthLoginJwt): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    jwt: {
+      value: cdktf.stringToHclTerraform(struct!.jwt),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    mount: {
+      value: cdktf.stringToHclTerraform(struct!.mount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    namespace: {
+      value: cdktf.stringToHclTerraform(struct!.namespace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role: {
+      value: cdktf.stringToHclTerraform(struct!.role),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    use_root_namespace: {
+      value: cdktf.booleanToHclTerraform(struct!.useRootNamespace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export interface VaultProviderAuthLoginKerberos {
@@ -711,6 +1090,85 @@ export function vaultProviderAuthLoginKerberosToTerraform(struct?: VaultProvider
   }
 }
 
+
+export function vaultProviderAuthLoginKerberosToHclTerraform(struct?: VaultProviderAuthLoginKerberos): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    disable_fast_negotiation: {
+      value: cdktf.booleanToHclTerraform(struct!.disableFastNegotiation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    keytab_path: {
+      value: cdktf.stringToHclTerraform(struct!.keytabPath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    krb5conf_path: {
+      value: cdktf.stringToHclTerraform(struct!.krb5ConfPath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    mount: {
+      value: cdktf.stringToHclTerraform(struct!.mount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    namespace: {
+      value: cdktf.stringToHclTerraform(struct!.namespace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    realm: {
+      value: cdktf.stringToHclTerraform(struct!.realm),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    remove_instance_name: {
+      value: cdktf.booleanToHclTerraform(struct!.removeInstanceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    service: {
+      value: cdktf.stringToHclTerraform(struct!.service),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    token: {
+      value: cdktf.stringToHclTerraform(struct!.token),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    use_root_namespace: {
+      value: cdktf.booleanToHclTerraform(struct!.useRootNamespace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export interface VaultProviderAuthLoginOci {
   /**
   * Authentication type to use when getting OCI credentials.
@@ -756,6 +1214,49 @@ export function vaultProviderAuthLoginOciToTerraform(struct?: VaultProviderAuthL
     role: cdktf.stringToTerraform(struct!.role),
     use_root_namespace: cdktf.booleanToTerraform(struct!.useRootNamespace),
   }
+}
+
+
+export function vaultProviderAuthLoginOciToHclTerraform(struct?: VaultProviderAuthLoginOci): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    auth_type: {
+      value: cdktf.stringToHclTerraform(struct!.authType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    mount: {
+      value: cdktf.stringToHclTerraform(struct!.mount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    namespace: {
+      value: cdktf.stringToHclTerraform(struct!.namespace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role: {
+      value: cdktf.stringToHclTerraform(struct!.role),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    use_root_namespace: {
+      value: cdktf.booleanToHclTerraform(struct!.useRootNamespace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export interface VaultProviderAuthLoginOidc {
@@ -812,6 +1313,55 @@ export function vaultProviderAuthLoginOidcToTerraform(struct?: VaultProviderAuth
   }
 }
 
+
+export function vaultProviderAuthLoginOidcToHclTerraform(struct?: VaultProviderAuthLoginOidc): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    callback_address: {
+      value: cdktf.stringToHclTerraform(struct!.callbackAddress),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    callback_listener_address: {
+      value: cdktf.stringToHclTerraform(struct!.callbackListenerAddress),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    mount: {
+      value: cdktf.stringToHclTerraform(struct!.mount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    namespace: {
+      value: cdktf.stringToHclTerraform(struct!.namespace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role: {
+      value: cdktf.stringToHclTerraform(struct!.role),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    use_root_namespace: {
+      value: cdktf.booleanToHclTerraform(struct!.useRootNamespace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export interface VaultProviderAuthLoginRadius {
   /**
   * The path where the authentication engine is mounted.
@@ -859,6 +1409,49 @@ export function vaultProviderAuthLoginRadiusToTerraform(struct?: VaultProviderAu
   }
 }
 
+
+export function vaultProviderAuthLoginRadiusToHclTerraform(struct?: VaultProviderAuthLoginRadius): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    mount: {
+      value: cdktf.stringToHclTerraform(struct!.mount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    namespace: {
+      value: cdktf.stringToHclTerraform(struct!.namespace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    password: {
+      value: cdktf.stringToHclTerraform(struct!.password),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    use_root_namespace: {
+      value: cdktf.booleanToHclTerraform(struct!.useRootNamespace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export interface VaultProviderAuthLoginTokenFile {
   /**
   * The name of a file containing a single line that is a valid Vault token
@@ -890,6 +1483,37 @@ export function vaultProviderAuthLoginTokenFileToTerraform(struct?: VaultProvide
     namespace: cdktf.stringToTerraform(struct!.namespace),
     use_root_namespace: cdktf.booleanToTerraform(struct!.useRootNamespace),
   }
+}
+
+
+export function vaultProviderAuthLoginTokenFileToHclTerraform(struct?: VaultProviderAuthLoginTokenFile): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    filename: {
+      value: cdktf.stringToHclTerraform(struct!.filename),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    namespace: {
+      value: cdktf.stringToHclTerraform(struct!.namespace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    use_root_namespace: {
+      value: cdktf.booleanToHclTerraform(struct!.useRootNamespace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export interface VaultProviderAuthLoginUserpass {
@@ -946,6 +1570,55 @@ export function vaultProviderAuthLoginUserpassToTerraform(struct?: VaultProvider
   }
 }
 
+
+export function vaultProviderAuthLoginUserpassToHclTerraform(struct?: VaultProviderAuthLoginUserpass): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    mount: {
+      value: cdktf.stringToHclTerraform(struct!.mount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    namespace: {
+      value: cdktf.stringToHclTerraform(struct!.namespace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    password: {
+      value: cdktf.stringToHclTerraform(struct!.password),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    password_file: {
+      value: cdktf.stringToHclTerraform(struct!.passwordFile),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    use_root_namespace: {
+      value: cdktf.booleanToHclTerraform(struct!.useRootNamespace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export interface VaultProviderClientAuth {
   /**
   * Path to a file containing the client certificate.
@@ -972,6 +1645,31 @@ export function vaultProviderClientAuthToTerraform(struct?: VaultProviderClientA
   }
 }
 
+
+export function vaultProviderClientAuthToHclTerraform(struct?: VaultProviderClientAuth): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cert_file: {
+      value: cdktf.stringToHclTerraform(struct!.certFile),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key_file: {
+      value: cdktf.stringToHclTerraform(struct!.keyFile),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export interface VaultProviderHeaders {
   /**
   * The header name
@@ -996,6 +1694,31 @@ export function vaultProviderHeadersToTerraform(struct?: VaultProviderHeaders | 
     name: cdktf.stringToTerraform(struct!.name),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function vaultProviderHeadersToHclTerraform(struct?: VaultProviderHeaders | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 
@@ -1612,5 +2335,199 @@ export class VaultProvider extends cdktf.TerraformProvider {
       client_auth: vaultProviderClientAuthToTerraform(this._clientAuth),
       headers: cdktf.listMapper(vaultProviderHeadersToTerraform, true)(this._headers),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      add_address_to_env: {
+        value: cdktf.stringToHclTerraform(this._addAddressToEnv),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      address: {
+        value: cdktf.stringToHclTerraform(this._address),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ca_cert_dir: {
+        value: cdktf.stringToHclTerraform(this._caCertDir),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ca_cert_file: {
+        value: cdktf.stringToHclTerraform(this._caCertFile),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_lease_ttl_seconds: {
+        value: cdktf.numberToHclTerraform(this._maxLeaseTtlSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      max_retries: {
+        value: cdktf.numberToHclTerraform(this._maxRetries),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      max_retries_ccc: {
+        value: cdktf.numberToHclTerraform(this._maxRetriesCcc),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      set_namespace_from_token: {
+        value: cdktf.booleanToHclTerraform(this._setNamespaceFromToken),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      skip_child_token: {
+        value: cdktf.booleanToHclTerraform(this._skipChildToken),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      skip_get_vault_version: {
+        value: cdktf.booleanToHclTerraform(this._skipGetVaultVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      skip_tls_verify: {
+        value: cdktf.booleanToHclTerraform(this._skipTlsVerify),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tls_server_name: {
+        value: cdktf.stringToHclTerraform(this._tlsServerName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      token: {
+        value: cdktf.stringToHclTerraform(this._token),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      token_name: {
+        value: cdktf.stringToHclTerraform(this._tokenName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vault_version_override: {
+        value: cdktf.stringToHclTerraform(this._vaultVersionOverride),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      alias: {
+        value: cdktf.stringToHclTerraform(this._alias),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      auth_login: {
+        value: vaultProviderAuthLoginToHclTerraform(this._authLogin),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VaultProviderAuthLoginList",
+      },
+      auth_login_aws: {
+        value: vaultProviderAuthLoginAwsToHclTerraform(this._authLoginAws),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VaultProviderAuthLoginAwsList",
+      },
+      auth_login_azure: {
+        value: vaultProviderAuthLoginAzureToHclTerraform(this._authLoginAzure),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VaultProviderAuthLoginAzureList",
+      },
+      auth_login_cert: {
+        value: vaultProviderAuthLoginCertToHclTerraform(this._authLoginCert),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VaultProviderAuthLoginCertList",
+      },
+      auth_login_gcp: {
+        value: vaultProviderAuthLoginGcpToHclTerraform(this._authLoginGcp),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VaultProviderAuthLoginGcpList",
+      },
+      auth_login_jwt: {
+        value: vaultProviderAuthLoginJwtToHclTerraform(this._authLoginJwt),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VaultProviderAuthLoginJwtList",
+      },
+      auth_login_kerberos: {
+        value: vaultProviderAuthLoginKerberosToHclTerraform(this._authLoginKerberos),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VaultProviderAuthLoginKerberosList",
+      },
+      auth_login_oci: {
+        value: vaultProviderAuthLoginOciToHclTerraform(this._authLoginOci),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VaultProviderAuthLoginOciList",
+      },
+      auth_login_oidc: {
+        value: vaultProviderAuthLoginOidcToHclTerraform(this._authLoginOidc),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VaultProviderAuthLoginOidcList",
+      },
+      auth_login_radius: {
+        value: vaultProviderAuthLoginRadiusToHclTerraform(this._authLoginRadius),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VaultProviderAuthLoginRadiusList",
+      },
+      auth_login_token_file: {
+        value: vaultProviderAuthLoginTokenFileToHclTerraform(this._authLoginTokenFile),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VaultProviderAuthLoginTokenFileList",
+      },
+      auth_login_userpass: {
+        value: vaultProviderAuthLoginUserpassToHclTerraform(this._authLoginUserpass),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VaultProviderAuthLoginUserpassList",
+      },
+      client_auth: {
+        value: vaultProviderClientAuthToHclTerraform(this._clientAuth),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VaultProviderClientAuthList",
+      },
+      headers: {
+        value: cdktf.listMapperHcl(vaultProviderHeadersToHclTerraform, true)(this._headers),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VaultProviderHeadersList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

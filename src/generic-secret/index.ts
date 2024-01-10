@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/generic_secret
 // generated from terraform resource schema
 
@@ -223,5 +218,49 @@ export class GenericSecret extends cdktf.TerraformResource {
       namespace: cdktf.stringToTerraform(this._namespace),
       path: cdktf.stringToTerraform(this._path),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      data_json: {
+        value: cdktf.stringToHclTerraform(this._dataJson),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      delete_all_versions: {
+        value: cdktf.booleanToHclTerraform(this._deleteAllVersions),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      disable_read: {
+        value: cdktf.booleanToHclTerraform(this._disableRead),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      path: {
+        value: cdktf.stringToHclTerraform(this._path),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

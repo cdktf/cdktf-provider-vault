@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/mfa_totp
 // generated from terraform resource schema
 
@@ -315,5 +310,73 @@ export class MfaTotp extends cdktf.TerraformResource {
       qr_size: cdktf.numberToTerraform(this._qrSize),
       skew: cdktf.numberToTerraform(this._skew),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      algorithm: {
+        value: cdktf.stringToHclTerraform(this._algorithm),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      digits: {
+        value: cdktf.numberToHclTerraform(this._digits),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      issuer: {
+        value: cdktf.stringToHclTerraform(this._issuer),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      key_size: {
+        value: cdktf.numberToHclTerraform(this._keySize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      period: {
+        value: cdktf.numberToHclTerraform(this._period),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      qr_size: {
+        value: cdktf.numberToHclTerraform(this._qrSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      skew: {
+        value: cdktf.numberToHclTerraform(this._skew),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

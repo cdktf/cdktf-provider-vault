@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/identity_entity_policies
 // generated from terraform resource schema
 
@@ -198,5 +193,43 @@ export class IdentityEntityPolicies extends cdktf.TerraformResource {
       namespace: cdktf.stringToTerraform(this._namespace),
       policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._policies),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      entity_id: {
+        value: cdktf.stringToHclTerraform(this._entityId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      exclusive: {
+        value: cdktf.booleanToHclTerraform(this._exclusive),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policies: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._policies),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

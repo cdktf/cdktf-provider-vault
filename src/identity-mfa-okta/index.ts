@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/identity_mfa_okta
 // generated from terraform resource schema
 
@@ -276,5 +271,55 @@ export class IdentityMfaOkta extends cdktf.TerraformResource {
       primary_email: cdktf.booleanToTerraform(this._primaryEmail),
       username_format: cdktf.stringToTerraform(this._usernameFormat),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      api_token: {
+        value: cdktf.stringToHclTerraform(this._apiToken),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      base_url: {
+        value: cdktf.stringToHclTerraform(this._baseUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      org_name: {
+        value: cdktf.stringToHclTerraform(this._orgName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      primary_email: {
+        value: cdktf.booleanToHclTerraform(this._primaryEmail),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      username_format: {
+        value: cdktf.stringToHclTerraform(this._usernameFormat),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

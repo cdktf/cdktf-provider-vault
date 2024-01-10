@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/azure_secret_backend_role
 // generated from terraform resource schema
 
@@ -95,6 +90,25 @@ export function azureSecretBackendRoleAzureGroupsToTerraform(struct?: AzureSecre
   return {
     group_name: cdktf.stringToTerraform(struct!.groupName),
   }
+}
+
+
+export function azureSecretBackendRoleAzureGroupsToHclTerraform(struct?: AzureSecretBackendRoleAzureGroups | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    group_name: {
+      value: cdktf.stringToHclTerraform(struct!.groupName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AzureSecretBackendRoleAzureGroupsOutputReference extends cdktf.ComplexObject {
@@ -204,6 +218,37 @@ export function azureSecretBackendRoleAzureRolesToTerraform(struct?: AzureSecret
     role_name: cdktf.stringToTerraform(struct!.roleName),
     scope: cdktf.stringToTerraform(struct!.scope),
   }
+}
+
+
+export function azureSecretBackendRoleAzureRolesToHclTerraform(struct?: AzureSecretBackendRoleAzureRoles | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    role_id: {
+      value: cdktf.stringToHclTerraform(struct!.roleId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role_name: {
+      value: cdktf.stringToHclTerraform(struct!.roleName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    scope: {
+      value: cdktf.stringToHclTerraform(struct!.scope),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AzureSecretBackendRoleAzureRolesOutputReference extends cdktf.ComplexObject {
@@ -587,5 +632,79 @@ export class AzureSecretBackendRole extends cdktf.TerraformResource {
       azure_groups: cdktf.listMapper(azureSecretBackendRoleAzureGroupsToTerraform, true)(this._azureGroups.internalValue),
       azure_roles: cdktf.listMapper(azureSecretBackendRoleAzureRolesToTerraform, true)(this._azureRoles.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      application_object_id: {
+        value: cdktf.stringToHclTerraform(this._applicationObjectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      backend: {
+        value: cdktf.stringToHclTerraform(this._backend),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_ttl: {
+        value: cdktf.stringToHclTerraform(this._maxTtl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      permanently_delete: {
+        value: cdktf.booleanToHclTerraform(this._permanentlyDelete),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      role: {
+        value: cdktf.stringToHclTerraform(this._role),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ttl: {
+        value: cdktf.stringToHclTerraform(this._ttl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      azure_groups: {
+        value: cdktf.listMapperHcl(azureSecretBackendRoleAzureGroupsToHclTerraform, true)(this._azureGroups.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "AzureSecretBackendRoleAzureGroupsList",
+      },
+      azure_roles: {
+        value: cdktf.listMapperHcl(azureSecretBackendRoleAzureRolesToHclTerraform, true)(this._azureRoles.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "AzureSecretBackendRoleAzureRolesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

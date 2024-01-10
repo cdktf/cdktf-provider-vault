@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/adsecretlibrary"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/adsecretlibrary"
 
 adsecretlibrary.NewAdSecretLibrary(scope Construct, id *string, config AdSecretLibraryConfig) AdSecretLibrary
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -129,6 +130,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.toMetadata"></a>
 
@@ -406,7 +413,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/adsecretlibrary"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/adsecretlibrary"
 
 adsecretlibrary.AdSecretLibrary_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/adsecretlibrary"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/adsecretlibrary"
 
 adsecretlibrary.AdSecretLibrary_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +459,7 @@ adsecretlibrary.AdSecretLibrary_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/adsecretlibrary"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/adsecretlibrary"
 
 adsecretlibrary.AdSecretLibrary_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +473,7 @@ adsecretlibrary.AdSecretLibrary_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.adSecretLibrary.AdSecretLibrary.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/adsecretlibrary"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/adsecretlibrary"
 
 adsecretlibrary.AdSecretLibrary_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -871,7 +878,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.adSecretLibrary.AdSecretLibraryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/adsecretlibrary"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/adsecretlibrary"
 
 &adsecretlibrary.AdSecretLibraryConfig {
 	Connection: interface{},

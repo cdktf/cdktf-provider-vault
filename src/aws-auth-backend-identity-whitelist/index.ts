@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/aws_auth_backend_identity_whitelist
 // generated from terraform resource schema
 
@@ -199,5 +194,43 @@ export class AwsAuthBackendIdentityWhitelist extends cdktf.TerraformResource {
       namespace: cdktf.stringToTerraform(this._namespace),
       safety_buffer: cdktf.numberToTerraform(this._safetyBuffer),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      backend: {
+        value: cdktf.stringToHclTerraform(this._backend),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disable_periodic_tidy: {
+        value: cdktf.booleanToHclTerraform(this._disablePeriodicTidy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      safety_buffer: {
+        value: cdktf.numberToHclTerraform(this._safetyBuffer),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

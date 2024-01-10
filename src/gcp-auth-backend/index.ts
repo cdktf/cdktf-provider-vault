@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/gcp_auth_backend
 // generated from terraform resource schema
 
@@ -110,6 +105,43 @@ export function gcpAuthBackendCustomEndpointToTerraform(struct?: GcpAuthBackendC
     crm: cdktf.stringToTerraform(struct!.crm),
     iam: cdktf.stringToTerraform(struct!.iam),
   }
+}
+
+
+export function gcpAuthBackendCustomEndpointToHclTerraform(struct?: GcpAuthBackendCustomEndpointOutputReference | GcpAuthBackendCustomEndpoint): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    api: {
+      value: cdktf.stringToHclTerraform(struct!.api),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    compute: {
+      value: cdktf.stringToHclTerraform(struct!.compute),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    crm: {
+      value: cdktf.stringToHclTerraform(struct!.crm),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    iam: {
+      value: cdktf.stringToHclTerraform(struct!.iam),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GcpAuthBackendCustomEndpointOutputReference extends cdktf.ComplexObject {
@@ -512,5 +544,85 @@ export class GcpAuthBackend extends cdktf.TerraformResource {
       project_id: cdktf.stringToTerraform(this._projectId),
       custom_endpoint: gcpAuthBackendCustomEndpointToTerraform(this._customEndpoint.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      client_email: {
+        value: cdktf.stringToHclTerraform(this._clientEmail),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      client_id: {
+        value: cdktf.stringToHclTerraform(this._clientId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      credentials: {
+        value: cdktf.stringToHclTerraform(this._credentials),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disable_remount: {
+        value: cdktf.booleanToHclTerraform(this._disableRemount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      local: {
+        value: cdktf.booleanToHclTerraform(this._local),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      path: {
+        value: cdktf.stringToHclTerraform(this._path),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      private_key_id: {
+        value: cdktf.stringToHclTerraform(this._privateKeyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      custom_endpoint: {
+        value: gcpAuthBackendCustomEndpointToHclTerraform(this._customEndpoint.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GcpAuthBackendCustomEndpointList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

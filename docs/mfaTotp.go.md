@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.mfaTotp.MfaTotp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/mfatotp"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/mfatotp"
 
 mfatotp.NewMfaTotp(scope Construct, id *string, config MfaTotpConfig) MfaTotp
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.mfaTotp.MfaTotp.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaTotp.MfaTotp.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-vault.mfaTotp.MfaTotp.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-vault.mfaTotp.MfaTotp.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaTotp.MfaTotp.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mfaTotp.MfaTotp.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-vault.mfaTotp.MfaTotp.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -132,6 +133,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-vault.mfaTotp.MfaTotp.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-vault.mfaTotp.MfaTotp.toMetadata"></a>
 
@@ -427,7 +434,7 @@ func ResetSkew()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.mfaTotp.MfaTotp.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/mfatotp"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/mfatotp"
 
 mfatotp.MfaTotp_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.mfaTotp.MfaTotp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/mfatotp"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/mfatotp"
 
 mfatotp.MfaTotp_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +480,7 @@ mfatotp.MfaTotp_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.mfaTotp.MfaTotp.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/mfatotp"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/mfatotp"
 
 mfatotp.MfaTotp_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +494,7 @@ mfatotp.MfaTotp_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.mfaTotp.MfaTotp.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/mfatotp"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/mfatotp"
 
 mfatotp.MfaTotp_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -936,7 +943,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.mfaTotp.MfaTotpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v11/mfatotp"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/mfatotp"
 
 &mfatotp.MfaTotpConfig {
 	Connection: interface{},

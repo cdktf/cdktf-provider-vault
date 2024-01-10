@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/ssh_secret_backend_role
 // generated from terraform resource schema
 
@@ -161,6 +156,31 @@ export function sshSecretBackendRoleAllowedUserKeyConfigToTerraform(struct?: Ssh
     lengths: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.lengths),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function sshSecretBackendRoleAllowedUserKeyConfigToHclTerraform(struct?: SshSecretBackendRoleAllowedUserKeyConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    lengths: {
+      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.lengths),
+      isBlock: false,
+      type: "list",
+      storageClassType: "numberList",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SshSecretBackendRoleAllowedUserKeyConfigOutputReference extends cdktf.ComplexObject {
@@ -819,5 +839,181 @@ export class SshSecretBackendRole extends cdktf.TerraformResource {
       ttl: cdktf.stringToTerraform(this._ttl),
       allowed_user_key_config: cdktf.listMapper(sshSecretBackendRoleAllowedUserKeyConfigToTerraform, true)(this._allowedUserKeyConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      algorithm_signer: {
+        value: cdktf.stringToHclTerraform(this._algorithmSigner),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      allow_bare_domains: {
+        value: cdktf.booleanToHclTerraform(this._allowBareDomains),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      allow_host_certificates: {
+        value: cdktf.booleanToHclTerraform(this._allowHostCertificates),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      allow_subdomains: {
+        value: cdktf.booleanToHclTerraform(this._allowSubdomains),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      allow_user_certificates: {
+        value: cdktf.booleanToHclTerraform(this._allowUserCertificates),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      allow_user_key_ids: {
+        value: cdktf.booleanToHclTerraform(this._allowUserKeyIds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      allowed_critical_options: {
+        value: cdktf.stringToHclTerraform(this._allowedCriticalOptions),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      allowed_domains: {
+        value: cdktf.stringToHclTerraform(this._allowedDomains),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      allowed_domains_template: {
+        value: cdktf.booleanToHclTerraform(this._allowedDomainsTemplate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      allowed_extensions: {
+        value: cdktf.stringToHclTerraform(this._allowedExtensions),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      allowed_user_key_lengths: {
+        value: cdktf.hashMapperHcl(cdktf.numberToHclTerraform)(this._allowedUserKeyLengths),
+        isBlock: false,
+        type: "map",
+        storageClassType: "numberMap",
+      },
+      allowed_users: {
+        value: cdktf.stringToHclTerraform(this._allowedUsers),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      allowed_users_template: {
+        value: cdktf.booleanToHclTerraform(this._allowedUsersTemplate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      backend: {
+        value: cdktf.stringToHclTerraform(this._backend),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cidr_list: {
+        value: cdktf.stringToHclTerraform(this._cidrList),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default_critical_options: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._defaultCriticalOptions),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      default_extensions: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._defaultExtensions),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      default_user: {
+        value: cdktf.stringToHclTerraform(this._defaultUser),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default_user_template: {
+        value: cdktf.booleanToHclTerraform(this._defaultUserTemplate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      key_id_format: {
+        value: cdktf.stringToHclTerraform(this._keyIdFormat),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      key_type: {
+        value: cdktf.stringToHclTerraform(this._keyType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_ttl: {
+        value: cdktf.stringToHclTerraform(this._maxTtl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      not_before_duration: {
+        value: cdktf.stringToHclTerraform(this._notBeforeDuration),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ttl: {
+        value: cdktf.stringToHclTerraform(this._ttl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      allowed_user_key_config: {
+        value: cdktf.listMapperHcl(sshSecretBackendRoleAllowedUserKeyConfigToHclTerraform, true)(this._allowedUserKeyConfig.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "SshSecretBackendRoleAllowedUserKeyConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

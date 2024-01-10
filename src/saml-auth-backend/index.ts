@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/saml_auth_backend
 // generated from terraform resource schema
 
@@ -361,5 +356,85 @@ export class SamlAuthBackend extends cdktf.TerraformResource {
       path: cdktf.stringToTerraform(this._path),
       verbose_logging: cdktf.booleanToTerraform(this._verboseLogging),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      acs_urls: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._acsUrls),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      default_role: {
+        value: cdktf.stringToHclTerraform(this._defaultRole),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disable_remount: {
+        value: cdktf.booleanToHclTerraform(this._disableRemount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      entity_id: {
+        value: cdktf.stringToHclTerraform(this._entityId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      idp_cert: {
+        value: cdktf.stringToHclTerraform(this._idpCert),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      idp_entity_id: {
+        value: cdktf.stringToHclTerraform(this._idpEntityId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      idp_metadata_url: {
+        value: cdktf.stringToHclTerraform(this._idpMetadataUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      idp_sso_url: {
+        value: cdktf.stringToHclTerraform(this._idpSsoUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      path: {
+        value: cdktf.stringToHclTerraform(this._path),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      verbose_logging: {
+        value: cdktf.booleanToHclTerraform(this._verboseLogging),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

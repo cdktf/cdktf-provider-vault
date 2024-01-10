@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/identity_mfa_duo
 // generated from terraform resource schema
 
@@ -297,5 +292,61 @@ export class IdentityMfaDuo extends cdktf.TerraformResource {
       use_passcode: cdktf.booleanToTerraform(this._usePasscode),
       username_format: cdktf.stringToTerraform(this._usernameFormat),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      api_hostname: {
+        value: cdktf.stringToHclTerraform(this._apiHostname),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      integration_key: {
+        value: cdktf.stringToHclTerraform(this._integrationKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      push_info: {
+        value: cdktf.stringToHclTerraform(this._pushInfo),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secret_key: {
+        value: cdktf.stringToHclTerraform(this._secretKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      use_passcode: {
+        value: cdktf.booleanToHclTerraform(this._usePasscode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      username_format: {
+        value: cdktf.stringToHclTerraform(this._usernameFormat),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/okta_auth_backend
 // generated from terraform resource schema
 
@@ -108,6 +103,31 @@ export function oktaAuthBackendGroupToTerraform(struct?: OktaAuthBackendGroup | 
     group_name: struct!.groupName === undefined ? null : cdktf.stringToTerraform(struct!.groupName),
     policies: struct!.policies === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.policies),
   }
+}
+
+
+export function oktaAuthBackendGroupToHclTerraform(struct?: OktaAuthBackendGroup | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    group_name: {
+      value: struct!.groupName === undefined ? null : cdktf.stringToHclTerraform(struct!.groupName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    policies: {
+      value: struct!.policies === undefined ? null : cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.policies),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OktaAuthBackendGroupOutputReference extends cdktf.ComplexObject {
@@ -237,6 +257,37 @@ export function oktaAuthBackendUserToTerraform(struct?: OktaAuthBackendUser | cd
     policies: struct!.policies === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.policies),
     username: struct!.username === undefined ? null : cdktf.stringToTerraform(struct!.username),
   }
+}
+
+
+export function oktaAuthBackendUserToHclTerraform(struct?: OktaAuthBackendUser | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    groups: {
+      value: struct!.groups === undefined ? null : cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.groups),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    policies: {
+      value: struct!.policies === undefined ? null : cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.policies),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    username: {
+      value: struct!.username === undefined ? null : cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OktaAuthBackendUserOutputReference extends cdktf.ComplexObject {
@@ -664,5 +715,91 @@ export class OktaAuthBackend extends cdktf.TerraformResource {
       ttl: cdktf.stringToTerraform(this._ttl),
       user: cdktf.listMapper(oktaAuthBackendUserToTerraform, false)(this._user.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      base_url: {
+        value: cdktf.stringToHclTerraform(this._baseUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      bypass_okta_mfa: {
+        value: cdktf.booleanToHclTerraform(this._bypassOktaMfa),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disable_remount: {
+        value: cdktf.booleanToHclTerraform(this._disableRemount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      group: {
+        value: cdktf.listMapperHcl(oktaAuthBackendGroupToHclTerraform, false)(this._group.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "OktaAuthBackendGroupList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_ttl: {
+        value: cdktf.stringToHclTerraform(this._maxTtl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      organization: {
+        value: cdktf.stringToHclTerraform(this._organization),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      path: {
+        value: cdktf.stringToHclTerraform(this._path),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      token: {
+        value: cdktf.stringToHclTerraform(this._token),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ttl: {
+        value: cdktf.stringToHclTerraform(this._ttl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user: {
+        value: cdktf.listMapperHcl(oktaAuthBackendUserToHclTerraform, false)(this._user.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "OktaAuthBackendUserList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

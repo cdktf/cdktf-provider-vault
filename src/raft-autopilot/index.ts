@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/raft_autopilot
 // generated from terraform resource schema
 
@@ -295,5 +290,67 @@ export class RaftAutopilot extends cdktf.TerraformResource {
       namespace: cdktf.stringToTerraform(this._namespace),
       server_stabilization_time: cdktf.stringToTerraform(this._serverStabilizationTime),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cleanup_dead_servers: {
+        value: cdktf.booleanToHclTerraform(this._cleanupDeadServers),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      dead_server_last_contact_threshold: {
+        value: cdktf.stringToHclTerraform(this._deadServerLastContactThreshold),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disable_upgrade_migration: {
+        value: cdktf.booleanToHclTerraform(this._disableUpgradeMigration),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      last_contact_threshold: {
+        value: cdktf.stringToHclTerraform(this._lastContactThreshold),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_trailing_logs: {
+        value: cdktf.numberToHclTerraform(this._maxTrailingLogs),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      min_quorum: {
+        value: cdktf.numberToHclTerraform(this._minQuorum),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      server_stabilization_time: {
+        value: cdktf.stringToHclTerraform(this._serverStabilizationTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

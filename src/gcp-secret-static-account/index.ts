@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/gcp_secret_static_account
 // generated from terraform resource schema
 
@@ -86,6 +81,31 @@ export function gcpSecretStaticAccountBindingToTerraform(struct?: GcpSecretStati
     resource: cdktf.stringToTerraform(struct!.resource),
     roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.roles),
   }
+}
+
+
+export function gcpSecretStaticAccountBindingToHclTerraform(struct?: GcpSecretStaticAccountBinding | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    resource: {
+      value: cdktf.stringToHclTerraform(struct!.resource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    roles: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.roles),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GcpSecretStaticAccountBindingOutputReference extends cdktf.ComplexObject {
@@ -389,5 +409,61 @@ export class GcpSecretStaticAccount extends cdktf.TerraformResource {
       token_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tokenScopes),
       binding: cdktf.listMapper(gcpSecretStaticAccountBindingToTerraform, true)(this._binding.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      backend: {
+        value: cdktf.stringToHclTerraform(this._backend),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secret_type: {
+        value: cdktf.stringToHclTerraform(this._secretType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_account_email: {
+        value: cdktf.stringToHclTerraform(this._serviceAccountEmail),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      static_account: {
+        value: cdktf.stringToHclTerraform(this._staticAccount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      token_scopes: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tokenScopes),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      binding: {
+        value: cdktf.listMapperHcl(gcpSecretStaticAccountBindingToHclTerraform, true)(this._binding.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "GcpSecretStaticAccountBindingList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

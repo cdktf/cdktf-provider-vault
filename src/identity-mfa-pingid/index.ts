@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/identity_mfa_pingid
 // generated from terraform resource schema
 
@@ -232,5 +227,37 @@ export class IdentityMfaPingid extends cdktf.TerraformResource {
       settings_file_base64: cdktf.stringToTerraform(this._settingsFileBase64),
       username_format: cdktf.stringToTerraform(this._usernameFormat),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      settings_file_base64: {
+        value: cdktf.stringToHclTerraform(this._settingsFileBase64),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      username_format: {
+        value: cdktf.stringToHclTerraform(this._usernameFormat),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

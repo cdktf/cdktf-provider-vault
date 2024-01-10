@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/kubernetes_secret_backend_role
 // generated from terraform resource schema
 
@@ -406,5 +401,97 @@ export class KubernetesSecretBackendRole extends cdktf.TerraformResource {
       token_default_ttl: cdktf.numberToTerraform(this._tokenDefaultTtl),
       token_max_ttl: cdktf.numberToTerraform(this._tokenMaxTtl),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      allowed_kubernetes_namespaces: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedKubernetesNamespaces),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      backend: {
+        value: cdktf.stringToHclTerraform(this._backend),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      extra_annotations: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._extraAnnotations),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      extra_labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._extraLabels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      generated_role_rules: {
+        value: cdktf.stringToHclTerraform(this._generatedRoleRules),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kubernetes_role_name: {
+        value: cdktf.stringToHclTerraform(this._kubernetesRoleName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kubernetes_role_type: {
+        value: cdktf.stringToHclTerraform(this._kubernetesRoleType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name_template: {
+        value: cdktf.stringToHclTerraform(this._nameTemplate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_account_name: {
+        value: cdktf.stringToHclTerraform(this._serviceAccountName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      token_default_ttl: {
+        value: cdktf.numberToHclTerraform(this._tokenDefaultTtl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      token_max_ttl: {
+        value: cdktf.numberToHclTerraform(this._tokenMaxTtl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

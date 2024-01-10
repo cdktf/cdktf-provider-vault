@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/auth_backend
 // generated from terraform resource schema
 
@@ -110,6 +105,67 @@ export function authBackendTuneToTerraform(struct?: AuthBackendTune | cdktf.IRes
     passthrough_request_headers: struct!.passthroughRequestHeaders === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.passthroughRequestHeaders),
     token_type: struct!.tokenType === undefined ? null : cdktf.stringToTerraform(struct!.tokenType),
   }
+}
+
+
+export function authBackendTuneToHclTerraform(struct?: AuthBackendTune | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allowed_response_headers: {
+      value: struct!.allowedResponseHeaders === undefined ? null : cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedResponseHeaders),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    audit_non_hmac_request_keys: {
+      value: struct!.auditNonHmacRequestKeys === undefined ? null : cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.auditNonHmacRequestKeys),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    audit_non_hmac_response_keys: {
+      value: struct!.auditNonHmacResponseKeys === undefined ? null : cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.auditNonHmacResponseKeys),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    default_lease_ttl: {
+      value: struct!.defaultLeaseTtl === undefined ? null : cdktf.stringToHclTerraform(struct!.defaultLeaseTtl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    listing_visibility: {
+      value: struct!.listingVisibility === undefined ? null : cdktf.stringToHclTerraform(struct!.listingVisibility),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    max_lease_ttl: {
+      value: struct!.maxLeaseTtl === undefined ? null : cdktf.stringToHclTerraform(struct!.maxLeaseTtl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    passthrough_request_headers: {
+      value: struct!.passthroughRequestHeaders === undefined ? null : cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.passthroughRequestHeaders),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    token_type: {
+      value: struct!.tokenType === undefined ? null : cdktf.stringToHclTerraform(struct!.tokenType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AuthBackendTuneOutputReference extends cdktf.ComplexObject {
@@ -557,5 +613,61 @@ export class AuthBackend extends cdktf.TerraformResource {
       tune: cdktf.listMapper(authBackendTuneToTerraform, false)(this._tune.internalValue),
       type: cdktf.stringToTerraform(this._type),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disable_remount: {
+        value: cdktf.booleanToHclTerraform(this._disableRemount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      local: {
+        value: cdktf.booleanToHclTerraform(this._local),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      path: {
+        value: cdktf.stringToHclTerraform(this._path),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tune: {
+        value: cdktf.listMapperHcl(authBackendTuneToHclTerraform, false)(this._tune.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "AuthBackendTuneList",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

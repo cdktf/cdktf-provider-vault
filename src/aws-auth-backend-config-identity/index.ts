@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/aws_auth_backend_config_identity
 // generated from terraform resource schema
 
@@ -247,5 +242,55 @@ export class AwsAuthBackendConfigIdentity extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       namespace: cdktf.stringToTerraform(this._namespace),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      backend: {
+        value: cdktf.stringToHclTerraform(this._backend),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ec2_alias: {
+        value: cdktf.stringToHclTerraform(this._ec2Alias),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ec2_metadata: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ec2Metadata),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      iam_alias: {
+        value: cdktf.stringToHclTerraform(this._iamAlias),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      iam_metadata: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._iamMetadata),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
