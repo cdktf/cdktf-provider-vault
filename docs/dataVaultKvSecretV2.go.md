@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultKvSecretV2.DataVaultKvSecretV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultkvsecretv2"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/datavaultkvsecretv2"
 
 datavaultkvsecretv2.NewDataVaultKvSecretV2(scope Construct, id *string, config DataVaultKvSecretV2Config) DataVaultKvSecretV2
 ```
@@ -297,7 +297,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.dataVaultKvSecretV2.DataVaultKvSecretV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultkvsecretv2"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/datavaultkvsecretv2"
 
 datavaultkvsecretv2.DataVaultKvSecretV2_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.dataVaultKvSecretV2.DataVaultKvSecretV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultkvsecretv2"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/datavaultkvsecretv2"
 
 datavaultkvsecretv2.DataVaultKvSecretV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datavaultkvsecretv2.DataVaultKvSecretV2_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vault.dataVaultKvSecretV2.DataVaultKvSecretV2.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultkvsecretv2"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/datavaultkvsecretv2"
 
 datavaultkvsecretv2.DataVaultKvSecretV2_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datavaultkvsecretv2.DataVaultKvSecretV2_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.dataVaultKvSecretV2.DataVaultKvSecretV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultkvsecretv2"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/datavaultkvsecretv2"
 
 datavaultkvsecretv2.DataVaultKvSecretV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -751,7 +751,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.dataVaultKvSecretV2.DataVaultKvSecretV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultkvsecretv2"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/datavaultkvsecretv2"
 
 &datavaultkvsecretv2.DataVaultKvSecretV2Config {
 	Connection: interface{},
