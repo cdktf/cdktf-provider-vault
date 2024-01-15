@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultNomadAccessToken.DataVaultNomadAccessToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultnomadaccesstoken"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/datavaultnomadaccesstoken"
 
 datavaultnomadaccesstoken.NewDataVaultNomadAccessToken(scope Construct, id *string, config DataVaultNomadAccessTokenConfig) DataVaultNomadAccessToken
 ```
@@ -290,7 +290,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.dataVaultNomadAccessToken.DataVaultNomadAccessToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultnomadaccesstoken"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/datavaultnomadaccesstoken"
 
 datavaultnomadaccesstoken.DataVaultNomadAccessToken_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.dataVaultNomadAccessToken.DataVaultNomadAccessToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultnomadaccesstoken"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/datavaultnomadaccesstoken"
 
 datavaultnomadaccesstoken.DataVaultNomadAccessToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datavaultnomadaccesstoken.DataVaultNomadAccessToken_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vault.dataVaultNomadAccessToken.DataVaultNomadAccessToken.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultnomadaccesstoken"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/datavaultnomadaccesstoken"
 
 datavaultnomadaccesstoken.DataVaultNomadAccessToken_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datavaultnomadaccesstoken.DataVaultNomadAccessToken_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.dataVaultNomadAccessToken.DataVaultNomadAccessToken.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultnomadaccesstoken"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/datavaultnomadaccesstoken"
 
 datavaultnomadaccesstoken.DataVaultNomadAccessToken_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -667,7 +667,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.dataVaultNomadAccessToken.DataVaultNomadAccessTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultnomadaccesstoken"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/datavaultnomadaccesstoken"
 
 &datavaultnomadaccesstoken.DataVaultNomadAccessTokenConfig {
 	Connection: interface{},
