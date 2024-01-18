@@ -4,12 +4,12 @@
 
 ### IdentityOidcRole <a name="IdentityOidcRole" id="@cdktf/provider-vault.identityOidcRole.IdentityOidcRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/identity_oidc_role vault_identity_oidc_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/identity_oidc_role vault_identity_oidc_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.identityOidcRole.IdentityOidcRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/identityoidcrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identityoidcrole"
 
 identityoidcrole.NewIdentityOidcRole(scope Construct, id *string, config IdentityOidcRoleConfig) IdentityOidcRole
 ```
@@ -413,7 +413,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.identityOidcRole.IdentityOidcRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/identityoidcrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identityoidcrole"
 
 identityoidcrole.IdentityOidcRole_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.identityOidcRole.IdentityOidcRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/identityoidcrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identityoidcrole"
 
 identityoidcrole.IdentityOidcRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ identityoidcrole.IdentityOidcRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.identityOidcRole.IdentityOidcRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/identityoidcrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identityoidcrole"
 
 identityoidcrole.IdentityOidcRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ identityoidcrole.IdentityOidcRole_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.identityOidcRole.IdentityOidcRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/identityoidcrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identityoidcrole"
 
 identityoidcrole.IdentityOidcRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -502,7 +502,7 @@ The construct id used in the generated config for the IdentityOidcRole to import
 
 The id of the existing IdentityOidcRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/identity_oidc_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/identity_oidc_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -856,7 +856,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.identityOidcRole.IdentityOidcRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/identityoidcrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identityoidcrole"
 
 &identityoidcrole.IdentityOidcRoleConfig {
 	Connection: interface{},
@@ -890,7 +890,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/identityoidcrole"
 | <code><a href="#@cdktf/provider-vault.identityOidcRole.IdentityOidcRoleConfig.property.key">Key</a></code> | <code>*string</code> | A configured named key, the key must already exist. |
 | <code><a href="#@cdktf/provider-vault.identityOidcRole.IdentityOidcRoleConfig.property.name">Name</a></code> | <code>*string</code> | Name of the role. |
 | <code><a href="#@cdktf/provider-vault.identityOidcRole.IdentityOidcRoleConfig.property.clientId">ClientId</a></code> | <code>*string</code> | The value that will be included in the `aud` field of all the OIDC identity tokens issued by this role. |
-| <code><a href="#@cdktf/provider-vault.identityOidcRole.IdentityOidcRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/identity_oidc_role#id IdentityOidcRole#id}. |
+| <code><a href="#@cdktf/provider-vault.identityOidcRole.IdentityOidcRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/identity_oidc_role#id IdentityOidcRole#id}. |
 | <code><a href="#@cdktf/provider-vault.identityOidcRole.IdentityOidcRoleConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.identityOidcRole.IdentityOidcRoleConfig.property.template">Template</a></code> | <code>*string</code> | The template string to use for generating tokens. This may be in string-ified JSON or base64 format. |
 | <code><a href="#@cdktf/provider-vault.identityOidcRole.IdentityOidcRoleConfig.property.ttl">Ttl</a></code> | <code>*f64</code> | TTL of the tokens generated against the role in number of seconds. |
@@ -977,7 +977,7 @@ Key *string
 
 A configured named key, the key must already exist.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/identity_oidc_role#key IdentityOidcRole#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/identity_oidc_role#key IdentityOidcRole#key}
 
 ---
 
@@ -991,7 +991,7 @@ Name *string
 
 Name of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/identity_oidc_role#name IdentityOidcRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/identity_oidc_role#name IdentityOidcRole#name}
 
 ---
 
@@ -1005,7 +1005,7 @@ ClientId *string
 
 The value that will be included in the `aud` field of all the OIDC identity tokens issued by this role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/identity_oidc_role#client_id IdentityOidcRole#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/identity_oidc_role#client_id IdentityOidcRole#client_id}
 
 ---
 
@@ -1017,7 +1017,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/identity_oidc_role#id IdentityOidcRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/identity_oidc_role#id IdentityOidcRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1034,7 +1034,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/identity_oidc_role#namespace IdentityOidcRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/identity_oidc_role#namespace IdentityOidcRole#namespace}
 
 ---
 
@@ -1048,7 +1048,7 @@ Template *string
 
 The template string to use for generating tokens. This may be in string-ified JSON or base64 format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/identity_oidc_role#template IdentityOidcRole#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/identity_oidc_role#template IdentityOidcRole#template}
 
 ---
 
@@ -1062,7 +1062,7 @@ Ttl *f64
 
 TTL of the tokens generated against the role in number of seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/identity_oidc_role#ttl IdentityOidcRole#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/identity_oidc_role#ttl IdentityOidcRole#ttl}
 
 ---
 

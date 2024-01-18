@@ -4,12 +4,12 @@
 
 ### PkiSecretBackendConfigUrls <a name="PkiSecretBackendConfigUrls" id="@cdktf/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrls"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/pki_secret_backend_config_urls vault_pki_secret_backend_config_urls}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/pki_secret_backend_config_urls vault_pki_secret_backend_config_urls}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrls.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/pkisecretbackendconfigurls"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendconfigurls"
 
 pkisecretbackendconfigurls.NewPkiSecretBackendConfigUrls(scope Construct, id *string, config PkiSecretBackendConfigUrlsConfig) PkiSecretBackendConfigUrls
 ```
@@ -413,7 +413,7 @@ func ResetOcspServers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrls.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/pkisecretbackendconfigurls"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendconfigurls"
 
 pkisecretbackendconfigurls.PkiSecretBackendConfigUrls_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrls.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/pkisecretbackendconfigurls"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendconfigurls"
 
 pkisecretbackendconfigurls.PkiSecretBackendConfigUrls_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ pkisecretbackendconfigurls.PkiSecretBackendConfigUrls_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrls.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/pkisecretbackendconfigurls"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendconfigurls"
 
 pkisecretbackendconfigurls.PkiSecretBackendConfigUrls_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ pkisecretbackendconfigurls.PkiSecretBackendConfigUrls_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrls.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/pkisecretbackendconfigurls"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendconfigurls"
 
 pkisecretbackendconfigurls.PkiSecretBackendConfigUrls_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -502,7 +502,7 @@ The construct id used in the generated config for the PkiSecretBackendConfigUrls
 
 The id of the existing PkiSecretBackendConfigUrls that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/pki_secret_backend_config_urls#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/pki_secret_backend_config_urls#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -834,7 +834,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrlsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/pkisecretbackendconfigurls"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendconfigurls"
 
 &pkisecretbackendconfigurls.PkiSecretBackendConfigUrlsConfig {
 	Connection: interface{},
@@ -866,7 +866,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/pkisecretbackendconfi
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrlsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrlsConfig.property.backend">Backend</a></code> | <code>*string</code> | The path of the PKI secret backend the resource belongs to. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrlsConfig.property.crlDistributionPoints">CrlDistributionPoints</a></code> | <code>*[]*string</code> | Specifies the URL values for the CRL Distribution Points field. |
-| <code><a href="#@cdktf/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrlsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/pki_secret_backend_config_urls#id PkiSecretBackendConfigUrls#id}. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrlsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/pki_secret_backend_config_urls#id PkiSecretBackendConfigUrls#id}. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrlsConfig.property.issuingCertificates">IssuingCertificates</a></code> | <code>*[]*string</code> | Specifies the URL values for the Issuing Certificate field. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrlsConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrlsConfig.property.ocspServers">OcspServers</a></code> | <code>*[]*string</code> | Specifies the URL values for the OCSP Servers field. |
@@ -953,7 +953,7 @@ Backend *string
 
 The path of the PKI secret backend the resource belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/pki_secret_backend_config_urls#backend PkiSecretBackendConfigUrls#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/pki_secret_backend_config_urls#backend PkiSecretBackendConfigUrls#backend}
 
 ---
 
@@ -967,7 +967,7 @@ CrlDistributionPoints *[]*string
 
 Specifies the URL values for the CRL Distribution Points field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/pki_secret_backend_config_urls#crl_distribution_points PkiSecretBackendConfigUrls#crl_distribution_points}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/pki_secret_backend_config_urls#crl_distribution_points PkiSecretBackendConfigUrls#crl_distribution_points}
 
 ---
 
@@ -979,7 +979,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/pki_secret_backend_config_urls#id PkiSecretBackendConfigUrls#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/pki_secret_backend_config_urls#id PkiSecretBackendConfigUrls#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -996,7 +996,7 @@ IssuingCertificates *[]*string
 
 Specifies the URL values for the Issuing Certificate field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/pki_secret_backend_config_urls#issuing_certificates PkiSecretBackendConfigUrls#issuing_certificates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/pki_secret_backend_config_urls#issuing_certificates PkiSecretBackendConfigUrls#issuing_certificates}
 
 ---
 
@@ -1010,7 +1010,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/pki_secret_backend_config_urls#namespace PkiSecretBackendConfigUrls#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/pki_secret_backend_config_urls#namespace PkiSecretBackendConfigUrls#namespace}
 
 ---
 
@@ -1024,7 +1024,7 @@ OcspServers *[]*string
 
 Specifies the URL values for the OCSP Servers field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/pki_secret_backend_config_urls#ocsp_servers PkiSecretBackendConfigUrls#ocsp_servers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/pki_secret_backend_config_urls#ocsp_servers PkiSecretBackendConfigUrls#ocsp_servers}
 
 ---
 

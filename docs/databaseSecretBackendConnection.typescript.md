@@ -4,7 +4,7 @@
 
 ### DatabaseSecretBackendConnection <a name="DatabaseSecretBackendConnection" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection vault_database_secret_backend_connection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection vault_database_secret_backend_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnection.Initializer"></a>
 
@@ -876,7 +876,7 @@ The construct id used in the generated config for the DatabaseSecretBackendConne
 
 The id of the existing DatabaseSecretBackendConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1702,7 +1702,7 @@ public readonly connectTimeout: number;
 
 The number of seconds to use as a connection timeout.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#connect_timeout DatabaseSecretBackendConnection#connect_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#connect_timeout DatabaseSecretBackendConnection#connect_timeout}
 
 ---
 
@@ -1716,7 +1716,7 @@ public readonly hosts: string[];
 
 Cassandra hosts to connect to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#hosts DatabaseSecretBackendConnection#hosts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#hosts DatabaseSecretBackendConnection#hosts}
 
 ---
 
@@ -1730,7 +1730,7 @@ public readonly insecureTls: boolean | IResolvable;
 
 Whether to skip verification of the server certificate when using TLS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#insecure_tls DatabaseSecretBackendConnection#insecure_tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#insecure_tls DatabaseSecretBackendConnection#insecure_tls}
 
 ---
 
@@ -1744,7 +1744,7 @@ public readonly password: string;
 
 The password to use when authenticating with Cassandra.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
 
 ---
 
@@ -1760,7 +1760,7 @@ Concatenated PEM blocks containing a certificate and private key;
 
 a certificate, private key, and issuing CA certificate; or just a CA certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#pem_bundle DatabaseSecretBackendConnection#pem_bundle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#pem_bundle DatabaseSecretBackendConnection#pem_bundle}
 
 ---
 
@@ -1776,7 +1776,7 @@ Specifies JSON containing a certificate and private key;
 
 a certificate, private key, and issuing CA certificate; or just a CA certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#pem_json DatabaseSecretBackendConnection#pem_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#pem_json DatabaseSecretBackendConnection#pem_json}
 
 ---
 
@@ -1790,7 +1790,7 @@ public readonly port: number;
 
 The transport port to use to connect to Cassandra.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#port DatabaseSecretBackendConnection#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#port DatabaseSecretBackendConnection#port}
 
 ---
 
@@ -1804,7 +1804,7 @@ public readonly protocolVersion: number;
 
 The CQL protocol version to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#protocol_version DatabaseSecretBackendConnection#protocol_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#protocol_version DatabaseSecretBackendConnection#protocol_version}
 
 ---
 
@@ -1818,7 +1818,7 @@ public readonly tls: boolean | IResolvable;
 
 Whether to use TLS when connecting to Cassandra.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#tls DatabaseSecretBackendConnection#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#tls DatabaseSecretBackendConnection#tls}
 
 ---
 
@@ -1832,7 +1832,7 @@ public readonly username: string;
 
 The username to use when authenticating with Cassandra.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
 
 ---
 
@@ -1865,7 +1865,7 @@ const databaseSecretBackendConnectionConfig: databaseSecretBackendConnection.Dat
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionConfig.property.data">data</a></code> | <code>{[ key: string ]: string}</code> | A map of sensitive data to pass to the endpoint. Useful for templated connection strings. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionConfig.property.elasticsearch">elasticsearch</a></code> | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionElasticsearch">DatabaseSecretBackendConnectionElasticsearch</a></code> | elasticsearch block. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionConfig.property.hana">hana</a></code> | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionHana">DatabaseSecretBackendConnectionHana</a></code> | hana block. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#id DatabaseSecretBackendConnection#id}. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#id DatabaseSecretBackendConnection#id}. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionConfig.property.influxdb">influxdb</a></code> | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionInfluxdb">DatabaseSecretBackendConnectionInfluxdb</a></code> | influxdb block. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionConfig.property.mongodb">mongodb</a></code> | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMongodb">DatabaseSecretBackendConnectionMongodb</a></code> | mongodb block. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionConfig.property.mongodbatlas">mongodbatlas</a></code> | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMongodbatlas">DatabaseSecretBackendConnectionMongodbatlas</a></code> | mongodbatlas block. |
@@ -1967,7 +1967,7 @@ public readonly backend: string;
 
 Unique name of the Vault mount to configure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#backend DatabaseSecretBackendConnection#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#backend DatabaseSecretBackendConnection#backend}
 
 ---
 
@@ -1981,7 +1981,7 @@ public readonly name: string;
 
 Name of the database connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#name DatabaseSecretBackendConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#name DatabaseSecretBackendConnection#name}
 
 ---
 
@@ -1995,7 +1995,7 @@ public readonly allowedRoles: string[];
 
 A list of roles that are allowed to use this connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#allowed_roles DatabaseSecretBackendConnection#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#allowed_roles DatabaseSecretBackendConnection#allowed_roles}
 
 ---
 
@@ -2009,7 +2009,7 @@ public readonly cassandra: DatabaseSecretBackendConnectionCassandra;
 
 cassandra block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#cassandra DatabaseSecretBackendConnection#cassandra}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#cassandra DatabaseSecretBackendConnection#cassandra}
 
 ---
 
@@ -2023,7 +2023,7 @@ public readonly couchbase: DatabaseSecretBackendConnectionCouchbase;
 
 couchbase block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#couchbase DatabaseSecretBackendConnection#couchbase}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#couchbase DatabaseSecretBackendConnection#couchbase}
 
 ---
 
@@ -2037,7 +2037,7 @@ public readonly data: {[ key: string ]: string};
 
 A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#data DatabaseSecretBackendConnection#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#data DatabaseSecretBackendConnection#data}
 
 ---
 
@@ -2051,7 +2051,7 @@ public readonly elasticsearch: DatabaseSecretBackendConnectionElasticsearch;
 
 elasticsearch block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#elasticsearch DatabaseSecretBackendConnection#elasticsearch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#elasticsearch DatabaseSecretBackendConnection#elasticsearch}
 
 ---
 
@@ -2065,7 +2065,7 @@ public readonly hana: DatabaseSecretBackendConnectionHana;
 
 hana block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#hana DatabaseSecretBackendConnection#hana}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#hana DatabaseSecretBackendConnection#hana}
 
 ---
 
@@ -2077,7 +2077,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#id DatabaseSecretBackendConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#id DatabaseSecretBackendConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2094,7 +2094,7 @@ public readonly influxdb: DatabaseSecretBackendConnectionInfluxdb;
 
 influxdb block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#influxdb DatabaseSecretBackendConnection#influxdb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#influxdb DatabaseSecretBackendConnection#influxdb}
 
 ---
 
@@ -2108,7 +2108,7 @@ public readonly mongodb: DatabaseSecretBackendConnectionMongodb;
 
 mongodb block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#mongodb DatabaseSecretBackendConnection#mongodb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#mongodb DatabaseSecretBackendConnection#mongodb}
 
 ---
 
@@ -2122,7 +2122,7 @@ public readonly mongodbatlas: DatabaseSecretBackendConnectionMongodbatlas;
 
 mongodbatlas block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#mongodbatlas DatabaseSecretBackendConnection#mongodbatlas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#mongodbatlas DatabaseSecretBackendConnection#mongodbatlas}
 
 ---
 
@@ -2136,7 +2136,7 @@ public readonly mssql: DatabaseSecretBackendConnectionMssql;
 
 mssql block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#mssql DatabaseSecretBackendConnection#mssql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#mssql DatabaseSecretBackendConnection#mssql}
 
 ---
 
@@ -2150,7 +2150,7 @@ public readonly mysql: DatabaseSecretBackendConnectionMysql;
 
 mysql block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#mysql DatabaseSecretBackendConnection#mysql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#mysql DatabaseSecretBackendConnection#mysql}
 
 ---
 
@@ -2164,7 +2164,7 @@ public readonly mysqlAurora: DatabaseSecretBackendConnectionMysqlAurora;
 
 mysql_aurora block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#mysql_aurora DatabaseSecretBackendConnection#mysql_aurora}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#mysql_aurora DatabaseSecretBackendConnection#mysql_aurora}
 
 ---
 
@@ -2178,7 +2178,7 @@ public readonly mysqlLegacy: DatabaseSecretBackendConnectionMysqlLegacy;
 
 mysql_legacy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#mysql_legacy DatabaseSecretBackendConnection#mysql_legacy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#mysql_legacy DatabaseSecretBackendConnection#mysql_legacy}
 
 ---
 
@@ -2192,7 +2192,7 @@ public readonly mysqlRds: DatabaseSecretBackendConnectionMysqlRds;
 
 mysql_rds block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#mysql_rds DatabaseSecretBackendConnection#mysql_rds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#mysql_rds DatabaseSecretBackendConnection#mysql_rds}
 
 ---
 
@@ -2206,7 +2206,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#namespace DatabaseSecretBackendConnection#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#namespace DatabaseSecretBackendConnection#namespace}
 
 ---
 
@@ -2220,7 +2220,7 @@ public readonly oracle: DatabaseSecretBackendConnectionOracle;
 
 oracle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#oracle DatabaseSecretBackendConnection#oracle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#oracle DatabaseSecretBackendConnection#oracle}
 
 ---
 
@@ -2236,7 +2236,7 @@ Specifies the name of the plugin to use for this connection.
 
 Must be prefixed with the name of one of the supported database engine types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#plugin_name DatabaseSecretBackendConnection#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#plugin_name DatabaseSecretBackendConnection#plugin_name}
 
 ---
 
@@ -2250,7 +2250,7 @@ public readonly postgresql: DatabaseSecretBackendConnectionPostgresql;
 
 postgresql block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#postgresql DatabaseSecretBackendConnection#postgresql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#postgresql DatabaseSecretBackendConnection#postgresql}
 
 ---
 
@@ -2264,7 +2264,7 @@ public readonly redis: DatabaseSecretBackendConnectionRedis;
 
 redis block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#redis DatabaseSecretBackendConnection#redis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#redis DatabaseSecretBackendConnection#redis}
 
 ---
 
@@ -2278,7 +2278,7 @@ public readonly redisElasticache: DatabaseSecretBackendConnectionRedisElasticach
 
 redis_elasticache block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#redis_elasticache DatabaseSecretBackendConnection#redis_elasticache}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#redis_elasticache DatabaseSecretBackendConnection#redis_elasticache}
 
 ---
 
@@ -2292,7 +2292,7 @@ public readonly redshift: DatabaseSecretBackendConnectionRedshift;
 
 redshift block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#redshift DatabaseSecretBackendConnection#redshift}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#redshift DatabaseSecretBackendConnection#redshift}
 
 ---
 
@@ -2306,7 +2306,7 @@ public readonly rootRotationStatements: string[];
 
 A list of database statements to be executed to rotate the root user's credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#root_rotation_statements DatabaseSecretBackendConnection#root_rotation_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#root_rotation_statements DatabaseSecretBackendConnection#root_rotation_statements}
 
 ---
 
@@ -2320,7 +2320,7 @@ public readonly snowflake: DatabaseSecretBackendConnectionSnowflake;
 
 snowflake block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#snowflake DatabaseSecretBackendConnection#snowflake}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#snowflake DatabaseSecretBackendConnection#snowflake}
 
 ---
 
@@ -2334,7 +2334,7 @@ public readonly verifyConnection: boolean | IResolvable;
 
 Specifies if the connection is verified during initial configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#verify_connection DatabaseSecretBackendConnection#verify_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#verify_connection DatabaseSecretBackendConnection#verify_connection}
 
 ---
 
@@ -2373,7 +2373,7 @@ public readonly hosts: string[];
 
 A set of Couchbase URIs to connect to. Must use `couchbases://` scheme if `tls` is `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#hosts DatabaseSecretBackendConnection#hosts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#hosts DatabaseSecretBackendConnection#hosts}
 
 ---
 
@@ -2387,7 +2387,7 @@ public readonly password: string;
 
 Specifies the password corresponding to the given username.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
 
 ---
 
@@ -2401,7 +2401,7 @@ public readonly username: string;
 
 Specifies the username for Vault to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
 
 ---
 
@@ -2417,7 +2417,7 @@ Required if `tls` is `true`.
 
 Specifies the certificate authority of the Couchbase server, as a PEM certificate that has been base64 encoded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#base64_pem DatabaseSecretBackendConnection#base64_pem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#base64_pem DatabaseSecretBackendConnection#base64_pem}
 
 ---
 
@@ -2431,7 +2431,7 @@ public readonly bucketName: string;
 
 Required for Couchbase versions prior to 6.5.0. This is only used to verify vault's connection to the server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#bucket_name DatabaseSecretBackendConnection#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#bucket_name DatabaseSecretBackendConnection#bucket_name}
 
 ---
 
@@ -2445,7 +2445,7 @@ public readonly insecureTls: boolean | IResolvable;
 
 Specifies whether to skip verification of the server certificate when using TLS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#insecure_tls DatabaseSecretBackendConnection#insecure_tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#insecure_tls DatabaseSecretBackendConnection#insecure_tls}
 
 ---
 
@@ -2459,7 +2459,7 @@ public readonly tls: boolean | IResolvable;
 
 Specifies whether to use TLS when connecting to Couchbase.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#tls DatabaseSecretBackendConnection#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#tls DatabaseSecretBackendConnection#tls}
 
 ---
 
@@ -2473,7 +2473,7 @@ public readonly usernameTemplate: string;
 
 Template describing how dynamic usernames are generated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
 
 ---
 
@@ -2514,7 +2514,7 @@ public readonly password: string;
 
 The password to be used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
 
 ---
 
@@ -2528,7 +2528,7 @@ public readonly url: string;
 
 The URL for Elasticsearch's API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#url DatabaseSecretBackendConnection#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#url DatabaseSecretBackendConnection#url}
 
 ---
 
@@ -2542,7 +2542,7 @@ public readonly username: string;
 
 The username to be used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
 
 ---
 
@@ -2556,7 +2556,7 @@ public readonly caCert: string;
 
 The path to a PEM-encoded CA cert file to use to verify the Elasticsearch server's identity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#ca_cert DatabaseSecretBackendConnection#ca_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#ca_cert DatabaseSecretBackendConnection#ca_cert}
 
 ---
 
@@ -2570,7 +2570,7 @@ public readonly caPath: string;
 
 The path to a directory of PEM-encoded CA cert files to use to verify the Elasticsearch server's identity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#ca_path DatabaseSecretBackendConnection#ca_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#ca_path DatabaseSecretBackendConnection#ca_path}
 
 ---
 
@@ -2584,7 +2584,7 @@ public readonly clientCert: string;
 
 The path to the certificate for the Elasticsearch client to present for communication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#client_cert DatabaseSecretBackendConnection#client_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#client_cert DatabaseSecretBackendConnection#client_cert}
 
 ---
 
@@ -2598,7 +2598,7 @@ public readonly clientKey: string;
 
 The path to the key for the Elasticsearch client to use for communication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#client_key DatabaseSecretBackendConnection#client_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#client_key DatabaseSecretBackendConnection#client_key}
 
 ---
 
@@ -2612,7 +2612,7 @@ public readonly insecure: boolean | IResolvable;
 
 Whether to disable certificate verification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#insecure DatabaseSecretBackendConnection#insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#insecure DatabaseSecretBackendConnection#insecure}
 
 ---
 
@@ -2626,7 +2626,7 @@ public readonly tlsServerName: string;
 
 This, if set, is used to set the SNI host when connecting via TLS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#tls_server_name DatabaseSecretBackendConnection#tls_server_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#tls_server_name DatabaseSecretBackendConnection#tls_server_name}
 
 ---
 
@@ -2640,7 +2640,7 @@ public readonly usernameTemplate: string;
 
 Template describing how dynamic usernames are generated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
 
 ---
 
@@ -2678,7 +2678,7 @@ public readonly connectionUrl: string;
 
 Connection string to use to connect to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
 
 ---
 
@@ -2692,7 +2692,7 @@ public readonly disableEscaping: boolean | IResolvable;
 
 Disable special character escaping in username and password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#disable_escaping DatabaseSecretBackendConnection#disable_escaping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#disable_escaping DatabaseSecretBackendConnection#disable_escaping}
 
 ---
 
@@ -2706,7 +2706,7 @@ public readonly maxConnectionLifetime: number;
 
 Maximum number of seconds a connection may be reused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
 
 ---
 
@@ -2720,7 +2720,7 @@ public readonly maxIdleConnections: number;
 
 Maximum number of idle connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
 
 ---
 
@@ -2734,7 +2734,7 @@ public readonly maxOpenConnections: number;
 
 Maximum number of open connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
 
 ---
 
@@ -2748,7 +2748,7 @@ public readonly password: string;
 
 The root credential password used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
 
 ---
 
@@ -2762,7 +2762,7 @@ public readonly username: string;
 
 The root credential username used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
 
 ---
 
@@ -2803,7 +2803,7 @@ public readonly host: string;
 
 Influxdb host to connect to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#host DatabaseSecretBackendConnection#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#host DatabaseSecretBackendConnection#host}
 
 ---
 
@@ -2817,7 +2817,7 @@ public readonly password: string;
 
 Specifies the password corresponding to the given username.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
 
 ---
 
@@ -2831,7 +2831,7 @@ public readonly username: string;
 
 Specifies the username to use for superuser access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
 
 ---
 
@@ -2845,7 +2845,7 @@ public readonly connectTimeout: number;
 
 The number of seconds to use as a connection timeout.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#connect_timeout DatabaseSecretBackendConnection#connect_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#connect_timeout DatabaseSecretBackendConnection#connect_timeout}
 
 ---
 
@@ -2859,7 +2859,7 @@ public readonly insecureTls: boolean | IResolvable;
 
 Whether to skip verification of the server certificate when using TLS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#insecure_tls DatabaseSecretBackendConnection#insecure_tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#insecure_tls DatabaseSecretBackendConnection#insecure_tls}
 
 ---
 
@@ -2875,7 +2875,7 @@ Concatenated PEM blocks containing a certificate and private key;
 
 a certificate, private key, and issuing CA certificate; or just a CA certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#pem_bundle DatabaseSecretBackendConnection#pem_bundle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#pem_bundle DatabaseSecretBackendConnection#pem_bundle}
 
 ---
 
@@ -2891,7 +2891,7 @@ Specifies JSON containing a certificate and private key;
 
 a certificate, private key, and issuing CA certificate; or just a CA certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#pem_json DatabaseSecretBackendConnection#pem_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#pem_json DatabaseSecretBackendConnection#pem_json}
 
 ---
 
@@ -2905,7 +2905,7 @@ public readonly port: number;
 
 The transport port to use to connect to Influxdb.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#port DatabaseSecretBackendConnection#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#port DatabaseSecretBackendConnection#port}
 
 ---
 
@@ -2919,7 +2919,7 @@ public readonly tls: boolean | IResolvable;
 
 Whether to use TLS when connecting to Influxdb.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#tls DatabaseSecretBackendConnection#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#tls DatabaseSecretBackendConnection#tls}
 
 ---
 
@@ -2933,7 +2933,7 @@ public readonly usernameTemplate: string;
 
 Template describing how dynamic usernames are generated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
 
 ---
 
@@ -2971,7 +2971,7 @@ public readonly connectionUrl: string;
 
 Connection string to use to connect to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
 
 ---
 
@@ -2985,7 +2985,7 @@ public readonly maxConnectionLifetime: number;
 
 Maximum number of seconds a connection may be reused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
 
 ---
 
@@ -2999,7 +2999,7 @@ public readonly maxIdleConnections: number;
 
 Maximum number of idle connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
 
 ---
 
@@ -3013,7 +3013,7 @@ public readonly maxOpenConnections: number;
 
 Maximum number of open connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
 
 ---
 
@@ -3027,7 +3027,7 @@ public readonly password: string;
 
 The root credential password used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
 
 ---
 
@@ -3041,7 +3041,7 @@ public readonly username: string;
 
 The root credential username used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
 
 ---
 
@@ -3055,7 +3055,7 @@ public readonly usernameTemplate: string;
 
 Username generation template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
 
 ---
 
@@ -3089,7 +3089,7 @@ public readonly privateKey: string;
 
 The Private Programmatic API Key used to connect with MongoDB Atlas API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#private_key DatabaseSecretBackendConnection#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#private_key DatabaseSecretBackendConnection#private_key}
 
 ---
 
@@ -3103,7 +3103,7 @@ public readonly projectId: string;
 
 The Project ID the Database User should be created within.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#project_id DatabaseSecretBackendConnection#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#project_id DatabaseSecretBackendConnection#project_id}
 
 ---
 
@@ -3117,7 +3117,7 @@ public readonly publicKey: string;
 
 The Public Programmatic API Key used to authenticate with the MongoDB Atlas API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#public_key DatabaseSecretBackendConnection#public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#public_key DatabaseSecretBackendConnection#public_key}
 
 ---
 
@@ -3157,7 +3157,7 @@ public readonly connectionUrl: string;
 
 Connection string to use to connect to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
 
 ---
 
@@ -3171,7 +3171,7 @@ public readonly containedDb: boolean | IResolvable;
 
 Set to true when the target is a Contained Database, e.g. AzureSQL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#contained_db DatabaseSecretBackendConnection#contained_db}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#contained_db DatabaseSecretBackendConnection#contained_db}
 
 ---
 
@@ -3185,7 +3185,7 @@ public readonly disableEscaping: boolean | IResolvable;
 
 Disable special character escaping in username and password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#disable_escaping DatabaseSecretBackendConnection#disable_escaping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#disable_escaping DatabaseSecretBackendConnection#disable_escaping}
 
 ---
 
@@ -3199,7 +3199,7 @@ public readonly maxConnectionLifetime: number;
 
 Maximum number of seconds a connection may be reused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
 
 ---
 
@@ -3213,7 +3213,7 @@ public readonly maxIdleConnections: number;
 
 Maximum number of idle connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
 
 ---
 
@@ -3227,7 +3227,7 @@ public readonly maxOpenConnections: number;
 
 Maximum number of open connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
 
 ---
 
@@ -3241,7 +3241,7 @@ public readonly password: string;
 
 The root credential password used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
 
 ---
 
@@ -3255,7 +3255,7 @@ public readonly username: string;
 
 The root credential username used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
 
 ---
 
@@ -3269,7 +3269,7 @@ public readonly usernameTemplate: string;
 
 Username generation template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
 
 ---
 
@@ -3311,7 +3311,7 @@ public readonly authType: string;
 
 Specify alternative authorization type. (Only 'gcp_iam' is valid currently).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#auth_type DatabaseSecretBackendConnection#auth_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#auth_type DatabaseSecretBackendConnection#auth_type}
 
 ---
 
@@ -3325,7 +3325,7 @@ public readonly connectionUrl: string;
 
 Connection string to use to connect to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
 
 ---
 
@@ -3339,7 +3339,7 @@ public readonly maxConnectionLifetime: number;
 
 Maximum number of seconds a connection may be reused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
 
 ---
 
@@ -3353,7 +3353,7 @@ public readonly maxIdleConnections: number;
 
 Maximum number of idle connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
 
 ---
 
@@ -3367,7 +3367,7 @@ public readonly maxOpenConnections: number;
 
 Maximum number of open connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
 
 ---
 
@@ -3381,7 +3381,7 @@ public readonly password: string;
 
 The root credential password used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
 
 ---
 
@@ -3395,7 +3395,7 @@ public readonly serviceAccountJson: string;
 
 A JSON encoded credential for use with IAM authorization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#service_account_json DatabaseSecretBackendConnection#service_account_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#service_account_json DatabaseSecretBackendConnection#service_account_json}
 
 ---
 
@@ -3409,7 +3409,7 @@ public readonly tlsCa: string;
 
 x509 CA file for validating the certificate presented by the MySQL server. Must be PEM encoded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#tls_ca DatabaseSecretBackendConnection#tls_ca}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#tls_ca DatabaseSecretBackendConnection#tls_ca}
 
 ---
 
@@ -3425,7 +3425,7 @@ x509 certificate for connecting to the database.
 
 This must be a PEM encoded version of the private key and the certificate combined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#tls_certificate_key DatabaseSecretBackendConnection#tls_certificate_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#tls_certificate_key DatabaseSecretBackendConnection#tls_certificate_key}
 
 ---
 
@@ -3439,7 +3439,7 @@ public readonly username: string;
 
 The root credential username used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
 
 ---
 
@@ -3453,7 +3453,7 @@ public readonly usernameTemplate: string;
 
 Username generation template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
 
 ---
 
@@ -3471,13 +3471,31 @@ const databaseSecretBackendConnectionMysqlAurora: databaseSecretBackendConnectio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAurora.property.authType">authType</a></code> | <code>string</code> | Specify alternative authorization type. (Only 'gcp_iam' is valid currently). |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAurora.property.connectionUrl">connectionUrl</a></code> | <code>string</code> | Connection string to use to connect to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAurora.property.maxConnectionLifetime">maxConnectionLifetime</a></code> | <code>number</code> | Maximum number of seconds a connection may be reused. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAurora.property.maxIdleConnections">maxIdleConnections</a></code> | <code>number</code> | Maximum number of idle connections to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAurora.property.maxOpenConnections">maxOpenConnections</a></code> | <code>number</code> | Maximum number of open connections to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAurora.property.password">password</a></code> | <code>string</code> | The root credential password used in the connection URL. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAurora.property.serviceAccountJson">serviceAccountJson</a></code> | <code>string</code> | A JSON encoded credential for use with IAM authorization. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAurora.property.tlsCa">tlsCa</a></code> | <code>string</code> | x509 CA file for validating the certificate presented by the MySQL server. Must be PEM encoded. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAurora.property.tlsCertificateKey">tlsCertificateKey</a></code> | <code>string</code> | x509 certificate for connecting to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAurora.property.username">username</a></code> | <code>string</code> | The root credential username used in the connection URL. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAurora.property.usernameTemplate">usernameTemplate</a></code> | <code>string</code> | Username generation template. |
+
+---
+
+##### `authType`<sup>Optional</sup> <a name="authType" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAurora.property.authType"></a>
+
+```typescript
+public readonly authType: string;
+```
+
+- *Type:* string
+
+Specify alternative authorization type. (Only 'gcp_iam' is valid currently).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#auth_type DatabaseSecretBackendConnection#auth_type}
 
 ---
 
@@ -3491,7 +3509,7 @@ public readonly connectionUrl: string;
 
 Connection string to use to connect to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
 
 ---
 
@@ -3505,7 +3523,7 @@ public readonly maxConnectionLifetime: number;
 
 Maximum number of seconds a connection may be reused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
 
 ---
 
@@ -3519,7 +3537,7 @@ public readonly maxIdleConnections: number;
 
 Maximum number of idle connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
 
 ---
 
@@ -3533,7 +3551,7 @@ public readonly maxOpenConnections: number;
 
 Maximum number of open connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
 
 ---
 
@@ -3547,7 +3565,51 @@ public readonly password: string;
 
 The root credential password used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
+
+---
+
+##### `serviceAccountJson`<sup>Optional</sup> <a name="serviceAccountJson" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAurora.property.serviceAccountJson"></a>
+
+```typescript
+public readonly serviceAccountJson: string;
+```
+
+- *Type:* string
+
+A JSON encoded credential for use with IAM authorization.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#service_account_json DatabaseSecretBackendConnection#service_account_json}
+
+---
+
+##### `tlsCa`<sup>Optional</sup> <a name="tlsCa" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAurora.property.tlsCa"></a>
+
+```typescript
+public readonly tlsCa: string;
+```
+
+- *Type:* string
+
+x509 CA file for validating the certificate presented by the MySQL server. Must be PEM encoded.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#tls_ca DatabaseSecretBackendConnection#tls_ca}
+
+---
+
+##### `tlsCertificateKey`<sup>Optional</sup> <a name="tlsCertificateKey" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAurora.property.tlsCertificateKey"></a>
+
+```typescript
+public readonly tlsCertificateKey: string;
+```
+
+- *Type:* string
+
+x509 certificate for connecting to the database.
+
+This must be a PEM encoded version of the private key and the certificate combined.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#tls_certificate_key DatabaseSecretBackendConnection#tls_certificate_key}
 
 ---
 
@@ -3561,7 +3623,7 @@ public readonly username: string;
 
 The root credential username used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
 
 ---
 
@@ -3575,7 +3637,7 @@ public readonly usernameTemplate: string;
 
 Username generation template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
 
 ---
 
@@ -3593,13 +3655,31 @@ const databaseSecretBackendConnectionMysqlLegacy: databaseSecretBackendConnectio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacy.property.authType">authType</a></code> | <code>string</code> | Specify alternative authorization type. (Only 'gcp_iam' is valid currently). |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacy.property.connectionUrl">connectionUrl</a></code> | <code>string</code> | Connection string to use to connect to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacy.property.maxConnectionLifetime">maxConnectionLifetime</a></code> | <code>number</code> | Maximum number of seconds a connection may be reused. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacy.property.maxIdleConnections">maxIdleConnections</a></code> | <code>number</code> | Maximum number of idle connections to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacy.property.maxOpenConnections">maxOpenConnections</a></code> | <code>number</code> | Maximum number of open connections to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacy.property.password">password</a></code> | <code>string</code> | The root credential password used in the connection URL. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacy.property.serviceAccountJson">serviceAccountJson</a></code> | <code>string</code> | A JSON encoded credential for use with IAM authorization. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacy.property.tlsCa">tlsCa</a></code> | <code>string</code> | x509 CA file for validating the certificate presented by the MySQL server. Must be PEM encoded. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacy.property.tlsCertificateKey">tlsCertificateKey</a></code> | <code>string</code> | x509 certificate for connecting to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacy.property.username">username</a></code> | <code>string</code> | The root credential username used in the connection URL. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacy.property.usernameTemplate">usernameTemplate</a></code> | <code>string</code> | Username generation template. |
+
+---
+
+##### `authType`<sup>Optional</sup> <a name="authType" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacy.property.authType"></a>
+
+```typescript
+public readonly authType: string;
+```
+
+- *Type:* string
+
+Specify alternative authorization type. (Only 'gcp_iam' is valid currently).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#auth_type DatabaseSecretBackendConnection#auth_type}
 
 ---
 
@@ -3613,7 +3693,7 @@ public readonly connectionUrl: string;
 
 Connection string to use to connect to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
 
 ---
 
@@ -3627,7 +3707,7 @@ public readonly maxConnectionLifetime: number;
 
 Maximum number of seconds a connection may be reused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
 
 ---
 
@@ -3641,7 +3721,7 @@ public readonly maxIdleConnections: number;
 
 Maximum number of idle connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
 
 ---
 
@@ -3655,7 +3735,7 @@ public readonly maxOpenConnections: number;
 
 Maximum number of open connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
 
 ---
 
@@ -3669,7 +3749,51 @@ public readonly password: string;
 
 The root credential password used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
+
+---
+
+##### `serviceAccountJson`<sup>Optional</sup> <a name="serviceAccountJson" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacy.property.serviceAccountJson"></a>
+
+```typescript
+public readonly serviceAccountJson: string;
+```
+
+- *Type:* string
+
+A JSON encoded credential for use with IAM authorization.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#service_account_json DatabaseSecretBackendConnection#service_account_json}
+
+---
+
+##### `tlsCa`<sup>Optional</sup> <a name="tlsCa" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacy.property.tlsCa"></a>
+
+```typescript
+public readonly tlsCa: string;
+```
+
+- *Type:* string
+
+x509 CA file for validating the certificate presented by the MySQL server. Must be PEM encoded.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#tls_ca DatabaseSecretBackendConnection#tls_ca}
+
+---
+
+##### `tlsCertificateKey`<sup>Optional</sup> <a name="tlsCertificateKey" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacy.property.tlsCertificateKey"></a>
+
+```typescript
+public readonly tlsCertificateKey: string;
+```
+
+- *Type:* string
+
+x509 certificate for connecting to the database.
+
+This must be a PEM encoded version of the private key and the certificate combined.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#tls_certificate_key DatabaseSecretBackendConnection#tls_certificate_key}
 
 ---
 
@@ -3683,7 +3807,7 @@ public readonly username: string;
 
 The root credential username used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
 
 ---
 
@@ -3697,7 +3821,7 @@ public readonly usernameTemplate: string;
 
 Username generation template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
 
 ---
 
@@ -3715,13 +3839,31 @@ const databaseSecretBackendConnectionMysqlRds: databaseSecretBackendConnection.D
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRds.property.authType">authType</a></code> | <code>string</code> | Specify alternative authorization type. (Only 'gcp_iam' is valid currently). |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRds.property.connectionUrl">connectionUrl</a></code> | <code>string</code> | Connection string to use to connect to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRds.property.maxConnectionLifetime">maxConnectionLifetime</a></code> | <code>number</code> | Maximum number of seconds a connection may be reused. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRds.property.maxIdleConnections">maxIdleConnections</a></code> | <code>number</code> | Maximum number of idle connections to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRds.property.maxOpenConnections">maxOpenConnections</a></code> | <code>number</code> | Maximum number of open connections to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRds.property.password">password</a></code> | <code>string</code> | The root credential password used in the connection URL. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRds.property.serviceAccountJson">serviceAccountJson</a></code> | <code>string</code> | A JSON encoded credential for use with IAM authorization. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRds.property.tlsCa">tlsCa</a></code> | <code>string</code> | x509 CA file for validating the certificate presented by the MySQL server. Must be PEM encoded. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRds.property.tlsCertificateKey">tlsCertificateKey</a></code> | <code>string</code> | x509 certificate for connecting to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRds.property.username">username</a></code> | <code>string</code> | The root credential username used in the connection URL. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRds.property.usernameTemplate">usernameTemplate</a></code> | <code>string</code> | Username generation template. |
+
+---
+
+##### `authType`<sup>Optional</sup> <a name="authType" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRds.property.authType"></a>
+
+```typescript
+public readonly authType: string;
+```
+
+- *Type:* string
+
+Specify alternative authorization type. (Only 'gcp_iam' is valid currently).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#auth_type DatabaseSecretBackendConnection#auth_type}
 
 ---
 
@@ -3735,7 +3877,7 @@ public readonly connectionUrl: string;
 
 Connection string to use to connect to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
 
 ---
 
@@ -3749,7 +3891,7 @@ public readonly maxConnectionLifetime: number;
 
 Maximum number of seconds a connection may be reused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
 
 ---
 
@@ -3763,7 +3905,7 @@ public readonly maxIdleConnections: number;
 
 Maximum number of idle connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
 
 ---
 
@@ -3777,7 +3919,7 @@ public readonly maxOpenConnections: number;
 
 Maximum number of open connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
 
 ---
 
@@ -3791,7 +3933,51 @@ public readonly password: string;
 
 The root credential password used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
+
+---
+
+##### `serviceAccountJson`<sup>Optional</sup> <a name="serviceAccountJson" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRds.property.serviceAccountJson"></a>
+
+```typescript
+public readonly serviceAccountJson: string;
+```
+
+- *Type:* string
+
+A JSON encoded credential for use with IAM authorization.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#service_account_json DatabaseSecretBackendConnection#service_account_json}
+
+---
+
+##### `tlsCa`<sup>Optional</sup> <a name="tlsCa" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRds.property.tlsCa"></a>
+
+```typescript
+public readonly tlsCa: string;
+```
+
+- *Type:* string
+
+x509 CA file for validating the certificate presented by the MySQL server. Must be PEM encoded.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#tls_ca DatabaseSecretBackendConnection#tls_ca}
+
+---
+
+##### `tlsCertificateKey`<sup>Optional</sup> <a name="tlsCertificateKey" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRds.property.tlsCertificateKey"></a>
+
+```typescript
+public readonly tlsCertificateKey: string;
+```
+
+- *Type:* string
+
+x509 certificate for connecting to the database.
+
+This must be a PEM encoded version of the private key and the certificate combined.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#tls_certificate_key DatabaseSecretBackendConnection#tls_certificate_key}
 
 ---
 
@@ -3805,7 +3991,7 @@ public readonly username: string;
 
 The root credential username used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
 
 ---
 
@@ -3819,7 +4005,7 @@ public readonly usernameTemplate: string;
 
 Username generation template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
 
 ---
 
@@ -3857,7 +4043,7 @@ public readonly connectionUrl: string;
 
 Connection string to use to connect to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
 
 ---
 
@@ -3871,7 +4057,7 @@ public readonly maxConnectionLifetime: number;
 
 Maximum number of seconds a connection may be reused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
 
 ---
 
@@ -3885,7 +4071,7 @@ public readonly maxIdleConnections: number;
 
 Maximum number of idle connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
 
 ---
 
@@ -3899,7 +4085,7 @@ public readonly maxOpenConnections: number;
 
 Maximum number of open connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
 
 ---
 
@@ -3913,7 +4099,7 @@ public readonly password: string;
 
 The root credential password used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
 
 ---
 
@@ -3927,7 +4113,7 @@ public readonly username: string;
 
 The root credential username used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
 
 ---
 
@@ -3941,7 +4127,7 @@ public readonly usernameTemplate: string;
 
 Username generation template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
 
 ---
 
@@ -3982,7 +4168,7 @@ public readonly authType: string;
 
 Specify alternative authorization type. (Only 'gcp_iam' is valid currently).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#auth_type DatabaseSecretBackendConnection#auth_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#auth_type DatabaseSecretBackendConnection#auth_type}
 
 ---
 
@@ -3996,7 +4182,7 @@ public readonly connectionUrl: string;
 
 Connection string to use to connect to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
 
 ---
 
@@ -4010,7 +4196,7 @@ public readonly disableEscaping: boolean | IResolvable;
 
 Disable special character escaping in username and password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#disable_escaping DatabaseSecretBackendConnection#disable_escaping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#disable_escaping DatabaseSecretBackendConnection#disable_escaping}
 
 ---
 
@@ -4024,7 +4210,7 @@ public readonly maxConnectionLifetime: number;
 
 Maximum number of seconds a connection may be reused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
 
 ---
 
@@ -4038,7 +4224,7 @@ public readonly maxIdleConnections: number;
 
 Maximum number of idle connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
 
 ---
 
@@ -4052,7 +4238,7 @@ public readonly maxOpenConnections: number;
 
 Maximum number of open connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
 
 ---
 
@@ -4066,7 +4252,7 @@ public readonly password: string;
 
 The root credential password used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
 
 ---
 
@@ -4080,7 +4266,7 @@ public readonly serviceAccountJson: string;
 
 A JSON encoded credential for use with IAM authorization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#service_account_json DatabaseSecretBackendConnection#service_account_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#service_account_json DatabaseSecretBackendConnection#service_account_json}
 
 ---
 
@@ -4094,7 +4280,7 @@ public readonly username: string;
 
 The root credential username used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
 
 ---
 
@@ -4108,7 +4294,7 @@ public readonly usernameTemplate: string;
 
 Username generation template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
 
 ---
 
@@ -4146,7 +4332,7 @@ public readonly host: string;
 
 Specifies the host to connect to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#host DatabaseSecretBackendConnection#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#host DatabaseSecretBackendConnection#host}
 
 ---
 
@@ -4160,7 +4346,7 @@ public readonly password: string;
 
 Specifies the password corresponding to the given username.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
 
 ---
 
@@ -4174,7 +4360,7 @@ public readonly username: string;
 
 Specifies the username for Vault to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
 
 ---
 
@@ -4188,7 +4374,7 @@ public readonly caCert: string;
 
 The contents of a PEM-encoded CA cert file to use to verify the Redis server's identity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#ca_cert DatabaseSecretBackendConnection#ca_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#ca_cert DatabaseSecretBackendConnection#ca_cert}
 
 ---
 
@@ -4202,7 +4388,7 @@ public readonly insecureTls: boolean | IResolvable;
 
 Specifies whether to skip verification of the server certificate when using TLS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#insecure_tls DatabaseSecretBackendConnection#insecure_tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#insecure_tls DatabaseSecretBackendConnection#insecure_tls}
 
 ---
 
@@ -4216,7 +4402,7 @@ public readonly port: number;
 
 The transport port to use to connect to Redis.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#port DatabaseSecretBackendConnection#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#port DatabaseSecretBackendConnection#port}
 
 ---
 
@@ -4230,7 +4416,7 @@ public readonly tls: boolean | IResolvable;
 
 Specifies whether to use TLS when connecting to Redis.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#tls DatabaseSecretBackendConnection#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#tls DatabaseSecretBackendConnection#tls}
 
 ---
 
@@ -4265,7 +4451,7 @@ public readonly url: string;
 
 The configuration endpoint for the ElastiCache cluster to connect to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#url DatabaseSecretBackendConnection#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#url DatabaseSecretBackendConnection#url}
 
 ---
 
@@ -4281,7 +4467,7 @@ The AWS secret key id to use to talk to ElastiCache.
 
 If omitted the credentials chain provider is used instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
 
 ---
 
@@ -4297,7 +4483,7 @@ The AWS region where the ElastiCache cluster is hosted.
 
 If omitted the plugin tries to infer the region from the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#region DatabaseSecretBackendConnection#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#region DatabaseSecretBackendConnection#region}
 
 ---
 
@@ -4313,7 +4499,7 @@ The AWS access key id to use to talk to ElastiCache.
 
 If omitted the credentials chain provider is used instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
 
 ---
 
@@ -4352,7 +4538,7 @@ public readonly connectionUrl: string;
 
 Connection string to use to connect to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
 
 ---
 
@@ -4366,7 +4552,7 @@ public readonly disableEscaping: boolean | IResolvable;
 
 Disable special character escaping in username and password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#disable_escaping DatabaseSecretBackendConnection#disable_escaping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#disable_escaping DatabaseSecretBackendConnection#disable_escaping}
 
 ---
 
@@ -4380,7 +4566,7 @@ public readonly maxConnectionLifetime: number;
 
 Maximum number of seconds a connection may be reused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
 
 ---
 
@@ -4394,7 +4580,7 @@ public readonly maxIdleConnections: number;
 
 Maximum number of idle connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
 
 ---
 
@@ -4408,7 +4594,7 @@ public readonly maxOpenConnections: number;
 
 Maximum number of open connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
 
 ---
 
@@ -4422,7 +4608,7 @@ public readonly password: string;
 
 The root credential password used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
 
 ---
 
@@ -4436,7 +4622,7 @@ public readonly username: string;
 
 The root credential username used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
 
 ---
 
@@ -4450,7 +4636,7 @@ public readonly usernameTemplate: string;
 
 Username generation template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
 
 ---
 
@@ -4488,7 +4674,7 @@ public readonly connectionUrl: string;
 
 Connection string to use to connect to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
 
 ---
 
@@ -4502,7 +4688,7 @@ public readonly maxConnectionLifetime: number;
 
 Maximum number of seconds a connection may be reused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
 
 ---
 
@@ -4516,7 +4702,7 @@ public readonly maxIdleConnections: number;
 
 Maximum number of idle connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
 
 ---
 
@@ -4530,7 +4716,7 @@ public readonly maxOpenConnections: number;
 
 Maximum number of open connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
 
 ---
 
@@ -4544,7 +4730,7 @@ public readonly password: string;
 
 The root credential password used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
 
 ---
 
@@ -4558,7 +4744,7 @@ public readonly username: string;
 
 The root credential username used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
 
 ---
 
@@ -4572,7 +4758,7 @@ public readonly usernameTemplate: string;
 
 Username generation template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
 
 ---
 
@@ -8392,11 +8578,15 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.resetAuthType">resetAuthType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.resetConnectionUrl">resetConnectionUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.resetMaxConnectionLifetime">resetMaxConnectionLifetime</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.resetMaxIdleConnections">resetMaxIdleConnections</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.resetMaxOpenConnections">resetMaxOpenConnections</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.resetPassword">resetPassword</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.resetServiceAccountJson">resetServiceAccountJson</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.resetTlsCa">resetTlsCa</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.resetTlsCertificateKey">resetTlsCertificateKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.resetUsername">resetUsername</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.resetUsernameTemplate">resetUsernameTemplate</a></code> | *No description.* |
 
@@ -8552,6 +8742,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetAuthType` <a name="resetAuthType" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.resetAuthType"></a>
+
+```typescript
+public resetAuthType(): void
+```
+
 ##### `resetConnectionUrl` <a name="resetConnectionUrl" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.resetConnectionUrl"></a>
 
 ```typescript
@@ -8582,6 +8778,24 @@ public resetMaxOpenConnections(): void
 public resetPassword(): void
 ```
 
+##### `resetServiceAccountJson` <a name="resetServiceAccountJson" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.resetServiceAccountJson"></a>
+
+```typescript
+public resetServiceAccountJson(): void
+```
+
+##### `resetTlsCa` <a name="resetTlsCa" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.resetTlsCa"></a>
+
+```typescript
+public resetTlsCa(): void
+```
+
+##### `resetTlsCertificateKey` <a name="resetTlsCertificateKey" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.resetTlsCertificateKey"></a>
+
+```typescript
+public resetTlsCertificateKey(): void
+```
+
 ##### `resetUsername` <a name="resetUsername" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.resetUsername"></a>
 
 ```typescript
@@ -8601,18 +8815,26 @@ public resetUsernameTemplate(): void
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.property.authTypeInput">authTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.property.connectionUrlInput">connectionUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.property.maxConnectionLifetimeInput">maxConnectionLifetimeInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.property.maxIdleConnectionsInput">maxIdleConnectionsInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.property.maxOpenConnectionsInput">maxOpenConnectionsInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.property.passwordInput">passwordInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.property.serviceAccountJsonInput">serviceAccountJsonInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.property.tlsCaInput">tlsCaInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.property.tlsCertificateKeyInput">tlsCertificateKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.property.usernameInput">usernameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.property.usernameTemplateInput">usernameTemplateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.property.authType">authType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.property.connectionUrl">connectionUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.property.maxConnectionLifetime">maxConnectionLifetime</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.property.maxIdleConnections">maxIdleConnections</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.property.maxOpenConnections">maxOpenConnections</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.property.password">password</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.property.serviceAccountJson">serviceAccountJson</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.property.tlsCa">tlsCa</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.property.tlsCertificateKey">tlsCertificateKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.property.username">username</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.property.usernameTemplate">usernameTemplate</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAurora">DatabaseSecretBackendConnectionMysqlAurora</a></code> | *No description.* |
@@ -8637,6 +8859,16 @@ If this returns an empty array the stack will not be attached.
 
 ```typescript
 public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `authTypeInput`<sup>Optional</sup> <a name="authTypeInput" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.property.authTypeInput"></a>
+
+```typescript
+public readonly authTypeInput: string;
 ```
 
 - *Type:* string
@@ -8693,6 +8925,36 @@ public readonly passwordInput: string;
 
 ---
 
+##### `serviceAccountJsonInput`<sup>Optional</sup> <a name="serviceAccountJsonInput" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.property.serviceAccountJsonInput"></a>
+
+```typescript
+public readonly serviceAccountJsonInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tlsCaInput`<sup>Optional</sup> <a name="tlsCaInput" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.property.tlsCaInput"></a>
+
+```typescript
+public readonly tlsCaInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tlsCertificateKeyInput`<sup>Optional</sup> <a name="tlsCertificateKeyInput" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.property.tlsCertificateKeyInput"></a>
+
+```typescript
+public readonly tlsCertificateKeyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `usernameInput`<sup>Optional</sup> <a name="usernameInput" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.property.usernameInput"></a>
 
 ```typescript
@@ -8707,6 +8969,16 @@ public readonly usernameInput: string;
 
 ```typescript
 public readonly usernameTemplateInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `authType`<sup>Required</sup> <a name="authType" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.property.authType"></a>
+
+```typescript
+public readonly authType: string;
 ```
 
 - *Type:* string
@@ -8757,6 +9029,36 @@ public readonly maxOpenConnections: number;
 
 ```typescript
 public readonly password: string;
+```
+
+- *Type:* string
+
+---
+
+##### `serviceAccountJson`<sup>Required</sup> <a name="serviceAccountJson" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.property.serviceAccountJson"></a>
+
+```typescript
+public readonly serviceAccountJson: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tlsCa`<sup>Required</sup> <a name="tlsCa" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.property.tlsCa"></a>
+
+```typescript
+public readonly tlsCa: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tlsCertificateKey`<sup>Required</sup> <a name="tlsCertificateKey" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.property.tlsCertificateKey"></a>
+
+```typescript
+public readonly tlsCertificateKey: string;
 ```
 
 - *Type:* string
@@ -8844,11 +9146,15 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.resetAuthType">resetAuthType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.resetConnectionUrl">resetConnectionUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.resetMaxConnectionLifetime">resetMaxConnectionLifetime</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.resetMaxIdleConnections">resetMaxIdleConnections</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.resetMaxOpenConnections">resetMaxOpenConnections</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.resetPassword">resetPassword</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.resetServiceAccountJson">resetServiceAccountJson</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.resetTlsCa">resetTlsCa</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.resetTlsCertificateKey">resetTlsCertificateKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.resetUsername">resetUsername</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.resetUsernameTemplate">resetUsernameTemplate</a></code> | *No description.* |
 
@@ -9004,6 +9310,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetAuthType` <a name="resetAuthType" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.resetAuthType"></a>
+
+```typescript
+public resetAuthType(): void
+```
+
 ##### `resetConnectionUrl` <a name="resetConnectionUrl" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.resetConnectionUrl"></a>
 
 ```typescript
@@ -9034,6 +9346,24 @@ public resetMaxOpenConnections(): void
 public resetPassword(): void
 ```
 
+##### `resetServiceAccountJson` <a name="resetServiceAccountJson" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.resetServiceAccountJson"></a>
+
+```typescript
+public resetServiceAccountJson(): void
+```
+
+##### `resetTlsCa` <a name="resetTlsCa" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.resetTlsCa"></a>
+
+```typescript
+public resetTlsCa(): void
+```
+
+##### `resetTlsCertificateKey` <a name="resetTlsCertificateKey" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.resetTlsCertificateKey"></a>
+
+```typescript
+public resetTlsCertificateKey(): void
+```
+
 ##### `resetUsername` <a name="resetUsername" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.resetUsername"></a>
 
 ```typescript
@@ -9053,18 +9383,26 @@ public resetUsernameTemplate(): void
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.property.authTypeInput">authTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.property.connectionUrlInput">connectionUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.property.maxConnectionLifetimeInput">maxConnectionLifetimeInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.property.maxIdleConnectionsInput">maxIdleConnectionsInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.property.maxOpenConnectionsInput">maxOpenConnectionsInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.property.passwordInput">passwordInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.property.serviceAccountJsonInput">serviceAccountJsonInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.property.tlsCaInput">tlsCaInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.property.tlsCertificateKeyInput">tlsCertificateKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.property.usernameInput">usernameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.property.usernameTemplateInput">usernameTemplateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.property.authType">authType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.property.connectionUrl">connectionUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.property.maxConnectionLifetime">maxConnectionLifetime</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.property.maxIdleConnections">maxIdleConnections</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.property.maxOpenConnections">maxOpenConnections</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.property.password">password</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.property.serviceAccountJson">serviceAccountJson</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.property.tlsCa">tlsCa</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.property.tlsCertificateKey">tlsCertificateKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.property.username">username</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.property.usernameTemplate">usernameTemplate</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacy">DatabaseSecretBackendConnectionMysqlLegacy</a></code> | *No description.* |
@@ -9089,6 +9427,16 @@ If this returns an empty array the stack will not be attached.
 
 ```typescript
 public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `authTypeInput`<sup>Optional</sup> <a name="authTypeInput" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.property.authTypeInput"></a>
+
+```typescript
+public readonly authTypeInput: string;
 ```
 
 - *Type:* string
@@ -9145,6 +9493,36 @@ public readonly passwordInput: string;
 
 ---
 
+##### `serviceAccountJsonInput`<sup>Optional</sup> <a name="serviceAccountJsonInput" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.property.serviceAccountJsonInput"></a>
+
+```typescript
+public readonly serviceAccountJsonInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tlsCaInput`<sup>Optional</sup> <a name="tlsCaInput" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.property.tlsCaInput"></a>
+
+```typescript
+public readonly tlsCaInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tlsCertificateKeyInput`<sup>Optional</sup> <a name="tlsCertificateKeyInput" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.property.tlsCertificateKeyInput"></a>
+
+```typescript
+public readonly tlsCertificateKeyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `usernameInput`<sup>Optional</sup> <a name="usernameInput" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.property.usernameInput"></a>
 
 ```typescript
@@ -9159,6 +9537,16 @@ public readonly usernameInput: string;
 
 ```typescript
 public readonly usernameTemplateInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `authType`<sup>Required</sup> <a name="authType" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.property.authType"></a>
+
+```typescript
+public readonly authType: string;
 ```
 
 - *Type:* string
@@ -9209,6 +9597,36 @@ public readonly maxOpenConnections: number;
 
 ```typescript
 public readonly password: string;
+```
+
+- *Type:* string
+
+---
+
+##### `serviceAccountJson`<sup>Required</sup> <a name="serviceAccountJson" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.property.serviceAccountJson"></a>
+
+```typescript
+public readonly serviceAccountJson: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tlsCa`<sup>Required</sup> <a name="tlsCa" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.property.tlsCa"></a>
+
+```typescript
+public readonly tlsCa: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tlsCertificateKey`<sup>Required</sup> <a name="tlsCertificateKey" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.property.tlsCertificateKey"></a>
+
+```typescript
+public readonly tlsCertificateKey: string;
 ```
 
 - *Type:* string
@@ -9864,11 +10282,15 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.resetAuthType">resetAuthType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.resetConnectionUrl">resetConnectionUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.resetMaxConnectionLifetime">resetMaxConnectionLifetime</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.resetMaxIdleConnections">resetMaxIdleConnections</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.resetMaxOpenConnections">resetMaxOpenConnections</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.resetPassword">resetPassword</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.resetServiceAccountJson">resetServiceAccountJson</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.resetTlsCa">resetTlsCa</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.resetTlsCertificateKey">resetTlsCertificateKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.resetUsername">resetUsername</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.resetUsernameTemplate">resetUsernameTemplate</a></code> | *No description.* |
 
@@ -10024,6 +10446,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetAuthType` <a name="resetAuthType" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.resetAuthType"></a>
+
+```typescript
+public resetAuthType(): void
+```
+
 ##### `resetConnectionUrl` <a name="resetConnectionUrl" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.resetConnectionUrl"></a>
 
 ```typescript
@@ -10054,6 +10482,24 @@ public resetMaxOpenConnections(): void
 public resetPassword(): void
 ```
 
+##### `resetServiceAccountJson` <a name="resetServiceAccountJson" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.resetServiceAccountJson"></a>
+
+```typescript
+public resetServiceAccountJson(): void
+```
+
+##### `resetTlsCa` <a name="resetTlsCa" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.resetTlsCa"></a>
+
+```typescript
+public resetTlsCa(): void
+```
+
+##### `resetTlsCertificateKey` <a name="resetTlsCertificateKey" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.resetTlsCertificateKey"></a>
+
+```typescript
+public resetTlsCertificateKey(): void
+```
+
 ##### `resetUsername` <a name="resetUsername" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.resetUsername"></a>
 
 ```typescript
@@ -10073,18 +10519,26 @@ public resetUsernameTemplate(): void
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.property.authTypeInput">authTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.property.connectionUrlInput">connectionUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.property.maxConnectionLifetimeInput">maxConnectionLifetimeInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.property.maxIdleConnectionsInput">maxIdleConnectionsInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.property.maxOpenConnectionsInput">maxOpenConnectionsInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.property.passwordInput">passwordInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.property.serviceAccountJsonInput">serviceAccountJsonInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.property.tlsCaInput">tlsCaInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.property.tlsCertificateKeyInput">tlsCertificateKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.property.usernameInput">usernameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.property.usernameTemplateInput">usernameTemplateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.property.authType">authType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.property.connectionUrl">connectionUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.property.maxConnectionLifetime">maxConnectionLifetime</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.property.maxIdleConnections">maxIdleConnections</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.property.maxOpenConnections">maxOpenConnections</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.property.password">password</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.property.serviceAccountJson">serviceAccountJson</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.property.tlsCa">tlsCa</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.property.tlsCertificateKey">tlsCertificateKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.property.username">username</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.property.usernameTemplate">usernameTemplate</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRds">DatabaseSecretBackendConnectionMysqlRds</a></code> | *No description.* |
@@ -10109,6 +10563,16 @@ If this returns an empty array the stack will not be attached.
 
 ```typescript
 public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `authTypeInput`<sup>Optional</sup> <a name="authTypeInput" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.property.authTypeInput"></a>
+
+```typescript
+public readonly authTypeInput: string;
 ```
 
 - *Type:* string
@@ -10165,6 +10629,36 @@ public readonly passwordInput: string;
 
 ---
 
+##### `serviceAccountJsonInput`<sup>Optional</sup> <a name="serviceAccountJsonInput" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.property.serviceAccountJsonInput"></a>
+
+```typescript
+public readonly serviceAccountJsonInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tlsCaInput`<sup>Optional</sup> <a name="tlsCaInput" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.property.tlsCaInput"></a>
+
+```typescript
+public readonly tlsCaInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tlsCertificateKeyInput`<sup>Optional</sup> <a name="tlsCertificateKeyInput" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.property.tlsCertificateKeyInput"></a>
+
+```typescript
+public readonly tlsCertificateKeyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `usernameInput`<sup>Optional</sup> <a name="usernameInput" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.property.usernameInput"></a>
 
 ```typescript
@@ -10179,6 +10673,16 @@ public readonly usernameInput: string;
 
 ```typescript
 public readonly usernameTemplateInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `authType`<sup>Required</sup> <a name="authType" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.property.authType"></a>
+
+```typescript
+public readonly authType: string;
 ```
 
 - *Type:* string
@@ -10229,6 +10733,36 @@ public readonly maxOpenConnections: number;
 
 ```typescript
 public readonly password: string;
+```
+
+- *Type:* string
+
+---
+
+##### `serviceAccountJson`<sup>Required</sup> <a name="serviceAccountJson" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.property.serviceAccountJson"></a>
+
+```typescript
+public readonly serviceAccountJson: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tlsCa`<sup>Required</sup> <a name="tlsCa" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.property.tlsCa"></a>
+
+```typescript
+public readonly tlsCa: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tlsCertificateKey`<sup>Required</sup> <a name="tlsCertificateKey" id="@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.property.tlsCertificateKey"></a>
+
+```typescript
+public readonly tlsCertificateKey: string;
 ```
 
 - *Type:* string

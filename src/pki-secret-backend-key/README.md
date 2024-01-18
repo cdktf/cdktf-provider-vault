@@ -1,3 +1,3 @@
 # `vault_pki_secret_backend_key`
 
-Refer to the Terraform Registry for docs: [`vault_pki_secret_backend_key`](https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/pki_secret_backend_key).
+Refer to the Terraform Registry for docs: [`vault_pki_secret_backend_key`](https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/pki_secret_backend_key).
