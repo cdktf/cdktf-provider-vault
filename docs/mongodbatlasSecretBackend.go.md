@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.24
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.mongodbatlasSecretBackend.MongodbatlasSecretBackend.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/mongodbatlassecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/mongodbatlassecretbackend"
 
 mongodbatlassecretbackend.NewMongodbatlasSecretBackend(scope Construct, id *string, config MongodbatlasSecretBackendConfig) MongodbatlasSecretBackend
 ```
@@ -392,7 +392,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.mongodbatlasSecretBackend.MongodbatlasSecretBackend.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/mongodbatlassecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/mongodbatlassecretbackend"
 
 mongodbatlassecretbackend.MongodbatlasSecretBackend_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.mongodbatlasSecretBackend.MongodbatlasSecretBackend.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/mongodbatlassecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/mongodbatlassecretbackend"
 
 mongodbatlassecretbackend.MongodbatlasSecretBackend_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ mongodbatlassecretbackend.MongodbatlasSecretBackend_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.mongodbatlasSecretBackend.MongodbatlasSecretBackend.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/mongodbatlassecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/mongodbatlassecretbackend"
 
 mongodbatlassecretbackend.MongodbatlasSecretBackend_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ mongodbatlassecretbackend.MongodbatlasSecretBackend_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.mongodbatlasSecretBackend.MongodbatlasSecretBackend.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/mongodbatlassecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/mongodbatlassecretbackend"
 
 mongodbatlassecretbackend.MongodbatlasSecretBackend_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -802,7 +802,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.mongodbatlasSecretBackend.MongodbatlasSecretBackendConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/mongodbatlassecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/mongodbatlassecretbackend"
 
 &mongodbatlassecretbackend.MongodbatlasSecretBackendConfig {
 	Connection: interface{},
