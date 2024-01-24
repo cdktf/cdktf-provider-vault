@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/kv_secret_backend_v2
 // generated from terraform resource schema
 
