@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.24
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultAwsStaticAccessCredentials.DataVaultAwsStaticAccessCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/datavaultawsstaticaccesscredentials"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultawsstaticaccesscredentials"
 
 datavaultawsstaticaccesscredentials.NewDataVaultAwsStaticAccessCredentials(scope Construct, id *string, config DataVaultAwsStaticAccessCredentialsConfig) DataVaultAwsStaticAccessCredentials
 ```
@@ -290,7 +290,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.dataVaultAwsStaticAccessCredentials.DataVaultAwsStaticAccessCredentials.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/datavaultawsstaticaccesscredentials"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultawsstaticaccesscredentials"
 
 datavaultawsstaticaccesscredentials.DataVaultAwsStaticAccessCredentials_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.dataVaultAwsStaticAccessCredentials.DataVaultAwsStaticAccessCredentials.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/datavaultawsstaticaccesscredentials"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultawsstaticaccesscredentials"
 
 datavaultawsstaticaccesscredentials.DataVaultAwsStaticAccessCredentials_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datavaultawsstaticaccesscredentials.DataVaultAwsStaticAccessCredentials_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vault.dataVaultAwsStaticAccessCredentials.DataVaultAwsStaticAccessCredentials.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/datavaultawsstaticaccesscredentials"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultawsstaticaccesscredentials"
 
 datavaultawsstaticaccesscredentials.DataVaultAwsStaticAccessCredentials_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datavaultawsstaticaccesscredentials.DataVaultAwsStaticAccessCredentials_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.dataVaultAwsStaticAccessCredentials.DataVaultAwsStaticAccessCredentials.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/datavaultawsstaticaccesscredentials"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultawsstaticaccesscredentials"
 
 datavaultawsstaticaccesscredentials.DataVaultAwsStaticAccessCredentials_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -667,7 +667,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.dataVaultAwsStaticAccessCredentials.DataVaultAwsStaticAccessCredentialsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/datavaultawsstaticaccesscredentials"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultawsstaticaccesscredentials"
 
 &datavaultawsstaticaccesscredentials.DataVaultAwsStaticAccessCredentialsConfig {
 	Connection: interface{},
