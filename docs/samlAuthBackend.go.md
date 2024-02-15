@@ -4,7 +4,7 @@
 
 ### SamlAuthBackend <a name="SamlAuthBackend" id="@cdktf/provider-vault.samlAuthBackend.SamlAuthBackend"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/saml_auth_backend vault_saml_auth_backend}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/saml_auth_backend vault_saml_auth_backend}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.samlAuthBackend.SamlAuthBackend.Initializer"></a>
 
@@ -537,7 +537,7 @@ The construct id used in the generated config for the SamlAuthBackend to import.
 
 The id of the existing SamlAuthBackend that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/saml_auth_backend#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/saml_auth_backend#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1041,7 +1041,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/samlauthbackend"
 | <code><a href="#@cdktf/provider-vault.samlAuthBackend.SamlAuthBackendConfig.property.entityId">EntityId</a></code> | <code>*string</code> | The entity ID of the SAML authentication service provider. |
 | <code><a href="#@cdktf/provider-vault.samlAuthBackend.SamlAuthBackendConfig.property.defaultRole">DefaultRole</a></code> | <code>*string</code> | The role to use if no role is provided during login. |
 | <code><a href="#@cdktf/provider-vault.samlAuthBackend.SamlAuthBackendConfig.property.disableRemount">DisableRemount</a></code> | <code>interface{}</code> | If set, opts out of mount migration on path updates. |
-| <code><a href="#@cdktf/provider-vault.samlAuthBackend.SamlAuthBackendConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/saml_auth_backend#id SamlAuthBackend#id}. |
+| <code><a href="#@cdktf/provider-vault.samlAuthBackend.SamlAuthBackendConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/saml_auth_backend#id SamlAuthBackend#id}. |
 | <code><a href="#@cdktf/provider-vault.samlAuthBackend.SamlAuthBackendConfig.property.idpCert">IdpCert</a></code> | <code>*string</code> | The PEM encoded certificate of the identity provider. Mutually exclusive with 'idp_metadata_url'. |
 | <code><a href="#@cdktf/provider-vault.samlAuthBackend.SamlAuthBackendConfig.property.idpEntityId">IdpEntityId</a></code> | <code>*string</code> | The entity ID of the identity provider. Mutually exclusive with 'idp_metadata_url'. |
 | <code><a href="#@cdktf/provider-vault.samlAuthBackend.SamlAuthBackendConfig.property.idpMetadataUrl">IdpMetadataUrl</a></code> | <code>*string</code> | The metadata URL of the identity provider. |
@@ -1132,7 +1132,7 @@ AcsUrls *[]*string
 
 The well-formatted URLs of your Assertion Consumer Service (ACS) that should receive a response from the identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/saml_auth_backend#acs_urls SamlAuthBackend#acs_urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/saml_auth_backend#acs_urls SamlAuthBackend#acs_urls}
 
 ---
 
@@ -1146,7 +1146,7 @@ EntityId *string
 
 The entity ID of the SAML authentication service provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/saml_auth_backend#entity_id SamlAuthBackend#entity_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/saml_auth_backend#entity_id SamlAuthBackend#entity_id}
 
 ---
 
@@ -1160,7 +1160,7 @@ DefaultRole *string
 
 The role to use if no role is provided during login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/saml_auth_backend#default_role SamlAuthBackend#default_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/saml_auth_backend#default_role SamlAuthBackend#default_role}
 
 ---
 
@@ -1174,7 +1174,7 @@ DisableRemount interface{}
 
 If set, opts out of mount migration on path updates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/saml_auth_backend#disable_remount SamlAuthBackend#disable_remount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/saml_auth_backend#disable_remount SamlAuthBackend#disable_remount}
 
 ---
 
@@ -1186,7 +1186,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/saml_auth_backend#id SamlAuthBackend#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/saml_auth_backend#id SamlAuthBackend#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1203,7 +1203,7 @@ IdpCert *string
 
 The PEM encoded certificate of the identity provider. Mutually exclusive with 'idp_metadata_url'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/saml_auth_backend#idp_cert SamlAuthBackend#idp_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/saml_auth_backend#idp_cert SamlAuthBackend#idp_cert}
 
 ---
 
@@ -1217,7 +1217,7 @@ IdpEntityId *string
 
 The entity ID of the identity provider. Mutually exclusive with 'idp_metadata_url'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/saml_auth_backend#idp_entity_id SamlAuthBackend#idp_entity_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/saml_auth_backend#idp_entity_id SamlAuthBackend#idp_entity_id}
 
 ---
 
@@ -1231,7 +1231,7 @@ IdpMetadataUrl *string
 
 The metadata URL of the identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/saml_auth_backend#idp_metadata_url SamlAuthBackend#idp_metadata_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/saml_auth_backend#idp_metadata_url SamlAuthBackend#idp_metadata_url}
 
 ---
 
@@ -1245,7 +1245,7 @@ IdpSsoUrl *string
 
 The SSO URL of the identity provider. Mutually exclusive with 'idp_metadata_url'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/saml_auth_backend#idp_sso_url SamlAuthBackend#idp_sso_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/saml_auth_backend#idp_sso_url SamlAuthBackend#idp_sso_url}
 
 ---
 
@@ -1259,7 +1259,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/saml_auth_backend#namespace SamlAuthBackend#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/saml_auth_backend#namespace SamlAuthBackend#namespace}
 
 ---
 
@@ -1273,7 +1273,7 @@ Path *string
 
 Unique name of the auth backend to configure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/saml_auth_backend#path SamlAuthBackend#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/saml_auth_backend#path SamlAuthBackend#path}
 
 ---
 
@@ -1287,7 +1287,7 @@ VerboseLogging interface{}
 
 Log additional, potentially sensitive information during the SAML exchange according to the current logging level. Not recommended for production.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/saml_auth_backend#verbose_logging SamlAuthBackend#verbose_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/saml_auth_backend#verbose_logging SamlAuthBackend#verbose_logging}
 
 ---
 

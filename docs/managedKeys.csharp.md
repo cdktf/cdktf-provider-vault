@@ -4,7 +4,7 @@
 
 ### ManagedKeys <a name="ManagedKeys" id="@cdktf/provider-vault.managedKeys.ManagedKeys"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys vault_managed_keys}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys vault_managed_keys}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.managedKeys.ManagedKeys.Initializer"></a>
 
@@ -541,7 +541,7 @@ The construct id used in the generated config for the ManagedKeys to import.
 
 The id of the existing ManagedKeys that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -900,7 +900,7 @@ public string AccessKey { get; set; }
 
 The AWS access key to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#access_key ManagedKeys#access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#access_key ManagedKeys#access_key}
 
 ---
 
@@ -914,7 +914,7 @@ public string KeyBits { get; set; }
 
 The size in bits for an RSA key. This field is required when 'key_type' is 'RSA'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#key_bits ManagedKeys#key_bits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#key_bits ManagedKeys#key_bits}
 
 ---
 
@@ -928,7 +928,7 @@ public string KeyType { get; set; }
 
 The type of key to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#key_type ManagedKeys#key_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#key_type ManagedKeys#key_type}
 
 ---
 
@@ -942,7 +942,7 @@ public string KmsKey { get; set; }
 
 An identifier for the key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#kms_key ManagedKeys#kms_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#kms_key ManagedKeys#kms_key}
 
 ---
 
@@ -956,7 +956,7 @@ public string Name { get; set; }
 
 A unique lowercase name that serves as identifying the key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#name ManagedKeys#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#name ManagedKeys#name}
 
 ---
 
@@ -970,7 +970,7 @@ public string SecretKey { get; set; }
 
 The AWS secret key to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#secret_key ManagedKeys#secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#secret_key ManagedKeys#secret_key}
 
 ---
 
@@ -984,7 +984,7 @@ public object AllowGenerateKey { get; set; }
 
 If no existing key can be found in the referenced backend, instructs Vault to generate a key within the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#allow_generate_key ManagedKeys#allow_generate_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#allow_generate_key ManagedKeys#allow_generate_key}
 
 ---
 
@@ -998,7 +998,7 @@ public object AllowReplaceKey { get; set; }
 
 Controls the ability for Vault to replace through generation or importing a key into the configured backend even if a key is present, if set to false those operations are forbidden if a key exists.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#allow_replace_key ManagedKeys#allow_replace_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#allow_replace_key ManagedKeys#allow_replace_key}
 
 ---
 
@@ -1012,7 +1012,7 @@ public object AllowStoreKey { get; set; }
 
 Controls the ability for Vault to import a key to the configured backend, if 'false', those operations will be forbidden.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#allow_store_key ManagedKeys#allow_store_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#allow_store_key ManagedKeys#allow_store_key}
 
 ---
 
@@ -1026,7 +1026,7 @@ public object AnyMount { get; set; }
 
 Allow usage from any mount point within the namespace if 'true'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#any_mount ManagedKeys#any_mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#any_mount ManagedKeys#any_mount}
 
 ---
 
@@ -1040,7 +1040,7 @@ public string Curve { get; set; }
 
 The curve to use for an ECDSA key. Used when key_type is 'ECDSA'. Required if 'allow_generate_key' is true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#curve ManagedKeys#curve}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#curve ManagedKeys#curve}
 
 ---
 
@@ -1054,7 +1054,7 @@ public string Endpoint { get; set; }
 
 Used to specify a custom AWS endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#endpoint ManagedKeys#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#endpoint ManagedKeys#endpoint}
 
 ---
 
@@ -1068,7 +1068,7 @@ public string Region { get; set; }
 
 The AWS region where the keys are stored (or will be stored).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#region ManagedKeys#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#region ManagedKeys#region}
 
 ---
 
@@ -1128,7 +1128,7 @@ public string ClientId { get; set; }
 
 The client id for credentials to query the Azure APIs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#client_id ManagedKeys#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#client_id ManagedKeys#client_id}
 
 ---
 
@@ -1142,7 +1142,7 @@ public string ClientSecret { get; set; }
 
 The client secret for credentials to query the Azure APIs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#client_secret ManagedKeys#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#client_secret ManagedKeys#client_secret}
 
 ---
 
@@ -1156,7 +1156,7 @@ public string KeyName { get; set; }
 
 The Key Vault key to use for encryption and decryption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#key_name ManagedKeys#key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#key_name ManagedKeys#key_name}
 
 ---
 
@@ -1170,7 +1170,7 @@ public string KeyType { get; set; }
 
 The type of key to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#key_type ManagedKeys#key_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#key_type ManagedKeys#key_type}
 
 ---
 
@@ -1184,7 +1184,7 @@ public string Name { get; set; }
 
 A unique lowercase name that serves as identifying the key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#name ManagedKeys#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#name ManagedKeys#name}
 
 ---
 
@@ -1198,7 +1198,7 @@ public string TenantId { get; set; }
 
 The tenant id for the Azure Active Directory organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#tenant_id ManagedKeys#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#tenant_id ManagedKeys#tenant_id}
 
 ---
 
@@ -1212,7 +1212,7 @@ public string VaultName { get; set; }
 
 The Key Vault vault to use the encryption keys for encryption and decryption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#vault_name ManagedKeys#vault_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#vault_name ManagedKeys#vault_name}
 
 ---
 
@@ -1226,7 +1226,7 @@ public object AllowGenerateKey { get; set; }
 
 If no existing key can be found in the referenced backend, instructs Vault to generate a key within the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#allow_generate_key ManagedKeys#allow_generate_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#allow_generate_key ManagedKeys#allow_generate_key}
 
 ---
 
@@ -1240,7 +1240,7 @@ public object AllowReplaceKey { get; set; }
 
 Controls the ability for Vault to replace through generation or importing a key into the configured backend even if a key is present, if set to false those operations are forbidden if a key exists.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#allow_replace_key ManagedKeys#allow_replace_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#allow_replace_key ManagedKeys#allow_replace_key}
 
 ---
 
@@ -1254,7 +1254,7 @@ public object AllowStoreKey { get; set; }
 
 Controls the ability for Vault to import a key to the configured backend, if 'false', those operations will be forbidden.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#allow_store_key ManagedKeys#allow_store_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#allow_store_key ManagedKeys#allow_store_key}
 
 ---
 
@@ -1268,7 +1268,7 @@ public object AnyMount { get; set; }
 
 Allow usage from any mount point within the namespace if 'true'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#any_mount ManagedKeys#any_mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#any_mount ManagedKeys#any_mount}
 
 ---
 
@@ -1282,7 +1282,7 @@ public string Environment { get; set; }
 
 The Azure Cloud environment API endpoints to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#environment ManagedKeys#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#environment ManagedKeys#environment}
 
 ---
 
@@ -1298,7 +1298,7 @@ The size in bits for an RSA key.
 
 This field is required when 'key_type' is 'RSA' or when 'allow_generate_key' is true
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#key_bits ManagedKeys#key_bits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#key_bits ManagedKeys#key_bits}
 
 ---
 
@@ -1312,7 +1312,7 @@ public string Resource { get; set; }
 
 The Azure Key Vault resource's DNS Suffix to connect to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#resource ManagedKeys#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#resource ManagedKeys#resource}
 
 ---
 
@@ -1352,7 +1352,7 @@ new ManagedKeysConfig {
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.aws">Aws</a></code> | <code>object</code> | aws block. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.azure">Azure</a></code> | <code>object</code> | azure block. |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#id ManagedKeys#id}. |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#id ManagedKeys#id}. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.pkcs">Pkcs</a></code> | <code>object</code> | pkcs block. |
 
@@ -1438,7 +1438,7 @@ public object Aws { get; set; }
 
 aws block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#aws ManagedKeys#aws}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#aws ManagedKeys#aws}
 
 ---
 
@@ -1452,7 +1452,7 @@ public object Azure { get; set; }
 
 azure block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#azure ManagedKeys#azure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#azure ManagedKeys#azure}
 
 ---
 
@@ -1464,7 +1464,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#id ManagedKeys#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#id ManagedKeys#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1481,7 +1481,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#namespace ManagedKeys#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#namespace ManagedKeys#namespace}
 
 ---
 
@@ -1495,7 +1495,7 @@ public object Pkcs { get; set; }
 
 pkcs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#pkcs ManagedKeys#pkcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#pkcs ManagedKeys#pkcs}
 
 ---
 
@@ -1557,7 +1557,7 @@ public string KeyId { get; set; }
 
 The id of a PKCS#11 key to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#key_id ManagedKeys#key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#key_id ManagedKeys#key_id}
 
 ---
 
@@ -1571,7 +1571,7 @@ public string KeyLabel { get; set; }
 
 The label of the key to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#key_label ManagedKeys#key_label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#key_label ManagedKeys#key_label}
 
 ---
 
@@ -1585,7 +1585,7 @@ public string Library { get; set; }
 
 The name of the kms_library stanza to use from Vault's config to lookup the local library path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#library ManagedKeys#library}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#library ManagedKeys#library}
 
 ---
 
@@ -1599,7 +1599,7 @@ public string Mechanism { get; set; }
 
 The encryption/decryption mechanism to use, specified as a hexadecimal (prefixed by 0x) string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#mechanism ManagedKeys#mechanism}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#mechanism ManagedKeys#mechanism}
 
 ---
 
@@ -1613,7 +1613,7 @@ public string Name { get; set; }
 
 A unique lowercase name that serves as identifying the key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#name ManagedKeys#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#name ManagedKeys#name}
 
 ---
 
@@ -1627,7 +1627,7 @@ public string Pin { get; set; }
 
 The PIN for login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#pin ManagedKeys#pin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#pin ManagedKeys#pin}
 
 ---
 
@@ -1641,7 +1641,7 @@ public object AllowGenerateKey { get; set; }
 
 If no existing key can be found in the referenced backend, instructs Vault to generate a key within the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#allow_generate_key ManagedKeys#allow_generate_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#allow_generate_key ManagedKeys#allow_generate_key}
 
 ---
 
@@ -1655,7 +1655,7 @@ public object AllowReplaceKey { get; set; }
 
 Controls the ability for Vault to replace through generation or importing a key into the configured backend even if a key is present, if set to false those operations are forbidden if a key exists.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#allow_replace_key ManagedKeys#allow_replace_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#allow_replace_key ManagedKeys#allow_replace_key}
 
 ---
 
@@ -1669,7 +1669,7 @@ public object AllowStoreKey { get; set; }
 
 Controls the ability for Vault to import a key to the configured backend, if 'false', those operations will be forbidden.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#allow_store_key ManagedKeys#allow_store_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#allow_store_key ManagedKeys#allow_store_key}
 
 ---
 
@@ -1683,7 +1683,7 @@ public object AnyMount { get; set; }
 
 Allow usage from any mount point within the namespace if 'true'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#any_mount ManagedKeys#any_mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#any_mount ManagedKeys#any_mount}
 
 ---
 
@@ -1697,7 +1697,7 @@ public string Curve { get; set; }
 
 Supplies the curve value when using the 'CKM_ECDSA' mechanism. Required if 'allow_generate_key' is true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#curve ManagedKeys#curve}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#curve ManagedKeys#curve}
 
 ---
 
@@ -1711,7 +1711,7 @@ public string ForceRwSession { get; set; }
 
 Force all operations to open up a read-write session to the HSM.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#force_rw_session ManagedKeys#force_rw_session}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#force_rw_session ManagedKeys#force_rw_session}
 
 ---
 
@@ -1727,7 +1727,7 @@ Supplies the size in bits of the key when using 'CKM_RSA_PKCS_PSS', 'CKM_RSA_PKC
 
 Required if 'allow_generate_key' is true
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#key_bits ManagedKeys#key_bits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#key_bits ManagedKeys#key_bits}
 
 ---
 
@@ -1741,7 +1741,7 @@ public string Slot { get; set; }
 
 The slot number to use, specified as a string in a decimal format (e.g. '2305843009213693953').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#slot ManagedKeys#slot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#slot ManagedKeys#slot}
 
 ---
 
@@ -1755,7 +1755,7 @@ public string TokenLabel { get; set; }
 
 The slot token label to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/managed_keys#token_label ManagedKeys#token_label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/managed_keys#token_label ManagedKeys#token_label}
 
 ---
 

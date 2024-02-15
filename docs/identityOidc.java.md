@@ -4,7 +4,7 @@
 
 ### IdentityOidc <a name="IdentityOidc" id="@cdktf/provider-vault.identityOidc.IdentityOidc"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/identity_oidc vault_identity_oidc}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/identity_oidc vault_identity_oidc}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.identityOidc.IdentityOidc.Initializer"></a>
 
@@ -40,7 +40,7 @@ IdentityOidc.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vault.identityOidc.IdentityOidc.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityOidc.IdentityOidc.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityOidc.IdentityOidc.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityOidc.IdentityOidc.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/identity_oidc#id IdentityOidc#id}. |
+| <code><a href="#@cdktf/provider-vault.identityOidc.IdentityOidc.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/identity_oidc#id IdentityOidc#id}. |
 | <code><a href="#@cdktf/provider-vault.identityOidc.IdentityOidc.Initializer.parameter.issuer">issuer</a></code> | <code>java.lang.String</code> | Issuer URL to be used in the iss claim of the token. |
 | <code><a href="#@cdktf/provider-vault.identityOidc.IdentityOidc.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/identity_oidc#id IdentityOidc#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/identity_oidc#id IdentityOidc#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -125,7 +125,7 @@ Issuer URL to be used in the iss claim of the token.
 
 If not set, Vault's api_addr will be used. The issuer is a case sensitive URL using the https scheme that contains scheme, host, and optionally, port number and path components, but no query or fragment components.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/identity_oidc#issuer IdentityOidc#issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/identity_oidc#issuer IdentityOidc#issuer}
 
 ---
 
@@ -135,7 +135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/identity_oidc#namespace IdentityOidc#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/identity_oidc#namespace IdentityOidc#namespace}
 
 ---
 
@@ -583,7 +583,7 @@ The construct id used in the generated config for the IdentityOidc to import.
 
 The id of the existing IdentityOidc that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/identity_oidc#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/identity_oidc#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -880,7 +880,7 @@ IdentityOidcConfig.builder()
 | <code><a href="#@cdktf/provider-vault.identityOidc.IdentityOidcConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityOidc.IdentityOidcConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityOidc.IdentityOidcConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityOidc.IdentityOidcConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/identity_oidc#id IdentityOidc#id}. |
+| <code><a href="#@cdktf/provider-vault.identityOidc.IdentityOidcConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/identity_oidc#id IdentityOidc#id}. |
 | <code><a href="#@cdktf/provider-vault.identityOidc.IdentityOidcConfig.property.issuer">issuer</a></code> | <code>java.lang.String</code> | Issuer URL to be used in the iss claim of the token. |
 | <code><a href="#@cdktf/provider-vault.identityOidc.IdentityOidcConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 
@@ -964,7 +964,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/identity_oidc#id IdentityOidc#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/identity_oidc#id IdentityOidc#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -983,7 +983,7 @@ Issuer URL to be used in the iss claim of the token.
 
 If not set, Vault's api_addr will be used. The issuer is a case sensitive URL using the https scheme that contains scheme, host, and optionally, port number and path components, but no query or fragment components.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/identity_oidc#issuer IdentityOidc#issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/identity_oidc#issuer IdentityOidc#issuer}
 
 ---
 
@@ -997,7 +997,7 @@ public java.lang.String getNamespace();
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/identity_oidc#namespace IdentityOidc#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/identity_oidc#namespace IdentityOidc#namespace}
 
 ---
 

@@ -127,6 +127,13 @@ Object.defineProperty(exports, 'raftSnapshotAgentConfig', { get: function () { r
 Object.defineProperty(exports, 'rgpPolicy', { get: function () { return require('./rgp-policy'); } });
 Object.defineProperty(exports, 'samlAuthBackend', { get: function () { return require('./saml-auth-backend'); } });
 Object.defineProperty(exports, 'samlAuthBackendRole', { get: function () { return require('./saml-auth-backend-role'); } });
+Object.defineProperty(exports, 'secretsSyncAssociation', { get: function () { return require('./secrets-sync-association'); } });
+Object.defineProperty(exports, 'secretsSyncAwsDestination', { get: function () { return require('./secrets-sync-aws-destination'); } });
+Object.defineProperty(exports, 'secretsSyncAzureDestination', { get: function () { return require('./secrets-sync-azure-destination'); } });
+Object.defineProperty(exports, 'secretsSyncConfig', { get: function () { return require('./secrets-sync-config'); } });
+Object.defineProperty(exports, 'secretsSyncGcpDestination', { get: function () { return require('./secrets-sync-gcp-destination'); } });
+Object.defineProperty(exports, 'secretsSyncGhDestination', { get: function () { return require('./secrets-sync-gh-destination'); } });
+Object.defineProperty(exports, 'secretsSyncVercelDestination', { get: function () { return require('./secrets-sync-vercel-destination'); } });
 Object.defineProperty(exports, 'sshSecretBackendCa', { get: function () { return require('./ssh-secret-backend-ca'); } });
 Object.defineProperty(exports, 'sshSecretBackendRole', { get: function () { return require('./ssh-secret-backend-role'); } });
 Object.defineProperty(exports, 'terraformCloudSecretBackend', { get: function () { return require('./terraform-cloud-secret-backend'); } });

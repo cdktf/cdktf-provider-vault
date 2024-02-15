@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/kv_secret_backend_v2
+// https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/kv_secret_backend_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface KvSecretBackendV2Config extends cdktf.TerraformMetaArguments {
   /**
   * If true, all keys will require the cas parameter to be set on all write requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/kv_secret_backend_v2#cas_required KvSecretBackendV2#cas_required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/kv_secret_backend_v2#cas_required KvSecretBackendV2#cas_required}
   */
   readonly casRequired?: boolean | cdktf.IResolvable;
   /**
   * If set, specifies the length of time before a version is deleted
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/kv_secret_backend_v2#delete_version_after KvSecretBackendV2#delete_version_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/kv_secret_backend_v2#delete_version_after KvSecretBackendV2#delete_version_after}
   */
   readonly deleteVersionAfter?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/kv_secret_backend_v2#id KvSecretBackendV2#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/kv_secret_backend_v2#id KvSecretBackendV2#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,25 +34,25 @@ export interface KvSecretBackendV2Config extends cdktf.TerraformMetaArguments {
   /**
   * The number of versions to keep per key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/kv_secret_backend_v2#max_versions KvSecretBackendV2#max_versions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/kv_secret_backend_v2#max_versions KvSecretBackendV2#max_versions}
   */
   readonly maxVersions?: number;
   /**
   * Path where KV-V2 engine is mounted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/kv_secret_backend_v2#mount KvSecretBackendV2#mount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/kv_secret_backend_v2#mount KvSecretBackendV2#mount}
   */
   readonly mount: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/kv_secret_backend_v2#namespace KvSecretBackendV2#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/kv_secret_backend_v2#namespace KvSecretBackendV2#namespace}
   */
   readonly namespace?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/kv_secret_backend_v2 vault_kv_secret_backend_v2}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/kv_secret_backend_v2 vault_kv_secret_backend_v2}
 */
 export class KvSecretBackendV2 extends cdktf.TerraformResource {
 
@@ -68,7 +68,7 @@ export class KvSecretBackendV2 extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a KvSecretBackendV2 resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KvSecretBackendV2 to import
-  * @param importFromId The id of the existing KvSecretBackendV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/kv_secret_backend_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KvSecretBackendV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/kv_secret_backend_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KvSecretBackendV2 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -80,7 +80,7 @@ export class KvSecretBackendV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/kv_secret_backend_v2 vault_kv_secret_backend_v2} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/kv_secret_backend_v2 vault_kv_secret_backend_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -91,7 +91,7 @@ export class KvSecretBackendV2 extends cdktf.TerraformResource {
       terraformResourceType: 'vault_kv_secret_backend_v2',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.24.0',
+        providerVersion: '3.25.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

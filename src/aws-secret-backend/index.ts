@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/aws_secret_backend
+// https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/aws_secret_backend
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,92 +15,116 @@ export interface AwsSecretBackendConfig extends cdktf.TerraformMetaArguments {
   /**
   * The AWS Access Key ID to use when generating new credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/aws_secret_backend#access_key AwsSecretBackend#access_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/aws_secret_backend#access_key AwsSecretBackend#access_key}
   */
   readonly accessKey?: string;
   /**
   * Default lease duration for secrets in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/aws_secret_backend#default_lease_ttl_seconds AwsSecretBackend#default_lease_ttl_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/aws_secret_backend#default_lease_ttl_seconds AwsSecretBackend#default_lease_ttl_seconds}
   */
   readonly defaultLeaseTtlSeconds?: number;
   /**
   * Human-friendly description of the mount for the backend.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/aws_secret_backend#description AwsSecretBackend#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/aws_secret_backend#description AwsSecretBackend#description}
   */
   readonly description?: string;
   /**
   * If set, opts out of mount migration on path updates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/aws_secret_backend#disable_remount AwsSecretBackend#disable_remount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/aws_secret_backend#disable_remount AwsSecretBackend#disable_remount}
   */
   readonly disableRemount?: boolean | cdktf.IResolvable;
   /**
   * Specifies a custom HTTP IAM endpoint to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/aws_secret_backend#iam_endpoint AwsSecretBackend#iam_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/aws_secret_backend#iam_endpoint AwsSecretBackend#iam_endpoint}
   */
   readonly iamEndpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/aws_secret_backend#id AwsSecretBackend#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/aws_secret_backend#id AwsSecretBackend#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
+  * The audience claim value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/aws_secret_backend#identity_token_audience AwsSecretBackend#identity_token_audience}
+  */
+  readonly identityTokenAudience?: string;
+  /**
+  * The key to use for signing identity tokens.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/aws_secret_backend#identity_token_key AwsSecretBackend#identity_token_key}
+  */
+  readonly identityTokenKey?: string;
+  /**
+  * The TTL of generated identity tokens in seconds.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/aws_secret_backend#identity_token_ttl AwsSecretBackend#identity_token_ttl}
+  */
+  readonly identityTokenTtl?: number;
+  /**
   * Specifies if the secret backend is local only
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/aws_secret_backend#local AwsSecretBackend#local}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/aws_secret_backend#local AwsSecretBackend#local}
   */
   readonly local?: boolean | cdktf.IResolvable;
   /**
   * Maximum possible lease duration for secrets in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/aws_secret_backend#max_lease_ttl_seconds AwsSecretBackend#max_lease_ttl_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/aws_secret_backend#max_lease_ttl_seconds AwsSecretBackend#max_lease_ttl_seconds}
   */
   readonly maxLeaseTtlSeconds?: number;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/aws_secret_backend#namespace AwsSecretBackend#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/aws_secret_backend#namespace AwsSecretBackend#namespace}
   */
   readonly namespace?: string;
   /**
   * Path to mount the backend at.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/aws_secret_backend#path AwsSecretBackend#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/aws_secret_backend#path AwsSecretBackend#path}
   */
   readonly path?: string;
   /**
   * The AWS region to make API calls against. Defaults to us-east-1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/aws_secret_backend#region AwsSecretBackend#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/aws_secret_backend#region AwsSecretBackend#region}
   */
   readonly region?: string;
   /**
+  * Role ARN to assume for plugin identity token federation.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/aws_secret_backend#role_arn AwsSecretBackend#role_arn}
+  */
+  readonly roleArn?: string;
+  /**
   * The AWS Secret Access Key to use when generating new credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/aws_secret_backend#secret_key AwsSecretBackend#secret_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/aws_secret_backend#secret_key AwsSecretBackend#secret_key}
   */
   readonly secretKey?: string;
   /**
   * Specifies a custom HTTP STS endpoint to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/aws_secret_backend#sts_endpoint AwsSecretBackend#sts_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/aws_secret_backend#sts_endpoint AwsSecretBackend#sts_endpoint}
   */
   readonly stsEndpoint?: string;
   /**
   * Template describing how dynamic usernames are generated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/aws_secret_backend#username_template AwsSecretBackend#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/aws_secret_backend#username_template AwsSecretBackend#username_template}
   */
   readonly usernameTemplate?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/aws_secret_backend vault_aws_secret_backend}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/aws_secret_backend vault_aws_secret_backend}
 */
 export class AwsSecretBackend extends cdktf.TerraformResource {
 
@@ -116,7 +140,7 @@ export class AwsSecretBackend extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AwsSecretBackend resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AwsSecretBackend to import
-  * @param importFromId The id of the existing AwsSecretBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/aws_secret_backend#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AwsSecretBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/aws_secret_backend#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AwsSecretBackend to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -128,7 +152,7 @@ export class AwsSecretBackend extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/aws_secret_backend vault_aws_secret_backend} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/aws_secret_backend vault_aws_secret_backend} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -139,7 +163,7 @@ export class AwsSecretBackend extends cdktf.TerraformResource {
       terraformResourceType: 'vault_aws_secret_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.24.0',
+        providerVersion: '3.25.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -156,11 +180,15 @@ export class AwsSecretBackend extends cdktf.TerraformResource {
     this._disableRemount = config.disableRemount;
     this._iamEndpoint = config.iamEndpoint;
     this._id = config.id;
+    this._identityTokenAudience = config.identityTokenAudience;
+    this._identityTokenKey = config.identityTokenKey;
+    this._identityTokenTtl = config.identityTokenTtl;
     this._local = config.local;
     this._maxLeaseTtlSeconds = config.maxLeaseTtlSeconds;
     this._namespace = config.namespace;
     this._path = config.path;
     this._region = config.region;
+    this._roleArn = config.roleArn;
     this._secretKey = config.secretKey;
     this._stsEndpoint = config.stsEndpoint;
     this._usernameTemplate = config.usernameTemplate;
@@ -266,6 +294,54 @@ export class AwsSecretBackend extends cdktf.TerraformResource {
     return this._id;
   }
 
+  // identity_token_audience - computed: false, optional: true, required: false
+  private _identityTokenAudience?: string; 
+  public get identityTokenAudience() {
+    return this.getStringAttribute('identity_token_audience');
+  }
+  public set identityTokenAudience(value: string) {
+    this._identityTokenAudience = value;
+  }
+  public resetIdentityTokenAudience() {
+    this._identityTokenAudience = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityTokenAudienceInput() {
+    return this._identityTokenAudience;
+  }
+
+  // identity_token_key - computed: false, optional: true, required: false
+  private _identityTokenKey?: string; 
+  public get identityTokenKey() {
+    return this.getStringAttribute('identity_token_key');
+  }
+  public set identityTokenKey(value: string) {
+    this._identityTokenKey = value;
+  }
+  public resetIdentityTokenKey() {
+    this._identityTokenKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityTokenKeyInput() {
+    return this._identityTokenKey;
+  }
+
+  // identity_token_ttl - computed: true, optional: true, required: false
+  private _identityTokenTtl?: number; 
+  public get identityTokenTtl() {
+    return this.getNumberAttribute('identity_token_ttl');
+  }
+  public set identityTokenTtl(value: number) {
+    this._identityTokenTtl = value;
+  }
+  public resetIdentityTokenTtl() {
+    this._identityTokenTtl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityTokenTtlInput() {
+    return this._identityTokenTtl;
+  }
+
   // local - computed: false, optional: true, required: false
   private _local?: boolean | cdktf.IResolvable; 
   public get local() {
@@ -346,6 +422,22 @@ export class AwsSecretBackend extends cdktf.TerraformResource {
     return this._region;
   }
 
+  // role_arn - computed: false, optional: true, required: false
+  private _roleArn?: string; 
+  public get roleArn() {
+    return this.getStringAttribute('role_arn');
+  }
+  public set roleArn(value: string) {
+    this._roleArn = value;
+  }
+  public resetRoleArn() {
+    this._roleArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn;
+  }
+
   // secret_key - computed: false, optional: true, required: false
   private _secretKey?: string; 
   public get secretKey() {
@@ -406,11 +498,15 @@ export class AwsSecretBackend extends cdktf.TerraformResource {
       disable_remount: cdktf.booleanToTerraform(this._disableRemount),
       iam_endpoint: cdktf.stringToTerraform(this._iamEndpoint),
       id: cdktf.stringToTerraform(this._id),
+      identity_token_audience: cdktf.stringToTerraform(this._identityTokenAudience),
+      identity_token_key: cdktf.stringToTerraform(this._identityTokenKey),
+      identity_token_ttl: cdktf.numberToTerraform(this._identityTokenTtl),
       local: cdktf.booleanToTerraform(this._local),
       max_lease_ttl_seconds: cdktf.numberToTerraform(this._maxLeaseTtlSeconds),
       namespace: cdktf.stringToTerraform(this._namespace),
       path: cdktf.stringToTerraform(this._path),
       region: cdktf.stringToTerraform(this._region),
+      role_arn: cdktf.stringToTerraform(this._roleArn),
       secret_key: cdktf.stringToTerraform(this._secretKey),
       sts_endpoint: cdktf.stringToTerraform(this._stsEndpoint),
       username_template: cdktf.stringToTerraform(this._usernameTemplate),
@@ -455,6 +551,24 @@ export class AwsSecretBackend extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      identity_token_audience: {
+        value: cdktf.stringToHclTerraform(this._identityTokenAudience),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      identity_token_key: {
+        value: cdktf.stringToHclTerraform(this._identityTokenKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      identity_token_ttl: {
+        value: cdktf.numberToHclTerraform(this._identityTokenTtl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
       local: {
         value: cdktf.booleanToHclTerraform(this._local),
         isBlock: false,
@@ -481,6 +595,12 @@ export class AwsSecretBackend extends cdktf.TerraformResource {
       },
       region: {
         value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_arn: {
+        value: cdktf.stringToHclTerraform(this._roleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

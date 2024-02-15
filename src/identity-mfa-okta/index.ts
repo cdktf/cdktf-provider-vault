@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/identity_mfa_okta
+// https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/identity_mfa_okta
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface IdentityMfaOktaConfig extends cdktf.TerraformMetaArguments {
   /**
   * Okta API token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/identity_mfa_okta#api_token IdentityMfaOkta#api_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/identity_mfa_okta#api_token IdentityMfaOkta#api_token}
   */
   readonly apiToken: string;
   /**
   * The base domain to use for API requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/identity_mfa_okta#base_url IdentityMfaOkta#base_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/identity_mfa_okta#base_url IdentityMfaOkta#base_url}
   */
   readonly baseUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/identity_mfa_okta#id IdentityMfaOkta#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/identity_mfa_okta#id IdentityMfaOkta#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,31 +34,31 @@ export interface IdentityMfaOktaConfig extends cdktf.TerraformMetaArguments {
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/identity_mfa_okta#namespace IdentityMfaOkta#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/identity_mfa_okta#namespace IdentityMfaOkta#namespace}
   */
   readonly namespace?: string;
   /**
   * Name of the organization to be used in the Okta API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/identity_mfa_okta#org_name IdentityMfaOkta#org_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/identity_mfa_okta#org_name IdentityMfaOkta#org_name}
   */
   readonly orgName: string;
   /**
   * Only match the primary email for the account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/identity_mfa_okta#primary_email IdentityMfaOkta#primary_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/identity_mfa_okta#primary_email IdentityMfaOkta#primary_email}
   */
   readonly primaryEmail?: boolean | cdktf.IResolvable;
   /**
   * A template string for mapping Identity names to MFA methods.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/identity_mfa_okta#username_format IdentityMfaOkta#username_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/identity_mfa_okta#username_format IdentityMfaOkta#username_format}
   */
   readonly usernameFormat?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/identity_mfa_okta vault_identity_mfa_okta}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/identity_mfa_okta vault_identity_mfa_okta}
 */
 export class IdentityMfaOkta extends cdktf.TerraformResource {
 
@@ -74,7 +74,7 @@ export class IdentityMfaOkta extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a IdentityMfaOkta resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IdentityMfaOkta to import
-  * @param importFromId The id of the existing IdentityMfaOkta that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/identity_mfa_okta#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IdentityMfaOkta that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/identity_mfa_okta#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IdentityMfaOkta to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -86,7 +86,7 @@ export class IdentityMfaOkta extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/identity_mfa_okta vault_identity_mfa_okta} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/identity_mfa_okta vault_identity_mfa_okta} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -97,7 +97,7 @@ export class IdentityMfaOkta extends cdktf.TerraformResource {
       terraformResourceType: 'vault_identity_mfa_okta',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.24.0',
+        providerVersion: '3.25.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
