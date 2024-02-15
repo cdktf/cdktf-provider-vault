@@ -4,12 +4,12 @@
 
 ### DataVaultAdAccessCredentials <a name="DataVaultAdAccessCredentials" id="@cdktf/provider-vault.dataVaultAdAccessCredentials.DataVaultAdAccessCredentials"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/data-sources/ad_access_credentials vault_ad_access_credentials}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/data-sources/ad_access_credentials vault_ad_access_credentials}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultAdAccessCredentials.DataVaultAdAccessCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/datavaultadaccesscredentials"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultadaccesscredentials"
 
 datavaultadaccesscredentials.NewDataVaultAdAccessCredentials(scope Construct, id *string, config DataVaultAdAccessCredentialsConfig) DataVaultAdAccessCredentials
 ```
@@ -290,7 +290,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.dataVaultAdAccessCredentials.DataVaultAdAccessCredentials.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/datavaultadaccesscredentials"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultadaccesscredentials"
 
 datavaultadaccesscredentials.DataVaultAdAccessCredentials_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.dataVaultAdAccessCredentials.DataVaultAdAccessCredentials.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/datavaultadaccesscredentials"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultadaccesscredentials"
 
 datavaultadaccesscredentials.DataVaultAdAccessCredentials_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datavaultadaccesscredentials.DataVaultAdAccessCredentials_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vault.dataVaultAdAccessCredentials.DataVaultAdAccessCredentials.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/datavaultadaccesscredentials"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultadaccesscredentials"
 
 datavaultadaccesscredentials.DataVaultAdAccessCredentials_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datavaultadaccesscredentials.DataVaultAdAccessCredentials_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.dataVaultAdAccessCredentials.DataVaultAdAccessCredentials.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/datavaultadaccesscredentials"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultadaccesscredentials"
 
 datavaultadaccesscredentials.DataVaultAdAccessCredentials_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataVaultAdAccessCredentia
 
 The id of the existing DataVaultAdAccessCredentials that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/data-sources/ad_access_credentials#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/data-sources/ad_access_credentials#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -678,7 +678,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.dataVaultAdAccessCredentials.DataVaultAdAccessCredentialsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/datavaultadaccesscredentials"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultadaccesscredentials"
 
 &datavaultadaccesscredentials.DataVaultAdAccessCredentialsConfig {
 	Connection: interface{},
@@ -708,7 +708,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/datavaultadaccesscred
 | <code><a href="#@cdktf/provider-vault.dataVaultAdAccessCredentials.DataVaultAdAccessCredentialsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultAdAccessCredentials.DataVaultAdAccessCredentialsConfig.property.backend">Backend</a></code> | <code>*string</code> | AD Secret Backend to read credentials from. |
 | <code><a href="#@cdktf/provider-vault.dataVaultAdAccessCredentials.DataVaultAdAccessCredentialsConfig.property.role">Role</a></code> | <code>*string</code> | Name of the role. |
-| <code><a href="#@cdktf/provider-vault.dataVaultAdAccessCredentials.DataVaultAdAccessCredentialsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/data-sources/ad_access_credentials#id DataVaultAdAccessCredentials#id}. |
+| <code><a href="#@cdktf/provider-vault.dataVaultAdAccessCredentials.DataVaultAdAccessCredentialsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/data-sources/ad_access_credentials#id DataVaultAdAccessCredentials#id}. |
 | <code><a href="#@cdktf/provider-vault.dataVaultAdAccessCredentials.DataVaultAdAccessCredentialsConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -793,7 +793,7 @@ Backend *string
 
 AD Secret Backend to read credentials from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/data-sources/ad_access_credentials#backend DataVaultAdAccessCredentials#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/data-sources/ad_access_credentials#backend DataVaultAdAccessCredentials#backend}
 
 ---
 
@@ -807,7 +807,7 @@ Role *string
 
 Name of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/data-sources/ad_access_credentials#role DataVaultAdAccessCredentials#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/data-sources/ad_access_credentials#role DataVaultAdAccessCredentials#role}
 
 ---
 
@@ -819,7 +819,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/data-sources/ad_access_credentials#id DataVaultAdAccessCredentials#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/data-sources/ad_access_credentials#id DataVaultAdAccessCredentials#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -836,7 +836,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/data-sources/ad_access_credentials#namespace DataVaultAdAccessCredentials#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/data-sources/ad_access_credentials#namespace DataVaultAdAccessCredentials#namespace}
 
 ---
 

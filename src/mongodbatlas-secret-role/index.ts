@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/mongodbatlas_secret_role
+// https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/mongodbatlas_secret_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface MongodbatlasSecretRoleConfig extends cdktf.TerraformMetaArgumen
   /**
   * Whitelist entry in CIDR notation to be added for the API key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/mongodbatlas_secret_role#cidr_blocks MongodbatlasSecretRole#cidr_blocks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/mongodbatlas_secret_role#cidr_blocks MongodbatlasSecretRole#cidr_blocks}
   */
   readonly cidrBlocks?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/mongodbatlas_secret_role#id MongodbatlasSecretRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/mongodbatlas_secret_role#id MongodbatlasSecretRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,67 +23,67 @@ export interface MongodbatlasSecretRoleConfig extends cdktf.TerraformMetaArgumen
   /**
   * IP address to be added to the whitelist for the API key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/mongodbatlas_secret_role#ip_addresses MongodbatlasSecretRole#ip_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/mongodbatlas_secret_role#ip_addresses MongodbatlasSecretRole#ip_addresses}
   */
   readonly ipAddresses?: string[];
   /**
   * The maximum allowed lifetime of credentials issued using this role
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/mongodbatlas_secret_role#max_ttl MongodbatlasSecretRole#max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/mongodbatlas_secret_role#max_ttl MongodbatlasSecretRole#max_ttl}
   */
   readonly maxTtl?: string;
   /**
   * Path where MongoDB Atlas secret backend is mounted
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/mongodbatlas_secret_role#mount MongodbatlasSecretRole#mount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/mongodbatlas_secret_role#mount MongodbatlasSecretRole#mount}
   */
   readonly mount: string;
   /**
   * Name of the role
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/mongodbatlas_secret_role#name MongodbatlasSecretRole#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/mongodbatlas_secret_role#name MongodbatlasSecretRole#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/mongodbatlas_secret_role#namespace MongodbatlasSecretRole#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/mongodbatlas_secret_role#namespace MongodbatlasSecretRole#namespace}
   */
   readonly namespace?: string;
   /**
   * ID for the organization to which the target API Key belongs
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/mongodbatlas_secret_role#organization_id MongodbatlasSecretRole#organization_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/mongodbatlas_secret_role#organization_id MongodbatlasSecretRole#organization_id}
   */
   readonly organizationId?: string;
   /**
   * ID for the project to which the target API Key belongs
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/mongodbatlas_secret_role#project_id MongodbatlasSecretRole#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/mongodbatlas_secret_role#project_id MongodbatlasSecretRole#project_id}
   */
   readonly projectId?: string;
   /**
   * Roles assigned when an org API key is assigned to a project API key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/mongodbatlas_secret_role#project_roles MongodbatlasSecretRole#project_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/mongodbatlas_secret_role#project_roles MongodbatlasSecretRole#project_roles}
   */
   readonly projectRoles?: string[];
   /**
   * List of roles that the API Key needs to have
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/mongodbatlas_secret_role#roles MongodbatlasSecretRole#roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/mongodbatlas_secret_role#roles MongodbatlasSecretRole#roles}
   */
   readonly roles: string[];
   /**
   * Duration in seconds after which the issued credential should expire
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/mongodbatlas_secret_role#ttl MongodbatlasSecretRole#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/mongodbatlas_secret_role#ttl MongodbatlasSecretRole#ttl}
   */
   readonly ttl?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/mongodbatlas_secret_role vault_mongodbatlas_secret_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/mongodbatlas_secret_role vault_mongodbatlas_secret_role}
 */
 export class MongodbatlasSecretRole extends cdktf.TerraformResource {
 
@@ -104,7 +99,7 @@ export class MongodbatlasSecretRole extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a MongodbatlasSecretRole resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MongodbatlasSecretRole to import
-  * @param importFromId The id of the existing MongodbatlasSecretRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/mongodbatlas_secret_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MongodbatlasSecretRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/mongodbatlas_secret_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MongodbatlasSecretRole to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -116,7 +111,7 @@ export class MongodbatlasSecretRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/mongodbatlas_secret_role vault_mongodbatlas_secret_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/mongodbatlas_secret_role vault_mongodbatlas_secret_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -127,7 +122,7 @@ export class MongodbatlasSecretRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_mongodbatlas_secret_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.24.0',
+        providerVersion: '3.25.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
