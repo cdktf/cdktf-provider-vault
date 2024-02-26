@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.25
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/secretssyncghdestination"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/secretssyncghdestination"
 
 secretssyncghdestination.NewSecretsSyncGhDestination(scope Construct, id *string, config SecretsSyncGhDestinationConfig) SecretsSyncGhDestination
 ```
@@ -420,7 +420,7 @@ func ResetSecretNameTemplate()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/secretssyncghdestination"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/secretssyncghdestination"
 
 secretssyncghdestination.SecretsSyncGhDestination_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/secretssyncghdestination"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/secretssyncghdestination"
 
 secretssyncghdestination.SecretsSyncGhDestination_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ secretssyncghdestination.SecretsSyncGhDestination_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/secretssyncghdestination"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/secretssyncghdestination"
 
 secretssyncghdestination.SecretsSyncGhDestination_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ secretssyncghdestination.SecretsSyncGhDestination_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/secretssyncghdestination"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/secretssyncghdestination"
 
 secretssyncghdestination.SecretsSyncGhDestination_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -874,7 +874,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestinationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/secretssyncghdestination"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/secretssyncghdestination"
 
 &secretssyncghdestination.SecretsSyncGhDestinationConfig {
 	Connection: interface{},
