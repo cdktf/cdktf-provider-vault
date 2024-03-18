@@ -4,7 +4,7 @@
 
 ### JwtAuthBackendRole <a name="JwtAuthBackendRole" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/jwt_auth_backend_role vault_jwt_auth_backend_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/jwt_auth_backend_role vault_jwt_auth_backend_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.Initializer"></a>
 
@@ -663,7 +663,7 @@ The construct id used in the generated config for the JwtAuthBackendRole to impo
 
 The id of the existing JwtAuthBackendRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/jwt_auth_backend_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/jwt_auth_backend_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1590,7 +1590,7 @@ new JwtAuthBackendRoleConfig {
 | <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.disableBoundClaimsParsing">DisableBoundClaimsParsing</a></code> | <code>object</code> | Disable bound claim value parsing. Useful when values contain commas. |
 | <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.expirationLeeway">ExpirationLeeway</a></code> | <code>double</code> | The amount of leeway to add to expiration (exp) claims to account for clock skew, in seconds. |
 | <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.groupsClaim">GroupsClaim</a></code> | <code>string</code> | The claim to use to uniquely identify the set of groups to which the user belongs; |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/jwt_auth_backend_role#id JwtAuthBackendRole#id}. |
+| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/jwt_auth_backend_role#id JwtAuthBackendRole#id}. |
 | <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.maxAge">MaxAge</a></code> | <code>double</code> | Specifies the allowable elapsed time in seconds since the last time the user was actively authenticated. |
 | <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.notBeforeLeeway">NotBeforeLeeway</a></code> | <code>double</code> | The amount of leeway to add to not before (nbf) claims to account for clock skew, in seconds. |
@@ -1690,7 +1690,7 @@ public string RoleName { get; set; }
 
 Name of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/jwt_auth_backend_role#role_name JwtAuthBackendRole#role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/jwt_auth_backend_role#role_name JwtAuthBackendRole#role_name}
 
 ---
 
@@ -1706,7 +1706,7 @@ The claim to use to uniquely identify the user;
 
 this will be used as the name for the Identity entity alias created due to a successful login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/jwt_auth_backend_role#user_claim JwtAuthBackendRole#user_claim}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/jwt_auth_backend_role#user_claim JwtAuthBackendRole#user_claim}
 
 ---
 
@@ -1720,7 +1720,7 @@ public string[] AllowedRedirectUris { get; set; }
 
 The list of allowed values for redirect_uri during OIDC logins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/jwt_auth_backend_role#allowed_redirect_uris JwtAuthBackendRole#allowed_redirect_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/jwt_auth_backend_role#allowed_redirect_uris JwtAuthBackendRole#allowed_redirect_uris}
 
 ---
 
@@ -1734,7 +1734,7 @@ public string Backend { get; set; }
 
 Unique name of the auth backend to configure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/jwt_auth_backend_role#backend JwtAuthBackendRole#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/jwt_auth_backend_role#backend JwtAuthBackendRole#backend}
 
 ---
 
@@ -1748,7 +1748,7 @@ public string[] BoundAudiences { get; set; }
 
 List of aud claims to match against. Any match is sufficient.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/jwt_auth_backend_role#bound_audiences JwtAuthBackendRole#bound_audiences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/jwt_auth_backend_role#bound_audiences JwtAuthBackendRole#bound_audiences}
 
 ---
 
@@ -1762,7 +1762,7 @@ public System.Collections.Generic.IDictionary<string, string> BoundClaims { get;
 
 Map of claims/values to match against. The expected value may be a single string or a comma-separated string list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/jwt_auth_backend_role#bound_claims JwtAuthBackendRole#bound_claims}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/jwt_auth_backend_role#bound_claims JwtAuthBackendRole#bound_claims}
 
 ---
 
@@ -1776,7 +1776,7 @@ public string BoundClaimsType { get; set; }
 
 How to interpret values in the claims/values map: can be either "string" (exact match) or "glob" (wildcard match).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/jwt_auth_backend_role#bound_claims_type JwtAuthBackendRole#bound_claims_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/jwt_auth_backend_role#bound_claims_type JwtAuthBackendRole#bound_claims_type}
 
 ---
 
@@ -1790,7 +1790,7 @@ public string BoundSubject { get; set; }
 
 If set, requires that the sub claim matches this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/jwt_auth_backend_role#bound_subject JwtAuthBackendRole#bound_subject}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/jwt_auth_backend_role#bound_subject JwtAuthBackendRole#bound_subject}
 
 ---
 
@@ -1804,7 +1804,7 @@ public System.Collections.Generic.IDictionary<string, string> ClaimMappings { ge
 
 Map of claims (keys) to be copied to specified metadata fields (values).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/jwt_auth_backend_role#claim_mappings JwtAuthBackendRole#claim_mappings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/jwt_auth_backend_role#claim_mappings JwtAuthBackendRole#claim_mappings}
 
 ---
 
@@ -1820,7 +1820,7 @@ The amount of leeway to add to all claims to account for clock skew, in seconds.
 
 Defaults to 60 seconds if set to 0 and can be disabled if set to -1. Only applicable with 'jwt' roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/jwt_auth_backend_role#clock_skew_leeway JwtAuthBackendRole#clock_skew_leeway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/jwt_auth_backend_role#clock_skew_leeway JwtAuthBackendRole#clock_skew_leeway}
 
 ---
 
@@ -1834,7 +1834,7 @@ public object DisableBoundClaimsParsing { get; set; }
 
 Disable bound claim value parsing. Useful when values contain commas.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/jwt_auth_backend_role#disable_bound_claims_parsing JwtAuthBackendRole#disable_bound_claims_parsing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/jwt_auth_backend_role#disable_bound_claims_parsing JwtAuthBackendRole#disable_bound_claims_parsing}
 
 ---
 
@@ -1850,7 +1850,7 @@ The amount of leeway to add to expiration (exp) claims to account for clock skew
 
 Defaults to 60 seconds if set to 0 and can be disabled if set to -1. Only applicable with 'jwt' roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/jwt_auth_backend_role#expiration_leeway JwtAuthBackendRole#expiration_leeway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/jwt_auth_backend_role#expiration_leeway JwtAuthBackendRole#expiration_leeway}
 
 ---
 
@@ -1866,7 +1866,7 @@ The claim to use to uniquely identify the set of groups to which the user belong
 
 this will be used as the names for the Identity group aliases created due to a successful login. The claim value must be a list of strings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/jwt_auth_backend_role#groups_claim JwtAuthBackendRole#groups_claim}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/jwt_auth_backend_role#groups_claim JwtAuthBackendRole#groups_claim}
 
 ---
 
@@ -1878,7 +1878,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/jwt_auth_backend_role#id JwtAuthBackendRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/jwt_auth_backend_role#id JwtAuthBackendRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1895,7 +1895,7 @@ public double MaxAge { get; set; }
 
 Specifies the allowable elapsed time in seconds since the last time the user was actively authenticated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/jwt_auth_backend_role#max_age JwtAuthBackendRole#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/jwt_auth_backend_role#max_age JwtAuthBackendRole#max_age}
 
 ---
 
@@ -1909,7 +1909,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/jwt_auth_backend_role#namespace JwtAuthBackendRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/jwt_auth_backend_role#namespace JwtAuthBackendRole#namespace}
 
 ---
 
@@ -1925,7 +1925,7 @@ The amount of leeway to add to not before (nbf) claims to account for clock skew
 
 Defaults to 150 seconds if set to 0 and can be disabled if set to -1. Only applicable with 'jwt' roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/jwt_auth_backend_role#not_before_leeway JwtAuthBackendRole#not_before_leeway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/jwt_auth_backend_role#not_before_leeway JwtAuthBackendRole#not_before_leeway}
 
 ---
 
@@ -1941,7 +1941,7 @@ List of OIDC scopes to be used with an OIDC role.
 
 The standard scope "openid" is automatically included and need not be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/jwt_auth_backend_role#oidc_scopes JwtAuthBackendRole#oidc_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/jwt_auth_backend_role#oidc_scopes JwtAuthBackendRole#oidc_scopes}
 
 ---
 
@@ -1955,7 +1955,7 @@ public string RoleType { get; set; }
 
 Type of role, either "oidc" (default) or "jwt".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/jwt_auth_backend_role#role_type JwtAuthBackendRole#role_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/jwt_auth_backend_role#role_type JwtAuthBackendRole#role_type}
 
 ---
 
@@ -1969,7 +1969,7 @@ public string[] TokenBoundCidrs { get; set; }
 
 Specifies the blocks of IP addresses which are allowed to use the generated token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/jwt_auth_backend_role#token_bound_cidrs JwtAuthBackendRole#token_bound_cidrs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/jwt_auth_backend_role#token_bound_cidrs JwtAuthBackendRole#token_bound_cidrs}
 
 ---
 
@@ -1983,7 +1983,7 @@ public double TokenExplicitMaxTtl { get; set; }
 
 Generated Token's Explicit Maximum TTL in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/jwt_auth_backend_role#token_explicit_max_ttl JwtAuthBackendRole#token_explicit_max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/jwt_auth_backend_role#token_explicit_max_ttl JwtAuthBackendRole#token_explicit_max_ttl}
 
 ---
 
@@ -1997,7 +1997,7 @@ public double TokenMaxTtl { get; set; }
 
 The maximum lifetime of the generated token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/jwt_auth_backend_role#token_max_ttl JwtAuthBackendRole#token_max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/jwt_auth_backend_role#token_max_ttl JwtAuthBackendRole#token_max_ttl}
 
 ---
 
@@ -2011,7 +2011,7 @@ public object TokenNoDefaultPolicy { get; set; }
 
 If true, the 'default' policy will not automatically be added to generated tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/jwt_auth_backend_role#token_no_default_policy JwtAuthBackendRole#token_no_default_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/jwt_auth_backend_role#token_no_default_policy JwtAuthBackendRole#token_no_default_policy}
 
 ---
 
@@ -2025,7 +2025,7 @@ public double TokenNumUses { get; set; }
 
 The maximum number of times a token may be used, a value of zero means unlimited.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/jwt_auth_backend_role#token_num_uses JwtAuthBackendRole#token_num_uses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/jwt_auth_backend_role#token_num_uses JwtAuthBackendRole#token_num_uses}
 
 ---
 
@@ -2039,7 +2039,7 @@ public double TokenPeriod { get; set; }
 
 Generated Token's Period.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/jwt_auth_backend_role#token_period JwtAuthBackendRole#token_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/jwt_auth_backend_role#token_period JwtAuthBackendRole#token_period}
 
 ---
 
@@ -2053,7 +2053,7 @@ public string[] TokenPolicies { get; set; }
 
 Generated Token's Policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/jwt_auth_backend_role#token_policies JwtAuthBackendRole#token_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/jwt_auth_backend_role#token_policies JwtAuthBackendRole#token_policies}
 
 ---
 
@@ -2067,7 +2067,7 @@ public double TokenTtl { get; set; }
 
 The initial ttl of the token to generate in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/jwt_auth_backend_role#token_ttl JwtAuthBackendRole#token_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/jwt_auth_backend_role#token_ttl JwtAuthBackendRole#token_ttl}
 
 ---
 
@@ -2081,7 +2081,7 @@ public string TokenType { get; set; }
 
 The type of token to generate, service or batch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/jwt_auth_backend_role#token_type JwtAuthBackendRole#token_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/jwt_auth_backend_role#token_type JwtAuthBackendRole#token_type}
 
 ---
 
@@ -2097,7 +2097,7 @@ Specifies if the user_claim value uses JSON pointer syntax for referencing claim
 
 By default, the user_claim value will not use JSON pointer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/jwt_auth_backend_role#user_claim_json_pointer JwtAuthBackendRole#user_claim_json_pointer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/jwt_auth_backend_role#user_claim_json_pointer JwtAuthBackendRole#user_claim_json_pointer}
 
 ---
 
@@ -2113,7 +2113,7 @@ Log received OIDC tokens and claims when debug-level logging is active.
 
 Not recommended in production since sensitive information may be present in OIDC responses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/jwt_auth_backend_role#verbose_oidc_logging JwtAuthBackendRole#verbose_oidc_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/jwt_auth_backend_role#verbose_oidc_logging JwtAuthBackendRole#verbose_oidc_logging}
 
 ---
 

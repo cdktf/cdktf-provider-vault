@@ -4,12 +4,12 @@
 
 ### IdentityEntityPolicies <a name="IdentityEntityPolicies" id="@cdktf/provider-vault.identityEntityPolicies.IdentityEntityPolicies"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/identity_entity_policies vault_identity_entity_policies}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/identity_entity_policies vault_identity_entity_policies}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.identityEntityPolicies.IdentityEntityPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/identityentitypolicies"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/identityentitypolicies"
 
 identityentitypolicies.NewIdentityEntityPolicies(scope Construct, id *string, config IdentityEntityPoliciesConfig) IdentityEntityPolicies
 ```
@@ -399,7 +399,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.identityEntityPolicies.IdentityEntityPolicies.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/identityentitypolicies"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/identityentitypolicies"
 
 identityentitypolicies.IdentityEntityPolicies_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.identityEntityPolicies.IdentityEntityPolicies.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/identityentitypolicies"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/identityentitypolicies"
 
 identityentitypolicies.IdentityEntityPolicies_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ identityentitypolicies.IdentityEntityPolicies_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.identityEntityPolicies.IdentityEntityPolicies.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/identityentitypolicies"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/identityentitypolicies"
 
 identityentitypolicies.IdentityEntityPolicies_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ identityentitypolicies.IdentityEntityPolicies_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.identityEntityPolicies.IdentityEntityPolicies.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/identityentitypolicies"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/identityentitypolicies"
 
 identityentitypolicies.IdentityEntityPolicies_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -488,7 +488,7 @@ The construct id used in the generated config for the IdentityEntityPolicies to 
 
 The id of the existing IdentityEntityPolicies that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/identity_entity_policies#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/identity_entity_policies#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -809,7 +809,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.identityEntityPolicies.IdentityEntityPoliciesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/identityentitypolicies"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/identityentitypolicies"
 
 &identityentitypolicies.IdentityEntityPoliciesConfig {
 	Connection: interface{},
@@ -841,7 +841,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/identityentitypolicie
 | <code><a href="#@cdktf/provider-vault.identityEntityPolicies.IdentityEntityPoliciesConfig.property.entityId">EntityId</a></code> | <code>*string</code> | ID of the entity. |
 | <code><a href="#@cdktf/provider-vault.identityEntityPolicies.IdentityEntityPoliciesConfig.property.policies">Policies</a></code> | <code>*[]*string</code> | Policies to be tied to the entity. |
 | <code><a href="#@cdktf/provider-vault.identityEntityPolicies.IdentityEntityPoliciesConfig.property.exclusive">Exclusive</a></code> | <code>interface{}</code> | Should the resource manage policies exclusively. |
-| <code><a href="#@cdktf/provider-vault.identityEntityPolicies.IdentityEntityPoliciesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/identity_entity_policies#id IdentityEntityPolicies#id}. |
+| <code><a href="#@cdktf/provider-vault.identityEntityPolicies.IdentityEntityPoliciesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/identity_entity_policies#id IdentityEntityPolicies#id}. |
 | <code><a href="#@cdktf/provider-vault.identityEntityPolicies.IdentityEntityPoliciesConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -926,7 +926,7 @@ EntityId *string
 
 ID of the entity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/identity_entity_policies#entity_id IdentityEntityPolicies#entity_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/identity_entity_policies#entity_id IdentityEntityPolicies#entity_id}
 
 ---
 
@@ -940,7 +940,7 @@ Policies *[]*string
 
 Policies to be tied to the entity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/identity_entity_policies#policies IdentityEntityPolicies#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/identity_entity_policies#policies IdentityEntityPolicies#policies}
 
 ---
 
@@ -954,7 +954,7 @@ Exclusive interface{}
 
 Should the resource manage policies exclusively.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/identity_entity_policies#exclusive IdentityEntityPolicies#exclusive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/identity_entity_policies#exclusive IdentityEntityPolicies#exclusive}
 
 ---
 
@@ -966,7 +966,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/identity_entity_policies#id IdentityEntityPolicies#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/identity_entity_policies#id IdentityEntityPolicies#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -983,7 +983,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/identity_entity_policies#namespace IdentityEntityPolicies#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/identity_entity_policies#namespace IdentityEntityPolicies#namespace}
 
 ---
 

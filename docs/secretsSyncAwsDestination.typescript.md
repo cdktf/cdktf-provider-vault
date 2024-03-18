@@ -4,7 +4,7 @@
 
 ### SecretsSyncAwsDestination <a name="SecretsSyncAwsDestination" id="@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/secrets_sync_aws_destination vault_secrets_sync_aws_destination}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/secrets_sync_aws_destination vault_secrets_sync_aws_destination}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.Initializer"></a>
 
@@ -75,9 +75,11 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.resetAccessKeyId">resetAccessKeyId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.resetCustomTags">resetCustomTags</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.resetExternalId">resetExternalId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.resetNamespace">resetNamespace</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.resetRegion">resetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.resetRoleArn">resetRoleArn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.resetSecretAccessKey">resetSecretAccessKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.resetSecretNameTemplate">resetSecretNameTemplate</a></code> | *No description.* |
 
@@ -383,6 +385,12 @@ public resetAccessKeyId(): void
 public resetCustomTags(): void
 ```
 
+##### `resetExternalId` <a name="resetExternalId" id="@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.resetExternalId"></a>
+
+```typescript
+public resetExternalId(): void
+```
+
 ##### `resetId` <a name="resetId" id="@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.resetId"></a>
 
 ```typescript
@@ -399,6 +407,12 @@ public resetNamespace(): void
 
 ```typescript
 public resetRegion(): void
+```
+
+##### `resetRoleArn` <a name="resetRoleArn" id="@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.resetRoleArn"></a>
+
+```typescript
+public resetRoleArn(): void
 ```
 
 ##### `resetSecretAccessKey` <a name="resetSecretAccessKey" id="@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.resetSecretAccessKey"></a>
@@ -516,7 +530,7 @@ The construct id used in the generated config for the SecretsSyncAwsDestination 
 
 The id of the existing SecretsSyncAwsDestination that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/secrets_sync_aws_destination#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/secrets_sync_aws_destination#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -549,18 +563,22 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.25
 | <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.property.accessKeyIdInput">accessKeyIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.property.customTagsInput">customTagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.property.externalIdInput">externalIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.property.namespaceInput">namespaceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.property.roleArnInput">roleArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.property.secretAccessKeyInput">secretAccessKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.property.secretNameTemplateInput">secretNameTemplateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.property.accessKeyId">accessKeyId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.property.customTags">customTags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.property.externalId">externalId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.property.namespace">namespace</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.property.region">region</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.property.roleArn">roleArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.property.secretAccessKey">secretAccessKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.property.secretNameTemplate">secretNameTemplate</a></code> | <code>string</code> | *No description.* |
 
@@ -738,6 +756,16 @@ public readonly customTagsInput: {[ key: string ]: string};
 
 ---
 
+##### `externalIdInput`<sup>Optional</sup> <a name="externalIdInput" id="@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.property.externalIdInput"></a>
+
+```typescript
+public readonly externalIdInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.property.idInput"></a>
 
 ```typescript
@@ -772,6 +800,16 @@ public readonly namespaceInput: string;
 
 ```typescript
 public readonly regionInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `roleArnInput`<sup>Optional</sup> <a name="roleArnInput" id="@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.property.roleArnInput"></a>
+
+```typescript
+public readonly roleArnInput: string;
 ```
 
 - *Type:* string
@@ -818,6 +856,16 @@ public readonly customTags: {[ key: string ]: string};
 
 ---
 
+##### `externalId`<sup>Required</sup> <a name="externalId" id="@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.property.externalId"></a>
+
+```typescript
+public readonly externalId: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.property.id"></a>
 
 ```typescript
@@ -852,6 +900,16 @@ public readonly namespace: string;
 
 ```typescript
 public readonly region: string;
+```
+
+- *Type:* string
+
+---
+
+##### `roleArn`<sup>Required</sup> <a name="roleArn" id="@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.property.roleArn"></a>
+
+```typescript
+public readonly roleArn: string;
 ```
 
 - *Type:* string
@@ -922,9 +980,11 @@ const secretsSyncAwsDestinationConfig: secretsSyncAwsDestination.SecretsSyncAwsD
 | <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestinationConfig.property.name">name</a></code> | <code>string</code> | Unique name of the AWS destination. |
 | <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestinationConfig.property.accessKeyId">accessKeyId</a></code> | <code>string</code> | Access key id to authenticate against the AWS secrets manager. |
 | <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestinationConfig.property.customTags">customTags</a></code> | <code>{[ key: string ]: string}</code> | Custom tags to set on the secret managed at the destination. |
-| <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestinationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/secrets_sync_aws_destination#id SecretsSyncAwsDestination#id}. |
+| <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestinationConfig.property.externalId">externalId</a></code> | <code>string</code> | Extra protection that must match the trust policy granting access to the AWS IAM role ARN. |
+| <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestinationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/secrets_sync_aws_destination#id SecretsSyncAwsDestination#id}. |
 | <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestinationConfig.property.namespace">namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestinationConfig.property.region">region</a></code> | <code>string</code> | Region where to manage the secrets manager entries. |
+| <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestinationConfig.property.roleArn">roleArn</a></code> | <code>string</code> | Specifies a role to assume when connecting to AWS. |
 | <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestinationConfig.property.secretAccessKey">secretAccessKey</a></code> | <code>string</code> | Secret access key to authenticate against the AWS secrets manager. |
 | <code><a href="#@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestinationConfig.property.secretNameTemplate">secretNameTemplate</a></code> | <code>string</code> | Template describing how to generate external secret names. |
 
@@ -1010,7 +1070,7 @@ public readonly name: string;
 
 Unique name of the AWS destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/secrets_sync_aws_destination#name SecretsSyncAwsDestination#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/secrets_sync_aws_destination#name SecretsSyncAwsDestination#name}
 
 ---
 
@@ -1024,7 +1084,7 @@ public readonly accessKeyId: string;
 
 Access key id to authenticate against the AWS secrets manager.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/secrets_sync_aws_destination#access_key_id SecretsSyncAwsDestination#access_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/secrets_sync_aws_destination#access_key_id SecretsSyncAwsDestination#access_key_id}
 
 ---
 
@@ -1038,7 +1098,21 @@ public readonly customTags: {[ key: string ]: string};
 
 Custom tags to set on the secret managed at the destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/secrets_sync_aws_destination#custom_tags SecretsSyncAwsDestination#custom_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/secrets_sync_aws_destination#custom_tags SecretsSyncAwsDestination#custom_tags}
+
+---
+
+##### `externalId`<sup>Optional</sup> <a name="externalId" id="@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestinationConfig.property.externalId"></a>
+
+```typescript
+public readonly externalId: string;
+```
+
+- *Type:* string
+
+Extra protection that must match the trust policy granting access to the AWS IAM role ARN.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/secrets_sync_aws_destination#external_id SecretsSyncAwsDestination#external_id}
 
 ---
 
@@ -1050,7 +1124,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/secrets_sync_aws_destination#id SecretsSyncAwsDestination#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/secrets_sync_aws_destination#id SecretsSyncAwsDestination#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1067,7 +1141,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/secrets_sync_aws_destination#namespace SecretsSyncAwsDestination#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/secrets_sync_aws_destination#namespace SecretsSyncAwsDestination#namespace}
 
 ---
 
@@ -1081,7 +1155,21 @@ public readonly region: string;
 
 Region where to manage the secrets manager entries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/secrets_sync_aws_destination#region SecretsSyncAwsDestination#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/secrets_sync_aws_destination#region SecretsSyncAwsDestination#region}
+
+---
+
+##### `roleArn`<sup>Optional</sup> <a name="roleArn" id="@cdktf/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestinationConfig.property.roleArn"></a>
+
+```typescript
+public readonly roleArn: string;
+```
+
+- *Type:* string
+
+Specifies a role to assume when connecting to AWS.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/secrets_sync_aws_destination#role_arn SecretsSyncAwsDestination#role_arn}
 
 ---
 
@@ -1095,7 +1183,7 @@ public readonly secretAccessKey: string;
 
 Secret access key to authenticate against the AWS secrets manager.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/secrets_sync_aws_destination#secret_access_key SecretsSyncAwsDestination#secret_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/secrets_sync_aws_destination#secret_access_key SecretsSyncAwsDestination#secret_access_key}
 
 ---
 
@@ -1109,7 +1197,7 @@ public readonly secretNameTemplate: string;
 
 Template describing how to generate external secret names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/secrets_sync_aws_destination#secret_name_template SecretsSyncAwsDestination#secret_name_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/secrets_sync_aws_destination#secret_name_template SecretsSyncAwsDestination#secret_name_template}
 
 ---
 

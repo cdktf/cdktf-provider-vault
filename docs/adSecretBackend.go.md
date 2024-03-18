@@ -4,12 +4,12 @@
 
 ### AdSecretBackend <a name="AdSecretBackend" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend vault_ad_secret_backend}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ad_secret_backend vault_ad_secret_backend}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/adsecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/adsecretbackend"
 
 adsecretbackend.NewAdSecretBackend(scope Construct, id *string, config AdSecretBackendConfig) AdSecretBackend
 ```
@@ -84,14 +84,12 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.resetDisableRemount">ResetDisableRemount</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.resetDiscoverdn">ResetDiscoverdn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.resetFormatter">ResetFormatter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.resetGroupattr">ResetGroupattr</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.resetGroupdn">ResetGroupdn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.resetGroupfilter">ResetGroupfilter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.resetInsecureTls">ResetInsecureTls</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.resetLastRotationTolerance">ResetLastRotationTolerance</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.resetLength">ResetLength</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.resetLocal">ResetLocal</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.resetMaxLeaseTtlSeconds">ResetMaxLeaseTtlSeconds</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.resetMaxTtl">ResetMaxTtl</a></code> | *No description.* |
@@ -465,12 +463,6 @@ func ResetDisableRemount()
 func ResetDiscoverdn()
 ```
 
-##### `ResetFormatter` <a name="ResetFormatter" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.resetFormatter"></a>
-
-```go
-func ResetFormatter()
-```
-
 ##### `ResetGroupattr` <a name="ResetGroupattr" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.resetGroupattr"></a>
 
 ```go
@@ -505,12 +497,6 @@ func ResetInsecureTls()
 
 ```go
 func ResetLastRotationTolerance()
-```
-
-##### `ResetLength` <a name="ResetLength" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.resetLength"></a>
-
-```go
-func ResetLength()
 ```
 
 ##### `ResetLocal` <a name="ResetLocal" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.resetLocal"></a>
@@ -623,7 +609,7 @@ func ResetUseTokenGroups()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/adsecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/adsecretbackend"
 
 adsecretbackend.AdSecretBackend_IsConstruct(x interface{}) *bool
 ```
@@ -655,7 +641,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/adsecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/adsecretbackend"
 
 adsecretbackend.AdSecretBackend_IsTerraformElement(x interface{}) *bool
 ```
@@ -669,7 +655,7 @@ adsecretbackend.AdSecretBackend_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/adsecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/adsecretbackend"
 
 adsecretbackend.AdSecretBackend_IsTerraformResource(x interface{}) *bool
 ```
@@ -683,7 +669,7 @@ adsecretbackend.AdSecretBackend_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/adsecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/adsecretbackend"
 
 adsecretbackend.AdSecretBackend_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -712,7 +698,7 @@ The construct id used in the generated config for the AdSecretBackend to import.
 
 The id of the existing AdSecretBackend that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ad_secret_backend#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -755,14 +741,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.25
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.disableRemountInput">DisableRemountInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.discoverdnInput">DiscoverdnInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.formatterInput">FormatterInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.groupattrInput">GroupattrInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.groupdnInput">GroupdnInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.groupfilterInput">GroupfilterInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.insecureTlsInput">InsecureTlsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.lastRotationToleranceInput">LastRotationToleranceInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.lengthInput">LengthInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.localInput">LocalInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.maxLeaseTtlSecondsInput">MaxLeaseTtlSecondsInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.maxTtlInput">MaxTtlInput</a></code> | <code>*f64</code> | *No description.* |
@@ -792,14 +776,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.25
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.disableRemount">DisableRemount</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.discoverdn">Discoverdn</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.formatter">Formatter</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.groupattr">Groupattr</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.groupdn">Groupdn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.groupfilter">Groupfilter</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.insecureTls">InsecureTls</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.lastRotationTolerance">LastRotationTolerance</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.length">Length</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.local">Local</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.maxLeaseTtlSeconds">MaxLeaseTtlSeconds</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.maxTtl">MaxTtl</a></code> | <code>*f64</code> | *No description.* |
@@ -1091,16 +1073,6 @@ func DiscoverdnInput() interface{}
 
 ---
 
-##### `FormatterInput`<sup>Optional</sup> <a name="FormatterInput" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.formatterInput"></a>
-
-```go
-func FormatterInput() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `GroupattrInput`<sup>Optional</sup> <a name="GroupattrInput" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.groupattrInput"></a>
 
 ```go
@@ -1155,16 +1127,6 @@ func InsecureTlsInput() interface{}
 
 ```go
 func LastRotationToleranceInput() *f64
-```
-
-- *Type:* *f64
-
----
-
-##### `LengthInput`<sup>Optional</sup> <a name="LengthInput" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.lengthInput"></a>
-
-```go
-func LengthInput() *f64
 ```
 
 - *Type:* *f64
@@ -1461,16 +1423,6 @@ func Discoverdn() interface{}
 
 ---
 
-##### `Formatter`<sup>Required</sup> <a name="Formatter" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.formatter"></a>
-
-```go
-func Formatter() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `Groupattr`<sup>Required</sup> <a name="Groupattr" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.groupattr"></a>
 
 ```go
@@ -1525,16 +1477,6 @@ func InsecureTls() interface{}
 
 ```go
 func LastRotationTolerance() *f64
-```
-
-- *Type:* *f64
-
----
-
-##### `Length`<sup>Required</sup> <a name="Length" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.length"></a>
-
-```go
-func Length() *f64
 ```
 
 - *Type:* *f64
@@ -1726,7 +1668,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/adsecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/adsecretbackend"
 
 &adsecretbackend.AdSecretBackendConfig {
 	Connection: interface{},
@@ -1749,14 +1691,12 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/adsecretbackend"
 	Description: *string,
 	DisableRemount: interface{},
 	Discoverdn: interface{},
-	Formatter: *string,
 	Groupattr: *string,
 	Groupdn: *string,
 	Groupfilter: *string,
 	Id: *string,
 	InsecureTls: interface{},
 	LastRotationTolerance: *f64,
-	Length: *f64,
 	Local: interface{},
 	MaxLeaseTtlSeconds: *f64,
 	MaxTtl: *f64,
@@ -1800,14 +1740,12 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v12/adsecretbackend"
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.description">Description</a></code> | <code>*string</code> | Human-friendly description of the mount for the backend. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.disableRemount">DisableRemount</a></code> | <code>interface{}</code> | If set, opts out of mount migration on path updates. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.discoverdn">Discoverdn</a></code> | <code>interface{}</code> | Use anonymous bind to discover the bind DN of a user. |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.formatter">Formatter</a></code> | <code>*string</code> | Text to insert the password into, ex. "customPrefix{{PASSWORD}}customSuffix". |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.groupattr">Groupattr</a></code> | <code>*string</code> | LDAP attribute to follow on objects returned by <groupfilter> in order to enumerate user group membership. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.groupdn">Groupdn</a></code> | <code>*string</code> | LDAP search base to use for group membership search (eg: ou=Groups,dc=example,dc=org). |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.groupfilter">Groupfilter</a></code> | <code>*string</code> | Go template for querying group membership of user. |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend#id AdSecretBackend#id}. |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ad_secret_backend#id AdSecretBackend#id}. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.insecureTls">InsecureTls</a></code> | <code>interface{}</code> | Skip LDAP server SSL Certificate verification - insecure and not recommended for production use. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.lastRotationTolerance">LastRotationTolerance</a></code> | <code>*f64</code> | The number of seconds after a Vault rotation where, if Active Directory shows a later rotation, it should be considered out-of-band. |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.length">Length</a></code> | <code>*f64</code> | The desired length of passwords that Vault generates. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.local">Local</a></code> | <code>interface{}</code> | Mark the secrets engine as local-only. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.maxLeaseTtlSeconds">MaxLeaseTtlSeconds</a></code> | <code>*f64</code> | Maximum possible lease duration for secrets in seconds. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.maxTtl">MaxTtl</a></code> | <code>*f64</code> | In seconds, the maximum password time-to-live. |
@@ -1907,7 +1845,7 @@ Binddn *string
 
 Distinguished name of object to bind when performing user and group search.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend#binddn AdSecretBackend#binddn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ad_secret_backend#binddn AdSecretBackend#binddn}
 
 ---
 
@@ -1921,7 +1859,7 @@ Bindpass *string
 
 LDAP password for searching for the user DN.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend#bindpass AdSecretBackend#bindpass}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ad_secret_backend#bindpass AdSecretBackend#bindpass}
 
 ---
 
@@ -1935,7 +1873,7 @@ AnonymousGroupSearch interface{}
 
 Use anonymous binds when performing LDAP group searches (if true the initial credentials will still be used for the initial connection test).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend#anonymous_group_search AdSecretBackend#anonymous_group_search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ad_secret_backend#anonymous_group_search AdSecretBackend#anonymous_group_search}
 
 ---
 
@@ -1949,7 +1887,7 @@ Backend *string
 
 The mount path for a backend, for example, the path given in "$ vault auth enable -path=my-ad ad".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend#backend AdSecretBackend#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ad_secret_backend#backend AdSecretBackend#backend}
 
 ---
 
@@ -1963,7 +1901,7 @@ CaseSensitiveNames interface{}
 
 If true, case sensitivity will be used when comparing usernames and groups for matching policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend#case_sensitive_names AdSecretBackend#case_sensitive_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ad_secret_backend#case_sensitive_names AdSecretBackend#case_sensitive_names}
 
 ---
 
@@ -1977,7 +1915,7 @@ Certificate *string
 
 CA certificate to use when verifying LDAP server certificate, must be x509 PEM encoded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend#certificate AdSecretBackend#certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ad_secret_backend#certificate AdSecretBackend#certificate}
 
 ---
 
@@ -1991,7 +1929,7 @@ ClientTlsCert *string
 
 Client certificate to provide to the LDAP server, must be x509 PEM encoded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend#client_tls_cert AdSecretBackend#client_tls_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ad_secret_backend#client_tls_cert AdSecretBackend#client_tls_cert}
 
 ---
 
@@ -2005,7 +1943,7 @@ ClientTlsKey *string
 
 Client certificate key to provide to the LDAP server, must be x509 PEM encoded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend#client_tls_key AdSecretBackend#client_tls_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ad_secret_backend#client_tls_key AdSecretBackend#client_tls_key}
 
 ---
 
@@ -2019,7 +1957,7 @@ DefaultLeaseTtlSeconds *f64
 
 Default lease duration for secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend#default_lease_ttl_seconds AdSecretBackend#default_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ad_secret_backend#default_lease_ttl_seconds AdSecretBackend#default_lease_ttl_seconds}
 
 ---
 
@@ -2033,7 +1971,7 @@ DenyNullBind interface{}
 
 Denies an unauthenticated LDAP bind request if the user's password is empty; defaults to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend#deny_null_bind AdSecretBackend#deny_null_bind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ad_secret_backend#deny_null_bind AdSecretBackend#deny_null_bind}
 
 ---
 
@@ -2047,7 +1985,7 @@ Description *string
 
 Human-friendly description of the mount for the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend#description AdSecretBackend#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ad_secret_backend#description AdSecretBackend#description}
 
 ---
 
@@ -2061,7 +1999,7 @@ DisableRemount interface{}
 
 If set, opts out of mount migration on path updates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend#disable_remount AdSecretBackend#disable_remount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ad_secret_backend#disable_remount AdSecretBackend#disable_remount}
 
 ---
 
@@ -2075,21 +2013,7 @@ Discoverdn interface{}
 
 Use anonymous bind to discover the bind DN of a user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend#discoverdn AdSecretBackend#discoverdn}
-
----
-
-##### `Formatter`<sup>Optional</sup> <a name="Formatter" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.formatter"></a>
-
-```go
-Formatter *string
-```
-
-- *Type:* *string
-
-Text to insert the password into, ex. "customPrefix{{PASSWORD}}customSuffix".
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend#formatter AdSecretBackend#formatter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ad_secret_backend#discoverdn AdSecretBackend#discoverdn}
 
 ---
 
@@ -2105,7 +2029,7 @@ LDAP attribute to follow on objects returned by <groupfilter> in order to enumer
 
 Examples: "cn" or "memberOf", etc. Default: cn
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend#groupattr AdSecretBackend#groupattr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ad_secret_backend#groupattr AdSecretBackend#groupattr}
 
 ---
 
@@ -2119,7 +2043,7 @@ Groupdn *string
 
 LDAP search base to use for group membership search (eg: ou=Groups,dc=example,dc=org).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend#groupdn AdSecretBackend#groupdn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ad_secret_backend#groupdn AdSecretBackend#groupdn}
 
 ---
 
@@ -2135,7 +2059,7 @@ Go template for querying group membership of user.
 
 The template can access the following context variables: UserDN, Username Example: (&(objectClass=group)(member:1.2.840.113556.1.4.1941:={{.UserDN}})) Default: (|(memberUid={{.Username}})(member={{.UserDN}})(uniqueMember={{.UserDN}}))
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend#groupfilter AdSecretBackend#groupfilter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ad_secret_backend#groupfilter AdSecretBackend#groupfilter}
 
 ---
 
@@ -2147,7 +2071,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend#id AdSecretBackend#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ad_secret_backend#id AdSecretBackend#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2164,7 +2088,7 @@ InsecureTls interface{}
 
 Skip LDAP server SSL Certificate verification - insecure and not recommended for production use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend#insecure_tls AdSecretBackend#insecure_tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ad_secret_backend#insecure_tls AdSecretBackend#insecure_tls}
 
 ---
 
@@ -2178,21 +2102,7 @@ LastRotationTolerance *f64
 
 The number of seconds after a Vault rotation where, if Active Directory shows a later rotation, it should be considered out-of-band.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend#last_rotation_tolerance AdSecretBackend#last_rotation_tolerance}
-
----
-
-##### `Length`<sup>Optional</sup> <a name="Length" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.length"></a>
-
-```go
-Length *f64
-```
-
-- *Type:* *f64
-
-The desired length of passwords that Vault generates.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend#length AdSecretBackend#length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ad_secret_backend#last_rotation_tolerance AdSecretBackend#last_rotation_tolerance}
 
 ---
 
@@ -2208,7 +2118,7 @@ Mark the secrets engine as local-only.
 
 Local engines are not replicated or removed by replication.Tolerance duration to use when checking the last rotation time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend#local AdSecretBackend#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ad_secret_backend#local AdSecretBackend#local}
 
 ---
 
@@ -2222,7 +2132,7 @@ MaxLeaseTtlSeconds *f64
 
 Maximum possible lease duration for secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend#max_lease_ttl_seconds AdSecretBackend#max_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ad_secret_backend#max_lease_ttl_seconds AdSecretBackend#max_lease_ttl_seconds}
 
 ---
 
@@ -2236,7 +2146,7 @@ MaxTtl *f64
 
 In seconds, the maximum password time-to-live.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend#max_ttl AdSecretBackend#max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ad_secret_backend#max_ttl AdSecretBackend#max_ttl}
 
 ---
 
@@ -2250,7 +2160,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend#namespace AdSecretBackend#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ad_secret_backend#namespace AdSecretBackend#namespace}
 
 ---
 
@@ -2264,7 +2174,7 @@ PasswordPolicy *string
 
 Name of the password policy to use to generate passwords.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend#password_policy AdSecretBackend#password_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ad_secret_backend#password_policy AdSecretBackend#password_policy}
 
 ---
 
@@ -2278,7 +2188,7 @@ RequestTimeout *f64
 
 Timeout, in seconds, for the connection when making requests against the server before returning back an error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend#request_timeout AdSecretBackend#request_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ad_secret_backend#request_timeout AdSecretBackend#request_timeout}
 
 ---
 
@@ -2292,7 +2202,7 @@ Starttls interface{}
 
 Issue a StartTLS command after establishing unencrypted connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend#starttls AdSecretBackend#starttls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ad_secret_backend#starttls AdSecretBackend#starttls}
 
 ---
 
@@ -2306,7 +2216,7 @@ TlsMaxVersion *string
 
 Maximum TLS version to use. Accepted values are 'tls10', 'tls11', 'tls12' or 'tls13'. Defaults to 'tls12'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend#tls_max_version AdSecretBackend#tls_max_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ad_secret_backend#tls_max_version AdSecretBackend#tls_max_version}
 
 ---
 
@@ -2320,7 +2230,7 @@ TlsMinVersion *string
 
 Minimum TLS version to use. Accepted values are 'tls10', 'tls11', 'tls12' or 'tls13'. Defaults to 'tls12'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend#tls_min_version AdSecretBackend#tls_min_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ad_secret_backend#tls_min_version AdSecretBackend#tls_min_version}
 
 ---
 
@@ -2334,7 +2244,7 @@ Ttl *f64
 
 In seconds, the default password time-to-live.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend#ttl AdSecretBackend#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ad_secret_backend#ttl AdSecretBackend#ttl}
 
 ---
 
@@ -2348,7 +2258,7 @@ Upndomain *string
 
 Enables userPrincipalDomain login with [username]@UPNDomain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend#upndomain AdSecretBackend#upndomain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ad_secret_backend#upndomain AdSecretBackend#upndomain}
 
 ---
 
@@ -2362,7 +2272,7 @@ Url *string
 
 LDAP URL to connect to (default: ldap://127.0.0.1). Multiple URLs can be specified by concatenating them with commas; they will be tried in-order.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend#url AdSecretBackend#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ad_secret_backend#url AdSecretBackend#url}
 
 ---
 
@@ -2376,7 +2286,7 @@ UsePre111GroupCnBehavior interface{}
 
 In Vault 1.1.1 a fix for handling group CN values of different cases unfortunately introduced a regression that could cause previously defined groups to not be found due to a change in the resulting name. If set true, the pre-1.1.1 behavior for matching group CNs will be used. This is only needed in some upgrade scenarios for backwards compatibility. It is enabled by default if the config is upgraded but disabled by default on new configurations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend#use_pre111_group_cn_behavior AdSecretBackend#use_pre111_group_cn_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ad_secret_backend#use_pre111_group_cn_behavior AdSecretBackend#use_pre111_group_cn_behavior}
 
 ---
 
@@ -2390,7 +2300,7 @@ Userattr *string
 
 Attribute used for users (default: cn).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend#userattr AdSecretBackend#userattr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ad_secret_backend#userattr AdSecretBackend#userattr}
 
 ---
 
@@ -2404,7 +2314,7 @@ Userdn *string
 
 LDAP domain to use for users (eg: ou=People,dc=example,dc=org).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend#userdn AdSecretBackend#userdn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ad_secret_backend#userdn AdSecretBackend#userdn}
 
 ---
 
@@ -2420,7 +2330,7 @@ If true, use the Active Directory tokenGroups constructed attribute of the user 
 
 This will find all security groups including nested ones.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend#use_token_groups AdSecretBackend#use_token_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ad_secret_backend#use_token_groups AdSecretBackend#use_token_groups}
 
 ---
 

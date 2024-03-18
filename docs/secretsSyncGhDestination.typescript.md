@@ -4,7 +4,7 @@
 
 ### SecretsSyncGhDestination <a name="SecretsSyncGhDestination" id="@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/secrets_sync_gh_destination vault_secrets_sync_gh_destination}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/secrets_sync_gh_destination vault_secrets_sync_gh_destination}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.Initializer"></a>
 
@@ -74,7 +74,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.resetAccessToken">resetAccessToken</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.resetAppName">resetAppName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.resetInstallationId">resetInstallationId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.resetNamespace">resetNamespace</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.resetRepositoryName">resetRepositoryName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.resetRepositoryOwner">resetRepositoryOwner</a></code> | *No description.* |
@@ -376,10 +378,22 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 public resetAccessToken(): void
 ```
 
+##### `resetAppName` <a name="resetAppName" id="@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.resetAppName"></a>
+
+```typescript
+public resetAppName(): void
+```
+
 ##### `resetId` <a name="resetId" id="@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.resetId"></a>
 
 ```typescript
 public resetId(): void
+```
+
+##### `resetInstallationId` <a name="resetInstallationId" id="@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.resetInstallationId"></a>
+
+```typescript
+public resetInstallationId(): void
 ```
 
 ##### `resetNamespace` <a name="resetNamespace" id="@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.resetNamespace"></a>
@@ -509,7 +523,7 @@ The construct id used in the generated config for the SecretsSyncGhDestination t
 
 The id of the existing SecretsSyncGhDestination that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/secrets_sync_gh_destination#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/secrets_sync_gh_destination#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -541,14 +555,18 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.25
 | <code><a href="#@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.property.accessTokenInput">accessTokenInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.property.appNameInput">appNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.property.installationIdInput">installationIdInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.property.namespaceInput">namespaceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.property.repositoryNameInput">repositoryNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.property.repositoryOwnerInput">repositoryOwnerInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.property.secretNameTemplateInput">secretNameTemplateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.property.accessToken">accessToken</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.property.appName">appName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.property.installationId">installationId</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.property.namespace">namespace</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.property.repositoryName">repositoryName</a></code> | <code>string</code> | *No description.* |
@@ -719,6 +737,16 @@ public readonly accessTokenInput: string;
 
 ---
 
+##### `appNameInput`<sup>Optional</sup> <a name="appNameInput" id="@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.property.appNameInput"></a>
+
+```typescript
+public readonly appNameInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.property.idInput"></a>
 
 ```typescript
@@ -726,6 +754,16 @@ public readonly idInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `installationIdInput`<sup>Optional</sup> <a name="installationIdInput" id="@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.property.installationIdInput"></a>
+
+```typescript
+public readonly installationIdInput: number;
+```
+
+- *Type:* number
 
 ---
 
@@ -789,6 +827,16 @@ public readonly accessToken: string;
 
 ---
 
+##### `appName`<sup>Required</sup> <a name="appName" id="@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.property.appName"></a>
+
+```typescript
+public readonly appName: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.property.id"></a>
 
 ```typescript
@@ -796,6 +844,16 @@ public readonly id: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `installationId`<sup>Required</sup> <a name="installationId" id="@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestination.property.installationId"></a>
+
+```typescript
+public readonly installationId: number;
+```
+
+- *Type:* number
 
 ---
 
@@ -892,7 +950,9 @@ const secretsSyncGhDestinationConfig: secretsSyncGhDestination.SecretsSyncGhDest
 | <code><a href="#@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestinationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestinationConfig.property.name">name</a></code> | <code>string</code> | Unique name of the github destination. |
 | <code><a href="#@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestinationConfig.property.accessToken">accessToken</a></code> | <code>string</code> | Fine-grained or personal access token. |
-| <code><a href="#@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestinationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/secrets_sync_gh_destination#id SecretsSyncGhDestination#id}. |
+| <code><a href="#@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestinationConfig.property.appName">appName</a></code> | <code>string</code> | The user-defined name of the GitHub App configuration. |
+| <code><a href="#@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestinationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/secrets_sync_gh_destination#id SecretsSyncGhDestination#id}. |
+| <code><a href="#@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestinationConfig.property.installationId">installationId</a></code> | <code>number</code> | The ID of the installation generated by GitHub when the app referenced by the app_name was installed in the user’s GitHub account. |
 | <code><a href="#@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestinationConfig.property.namespace">namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestinationConfig.property.repositoryName">repositoryName</a></code> | <code>string</code> | Name of the repository. |
 | <code><a href="#@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestinationConfig.property.repositoryOwner">repositoryOwner</a></code> | <code>string</code> | GitHub organization or username that owns the repository. |
@@ -980,7 +1040,7 @@ public readonly name: string;
 
 Unique name of the github destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/secrets_sync_gh_destination#name SecretsSyncGhDestination#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/secrets_sync_gh_destination#name SecretsSyncGhDestination#name}
 
 ---
 
@@ -994,7 +1054,21 @@ public readonly accessToken: string;
 
 Fine-grained or personal access token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/secrets_sync_gh_destination#access_token SecretsSyncGhDestination#access_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/secrets_sync_gh_destination#access_token SecretsSyncGhDestination#access_token}
+
+---
+
+##### `appName`<sup>Optional</sup> <a name="appName" id="@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestinationConfig.property.appName"></a>
+
+```typescript
+public readonly appName: string;
+```
+
+- *Type:* string
+
+The user-defined name of the GitHub App configuration.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/secrets_sync_gh_destination#app_name SecretsSyncGhDestination#app_name}
 
 ---
 
@@ -1006,10 +1080,26 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/secrets_sync_gh_destination#id SecretsSyncGhDestination#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/secrets_sync_gh_destination#id SecretsSyncGhDestination#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `installationId`<sup>Optional</sup> <a name="installationId" id="@cdktf/provider-vault.secretsSyncGhDestination.SecretsSyncGhDestinationConfig.property.installationId"></a>
+
+```typescript
+public readonly installationId: number;
+```
+
+- *Type:* number
+
+The ID of the installation generated by GitHub when the app referenced by the app_name was installed in the user’s GitHub account.
+
+Necessary if the app_name field is also provided.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/secrets_sync_gh_destination#installation_id SecretsSyncGhDestination#installation_id}
 
 ---
 
@@ -1023,7 +1113,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/secrets_sync_gh_destination#namespace SecretsSyncGhDestination#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/secrets_sync_gh_destination#namespace SecretsSyncGhDestination#namespace}
 
 ---
 
@@ -1037,7 +1127,7 @@ public readonly repositoryName: string;
 
 Name of the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/secrets_sync_gh_destination#repository_name SecretsSyncGhDestination#repository_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/secrets_sync_gh_destination#repository_name SecretsSyncGhDestination#repository_name}
 
 ---
 
@@ -1051,7 +1141,7 @@ public readonly repositoryOwner: string;
 
 GitHub organization or username that owns the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/secrets_sync_gh_destination#repository_owner SecretsSyncGhDestination#repository_owner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/secrets_sync_gh_destination#repository_owner SecretsSyncGhDestination#repository_owner}
 
 ---
 
@@ -1065,7 +1155,7 @@ public readonly secretNameTemplate: string;
 
 Template describing how to generate external secret names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/secrets_sync_gh_destination#secret_name_template SecretsSyncGhDestination#secret_name_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/secrets_sync_gh_destination#secret_name_template SecretsSyncGhDestination#secret_name_template}
 
 ---
 
