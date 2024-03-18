@@ -1,3 +1,3 @@
 # `vault_transform_transformation`
 
-Refer to the Terraform Registry for docs: [`vault_transform_transformation`](https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/transform_transformation).
+Refer to the Terraform Registry for docs: [`vault_transform_transformation`](https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/transform_transformation).

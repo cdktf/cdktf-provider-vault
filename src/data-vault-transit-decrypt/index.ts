@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/data-sources/transit_decrypt
+// https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/data-sources/transit_decrypt
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +10,23 @@ export interface DataVaultTransitDecryptConfig extends cdktf.TerraformMetaArgume
   /**
   * The Transit secret backend the key belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/data-sources/transit_decrypt#backend DataVaultTransitDecrypt#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/data-sources/transit_decrypt#backend DataVaultTransitDecrypt#backend}
   */
   readonly backend: string;
   /**
   * Transit encrypted cipher text.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/data-sources/transit_decrypt#ciphertext DataVaultTransitDecrypt#ciphertext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/data-sources/transit_decrypt#ciphertext DataVaultTransitDecrypt#ciphertext}
   */
   readonly ciphertext: string;
   /**
   * Specifies the context for key derivation
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/data-sources/transit_decrypt#context DataVaultTransitDecrypt#context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/data-sources/transit_decrypt#context DataVaultTransitDecrypt#context}
   */
   readonly context?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/data-sources/transit_decrypt#id DataVaultTransitDecrypt#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/data-sources/transit_decrypt#id DataVaultTransitDecrypt#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,19 +35,19 @@ export interface DataVaultTransitDecryptConfig extends cdktf.TerraformMetaArgume
   /**
   * Name of the decryption key to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/data-sources/transit_decrypt#key DataVaultTransitDecrypt#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/data-sources/transit_decrypt#key DataVaultTransitDecrypt#key}
   */
   readonly key: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/data-sources/transit_decrypt#namespace DataVaultTransitDecrypt#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/data-sources/transit_decrypt#namespace DataVaultTransitDecrypt#namespace}
   */
   readonly namespace?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/data-sources/transit_decrypt vault_transit_decrypt}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/data-sources/transit_decrypt vault_transit_decrypt}
 */
 export class DataVaultTransitDecrypt extends cdktf.TerraformDataSource {
 
@@ -68,7 +63,7 @@ export class DataVaultTransitDecrypt extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataVaultTransitDecrypt resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataVaultTransitDecrypt to import
-  * @param importFromId The id of the existing DataVaultTransitDecrypt that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/data-sources/transit_decrypt#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataVaultTransitDecrypt that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/data-sources/transit_decrypt#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataVaultTransitDecrypt to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -80,7 +75,7 @@ export class DataVaultTransitDecrypt extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/data-sources/transit_decrypt vault_transit_decrypt} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/data-sources/transit_decrypt vault_transit_decrypt} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -91,8 +86,8 @@ export class DataVaultTransitDecrypt extends cdktf.TerraformDataSource {
       terraformResourceType: 'vault_transit_decrypt',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '3.25.0',
-        providerVersionConstraint: '~> 3.7'
+        providerVersion: '4.0.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
