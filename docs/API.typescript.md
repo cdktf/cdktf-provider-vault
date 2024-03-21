@@ -31,6 +31,7 @@ The following submodules are available:
 - [azureSecretBackend](./azureSecretBackend.typescript.md)
 - [azureSecretBackendRole](./azureSecretBackendRole.typescript.md)
 - [certAuthBackendRole](./certAuthBackendRole.typescript.md)
+- [configUiCustomMessage](./configUiCustomMessage.typescript.md)
 - [consulSecretBackend](./consulSecretBackend.typescript.md)
 - [consulSecretBackendRole](./consulSecretBackendRole.typescript.md)
 - [dataVaultAdAccessCredentials](./dataVaultAdAccessCredentials.typescript.md)

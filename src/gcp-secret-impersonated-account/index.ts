@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/gcp_secret_impersonated_account
+// https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/gcp_secret_impersonated_account
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface GcpSecretImpersonatedAccountConfig extends cdktf.TerraformMetaA
   /**
   * Path where the GCP secrets engine is mounted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/gcp_secret_impersonated_account#backend GcpSecretImpersonatedAccount#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/gcp_secret_impersonated_account#backend GcpSecretImpersonatedAccount#backend}
   */
   readonly backend: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/gcp_secret_impersonated_account#id GcpSecretImpersonatedAccount#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/gcp_secret_impersonated_account#id GcpSecretImpersonatedAccount#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,31 +23,31 @@ export interface GcpSecretImpersonatedAccountConfig extends cdktf.TerraformMetaA
   /**
   * Name of the Impersonated Account to create
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/gcp_secret_impersonated_account#impersonated_account GcpSecretImpersonatedAccount#impersonated_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/gcp_secret_impersonated_account#impersonated_account GcpSecretImpersonatedAccount#impersonated_account}
   */
   readonly impersonatedAccount: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/gcp_secret_impersonated_account#namespace GcpSecretImpersonatedAccount#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/gcp_secret_impersonated_account#namespace GcpSecretImpersonatedAccount#namespace}
   */
   readonly namespace?: string;
   /**
   * Email of the GCP service account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/gcp_secret_impersonated_account#service_account_email GcpSecretImpersonatedAccount#service_account_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/gcp_secret_impersonated_account#service_account_email GcpSecretImpersonatedAccount#service_account_email}
   */
   readonly serviceAccountEmail: string;
   /**
   * List of OAuth scopes to assign to `access_token` secrets generated under this impersonated account (`access_token` impersonated accounts only) 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/gcp_secret_impersonated_account#token_scopes GcpSecretImpersonatedAccount#token_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/gcp_secret_impersonated_account#token_scopes GcpSecretImpersonatedAccount#token_scopes}
   */
   readonly tokenScopes?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/gcp_secret_impersonated_account vault_gcp_secret_impersonated_account}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/gcp_secret_impersonated_account vault_gcp_secret_impersonated_account}
 */
 export class GcpSecretImpersonatedAccount extends cdktf.TerraformResource {
 
@@ -68,7 +63,7 @@ export class GcpSecretImpersonatedAccount extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GcpSecretImpersonatedAccount resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GcpSecretImpersonatedAccount to import
-  * @param importFromId The id of the existing GcpSecretImpersonatedAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/gcp_secret_impersonated_account#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GcpSecretImpersonatedAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/gcp_secret_impersonated_account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GcpSecretImpersonatedAccount to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -80,7 +75,7 @@ export class GcpSecretImpersonatedAccount extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/gcp_secret_impersonated_account vault_gcp_secret_impersonated_account} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/gcp_secret_impersonated_account vault_gcp_secret_impersonated_account} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -91,7 +86,7 @@ export class GcpSecretImpersonatedAccount extends cdktf.TerraformResource {
       terraformResourceType: 'vault_gcp_secret_impersonated_account',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '4.0.0',
+        providerVersion: '4.1.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

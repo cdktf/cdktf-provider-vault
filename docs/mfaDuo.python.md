@@ -4,7 +4,7 @@
 
 ### MfaDuo <a name="MfaDuo" id="@cdktf/provider-vault.mfaDuo.MfaDuo"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/mfa_duo vault_mfa_duo}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/mfa_duo vault_mfa_duo}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.mfaDuo.MfaDuo.Initializer"></a>
 
@@ -49,7 +49,7 @@ mfaDuo.MfaDuo(
 | <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuo.Initializer.parameter.mountAccessor">mount_accessor</a></code> | <code>str</code> | The mount to tie this method to for use in automatic mappings. |
 | <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuo.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the MFA method. |
 | <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuo.Initializer.parameter.secretKey">secret_key</a></code> | <code>str</code> | Secret key for Duo. |
-| <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuo.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/mfa_duo#id MfaDuo#id}. |
+| <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuo.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/mfa_duo#id MfaDuo#id}. |
 | <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuo.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuo.Initializer.parameter.pushInfo">push_info</a></code> | <code>str</code> | Push information for Duo. |
 | <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuo.Initializer.parameter.usernameFormat">username_format</a></code> | <code>str</code> | A format string for mapping Identity names to MFA method names. Values to substitute should be placed in `{{}}`. |
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 API hostname for Duo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/mfa_duo#api_hostname MfaDuo#api_hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/mfa_duo#api_hostname MfaDuo#api_hostname}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Integration key for Duo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/mfa_duo#integration_key MfaDuo#integration_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/mfa_duo#integration_key MfaDuo#integration_key}
 
 ---
 
@@ -144,7 +144,7 @@ The mount to tie this method to for use in automatic mappings.
 
 The mapping will use the Name field of Aliases associated with this mount as the username in the mapping.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/mfa_duo#mount_accessor MfaDuo#mount_accessor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/mfa_duo#mount_accessor MfaDuo#mount_accessor}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the MFA method.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/mfa_duo#name MfaDuo#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/mfa_duo#name MfaDuo#name}
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Secret key for Duo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/mfa_duo#secret_key MfaDuo#secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/mfa_duo#secret_key MfaDuo#secret_key}
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/mfa_duo#id MfaDuo#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/mfa_duo#id MfaDuo#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -185,7 +185,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/mfa_duo#namespace MfaDuo#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/mfa_duo#namespace MfaDuo#namespace}
 
 ---
 
@@ -195,7 +195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Push information for Duo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/mfa_duo#push_info MfaDuo#push_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/mfa_duo#push_info MfaDuo#push_info}
 
 ---
 
@@ -205,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A format string for mapping Identity names to MFA method names. Values to substitute should be placed in `{{}}`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/mfa_duo#username_format MfaDuo#username_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/mfa_duo#username_format MfaDuo#username_format}
 
 ---
 
@@ -706,7 +706,7 @@ The construct id used in the generated config for the MfaDuo to import.
 
 The id of the existing MfaDuo that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/mfa_duo#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/mfa_duo#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1142,7 +1142,7 @@ mfaDuo.MfaDuoConfig(
 | <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuoConfig.property.mountAccessor">mount_accessor</a></code> | <code>str</code> | The mount to tie this method to for use in automatic mappings. |
 | <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuoConfig.property.name">name</a></code> | <code>str</code> | Name of the MFA method. |
 | <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuoConfig.property.secretKey">secret_key</a></code> | <code>str</code> | Secret key for Duo. |
-| <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuoConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/mfa_duo#id MfaDuo#id}. |
+| <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuoConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/mfa_duo#id MfaDuo#id}. |
 | <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuoConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuoConfig.property.pushInfo">push_info</a></code> | <code>str</code> | Push information for Duo. |
 | <code><a href="#@cdktf/provider-vault.mfaDuo.MfaDuoConfig.property.usernameFormat">username_format</a></code> | <code>str</code> | A format string for mapping Identity names to MFA method names. Values to substitute should be placed in `{{}}`. |
@@ -1229,7 +1229,7 @@ api_hostname: str
 
 API hostname for Duo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/mfa_duo#api_hostname MfaDuo#api_hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/mfa_duo#api_hostname MfaDuo#api_hostname}
 
 ---
 
@@ -1243,7 +1243,7 @@ integration_key: str
 
 Integration key for Duo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/mfa_duo#integration_key MfaDuo#integration_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/mfa_duo#integration_key MfaDuo#integration_key}
 
 ---
 
@@ -1259,7 +1259,7 @@ The mount to tie this method to for use in automatic mappings.
 
 The mapping will use the Name field of Aliases associated with this mount as the username in the mapping.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/mfa_duo#mount_accessor MfaDuo#mount_accessor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/mfa_duo#mount_accessor MfaDuo#mount_accessor}
 
 ---
 
@@ -1273,7 +1273,7 @@ name: str
 
 Name of the MFA method.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/mfa_duo#name MfaDuo#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/mfa_duo#name MfaDuo#name}
 
 ---
 
@@ -1287,7 +1287,7 @@ secret_key: str
 
 Secret key for Duo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/mfa_duo#secret_key MfaDuo#secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/mfa_duo#secret_key MfaDuo#secret_key}
 
 ---
 
@@ -1299,7 +1299,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/mfa_duo#id MfaDuo#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/mfa_duo#id MfaDuo#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1316,7 +1316,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/mfa_duo#namespace MfaDuo#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/mfa_duo#namespace MfaDuo#namespace}
 
 ---
 
@@ -1330,7 +1330,7 @@ push_info: str
 
 Push information for Duo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/mfa_duo#push_info MfaDuo#push_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/mfa_duo#push_info MfaDuo#push_info}
 
 ---
 
@@ -1344,7 +1344,7 @@ username_format: str
 
 A format string for mapping Identity names to MFA method names. Values to substitute should be placed in `{{}}`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/mfa_duo#username_format MfaDuo#username_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/mfa_duo#username_format MfaDuo#username_format}
 
 ---
 
