@@ -31,6 +31,7 @@ The following submodules are available:
 - [azureSecretBackend](./azureSecretBackend.python.md)
 - [azureSecretBackendRole](./azureSecretBackendRole.python.md)
 - [certAuthBackendRole](./certAuthBackendRole.python.md)
+- [configUiCustomMessage](./configUiCustomMessage.python.md)
 - [consulSecretBackend](./consulSecretBackend.python.md)
 - [consulSecretBackendRole](./consulSecretBackendRole.python.md)
 - [dataVaultAdAccessCredentials](./dataVaultAdAccessCredentials.python.md)

@@ -31,6 +31,7 @@ Object.defineProperty(exports, 'azureAuthBackendRole', { get: function () { retu
 Object.defineProperty(exports, 'azureSecretBackend', { get: function () { return require('./azure-secret-backend'); } });
 Object.defineProperty(exports, 'azureSecretBackendRole', { get: function () { return require('./azure-secret-backend-role'); } });
 Object.defineProperty(exports, 'certAuthBackendRole', { get: function () { return require('./cert-auth-backend-role'); } });
+Object.defineProperty(exports, 'configUiCustomMessage', { get: function () { return require('./config-ui-custom-message'); } });
 Object.defineProperty(exports, 'consulSecretBackend', { get: function () { return require('./consul-secret-backend'); } });
 Object.defineProperty(exports, 'consulSecretBackendRole', { get: function () { return require('./consul-secret-backend-role'); } });
 Object.defineProperty(exports, 'databaseSecretBackendConnection', { get: function () { return require('./database-secret-backend-connection'); } });

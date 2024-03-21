@@ -31,6 +31,7 @@ The following submodules are available:
 - [azureSecretBackend](./azureSecretBackend.csharp.md)
 - [azureSecretBackendRole](./azureSecretBackendRole.csharp.md)
 - [certAuthBackendRole](./certAuthBackendRole.csharp.md)
+- [configUiCustomMessage](./configUiCustomMessage.csharp.md)
 - [consulSecretBackend](./consulSecretBackend.csharp.md)
 - [consulSecretBackendRole](./consulSecretBackendRole.csharp.md)
 - [dataVaultAdAccessCredentials](./dataVaultAdAccessCredentials.csharp.md)

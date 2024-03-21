@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/nomad_secret_backend
+// https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/nomad_secret_backend
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,53 +15,53 @@ export interface NomadSecretBackendConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies the address of the Nomad instance, provided as "protocol://host:port" like "http://127.0.0.1:4646".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/nomad_secret_backend#address NomadSecretBackend#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/nomad_secret_backend#address NomadSecretBackend#address}
   */
   readonly address?: string;
   /**
   * The mount path for the Nomad backend.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/nomad_secret_backend#backend NomadSecretBackend#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/nomad_secret_backend#backend NomadSecretBackend#backend}
   */
   readonly backend?: string;
   /**
   * CA certificate to use when verifying Nomad server certificate, must be x509 PEM encoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/nomad_secret_backend#ca_cert NomadSecretBackend#ca_cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/nomad_secret_backend#ca_cert NomadSecretBackend#ca_cert}
   */
   readonly caCert?: string;
   /**
   * Client certificate used for Nomad's TLS communication, must be x509 PEM encoded and if this is set you need to also set client_key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/nomad_secret_backend#client_cert NomadSecretBackend#client_cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/nomad_secret_backend#client_cert NomadSecretBackend#client_cert}
   */
   readonly clientCert?: string;
   /**
   * Client key used for Nomad's TLS communication, must be x509 PEM encoded and if this is set you need to also set client_cert.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/nomad_secret_backend#client_key NomadSecretBackend#client_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/nomad_secret_backend#client_key NomadSecretBackend#client_key}
   */
   readonly clientKey?: string;
   /**
   * Default lease duration for secrets in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/nomad_secret_backend#default_lease_ttl_seconds NomadSecretBackend#default_lease_ttl_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/nomad_secret_backend#default_lease_ttl_seconds NomadSecretBackend#default_lease_ttl_seconds}
   */
   readonly defaultLeaseTtlSeconds?: number;
   /**
   * Human-friendly description of the mount for the backend.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/nomad_secret_backend#description NomadSecretBackend#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/nomad_secret_backend#description NomadSecretBackend#description}
   */
   readonly description?: string;
   /**
   * If set, opts out of mount migration on path updates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/nomad_secret_backend#disable_remount NomadSecretBackend#disable_remount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/nomad_secret_backend#disable_remount NomadSecretBackend#disable_remount}
   */
   readonly disableRemount?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/nomad_secret_backend#id NomadSecretBackend#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/nomad_secret_backend#id NomadSecretBackend#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -70,49 +70,49 @@ export interface NomadSecretBackendConfig extends cdktf.TerraformMetaArguments {
   /**
   * Mark the secrets engine as local-only. Local engines are not replicated or removed by replication. Tolerance duration to use when checking the last rotation time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/nomad_secret_backend#local NomadSecretBackend#local}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/nomad_secret_backend#local NomadSecretBackend#local}
   */
   readonly local?: boolean | cdktf.IResolvable;
   /**
   * Maximum possible lease duration for secrets in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/nomad_secret_backend#max_lease_ttl_seconds NomadSecretBackend#max_lease_ttl_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/nomad_secret_backend#max_lease_ttl_seconds NomadSecretBackend#max_lease_ttl_seconds}
   */
   readonly maxLeaseTtlSeconds?: number;
   /**
   * Specifies the maximum length to use for the name of the Nomad token generated with Generate Credential. If omitted, 0 is used and ignored, defaulting to the max value allowed by the Nomad version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/nomad_secret_backend#max_token_name_length NomadSecretBackend#max_token_name_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/nomad_secret_backend#max_token_name_length NomadSecretBackend#max_token_name_length}
   */
   readonly maxTokenNameLength?: number;
   /**
   * Maximum possible lease duration for secrets in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/nomad_secret_backend#max_ttl NomadSecretBackend#max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/nomad_secret_backend#max_ttl NomadSecretBackend#max_ttl}
   */
   readonly maxTtl?: number;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/nomad_secret_backend#namespace NomadSecretBackend#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/nomad_secret_backend#namespace NomadSecretBackend#namespace}
   */
   readonly namespace?: string;
   /**
   * Specifies the Nomad Management token to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/nomad_secret_backend#token NomadSecretBackend#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/nomad_secret_backend#token NomadSecretBackend#token}
   */
   readonly token?: string;
   /**
   * Maximum possible lease duration for secrets in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/nomad_secret_backend#ttl NomadSecretBackend#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/nomad_secret_backend#ttl NomadSecretBackend#ttl}
   */
   readonly ttl?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/nomad_secret_backend vault_nomad_secret_backend}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/nomad_secret_backend vault_nomad_secret_backend}
 */
 export class NomadSecretBackend extends cdktf.TerraformResource {
 
@@ -128,7 +128,7 @@ export class NomadSecretBackend extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a NomadSecretBackend resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NomadSecretBackend to import
-  * @param importFromId The id of the existing NomadSecretBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/nomad_secret_backend#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NomadSecretBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/nomad_secret_backend#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NomadSecretBackend to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -140,7 +140,7 @@ export class NomadSecretBackend extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/nomad_secret_backend vault_nomad_secret_backend} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/nomad_secret_backend vault_nomad_secret_backend} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -151,7 +151,7 @@ export class NomadSecretBackend extends cdktf.TerraformResource {
       terraformResourceType: 'vault_nomad_secret_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '4.0.0',
+        providerVersion: '4.1.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

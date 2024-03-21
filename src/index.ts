@@ -31,6 +31,7 @@ export * as azureAuthBackendRole from './azure-auth-backend-role';
 export * as azureSecretBackend from './azure-secret-backend';
 export * as azureSecretBackendRole from './azure-secret-backend-role';
 export * as certAuthBackendRole from './cert-auth-backend-role';
+export * as configUiCustomMessage from './config-ui-custom-message';
 export * as consulSecretBackend from './consul-secret-backend';
 export * as consulSecretBackendRole from './consul-secret-backend-role';
 export * as databaseSecretBackendConnection from './database-secret-backend-connection';

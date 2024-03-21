@@ -31,6 +31,7 @@ The following submodules are available:
 - [azureSecretBackend](./azureSecretBackend.java.md)
 - [azureSecretBackendRole](./azureSecretBackendRole.java.md)
 - [certAuthBackendRole](./certAuthBackendRole.java.md)
+- [configUiCustomMessage](./configUiCustomMessage.java.md)
 - [consulSecretBackend](./consulSecretBackend.java.md)
 - [consulSecretBackendRole](./consulSecretBackendRole.java.md)
 - [dataVaultAdAccessCredentials](./dataVaultAdAccessCredentials.java.md)

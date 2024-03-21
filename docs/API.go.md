@@ -31,6 +31,7 @@ The following submodules are available:
 - [azureSecretBackend](./azureSecretBackend.go.md)
 - [azureSecretBackendRole](./azureSecretBackendRole.go.md)
 - [certAuthBackendRole](./certAuthBackendRole.go.md)
+- [configUiCustomMessage](./configUiCustomMessage.go.md)
 - [consulSecretBackend](./consulSecretBackend.go.md)
 - [consulSecretBackendRole](./consulSecretBackendRole.go.md)
 - [dataVaultAdAccessCredentials](./dataVaultAdAccessCredentials.go.md)
