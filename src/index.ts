@@ -174,6 +174,8 @@ export * as dataVaultKvSecretsList from './data-vault-kv-secrets-list';
 export * as dataVaultKvSecretsListV2 from './data-vault-kv-secrets-list-v2';
 export * as dataVaultLdapDynamicCredentials from './data-vault-ldap-dynamic-credentials';
 export * as dataVaultLdapStaticCredentials from './data-vault-ldap-static-credentials';
+export * as dataVaultNamespace from './data-vault-namespace';
+export * as dataVaultNamespaces from './data-vault-namespaces';
 export * as dataVaultNomadAccessToken from './data-vault-nomad-access-token';
 export * as dataVaultPkiSecretBackendIssuer from './data-vault-pki-secret-backend-issuer';
 export * as dataVaultPkiSecretBackendIssuers from './data-vault-pki-secret-backend-issuers';

@@ -58,6 +58,8 @@ The following submodules are available:
 - [dataVaultKvSecretsListV2](./dataVaultKvSecretsListV2.java.md)
 - [dataVaultLdapDynamicCredentials](./dataVaultLdapDynamicCredentials.java.md)
 - [dataVaultLdapStaticCredentials](./dataVaultLdapStaticCredentials.java.md)
+- [dataVaultNamespace](./dataVaultNamespace.java.md)
+- [dataVaultNamespaces](./dataVaultNamespaces.java.md)
 - [dataVaultNomadAccessToken](./dataVaultNomadAccessToken.java.md)
 - [dataVaultPkiSecretBackendIssuer](./dataVaultPkiSecretBackendIssuer.java.md)
 - [dataVaultPkiSecretBackendIssuers](./dataVaultPkiSecretBackendIssuers.java.md)

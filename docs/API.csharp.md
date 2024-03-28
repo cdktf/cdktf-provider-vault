@@ -58,6 +58,8 @@ The following submodules are available:
 - [dataVaultKvSecretsListV2](./dataVaultKvSecretsListV2.csharp.md)
 - [dataVaultLdapDynamicCredentials](./dataVaultLdapDynamicCredentials.csharp.md)
 - [dataVaultLdapStaticCredentials](./dataVaultLdapStaticCredentials.csharp.md)
+- [dataVaultNamespace](./dataVaultNamespace.csharp.md)
+- [dataVaultNamespaces](./dataVaultNamespaces.csharp.md)
 - [dataVaultNomadAccessToken](./dataVaultNomadAccessToken.csharp.md)
 - [dataVaultPkiSecretBackendIssuer](./dataVaultPkiSecretBackendIssuer.csharp.md)
 - [dataVaultPkiSecretBackendIssuers](./dataVaultPkiSecretBackendIssuers.csharp.md)

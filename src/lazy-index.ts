@@ -174,6 +174,8 @@ Object.defineProperty(exports, 'dataVaultKvSecretsList', { get: function () { re
 Object.defineProperty(exports, 'dataVaultKvSecretsListV2', { get: function () { return require('./data-vault-kv-secrets-list-v2'); } });
 Object.defineProperty(exports, 'dataVaultLdapDynamicCredentials', { get: function () { return require('./data-vault-ldap-dynamic-credentials'); } });
 Object.defineProperty(exports, 'dataVaultLdapStaticCredentials', { get: function () { return require('./data-vault-ldap-static-credentials'); } });
+Object.defineProperty(exports, 'dataVaultNamespace', { get: function () { return require('./data-vault-namespace'); } });
+Object.defineProperty(exports, 'dataVaultNamespaces', { get: function () { return require('./data-vault-namespaces'); } });
 Object.defineProperty(exports, 'dataVaultNomadAccessToken', { get: function () { return require('./data-vault-nomad-access-token'); } });
 Object.defineProperty(exports, 'dataVaultPkiSecretBackendIssuer', { get: function () { return require('./data-vault-pki-secret-backend-issuer'); } });
 Object.defineProperty(exports, 'dataVaultPkiSecretBackendIssuers', { get: function () { return require('./data-vault-pki-secret-backend-issuers'); } });
