@@ -4,7 +4,7 @@
 
 ### PasswordPolicy <a name="PasswordPolicy" id="@cdktf/provider-vault.passwordPolicy.PasswordPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/password_policy vault_password_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/password_policy vault_password_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.passwordPolicy.PasswordPolicy.Initializer"></a>
 
@@ -43,7 +43,7 @@ PasswordPolicy.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vault.passwordPolicy.PasswordPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.passwordPolicy.PasswordPolicy.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of the password policy. |
 | <code><a href="#@cdktf/provider-vault.passwordPolicy.PasswordPolicy.Initializer.parameter.policy">policy</a></code> | <code>java.lang.String</code> | The password policy document. |
-| <code><a href="#@cdktf/provider-vault.passwordPolicy.PasswordPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/password_policy#id PasswordPolicy#id}. |
+| <code><a href="#@cdktf/provider-vault.passwordPolicy.PasswordPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/password_policy#id PasswordPolicy#id}. |
 | <code><a href="#@cdktf/provider-vault.passwordPolicy.PasswordPolicy.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the password policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/password_policy#name PasswordPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/password_policy#name PasswordPolicy#name}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The password policy document.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/password_policy#policy PasswordPolicy#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/password_policy#policy PasswordPolicy#policy}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/password_policy#id PasswordPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/password_policy#id PasswordPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -145,7 +145,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/password_policy#namespace PasswordPolicy#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/password_policy#namespace PasswordPolicy#namespace}
 
 ---
 
@@ -586,7 +586,7 @@ The construct id used in the generated config for the PasswordPolicy to import.
 
 The id of the existing PasswordPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/password_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/password_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -908,7 +908,7 @@ PasswordPolicyConfig.builder()
 | <code><a href="#@cdktf/provider-vault.passwordPolicy.PasswordPolicyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.passwordPolicy.PasswordPolicyConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of the password policy. |
 | <code><a href="#@cdktf/provider-vault.passwordPolicy.PasswordPolicyConfig.property.policy">policy</a></code> | <code>java.lang.String</code> | The password policy document. |
-| <code><a href="#@cdktf/provider-vault.passwordPolicy.PasswordPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/password_policy#id PasswordPolicy#id}. |
+| <code><a href="#@cdktf/provider-vault.passwordPolicy.PasswordPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/password_policy#id PasswordPolicy#id}. |
 | <code><a href="#@cdktf/provider-vault.passwordPolicy.PasswordPolicyConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -993,7 +993,7 @@ public java.lang.String getName();
 
 Name of the password policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/password_policy#name PasswordPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/password_policy#name PasswordPolicy#name}
 
 ---
 
@@ -1007,7 +1007,7 @@ public java.lang.String getPolicy();
 
 The password policy document.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/password_policy#policy PasswordPolicy#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/password_policy#policy PasswordPolicy#policy}
 
 ---
 
@@ -1019,7 +1019,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/password_policy#id PasswordPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/password_policy#id PasswordPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1036,7 +1036,7 @@ public java.lang.String getNamespace();
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/password_policy#namespace PasswordPolicy#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/password_policy#namespace PasswordPolicy#namespace}
 
 ---
 

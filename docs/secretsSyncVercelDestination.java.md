@@ -4,7 +4,7 @@
 
 ### SecretsSyncVercelDestination <a name="SecretsSyncVercelDestination" id="@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_vercel_destination vault_secrets_sync_vercel_destination}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_vercel_destination vault_secrets_sync_vercel_destination}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.Initializer"></a>
 
@@ -27,6 +27,7 @@ SecretsSyncVercelDestination.Builder.create(Construct scope, java.lang.String id
     .deploymentEnvironments(java.util.List<java.lang.String>)
     .name(java.lang.String)
     .projectId(java.lang.String)
+//  .granularity(java.lang.String)
 //  .id(java.lang.String)
 //  .namespace(java.lang.String)
 //  .secretNameTemplate(java.lang.String)
@@ -49,7 +50,8 @@ SecretsSyncVercelDestination.Builder.create(Construct scope, java.lang.String id
 | <code><a href="#@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.Initializer.parameter.deploymentEnvironments">deploymentEnvironments</a></code> | <code>java.util.List<java.lang.String></code> | Deployment environments where the environment variables are available. Accepts 'development', 'preview' & 'production'. |
 | <code><a href="#@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Unique name of the Vercel destination. |
 | <code><a href="#@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.Initializer.parameter.projectId">projectId</a></code> | <code>java.lang.String</code> | Project ID where to manage environment variables. |
-| <code><a href="#@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_vercel_destination#id SecretsSyncVercelDestination#id}. |
+| <code><a href="#@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.Initializer.parameter.granularity">granularity</a></code> | <code>java.lang.String</code> | Determines what level of information is synced as a distinct resource at the destination. Can be 'secret-path' or 'secret-key'. |
+| <code><a href="#@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_vercel_destination#id SecretsSyncVercelDestination#id}. |
 | <code><a href="#@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.Initializer.parameter.secretNameTemplate">secretNameTemplate</a></code> | <code>java.lang.String</code> | Template describing how to generate external secret names. |
 | <code><a href="#@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.Initializer.parameter.teamId">teamId</a></code> | <code>java.lang.String</code> | Team ID the project belongs to. |
@@ -122,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 Vercel API access token with the permissions to manage environment variables.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_vercel_destination#access_token SecretsSyncVercelDestination#access_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_vercel_destination#access_token SecretsSyncVercelDestination#access_token}
 
 ---
 
@@ -132,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Deployment environments where the environment variables are available. Accepts 'development', 'preview' & 'production'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_vercel_destination#deployment_environments SecretsSyncVercelDestination#deployment_environments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_vercel_destination#deployment_environments SecretsSyncVercelDestination#deployment_environments}
 
 ---
 
@@ -142,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Unique name of the Vercel destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_vercel_destination#name SecretsSyncVercelDestination#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_vercel_destination#name SecretsSyncVercelDestination#name}
 
 ---
 
@@ -152,7 +154,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Project ID where to manage environment variables.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_vercel_destination#project_id SecretsSyncVercelDestination#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_vercel_destination#project_id SecretsSyncVercelDestination#project_id}
+
+---
+
+##### `granularity`<sup>Optional</sup> <a name="granularity" id="@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.Initializer.parameter.granularity"></a>
+
+- *Type:* java.lang.String
+
+Determines what level of information is synced as a distinct resource at the destination. Can be 'secret-path' or 'secret-key'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_vercel_destination#granularity SecretsSyncVercelDestination#granularity}
 
 ---
 
@@ -160,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_vercel_destination#id SecretsSyncVercelDestination#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_vercel_destination#id SecretsSyncVercelDestination#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -173,7 +185,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_vercel_destination#namespace SecretsSyncVercelDestination#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_vercel_destination#namespace SecretsSyncVercelDestination#namespace}
 
 ---
 
@@ -183,7 +195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Template describing how to generate external secret names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_vercel_destination#secret_name_template SecretsSyncVercelDestination#secret_name_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_vercel_destination#secret_name_template SecretsSyncVercelDestination#secret_name_template}
 
 ---
 
@@ -193,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Team ID the project belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_vercel_destination#team_id SecretsSyncVercelDestination#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_vercel_destination#team_id SecretsSyncVercelDestination#team_id}
 
 ---
 
@@ -224,6 +236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.resetGranularity">resetGranularity</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.resetNamespace">resetNamespace</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.resetSecretNameTemplate">resetSecretNameTemplate</a></code> | *No description.* |
@@ -521,6 +534,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `resetGranularity` <a name="resetGranularity" id="@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.resetGranularity"></a>
+
+```java
+public void resetGranularity()
+```
+
 ##### `resetId` <a name="resetId" id="@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.resetId"></a>
 
 ```java
@@ -648,7 +667,7 @@ The construct id used in the generated config for the SecretsSyncVercelDestinati
 
 The id of the existing SecretsSyncVercelDestination that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_vercel_destination#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_vercel_destination#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -681,6 +700,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.
 | <code><a href="#@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.property.accessTokenInput">accessTokenInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.property.deploymentEnvironmentsInput">deploymentEnvironmentsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.property.granularityInput">granularityInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.property.namespaceInput">namespaceInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -689,6 +709,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.
 | <code><a href="#@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.property.teamIdInput">teamIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.property.accessToken">accessToken</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.property.deploymentEnvironments">deploymentEnvironments</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.property.granularity">granularity</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.property.namespace">namespace</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -870,6 +891,16 @@ public java.util.List<java.lang.String> getDeploymentEnvironmentsInput();
 
 ---
 
+##### `granularityInput`<sup>Optional</sup> <a name="granularityInput" id="@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.property.granularityInput"></a>
+
+```java
+public java.lang.String getGranularityInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.property.idInput"></a>
 
 ```java
@@ -947,6 +978,16 @@ public java.util.List<java.lang.String> getDeploymentEnvironments();
 ```
 
 - *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `granularity`<sup>Required</sup> <a name="granularity" id="@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.property.granularity"></a>
+
+```java
+public java.lang.String getGranularity();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -1053,6 +1094,7 @@ SecretsSyncVercelDestinationConfig.builder()
     .deploymentEnvironments(java.util.List<java.lang.String>)
     .name(java.lang.String)
     .projectId(java.lang.String)
+//  .granularity(java.lang.String)
 //  .id(java.lang.String)
 //  .namespace(java.lang.String)
 //  .secretNameTemplate(java.lang.String)
@@ -1075,7 +1117,8 @@ SecretsSyncVercelDestinationConfig.builder()
 | <code><a href="#@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestinationConfig.property.deploymentEnvironments">deploymentEnvironments</a></code> | <code>java.util.List<java.lang.String></code> | Deployment environments where the environment variables are available. Accepts 'development', 'preview' & 'production'. |
 | <code><a href="#@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestinationConfig.property.name">name</a></code> | <code>java.lang.String</code> | Unique name of the Vercel destination. |
 | <code><a href="#@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestinationConfig.property.projectId">projectId</a></code> | <code>java.lang.String</code> | Project ID where to manage environment variables. |
-| <code><a href="#@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestinationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_vercel_destination#id SecretsSyncVercelDestination#id}. |
+| <code><a href="#@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestinationConfig.property.granularity">granularity</a></code> | <code>java.lang.String</code> | Determines what level of information is synced as a distinct resource at the destination. Can be 'secret-path' or 'secret-key'. |
+| <code><a href="#@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestinationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_vercel_destination#id SecretsSyncVercelDestination#id}. |
 | <code><a href="#@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestinationConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestinationConfig.property.secretNameTemplate">secretNameTemplate</a></code> | <code>java.lang.String</code> | Template describing how to generate external secret names. |
 | <code><a href="#@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestinationConfig.property.teamId">teamId</a></code> | <code>java.lang.String</code> | Team ID the project belongs to. |
@@ -1162,7 +1205,7 @@ public java.lang.String getAccessToken();
 
 Vercel API access token with the permissions to manage environment variables.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_vercel_destination#access_token SecretsSyncVercelDestination#access_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_vercel_destination#access_token SecretsSyncVercelDestination#access_token}
 
 ---
 
@@ -1176,7 +1219,7 @@ public java.util.List<java.lang.String> getDeploymentEnvironments();
 
 Deployment environments where the environment variables are available. Accepts 'development', 'preview' & 'production'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_vercel_destination#deployment_environments SecretsSyncVercelDestination#deployment_environments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_vercel_destination#deployment_environments SecretsSyncVercelDestination#deployment_environments}
 
 ---
 
@@ -1190,7 +1233,7 @@ public java.lang.String getName();
 
 Unique name of the Vercel destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_vercel_destination#name SecretsSyncVercelDestination#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_vercel_destination#name SecretsSyncVercelDestination#name}
 
 ---
 
@@ -1204,7 +1247,21 @@ public java.lang.String getProjectId();
 
 Project ID where to manage environment variables.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_vercel_destination#project_id SecretsSyncVercelDestination#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_vercel_destination#project_id SecretsSyncVercelDestination#project_id}
+
+---
+
+##### `granularity`<sup>Optional</sup> <a name="granularity" id="@cdktf/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestinationConfig.property.granularity"></a>
+
+```java
+public java.lang.String getGranularity();
+```
+
+- *Type:* java.lang.String
+
+Determines what level of information is synced as a distinct resource at the destination. Can be 'secret-path' or 'secret-key'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_vercel_destination#granularity SecretsSyncVercelDestination#granularity}
 
 ---
 
@@ -1216,7 +1273,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_vercel_destination#id SecretsSyncVercelDestination#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_vercel_destination#id SecretsSyncVercelDestination#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1233,7 +1290,7 @@ public java.lang.String getNamespace();
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_vercel_destination#namespace SecretsSyncVercelDestination#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_vercel_destination#namespace SecretsSyncVercelDestination#namespace}
 
 ---
 
@@ -1247,7 +1304,7 @@ public java.lang.String getSecretNameTemplate();
 
 Template describing how to generate external secret names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_vercel_destination#secret_name_template SecretsSyncVercelDestination#secret_name_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_vercel_destination#secret_name_template SecretsSyncVercelDestination#secret_name_template}
 
 ---
 
@@ -1261,7 +1318,7 @@ public java.lang.String getTeamId();
 
 Team ID the project belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_vercel_destination#team_id SecretsSyncVercelDestination#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_vercel_destination#team_id SecretsSyncVercelDestination#team_id}
 
 ---
 

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/identity_oidc_client
+// https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/identity_oidc_client
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +10,23 @@ export interface IdentityOidcClientConfig extends cdktf.TerraformMetaArguments {
   /**
   * The time-to-live for access tokens obtained by the client.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/identity_oidc_client#access_token_ttl IdentityOidcClient#access_token_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/identity_oidc_client#access_token_ttl IdentityOidcClient#access_token_ttl}
   */
   readonly accessTokenTtl?: number;
   /**
   * A list of assignment resources associated with the client.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/identity_oidc_client#assignments IdentityOidcClient#assignments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/identity_oidc_client#assignments IdentityOidcClient#assignments}
   */
   readonly assignments?: string[];
   /**
   * The client type based on its ability to maintain confidentiality of credentials.Defaults to 'confidential'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/identity_oidc_client#client_type IdentityOidcClient#client_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/identity_oidc_client#client_type IdentityOidcClient#client_type}
   */
   readonly clientType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/identity_oidc_client#id IdentityOidcClient#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/identity_oidc_client#id IdentityOidcClient#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,37 +35,37 @@ export interface IdentityOidcClientConfig extends cdktf.TerraformMetaArguments {
   /**
   * The time-to-live for ID tokens obtained by the client. The value should be less than the verification_ttl on the key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/identity_oidc_client#id_token_ttl IdentityOidcClient#id_token_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/identity_oidc_client#id_token_ttl IdentityOidcClient#id_token_ttl}
   */
   readonly idTokenTtl?: number;
   /**
   * A reference to a named key resource in Vault. This cannot be modified after creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/identity_oidc_client#key IdentityOidcClient#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/identity_oidc_client#key IdentityOidcClient#key}
   */
   readonly key?: string;
   /**
   * The name of the client.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/identity_oidc_client#name IdentityOidcClient#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/identity_oidc_client#name IdentityOidcClient#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/identity_oidc_client#namespace IdentityOidcClient#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/identity_oidc_client#namespace IdentityOidcClient#namespace}
   */
   readonly namespace?: string;
   /**
   * Redirection URI values used by the client. One of these values must exactly match the redirect_uri parameter value used in each authentication request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/identity_oidc_client#redirect_uris IdentityOidcClient#redirect_uris}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/identity_oidc_client#redirect_uris IdentityOidcClient#redirect_uris}
   */
   readonly redirectUris?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/identity_oidc_client vault_identity_oidc_client}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/identity_oidc_client vault_identity_oidc_client}
 */
 export class IdentityOidcClient extends cdktf.TerraformResource {
 
@@ -86,7 +81,7 @@ export class IdentityOidcClient extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a IdentityOidcClient resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IdentityOidcClient to import
-  * @param importFromId The id of the existing IdentityOidcClient that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/identity_oidc_client#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IdentityOidcClient that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/identity_oidc_client#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IdentityOidcClient to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -98,7 +93,7 @@ export class IdentityOidcClient extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/identity_oidc_client vault_identity_oidc_client} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/identity_oidc_client vault_identity_oidc_client} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -109,7 +104,7 @@ export class IdentityOidcClient extends cdktf.TerraformResource {
       terraformResourceType: 'vault_identity_oidc_client',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '4.1.0',
+        providerVersion: '4.2.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

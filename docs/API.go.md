@@ -58,6 +58,8 @@ The following submodules are available:
 - [dataVaultKvSecretsListV2](./dataVaultKvSecretsListV2.go.md)
 - [dataVaultLdapDynamicCredentials](./dataVaultLdapDynamicCredentials.go.md)
 - [dataVaultLdapStaticCredentials](./dataVaultLdapStaticCredentials.go.md)
+- [dataVaultNamespace](./dataVaultNamespace.go.md)
+- [dataVaultNamespaces](./dataVaultNamespaces.go.md)
 - [dataVaultNomadAccessToken](./dataVaultNomadAccessToken.go.md)
 - [dataVaultPkiSecretBackendIssuer](./dataVaultPkiSecretBackendIssuer.go.md)
 - [dataVaultPkiSecretBackendIssuers](./dataVaultPkiSecretBackendIssuers.go.md)

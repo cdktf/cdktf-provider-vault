@@ -4,12 +4,12 @@
 
 ### SecretsSyncConfig <a name="SecretsSyncConfig" id="@cdktf/provider-vault.secretsSyncConfig.SecretsSyncConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_config vault_secrets_sync_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_config vault_secrets_sync_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.secretsSyncConfig.SecretsSyncConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/secretssyncconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/secretssyncconfig"
 
 secretssyncconfig.NewSecretsSyncConfig(scope Construct, id *string, config SecretsSyncConfigConfig) SecretsSyncConfig
 ```
@@ -406,7 +406,7 @@ func ResetQueueCapacity()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.secretsSyncConfig.SecretsSyncConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/secretssyncconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/secretssyncconfig"
 
 secretssyncconfig.SecretsSyncConfig_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.secretsSyncConfig.SecretsSyncConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/secretssyncconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/secretssyncconfig"
 
 secretssyncconfig.SecretsSyncConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ secretssyncconfig.SecretsSyncConfig_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.secretsSyncConfig.SecretsSyncConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/secretssyncconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/secretssyncconfig"
 
 secretssyncconfig.SecretsSyncConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ secretssyncconfig.SecretsSyncConfig_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.secretsSyncConfig.SecretsSyncConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/secretssyncconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/secretssyncconfig"
 
 secretssyncconfig.SecretsSyncConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -495,7 +495,7 @@ The construct id used in the generated config for the SecretsSyncConfig to impor
 
 The id of the existing SecretsSyncConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -783,7 +783,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.secretsSyncConfig.SecretsSyncConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/secretssyncconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/secretssyncconfig"
 
 &secretssyncconfig.SecretsSyncConfigConfig {
 	Connection: interface{},
@@ -812,7 +812,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/secretssyncconfig"
 | <code><a href="#@cdktf/provider-vault.secretsSyncConfig.SecretsSyncConfigConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncConfig.SecretsSyncConfigConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncConfig.SecretsSyncConfigConfig.property.disabled">Disabled</a></code> | <code>interface{}</code> | Disables the syncing process between Vault and external destinations. |
-| <code><a href="#@cdktf/provider-vault.secretsSyncConfig.SecretsSyncConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_config#id SecretsSyncConfig#id}. |
+| <code><a href="#@cdktf/provider-vault.secretsSyncConfig.SecretsSyncConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_config#id SecretsSyncConfig#id}. |
 | <code><a href="#@cdktf/provider-vault.secretsSyncConfig.SecretsSyncConfigConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.secretsSyncConfig.SecretsSyncConfigConfig.property.queueCapacity">QueueCapacity</a></code> | <code>*f64</code> | Maximum number of pending sync operations allowed on the queue. |
 
@@ -898,7 +898,7 @@ Disabled interface{}
 
 Disables the syncing process between Vault and external destinations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_config#disabled SecretsSyncConfig#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_config#disabled SecretsSyncConfig#disabled}
 
 ---
 
@@ -910,7 +910,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_config#id SecretsSyncConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_config#id SecretsSyncConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -927,7 +927,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_config#namespace SecretsSyncConfig#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_config#namespace SecretsSyncConfig#namespace}
 
 ---
 
@@ -941,7 +941,7 @@ QueueCapacity *f64
 
 Maximum number of pending sync operations allowed on the queue.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_config#queue_capacity SecretsSyncConfig#queue_capacity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_config#queue_capacity SecretsSyncConfig#queue_capacity}
 
 ---
 

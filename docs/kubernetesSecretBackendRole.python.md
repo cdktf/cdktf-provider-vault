@@ -4,7 +4,7 @@
 
 ### KubernetesSecretBackendRole <a name="KubernetesSecretBackendRole" id="@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/kubernetes_secret_backend_role vault_kubernetes_secret_backend_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend_role vault_kubernetes_secret_backend_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.Initializer"></a>
 
@@ -21,9 +21,10 @@ kubernetesSecretBackendRole.KubernetesSecretBackendRole(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  allowed_kubernetes_namespaces: typing.List[str],
   backend: str,
   name: str,
+  allowed_kubernetes_namespaces: typing.List[str] = None,
+  allowed_kubernetes_namespace_selector: str = None,
   extra_annotations: typing.Mapping[str] = None,
   extra_labels: typing.Mapping[str] = None,
   generated_role_rules: str = None,
@@ -49,13 +50,14 @@ kubernetesSecretBackendRole.KubernetesSecretBackendRole(
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.Initializer.parameter.allowedKubernetesNamespaces">allowed_kubernetes_namespaces</a></code> | <code>typing.List[str]</code> | The list of Kubernetes namespaces this role can generate credentials for. If set to '*' all namespaces are allowed. |
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.Initializer.parameter.backend">backend</a></code> | <code>str</code> | The mount path for the Kubernetes secrets engine. |
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the role. |
+| <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.Initializer.parameter.allowedKubernetesNamespaces">allowed_kubernetes_namespaces</a></code> | <code>typing.List[str]</code> | The list of Kubernetes namespaces this role can generate credentials for. |
+| <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.Initializer.parameter.allowedKubernetesNamespaceSelector">allowed_kubernetes_namespace_selector</a></code> | <code>str</code> | A label selector for Kubernetes namespaces in which credentials can begenerated. |
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.Initializer.parameter.extraAnnotations">extra_annotations</a></code> | <code>typing.Mapping[str]</code> | Additional annotations to apply to all generated Kubernetes objects. |
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.Initializer.parameter.extraLabels">extra_labels</a></code> | <code>typing.Mapping[str]</code> | Additional labels to apply to all generated Kubernetes objects. |
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.Initializer.parameter.generatedRoleRules">generated_role_rules</a></code> | <code>str</code> | The Role or ClusterRole rules to use when generating a role. |
-| <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/kubernetes_secret_backend_role#id KubernetesSecretBackendRole#id}. |
+| <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend_role#id KubernetesSecretBackendRole#id}. |
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.Initializer.parameter.kubernetesRoleName">kubernetes_role_name</a></code> | <code>str</code> | The pre-existing Role or ClusterRole to bind a generated service account to. |
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.Initializer.parameter.kubernetesRoleType">kubernetes_role_type</a></code> | <code>str</code> | Specifies whether the Kubernetes role is a Role or ClusterRole. |
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
@@ -126,23 +128,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `allowed_kubernetes_namespaces`<sup>Required</sup> <a name="allowed_kubernetes_namespaces" id="@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.Initializer.parameter.allowedKubernetesNamespaces"></a>
-
-- *Type:* typing.List[str]
-
-The list of Kubernetes namespaces this role can generate credentials for. If set to '*' all namespaces are allowed.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/kubernetes_secret_backend_role#allowed_kubernetes_namespaces KubernetesSecretBackendRole#allowed_kubernetes_namespaces}
-
----
-
 ##### `backend`<sup>Required</sup> <a name="backend" id="@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.Initializer.parameter.backend"></a>
 
 - *Type:* str
 
 The mount path for the Kubernetes secrets engine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/kubernetes_secret_backend_role#backend KubernetesSecretBackendRole#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend_role#backend KubernetesSecretBackendRole#backend}
 
 ---
 
@@ -152,7 +144,31 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/kubernetes_secret_backend_role#name KubernetesSecretBackendRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend_role#name KubernetesSecretBackendRole#name}
+
+---
+
+##### `allowed_kubernetes_namespaces`<sup>Optional</sup> <a name="allowed_kubernetes_namespaces" id="@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.Initializer.parameter.allowedKubernetesNamespaces"></a>
+
+- *Type:* typing.List[str]
+
+The list of Kubernetes namespaces this role can generate credentials for.
+
+If set to '*' all namespaces are allowed. If set with`allowed_kubernetes_namespace_selector`, the conditions are `OR`ed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend_role#allowed_kubernetes_namespaces KubernetesSecretBackendRole#allowed_kubernetes_namespaces}
+
+---
+
+##### `allowed_kubernetes_namespace_selector`<sup>Optional</sup> <a name="allowed_kubernetes_namespace_selector" id="@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.Initializer.parameter.allowedKubernetesNamespaceSelector"></a>
+
+- *Type:* str
+
+A label selector for Kubernetes namespaces in which credentials can begenerated.
+
+Accepts either a JSON or YAML object. The value should be of typeLabelSelector. If set with `allowed_kubernetes_namespace`, the conditions are `OR`ed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend_role#allowed_kubernetes_namespace_selector KubernetesSecretBackendRole#allowed_kubernetes_namespace_selector}
 
 ---
 
@@ -162,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Additional annotations to apply to all generated Kubernetes objects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/kubernetes_secret_backend_role#extra_annotations KubernetesSecretBackendRole#extra_annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend_role#extra_annotations KubernetesSecretBackendRole#extra_annotations}
 
 ---
 
@@ -172,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Additional labels to apply to all generated Kubernetes objects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/kubernetes_secret_backend_role#extra_labels KubernetesSecretBackendRole#extra_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend_role#extra_labels KubernetesSecretBackendRole#extra_labels}
 
 ---
 
@@ -184,7 +200,7 @@ The Role or ClusterRole rules to use when generating a role.
 
 Accepts either JSON or YAML formatted rules. Mutually exclusive with 'service_account_name' and 'kubernetes_role_name'. If set, the entire chain of Kubernetes objects will be generated when credentials are requested.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/kubernetes_secret_backend_role#generated_role_rules KubernetesSecretBackendRole#generated_role_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend_role#generated_role_rules KubernetesSecretBackendRole#generated_role_rules}
 
 ---
 
@@ -192,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/kubernetes_secret_backend_role#id KubernetesSecretBackendRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend_role#id KubernetesSecretBackendRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -207,7 +223,7 @@ The pre-existing Role or ClusterRole to bind a generated service account to.
 
 Mutually exclusive with 'service_account_name' and 'generated_role_rules'. If set, Kubernetes token, service account, and role binding objects will be created when credentials are requested.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/kubernetes_secret_backend_role#kubernetes_role_name KubernetesSecretBackendRole#kubernetes_role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend_role#kubernetes_role_name KubernetesSecretBackendRole#kubernetes_role_name}
 
 ---
 
@@ -217,7 +233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies whether the Kubernetes role is a Role or ClusterRole.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/kubernetes_secret_backend_role#kubernetes_role_type KubernetesSecretBackendRole#kubernetes_role_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend_role#kubernetes_role_type KubernetesSecretBackendRole#kubernetes_role_type}
 
 ---
 
@@ -227,7 +243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/kubernetes_secret_backend_role#namespace KubernetesSecretBackendRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend_role#namespace KubernetesSecretBackendRole#namespace}
 
 ---
 
@@ -239,7 +255,7 @@ The name template to use when generating service accounts, roles and role bindin
 
 If unset, a default template is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/kubernetes_secret_backend_role#name_template KubernetesSecretBackendRole#name_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend_role#name_template KubernetesSecretBackendRole#name_template}
 
 ---
 
@@ -251,7 +267,7 @@ The pre-existing service account to generate tokens for.
 
 Mutually exclusive with 'kubernetes_role_name' and 'generated_role_rules'. If set, only a Kubernetes token will be created when credentials are requested.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/kubernetes_secret_backend_role#service_account_name KubernetesSecretBackendRole#service_account_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend_role#service_account_name KubernetesSecretBackendRole#service_account_name}
 
 ---
 
@@ -261,7 +277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The default TTL for generated Kubernetes tokens in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/kubernetes_secret_backend_role#token_default_ttl KubernetesSecretBackendRole#token_default_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend_role#token_default_ttl KubernetesSecretBackendRole#token_default_ttl}
 
 ---
 
@@ -271,7 +287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The maximum TTL for generated Kubernetes tokens in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/kubernetes_secret_backend_role#token_max_ttl KubernetesSecretBackendRole#token_max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend_role#token_max_ttl KubernetesSecretBackendRole#token_max_ttl}
 
 ---
 
@@ -302,6 +318,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.resetAllowedKubernetesNamespaces">reset_allowed_kubernetes_namespaces</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.resetAllowedKubernetesNamespaceSelector">reset_allowed_kubernetes_namespace_selector</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.resetExtraAnnotations">reset_extra_annotations</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.resetExtraLabels">reset_extra_labels</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.resetGeneratedRoleRules">reset_generated_role_rules</a></code> | *No description.* |
@@ -641,6 +659,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `reset_allowed_kubernetes_namespaces` <a name="reset_allowed_kubernetes_namespaces" id="@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.resetAllowedKubernetesNamespaces"></a>
+
+```python
+def reset_allowed_kubernetes_namespaces() -> None
+```
+
+##### `reset_allowed_kubernetes_namespace_selector` <a name="reset_allowed_kubernetes_namespace_selector" id="@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.resetAllowedKubernetesNamespaceSelector"></a>
+
+```python
+def reset_allowed_kubernetes_namespace_selector() -> None
+```
+
 ##### `reset_extra_annotations` <a name="reset_extra_annotations" id="@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.resetExtraAnnotations"></a>
 
 ```python
@@ -821,7 +851,7 @@ The construct id used in the generated config for the KubernetesSecretBackendRol
 
 The id of the existing KubernetesSecretBackendRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/kubernetes_secret_backend_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -851,6 +881,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.property.allowedKubernetesNamespaceSelectorInput">allowed_kubernetes_namespace_selector_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.property.allowedKubernetesNamespacesInput">allowed_kubernetes_namespaces_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.property.backendInput">backend_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.property.extraAnnotationsInput">extra_annotations_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
@@ -866,6 +897,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.property.tokenDefaultTtlInput">token_default_ttl_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.property.tokenMaxTtlInput">token_max_ttl_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.property.allowedKubernetesNamespaces">allowed_kubernetes_namespaces</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.property.allowedKubernetesNamespaceSelector">allowed_kubernetes_namespace_selector</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.property.backend">backend</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.property.extraAnnotations">extra_annotations</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.property.extraLabels">extra_labels</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
@@ -1024,6 +1056,16 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
+##### `allowed_kubernetes_namespace_selector_input`<sup>Optional</sup> <a name="allowed_kubernetes_namespace_selector_input" id="@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.property.allowedKubernetesNamespaceSelectorInput"></a>
+
+```python
+allowed_kubernetes_namespace_selector_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `allowed_kubernetes_namespaces_input`<sup>Optional</sup> <a name="allowed_kubernetes_namespaces_input" id="@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.property.allowedKubernetesNamespacesInput"></a>
 
 ```python
@@ -1171,6 +1213,16 @@ allowed_kubernetes_namespaces: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
+
+---
+
+##### `allowed_kubernetes_namespace_selector`<sup>Required</sup> <a name="allowed_kubernetes_namespace_selector" id="@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRole.property.allowedKubernetesNamespaceSelector"></a>
+
+```python
+allowed_kubernetes_namespace_selector: str
+```
+
+- *Type:* str
 
 ---
 
@@ -1339,9 +1391,10 @@ kubernetesSecretBackendRole.KubernetesSecretBackendRoleConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  allowed_kubernetes_namespaces: typing.List[str],
   backend: str,
   name: str,
+  allowed_kubernetes_namespaces: typing.List[str] = None,
+  allowed_kubernetes_namespace_selector: str = None,
   extra_annotations: typing.Mapping[str] = None,
   extra_labels: typing.Mapping[str] = None,
   generated_role_rules: str = None,
@@ -1367,13 +1420,14 @@ kubernetesSecretBackendRole.KubernetesSecretBackendRoleConfig(
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRoleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRoleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRoleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRoleConfig.property.allowedKubernetesNamespaces">allowed_kubernetes_namespaces</a></code> | <code>typing.List[str]</code> | The list of Kubernetes namespaces this role can generate credentials for. If set to '*' all namespaces are allowed. |
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRoleConfig.property.backend">backend</a></code> | <code>str</code> | The mount path for the Kubernetes secrets engine. |
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRoleConfig.property.name">name</a></code> | <code>str</code> | The name of the role. |
+| <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRoleConfig.property.allowedKubernetesNamespaces">allowed_kubernetes_namespaces</a></code> | <code>typing.List[str]</code> | The list of Kubernetes namespaces this role can generate credentials for. |
+| <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRoleConfig.property.allowedKubernetesNamespaceSelector">allowed_kubernetes_namespace_selector</a></code> | <code>str</code> | A label selector for Kubernetes namespaces in which credentials can begenerated. |
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRoleConfig.property.extraAnnotations">extra_annotations</a></code> | <code>typing.Mapping[str]</code> | Additional annotations to apply to all generated Kubernetes objects. |
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRoleConfig.property.extraLabels">extra_labels</a></code> | <code>typing.Mapping[str]</code> | Additional labels to apply to all generated Kubernetes objects. |
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRoleConfig.property.generatedRoleRules">generated_role_rules</a></code> | <code>str</code> | The Role or ClusterRole rules to use when generating a role. |
-| <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/kubernetes_secret_backend_role#id KubernetesSecretBackendRole#id}. |
+| <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend_role#id KubernetesSecretBackendRole#id}. |
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRoleConfig.property.kubernetesRoleName">kubernetes_role_name</a></code> | <code>str</code> | The pre-existing Role or ClusterRole to bind a generated service account to. |
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRoleConfig.property.kubernetesRoleType">kubernetes_role_type</a></code> | <code>str</code> | Specifies whether the Kubernetes role is a Role or ClusterRole. |
 | <code><a href="#@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRoleConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
@@ -1454,20 +1508,6 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
-##### `allowed_kubernetes_namespaces`<sup>Required</sup> <a name="allowed_kubernetes_namespaces" id="@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRoleConfig.property.allowedKubernetesNamespaces"></a>
-
-```python
-allowed_kubernetes_namespaces: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-The list of Kubernetes namespaces this role can generate credentials for. If set to '*' all namespaces are allowed.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/kubernetes_secret_backend_role#allowed_kubernetes_namespaces KubernetesSecretBackendRole#allowed_kubernetes_namespaces}
-
----
-
 ##### `backend`<sup>Required</sup> <a name="backend" id="@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRoleConfig.property.backend"></a>
 
 ```python
@@ -1478,7 +1518,7 @@ backend: str
 
 The mount path for the Kubernetes secrets engine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/kubernetes_secret_backend_role#backend KubernetesSecretBackendRole#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend_role#backend KubernetesSecretBackendRole#backend}
 
 ---
 
@@ -1492,7 +1532,39 @@ name: str
 
 The name of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/kubernetes_secret_backend_role#name KubernetesSecretBackendRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend_role#name KubernetesSecretBackendRole#name}
+
+---
+
+##### `allowed_kubernetes_namespaces`<sup>Optional</sup> <a name="allowed_kubernetes_namespaces" id="@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRoleConfig.property.allowedKubernetesNamespaces"></a>
+
+```python
+allowed_kubernetes_namespaces: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The list of Kubernetes namespaces this role can generate credentials for.
+
+If set to '*' all namespaces are allowed. If set with`allowed_kubernetes_namespace_selector`, the conditions are `OR`ed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend_role#allowed_kubernetes_namespaces KubernetesSecretBackendRole#allowed_kubernetes_namespaces}
+
+---
+
+##### `allowed_kubernetes_namespace_selector`<sup>Optional</sup> <a name="allowed_kubernetes_namespace_selector" id="@cdktf/provider-vault.kubernetesSecretBackendRole.KubernetesSecretBackendRoleConfig.property.allowedKubernetesNamespaceSelector"></a>
+
+```python
+allowed_kubernetes_namespace_selector: str
+```
+
+- *Type:* str
+
+A label selector for Kubernetes namespaces in which credentials can begenerated.
+
+Accepts either a JSON or YAML object. The value should be of typeLabelSelector. If set with `allowed_kubernetes_namespace`, the conditions are `OR`ed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend_role#allowed_kubernetes_namespace_selector KubernetesSecretBackendRole#allowed_kubernetes_namespace_selector}
 
 ---
 
@@ -1506,7 +1578,7 @@ extra_annotations: typing.Mapping[str]
 
 Additional annotations to apply to all generated Kubernetes objects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/kubernetes_secret_backend_role#extra_annotations KubernetesSecretBackendRole#extra_annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend_role#extra_annotations KubernetesSecretBackendRole#extra_annotations}
 
 ---
 
@@ -1520,7 +1592,7 @@ extra_labels: typing.Mapping[str]
 
 Additional labels to apply to all generated Kubernetes objects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/kubernetes_secret_backend_role#extra_labels KubernetesSecretBackendRole#extra_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend_role#extra_labels KubernetesSecretBackendRole#extra_labels}
 
 ---
 
@@ -1536,7 +1608,7 @@ The Role or ClusterRole rules to use when generating a role.
 
 Accepts either JSON or YAML formatted rules. Mutually exclusive with 'service_account_name' and 'kubernetes_role_name'. If set, the entire chain of Kubernetes objects will be generated when credentials are requested.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/kubernetes_secret_backend_role#generated_role_rules KubernetesSecretBackendRole#generated_role_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend_role#generated_role_rules KubernetesSecretBackendRole#generated_role_rules}
 
 ---
 
@@ -1548,7 +1620,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/kubernetes_secret_backend_role#id KubernetesSecretBackendRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend_role#id KubernetesSecretBackendRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1567,7 +1639,7 @@ The pre-existing Role or ClusterRole to bind a generated service account to.
 
 Mutually exclusive with 'service_account_name' and 'generated_role_rules'. If set, Kubernetes token, service account, and role binding objects will be created when credentials are requested.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/kubernetes_secret_backend_role#kubernetes_role_name KubernetesSecretBackendRole#kubernetes_role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend_role#kubernetes_role_name KubernetesSecretBackendRole#kubernetes_role_name}
 
 ---
 
@@ -1581,7 +1653,7 @@ kubernetes_role_type: str
 
 Specifies whether the Kubernetes role is a Role or ClusterRole.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/kubernetes_secret_backend_role#kubernetes_role_type KubernetesSecretBackendRole#kubernetes_role_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend_role#kubernetes_role_type KubernetesSecretBackendRole#kubernetes_role_type}
 
 ---
 
@@ -1595,7 +1667,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/kubernetes_secret_backend_role#namespace KubernetesSecretBackendRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend_role#namespace KubernetesSecretBackendRole#namespace}
 
 ---
 
@@ -1611,7 +1683,7 @@ The name template to use when generating service accounts, roles and role bindin
 
 If unset, a default template is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/kubernetes_secret_backend_role#name_template KubernetesSecretBackendRole#name_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend_role#name_template KubernetesSecretBackendRole#name_template}
 
 ---
 
@@ -1627,7 +1699,7 @@ The pre-existing service account to generate tokens for.
 
 Mutually exclusive with 'kubernetes_role_name' and 'generated_role_rules'. If set, only a Kubernetes token will be created when credentials are requested.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/kubernetes_secret_backend_role#service_account_name KubernetesSecretBackendRole#service_account_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend_role#service_account_name KubernetesSecretBackendRole#service_account_name}
 
 ---
 
@@ -1641,7 +1713,7 @@ token_default_ttl: typing.Union[int, float]
 
 The default TTL for generated Kubernetes tokens in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/kubernetes_secret_backend_role#token_default_ttl KubernetesSecretBackendRole#token_default_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend_role#token_default_ttl KubernetesSecretBackendRole#token_default_ttl}
 
 ---
 
@@ -1655,7 +1727,7 @@ token_max_ttl: typing.Union[int, float]
 
 The maximum TTL for generated Kubernetes tokens in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/kubernetes_secret_backend_role#token_max_ttl KubernetesSecretBackendRole#token_max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend_role#token_max_ttl KubernetesSecretBackendRole#token_max_ttl}
 
 ---
 

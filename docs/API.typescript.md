@@ -58,6 +58,8 @@ The following submodules are available:
 - [dataVaultKvSecretsListV2](./dataVaultKvSecretsListV2.typescript.md)
 - [dataVaultLdapDynamicCredentials](./dataVaultLdapDynamicCredentials.typescript.md)
 - [dataVaultLdapStaticCredentials](./dataVaultLdapStaticCredentials.typescript.md)
+- [dataVaultNamespace](./dataVaultNamespace.typescript.md)
+- [dataVaultNamespaces](./dataVaultNamespaces.typescript.md)
 - [dataVaultNomadAccessToken](./dataVaultNomadAccessToken.typescript.md)
 - [dataVaultPkiSecretBackendIssuer](./dataVaultPkiSecretBackendIssuer.typescript.md)
 - [dataVaultPkiSecretBackendIssuers](./dataVaultPkiSecretBackendIssuers.typescript.md)

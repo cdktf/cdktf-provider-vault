@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_gcp_destination
+// https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_gcp_destination
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,23 @@ export interface SecretsSyncGcpDestinationConfig extends cdktf.TerraformMetaArgu
   /**
   * JSON-encoded credentials to use to connect to GCP.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_gcp_destination#credentials SecretsSyncGcpDestination#credentials}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_gcp_destination#credentials SecretsSyncGcpDestination#credentials}
   */
   readonly credentials?: string;
   /**
   * Custom tags to set on the secret managed at the destination.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_gcp_destination#custom_tags SecretsSyncGcpDestination#custom_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_gcp_destination#custom_tags SecretsSyncGcpDestination#custom_tags}
   */
   readonly customTags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_gcp_destination#id SecretsSyncGcpDestination#id}
+  * Determines what level of information is synced as a distinct resource at the destination. Can be 'secret-path' or 'secret-key'
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_gcp_destination#granularity SecretsSyncGcpDestination#granularity}
+  */
+  readonly granularity?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_gcp_destination#id SecretsSyncGcpDestination#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,31 +35,31 @@ export interface SecretsSyncGcpDestinationConfig extends cdktf.TerraformMetaArgu
   /**
   * Unique name of the GCP destination.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_gcp_destination#name SecretsSyncGcpDestination#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_gcp_destination#name SecretsSyncGcpDestination#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_gcp_destination#namespace SecretsSyncGcpDestination#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_gcp_destination#namespace SecretsSyncGcpDestination#namespace}
   */
   readonly namespace?: string;
   /**
   * The target project to manage secrets in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_gcp_destination#project_id SecretsSyncGcpDestination#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_gcp_destination#project_id SecretsSyncGcpDestination#project_id}
   */
   readonly projectId?: string;
   /**
   * Template describing how to generate external secret names.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_gcp_destination#secret_name_template SecretsSyncGcpDestination#secret_name_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_gcp_destination#secret_name_template SecretsSyncGcpDestination#secret_name_template}
   */
   readonly secretNameTemplate?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_gcp_destination vault_secrets_sync_gcp_destination}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_gcp_destination vault_secrets_sync_gcp_destination}
 */
 export class SecretsSyncGcpDestination extends cdktf.TerraformResource {
 
@@ -74,7 +75,7 @@ export class SecretsSyncGcpDestination extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SecretsSyncGcpDestination resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecretsSyncGcpDestination to import
-  * @param importFromId The id of the existing SecretsSyncGcpDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_gcp_destination#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecretsSyncGcpDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_gcp_destination#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecretsSyncGcpDestination to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -86,7 +87,7 @@ export class SecretsSyncGcpDestination extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_gcp_destination vault_secrets_sync_gcp_destination} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_gcp_destination vault_secrets_sync_gcp_destination} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -97,7 +98,7 @@ export class SecretsSyncGcpDestination extends cdktf.TerraformResource {
       terraformResourceType: 'vault_secrets_sync_gcp_destination',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '4.1.0',
+        providerVersion: '4.2.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -110,6 +111,7 @@ export class SecretsSyncGcpDestination extends cdktf.TerraformResource {
     });
     this._credentials = config.credentials;
     this._customTags = config.customTags;
+    this._granularity = config.granularity;
     this._id = config.id;
     this._name = config.name;
     this._namespace = config.namespace;
@@ -151,6 +153,22 @@ export class SecretsSyncGcpDestination extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get customTagsInput() {
     return this._customTags;
+  }
+
+  // granularity - computed: false, optional: true, required: false
+  private _granularity?: string; 
+  public get granularity() {
+    return this.getStringAttribute('granularity');
+  }
+  public set granularity(value: string) {
+    this._granularity = value;
+  }
+  public resetGranularity() {
+    this._granularity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get granularityInput() {
+    return this._granularity;
   }
 
   // id - computed: true, optional: true, required: false
@@ -243,6 +261,7 @@ export class SecretsSyncGcpDestination extends cdktf.TerraformResource {
     return {
       credentials: cdktf.stringToTerraform(this._credentials),
       custom_tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._customTags),
+      granularity: cdktf.stringToTerraform(this._granularity),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       namespace: cdktf.stringToTerraform(this._namespace),
@@ -264,6 +283,12 @@ export class SecretsSyncGcpDestination extends cdktf.TerraformResource {
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
+      },
+      granularity: {
+        value: cdktf.stringToHclTerraform(this._granularity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       id: {
         value: cdktf.stringToHclTerraform(this._id),

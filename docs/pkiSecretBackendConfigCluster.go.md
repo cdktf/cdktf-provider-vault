@@ -4,12 +4,12 @@
 
 ### PkiSecretBackendConfigCluster <a name="PkiSecretBackendConfigCluster" id="@cdktf/provider-vault.pkiSecretBackendConfigCluster.PkiSecretBackendConfigCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/pki_secret_backend_config_cluster vault_pki_secret_backend_config_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/pki_secret_backend_config_cluster vault_pki_secret_backend_config_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.pkiSecretBackendConfigCluster.PkiSecretBackendConfigCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/pkisecretbackendconfigcluster"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendconfigcluster"
 
 pkisecretbackendconfigcluster.NewPkiSecretBackendConfigCluster(scope Construct, id *string, config PkiSecretBackendConfigClusterConfig) PkiSecretBackendConfigCluster
 ```
@@ -406,7 +406,7 @@ func ResetPath()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.pkiSecretBackendConfigCluster.PkiSecretBackendConfigCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/pkisecretbackendconfigcluster"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendconfigcluster"
 
 pkisecretbackendconfigcluster.PkiSecretBackendConfigCluster_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.pkiSecretBackendConfigCluster.PkiSecretBackendConfigCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/pkisecretbackendconfigcluster"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendconfigcluster"
 
 pkisecretbackendconfigcluster.PkiSecretBackendConfigCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ pkisecretbackendconfigcluster.PkiSecretBackendConfigCluster_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.pkiSecretBackendConfigCluster.PkiSecretBackendConfigCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/pkisecretbackendconfigcluster"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendconfigcluster"
 
 pkisecretbackendconfigcluster.PkiSecretBackendConfigCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ pkisecretbackendconfigcluster.PkiSecretBackendConfigCluster_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.pkiSecretBackendConfigCluster.PkiSecretBackendConfigCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/pkisecretbackendconfigcluster"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendconfigcluster"
 
 pkisecretbackendconfigcluster.PkiSecretBackendConfigCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -495,7 +495,7 @@ The construct id used in the generated config for the PkiSecretBackendConfigClus
 
 The id of the existing PkiSecretBackendConfigCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/pki_secret_backend_config_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/pki_secret_backend_config_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -805,7 +805,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.pkiSecretBackendConfigCluster.PkiSecretBackendConfigClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/pkisecretbackendconfigcluster"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendconfigcluster"
 
 &pkisecretbackendconfigcluster.PkiSecretBackendConfigClusterConfig {
 	Connection: interface{},
@@ -836,7 +836,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/pkisecretbackendconfi
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendConfigCluster.PkiSecretBackendConfigClusterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendConfigCluster.PkiSecretBackendConfigClusterConfig.property.backend">Backend</a></code> | <code>*string</code> | Full path where PKI backend is mounted. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendConfigCluster.PkiSecretBackendConfigClusterConfig.property.aiaPath">AiaPath</a></code> | <code>*string</code> | Path to the cluster's AIA distribution point. |
-| <code><a href="#@cdktf/provider-vault.pkiSecretBackendConfigCluster.PkiSecretBackendConfigClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/pki_secret_backend_config_cluster#id PkiSecretBackendConfigCluster#id}. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendConfigCluster.PkiSecretBackendConfigClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/pki_secret_backend_config_cluster#id PkiSecretBackendConfigCluster#id}. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendConfigCluster.PkiSecretBackendConfigClusterConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendConfigCluster.PkiSecretBackendConfigClusterConfig.property.path">Path</a></code> | <code>*string</code> | Path to the cluster's API mount path. |
 
@@ -922,7 +922,7 @@ Backend *string
 
 Full path where PKI backend is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/pki_secret_backend_config_cluster#backend PkiSecretBackendConfigCluster#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/pki_secret_backend_config_cluster#backend PkiSecretBackendConfigCluster#backend}
 
 ---
 
@@ -936,7 +936,7 @@ AiaPath *string
 
 Path to the cluster's AIA distribution point.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/pki_secret_backend_config_cluster#aia_path PkiSecretBackendConfigCluster#aia_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/pki_secret_backend_config_cluster#aia_path PkiSecretBackendConfigCluster#aia_path}
 
 ---
 
@@ -948,7 +948,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/pki_secret_backend_config_cluster#id PkiSecretBackendConfigCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/pki_secret_backend_config_cluster#id PkiSecretBackendConfigCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -965,7 +965,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/pki_secret_backend_config_cluster#namespace PkiSecretBackendConfigCluster#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/pki_secret_backend_config_cluster#namespace PkiSecretBackendConfigCluster#namespace}
 
 ---
 
@@ -979,7 +979,7 @@ Path *string
 
 Path to the cluster's API mount path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/pki_secret_backend_config_cluster#path PkiSecretBackendConfigCluster#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/pki_secret_backend_config_cluster#path PkiSecretBackendConfigCluster#path}
 
 ---
 

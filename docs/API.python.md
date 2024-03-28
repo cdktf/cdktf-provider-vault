@@ -58,6 +58,8 @@ The following submodules are available:
 - [dataVaultKvSecretsListV2](./dataVaultKvSecretsListV2.python.md)
 - [dataVaultLdapDynamicCredentials](./dataVaultLdapDynamicCredentials.python.md)
 - [dataVaultLdapStaticCredentials](./dataVaultLdapStaticCredentials.python.md)
+- [dataVaultNamespace](./dataVaultNamespace.python.md)
+- [dataVaultNamespaces](./dataVaultNamespaces.python.md)
 - [dataVaultNomadAccessToken](./dataVaultNomadAccessToken.python.md)
 - [dataVaultPkiSecretBackendIssuer](./dataVaultPkiSecretBackendIssuer.python.md)
 - [dataVaultPkiSecretBackendIssuers](./dataVaultPkiSecretBackendIssuers.python.md)
