@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.samlAuthBackend.SamlAuthBackend.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/samlauthbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/samlauthbackend"
 
 samlauthbackend.NewSamlAuthBackend(scope Construct, id *string, config SamlAuthBackendConfig) SamlAuthBackend
 ```
@@ -448,7 +448,7 @@ func ResetVerboseLogging()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.samlAuthBackend.SamlAuthBackend.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/samlauthbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/samlauthbackend"
 
 samlauthbackend.SamlAuthBackend_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.samlAuthBackend.SamlAuthBackend.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/samlauthbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/samlauthbackend"
 
 samlauthbackend.SamlAuthBackend_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ samlauthbackend.SamlAuthBackend_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.samlAuthBackend.SamlAuthBackend.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/samlauthbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/samlauthbackend"
 
 samlauthbackend.SamlAuthBackend_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ samlauthbackend.SamlAuthBackend_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.samlAuthBackend.SamlAuthBackend.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/samlauthbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/samlauthbackend"
 
 samlauthbackend.SamlAuthBackend_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1001,7 +1001,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.samlAuthBackend.SamlAuthBackendConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/samlauthbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/samlauthbackend"
 
 &samlauthbackend.SamlAuthBackendConfig {
 	Connection: interface{},
