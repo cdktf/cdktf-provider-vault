@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/raftautopilot"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/raftautopilot"
 
 raftautopilot.NewRaftAutopilot(scope Construct, id *string, config RaftAutopilotConfig) RaftAutopilot
 ```
@@ -441,7 +441,7 @@ func ResetServerStabilizationTime()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/raftautopilot"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/raftautopilot"
 
 raftautopilot.RaftAutopilot_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/raftautopilot"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/raftautopilot"
 
 raftautopilot.RaftAutopilot_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ raftautopilot.RaftAutopilot_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/raftautopilot"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/raftautopilot"
 
 raftautopilot.RaftAutopilot_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ raftautopilot.RaftAutopilot_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/raftautopilot"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/raftautopilot"
 
 raftautopilot.RaftAutopilot_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -928,7 +928,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/raftautopilot"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/raftautopilot"
 
 &raftautopilot.RaftAutopilotConfig {
 	Connection: interface{},
