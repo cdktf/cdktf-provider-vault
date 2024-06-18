@@ -108,6 +108,7 @@ Object.defineProperty(exports, 'passwordPolicy', { get: function () { return req
 Object.defineProperty(exports, 'pkiSecretBackendCert', { get: function () { return require('./pki-secret-backend-cert'); } });
 Object.defineProperty(exports, 'pkiSecretBackendConfigCa', { get: function () { return require('./pki-secret-backend-config-ca'); } });
 Object.defineProperty(exports, 'pkiSecretBackendConfigCluster', { get: function () { return require('./pki-secret-backend-config-cluster'); } });
+Object.defineProperty(exports, 'pkiSecretBackendConfigEst', { get: function () { return require('./pki-secret-backend-config-est'); } });
 Object.defineProperty(exports, 'pkiSecretBackendConfigIssuers', { get: function () { return require('./pki-secret-backend-config-issuers'); } });
 Object.defineProperty(exports, 'pkiSecretBackendConfigUrls', { get: function () { return require('./pki-secret-backend-config-urls'); } });
 Object.defineProperty(exports, 'pkiSecretBackendCrlConfig', { get: function () { return require('./pki-secret-backend-crl-config'); } });
@@ -119,6 +120,8 @@ Object.defineProperty(exports, 'pkiSecretBackendRole', { get: function () { retu
 Object.defineProperty(exports, 'pkiSecretBackendRootCert', { get: function () { return require('./pki-secret-backend-root-cert'); } });
 Object.defineProperty(exports, 'pkiSecretBackendRootSignIntermediate', { get: function () { return require('./pki-secret-backend-root-sign-intermediate'); } });
 Object.defineProperty(exports, 'pkiSecretBackendSign', { get: function () { return require('./pki-secret-backend-sign'); } });
+Object.defineProperty(exports, 'plugin', { get: function () { return require('./plugin'); } });
+Object.defineProperty(exports, 'pluginPinnedVersion', { get: function () { return require('./plugin-pinned-version'); } });
 Object.defineProperty(exports, 'policy', { get: function () { return require('./policy'); } });
 Object.defineProperty(exports, 'quotaLeaseCount', { get: function () { return require('./quota-lease-count'); } });
 Object.defineProperty(exports, 'quotaRateLimit', { get: function () { return require('./quota-rate-limit'); } });
@@ -177,6 +180,7 @@ Object.defineProperty(exports, 'dataVaultLdapStaticCredentials', { get: function
 Object.defineProperty(exports, 'dataVaultNamespace', { get: function () { return require('./data-vault-namespace'); } });
 Object.defineProperty(exports, 'dataVaultNamespaces', { get: function () { return require('./data-vault-namespaces'); } });
 Object.defineProperty(exports, 'dataVaultNomadAccessToken', { get: function () { return require('./data-vault-nomad-access-token'); } });
+Object.defineProperty(exports, 'dataVaultPkiSecretBackendConfigEst', { get: function () { return require('./data-vault-pki-secret-backend-config-est'); } });
 Object.defineProperty(exports, 'dataVaultPkiSecretBackendIssuer', { get: function () { return require('./data-vault-pki-secret-backend-issuer'); } });
 Object.defineProperty(exports, 'dataVaultPkiSecretBackendIssuers', { get: function () { return require('./data-vault-pki-secret-backend-issuers'); } });
 Object.defineProperty(exports, 'dataVaultPkiSecretBackendKey', { get: function () { return require('./data-vault-pki-secret-backend-key'); } });

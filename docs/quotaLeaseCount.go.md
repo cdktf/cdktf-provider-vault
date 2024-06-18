@@ -4,7 +4,7 @@
 
 ### QuotaLeaseCount <a name="QuotaLeaseCount" id="@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/quota_lease_count vault_quota_lease_count}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/quota_lease_count vault_quota_lease_count}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCount.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCount.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCount.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCount.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCount.resetInheritable">ResetInheritable</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCount.resetNamespace">ResetNamespace</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCount.resetPath">ResetPath</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCount.resetRole">ResetRole</a></code> | *No description.* |
@@ -374,6 +375,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 func ResetId()
 ```
 
+##### `ResetInheritable` <a name="ResetInheritable" id="@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCount.resetInheritable"></a>
+
+```go
+func ResetInheritable()
+```
+
 ##### `ResetNamespace` <a name="ResetNamespace" id="@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCount.resetNamespace"></a>
 
 ```go
@@ -495,7 +502,7 @@ The construct id used in the generated config for the QuotaLeaseCount to import.
 
 The id of the existing QuotaLeaseCount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/quota_lease_count#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/quota_lease_count#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -526,12 +533,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.
 | <code><a href="#@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCount.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCount.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCount.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCount.property.inheritableInput">InheritableInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCount.property.maxLeasesInput">MaxLeasesInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCount.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCount.property.namespaceInput">NamespaceInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCount.property.pathInput">PathInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCount.property.roleInput">RoleInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCount.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCount.property.inheritable">Inheritable</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCount.property.maxLeases">MaxLeases</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCount.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCount.property.namespace">Namespace</a></code> | <code>*string</code> | *No description.* |
@@ -692,6 +701,16 @@ func IdInput() *string
 
 ---
 
+##### `InheritableInput`<sup>Optional</sup> <a name="InheritableInput" id="@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCount.property.inheritableInput"></a>
+
+```go
+func InheritableInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `MaxLeasesInput`<sup>Optional</sup> <a name="MaxLeasesInput" id="@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCount.property.maxLeasesInput"></a>
 
 ```go
@@ -749,6 +768,16 @@ func Id() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `Inheritable`<sup>Required</sup> <a name="Inheritable" id="@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCount.property.inheritable"></a>
+
+```go
+func Inheritable() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -840,6 +869,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/quotaleasecount"
 	MaxLeases: *f64,
 	Name: *string,
 	Id: *string,
+	Inheritable: interface{},
 	Namespace: *string,
 	Path: *string,
 	Role: *string,
@@ -859,7 +889,8 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/quotaleasecount"
 | <code><a href="#@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCountConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCountConfig.property.maxLeases">MaxLeases</a></code> | <code>*f64</code> | The maximum number of leases to be allowed by the quota rule. The max_leases must be positive. |
 | <code><a href="#@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCountConfig.property.name">Name</a></code> | <code>*string</code> | The name of the quota. |
-| <code><a href="#@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/quota_lease_count#id QuotaLeaseCount#id}. |
+| <code><a href="#@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/quota_lease_count#id QuotaLeaseCount#id}. |
+| <code><a href="#@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCountConfig.property.inheritable">Inheritable</a></code> | <code>interface{}</code> | If set to true on a quota where path is set to a namespace, the same quota will be cumulatively applied to all child namespace. |
 | <code><a href="#@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCountConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCountConfig.property.path">Path</a></code> | <code>*string</code> | Path of the mount or namespace to apply the quota. A blank path configures a global lease count quota. |
 | <code><a href="#@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCountConfig.property.role">Role</a></code> | <code>*string</code> | If set on a quota where path is set to an auth mount with a concept of roles (such as /auth/approle/), this will make the quota restrict login requests to that mount that are made with the specified role. |
@@ -946,7 +977,7 @@ MaxLeases *f64
 
 The maximum number of leases to be allowed by the quota rule. The max_leases must be positive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/quota_lease_count#max_leases QuotaLeaseCount#max_leases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/quota_lease_count#max_leases QuotaLeaseCount#max_leases}
 
 ---
 
@@ -960,7 +991,7 @@ Name *string
 
 The name of the quota.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/quota_lease_count#name QuotaLeaseCount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/quota_lease_count#name QuotaLeaseCount#name}
 
 ---
 
@@ -972,10 +1003,26 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/quota_lease_count#id QuotaLeaseCount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/quota_lease_count#id QuotaLeaseCount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Inheritable`<sup>Optional</sup> <a name="Inheritable" id="@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCountConfig.property.inheritable"></a>
+
+```go
+Inheritable interface{}
+```
+
+- *Type:* interface{}
+
+If set to true on a quota where path is set to a namespace, the same quota will be cumulatively applied to all child namespace.
+
+The inheritable parameter cannot be set to true if the path does not specify a namespace. Only the quotas associated with the root namespace are inheritable by default.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/quota_lease_count#inheritable QuotaLeaseCount#inheritable}
 
 ---
 
@@ -989,7 +1036,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/quota_lease_count#namespace QuotaLeaseCount#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/quota_lease_count#namespace QuotaLeaseCount#namespace}
 
 ---
 
@@ -1003,7 +1050,7 @@ Path *string
 
 Path of the mount or namespace to apply the quota. A blank path configures a global lease count quota.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/quota_lease_count#path QuotaLeaseCount#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/quota_lease_count#path QuotaLeaseCount#path}
 
 ---
 
@@ -1017,7 +1064,7 @@ Role *string
 
 If set on a quota where path is set to an auth mount with a concept of roles (such as /auth/approle/), this will make the quota restrict login requests to that mount that are made with the specified role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/quota_lease_count#role QuotaLeaseCount#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/quota_lease_count#role QuotaLeaseCount#role}
 
 ---
 

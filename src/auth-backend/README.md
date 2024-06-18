@@ -1,3 +1,3 @@
 # `vault_auth_backend`
 
-Refer to the Terraform Registry for docs: [`vault_auth_backend`](https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/auth_backend).
+Refer to the Terraform Registry for docs: [`vault_auth_backend`](https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/auth_backend).

@@ -4,7 +4,7 @@
 
 ### Audit <a name="Audit" id="@cdktf/provider-vault.audit.Audit"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/audit vault_audit}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/audit vault_audit}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.audit.Audit.Initializer"></a>
 
@@ -48,7 +48,7 @@ Audit.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vault.audit.Audit.Initializer.parameter.options">options</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Configuration options to pass to the audit device itself. |
 | <code><a href="#@cdktf/provider-vault.audit.Audit.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | Type of the audit device, such as 'file'. |
 | <code><a href="#@cdktf/provider-vault.audit.Audit.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Human-friendly description of the audit device. |
-| <code><a href="#@cdktf/provider-vault.audit.Audit.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/audit#id Audit#id}. |
+| <code><a href="#@cdktf/provider-vault.audit.Audit.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/audit#id Audit#id}. |
 | <code><a href="#@cdktf/provider-vault.audit.Audit.Initializer.parameter.local">local</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies if the audit device is a local only. |
 | <code><a href="#@cdktf/provider-vault.audit.Audit.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.audit.Audit.Initializer.parameter.path">path</a></code> | <code>java.lang.String</code> | Path in which to enable the audit device. |
@@ -121,7 +121,7 @@ Must be unique amongst siblings in the same scope
 
 Configuration options to pass to the audit device itself.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/audit#options Audit#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/audit#options Audit#options}
 
 ---
 
@@ -131,7 +131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Type of the audit device, such as 'file'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/audit#type Audit#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/audit#type Audit#type}
 
 ---
 
@@ -141,7 +141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Human-friendly description of the audit device.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/audit#description Audit#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/audit#description Audit#description}
 
 ---
 
@@ -149,7 +149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/audit#id Audit#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/audit#id Audit#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -164,7 +164,7 @@ Specifies if the audit device is a local only.
 
 Local audit devices are not replicated nor (if a secondary) removed by replication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/audit#local Audit#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/audit#local Audit#local}
 
 ---
 
@@ -174,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/audit#namespace Audit#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/audit#namespace Audit#namespace}
 
 ---
 
@@ -184,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Path in which to enable the audit device.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/audit#path Audit#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/audit#path Audit#path}
 
 ---
 
@@ -646,7 +646,7 @@ The construct id used in the generated config for the Audit to import.
 
 The id of the existing Audit that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/audit#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/audit#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1039,7 +1039,7 @@ AuditConfig.builder()
 | <code><a href="#@cdktf/provider-vault.audit.AuditConfig.property.options">options</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Configuration options to pass to the audit device itself. |
 | <code><a href="#@cdktf/provider-vault.audit.AuditConfig.property.type">type</a></code> | <code>java.lang.String</code> | Type of the audit device, such as 'file'. |
 | <code><a href="#@cdktf/provider-vault.audit.AuditConfig.property.description">description</a></code> | <code>java.lang.String</code> | Human-friendly description of the audit device. |
-| <code><a href="#@cdktf/provider-vault.audit.AuditConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/audit#id Audit#id}. |
+| <code><a href="#@cdktf/provider-vault.audit.AuditConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/audit#id Audit#id}. |
 | <code><a href="#@cdktf/provider-vault.audit.AuditConfig.property.local">local</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies if the audit device is a local only. |
 | <code><a href="#@cdktf/provider-vault.audit.AuditConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.audit.AuditConfig.property.path">path</a></code> | <code>java.lang.String</code> | Path in which to enable the audit device. |
@@ -1126,7 +1126,7 @@ public java.util.Map<java.lang.String, java.lang.String> getOptions();
 
 Configuration options to pass to the audit device itself.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/audit#options Audit#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/audit#options Audit#options}
 
 ---
 
@@ -1140,7 +1140,7 @@ public java.lang.String getType();
 
 Type of the audit device, such as 'file'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/audit#type Audit#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/audit#type Audit#type}
 
 ---
 
@@ -1154,7 +1154,7 @@ public java.lang.String getDescription();
 
 Human-friendly description of the audit device.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/audit#description Audit#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/audit#description Audit#description}
 
 ---
 
@@ -1166,7 +1166,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/audit#id Audit#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/audit#id Audit#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1185,7 +1185,7 @@ Specifies if the audit device is a local only.
 
 Local audit devices are not replicated nor (if a secondary) removed by replication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/audit#local Audit#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/audit#local Audit#local}
 
 ---
 
@@ -1199,7 +1199,7 @@ public java.lang.String getNamespace();
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/audit#namespace Audit#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/audit#namespace Audit#namespace}
 
 ---
 
@@ -1213,7 +1213,7 @@ public java.lang.String getPath();
 
 Path in which to enable the audit device.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/audit#path Audit#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/audit#path Audit#path}
 
 ---
 

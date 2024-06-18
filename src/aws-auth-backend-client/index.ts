@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_auth_backend_client
+// https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_auth_backend_client
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,74 +15,98 @@ export interface AwsAuthBackendClientConfig extends cdktf.TerraformMetaArguments
   /**
   * AWS Access key with permissions to query AWS APIs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_auth_backend_client#access_key AwsAuthBackendClient#access_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_auth_backend_client#access_key AwsAuthBackendClient#access_key}
   */
   readonly accessKey?: string;
   /**
   * Unique name of the auth backend to configure.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_auth_backend_client#backend AwsAuthBackendClient#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_auth_backend_client#backend AwsAuthBackendClient#backend}
   */
   readonly backend?: string;
   /**
   * URL to override the default generated endpoint for making AWS EC2 API calls.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_auth_backend_client#ec2_endpoint AwsAuthBackendClient#ec2_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_auth_backend_client#ec2_endpoint AwsAuthBackendClient#ec2_endpoint}
   */
   readonly ec2Endpoint?: string;
   /**
   * URL to override the default generated endpoint for making AWS IAM API calls.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_auth_backend_client#iam_endpoint AwsAuthBackendClient#iam_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_auth_backend_client#iam_endpoint AwsAuthBackendClient#iam_endpoint}
   */
   readonly iamEndpoint?: string;
   /**
   * The value to require in the X-Vault-AWS-IAM-Server-ID header as part of GetCallerIdentity requests that are used in the iam auth method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_auth_backend_client#iam_server_id_header_value AwsAuthBackendClient#iam_server_id_header_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_auth_backend_client#iam_server_id_header_value AwsAuthBackendClient#iam_server_id_header_value}
   */
   readonly iamServerIdHeaderValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_auth_backend_client#id AwsAuthBackendClient#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_auth_backend_client#id AwsAuthBackendClient#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
+  * The audience claim value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_auth_backend_client#identity_token_audience AwsAuthBackendClient#identity_token_audience}
+  */
+  readonly identityTokenAudience?: string;
+  /**
+  * The TTL of generated identity tokens in seconds.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_auth_backend_client#identity_token_ttl AwsAuthBackendClient#identity_token_ttl}
+  */
+  readonly identityTokenTtl?: number;
+  /**
+  * Number of max retries the client should use for recoverable errors.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_auth_backend_client#max_retries AwsAuthBackendClient#max_retries}
+  */
+  readonly maxRetries?: number;
+  /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_auth_backend_client#namespace AwsAuthBackendClient#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_auth_backend_client#namespace AwsAuthBackendClient#namespace}
   */
   readonly namespace?: string;
   /**
+  * Role ARN to assume for plugin identity token federation.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_auth_backend_client#role_arn AwsAuthBackendClient#role_arn}
+  */
+  readonly roleArn?: string;
+  /**
   * AWS Secret key with permissions to query AWS APIs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_auth_backend_client#secret_key AwsAuthBackendClient#secret_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_auth_backend_client#secret_key AwsAuthBackendClient#secret_key}
   */
   readonly secretKey?: string;
   /**
   * URL to override the default generated endpoint for making AWS STS API calls.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_auth_backend_client#sts_endpoint AwsAuthBackendClient#sts_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_auth_backend_client#sts_endpoint AwsAuthBackendClient#sts_endpoint}
   */
   readonly stsEndpoint?: string;
   /**
   * Region to override the default region for making AWS STS API calls.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_auth_backend_client#sts_region AwsAuthBackendClient#sts_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_auth_backend_client#sts_region AwsAuthBackendClient#sts_region}
   */
   readonly stsRegion?: string;
   /**
   * If set, will override sts_region and use the region from the client request's header
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_auth_backend_client#use_sts_region_from_client AwsAuthBackendClient#use_sts_region_from_client}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_auth_backend_client#use_sts_region_from_client AwsAuthBackendClient#use_sts_region_from_client}
   */
   readonly useStsRegionFromClient?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client}
 */
 export class AwsAuthBackendClient extends cdktf.TerraformResource {
 
@@ -98,7 +122,7 @@ export class AwsAuthBackendClient extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AwsAuthBackendClient resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AwsAuthBackendClient to import
-  * @param importFromId The id of the existing AwsAuthBackendClient that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_auth_backend_client#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AwsAuthBackendClient that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_auth_backend_client#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AwsAuthBackendClient to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -110,7 +134,7 @@ export class AwsAuthBackendClient extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -121,7 +145,7 @@ export class AwsAuthBackendClient extends cdktf.TerraformResource {
       terraformResourceType: 'vault_aws_auth_backend_client',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '4.2.0',
+        providerVersion: '4.3.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -138,7 +162,11 @@ export class AwsAuthBackendClient extends cdktf.TerraformResource {
     this._iamEndpoint = config.iamEndpoint;
     this._iamServerIdHeaderValue = config.iamServerIdHeaderValue;
     this._id = config.id;
+    this._identityTokenAudience = config.identityTokenAudience;
+    this._identityTokenTtl = config.identityTokenTtl;
+    this._maxRetries = config.maxRetries;
     this._namespace = config.namespace;
+    this._roleArn = config.roleArn;
     this._secretKey = config.secretKey;
     this._stsEndpoint = config.stsEndpoint;
     this._stsRegion = config.stsRegion;
@@ -245,6 +273,54 @@ export class AwsAuthBackendClient extends cdktf.TerraformResource {
     return this._id;
   }
 
+  // identity_token_audience - computed: false, optional: true, required: false
+  private _identityTokenAudience?: string; 
+  public get identityTokenAudience() {
+    return this.getStringAttribute('identity_token_audience');
+  }
+  public set identityTokenAudience(value: string) {
+    this._identityTokenAudience = value;
+  }
+  public resetIdentityTokenAudience() {
+    this._identityTokenAudience = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityTokenAudienceInput() {
+    return this._identityTokenAudience;
+  }
+
+  // identity_token_ttl - computed: true, optional: true, required: false
+  private _identityTokenTtl?: number; 
+  public get identityTokenTtl() {
+    return this.getNumberAttribute('identity_token_ttl');
+  }
+  public set identityTokenTtl(value: number) {
+    this._identityTokenTtl = value;
+  }
+  public resetIdentityTokenTtl() {
+    this._identityTokenTtl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityTokenTtlInput() {
+    return this._identityTokenTtl;
+  }
+
+  // max_retries - computed: false, optional: true, required: false
+  private _maxRetries?: number; 
+  public get maxRetries() {
+    return this.getNumberAttribute('max_retries');
+  }
+  public set maxRetries(value: number) {
+    this._maxRetries = value;
+  }
+  public resetMaxRetries() {
+    this._maxRetries = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxRetriesInput() {
+    return this._maxRetries;
+  }
+
   // namespace - computed: false, optional: true, required: false
   private _namespace?: string; 
   public get namespace() {
@@ -259,6 +335,22 @@ export class AwsAuthBackendClient extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get namespaceInput() {
     return this._namespace;
+  }
+
+  // role_arn - computed: false, optional: true, required: false
+  private _roleArn?: string; 
+  public get roleArn() {
+    return this.getStringAttribute('role_arn');
+  }
+  public set roleArn(value: string) {
+    this._roleArn = value;
+  }
+  public resetRoleArn() {
+    this._roleArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn;
   }
 
   // secret_key - computed: false, optional: true, required: false
@@ -337,7 +429,11 @@ export class AwsAuthBackendClient extends cdktf.TerraformResource {
       iam_endpoint: cdktf.stringToTerraform(this._iamEndpoint),
       iam_server_id_header_value: cdktf.stringToTerraform(this._iamServerIdHeaderValue),
       id: cdktf.stringToTerraform(this._id),
+      identity_token_audience: cdktf.stringToTerraform(this._identityTokenAudience),
+      identity_token_ttl: cdktf.numberToTerraform(this._identityTokenTtl),
+      max_retries: cdktf.numberToTerraform(this._maxRetries),
       namespace: cdktf.stringToTerraform(this._namespace),
+      role_arn: cdktf.stringToTerraform(this._roleArn),
       secret_key: cdktf.stringToTerraform(this._secretKey),
       sts_endpoint: cdktf.stringToTerraform(this._stsEndpoint),
       sts_region: cdktf.stringToTerraform(this._stsRegion),
@@ -383,8 +479,32 @@ export class AwsAuthBackendClient extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      identity_token_audience: {
+        value: cdktf.stringToHclTerraform(this._identityTokenAudience),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      identity_token_ttl: {
+        value: cdktf.numberToHclTerraform(this._identityTokenTtl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      max_retries: {
+        value: cdktf.numberToHclTerraform(this._maxRetries),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
       namespace: {
         value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_arn: {
+        value: cdktf.stringToHclTerraform(this._roleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

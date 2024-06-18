@@ -4,7 +4,7 @@
 
 ### Mount <a name="Mount" id="@cdktf/provider-vault.mount.Mount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount vault_mount}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount vault_mount}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.mount.Mount.Initializer"></a>
 
@@ -74,16 +74,22 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.mount.Mount.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.resetAllowedManagedKeys">ResetAllowedManagedKeys</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.resetAllowedResponseHeaders">ResetAllowedResponseHeaders</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.resetAuditNonHmacRequestKeys">ResetAuditNonHmacRequestKeys</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.resetAuditNonHmacResponseKeys">ResetAuditNonHmacResponseKeys</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.resetDefaultLeaseTtlSeconds">ResetDefaultLeaseTtlSeconds</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.resetDelegatedAuthAccessors">ResetDelegatedAuthAccessors</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.resetExternalEntropyAccess">ResetExternalEntropyAccess</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.resetIdentityTokenKey">ResetIdentityTokenKey</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.resetListingVisibility">ResetListingVisibility</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.resetLocal">ResetLocal</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.resetMaxLeaseTtlSeconds">ResetMaxLeaseTtlSeconds</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.resetNamespace">ResetNamespace</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.resetOptions">ResetOptions</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.resetPassthroughRequestHeaders">ResetPassthroughRequestHeaders</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.resetPluginVersion">ResetPluginVersion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.resetSealWrap">ResetSealWrap</a></code> | *No description.* |
 
 ---
@@ -382,6 +388,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 private void ResetAllowedManagedKeys()
 ```
 
+##### `ResetAllowedResponseHeaders` <a name="ResetAllowedResponseHeaders" id="@cdktf/provider-vault.mount.Mount.resetAllowedResponseHeaders"></a>
+
+```csharp
+private void ResetAllowedResponseHeaders()
+```
+
 ##### `ResetAuditNonHmacRequestKeys` <a name="ResetAuditNonHmacRequestKeys" id="@cdktf/provider-vault.mount.Mount.resetAuditNonHmacRequestKeys"></a>
 
 ```csharp
@@ -400,6 +412,12 @@ private void ResetAuditNonHmacResponseKeys()
 private void ResetDefaultLeaseTtlSeconds()
 ```
 
+##### `ResetDelegatedAuthAccessors` <a name="ResetDelegatedAuthAccessors" id="@cdktf/provider-vault.mount.Mount.resetDelegatedAuthAccessors"></a>
+
+```csharp
+private void ResetDelegatedAuthAccessors()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktf/provider-vault.mount.Mount.resetDescription"></a>
 
 ```csharp
@@ -416,6 +434,18 @@ private void ResetExternalEntropyAccess()
 
 ```csharp
 private void ResetId()
+```
+
+##### `ResetIdentityTokenKey` <a name="ResetIdentityTokenKey" id="@cdktf/provider-vault.mount.Mount.resetIdentityTokenKey"></a>
+
+```csharp
+private void ResetIdentityTokenKey()
+```
+
+##### `ResetListingVisibility` <a name="ResetListingVisibility" id="@cdktf/provider-vault.mount.Mount.resetListingVisibility"></a>
+
+```csharp
+private void ResetListingVisibility()
 ```
 
 ##### `ResetLocal` <a name="ResetLocal" id="@cdktf/provider-vault.mount.Mount.resetLocal"></a>
@@ -440,6 +470,18 @@ private void ResetNamespace()
 
 ```csharp
 private void ResetOptions()
+```
+
+##### `ResetPassthroughRequestHeaders` <a name="ResetPassthroughRequestHeaders" id="@cdktf/provider-vault.mount.Mount.resetPassthroughRequestHeaders"></a>
+
+```csharp
+private void ResetPassthroughRequestHeaders()
+```
+
+##### `ResetPluginVersion` <a name="ResetPluginVersion" id="@cdktf/provider-vault.mount.Mount.resetPluginVersion"></a>
+
+```csharp
+private void ResetPluginVersion()
 ```
 
 ##### `ResetSealWrap` <a name="ResetSealWrap" id="@cdktf/provider-vault.mount.Mount.resetSealWrap"></a>
@@ -551,7 +593,7 @@ The construct id used in the generated config for the Mount to import.
 
 The id of the existing Mount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -583,31 +625,43 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.accessor">Accessor</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.allowedManagedKeysInput">AllowedManagedKeysInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.property.allowedResponseHeadersInput">AllowedResponseHeadersInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.auditNonHmacRequestKeysInput">AuditNonHmacRequestKeysInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.auditNonHmacResponseKeysInput">AuditNonHmacResponseKeysInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.defaultLeaseTtlSecondsInput">DefaultLeaseTtlSecondsInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.property.delegatedAuthAccessorsInput">DelegatedAuthAccessorsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.externalEntropyAccessInput">ExternalEntropyAccessInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.property.identityTokenKeyInput">IdentityTokenKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.property.listingVisibilityInput">ListingVisibilityInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.localInput">LocalInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.maxLeaseTtlSecondsInput">MaxLeaseTtlSecondsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.namespaceInput">NamespaceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.optionsInput">OptionsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.property.passthroughRequestHeadersInput">PassthroughRequestHeadersInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.pathInput">PathInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.property.pluginVersionInput">PluginVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.sealWrapInput">SealWrapInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.allowedManagedKeys">AllowedManagedKeys</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.property.allowedResponseHeaders">AllowedResponseHeaders</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.auditNonHmacRequestKeys">AuditNonHmacRequestKeys</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.auditNonHmacResponseKeys">AuditNonHmacResponseKeys</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.defaultLeaseTtlSeconds">DefaultLeaseTtlSeconds</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.property.delegatedAuthAccessors">DelegatedAuthAccessors</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.externalEntropyAccess">ExternalEntropyAccess</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.property.identityTokenKey">IdentityTokenKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.property.listingVisibility">ListingVisibility</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.local">Local</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.maxLeaseTtlSeconds">MaxLeaseTtlSeconds</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.namespace">Namespace</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.options">Options</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.property.passthroughRequestHeaders">PassthroughRequestHeaders</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.path">Path</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.property.pluginVersion">PluginVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.sealWrap">SealWrap</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.type">Type</a></code> | <code>string</code> | *No description.* |
 
@@ -775,6 +829,16 @@ public string[] AllowedManagedKeysInput { get; }
 
 ---
 
+##### `AllowedResponseHeadersInput`<sup>Optional</sup> <a name="AllowedResponseHeadersInput" id="@cdktf/provider-vault.mount.Mount.property.allowedResponseHeadersInput"></a>
+
+```csharp
+public string[] AllowedResponseHeadersInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
 ##### `AuditNonHmacRequestKeysInput`<sup>Optional</sup> <a name="AuditNonHmacRequestKeysInput" id="@cdktf/provider-vault.mount.Mount.property.auditNonHmacRequestKeysInput"></a>
 
 ```csharp
@@ -805,6 +869,16 @@ public double DefaultLeaseTtlSecondsInput { get; }
 
 ---
 
+##### `DelegatedAuthAccessorsInput`<sup>Optional</sup> <a name="DelegatedAuthAccessorsInput" id="@cdktf/provider-vault.mount.Mount.property.delegatedAuthAccessorsInput"></a>
+
+```csharp
+public string[] DelegatedAuthAccessorsInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktf/provider-vault.mount.Mount.property.descriptionInput"></a>
 
 ```csharp
@@ -825,10 +899,30 @@ public object ExternalEntropyAccessInput { get; }
 
 ---
 
+##### `IdentityTokenKeyInput`<sup>Optional</sup> <a name="IdentityTokenKeyInput" id="@cdktf/provider-vault.mount.Mount.property.identityTokenKeyInput"></a>
+
+```csharp
+public string IdentityTokenKeyInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-vault.mount.Mount.property.idInput"></a>
 
 ```csharp
 public string IdInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ListingVisibilityInput`<sup>Optional</sup> <a name="ListingVisibilityInput" id="@cdktf/provider-vault.mount.Mount.property.listingVisibilityInput"></a>
+
+```csharp
+public string ListingVisibilityInput { get; }
 ```
 
 - *Type:* string
@@ -875,10 +969,30 @@ public System.Collections.Generic.IDictionary<string, string> OptionsInput { get
 
 ---
 
+##### `PassthroughRequestHeadersInput`<sup>Optional</sup> <a name="PassthroughRequestHeadersInput" id="@cdktf/provider-vault.mount.Mount.property.passthroughRequestHeadersInput"></a>
+
+```csharp
+public string[] PassthroughRequestHeadersInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
 ##### `PathInput`<sup>Optional</sup> <a name="PathInput" id="@cdktf/provider-vault.mount.Mount.property.pathInput"></a>
 
 ```csharp
 public string PathInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `PluginVersionInput`<sup>Optional</sup> <a name="PluginVersionInput" id="@cdktf/provider-vault.mount.Mount.property.pluginVersionInput"></a>
+
+```csharp
+public string PluginVersionInput { get; }
 ```
 
 - *Type:* string
@@ -915,6 +1029,16 @@ public string[] AllowedManagedKeys { get; }
 
 ---
 
+##### `AllowedResponseHeaders`<sup>Required</sup> <a name="AllowedResponseHeaders" id="@cdktf/provider-vault.mount.Mount.property.allowedResponseHeaders"></a>
+
+```csharp
+public string[] AllowedResponseHeaders { get; }
+```
+
+- *Type:* string[]
+
+---
+
 ##### `AuditNonHmacRequestKeys`<sup>Required</sup> <a name="AuditNonHmacRequestKeys" id="@cdktf/provider-vault.mount.Mount.property.auditNonHmacRequestKeys"></a>
 
 ```csharp
@@ -945,6 +1069,16 @@ public double DefaultLeaseTtlSeconds { get; }
 
 ---
 
+##### `DelegatedAuthAccessors`<sup>Required</sup> <a name="DelegatedAuthAccessors" id="@cdktf/provider-vault.mount.Mount.property.delegatedAuthAccessors"></a>
+
+```csharp
+public string[] DelegatedAuthAccessors { get; }
+```
+
+- *Type:* string[]
+
+---
+
 ##### `Description`<sup>Required</sup> <a name="Description" id="@cdktf/provider-vault.mount.Mount.property.description"></a>
 
 ```csharp
@@ -969,6 +1103,26 @@ public object ExternalEntropyAccess { get; }
 
 ```csharp
 public string Id { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `IdentityTokenKey`<sup>Required</sup> <a name="IdentityTokenKey" id="@cdktf/provider-vault.mount.Mount.property.identityTokenKey"></a>
+
+```csharp
+public string IdentityTokenKey { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ListingVisibility`<sup>Required</sup> <a name="ListingVisibility" id="@cdktf/provider-vault.mount.Mount.property.listingVisibility"></a>
+
+```csharp
+public string ListingVisibility { get; }
 ```
 
 - *Type:* string
@@ -1015,10 +1169,30 @@ public System.Collections.Generic.IDictionary<string, string> Options { get; }
 
 ---
 
+##### `PassthroughRequestHeaders`<sup>Required</sup> <a name="PassthroughRequestHeaders" id="@cdktf/provider-vault.mount.Mount.property.passthroughRequestHeaders"></a>
+
+```csharp
+public string[] PassthroughRequestHeaders { get; }
+```
+
+- *Type:* string[]
+
+---
+
 ##### `Path`<sup>Required</sup> <a name="Path" id="@cdktf/provider-vault.mount.Mount.property.path"></a>
 
 ```csharp
 public string Path { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `PluginVersion`<sup>Required</sup> <a name="PluginVersion" id="@cdktf/provider-vault.mount.Mount.property.pluginVersion"></a>
+
+```csharp
+public string PluginVersion { get; }
 ```
 
 - *Type:* string
@@ -1083,16 +1257,22 @@ new MountConfig {
     string Path,
     string Type,
     string[] AllowedManagedKeys = null,
+    string[] AllowedResponseHeaders = null,
     string[] AuditNonHmacRequestKeys = null,
     string[] AuditNonHmacResponseKeys = null,
     double DefaultLeaseTtlSeconds = null,
+    string[] DelegatedAuthAccessors = null,
     string Description = null,
     object ExternalEntropyAccess = null,
     string Id = null,
+    string IdentityTokenKey = null,
+    string ListingVisibility = null,
     object Local = null,
     double MaxLeaseTtlSeconds = null,
     string Namespace = null,
     System.Collections.Generic.IDictionary<string, string> Options = null,
+    string[] PassthroughRequestHeaders = null,
+    string PluginVersion = null,
     object SealWrap = null
 };
 ```
@@ -1111,16 +1291,22 @@ new MountConfig {
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.path">Path</a></code> | <code>string</code> | Where the secret backend will be mounted. |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.type">Type</a></code> | <code>string</code> | Type of the backend, such as 'aws'. |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.allowedManagedKeys">AllowedManagedKeys</a></code> | <code>string[]</code> | List of managed key registry entry names that the mount in question is allowed to access. |
+| <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.allowedResponseHeaders">AllowedResponseHeaders</a></code> | <code>string[]</code> | List of headers to allow and pass from the request to the plugin. |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.auditNonHmacRequestKeys">AuditNonHmacRequestKeys</a></code> | <code>string[]</code> | Specifies the list of keys that will not be HMAC'd by audit devices in the request data object. |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.auditNonHmacResponseKeys">AuditNonHmacResponseKeys</a></code> | <code>string[]</code> | Specifies the list of keys that will not be HMAC'd by audit devices in the response data object. |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.defaultLeaseTtlSeconds">DefaultLeaseTtlSeconds</a></code> | <code>double</code> | Default lease duration for tokens and secrets in seconds. |
+| <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.delegatedAuthAccessors">DelegatedAuthAccessors</a></code> | <code>string[]</code> | List of headers to allow and pass from the request to the plugin. |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.description">Description</a></code> | <code>string</code> | Human-friendly description of the mount. |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.externalEntropyAccess">ExternalEntropyAccess</a></code> | <code>object</code> | Enable the secrets engine to access Vault's external entropy source. |
-| <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#id Mount#id}. |
+| <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#id Mount#id}. |
+| <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.identityTokenKey">IdentityTokenKey</a></code> | <code>string</code> | The key to use for signing plugin workload identity tokens. |
+| <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.listingVisibility">ListingVisibility</a></code> | <code>string</code> | Specifies whether to show this mount in the UI-specific listing endpoint. |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.local">Local</a></code> | <code>object</code> | Local mount flag that can be explicitly set to true to enforce local mount in HA environment. |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.maxLeaseTtlSeconds">MaxLeaseTtlSeconds</a></code> | <code>double</code> | Maximum possible lease duration for tokens and secrets in seconds. |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.options">Options</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Specifies mount type specific options that are passed to the backend. |
+| <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.passthroughRequestHeaders">PassthroughRequestHeaders</a></code> | <code>string[]</code> | List of headers to allow and pass from the request to the plugin. |
+| <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.pluginVersion">PluginVersion</a></code> | <code>string</code> | Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'. |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.sealWrap">SealWrap</a></code> | <code>object</code> | Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability. |
 
 ---
@@ -1205,7 +1391,7 @@ public string Path { get; set; }
 
 Where the secret backend will be mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#path Mount#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#path Mount#path}
 
 ---
 
@@ -1219,7 +1405,7 @@ public string Type { get; set; }
 
 Type of the backend, such as 'aws'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#type Mount#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#type Mount#type}
 
 ---
 
@@ -1233,7 +1419,21 @@ public string[] AllowedManagedKeys { get; set; }
 
 List of managed key registry entry names that the mount in question is allowed to access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#allowed_managed_keys Mount#allowed_managed_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#allowed_managed_keys Mount#allowed_managed_keys}
+
+---
+
+##### `AllowedResponseHeaders`<sup>Optional</sup> <a name="AllowedResponseHeaders" id="@cdktf/provider-vault.mount.MountConfig.property.allowedResponseHeaders"></a>
+
+```csharp
+public string[] AllowedResponseHeaders { get; set; }
+```
+
+- *Type:* string[]
+
+List of headers to allow and pass from the request to the plugin.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#allowed_response_headers Mount#allowed_response_headers}
 
 ---
 
@@ -1247,7 +1447,7 @@ public string[] AuditNonHmacRequestKeys { get; set; }
 
 Specifies the list of keys that will not be HMAC'd by audit devices in the request data object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#audit_non_hmac_request_keys Mount#audit_non_hmac_request_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#audit_non_hmac_request_keys Mount#audit_non_hmac_request_keys}
 
 ---
 
@@ -1261,7 +1461,7 @@ public string[] AuditNonHmacResponseKeys { get; set; }
 
 Specifies the list of keys that will not be HMAC'd by audit devices in the response data object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#audit_non_hmac_response_keys Mount#audit_non_hmac_response_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#audit_non_hmac_response_keys Mount#audit_non_hmac_response_keys}
 
 ---
 
@@ -1275,7 +1475,21 @@ public double DefaultLeaseTtlSeconds { get; set; }
 
 Default lease duration for tokens and secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#default_lease_ttl_seconds Mount#default_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#default_lease_ttl_seconds Mount#default_lease_ttl_seconds}
+
+---
+
+##### `DelegatedAuthAccessors`<sup>Optional</sup> <a name="DelegatedAuthAccessors" id="@cdktf/provider-vault.mount.MountConfig.property.delegatedAuthAccessors"></a>
+
+```csharp
+public string[] DelegatedAuthAccessors { get; set; }
+```
+
+- *Type:* string[]
+
+List of headers to allow and pass from the request to the plugin.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#delegated_auth_accessors Mount#delegated_auth_accessors}
 
 ---
 
@@ -1289,7 +1503,7 @@ public string Description { get; set; }
 
 Human-friendly description of the mount.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#description Mount#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#description Mount#description}
 
 ---
 
@@ -1303,7 +1517,7 @@ public object ExternalEntropyAccess { get; set; }
 
 Enable the secrets engine to access Vault's external entropy source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#external_entropy_access Mount#external_entropy_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#external_entropy_access Mount#external_entropy_access}
 
 ---
 
@@ -1315,10 +1529,38 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#id Mount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#id Mount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `IdentityTokenKey`<sup>Optional</sup> <a name="IdentityTokenKey" id="@cdktf/provider-vault.mount.MountConfig.property.identityTokenKey"></a>
+
+```csharp
+public string IdentityTokenKey { get; set; }
+```
+
+- *Type:* string
+
+The key to use for signing plugin workload identity tokens.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#identity_token_key Mount#identity_token_key}
+
+---
+
+##### `ListingVisibility`<sup>Optional</sup> <a name="ListingVisibility" id="@cdktf/provider-vault.mount.MountConfig.property.listingVisibility"></a>
+
+```csharp
+public string ListingVisibility { get; set; }
+```
+
+- *Type:* string
+
+Specifies whether to show this mount in the UI-specific listing endpoint.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#listing_visibility Mount#listing_visibility}
 
 ---
 
@@ -1332,7 +1574,7 @@ public object Local { get; set; }
 
 Local mount flag that can be explicitly set to true to enforce local mount in HA environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#local Mount#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#local Mount#local}
 
 ---
 
@@ -1346,7 +1588,7 @@ public double MaxLeaseTtlSeconds { get; set; }
 
 Maximum possible lease duration for tokens and secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#max_lease_ttl_seconds Mount#max_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#max_lease_ttl_seconds Mount#max_lease_ttl_seconds}
 
 ---
 
@@ -1360,7 +1602,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#namespace Mount#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#namespace Mount#namespace}
 
 ---
 
@@ -1374,7 +1616,35 @@ public System.Collections.Generic.IDictionary<string, string> Options { get; set
 
 Specifies mount type specific options that are passed to the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#options Mount#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#options Mount#options}
+
+---
+
+##### `PassthroughRequestHeaders`<sup>Optional</sup> <a name="PassthroughRequestHeaders" id="@cdktf/provider-vault.mount.MountConfig.property.passthroughRequestHeaders"></a>
+
+```csharp
+public string[] PassthroughRequestHeaders { get; set; }
+```
+
+- *Type:* string[]
+
+List of headers to allow and pass from the request to the plugin.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#passthrough_request_headers Mount#passthrough_request_headers}
+
+---
+
+##### `PluginVersion`<sup>Optional</sup> <a name="PluginVersion" id="@cdktf/provider-vault.mount.MountConfig.property.pluginVersion"></a>
+
+```csharp
+public string PluginVersion { get; set; }
+```
+
+- *Type:* string
+
+Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#plugin_version Mount#plugin_version}
 
 ---
 
@@ -1388,7 +1658,7 @@ public object SealWrap { get; set; }
 
 Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#seal_wrap Mount#seal_wrap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#seal_wrap Mount#seal_wrap}
 
 ---
 

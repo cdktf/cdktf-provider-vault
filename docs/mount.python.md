@@ -4,7 +4,7 @@
 
 ### Mount <a name="Mount" id="@cdktf/provider-vault.mount.Mount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount vault_mount}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount vault_mount}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.mount.Mount.Initializer"></a>
 
@@ -24,16 +24,22 @@ mount.Mount(
   path: str,
   type: str,
   allowed_managed_keys: typing.List[str] = None,
+  allowed_response_headers: typing.List[str] = None,
   audit_non_hmac_request_keys: typing.List[str] = None,
   audit_non_hmac_response_keys: typing.List[str] = None,
   default_lease_ttl_seconds: typing.Union[int, float] = None,
+  delegated_auth_accessors: typing.List[str] = None,
   description: str = None,
   external_entropy_access: typing.Union[bool, IResolvable] = None,
   id: str = None,
+  identity_token_key: str = None,
+  listing_visibility: str = None,
   local: typing.Union[bool, IResolvable] = None,
   max_lease_ttl_seconds: typing.Union[int, float] = None,
   namespace: str = None,
   options: typing.Mapping[str] = None,
+  passthrough_request_headers: typing.List[str] = None,
+  plugin_version: str = None,
   seal_wrap: typing.Union[bool, IResolvable] = None
 )
 ```
@@ -52,16 +58,22 @@ mount.Mount(
 | <code><a href="#@cdktf/provider-vault.mount.Mount.Initializer.parameter.path">path</a></code> | <code>str</code> | Where the secret backend will be mounted. |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.Initializer.parameter.type">type</a></code> | <code>str</code> | Type of the backend, such as 'aws'. |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.Initializer.parameter.allowedManagedKeys">allowed_managed_keys</a></code> | <code>typing.List[str]</code> | List of managed key registry entry names that the mount in question is allowed to access. |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.Initializer.parameter.allowedResponseHeaders">allowed_response_headers</a></code> | <code>typing.List[str]</code> | List of headers to allow and pass from the request to the plugin. |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.Initializer.parameter.auditNonHmacRequestKeys">audit_non_hmac_request_keys</a></code> | <code>typing.List[str]</code> | Specifies the list of keys that will not be HMAC'd by audit devices in the request data object. |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.Initializer.parameter.auditNonHmacResponseKeys">audit_non_hmac_response_keys</a></code> | <code>typing.List[str]</code> | Specifies the list of keys that will not be HMAC'd by audit devices in the response data object. |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.Initializer.parameter.defaultLeaseTtlSeconds">default_lease_ttl_seconds</a></code> | <code>typing.Union[int, float]</code> | Default lease duration for tokens and secrets in seconds. |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.Initializer.parameter.delegatedAuthAccessors">delegated_auth_accessors</a></code> | <code>typing.List[str]</code> | List of headers to allow and pass from the request to the plugin. |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.Initializer.parameter.description">description</a></code> | <code>str</code> | Human-friendly description of the mount. |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.Initializer.parameter.externalEntropyAccess">external_entropy_access</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable the secrets engine to access Vault's external entropy source. |
-| <code><a href="#@cdktf/provider-vault.mount.Mount.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#id Mount#id}. |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#id Mount#id}. |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.Initializer.parameter.identityTokenKey">identity_token_key</a></code> | <code>str</code> | The key to use for signing plugin workload identity tokens. |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.Initializer.parameter.listingVisibility">listing_visibility</a></code> | <code>str</code> | Specifies whether to show this mount in the UI-specific listing endpoint. |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.Initializer.parameter.local">local</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Local mount flag that can be explicitly set to true to enforce local mount in HA environment. |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.Initializer.parameter.maxLeaseTtlSeconds">max_lease_ttl_seconds</a></code> | <code>typing.Union[int, float]</code> | Maximum possible lease duration for tokens and secrets in seconds. |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.Initializer.parameter.options">options</a></code> | <code>typing.Mapping[str]</code> | Specifies mount type specific options that are passed to the backend. |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.Initializer.parameter.passthroughRequestHeaders">passthrough_request_headers</a></code> | <code>typing.List[str]</code> | List of headers to allow and pass from the request to the plugin. |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.Initializer.parameter.pluginVersion">plugin_version</a></code> | <code>str</code> | Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'. |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.Initializer.parameter.sealWrap">seal_wrap</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability. |
 
 ---
@@ -132,7 +144,7 @@ Must be unique amongst siblings in the same scope
 
 Where the secret backend will be mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#path Mount#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#path Mount#path}
 
 ---
 
@@ -142,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Type of the backend, such as 'aws'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#type Mount#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#type Mount#type}
 
 ---
 
@@ -152,7 +164,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of managed key registry entry names that the mount in question is allowed to access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#allowed_managed_keys Mount#allowed_managed_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#allowed_managed_keys Mount#allowed_managed_keys}
+
+---
+
+##### `allowed_response_headers`<sup>Optional</sup> <a name="allowed_response_headers" id="@cdktf/provider-vault.mount.Mount.Initializer.parameter.allowedResponseHeaders"></a>
+
+- *Type:* typing.List[str]
+
+List of headers to allow and pass from the request to the plugin.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#allowed_response_headers Mount#allowed_response_headers}
 
 ---
 
@@ -162,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the list of keys that will not be HMAC'd by audit devices in the request data object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#audit_non_hmac_request_keys Mount#audit_non_hmac_request_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#audit_non_hmac_request_keys Mount#audit_non_hmac_request_keys}
 
 ---
 
@@ -172,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the list of keys that will not be HMAC'd by audit devices in the response data object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#audit_non_hmac_response_keys Mount#audit_non_hmac_response_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#audit_non_hmac_response_keys Mount#audit_non_hmac_response_keys}
 
 ---
 
@@ -182,7 +204,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Default lease duration for tokens and secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#default_lease_ttl_seconds Mount#default_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#default_lease_ttl_seconds Mount#default_lease_ttl_seconds}
+
+---
+
+##### `delegated_auth_accessors`<sup>Optional</sup> <a name="delegated_auth_accessors" id="@cdktf/provider-vault.mount.Mount.Initializer.parameter.delegatedAuthAccessors"></a>
+
+- *Type:* typing.List[str]
+
+List of headers to allow and pass from the request to the plugin.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#delegated_auth_accessors Mount#delegated_auth_accessors}
 
 ---
 
@@ -192,7 +224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Human-friendly description of the mount.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#description Mount#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#description Mount#description}
 
 ---
 
@@ -202,7 +234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Enable the secrets engine to access Vault's external entropy source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#external_entropy_access Mount#external_entropy_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#external_entropy_access Mount#external_entropy_access}
 
 ---
 
@@ -210,10 +242,30 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#id Mount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#id Mount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `identity_token_key`<sup>Optional</sup> <a name="identity_token_key" id="@cdktf/provider-vault.mount.Mount.Initializer.parameter.identityTokenKey"></a>
+
+- *Type:* str
+
+The key to use for signing plugin workload identity tokens.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#identity_token_key Mount#identity_token_key}
+
+---
+
+##### `listing_visibility`<sup>Optional</sup> <a name="listing_visibility" id="@cdktf/provider-vault.mount.Mount.Initializer.parameter.listingVisibility"></a>
+
+- *Type:* str
+
+Specifies whether to show this mount in the UI-specific listing endpoint.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#listing_visibility Mount#listing_visibility}
 
 ---
 
@@ -223,7 +275,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Local mount flag that can be explicitly set to true to enforce local mount in HA environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#local Mount#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#local Mount#local}
 
 ---
 
@@ -233,7 +285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Maximum possible lease duration for tokens and secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#max_lease_ttl_seconds Mount#max_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#max_lease_ttl_seconds Mount#max_lease_ttl_seconds}
 
 ---
 
@@ -243,7 +295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#namespace Mount#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#namespace Mount#namespace}
 
 ---
 
@@ -253,7 +305,27 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies mount type specific options that are passed to the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#options Mount#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#options Mount#options}
+
+---
+
+##### `passthrough_request_headers`<sup>Optional</sup> <a name="passthrough_request_headers" id="@cdktf/provider-vault.mount.Mount.Initializer.parameter.passthroughRequestHeaders"></a>
+
+- *Type:* typing.List[str]
+
+List of headers to allow and pass from the request to the plugin.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#passthrough_request_headers Mount#passthrough_request_headers}
+
+---
+
+##### `plugin_version`<sup>Optional</sup> <a name="plugin_version" id="@cdktf/provider-vault.mount.Mount.Initializer.parameter.pluginVersion"></a>
+
+- *Type:* str
+
+Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#plugin_version Mount#plugin_version}
 
 ---
 
@@ -263,7 +335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#seal_wrap Mount#seal_wrap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#seal_wrap Mount#seal_wrap}
 
 ---
 
@@ -295,16 +367,22 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-vault.mount.Mount.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.resetAllowedManagedKeys">reset_allowed_managed_keys</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.resetAllowedResponseHeaders">reset_allowed_response_headers</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.resetAuditNonHmacRequestKeys">reset_audit_non_hmac_request_keys</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.resetAuditNonHmacResponseKeys">reset_audit_non_hmac_response_keys</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.resetDefaultLeaseTtlSeconds">reset_default_lease_ttl_seconds</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.resetDelegatedAuthAccessors">reset_delegated_auth_accessors</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.resetExternalEntropyAccess">reset_external_entropy_access</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.resetIdentityTokenKey">reset_identity_token_key</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.resetListingVisibility">reset_listing_visibility</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.resetLocal">reset_local</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.resetMaxLeaseTtlSeconds">reset_max_lease_ttl_seconds</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.resetNamespace">reset_namespace</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.resetOptions">reset_options</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.resetPassthroughRequestHeaders">reset_passthrough_request_headers</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.resetPluginVersion">reset_plugin_version</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.resetSealWrap">reset_seal_wrap</a></code> | *No description.* |
 
 ---
@@ -640,6 +718,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 def reset_allowed_managed_keys() -> None
 ```
 
+##### `reset_allowed_response_headers` <a name="reset_allowed_response_headers" id="@cdktf/provider-vault.mount.Mount.resetAllowedResponseHeaders"></a>
+
+```python
+def reset_allowed_response_headers() -> None
+```
+
 ##### `reset_audit_non_hmac_request_keys` <a name="reset_audit_non_hmac_request_keys" id="@cdktf/provider-vault.mount.Mount.resetAuditNonHmacRequestKeys"></a>
 
 ```python
@@ -658,6 +742,12 @@ def reset_audit_non_hmac_response_keys() -> None
 def reset_default_lease_ttl_seconds() -> None
 ```
 
+##### `reset_delegated_auth_accessors` <a name="reset_delegated_auth_accessors" id="@cdktf/provider-vault.mount.Mount.resetDelegatedAuthAccessors"></a>
+
+```python
+def reset_delegated_auth_accessors() -> None
+```
+
 ##### `reset_description` <a name="reset_description" id="@cdktf/provider-vault.mount.Mount.resetDescription"></a>
 
 ```python
@@ -674,6 +764,18 @@ def reset_external_entropy_access() -> None
 
 ```python
 def reset_id() -> None
+```
+
+##### `reset_identity_token_key` <a name="reset_identity_token_key" id="@cdktf/provider-vault.mount.Mount.resetIdentityTokenKey"></a>
+
+```python
+def reset_identity_token_key() -> None
+```
+
+##### `reset_listing_visibility` <a name="reset_listing_visibility" id="@cdktf/provider-vault.mount.Mount.resetListingVisibility"></a>
+
+```python
+def reset_listing_visibility() -> None
 ```
 
 ##### `reset_local` <a name="reset_local" id="@cdktf/provider-vault.mount.Mount.resetLocal"></a>
@@ -698,6 +800,18 @@ def reset_namespace() -> None
 
 ```python
 def reset_options() -> None
+```
+
+##### `reset_passthrough_request_headers` <a name="reset_passthrough_request_headers" id="@cdktf/provider-vault.mount.Mount.resetPassthroughRequestHeaders"></a>
+
+```python
+def reset_passthrough_request_headers() -> None
+```
+
+##### `reset_plugin_version` <a name="reset_plugin_version" id="@cdktf/provider-vault.mount.Mount.resetPluginVersion"></a>
+
+```python
+def reset_plugin_version() -> None
 ```
 
 ##### `reset_seal_wrap` <a name="reset_seal_wrap" id="@cdktf/provider-vault.mount.Mount.resetSealWrap"></a>
@@ -820,7 +934,7 @@ The construct id used in the generated config for the Mount to import.
 
 The id of the existing Mount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -852,31 +966,43 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.accessor">accessor</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.allowedManagedKeysInput">allowed_managed_keys_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.property.allowedResponseHeadersInput">allowed_response_headers_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.auditNonHmacRequestKeysInput">audit_non_hmac_request_keys_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.auditNonHmacResponseKeysInput">audit_non_hmac_response_keys_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.defaultLeaseTtlSecondsInput">default_lease_ttl_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.property.delegatedAuthAccessorsInput">delegated_auth_accessors_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.externalEntropyAccessInput">external_entropy_access_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.property.identityTokenKeyInput">identity_token_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.property.listingVisibilityInput">listing_visibility_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.localInput">local_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.maxLeaseTtlSecondsInput">max_lease_ttl_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.namespaceInput">namespace_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.optionsInput">options_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.property.passthroughRequestHeadersInput">passthrough_request_headers_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.pathInput">path_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.property.pluginVersionInput">plugin_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.sealWrapInput">seal_wrap_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.allowedManagedKeys">allowed_managed_keys</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.property.allowedResponseHeaders">allowed_response_headers</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.auditNonHmacRequestKeys">audit_non_hmac_request_keys</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.auditNonHmacResponseKeys">audit_non_hmac_response_keys</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.defaultLeaseTtlSeconds">default_lease_ttl_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.property.delegatedAuthAccessors">delegated_auth_accessors</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.externalEntropyAccess">external_entropy_access</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.property.identityTokenKey">identity_token_key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.property.listingVisibility">listing_visibility</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.local">local</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.maxLeaseTtlSeconds">max_lease_ttl_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.namespace">namespace</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.options">options</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.property.passthroughRequestHeaders">passthrough_request_headers</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.path">path</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.property.pluginVersion">plugin_version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.sealWrap">seal_wrap</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.type">type</a></code> | <code>str</code> | *No description.* |
 
@@ -1044,6 +1170,16 @@ allowed_managed_keys_input: typing.List[str]
 
 ---
 
+##### `allowed_response_headers_input`<sup>Optional</sup> <a name="allowed_response_headers_input" id="@cdktf/provider-vault.mount.Mount.property.allowedResponseHeadersInput"></a>
+
+```python
+allowed_response_headers_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 ##### `audit_non_hmac_request_keys_input`<sup>Optional</sup> <a name="audit_non_hmac_request_keys_input" id="@cdktf/provider-vault.mount.Mount.property.auditNonHmacRequestKeysInput"></a>
 
 ```python
@@ -1074,6 +1210,16 @@ default_lease_ttl_seconds_input: typing.Union[int, float]
 
 ---
 
+##### `delegated_auth_accessors_input`<sup>Optional</sup> <a name="delegated_auth_accessors_input" id="@cdktf/provider-vault.mount.Mount.property.delegatedAuthAccessorsInput"></a>
+
+```python
+delegated_auth_accessors_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 ##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktf/provider-vault.mount.Mount.property.descriptionInput"></a>
 
 ```python
@@ -1094,10 +1240,30 @@ external_entropy_access_input: typing.Union[bool, IResolvable]
 
 ---
 
+##### `identity_token_key_input`<sup>Optional</sup> <a name="identity_token_key_input" id="@cdktf/provider-vault.mount.Mount.property.identityTokenKeyInput"></a>
+
+```python
+identity_token_key_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-vault.mount.Mount.property.idInput"></a>
 
 ```python
 id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `listing_visibility_input`<sup>Optional</sup> <a name="listing_visibility_input" id="@cdktf/provider-vault.mount.Mount.property.listingVisibilityInput"></a>
+
+```python
+listing_visibility_input: str
 ```
 
 - *Type:* str
@@ -1144,10 +1310,30 @@ options_input: typing.Mapping[str]
 
 ---
 
+##### `passthrough_request_headers_input`<sup>Optional</sup> <a name="passthrough_request_headers_input" id="@cdktf/provider-vault.mount.Mount.property.passthroughRequestHeadersInput"></a>
+
+```python
+passthrough_request_headers_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 ##### `path_input`<sup>Optional</sup> <a name="path_input" id="@cdktf/provider-vault.mount.Mount.property.pathInput"></a>
 
 ```python
 path_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `plugin_version_input`<sup>Optional</sup> <a name="plugin_version_input" id="@cdktf/provider-vault.mount.Mount.property.pluginVersionInput"></a>
+
+```python
+plugin_version_input: str
 ```
 
 - *Type:* str
@@ -1184,6 +1370,16 @@ allowed_managed_keys: typing.List[str]
 
 ---
 
+##### `allowed_response_headers`<sup>Required</sup> <a name="allowed_response_headers" id="@cdktf/provider-vault.mount.Mount.property.allowedResponseHeaders"></a>
+
+```python
+allowed_response_headers: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 ##### `audit_non_hmac_request_keys`<sup>Required</sup> <a name="audit_non_hmac_request_keys" id="@cdktf/provider-vault.mount.Mount.property.auditNonHmacRequestKeys"></a>
 
 ```python
@@ -1214,6 +1410,16 @@ default_lease_ttl_seconds: typing.Union[int, float]
 
 ---
 
+##### `delegated_auth_accessors`<sup>Required</sup> <a name="delegated_auth_accessors" id="@cdktf/provider-vault.mount.Mount.property.delegatedAuthAccessors"></a>
+
+```python
+delegated_auth_accessors: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 ##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-vault.mount.Mount.property.description"></a>
 
 ```python
@@ -1238,6 +1444,26 @@ external_entropy_access: typing.Union[bool, IResolvable]
 
 ```python
 id: str
+```
+
+- *Type:* str
+
+---
+
+##### `identity_token_key`<sup>Required</sup> <a name="identity_token_key" id="@cdktf/provider-vault.mount.Mount.property.identityTokenKey"></a>
+
+```python
+identity_token_key: str
+```
+
+- *Type:* str
+
+---
+
+##### `listing_visibility`<sup>Required</sup> <a name="listing_visibility" id="@cdktf/provider-vault.mount.Mount.property.listingVisibility"></a>
+
+```python
+listing_visibility: str
 ```
 
 - *Type:* str
@@ -1284,10 +1510,30 @@ options: typing.Mapping[str]
 
 ---
 
+##### `passthrough_request_headers`<sup>Required</sup> <a name="passthrough_request_headers" id="@cdktf/provider-vault.mount.Mount.property.passthroughRequestHeaders"></a>
+
+```python
+passthrough_request_headers: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 ##### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-vault.mount.Mount.property.path"></a>
 
 ```python
 path: str
+```
+
+- *Type:* str
+
+---
+
+##### `plugin_version`<sup>Required</sup> <a name="plugin_version" id="@cdktf/provider-vault.mount.Mount.property.pluginVersion"></a>
+
+```python
+plugin_version: str
 ```
 
 - *Type:* str
@@ -1352,16 +1598,22 @@ mount.MountConfig(
   path: str,
   type: str,
   allowed_managed_keys: typing.List[str] = None,
+  allowed_response_headers: typing.List[str] = None,
   audit_non_hmac_request_keys: typing.List[str] = None,
   audit_non_hmac_response_keys: typing.List[str] = None,
   default_lease_ttl_seconds: typing.Union[int, float] = None,
+  delegated_auth_accessors: typing.List[str] = None,
   description: str = None,
   external_entropy_access: typing.Union[bool, IResolvable] = None,
   id: str = None,
+  identity_token_key: str = None,
+  listing_visibility: str = None,
   local: typing.Union[bool, IResolvable] = None,
   max_lease_ttl_seconds: typing.Union[int, float] = None,
   namespace: str = None,
   options: typing.Mapping[str] = None,
+  passthrough_request_headers: typing.List[str] = None,
+  plugin_version: str = None,
   seal_wrap: typing.Union[bool, IResolvable] = None
 )
 ```
@@ -1380,16 +1632,22 @@ mount.MountConfig(
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.path">path</a></code> | <code>str</code> | Where the secret backend will be mounted. |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.type">type</a></code> | <code>str</code> | Type of the backend, such as 'aws'. |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.allowedManagedKeys">allowed_managed_keys</a></code> | <code>typing.List[str]</code> | List of managed key registry entry names that the mount in question is allowed to access. |
+| <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.allowedResponseHeaders">allowed_response_headers</a></code> | <code>typing.List[str]</code> | List of headers to allow and pass from the request to the plugin. |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.auditNonHmacRequestKeys">audit_non_hmac_request_keys</a></code> | <code>typing.List[str]</code> | Specifies the list of keys that will not be HMAC'd by audit devices in the request data object. |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.auditNonHmacResponseKeys">audit_non_hmac_response_keys</a></code> | <code>typing.List[str]</code> | Specifies the list of keys that will not be HMAC'd by audit devices in the response data object. |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.defaultLeaseTtlSeconds">default_lease_ttl_seconds</a></code> | <code>typing.Union[int, float]</code> | Default lease duration for tokens and secrets in seconds. |
+| <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.delegatedAuthAccessors">delegated_auth_accessors</a></code> | <code>typing.List[str]</code> | List of headers to allow and pass from the request to the plugin. |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.description">description</a></code> | <code>str</code> | Human-friendly description of the mount. |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.externalEntropyAccess">external_entropy_access</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable the secrets engine to access Vault's external entropy source. |
-| <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#id Mount#id}. |
+| <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#id Mount#id}. |
+| <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.identityTokenKey">identity_token_key</a></code> | <code>str</code> | The key to use for signing plugin workload identity tokens. |
+| <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.listingVisibility">listing_visibility</a></code> | <code>str</code> | Specifies whether to show this mount in the UI-specific listing endpoint. |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.local">local</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Local mount flag that can be explicitly set to true to enforce local mount in HA environment. |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.maxLeaseTtlSeconds">max_lease_ttl_seconds</a></code> | <code>typing.Union[int, float]</code> | Maximum possible lease duration for tokens and secrets in seconds. |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.options">options</a></code> | <code>typing.Mapping[str]</code> | Specifies mount type specific options that are passed to the backend. |
+| <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.passthroughRequestHeaders">passthrough_request_headers</a></code> | <code>typing.List[str]</code> | List of headers to allow and pass from the request to the plugin. |
+| <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.pluginVersion">plugin_version</a></code> | <code>str</code> | Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'. |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.sealWrap">seal_wrap</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability. |
 
 ---
@@ -1474,7 +1732,7 @@ path: str
 
 Where the secret backend will be mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#path Mount#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#path Mount#path}
 
 ---
 
@@ -1488,7 +1746,7 @@ type: str
 
 Type of the backend, such as 'aws'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#type Mount#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#type Mount#type}
 
 ---
 
@@ -1502,7 +1760,21 @@ allowed_managed_keys: typing.List[str]
 
 List of managed key registry entry names that the mount in question is allowed to access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#allowed_managed_keys Mount#allowed_managed_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#allowed_managed_keys Mount#allowed_managed_keys}
+
+---
+
+##### `allowed_response_headers`<sup>Optional</sup> <a name="allowed_response_headers" id="@cdktf/provider-vault.mount.MountConfig.property.allowedResponseHeaders"></a>
+
+```python
+allowed_response_headers: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+List of headers to allow and pass from the request to the plugin.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#allowed_response_headers Mount#allowed_response_headers}
 
 ---
 
@@ -1516,7 +1788,7 @@ audit_non_hmac_request_keys: typing.List[str]
 
 Specifies the list of keys that will not be HMAC'd by audit devices in the request data object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#audit_non_hmac_request_keys Mount#audit_non_hmac_request_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#audit_non_hmac_request_keys Mount#audit_non_hmac_request_keys}
 
 ---
 
@@ -1530,7 +1802,7 @@ audit_non_hmac_response_keys: typing.List[str]
 
 Specifies the list of keys that will not be HMAC'd by audit devices in the response data object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#audit_non_hmac_response_keys Mount#audit_non_hmac_response_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#audit_non_hmac_response_keys Mount#audit_non_hmac_response_keys}
 
 ---
 
@@ -1544,7 +1816,21 @@ default_lease_ttl_seconds: typing.Union[int, float]
 
 Default lease duration for tokens and secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#default_lease_ttl_seconds Mount#default_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#default_lease_ttl_seconds Mount#default_lease_ttl_seconds}
+
+---
+
+##### `delegated_auth_accessors`<sup>Optional</sup> <a name="delegated_auth_accessors" id="@cdktf/provider-vault.mount.MountConfig.property.delegatedAuthAccessors"></a>
+
+```python
+delegated_auth_accessors: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+List of headers to allow and pass from the request to the plugin.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#delegated_auth_accessors Mount#delegated_auth_accessors}
 
 ---
 
@@ -1558,7 +1844,7 @@ description: str
 
 Human-friendly description of the mount.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#description Mount#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#description Mount#description}
 
 ---
 
@@ -1572,7 +1858,7 @@ external_entropy_access: typing.Union[bool, IResolvable]
 
 Enable the secrets engine to access Vault's external entropy source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#external_entropy_access Mount#external_entropy_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#external_entropy_access Mount#external_entropy_access}
 
 ---
 
@@ -1584,10 +1870,38 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#id Mount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#id Mount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `identity_token_key`<sup>Optional</sup> <a name="identity_token_key" id="@cdktf/provider-vault.mount.MountConfig.property.identityTokenKey"></a>
+
+```python
+identity_token_key: str
+```
+
+- *Type:* str
+
+The key to use for signing plugin workload identity tokens.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#identity_token_key Mount#identity_token_key}
+
+---
+
+##### `listing_visibility`<sup>Optional</sup> <a name="listing_visibility" id="@cdktf/provider-vault.mount.MountConfig.property.listingVisibility"></a>
+
+```python
+listing_visibility: str
+```
+
+- *Type:* str
+
+Specifies whether to show this mount in the UI-specific listing endpoint.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#listing_visibility Mount#listing_visibility}
 
 ---
 
@@ -1601,7 +1915,7 @@ local: typing.Union[bool, IResolvable]
 
 Local mount flag that can be explicitly set to true to enforce local mount in HA environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#local Mount#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#local Mount#local}
 
 ---
 
@@ -1615,7 +1929,7 @@ max_lease_ttl_seconds: typing.Union[int, float]
 
 Maximum possible lease duration for tokens and secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#max_lease_ttl_seconds Mount#max_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#max_lease_ttl_seconds Mount#max_lease_ttl_seconds}
 
 ---
 
@@ -1629,7 +1943,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#namespace Mount#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#namespace Mount#namespace}
 
 ---
 
@@ -1643,7 +1957,35 @@ options: typing.Mapping[str]
 
 Specifies mount type specific options that are passed to the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#options Mount#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#options Mount#options}
+
+---
+
+##### `passthrough_request_headers`<sup>Optional</sup> <a name="passthrough_request_headers" id="@cdktf/provider-vault.mount.MountConfig.property.passthroughRequestHeaders"></a>
+
+```python
+passthrough_request_headers: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+List of headers to allow and pass from the request to the plugin.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#passthrough_request_headers Mount#passthrough_request_headers}
+
+---
+
+##### `plugin_version`<sup>Optional</sup> <a name="plugin_version" id="@cdktf/provider-vault.mount.MountConfig.property.pluginVersion"></a>
+
+```python
+plugin_version: str
+```
+
+- *Type:* str
+
+Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#plugin_version Mount#plugin_version}
 
 ---
 
@@ -1657,7 +1999,7 @@ seal_wrap: typing.Union[bool, IResolvable]
 
 Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/mount#seal_wrap Mount#seal_wrap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/mount#seal_wrap Mount#seal_wrap}
 
 ---
 

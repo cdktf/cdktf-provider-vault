@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/identity_oidc_key
+// https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_oidc_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface IdentityOidcKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Signing algorithm to use. Signing algorithm to use. Allowed values are: RS256 (default), RS384, RS512, ES256, ES384, ES512, EdDSA.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/identity_oidc_key#algorithm IdentityOidcKey#algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_oidc_key#algorithm IdentityOidcKey#algorithm}
   */
   readonly algorithm?: string;
   /**
   * Array of role client ids allowed to use this key for signing. If empty, no roles are allowed. If "*", all roles are allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/identity_oidc_key#allowed_client_ids IdentityOidcKey#allowed_client_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_oidc_key#allowed_client_ids IdentityOidcKey#allowed_client_ids}
   */
   readonly allowedClientIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/identity_oidc_key#id IdentityOidcKey#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_oidc_key#id IdentityOidcKey#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,31 +34,31 @@ export interface IdentityOidcKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name of the key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/identity_oidc_key#name IdentityOidcKey#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_oidc_key#name IdentityOidcKey#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/identity_oidc_key#namespace IdentityOidcKey#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_oidc_key#namespace IdentityOidcKey#namespace}
   */
   readonly namespace?: string;
   /**
   * How often to generate a new signing key in number of seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/identity_oidc_key#rotation_period IdentityOidcKey#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_oidc_key#rotation_period IdentityOidcKey#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * Controls how long the public portion of a signing key will be available for verification after being rotated in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/identity_oidc_key#verification_ttl IdentityOidcKey#verification_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_oidc_key#verification_ttl IdentityOidcKey#verification_ttl}
   */
   readonly verificationTtl?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/identity_oidc_key vault_identity_oidc_key}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_oidc_key vault_identity_oidc_key}
 */
 export class IdentityOidcKey extends cdktf.TerraformResource {
 
@@ -74,7 +74,7 @@ export class IdentityOidcKey extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a IdentityOidcKey resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IdentityOidcKey to import
-  * @param importFromId The id of the existing IdentityOidcKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/identity_oidc_key#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IdentityOidcKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_oidc_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IdentityOidcKey to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -86,7 +86,7 @@ export class IdentityOidcKey extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/identity_oidc_key vault_identity_oidc_key} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_oidc_key vault_identity_oidc_key} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -97,7 +97,7 @@ export class IdentityOidcKey extends cdktf.TerraformResource {
       terraformResourceType: 'vault_identity_oidc_key',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '4.2.0',
+        providerVersion: '4.3.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

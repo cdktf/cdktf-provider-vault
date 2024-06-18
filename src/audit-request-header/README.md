@@ -1,3 +1,3 @@
 # `vault_audit_request_header`
 
-Refer to the Terraform Registry for docs: [`vault_audit_request_header`](https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/audit_request_header).
+Refer to the Terraform Registry for docs: [`vault_audit_request_header`](https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/audit_request_header).

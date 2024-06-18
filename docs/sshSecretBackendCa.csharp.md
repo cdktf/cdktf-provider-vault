@@ -4,7 +4,7 @@
 
 ### SshSecretBackendCa <a name="SshSecretBackendCa" id="@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ssh_secret_backend_ca vault_ssh_secret_backend_ca}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ssh_secret_backend_ca vault_ssh_secret_backend_ca}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.Initializer"></a>
 
@@ -76,6 +76,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.resetBackend">ResetBackend</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.resetGenerateSigningKey">ResetGenerateSigningKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.resetKeyBits">ResetKeyBits</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.resetKeyType">ResetKeyType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.resetNamespace">ResetNamespace</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.resetPrivateKey">ResetPrivateKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.resetPublicKey">ResetPublicKey</a></code> | *No description.* |
@@ -388,6 +390,18 @@ private void ResetGenerateSigningKey()
 private void ResetId()
 ```
 
+##### `ResetKeyBits` <a name="ResetKeyBits" id="@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.resetKeyBits"></a>
+
+```csharp
+private void ResetKeyBits()
+```
+
+##### `ResetKeyType` <a name="ResetKeyType" id="@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.resetKeyType"></a>
+
+```csharp
+private void ResetKeyType()
+```
+
 ##### `ResetNamespace` <a name="ResetNamespace" id="@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.resetNamespace"></a>
 
 ```csharp
@@ -509,7 +523,7 @@ The construct id used in the generated config for the SshSecretBackendCa to impo
 
 The id of the existing SshSecretBackendCa that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ssh_secret_backend_ca#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ssh_secret_backend_ca#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -542,12 +556,16 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.
 | <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.property.backendInput">BackendInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.property.generateSigningKeyInput">GenerateSigningKeyInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.property.keyBitsInput">KeyBitsInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.property.keyTypeInput">KeyTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.property.namespaceInput">NamespaceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.property.privateKeyInput">PrivateKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.property.publicKeyInput">PublicKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.property.backend">Backend</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.property.generateSigningKey">GenerateSigningKey</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.property.keyBits">KeyBits</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.property.keyType">KeyType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.property.namespace">Namespace</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.property.privateKey">PrivateKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.property.publicKey">PublicKey</a></code> | <code>string</code> | *No description.* |
@@ -726,6 +744,26 @@ public string IdInput { get; }
 
 ---
 
+##### `KeyBitsInput`<sup>Optional</sup> <a name="KeyBitsInput" id="@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.property.keyBitsInput"></a>
+
+```csharp
+public double KeyBitsInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `KeyTypeInput`<sup>Optional</sup> <a name="KeyTypeInput" id="@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.property.keyTypeInput"></a>
+
+```csharp
+public string KeyTypeInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `NamespaceInput`<sup>Optional</sup> <a name="NamespaceInput" id="@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.property.namespaceInput"></a>
 
 ```csharp
@@ -780,6 +818,26 @@ public object GenerateSigningKey { get; }
 
 ```csharp
 public string Id { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `KeyBits`<sup>Required</sup> <a name="KeyBits" id="@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.property.keyBits"></a>
+
+```csharp
+public double KeyBits { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `KeyType`<sup>Required</sup> <a name="KeyType" id="@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCa.property.keyType"></a>
+
+```csharp
+public string KeyType { get; }
 ```
 
 - *Type:* string
@@ -854,6 +912,8 @@ new SshSecretBackendCaConfig {
     string Backend = null,
     object GenerateSigningKey = null,
     string Id = null,
+    double KeyBits = null,
+    string KeyType = null,
     string Namespace = null,
     string PrivateKey = null,
     string PublicKey = null
@@ -873,7 +933,9 @@ new SshSecretBackendCaConfig {
 | <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCaConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCaConfig.property.backend">Backend</a></code> | <code>string</code> | The path of the SSH Secret Backend where the CA should be configured. |
 | <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCaConfig.property.generateSigningKey">GenerateSigningKey</a></code> | <code>object</code> | Whether Vault should generate the signing key pair internally. |
-| <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCaConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ssh_secret_backend_ca#id SshSecretBackendCa#id}. |
+| <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCaConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ssh_secret_backend_ca#id SshSecretBackendCa#id}. |
+| <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCaConfig.property.keyBits">KeyBits</a></code> | <code>double</code> | Specifies the desired key bits for the generated SSH CA key when `generate_signing_key` is set to `true`. |
+| <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCaConfig.property.keyType">KeyType</a></code> | <code>string</code> | Specifies the desired key type for the generated SSH CA key when `generate_signing_key` is set to `true`. |
 | <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCaConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCaConfig.property.privateKey">PrivateKey</a></code> | <code>string</code> | Private key part the SSH CA key pair; required if generate_signing_key is false. |
 | <code><a href="#@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCaConfig.property.publicKey">PublicKey</a></code> | <code>string</code> | Public key part the SSH CA key pair; required if generate_signing_key is false. |
@@ -960,7 +1022,7 @@ public string Backend { get; set; }
 
 The path of the SSH Secret Backend where the CA should be configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ssh_secret_backend_ca#backend SshSecretBackendCa#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ssh_secret_backend_ca#backend SshSecretBackendCa#backend}
 
 ---
 
@@ -974,7 +1036,7 @@ public object GenerateSigningKey { get; set; }
 
 Whether Vault should generate the signing key pair internally.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ssh_secret_backend_ca#generate_signing_key SshSecretBackendCa#generate_signing_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ssh_secret_backend_ca#generate_signing_key SshSecretBackendCa#generate_signing_key}
 
 ---
 
@@ -986,10 +1048,38 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ssh_secret_backend_ca#id SshSecretBackendCa#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ssh_secret_backend_ca#id SshSecretBackendCa#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `KeyBits`<sup>Optional</sup> <a name="KeyBits" id="@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCaConfig.property.keyBits"></a>
+
+```csharp
+public double KeyBits { get; set; }
+```
+
+- *Type:* double
+
+Specifies the desired key bits for the generated SSH CA key when `generate_signing_key` is set to `true`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ssh_secret_backend_ca#key_bits SshSecretBackendCa#key_bits}
+
+---
+
+##### `KeyType`<sup>Optional</sup> <a name="KeyType" id="@cdktf/provider-vault.sshSecretBackendCa.SshSecretBackendCaConfig.property.keyType"></a>
+
+```csharp
+public string KeyType { get; set; }
+```
+
+- *Type:* string
+
+Specifies the desired key type for the generated SSH CA key when `generate_signing_key` is set to `true`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ssh_secret_backend_ca#key_type SshSecretBackendCa#key_type}
 
 ---
 
@@ -1003,7 +1093,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ssh_secret_backend_ca#namespace SshSecretBackendCa#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ssh_secret_backend_ca#namespace SshSecretBackendCa#namespace}
 
 ---
 
@@ -1017,7 +1107,7 @@ public string PrivateKey { get; set; }
 
 Private key part the SSH CA key pair; required if generate_signing_key is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ssh_secret_backend_ca#private_key SshSecretBackendCa#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ssh_secret_backend_ca#private_key SshSecretBackendCa#private_key}
 
 ---
 
@@ -1031,7 +1121,7 @@ public string PublicKey { get; set; }
 
 Public key part the SSH CA key pair; required if generate_signing_key is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ssh_secret_backend_ca#public_key SshSecretBackendCa#public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ssh_secret_backend_ca#public_key SshSecretBackendCa#public_key}
 
 ---
 

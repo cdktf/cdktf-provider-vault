@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/azure_secret_backend
+// https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/azure_secret_backend
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,74 +15,92 @@ export interface AzureSecretBackendConfig extends cdktf.TerraformMetaArguments {
   /**
   * The client id for credentials to query the Azure APIs. Currently read permissions to query compute resources are required.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/azure_secret_backend#client_id AzureSecretBackend#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/azure_secret_backend#client_id AzureSecretBackend#client_id}
   */
   readonly clientId?: string;
   /**
   * The client secret for credentials to query the Azure APIs
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/azure_secret_backend#client_secret AzureSecretBackend#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/azure_secret_backend#client_secret AzureSecretBackend#client_secret}
   */
   readonly clientSecret?: string;
   /**
   * Human-friendly description of the mount for the backend.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/azure_secret_backend#description AzureSecretBackend#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/azure_secret_backend#description AzureSecretBackend#description}
   */
   readonly description?: string;
   /**
   * If set, opts out of mount migration on path updates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/azure_secret_backend#disable_remount AzureSecretBackend#disable_remount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/azure_secret_backend#disable_remount AzureSecretBackend#disable_remount}
   */
   readonly disableRemount?: boolean | cdktf.IResolvable;
   /**
   * The Azure cloud environment. Valid values: AzurePublicCloud, AzureUSGovernmentCloud, AzureChinaCloud, AzureGermanCloud.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/azure_secret_backend#environment AzureSecretBackend#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/azure_secret_backend#environment AzureSecretBackend#environment}
   */
   readonly environment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/azure_secret_backend#id AzureSecretBackend#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/azure_secret_backend#id AzureSecretBackend#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
+  * The audience claim value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/azure_secret_backend#identity_token_audience AzureSecretBackend#identity_token_audience}
+  */
+  readonly identityTokenAudience?: string;
+  /**
+  * The key to use for signing identity tokens.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/azure_secret_backend#identity_token_key AzureSecretBackend#identity_token_key}
+  */
+  readonly identityTokenKey?: string;
+  /**
+  * The TTL of generated identity tokens in seconds.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/azure_secret_backend#identity_token_ttl AzureSecretBackend#identity_token_ttl}
+  */
+  readonly identityTokenTtl?: number;
+  /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/azure_secret_backend#namespace AzureSecretBackend#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/azure_secret_backend#namespace AzureSecretBackend#namespace}
   */
   readonly namespace?: string;
   /**
   * Path to mount the backend at.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/azure_secret_backend#path AzureSecretBackend#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/azure_secret_backend#path AzureSecretBackend#path}
   */
   readonly path?: string;
   /**
   * The subscription id for the Azure Active Directory.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/azure_secret_backend#subscription_id AzureSecretBackend#subscription_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/azure_secret_backend#subscription_id AzureSecretBackend#subscription_id}
   */
   readonly subscriptionId: string;
   /**
   * The tenant id for the Azure Active Directory organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/azure_secret_backend#tenant_id AzureSecretBackend#tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/azure_secret_backend#tenant_id AzureSecretBackend#tenant_id}
   */
   readonly tenantId: string;
   /**
   * Use the Microsoft Graph API. Should be set to true on vault-1.10+
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/azure_secret_backend#use_microsoft_graph_api AzureSecretBackend#use_microsoft_graph_api}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/azure_secret_backend#use_microsoft_graph_api AzureSecretBackend#use_microsoft_graph_api}
   */
   readonly useMicrosoftGraphApi?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/azure_secret_backend vault_azure_secret_backend}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/azure_secret_backend vault_azure_secret_backend}
 */
 export class AzureSecretBackend extends cdktf.TerraformResource {
 
@@ -98,7 +116,7 @@ export class AzureSecretBackend extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AzureSecretBackend resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AzureSecretBackend to import
-  * @param importFromId The id of the existing AzureSecretBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/azure_secret_backend#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AzureSecretBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/azure_secret_backend#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AzureSecretBackend to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -110,7 +128,7 @@ export class AzureSecretBackend extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/azure_secret_backend vault_azure_secret_backend} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/azure_secret_backend vault_azure_secret_backend} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -121,7 +139,7 @@ export class AzureSecretBackend extends cdktf.TerraformResource {
       terraformResourceType: 'vault_azure_secret_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '4.2.0',
+        providerVersion: '4.3.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -138,6 +156,9 @@ export class AzureSecretBackend extends cdktf.TerraformResource {
     this._disableRemount = config.disableRemount;
     this._environment = config.environment;
     this._id = config.id;
+    this._identityTokenAudience = config.identityTokenAudience;
+    this._identityTokenKey = config.identityTokenKey;
+    this._identityTokenTtl = config.identityTokenTtl;
     this._namespace = config.namespace;
     this._path = config.path;
     this._subscriptionId = config.subscriptionId;
@@ -245,6 +266,54 @@ export class AzureSecretBackend extends cdktf.TerraformResource {
     return this._id;
   }
 
+  // identity_token_audience - computed: false, optional: true, required: false
+  private _identityTokenAudience?: string; 
+  public get identityTokenAudience() {
+    return this.getStringAttribute('identity_token_audience');
+  }
+  public set identityTokenAudience(value: string) {
+    this._identityTokenAudience = value;
+  }
+  public resetIdentityTokenAudience() {
+    this._identityTokenAudience = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityTokenAudienceInput() {
+    return this._identityTokenAudience;
+  }
+
+  // identity_token_key - computed: false, optional: true, required: false
+  private _identityTokenKey?: string; 
+  public get identityTokenKey() {
+    return this.getStringAttribute('identity_token_key');
+  }
+  public set identityTokenKey(value: string) {
+    this._identityTokenKey = value;
+  }
+  public resetIdentityTokenKey() {
+    this._identityTokenKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityTokenKeyInput() {
+    return this._identityTokenKey;
+  }
+
+  // identity_token_ttl - computed: true, optional: true, required: false
+  private _identityTokenTtl?: number; 
+  public get identityTokenTtl() {
+    return this.getNumberAttribute('identity_token_ttl');
+  }
+  public set identityTokenTtl(value: number) {
+    this._identityTokenTtl = value;
+  }
+  public resetIdentityTokenTtl() {
+    this._identityTokenTtl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityTokenTtlInput() {
+    return this._identityTokenTtl;
+  }
+
   // namespace - computed: false, optional: true, required: false
   private _namespace?: string; 
   public get namespace() {
@@ -331,6 +400,9 @@ export class AzureSecretBackend extends cdktf.TerraformResource {
       disable_remount: cdktf.booleanToTerraform(this._disableRemount),
       environment: cdktf.stringToTerraform(this._environment),
       id: cdktf.stringToTerraform(this._id),
+      identity_token_audience: cdktf.stringToTerraform(this._identityTokenAudience),
+      identity_token_key: cdktf.stringToTerraform(this._identityTokenKey),
+      identity_token_ttl: cdktf.numberToTerraform(this._identityTokenTtl),
       namespace: cdktf.stringToTerraform(this._namespace),
       path: cdktf.stringToTerraform(this._path),
       subscription_id: cdktf.stringToTerraform(this._subscriptionId),
@@ -376,6 +448,24 @@ export class AzureSecretBackend extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      identity_token_audience: {
+        value: cdktf.stringToHclTerraform(this._identityTokenAudience),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      identity_token_key: {
+        value: cdktf.stringToHclTerraform(this._identityTokenKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      identity_token_ttl: {
+        value: cdktf.numberToHclTerraform(this._identityTokenTtl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
       },
       namespace: {
         value: cdktf.stringToHclTerraform(this._namespace),

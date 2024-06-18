@@ -1,3 +1,3 @@
 # `vault_namespace`
 
-Refer to the Terraform Registry for docs: [`vault_namespace`](https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/namespace).
+Refer to the Terraform Registry for docs: [`vault_namespace`](https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/namespace).
