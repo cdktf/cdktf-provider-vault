@@ -4,12 +4,12 @@
 
 ### GithubTeam <a name="GithubTeam" id="@cdktf/provider-vault.githubTeam.GithubTeam"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/github_team vault_github_team}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/github_team vault_github_team}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.githubTeam.GithubTeam.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/githubteam"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/githubteam"
 
 githubteam.NewGithubTeam(scope Construct, id *string, config GithubTeamConfig) GithubTeam
 ```
@@ -406,7 +406,7 @@ func ResetPolicies()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.githubTeam.GithubTeam.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/githubteam"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/githubteam"
 
 githubteam.GithubTeam_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.githubTeam.GithubTeam.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/githubteam"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/githubteam"
 
 githubteam.GithubTeam_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ githubteam.GithubTeam_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.githubTeam.GithubTeam.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/githubteam"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/githubteam"
 
 githubteam.GithubTeam_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ githubteam.GithubTeam_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.githubTeam.GithubTeam.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/githubteam"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/githubteam"
 
 githubteam.GithubTeam_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -495,7 +495,7 @@ The construct id used in the generated config for the GithubTeam to import.
 
 The id of the existing GithubTeam that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/github_team#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/github_team#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -805,7 +805,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.githubTeam.GithubTeamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/githubteam"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/githubteam"
 
 &githubteam.GithubTeamConfig {
 	Connection: interface{},
@@ -836,7 +836,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/githubteam"
 | <code><a href="#@cdktf/provider-vault.githubTeam.GithubTeamConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.githubTeam.GithubTeamConfig.property.team">Team</a></code> | <code>*string</code> | GitHub team name in "slugified" format. |
 | <code><a href="#@cdktf/provider-vault.githubTeam.GithubTeamConfig.property.backend">Backend</a></code> | <code>*string</code> | Auth backend to which team mapping will be configured. |
-| <code><a href="#@cdktf/provider-vault.githubTeam.GithubTeamConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/github_team#id GithubTeam#id}. |
+| <code><a href="#@cdktf/provider-vault.githubTeam.GithubTeamConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/github_team#id GithubTeam#id}. |
 | <code><a href="#@cdktf/provider-vault.githubTeam.GithubTeamConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.githubTeam.GithubTeamConfig.property.policies">Policies</a></code> | <code>*[]*string</code> | Policies to be assigned to this team. |
 
@@ -922,7 +922,7 @@ Team *string
 
 GitHub team name in "slugified" format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/github_team#team GithubTeam#team}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/github_team#team GithubTeam#team}
 
 ---
 
@@ -936,7 +936,7 @@ Backend *string
 
 Auth backend to which team mapping will be configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/github_team#backend GithubTeam#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/github_team#backend GithubTeam#backend}
 
 ---
 
@@ -948,7 +948,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/github_team#id GithubTeam#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/github_team#id GithubTeam#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -965,7 +965,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/github_team#namespace GithubTeam#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/github_team#namespace GithubTeam#namespace}
 
 ---
 
@@ -979,7 +979,7 @@ Policies *[]*string
 
 Policies to be assigned to this team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/github_team#policies GithubTeam#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/github_team#policies GithubTeam#policies}
 
 ---
 

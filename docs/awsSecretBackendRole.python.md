@@ -4,7 +4,7 @@
 
 ### AwsSecretBackendRole <a name="AwsSecretBackendRole" id="@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_secret_backend_role vault_aws_secret_backend_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role vault_aws_secret_backend_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.Initializer"></a>
 
@@ -26,6 +26,7 @@ awsSecretBackendRole.AwsSecretBackendRole(
   name: str,
   default_sts_ttl: typing.Union[int, float] = None,
   iam_groups: typing.List[str] = None,
+  iam_tags: typing.Mapping[str] = None,
   id: str = None,
   max_sts_ttl: typing.Union[int, float] = None,
   namespace: str = None,
@@ -53,7 +54,8 @@ awsSecretBackendRole.AwsSecretBackendRole(
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.Initializer.parameter.name">name</a></code> | <code>str</code> | Unique name for the role. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.Initializer.parameter.defaultStsTtl">default_sts_ttl</a></code> | <code>typing.Union[int, float]</code> | The default TTL in seconds for STS credentials. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.Initializer.parameter.iamGroups">iam_groups</a></code> | <code>typing.List[str]</code> | A list of IAM group names. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_secret_backend_role#id AwsSecretBackendRole#id}. |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.Initializer.parameter.iamTags">iam_tags</a></code> | <code>typing.Mapping[str]</code> | A map of strings representing key/value pairs used as tags for any IAM user created by this role. |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#id AwsSecretBackendRole#id}. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.Initializer.parameter.maxStsTtl">max_sts_ttl</a></code> | <code>typing.Union[int, float]</code> | The max allowed TTL in seconds for STS credentials (credentials TTL are capped to max_sts_ttl). |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.Initializer.parameter.permissionsBoundaryArn">permissions_boundary_arn</a></code> | <code>str</code> | The ARN of the AWS Permissions Boundary to attach to IAM users created in the role. |
@@ -130,7 +132,7 @@ Must be unique amongst siblings in the same scope
 
 The path of the AWS Secret Backend the role belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_secret_backend_role#backend AwsSecretBackendRole#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#backend AwsSecretBackendRole#backend}
 
 ---
 
@@ -140,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Role credential type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_secret_backend_role#credential_type AwsSecretBackendRole#credential_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#credential_type AwsSecretBackendRole#credential_type}
 
 ---
 
@@ -150,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Unique name for the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_secret_backend_role#name AwsSecretBackendRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#name AwsSecretBackendRole#name}
 
 ---
 
@@ -162,7 +164,7 @@ The default TTL in seconds for STS credentials.
 
 When a TTL is not specified when STS credentials are requested, and a default TTL is specified on the role, then this default TTL will be used. Valid only when credential_type is one of assumed_role or federation_token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_secret_backend_role#default_sts_ttl AwsSecretBackendRole#default_sts_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#default_sts_ttl AwsSecretBackendRole#default_sts_ttl}
 
 ---
 
@@ -174,7 +176,17 @@ A list of IAM group names.
 
 IAM users generated against this vault role will be added to these IAM Groups. For a credential type of assumed_role or federation_token, the policies sent to the corresponding AWS call (sts:AssumeRole or sts:GetFederation) will be the policies from each group in iam_groups combined with the policy_document and policy_arns parameters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_secret_backend_role#iam_groups AwsSecretBackendRole#iam_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#iam_groups AwsSecretBackendRole#iam_groups}
+
+---
+
+##### `iam_tags`<sup>Optional</sup> <a name="iam_tags" id="@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.Initializer.parameter.iamTags"></a>
+
+- *Type:* typing.Mapping[str]
+
+A map of strings representing key/value pairs used as tags for any IAM user created by this role.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#iam_tags AwsSecretBackendRole#iam_tags}
 
 ---
 
@@ -182,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_secret_backend_role#id AwsSecretBackendRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#id AwsSecretBackendRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -197,7 +209,7 @@ The max allowed TTL in seconds for STS credentials (credentials TTL are capped t
 
 Valid only when credential_type is one of assumed_role or federation_token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_secret_backend_role#max_sts_ttl AwsSecretBackendRole#max_sts_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#max_sts_ttl AwsSecretBackendRole#max_sts_ttl}
 
 ---
 
@@ -207,7 +219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_secret_backend_role#namespace AwsSecretBackendRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#namespace AwsSecretBackendRole#namespace}
 
 ---
 
@@ -219,7 +231,7 @@ The ARN of the AWS Permissions Boundary to attach to IAM users created in the ro
 
 Valid only when credential_type is iam_user. If not specified, then no permissions boundary policy will be attached.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_secret_backend_role#permissions_boundary_arn AwsSecretBackendRole#permissions_boundary_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#permissions_boundary_arn AwsSecretBackendRole#permissions_boundary_arn}
 
 ---
 
@@ -229,7 +241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ARN for an existing IAM policy the role should use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_secret_backend_role#policy_arns AwsSecretBackendRole#policy_arns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#policy_arns AwsSecretBackendRole#policy_arns}
 
 ---
 
@@ -239,7 +251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 IAM policy the role should use in JSON format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_secret_backend_role#policy_document AwsSecretBackendRole#policy_document}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#policy_document AwsSecretBackendRole#policy_document}
 
 ---
 
@@ -249,7 +261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ARNs of AWS roles allowed to be assumed. Only valid when credential_type is 'assumed_role'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_secret_backend_role#role_arns AwsSecretBackendRole#role_arns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#role_arns AwsSecretBackendRole#role_arns}
 
 ---
 
@@ -259,7 +271,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The path for the user name. Valid only when credential_type is iam_user. Default is /.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_secret_backend_role#user_path AwsSecretBackendRole#user_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#user_path AwsSecretBackendRole#user_path}
 
 ---
 
@@ -292,6 +304,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.resetDefaultStsTtl">reset_default_sts_ttl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.resetIamGroups">reset_iam_groups</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.resetIamTags">reset_iam_tags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.resetMaxStsTtl">reset_max_sts_ttl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.resetNamespace">reset_namespace</a></code> | *No description.* |
@@ -640,6 +653,12 @@ def reset_default_sts_ttl() -> None
 def reset_iam_groups() -> None
 ```
 
+##### `reset_iam_tags` <a name="reset_iam_tags" id="@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.resetIamTags"></a>
+
+```python
+def reset_iam_tags() -> None
+```
+
 ##### `reset_id` <a name="reset_id" id="@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.resetId"></a>
 
 ```python
@@ -802,7 +821,7 @@ The construct id used in the generated config for the AwsSecretBackendRole to im
 
 The id of the existing AwsSecretBackendRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_secret_backend_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -836,6 +855,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.credentialTypeInput">credential_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.defaultStsTtlInput">default_sts_ttl_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.iamGroupsInput">iam_groups_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.iamTagsInput">iam_tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.maxStsTtlInput">max_sts_ttl_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
@@ -849,6 +869,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.credentialType">credential_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.defaultStsTtl">default_sts_ttl</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.iamGroups">iam_groups</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.iamTags">iam_tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.maxStsTtl">max_sts_ttl</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.name">name</a></code> | <code>str</code> | *No description.* |
@@ -1043,6 +1064,16 @@ iam_groups_input: typing.List[str]
 
 ---
 
+##### `iam_tags_input`<sup>Optional</sup> <a name="iam_tags_input" id="@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.iamTagsInput"></a>
+
+```python
+iam_tags_input: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+---
+
 ##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.idInput"></a>
 
 ```python
@@ -1170,6 +1201,16 @@ iam_groups: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
+
+---
+
+##### `iam_tags`<sup>Required</sup> <a name="iam_tags" id="@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.iamTags"></a>
+
+```python
+iam_tags: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
 
 ---
 
@@ -1303,6 +1344,7 @@ awsSecretBackendRole.AwsSecretBackendRoleConfig(
   name: str,
   default_sts_ttl: typing.Union[int, float] = None,
   iam_groups: typing.List[str] = None,
+  iam_tags: typing.Mapping[str] = None,
   id: str = None,
   max_sts_ttl: typing.Union[int, float] = None,
   namespace: str = None,
@@ -1330,7 +1372,8 @@ awsSecretBackendRole.AwsSecretBackendRoleConfig(
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRoleConfig.property.name">name</a></code> | <code>str</code> | Unique name for the role. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRoleConfig.property.defaultStsTtl">default_sts_ttl</a></code> | <code>typing.Union[int, float]</code> | The default TTL in seconds for STS credentials. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRoleConfig.property.iamGroups">iam_groups</a></code> | <code>typing.List[str]</code> | A list of IAM group names. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_secret_backend_role#id AwsSecretBackendRole#id}. |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRoleConfig.property.iamTags">iam_tags</a></code> | <code>typing.Mapping[str]</code> | A map of strings representing key/value pairs used as tags for any IAM user created by this role. |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#id AwsSecretBackendRole#id}. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRoleConfig.property.maxStsTtl">max_sts_ttl</a></code> | <code>typing.Union[int, float]</code> | The max allowed TTL in seconds for STS credentials (credentials TTL are capped to max_sts_ttl). |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRoleConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRoleConfig.property.permissionsBoundaryArn">permissions_boundary_arn</a></code> | <code>str</code> | The ARN of the AWS Permissions Boundary to attach to IAM users created in the role. |
@@ -1421,7 +1464,7 @@ backend: str
 
 The path of the AWS Secret Backend the role belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_secret_backend_role#backend AwsSecretBackendRole#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#backend AwsSecretBackendRole#backend}
 
 ---
 
@@ -1435,7 +1478,7 @@ credential_type: str
 
 Role credential type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_secret_backend_role#credential_type AwsSecretBackendRole#credential_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#credential_type AwsSecretBackendRole#credential_type}
 
 ---
 
@@ -1449,7 +1492,7 @@ name: str
 
 Unique name for the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_secret_backend_role#name AwsSecretBackendRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#name AwsSecretBackendRole#name}
 
 ---
 
@@ -1465,7 +1508,7 @@ The default TTL in seconds for STS credentials.
 
 When a TTL is not specified when STS credentials are requested, and a default TTL is specified on the role, then this default TTL will be used. Valid only when credential_type is one of assumed_role or federation_token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_secret_backend_role#default_sts_ttl AwsSecretBackendRole#default_sts_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#default_sts_ttl AwsSecretBackendRole#default_sts_ttl}
 
 ---
 
@@ -1481,7 +1524,21 @@ A list of IAM group names.
 
 IAM users generated against this vault role will be added to these IAM Groups. For a credential type of assumed_role or federation_token, the policies sent to the corresponding AWS call (sts:AssumeRole or sts:GetFederation) will be the policies from each group in iam_groups combined with the policy_document and policy_arns parameters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_secret_backend_role#iam_groups AwsSecretBackendRole#iam_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#iam_groups AwsSecretBackendRole#iam_groups}
+
+---
+
+##### `iam_tags`<sup>Optional</sup> <a name="iam_tags" id="@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRoleConfig.property.iamTags"></a>
+
+```python
+iam_tags: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+A map of strings representing key/value pairs used as tags for any IAM user created by this role.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#iam_tags AwsSecretBackendRole#iam_tags}
 
 ---
 
@@ -1493,7 +1550,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_secret_backend_role#id AwsSecretBackendRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#id AwsSecretBackendRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1512,7 +1569,7 @@ The max allowed TTL in seconds for STS credentials (credentials TTL are capped t
 
 Valid only when credential_type is one of assumed_role or federation_token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_secret_backend_role#max_sts_ttl AwsSecretBackendRole#max_sts_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#max_sts_ttl AwsSecretBackendRole#max_sts_ttl}
 
 ---
 
@@ -1526,7 +1583,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_secret_backend_role#namespace AwsSecretBackendRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#namespace AwsSecretBackendRole#namespace}
 
 ---
 
@@ -1542,7 +1599,7 @@ The ARN of the AWS Permissions Boundary to attach to IAM users created in the ro
 
 Valid only when credential_type is iam_user. If not specified, then no permissions boundary policy will be attached.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_secret_backend_role#permissions_boundary_arn AwsSecretBackendRole#permissions_boundary_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#permissions_boundary_arn AwsSecretBackendRole#permissions_boundary_arn}
 
 ---
 
@@ -1556,7 +1613,7 @@ policy_arns: typing.List[str]
 
 ARN for an existing IAM policy the role should use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_secret_backend_role#policy_arns AwsSecretBackendRole#policy_arns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#policy_arns AwsSecretBackendRole#policy_arns}
 
 ---
 
@@ -1570,7 +1627,7 @@ policy_document: str
 
 IAM policy the role should use in JSON format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_secret_backend_role#policy_document AwsSecretBackendRole#policy_document}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#policy_document AwsSecretBackendRole#policy_document}
 
 ---
 
@@ -1584,7 +1641,7 @@ role_arns: typing.List[str]
 
 ARNs of AWS roles allowed to be assumed. Only valid when credential_type is 'assumed_role'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_secret_backend_role#role_arns AwsSecretBackendRole#role_arns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#role_arns AwsSecretBackendRole#role_arns}
 
 ---
 
@@ -1598,7 +1655,7 @@ user_path: str
 
 The path for the user name. Valid only when credential_type is iam_user. Default is /.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_secret_backend_role#user_path AwsSecretBackendRole#user_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#user_path AwsSecretBackendRole#user_path}
 
 ---
 

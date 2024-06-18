@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ldap_secret_backend
+// https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,188 +10,224 @@ export interface LdapSecretBackendConfig extends cdktf.TerraformMetaArguments {
   /**
   * List of managed key registry entry names that the mount in question is allowed to access
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ldap_secret_backend#allowed_managed_keys LdapSecretBackend#allowed_managed_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend#allowed_managed_keys LdapSecretBackend#allowed_managed_keys}
   */
   readonly allowedManagedKeys?: string[];
   /**
+  * List of headers to allow and pass from the request to the plugin
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend#allowed_response_headers LdapSecretBackend#allowed_response_headers}
+  */
+  readonly allowedResponseHeaders?: string[];
+  /**
   * Specifies the list of keys that will not be HMAC'd by audit devices in the request data object.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ldap_secret_backend#audit_non_hmac_request_keys LdapSecretBackend#audit_non_hmac_request_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend#audit_non_hmac_request_keys LdapSecretBackend#audit_non_hmac_request_keys}
   */
   readonly auditNonHmacRequestKeys?: string[];
   /**
   * Specifies the list of keys that will not be HMAC'd by audit devices in the response data object.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ldap_secret_backend#audit_non_hmac_response_keys LdapSecretBackend#audit_non_hmac_response_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend#audit_non_hmac_response_keys LdapSecretBackend#audit_non_hmac_response_keys}
   */
   readonly auditNonHmacResponseKeys?: string[];
   /**
   * Distinguished name of object to bind when performing user and group search.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ldap_secret_backend#binddn LdapSecretBackend#binddn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend#binddn LdapSecretBackend#binddn}
   */
   readonly binddn: string;
   /**
   * LDAP password for searching for the user DN.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ldap_secret_backend#bindpass LdapSecretBackend#bindpass}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend#bindpass LdapSecretBackend#bindpass}
   */
   readonly bindpass: string;
   /**
   * CA certificate to use when verifying LDAP server certificate, must be x509 PEM encoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ldap_secret_backend#certificate LdapSecretBackend#certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend#certificate LdapSecretBackend#certificate}
   */
   readonly certificate?: string;
   /**
   * Client certificate to provide to the LDAP server, must be x509 PEM encoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ldap_secret_backend#client_tls_cert LdapSecretBackend#client_tls_cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend#client_tls_cert LdapSecretBackend#client_tls_cert}
   */
   readonly clientTlsCert?: string;
   /**
   * Client certificate key to provide to the LDAP server, must be x509 PEM encoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ldap_secret_backend#client_tls_key LdapSecretBackend#client_tls_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend#client_tls_key LdapSecretBackend#client_tls_key}
   */
   readonly clientTlsKey?: string;
   /**
   * Timeout, in seconds, when attempting to connect to the LDAP server before trying the next URL in the configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ldap_secret_backend#connection_timeout LdapSecretBackend#connection_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend#connection_timeout LdapSecretBackend#connection_timeout}
   */
   readonly connectionTimeout?: number;
   /**
   * Default lease duration for tokens and secrets in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ldap_secret_backend#default_lease_ttl_seconds LdapSecretBackend#default_lease_ttl_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend#default_lease_ttl_seconds LdapSecretBackend#default_lease_ttl_seconds}
   */
   readonly defaultLeaseTtlSeconds?: number;
   /**
+  * List of headers to allow and pass from the request to the plugin
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend#delegated_auth_accessors LdapSecretBackend#delegated_auth_accessors}
+  */
+  readonly delegatedAuthAccessors?: string[];
+  /**
   * Human-friendly description of the mount
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ldap_secret_backend#description LdapSecretBackend#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend#description LdapSecretBackend#description}
   */
   readonly description?: string;
   /**
   * If set, opts out of mount migration on path updates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ldap_secret_backend#disable_remount LdapSecretBackend#disable_remount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend#disable_remount LdapSecretBackend#disable_remount}
   */
   readonly disableRemount?: boolean | cdktf.IResolvable;
   /**
   * Enable the secrets engine to access Vault's external entropy source
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ldap_secret_backend#external_entropy_access LdapSecretBackend#external_entropy_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend#external_entropy_access LdapSecretBackend#external_entropy_access}
   */
   readonly externalEntropyAccess?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ldap_secret_backend#id LdapSecretBackend#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend#id LdapSecretBackend#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
+  * The key to use for signing plugin workload identity tokens
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend#identity_token_key LdapSecretBackend#identity_token_key}
+  */
+  readonly identityTokenKey?: string;
+  /**
   * Skip LDAP server SSL Certificate verification - insecure and not recommended for production use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ldap_secret_backend#insecure_tls LdapSecretBackend#insecure_tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend#insecure_tls LdapSecretBackend#insecure_tls}
   */
   readonly insecureTls?: boolean | cdktf.IResolvable;
   /**
+  * Specifies whether to show this mount in the UI-specific listing endpoint
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend#listing_visibility LdapSecretBackend#listing_visibility}
+  */
+  readonly listingVisibility?: string;
+  /**
   * Local mount flag that can be explicitly set to true to enforce local mount in HA environment
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ldap_secret_backend#local LdapSecretBackend#local}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend#local LdapSecretBackend#local}
   */
   readonly local?: boolean | cdktf.IResolvable;
   /**
   * Maximum possible lease duration for tokens and secrets in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ldap_secret_backend#max_lease_ttl_seconds LdapSecretBackend#max_lease_ttl_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend#max_lease_ttl_seconds LdapSecretBackend#max_lease_ttl_seconds}
   */
   readonly maxLeaseTtlSeconds?: number;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ldap_secret_backend#namespace LdapSecretBackend#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend#namespace LdapSecretBackend#namespace}
   */
   readonly namespace?: string;
   /**
   * Specifies mount type specific options that are passed to the backend
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ldap_secret_backend#options LdapSecretBackend#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend#options LdapSecretBackend#options}
   */
   readonly options?: { [key: string]: string };
   /**
+  * List of headers to allow and pass from the request to the plugin
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend#passthrough_request_headers LdapSecretBackend#passthrough_request_headers}
+  */
+  readonly passthroughRequestHeaders?: string[];
+  /**
   * Name of the password policy to use to generate passwords.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ldap_secret_backend#password_policy LdapSecretBackend#password_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend#password_policy LdapSecretBackend#password_policy}
   */
   readonly passwordPolicy?: string;
   /**
   * The path where the LDAP secrets backend is mounted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ldap_secret_backend#path LdapSecretBackend#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend#path LdapSecretBackend#path}
   */
   readonly path?: string;
   /**
+  * Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend#plugin_version LdapSecretBackend#plugin_version}
+  */
+  readonly pluginVersion?: string;
+  /**
   * Timeout, in seconds, for the connection when making requests against the server before returning back an error.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ldap_secret_backend#request_timeout LdapSecretBackend#request_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend#request_timeout LdapSecretBackend#request_timeout}
   */
   readonly requestTimeout?: number;
   /**
   * The LDAP schema to use when storing entry passwords. Valid schemas include openldap, ad, and racf.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ldap_secret_backend#schema LdapSecretBackend#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend#schema LdapSecretBackend#schema}
   */
   readonly schema?: string;
   /**
   * Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ldap_secret_backend#seal_wrap LdapSecretBackend#seal_wrap}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend#seal_wrap LdapSecretBackend#seal_wrap}
   */
   readonly sealWrap?: boolean | cdktf.IResolvable;
   /**
   * Skip rotation of static role secrets on import.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ldap_secret_backend#skip_static_role_import_rotation LdapSecretBackend#skip_static_role_import_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend#skip_static_role_import_rotation LdapSecretBackend#skip_static_role_import_rotation}
   */
   readonly skipStaticRoleImportRotation?: boolean | cdktf.IResolvable;
   /**
   * Issue a StartTLS command after establishing unencrypted connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ldap_secret_backend#starttls LdapSecretBackend#starttls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend#starttls LdapSecretBackend#starttls}
   */
   readonly starttls?: boolean | cdktf.IResolvable;
   /**
   * Enables userPrincipalDomain login with [username]@UPNDomain.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ldap_secret_backend#upndomain LdapSecretBackend#upndomain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend#upndomain LdapSecretBackend#upndomain}
   */
   readonly upndomain?: string;
   /**
   * LDAP URL to connect to (default: ldap://127.0.0.1). Multiple URLs can be specified by concatenating them with commas; they will be tried in-order.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ldap_secret_backend#url LdapSecretBackend#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend#url LdapSecretBackend#url}
   */
   readonly url?: string;
   /**
   * Attribute used for users (default: cn)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ldap_secret_backend#userattr LdapSecretBackend#userattr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend#userattr LdapSecretBackend#userattr}
   */
   readonly userattr?: string;
   /**
   * LDAP domain to use for users (eg: ou=People,dc=example,dc=org)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ldap_secret_backend#userdn LdapSecretBackend#userdn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend#userdn LdapSecretBackend#userdn}
   */
   readonly userdn?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ldap_secret_backend vault_ldap_secret_backend}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend vault_ldap_secret_backend}
 */
 export class LdapSecretBackend extends cdktf.TerraformResource {
 
@@ -212,7 +243,7 @@ export class LdapSecretBackend extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a LdapSecretBackend resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LdapSecretBackend to import
-  * @param importFromId The id of the existing LdapSecretBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ldap_secret_backend#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LdapSecretBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LdapSecretBackend to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -224,7 +255,7 @@ export class LdapSecretBackend extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ldap_secret_backend vault_ldap_secret_backend} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend vault_ldap_secret_backend} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -235,7 +266,7 @@ export class LdapSecretBackend extends cdktf.TerraformResource {
       terraformResourceType: 'vault_ldap_secret_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '4.2.0',
+        providerVersion: '4.3.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -247,6 +278,7 @@ export class LdapSecretBackend extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._allowedManagedKeys = config.allowedManagedKeys;
+    this._allowedResponseHeaders = config.allowedResponseHeaders;
     this._auditNonHmacRequestKeys = config.auditNonHmacRequestKeys;
     this._auditNonHmacResponseKeys = config.auditNonHmacResponseKeys;
     this._binddn = config.binddn;
@@ -256,17 +288,22 @@ export class LdapSecretBackend extends cdktf.TerraformResource {
     this._clientTlsKey = config.clientTlsKey;
     this._connectionTimeout = config.connectionTimeout;
     this._defaultLeaseTtlSeconds = config.defaultLeaseTtlSeconds;
+    this._delegatedAuthAccessors = config.delegatedAuthAccessors;
     this._description = config.description;
     this._disableRemount = config.disableRemount;
     this._externalEntropyAccess = config.externalEntropyAccess;
     this._id = config.id;
+    this._identityTokenKey = config.identityTokenKey;
     this._insecureTls = config.insecureTls;
+    this._listingVisibility = config.listingVisibility;
     this._local = config.local;
     this._maxLeaseTtlSeconds = config.maxLeaseTtlSeconds;
     this._namespace = config.namespace;
     this._options = config.options;
+    this._passthroughRequestHeaders = config.passthroughRequestHeaders;
     this._passwordPolicy = config.passwordPolicy;
     this._path = config.path;
+    this._pluginVersion = config.pluginVersion;
     this._requestTimeout = config.requestTimeout;
     this._schema = config.schema;
     this._sealWrap = config.sealWrap;
@@ -301,6 +338,22 @@ export class LdapSecretBackend extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get allowedManagedKeysInput() {
     return this._allowedManagedKeys;
+  }
+
+  // allowed_response_headers - computed: false, optional: true, required: false
+  private _allowedResponseHeaders?: string[]; 
+  public get allowedResponseHeaders() {
+    return this.getListAttribute('allowed_response_headers');
+  }
+  public set allowedResponseHeaders(value: string[]) {
+    this._allowedResponseHeaders = value;
+  }
+  public resetAllowedResponseHeaders() {
+    this._allowedResponseHeaders = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedResponseHeadersInput() {
+    return this._allowedResponseHeaders;
   }
 
   // audit_non_hmac_request_keys - computed: true, optional: true, required: false
@@ -441,6 +494,22 @@ export class LdapSecretBackend extends cdktf.TerraformResource {
     return this._defaultLeaseTtlSeconds;
   }
 
+  // delegated_auth_accessors - computed: false, optional: true, required: false
+  private _delegatedAuthAccessors?: string[]; 
+  public get delegatedAuthAccessors() {
+    return this.getListAttribute('delegated_auth_accessors');
+  }
+  public set delegatedAuthAccessors(value: string[]) {
+    this._delegatedAuthAccessors = value;
+  }
+  public resetDelegatedAuthAccessors() {
+    this._delegatedAuthAccessors = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get delegatedAuthAccessorsInput() {
+    return this._delegatedAuthAccessors;
+  }
+
   // description - computed: false, optional: true, required: false
   private _description?: string; 
   public get description() {
@@ -505,6 +574,22 @@ export class LdapSecretBackend extends cdktf.TerraformResource {
     return this._id;
   }
 
+  // identity_token_key - computed: false, optional: true, required: false
+  private _identityTokenKey?: string; 
+  public get identityTokenKey() {
+    return this.getStringAttribute('identity_token_key');
+  }
+  public set identityTokenKey(value: string) {
+    this._identityTokenKey = value;
+  }
+  public resetIdentityTokenKey() {
+    this._identityTokenKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityTokenKeyInput() {
+    return this._identityTokenKey;
+  }
+
   // insecure_tls - computed: false, optional: true, required: false
   private _insecureTls?: boolean | cdktf.IResolvable; 
   public get insecureTls() {
@@ -519,6 +604,22 @@ export class LdapSecretBackend extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get insecureTlsInput() {
     return this._insecureTls;
+  }
+
+  // listing_visibility - computed: false, optional: true, required: false
+  private _listingVisibility?: string; 
+  public get listingVisibility() {
+    return this.getStringAttribute('listing_visibility');
+  }
+  public set listingVisibility(value: string) {
+    this._listingVisibility = value;
+  }
+  public resetListingVisibility() {
+    this._listingVisibility = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get listingVisibilityInput() {
+    return this._listingVisibility;
   }
 
   // local - computed: false, optional: true, required: false
@@ -585,6 +686,22 @@ export class LdapSecretBackend extends cdktf.TerraformResource {
     return this._options;
   }
 
+  // passthrough_request_headers - computed: false, optional: true, required: false
+  private _passthroughRequestHeaders?: string[]; 
+  public get passthroughRequestHeaders() {
+    return this.getListAttribute('passthrough_request_headers');
+  }
+  public set passthroughRequestHeaders(value: string[]) {
+    this._passthroughRequestHeaders = value;
+  }
+  public resetPassthroughRequestHeaders() {
+    this._passthroughRequestHeaders = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passthroughRequestHeadersInput() {
+    return this._passthroughRequestHeaders;
+  }
+
   // password_policy - computed: false, optional: true, required: false
   private _passwordPolicy?: string; 
   public get passwordPolicy() {
@@ -615,6 +732,22 @@ export class LdapSecretBackend extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get pathInput() {
     return this._path;
+  }
+
+  // plugin_version - computed: false, optional: true, required: false
+  private _pluginVersion?: string; 
+  public get pluginVersion() {
+    return this.getStringAttribute('plugin_version');
+  }
+  public set pluginVersion(value: string) {
+    this._pluginVersion = value;
+  }
+  public resetPluginVersion() {
+    this._pluginVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pluginVersionInput() {
+    return this._pluginVersion;
   }
 
   // request_timeout - computed: true, optional: true, required: false
@@ -768,6 +901,7 @@ export class LdapSecretBackend extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       allowed_managed_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedManagedKeys),
+      allowed_response_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedResponseHeaders),
       audit_non_hmac_request_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._auditNonHmacRequestKeys),
       audit_non_hmac_response_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._auditNonHmacResponseKeys),
       binddn: cdktf.stringToTerraform(this._binddn),
@@ -777,17 +911,22 @@ export class LdapSecretBackend extends cdktf.TerraformResource {
       client_tls_key: cdktf.stringToTerraform(this._clientTlsKey),
       connection_timeout: cdktf.numberToTerraform(this._connectionTimeout),
       default_lease_ttl_seconds: cdktf.numberToTerraform(this._defaultLeaseTtlSeconds),
+      delegated_auth_accessors: cdktf.listMapper(cdktf.stringToTerraform, false)(this._delegatedAuthAccessors),
       description: cdktf.stringToTerraform(this._description),
       disable_remount: cdktf.booleanToTerraform(this._disableRemount),
       external_entropy_access: cdktf.booleanToTerraform(this._externalEntropyAccess),
       id: cdktf.stringToTerraform(this._id),
+      identity_token_key: cdktf.stringToTerraform(this._identityTokenKey),
       insecure_tls: cdktf.booleanToTerraform(this._insecureTls),
+      listing_visibility: cdktf.stringToTerraform(this._listingVisibility),
       local: cdktf.booleanToTerraform(this._local),
       max_lease_ttl_seconds: cdktf.numberToTerraform(this._maxLeaseTtlSeconds),
       namespace: cdktf.stringToTerraform(this._namespace),
       options: cdktf.hashMapper(cdktf.stringToTerraform)(this._options),
+      passthrough_request_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._passthroughRequestHeaders),
       password_policy: cdktf.stringToTerraform(this._passwordPolicy),
       path: cdktf.stringToTerraform(this._path),
+      plugin_version: cdktf.stringToTerraform(this._pluginVersion),
       request_timeout: cdktf.numberToTerraform(this._requestTimeout),
       schema: cdktf.stringToTerraform(this._schema),
       seal_wrap: cdktf.booleanToTerraform(this._sealWrap),
@@ -806,6 +945,12 @@ export class LdapSecretBackend extends cdktf.TerraformResource {
         value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedManagedKeys),
         isBlock: false,
         type: "set",
+        storageClassType: "stringList",
+      },
+      allowed_response_headers: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedResponseHeaders),
+        isBlock: false,
+        type: "list",
         storageClassType: "stringList",
       },
       audit_non_hmac_request_keys: {
@@ -862,6 +1007,12 @@ export class LdapSecretBackend extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "number",
       },
+      delegated_auth_accessors: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._delegatedAuthAccessors),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
       description: {
         value: cdktf.stringToHclTerraform(this._description),
         isBlock: false,
@@ -886,11 +1037,23 @@ export class LdapSecretBackend extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      identity_token_key: {
+        value: cdktf.stringToHclTerraform(this._identityTokenKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       insecure_tls: {
         value: cdktf.booleanToHclTerraform(this._insecureTls),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
+      },
+      listing_visibility: {
+        value: cdktf.stringToHclTerraform(this._listingVisibility),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       local: {
         value: cdktf.booleanToHclTerraform(this._local),
@@ -916,6 +1079,12 @@ export class LdapSecretBackend extends cdktf.TerraformResource {
         type: "map",
         storageClassType: "stringMap",
       },
+      passthrough_request_headers: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._passthroughRequestHeaders),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
       password_policy: {
         value: cdktf.stringToHclTerraform(this._passwordPolicy),
         isBlock: false,
@@ -924,6 +1093,12 @@ export class LdapSecretBackend extends cdktf.TerraformResource {
       },
       path: {
         value: cdktf.stringToHclTerraform(this._path),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      plugin_version: {
+        value: cdktf.stringToHclTerraform(this._pluginVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

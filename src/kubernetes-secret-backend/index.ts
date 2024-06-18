@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend
+// https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/kubernetes_secret_backend
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,110 +10,146 @@ export interface KubernetesSecretBackendConfig extends cdktf.TerraformMetaArgume
   /**
   * List of managed key registry entry names that the mount in question is allowed to access
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend#allowed_managed_keys KubernetesSecretBackend#allowed_managed_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/kubernetes_secret_backend#allowed_managed_keys KubernetesSecretBackend#allowed_managed_keys}
   */
   readonly allowedManagedKeys?: string[];
   /**
+  * List of headers to allow and pass from the request to the plugin
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/kubernetes_secret_backend#allowed_response_headers KubernetesSecretBackend#allowed_response_headers}
+  */
+  readonly allowedResponseHeaders?: string[];
+  /**
   * Specifies the list of keys that will not be HMAC'd by audit devices in the request data object.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend#audit_non_hmac_request_keys KubernetesSecretBackend#audit_non_hmac_request_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/kubernetes_secret_backend#audit_non_hmac_request_keys KubernetesSecretBackend#audit_non_hmac_request_keys}
   */
   readonly auditNonHmacRequestKeys?: string[];
   /**
   * Specifies the list of keys that will not be HMAC'd by audit devices in the response data object.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend#audit_non_hmac_response_keys KubernetesSecretBackend#audit_non_hmac_response_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/kubernetes_secret_backend#audit_non_hmac_response_keys KubernetesSecretBackend#audit_non_hmac_response_keys}
   */
   readonly auditNonHmacResponseKeys?: string[];
   /**
   * Default lease duration for tokens and secrets in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend#default_lease_ttl_seconds KubernetesSecretBackend#default_lease_ttl_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/kubernetes_secret_backend#default_lease_ttl_seconds KubernetesSecretBackend#default_lease_ttl_seconds}
   */
   readonly defaultLeaseTtlSeconds?: number;
   /**
+  * List of headers to allow and pass from the request to the plugin
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/kubernetes_secret_backend#delegated_auth_accessors KubernetesSecretBackend#delegated_auth_accessors}
+  */
+  readonly delegatedAuthAccessors?: string[];
+  /**
   * Human-friendly description of the mount
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend#description KubernetesSecretBackend#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/kubernetes_secret_backend#description KubernetesSecretBackend#description}
   */
   readonly description?: string;
   /**
   * Disable defaulting to the local CA certificate and service account JWT when running in a Kubernetes pod.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend#disable_local_ca_jwt KubernetesSecretBackend#disable_local_ca_jwt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/kubernetes_secret_backend#disable_local_ca_jwt KubernetesSecretBackend#disable_local_ca_jwt}
   */
   readonly disableLocalCaJwt?: boolean | cdktf.IResolvable;
   /**
   * Enable the secrets engine to access Vault's external entropy source
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend#external_entropy_access KubernetesSecretBackend#external_entropy_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/kubernetes_secret_backend#external_entropy_access KubernetesSecretBackend#external_entropy_access}
   */
   readonly externalEntropyAccess?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend#id KubernetesSecretBackend#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/kubernetes_secret_backend#id KubernetesSecretBackend#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
+  * The key to use for signing plugin workload identity tokens
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/kubernetes_secret_backend#identity_token_key KubernetesSecretBackend#identity_token_key}
+  */
+  readonly identityTokenKey?: string;
+  /**
   * A PEM-encoded CA certificate used by the secret engine to verify the Kubernetes API server certificate. Defaults to the local pod’s CA if found, or otherwise the host's root CA set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend#kubernetes_ca_cert KubernetesSecretBackend#kubernetes_ca_cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/kubernetes_secret_backend#kubernetes_ca_cert KubernetesSecretBackend#kubernetes_ca_cert}
   */
   readonly kubernetesCaCert?: string;
   /**
   * The Kubernetes API URL to connect to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend#kubernetes_host KubernetesSecretBackend#kubernetes_host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/kubernetes_secret_backend#kubernetes_host KubernetesSecretBackend#kubernetes_host}
   */
   readonly kubernetesHost?: string;
   /**
+  * Specifies whether to show this mount in the UI-specific listing endpoint
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/kubernetes_secret_backend#listing_visibility KubernetesSecretBackend#listing_visibility}
+  */
+  readonly listingVisibility?: string;
+  /**
   * Local mount flag that can be explicitly set to true to enforce local mount in HA environment
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend#local KubernetesSecretBackend#local}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/kubernetes_secret_backend#local KubernetesSecretBackend#local}
   */
   readonly local?: boolean | cdktf.IResolvable;
   /**
   * Maximum possible lease duration for tokens and secrets in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend#max_lease_ttl_seconds KubernetesSecretBackend#max_lease_ttl_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/kubernetes_secret_backend#max_lease_ttl_seconds KubernetesSecretBackend#max_lease_ttl_seconds}
   */
   readonly maxLeaseTtlSeconds?: number;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend#namespace KubernetesSecretBackend#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/kubernetes_secret_backend#namespace KubernetesSecretBackend#namespace}
   */
   readonly namespace?: string;
   /**
   * Specifies mount type specific options that are passed to the backend
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend#options KubernetesSecretBackend#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/kubernetes_secret_backend#options KubernetesSecretBackend#options}
   */
   readonly options?: { [key: string]: string };
   /**
+  * List of headers to allow and pass from the request to the plugin
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/kubernetes_secret_backend#passthrough_request_headers KubernetesSecretBackend#passthrough_request_headers}
+  */
+  readonly passthroughRequestHeaders?: string[];
+  /**
   * Where the secret backend will be mounted
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend#path KubernetesSecretBackend#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/kubernetes_secret_backend#path KubernetesSecretBackend#path}
   */
   readonly path: string;
   /**
+  * Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/kubernetes_secret_backend#plugin_version KubernetesSecretBackend#plugin_version}
+  */
+  readonly pluginVersion?: string;
+  /**
   * Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend#seal_wrap KubernetesSecretBackend#seal_wrap}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/kubernetes_secret_backend#seal_wrap KubernetesSecretBackend#seal_wrap}
   */
   readonly sealWrap?: boolean | cdktf.IResolvable;
   /**
   * The JSON web token of the service account used by the secrets engine to manage Kubernetes credentials. Defaults to the local pod’s JWT if found.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend#service_account_jwt KubernetesSecretBackend#service_account_jwt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/kubernetes_secret_backend#service_account_jwt KubernetesSecretBackend#service_account_jwt}
   */
   readonly serviceAccountJwt?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend vault_kubernetes_secret_backend}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/kubernetes_secret_backend vault_kubernetes_secret_backend}
 */
 export class KubernetesSecretBackend extends cdktf.TerraformResource {
 
@@ -134,7 +165,7 @@ export class KubernetesSecretBackend extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a KubernetesSecretBackend resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KubernetesSecretBackend to import
-  * @param importFromId The id of the existing KubernetesSecretBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KubernetesSecretBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/kubernetes_secret_backend#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KubernetesSecretBackend to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -146,7 +177,7 @@ export class KubernetesSecretBackend extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend vault_kubernetes_secret_backend} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/kubernetes_secret_backend vault_kubernetes_secret_backend} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -157,7 +188,7 @@ export class KubernetesSecretBackend extends cdktf.TerraformResource {
       terraformResourceType: 'vault_kubernetes_secret_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '4.2.0',
+        providerVersion: '4.3.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -169,20 +200,26 @@ export class KubernetesSecretBackend extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._allowedManagedKeys = config.allowedManagedKeys;
+    this._allowedResponseHeaders = config.allowedResponseHeaders;
     this._auditNonHmacRequestKeys = config.auditNonHmacRequestKeys;
     this._auditNonHmacResponseKeys = config.auditNonHmacResponseKeys;
     this._defaultLeaseTtlSeconds = config.defaultLeaseTtlSeconds;
+    this._delegatedAuthAccessors = config.delegatedAuthAccessors;
     this._description = config.description;
     this._disableLocalCaJwt = config.disableLocalCaJwt;
     this._externalEntropyAccess = config.externalEntropyAccess;
     this._id = config.id;
+    this._identityTokenKey = config.identityTokenKey;
     this._kubernetesCaCert = config.kubernetesCaCert;
     this._kubernetesHost = config.kubernetesHost;
+    this._listingVisibility = config.listingVisibility;
     this._local = config.local;
     this._maxLeaseTtlSeconds = config.maxLeaseTtlSeconds;
     this._namespace = config.namespace;
     this._options = config.options;
+    this._passthroughRequestHeaders = config.passthroughRequestHeaders;
     this._path = config.path;
+    this._pluginVersion = config.pluginVersion;
     this._sealWrap = config.sealWrap;
     this._serviceAccountJwt = config.serviceAccountJwt;
   }
@@ -210,6 +247,22 @@ export class KubernetesSecretBackend extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get allowedManagedKeysInput() {
     return this._allowedManagedKeys;
+  }
+
+  // allowed_response_headers - computed: false, optional: true, required: false
+  private _allowedResponseHeaders?: string[]; 
+  public get allowedResponseHeaders() {
+    return this.getListAttribute('allowed_response_headers');
+  }
+  public set allowedResponseHeaders(value: string[]) {
+    this._allowedResponseHeaders = value;
+  }
+  public resetAllowedResponseHeaders() {
+    this._allowedResponseHeaders = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedResponseHeadersInput() {
+    return this._allowedResponseHeaders;
   }
 
   // audit_non_hmac_request_keys - computed: true, optional: true, required: false
@@ -258,6 +311,22 @@ export class KubernetesSecretBackend extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get defaultLeaseTtlSecondsInput() {
     return this._defaultLeaseTtlSeconds;
+  }
+
+  // delegated_auth_accessors - computed: false, optional: true, required: false
+  private _delegatedAuthAccessors?: string[]; 
+  public get delegatedAuthAccessors() {
+    return this.getListAttribute('delegated_auth_accessors');
+  }
+  public set delegatedAuthAccessors(value: string[]) {
+    this._delegatedAuthAccessors = value;
+  }
+  public resetDelegatedAuthAccessors() {
+    this._delegatedAuthAccessors = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get delegatedAuthAccessorsInput() {
+    return this._delegatedAuthAccessors;
   }
 
   // description - computed: false, optional: true, required: false
@@ -324,6 +393,22 @@ export class KubernetesSecretBackend extends cdktf.TerraformResource {
     return this._id;
   }
 
+  // identity_token_key - computed: false, optional: true, required: false
+  private _identityTokenKey?: string; 
+  public get identityTokenKey() {
+    return this.getStringAttribute('identity_token_key');
+  }
+  public set identityTokenKey(value: string) {
+    this._identityTokenKey = value;
+  }
+  public resetIdentityTokenKey() {
+    this._identityTokenKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityTokenKeyInput() {
+    return this._identityTokenKey;
+  }
+
   // kubernetes_ca_cert - computed: false, optional: true, required: false
   private _kubernetesCaCert?: string; 
   public get kubernetesCaCert() {
@@ -354,6 +439,22 @@ export class KubernetesSecretBackend extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get kubernetesHostInput() {
     return this._kubernetesHost;
+  }
+
+  // listing_visibility - computed: false, optional: true, required: false
+  private _listingVisibility?: string; 
+  public get listingVisibility() {
+    return this.getStringAttribute('listing_visibility');
+  }
+  public set listingVisibility(value: string) {
+    this._listingVisibility = value;
+  }
+  public resetListingVisibility() {
+    this._listingVisibility = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get listingVisibilityInput() {
+    return this._listingVisibility;
   }
 
   // local - computed: false, optional: true, required: false
@@ -420,6 +521,22 @@ export class KubernetesSecretBackend extends cdktf.TerraformResource {
     return this._options;
   }
 
+  // passthrough_request_headers - computed: false, optional: true, required: false
+  private _passthroughRequestHeaders?: string[]; 
+  public get passthroughRequestHeaders() {
+    return this.getListAttribute('passthrough_request_headers');
+  }
+  public set passthroughRequestHeaders(value: string[]) {
+    this._passthroughRequestHeaders = value;
+  }
+  public resetPassthroughRequestHeaders() {
+    this._passthroughRequestHeaders = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passthroughRequestHeadersInput() {
+    return this._passthroughRequestHeaders;
+  }
+
   // path - computed: false, optional: false, required: true
   private _path?: string; 
   public get path() {
@@ -431,6 +548,22 @@ export class KubernetesSecretBackend extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get pathInput() {
     return this._path;
+  }
+
+  // plugin_version - computed: false, optional: true, required: false
+  private _pluginVersion?: string; 
+  public get pluginVersion() {
+    return this.getStringAttribute('plugin_version');
+  }
+  public set pluginVersion(value: string) {
+    this._pluginVersion = value;
+  }
+  public resetPluginVersion() {
+    this._pluginVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pluginVersionInput() {
+    return this._pluginVersion;
   }
 
   // seal_wrap - computed: true, optional: true, required: false
@@ -472,20 +605,26 @@ export class KubernetesSecretBackend extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       allowed_managed_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedManagedKeys),
+      allowed_response_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedResponseHeaders),
       audit_non_hmac_request_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._auditNonHmacRequestKeys),
       audit_non_hmac_response_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._auditNonHmacResponseKeys),
       default_lease_ttl_seconds: cdktf.numberToTerraform(this._defaultLeaseTtlSeconds),
+      delegated_auth_accessors: cdktf.listMapper(cdktf.stringToTerraform, false)(this._delegatedAuthAccessors),
       description: cdktf.stringToTerraform(this._description),
       disable_local_ca_jwt: cdktf.booleanToTerraform(this._disableLocalCaJwt),
       external_entropy_access: cdktf.booleanToTerraform(this._externalEntropyAccess),
       id: cdktf.stringToTerraform(this._id),
+      identity_token_key: cdktf.stringToTerraform(this._identityTokenKey),
       kubernetes_ca_cert: cdktf.stringToTerraform(this._kubernetesCaCert),
       kubernetes_host: cdktf.stringToTerraform(this._kubernetesHost),
+      listing_visibility: cdktf.stringToTerraform(this._listingVisibility),
       local: cdktf.booleanToTerraform(this._local),
       max_lease_ttl_seconds: cdktf.numberToTerraform(this._maxLeaseTtlSeconds),
       namespace: cdktf.stringToTerraform(this._namespace),
       options: cdktf.hashMapper(cdktf.stringToTerraform)(this._options),
+      passthrough_request_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._passthroughRequestHeaders),
       path: cdktf.stringToTerraform(this._path),
+      plugin_version: cdktf.stringToTerraform(this._pluginVersion),
       seal_wrap: cdktf.booleanToTerraform(this._sealWrap),
       service_account_jwt: cdktf.stringToTerraform(this._serviceAccountJwt),
     };
@@ -497,6 +636,12 @@ export class KubernetesSecretBackend extends cdktf.TerraformResource {
         value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedManagedKeys),
         isBlock: false,
         type: "set",
+        storageClassType: "stringList",
+      },
+      allowed_response_headers: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedResponseHeaders),
+        isBlock: false,
+        type: "list",
         storageClassType: "stringList",
       },
       audit_non_hmac_request_keys: {
@@ -516,6 +661,12 @@ export class KubernetesSecretBackend extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "number",
+      },
+      delegated_auth_accessors: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._delegatedAuthAccessors),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
       },
       description: {
         value: cdktf.stringToHclTerraform(this._description),
@@ -541,6 +692,12 @@ export class KubernetesSecretBackend extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      identity_token_key: {
+        value: cdktf.stringToHclTerraform(this._identityTokenKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       kubernetes_ca_cert: {
         value: cdktf.stringToHclTerraform(this._kubernetesCaCert),
         isBlock: false,
@@ -549,6 +706,12 @@ export class KubernetesSecretBackend extends cdktf.TerraformResource {
       },
       kubernetes_host: {
         value: cdktf.stringToHclTerraform(this._kubernetesHost),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      listing_visibility: {
+        value: cdktf.stringToHclTerraform(this._listingVisibility),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -577,8 +740,20 @@ export class KubernetesSecretBackend extends cdktf.TerraformResource {
         type: "map",
         storageClassType: "stringMap",
       },
+      passthrough_request_headers: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._passthroughRequestHeaders),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
       path: {
         value: cdktf.stringToHclTerraform(this._path),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      plugin_version: {
+        value: cdktf.stringToHclTerraform(this._pluginVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/auth_backend
+// https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/auth_backend
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,82 +10,88 @@ export interface AuthBackendConfig extends cdktf.TerraformMetaArguments {
   /**
   * The description of the auth backend
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/auth_backend#description AuthBackend#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/auth_backend#description AuthBackend#description}
   */
   readonly description?: string;
   /**
   * If set, opts out of mount migration on path updates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/auth_backend#disable_remount AuthBackend#disable_remount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/auth_backend#disable_remount AuthBackend#disable_remount}
   */
   readonly disableRemount?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/auth_backend#id AuthBackend#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/auth_backend#id AuthBackend#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
+  * The key to use for signing identity tokens.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/auth_backend#identity_token_key AuthBackend#identity_token_key}
+  */
+  readonly identityTokenKey?: string;
+  /**
   * Specifies if the auth method is local only
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/auth_backend#local AuthBackend#local}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/auth_backend#local AuthBackend#local}
   */
   readonly local?: boolean | cdktf.IResolvable;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/auth_backend#namespace AuthBackend#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/auth_backend#namespace AuthBackend#namespace}
   */
   readonly namespace?: string;
   /**
   * path to mount the backend. This defaults to the type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/auth_backend#path AuthBackend#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/auth_backend#path AuthBackend#path}
   */
   readonly path?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/auth_backend#tune AuthBackend#tune}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/auth_backend#tune AuthBackend#tune}
   */
   readonly tune?: AuthBackendTune[] | cdktf.IResolvable;
   /**
   * Name of the auth backend
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/auth_backend#type AuthBackend#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/auth_backend#type AuthBackend#type}
   */
   readonly type: string;
 }
 export interface AuthBackendTune {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/auth_backend#allowed_response_headers AuthBackend#allowed_response_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/auth_backend#allowed_response_headers AuthBackend#allowed_response_headers}
   */
   readonly allowedResponseHeaders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/auth_backend#audit_non_hmac_request_keys AuthBackend#audit_non_hmac_request_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/auth_backend#audit_non_hmac_request_keys AuthBackend#audit_non_hmac_request_keys}
   */
   readonly auditNonHmacRequestKeys?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/auth_backend#audit_non_hmac_response_keys AuthBackend#audit_non_hmac_response_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/auth_backend#audit_non_hmac_response_keys AuthBackend#audit_non_hmac_response_keys}
   */
   readonly auditNonHmacResponseKeys?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/auth_backend#default_lease_ttl AuthBackend#default_lease_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/auth_backend#default_lease_ttl AuthBackend#default_lease_ttl}
   */
   readonly defaultLeaseTtl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/auth_backend#listing_visibility AuthBackend#listing_visibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/auth_backend#listing_visibility AuthBackend#listing_visibility}
   */
   readonly listingVisibility?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/auth_backend#max_lease_ttl AuthBackend#max_lease_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/auth_backend#max_lease_ttl AuthBackend#max_lease_ttl}
   */
   readonly maxLeaseTtl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/auth_backend#passthrough_request_headers AuthBackend#passthrough_request_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/auth_backend#passthrough_request_headers AuthBackend#passthrough_request_headers}
   */
   readonly passthroughRequestHeaders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/auth_backend#token_type AuthBackend#token_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/auth_backend#token_type AuthBackend#token_type}
   */
   readonly tokenType?: string;
 }
@@ -409,7 +410,7 @@ export class AuthBackendTuneList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/auth_backend vault_auth_backend}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/auth_backend vault_auth_backend}
 */
 export class AuthBackend extends cdktf.TerraformResource {
 
@@ -425,7 +426,7 @@ export class AuthBackend extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AuthBackend resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AuthBackend to import
-  * @param importFromId The id of the existing AuthBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/auth_backend#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AuthBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/auth_backend#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AuthBackend to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -437,7 +438,7 @@ export class AuthBackend extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/auth_backend vault_auth_backend} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/auth_backend vault_auth_backend} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -448,7 +449,7 @@ export class AuthBackend extends cdktf.TerraformResource {
       terraformResourceType: 'vault_auth_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '4.2.0',
+        providerVersion: '4.3.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -462,6 +463,7 @@ export class AuthBackend extends cdktf.TerraformResource {
     this._description = config.description;
     this._disableRemount = config.disableRemount;
     this._id = config.id;
+    this._identityTokenKey = config.identityTokenKey;
     this._local = config.local;
     this._namespace = config.namespace;
     this._path = config.path;
@@ -524,6 +526,22 @@ export class AuthBackend extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // identity_token_key - computed: false, optional: true, required: false
+  private _identityTokenKey?: string; 
+  public get identityTokenKey() {
+    return this.getStringAttribute('identity_token_key');
+  }
+  public set identityTokenKey(value: string) {
+    this._identityTokenKey = value;
+  }
+  public resetIdentityTokenKey() {
+    this._identityTokenKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityTokenKeyInput() {
+    return this._identityTokenKey;
   }
 
   // local - computed: false, optional: true, required: false
@@ -612,6 +630,7 @@ export class AuthBackend extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       disable_remount: cdktf.booleanToTerraform(this._disableRemount),
       id: cdktf.stringToTerraform(this._id),
+      identity_token_key: cdktf.stringToTerraform(this._identityTokenKey),
       local: cdktf.booleanToTerraform(this._local),
       namespace: cdktf.stringToTerraform(this._namespace),
       path: cdktf.stringToTerraform(this._path),
@@ -636,6 +655,12 @@ export class AuthBackend extends cdktf.TerraformResource {
       },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      identity_token_key: {
+        value: cdktf.stringToHclTerraform(this._identityTokenKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

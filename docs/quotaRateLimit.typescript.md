@@ -4,7 +4,7 @@
 
 ### QuotaRateLimit <a name="QuotaRateLimit" id="@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/quota_rate_limit vault_quota_rate_limit}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/quota_rate_limit vault_quota_rate_limit}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.resetBlockInterval">resetBlockInterval</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.resetInheritable">resetInheritable</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.resetInterval">resetInterval</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.resetNamespace">resetNamespace</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.resetPath">resetPath</a></code> | *No description.* |
@@ -382,6 +383,12 @@ public resetBlockInterval(): void
 public resetId(): void
 ```
 
+##### `resetInheritable` <a name="resetInheritable" id="@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.resetInheritable"></a>
+
+```typescript
+public resetInheritable(): void
+```
+
 ##### `resetInterval` <a name="resetInterval" id="@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.resetInterval"></a>
 
 ```typescript
@@ -509,7 +516,7 @@ The construct id used in the generated config for the QuotaRateLimit to import.
 
 The id of the existing QuotaRateLimit that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/quota_rate_limit#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/quota_rate_limit#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -541,6 +548,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.blockIntervalInput">blockIntervalInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.inheritableInput">inheritableInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.intervalInput">intervalInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.namespaceInput">namespaceInput</a></code> | <code>string</code> | *No description.* |
@@ -549,6 +557,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.roleInput">roleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.blockInterval">blockInterval</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.inheritable">inheritable</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.interval">interval</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.namespace">namespace</a></code> | <code>string</code> | *No description.* |
@@ -720,6 +729,16 @@ public readonly idInput: string;
 
 ---
 
+##### `inheritableInput`<sup>Optional</sup> <a name="inheritableInput" id="@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.inheritableInput"></a>
+
+```typescript
+public readonly inheritableInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `intervalInput`<sup>Optional</sup> <a name="intervalInput" id="@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.intervalInput"></a>
 
 ```typescript
@@ -797,6 +816,16 @@ public readonly id: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `inheritable`<sup>Required</sup> <a name="inheritable" id="@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.inheritable"></a>
+
+```typescript
+public readonly inheritable: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -904,7 +933,8 @@ const quotaRateLimitConfig: quotaRateLimit.QuotaRateLimitConfig = { ... }
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimitConfig.property.name">name</a></code> | <code>string</code> | The name of the quota. |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimitConfig.property.rate">rate</a></code> | <code>number</code> | The maximum number of requests at any given second to be allowed by the quota rule. |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimitConfig.property.blockInterval">blockInterval</a></code> | <code>number</code> | If set, when a client reaches a rate limit threshold, the client will be prohibited from any further requests until after the 'block_interval' in seconds has elapsed. |
-| <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimitConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/quota_rate_limit#id QuotaRateLimit#id}. |
+| <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimitConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/quota_rate_limit#id QuotaRateLimit#id}. |
+| <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimitConfig.property.inheritable">inheritable</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to true on a quota where path is set to a namespace, the same quota will be cumulatively applied to all child namespace. |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimitConfig.property.interval">interval</a></code> | <code>number</code> | The duration in seconds to enforce rate limiting for. |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimitConfig.property.namespace">namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimitConfig.property.path">path</a></code> | <code>string</code> | Path of the mount or namespace to apply the quota. A blank path configures a global rate limit quota. |
@@ -992,7 +1022,7 @@ public readonly name: string;
 
 The name of the quota.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/quota_rate_limit#name QuotaRateLimit#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/quota_rate_limit#name QuotaRateLimit#name}
 
 ---
 
@@ -1008,7 +1038,7 @@ The maximum number of requests at any given second to be allowed by the quota ru
 
 The rate must be positive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/quota_rate_limit#rate QuotaRateLimit#rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/quota_rate_limit#rate QuotaRateLimit#rate}
 
 ---
 
@@ -1022,7 +1052,7 @@ public readonly blockInterval: number;
 
 If set, when a client reaches a rate limit threshold, the client will be prohibited from any further requests until after the 'block_interval' in seconds has elapsed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/quota_rate_limit#block_interval QuotaRateLimit#block_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/quota_rate_limit#block_interval QuotaRateLimit#block_interval}
 
 ---
 
@@ -1034,10 +1064,26 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/quota_rate_limit#id QuotaRateLimit#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/quota_rate_limit#id QuotaRateLimit#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `inheritable`<sup>Optional</sup> <a name="inheritable" id="@cdktf/provider-vault.quotaRateLimit.QuotaRateLimitConfig.property.inheritable"></a>
+
+```typescript
+public readonly inheritable: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+If set to true on a quota where path is set to a namespace, the same quota will be cumulatively applied to all child namespace.
+
+The inheritable parameter cannot be set to true if the path does not specify a namespace. Only the quotas associated with the root namespace are inheritable by default.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/quota_rate_limit#inheritable QuotaRateLimit#inheritable}
 
 ---
 
@@ -1051,7 +1097,7 @@ public readonly interval: number;
 
 The duration in seconds to enforce rate limiting for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/quota_rate_limit#interval QuotaRateLimit#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/quota_rate_limit#interval QuotaRateLimit#interval}
 
 ---
 
@@ -1065,7 +1111,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/quota_rate_limit#namespace QuotaRateLimit#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/quota_rate_limit#namespace QuotaRateLimit#namespace}
 
 ---
 
@@ -1079,7 +1125,7 @@ public readonly path: string;
 
 Path of the mount or namespace to apply the quota. A blank path configures a global rate limit quota.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/quota_rate_limit#path QuotaRateLimit#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/quota_rate_limit#path QuotaRateLimit#path}
 
 ---
 
@@ -1093,7 +1139,7 @@ public readonly role: string;
 
 If set on a quota where path is set to an auth mount with a concept of roles (such as /auth/approle/), this will make the quota restrict login requests to that mount that are made with the specified role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/quota_rate_limit#role QuotaRateLimit#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/quota_rate_limit#role QuotaRateLimit#role}
 
 ---
 

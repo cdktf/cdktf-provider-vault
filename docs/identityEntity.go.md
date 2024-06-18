@@ -4,12 +4,12 @@
 
 ### IdentityEntity <a name="IdentityEntity" id="@cdktf/provider-vault.identityEntity.IdentityEntity"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/identity_entity vault_identity_entity}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_entity vault_identity_entity}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.identityEntity.IdentityEntity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/identityentity"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identityentity"
 
 identityentity.NewIdentityEntity(scope Construct, id *string, config IdentityEntityConfig) IdentityEntity
 ```
@@ -427,7 +427,7 @@ func ResetPolicies()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.identityEntity.IdentityEntity.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/identityentity"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identityentity"
 
 identityentity.IdentityEntity_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.identityEntity.IdentityEntity.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/identityentity"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identityentity"
 
 identityentity.IdentityEntity_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ identityentity.IdentityEntity_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.identityEntity.IdentityEntity.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/identityentity"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identityentity"
 
 identityentity.IdentityEntity_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ identityentity.IdentityEntity_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.identityEntity.IdentityEntity.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/identityentity"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identityentity"
 
 identityentity.IdentityEntity_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -516,7 +516,7 @@ The construct id used in the generated config for the IdentityEntity to import.
 
 The id of the existing IdentityEntity that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/identity_entity#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_entity#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -870,7 +870,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.identityEntity.IdentityEntityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/identityentity"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identityentity"
 
 &identityentity.IdentityEntityConfig {
 	Connection: interface{},
@@ -903,7 +903,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/identityentity"
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntityConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntityConfig.property.disabled">Disabled</a></code> | <code>interface{}</code> | Whether the entity is disabled. Disabled entities' associated tokens cannot be used, but are not revoked. |
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntityConfig.property.externalPolicies">ExternalPolicies</a></code> | <code>interface{}</code> | Manage policies externally through `vault_identity_entity_policies`. |
-| <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntityConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/identity_entity#id IdentityEntity#id}. |
+| <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntityConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_entity#id IdentityEntity#id}. |
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntityConfig.property.metadata">Metadata</a></code> | <code>*map[string]*string</code> | Metadata to be associated with the entity. |
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntityConfig.property.name">Name</a></code> | <code>*string</code> | Name of the entity. |
 | <code><a href="#@cdktf/provider-vault.identityEntity.IdentityEntityConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
@@ -991,7 +991,7 @@ Disabled interface{}
 
 Whether the entity is disabled. Disabled entities' associated tokens cannot be used, but are not revoked.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/identity_entity#disabled IdentityEntity#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_entity#disabled IdentityEntity#disabled}
 
 ---
 
@@ -1005,7 +1005,7 @@ ExternalPolicies interface{}
 
 Manage policies externally through `vault_identity_entity_policies`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/identity_entity#external_policies IdentityEntity#external_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_entity#external_policies IdentityEntity#external_policies}
 
 ---
 
@@ -1017,7 +1017,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/identity_entity#id IdentityEntity#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_entity#id IdentityEntity#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1034,7 +1034,7 @@ Metadata *map[string]*string
 
 Metadata to be associated with the entity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/identity_entity#metadata IdentityEntity#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_entity#metadata IdentityEntity#metadata}
 
 ---
 
@@ -1048,7 +1048,7 @@ Name *string
 
 Name of the entity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/identity_entity#name IdentityEntity#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_entity#name IdentityEntity#name}
 
 ---
 
@@ -1062,7 +1062,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/identity_entity#namespace IdentityEntity#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_entity#namespace IdentityEntity#namespace}
 
 ---
 
@@ -1076,7 +1076,7 @@ Policies *[]*string
 
 Policies to be tied to the entity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/identity_entity#policies IdentityEntity#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_entity#policies IdentityEntity#policies}
 
 ---
 
