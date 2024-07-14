@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultIdentityOidcClientCreds.DataVaultIdentityOidcClientCreds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentityoidcclientcreds"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/datavaultidentityoidcclientcreds"
 
 datavaultidentityoidcclientcreds.NewDataVaultIdentityOidcClientCreds(scope Construct, id *string, config DataVaultIdentityOidcClientCredsConfig) DataVaultIdentityOidcClientCreds
 ```
@@ -290,7 +290,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.dataVaultIdentityOidcClientCreds.DataVaultIdentityOidcClientCreds.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentityoidcclientcreds"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/datavaultidentityoidcclientcreds"
 
 datavaultidentityoidcclientcreds.DataVaultIdentityOidcClientCreds_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.dataVaultIdentityOidcClientCreds.DataVaultIdentityOidcClientCreds.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentityoidcclientcreds"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/datavaultidentityoidcclientcreds"
 
 datavaultidentityoidcclientcreds.DataVaultIdentityOidcClientCreds_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datavaultidentityoidcclientcreds.DataVaultIdentityOidcClientCreds_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vault.dataVaultIdentityOidcClientCreds.DataVaultIdentityOidcClientCreds.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentityoidcclientcreds"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/datavaultidentityoidcclientcreds"
 
 datavaultidentityoidcclientcreds.DataVaultIdentityOidcClientCreds_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datavaultidentityoidcclientcreds.DataVaultIdentityOidcClientCreds_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.dataVaultIdentityOidcClientCreds.DataVaultIdentityOidcClientCreds.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentityoidcclientcreds"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/datavaultidentityoidcclientcreds"
 
 datavaultidentityoidcclientcreds.DataVaultIdentityOidcClientCreds_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -645,7 +645,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.dataVaultIdentityOidcClientCreds.DataVaultIdentityOidcClientCredsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultidentityoidcclientcreds"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/datavaultidentityoidcclientcreds"
 
 &datavaultidentityoidcclientcreds.DataVaultIdentityOidcClientCredsConfig {
 	Connection: interface{},
