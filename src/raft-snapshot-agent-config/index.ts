@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/raft_snapshot_agent_config
 // generated from terraform resource schema
 
