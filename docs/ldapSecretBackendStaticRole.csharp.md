@@ -4,7 +4,7 @@
 
 ### LdapSecretBackendStaticRole <a name="LdapSecretBackendStaticRole" id="@cdktf/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend_static_role vault_ldap_secret_backend_static_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/ldap_secret_backend_static_role vault_ldap_secret_backend_static_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.Initializer"></a>
 
@@ -502,7 +502,7 @@ The construct id used in the generated config for the LdapSecretBackendStaticRol
 
 The id of the existing LdapSecretBackendStaticRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend_static_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/ldap_secret_backend_static_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -914,7 +914,7 @@ new LdapSecretBackendStaticRoleConfig {
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRoleConfig.property.rotationPeriod">RotationPeriod</a></code> | <code>double</code> | How often Vault should rotate the password of the user entry. |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRoleConfig.property.username">Username</a></code> | <code>string</code> | The username of the existing LDAP entry to manage password rotation for. |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRoleConfig.property.dn">Dn</a></code> | <code>string</code> | Distinguished name (DN) of the existing LDAP entry to manage password rotation for. |
-| <code><a href="#@cdktf/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRoleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend_static_role#id LdapSecretBackendStaticRole#id}. |
+| <code><a href="#@cdktf/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRoleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/ldap_secret_backend_static_role#id LdapSecretBackendStaticRole#id}. |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRoleConfig.property.mount">Mount</a></code> | <code>string</code> | The path where the LDAP secrets backend is mounted. |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRoleConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRoleConfig.property.skipImportRotation">SkipImportRotation</a></code> | <code>object</code> | Skip rotation of the password on import. |
@@ -1001,7 +1001,7 @@ public string RoleName { get; set; }
 
 Name of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend_static_role#role_name LdapSecretBackendStaticRole#role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/ldap_secret_backend_static_role#role_name LdapSecretBackendStaticRole#role_name}
 
 ---
 
@@ -1015,7 +1015,7 @@ public double RotationPeriod { get; set; }
 
 How often Vault should rotate the password of the user entry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend_static_role#rotation_period LdapSecretBackendStaticRole#rotation_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/ldap_secret_backend_static_role#rotation_period LdapSecretBackendStaticRole#rotation_period}
 
 ---
 
@@ -1029,7 +1029,7 @@ public string Username { get; set; }
 
 The username of the existing LDAP entry to manage password rotation for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend_static_role#username LdapSecretBackendStaticRole#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/ldap_secret_backend_static_role#username LdapSecretBackendStaticRole#username}
 
 ---
 
@@ -1043,7 +1043,7 @@ public string Dn { get; set; }
 
 Distinguished name (DN) of the existing LDAP entry to manage password rotation for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend_static_role#dn LdapSecretBackendStaticRole#dn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/ldap_secret_backend_static_role#dn LdapSecretBackendStaticRole#dn}
 
 ---
 
@@ -1055,7 +1055,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend_static_role#id LdapSecretBackendStaticRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/ldap_secret_backend_static_role#id LdapSecretBackendStaticRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1072,7 +1072,7 @@ public string Mount { get; set; }
 
 The path where the LDAP secrets backend is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend_static_role#mount LdapSecretBackendStaticRole#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/ldap_secret_backend_static_role#mount LdapSecretBackendStaticRole#mount}
 
 ---
 
@@ -1086,7 +1086,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend_static_role#namespace LdapSecretBackendStaticRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/ldap_secret_backend_static_role#namespace LdapSecretBackendStaticRole#namespace}
 
 ---
 
@@ -1100,7 +1100,7 @@ public object SkipImportRotation { get; set; }
 
 Skip rotation of the password on import.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend_static_role#skip_import_rotation LdapSecretBackendStaticRole#skip_import_rotation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/ldap_secret_backend_static_role#skip_import_rotation LdapSecretBackendStaticRole#skip_import_rotation}
 
 ---
 

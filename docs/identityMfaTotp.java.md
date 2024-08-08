@@ -4,7 +4,7 @@
 
 ### IdentityMfaTotp <a name="IdentityMfaTotp" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_mfa_totp vault_identity_mfa_totp}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/identity_mfa_totp vault_identity_mfa_totp}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.Initializer"></a>
 
@@ -50,7 +50,7 @@ IdentityMfaTotp.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.Initializer.parameter.issuer">issuer</a></code> | <code>java.lang.String</code> | The name of the key's issuing organization. |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.Initializer.parameter.algorithm">algorithm</a></code> | <code>java.lang.String</code> | Specifies the hashing algorithm used to generate the TOTP code. Options include SHA1, SHA256, SHA512. |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.Initializer.parameter.digits">digits</a></code> | <code>java.lang.Number</code> | The number of digits in the generated TOTP token. This value can either be 6 or 8. |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_mfa_totp#id IdentityMfaTotp#id}. |
+| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/identity_mfa_totp#id IdentityMfaTotp#id}. |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.Initializer.parameter.keySize">keySize</a></code> | <code>java.lang.Number</code> | Specifies the size in bytes of the generated key. |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.Initializer.parameter.maxValidationAttempts">maxValidationAttempts</a></code> | <code>java.lang.Number</code> | The maximum number of consecutive failed validation attempts allowed. |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
@@ -126,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the key's issuing organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_mfa_totp#issuer IdentityMfaTotp#issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/identity_mfa_totp#issuer IdentityMfaTotp#issuer}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the hashing algorithm used to generate the TOTP code. Options include SHA1, SHA256, SHA512.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_mfa_totp#algorithm IdentityMfaTotp#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/identity_mfa_totp#algorithm IdentityMfaTotp#algorithm}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The number of digits in the generated TOTP token. This value can either be 6 or 8.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_mfa_totp#digits IdentityMfaTotp#digits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/identity_mfa_totp#digits IdentityMfaTotp#digits}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_mfa_totp#id IdentityMfaTotp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/identity_mfa_totp#id IdentityMfaTotp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -167,7 +167,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Specifies the size in bytes of the generated key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_mfa_totp#key_size IdentityMfaTotp#key_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/identity_mfa_totp#key_size IdentityMfaTotp#key_size}
 
 ---
 
@@ -177,7 +177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The maximum number of consecutive failed validation attempts allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_mfa_totp#max_validation_attempts IdentityMfaTotp#max_validation_attempts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/identity_mfa_totp#max_validation_attempts IdentityMfaTotp#max_validation_attempts}
 
 ---
 
@@ -187,7 +187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_mfa_totp#namespace IdentityMfaTotp#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/identity_mfa_totp#namespace IdentityMfaTotp#namespace}
 
 ---
 
@@ -197,7 +197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The length of time in seconds used to generate a counter for the TOTP token calculation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_mfa_totp#period IdentityMfaTotp#period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/identity_mfa_totp#period IdentityMfaTotp#period}
 
 ---
 
@@ -207,7 +207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The pixel size of the generated square QR code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_mfa_totp#qr_size IdentityMfaTotp#qr_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/identity_mfa_totp#qr_size IdentityMfaTotp#qr_size}
 
 ---
 
@@ -219,7 +219,7 @@ The number of delay periods that are allowed when validating a TOTP token.
 
 This value can either be 0 or 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_mfa_totp#skew IdentityMfaTotp#skew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/identity_mfa_totp#skew IdentityMfaTotp#skew}
 
 ---
 
@@ -709,7 +709,7 @@ The construct id used in the generated config for the IdentityMfaTotp to import.
 
 The id of the existing IdentityMfaTotp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_mfa_totp#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/identity_mfa_totp#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1247,7 +1247,7 @@ IdentityMfaTotpConfig.builder()
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.issuer">issuer</a></code> | <code>java.lang.String</code> | The name of the key's issuing organization. |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.algorithm">algorithm</a></code> | <code>java.lang.String</code> | Specifies the hashing algorithm used to generate the TOTP code. Options include SHA1, SHA256, SHA512. |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.digits">digits</a></code> | <code>java.lang.Number</code> | The number of digits in the generated TOTP token. This value can either be 6 or 8. |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_mfa_totp#id IdentityMfaTotp#id}. |
+| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/identity_mfa_totp#id IdentityMfaTotp#id}. |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.keySize">keySize</a></code> | <code>java.lang.Number</code> | Specifies the size in bytes of the generated key. |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.maxValidationAttempts">maxValidationAttempts</a></code> | <code>java.lang.Number</code> | The maximum number of consecutive failed validation attempts allowed. |
 | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
@@ -1337,7 +1337,7 @@ public java.lang.String getIssuer();
 
 The name of the key's issuing organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_mfa_totp#issuer IdentityMfaTotp#issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/identity_mfa_totp#issuer IdentityMfaTotp#issuer}
 
 ---
 
@@ -1351,7 +1351,7 @@ public java.lang.String getAlgorithm();
 
 Specifies the hashing algorithm used to generate the TOTP code. Options include SHA1, SHA256, SHA512.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_mfa_totp#algorithm IdentityMfaTotp#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/identity_mfa_totp#algorithm IdentityMfaTotp#algorithm}
 
 ---
 
@@ -1365,7 +1365,7 @@ public java.lang.Number getDigits();
 
 The number of digits in the generated TOTP token. This value can either be 6 or 8.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_mfa_totp#digits IdentityMfaTotp#digits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/identity_mfa_totp#digits IdentityMfaTotp#digits}
 
 ---
 
@@ -1377,7 +1377,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_mfa_totp#id IdentityMfaTotp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/identity_mfa_totp#id IdentityMfaTotp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1394,7 +1394,7 @@ public java.lang.Number getKeySize();
 
 Specifies the size in bytes of the generated key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_mfa_totp#key_size IdentityMfaTotp#key_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/identity_mfa_totp#key_size IdentityMfaTotp#key_size}
 
 ---
 
@@ -1408,7 +1408,7 @@ public java.lang.Number getMaxValidationAttempts();
 
 The maximum number of consecutive failed validation attempts allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_mfa_totp#max_validation_attempts IdentityMfaTotp#max_validation_attempts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/identity_mfa_totp#max_validation_attempts IdentityMfaTotp#max_validation_attempts}
 
 ---
 
@@ -1422,7 +1422,7 @@ public java.lang.String getNamespace();
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_mfa_totp#namespace IdentityMfaTotp#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/identity_mfa_totp#namespace IdentityMfaTotp#namespace}
 
 ---
 
@@ -1436,7 +1436,7 @@ public java.lang.Number getPeriod();
 
 The length of time in seconds used to generate a counter for the TOTP token calculation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_mfa_totp#period IdentityMfaTotp#period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/identity_mfa_totp#period IdentityMfaTotp#period}
 
 ---
 
@@ -1450,7 +1450,7 @@ public java.lang.Number getQrSize();
 
 The pixel size of the generated square QR code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_mfa_totp#qr_size IdentityMfaTotp#qr_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/identity_mfa_totp#qr_size IdentityMfaTotp#qr_size}
 
 ---
 
@@ -1466,7 +1466,7 @@ The number of delay periods that are allowed when validating a TOTP token.
 
 This value can either be 0 or 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/identity_mfa_totp#skew IdentityMfaTotp#skew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/identity_mfa_totp#skew IdentityMfaTotp#skew}
 
 ---
 

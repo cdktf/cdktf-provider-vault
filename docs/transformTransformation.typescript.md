@@ -4,7 +4,7 @@
 
 ### TransformTransformation <a name="TransformTransformation" id="@cdktf/provider-vault.transformTransformation.TransformTransformation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/transform_transformation vault_transform_transformation}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/transform_transformation vault_transform_transformation}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the TransformTransformation to
 
 The id of the existing TransformTransformation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/transform_transformation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/transform_transformation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -992,7 +992,7 @@ const transformTransformationConfig: transformTransformation.TransformTransforma
 | <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.path">path</a></code> | <code>string</code> | The mount path for a back-end, for example, the path given in "$ vault auth enable -path=my-aws aws". |
 | <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.allowedRoles">allowedRoles</a></code> | <code>string[]</code> | The set of roles allowed to perform this transformation. |
 | <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.deletionAllowed">deletionAllowed</a></code> | <code>boolean \| cdktf.IResolvable</code> | If true, this transform can be deleted. Otherwise deletion is blocked while this value remains false. |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/transform_transformation#id TransformTransformation#id}. |
+| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/transform_transformation#id TransformTransformation#id}. |
 | <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.maskingCharacter">maskingCharacter</a></code> | <code>string</code> | The character used to replace data when in masking mode. |
 | <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.namespace">namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.template">template</a></code> | <code>string</code> | The name of the template to use. |
@@ -1082,7 +1082,7 @@ public readonly name: string;
 
 The name of the transformation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/transform_transformation#name TransformTransformation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/transform_transformation#name TransformTransformation#name}
 
 ---
 
@@ -1096,7 +1096,7 @@ public readonly path: string;
 
 The mount path for a back-end, for example, the path given in "$ vault auth enable -path=my-aws aws".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/transform_transformation#path TransformTransformation#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/transform_transformation#path TransformTransformation#path}
 
 ---
 
@@ -1110,7 +1110,7 @@ public readonly allowedRoles: string[];
 
 The set of roles allowed to perform this transformation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/transform_transformation#allowed_roles TransformTransformation#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/transform_transformation#allowed_roles TransformTransformation#allowed_roles}
 
 ---
 
@@ -1124,7 +1124,7 @@ public readonly deletionAllowed: boolean | IResolvable;
 
 If true, this transform can be deleted. Otherwise deletion is blocked while this value remains false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/transform_transformation#deletion_allowed TransformTransformation#deletion_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/transform_transformation#deletion_allowed TransformTransformation#deletion_allowed}
 
 ---
 
@@ -1136,7 +1136,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/transform_transformation#id TransformTransformation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/transform_transformation#id TransformTransformation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1153,7 +1153,7 @@ public readonly maskingCharacter: string;
 
 The character used to replace data when in masking mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/transform_transformation#masking_character TransformTransformation#masking_character}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/transform_transformation#masking_character TransformTransformation#masking_character}
 
 ---
 
@@ -1167,7 +1167,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/transform_transformation#namespace TransformTransformation#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/transform_transformation#namespace TransformTransformation#namespace}
 
 ---
 
@@ -1181,7 +1181,7 @@ public readonly template: string;
 
 The name of the template to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/transform_transformation#template TransformTransformation#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/transform_transformation#template TransformTransformation#template}
 
 ---
 
@@ -1195,7 +1195,7 @@ public readonly templates: string[];
 
 Templates configured for transformation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/transform_transformation#templates TransformTransformation#templates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/transform_transformation#templates TransformTransformation#templates}
 
 ---
 
@@ -1209,7 +1209,7 @@ public readonly tweakSource: string;
 
 The source of where the tweak value comes from. Only valid when in FPE mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/transform_transformation#tweak_source TransformTransformation#tweak_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/transform_transformation#tweak_source TransformTransformation#tweak_source}
 
 ---
 
@@ -1223,7 +1223,7 @@ public readonly type: string;
 
 The type of transformation to perform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/transform_transformation#type TransformTransformation#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/transform_transformation#type TransformTransformation#type}
 
 ---
 

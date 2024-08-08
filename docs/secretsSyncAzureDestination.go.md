@@ -4,12 +4,12 @@
 
 ### SecretsSyncAzureDestination <a name="SecretsSyncAzureDestination" id="@cdktf/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/secrets_sync_azure_destination vault_secrets_sync_azure_destination}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/secrets_sync_azure_destination vault_secrets_sync_azure_destination}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/secretssyncazuredestination"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/secretssyncazuredestination"
 
 secretssyncazuredestination.NewSecretsSyncAzureDestination(scope Construct, id *string, config SecretsSyncAzureDestinationConfig) SecretsSyncAzureDestination
 ```
@@ -448,7 +448,7 @@ func ResetTenantId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/secretssyncazuredestination"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/secretssyncazuredestination"
 
 secretssyncazuredestination.SecretsSyncAzureDestination_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/secretssyncazuredestination"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/secretssyncazuredestination"
 
 secretssyncazuredestination.SecretsSyncAzureDestination_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ secretssyncazuredestination.SecretsSyncAzureDestination_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/secretssyncazuredestination"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/secretssyncazuredestination"
 
 secretssyncazuredestination.SecretsSyncAzureDestination_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ secretssyncazuredestination.SecretsSyncAzureDestination_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/secretssyncazuredestination"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/secretssyncazuredestination"
 
 secretssyncazuredestination.SecretsSyncAzureDestination_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -537,7 +537,7 @@ The construct id used in the generated config for the SecretsSyncAzureDestinatio
 
 The id of the existing SecretsSyncAzureDestination that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/secrets_sync_azure_destination#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/secrets_sync_azure_destination#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -990,7 +990,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestinationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/secretssyncazuredestination"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/secretssyncazuredestination"
 
 &secretssyncazuredestination.SecretsSyncAzureDestinationConfig {
 	Connection: interface{},
@@ -1031,7 +1031,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/secretssyncazuredesti
 | <code><a href="#@cdktf/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestinationConfig.property.cloud">Cloud</a></code> | <code>*string</code> | Specifies a cloud for the client. |
 | <code><a href="#@cdktf/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestinationConfig.property.customTags">CustomTags</a></code> | <code>*map[string]*string</code> | Custom tags to set on the secret managed at the destination. |
 | <code><a href="#@cdktf/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestinationConfig.property.granularity">Granularity</a></code> | <code>*string</code> | Determines what level of information is synced as a distinct resource at the destination. Can be 'secret-path' or 'secret-key'. |
-| <code><a href="#@cdktf/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestinationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/secrets_sync_azure_destination#id SecretsSyncAzureDestination#id}. |
+| <code><a href="#@cdktf/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestinationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/secrets_sync_azure_destination#id SecretsSyncAzureDestination#id}. |
 | <code><a href="#@cdktf/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestinationConfig.property.keyVaultUri">KeyVaultUri</a></code> | <code>*string</code> | URI of an existing Azure Key Vault instance. |
 | <code><a href="#@cdktf/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestinationConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestinationConfig.property.secretNameTemplate">SecretNameTemplate</a></code> | <code>*string</code> | Template describing how to generate external secret names. |
@@ -1119,7 +1119,7 @@ Name *string
 
 Unique name of the Azure destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/secrets_sync_azure_destination#name SecretsSyncAzureDestination#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/secrets_sync_azure_destination#name SecretsSyncAzureDestination#name}
 
 ---
 
@@ -1133,7 +1133,7 @@ ClientId *string
 
 Client ID of an Azure app registration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/secrets_sync_azure_destination#client_id SecretsSyncAzureDestination#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/secrets_sync_azure_destination#client_id SecretsSyncAzureDestination#client_id}
 
 ---
 
@@ -1147,7 +1147,7 @@ ClientSecret *string
 
 Client Secret of an Azure app registration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/secrets_sync_azure_destination#client_secret SecretsSyncAzureDestination#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/secrets_sync_azure_destination#client_secret SecretsSyncAzureDestination#client_secret}
 
 ---
 
@@ -1161,7 +1161,7 @@ Cloud *string
 
 Specifies a cloud for the client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/secrets_sync_azure_destination#cloud SecretsSyncAzureDestination#cloud}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/secrets_sync_azure_destination#cloud SecretsSyncAzureDestination#cloud}
 
 ---
 
@@ -1175,7 +1175,7 @@ CustomTags *map[string]*string
 
 Custom tags to set on the secret managed at the destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/secrets_sync_azure_destination#custom_tags SecretsSyncAzureDestination#custom_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/secrets_sync_azure_destination#custom_tags SecretsSyncAzureDestination#custom_tags}
 
 ---
 
@@ -1189,7 +1189,7 @@ Granularity *string
 
 Determines what level of information is synced as a distinct resource at the destination. Can be 'secret-path' or 'secret-key'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/secrets_sync_azure_destination#granularity SecretsSyncAzureDestination#granularity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/secrets_sync_azure_destination#granularity SecretsSyncAzureDestination#granularity}
 
 ---
 
@@ -1201,7 +1201,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/secrets_sync_azure_destination#id SecretsSyncAzureDestination#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/secrets_sync_azure_destination#id SecretsSyncAzureDestination#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1218,7 +1218,7 @@ KeyVaultUri *string
 
 URI of an existing Azure Key Vault instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/secrets_sync_azure_destination#key_vault_uri SecretsSyncAzureDestination#key_vault_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/secrets_sync_azure_destination#key_vault_uri SecretsSyncAzureDestination#key_vault_uri}
 
 ---
 
@@ -1232,7 +1232,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/secrets_sync_azure_destination#namespace SecretsSyncAzureDestination#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/secrets_sync_azure_destination#namespace SecretsSyncAzureDestination#namespace}
 
 ---
 
@@ -1246,7 +1246,7 @@ SecretNameTemplate *string
 
 Template describing how to generate external secret names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/secrets_sync_azure_destination#secret_name_template SecretsSyncAzureDestination#secret_name_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/secrets_sync_azure_destination#secret_name_template SecretsSyncAzureDestination#secret_name_template}
 
 ---
 
@@ -1260,7 +1260,7 @@ TenantId *string
 
 ID of the target Azure tenant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/secrets_sync_azure_destination#tenant_id SecretsSyncAzureDestination#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/secrets_sync_azure_destination#tenant_id SecretsSyncAzureDestination#tenant_id}
 
 ---
 

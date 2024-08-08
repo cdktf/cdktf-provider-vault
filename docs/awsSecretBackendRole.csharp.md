@@ -4,7 +4,7 @@
 
 ### AwsSecretBackendRole <a name="AwsSecretBackendRole" id="@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role vault_aws_secret_backend_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/aws_secret_backend_role vault_aws_secret_backend_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.resetDefaultStsTtl">ResetDefaultStsTtl</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.resetExternalId">ResetExternalId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.resetIamGroups">ResetIamGroups</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.resetIamTags">ResetIamTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.resetId">ResetId</a></code> | *No description.* |
@@ -83,6 +84,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.resetPolicyArns">ResetPolicyArns</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.resetPolicyDocument">ResetPolicyDocument</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.resetRoleArns">ResetRoleArns</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.resetSessionTags">ResetSessionTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.resetUserPath">ResetUserPath</a></code> | *No description.* |
 
 ---
@@ -381,6 +383,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 private void ResetDefaultStsTtl()
 ```
 
+##### `ResetExternalId` <a name="ResetExternalId" id="@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.resetExternalId"></a>
+
+```csharp
+private void ResetExternalId()
+```
+
 ##### `ResetIamGroups` <a name="ResetIamGroups" id="@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.resetIamGroups"></a>
 
 ```csharp
@@ -433,6 +441,12 @@ private void ResetPolicyDocument()
 
 ```csharp
 private void ResetRoleArns()
+```
+
+##### `ResetSessionTags` <a name="ResetSessionTags" id="@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.resetSessionTags"></a>
+
+```csharp
+private void ResetSessionTags()
 ```
 
 ##### `ResetUserPath` <a name="ResetUserPath" id="@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.resetUserPath"></a>
@@ -544,7 +558,7 @@ The construct id used in the generated config for the AwsSecretBackendRole to im
 
 The id of the existing AwsSecretBackendRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/aws_secret_backend_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -577,6 +591,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.backendInput">BackendInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.credentialTypeInput">CredentialTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.defaultStsTtlInput">DefaultStsTtlInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.externalIdInput">ExternalIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.iamGroupsInput">IamGroupsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.iamTagsInput">IamTagsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
@@ -587,10 +602,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.policyArnsInput">PolicyArnsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.policyDocumentInput">PolicyDocumentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.roleArnsInput">RoleArnsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.sessionTagsInput">SessionTagsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.userPathInput">UserPathInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.backend">Backend</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.credentialType">CredentialType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.defaultStsTtl">DefaultStsTtl</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.externalId">ExternalId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.iamGroups">IamGroups</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.iamTags">IamTags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.id">Id</a></code> | <code>string</code> | *No description.* |
@@ -601,6 +618,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.policyArns">PolicyArns</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.policyDocument">PolicyDocument</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.roleArns">RoleArns</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.sessionTags">SessionTags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.userPath">UserPath</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -777,6 +795,16 @@ public double DefaultStsTtlInput { get; }
 
 ---
 
+##### `ExternalIdInput`<sup>Optional</sup> <a name="ExternalIdInput" id="@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.externalIdInput"></a>
+
+```csharp
+public string ExternalIdInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `IamGroupsInput`<sup>Optional</sup> <a name="IamGroupsInput" id="@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.iamGroupsInput"></a>
 
 ```csharp
@@ -877,6 +905,16 @@ public string[] RoleArnsInput { get; }
 
 ---
 
+##### `SessionTagsInput`<sup>Optional</sup> <a name="SessionTagsInput" id="@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.sessionTagsInput"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, string> SessionTagsInput { get; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, string>
+
+---
+
 ##### `UserPathInput`<sup>Optional</sup> <a name="UserPathInput" id="@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.userPathInput"></a>
 
 ```csharp
@@ -914,6 +952,16 @@ public double DefaultStsTtl { get; }
 ```
 
 - *Type:* double
+
+---
+
+##### `ExternalId`<sup>Required</sup> <a name="ExternalId" id="@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.externalId"></a>
+
+```csharp
+public string ExternalId { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -1017,6 +1065,16 @@ public string[] RoleArns { get; }
 
 ---
 
+##### `SessionTags`<sup>Required</sup> <a name="SessionTags" id="@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.sessionTags"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, string> SessionTags { get; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, string>
+
+---
+
 ##### `UserPath`<sup>Required</sup> <a name="UserPath" id="@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.property.userPath"></a>
 
 ```csharp
@@ -1066,6 +1124,7 @@ new AwsSecretBackendRoleConfig {
     string CredentialType,
     string Name,
     double DefaultStsTtl = null,
+    string ExternalId = null,
     string[] IamGroups = null,
     System.Collections.Generic.IDictionary<string, string> IamTags = null,
     string Id = null,
@@ -1075,6 +1134,7 @@ new AwsSecretBackendRoleConfig {
     string[] PolicyArns = null,
     string PolicyDocument = null,
     string[] RoleArns = null,
+    System.Collections.Generic.IDictionary<string, string> SessionTags = null,
     string UserPath = null
 };
 ```
@@ -1094,15 +1154,17 @@ new AwsSecretBackendRoleConfig {
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRoleConfig.property.credentialType">CredentialType</a></code> | <code>string</code> | Role credential type. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRoleConfig.property.name">Name</a></code> | <code>string</code> | Unique name for the role. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRoleConfig.property.defaultStsTtl">DefaultStsTtl</a></code> | <code>double</code> | The default TTL in seconds for STS credentials. |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRoleConfig.property.externalId">ExternalId</a></code> | <code>string</code> | External ID to set for assume role creds. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRoleConfig.property.iamGroups">IamGroups</a></code> | <code>string[]</code> | A list of IAM group names. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRoleConfig.property.iamTags">IamTags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A map of strings representing key/value pairs used as tags for any IAM user created by this role. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRoleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#id AwsSecretBackendRole#id}. |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRoleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/aws_secret_backend_role#id AwsSecretBackendRole#id}. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRoleConfig.property.maxStsTtl">MaxStsTtl</a></code> | <code>double</code> | The max allowed TTL in seconds for STS credentials (credentials TTL are capped to max_sts_ttl). |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRoleConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRoleConfig.property.permissionsBoundaryArn">PermissionsBoundaryArn</a></code> | <code>string</code> | The ARN of the AWS Permissions Boundary to attach to IAM users created in the role. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRoleConfig.property.policyArns">PolicyArns</a></code> | <code>string[]</code> | ARN for an existing IAM policy the role should use. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRoleConfig.property.policyDocument">PolicyDocument</a></code> | <code>string</code> | IAM policy the role should use in JSON format. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRoleConfig.property.roleArns">RoleArns</a></code> | <code>string[]</code> | ARNs of AWS roles allowed to be assumed. Only valid when credential_type is 'assumed_role'. |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRoleConfig.property.sessionTags">SessionTags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Session tags to be set for assume role creds created. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRoleConfig.property.userPath">UserPath</a></code> | <code>string</code> | The path for the user name. Valid only when credential_type is iam_user. Default is /. |
 
 ---
@@ -1187,7 +1249,7 @@ public string Backend { get; set; }
 
 The path of the AWS Secret Backend the role belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#backend AwsSecretBackendRole#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/aws_secret_backend_role#backend AwsSecretBackendRole#backend}
 
 ---
 
@@ -1201,7 +1263,7 @@ public string CredentialType { get; set; }
 
 Role credential type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#credential_type AwsSecretBackendRole#credential_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/aws_secret_backend_role#credential_type AwsSecretBackendRole#credential_type}
 
 ---
 
@@ -1215,7 +1277,7 @@ public string Name { get; set; }
 
 Unique name for the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#name AwsSecretBackendRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/aws_secret_backend_role#name AwsSecretBackendRole#name}
 
 ---
 
@@ -1231,7 +1293,21 @@ The default TTL in seconds for STS credentials.
 
 When a TTL is not specified when STS credentials are requested, and a default TTL is specified on the role, then this default TTL will be used. Valid only when credential_type is one of assumed_role or federation_token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#default_sts_ttl AwsSecretBackendRole#default_sts_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/aws_secret_backend_role#default_sts_ttl AwsSecretBackendRole#default_sts_ttl}
+
+---
+
+##### `ExternalId`<sup>Optional</sup> <a name="ExternalId" id="@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRoleConfig.property.externalId"></a>
+
+```csharp
+public string ExternalId { get; set; }
+```
+
+- *Type:* string
+
+External ID to set for assume role creds.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/aws_secret_backend_role#external_id AwsSecretBackendRole#external_id}
 
 ---
 
@@ -1247,7 +1323,7 @@ A list of IAM group names.
 
 IAM users generated against this vault role will be added to these IAM Groups. For a credential type of assumed_role or federation_token, the policies sent to the corresponding AWS call (sts:AssumeRole or sts:GetFederation) will be the policies from each group in iam_groups combined with the policy_document and policy_arns parameters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#iam_groups AwsSecretBackendRole#iam_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/aws_secret_backend_role#iam_groups AwsSecretBackendRole#iam_groups}
 
 ---
 
@@ -1261,7 +1337,7 @@ public System.Collections.Generic.IDictionary<string, string> IamTags { get; set
 
 A map of strings representing key/value pairs used as tags for any IAM user created by this role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#iam_tags AwsSecretBackendRole#iam_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/aws_secret_backend_role#iam_tags AwsSecretBackendRole#iam_tags}
 
 ---
 
@@ -1273,7 +1349,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#id AwsSecretBackendRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/aws_secret_backend_role#id AwsSecretBackendRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1292,7 +1368,7 @@ The max allowed TTL in seconds for STS credentials (credentials TTL are capped t
 
 Valid only when credential_type is one of assumed_role or federation_token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#max_sts_ttl AwsSecretBackendRole#max_sts_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/aws_secret_backend_role#max_sts_ttl AwsSecretBackendRole#max_sts_ttl}
 
 ---
 
@@ -1306,7 +1382,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#namespace AwsSecretBackendRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/aws_secret_backend_role#namespace AwsSecretBackendRole#namespace}
 
 ---
 
@@ -1322,7 +1398,7 @@ The ARN of the AWS Permissions Boundary to attach to IAM users created in the ro
 
 Valid only when credential_type is iam_user. If not specified, then no permissions boundary policy will be attached.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#permissions_boundary_arn AwsSecretBackendRole#permissions_boundary_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/aws_secret_backend_role#permissions_boundary_arn AwsSecretBackendRole#permissions_boundary_arn}
 
 ---
 
@@ -1336,7 +1412,7 @@ public string[] PolicyArns { get; set; }
 
 ARN for an existing IAM policy the role should use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#policy_arns AwsSecretBackendRole#policy_arns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/aws_secret_backend_role#policy_arns AwsSecretBackendRole#policy_arns}
 
 ---
 
@@ -1350,7 +1426,7 @@ public string PolicyDocument { get; set; }
 
 IAM policy the role should use in JSON format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#policy_document AwsSecretBackendRole#policy_document}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/aws_secret_backend_role#policy_document AwsSecretBackendRole#policy_document}
 
 ---
 
@@ -1364,7 +1440,21 @@ public string[] RoleArns { get; set; }
 
 ARNs of AWS roles allowed to be assumed. Only valid when credential_type is 'assumed_role'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#role_arns AwsSecretBackendRole#role_arns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/aws_secret_backend_role#role_arns AwsSecretBackendRole#role_arns}
+
+---
+
+##### `SessionTags`<sup>Optional</sup> <a name="SessionTags" id="@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRoleConfig.property.sessionTags"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, string> SessionTags { get; set; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, string>
+
+Session tags to be set for assume role creds created.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/aws_secret_backend_role#session_tags AwsSecretBackendRole#session_tags}
 
 ---
 
@@ -1378,7 +1468,7 @@ public string UserPath { get; set; }
 
 The path for the user name. Valid only when credential_type is iam_user. Default is /.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role#user_path AwsSecretBackendRole#user_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/aws_secret_backend_role#user_path AwsSecretBackendRole#user_path}
 
 ---
 

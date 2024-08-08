@@ -4,7 +4,7 @@
 
 ### DataVaultIdentityOidcPublicKeys <a name="DataVaultIdentityOidcPublicKeys" id="@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeys"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/data-sources/identity_oidc_public_keys vault_identity_oidc_public_keys}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/identity_oidc_public_keys vault_identity_oidc_public_keys}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeys.Initializer"></a>
 
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataVaultIdentityOidcPubli
 
 The id of the existing DataVaultIdentityOidcPublicKeys that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/data-sources/identity_oidc_public_keys#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/identity_oidc_public_keys#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -651,7 +651,7 @@ const dataVaultIdentityOidcPublicKeysConfig: dataVaultIdentityOidcPublicKeys.Dat
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeysConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeysConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeysConfig.property.name">name</a></code> | <code>string</code> | The name of the provider. |
-| <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeysConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/data-sources/identity_oidc_public_keys#id DataVaultIdentityOidcPublicKeys#id}. |
+| <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeysConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/identity_oidc_public_keys#id DataVaultIdentityOidcPublicKeys#id}. |
 | <code><a href="#@cdktf/provider-vault.dataVaultIdentityOidcPublicKeys.DataVaultIdentityOidcPublicKeysConfig.property.namespace">namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -736,7 +736,7 @@ public readonly name: string;
 
 The name of the provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/data-sources/identity_oidc_public_keys#name DataVaultIdentityOidcPublicKeys#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/identity_oidc_public_keys#name DataVaultIdentityOidcPublicKeys#name}
 
 ---
 
@@ -748,7 +748,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/data-sources/identity_oidc_public_keys#id DataVaultIdentityOidcPublicKeys#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/identity_oidc_public_keys#id DataVaultIdentityOidcPublicKeys#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -765,7 +765,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/data-sources/identity_oidc_public_keys#namespace DataVaultIdentityOidcPublicKeys#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/identity_oidc_public_keys#namespace DataVaultIdentityOidcPublicKeys#namespace}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### QuotaLeaseCount <a name="QuotaLeaseCount" id="@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/quota_lease_count vault_quota_lease_count}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/quota_lease_count vault_quota_lease_count}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCount.Initializer"></a>
 
@@ -502,7 +502,7 @@ The construct id used in the generated config for the QuotaLeaseCount to import.
 
 The id of the existing QuotaLeaseCount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/quota_lease_count#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/quota_lease_count#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -874,7 +874,7 @@ const quotaLeaseCountConfig: quotaLeaseCount.QuotaLeaseCountConfig = { ... }
 | <code><a href="#@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCountConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCountConfig.property.maxLeases">maxLeases</a></code> | <code>number</code> | The maximum number of leases to be allowed by the quota rule. The max_leases must be positive. |
 | <code><a href="#@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCountConfig.property.name">name</a></code> | <code>string</code> | The name of the quota. |
-| <code><a href="#@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCountConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/quota_lease_count#id QuotaLeaseCount#id}. |
+| <code><a href="#@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCountConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/quota_lease_count#id QuotaLeaseCount#id}. |
 | <code><a href="#@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCountConfig.property.inheritable">inheritable</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to true on a quota where path is set to a namespace, the same quota will be cumulatively applied to all child namespace. |
 | <code><a href="#@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCountConfig.property.namespace">namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.quotaLeaseCount.QuotaLeaseCountConfig.property.path">path</a></code> | <code>string</code> | Path of the mount or namespace to apply the quota. A blank path configures a global lease count quota. |
@@ -962,7 +962,7 @@ public readonly maxLeases: number;
 
 The maximum number of leases to be allowed by the quota rule. The max_leases must be positive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/quota_lease_count#max_leases QuotaLeaseCount#max_leases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/quota_lease_count#max_leases QuotaLeaseCount#max_leases}
 
 ---
 
@@ -976,7 +976,7 @@ public readonly name: string;
 
 The name of the quota.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/quota_lease_count#name QuotaLeaseCount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/quota_lease_count#name QuotaLeaseCount#name}
 
 ---
 
@@ -988,7 +988,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/quota_lease_count#id QuotaLeaseCount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/quota_lease_count#id QuotaLeaseCount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1007,7 +1007,7 @@ If set to true on a quota where path is set to a namespace, the same quota will 
 
 The inheritable parameter cannot be set to true if the path does not specify a namespace. Only the quotas associated with the root namespace are inheritable by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/quota_lease_count#inheritable QuotaLeaseCount#inheritable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/quota_lease_count#inheritable QuotaLeaseCount#inheritable}
 
 ---
 
@@ -1021,7 +1021,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/quota_lease_count#namespace QuotaLeaseCount#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/quota_lease_count#namespace QuotaLeaseCount#namespace}
 
 ---
 
@@ -1035,7 +1035,7 @@ public readonly path: string;
 
 Path of the mount or namespace to apply the quota. A blank path configures a global lease count quota.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/quota_lease_count#path QuotaLeaseCount#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/quota_lease_count#path QuotaLeaseCount#path}
 
 ---
 
@@ -1049,7 +1049,7 @@ public readonly role: string;
 
 If set on a quota where path is set to an auth mount with a concept of roles (such as /auth/approle/), this will make the quota restrict login requests to that mount that are made with the specified role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/quota_lease_count#role QuotaLeaseCount#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/quota_lease_count#role QuotaLeaseCount#role}
 
 ---
 

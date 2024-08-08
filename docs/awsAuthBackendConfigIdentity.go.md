@@ -4,12 +4,12 @@
 
 ### AwsAuthBackendConfigIdentity <a name="AwsAuthBackendConfigIdentity" id="@cdktf/provider-vault.awsAuthBackendConfigIdentity.AwsAuthBackendConfigIdentity"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_auth_backend_config_identity vault_aws_auth_backend_config_identity}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/aws_auth_backend_config_identity vault_aws_auth_backend_config_identity}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.awsAuthBackendConfigIdentity.AwsAuthBackendConfigIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/awsauthbackendconfigidentity"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendconfigidentity"
 
 awsauthbackendconfigidentity.NewAwsAuthBackendConfigIdentity(scope Construct, id *string, config AwsAuthBackendConfigIdentityConfig) AwsAuthBackendConfigIdentity
 ```
@@ -427,7 +427,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.awsAuthBackendConfigIdentity.AwsAuthBackendConfigIdentity.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/awsauthbackendconfigidentity"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendconfigidentity"
 
 awsauthbackendconfigidentity.AwsAuthBackendConfigIdentity_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.awsAuthBackendConfigIdentity.AwsAuthBackendConfigIdentity.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/awsauthbackendconfigidentity"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendconfigidentity"
 
 awsauthbackendconfigidentity.AwsAuthBackendConfigIdentity_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ awsauthbackendconfigidentity.AwsAuthBackendConfigIdentity_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.awsAuthBackendConfigIdentity.AwsAuthBackendConfigIdentity.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/awsauthbackendconfigidentity"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendconfigidentity"
 
 awsauthbackendconfigidentity.AwsAuthBackendConfigIdentity_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ awsauthbackendconfigidentity.AwsAuthBackendConfigIdentity_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.awsAuthBackendConfigIdentity.AwsAuthBackendConfigIdentity.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/awsauthbackendconfigidentity"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendconfigidentity"
 
 awsauthbackendconfigidentity.AwsAuthBackendConfigIdentity_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -516,7 +516,7 @@ The construct id used in the generated config for the AwsAuthBackendConfigIdenti
 
 The id of the existing AwsAuthBackendConfigIdentity that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_auth_backend_config_identity#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/aws_auth_backend_config_identity#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -870,7 +870,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.awsAuthBackendConfigIdentity.AwsAuthBackendConfigIdentityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/awsauthbackendconfigidentity"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendconfigidentity"
 
 &awsauthbackendconfigidentity.AwsAuthBackendConfigIdentityConfig {
 	Connection: interface{},
@@ -906,7 +906,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/awsauthbackendconfigi
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendConfigIdentity.AwsAuthBackendConfigIdentityConfig.property.ec2Metadata">Ec2Metadata</a></code> | <code>*[]*string</code> | The metadata to include on the token returned by the login endpoint. |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendConfigIdentity.AwsAuthBackendConfigIdentityConfig.property.iamAlias">IamAlias</a></code> | <code>*string</code> | How to generate the identity alias when using the iam auth method. |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendConfigIdentity.AwsAuthBackendConfigIdentityConfig.property.iamMetadata">IamMetadata</a></code> | <code>*[]*string</code> | The metadata to include on the token returned by the login endpoint. |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendConfigIdentity.AwsAuthBackendConfigIdentityConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_auth_backend_config_identity#id AwsAuthBackendConfigIdentity#id}. |
+| <code><a href="#@cdktf/provider-vault.awsAuthBackendConfigIdentity.AwsAuthBackendConfigIdentityConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/aws_auth_backend_config_identity#id AwsAuthBackendConfigIdentity#id}. |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendConfigIdentity.AwsAuthBackendConfigIdentityConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -991,7 +991,7 @@ Backend *string
 
 Unique name of the auth backend to configure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_auth_backend_config_identity#backend AwsAuthBackendConfigIdentity#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/aws_auth_backend_config_identity#backend AwsAuthBackendConfigIdentity#backend}
 
 ---
 
@@ -1005,7 +1005,7 @@ Ec2Alias *string
 
 Configures how to generate the identity alias when using the ec2 auth method.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_auth_backend_config_identity#ec2_alias AwsAuthBackendConfigIdentity#ec2_alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/aws_auth_backend_config_identity#ec2_alias AwsAuthBackendConfigIdentity#ec2_alias}
 
 ---
 
@@ -1019,7 +1019,7 @@ Ec2Metadata *[]*string
 
 The metadata to include on the token returned by the login endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_auth_backend_config_identity#ec2_metadata AwsAuthBackendConfigIdentity#ec2_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/aws_auth_backend_config_identity#ec2_metadata AwsAuthBackendConfigIdentity#ec2_metadata}
 
 ---
 
@@ -1033,7 +1033,7 @@ IamAlias *string
 
 How to generate the identity alias when using the iam auth method.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_auth_backend_config_identity#iam_alias AwsAuthBackendConfigIdentity#iam_alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/aws_auth_backend_config_identity#iam_alias AwsAuthBackendConfigIdentity#iam_alias}
 
 ---
 
@@ -1047,7 +1047,7 @@ IamMetadata *[]*string
 
 The metadata to include on the token returned by the login endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_auth_backend_config_identity#iam_metadata AwsAuthBackendConfigIdentity#iam_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/aws_auth_backend_config_identity#iam_metadata AwsAuthBackendConfigIdentity#iam_metadata}
 
 ---
 
@@ -1059,7 +1059,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_auth_backend_config_identity#id AwsAuthBackendConfigIdentity#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/aws_auth_backend_config_identity#id AwsAuthBackendConfigIdentity#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1076,7 +1076,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_auth_backend_config_identity#namespace AwsAuthBackendConfigIdentity#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/aws_auth_backend_config_identity#namespace AwsAuthBackendConfigIdentity#namespace}
 
 ---
 

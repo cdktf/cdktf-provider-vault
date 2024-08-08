@@ -4,12 +4,12 @@
 
 ### ConfigUiCustomMessage <a name="ConfigUiCustomMessage" id="@cdktf/provider-vault.configUiCustomMessage.ConfigUiCustomMessage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/config_ui_custom_message vault_config_ui_custom_message}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/config_ui_custom_message vault_config_ui_custom_message}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.configUiCustomMessage.ConfigUiCustomMessage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/configuicustommessage"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/configuicustommessage"
 
 configuicustommessage.NewConfigUiCustomMessage(scope Construct, id *string, config ConfigUiCustomMessageConfig) ConfigUiCustomMessage
 ```
@@ -433,7 +433,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.configUiCustomMessage.ConfigUiCustomMessage.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/configuicustommessage"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/configuicustommessage"
 
 configuicustommessage.ConfigUiCustomMessage_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.configUiCustomMessage.ConfigUiCustomMessage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/configuicustommessage"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/configuicustommessage"
 
 configuicustommessage.ConfigUiCustomMessage_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ configuicustommessage.ConfigUiCustomMessage_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.configUiCustomMessage.ConfigUiCustomMessage.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/configuicustommessage"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/configuicustommessage"
 
 configuicustommessage.ConfigUiCustomMessage_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ configuicustommessage.ConfigUiCustomMessage_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.configUiCustomMessage.ConfigUiCustomMessage.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/configuicustommessage"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/configuicustommessage"
 
 configuicustommessage.ConfigUiCustomMessage_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -522,7 +522,7 @@ The construct id used in the generated config for the ConfigUiCustomMessage to i
 
 The id of the existing ConfigUiCustomMessage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/config_ui_custom_message#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/config_ui_custom_message#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -931,7 +931,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.configUiCustomMessage.ConfigUiCustomMessageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/configuicustommessage"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/configuicustommessage"
 
 &configuicustommessage.ConfigUiCustomMessageConfig {
 	Connection: interface{},
@@ -946,7 +946,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/configuicustommessage
 	Title: *string,
 	Authenticated: interface{},
 	EndTime: *string,
-	Link: github.com/cdktf/cdktf-provider-vault-go/vault/v13.configUiCustomMessage.ConfigUiCustomMessageLink,
+	Link: github.com/cdktf/cdktf-provider-vault-go/vault.configUiCustomMessage.ConfigUiCustomMessageLink,
 	Namespace: *string,
 	Options: *map[string]*string,
 	Type: *string,
@@ -1056,7 +1056,7 @@ MessageBase64 *string
 
 The base64-encoded content of the custom message.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/config_ui_custom_message#message_base64 ConfigUiCustomMessage#message_base64}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/config_ui_custom_message#message_base64 ConfigUiCustomMessage#message_base64}
 
 ---
 
@@ -1070,7 +1070,7 @@ StartTime *string
 
 The starting time of the active period of the custom message.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/config_ui_custom_message#start_time ConfigUiCustomMessage#start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/config_ui_custom_message#start_time ConfigUiCustomMessage#start_time}
 
 ---
 
@@ -1084,7 +1084,7 @@ Title *string
 
 The title of the custom message.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/config_ui_custom_message#title ConfigUiCustomMessage#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/config_ui_custom_message#title ConfigUiCustomMessage#title}
 
 ---
 
@@ -1098,7 +1098,7 @@ Authenticated interface{}
 
 A flag indicating whether the custom message is displayed pre-login (false) or post-login (true).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/config_ui_custom_message#authenticated ConfigUiCustomMessage#authenticated}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/config_ui_custom_message#authenticated ConfigUiCustomMessage#authenticated}
 
 ---
 
@@ -1112,7 +1112,7 @@ EndTime *string
 
 The ending time of the active period of the custom message. Can be omitted for non-expiring message.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/config_ui_custom_message#end_time ConfigUiCustomMessage#end_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/config_ui_custom_message#end_time ConfigUiCustomMessage#end_time}
 
 ---
 
@@ -1126,7 +1126,7 @@ Link ConfigUiCustomMessageLink
 
 link block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/config_ui_custom_message#link ConfigUiCustomMessage#link}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/config_ui_custom_message#link ConfigUiCustomMessage#link}
 
 ---
 
@@ -1140,7 +1140,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/config_ui_custom_message#namespace ConfigUiCustomMessage#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/config_ui_custom_message#namespace ConfigUiCustomMessage#namespace}
 
 ---
 
@@ -1154,7 +1154,7 @@ Options *map[string]*string
 
 A map containing additional options for the custom message.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/config_ui_custom_message#options ConfigUiCustomMessage#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/config_ui_custom_message#options ConfigUiCustomMessage#options}
 
 ---
 
@@ -1168,7 +1168,7 @@ Type *string
 
 The display type of custom message. Allowed values are banner and modal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/config_ui_custom_message#type ConfigUiCustomMessage#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/config_ui_custom_message#type ConfigUiCustomMessage#type}
 
 ---
 
@@ -1177,7 +1177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.configUiCustomMessage.ConfigUiCustomMessageLink.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/configuicustommessage"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/configuicustommessage"
 
 &configuicustommessage.ConfigUiCustomMessageLink {
 	Href: *string,
@@ -1204,7 +1204,7 @@ Href *string
 
 The URL of the hyperlink.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/config_ui_custom_message#href ConfigUiCustomMessage#href}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/config_ui_custom_message#href ConfigUiCustomMessage#href}
 
 ---
 
@@ -1218,7 +1218,7 @@ Title *string
 
 The title of the hyperlink.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/config_ui_custom_message#title ConfigUiCustomMessage#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/config_ui_custom_message#title ConfigUiCustomMessage#title}
 
 ---
 
@@ -1229,7 +1229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.configUiCustomMessage.ConfigUiCustomMessageLinkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/configuicustommessage"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/configuicustommessage"
 
 configuicustommessage.NewConfigUiCustomMessageLinkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConfigUiCustomMessageLinkOutputReference
 ```

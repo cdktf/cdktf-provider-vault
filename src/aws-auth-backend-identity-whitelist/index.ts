@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_auth_backend_identity_whitelist
+// https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/aws_auth_backend_identity_whitelist
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface AwsAuthBackendIdentityWhitelistConfig extends cdktf.TerraformMe
   /**
   * Unique name of the auth backend to configure.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_auth_backend_identity_whitelist#backend AwsAuthBackendIdentityWhitelist#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/aws_auth_backend_identity_whitelist#backend AwsAuthBackendIdentityWhitelist#backend}
   */
   readonly backend?: string;
   /**
   * If true, disables the periodic tidying of the identiy whitelist entries.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_auth_backend_identity_whitelist#disable_periodic_tidy AwsAuthBackendIdentityWhitelist#disable_periodic_tidy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/aws_auth_backend_identity_whitelist#disable_periodic_tidy AwsAuthBackendIdentityWhitelist#disable_periodic_tidy}
   */
   readonly disablePeriodicTidy?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_auth_backend_identity_whitelist#id AwsAuthBackendIdentityWhitelist#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/aws_auth_backend_identity_whitelist#id AwsAuthBackendIdentityWhitelist#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,19 +29,19 @@ export interface AwsAuthBackendIdentityWhitelistConfig extends cdktf.TerraformMe
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_auth_backend_identity_whitelist#namespace AwsAuthBackendIdentityWhitelist#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/aws_auth_backend_identity_whitelist#namespace AwsAuthBackendIdentityWhitelist#namespace}
   */
   readonly namespace?: string;
   /**
   * The amount of extra time that must have passed beyond the roletag expiration, before it's removed from backend storage.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_auth_backend_identity_whitelist#safety_buffer AwsAuthBackendIdentityWhitelist#safety_buffer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/aws_auth_backend_identity_whitelist#safety_buffer AwsAuthBackendIdentityWhitelist#safety_buffer}
   */
   readonly safetyBuffer?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_auth_backend_identity_whitelist vault_aws_auth_backend_identity_whitelist}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/aws_auth_backend_identity_whitelist vault_aws_auth_backend_identity_whitelist}
 */
 export class AwsAuthBackendIdentityWhitelist extends cdktf.TerraformResource {
 
@@ -62,7 +57,7 @@ export class AwsAuthBackendIdentityWhitelist extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AwsAuthBackendIdentityWhitelist resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AwsAuthBackendIdentityWhitelist to import
-  * @param importFromId The id of the existing AwsAuthBackendIdentityWhitelist that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_auth_backend_identity_whitelist#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AwsAuthBackendIdentityWhitelist that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/aws_auth_backend_identity_whitelist#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AwsAuthBackendIdentityWhitelist to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +69,7 @@ export class AwsAuthBackendIdentityWhitelist extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_auth_backend_identity_whitelist vault_aws_auth_backend_identity_whitelist} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/aws_auth_backend_identity_whitelist vault_aws_auth_backend_identity_whitelist} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +80,7 @@ export class AwsAuthBackendIdentityWhitelist extends cdktf.TerraformResource {
       terraformResourceType: 'vault_aws_auth_backend_identity_whitelist',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '4.3.0',
+        providerVersion: '4.4.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
