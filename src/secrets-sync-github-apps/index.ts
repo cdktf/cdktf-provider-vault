@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/secrets_sync_github_apps
+// https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/secrets_sync_github_apps
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface SecretsSyncGithubAppsConfig extends cdktf.TerraformMetaArgument
   /**
   * The GitHub application ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/secrets_sync_github_apps#app_id SecretsSyncGithubApps#app_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/secrets_sync_github_apps#app_id SecretsSyncGithubApps#app_id}
   */
   readonly appId: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/secrets_sync_github_apps#id SecretsSyncGithubApps#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/secrets_sync_github_apps#id SecretsSyncGithubApps#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,25 +28,25 @@ export interface SecretsSyncGithubAppsConfig extends cdktf.TerraformMetaArgument
   /**
   * The user-defined name of the GitHub App configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/secrets_sync_github_apps#name SecretsSyncGithubApps#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/secrets_sync_github_apps#name SecretsSyncGithubApps#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/secrets_sync_github_apps#namespace SecretsSyncGithubApps#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/secrets_sync_github_apps#namespace SecretsSyncGithubApps#namespace}
   */
   readonly namespace?: string;
   /**
   * The content of a PEM formatted private key generated on GitHub for the app.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/secrets_sync_github_apps#private_key SecretsSyncGithubApps#private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/secrets_sync_github_apps#private_key SecretsSyncGithubApps#private_key}
   */
   readonly privateKey: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/secrets_sync_github_apps vault_secrets_sync_github_apps}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/secrets_sync_github_apps vault_secrets_sync_github_apps}
 */
 export class SecretsSyncGithubApps extends cdktf.TerraformResource {
 
@@ -62,7 +62,7 @@ export class SecretsSyncGithubApps extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SecretsSyncGithubApps resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecretsSyncGithubApps to import
-  * @param importFromId The id of the existing SecretsSyncGithubApps that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/secrets_sync_github_apps#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecretsSyncGithubApps that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/secrets_sync_github_apps#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecretsSyncGithubApps to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +74,7 @@ export class SecretsSyncGithubApps extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/secrets_sync_github_apps vault_secrets_sync_github_apps} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/secrets_sync_github_apps vault_secrets_sync_github_apps} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,7 @@ export class SecretsSyncGithubApps extends cdktf.TerraformResource {
       terraformResourceType: 'vault_secrets_sync_github_apps',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '4.3.0',
+        providerVersion: '4.4.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

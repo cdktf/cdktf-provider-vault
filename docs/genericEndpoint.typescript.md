@@ -4,7 +4,7 @@
 
 ### GenericEndpoint <a name="GenericEndpoint" id="@cdktf/provider-vault.genericEndpoint.GenericEndpoint"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/generic_endpoint vault_generic_endpoint}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/generic_endpoint vault_generic_endpoint}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.genericEndpoint.GenericEndpoint.Initializer"></a>
 
@@ -509,7 +509,7 @@ The construct id used in the generated config for the GenericEndpoint to import.
 
 The id of the existing GenericEndpoint that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/generic_endpoint#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/generic_endpoint#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -927,7 +927,7 @@ const genericEndpointConfig: genericEndpoint.GenericEndpointConfig = { ... }
 | <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpointConfig.property.path">path</a></code> | <code>string</code> | Full path where to the endpoint that will be written. |
 | <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpointConfig.property.disableDelete">disableDelete</a></code> | <code>boolean \| cdktf.IResolvable</code> | Don't attempt to delete the path from Vault if true. |
 | <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpointConfig.property.disableRead">disableRead</a></code> | <code>boolean \| cdktf.IResolvable</code> | Don't attempt to read the path from Vault if true; drift won't be detected. |
-| <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpointConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/generic_endpoint#id GenericEndpoint#id}. |
+| <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpointConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/generic_endpoint#id GenericEndpoint#id}. |
 | <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpointConfig.property.ignoreAbsentFields">ignoreAbsentFields</a></code> | <code>boolean \| cdktf.IResolvable</code> | When reading, disregard fields not present in data_json. |
 | <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpointConfig.property.namespace">namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.genericEndpoint.GenericEndpointConfig.property.writeFields">writeFields</a></code> | <code>string[]</code> | Top-level fields returned by write to persist in state. |
@@ -1014,7 +1014,7 @@ public readonly dataJson: string;
 
 JSON-encoded data to write.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/generic_endpoint#data_json GenericEndpoint#data_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/generic_endpoint#data_json GenericEndpoint#data_json}
 
 ---
 
@@ -1028,7 +1028,7 @@ public readonly path: string;
 
 Full path where to the endpoint that will be written.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/generic_endpoint#path GenericEndpoint#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/generic_endpoint#path GenericEndpoint#path}
 
 ---
 
@@ -1042,7 +1042,7 @@ public readonly disableDelete: boolean | IResolvable;
 
 Don't attempt to delete the path from Vault if true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/generic_endpoint#disable_delete GenericEndpoint#disable_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/generic_endpoint#disable_delete GenericEndpoint#disable_delete}
 
 ---
 
@@ -1056,7 +1056,7 @@ public readonly disableRead: boolean | IResolvable;
 
 Don't attempt to read the path from Vault if true; drift won't be detected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/generic_endpoint#disable_read GenericEndpoint#disable_read}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/generic_endpoint#disable_read GenericEndpoint#disable_read}
 
 ---
 
@@ -1068,7 +1068,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/generic_endpoint#id GenericEndpoint#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/generic_endpoint#id GenericEndpoint#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1085,7 +1085,7 @@ public readonly ignoreAbsentFields: boolean | IResolvable;
 
 When reading, disregard fields not present in data_json.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/generic_endpoint#ignore_absent_fields GenericEndpoint#ignore_absent_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/generic_endpoint#ignore_absent_fields GenericEndpoint#ignore_absent_fields}
 
 ---
 
@@ -1099,7 +1099,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/generic_endpoint#namespace GenericEndpoint#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/generic_endpoint#namespace GenericEndpoint#namespace}
 
 ---
 
@@ -1113,7 +1113,7 @@ public readonly writeFields: string[];
 
 Top-level fields returned by write to persist in state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/generic_endpoint#write_fields GenericEndpoint#write_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/generic_endpoint#write_fields GenericEndpoint#write_fields}
 
 ---
 

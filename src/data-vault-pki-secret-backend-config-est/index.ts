@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/data-sources/pki_secret_backend_config_est
+// https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/pki_secret_backend_config_est
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataVaultPkiSecretBackendConfigEstConfig extends cdktf.Terrafor
   /**
   * Path where PKI engine is mounted
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/data-sources/pki_secret_backend_config_est#backend DataVaultPkiSecretBackendConfigEst#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/pki_secret_backend_config_est#backend DataVaultPkiSecretBackendConfigEst#backend}
   */
   readonly backend: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/data-sources/pki_secret_backend_config_est#id DataVaultPkiSecretBackendConfigEst#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/pki_secret_backend_config_est#id DataVaultPkiSecretBackendConfigEst#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,7 +28,7 @@ export interface DataVaultPkiSecretBackendConfigEstConfig extends cdktf.Terrafor
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/data-sources/pki_secret_backend_config_est#namespace DataVaultPkiSecretBackendConfigEst#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/pki_secret_backend_config_est#namespace DataVaultPkiSecretBackendConfigEst#namespace}
   */
   readonly namespace?: string;
 }
@@ -116,7 +116,7 @@ export class DataVaultPkiSecretBackendConfigEstAuthenticatorsList extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/data-sources/pki_secret_backend_config_est vault_pki_secret_backend_config_est}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/pki_secret_backend_config_est vault_pki_secret_backend_config_est}
 */
 export class DataVaultPkiSecretBackendConfigEst extends cdktf.TerraformDataSource {
 
@@ -132,7 +132,7 @@ export class DataVaultPkiSecretBackendConfigEst extends cdktf.TerraformDataSourc
   * Generates CDKTF code for importing a DataVaultPkiSecretBackendConfigEst resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataVaultPkiSecretBackendConfigEst to import
-  * @param importFromId The id of the existing DataVaultPkiSecretBackendConfigEst that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/data-sources/pki_secret_backend_config_est#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataVaultPkiSecretBackendConfigEst that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/pki_secret_backend_config_est#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataVaultPkiSecretBackendConfigEst to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -144,7 +144,7 @@ export class DataVaultPkiSecretBackendConfigEst extends cdktf.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/data-sources/pki_secret_backend_config_est vault_pki_secret_backend_config_est} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/pki_secret_backend_config_est vault_pki_secret_backend_config_est} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -155,7 +155,7 @@ export class DataVaultPkiSecretBackendConfigEst extends cdktf.TerraformDataSourc
       terraformResourceType: 'vault_pki_secret_backend_config_est',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '4.3.0',
+        providerVersion: '4.4.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
