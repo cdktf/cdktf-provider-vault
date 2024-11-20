@@ -4,7 +4,7 @@
 
 ### DataVaultAuthBackends <a name="DataVaultAuthBackends" id="@cdktf/provider-vault.dataVaultAuthBackends.DataVaultAuthBackends"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/auth_backends vault_auth_backends}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/auth_backends vault_auth_backends}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultAuthBackends.DataVaultAuthBackends.Initializer"></a>
 
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataVaultAuthBackends to i
 
 The id of the existing DataVaultAuthBackends that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/auth_backends#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/auth_backends#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -679,7 +679,7 @@ new DataVaultAuthBackendsConfig {
 | <code><a href="#@cdktf/provider-vault.dataVaultAuthBackends.DataVaultAuthBackendsConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultAuthBackends.DataVaultAuthBackendsConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultAuthBackends.DataVaultAuthBackendsConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultAuthBackends.DataVaultAuthBackendsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/auth_backends#id DataVaultAuthBackends#id}. |
+| <code><a href="#@cdktf/provider-vault.dataVaultAuthBackends.DataVaultAuthBackendsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/auth_backends#id DataVaultAuthBackends#id}. |
 | <code><a href="#@cdktf/provider-vault.dataVaultAuthBackends.DataVaultAuthBackendsConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.dataVaultAuthBackends.DataVaultAuthBackendsConfig.property.type">Type</a></code> | <code>string</code> | The type of the auth backend. |
 
@@ -763,7 +763,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/auth_backends#id DataVaultAuthBackends#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/auth_backends#id DataVaultAuthBackends#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -780,7 +780,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/auth_backends#namespace DataVaultAuthBackends#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/auth_backends#namespace DataVaultAuthBackends#namespace}
 
 ---
 
@@ -794,7 +794,7 @@ public string Type { get; set; }
 
 The type of the auth backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/auth_backends#type DataVaultAuthBackends#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/auth_backends#type DataVaultAuthBackends#type}
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/approle_auth_backend_role_secret_id
+// https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/approle_auth_backend_role_secret_id
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface ApproleAuthBackendRoleSecretIdConfig extends cdktf.TerraformMet
   /**
   * Unique name of the auth backend to configure.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/approle_auth_backend_role_secret_id#backend ApproleAuthBackendRoleSecretId#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/approle_auth_backend_role_secret_id#backend ApproleAuthBackendRoleSecretId#backend}
   */
   readonly backend?: string;
   /**
   * List of CIDR blocks that can log in using the SecretID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/approle_auth_backend_role_secret_id#cidr_list ApproleAuthBackendRoleSecretId#cidr_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/approle_auth_backend_role_secret_id#cidr_list ApproleAuthBackendRoleSecretId#cidr_list}
   */
   readonly cidrList?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/approle_auth_backend_role_secret_id#id ApproleAuthBackendRoleSecretId#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/approle_auth_backend_role_secret_id#id ApproleAuthBackendRoleSecretId#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,43 +34,55 @@ export interface ApproleAuthBackendRoleSecretIdConfig extends cdktf.TerraformMet
   /**
   * JSON-encoded secret data to write.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/approle_auth_backend_role_secret_id#metadata ApproleAuthBackendRoleSecretId#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/approle_auth_backend_role_secret_id#metadata ApproleAuthBackendRoleSecretId#metadata}
   */
   readonly metadata?: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/approle_auth_backend_role_secret_id#namespace ApproleAuthBackendRoleSecretId#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/approle_auth_backend_role_secret_id#namespace ApproleAuthBackendRoleSecretId#namespace}
   */
   readonly namespace?: string;
   /**
+  * The number of uses for the secret-id.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/approle_auth_backend_role_secret_id#num_uses ApproleAuthBackendRoleSecretId#num_uses}
+  */
+  readonly numUses?: number;
+  /**
   * Name of the role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/approle_auth_backend_role_secret_id#role_name ApproleAuthBackendRoleSecretId#role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/approle_auth_backend_role_secret_id#role_name ApproleAuthBackendRoleSecretId#role_name}
   */
   readonly roleName: string;
   /**
   * The SecretID to be managed. If not specified, Vault auto-generates one.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/approle_auth_backend_role_secret_id#secret_id ApproleAuthBackendRoleSecretId#secret_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/approle_auth_backend_role_secret_id#secret_id ApproleAuthBackendRoleSecretId#secret_id}
   */
   readonly secretId?: string;
   /**
+  * The TTL duration of the SecretID.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/approle_auth_backend_role_secret_id#ttl ApproleAuthBackendRoleSecretId#ttl}
+  */
+  readonly ttl?: number;
+  /**
   * Use the wrapped secret-id accessor as the id of this resource. If false, a fresh secret-id will be regenerated whenever the wrapping token is expired or invalidated through unwrapping.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/approle_auth_backend_role_secret_id#with_wrapped_accessor ApproleAuthBackendRoleSecretId#with_wrapped_accessor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/approle_auth_backend_role_secret_id#with_wrapped_accessor ApproleAuthBackendRoleSecretId#with_wrapped_accessor}
   */
   readonly withWrappedAccessor?: boolean | cdktf.IResolvable;
   /**
   * The TTL duration of the wrapped SecretID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/approle_auth_backend_role_secret_id#wrapping_ttl ApproleAuthBackendRoleSecretId#wrapping_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/approle_auth_backend_role_secret_id#wrapping_ttl ApproleAuthBackendRoleSecretId#wrapping_ttl}
   */
   readonly wrappingTtl?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/approle_auth_backend_role_secret_id vault_approle_auth_backend_role_secret_id}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/approle_auth_backend_role_secret_id vault_approle_auth_backend_role_secret_id}
 */
 export class ApproleAuthBackendRoleSecretId extends cdktf.TerraformResource {
 
@@ -86,7 +98,7 @@ export class ApproleAuthBackendRoleSecretId extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ApproleAuthBackendRoleSecretId resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApproleAuthBackendRoleSecretId to import
-  * @param importFromId The id of the existing ApproleAuthBackendRoleSecretId that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/approle_auth_backend_role_secret_id#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApproleAuthBackendRoleSecretId that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/approle_auth_backend_role_secret_id#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApproleAuthBackendRoleSecretId to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -98,7 +110,7 @@ export class ApproleAuthBackendRoleSecretId extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/approle_auth_backend_role_secret_id vault_approle_auth_backend_role_secret_id} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/approle_auth_backend_role_secret_id vault_approle_auth_backend_role_secret_id} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -109,7 +121,7 @@ export class ApproleAuthBackendRoleSecretId extends cdktf.TerraformResource {
       terraformResourceType: 'vault_approle_auth_backend_role_secret_id',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '4.4.0',
+        providerVersion: '4.5.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -125,8 +137,10 @@ export class ApproleAuthBackendRoleSecretId extends cdktf.TerraformResource {
     this._id = config.id;
     this._metadata = config.metadata;
     this._namespace = config.namespace;
+    this._numUses = config.numUses;
     this._roleName = config.roleName;
     this._secretId = config.secretId;
+    this._ttl = config.ttl;
     this._withWrappedAccessor = config.withWrappedAccessor;
     this._wrappingTtl = config.wrappingTtl;
   }
@@ -220,6 +234,22 @@ export class ApproleAuthBackendRoleSecretId extends cdktf.TerraformResource {
     return this._namespace;
   }
 
+  // num_uses - computed: false, optional: true, required: false
+  private _numUses?: number; 
+  public get numUses() {
+    return this.getNumberAttribute('num_uses');
+  }
+  public set numUses(value: number) {
+    this._numUses = value;
+  }
+  public resetNumUses() {
+    this._numUses = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get numUsesInput() {
+    return this._numUses;
+  }
+
   // role_name - computed: false, optional: false, required: true
   private _roleName?: string; 
   public get roleName() {
@@ -247,6 +277,22 @@ export class ApproleAuthBackendRoleSecretId extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get secretIdInput() {
     return this._secretId;
+  }
+
+  // ttl - computed: false, optional: true, required: false
+  private _ttl?: number; 
+  public get ttl() {
+    return this.getNumberAttribute('ttl');
+  }
+  public set ttl(value: number) {
+    this._ttl = value;
+  }
+  public resetTtl() {
+    this._ttl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ttlInput() {
+    return this._ttl;
   }
 
   // with_wrapped_accessor - computed: false, optional: true, required: false
@@ -302,8 +348,10 @@ export class ApproleAuthBackendRoleSecretId extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       metadata: cdktf.stringToTerraform(this._metadata),
       namespace: cdktf.stringToTerraform(this._namespace),
+      num_uses: cdktf.numberToTerraform(this._numUses),
       role_name: cdktf.stringToTerraform(this._roleName),
       secret_id: cdktf.stringToTerraform(this._secretId),
+      ttl: cdktf.numberToTerraform(this._ttl),
       with_wrapped_accessor: cdktf.booleanToTerraform(this._withWrappedAccessor),
       wrapping_ttl: cdktf.stringToTerraform(this._wrappingTtl),
     };
@@ -341,6 +389,12 @@ export class ApproleAuthBackendRoleSecretId extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      num_uses: {
+        value: cdktf.numberToHclTerraform(this._numUses),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
       role_name: {
         value: cdktf.stringToHclTerraform(this._roleName),
         isBlock: false,
@@ -352,6 +406,12 @@ export class ApproleAuthBackendRoleSecretId extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      ttl: {
+        value: cdktf.numberToHclTerraform(this._ttl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
       },
       with_wrapped_accessor: {
         value: cdktf.booleanToHclTerraform(this._withWrappedAccessor),
