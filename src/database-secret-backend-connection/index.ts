@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection
+// https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +10,23 @@ export interface DatabaseSecretBackendConnectionConfig extends cdktf.TerraformMe
   /**
   * A list of roles that are allowed to use this connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#allowed_roles DatabaseSecretBackendConnection#allowed_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#allowed_roles DatabaseSecretBackendConnection#allowed_roles}
   */
   readonly allowedRoles?: string[];
   /**
   * Unique name of the Vault mount to configure.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#backend DatabaseSecretBackendConnection#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#backend DatabaseSecretBackendConnection#backend}
   */
   readonly backend: string;
   /**
   * A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#data DatabaseSecretBackendConnection#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#data DatabaseSecretBackendConnection#data}
   */
   readonly data?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#id DatabaseSecretBackendConnection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#id DatabaseSecretBackendConnection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,139 +35,139 @@ export interface DatabaseSecretBackendConnectionConfig extends cdktf.TerraformMe
   /**
   * Name of the database connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#name DatabaseSecretBackendConnection#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#name DatabaseSecretBackendConnection#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#namespace DatabaseSecretBackendConnection#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#namespace DatabaseSecretBackendConnection#namespace}
   */
   readonly namespace?: string;
   /**
   * Specifies the name of the plugin to use for this connection. Must be prefixed with the name of one of the supported database engine types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#plugin_name DatabaseSecretBackendConnection#plugin_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#plugin_name DatabaseSecretBackendConnection#plugin_name}
   */
   readonly pluginName?: string;
   /**
   * A list of database statements to be executed to rotate the root user's credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#root_rotation_statements DatabaseSecretBackendConnection#root_rotation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#root_rotation_statements DatabaseSecretBackendConnection#root_rotation_statements}
   */
   readonly rootRotationStatements?: string[];
   /**
   * Specifies if the connection is verified during initial configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#verify_connection DatabaseSecretBackendConnection#verify_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#verify_connection DatabaseSecretBackendConnection#verify_connection}
   */
   readonly verifyConnection?: boolean | cdktf.IResolvable;
   /**
   * cassandra block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#cassandra DatabaseSecretBackendConnection#cassandra}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#cassandra DatabaseSecretBackendConnection#cassandra}
   */
   readonly cassandra?: DatabaseSecretBackendConnectionCassandra;
   /**
   * couchbase block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#couchbase DatabaseSecretBackendConnection#couchbase}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#couchbase DatabaseSecretBackendConnection#couchbase}
   */
   readonly couchbase?: DatabaseSecretBackendConnectionCouchbase;
   /**
   * elasticsearch block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#elasticsearch DatabaseSecretBackendConnection#elasticsearch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#elasticsearch DatabaseSecretBackendConnection#elasticsearch}
   */
   readonly elasticsearch?: DatabaseSecretBackendConnectionElasticsearch;
   /**
   * hana block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#hana DatabaseSecretBackendConnection#hana}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#hana DatabaseSecretBackendConnection#hana}
   */
   readonly hana?: DatabaseSecretBackendConnectionHana;
   /**
   * influxdb block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#influxdb DatabaseSecretBackendConnection#influxdb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#influxdb DatabaseSecretBackendConnection#influxdb}
   */
   readonly influxdb?: DatabaseSecretBackendConnectionInfluxdb;
   /**
   * mongodb block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#mongodb DatabaseSecretBackendConnection#mongodb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#mongodb DatabaseSecretBackendConnection#mongodb}
   */
   readonly mongodb?: DatabaseSecretBackendConnectionMongodb;
   /**
   * mongodbatlas block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#mongodbatlas DatabaseSecretBackendConnection#mongodbatlas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#mongodbatlas DatabaseSecretBackendConnection#mongodbatlas}
   */
   readonly mongodbatlas?: DatabaseSecretBackendConnectionMongodbatlas;
   /**
   * mssql block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#mssql DatabaseSecretBackendConnection#mssql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#mssql DatabaseSecretBackendConnection#mssql}
   */
   readonly mssql?: DatabaseSecretBackendConnectionMssql;
   /**
   * mysql block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#mysql DatabaseSecretBackendConnection#mysql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#mysql DatabaseSecretBackendConnection#mysql}
   */
   readonly mysql?: DatabaseSecretBackendConnectionMysql;
   /**
   * mysql_aurora block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#mysql_aurora DatabaseSecretBackendConnection#mysql_aurora}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#mysql_aurora DatabaseSecretBackendConnection#mysql_aurora}
   */
   readonly mysqlAurora?: DatabaseSecretBackendConnectionMysqlAurora;
   /**
   * mysql_legacy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#mysql_legacy DatabaseSecretBackendConnection#mysql_legacy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#mysql_legacy DatabaseSecretBackendConnection#mysql_legacy}
   */
   readonly mysqlLegacy?: DatabaseSecretBackendConnectionMysqlLegacy;
   /**
   * mysql_rds block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#mysql_rds DatabaseSecretBackendConnection#mysql_rds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#mysql_rds DatabaseSecretBackendConnection#mysql_rds}
   */
   readonly mysqlRds?: DatabaseSecretBackendConnectionMysqlRds;
   /**
   * oracle block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#oracle DatabaseSecretBackendConnection#oracle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#oracle DatabaseSecretBackendConnection#oracle}
   */
   readonly oracle?: DatabaseSecretBackendConnectionOracle;
   /**
   * postgresql block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#postgresql DatabaseSecretBackendConnection#postgresql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#postgresql DatabaseSecretBackendConnection#postgresql}
   */
   readonly postgresql?: DatabaseSecretBackendConnectionPostgresql;
   /**
   * redis block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#redis DatabaseSecretBackendConnection#redis}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#redis DatabaseSecretBackendConnection#redis}
   */
   readonly redis?: DatabaseSecretBackendConnectionRedis;
   /**
   * redis_elasticache block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#redis_elasticache DatabaseSecretBackendConnection#redis_elasticache}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#redis_elasticache DatabaseSecretBackendConnection#redis_elasticache}
   */
   readonly redisElasticache?: DatabaseSecretBackendConnectionRedisElasticache;
   /**
   * redshift block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#redshift DatabaseSecretBackendConnection#redshift}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#redshift DatabaseSecretBackendConnection#redshift}
   */
   readonly redshift?: DatabaseSecretBackendConnectionRedshift;
   /**
   * snowflake block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#snowflake DatabaseSecretBackendConnection#snowflake}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#snowflake DatabaseSecretBackendConnection#snowflake}
   */
   readonly snowflake?: DatabaseSecretBackendConnectionSnowflake;
 }
@@ -180,61 +175,67 @@ export interface DatabaseSecretBackendConnectionCassandra {
   /**
   * The number of seconds to use as a connection timeout.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#connect_timeout DatabaseSecretBackendConnection#connect_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#connect_timeout DatabaseSecretBackendConnection#connect_timeout}
   */
   readonly connectTimeout?: number;
   /**
   * Cassandra hosts to connect to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#hosts DatabaseSecretBackendConnection#hosts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#hosts DatabaseSecretBackendConnection#hosts}
   */
   readonly hosts?: string[];
   /**
   * Whether to skip verification of the server certificate when using TLS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#insecure_tls DatabaseSecretBackendConnection#insecure_tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#insecure_tls DatabaseSecretBackendConnection#insecure_tls}
   */
   readonly insecureTls?: boolean | cdktf.IResolvable;
   /**
   * The password to use when authenticating with Cassandra.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
   */
   readonly password?: string;
   /**
   * Concatenated PEM blocks containing a certificate and private key; a certificate, private key, and issuing CA certificate; or just a CA certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#pem_bundle DatabaseSecretBackendConnection#pem_bundle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#pem_bundle DatabaseSecretBackendConnection#pem_bundle}
   */
   readonly pemBundle?: string;
   /**
   * Specifies JSON containing a certificate and private key; a certificate, private key, and issuing CA certificate; or just a CA certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#pem_json DatabaseSecretBackendConnection#pem_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#pem_json DatabaseSecretBackendConnection#pem_json}
   */
   readonly pemJson?: string;
   /**
   * The transport port to use to connect to Cassandra.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#port DatabaseSecretBackendConnection#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#port DatabaseSecretBackendConnection#port}
   */
   readonly port?: number;
   /**
   * The CQL protocol version to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#protocol_version DatabaseSecretBackendConnection#protocol_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#protocol_version DatabaseSecretBackendConnection#protocol_version}
   */
   readonly protocolVersion?: number;
   /**
+  * Skip permissions checks when a connection to Cassandra is first created. These checks ensure that Vault is able to create roles, but can be resource intensive in clusters with many roles.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#skip_verification DatabaseSecretBackendConnection#skip_verification}
+  */
+  readonly skipVerification?: boolean | cdktf.IResolvable;
+  /**
   * Whether to use TLS when connecting to Cassandra.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#tls DatabaseSecretBackendConnection#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#tls DatabaseSecretBackendConnection#tls}
   */
   readonly tls?: boolean | cdktf.IResolvable;
   /**
   * The username to use when authenticating with Cassandra.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
   */
   readonly username?: string;
 }
@@ -253,6 +254,7 @@ export function databaseSecretBackendConnectionCassandraToTerraform(struct?: Dat
     pem_json: cdktf.stringToTerraform(struct!.pemJson),
     port: cdktf.numberToTerraform(struct!.port),
     protocol_version: cdktf.numberToTerraform(struct!.protocolVersion),
+    skip_verification: cdktf.booleanToTerraform(struct!.skipVerification),
     tls: cdktf.booleanToTerraform(struct!.tls),
     username: cdktf.stringToTerraform(struct!.username),
   }
@@ -312,6 +314,12 @@ export function databaseSecretBackendConnectionCassandraToHclTerraform(struct?: 
       isBlock: false,
       type: "simple",
       storageClassType: "number",
+    },
+    skip_verification: {
+      value: cdktf.booleanToHclTerraform(struct!.skipVerification),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
     },
     tls: {
       value: cdktf.booleanToHclTerraform(struct!.tls),
@@ -377,6 +385,10 @@ export class DatabaseSecretBackendConnectionCassandraOutputReference extends cdk
       hasAnyValues = true;
       internalValueResult.protocolVersion = this._protocolVersion;
     }
+    if (this._skipVerification !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.skipVerification = this._skipVerification;
+    }
     if (this._tls !== undefined) {
       hasAnyValues = true;
       internalValueResult.tls = this._tls;
@@ -399,6 +411,7 @@ export class DatabaseSecretBackendConnectionCassandraOutputReference extends cdk
       this._pemJson = undefined;
       this._port = undefined;
       this._protocolVersion = undefined;
+      this._skipVerification = undefined;
       this._tls = undefined;
       this._username = undefined;
     }
@@ -412,6 +425,7 @@ export class DatabaseSecretBackendConnectionCassandraOutputReference extends cdk
       this._pemJson = value.pemJson;
       this._port = value.port;
       this._protocolVersion = value.protocolVersion;
+      this._skipVerification = value.skipVerification;
       this._tls = value.tls;
       this._username = value.username;
     }
@@ -545,6 +559,22 @@ export class DatabaseSecretBackendConnectionCassandraOutputReference extends cdk
     return this._protocolVersion;
   }
 
+  // skip_verification - computed: false, optional: true, required: false
+  private _skipVerification?: boolean | cdktf.IResolvable; 
+  public get skipVerification() {
+    return this.getBooleanAttribute('skip_verification');
+  }
+  public set skipVerification(value: boolean | cdktf.IResolvable) {
+    this._skipVerification = value;
+  }
+  public resetSkipVerification() {
+    this._skipVerification = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipVerificationInput() {
+    return this._skipVerification;
+  }
+
   // tls - computed: false, optional: true, required: false
   private _tls?: boolean | cdktf.IResolvable; 
   public get tls() {
@@ -581,49 +611,49 @@ export interface DatabaseSecretBackendConnectionCouchbase {
   /**
   * Required if `tls` is `true`. Specifies the certificate authority of the Couchbase server, as a PEM certificate that has been base64 encoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#base64_pem DatabaseSecretBackendConnection#base64_pem}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#base64_pem DatabaseSecretBackendConnection#base64_pem}
   */
   readonly base64Pem?: string;
   /**
   * Required for Couchbase versions prior to 6.5.0. This is only used to verify vault's connection to the server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#bucket_name DatabaseSecretBackendConnection#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#bucket_name DatabaseSecretBackendConnection#bucket_name}
   */
   readonly bucketName?: string;
   /**
   * A set of Couchbase URIs to connect to. Must use `couchbases://` scheme if `tls` is `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#hosts DatabaseSecretBackendConnection#hosts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#hosts DatabaseSecretBackendConnection#hosts}
   */
   readonly hosts: string[];
   /**
   *  Specifies whether to skip verification of the server certificate when using TLS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#insecure_tls DatabaseSecretBackendConnection#insecure_tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#insecure_tls DatabaseSecretBackendConnection#insecure_tls}
   */
   readonly insecureTls?: boolean | cdktf.IResolvable;
   /**
   * Specifies the password corresponding to the given username.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
   */
   readonly password: string;
   /**
   * Specifies whether to use TLS when connecting to Couchbase.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#tls DatabaseSecretBackendConnection#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#tls DatabaseSecretBackendConnection#tls}
   */
   readonly tls?: boolean | cdktf.IResolvable;
   /**
   * Specifies the username for Vault to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
   */
   readonly username: string;
   /**
   * Template describing how dynamic usernames are generated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
   */
   readonly usernameTemplate?: string;
 }
@@ -903,61 +933,61 @@ export interface DatabaseSecretBackendConnectionElasticsearch {
   /**
   * The path to a PEM-encoded CA cert file to use to verify the Elasticsearch server's identity
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#ca_cert DatabaseSecretBackendConnection#ca_cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#ca_cert DatabaseSecretBackendConnection#ca_cert}
   */
   readonly caCert?: string;
   /**
   * The path to a directory of PEM-encoded CA cert files to use to verify the Elasticsearch server's identity
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#ca_path DatabaseSecretBackendConnection#ca_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#ca_path DatabaseSecretBackendConnection#ca_path}
   */
   readonly caPath?: string;
   /**
   * The path to the certificate for the Elasticsearch client to present for communication
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#client_cert DatabaseSecretBackendConnection#client_cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#client_cert DatabaseSecretBackendConnection#client_cert}
   */
   readonly clientCert?: string;
   /**
   * The path to the key for the Elasticsearch client to use for communication
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#client_key DatabaseSecretBackendConnection#client_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#client_key DatabaseSecretBackendConnection#client_key}
   */
   readonly clientKey?: string;
   /**
   * Whether to disable certificate verification
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#insecure DatabaseSecretBackendConnection#insecure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#insecure DatabaseSecretBackendConnection#insecure}
   */
   readonly insecure?: boolean | cdktf.IResolvable;
   /**
   * The password to be used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
   */
   readonly password: string;
   /**
   * This, if set, is used to set the SNI host when connecting via TLS
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#tls_server_name DatabaseSecretBackendConnection#tls_server_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#tls_server_name DatabaseSecretBackendConnection#tls_server_name}
   */
   readonly tlsServerName?: string;
   /**
   * The URL for Elasticsearch's API
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#url DatabaseSecretBackendConnection#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#url DatabaseSecretBackendConnection#url}
   */
   readonly url: string;
   /**
   * The username to be used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
   */
   readonly username: string;
   /**
   * Template describing how dynamic usernames are generated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
   */
   readonly usernameTemplate?: string;
 }
@@ -1295,43 +1325,43 @@ export interface DatabaseSecretBackendConnectionHana {
   /**
   * Connection string to use to connect to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
   */
   readonly connectionUrl?: string;
   /**
   * Disable special character escaping in username and password
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#disable_escaping DatabaseSecretBackendConnection#disable_escaping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#disable_escaping DatabaseSecretBackendConnection#disable_escaping}
   */
   readonly disableEscaping?: boolean | cdktf.IResolvable;
   /**
   * Maximum number of seconds a connection may be reused.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
   */
   readonly maxConnectionLifetime?: number;
   /**
   * Maximum number of idle connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
   */
   readonly maxIdleConnections?: number;
   /**
   * Maximum number of open connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
   */
   readonly maxOpenConnections?: number;
   /**
   * The root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
   */
   readonly password?: string;
   /**
   * The root credential username used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
   */
   readonly username?: string;
 }
@@ -1591,61 +1621,61 @@ export interface DatabaseSecretBackendConnectionInfluxdb {
   /**
   * The number of seconds to use as a connection timeout.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#connect_timeout DatabaseSecretBackendConnection#connect_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#connect_timeout DatabaseSecretBackendConnection#connect_timeout}
   */
   readonly connectTimeout?: number;
   /**
   * Influxdb host to connect to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#host DatabaseSecretBackendConnection#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#host DatabaseSecretBackendConnection#host}
   */
   readonly host: string;
   /**
   * Whether to skip verification of the server certificate when using TLS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#insecure_tls DatabaseSecretBackendConnection#insecure_tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#insecure_tls DatabaseSecretBackendConnection#insecure_tls}
   */
   readonly insecureTls?: boolean | cdktf.IResolvable;
   /**
   * Specifies the password corresponding to the given username.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
   */
   readonly password: string;
   /**
   * Concatenated PEM blocks containing a certificate and private key; a certificate, private key, and issuing CA certificate; or just a CA certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#pem_bundle DatabaseSecretBackendConnection#pem_bundle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#pem_bundle DatabaseSecretBackendConnection#pem_bundle}
   */
   readonly pemBundle?: string;
   /**
   * Specifies JSON containing a certificate and private key; a certificate, private key, and issuing CA certificate; or just a CA certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#pem_json DatabaseSecretBackendConnection#pem_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#pem_json DatabaseSecretBackendConnection#pem_json}
   */
   readonly pemJson?: string;
   /**
   * The transport port to use to connect to Influxdb.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#port DatabaseSecretBackendConnection#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#port DatabaseSecretBackendConnection#port}
   */
   readonly port?: number;
   /**
   * Whether to use TLS when connecting to Influxdb.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#tls DatabaseSecretBackendConnection#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#tls DatabaseSecretBackendConnection#tls}
   */
   readonly tls?: boolean | cdktf.IResolvable;
   /**
   * Specifies the username to use for superuser access.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
   */
   readonly username: string;
   /**
   * Template describing how dynamic usernames are generated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
   */
   readonly usernameTemplate?: string;
 }
@@ -1983,43 +2013,43 @@ export interface DatabaseSecretBackendConnectionMongodb {
   /**
   * Connection string to use to connect to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
   */
   readonly connectionUrl?: string;
   /**
   * Maximum number of seconds a connection may be reused.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
   */
   readonly maxConnectionLifetime?: number;
   /**
   * Maximum number of idle connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
   */
   readonly maxIdleConnections?: number;
   /**
   * Maximum number of open connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
   */
   readonly maxOpenConnections?: number;
   /**
   * The root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
   */
   readonly password?: string;
   /**
   * The root credential username used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
   */
   readonly username?: string;
   /**
   * Username generation template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
   */
   readonly usernameTemplate?: string;
 }
@@ -2279,19 +2309,19 @@ export interface DatabaseSecretBackendConnectionMongodbatlas {
   /**
   * The Private Programmatic API Key used to connect with MongoDB Atlas API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#private_key DatabaseSecretBackendConnection#private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#private_key DatabaseSecretBackendConnection#private_key}
   */
   readonly privateKey: string;
   /**
   * The Project ID the Database User should be created within.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#project_id DatabaseSecretBackendConnection#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#project_id DatabaseSecretBackendConnection#project_id}
   */
   readonly projectId: string;
   /**
   * The Public Programmatic API Key used to authenticate with the MongoDB Atlas API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#public_key DatabaseSecretBackendConnection#public_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#public_key DatabaseSecretBackendConnection#public_key}
   */
   readonly publicKey: string;
 }
@@ -2426,55 +2456,55 @@ export interface DatabaseSecretBackendConnectionMssql {
   /**
   * Connection string to use to connect to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
   */
   readonly connectionUrl?: string;
   /**
   * Set to true when the target is a Contained Database, e.g. AzureSQL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#contained_db DatabaseSecretBackendConnection#contained_db}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#contained_db DatabaseSecretBackendConnection#contained_db}
   */
   readonly containedDb?: boolean | cdktf.IResolvable;
   /**
   * Disable special character escaping in username and password
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#disable_escaping DatabaseSecretBackendConnection#disable_escaping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#disable_escaping DatabaseSecretBackendConnection#disable_escaping}
   */
   readonly disableEscaping?: boolean | cdktf.IResolvable;
   /**
   * Maximum number of seconds a connection may be reused.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
   */
   readonly maxConnectionLifetime?: number;
   /**
   * Maximum number of idle connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
   */
   readonly maxIdleConnections?: number;
   /**
   * Maximum number of open connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
   */
   readonly maxOpenConnections?: number;
   /**
   * The root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
   */
   readonly password?: string;
   /**
   * The root credential username used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
   */
   readonly username?: string;
   /**
   * Username generation template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
   */
   readonly usernameTemplate?: string;
 }
@@ -2792,67 +2822,67 @@ export interface DatabaseSecretBackendConnectionMysql {
   /**
   * Specify alternative authorization type. (Only 'gcp_iam' is valid currently)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#auth_type DatabaseSecretBackendConnection#auth_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#auth_type DatabaseSecretBackendConnection#auth_type}
   */
   readonly authType?: string;
   /**
   * Connection string to use to connect to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
   */
   readonly connectionUrl?: string;
   /**
   * Maximum number of seconds a connection may be reused.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
   */
   readonly maxConnectionLifetime?: number;
   /**
   * Maximum number of idle connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
   */
   readonly maxIdleConnections?: number;
   /**
   * Maximum number of open connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
   */
   readonly maxOpenConnections?: number;
   /**
   * The root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
   */
   readonly password?: string;
   /**
   * A JSON encoded credential for use with IAM authorization
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#service_account_json DatabaseSecretBackendConnection#service_account_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#service_account_json DatabaseSecretBackendConnection#service_account_json}
   */
   readonly serviceAccountJson?: string;
   /**
   * x509 CA file for validating the certificate presented by the MySQL server. Must be PEM encoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#tls_ca DatabaseSecretBackendConnection#tls_ca}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#tls_ca DatabaseSecretBackendConnection#tls_ca}
   */
   readonly tlsCa?: string;
   /**
   * x509 certificate for connecting to the database. This must be a PEM encoded version of the private key and the certificate combined.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#tls_certificate_key DatabaseSecretBackendConnection#tls_certificate_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#tls_certificate_key DatabaseSecretBackendConnection#tls_certificate_key}
   */
   readonly tlsCertificateKey?: string;
   /**
   * The root credential username used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
   */
   readonly username?: string;
   /**
   * Username generation template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
   */
   readonly usernameTemplate?: string;
 }
@@ -3228,67 +3258,67 @@ export interface DatabaseSecretBackendConnectionMysqlAurora {
   /**
   * Specify alternative authorization type. (Only 'gcp_iam' is valid currently)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#auth_type DatabaseSecretBackendConnection#auth_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#auth_type DatabaseSecretBackendConnection#auth_type}
   */
   readonly authType?: string;
   /**
   * Connection string to use to connect to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
   */
   readonly connectionUrl?: string;
   /**
   * Maximum number of seconds a connection may be reused.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
   */
   readonly maxConnectionLifetime?: number;
   /**
   * Maximum number of idle connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
   */
   readonly maxIdleConnections?: number;
   /**
   * Maximum number of open connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
   */
   readonly maxOpenConnections?: number;
   /**
   * The root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
   */
   readonly password?: string;
   /**
   * A JSON encoded credential for use with IAM authorization
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#service_account_json DatabaseSecretBackendConnection#service_account_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#service_account_json DatabaseSecretBackendConnection#service_account_json}
   */
   readonly serviceAccountJson?: string;
   /**
   * x509 CA file for validating the certificate presented by the MySQL server. Must be PEM encoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#tls_ca DatabaseSecretBackendConnection#tls_ca}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#tls_ca DatabaseSecretBackendConnection#tls_ca}
   */
   readonly tlsCa?: string;
   /**
   * x509 certificate for connecting to the database. This must be a PEM encoded version of the private key and the certificate combined.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#tls_certificate_key DatabaseSecretBackendConnection#tls_certificate_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#tls_certificate_key DatabaseSecretBackendConnection#tls_certificate_key}
   */
   readonly tlsCertificateKey?: string;
   /**
   * The root credential username used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
   */
   readonly username?: string;
   /**
   * Username generation template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
   */
   readonly usernameTemplate?: string;
 }
@@ -3664,67 +3694,67 @@ export interface DatabaseSecretBackendConnectionMysqlLegacy {
   /**
   * Specify alternative authorization type. (Only 'gcp_iam' is valid currently)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#auth_type DatabaseSecretBackendConnection#auth_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#auth_type DatabaseSecretBackendConnection#auth_type}
   */
   readonly authType?: string;
   /**
   * Connection string to use to connect to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
   */
   readonly connectionUrl?: string;
   /**
   * Maximum number of seconds a connection may be reused.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
   */
   readonly maxConnectionLifetime?: number;
   /**
   * Maximum number of idle connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
   */
   readonly maxIdleConnections?: number;
   /**
   * Maximum number of open connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
   */
   readonly maxOpenConnections?: number;
   /**
   * The root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
   */
   readonly password?: string;
   /**
   * A JSON encoded credential for use with IAM authorization
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#service_account_json DatabaseSecretBackendConnection#service_account_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#service_account_json DatabaseSecretBackendConnection#service_account_json}
   */
   readonly serviceAccountJson?: string;
   /**
   * x509 CA file for validating the certificate presented by the MySQL server. Must be PEM encoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#tls_ca DatabaseSecretBackendConnection#tls_ca}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#tls_ca DatabaseSecretBackendConnection#tls_ca}
   */
   readonly tlsCa?: string;
   /**
   * x509 certificate for connecting to the database. This must be a PEM encoded version of the private key and the certificate combined.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#tls_certificate_key DatabaseSecretBackendConnection#tls_certificate_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#tls_certificate_key DatabaseSecretBackendConnection#tls_certificate_key}
   */
   readonly tlsCertificateKey?: string;
   /**
   * The root credential username used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
   */
   readonly username?: string;
   /**
   * Username generation template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
   */
   readonly usernameTemplate?: string;
 }
@@ -4100,67 +4130,67 @@ export interface DatabaseSecretBackendConnectionMysqlRds {
   /**
   * Specify alternative authorization type. (Only 'gcp_iam' is valid currently)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#auth_type DatabaseSecretBackendConnection#auth_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#auth_type DatabaseSecretBackendConnection#auth_type}
   */
   readonly authType?: string;
   /**
   * Connection string to use to connect to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
   */
   readonly connectionUrl?: string;
   /**
   * Maximum number of seconds a connection may be reused.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
   */
   readonly maxConnectionLifetime?: number;
   /**
   * Maximum number of idle connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
   */
   readonly maxIdleConnections?: number;
   /**
   * Maximum number of open connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
   */
   readonly maxOpenConnections?: number;
   /**
   * The root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
   */
   readonly password?: string;
   /**
   * A JSON encoded credential for use with IAM authorization
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#service_account_json DatabaseSecretBackendConnection#service_account_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#service_account_json DatabaseSecretBackendConnection#service_account_json}
   */
   readonly serviceAccountJson?: string;
   /**
   * x509 CA file for validating the certificate presented by the MySQL server. Must be PEM encoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#tls_ca DatabaseSecretBackendConnection#tls_ca}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#tls_ca DatabaseSecretBackendConnection#tls_ca}
   */
   readonly tlsCa?: string;
   /**
   * x509 certificate for connecting to the database. This must be a PEM encoded version of the private key and the certificate combined.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#tls_certificate_key DatabaseSecretBackendConnection#tls_certificate_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#tls_certificate_key DatabaseSecretBackendConnection#tls_certificate_key}
   */
   readonly tlsCertificateKey?: string;
   /**
   * The root credential username used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
   */
   readonly username?: string;
   /**
   * Username generation template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
   */
   readonly usernameTemplate?: string;
 }
@@ -4536,55 +4566,55 @@ export interface DatabaseSecretBackendConnectionOracle {
   /**
   * Connection string to use to connect to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
   */
   readonly connectionUrl?: string;
   /**
   * Set to true to disconnect any open sessions prior to running the revocation statements.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#disconnect_sessions DatabaseSecretBackendConnection#disconnect_sessions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#disconnect_sessions DatabaseSecretBackendConnection#disconnect_sessions}
   */
   readonly disconnectSessions?: boolean | cdktf.IResolvable;
   /**
   * Maximum number of seconds a connection may be reused.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
   */
   readonly maxConnectionLifetime?: number;
   /**
   * Maximum number of idle connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
   */
   readonly maxIdleConnections?: number;
   /**
   * Maximum number of open connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
   */
   readonly maxOpenConnections?: number;
   /**
   * The root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
   */
   readonly password?: string;
   /**
   * Set to true in order to split statements after semi-colons.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#split_statements DatabaseSecretBackendConnection#split_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#split_statements DatabaseSecretBackendConnection#split_statements}
   */
   readonly splitStatements?: boolean | cdktf.IResolvable;
   /**
   * The root credential username used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
   */
   readonly username?: string;
   /**
   * Username generation template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
   */
   readonly usernameTemplate?: string;
 }
@@ -4902,61 +4932,85 @@ export interface DatabaseSecretBackendConnectionPostgresql {
   /**
   * Specify alternative authorization type. (Only 'gcp_iam' is valid currently)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#auth_type DatabaseSecretBackendConnection#auth_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#auth_type DatabaseSecretBackendConnection#auth_type}
   */
   readonly authType?: string;
   /**
   * Connection string to use to connect to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
   */
   readonly connectionUrl?: string;
   /**
   * Disable special character escaping in username and password
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#disable_escaping DatabaseSecretBackendConnection#disable_escaping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#disable_escaping DatabaseSecretBackendConnection#disable_escaping}
   */
   readonly disableEscaping?: boolean | cdktf.IResolvable;
   /**
   * Maximum number of seconds a connection may be reused.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
   */
   readonly maxConnectionLifetime?: number;
   /**
   * Maximum number of idle connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
   */
   readonly maxIdleConnections?: number;
   /**
   * Maximum number of open connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
   */
   readonly maxOpenConnections?: number;
   /**
   * The root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
   */
   readonly password?: string;
   /**
+  * The secret key used for the x509 client certificate. Must be PEM encoded.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#private_key DatabaseSecretBackendConnection#private_key}
+  */
+  readonly privateKey?: string;
+  /**
+  * If set, allows onboarding static roles with a rootless connection configuration.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#self_managed DatabaseSecretBackendConnection#self_managed}
+  */
+  readonly selfManaged?: boolean | cdktf.IResolvable;
+  /**
   * A JSON encoded credential for use with IAM authorization
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#service_account_json DatabaseSecretBackendConnection#service_account_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#service_account_json DatabaseSecretBackendConnection#service_account_json}
   */
   readonly serviceAccountJson?: string;
   /**
+  * The x509 CA file for validating the certificate presented by the PostgreSQL server. Must be PEM encoded.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#tls_ca DatabaseSecretBackendConnection#tls_ca}
+  */
+  readonly tlsCa?: string;
+  /**
+  * The x509 client certificate for connecting to the database. Must be PEM encoded.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#tls_certificate DatabaseSecretBackendConnection#tls_certificate}
+  */
+  readonly tlsCertificate?: string;
+  /**
   * The root credential username used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
   */
   readonly username?: string;
   /**
   * Username generation template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
   */
   readonly usernameTemplate?: string;
 }
@@ -4974,7 +5028,11 @@ export function databaseSecretBackendConnectionPostgresqlToTerraform(struct?: Da
     max_idle_connections: cdktf.numberToTerraform(struct!.maxIdleConnections),
     max_open_connections: cdktf.numberToTerraform(struct!.maxOpenConnections),
     password: cdktf.stringToTerraform(struct!.password),
+    private_key: cdktf.stringToTerraform(struct!.privateKey),
+    self_managed: cdktf.booleanToTerraform(struct!.selfManaged),
     service_account_json: cdktf.stringToTerraform(struct!.serviceAccountJson),
+    tls_ca: cdktf.stringToTerraform(struct!.tlsCa),
+    tls_certificate: cdktf.stringToTerraform(struct!.tlsCertificate),
     username: cdktf.stringToTerraform(struct!.username),
     username_template: cdktf.stringToTerraform(struct!.usernameTemplate),
   }
@@ -5029,8 +5087,32 @@ export function databaseSecretBackendConnectionPostgresqlToHclTerraform(struct?:
       type: "simple",
       storageClassType: "string",
     },
+    private_key: {
+      value: cdktf.stringToHclTerraform(struct!.privateKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    self_managed: {
+      value: cdktf.booleanToHclTerraform(struct!.selfManaged),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
     service_account_json: {
       value: cdktf.stringToHclTerraform(struct!.serviceAccountJson),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tls_ca: {
+      value: cdktf.stringToHclTerraform(struct!.tlsCa),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tls_certificate: {
+      value: cdktf.stringToHclTerraform(struct!.tlsCertificate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5095,9 +5177,25 @@ export class DatabaseSecretBackendConnectionPostgresqlOutputReference extends cd
       hasAnyValues = true;
       internalValueResult.password = this._password;
     }
+    if (this._privateKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.privateKey = this._privateKey;
+    }
+    if (this._selfManaged !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.selfManaged = this._selfManaged;
+    }
     if (this._serviceAccountJson !== undefined) {
       hasAnyValues = true;
       internalValueResult.serviceAccountJson = this._serviceAccountJson;
+    }
+    if (this._tlsCa !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tlsCa = this._tlsCa;
+    }
+    if (this._tlsCertificate !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tlsCertificate = this._tlsCertificate;
     }
     if (this._username !== undefined) {
       hasAnyValues = true;
@@ -5120,7 +5218,11 @@ export class DatabaseSecretBackendConnectionPostgresqlOutputReference extends cd
       this._maxIdleConnections = undefined;
       this._maxOpenConnections = undefined;
       this._password = undefined;
+      this._privateKey = undefined;
+      this._selfManaged = undefined;
       this._serviceAccountJson = undefined;
+      this._tlsCa = undefined;
+      this._tlsCertificate = undefined;
       this._username = undefined;
       this._usernameTemplate = undefined;
     }
@@ -5133,7 +5235,11 @@ export class DatabaseSecretBackendConnectionPostgresqlOutputReference extends cd
       this._maxIdleConnections = value.maxIdleConnections;
       this._maxOpenConnections = value.maxOpenConnections;
       this._password = value.password;
+      this._privateKey = value.privateKey;
+      this._selfManaged = value.selfManaged;
       this._serviceAccountJson = value.serviceAccountJson;
+      this._tlsCa = value.tlsCa;
+      this._tlsCertificate = value.tlsCertificate;
       this._username = value.username;
       this._usernameTemplate = value.usernameTemplate;
     }
@@ -5251,6 +5357,38 @@ export class DatabaseSecretBackendConnectionPostgresqlOutputReference extends cd
     return this._password;
   }
 
+  // private_key - computed: false, optional: true, required: false
+  private _privateKey?: string; 
+  public get privateKey() {
+    return this.getStringAttribute('private_key');
+  }
+  public set privateKey(value: string) {
+    this._privateKey = value;
+  }
+  public resetPrivateKey() {
+    this._privateKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privateKeyInput() {
+    return this._privateKey;
+  }
+
+  // self_managed - computed: false, optional: true, required: false
+  private _selfManaged?: boolean | cdktf.IResolvable; 
+  public get selfManaged() {
+    return this.getBooleanAttribute('self_managed');
+  }
+  public set selfManaged(value: boolean | cdktf.IResolvable) {
+    this._selfManaged = value;
+  }
+  public resetSelfManaged() {
+    this._selfManaged = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get selfManagedInput() {
+    return this._selfManaged;
+  }
+
   // service_account_json - computed: false, optional: true, required: false
   private _serviceAccountJson?: string; 
   public get serviceAccountJson() {
@@ -5265,6 +5403,38 @@ export class DatabaseSecretBackendConnectionPostgresqlOutputReference extends cd
   // Temporarily expose input value. Use with caution.
   public get serviceAccountJsonInput() {
     return this._serviceAccountJson;
+  }
+
+  // tls_ca - computed: false, optional: true, required: false
+  private _tlsCa?: string; 
+  public get tlsCa() {
+    return this.getStringAttribute('tls_ca');
+  }
+  public set tlsCa(value: string) {
+    this._tlsCa = value;
+  }
+  public resetTlsCa() {
+    this._tlsCa = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tlsCaInput() {
+    return this._tlsCa;
+  }
+
+  // tls_certificate - computed: false, optional: true, required: false
+  private _tlsCertificate?: string; 
+  public get tlsCertificate() {
+    return this.getStringAttribute('tls_certificate');
+  }
+  public set tlsCertificate(value: string) {
+    this._tlsCertificate = value;
+  }
+  public resetTlsCertificate() {
+    this._tlsCertificate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tlsCertificateInput() {
+    return this._tlsCertificate;
   }
 
   // username - computed: false, optional: true, required: false
@@ -5303,43 +5473,43 @@ export interface DatabaseSecretBackendConnectionRedis {
   /**
   * The contents of a PEM-encoded CA cert file to use to verify the Redis server's identity.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#ca_cert DatabaseSecretBackendConnection#ca_cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#ca_cert DatabaseSecretBackendConnection#ca_cert}
   */
   readonly caCert?: string;
   /**
   * Specifies the host to connect to
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#host DatabaseSecretBackendConnection#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#host DatabaseSecretBackendConnection#host}
   */
   readonly host: string;
   /**
   * Specifies whether to skip verification of the server certificate when using TLS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#insecure_tls DatabaseSecretBackendConnection#insecure_tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#insecure_tls DatabaseSecretBackendConnection#insecure_tls}
   */
   readonly insecureTls?: boolean | cdktf.IResolvable;
   /**
   * Specifies the password corresponding to the given username.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
   */
   readonly password: string;
   /**
   * The transport port to use to connect to Redis.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#port DatabaseSecretBackendConnection#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#port DatabaseSecretBackendConnection#port}
   */
   readonly port?: number;
   /**
   * Specifies whether to use TLS when connecting to Redis.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#tls DatabaseSecretBackendConnection#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#tls DatabaseSecretBackendConnection#tls}
   */
   readonly tls?: boolean | cdktf.IResolvable;
   /**
   * Specifies the username for Vault to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
   */
   readonly username: string;
 }
@@ -5590,25 +5760,25 @@ export interface DatabaseSecretBackendConnectionRedisElasticache {
   /**
   * The AWS secret key id to use to talk to ElastiCache. If omitted the credentials chain provider is used instead.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
   */
   readonly password?: string;
   /**
   * The AWS region where the ElastiCache cluster is hosted. If omitted the plugin tries to infer the region from the environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#region DatabaseSecretBackendConnection#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#region DatabaseSecretBackendConnection#region}
   */
   readonly region?: string;
   /**
   * The configuration endpoint for the ElastiCache cluster to connect to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#url DatabaseSecretBackendConnection#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#url DatabaseSecretBackendConnection#url}
   */
   readonly url: string;
   /**
   * The AWS access key id to use to talk to ElastiCache. If omitted the credentials chain provider is used instead.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
   */
   readonly username?: string;
 }
@@ -5778,49 +5948,49 @@ export interface DatabaseSecretBackendConnectionRedshift {
   /**
   * Connection string to use to connect to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
   */
   readonly connectionUrl?: string;
   /**
   * Disable special character escaping in username and password
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#disable_escaping DatabaseSecretBackendConnection#disable_escaping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#disable_escaping DatabaseSecretBackendConnection#disable_escaping}
   */
   readonly disableEscaping?: boolean | cdktf.IResolvable;
   /**
   * Maximum number of seconds a connection may be reused.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
   */
   readonly maxConnectionLifetime?: number;
   /**
   * Maximum number of idle connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
   */
   readonly maxIdleConnections?: number;
   /**
   * Maximum number of open connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
   */
   readonly maxOpenConnections?: number;
   /**
   * The root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
   */
   readonly password?: string;
   /**
   * The root credential username used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
   */
   readonly username?: string;
   /**
   * Username generation template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
   */
   readonly usernameTemplate?: string;
 }
@@ -6109,43 +6279,43 @@ export interface DatabaseSecretBackendConnectionSnowflake {
   /**
   * Connection string to use to connect to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#connection_url DatabaseSecretBackendConnection#connection_url}
   */
   readonly connectionUrl?: string;
   /**
   * Maximum number of seconds a connection may be reused.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#max_connection_lifetime DatabaseSecretBackendConnection#max_connection_lifetime}
   */
   readonly maxConnectionLifetime?: number;
   /**
   * Maximum number of idle connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#max_idle_connections DatabaseSecretBackendConnection#max_idle_connections}
   */
   readonly maxIdleConnections?: number;
   /**
   * Maximum number of open connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#max_open_connections DatabaseSecretBackendConnection#max_open_connections}
   */
   readonly maxOpenConnections?: number;
   /**
   * The root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#password DatabaseSecretBackendConnection#password}
   */
   readonly password?: string;
   /**
   * The root credential username used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#username DatabaseSecretBackendConnection#username}
   */
   readonly username?: string;
   /**
   * Username generation template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#username_template DatabaseSecretBackendConnection#username_template}
   */
   readonly usernameTemplate?: string;
 }
@@ -6403,7 +6573,7 @@ export class DatabaseSecretBackendConnectionSnowflakeOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection vault_database_secret_backend_connection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection vault_database_secret_backend_connection}
 */
 export class DatabaseSecretBackendConnection extends cdktf.TerraformResource {
 
@@ -6419,7 +6589,7 @@ export class DatabaseSecretBackendConnection extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DatabaseSecretBackendConnection resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatabaseSecretBackendConnection to import
-  * @param importFromId The id of the existing DatabaseSecretBackendConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DatabaseSecretBackendConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatabaseSecretBackendConnection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -6431,7 +6601,7 @@ export class DatabaseSecretBackendConnection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_connection vault_database_secret_backend_connection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_connection vault_database_secret_backend_connection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -6442,7 +6612,7 @@ export class DatabaseSecretBackendConnection extends cdktf.TerraformResource {
       terraformResourceType: 'vault_database_secret_backend_connection',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '4.4.0',
+        providerVersion: '4.5.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

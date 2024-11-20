@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/config_ui_custom_message
+// https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/config_ui_custom_message
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,55 +10,55 @@ export interface ConfigUiCustomMessageConfig extends cdktf.TerraformMetaArgument
   /**
   * A flag indicating whether the custom message is displayed pre-login (false) or post-login (true)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/config_ui_custom_message#authenticated ConfigUiCustomMessage#authenticated}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/config_ui_custom_message#authenticated ConfigUiCustomMessage#authenticated}
   */
   readonly authenticated?: boolean | cdktf.IResolvable;
   /**
   * The ending time of the active period of the custom message. Can be omitted for non-expiring message
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/config_ui_custom_message#end_time ConfigUiCustomMessage#end_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/config_ui_custom_message#end_time ConfigUiCustomMessage#end_time}
   */
   readonly endTime?: string;
   /**
   * The base64-encoded content of the custom message
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/config_ui_custom_message#message_base64 ConfigUiCustomMessage#message_base64}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/config_ui_custom_message#message_base64 ConfigUiCustomMessage#message_base64}
   */
   readonly messageBase64: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/config_ui_custom_message#namespace ConfigUiCustomMessage#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/config_ui_custom_message#namespace ConfigUiCustomMessage#namespace}
   */
   readonly namespace?: string;
   /**
   * A map containing additional options for the custom message
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/config_ui_custom_message#options ConfigUiCustomMessage#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/config_ui_custom_message#options ConfigUiCustomMessage#options}
   */
   readonly options?: { [key: string]: string };
   /**
   * The starting time of the active period of the custom message
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/config_ui_custom_message#start_time ConfigUiCustomMessage#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/config_ui_custom_message#start_time ConfigUiCustomMessage#start_time}
   */
   readonly startTime: string;
   /**
   * The title of the custom message
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/config_ui_custom_message#title ConfigUiCustomMessage#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/config_ui_custom_message#title ConfigUiCustomMessage#title}
   */
   readonly title: string;
   /**
   * The display type of custom message. Allowed values are banner and modal
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/config_ui_custom_message#type ConfigUiCustomMessage#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/config_ui_custom_message#type ConfigUiCustomMessage#type}
   */
   readonly type?: string;
   /**
   * link block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/config_ui_custom_message#link ConfigUiCustomMessage#link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/config_ui_custom_message#link ConfigUiCustomMessage#link}
   */
   readonly link?: ConfigUiCustomMessageLink;
 }
@@ -71,13 +66,13 @@ export interface ConfigUiCustomMessageLink {
   /**
   * The URL of the hyperlink
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/config_ui_custom_message#href ConfigUiCustomMessage#href}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/config_ui_custom_message#href ConfigUiCustomMessage#href}
   */
   readonly href: string;
   /**
   * The title of the hyperlink
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/config_ui_custom_message#title ConfigUiCustomMessage#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/config_ui_custom_message#title ConfigUiCustomMessage#title}
   */
   readonly title: string;
 }
@@ -184,7 +179,7 @@ export class ConfigUiCustomMessageLinkOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/config_ui_custom_message vault_config_ui_custom_message}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/config_ui_custom_message vault_config_ui_custom_message}
 */
 export class ConfigUiCustomMessage extends cdktf.TerraformResource {
 
@@ -200,7 +195,7 @@ export class ConfigUiCustomMessage extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ConfigUiCustomMessage resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ConfigUiCustomMessage to import
-  * @param importFromId The id of the existing ConfigUiCustomMessage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/config_ui_custom_message#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ConfigUiCustomMessage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/config_ui_custom_message#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ConfigUiCustomMessage to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -212,7 +207,7 @@ export class ConfigUiCustomMessage extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/config_ui_custom_message vault_config_ui_custom_message} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/config_ui_custom_message vault_config_ui_custom_message} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -223,7 +218,7 @@ export class ConfigUiCustomMessage extends cdktf.TerraformResource {
       terraformResourceType: 'vault_config_ui_custom_message',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '4.4.0',
+        providerVersion: '4.5.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

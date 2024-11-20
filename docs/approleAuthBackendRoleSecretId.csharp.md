@@ -4,7 +4,7 @@
 
 ### ApproleAuthBackendRoleSecretId <a name="ApproleAuthBackendRoleSecretId" id="@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretId"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/approle_auth_backend_role_secret_id vault_approle_auth_backend_role_secret_id}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/approle_auth_backend_role_secret_id vault_approle_auth_backend_role_secret_id}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretId.Initializer"></a>
 
@@ -78,7 +78,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretId.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretId.resetMetadata">ResetMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretId.resetNamespace">ResetNamespace</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretId.resetNumUses">ResetNumUses</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretId.resetSecretId">ResetSecretId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretId.resetTtl">ResetTtl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretId.resetWithWrappedAccessor">ResetWithWrappedAccessor</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretId.resetWrappingTtl">ResetWrappingTtl</a></code> | *No description.* |
 
@@ -402,10 +404,22 @@ private void ResetMetadata()
 private void ResetNamespace()
 ```
 
+##### `ResetNumUses` <a name="ResetNumUses" id="@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretId.resetNumUses"></a>
+
+```csharp
+private void ResetNumUses()
+```
+
 ##### `ResetSecretId` <a name="ResetSecretId" id="@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretId.resetSecretId"></a>
 
 ```csharp
 private void ResetSecretId()
+```
+
+##### `ResetTtl` <a name="ResetTtl" id="@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretId.resetTtl"></a>
+
+```csharp
+private void ResetTtl()
 ```
 
 ##### `ResetWithWrappedAccessor` <a name="ResetWithWrappedAccessor" id="@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretId.resetWithWrappedAccessor"></a>
@@ -523,7 +537,7 @@ The construct id used in the generated config for the ApproleAuthBackendRoleSecr
 
 The id of the existing ApproleAuthBackendRoleSecretId that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/approle_auth_backend_role_secret_id#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/approle_auth_backend_role_secret_id#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -561,8 +575,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.
 | <code><a href="#@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretId.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretId.property.metadataInput">MetadataInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretId.property.namespaceInput">NamespaceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretId.property.numUsesInput">NumUsesInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretId.property.roleNameInput">RoleNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretId.property.secretIdInput">SecretIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretId.property.ttlInput">TtlInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretId.property.withWrappedAccessorInput">WithWrappedAccessorInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretId.property.wrappingTtlInput">WrappingTtlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretId.property.backend">Backend</a></code> | <code>string</code> | *No description.* |
@@ -570,8 +586,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.
 | <code><a href="#@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretId.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretId.property.metadata">Metadata</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretId.property.namespace">Namespace</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretId.property.numUses">NumUses</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretId.property.roleName">RoleName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretId.property.secretId">SecretId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretId.property.ttl">Ttl</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretId.property.withWrappedAccessor">WithWrappedAccessor</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretId.property.wrappingTtl">WrappingTtl</a></code> | <code>string</code> | *No description.* |
 
@@ -799,6 +817,16 @@ public string NamespaceInput { get; }
 
 ---
 
+##### `NumUsesInput`<sup>Optional</sup> <a name="NumUsesInput" id="@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretId.property.numUsesInput"></a>
+
+```csharp
+public double NumUsesInput { get; }
+```
+
+- *Type:* double
+
+---
+
 ##### `RoleNameInput`<sup>Optional</sup> <a name="RoleNameInput" id="@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretId.property.roleNameInput"></a>
 
 ```csharp
@@ -816,6 +844,16 @@ public string SecretIdInput { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `TtlInput`<sup>Optional</sup> <a name="TtlInput" id="@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretId.property.ttlInput"></a>
+
+```csharp
+public double TtlInput { get; }
+```
+
+- *Type:* double
 
 ---
 
@@ -889,6 +927,16 @@ public string Namespace { get; }
 
 ---
 
+##### `NumUses`<sup>Required</sup> <a name="NumUses" id="@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretId.property.numUses"></a>
+
+```csharp
+public double NumUses { get; }
+```
+
+- *Type:* double
+
+---
+
 ##### `RoleName`<sup>Required</sup> <a name="RoleName" id="@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretId.property.roleName"></a>
 
 ```csharp
@@ -906,6 +954,16 @@ public string SecretId { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `Ttl`<sup>Required</sup> <a name="Ttl" id="@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretId.property.ttl"></a>
+
+```csharp
+public double Ttl { get; }
+```
+
+- *Type:* double
 
 ---
 
@@ -970,7 +1028,9 @@ new ApproleAuthBackendRoleSecretIdConfig {
     string Id = null,
     string Metadata = null,
     string Namespace = null,
+    double NumUses = null,
     string SecretId = null,
+    double Ttl = null,
     object WithWrappedAccessor = null,
     string WrappingTtl = null
 };
@@ -990,10 +1050,12 @@ new ApproleAuthBackendRoleSecretIdConfig {
 | <code><a href="#@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretIdConfig.property.roleName">RoleName</a></code> | <code>string</code> | Name of the role. |
 | <code><a href="#@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretIdConfig.property.backend">Backend</a></code> | <code>string</code> | Unique name of the auth backend to configure. |
 | <code><a href="#@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretIdConfig.property.cidrList">CidrList</a></code> | <code>string[]</code> | List of CIDR blocks that can log in using the SecretID. |
-| <code><a href="#@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretIdConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/approle_auth_backend_role_secret_id#id ApproleAuthBackendRoleSecretId#id}. |
+| <code><a href="#@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretIdConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/approle_auth_backend_role_secret_id#id ApproleAuthBackendRoleSecretId#id}. |
 | <code><a href="#@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretIdConfig.property.metadata">Metadata</a></code> | <code>string</code> | JSON-encoded secret data to write. |
 | <code><a href="#@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretIdConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
+| <code><a href="#@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretIdConfig.property.numUses">NumUses</a></code> | <code>double</code> | The number of uses for the secret-id. |
 | <code><a href="#@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretIdConfig.property.secretId">SecretId</a></code> | <code>string</code> | The SecretID to be managed. If not specified, Vault auto-generates one. |
+| <code><a href="#@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretIdConfig.property.ttl">Ttl</a></code> | <code>double</code> | The TTL duration of the SecretID. |
 | <code><a href="#@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretIdConfig.property.withWrappedAccessor">WithWrappedAccessor</a></code> | <code>object</code> | Use the wrapped secret-id accessor as the id of this resource. |
 | <code><a href="#@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretIdConfig.property.wrappingTtl">WrappingTtl</a></code> | <code>string</code> | The TTL duration of the wrapped SecretID. |
 
@@ -1079,7 +1141,7 @@ public string RoleName { get; set; }
 
 Name of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/approle_auth_backend_role_secret_id#role_name ApproleAuthBackendRoleSecretId#role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/approle_auth_backend_role_secret_id#role_name ApproleAuthBackendRoleSecretId#role_name}
 
 ---
 
@@ -1093,7 +1155,7 @@ public string Backend { get; set; }
 
 Unique name of the auth backend to configure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/approle_auth_backend_role_secret_id#backend ApproleAuthBackendRoleSecretId#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/approle_auth_backend_role_secret_id#backend ApproleAuthBackendRoleSecretId#backend}
 
 ---
 
@@ -1107,7 +1169,7 @@ public string[] CidrList { get; set; }
 
 List of CIDR blocks that can log in using the SecretID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/approle_auth_backend_role_secret_id#cidr_list ApproleAuthBackendRoleSecretId#cidr_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/approle_auth_backend_role_secret_id#cidr_list ApproleAuthBackendRoleSecretId#cidr_list}
 
 ---
 
@@ -1119,7 +1181,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/approle_auth_backend_role_secret_id#id ApproleAuthBackendRoleSecretId#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/approle_auth_backend_role_secret_id#id ApproleAuthBackendRoleSecretId#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1136,7 +1198,7 @@ public string Metadata { get; set; }
 
 JSON-encoded secret data to write.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/approle_auth_backend_role_secret_id#metadata ApproleAuthBackendRoleSecretId#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/approle_auth_backend_role_secret_id#metadata ApproleAuthBackendRoleSecretId#metadata}
 
 ---
 
@@ -1150,7 +1212,21 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/approle_auth_backend_role_secret_id#namespace ApproleAuthBackendRoleSecretId#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/approle_auth_backend_role_secret_id#namespace ApproleAuthBackendRoleSecretId#namespace}
+
+---
+
+##### `NumUses`<sup>Optional</sup> <a name="NumUses" id="@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretIdConfig.property.numUses"></a>
+
+```csharp
+public double NumUses { get; set; }
+```
+
+- *Type:* double
+
+The number of uses for the secret-id.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/approle_auth_backend_role_secret_id#num_uses ApproleAuthBackendRoleSecretId#num_uses}
 
 ---
 
@@ -1164,7 +1240,21 @@ public string SecretId { get; set; }
 
 The SecretID to be managed. If not specified, Vault auto-generates one.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/approle_auth_backend_role_secret_id#secret_id ApproleAuthBackendRoleSecretId#secret_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/approle_auth_backend_role_secret_id#secret_id ApproleAuthBackendRoleSecretId#secret_id}
+
+---
+
+##### `Ttl`<sup>Optional</sup> <a name="Ttl" id="@cdktf/provider-vault.approleAuthBackendRoleSecretId.ApproleAuthBackendRoleSecretIdConfig.property.ttl"></a>
+
+```csharp
+public double Ttl { get; set; }
+```
+
+- *Type:* double
+
+The TTL duration of the SecretID.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/approle_auth_backend_role_secret_id#ttl ApproleAuthBackendRoleSecretId#ttl}
 
 ---
 
@@ -1180,7 +1270,7 @@ Use the wrapped secret-id accessor as the id of this resource.
 
 If false, a fresh secret-id will be regenerated whenever the wrapping token is expired or invalidated through unwrapping.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/approle_auth_backend_role_secret_id#with_wrapped_accessor ApproleAuthBackendRoleSecretId#with_wrapped_accessor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/approle_auth_backend_role_secret_id#with_wrapped_accessor ApproleAuthBackendRoleSecretId#with_wrapped_accessor}
 
 ---
 
@@ -1194,7 +1284,7 @@ public string WrappingTtl { get; set; }
 
 The TTL duration of the wrapped SecretID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/approle_auth_backend_role_secret_id#wrapping_ttl ApproleAuthBackendRoleSecretId#wrapping_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/approle_auth_backend_role_secret_id#wrapping_ttl ApproleAuthBackendRoleSecretId#wrapping_ttl}
 
 ---
 

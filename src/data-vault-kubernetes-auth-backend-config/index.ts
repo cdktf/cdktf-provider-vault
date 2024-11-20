@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/kubernetes_auth_backend_config
+// https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/kubernetes_auth_backend_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +10,23 @@ export interface DataVaultKubernetesAuthBackendConfigConfig extends cdktf.Terraf
   /**
   * Unique name of the kubernetes backend to configure.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/kubernetes_auth_backend_config#backend DataVaultKubernetesAuthBackendConfig#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/kubernetes_auth_backend_config#backend DataVaultKubernetesAuthBackendConfig#backend}
   */
   readonly backend?: string;
   /**
   * Optional disable JWT issuer validation. Allows to skip ISS validation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/kubernetes_auth_backend_config#disable_iss_validation DataVaultKubernetesAuthBackendConfig#disable_iss_validation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/kubernetes_auth_backend_config#disable_iss_validation DataVaultKubernetesAuthBackendConfig#disable_iss_validation}
   */
   readonly disableIssValidation?: boolean | cdktf.IResolvable;
   /**
   * Optional disable defaulting to the local CA cert and service account JWT when running in a Kubernetes pod.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/kubernetes_auth_backend_config#disable_local_ca_jwt DataVaultKubernetesAuthBackendConfig#disable_local_ca_jwt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/kubernetes_auth_backend_config#disable_local_ca_jwt DataVaultKubernetesAuthBackendConfig#disable_local_ca_jwt}
   */
   readonly disableLocalCaJwt?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/kubernetes_auth_backend_config#id DataVaultKubernetesAuthBackendConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/kubernetes_auth_backend_config#id DataVaultKubernetesAuthBackendConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,37 +35,43 @@ export interface DataVaultKubernetesAuthBackendConfigConfig extends cdktf.Terraf
   /**
   * Optional JWT issuer. If no issuer is specified, kubernetes.io/serviceaccount will be used as the default issuer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/kubernetes_auth_backend_config#issuer DataVaultKubernetesAuthBackendConfig#issuer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/kubernetes_auth_backend_config#issuer DataVaultKubernetesAuthBackendConfig#issuer}
   */
   readonly issuer?: string;
   /**
   * PEM encoded CA cert for use by the TLS client used to talk with the Kubernetes API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/kubernetes_auth_backend_config#kubernetes_ca_cert DataVaultKubernetesAuthBackendConfig#kubernetes_ca_cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/kubernetes_auth_backend_config#kubernetes_ca_cert DataVaultKubernetesAuthBackendConfig#kubernetes_ca_cert}
   */
   readonly kubernetesCaCert?: string;
   /**
   * Host must be a host string, a host:port pair, or a URL to the base of the Kubernetes API server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/kubernetes_auth_backend_config#kubernetes_host DataVaultKubernetesAuthBackendConfig#kubernetes_host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/kubernetes_auth_backend_config#kubernetes_host DataVaultKubernetesAuthBackendConfig#kubernetes_host}
   */
   readonly kubernetesHost?: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/kubernetes_auth_backend_config#namespace DataVaultKubernetesAuthBackendConfig#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/kubernetes_auth_backend_config#namespace DataVaultKubernetesAuthBackendConfig#namespace}
   */
   readonly namespace?: string;
   /**
   * Optional list of PEM-formatted public keys or certificates used to verify the signatures of Kubernetes service account JWTs. If a certificate is given, its public key will be extracted. Not every installation of Kubernetes exposes these keys.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/kubernetes_auth_backend_config#pem_keys DataVaultKubernetesAuthBackendConfig#pem_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/kubernetes_auth_backend_config#pem_keys DataVaultKubernetesAuthBackendConfig#pem_keys}
   */
   readonly pemKeys?: string[];
+  /**
+  * Use annotations from the client token's associated service account as alias metadata for the Vault entity.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/kubernetes_auth_backend_config#use_annotations_as_alias_metadata DataVaultKubernetesAuthBackendConfig#use_annotations_as_alias_metadata}
+  */
+  readonly useAnnotationsAsAliasMetadata?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/kubernetes_auth_backend_config vault_kubernetes_auth_backend_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/kubernetes_auth_backend_config vault_kubernetes_auth_backend_config}
 */
 export class DataVaultKubernetesAuthBackendConfig extends cdktf.TerraformDataSource {
 
@@ -86,7 +87,7 @@ export class DataVaultKubernetesAuthBackendConfig extends cdktf.TerraformDataSou
   * Generates CDKTF code for importing a DataVaultKubernetesAuthBackendConfig resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataVaultKubernetesAuthBackendConfig to import
-  * @param importFromId The id of the existing DataVaultKubernetesAuthBackendConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/kubernetes_auth_backend_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataVaultKubernetesAuthBackendConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/kubernetes_auth_backend_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataVaultKubernetesAuthBackendConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -98,7 +99,7 @@ export class DataVaultKubernetesAuthBackendConfig extends cdktf.TerraformDataSou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/kubernetes_auth_backend_config vault_kubernetes_auth_backend_config} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/kubernetes_auth_backend_config vault_kubernetes_auth_backend_config} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -109,7 +110,7 @@ export class DataVaultKubernetesAuthBackendConfig extends cdktf.TerraformDataSou
       terraformResourceType: 'vault_kubernetes_auth_backend_config',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '4.4.0',
+        providerVersion: '4.5.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -129,6 +130,7 @@ export class DataVaultKubernetesAuthBackendConfig extends cdktf.TerraformDataSou
     this._kubernetesHost = config.kubernetesHost;
     this._namespace = config.namespace;
     this._pemKeys = config.pemKeys;
+    this._useAnnotationsAsAliasMetadata = config.useAnnotationsAsAliasMetadata;
   }
 
   // ==========
@@ -279,6 +281,22 @@ export class DataVaultKubernetesAuthBackendConfig extends cdktf.TerraformDataSou
     return this._pemKeys;
   }
 
+  // use_annotations_as_alias_metadata - computed: true, optional: true, required: false
+  private _useAnnotationsAsAliasMetadata?: boolean | cdktf.IResolvable; 
+  public get useAnnotationsAsAliasMetadata() {
+    return this.getBooleanAttribute('use_annotations_as_alias_metadata');
+  }
+  public set useAnnotationsAsAliasMetadata(value: boolean | cdktf.IResolvable) {
+    this._useAnnotationsAsAliasMetadata = value;
+  }
+  public resetUseAnnotationsAsAliasMetadata() {
+    this._useAnnotationsAsAliasMetadata = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get useAnnotationsAsAliasMetadataInput() {
+    return this._useAnnotationsAsAliasMetadata;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -294,6 +312,7 @@ export class DataVaultKubernetesAuthBackendConfig extends cdktf.TerraformDataSou
       kubernetes_host: cdktf.stringToTerraform(this._kubernetesHost),
       namespace: cdktf.stringToTerraform(this._namespace),
       pem_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._pemKeys),
+      use_annotations_as_alias_metadata: cdktf.booleanToTerraform(this._useAnnotationsAsAliasMetadata),
     };
   }
 
@@ -352,6 +371,12 @@ export class DataVaultKubernetesAuthBackendConfig extends cdktf.TerraformDataSou
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
+      },
+      use_annotations_as_alias_metadata: {
+        value: cdktf.booleanToHclTerraform(this._useAnnotationsAsAliasMetadata),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
     };
 

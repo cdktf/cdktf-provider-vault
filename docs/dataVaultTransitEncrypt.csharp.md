@@ -4,7 +4,7 @@
 
 ### DataVaultTransitEncrypt <a name="DataVaultTransitEncrypt" id="@cdktf/provider-vault.dataVaultTransitEncrypt.DataVaultTransitEncrypt"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/transit_encrypt vault_transit_encrypt}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/transit_encrypt vault_transit_encrypt}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultTransitEncrypt.DataVaultTransitEncrypt.Initializer"></a>
 
@@ -393,7 +393,7 @@ The construct id used in the generated config for the DataVaultTransitEncrypt to
 
 The id of the existing DataVaultTransitEncrypt that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/transit_encrypt#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/transit_encrypt#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -771,7 +771,7 @@ new DataVaultTransitEncryptConfig {
 | <code><a href="#@cdktf/provider-vault.dataVaultTransitEncrypt.DataVaultTransitEncryptConfig.property.key">Key</a></code> | <code>string</code> | Name of the encryption key to use. |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransitEncrypt.DataVaultTransitEncryptConfig.property.plaintext">Plaintext</a></code> | <code>string</code> | Map of strings read from Vault. |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransitEncrypt.DataVaultTransitEncryptConfig.property.context">Context</a></code> | <code>string</code> | Specifies the context for key derivation. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitEncrypt.DataVaultTransitEncryptConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/transit_encrypt#id DataVaultTransitEncrypt#id}. |
+| <code><a href="#@cdktf/provider-vault.dataVaultTransitEncrypt.DataVaultTransitEncryptConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/transit_encrypt#id DataVaultTransitEncrypt#id}. |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransitEncrypt.DataVaultTransitEncryptConfig.property.keyVersion">KeyVersion</a></code> | <code>double</code> | The version of the key to use for encryption. |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransitEncrypt.DataVaultTransitEncryptConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 
@@ -857,7 +857,7 @@ public string Backend { get; set; }
 
 The Transit secret backend the key belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/transit_encrypt#backend DataVaultTransitEncrypt#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/transit_encrypt#backend DataVaultTransitEncrypt#backend}
 
 ---
 
@@ -871,7 +871,7 @@ public string Key { get; set; }
 
 Name of the encryption key to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/transit_encrypt#key DataVaultTransitEncrypt#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/transit_encrypt#key DataVaultTransitEncrypt#key}
 
 ---
 
@@ -885,7 +885,7 @@ public string Plaintext { get; set; }
 
 Map of strings read from Vault.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/transit_encrypt#plaintext DataVaultTransitEncrypt#plaintext}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/transit_encrypt#plaintext DataVaultTransitEncrypt#plaintext}
 
 ---
 
@@ -899,7 +899,7 @@ public string Context { get; set; }
 
 Specifies the context for key derivation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/transit_encrypt#context DataVaultTransitEncrypt#context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/transit_encrypt#context DataVaultTransitEncrypt#context}
 
 ---
 
@@ -911,7 +911,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/transit_encrypt#id DataVaultTransitEncrypt#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/transit_encrypt#id DataVaultTransitEncrypt#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -928,7 +928,7 @@ public double KeyVersion { get; set; }
 
 The version of the key to use for encryption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/transit_encrypt#key_version DataVaultTransitEncrypt#key_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/transit_encrypt#key_version DataVaultTransitEncrypt#key_version}
 
 ---
 
@@ -942,7 +942,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/transit_encrypt#namespace DataVaultTransitEncrypt#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/transit_encrypt#namespace DataVaultTransitEncrypt#namespace}
 
 ---
 

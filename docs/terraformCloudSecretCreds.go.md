@@ -4,12 +4,12 @@
 
 ### TerraformCloudSecretCreds <a name="TerraformCloudSecretCreds" id="@cdktf/provider-vault.terraformCloudSecretCreds.TerraformCloudSecretCreds"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/terraform_cloud_secret_creds vault_terraform_cloud_secret_creds}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/terraform_cloud_secret_creds vault_terraform_cloud_secret_creds}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.terraformCloudSecretCreds.TerraformCloudSecretCreds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/terraformcloudsecretcreds"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/terraformcloudsecretcreds"
 
 terraformcloudsecretcreds.NewTerraformCloudSecretCreds(scope Construct, id *string, config TerraformCloudSecretCredsConfig) TerraformCloudSecretCreds
 ```
@@ -392,7 +392,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.terraformCloudSecretCreds.TerraformCloudSecretCreds.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/terraformcloudsecretcreds"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/terraformcloudsecretcreds"
 
 terraformcloudsecretcreds.TerraformCloudSecretCreds_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.terraformCloudSecretCreds.TerraformCloudSecretCreds.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/terraformcloudsecretcreds"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/terraformcloudsecretcreds"
 
 terraformcloudsecretcreds.TerraformCloudSecretCreds_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ terraformcloudsecretcreds.TerraformCloudSecretCreds_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.terraformCloudSecretCreds.TerraformCloudSecretCreds.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/terraformcloudsecretcreds"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/terraformcloudsecretcreds"
 
 terraformcloudsecretcreds.TerraformCloudSecretCreds_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ terraformcloudsecretcreds.TerraformCloudSecretCreds_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.terraformCloudSecretCreds.TerraformCloudSecretCreds.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/terraformcloudsecretcreds"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/terraformcloudsecretcreds"
 
 terraformcloudsecretcreds.TerraformCloudSecretCreds_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the TerraformCloudSecretCreds 
 
 The id of the existing TerraformCloudSecretCreds that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/terraform_cloud_secret_creds#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/terraform_cloud_secret_creds#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -824,7 +824,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.terraformCloudSecretCreds.TerraformCloudSecretCredsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/terraformcloudsecretcreds"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/terraformcloudsecretcreds"
 
 &terraformcloudsecretcreds.TerraformCloudSecretCredsConfig {
 	Connection: interface{},
@@ -854,7 +854,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/terraformcloudsecretc
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretCreds.TerraformCloudSecretCredsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretCreds.TerraformCloudSecretCredsConfig.property.backend">Backend</a></code> | <code>*string</code> | Terraform Cloud secret backend to generate tokens from. |
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretCreds.TerraformCloudSecretCredsConfig.property.role">Role</a></code> | <code>*string</code> | Name of the role. |
-| <code><a href="#@cdktf/provider-vault.terraformCloudSecretCreds.TerraformCloudSecretCredsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/terraform_cloud_secret_creds#id TerraformCloudSecretCreds#id}. |
+| <code><a href="#@cdktf/provider-vault.terraformCloudSecretCreds.TerraformCloudSecretCredsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/terraform_cloud_secret_creds#id TerraformCloudSecretCreds#id}. |
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretCreds.TerraformCloudSecretCredsConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -939,7 +939,7 @@ Backend *string
 
 Terraform Cloud secret backend to generate tokens from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/terraform_cloud_secret_creds#backend TerraformCloudSecretCreds#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/terraform_cloud_secret_creds#backend TerraformCloudSecretCreds#backend}
 
 ---
 
@@ -953,7 +953,7 @@ Role *string
 
 Name of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/terraform_cloud_secret_creds#role TerraformCloudSecretCreds#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/terraform_cloud_secret_creds#role TerraformCloudSecretCreds#role}
 
 ---
 
@@ -965,7 +965,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/terraform_cloud_secret_creds#id TerraformCloudSecretCreds#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/terraform_cloud_secret_creds#id TerraformCloudSecretCreds#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -982,7 +982,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/terraform_cloud_secret_creds#namespace TerraformCloudSecretCreds#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/terraform_cloud_secret_creds#namespace TerraformCloudSecretCreds#namespace}
 
 ---
 

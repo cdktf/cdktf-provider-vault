@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/quota_lease_count
+// https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/quota_lease_count
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface QuotaLeaseCountConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/quota_lease_count#id QuotaLeaseCount#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/quota_lease_count#id QuotaLeaseCount#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,43 +17,43 @@ export interface QuotaLeaseCountConfig extends cdktf.TerraformMetaArguments {
   /**
   * If set to true on a quota where path is set to a namespace, the same quota will be cumulatively applied to all child namespace. The inheritable parameter cannot be set to true if the path does not specify a namespace. Only the quotas associated with the root namespace are inheritable by default.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/quota_lease_count#inheritable QuotaLeaseCount#inheritable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/quota_lease_count#inheritable QuotaLeaseCount#inheritable}
   */
   readonly inheritable?: boolean | cdktf.IResolvable;
   /**
   * The maximum number of leases to be allowed by the quota rule. The max_leases must be positive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/quota_lease_count#max_leases QuotaLeaseCount#max_leases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/quota_lease_count#max_leases QuotaLeaseCount#max_leases}
   */
   readonly maxLeases: number;
   /**
   * The name of the quota.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/quota_lease_count#name QuotaLeaseCount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/quota_lease_count#name QuotaLeaseCount#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/quota_lease_count#namespace QuotaLeaseCount#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/quota_lease_count#namespace QuotaLeaseCount#namespace}
   */
   readonly namespace?: string;
   /**
   * Path of the mount or namespace to apply the quota. A blank path configures a global lease count quota.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/quota_lease_count#path QuotaLeaseCount#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/quota_lease_count#path QuotaLeaseCount#path}
   */
   readonly path?: string;
   /**
   * If set on a quota where path is set to an auth mount with a concept of roles (such as /auth/approle/), this will make the quota restrict login requests to that mount that are made with the specified role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/quota_lease_count#role QuotaLeaseCount#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/quota_lease_count#role QuotaLeaseCount#role}
   */
   readonly role?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/quota_lease_count vault_quota_lease_count}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/quota_lease_count vault_quota_lease_count}
 */
 export class QuotaLeaseCount extends cdktf.TerraformResource {
 
@@ -74,7 +69,7 @@ export class QuotaLeaseCount extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a QuotaLeaseCount resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the QuotaLeaseCount to import
-  * @param importFromId The id of the existing QuotaLeaseCount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/quota_lease_count#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing QuotaLeaseCount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/quota_lease_count#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the QuotaLeaseCount to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -86,7 +81,7 @@ export class QuotaLeaseCount extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/quota_lease_count vault_quota_lease_count} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/quota_lease_count vault_quota_lease_count} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -97,7 +92,7 @@ export class QuotaLeaseCount extends cdktf.TerraformResource {
       terraformResourceType: 'vault_quota_lease_count',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '4.4.0',
+        providerVersion: '4.5.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

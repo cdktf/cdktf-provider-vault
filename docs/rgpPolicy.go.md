@@ -4,12 +4,12 @@
 
 ### RgpPolicy <a name="RgpPolicy" id="@cdktf/provider-vault.rgpPolicy.RgpPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/rgp_policy vault_rgp_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/rgp_policy vault_rgp_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.rgpPolicy.RgpPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/rgppolicy"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/rgppolicy"
 
 rgppolicy.NewRgpPolicy(scope Construct, id *string, config RgpPolicyConfig) RgpPolicy
 ```
@@ -392,7 +392,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.rgpPolicy.RgpPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/rgppolicy"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/rgppolicy"
 
 rgppolicy.RgpPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.rgpPolicy.RgpPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/rgppolicy"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/rgppolicy"
 
 rgppolicy.RgpPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ rgppolicy.RgpPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.rgpPolicy.RgpPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/rgppolicy"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/rgppolicy"
 
 rgppolicy.RgpPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ rgppolicy.RgpPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.rgpPolicy.RgpPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/rgppolicy"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/rgppolicy"
 
 rgppolicy.RgpPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the RgpPolicy to import.
 
 The id of the existing RgpPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/rgp_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/rgp_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.rgpPolicy.RgpPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/rgppolicy"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/rgppolicy"
 
 &rgppolicy.RgpPolicyConfig {
 	Connection: interface{},
@@ -823,7 +823,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/rgppolicy"
 | <code><a href="#@cdktf/provider-vault.rgpPolicy.RgpPolicyConfig.property.enforcementLevel">EnforcementLevel</a></code> | <code>*string</code> | Enforcement level of Sentinel policy. Can be one of: 'advisory', 'soft-mandatory' or 'hard-mandatory'. |
 | <code><a href="#@cdktf/provider-vault.rgpPolicy.RgpPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Name of the policy. |
 | <code><a href="#@cdktf/provider-vault.rgpPolicy.RgpPolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | The policy document. |
-| <code><a href="#@cdktf/provider-vault.rgpPolicy.RgpPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/rgp_policy#id RgpPolicy#id}. |
+| <code><a href="#@cdktf/provider-vault.rgpPolicy.RgpPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/rgp_policy#id RgpPolicy#id}. |
 | <code><a href="#@cdktf/provider-vault.rgpPolicy.RgpPolicyConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -908,7 +908,7 @@ EnforcementLevel *string
 
 Enforcement level of Sentinel policy. Can be one of: 'advisory', 'soft-mandatory' or 'hard-mandatory'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/rgp_policy#enforcement_level RgpPolicy#enforcement_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/rgp_policy#enforcement_level RgpPolicy#enforcement_level}
 
 ---
 
@@ -922,7 +922,7 @@ Name *string
 
 Name of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/rgp_policy#name RgpPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/rgp_policy#name RgpPolicy#name}
 
 ---
 
@@ -936,7 +936,7 @@ Policy *string
 
 The policy document.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/rgp_policy#policy RgpPolicy#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/rgp_policy#policy RgpPolicy#policy}
 
 ---
 
@@ -948,7 +948,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/rgp_policy#id RgpPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/rgp_policy#id RgpPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -965,7 +965,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/rgp_policy#namespace RgpPolicy#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/rgp_policy#namespace RgpPolicy#namespace}
 
 ---
 

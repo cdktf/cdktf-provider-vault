@@ -4,7 +4,7 @@
 
 ### VaultProvider <a name="VaultProvider" id="@cdktf/provider-vault.provider.VaultProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs vault}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs vault}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.provider.VaultProvider.Initializer"></a>
 
@@ -443,7 +443,7 @@ The construct id used in the generated config for the VaultProvider to import.
 
 The id of the existing VaultProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1274,10 +1274,10 @@ new VaultProviderAuthLogin {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.path">Path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#path VaultProvider#path}. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.method">Method</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#method VaultProvider#method}. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.path">Path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#path VaultProvider#path}. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.method">Method</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#method VaultProvider#method}. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.namespace">Namespace</a></code> | <code>string</code> | The authentication engine's namespace. Conflicts with use_root_namespace. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.parameters">Parameters</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#parameters VaultProvider#parameters}. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.parameters">Parameters</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#parameters VaultProvider#parameters}. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.useRootNamespace">UseRootNamespace</a></code> | <code>object</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
 
 ---
@@ -1290,7 +1290,7 @@ public string Path { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#path VaultProvider#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#path VaultProvider#path}.
 
 ---
 
@@ -1302,7 +1302,7 @@ public string Method { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#method VaultProvider#method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#method VaultProvider#method}.
 
 ---
 
@@ -1316,7 +1316,7 @@ public string Namespace { get; set; }
 
 The authentication engine's namespace. Conflicts with use_root_namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#namespace VaultProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#namespace VaultProvider#namespace}
 
 ---
 
@@ -1328,7 +1328,7 @@ public System.Collections.Generic.IDictionary<string, string> Parameters { get; 
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#parameters VaultProvider#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#parameters VaultProvider#parameters}.
 
 ---
 
@@ -1342,7 +1342,7 @@ public object UseRootNamespace { get; set; }
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#use_root_namespace VaultProvider#use_root_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#use_root_namespace VaultProvider#use_root_namespace}
 
 ---
 
@@ -1406,7 +1406,7 @@ public string Role { get; set; }
 
 The Vault role to use when logging into Vault.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#role VaultProvider#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#role VaultProvider#role}
 
 ---
 
@@ -1420,7 +1420,7 @@ public string AwsAccessKeyId { get; set; }
 
 The AWS access key ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#aws_access_key_id VaultProvider#aws_access_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#aws_access_key_id VaultProvider#aws_access_key_id}
 
 ---
 
@@ -1434,7 +1434,7 @@ public string AwsIamEndpoint { get; set; }
 
 The IAM endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#aws_iam_endpoint VaultProvider#aws_iam_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#aws_iam_endpoint VaultProvider#aws_iam_endpoint}
 
 ---
 
@@ -1448,7 +1448,7 @@ public string AwsProfile { get; set; }
 
 The name of the AWS profile.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#aws_profile VaultProvider#aws_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#aws_profile VaultProvider#aws_profile}
 
 ---
 
@@ -1462,7 +1462,7 @@ public string AwsRegion { get; set; }
 
 The AWS region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#aws_region VaultProvider#aws_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#aws_region VaultProvider#aws_region}
 
 ---
 
@@ -1476,7 +1476,7 @@ public string AwsRoleArn { get; set; }
 
 The ARN of the AWS Role to assume.Used during STS AssumeRole.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#aws_role_arn VaultProvider#aws_role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#aws_role_arn VaultProvider#aws_role_arn}
 
 ---
 
@@ -1490,7 +1490,7 @@ public string AwsRoleSessionName { get; set; }
 
 Specifies the name to attach to the AWS role session. Used during STS AssumeRole.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#aws_role_session_name VaultProvider#aws_role_session_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#aws_role_session_name VaultProvider#aws_role_session_name}
 
 ---
 
@@ -1504,7 +1504,7 @@ public string AwsSecretAccessKey { get; set; }
 
 The AWS secret access key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#aws_secret_access_key VaultProvider#aws_secret_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#aws_secret_access_key VaultProvider#aws_secret_access_key}
 
 ---
 
@@ -1518,7 +1518,7 @@ public string AwsSessionToken { get; set; }
 
 The AWS session token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#aws_session_token VaultProvider#aws_session_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#aws_session_token VaultProvider#aws_session_token}
 
 ---
 
@@ -1532,7 +1532,7 @@ public string AwsSharedCredentialsFile { get; set; }
 
 Path to the AWS shared credentials file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#aws_shared_credentials_file VaultProvider#aws_shared_credentials_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#aws_shared_credentials_file VaultProvider#aws_shared_credentials_file}
 
 ---
 
@@ -1546,7 +1546,7 @@ public string AwsStsEndpoint { get; set; }
 
 The STS endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#aws_sts_endpoint VaultProvider#aws_sts_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#aws_sts_endpoint VaultProvider#aws_sts_endpoint}
 
 ---
 
@@ -1560,7 +1560,7 @@ public string AwsWebIdentityTokenFile { get; set; }
 
 Path to the file containing an OAuth 2.0 access token or OpenID Connect ID token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#aws_web_identity_token_file VaultProvider#aws_web_identity_token_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#aws_web_identity_token_file VaultProvider#aws_web_identity_token_file}
 
 ---
 
@@ -1574,7 +1574,7 @@ public string HeaderValue { get; set; }
 
 The Vault header value to include in the STS signing request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#header_value VaultProvider#header_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#header_value VaultProvider#header_value}
 
 ---
 
@@ -1588,7 +1588,7 @@ public string Mount { get; set; }
 
 The path where the authentication engine is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#mount VaultProvider#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#mount VaultProvider#mount}
 
 ---
 
@@ -1602,7 +1602,7 @@ public string Namespace { get; set; }
 
 The authentication engine's namespace. Conflicts with use_root_namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#namespace VaultProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#namespace VaultProvider#namespace}
 
 ---
 
@@ -1616,7 +1616,7 @@ public object UseRootNamespace { get; set; }
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#use_root_namespace VaultProvider#use_root_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#use_root_namespace VaultProvider#use_root_namespace}
 
 ---
 
@@ -1672,7 +1672,7 @@ public string ResourceGroupName { get; set; }
 
 The resource group for the machine that generated the MSI token. This information can be obtained through instance metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#resource_group_name VaultProvider#resource_group_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#resource_group_name VaultProvider#resource_group_name}
 
 ---
 
@@ -1686,7 +1686,7 @@ public string Role { get; set; }
 
 Name of the login role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#role VaultProvider#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#role VaultProvider#role}
 
 ---
 
@@ -1700,7 +1700,7 @@ public string SubscriptionId { get; set; }
 
 The subscription ID for the machine that generated the MSI token. This information can be obtained through instance metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#subscription_id VaultProvider#subscription_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#subscription_id VaultProvider#subscription_id}
 
 ---
 
@@ -1714,7 +1714,7 @@ public string ClientId { get; set; }
 
 The identity's client ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#client_id VaultProvider#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#client_id VaultProvider#client_id}
 
 ---
 
@@ -1728,7 +1728,7 @@ public string Jwt { get; set; }
 
 A signed JSON Web Token. If not specified on will be created automatically.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#jwt VaultProvider#jwt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#jwt VaultProvider#jwt}
 
 ---
 
@@ -1742,7 +1742,7 @@ public string Mount { get; set; }
 
 The path where the authentication engine is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#mount VaultProvider#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#mount VaultProvider#mount}
 
 ---
 
@@ -1756,7 +1756,7 @@ public string Namespace { get; set; }
 
 The authentication engine's namespace. Conflicts with use_root_namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#namespace VaultProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#namespace VaultProvider#namespace}
 
 ---
 
@@ -1770,7 +1770,7 @@ public string Scope { get; set; }
 
 The scopes to include in the token request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#scope VaultProvider#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#scope VaultProvider#scope}
 
 ---
 
@@ -1784,7 +1784,7 @@ public string TenantId { get; set; }
 
 Provides the tenant ID to use in a multi-tenant authentication scenario.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#tenant_id VaultProvider#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#tenant_id VaultProvider#tenant_id}
 
 ---
 
@@ -1798,7 +1798,7 @@ public object UseRootNamespace { get; set; }
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#use_root_namespace VaultProvider#use_root_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#use_root_namespace VaultProvider#use_root_namespace}
 
 ---
 
@@ -1814,7 +1814,7 @@ The virtual machine name for the machine that generated the MSI token.
 
 This information can be obtained through instance metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#vm_name VaultProvider#vm_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#vm_name VaultProvider#vm_name}
 
 ---
 
@@ -1830,7 +1830,7 @@ The virtual machine scale set name for the machine that generated the MSI token.
 
 This information can be obtained through instance metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#vmss_name VaultProvider#vmss_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#vmss_name VaultProvider#vmss_name}
 
 ---
 
@@ -1874,7 +1874,7 @@ public string CertFile { get; set; }
 
 Path to a file containing the client certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#cert_file VaultProvider#cert_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#cert_file VaultProvider#cert_file}
 
 ---
 
@@ -1888,7 +1888,7 @@ public string KeyFile { get; set; }
 
 Path to a file containing the private key that the certificate was issued for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#key_file VaultProvider#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#key_file VaultProvider#key_file}
 
 ---
 
@@ -1902,7 +1902,7 @@ public string Mount { get; set; }
 
 The path where the authentication engine is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#mount VaultProvider#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#mount VaultProvider#mount}
 
 ---
 
@@ -1916,7 +1916,7 @@ public string Name { get; set; }
 
 Name of the certificate's role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#name VaultProvider#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#name VaultProvider#name}
 
 ---
 
@@ -1930,7 +1930,7 @@ public string Namespace { get; set; }
 
 The authentication engine's namespace. Conflicts with use_root_namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#namespace VaultProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#namespace VaultProvider#namespace}
 
 ---
 
@@ -1944,7 +1944,7 @@ public object UseRootNamespace { get; set; }
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#use_root_namespace VaultProvider#use_root_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#use_root_namespace VaultProvider#use_root_namespace}
 
 ---
 
@@ -1990,7 +1990,7 @@ public string Role { get; set; }
 
 Name of the login role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#role VaultProvider#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#role VaultProvider#role}
 
 ---
 
@@ -2004,7 +2004,7 @@ public string Credentials { get; set; }
 
 Path to the Google Cloud credentials file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#credentials VaultProvider#credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#credentials VaultProvider#credentials}
 
 ---
 
@@ -2018,7 +2018,7 @@ public string Jwt { get; set; }
 
 A signed JSON Web Token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#jwt VaultProvider#jwt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#jwt VaultProvider#jwt}
 
 ---
 
@@ -2032,7 +2032,7 @@ public string Mount { get; set; }
 
 The path where the authentication engine is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#mount VaultProvider#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#mount VaultProvider#mount}
 
 ---
 
@@ -2046,7 +2046,7 @@ public string Namespace { get; set; }
 
 The authentication engine's namespace. Conflicts with use_root_namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#namespace VaultProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#namespace VaultProvider#namespace}
 
 ---
 
@@ -2060,7 +2060,7 @@ public string ServiceAccount { get; set; }
 
 IAM service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#service_account VaultProvider#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#service_account VaultProvider#service_account}
 
 ---
 
@@ -2074,7 +2074,7 @@ public object UseRootNamespace { get; set; }
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#use_root_namespace VaultProvider#use_root_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#use_root_namespace VaultProvider#use_root_namespace}
 
 ---
 
@@ -2116,7 +2116,7 @@ public string Jwt { get; set; }
 
 A signed JSON Web Token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#jwt VaultProvider#jwt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#jwt VaultProvider#jwt}
 
 ---
 
@@ -2130,7 +2130,7 @@ public string Role { get; set; }
 
 Name of the login role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#role VaultProvider#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#role VaultProvider#role}
 
 ---
 
@@ -2144,7 +2144,7 @@ public string Mount { get; set; }
 
 The path where the authentication engine is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#mount VaultProvider#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#mount VaultProvider#mount}
 
 ---
 
@@ -2158,7 +2158,7 @@ public string Namespace { get; set; }
 
 The authentication engine's namespace. Conflicts with use_root_namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#namespace VaultProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#namespace VaultProvider#namespace}
 
 ---
 
@@ -2172,7 +2172,7 @@ public object UseRootNamespace { get; set; }
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#use_root_namespace VaultProvider#use_root_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#use_root_namespace VaultProvider#use_root_namespace}
 
 ---
 
@@ -2226,7 +2226,7 @@ public object DisableFastNegotiation { get; set; }
 
 Disable the Kerberos FAST negotiation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#disable_fast_negotiation VaultProvider#disable_fast_negotiation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#disable_fast_negotiation VaultProvider#disable_fast_negotiation}
 
 ---
 
@@ -2240,7 +2240,7 @@ public string KeytabPath { get; set; }
 
 The Kerberos keytab file containing the entry of the login entity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#keytab_path VaultProvider#keytab_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#keytab_path VaultProvider#keytab_path}
 
 ---
 
@@ -2254,7 +2254,7 @@ public string Krb5ConfPath { get; set; }
 
 A valid Kerberos configuration file e.g. /etc/krb5.conf.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#krb5conf_path VaultProvider#krb5conf_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#krb5conf_path VaultProvider#krb5conf_path}
 
 ---
 
@@ -2268,7 +2268,7 @@ public string Mount { get; set; }
 
 The path where the authentication engine is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#mount VaultProvider#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#mount VaultProvider#mount}
 
 ---
 
@@ -2282,7 +2282,7 @@ public string Namespace { get; set; }
 
 The authentication engine's namespace. Conflicts with use_root_namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#namespace VaultProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#namespace VaultProvider#namespace}
 
 ---
 
@@ -2296,7 +2296,7 @@ public string Realm { get; set; }
 
 The Kerberos server's authoritative authentication domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#realm VaultProvider#realm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#realm VaultProvider#realm}
 
 ---
 
@@ -2310,7 +2310,7 @@ public object RemoveInstanceName { get; set; }
 
 Strip the host from the username found in the keytab.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#remove_instance_name VaultProvider#remove_instance_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#remove_instance_name VaultProvider#remove_instance_name}
 
 ---
 
@@ -2324,7 +2324,7 @@ public string Service { get; set; }
 
 The service principle name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#service VaultProvider#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#service VaultProvider#service}
 
 ---
 
@@ -2338,7 +2338,7 @@ public string Token { get; set; }
 
 Simple and Protected GSSAPI Negotiation Mechanism (SPNEGO) token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#token VaultProvider#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#token VaultProvider#token}
 
 ---
 
@@ -2352,7 +2352,7 @@ public string Username { get; set; }
 
 The username to login into Kerberos with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#username VaultProvider#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#username VaultProvider#username}
 
 ---
 
@@ -2366,7 +2366,7 @@ public object UseRootNamespace { get; set; }
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#use_root_namespace VaultProvider#use_root_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#use_root_namespace VaultProvider#use_root_namespace}
 
 ---
 
@@ -2408,7 +2408,7 @@ public string AuthType { get; set; }
 
 Authentication type to use when getting OCI credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#auth_type VaultProvider#auth_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#auth_type VaultProvider#auth_type}
 
 ---
 
@@ -2422,7 +2422,7 @@ public string Role { get; set; }
 
 Name of the login role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#role VaultProvider#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#role VaultProvider#role}
 
 ---
 
@@ -2436,7 +2436,7 @@ public string Mount { get; set; }
 
 The path where the authentication engine is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#mount VaultProvider#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#mount VaultProvider#mount}
 
 ---
 
@@ -2450,7 +2450,7 @@ public string Namespace { get; set; }
 
 The authentication engine's namespace. Conflicts with use_root_namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#namespace VaultProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#namespace VaultProvider#namespace}
 
 ---
 
@@ -2464,7 +2464,7 @@ public object UseRootNamespace { get; set; }
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#use_root_namespace VaultProvider#use_root_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#use_root_namespace VaultProvider#use_root_namespace}
 
 ---
 
@@ -2508,7 +2508,7 @@ public string Role { get; set; }
 
 Name of the login role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#role VaultProvider#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#role VaultProvider#role}
 
 ---
 
@@ -2522,7 +2522,7 @@ public string CallbackAddress { get; set; }
 
 The callback address. Must be a valid URI without the path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#callback_address VaultProvider#callback_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#callback_address VaultProvider#callback_address}
 
 ---
 
@@ -2536,7 +2536,7 @@ public string CallbackListenerAddress { get; set; }
 
 The callback listener's address. Must be a valid URI without the path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#callback_listener_address VaultProvider#callback_listener_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#callback_listener_address VaultProvider#callback_listener_address}
 
 ---
 
@@ -2550,7 +2550,7 @@ public string Mount { get; set; }
 
 The path where the authentication engine is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#mount VaultProvider#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#mount VaultProvider#mount}
 
 ---
 
@@ -2564,7 +2564,7 @@ public string Namespace { get; set; }
 
 The authentication engine's namespace. Conflicts with use_root_namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#namespace VaultProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#namespace VaultProvider#namespace}
 
 ---
 
@@ -2578,7 +2578,7 @@ public object UseRootNamespace { get; set; }
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#use_root_namespace VaultProvider#use_root_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#use_root_namespace VaultProvider#use_root_namespace}
 
 ---
 
@@ -2620,7 +2620,7 @@ public string Password { get; set; }
 
 The Radius password for username.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#password VaultProvider#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#password VaultProvider#password}
 
 ---
 
@@ -2634,7 +2634,7 @@ public string Username { get; set; }
 
 The Radius username.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#username VaultProvider#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#username VaultProvider#username}
 
 ---
 
@@ -2648,7 +2648,7 @@ public string Mount { get; set; }
 
 The path where the authentication engine is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#mount VaultProvider#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#mount VaultProvider#mount}
 
 ---
 
@@ -2662,7 +2662,7 @@ public string Namespace { get; set; }
 
 The authentication engine's namespace. Conflicts with use_root_namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#namespace VaultProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#namespace VaultProvider#namespace}
 
 ---
 
@@ -2676,7 +2676,7 @@ public object UseRootNamespace { get; set; }
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#use_root_namespace VaultProvider#use_root_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#use_root_namespace VaultProvider#use_root_namespace}
 
 ---
 
@@ -2714,7 +2714,7 @@ public string Filename { get; set; }
 
 The name of a file containing a single line that is a valid Vault token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#filename VaultProvider#filename}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#filename VaultProvider#filename}
 
 ---
 
@@ -2728,7 +2728,7 @@ public string Namespace { get; set; }
 
 The authentication engine's namespace. Conflicts with use_root_namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#namespace VaultProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#namespace VaultProvider#namespace}
 
 ---
 
@@ -2742,7 +2742,7 @@ public object UseRootNamespace { get; set; }
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#use_root_namespace VaultProvider#use_root_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#use_root_namespace VaultProvider#use_root_namespace}
 
 ---
 
@@ -2786,7 +2786,7 @@ public string Username { get; set; }
 
 Login with username.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#username VaultProvider#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#username VaultProvider#username}
 
 ---
 
@@ -2800,7 +2800,7 @@ public string Mount { get; set; }
 
 The path where the authentication engine is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#mount VaultProvider#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#mount VaultProvider#mount}
 
 ---
 
@@ -2814,7 +2814,7 @@ public string Namespace { get; set; }
 
 The authentication engine's namespace. Conflicts with use_root_namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#namespace VaultProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#namespace VaultProvider#namespace}
 
 ---
 
@@ -2828,7 +2828,7 @@ public string Password { get; set; }
 
 Login with password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#password VaultProvider#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#password VaultProvider#password}
 
 ---
 
@@ -2842,7 +2842,7 @@ public string PasswordFile { get; set; }
 
 Login with password from a file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#password_file VaultProvider#password_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#password_file VaultProvider#password_file}
 
 ---
 
@@ -2856,7 +2856,7 @@ public object UseRootNamespace { get; set; }
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#use_root_namespace VaultProvider#use_root_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#use_root_namespace VaultProvider#use_root_namespace}
 
 ---
 
@@ -2892,7 +2892,7 @@ public string CertFile { get; set; }
 
 Path to a file containing the client certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#cert_file VaultProvider#cert_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#cert_file VaultProvider#cert_file}
 
 ---
 
@@ -2906,7 +2906,7 @@ public string KeyFile { get; set; }
 
 Path to a file containing the private key that the certificate was issued for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#key_file VaultProvider#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#key_file VaultProvider#key_file}
 
 ---
 
@@ -3000,7 +3000,7 @@ public string Address { get; set; }
 
 URL of the root of the target Vault server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#address VaultProvider#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#address VaultProvider#address}
 
 ---
 
@@ -3014,7 +3014,7 @@ public string AddAddressToEnv { get; set; }
 
 If true, adds the value of the `address` argument to the Terraform process environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#add_address_to_env VaultProvider#add_address_to_env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#add_address_to_env VaultProvider#add_address_to_env}
 
 ---
 
@@ -3028,7 +3028,7 @@ public string Alias { get; set; }
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#alias VaultProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#alias VaultProvider#alias}
 
 ---
 
@@ -3042,7 +3042,7 @@ public VaultProviderAuthLogin AuthLogin { get; set; }
 
 auth_login block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#auth_login VaultProvider#auth_login}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#auth_login VaultProvider#auth_login}
 
 ---
 
@@ -3056,7 +3056,7 @@ public VaultProviderAuthLoginAws AuthLoginAws { get; set; }
 
 auth_login_aws block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#auth_login_aws VaultProvider#auth_login_aws}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#auth_login_aws VaultProvider#auth_login_aws}
 
 ---
 
@@ -3070,7 +3070,7 @@ public VaultProviderAuthLoginAzure AuthLoginAzure { get; set; }
 
 auth_login_azure block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#auth_login_azure VaultProvider#auth_login_azure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#auth_login_azure VaultProvider#auth_login_azure}
 
 ---
 
@@ -3084,7 +3084,7 @@ public VaultProviderAuthLoginCert AuthLoginCert { get; set; }
 
 auth_login_cert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#auth_login_cert VaultProvider#auth_login_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#auth_login_cert VaultProvider#auth_login_cert}
 
 ---
 
@@ -3098,7 +3098,7 @@ public VaultProviderAuthLoginGcp AuthLoginGcp { get; set; }
 
 auth_login_gcp block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#auth_login_gcp VaultProvider#auth_login_gcp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#auth_login_gcp VaultProvider#auth_login_gcp}
 
 ---
 
@@ -3112,7 +3112,7 @@ public VaultProviderAuthLoginJwt AuthLoginJwt { get; set; }
 
 auth_login_jwt block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#auth_login_jwt VaultProvider#auth_login_jwt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#auth_login_jwt VaultProvider#auth_login_jwt}
 
 ---
 
@@ -3126,7 +3126,7 @@ public VaultProviderAuthLoginKerberos AuthLoginKerberos { get; set; }
 
 auth_login_kerberos block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#auth_login_kerberos VaultProvider#auth_login_kerberos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#auth_login_kerberos VaultProvider#auth_login_kerberos}
 
 ---
 
@@ -3140,7 +3140,7 @@ public VaultProviderAuthLoginOci AuthLoginOci { get; set; }
 
 auth_login_oci block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#auth_login_oci VaultProvider#auth_login_oci}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#auth_login_oci VaultProvider#auth_login_oci}
 
 ---
 
@@ -3154,7 +3154,7 @@ public VaultProviderAuthLoginOidc AuthLoginOidc { get; set; }
 
 auth_login_oidc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#auth_login_oidc VaultProvider#auth_login_oidc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#auth_login_oidc VaultProvider#auth_login_oidc}
 
 ---
 
@@ -3168,7 +3168,7 @@ public VaultProviderAuthLoginRadius AuthLoginRadius { get; set; }
 
 auth_login_radius block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#auth_login_radius VaultProvider#auth_login_radius}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#auth_login_radius VaultProvider#auth_login_radius}
 
 ---
 
@@ -3182,7 +3182,7 @@ public VaultProviderAuthLoginTokenFile AuthLoginTokenFile { get; set; }
 
 auth_login_token_file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#auth_login_token_file VaultProvider#auth_login_token_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#auth_login_token_file VaultProvider#auth_login_token_file}
 
 ---
 
@@ -3196,7 +3196,7 @@ public VaultProviderAuthLoginUserpass AuthLoginUserpass { get; set; }
 
 auth_login_userpass block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#auth_login_userpass VaultProvider#auth_login_userpass}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#auth_login_userpass VaultProvider#auth_login_userpass}
 
 ---
 
@@ -3210,7 +3210,7 @@ public string CaCertDir { get; set; }
 
 Path to directory containing CA certificate files to validate the server's certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#ca_cert_dir VaultProvider#ca_cert_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#ca_cert_dir VaultProvider#ca_cert_dir}
 
 ---
 
@@ -3224,7 +3224,7 @@ public string CaCertFile { get; set; }
 
 Path to a CA certificate file to validate the server's certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#ca_cert_file VaultProvider#ca_cert_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#ca_cert_file VaultProvider#ca_cert_file}
 
 ---
 
@@ -3238,7 +3238,7 @@ public VaultProviderClientAuth ClientAuth { get; set; }
 
 client_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#client_auth VaultProvider#client_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#client_auth VaultProvider#client_auth}
 
 ---
 
@@ -3252,7 +3252,7 @@ public object Headers { get; set; }
 
 headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#headers VaultProvider#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#headers VaultProvider#headers}
 
 ---
 
@@ -3266,7 +3266,7 @@ public double MaxLeaseTtlSeconds { get; set; }
 
 Maximum TTL for secret leases requested by this provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#max_lease_ttl_seconds VaultProvider#max_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#max_lease_ttl_seconds VaultProvider#max_lease_ttl_seconds}
 
 ---
 
@@ -3280,7 +3280,7 @@ public double MaxRetries { get; set; }
 
 Maximum number of retries when a 5xx error code is encountered.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#max_retries VaultProvider#max_retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#max_retries VaultProvider#max_retries}
 
 ---
 
@@ -3294,7 +3294,7 @@ public double MaxRetriesCcc { get; set; }
 
 Maximum number of retries for Client Controlled Consistency related operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#max_retries_ccc VaultProvider#max_retries_ccc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#max_retries_ccc VaultProvider#max_retries_ccc}
 
 ---
 
@@ -3308,7 +3308,7 @@ public string Namespace { get; set; }
 
 The namespace to use. Available only for Vault Enterprise.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#namespace VaultProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#namespace VaultProvider#namespace}
 
 ---
 
@@ -3322,7 +3322,7 @@ public object SetNamespaceFromToken { get; set; }
 
 In the case where the Vault token is for a specific namespace and the provider namespace is not configured, use the token namespace as the root namespace for all resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#set_namespace_from_token VaultProvider#set_namespace_from_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#set_namespace_from_token VaultProvider#set_namespace_from_token}
 
 ---
 
@@ -3336,7 +3336,7 @@ public object SkipChildToken { get; set; }
 
 Set this to true to prevent the creation of ephemeral child token used by this provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#skip_child_token VaultProvider#skip_child_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#skip_child_token VaultProvider#skip_child_token}
 
 ---
 
@@ -3350,7 +3350,7 @@ public object SkipGetVaultVersion { get; set; }
 
 Skip the dynamic fetching of the Vault server version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#skip_get_vault_version VaultProvider#skip_get_vault_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#skip_get_vault_version VaultProvider#skip_get_vault_version}
 
 ---
 
@@ -3364,7 +3364,7 @@ public object SkipTlsVerify { get; set; }
 
 Set this to true only if the target Vault server is an insecure development instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#skip_tls_verify VaultProvider#skip_tls_verify}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#skip_tls_verify VaultProvider#skip_tls_verify}
 
 ---
 
@@ -3378,7 +3378,7 @@ public string TlsServerName { get; set; }
 
 Name to use as the SNI host when connecting via TLS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#tls_server_name VaultProvider#tls_server_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#tls_server_name VaultProvider#tls_server_name}
 
 ---
 
@@ -3392,7 +3392,7 @@ public string Token { get; set; }
 
 Token to use to authenticate to Vault.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#token VaultProvider#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#token VaultProvider#token}
 
 ---
 
@@ -3406,7 +3406,7 @@ public string TokenName { get; set; }
 
 Token name to use for creating the Vault child token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#token_name VaultProvider#token_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#token_name VaultProvider#token_name}
 
 ---
 
@@ -3420,7 +3420,7 @@ public string VaultVersionOverride { get; set; }
 
 Override the Vault server version, which is normally determined dynamically from the target Vault server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#vault_version_override VaultProvider#vault_version_override}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#vault_version_override VaultProvider#vault_version_override}
 
 ---
 
@@ -3456,7 +3456,7 @@ public string Name { get; set; }
 
 The header name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#name VaultProvider#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#name VaultProvider#name}
 
 ---
 
@@ -3470,7 +3470,7 @@ public string Value { get; set; }
 
 The header value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs#value VaultProvider#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs#value VaultProvider#value}
 
 ---
 
