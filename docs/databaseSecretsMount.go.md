@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMount(scope Construct, id *string, config DatabaseSecretsMountConfig) DatabaseSecretsMount
 ```
@@ -864,7 +864,7 @@ func ResetSnowflake()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 databasesecretsmount.DatabaseSecretsMount_IsConstruct(x interface{}) *bool
 ```
@@ -896,7 +896,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 databasesecretsmount.DatabaseSecretsMount_IsTerraformElement(x interface{}) *bool
 ```
@@ -910,7 +910,7 @@ databasesecretsmount.DatabaseSecretsMount_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 databasesecretsmount.DatabaseSecretsMount_IsTerraformResource(x interface{}) *bool
 ```
@@ -924,7 +924,7 @@ databasesecretsmount.DatabaseSecretsMount_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 databasesecretsmount.DatabaseSecretsMount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1989,7 +1989,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 &databasesecretsmount.DatabaseSecretsMountCassandra {
 	Name: *string,
@@ -2287,7 +2287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 &databasesecretsmount.DatabaseSecretsMountConfig {
 	Connection: interface{},
@@ -2982,7 +2982,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 &databasesecretsmount.DatabaseSecretsMountCouchbase {
 	Hosts: *[]*string,
@@ -3228,7 +3228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 &databasesecretsmount.DatabaseSecretsMountElasticsearch {
 	Name: *string,
@@ -3504,7 +3504,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 &databasesecretsmount.DatabaseSecretsMountHana {
 	Name: *string,
@@ -3732,7 +3732,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 &databasesecretsmount.DatabaseSecretsMountInfluxdb {
 	Host: *string,
@@ -4012,7 +4012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 &databasesecretsmount.DatabaseSecretsMountMongodb {
 	Name: *string,
@@ -4240,7 +4240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 &databasesecretsmount.DatabaseSecretsMountMongodbatlas {
 	Name: *string,
@@ -4404,7 +4404,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 &databasesecretsmount.DatabaseSecretsMountMssql {
 	Name: *string,
@@ -4664,7 +4664,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 &databasesecretsmount.DatabaseSecretsMountMysql {
 	Name: *string,
@@ -4958,7 +4958,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 &databasesecretsmount.DatabaseSecretsMountMysqlAurora {
 	Name: *string,
@@ -5252,7 +5252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 &databasesecretsmount.DatabaseSecretsMountMysqlLegacy {
 	Name: *string,
@@ -5546,7 +5546,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 &databasesecretsmount.DatabaseSecretsMountMysqlRds {
 	Name: *string,
@@ -5840,7 +5840,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 &databasesecretsmount.DatabaseSecretsMountOracle {
 	Name: *string,
@@ -6100,7 +6100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 &databasesecretsmount.DatabaseSecretsMountPostgresql {
 	Name: *string,
@@ -6440,7 +6440,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 &databasesecretsmount.DatabaseSecretsMountRedis {
 	Host: *string,
@@ -6668,7 +6668,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 &databasesecretsmount.DatabaseSecretsMountRedisElasticache {
 	Name: *string,
@@ -6854,7 +6854,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 &databasesecretsmount.DatabaseSecretsMountRedshift {
 	Name: *string,
@@ -7098,7 +7098,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 &databasesecretsmount.DatabaseSecretsMountSnowflake {
 	Name: *string,
@@ -7328,7 +7328,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountCassandraList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountCassandraList
 ```
@@ -7488,7 +7488,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountCassandraOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseSecretsMountCassandraOutputReference
 ```
@@ -8241,7 +8241,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountCouchbaseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountCouchbaseList
 ```
@@ -8401,7 +8401,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountCouchbaseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseSecretsMountCouchbaseOutputReference
 ```
@@ -9046,7 +9046,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountElasticsearchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountElasticsearchList
 ```
@@ -9206,7 +9206,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountElasticsearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseSecretsMountElasticsearchOutputReference
 ```
@@ -9909,7 +9909,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountHanaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountHanaList
 ```
@@ -10069,7 +10069,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountHanaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseSecretsMountHanaOutputReference
 ```
@@ -10706,7 +10706,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountInfluxdbList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountInfluxdbList
 ```
@@ -10866,7 +10866,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountInfluxdbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseSecretsMountInfluxdbOutputReference
 ```
@@ -11569,7 +11569,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountMongodbatlasList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountMongodbatlasList
 ```
@@ -11729,7 +11729,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountMongodbatlasOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseSecretsMountMongodbatlasOutputReference
 ```
@@ -12229,7 +12229,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountMongodbList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountMongodbList
 ```
@@ -12389,7 +12389,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountMongodbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseSecretsMountMongodbOutputReference
 ```
@@ -13026,7 +13026,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountMssqlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountMssqlList
 ```
@@ -13186,7 +13186,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountMssqlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseSecretsMountMssqlOutputReference
 ```
@@ -13881,7 +13881,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountMysqlAuroraList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountMysqlAuroraList
 ```
@@ -14041,7 +14041,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountMysqlAuroraOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseSecretsMountMysqlAuroraOutputReference
 ```
@@ -14794,7 +14794,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountMysqlLegacyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountMysqlLegacyList
 ```
@@ -14954,7 +14954,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountMysqlLegacyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseSecretsMountMysqlLegacyOutputReference
 ```
@@ -15707,7 +15707,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountMysqlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountMysqlList
 ```
@@ -15867,7 +15867,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountMysqlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseSecretsMountMysqlOutputReference
 ```
@@ -16620,7 +16620,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountMysqlRdsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountMysqlRdsList
 ```
@@ -16780,7 +16780,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountMysqlRdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseSecretsMountMysqlRdsOutputReference
 ```
@@ -17533,7 +17533,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountOracleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountOracleList
 ```
@@ -17693,7 +17693,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountOracleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseSecretsMountOracleOutputReference
 ```
@@ -18388,7 +18388,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountPostgresqlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountPostgresqlList
 ```
@@ -18548,7 +18548,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountPostgresqlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseSecretsMountPostgresqlOutputReference
 ```
@@ -19388,7 +19388,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountRedisElasticacheList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountRedisElasticacheList
 ```
@@ -19548,7 +19548,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountRedisElasticacheOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseSecretsMountRedisElasticacheOutputReference
 ```
@@ -20091,7 +20091,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountRedisList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountRedisList
 ```
@@ -20251,7 +20251,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountRedisOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseSecretsMountRedisOutputReference
 ```
@@ -20867,7 +20867,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountRedshiftList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountRedshiftList
 ```
@@ -21027,7 +21027,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountRedshiftOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseSecretsMountRedshiftOutputReference
 ```
@@ -21693,7 +21693,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountSnowflakeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountSnowflakeList
 ```
@@ -21853,7 +21853,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/databasesecretsmount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 
 databasesecretsmount.NewDatabaseSecretsMountSnowflakeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseSecretsMountSnowflakeOutputReference
 ```
