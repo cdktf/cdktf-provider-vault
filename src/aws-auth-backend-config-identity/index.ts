@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/aws_auth_backend_config_identity
 // generated from terraform resource schema
 
