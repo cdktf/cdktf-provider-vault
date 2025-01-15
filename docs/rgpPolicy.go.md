@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.rgpPolicy.RgpPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/rgppolicy"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/rgppolicy"
 
 rgppolicy.NewRgpPolicy(scope Construct, id *string, config RgpPolicyConfig) RgpPolicy
 ```
@@ -392,7 +392,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.rgpPolicy.RgpPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/rgppolicy"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/rgppolicy"
 
 rgppolicy.RgpPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.rgpPolicy.RgpPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/rgppolicy"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/rgppolicy"
 
 rgppolicy.RgpPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ rgppolicy.RgpPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.rgpPolicy.RgpPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/rgppolicy"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/rgppolicy"
 
 rgppolicy.RgpPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ rgppolicy.RgpPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.rgpPolicy.RgpPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/rgppolicy"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/rgppolicy"
 
 rgppolicy.RgpPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.rgpPolicy.RgpPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/rgppolicy"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/rgppolicy"
 
 &rgppolicy.RgpPolicyConfig {
 	Connection: interface{},
