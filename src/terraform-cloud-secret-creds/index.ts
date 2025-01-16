@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/terraform_cloud_secret_creds
+// https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/terraform_cloud_secret_creds
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface TerraformCloudSecretCredsConfig extends cdktf.TerraformMetaArgu
   /**
   * Terraform Cloud secret backend to generate tokens from
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/terraform_cloud_secret_creds#backend TerraformCloudSecretCreds#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/terraform_cloud_secret_creds#backend TerraformCloudSecretCreds#backend}
   */
   readonly backend: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/terraform_cloud_secret_creds#id TerraformCloudSecretCreds#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/terraform_cloud_secret_creds#id TerraformCloudSecretCreds#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,19 +23,19 @@ export interface TerraformCloudSecretCredsConfig extends cdktf.TerraformMetaArgu
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/terraform_cloud_secret_creds#namespace TerraformCloudSecretCreds#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/terraform_cloud_secret_creds#namespace TerraformCloudSecretCreds#namespace}
   */
   readonly namespace?: string;
   /**
   * Name of the role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/terraform_cloud_secret_creds#role TerraformCloudSecretCreds#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/terraform_cloud_secret_creds#role TerraformCloudSecretCreds#role}
   */
   readonly role: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/terraform_cloud_secret_creds vault_terraform_cloud_secret_creds}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/terraform_cloud_secret_creds vault_terraform_cloud_secret_creds}
 */
 export class TerraformCloudSecretCreds extends cdktf.TerraformResource {
 
@@ -56,7 +51,7 @@ export class TerraformCloudSecretCreds extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a TerraformCloudSecretCreds resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TerraformCloudSecretCreds to import
-  * @param importFromId The id of the existing TerraformCloudSecretCreds that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/terraform_cloud_secret_creds#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TerraformCloudSecretCreds that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/terraform_cloud_secret_creds#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TerraformCloudSecretCreds to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -68,7 +63,7 @@ export class TerraformCloudSecretCreds extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/terraform_cloud_secret_creds vault_terraform_cloud_secret_creds} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/terraform_cloud_secret_creds vault_terraform_cloud_secret_creds} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +74,7 @@ export class TerraformCloudSecretCreds extends cdktf.TerraformResource {
       terraformResourceType: 'vault_terraform_cloud_secret_creds',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '4.5.0',
+        providerVersion: '4.6.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

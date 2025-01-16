@@ -4,12 +4,12 @@
 
 ### DataVaultGenericSecret <a name="DataVaultGenericSecret" id="@cdktf/provider-vault.dataVaultGenericSecret.DataVaultGenericSecret"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/generic_secret vault_generic_secret}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/data-sources/generic_secret vault_generic_secret}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultGenericSecret.DataVaultGenericSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/datavaultgenericsecret"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultgenericsecret"
 
 datavaultgenericsecret.NewDataVaultGenericSecret(scope Construct, id *string, config DataVaultGenericSecretConfig) DataVaultGenericSecret
 ```
@@ -304,7 +304,7 @@ func ResetWithLeaseStartTime()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.dataVaultGenericSecret.DataVaultGenericSecret.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/datavaultgenericsecret"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultgenericsecret"
 
 datavaultgenericsecret.DataVaultGenericSecret_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.dataVaultGenericSecret.DataVaultGenericSecret.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/datavaultgenericsecret"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultgenericsecret"
 
 datavaultgenericsecret.DataVaultGenericSecret_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datavaultgenericsecret.DataVaultGenericSecret_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vault.dataVaultGenericSecret.DataVaultGenericSecret.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/datavaultgenericsecret"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultgenericsecret"
 
 datavaultgenericsecret.DataVaultGenericSecret_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ datavaultgenericsecret.DataVaultGenericSecret_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.dataVaultGenericSecret.DataVaultGenericSecret.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/datavaultgenericsecret"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultgenericsecret"
 
 datavaultgenericsecret.DataVaultGenericSecret_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -393,7 +393,7 @@ The construct id used in the generated config for the DataVaultGenericSecret to 
 
 The id of the existing DataVaultGenericSecret that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/generic_secret#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/data-sources/generic_secret#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -747,7 +747,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.dataVaultGenericSecret.DataVaultGenericSecretConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/datavaultgenericsecret"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultgenericsecret"
 
 &datavaultgenericsecret.DataVaultGenericSecretConfig {
 	Connection: interface{},
@@ -777,9 +777,9 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/datavaultgenericsecre
 | <code><a href="#@cdktf/provider-vault.dataVaultGenericSecret.DataVaultGenericSecretConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultGenericSecret.DataVaultGenericSecretConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultGenericSecret.DataVaultGenericSecretConfig.property.path">Path</a></code> | <code>*string</code> | Full path from which a secret will be read. |
-| <code><a href="#@cdktf/provider-vault.dataVaultGenericSecret.DataVaultGenericSecretConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/generic_secret#id DataVaultGenericSecret#id}. |
+| <code><a href="#@cdktf/provider-vault.dataVaultGenericSecret.DataVaultGenericSecretConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/data-sources/generic_secret#id DataVaultGenericSecret#id}. |
 | <code><a href="#@cdktf/provider-vault.dataVaultGenericSecret.DataVaultGenericSecretConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
-| <code><a href="#@cdktf/provider-vault.dataVaultGenericSecret.DataVaultGenericSecretConfig.property.version">Version</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/generic_secret#version DataVaultGenericSecret#version}. |
+| <code><a href="#@cdktf/provider-vault.dataVaultGenericSecret.DataVaultGenericSecretConfig.property.version">Version</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/data-sources/generic_secret#version DataVaultGenericSecret#version}. |
 | <code><a href="#@cdktf/provider-vault.dataVaultGenericSecret.DataVaultGenericSecretConfig.property.withLeaseStartTime">WithLeaseStartTime</a></code> | <code>interface{}</code> | If set to true, stores 'lease_start_time' in the TF state. |
 
 ---
@@ -864,7 +864,7 @@ Path *string
 
 Full path from which a secret will be read.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/generic_secret#path DataVaultGenericSecret#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/data-sources/generic_secret#path DataVaultGenericSecret#path}
 
 ---
 
@@ -876,7 +876,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/generic_secret#id DataVaultGenericSecret#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/data-sources/generic_secret#id DataVaultGenericSecret#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -893,7 +893,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/generic_secret#namespace DataVaultGenericSecret#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/data-sources/generic_secret#namespace DataVaultGenericSecret#namespace}
 
 ---
 
@@ -905,7 +905,7 @@ Version *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/generic_secret#version DataVaultGenericSecret#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/data-sources/generic_secret#version DataVaultGenericSecret#version}.
 
 ---
 
@@ -919,7 +919,7 @@ WithLeaseStartTime interface{}
 
 If set to true, stores 'lease_start_time' in the TF state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/generic_secret#with_lease_start_time DataVaultGenericSecret#with_lease_start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/data-sources/generic_secret#with_lease_start_time DataVaultGenericSecret#with_lease_start_time}
 
 ---
 

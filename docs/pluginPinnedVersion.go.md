@@ -4,12 +4,12 @@
 
 ### PluginPinnedVersion <a name="PluginPinnedVersion" id="@cdktf/provider-vault.pluginPinnedVersion.PluginPinnedVersion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/plugin_pinned_version vault_plugin_pinned_version}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/plugin_pinned_version vault_plugin_pinned_version}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.pluginPinnedVersion.PluginPinnedVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/pluginpinnedversion"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pluginpinnedversion"
 
 pluginpinnedversion.NewPluginPinnedVersion(scope Construct, id *string, config PluginPinnedVersionConfig) PluginPinnedVersion
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.pluginPinnedVersion.PluginPinnedVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/pluginpinnedversion"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pluginpinnedversion"
 
 pluginpinnedversion.PluginPinnedVersion_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.pluginPinnedVersion.PluginPinnedVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/pluginpinnedversion"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pluginpinnedversion"
 
 pluginpinnedversion.PluginPinnedVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ pluginpinnedversion.PluginPinnedVersion_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.pluginPinnedVersion.PluginPinnedVersion.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/pluginpinnedversion"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pluginpinnedversion"
 
 pluginpinnedversion.PluginPinnedVersion_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ pluginpinnedversion.PluginPinnedVersion_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.pluginPinnedVersion.PluginPinnedVersion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/pluginpinnedversion"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pluginpinnedversion"
 
 pluginpinnedversion.PluginPinnedVersion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the PluginPinnedVersion to imp
 
 The id of the existing PluginPinnedVersion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/plugin_pinned_version#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/plugin_pinned_version#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -762,7 +762,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.pluginPinnedVersion.PluginPinnedVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/pluginpinnedversion"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pluginpinnedversion"
 
 &pluginpinnedversion.PluginPinnedVersionConfig {
 	Connection: interface{},
@@ -793,7 +793,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/pluginpinnedversion"
 | <code><a href="#@cdktf/provider-vault.pluginPinnedVersion.PluginPinnedVersionConfig.property.name">Name</a></code> | <code>*string</code> | Name of the plugin. |
 | <code><a href="#@cdktf/provider-vault.pluginPinnedVersion.PluginPinnedVersionConfig.property.type">Type</a></code> | <code>*string</code> | Type of plugin; one of "auth", "secret", or "database". |
 | <code><a href="#@cdktf/provider-vault.pluginPinnedVersion.PluginPinnedVersionConfig.property.version">Version</a></code> | <code>*string</code> | Semantic pinned plugin version. |
-| <code><a href="#@cdktf/provider-vault.pluginPinnedVersion.PluginPinnedVersionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/plugin_pinned_version#id PluginPinnedVersion#id}. |
+| <code><a href="#@cdktf/provider-vault.pluginPinnedVersion.PluginPinnedVersionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/plugin_pinned_version#id PluginPinnedVersion#id}. |
 
 ---
 
@@ -877,7 +877,7 @@ Name *string
 
 Name of the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/plugin_pinned_version#name PluginPinnedVersion#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/plugin_pinned_version#name PluginPinnedVersion#name}
 
 ---
 
@@ -891,7 +891,7 @@ Type *string
 
 Type of plugin; one of "auth", "secret", or "database".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/plugin_pinned_version#type PluginPinnedVersion#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/plugin_pinned_version#type PluginPinnedVersion#type}
 
 ---
 
@@ -905,7 +905,7 @@ Version *string
 
 Semantic pinned plugin version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/plugin_pinned_version#version PluginPinnedVersion#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/plugin_pinned_version#version PluginPinnedVersion#version}
 
 ---
 
@@ -917,7 +917,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/plugin_pinned_version#id PluginPinnedVersion#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/plugin_pinned_version#id PluginPinnedVersion#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

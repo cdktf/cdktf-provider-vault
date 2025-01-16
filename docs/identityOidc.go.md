@@ -4,12 +4,12 @@
 
 ### IdentityOidc <a name="IdentityOidc" id="@cdktf/provider-vault.identityOidc.IdentityOidc"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/identity_oidc vault_identity_oidc}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/identity_oidc vault_identity_oidc}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.identityOidc.IdentityOidc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/identityoidc"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identityoidc"
 
 identityoidc.NewIdentityOidc(scope Construct, id *string, config IdentityOidcConfig) IdentityOidc
 ```
@@ -399,7 +399,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.identityOidc.IdentityOidc.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/identityoidc"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identityoidc"
 
 identityoidc.IdentityOidc_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.identityOidc.IdentityOidc.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/identityoidc"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identityoidc"
 
 identityoidc.IdentityOidc_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ identityoidc.IdentityOidc_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.identityOidc.IdentityOidc.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/identityoidc"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identityoidc"
 
 identityoidc.IdentityOidc_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ identityoidc.IdentityOidc_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.identityOidc.IdentityOidc.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/identityoidc"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identityoidc"
 
 identityoidc.IdentityOidc_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -488,7 +488,7 @@ The construct id used in the generated config for the IdentityOidc to import.
 
 The id of the existing IdentityOidc that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/identity_oidc#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/identity_oidc#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -754,7 +754,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.identityOidc.IdentityOidcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/identityoidc"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identityoidc"
 
 &identityoidc.IdentityOidcConfig {
 	Connection: interface{},
@@ -781,7 +781,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/identityoidc"
 | <code><a href="#@cdktf/provider-vault.identityOidc.IdentityOidcConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityOidc.IdentityOidcConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.identityOidc.IdentityOidcConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityOidc.IdentityOidcConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/identity_oidc#id IdentityOidc#id}. |
+| <code><a href="#@cdktf/provider-vault.identityOidc.IdentityOidcConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/identity_oidc#id IdentityOidc#id}. |
 | <code><a href="#@cdktf/provider-vault.identityOidc.IdentityOidcConfig.property.issuer">Issuer</a></code> | <code>*string</code> | Issuer URL to be used in the iss claim of the token. |
 | <code><a href="#@cdktf/provider-vault.identityOidc.IdentityOidcConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 
@@ -865,7 +865,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/identity_oidc#id IdentityOidc#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/identity_oidc#id IdentityOidc#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -884,7 +884,7 @@ Issuer URL to be used in the iss claim of the token.
 
 If not set, Vault's api_addr will be used. The issuer is a case sensitive URL using the https scheme that contains scheme, host, and optionally, port number and path components, but no query or fragment components.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/identity_oidc#issuer IdentityOidc#issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/identity_oidc#issuer IdentityOidc#issuer}
 
 ---
 
@@ -898,7 +898,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/identity_oidc#namespace IdentityOidc#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/identity_oidc#namespace IdentityOidc#namespace}
 
 ---
 
