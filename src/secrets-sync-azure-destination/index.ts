@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/secrets_sync_azure_destination
+// https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/secrets_sync_azure_destination
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,35 +15,35 @@ export interface SecretsSyncAzureDestinationConfig extends cdktf.TerraformMetaAr
   /**
   * Client ID of an Azure app registration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/secrets_sync_azure_destination#client_id SecretsSyncAzureDestination#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/secrets_sync_azure_destination#client_id SecretsSyncAzureDestination#client_id}
   */
   readonly clientId?: string;
   /**
   * Client Secret of an Azure app registration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/secrets_sync_azure_destination#client_secret SecretsSyncAzureDestination#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/secrets_sync_azure_destination#client_secret SecretsSyncAzureDestination#client_secret}
   */
   readonly clientSecret?: string;
   /**
   * Specifies a cloud for the client.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/secrets_sync_azure_destination#cloud SecretsSyncAzureDestination#cloud}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/secrets_sync_azure_destination#cloud SecretsSyncAzureDestination#cloud}
   */
   readonly cloud?: string;
   /**
   * Custom tags to set on the secret managed at the destination.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/secrets_sync_azure_destination#custom_tags SecretsSyncAzureDestination#custom_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/secrets_sync_azure_destination#custom_tags SecretsSyncAzureDestination#custom_tags}
   */
   readonly customTags?: { [key: string]: string };
   /**
   * Determines what level of information is synced as a distinct resource at the destination. Can be 'secret-path' or 'secret-key'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/secrets_sync_azure_destination#granularity SecretsSyncAzureDestination#granularity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/secrets_sync_azure_destination#granularity SecretsSyncAzureDestination#granularity}
   */
   readonly granularity?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/secrets_sync_azure_destination#id SecretsSyncAzureDestination#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/secrets_sync_azure_destination#id SecretsSyncAzureDestination#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -52,37 +52,37 @@ export interface SecretsSyncAzureDestinationConfig extends cdktf.TerraformMetaAr
   /**
   * URI of an existing Azure Key Vault instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/secrets_sync_azure_destination#key_vault_uri SecretsSyncAzureDestination#key_vault_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/secrets_sync_azure_destination#key_vault_uri SecretsSyncAzureDestination#key_vault_uri}
   */
   readonly keyVaultUri?: string;
   /**
   * Unique name of the Azure destination.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/secrets_sync_azure_destination#name SecretsSyncAzureDestination#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/secrets_sync_azure_destination#name SecretsSyncAzureDestination#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/secrets_sync_azure_destination#namespace SecretsSyncAzureDestination#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/secrets_sync_azure_destination#namespace SecretsSyncAzureDestination#namespace}
   */
   readonly namespace?: string;
   /**
   * Template describing how to generate external secret names.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/secrets_sync_azure_destination#secret_name_template SecretsSyncAzureDestination#secret_name_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/secrets_sync_azure_destination#secret_name_template SecretsSyncAzureDestination#secret_name_template}
   */
   readonly secretNameTemplate?: string;
   /**
   * ID of the target Azure tenant.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/secrets_sync_azure_destination#tenant_id SecretsSyncAzureDestination#tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/secrets_sync_azure_destination#tenant_id SecretsSyncAzureDestination#tenant_id}
   */
   readonly tenantId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/secrets_sync_azure_destination vault_secrets_sync_azure_destination}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/secrets_sync_azure_destination vault_secrets_sync_azure_destination}
 */
 export class SecretsSyncAzureDestination extends cdktf.TerraformResource {
 
@@ -98,7 +98,7 @@ export class SecretsSyncAzureDestination extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SecretsSyncAzureDestination resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecretsSyncAzureDestination to import
-  * @param importFromId The id of the existing SecretsSyncAzureDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/secrets_sync_azure_destination#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecretsSyncAzureDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/secrets_sync_azure_destination#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecretsSyncAzureDestination to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -110,7 +110,7 @@ export class SecretsSyncAzureDestination extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/secrets_sync_azure_destination vault_secrets_sync_azure_destination} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/secrets_sync_azure_destination vault_secrets_sync_azure_destination} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -121,7 +121,7 @@ export class SecretsSyncAzureDestination extends cdktf.TerraformResource {
       terraformResourceType: 'vault_secrets_sync_azure_destination',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '4.5.0',
+        providerVersion: '4.6.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

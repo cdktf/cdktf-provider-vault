@@ -105,9 +105,12 @@ Object.defineProperty(exports, 'oktaAuthBackend', { get: function () { return re
 Object.defineProperty(exports, 'oktaAuthBackendGroup', { get: function () { return require('./okta-auth-backend-group'); } });
 Object.defineProperty(exports, 'oktaAuthBackendUser', { get: function () { return require('./okta-auth-backend-user'); } });
 Object.defineProperty(exports, 'passwordPolicy', { get: function () { return require('./password-policy'); } });
+Object.defineProperty(exports, 'pkiSecretBackendAcmeEab', { get: function () { return require('./pki-secret-backend-acme-eab'); } });
 Object.defineProperty(exports, 'pkiSecretBackendCert', { get: function () { return require('./pki-secret-backend-cert'); } });
+Object.defineProperty(exports, 'pkiSecretBackendConfigAcme', { get: function () { return require('./pki-secret-backend-config-acme'); } });
 Object.defineProperty(exports, 'pkiSecretBackendConfigCa', { get: function () { return require('./pki-secret-backend-config-ca'); } });
 Object.defineProperty(exports, 'pkiSecretBackendConfigCluster', { get: function () { return require('./pki-secret-backend-config-cluster'); } });
+Object.defineProperty(exports, 'pkiSecretBackendConfigCmpv2', { get: function () { return require('./pki-secret-backend-config-cmpv2'); } });
 Object.defineProperty(exports, 'pkiSecretBackendConfigEst', { get: function () { return require('./pki-secret-backend-config-est'); } });
 Object.defineProperty(exports, 'pkiSecretBackendConfigIssuers', { get: function () { return require('./pki-secret-backend-config-issuers'); } });
 Object.defineProperty(exports, 'pkiSecretBackendConfigUrls', { get: function () { return require('./pki-secret-backend-config-urls'); } });
@@ -180,6 +183,7 @@ Object.defineProperty(exports, 'dataVaultLdapStaticCredentials', { get: function
 Object.defineProperty(exports, 'dataVaultNamespace', { get: function () { return require('./data-vault-namespace'); } });
 Object.defineProperty(exports, 'dataVaultNamespaces', { get: function () { return require('./data-vault-namespaces'); } });
 Object.defineProperty(exports, 'dataVaultNomadAccessToken', { get: function () { return require('./data-vault-nomad-access-token'); } });
+Object.defineProperty(exports, 'dataVaultPkiSecretBackendConfigCmpv2', { get: function () { return require('./data-vault-pki-secret-backend-config-cmpv2'); } });
 Object.defineProperty(exports, 'dataVaultPkiSecretBackendConfigEst', { get: function () { return require('./data-vault-pki-secret-backend-config-est'); } });
 Object.defineProperty(exports, 'dataVaultPkiSecretBackendIssuer', { get: function () { return require('./data-vault-pki-secret-backend-issuer'); } });
 Object.defineProperty(exports, 'dataVaultPkiSecretBackendIssuers', { get: function () { return require('./data-vault-pki-secret-backend-issuers'); } });

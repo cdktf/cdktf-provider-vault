@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/aws_auth_backend_sts_role
+// https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_auth_backend_sts_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,23 @@ export interface AwsAuthBackendStsRoleConfig extends cdktf.TerraformMetaArgument
   /**
   * AWS account ID to be associated with STS role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/aws_auth_backend_sts_role#account_id AwsAuthBackendStsRole#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_auth_backend_sts_role#account_id AwsAuthBackendStsRole#account_id}
   */
   readonly accountId: string;
   /**
   * Unique name of the auth backend to configure.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/aws_auth_backend_sts_role#backend AwsAuthBackendStsRole#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_auth_backend_sts_role#backend AwsAuthBackendStsRole#backend}
   */
   readonly backend?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/aws_auth_backend_sts_role#id AwsAuthBackendStsRole#id}
+  * External ID expected by the STS role.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_auth_backend_sts_role#external_id AwsAuthBackendStsRole#external_id}
+  */
+  readonly externalId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_auth_backend_sts_role#id AwsAuthBackendStsRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,19 +40,19 @@ export interface AwsAuthBackendStsRoleConfig extends cdktf.TerraformMetaArgument
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/aws_auth_backend_sts_role#namespace AwsAuthBackendStsRole#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_auth_backend_sts_role#namespace AwsAuthBackendStsRole#namespace}
   */
   readonly namespace?: string;
   /**
   * AWS ARN for STS role to be assumed when interacting with the account specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/aws_auth_backend_sts_role#sts_role AwsAuthBackendStsRole#sts_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_auth_backend_sts_role#sts_role AwsAuthBackendStsRole#sts_role}
   */
   readonly stsRole: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/aws_auth_backend_sts_role vault_aws_auth_backend_sts_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_auth_backend_sts_role vault_aws_auth_backend_sts_role}
 */
 export class AwsAuthBackendStsRole extends cdktf.TerraformResource {
 
@@ -62,7 +68,7 @@ export class AwsAuthBackendStsRole extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AwsAuthBackendStsRole resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AwsAuthBackendStsRole to import
-  * @param importFromId The id of the existing AwsAuthBackendStsRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/aws_auth_backend_sts_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AwsAuthBackendStsRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_auth_backend_sts_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AwsAuthBackendStsRole to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +80,7 @@ export class AwsAuthBackendStsRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/aws_auth_backend_sts_role vault_aws_auth_backend_sts_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_auth_backend_sts_role vault_aws_auth_backend_sts_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +91,7 @@ export class AwsAuthBackendStsRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_aws_auth_backend_sts_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '4.5.0',
+        providerVersion: '4.6.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -98,6 +104,7 @@ export class AwsAuthBackendStsRole extends cdktf.TerraformResource {
     });
     this._accountId = config.accountId;
     this._backend = config.backend;
+    this._externalId = config.externalId;
     this._id = config.id;
     this._namespace = config.namespace;
     this._stsRole = config.stsRole;
@@ -134,6 +141,22 @@ export class AwsAuthBackendStsRole extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get backendInput() {
     return this._backend;
+  }
+
+  // external_id - computed: false, optional: true, required: false
+  private _externalId?: string; 
+  public get externalId() {
+    return this.getStringAttribute('external_id');
+  }
+  public set externalId(value: string) {
+    this._externalId = value;
+  }
+  public resetExternalId() {
+    this._externalId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get externalIdInput() {
+    return this._externalId;
   }
 
   // id - computed: true, optional: true, required: false
@@ -189,6 +212,7 @@ export class AwsAuthBackendStsRole extends cdktf.TerraformResource {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
       backend: cdktf.stringToTerraform(this._backend),
+      external_id: cdktf.stringToTerraform(this._externalId),
       id: cdktf.stringToTerraform(this._id),
       namespace: cdktf.stringToTerraform(this._namespace),
       sts_role: cdktf.stringToTerraform(this._stsRole),
@@ -205,6 +229,12 @@ export class AwsAuthBackendStsRole extends cdktf.TerraformResource {
       },
       backend: {
         value: cdktf.stringToHclTerraform(this._backend),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      external_id: {
+        value: cdktf.stringToHclTerraform(this._externalId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
