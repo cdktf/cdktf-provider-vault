@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.awsAuthBackendRoleTag.AwsAuthBackendRoleTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/awsauthbackendroletag"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendroletag"
 
 awsauthbackendroletag.NewAwsAuthBackendRoleTag(scope Construct, id *string, config AwsAuthBackendRoleTagConfig) AwsAuthBackendRoleTag
 ```
@@ -434,7 +434,7 @@ func ResetPolicies()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.awsAuthBackendRoleTag.AwsAuthBackendRoleTag.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/awsauthbackendroletag"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendroletag"
 
 awsauthbackendroletag.AwsAuthBackendRoleTag_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.awsAuthBackendRoleTag.AwsAuthBackendRoleTag.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/awsauthbackendroletag"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendroletag"
 
 awsauthbackendroletag.AwsAuthBackendRoleTag_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ awsauthbackendroletag.AwsAuthBackendRoleTag_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.awsAuthBackendRoleTag.AwsAuthBackendRoleTag.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/awsauthbackendroletag"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendroletag"
 
 awsauthbackendroletag.AwsAuthBackendRoleTag_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ awsauthbackendroletag.AwsAuthBackendRoleTag_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.awsAuthBackendRoleTag.AwsAuthBackendRoleTag.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/awsauthbackendroletag"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendroletag"
 
 awsauthbackendroletag.AwsAuthBackendRoleTag_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -943,7 +943,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.awsAuthBackendRoleTag.AwsAuthBackendRoleTagConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/awsauthbackendroletag"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendroletag"
 
 &awsauthbackendroletag.AwsAuthBackendRoleTagConfig {
 	Connection: interface{},
