@@ -4,7 +4,7 @@
 
 ### DatabaseSecretsMount <a name="DatabaseSecretsMount" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount vault_database_secrets_mount}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount vault_database_secrets_mount}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.Initializer"></a>
 
@@ -953,7 +953,7 @@ The construct id used in the generated config for the DatabaseSecretsMount to im
 
 The id of the existing DatabaseSecretsMount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1996,6 +1996,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 	AllowedRoles: *[]*string,
 	ConnectTimeout: *f64,
 	Data: *map[string]*string,
+	DisableAutomatedRotation: interface{},
 	Hosts: *[]*string,
 	InsecureTls: interface{},
 	Password: *string,
@@ -2005,6 +2006,9 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 	Port: *f64,
 	ProtocolVersion: *f64,
 	RootRotationStatements: *[]*string,
+	RotationPeriod: *f64,
+	RotationSchedule: *string,
+	RotationWindow: *f64,
 	SkipVerification: interface{},
 	Tls: interface{},
 	Username: *string,
@@ -2020,6 +2024,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.allowedRoles">AllowedRoles</a></code> | <code>*[]*string</code> | A list of roles that are allowed to use this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.connectTimeout">ConnectTimeout</a></code> | <code>*f64</code> | The number of seconds to use as a connection timeout. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.data">Data</a></code> | <code>*map[string]*string</code> | A map of sensitive data to pass to the endpoint. Useful for templated connection strings. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>interface{}</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.hosts">Hosts</a></code> | <code>*[]*string</code> | Cassandra hosts to connect to. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.insecureTls">InsecureTls</a></code> | <code>interface{}</code> | Whether to skip verification of the server certificate when using TLS. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.password">Password</a></code> | <code>*string</code> | The password to use when authenticating with Cassandra. |
@@ -2029,6 +2034,9 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.port">Port</a></code> | <code>*f64</code> | The transport port to use to connect to Cassandra. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.protocolVersion">ProtocolVersion</a></code> | <code>*f64</code> | The CQL protocol version to use. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.rootRotationStatements">RootRotationStatements</a></code> | <code>*[]*string</code> | A list of database statements to be executed to rotate the root user's credentials. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.rotationPeriod">RotationPeriod</a></code> | <code>*f64</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.rotationSchedule">RotationSchedule</a></code> | <code>*string</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.rotationWindow">RotationWindow</a></code> | <code>*f64</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.skipVerification">SkipVerification</a></code> | <code>interface{}</code> | Skip permissions checks when a connection to Cassandra is first created. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.tls">Tls</a></code> | <code>interface{}</code> | Whether to use TLS when connecting to Cassandra. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.username">Username</a></code> | <code>*string</code> | The username to use when authenticating with Cassandra. |
@@ -2046,7 +2054,7 @@ Name *string
 
 Name of the database connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
 
 ---
 
@@ -2060,7 +2068,7 @@ AllowedRoles *[]*string
 
 A list of roles that are allowed to use this connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
 
 ---
 
@@ -2074,7 +2082,7 @@ ConnectTimeout *f64
 
 The number of seconds to use as a connection timeout.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#connect_timeout DatabaseSecretsMount#connect_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#connect_timeout DatabaseSecretsMount#connect_timeout}
 
 ---
 
@@ -2088,7 +2096,21 @@ Data *map[string]*string
 
 A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+
+---
+
+##### `DisableAutomatedRotation`<sup>Optional</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.disableAutomatedRotation"></a>
+
+```go
+DisableAutomatedRotation interface{}
+```
+
+- *Type:* interface{}
+
+Stops rotation of the root credential until set to false.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
 
 ---
 
@@ -2102,7 +2124,7 @@ Hosts *[]*string
 
 Cassandra hosts to connect to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#hosts DatabaseSecretsMount#hosts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#hosts DatabaseSecretsMount#hosts}
 
 ---
 
@@ -2116,7 +2138,7 @@ InsecureTls interface{}
 
 Whether to skip verification of the server certificate when using TLS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#insecure_tls DatabaseSecretsMount#insecure_tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#insecure_tls DatabaseSecretsMount#insecure_tls}
 
 ---
 
@@ -2130,7 +2152,7 @@ Password *string
 
 The password to use when authenticating with Cassandra.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
 
 ---
 
@@ -2146,7 +2168,7 @@ Concatenated PEM blocks containing a certificate and private key;
 
 a certificate, private key, and issuing CA certificate; or just a CA certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#pem_bundle DatabaseSecretsMount#pem_bundle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#pem_bundle DatabaseSecretsMount#pem_bundle}
 
 ---
 
@@ -2162,7 +2184,7 @@ Specifies JSON containing a certificate and private key;
 
 a certificate, private key, and issuing CA certificate; or just a CA certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#pem_json DatabaseSecretsMount#pem_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#pem_json DatabaseSecretsMount#pem_json}
 
 ---
 
@@ -2178,7 +2200,7 @@ Specifies the name of the plugin to use for this connection.
 
 Must be prefixed with the name of one of the supported database engine types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
 
 ---
 
@@ -2192,7 +2214,7 @@ Port *f64
 
 The transport port to use to connect to Cassandra.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#port DatabaseSecretsMount#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#port DatabaseSecretsMount#port}
 
 ---
 
@@ -2206,7 +2228,7 @@ ProtocolVersion *f64
 
 The CQL protocol version to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#protocol_version DatabaseSecretsMount#protocol_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#protocol_version DatabaseSecretsMount#protocol_version}
 
 ---
 
@@ -2220,7 +2242,51 @@ RootRotationStatements *[]*string
 
 A list of database statements to be executed to rotate the root user's credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+
+---
+
+##### `RotationPeriod`<sup>Optional</sup> <a name="RotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.rotationPeriod"></a>
+
+```go
+RotationPeriod *f64
+```
+
+- *Type:* *f64
+
+The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+
+---
+
+##### `RotationSchedule`<sup>Optional</sup> <a name="RotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.rotationSchedule"></a>
+
+```go
+RotationSchedule *string
+```
+
+- *Type:* *string
+
+The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+
+---
+
+##### `RotationWindow`<sup>Optional</sup> <a name="RotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.rotationWindow"></a>
+
+```go
+RotationWindow *f64
+```
+
+- *Type:* *f64
+
+The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered.
+
+Can only be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
 
 ---
 
@@ -2236,7 +2302,7 @@ Skip permissions checks when a connection to Cassandra is first created.
 
 These checks ensure that Vault is able to create roles, but can be resource intensive in clusters with many roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#skip_verification DatabaseSecretsMount#skip_verification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#skip_verification DatabaseSecretsMount#skip_verification}
 
 ---
 
@@ -2250,7 +2316,7 @@ Tls interface{}
 
 Whether to use TLS when connecting to Cassandra.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#tls DatabaseSecretsMount#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#tls DatabaseSecretsMount#tls}
 
 ---
 
@@ -2264,7 +2330,7 @@ Username *string
 
 The username to use when authenticating with Cassandra.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
 
 ---
 
@@ -2278,7 +2344,7 @@ VerifyConnection interface{}
 
 Specifies if the connection is verified during initial configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
 
 ---
 
@@ -2361,7 +2427,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.elasticsearch">Elasticsearch</a></code> | <code>interface{}</code> | elasticsearch block. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.externalEntropyAccess">ExternalEntropyAccess</a></code> | <code>interface{}</code> | Enable the secrets engine to access Vault's external entropy source. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.hana">Hana</a></code> | <code>interface{}</code> | hana block. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#id DatabaseSecretsMount#id}. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#id DatabaseSecretsMount#id}. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.identityTokenKey">IdentityTokenKey</a></code> | <code>*string</code> | The key to use for signing plugin workload identity tokens. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.influxdb">Influxdb</a></code> | <code>interface{}</code> | influxdb block. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.listingVisibility">ListingVisibility</a></code> | <code>*string</code> | Specifies whether to show this mount in the UI-specific listing endpoint. |
@@ -2468,7 +2534,7 @@ Path *string
 
 Where the secret backend will be mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#path DatabaseSecretsMount#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#path DatabaseSecretsMount#path}
 
 ---
 
@@ -2482,7 +2548,7 @@ AllowedManagedKeys *[]*string
 
 List of managed key registry entry names that the mount in question is allowed to access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#allowed_managed_keys DatabaseSecretsMount#allowed_managed_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#allowed_managed_keys DatabaseSecretsMount#allowed_managed_keys}
 
 ---
 
@@ -2496,7 +2562,7 @@ AllowedResponseHeaders *[]*string
 
 List of headers to allow and pass from the request to the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#allowed_response_headers DatabaseSecretsMount#allowed_response_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#allowed_response_headers DatabaseSecretsMount#allowed_response_headers}
 
 ---
 
@@ -2510,7 +2576,7 @@ AuditNonHmacRequestKeys *[]*string
 
 Specifies the list of keys that will not be HMAC'd by audit devices in the request data object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#audit_non_hmac_request_keys DatabaseSecretsMount#audit_non_hmac_request_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#audit_non_hmac_request_keys DatabaseSecretsMount#audit_non_hmac_request_keys}
 
 ---
 
@@ -2524,7 +2590,7 @@ AuditNonHmacResponseKeys *[]*string
 
 Specifies the list of keys that will not be HMAC'd by audit devices in the response data object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#audit_non_hmac_response_keys DatabaseSecretsMount#audit_non_hmac_response_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#audit_non_hmac_response_keys DatabaseSecretsMount#audit_non_hmac_response_keys}
 
 ---
 
@@ -2538,7 +2604,7 @@ Cassandra interface{}
 
 cassandra block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#cassandra DatabaseSecretsMount#cassandra}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#cassandra DatabaseSecretsMount#cassandra}
 
 ---
 
@@ -2552,7 +2618,7 @@ Couchbase interface{}
 
 couchbase block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#couchbase DatabaseSecretsMount#couchbase}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#couchbase DatabaseSecretsMount#couchbase}
 
 ---
 
@@ -2566,7 +2632,7 @@ DefaultLeaseTtlSeconds *f64
 
 Default lease duration for tokens and secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#default_lease_ttl_seconds DatabaseSecretsMount#default_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#default_lease_ttl_seconds DatabaseSecretsMount#default_lease_ttl_seconds}
 
 ---
 
@@ -2580,7 +2646,7 @@ DelegatedAuthAccessors *[]*string
 
 List of headers to allow and pass from the request to the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#delegated_auth_accessors DatabaseSecretsMount#delegated_auth_accessors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#delegated_auth_accessors DatabaseSecretsMount#delegated_auth_accessors}
 
 ---
 
@@ -2594,7 +2660,7 @@ Description *string
 
 Human-friendly description of the mount.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#description DatabaseSecretsMount#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#description DatabaseSecretsMount#description}
 
 ---
 
@@ -2608,7 +2674,7 @@ Elasticsearch interface{}
 
 elasticsearch block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#elasticsearch DatabaseSecretsMount#elasticsearch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#elasticsearch DatabaseSecretsMount#elasticsearch}
 
 ---
 
@@ -2622,7 +2688,7 @@ ExternalEntropyAccess interface{}
 
 Enable the secrets engine to access Vault's external entropy source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#external_entropy_access DatabaseSecretsMount#external_entropy_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#external_entropy_access DatabaseSecretsMount#external_entropy_access}
 
 ---
 
@@ -2636,7 +2702,7 @@ Hana interface{}
 
 hana block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#hana DatabaseSecretsMount#hana}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#hana DatabaseSecretsMount#hana}
 
 ---
 
@@ -2648,7 +2714,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#id DatabaseSecretsMount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#id DatabaseSecretsMount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2665,7 +2731,7 @@ IdentityTokenKey *string
 
 The key to use for signing plugin workload identity tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#identity_token_key DatabaseSecretsMount#identity_token_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#identity_token_key DatabaseSecretsMount#identity_token_key}
 
 ---
 
@@ -2679,7 +2745,7 @@ Influxdb interface{}
 
 influxdb block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#influxdb DatabaseSecretsMount#influxdb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#influxdb DatabaseSecretsMount#influxdb}
 
 ---
 
@@ -2693,7 +2759,7 @@ ListingVisibility *string
 
 Specifies whether to show this mount in the UI-specific listing endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#listing_visibility DatabaseSecretsMount#listing_visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#listing_visibility DatabaseSecretsMount#listing_visibility}
 
 ---
 
@@ -2707,7 +2773,7 @@ Local interface{}
 
 Local mount flag that can be explicitly set to true to enforce local mount in HA environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#local DatabaseSecretsMount#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#local DatabaseSecretsMount#local}
 
 ---
 
@@ -2721,7 +2787,7 @@ MaxLeaseTtlSeconds *f64
 
 Maximum possible lease duration for tokens and secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#max_lease_ttl_seconds DatabaseSecretsMount#max_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#max_lease_ttl_seconds DatabaseSecretsMount#max_lease_ttl_seconds}
 
 ---
 
@@ -2735,7 +2801,7 @@ Mongodb interface{}
 
 mongodb block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#mongodb DatabaseSecretsMount#mongodb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#mongodb DatabaseSecretsMount#mongodb}
 
 ---
 
@@ -2749,7 +2815,7 @@ Mongodbatlas interface{}
 
 mongodbatlas block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#mongodbatlas DatabaseSecretsMount#mongodbatlas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#mongodbatlas DatabaseSecretsMount#mongodbatlas}
 
 ---
 
@@ -2763,7 +2829,7 @@ Mssql interface{}
 
 mssql block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#mssql DatabaseSecretsMount#mssql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#mssql DatabaseSecretsMount#mssql}
 
 ---
 
@@ -2777,7 +2843,7 @@ Mysql interface{}
 
 mysql block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#mysql DatabaseSecretsMount#mysql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#mysql DatabaseSecretsMount#mysql}
 
 ---
 
@@ -2791,7 +2857,7 @@ MysqlAurora interface{}
 
 mysql_aurora block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#mysql_aurora DatabaseSecretsMount#mysql_aurora}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#mysql_aurora DatabaseSecretsMount#mysql_aurora}
 
 ---
 
@@ -2805,7 +2871,7 @@ MysqlLegacy interface{}
 
 mysql_legacy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#mysql_legacy DatabaseSecretsMount#mysql_legacy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#mysql_legacy DatabaseSecretsMount#mysql_legacy}
 
 ---
 
@@ -2819,7 +2885,7 @@ MysqlRds interface{}
 
 mysql_rds block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#mysql_rds DatabaseSecretsMount#mysql_rds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#mysql_rds DatabaseSecretsMount#mysql_rds}
 
 ---
 
@@ -2833,7 +2899,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#namespace DatabaseSecretsMount#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#namespace DatabaseSecretsMount#namespace}
 
 ---
 
@@ -2847,7 +2913,7 @@ Options *map[string]*string
 
 Specifies mount type specific options that are passed to the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#options DatabaseSecretsMount#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#options DatabaseSecretsMount#options}
 
 ---
 
@@ -2861,7 +2927,7 @@ Oracle interface{}
 
 oracle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#oracle DatabaseSecretsMount#oracle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#oracle DatabaseSecretsMount#oracle}
 
 ---
 
@@ -2875,7 +2941,7 @@ PassthroughRequestHeaders *[]*string
 
 List of headers to allow and pass from the request to the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#passthrough_request_headers DatabaseSecretsMount#passthrough_request_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#passthrough_request_headers DatabaseSecretsMount#passthrough_request_headers}
 
 ---
 
@@ -2889,7 +2955,7 @@ PluginVersion *string
 
 Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#plugin_version DatabaseSecretsMount#plugin_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#plugin_version DatabaseSecretsMount#plugin_version}
 
 ---
 
@@ -2903,7 +2969,7 @@ Postgresql interface{}
 
 postgresql block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#postgresql DatabaseSecretsMount#postgresql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#postgresql DatabaseSecretsMount#postgresql}
 
 ---
 
@@ -2917,7 +2983,7 @@ Redis interface{}
 
 redis block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#redis DatabaseSecretsMount#redis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#redis DatabaseSecretsMount#redis}
 
 ---
 
@@ -2931,7 +2997,7 @@ RedisElasticache interface{}
 
 redis_elasticache block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#redis_elasticache DatabaseSecretsMount#redis_elasticache}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#redis_elasticache DatabaseSecretsMount#redis_elasticache}
 
 ---
 
@@ -2945,7 +3011,7 @@ Redshift interface{}
 
 redshift block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#redshift DatabaseSecretsMount#redshift}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#redshift DatabaseSecretsMount#redshift}
 
 ---
 
@@ -2959,7 +3025,7 @@ SealWrap interface{}
 
 Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#seal_wrap DatabaseSecretsMount#seal_wrap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#seal_wrap DatabaseSecretsMount#seal_wrap}
 
 ---
 
@@ -2973,7 +3039,7 @@ Snowflake interface{}
 
 snowflake block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#snowflake DatabaseSecretsMount#snowflake}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#snowflake DatabaseSecretsMount#snowflake}
 
 ---
 
@@ -2993,9 +3059,13 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 	Base64Pem: *string,
 	BucketName: *string,
 	Data: *map[string]*string,
+	DisableAutomatedRotation: interface{},
 	InsecureTls: interface{},
 	PluginName: *string,
 	RootRotationStatements: *[]*string,
+	RotationPeriod: *f64,
+	RotationSchedule: *string,
+	RotationWindow: *f64,
 	Tls: interface{},
 	UsernameTemplate: *string,
 	VerifyConnection: interface{},
@@ -3014,9 +3084,13 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase.property.base64Pem">Base64Pem</a></code> | <code>*string</code> | Required if `tls` is `true`. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase.property.bucketName">BucketName</a></code> | <code>*string</code> | Required for Couchbase versions prior to 6.5.0. This is only used to verify vault's connection to the server. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase.property.data">Data</a></code> | <code>*map[string]*string</code> | A map of sensitive data to pass to the endpoint. Useful for templated connection strings. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>interface{}</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase.property.insecureTls">InsecureTls</a></code> | <code>interface{}</code> | Specifies whether to skip verification of the server certificate when using TLS. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase.property.pluginName">PluginName</a></code> | <code>*string</code> | Specifies the name of the plugin to use for this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase.property.rootRotationStatements">RootRotationStatements</a></code> | <code>*[]*string</code> | A list of database statements to be executed to rotate the root user's credentials. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase.property.rotationPeriod">RotationPeriod</a></code> | <code>*f64</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase.property.rotationSchedule">RotationSchedule</a></code> | <code>*string</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase.property.rotationWindow">RotationWindow</a></code> | <code>*f64</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase.property.tls">Tls</a></code> | <code>interface{}</code> | Specifies whether to use TLS when connecting to Couchbase. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase.property.usernameTemplate">UsernameTemplate</a></code> | <code>*string</code> | Template describing how dynamic usernames are generated. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase.property.verifyConnection">VerifyConnection</a></code> | <code>interface{}</code> | Specifies if the connection is verified during initial configuration. |
@@ -3033,7 +3107,7 @@ Hosts *[]*string
 
 A set of Couchbase URIs to connect to. Must use `couchbases://` scheme if `tls` is `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#hosts DatabaseSecretsMount#hosts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#hosts DatabaseSecretsMount#hosts}
 
 ---
 
@@ -3047,7 +3121,7 @@ Name *string
 
 Name of the database connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
 
 ---
 
@@ -3061,7 +3135,7 @@ Password *string
 
 Specifies the password corresponding to the given username.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
 
 ---
 
@@ -3075,7 +3149,7 @@ Username *string
 
 Specifies the username for Vault to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
 
 ---
 
@@ -3089,7 +3163,7 @@ AllowedRoles *[]*string
 
 A list of roles that are allowed to use this connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
 
 ---
 
@@ -3105,7 +3179,7 @@ Required if `tls` is `true`.
 
 Specifies the certificate authority of the Couchbase server, as a PEM certificate that has been base64 encoded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#base64_pem DatabaseSecretsMount#base64_pem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#base64_pem DatabaseSecretsMount#base64_pem}
 
 ---
 
@@ -3119,7 +3193,7 @@ BucketName *string
 
 Required for Couchbase versions prior to 6.5.0. This is only used to verify vault's connection to the server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#bucket_name DatabaseSecretsMount#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#bucket_name DatabaseSecretsMount#bucket_name}
 
 ---
 
@@ -3133,7 +3207,21 @@ Data *map[string]*string
 
 A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+
+---
+
+##### `DisableAutomatedRotation`<sup>Optional</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase.property.disableAutomatedRotation"></a>
+
+```go
+DisableAutomatedRotation interface{}
+```
+
+- *Type:* interface{}
+
+Stops rotation of the root credential until set to false.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
 
 ---
 
@@ -3147,7 +3235,7 @@ InsecureTls interface{}
 
 Specifies whether to skip verification of the server certificate when using TLS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#insecure_tls DatabaseSecretsMount#insecure_tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#insecure_tls DatabaseSecretsMount#insecure_tls}
 
 ---
 
@@ -3163,7 +3251,7 @@ Specifies the name of the plugin to use for this connection.
 
 Must be prefixed with the name of one of the supported database engine types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
 
 ---
 
@@ -3177,7 +3265,51 @@ RootRotationStatements *[]*string
 
 A list of database statements to be executed to rotate the root user's credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+
+---
+
+##### `RotationPeriod`<sup>Optional</sup> <a name="RotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase.property.rotationPeriod"></a>
+
+```go
+RotationPeriod *f64
+```
+
+- *Type:* *f64
+
+The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+
+---
+
+##### `RotationSchedule`<sup>Optional</sup> <a name="RotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase.property.rotationSchedule"></a>
+
+```go
+RotationSchedule *string
+```
+
+- *Type:* *string
+
+The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+
+---
+
+##### `RotationWindow`<sup>Optional</sup> <a name="RotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase.property.rotationWindow"></a>
+
+```go
+RotationWindow *f64
+```
+
+- *Type:* *f64
+
+The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered.
+
+Can only be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
 
 ---
 
@@ -3191,7 +3323,7 @@ Tls interface{}
 
 Specifies whether to use TLS when connecting to Couchbase.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#tls DatabaseSecretsMount#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#tls DatabaseSecretsMount#tls}
 
 ---
 
@@ -3205,7 +3337,7 @@ UsernameTemplate *string
 
 Template describing how dynamic usernames are generated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
 
 ---
 
@@ -3219,7 +3351,7 @@ VerifyConnection interface{}
 
 Specifies if the connection is verified during initial configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
 
 ---
 
@@ -3241,9 +3373,13 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 	ClientCert: *string,
 	ClientKey: *string,
 	Data: *map[string]*string,
+	DisableAutomatedRotation: interface{},
 	Insecure: interface{},
 	PluginName: *string,
 	RootRotationStatements: *[]*string,
+	RotationPeriod: *f64,
+	RotationSchedule: *string,
+	RotationWindow: *f64,
 	TlsServerName: *string,
 	UsernameTemplate: *string,
 	VerifyConnection: interface{},
@@ -3264,9 +3400,13 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch.property.clientCert">ClientCert</a></code> | <code>*string</code> | The path to the certificate for the Elasticsearch client to present for communication. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch.property.clientKey">ClientKey</a></code> | <code>*string</code> | The path to the key for the Elasticsearch client to use for communication. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch.property.data">Data</a></code> | <code>*map[string]*string</code> | A map of sensitive data to pass to the endpoint. Useful for templated connection strings. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>interface{}</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch.property.insecure">Insecure</a></code> | <code>interface{}</code> | Whether to disable certificate verification. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch.property.pluginName">PluginName</a></code> | <code>*string</code> | Specifies the name of the plugin to use for this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch.property.rootRotationStatements">RootRotationStatements</a></code> | <code>*[]*string</code> | A list of database statements to be executed to rotate the root user's credentials. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch.property.rotationPeriod">RotationPeriod</a></code> | <code>*f64</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch.property.rotationSchedule">RotationSchedule</a></code> | <code>*string</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch.property.rotationWindow">RotationWindow</a></code> | <code>*f64</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch.property.tlsServerName">TlsServerName</a></code> | <code>*string</code> | This, if set, is used to set the SNI host when connecting via TLS. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch.property.usernameTemplate">UsernameTemplate</a></code> | <code>*string</code> | Template describing how dynamic usernames are generated. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch.property.verifyConnection">VerifyConnection</a></code> | <code>interface{}</code> | Specifies if the connection is verified during initial configuration. |
@@ -3283,7 +3423,7 @@ Name *string
 
 Name of the database connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
 
 ---
 
@@ -3297,7 +3437,7 @@ Password *string
 
 The password to be used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
 
 ---
 
@@ -3311,7 +3451,7 @@ Url *string
 
 The URL for Elasticsearch's API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#url DatabaseSecretsMount#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#url DatabaseSecretsMount#url}
 
 ---
 
@@ -3325,7 +3465,7 @@ Username *string
 
 The username to be used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
 
 ---
 
@@ -3339,7 +3479,7 @@ AllowedRoles *[]*string
 
 A list of roles that are allowed to use this connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
 
 ---
 
@@ -3353,7 +3493,7 @@ CaCert *string
 
 The path to a PEM-encoded CA cert file to use to verify the Elasticsearch server's identity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#ca_cert DatabaseSecretsMount#ca_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#ca_cert DatabaseSecretsMount#ca_cert}
 
 ---
 
@@ -3367,7 +3507,7 @@ CaPath *string
 
 The path to a directory of PEM-encoded CA cert files to use to verify the Elasticsearch server's identity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#ca_path DatabaseSecretsMount#ca_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#ca_path DatabaseSecretsMount#ca_path}
 
 ---
 
@@ -3381,7 +3521,7 @@ ClientCert *string
 
 The path to the certificate for the Elasticsearch client to present for communication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#client_cert DatabaseSecretsMount#client_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#client_cert DatabaseSecretsMount#client_cert}
 
 ---
 
@@ -3395,7 +3535,7 @@ ClientKey *string
 
 The path to the key for the Elasticsearch client to use for communication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#client_key DatabaseSecretsMount#client_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#client_key DatabaseSecretsMount#client_key}
 
 ---
 
@@ -3409,7 +3549,21 @@ Data *map[string]*string
 
 A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+
+---
+
+##### `DisableAutomatedRotation`<sup>Optional</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch.property.disableAutomatedRotation"></a>
+
+```go
+DisableAutomatedRotation interface{}
+```
+
+- *Type:* interface{}
+
+Stops rotation of the root credential until set to false.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
 
 ---
 
@@ -3423,7 +3577,7 @@ Insecure interface{}
 
 Whether to disable certificate verification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#insecure DatabaseSecretsMount#insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#insecure DatabaseSecretsMount#insecure}
 
 ---
 
@@ -3439,7 +3593,7 @@ Specifies the name of the plugin to use for this connection.
 
 Must be prefixed with the name of one of the supported database engine types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
 
 ---
 
@@ -3453,7 +3607,51 @@ RootRotationStatements *[]*string
 
 A list of database statements to be executed to rotate the root user's credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+
+---
+
+##### `RotationPeriod`<sup>Optional</sup> <a name="RotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch.property.rotationPeriod"></a>
+
+```go
+RotationPeriod *f64
+```
+
+- *Type:* *f64
+
+The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+
+---
+
+##### `RotationSchedule`<sup>Optional</sup> <a name="RotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch.property.rotationSchedule"></a>
+
+```go
+RotationSchedule *string
+```
+
+- *Type:* *string
+
+The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+
+---
+
+##### `RotationWindow`<sup>Optional</sup> <a name="RotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch.property.rotationWindow"></a>
+
+```go
+RotationWindow *f64
+```
+
+- *Type:* *f64
+
+The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered.
+
+Can only be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
 
 ---
 
@@ -3467,7 +3665,7 @@ TlsServerName *string
 
 This, if set, is used to set the SNI host when connecting via TLS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#tls_server_name DatabaseSecretsMount#tls_server_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#tls_server_name DatabaseSecretsMount#tls_server_name}
 
 ---
 
@@ -3481,7 +3679,7 @@ UsernameTemplate *string
 
 Template describing how dynamic usernames are generated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
 
 ---
 
@@ -3495,7 +3693,7 @@ VerifyConnection interface{}
 
 Specifies if the connection is verified during initial configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
 
 ---
 
@@ -3511,6 +3709,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 	AllowedRoles: *[]*string,
 	ConnectionUrl: *string,
 	Data: *map[string]*string,
+	DisableAutomatedRotation: interface{},
 	DisableEscaping: interface{},
 	MaxConnectionLifetime: *f64,
 	MaxIdleConnections: *f64,
@@ -3518,6 +3717,9 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 	Password: *string,
 	PluginName: *string,
 	RootRotationStatements: *[]*string,
+	RotationPeriod: *f64,
+	RotationSchedule: *string,
+	RotationWindow: *f64,
 	Username: *string,
 	VerifyConnection: interface{},
 }
@@ -3531,6 +3733,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana.property.allowedRoles">AllowedRoles</a></code> | <code>*[]*string</code> | A list of roles that are allowed to use this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana.property.connectionUrl">ConnectionUrl</a></code> | <code>*string</code> | Connection string to use to connect to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana.property.data">Data</a></code> | <code>*map[string]*string</code> | A map of sensitive data to pass to the endpoint. Useful for templated connection strings. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>interface{}</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana.property.disableEscaping">DisableEscaping</a></code> | <code>interface{}</code> | Disable special character escaping in username and password. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>*f64</code> | Maximum number of seconds a connection may be reused. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>*f64</code> | Maximum number of idle connections to the database. |
@@ -3538,6 +3741,9 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana.property.password">Password</a></code> | <code>*string</code> | The root credential password used in the connection URL. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana.property.pluginName">PluginName</a></code> | <code>*string</code> | Specifies the name of the plugin to use for this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana.property.rootRotationStatements">RootRotationStatements</a></code> | <code>*[]*string</code> | A list of database statements to be executed to rotate the root user's credentials. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana.property.rotationPeriod">RotationPeriod</a></code> | <code>*f64</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana.property.rotationSchedule">RotationSchedule</a></code> | <code>*string</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana.property.rotationWindow">RotationWindow</a></code> | <code>*f64</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana.property.username">Username</a></code> | <code>*string</code> | The root credential username used in the connection URL. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana.property.verifyConnection">VerifyConnection</a></code> | <code>interface{}</code> | Specifies if the connection is verified during initial configuration. |
 
@@ -3553,7 +3759,7 @@ Name *string
 
 Name of the database connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
 
 ---
 
@@ -3567,7 +3773,7 @@ AllowedRoles *[]*string
 
 A list of roles that are allowed to use this connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
 
 ---
 
@@ -3581,7 +3787,7 @@ ConnectionUrl *string
 
 Connection string to use to connect to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
 
 ---
 
@@ -3595,7 +3801,21 @@ Data *map[string]*string
 
 A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+
+---
+
+##### `DisableAutomatedRotation`<sup>Optional</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana.property.disableAutomatedRotation"></a>
+
+```go
+DisableAutomatedRotation interface{}
+```
+
+- *Type:* interface{}
+
+Stops rotation of the root credential until set to false.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
 
 ---
 
@@ -3609,7 +3829,7 @@ DisableEscaping interface{}
 
 Disable special character escaping in username and password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#disable_escaping DatabaseSecretsMount#disable_escaping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#disable_escaping DatabaseSecretsMount#disable_escaping}
 
 ---
 
@@ -3623,7 +3843,7 @@ MaxConnectionLifetime *f64
 
 Maximum number of seconds a connection may be reused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
 
 ---
 
@@ -3637,7 +3857,7 @@ MaxIdleConnections *f64
 
 Maximum number of idle connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
 
 ---
 
@@ -3651,7 +3871,7 @@ MaxOpenConnections *f64
 
 Maximum number of open connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
 
 ---
 
@@ -3665,7 +3885,7 @@ Password *string
 
 The root credential password used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
 
 ---
 
@@ -3681,7 +3901,7 @@ Specifies the name of the plugin to use for this connection.
 
 Must be prefixed with the name of one of the supported database engine types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
 
 ---
 
@@ -3695,7 +3915,51 @@ RootRotationStatements *[]*string
 
 A list of database statements to be executed to rotate the root user's credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+
+---
+
+##### `RotationPeriod`<sup>Optional</sup> <a name="RotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana.property.rotationPeriod"></a>
+
+```go
+RotationPeriod *f64
+```
+
+- *Type:* *f64
+
+The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+
+---
+
+##### `RotationSchedule`<sup>Optional</sup> <a name="RotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana.property.rotationSchedule"></a>
+
+```go
+RotationSchedule *string
+```
+
+- *Type:* *string
+
+The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+
+---
+
+##### `RotationWindow`<sup>Optional</sup> <a name="RotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana.property.rotationWindow"></a>
+
+```go
+RotationWindow *f64
+```
+
+- *Type:* *f64
+
+The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered.
+
+Can only be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
 
 ---
 
@@ -3709,7 +3973,7 @@ Username *string
 
 The root credential username used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
 
 ---
 
@@ -3723,7 +3987,7 @@ VerifyConnection interface{}
 
 Specifies if the connection is verified during initial configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
 
 ---
 
@@ -3742,12 +4006,16 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 	AllowedRoles: *[]*string,
 	ConnectTimeout: *f64,
 	Data: *map[string]*string,
+	DisableAutomatedRotation: interface{},
 	InsecureTls: interface{},
 	PemBundle: *string,
 	PemJson: *string,
 	PluginName: *string,
 	Port: *f64,
 	RootRotationStatements: *[]*string,
+	RotationPeriod: *f64,
+	RotationSchedule: *string,
+	RotationWindow: *f64,
 	Tls: interface{},
 	UsernameTemplate: *string,
 	VerifyConnection: interface{},
@@ -3765,12 +4033,16 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.allowedRoles">AllowedRoles</a></code> | <code>*[]*string</code> | A list of roles that are allowed to use this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.connectTimeout">ConnectTimeout</a></code> | <code>*f64</code> | The number of seconds to use as a connection timeout. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.data">Data</a></code> | <code>*map[string]*string</code> | A map of sensitive data to pass to the endpoint. Useful for templated connection strings. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>interface{}</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.insecureTls">InsecureTls</a></code> | <code>interface{}</code> | Whether to skip verification of the server certificate when using TLS. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.pemBundle">PemBundle</a></code> | <code>*string</code> | Concatenated PEM blocks containing a certificate and private key; |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.pemJson">PemJson</a></code> | <code>*string</code> | Specifies JSON containing a certificate and private key; |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.pluginName">PluginName</a></code> | <code>*string</code> | Specifies the name of the plugin to use for this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.port">Port</a></code> | <code>*f64</code> | The transport port to use to connect to Influxdb. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.rootRotationStatements">RootRotationStatements</a></code> | <code>*[]*string</code> | A list of database statements to be executed to rotate the root user's credentials. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.rotationPeriod">RotationPeriod</a></code> | <code>*f64</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.rotationSchedule">RotationSchedule</a></code> | <code>*string</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.rotationWindow">RotationWindow</a></code> | <code>*f64</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.tls">Tls</a></code> | <code>interface{}</code> | Whether to use TLS when connecting to Influxdb. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.usernameTemplate">UsernameTemplate</a></code> | <code>*string</code> | Template describing how dynamic usernames are generated. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.verifyConnection">VerifyConnection</a></code> | <code>interface{}</code> | Specifies if the connection is verified during initial configuration. |
@@ -3787,7 +4059,7 @@ Host *string
 
 Influxdb host to connect to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#host DatabaseSecretsMount#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#host DatabaseSecretsMount#host}
 
 ---
 
@@ -3801,7 +4073,7 @@ Name *string
 
 Name of the database connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
 
 ---
 
@@ -3815,7 +4087,7 @@ Password *string
 
 Specifies the password corresponding to the given username.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
 
 ---
 
@@ -3829,7 +4101,7 @@ Username *string
 
 Specifies the username to use for superuser access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
 
 ---
 
@@ -3843,7 +4115,7 @@ AllowedRoles *[]*string
 
 A list of roles that are allowed to use this connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
 
 ---
 
@@ -3857,7 +4129,7 @@ ConnectTimeout *f64
 
 The number of seconds to use as a connection timeout.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#connect_timeout DatabaseSecretsMount#connect_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#connect_timeout DatabaseSecretsMount#connect_timeout}
 
 ---
 
@@ -3871,7 +4143,21 @@ Data *map[string]*string
 
 A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+
+---
+
+##### `DisableAutomatedRotation`<sup>Optional</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.disableAutomatedRotation"></a>
+
+```go
+DisableAutomatedRotation interface{}
+```
+
+- *Type:* interface{}
+
+Stops rotation of the root credential until set to false.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
 
 ---
 
@@ -3885,7 +4171,7 @@ InsecureTls interface{}
 
 Whether to skip verification of the server certificate when using TLS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#insecure_tls DatabaseSecretsMount#insecure_tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#insecure_tls DatabaseSecretsMount#insecure_tls}
 
 ---
 
@@ -3901,7 +4187,7 @@ Concatenated PEM blocks containing a certificate and private key;
 
 a certificate, private key, and issuing CA certificate; or just a CA certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#pem_bundle DatabaseSecretsMount#pem_bundle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#pem_bundle DatabaseSecretsMount#pem_bundle}
 
 ---
 
@@ -3917,7 +4203,7 @@ Specifies JSON containing a certificate and private key;
 
 a certificate, private key, and issuing CA certificate; or just a CA certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#pem_json DatabaseSecretsMount#pem_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#pem_json DatabaseSecretsMount#pem_json}
 
 ---
 
@@ -3933,7 +4219,7 @@ Specifies the name of the plugin to use for this connection.
 
 Must be prefixed with the name of one of the supported database engine types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
 
 ---
 
@@ -3947,7 +4233,7 @@ Port *f64
 
 The transport port to use to connect to Influxdb.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#port DatabaseSecretsMount#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#port DatabaseSecretsMount#port}
 
 ---
 
@@ -3961,7 +4247,51 @@ RootRotationStatements *[]*string
 
 A list of database statements to be executed to rotate the root user's credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+
+---
+
+##### `RotationPeriod`<sup>Optional</sup> <a name="RotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.rotationPeriod"></a>
+
+```go
+RotationPeriod *f64
+```
+
+- *Type:* *f64
+
+The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+
+---
+
+##### `RotationSchedule`<sup>Optional</sup> <a name="RotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.rotationSchedule"></a>
+
+```go
+RotationSchedule *string
+```
+
+- *Type:* *string
+
+The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+
+---
+
+##### `RotationWindow`<sup>Optional</sup> <a name="RotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.rotationWindow"></a>
+
+```go
+RotationWindow *f64
+```
+
+- *Type:* *f64
+
+The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered.
+
+Can only be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
 
 ---
 
@@ -3975,7 +4305,7 @@ Tls interface{}
 
 Whether to use TLS when connecting to Influxdb.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#tls DatabaseSecretsMount#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#tls DatabaseSecretsMount#tls}
 
 ---
 
@@ -3989,7 +4319,7 @@ UsernameTemplate *string
 
 Template describing how dynamic usernames are generated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
 
 ---
 
@@ -4003,7 +4333,7 @@ VerifyConnection interface{}
 
 Specifies if the connection is verified during initial configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
 
 ---
 
@@ -4019,12 +4349,16 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 	AllowedRoles: *[]*string,
 	ConnectionUrl: *string,
 	Data: *map[string]*string,
+	DisableAutomatedRotation: interface{},
 	MaxConnectionLifetime: *f64,
 	MaxIdleConnections: *f64,
 	MaxOpenConnections: *f64,
 	Password: *string,
 	PluginName: *string,
 	RootRotationStatements: *[]*string,
+	RotationPeriod: *f64,
+	RotationSchedule: *string,
+	RotationWindow: *f64,
 	Username: *string,
 	UsernameTemplate: *string,
 	VerifyConnection: interface{},
@@ -4039,12 +4373,16 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb.property.allowedRoles">AllowedRoles</a></code> | <code>*[]*string</code> | A list of roles that are allowed to use this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb.property.connectionUrl">ConnectionUrl</a></code> | <code>*string</code> | Connection string to use to connect to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb.property.data">Data</a></code> | <code>*map[string]*string</code> | A map of sensitive data to pass to the endpoint. Useful for templated connection strings. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>interface{}</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>*f64</code> | Maximum number of seconds a connection may be reused. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>*f64</code> | Maximum number of idle connections to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb.property.maxOpenConnections">MaxOpenConnections</a></code> | <code>*f64</code> | Maximum number of open connections to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb.property.password">Password</a></code> | <code>*string</code> | The root credential password used in the connection URL. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb.property.pluginName">PluginName</a></code> | <code>*string</code> | Specifies the name of the plugin to use for this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb.property.rootRotationStatements">RootRotationStatements</a></code> | <code>*[]*string</code> | A list of database statements to be executed to rotate the root user's credentials. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb.property.rotationPeriod">RotationPeriod</a></code> | <code>*f64</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb.property.rotationSchedule">RotationSchedule</a></code> | <code>*string</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb.property.rotationWindow">RotationWindow</a></code> | <code>*f64</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb.property.username">Username</a></code> | <code>*string</code> | The root credential username used in the connection URL. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb.property.usernameTemplate">UsernameTemplate</a></code> | <code>*string</code> | Username generation template. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb.property.verifyConnection">VerifyConnection</a></code> | <code>interface{}</code> | Specifies if the connection is verified during initial configuration. |
@@ -4061,7 +4399,7 @@ Name *string
 
 Name of the database connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
 
 ---
 
@@ -4075,7 +4413,7 @@ AllowedRoles *[]*string
 
 A list of roles that are allowed to use this connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
 
 ---
 
@@ -4089,7 +4427,7 @@ ConnectionUrl *string
 
 Connection string to use to connect to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
 
 ---
 
@@ -4103,7 +4441,21 @@ Data *map[string]*string
 
 A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+
+---
+
+##### `DisableAutomatedRotation`<sup>Optional</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb.property.disableAutomatedRotation"></a>
+
+```go
+DisableAutomatedRotation interface{}
+```
+
+- *Type:* interface{}
+
+Stops rotation of the root credential until set to false.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
 
 ---
 
@@ -4117,7 +4469,7 @@ MaxConnectionLifetime *f64
 
 Maximum number of seconds a connection may be reused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
 
 ---
 
@@ -4131,7 +4483,7 @@ MaxIdleConnections *f64
 
 Maximum number of idle connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
 
 ---
 
@@ -4145,7 +4497,7 @@ MaxOpenConnections *f64
 
 Maximum number of open connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
 
 ---
 
@@ -4159,7 +4511,7 @@ Password *string
 
 The root credential password used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
 
 ---
 
@@ -4175,7 +4527,7 @@ Specifies the name of the plugin to use for this connection.
 
 Must be prefixed with the name of one of the supported database engine types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
 
 ---
 
@@ -4189,7 +4541,51 @@ RootRotationStatements *[]*string
 
 A list of database statements to be executed to rotate the root user's credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+
+---
+
+##### `RotationPeriod`<sup>Optional</sup> <a name="RotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb.property.rotationPeriod"></a>
+
+```go
+RotationPeriod *f64
+```
+
+- *Type:* *f64
+
+The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+
+---
+
+##### `RotationSchedule`<sup>Optional</sup> <a name="RotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb.property.rotationSchedule"></a>
+
+```go
+RotationSchedule *string
+```
+
+- *Type:* *string
+
+The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+
+---
+
+##### `RotationWindow`<sup>Optional</sup> <a name="RotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb.property.rotationWindow"></a>
+
+```go
+RotationWindow *f64
+```
+
+- *Type:* *f64
+
+The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered.
+
+Can only be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
 
 ---
 
@@ -4203,7 +4599,7 @@ Username *string
 
 The root credential username used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
 
 ---
 
@@ -4217,7 +4613,7 @@ UsernameTemplate *string
 
 Username generation template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
 
 ---
 
@@ -4231,7 +4627,7 @@ VerifyConnection interface{}
 
 Specifies if the connection is verified during initial configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
 
 ---
 
@@ -4249,8 +4645,12 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 	PublicKey: *string,
 	AllowedRoles: *[]*string,
 	Data: *map[string]*string,
+	DisableAutomatedRotation: interface{},
 	PluginName: *string,
 	RootRotationStatements: *[]*string,
+	RotationPeriod: *f64,
+	RotationSchedule: *string,
+	RotationWindow: *f64,
 	VerifyConnection: interface{},
 }
 ```
@@ -4265,8 +4665,12 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas.property.publicKey">PublicKey</a></code> | <code>*string</code> | The Public Programmatic API Key used to authenticate with the MongoDB Atlas API. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas.property.allowedRoles">AllowedRoles</a></code> | <code>*[]*string</code> | A list of roles that are allowed to use this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas.property.data">Data</a></code> | <code>*map[string]*string</code> | A map of sensitive data to pass to the endpoint. Useful for templated connection strings. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>interface{}</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas.property.pluginName">PluginName</a></code> | <code>*string</code> | Specifies the name of the plugin to use for this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas.property.rootRotationStatements">RootRotationStatements</a></code> | <code>*[]*string</code> | A list of database statements to be executed to rotate the root user's credentials. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas.property.rotationPeriod">RotationPeriod</a></code> | <code>*f64</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas.property.rotationSchedule">RotationSchedule</a></code> | <code>*string</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas.property.rotationWindow">RotationWindow</a></code> | <code>*f64</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas.property.verifyConnection">VerifyConnection</a></code> | <code>interface{}</code> | Specifies if the connection is verified during initial configuration. |
 
 ---
@@ -4281,7 +4685,7 @@ Name *string
 
 Name of the database connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
 
 ---
 
@@ -4295,7 +4699,7 @@ PrivateKey *string
 
 The Private Programmatic API Key used to connect with MongoDB Atlas API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#private_key DatabaseSecretsMount#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#private_key DatabaseSecretsMount#private_key}
 
 ---
 
@@ -4309,7 +4713,7 @@ ProjectId *string
 
 The Project ID the Database User should be created within.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#project_id DatabaseSecretsMount#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#project_id DatabaseSecretsMount#project_id}
 
 ---
 
@@ -4323,7 +4727,7 @@ PublicKey *string
 
 The Public Programmatic API Key used to authenticate with the MongoDB Atlas API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#public_key DatabaseSecretsMount#public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#public_key DatabaseSecretsMount#public_key}
 
 ---
 
@@ -4337,7 +4741,7 @@ AllowedRoles *[]*string
 
 A list of roles that are allowed to use this connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
 
 ---
 
@@ -4351,7 +4755,21 @@ Data *map[string]*string
 
 A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+
+---
+
+##### `DisableAutomatedRotation`<sup>Optional</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas.property.disableAutomatedRotation"></a>
+
+```go
+DisableAutomatedRotation interface{}
+```
+
+- *Type:* interface{}
+
+Stops rotation of the root credential until set to false.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
 
 ---
 
@@ -4367,7 +4785,7 @@ Specifies the name of the plugin to use for this connection.
 
 Must be prefixed with the name of one of the supported database engine types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
 
 ---
 
@@ -4381,7 +4799,51 @@ RootRotationStatements *[]*string
 
 A list of database statements to be executed to rotate the root user's credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+
+---
+
+##### `RotationPeriod`<sup>Optional</sup> <a name="RotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas.property.rotationPeriod"></a>
+
+```go
+RotationPeriod *f64
+```
+
+- *Type:* *f64
+
+The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+
+---
+
+##### `RotationSchedule`<sup>Optional</sup> <a name="RotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas.property.rotationSchedule"></a>
+
+```go
+RotationSchedule *string
+```
+
+- *Type:* *string
+
+The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+
+---
+
+##### `RotationWindow`<sup>Optional</sup> <a name="RotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas.property.rotationWindow"></a>
+
+```go
+RotationWindow *f64
+```
+
+- *Type:* *f64
+
+The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered.
+
+Can only be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
 
 ---
 
@@ -4395,7 +4857,7 @@ VerifyConnection interface{}
 
 Specifies if the connection is verified during initial configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
 
 ---
 
@@ -4412,6 +4874,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 	ConnectionUrl: *string,
 	ContainedDb: interface{},
 	Data: *map[string]*string,
+	DisableAutomatedRotation: interface{},
 	DisableEscaping: interface{},
 	MaxConnectionLifetime: *f64,
 	MaxIdleConnections: *f64,
@@ -4419,6 +4882,9 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 	Password: *string,
 	PluginName: *string,
 	RootRotationStatements: *[]*string,
+	RotationPeriod: *f64,
+	RotationSchedule: *string,
+	RotationWindow: *f64,
 	Username: *string,
 	UsernameTemplate: *string,
 	VerifyConnection: interface{},
@@ -4434,6 +4900,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.connectionUrl">ConnectionUrl</a></code> | <code>*string</code> | Connection string to use to connect to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.containedDb">ContainedDb</a></code> | <code>interface{}</code> | Set to true when the target is a Contained Database, e.g. AzureSQL. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.data">Data</a></code> | <code>*map[string]*string</code> | A map of sensitive data to pass to the endpoint. Useful for templated connection strings. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>interface{}</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.disableEscaping">DisableEscaping</a></code> | <code>interface{}</code> | Disable special character escaping in username and password. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>*f64</code> | Maximum number of seconds a connection may be reused. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>*f64</code> | Maximum number of idle connections to the database. |
@@ -4441,6 +4908,9 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.password">Password</a></code> | <code>*string</code> | The root credential password used in the connection URL. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.pluginName">PluginName</a></code> | <code>*string</code> | Specifies the name of the plugin to use for this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.rootRotationStatements">RootRotationStatements</a></code> | <code>*[]*string</code> | A list of database statements to be executed to rotate the root user's credentials. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.rotationPeriod">RotationPeriod</a></code> | <code>*f64</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.rotationSchedule">RotationSchedule</a></code> | <code>*string</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.rotationWindow">RotationWindow</a></code> | <code>*f64</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.username">Username</a></code> | <code>*string</code> | The root credential username used in the connection URL. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.usernameTemplate">UsernameTemplate</a></code> | <code>*string</code> | Username generation template. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.verifyConnection">VerifyConnection</a></code> | <code>interface{}</code> | Specifies if the connection is verified during initial configuration. |
@@ -4457,7 +4927,7 @@ Name *string
 
 Name of the database connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
 
 ---
 
@@ -4471,7 +4941,7 @@ AllowedRoles *[]*string
 
 A list of roles that are allowed to use this connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
 
 ---
 
@@ -4485,7 +4955,7 @@ ConnectionUrl *string
 
 Connection string to use to connect to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
 
 ---
 
@@ -4499,7 +4969,7 @@ ContainedDb interface{}
 
 Set to true when the target is a Contained Database, e.g. AzureSQL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#contained_db DatabaseSecretsMount#contained_db}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#contained_db DatabaseSecretsMount#contained_db}
 
 ---
 
@@ -4513,7 +4983,21 @@ Data *map[string]*string
 
 A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+
+---
+
+##### `DisableAutomatedRotation`<sup>Optional</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.disableAutomatedRotation"></a>
+
+```go
+DisableAutomatedRotation interface{}
+```
+
+- *Type:* interface{}
+
+Stops rotation of the root credential until set to false.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
 
 ---
 
@@ -4527,7 +5011,7 @@ DisableEscaping interface{}
 
 Disable special character escaping in username and password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#disable_escaping DatabaseSecretsMount#disable_escaping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#disable_escaping DatabaseSecretsMount#disable_escaping}
 
 ---
 
@@ -4541,7 +5025,7 @@ MaxConnectionLifetime *f64
 
 Maximum number of seconds a connection may be reused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
 
 ---
 
@@ -4555,7 +5039,7 @@ MaxIdleConnections *f64
 
 Maximum number of idle connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
 
 ---
 
@@ -4569,7 +5053,7 @@ MaxOpenConnections *f64
 
 Maximum number of open connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
 
 ---
 
@@ -4583,7 +5067,7 @@ Password *string
 
 The root credential password used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
 
 ---
 
@@ -4599,7 +5083,7 @@ Specifies the name of the plugin to use for this connection.
 
 Must be prefixed with the name of one of the supported database engine types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
 
 ---
 
@@ -4613,7 +5097,51 @@ RootRotationStatements *[]*string
 
 A list of database statements to be executed to rotate the root user's credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+
+---
+
+##### `RotationPeriod`<sup>Optional</sup> <a name="RotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.rotationPeriod"></a>
+
+```go
+RotationPeriod *f64
+```
+
+- *Type:* *f64
+
+The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+
+---
+
+##### `RotationSchedule`<sup>Optional</sup> <a name="RotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.rotationSchedule"></a>
+
+```go
+RotationSchedule *string
+```
+
+- *Type:* *string
+
+The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+
+---
+
+##### `RotationWindow`<sup>Optional</sup> <a name="RotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.rotationWindow"></a>
+
+```go
+RotationWindow *f64
+```
+
+- *Type:* *f64
+
+The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered.
+
+Can only be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
 
 ---
 
@@ -4627,7 +5155,7 @@ Username *string
 
 The root credential username used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
 
 ---
 
@@ -4641,7 +5169,7 @@ UsernameTemplate *string
 
 Username generation template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
 
 ---
 
@@ -4655,7 +5183,7 @@ VerifyConnection interface{}
 
 Specifies if the connection is verified during initial configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
 
 ---
 
@@ -4672,12 +5200,16 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 	AuthType: *string,
 	ConnectionUrl: *string,
 	Data: *map[string]*string,
+	DisableAutomatedRotation: interface{},
 	MaxConnectionLifetime: *f64,
 	MaxIdleConnections: *f64,
 	MaxOpenConnections: *f64,
 	Password: *string,
 	PluginName: *string,
 	RootRotationStatements: *[]*string,
+	RotationPeriod: *f64,
+	RotationSchedule: *string,
+	RotationWindow: *f64,
 	ServiceAccountJson: *string,
 	TlsCa: *string,
 	TlsCertificateKey: *string,
@@ -4696,12 +5228,16 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql.property.authType">AuthType</a></code> | <code>*string</code> | Specify alternative authorization type. (Only 'gcp_iam' is valid currently). |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql.property.connectionUrl">ConnectionUrl</a></code> | <code>*string</code> | Connection string to use to connect to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql.property.data">Data</a></code> | <code>*map[string]*string</code> | A map of sensitive data to pass to the endpoint. Useful for templated connection strings. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>interface{}</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>*f64</code> | Maximum number of seconds a connection may be reused. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>*f64</code> | Maximum number of idle connections to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql.property.maxOpenConnections">MaxOpenConnections</a></code> | <code>*f64</code> | Maximum number of open connections to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql.property.password">Password</a></code> | <code>*string</code> | The root credential password used in the connection URL. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql.property.pluginName">PluginName</a></code> | <code>*string</code> | Specifies the name of the plugin to use for this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql.property.rootRotationStatements">RootRotationStatements</a></code> | <code>*[]*string</code> | A list of database statements to be executed to rotate the root user's credentials. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql.property.rotationPeriod">RotationPeriod</a></code> | <code>*f64</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql.property.rotationSchedule">RotationSchedule</a></code> | <code>*string</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql.property.rotationWindow">RotationWindow</a></code> | <code>*f64</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql.property.serviceAccountJson">ServiceAccountJson</a></code> | <code>*string</code> | A JSON encoded credential for use with IAM authorization. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql.property.tlsCa">TlsCa</a></code> | <code>*string</code> | x509 CA file for validating the certificate presented by the MySQL server. Must be PEM encoded. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql.property.tlsCertificateKey">TlsCertificateKey</a></code> | <code>*string</code> | x509 certificate for connecting to the database. |
@@ -4721,7 +5257,7 @@ Name *string
 
 Name of the database connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
 
 ---
 
@@ -4735,7 +5271,7 @@ AllowedRoles *[]*string
 
 A list of roles that are allowed to use this connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
 
 ---
 
@@ -4749,7 +5285,7 @@ AuthType *string
 
 Specify alternative authorization type. (Only 'gcp_iam' is valid currently).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#auth_type DatabaseSecretsMount#auth_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#auth_type DatabaseSecretsMount#auth_type}
 
 ---
 
@@ -4763,7 +5299,7 @@ ConnectionUrl *string
 
 Connection string to use to connect to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
 
 ---
 
@@ -4777,7 +5313,21 @@ Data *map[string]*string
 
 A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+
+---
+
+##### `DisableAutomatedRotation`<sup>Optional</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql.property.disableAutomatedRotation"></a>
+
+```go
+DisableAutomatedRotation interface{}
+```
+
+- *Type:* interface{}
+
+Stops rotation of the root credential until set to false.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
 
 ---
 
@@ -4791,7 +5341,7 @@ MaxConnectionLifetime *f64
 
 Maximum number of seconds a connection may be reused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
 
 ---
 
@@ -4805,7 +5355,7 @@ MaxIdleConnections *f64
 
 Maximum number of idle connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
 
 ---
 
@@ -4819,7 +5369,7 @@ MaxOpenConnections *f64
 
 Maximum number of open connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
 
 ---
 
@@ -4833,7 +5383,7 @@ Password *string
 
 The root credential password used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
 
 ---
 
@@ -4849,7 +5399,7 @@ Specifies the name of the plugin to use for this connection.
 
 Must be prefixed with the name of one of the supported database engine types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
 
 ---
 
@@ -4863,7 +5413,51 @@ RootRotationStatements *[]*string
 
 A list of database statements to be executed to rotate the root user's credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+
+---
+
+##### `RotationPeriod`<sup>Optional</sup> <a name="RotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql.property.rotationPeriod"></a>
+
+```go
+RotationPeriod *f64
+```
+
+- *Type:* *f64
+
+The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+
+---
+
+##### `RotationSchedule`<sup>Optional</sup> <a name="RotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql.property.rotationSchedule"></a>
+
+```go
+RotationSchedule *string
+```
+
+- *Type:* *string
+
+The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+
+---
+
+##### `RotationWindow`<sup>Optional</sup> <a name="RotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql.property.rotationWindow"></a>
+
+```go
+RotationWindow *f64
+```
+
+- *Type:* *f64
+
+The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered.
+
+Can only be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
 
 ---
 
@@ -4877,7 +5471,7 @@ ServiceAccountJson *string
 
 A JSON encoded credential for use with IAM authorization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#service_account_json DatabaseSecretsMount#service_account_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#service_account_json DatabaseSecretsMount#service_account_json}
 
 ---
 
@@ -4891,7 +5485,7 @@ TlsCa *string
 
 x509 CA file for validating the certificate presented by the MySQL server. Must be PEM encoded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#tls_ca DatabaseSecretsMount#tls_ca}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#tls_ca DatabaseSecretsMount#tls_ca}
 
 ---
 
@@ -4907,7 +5501,7 @@ x509 certificate for connecting to the database.
 
 This must be a PEM encoded version of the private key and the certificate combined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#tls_certificate_key DatabaseSecretsMount#tls_certificate_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#tls_certificate_key DatabaseSecretsMount#tls_certificate_key}
 
 ---
 
@@ -4921,7 +5515,7 @@ Username *string
 
 The root credential username used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
 
 ---
 
@@ -4935,7 +5529,7 @@ UsernameTemplate *string
 
 Username generation template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
 
 ---
 
@@ -4949,7 +5543,7 @@ VerifyConnection interface{}
 
 Specifies if the connection is verified during initial configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
 
 ---
 
@@ -4966,12 +5560,16 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 	AuthType: *string,
 	ConnectionUrl: *string,
 	Data: *map[string]*string,
+	DisableAutomatedRotation: interface{},
 	MaxConnectionLifetime: *f64,
 	MaxIdleConnections: *f64,
 	MaxOpenConnections: *f64,
 	Password: *string,
 	PluginName: *string,
 	RootRotationStatements: *[]*string,
+	RotationPeriod: *f64,
+	RotationSchedule: *string,
+	RotationWindow: *f64,
 	ServiceAccountJson: *string,
 	TlsCa: *string,
 	TlsCertificateKey: *string,
@@ -4990,12 +5588,16 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora.property.authType">AuthType</a></code> | <code>*string</code> | Specify alternative authorization type. (Only 'gcp_iam' is valid currently). |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora.property.connectionUrl">ConnectionUrl</a></code> | <code>*string</code> | Connection string to use to connect to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora.property.data">Data</a></code> | <code>*map[string]*string</code> | A map of sensitive data to pass to the endpoint. Useful for templated connection strings. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>interface{}</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>*f64</code> | Maximum number of seconds a connection may be reused. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>*f64</code> | Maximum number of idle connections to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora.property.maxOpenConnections">MaxOpenConnections</a></code> | <code>*f64</code> | Maximum number of open connections to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora.property.password">Password</a></code> | <code>*string</code> | The root credential password used in the connection URL. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora.property.pluginName">PluginName</a></code> | <code>*string</code> | Specifies the name of the plugin to use for this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora.property.rootRotationStatements">RootRotationStatements</a></code> | <code>*[]*string</code> | A list of database statements to be executed to rotate the root user's credentials. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora.property.rotationPeriod">RotationPeriod</a></code> | <code>*f64</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora.property.rotationSchedule">RotationSchedule</a></code> | <code>*string</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora.property.rotationWindow">RotationWindow</a></code> | <code>*f64</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora.property.serviceAccountJson">ServiceAccountJson</a></code> | <code>*string</code> | A JSON encoded credential for use with IAM authorization. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora.property.tlsCa">TlsCa</a></code> | <code>*string</code> | x509 CA file for validating the certificate presented by the MySQL server. Must be PEM encoded. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora.property.tlsCertificateKey">TlsCertificateKey</a></code> | <code>*string</code> | x509 certificate for connecting to the database. |
@@ -5015,7 +5617,7 @@ Name *string
 
 Name of the database connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
 
 ---
 
@@ -5029,7 +5631,7 @@ AllowedRoles *[]*string
 
 A list of roles that are allowed to use this connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
 
 ---
 
@@ -5043,7 +5645,7 @@ AuthType *string
 
 Specify alternative authorization type. (Only 'gcp_iam' is valid currently).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#auth_type DatabaseSecretsMount#auth_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#auth_type DatabaseSecretsMount#auth_type}
 
 ---
 
@@ -5057,7 +5659,7 @@ ConnectionUrl *string
 
 Connection string to use to connect to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
 
 ---
 
@@ -5071,7 +5673,21 @@ Data *map[string]*string
 
 A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+
+---
+
+##### `DisableAutomatedRotation`<sup>Optional</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora.property.disableAutomatedRotation"></a>
+
+```go
+DisableAutomatedRotation interface{}
+```
+
+- *Type:* interface{}
+
+Stops rotation of the root credential until set to false.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
 
 ---
 
@@ -5085,7 +5701,7 @@ MaxConnectionLifetime *f64
 
 Maximum number of seconds a connection may be reused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
 
 ---
 
@@ -5099,7 +5715,7 @@ MaxIdleConnections *f64
 
 Maximum number of idle connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
 
 ---
 
@@ -5113,7 +5729,7 @@ MaxOpenConnections *f64
 
 Maximum number of open connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
 
 ---
 
@@ -5127,7 +5743,7 @@ Password *string
 
 The root credential password used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
 
 ---
 
@@ -5143,7 +5759,7 @@ Specifies the name of the plugin to use for this connection.
 
 Must be prefixed with the name of one of the supported database engine types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
 
 ---
 
@@ -5157,7 +5773,51 @@ RootRotationStatements *[]*string
 
 A list of database statements to be executed to rotate the root user's credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+
+---
+
+##### `RotationPeriod`<sup>Optional</sup> <a name="RotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora.property.rotationPeriod"></a>
+
+```go
+RotationPeriod *f64
+```
+
+- *Type:* *f64
+
+The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+
+---
+
+##### `RotationSchedule`<sup>Optional</sup> <a name="RotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora.property.rotationSchedule"></a>
+
+```go
+RotationSchedule *string
+```
+
+- *Type:* *string
+
+The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+
+---
+
+##### `RotationWindow`<sup>Optional</sup> <a name="RotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora.property.rotationWindow"></a>
+
+```go
+RotationWindow *f64
+```
+
+- *Type:* *f64
+
+The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered.
+
+Can only be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
 
 ---
 
@@ -5171,7 +5831,7 @@ ServiceAccountJson *string
 
 A JSON encoded credential for use with IAM authorization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#service_account_json DatabaseSecretsMount#service_account_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#service_account_json DatabaseSecretsMount#service_account_json}
 
 ---
 
@@ -5185,7 +5845,7 @@ TlsCa *string
 
 x509 CA file for validating the certificate presented by the MySQL server. Must be PEM encoded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#tls_ca DatabaseSecretsMount#tls_ca}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#tls_ca DatabaseSecretsMount#tls_ca}
 
 ---
 
@@ -5201,7 +5861,7 @@ x509 certificate for connecting to the database.
 
 This must be a PEM encoded version of the private key and the certificate combined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#tls_certificate_key DatabaseSecretsMount#tls_certificate_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#tls_certificate_key DatabaseSecretsMount#tls_certificate_key}
 
 ---
 
@@ -5215,7 +5875,7 @@ Username *string
 
 The root credential username used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
 
 ---
 
@@ -5229,7 +5889,7 @@ UsernameTemplate *string
 
 Username generation template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
 
 ---
 
@@ -5243,7 +5903,7 @@ VerifyConnection interface{}
 
 Specifies if the connection is verified during initial configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
 
 ---
 
@@ -5260,12 +5920,16 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 	AuthType: *string,
 	ConnectionUrl: *string,
 	Data: *map[string]*string,
+	DisableAutomatedRotation: interface{},
 	MaxConnectionLifetime: *f64,
 	MaxIdleConnections: *f64,
 	MaxOpenConnections: *f64,
 	Password: *string,
 	PluginName: *string,
 	RootRotationStatements: *[]*string,
+	RotationPeriod: *f64,
+	RotationSchedule: *string,
+	RotationWindow: *f64,
 	ServiceAccountJson: *string,
 	TlsCa: *string,
 	TlsCertificateKey: *string,
@@ -5284,12 +5948,16 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy.property.authType">AuthType</a></code> | <code>*string</code> | Specify alternative authorization type. (Only 'gcp_iam' is valid currently). |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy.property.connectionUrl">ConnectionUrl</a></code> | <code>*string</code> | Connection string to use to connect to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy.property.data">Data</a></code> | <code>*map[string]*string</code> | A map of sensitive data to pass to the endpoint. Useful for templated connection strings. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>interface{}</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>*f64</code> | Maximum number of seconds a connection may be reused. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>*f64</code> | Maximum number of idle connections to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy.property.maxOpenConnections">MaxOpenConnections</a></code> | <code>*f64</code> | Maximum number of open connections to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy.property.password">Password</a></code> | <code>*string</code> | The root credential password used in the connection URL. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy.property.pluginName">PluginName</a></code> | <code>*string</code> | Specifies the name of the plugin to use for this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy.property.rootRotationStatements">RootRotationStatements</a></code> | <code>*[]*string</code> | A list of database statements to be executed to rotate the root user's credentials. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy.property.rotationPeriod">RotationPeriod</a></code> | <code>*f64</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy.property.rotationSchedule">RotationSchedule</a></code> | <code>*string</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy.property.rotationWindow">RotationWindow</a></code> | <code>*f64</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy.property.serviceAccountJson">ServiceAccountJson</a></code> | <code>*string</code> | A JSON encoded credential for use with IAM authorization. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy.property.tlsCa">TlsCa</a></code> | <code>*string</code> | x509 CA file for validating the certificate presented by the MySQL server. Must be PEM encoded. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy.property.tlsCertificateKey">TlsCertificateKey</a></code> | <code>*string</code> | x509 certificate for connecting to the database. |
@@ -5309,7 +5977,7 @@ Name *string
 
 Name of the database connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
 
 ---
 
@@ -5323,7 +5991,7 @@ AllowedRoles *[]*string
 
 A list of roles that are allowed to use this connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
 
 ---
 
@@ -5337,7 +6005,7 @@ AuthType *string
 
 Specify alternative authorization type. (Only 'gcp_iam' is valid currently).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#auth_type DatabaseSecretsMount#auth_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#auth_type DatabaseSecretsMount#auth_type}
 
 ---
 
@@ -5351,7 +6019,7 @@ ConnectionUrl *string
 
 Connection string to use to connect to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
 
 ---
 
@@ -5365,7 +6033,21 @@ Data *map[string]*string
 
 A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+
+---
+
+##### `DisableAutomatedRotation`<sup>Optional</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy.property.disableAutomatedRotation"></a>
+
+```go
+DisableAutomatedRotation interface{}
+```
+
+- *Type:* interface{}
+
+Stops rotation of the root credential until set to false.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
 
 ---
 
@@ -5379,7 +6061,7 @@ MaxConnectionLifetime *f64
 
 Maximum number of seconds a connection may be reused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
 
 ---
 
@@ -5393,7 +6075,7 @@ MaxIdleConnections *f64
 
 Maximum number of idle connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
 
 ---
 
@@ -5407,7 +6089,7 @@ MaxOpenConnections *f64
 
 Maximum number of open connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
 
 ---
 
@@ -5421,7 +6103,7 @@ Password *string
 
 The root credential password used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
 
 ---
 
@@ -5437,7 +6119,7 @@ Specifies the name of the plugin to use for this connection.
 
 Must be prefixed with the name of one of the supported database engine types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
 
 ---
 
@@ -5451,7 +6133,51 @@ RootRotationStatements *[]*string
 
 A list of database statements to be executed to rotate the root user's credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+
+---
+
+##### `RotationPeriod`<sup>Optional</sup> <a name="RotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy.property.rotationPeriod"></a>
+
+```go
+RotationPeriod *f64
+```
+
+- *Type:* *f64
+
+The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+
+---
+
+##### `RotationSchedule`<sup>Optional</sup> <a name="RotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy.property.rotationSchedule"></a>
+
+```go
+RotationSchedule *string
+```
+
+- *Type:* *string
+
+The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+
+---
+
+##### `RotationWindow`<sup>Optional</sup> <a name="RotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy.property.rotationWindow"></a>
+
+```go
+RotationWindow *f64
+```
+
+- *Type:* *f64
+
+The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered.
+
+Can only be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
 
 ---
 
@@ -5465,7 +6191,7 @@ ServiceAccountJson *string
 
 A JSON encoded credential for use with IAM authorization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#service_account_json DatabaseSecretsMount#service_account_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#service_account_json DatabaseSecretsMount#service_account_json}
 
 ---
 
@@ -5479,7 +6205,7 @@ TlsCa *string
 
 x509 CA file for validating the certificate presented by the MySQL server. Must be PEM encoded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#tls_ca DatabaseSecretsMount#tls_ca}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#tls_ca DatabaseSecretsMount#tls_ca}
 
 ---
 
@@ -5495,7 +6221,7 @@ x509 certificate for connecting to the database.
 
 This must be a PEM encoded version of the private key and the certificate combined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#tls_certificate_key DatabaseSecretsMount#tls_certificate_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#tls_certificate_key DatabaseSecretsMount#tls_certificate_key}
 
 ---
 
@@ -5509,7 +6235,7 @@ Username *string
 
 The root credential username used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
 
 ---
 
@@ -5523,7 +6249,7 @@ UsernameTemplate *string
 
 Username generation template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
 
 ---
 
@@ -5537,7 +6263,7 @@ VerifyConnection interface{}
 
 Specifies if the connection is verified during initial configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
 
 ---
 
@@ -5554,12 +6280,16 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 	AuthType: *string,
 	ConnectionUrl: *string,
 	Data: *map[string]*string,
+	DisableAutomatedRotation: interface{},
 	MaxConnectionLifetime: *f64,
 	MaxIdleConnections: *f64,
 	MaxOpenConnections: *f64,
 	Password: *string,
 	PluginName: *string,
 	RootRotationStatements: *[]*string,
+	RotationPeriod: *f64,
+	RotationSchedule: *string,
+	RotationWindow: *f64,
 	ServiceAccountJson: *string,
 	TlsCa: *string,
 	TlsCertificateKey: *string,
@@ -5578,12 +6308,16 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds.property.authType">AuthType</a></code> | <code>*string</code> | Specify alternative authorization type. (Only 'gcp_iam' is valid currently). |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds.property.connectionUrl">ConnectionUrl</a></code> | <code>*string</code> | Connection string to use to connect to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds.property.data">Data</a></code> | <code>*map[string]*string</code> | A map of sensitive data to pass to the endpoint. Useful for templated connection strings. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>interface{}</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>*f64</code> | Maximum number of seconds a connection may be reused. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>*f64</code> | Maximum number of idle connections to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds.property.maxOpenConnections">MaxOpenConnections</a></code> | <code>*f64</code> | Maximum number of open connections to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds.property.password">Password</a></code> | <code>*string</code> | The root credential password used in the connection URL. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds.property.pluginName">PluginName</a></code> | <code>*string</code> | Specifies the name of the plugin to use for this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds.property.rootRotationStatements">RootRotationStatements</a></code> | <code>*[]*string</code> | A list of database statements to be executed to rotate the root user's credentials. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds.property.rotationPeriod">RotationPeriod</a></code> | <code>*f64</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds.property.rotationSchedule">RotationSchedule</a></code> | <code>*string</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds.property.rotationWindow">RotationWindow</a></code> | <code>*f64</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds.property.serviceAccountJson">ServiceAccountJson</a></code> | <code>*string</code> | A JSON encoded credential for use with IAM authorization. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds.property.tlsCa">TlsCa</a></code> | <code>*string</code> | x509 CA file for validating the certificate presented by the MySQL server. Must be PEM encoded. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds.property.tlsCertificateKey">TlsCertificateKey</a></code> | <code>*string</code> | x509 certificate for connecting to the database. |
@@ -5603,7 +6337,7 @@ Name *string
 
 Name of the database connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
 
 ---
 
@@ -5617,7 +6351,7 @@ AllowedRoles *[]*string
 
 A list of roles that are allowed to use this connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
 
 ---
 
@@ -5631,7 +6365,7 @@ AuthType *string
 
 Specify alternative authorization type. (Only 'gcp_iam' is valid currently).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#auth_type DatabaseSecretsMount#auth_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#auth_type DatabaseSecretsMount#auth_type}
 
 ---
 
@@ -5645,7 +6379,7 @@ ConnectionUrl *string
 
 Connection string to use to connect to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
 
 ---
 
@@ -5659,7 +6393,21 @@ Data *map[string]*string
 
 A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+
+---
+
+##### `DisableAutomatedRotation`<sup>Optional</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds.property.disableAutomatedRotation"></a>
+
+```go
+DisableAutomatedRotation interface{}
+```
+
+- *Type:* interface{}
+
+Stops rotation of the root credential until set to false.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
 
 ---
 
@@ -5673,7 +6421,7 @@ MaxConnectionLifetime *f64
 
 Maximum number of seconds a connection may be reused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
 
 ---
 
@@ -5687,7 +6435,7 @@ MaxIdleConnections *f64
 
 Maximum number of idle connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
 
 ---
 
@@ -5701,7 +6449,7 @@ MaxOpenConnections *f64
 
 Maximum number of open connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
 
 ---
 
@@ -5715,7 +6463,7 @@ Password *string
 
 The root credential password used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
 
 ---
 
@@ -5731,7 +6479,7 @@ Specifies the name of the plugin to use for this connection.
 
 Must be prefixed with the name of one of the supported database engine types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
 
 ---
 
@@ -5745,7 +6493,51 @@ RootRotationStatements *[]*string
 
 A list of database statements to be executed to rotate the root user's credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+
+---
+
+##### `RotationPeriod`<sup>Optional</sup> <a name="RotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds.property.rotationPeriod"></a>
+
+```go
+RotationPeriod *f64
+```
+
+- *Type:* *f64
+
+The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+
+---
+
+##### `RotationSchedule`<sup>Optional</sup> <a name="RotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds.property.rotationSchedule"></a>
+
+```go
+RotationSchedule *string
+```
+
+- *Type:* *string
+
+The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+
+---
+
+##### `RotationWindow`<sup>Optional</sup> <a name="RotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds.property.rotationWindow"></a>
+
+```go
+RotationWindow *f64
+```
+
+- *Type:* *f64
+
+The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered.
+
+Can only be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
 
 ---
 
@@ -5759,7 +6551,7 @@ ServiceAccountJson *string
 
 A JSON encoded credential for use with IAM authorization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#service_account_json DatabaseSecretsMount#service_account_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#service_account_json DatabaseSecretsMount#service_account_json}
 
 ---
 
@@ -5773,7 +6565,7 @@ TlsCa *string
 
 x509 CA file for validating the certificate presented by the MySQL server. Must be PEM encoded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#tls_ca DatabaseSecretsMount#tls_ca}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#tls_ca DatabaseSecretsMount#tls_ca}
 
 ---
 
@@ -5789,7 +6581,7 @@ x509 certificate for connecting to the database.
 
 This must be a PEM encoded version of the private key and the certificate combined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#tls_certificate_key DatabaseSecretsMount#tls_certificate_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#tls_certificate_key DatabaseSecretsMount#tls_certificate_key}
 
 ---
 
@@ -5803,7 +6595,7 @@ Username *string
 
 The root credential username used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
 
 ---
 
@@ -5817,7 +6609,7 @@ UsernameTemplate *string
 
 Username generation template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
 
 ---
 
@@ -5831,7 +6623,7 @@ VerifyConnection interface{}
 
 Specifies if the connection is verified during initial configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
 
 ---
 
@@ -5847,6 +6639,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 	AllowedRoles: *[]*string,
 	ConnectionUrl: *string,
 	Data: *map[string]*string,
+	DisableAutomatedRotation: interface{},
 	DisconnectSessions: interface{},
 	MaxConnectionLifetime: *f64,
 	MaxIdleConnections: *f64,
@@ -5854,6 +6647,9 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 	Password: *string,
 	PluginName: *string,
 	RootRotationStatements: *[]*string,
+	RotationPeriod: *f64,
+	RotationSchedule: *string,
+	RotationWindow: *f64,
 	SplitStatements: interface{},
 	Username: *string,
 	UsernameTemplate: *string,
@@ -5869,6 +6665,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.allowedRoles">AllowedRoles</a></code> | <code>*[]*string</code> | A list of roles that are allowed to use this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.connectionUrl">ConnectionUrl</a></code> | <code>*string</code> | Connection string to use to connect to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.data">Data</a></code> | <code>*map[string]*string</code> | A map of sensitive data to pass to the endpoint. Useful for templated connection strings. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>interface{}</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.disconnectSessions">DisconnectSessions</a></code> | <code>interface{}</code> | Set to true to disconnect any open sessions prior to running the revocation statements. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>*f64</code> | Maximum number of seconds a connection may be reused. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>*f64</code> | Maximum number of idle connections to the database. |
@@ -5876,6 +6673,9 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.password">Password</a></code> | <code>*string</code> | The root credential password used in the connection URL. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.pluginName">PluginName</a></code> | <code>*string</code> | Specifies the name of the plugin to use for this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.rootRotationStatements">RootRotationStatements</a></code> | <code>*[]*string</code> | A list of database statements to be executed to rotate the root user's credentials. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.rotationPeriod">RotationPeriod</a></code> | <code>*f64</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.rotationSchedule">RotationSchedule</a></code> | <code>*string</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.rotationWindow">RotationWindow</a></code> | <code>*f64</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.splitStatements">SplitStatements</a></code> | <code>interface{}</code> | Set to true in order to split statements after semi-colons. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.username">Username</a></code> | <code>*string</code> | The root credential username used in the connection URL. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.usernameTemplate">UsernameTemplate</a></code> | <code>*string</code> | Username generation template. |
@@ -5893,7 +6693,7 @@ Name *string
 
 Name of the database connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
 
 ---
 
@@ -5907,7 +6707,7 @@ AllowedRoles *[]*string
 
 A list of roles that are allowed to use this connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
 
 ---
 
@@ -5921,7 +6721,7 @@ ConnectionUrl *string
 
 Connection string to use to connect to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
 
 ---
 
@@ -5935,7 +6735,21 @@ Data *map[string]*string
 
 A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+
+---
+
+##### `DisableAutomatedRotation`<sup>Optional</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.disableAutomatedRotation"></a>
+
+```go
+DisableAutomatedRotation interface{}
+```
+
+- *Type:* interface{}
+
+Stops rotation of the root credential until set to false.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
 
 ---
 
@@ -5949,7 +6763,7 @@ DisconnectSessions interface{}
 
 Set to true to disconnect any open sessions prior to running the revocation statements.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#disconnect_sessions DatabaseSecretsMount#disconnect_sessions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#disconnect_sessions DatabaseSecretsMount#disconnect_sessions}
 
 ---
 
@@ -5963,7 +6777,7 @@ MaxConnectionLifetime *f64
 
 Maximum number of seconds a connection may be reused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
 
 ---
 
@@ -5977,7 +6791,7 @@ MaxIdleConnections *f64
 
 Maximum number of idle connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
 
 ---
 
@@ -5991,7 +6805,7 @@ MaxOpenConnections *f64
 
 Maximum number of open connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
 
 ---
 
@@ -6005,7 +6819,7 @@ Password *string
 
 The root credential password used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
 
 ---
 
@@ -6021,7 +6835,7 @@ Specifies the name of the plugin to use for this connection.
 
 Must be prefixed with the name of one of the supported database engine types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
 
 ---
 
@@ -6035,7 +6849,51 @@ RootRotationStatements *[]*string
 
 A list of database statements to be executed to rotate the root user's credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+
+---
+
+##### `RotationPeriod`<sup>Optional</sup> <a name="RotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.rotationPeriod"></a>
+
+```go
+RotationPeriod *f64
+```
+
+- *Type:* *f64
+
+The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+
+---
+
+##### `RotationSchedule`<sup>Optional</sup> <a name="RotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.rotationSchedule"></a>
+
+```go
+RotationSchedule *string
+```
+
+- *Type:* *string
+
+The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+
+---
+
+##### `RotationWindow`<sup>Optional</sup> <a name="RotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.rotationWindow"></a>
+
+```go
+RotationWindow *f64
+```
+
+- *Type:* *f64
+
+The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered.
+
+Can only be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
 
 ---
 
@@ -6049,7 +6907,7 @@ SplitStatements interface{}
 
 Set to true in order to split statements after semi-colons.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#split_statements DatabaseSecretsMount#split_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#split_statements DatabaseSecretsMount#split_statements}
 
 ---
 
@@ -6063,7 +6921,7 @@ Username *string
 
 The root credential username used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
 
 ---
 
@@ -6077,7 +6935,7 @@ UsernameTemplate *string
 
 Username generation template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
 
 ---
 
@@ -6091,7 +6949,7 @@ VerifyConnection interface{}
 
 Specifies if the connection is verified during initial configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
 
 ---
 
@@ -6108,6 +6966,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 	AuthType: *string,
 	ConnectionUrl: *string,
 	Data: *map[string]*string,
+	DisableAutomatedRotation: interface{},
 	DisableEscaping: interface{},
 	MaxConnectionLifetime: *f64,
 	MaxIdleConnections: *f64,
@@ -6117,6 +6976,9 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 	PluginName: *string,
 	PrivateKey: *string,
 	RootRotationStatements: *[]*string,
+	RotationPeriod: *f64,
+	RotationSchedule: *string,
+	RotationWindow: *f64,
 	SelfManaged: interface{},
 	ServiceAccountJson: *string,
 	TlsCa: *string,
@@ -6136,6 +6998,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.authType">AuthType</a></code> | <code>*string</code> | Specify alternative authorization type. (Only 'gcp_iam' is valid currently). |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.connectionUrl">ConnectionUrl</a></code> | <code>*string</code> | Connection string to use to connect to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.data">Data</a></code> | <code>*map[string]*string</code> | A map of sensitive data to pass to the endpoint. Useful for templated connection strings. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>interface{}</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.disableEscaping">DisableEscaping</a></code> | <code>interface{}</code> | Disable special character escaping in username and password. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>*f64</code> | Maximum number of seconds a connection may be reused. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>*f64</code> | Maximum number of idle connections to the database. |
@@ -6145,6 +7008,9 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.pluginName">PluginName</a></code> | <code>*string</code> | Specifies the name of the plugin to use for this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.privateKey">PrivateKey</a></code> | <code>*string</code> | The secret key used for the x509 client certificate. Must be PEM encoded. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.rootRotationStatements">RootRotationStatements</a></code> | <code>*[]*string</code> | A list of database statements to be executed to rotate the root user's credentials. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.rotationPeriod">RotationPeriod</a></code> | <code>*f64</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.rotationSchedule">RotationSchedule</a></code> | <code>*string</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.rotationWindow">RotationWindow</a></code> | <code>*f64</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.selfManaged">SelfManaged</a></code> | <code>interface{}</code> | If set, allows onboarding static roles with a rootless connection configuration. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.serviceAccountJson">ServiceAccountJson</a></code> | <code>*string</code> | A JSON encoded credential for use with IAM authorization. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.tlsCa">TlsCa</a></code> | <code>*string</code> | The x509 CA file for validating the certificate presented by the PostgreSQL server. Must be PEM encoded. |
@@ -6165,7 +7031,7 @@ Name *string
 
 Name of the database connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
 
 ---
 
@@ -6179,7 +7045,7 @@ AllowedRoles *[]*string
 
 A list of roles that are allowed to use this connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
 
 ---
 
@@ -6193,7 +7059,7 @@ AuthType *string
 
 Specify alternative authorization type. (Only 'gcp_iam' is valid currently).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#auth_type DatabaseSecretsMount#auth_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#auth_type DatabaseSecretsMount#auth_type}
 
 ---
 
@@ -6207,7 +7073,7 @@ ConnectionUrl *string
 
 Connection string to use to connect to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
 
 ---
 
@@ -6221,7 +7087,21 @@ Data *map[string]*string
 
 A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+
+---
+
+##### `DisableAutomatedRotation`<sup>Optional</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.disableAutomatedRotation"></a>
+
+```go
+DisableAutomatedRotation interface{}
+```
+
+- *Type:* interface{}
+
+Stops rotation of the root credential until set to false.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
 
 ---
 
@@ -6235,7 +7115,7 @@ DisableEscaping interface{}
 
 Disable special character escaping in username and password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#disable_escaping DatabaseSecretsMount#disable_escaping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#disable_escaping DatabaseSecretsMount#disable_escaping}
 
 ---
 
@@ -6249,7 +7129,7 @@ MaxConnectionLifetime *f64
 
 Maximum number of seconds a connection may be reused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
 
 ---
 
@@ -6263,7 +7143,7 @@ MaxIdleConnections *f64
 
 Maximum number of idle connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
 
 ---
 
@@ -6277,7 +7157,7 @@ MaxOpenConnections *f64
 
 Maximum number of open connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
 
 ---
 
@@ -6291,7 +7171,7 @@ Password *string
 
 The root credential password used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
 
 ---
 
@@ -6305,7 +7185,7 @@ PasswordAuthentication *string
 
 When set to `scram-sha-256`, passwords will be hashed by Vault before being sent to PostgreSQL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#password_authentication DatabaseSecretsMount#password_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#password_authentication DatabaseSecretsMount#password_authentication}
 
 ---
 
@@ -6321,7 +7201,7 @@ Specifies the name of the plugin to use for this connection.
 
 Must be prefixed with the name of one of the supported database engine types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
 
 ---
 
@@ -6335,7 +7215,7 @@ PrivateKey *string
 
 The secret key used for the x509 client certificate. Must be PEM encoded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#private_key DatabaseSecretsMount#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#private_key DatabaseSecretsMount#private_key}
 
 ---
 
@@ -6349,7 +7229,51 @@ RootRotationStatements *[]*string
 
 A list of database statements to be executed to rotate the root user's credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+
+---
+
+##### `RotationPeriod`<sup>Optional</sup> <a name="RotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.rotationPeriod"></a>
+
+```go
+RotationPeriod *f64
+```
+
+- *Type:* *f64
+
+The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+
+---
+
+##### `RotationSchedule`<sup>Optional</sup> <a name="RotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.rotationSchedule"></a>
+
+```go
+RotationSchedule *string
+```
+
+- *Type:* *string
+
+The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+
+---
+
+##### `RotationWindow`<sup>Optional</sup> <a name="RotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.rotationWindow"></a>
+
+```go
+RotationWindow *f64
+```
+
+- *Type:* *f64
+
+The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered.
+
+Can only be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
 
 ---
 
@@ -6363,7 +7287,7 @@ SelfManaged interface{}
 
 If set, allows onboarding static roles with a rootless connection configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#self_managed DatabaseSecretsMount#self_managed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#self_managed DatabaseSecretsMount#self_managed}
 
 ---
 
@@ -6377,7 +7301,7 @@ ServiceAccountJson *string
 
 A JSON encoded credential for use with IAM authorization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#service_account_json DatabaseSecretsMount#service_account_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#service_account_json DatabaseSecretsMount#service_account_json}
 
 ---
 
@@ -6391,7 +7315,7 @@ TlsCa *string
 
 The x509 CA file for validating the certificate presented by the PostgreSQL server. Must be PEM encoded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#tls_ca DatabaseSecretsMount#tls_ca}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#tls_ca DatabaseSecretsMount#tls_ca}
 
 ---
 
@@ -6405,7 +7329,7 @@ TlsCertificate *string
 
 The x509 client certificate for connecting to the database. Must be PEM encoded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#tls_certificate DatabaseSecretsMount#tls_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#tls_certificate DatabaseSecretsMount#tls_certificate}
 
 ---
 
@@ -6419,7 +7343,7 @@ Username *string
 
 The root credential username used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
 
 ---
 
@@ -6433,7 +7357,7 @@ UsernameTemplate *string
 
 Username generation template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
 
 ---
 
@@ -6447,7 +7371,7 @@ VerifyConnection interface{}
 
 Specifies if the connection is verified during initial configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
 
 ---
 
@@ -6466,10 +7390,14 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 	AllowedRoles: *[]*string,
 	CaCert: *string,
 	Data: *map[string]*string,
+	DisableAutomatedRotation: interface{},
 	InsecureTls: interface{},
 	PluginName: *string,
 	Port: *f64,
 	RootRotationStatements: *[]*string,
+	RotationPeriod: *f64,
+	RotationSchedule: *string,
+	RotationWindow: *f64,
 	Tls: interface{},
 	VerifyConnection: interface{},
 }
@@ -6486,10 +7414,14 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis.property.allowedRoles">AllowedRoles</a></code> | <code>*[]*string</code> | A list of roles that are allowed to use this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis.property.caCert">CaCert</a></code> | <code>*string</code> | The contents of a PEM-encoded CA cert file to use to verify the Redis server's identity. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis.property.data">Data</a></code> | <code>*map[string]*string</code> | A map of sensitive data to pass to the endpoint. Useful for templated connection strings. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>interface{}</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis.property.insecureTls">InsecureTls</a></code> | <code>interface{}</code> | Specifies whether to skip verification of the server certificate when using TLS. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis.property.pluginName">PluginName</a></code> | <code>*string</code> | Specifies the name of the plugin to use for this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis.property.port">Port</a></code> | <code>*f64</code> | The transport port to use to connect to Redis. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis.property.rootRotationStatements">RootRotationStatements</a></code> | <code>*[]*string</code> | A list of database statements to be executed to rotate the root user's credentials. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis.property.rotationPeriod">RotationPeriod</a></code> | <code>*f64</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis.property.rotationSchedule">RotationSchedule</a></code> | <code>*string</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis.property.rotationWindow">RotationWindow</a></code> | <code>*f64</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis.property.tls">Tls</a></code> | <code>interface{}</code> | Specifies whether to use TLS when connecting to Redis. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis.property.verifyConnection">VerifyConnection</a></code> | <code>interface{}</code> | Specifies if the connection is verified during initial configuration. |
 
@@ -6505,7 +7437,7 @@ Host *string
 
 Specifies the host to connect to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#host DatabaseSecretsMount#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#host DatabaseSecretsMount#host}
 
 ---
 
@@ -6519,7 +7451,7 @@ Name *string
 
 Name of the database connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
 
 ---
 
@@ -6533,7 +7465,7 @@ Password *string
 
 Specifies the password corresponding to the given username.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
 
 ---
 
@@ -6547,7 +7479,7 @@ Username *string
 
 Specifies the username for Vault to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
 
 ---
 
@@ -6561,7 +7493,7 @@ AllowedRoles *[]*string
 
 A list of roles that are allowed to use this connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
 
 ---
 
@@ -6575,7 +7507,7 @@ CaCert *string
 
 The contents of a PEM-encoded CA cert file to use to verify the Redis server's identity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#ca_cert DatabaseSecretsMount#ca_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#ca_cert DatabaseSecretsMount#ca_cert}
 
 ---
 
@@ -6589,7 +7521,21 @@ Data *map[string]*string
 
 A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+
+---
+
+##### `DisableAutomatedRotation`<sup>Optional</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis.property.disableAutomatedRotation"></a>
+
+```go
+DisableAutomatedRotation interface{}
+```
+
+- *Type:* interface{}
+
+Stops rotation of the root credential until set to false.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
 
 ---
 
@@ -6603,7 +7549,7 @@ InsecureTls interface{}
 
 Specifies whether to skip verification of the server certificate when using TLS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#insecure_tls DatabaseSecretsMount#insecure_tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#insecure_tls DatabaseSecretsMount#insecure_tls}
 
 ---
 
@@ -6619,7 +7565,7 @@ Specifies the name of the plugin to use for this connection.
 
 Must be prefixed with the name of one of the supported database engine types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
 
 ---
 
@@ -6633,7 +7579,7 @@ Port *f64
 
 The transport port to use to connect to Redis.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#port DatabaseSecretsMount#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#port DatabaseSecretsMount#port}
 
 ---
 
@@ -6647,7 +7593,51 @@ RootRotationStatements *[]*string
 
 A list of database statements to be executed to rotate the root user's credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+
+---
+
+##### `RotationPeriod`<sup>Optional</sup> <a name="RotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis.property.rotationPeriod"></a>
+
+```go
+RotationPeriod *f64
+```
+
+- *Type:* *f64
+
+The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+
+---
+
+##### `RotationSchedule`<sup>Optional</sup> <a name="RotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis.property.rotationSchedule"></a>
+
+```go
+RotationSchedule *string
+```
+
+- *Type:* *string
+
+The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+
+---
+
+##### `RotationWindow`<sup>Optional</sup> <a name="RotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis.property.rotationWindow"></a>
+
+```go
+RotationWindow *f64
+```
+
+- *Type:* *f64
+
+The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered.
+
+Can only be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
 
 ---
 
@@ -6661,7 +7651,7 @@ Tls interface{}
 
 Specifies whether to use TLS when connecting to Redis.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#tls DatabaseSecretsMount#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#tls DatabaseSecretsMount#tls}
 
 ---
 
@@ -6675,7 +7665,7 @@ VerifyConnection interface{}
 
 Specifies if the connection is verified during initial configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
 
 ---
 
@@ -6691,10 +7681,14 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 	Url: *string,
 	AllowedRoles: *[]*string,
 	Data: *map[string]*string,
+	DisableAutomatedRotation: interface{},
 	Password: *string,
 	PluginName: *string,
 	Region: *string,
 	RootRotationStatements: *[]*string,
+	RotationPeriod: *f64,
+	RotationSchedule: *string,
+	RotationWindow: *f64,
 	Username: *string,
 	VerifyConnection: interface{},
 }
@@ -6708,10 +7702,14 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache.property.url">Url</a></code> | <code>*string</code> | The configuration endpoint for the ElastiCache cluster to connect to. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache.property.allowedRoles">AllowedRoles</a></code> | <code>*[]*string</code> | A list of roles that are allowed to use this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache.property.data">Data</a></code> | <code>*map[string]*string</code> | A map of sensitive data to pass to the endpoint. Useful for templated connection strings. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>interface{}</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache.property.password">Password</a></code> | <code>*string</code> | The AWS secret key id to use to talk to ElastiCache. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache.property.pluginName">PluginName</a></code> | <code>*string</code> | Specifies the name of the plugin to use for this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache.property.region">Region</a></code> | <code>*string</code> | The AWS region where the ElastiCache cluster is hosted. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache.property.rootRotationStatements">RootRotationStatements</a></code> | <code>*[]*string</code> | A list of database statements to be executed to rotate the root user's credentials. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache.property.rotationPeriod">RotationPeriod</a></code> | <code>*f64</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache.property.rotationSchedule">RotationSchedule</a></code> | <code>*string</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache.property.rotationWindow">RotationWindow</a></code> | <code>*f64</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache.property.username">Username</a></code> | <code>*string</code> | The AWS access key id to use to talk to ElastiCache. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache.property.verifyConnection">VerifyConnection</a></code> | <code>interface{}</code> | Specifies if the connection is verified during initial configuration. |
 
@@ -6727,7 +7725,7 @@ Name *string
 
 Name of the database connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
 
 ---
 
@@ -6741,7 +7739,7 @@ Url *string
 
 The configuration endpoint for the ElastiCache cluster to connect to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#url DatabaseSecretsMount#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#url DatabaseSecretsMount#url}
 
 ---
 
@@ -6755,7 +7753,7 @@ AllowedRoles *[]*string
 
 A list of roles that are allowed to use this connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
 
 ---
 
@@ -6769,7 +7767,21 @@ Data *map[string]*string
 
 A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+
+---
+
+##### `DisableAutomatedRotation`<sup>Optional</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache.property.disableAutomatedRotation"></a>
+
+```go
+DisableAutomatedRotation interface{}
+```
+
+- *Type:* interface{}
+
+Stops rotation of the root credential until set to false.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
 
 ---
 
@@ -6785,7 +7797,7 @@ The AWS secret key id to use to talk to ElastiCache.
 
 If omitted the credentials chain provider is used instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
 
 ---
 
@@ -6801,7 +7813,7 @@ Specifies the name of the plugin to use for this connection.
 
 Must be prefixed with the name of one of the supported database engine types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
 
 ---
 
@@ -6817,7 +7829,7 @@ The AWS region where the ElastiCache cluster is hosted.
 
 If omitted the plugin tries to infer the region from the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#region DatabaseSecretsMount#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#region DatabaseSecretsMount#region}
 
 ---
 
@@ -6831,7 +7843,51 @@ RootRotationStatements *[]*string
 
 A list of database statements to be executed to rotate the root user's credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+
+---
+
+##### `RotationPeriod`<sup>Optional</sup> <a name="RotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache.property.rotationPeriod"></a>
+
+```go
+RotationPeriod *f64
+```
+
+- *Type:* *f64
+
+The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+
+---
+
+##### `RotationSchedule`<sup>Optional</sup> <a name="RotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache.property.rotationSchedule"></a>
+
+```go
+RotationSchedule *string
+```
+
+- *Type:* *string
+
+The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+
+---
+
+##### `RotationWindow`<sup>Optional</sup> <a name="RotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache.property.rotationWindow"></a>
+
+```go
+RotationWindow *f64
+```
+
+- *Type:* *f64
+
+The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered.
+
+Can only be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
 
 ---
 
@@ -6847,7 +7903,7 @@ The AWS access key id to use to talk to ElastiCache.
 
 If omitted the credentials chain provider is used instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
 
 ---
 
@@ -6861,7 +7917,7 @@ VerifyConnection interface{}
 
 Specifies if the connection is verified during initial configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
 
 ---
 
@@ -6877,6 +7933,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 	AllowedRoles: *[]*string,
 	ConnectionUrl: *string,
 	Data: *map[string]*string,
+	DisableAutomatedRotation: interface{},
 	DisableEscaping: interface{},
 	MaxConnectionLifetime: *f64,
 	MaxIdleConnections: *f64,
@@ -6884,6 +7941,9 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 	Password: *string,
 	PluginName: *string,
 	RootRotationStatements: *[]*string,
+	RotationPeriod: *f64,
+	RotationSchedule: *string,
+	RotationWindow: *f64,
 	Username: *string,
 	UsernameTemplate: *string,
 	VerifyConnection: interface{},
@@ -6898,6 +7958,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift.property.allowedRoles">AllowedRoles</a></code> | <code>*[]*string</code> | A list of roles that are allowed to use this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift.property.connectionUrl">ConnectionUrl</a></code> | <code>*string</code> | Connection string to use to connect to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift.property.data">Data</a></code> | <code>*map[string]*string</code> | A map of sensitive data to pass to the endpoint. Useful for templated connection strings. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>interface{}</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift.property.disableEscaping">DisableEscaping</a></code> | <code>interface{}</code> | Disable special character escaping in username and password. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>*f64</code> | Maximum number of seconds a connection may be reused. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>*f64</code> | Maximum number of idle connections to the database. |
@@ -6905,6 +7966,9 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift.property.password">Password</a></code> | <code>*string</code> | The root credential password used in the connection URL. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift.property.pluginName">PluginName</a></code> | <code>*string</code> | Specifies the name of the plugin to use for this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift.property.rootRotationStatements">RootRotationStatements</a></code> | <code>*[]*string</code> | A list of database statements to be executed to rotate the root user's credentials. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift.property.rotationPeriod">RotationPeriod</a></code> | <code>*f64</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift.property.rotationSchedule">RotationSchedule</a></code> | <code>*string</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift.property.rotationWindow">RotationWindow</a></code> | <code>*f64</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift.property.username">Username</a></code> | <code>*string</code> | The root credential username used in the connection URL. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift.property.usernameTemplate">UsernameTemplate</a></code> | <code>*string</code> | Username generation template. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift.property.verifyConnection">VerifyConnection</a></code> | <code>interface{}</code> | Specifies if the connection is verified during initial configuration. |
@@ -6921,7 +7985,7 @@ Name *string
 
 Name of the database connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
 
 ---
 
@@ -6935,7 +7999,7 @@ AllowedRoles *[]*string
 
 A list of roles that are allowed to use this connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
 
 ---
 
@@ -6949,7 +8013,7 @@ ConnectionUrl *string
 
 Connection string to use to connect to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
 
 ---
 
@@ -6963,7 +8027,21 @@ Data *map[string]*string
 
 A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+
+---
+
+##### `DisableAutomatedRotation`<sup>Optional</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift.property.disableAutomatedRotation"></a>
+
+```go
+DisableAutomatedRotation interface{}
+```
+
+- *Type:* interface{}
+
+Stops rotation of the root credential until set to false.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
 
 ---
 
@@ -6977,7 +8055,7 @@ DisableEscaping interface{}
 
 Disable special character escaping in username and password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#disable_escaping DatabaseSecretsMount#disable_escaping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#disable_escaping DatabaseSecretsMount#disable_escaping}
 
 ---
 
@@ -6991,7 +8069,7 @@ MaxConnectionLifetime *f64
 
 Maximum number of seconds a connection may be reused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
 
 ---
 
@@ -7005,7 +8083,7 @@ MaxIdleConnections *f64
 
 Maximum number of idle connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
 
 ---
 
@@ -7019,7 +8097,7 @@ MaxOpenConnections *f64
 
 Maximum number of open connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
 
 ---
 
@@ -7033,7 +8111,7 @@ Password *string
 
 The root credential password used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
 
 ---
 
@@ -7049,7 +8127,7 @@ Specifies the name of the plugin to use for this connection.
 
 Must be prefixed with the name of one of the supported database engine types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
 
 ---
 
@@ -7063,7 +8141,51 @@ RootRotationStatements *[]*string
 
 A list of database statements to be executed to rotate the root user's credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+
+---
+
+##### `RotationPeriod`<sup>Optional</sup> <a name="RotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift.property.rotationPeriod"></a>
+
+```go
+RotationPeriod *f64
+```
+
+- *Type:* *f64
+
+The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+
+---
+
+##### `RotationSchedule`<sup>Optional</sup> <a name="RotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift.property.rotationSchedule"></a>
+
+```go
+RotationSchedule *string
+```
+
+- *Type:* *string
+
+The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+
+---
+
+##### `RotationWindow`<sup>Optional</sup> <a name="RotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift.property.rotationWindow"></a>
+
+```go
+RotationWindow *f64
+```
+
+- *Type:* *f64
+
+The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered.
+
+Can only be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
 
 ---
 
@@ -7077,7 +8199,7 @@ Username *string
 
 The root credential username used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
 
 ---
 
@@ -7091,7 +8213,7 @@ UsernameTemplate *string
 
 Username generation template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
 
 ---
 
@@ -7105,7 +8227,7 @@ VerifyConnection interface{}
 
 Specifies if the connection is verified during initial configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
 
 ---
 
@@ -7121,12 +8243,16 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 	AllowedRoles: *[]*string,
 	ConnectionUrl: *string,
 	Data: *map[string]*string,
+	DisableAutomatedRotation: interface{},
 	MaxConnectionLifetime: *f64,
 	MaxIdleConnections: *f64,
 	MaxOpenConnections: *f64,
 	Password: *string,
 	PluginName: *string,
 	RootRotationStatements: *[]*string,
+	RotationPeriod: *f64,
+	RotationSchedule: *string,
+	RotationWindow: *f64,
 	Username: *string,
 	UsernameTemplate: *string,
 	VerifyConnection: interface{},
@@ -7141,12 +8267,16 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/databasesecretsmount"
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake.property.allowedRoles">AllowedRoles</a></code> | <code>*[]*string</code> | A list of roles that are allowed to use this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake.property.connectionUrl">ConnectionUrl</a></code> | <code>*string</code> | Connection string to use to connect to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake.property.data">Data</a></code> | <code>*map[string]*string</code> | A map of sensitive data to pass to the endpoint. Useful for templated connection strings. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>interface{}</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>*f64</code> | Maximum number of seconds a connection may be reused. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>*f64</code> | Maximum number of idle connections to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake.property.maxOpenConnections">MaxOpenConnections</a></code> | <code>*f64</code> | Maximum number of open connections to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake.property.password">Password</a></code> | <code>*string</code> | The root credential password used in the connection URL. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake.property.pluginName">PluginName</a></code> | <code>*string</code> | Specifies the name of the plugin to use for this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake.property.rootRotationStatements">RootRotationStatements</a></code> | <code>*[]*string</code> | A list of database statements to be executed to rotate the root user's credentials. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake.property.rotationPeriod">RotationPeriod</a></code> | <code>*f64</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake.property.rotationSchedule">RotationSchedule</a></code> | <code>*string</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake.property.rotationWindow">RotationWindow</a></code> | <code>*f64</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake.property.username">Username</a></code> | <code>*string</code> | The root credential username used in the connection URL. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake.property.usernameTemplate">UsernameTemplate</a></code> | <code>*string</code> | Username generation template. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake.property.verifyConnection">VerifyConnection</a></code> | <code>interface{}</code> | Specifies if the connection is verified during initial configuration. |
@@ -7163,7 +8293,7 @@ Name *string
 
 Name of the database connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
 
 ---
 
@@ -7177,7 +8307,7 @@ AllowedRoles *[]*string
 
 A list of roles that are allowed to use this connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
 
 ---
 
@@ -7191,7 +8321,7 @@ ConnectionUrl *string
 
 Connection string to use to connect to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
 
 ---
 
@@ -7205,7 +8335,21 @@ Data *map[string]*string
 
 A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+
+---
+
+##### `DisableAutomatedRotation`<sup>Optional</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake.property.disableAutomatedRotation"></a>
+
+```go
+DisableAutomatedRotation interface{}
+```
+
+- *Type:* interface{}
+
+Stops rotation of the root credential until set to false.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
 
 ---
 
@@ -7219,7 +8363,7 @@ MaxConnectionLifetime *f64
 
 Maximum number of seconds a connection may be reused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
 
 ---
 
@@ -7233,7 +8377,7 @@ MaxIdleConnections *f64
 
 Maximum number of idle connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
 
 ---
 
@@ -7247,7 +8391,7 @@ MaxOpenConnections *f64
 
 Maximum number of open connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
 
 ---
 
@@ -7261,7 +8405,7 @@ Password *string
 
 The root credential password used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
 
 ---
 
@@ -7277,7 +8421,7 @@ Specifies the name of the plugin to use for this connection.
 
 Must be prefixed with the name of one of the supported database engine types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
 
 ---
 
@@ -7291,7 +8435,51 @@ RootRotationStatements *[]*string
 
 A list of database statements to be executed to rotate the root user's credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+
+---
+
+##### `RotationPeriod`<sup>Optional</sup> <a name="RotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake.property.rotationPeriod"></a>
+
+```go
+RotationPeriod *f64
+```
+
+- *Type:* *f64
+
+The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+
+---
+
+##### `RotationSchedule`<sup>Optional</sup> <a name="RotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake.property.rotationSchedule"></a>
+
+```go
+RotationSchedule *string
+```
+
+- *Type:* *string
+
+The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+
+---
+
+##### `RotationWindow`<sup>Optional</sup> <a name="RotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake.property.rotationWindow"></a>
+
+```go
+RotationWindow *f64
+```
+
+- *Type:* *f64
+
+The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered.
+
+Can only be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
 
 ---
 
@@ -7305,7 +8493,7 @@ Username *string
 
 The root credential username used in the connection URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
 
 ---
 
@@ -7319,7 +8507,7 @@ UsernameTemplate *string
 
 Username generation template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
 
 ---
 
@@ -7333,7 +8521,7 @@ VerifyConnection interface{}
 
 Specifies if the connection is verified during initial configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
 
 ---
 
@@ -7570,6 +8758,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.resetAllowedRoles">ResetAllowedRoles</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.resetConnectTimeout">ResetConnectTimeout</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.resetData">ResetData</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.resetDisableAutomatedRotation">ResetDisableAutomatedRotation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.resetHosts">ResetHosts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.resetInsecureTls">ResetInsecureTls</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.resetPassword">ResetPassword</a></code> | *No description.* |
@@ -7579,6 +8768,9 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.resetPort">ResetPort</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.resetProtocolVersion">ResetProtocolVersion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.resetRootRotationStatements">ResetRootRotationStatements</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.resetRotationPeriod">ResetRotationPeriod</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.resetRotationSchedule">ResetRotationSchedule</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.resetRotationWindow">ResetRotationWindow</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.resetSkipVerification">ResetSkipVerification</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.resetTls">ResetTls</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.resetUsername">ResetUsername</a></code> | *No description.* |
@@ -7754,6 +8946,12 @@ func ResetConnectTimeout()
 func ResetData()
 ```
 
+##### `ResetDisableAutomatedRotation` <a name="ResetDisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.resetDisableAutomatedRotation"></a>
+
+```go
+func ResetDisableAutomatedRotation()
+```
+
 ##### `ResetHosts` <a name="ResetHosts" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.resetHosts"></a>
 
 ```go
@@ -7808,6 +9006,24 @@ func ResetProtocolVersion()
 func ResetRootRotationStatements()
 ```
 
+##### `ResetRotationPeriod` <a name="ResetRotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.resetRotationPeriod"></a>
+
+```go
+func ResetRotationPeriod()
+```
+
+##### `ResetRotationSchedule` <a name="ResetRotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.resetRotationSchedule"></a>
+
+```go
+func ResetRotationSchedule()
+```
+
+##### `ResetRotationWindow` <a name="ResetRotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.resetRotationWindow"></a>
+
+```go
+func ResetRotationWindow()
+```
+
 ##### `ResetSkipVerification` <a name="ResetSkipVerification" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.resetSkipVerification"></a>
 
 ```go
@@ -7842,6 +9058,7 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.allowedRolesInput">AllowedRolesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.connectTimeoutInput">ConnectTimeoutInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.dataInput">DataInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.hostsInput">HostsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.insecureTlsInput">InsecureTlsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
@@ -7852,6 +9069,9 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.portInput">PortInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.protocolVersionInput">ProtocolVersionInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.rootRotationStatementsInput">RootRotationStatementsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.rotationPeriodInput">RotationPeriodInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.rotationScheduleInput">RotationScheduleInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.rotationWindowInput">RotationWindowInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.skipVerificationInput">SkipVerificationInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.tlsInput">TlsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.usernameInput">UsernameInput</a></code> | <code>*string</code> | *No description.* |
@@ -7859,6 +9079,7 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.allowedRoles">AllowedRoles</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.connectTimeout">ConnectTimeout</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.data">Data</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.hosts">Hosts</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.insecureTls">InsecureTls</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
@@ -7869,6 +9090,9 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.port">Port</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.protocolVersion">ProtocolVersion</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.rootRotationStatements">RootRotationStatements</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.rotationPeriod">RotationPeriod</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.rotationSchedule">RotationSchedule</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.rotationWindow">RotationWindow</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.skipVerification">SkipVerification</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.tls">Tls</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.username">Username</a></code> | <code>*string</code> | *No description.* |
@@ -7928,6 +9152,16 @@ func DataInput() *map[string]*string
 ```
 
 - *Type:* *map[string]*string
+
+---
+
+##### `DisableAutomatedRotationInput`<sup>Optional</sup> <a name="DisableAutomatedRotationInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.disableAutomatedRotationInput"></a>
+
+```go
+func DisableAutomatedRotationInput() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -8031,6 +9265,36 @@ func RootRotationStatementsInput() *[]*string
 
 ---
 
+##### `RotationPeriodInput`<sup>Optional</sup> <a name="RotationPeriodInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.rotationPeriodInput"></a>
+
+```go
+func RotationPeriodInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `RotationScheduleInput`<sup>Optional</sup> <a name="RotationScheduleInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.rotationScheduleInput"></a>
+
+```go
+func RotationScheduleInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RotationWindowInput`<sup>Optional</sup> <a name="RotationWindowInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.rotationWindowInput"></a>
+
+```go
+func RotationWindowInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `SkipVerificationInput`<sup>Optional</sup> <a name="SkipVerificationInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.skipVerificationInput"></a>
 
 ```go
@@ -8098,6 +9362,16 @@ func Data() *map[string]*string
 ```
 
 - *Type:* *map[string]*string
+
+---
+
+##### `DisableAutomatedRotation`<sup>Required</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.disableAutomatedRotation"></a>
+
+```go
+func DisableAutomatedRotation() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -8198,6 +9472,36 @@ func RootRotationStatements() *[]*string
 ```
 
 - *Type:* *[]*string
+
+---
+
+##### `RotationPeriod`<sup>Required</sup> <a name="RotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.rotationPeriod"></a>
+
+```go
+func RotationPeriod() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `RotationSchedule`<sup>Required</sup> <a name="RotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.rotationSchedule"></a>
+
+```go
+func RotationSchedule() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RotationWindow`<sup>Required</sup> <a name="RotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.rotationWindow"></a>
+
+```go
+func RotationWindow() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -8484,9 +9788,13 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.resetBase64Pem">ResetBase64Pem</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.resetBucketName">ResetBucketName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.resetData">ResetData</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.resetDisableAutomatedRotation">ResetDisableAutomatedRotation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.resetInsecureTls">ResetInsecureTls</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.resetPluginName">ResetPluginName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.resetRootRotationStatements">ResetRootRotationStatements</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.resetRotationPeriod">ResetRotationPeriod</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.resetRotationSchedule">ResetRotationSchedule</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.resetRotationWindow">ResetRotationWindow</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.resetTls">ResetTls</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.resetUsernameTemplate">ResetUsernameTemplate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.resetVerifyConnection">ResetVerifyConnection</a></code> | *No description.* |
@@ -8667,6 +9975,12 @@ func ResetBucketName()
 func ResetData()
 ```
 
+##### `ResetDisableAutomatedRotation` <a name="ResetDisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.resetDisableAutomatedRotation"></a>
+
+```go
+func ResetDisableAutomatedRotation()
+```
+
 ##### `ResetInsecureTls` <a name="ResetInsecureTls" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.resetInsecureTls"></a>
 
 ```go
@@ -8683,6 +9997,24 @@ func ResetPluginName()
 
 ```go
 func ResetRootRotationStatements()
+```
+
+##### `ResetRotationPeriod` <a name="ResetRotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.resetRotationPeriod"></a>
+
+```go
+func ResetRotationPeriod()
+```
+
+##### `ResetRotationSchedule` <a name="ResetRotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.resetRotationSchedule"></a>
+
+```go
+func ResetRotationSchedule()
+```
+
+##### `ResetRotationWindow` <a name="ResetRotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.resetRotationWindow"></a>
+
+```go
+func ResetRotationWindow()
 ```
 
 ##### `ResetTls` <a name="ResetTls" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.resetTls"></a>
@@ -8714,12 +10046,16 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.base64PemInput">Base64PemInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.bucketNameInput">BucketNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.dataInput">DataInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.hostsInput">HostsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.insecureTlsInput">InsecureTlsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.passwordInput">PasswordInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.pluginNameInput">PluginNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.rootRotationStatementsInput">RootRotationStatementsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.rotationPeriodInput">RotationPeriodInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.rotationScheduleInput">RotationScheduleInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.rotationWindowInput">RotationWindowInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.tlsInput">TlsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.usernameInput">UsernameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.usernameTemplateInput">UsernameTemplateInput</a></code> | <code>*string</code> | *No description.* |
@@ -8728,12 +10064,16 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.base64Pem">Base64Pem</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.bucketName">BucketName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.data">Data</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.hosts">Hosts</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.insecureTls">InsecureTls</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.password">Password</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.pluginName">PluginName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.rootRotationStatements">RootRotationStatements</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.rotationPeriod">RotationPeriod</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.rotationSchedule">RotationSchedule</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.rotationWindow">RotationWindow</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.tls">Tls</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.username">Username</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.usernameTemplate">UsernameTemplate</a></code> | <code>*string</code> | *No description.* |
@@ -8806,6 +10146,16 @@ func DataInput() *map[string]*string
 
 ---
 
+##### `DisableAutomatedRotationInput`<sup>Optional</sup> <a name="DisableAutomatedRotationInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.disableAutomatedRotationInput"></a>
+
+```go
+func DisableAutomatedRotationInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `HostsInput`<sup>Optional</sup> <a name="HostsInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.hostsInput"></a>
 
 ```go
@@ -8863,6 +10213,36 @@ func RootRotationStatementsInput() *[]*string
 ```
 
 - *Type:* *[]*string
+
+---
+
+##### `RotationPeriodInput`<sup>Optional</sup> <a name="RotationPeriodInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.rotationPeriodInput"></a>
+
+```go
+func RotationPeriodInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `RotationScheduleInput`<sup>Optional</sup> <a name="RotationScheduleInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.rotationScheduleInput"></a>
+
+```go
+func RotationScheduleInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RotationWindowInput`<sup>Optional</sup> <a name="RotationWindowInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.rotationWindowInput"></a>
+
+```go
+func RotationWindowInput() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -8946,6 +10326,16 @@ func Data() *map[string]*string
 
 ---
 
+##### `DisableAutomatedRotation`<sup>Required</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.disableAutomatedRotation"></a>
+
+```go
+func DisableAutomatedRotation() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `Hosts`<sup>Required</sup> <a name="Hosts" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.hosts"></a>
 
 ```go
@@ -9003,6 +10393,36 @@ func RootRotationStatements() *[]*string
 ```
 
 - *Type:* *[]*string
+
+---
+
+##### `RotationPeriod`<sup>Required</sup> <a name="RotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.rotationPeriod"></a>
+
+```go
+func RotationPeriod() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `RotationSchedule`<sup>Required</sup> <a name="RotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.rotationSchedule"></a>
+
+```go
+func RotationSchedule() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RotationWindow`<sup>Required</sup> <a name="RotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.rotationWindow"></a>
+
+```go
+func RotationWindow() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -9291,9 +10711,13 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.resetClientCert">ResetClientCert</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.resetClientKey">ResetClientKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.resetData">ResetData</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.resetDisableAutomatedRotation">ResetDisableAutomatedRotation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.resetInsecure">ResetInsecure</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.resetPluginName">ResetPluginName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.resetRootRotationStatements">ResetRootRotationStatements</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.resetRotationPeriod">ResetRotationPeriod</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.resetRotationSchedule">ResetRotationSchedule</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.resetRotationWindow">ResetRotationWindow</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.resetTlsServerName">ResetTlsServerName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.resetUsernameTemplate">ResetUsernameTemplate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.resetVerifyConnection">ResetVerifyConnection</a></code> | *No description.* |
@@ -9486,6 +10910,12 @@ func ResetClientKey()
 func ResetData()
 ```
 
+##### `ResetDisableAutomatedRotation` <a name="ResetDisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.resetDisableAutomatedRotation"></a>
+
+```go
+func ResetDisableAutomatedRotation()
+```
+
 ##### `ResetInsecure` <a name="ResetInsecure" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.resetInsecure"></a>
 
 ```go
@@ -9502,6 +10932,24 @@ func ResetPluginName()
 
 ```go
 func ResetRootRotationStatements()
+```
+
+##### `ResetRotationPeriod` <a name="ResetRotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.resetRotationPeriod"></a>
+
+```go
+func ResetRotationPeriod()
+```
+
+##### `ResetRotationSchedule` <a name="ResetRotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.resetRotationSchedule"></a>
+
+```go
+func ResetRotationSchedule()
+```
+
+##### `ResetRotationWindow` <a name="ResetRotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.resetRotationWindow"></a>
+
+```go
+func ResetRotationWindow()
 ```
 
 ##### `ResetTlsServerName` <a name="ResetTlsServerName" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.resetTlsServerName"></a>
@@ -9535,11 +10983,15 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.clientCertInput">ClientCertInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.clientKeyInput">ClientKeyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.dataInput">DataInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.insecureInput">InsecureInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.passwordInput">PasswordInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.pluginNameInput">PluginNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.rootRotationStatementsInput">RootRotationStatementsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.rotationPeriodInput">RotationPeriodInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.rotationScheduleInput">RotationScheduleInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.rotationWindowInput">RotationWindowInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.tlsServerNameInput">TlsServerNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.urlInput">UrlInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.usernameInput">UsernameInput</a></code> | <code>*string</code> | *No description.* |
@@ -9551,11 +11003,15 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.clientCert">ClientCert</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.clientKey">ClientKey</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.data">Data</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.insecure">Insecure</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.password">Password</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.pluginName">PluginName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.rootRotationStatements">RootRotationStatements</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.rotationPeriod">RotationPeriod</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.rotationSchedule">RotationSchedule</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.rotationWindow">RotationWindow</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.tlsServerName">TlsServerName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.url">Url</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.username">Username</a></code> | <code>*string</code> | *No description.* |
@@ -9649,6 +11105,16 @@ func DataInput() *map[string]*string
 
 ---
 
+##### `DisableAutomatedRotationInput`<sup>Optional</sup> <a name="DisableAutomatedRotationInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.disableAutomatedRotationInput"></a>
+
+```go
+func DisableAutomatedRotationInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `InsecureInput`<sup>Optional</sup> <a name="InsecureInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.insecureInput"></a>
 
 ```go
@@ -9696,6 +11162,36 @@ func RootRotationStatementsInput() *[]*string
 ```
 
 - *Type:* *[]*string
+
+---
+
+##### `RotationPeriodInput`<sup>Optional</sup> <a name="RotationPeriodInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.rotationPeriodInput"></a>
+
+```go
+func RotationPeriodInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `RotationScheduleInput`<sup>Optional</sup> <a name="RotationScheduleInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.rotationScheduleInput"></a>
+
+```go
+func RotationScheduleInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RotationWindowInput`<sup>Optional</sup> <a name="RotationWindowInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.rotationWindowInput"></a>
+
+```go
+func RotationWindowInput() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -9809,6 +11305,16 @@ func Data() *map[string]*string
 
 ---
 
+##### `DisableAutomatedRotation`<sup>Required</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.disableAutomatedRotation"></a>
+
+```go
+func DisableAutomatedRotation() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `Insecure`<sup>Required</sup> <a name="Insecure" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.insecure"></a>
 
 ```go
@@ -9856,6 +11362,36 @@ func RootRotationStatements() *[]*string
 ```
 
 - *Type:* *[]*string
+
+---
+
+##### `RotationPeriod`<sup>Required</sup> <a name="RotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.rotationPeriod"></a>
+
+```go
+func RotationPeriod() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `RotationSchedule`<sup>Required</sup> <a name="RotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.rotationSchedule"></a>
+
+```go
+func RotationSchedule() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RotationWindow`<sup>Required</sup> <a name="RotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.rotationWindow"></a>
+
+```go
+func RotationWindow() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -10151,6 +11687,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.resetAllowedRoles">ResetAllowedRoles</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.resetConnectionUrl">ResetConnectionUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.resetData">ResetData</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.resetDisableAutomatedRotation">ResetDisableAutomatedRotation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.resetDisableEscaping">ResetDisableEscaping</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.resetMaxConnectionLifetime">ResetMaxConnectionLifetime</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.resetMaxIdleConnections">ResetMaxIdleConnections</a></code> | *No description.* |
@@ -10158,6 +11695,9 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.resetPassword">ResetPassword</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.resetPluginName">ResetPluginName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.resetRootRotationStatements">ResetRootRotationStatements</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.resetRotationPeriod">ResetRotationPeriod</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.resetRotationSchedule">ResetRotationSchedule</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.resetRotationWindow">ResetRotationWindow</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.resetUsername">ResetUsername</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.resetVerifyConnection">ResetVerifyConnection</a></code> | *No description.* |
 
@@ -10331,6 +11871,12 @@ func ResetConnectionUrl()
 func ResetData()
 ```
 
+##### `ResetDisableAutomatedRotation` <a name="ResetDisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.resetDisableAutomatedRotation"></a>
+
+```go
+func ResetDisableAutomatedRotation()
+```
+
 ##### `ResetDisableEscaping` <a name="ResetDisableEscaping" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.resetDisableEscaping"></a>
 
 ```go
@@ -10373,6 +11919,24 @@ func ResetPluginName()
 func ResetRootRotationStatements()
 ```
 
+##### `ResetRotationPeriod` <a name="ResetRotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.resetRotationPeriod"></a>
+
+```go
+func ResetRotationPeriod()
+```
+
+##### `ResetRotationSchedule` <a name="ResetRotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.resetRotationSchedule"></a>
+
+```go
+func ResetRotationSchedule()
+```
+
+##### `ResetRotationWindow` <a name="ResetRotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.resetRotationWindow"></a>
+
+```go
+func ResetRotationWindow()
+```
+
 ##### `ResetUsername` <a name="ResetUsername" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.resetUsername"></a>
 
 ```go
@@ -10395,6 +11959,7 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.allowedRolesInput">AllowedRolesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.connectionUrlInput">ConnectionUrlInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.dataInput">DataInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.disableEscapingInput">DisableEscapingInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.maxConnectionLifetimeInput">MaxConnectionLifetimeInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.maxIdleConnectionsInput">MaxIdleConnectionsInput</a></code> | <code>*f64</code> | *No description.* |
@@ -10403,11 +11968,15 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.passwordInput">PasswordInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.pluginNameInput">PluginNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.rootRotationStatementsInput">RootRotationStatementsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.rotationPeriodInput">RotationPeriodInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.rotationScheduleInput">RotationScheduleInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.rotationWindowInput">RotationWindowInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.usernameInput">UsernameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.allowedRoles">AllowedRoles</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.connectionUrl">ConnectionUrl</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.data">Data</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.disableEscaping">DisableEscaping</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>*f64</code> | *No description.* |
@@ -10416,6 +11985,9 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.password">Password</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.pluginName">PluginName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.rootRotationStatements">RootRotationStatements</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.rotationPeriod">RotationPeriod</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.rotationSchedule">RotationSchedule</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.rotationWindow">RotationWindow</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.username">Username</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
@@ -10473,6 +12045,16 @@ func DataInput() *map[string]*string
 ```
 
 - *Type:* *map[string]*string
+
+---
+
+##### `DisableAutomatedRotationInput`<sup>Optional</sup> <a name="DisableAutomatedRotationInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.disableAutomatedRotationInput"></a>
+
+```go
+func DisableAutomatedRotationInput() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -10556,6 +12138,36 @@ func RootRotationStatementsInput() *[]*string
 
 ---
 
+##### `RotationPeriodInput`<sup>Optional</sup> <a name="RotationPeriodInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.rotationPeriodInput"></a>
+
+```go
+func RotationPeriodInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `RotationScheduleInput`<sup>Optional</sup> <a name="RotationScheduleInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.rotationScheduleInput"></a>
+
+```go
+func RotationScheduleInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RotationWindowInput`<sup>Optional</sup> <a name="RotationWindowInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.rotationWindowInput"></a>
+
+```go
+func RotationWindowInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `UsernameInput`<sup>Optional</sup> <a name="UsernameInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.usernameInput"></a>
 
 ```go
@@ -10603,6 +12215,16 @@ func Data() *map[string]*string
 ```
 
 - *Type:* *map[string]*string
+
+---
+
+##### `DisableAutomatedRotation`<sup>Required</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.disableAutomatedRotation"></a>
+
+```go
+func DisableAutomatedRotation() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -10683,6 +12305,36 @@ func RootRotationStatements() *[]*string
 ```
 
 - *Type:* *[]*string
+
+---
+
+##### `RotationPeriod`<sup>Required</sup> <a name="RotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.rotationPeriod"></a>
+
+```go
+func RotationPeriod() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `RotationSchedule`<sup>Required</sup> <a name="RotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.rotationSchedule"></a>
+
+```go
+func RotationSchedule() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RotationWindow`<sup>Required</sup> <a name="RotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.rotationWindow"></a>
+
+```go
+func RotationWindow() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -10948,12 +12600,16 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.resetAllowedRoles">ResetAllowedRoles</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.resetConnectTimeout">ResetConnectTimeout</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.resetData">ResetData</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.resetDisableAutomatedRotation">ResetDisableAutomatedRotation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.resetInsecureTls">ResetInsecureTls</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.resetPemBundle">ResetPemBundle</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.resetPemJson">ResetPemJson</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.resetPluginName">ResetPluginName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.resetPort">ResetPort</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.resetRootRotationStatements">ResetRootRotationStatements</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.resetRotationPeriod">ResetRotationPeriod</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.resetRotationSchedule">ResetRotationSchedule</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.resetRotationWindow">ResetRotationWindow</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.resetTls">ResetTls</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.resetUsernameTemplate">ResetUsernameTemplate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.resetVerifyConnection">ResetVerifyConnection</a></code> | *No description.* |
@@ -11128,6 +12784,12 @@ func ResetConnectTimeout()
 func ResetData()
 ```
 
+##### `ResetDisableAutomatedRotation` <a name="ResetDisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.resetDisableAutomatedRotation"></a>
+
+```go
+func ResetDisableAutomatedRotation()
+```
+
 ##### `ResetInsecureTls` <a name="ResetInsecureTls" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.resetInsecureTls"></a>
 
 ```go
@@ -11164,6 +12826,24 @@ func ResetPort()
 func ResetRootRotationStatements()
 ```
 
+##### `ResetRotationPeriod` <a name="ResetRotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.resetRotationPeriod"></a>
+
+```go
+func ResetRotationPeriod()
+```
+
+##### `ResetRotationSchedule` <a name="ResetRotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.resetRotationSchedule"></a>
+
+```go
+func ResetRotationSchedule()
+```
+
+##### `ResetRotationWindow` <a name="ResetRotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.resetRotationWindow"></a>
+
+```go
+func ResetRotationWindow()
+```
+
 ##### `ResetTls` <a name="ResetTls" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.resetTls"></a>
 
 ```go
@@ -11192,6 +12872,7 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.allowedRolesInput">AllowedRolesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.connectTimeoutInput">ConnectTimeoutInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.dataInput">DataInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.hostInput">HostInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.insecureTlsInput">InsecureTlsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
@@ -11201,6 +12882,9 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.pluginNameInput">PluginNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.portInput">PortInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.rootRotationStatementsInput">RootRotationStatementsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.rotationPeriodInput">RotationPeriodInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.rotationScheduleInput">RotationScheduleInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.rotationWindowInput">RotationWindowInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.tlsInput">TlsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.usernameInput">UsernameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.usernameTemplateInput">UsernameTemplateInput</a></code> | <code>*string</code> | *No description.* |
@@ -11208,6 +12892,7 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.allowedRoles">AllowedRoles</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.connectTimeout">ConnectTimeout</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.data">Data</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.host">Host</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.insecureTls">InsecureTls</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
@@ -11217,6 +12902,9 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.pluginName">PluginName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.port">Port</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.rootRotationStatements">RootRotationStatements</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.rotationPeriod">RotationPeriod</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.rotationSchedule">RotationSchedule</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.rotationWindow">RotationWindow</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.tls">Tls</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.username">Username</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.usernameTemplate">UsernameTemplate</a></code> | <code>*string</code> | *No description.* |
@@ -11276,6 +12964,16 @@ func DataInput() *map[string]*string
 ```
 
 - *Type:* *map[string]*string
+
+---
+
+##### `DisableAutomatedRotationInput`<sup>Optional</sup> <a name="DisableAutomatedRotationInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.disableAutomatedRotationInput"></a>
+
+```go
+func DisableAutomatedRotationInput() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -11369,6 +13067,36 @@ func RootRotationStatementsInput() *[]*string
 
 ---
 
+##### `RotationPeriodInput`<sup>Optional</sup> <a name="RotationPeriodInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.rotationPeriodInput"></a>
+
+```go
+func RotationPeriodInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `RotationScheduleInput`<sup>Optional</sup> <a name="RotationScheduleInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.rotationScheduleInput"></a>
+
+```go
+func RotationScheduleInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RotationWindowInput`<sup>Optional</sup> <a name="RotationWindowInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.rotationWindowInput"></a>
+
+```go
+func RotationWindowInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `TlsInput`<sup>Optional</sup> <a name="TlsInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.tlsInput"></a>
 
 ```go
@@ -11436,6 +13164,16 @@ func Data() *map[string]*string
 ```
 
 - *Type:* *map[string]*string
+
+---
+
+##### `DisableAutomatedRotation`<sup>Required</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.disableAutomatedRotation"></a>
+
+```go
+func DisableAutomatedRotation() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -11526,6 +13264,36 @@ func RootRotationStatements() *[]*string
 ```
 
 - *Type:* *[]*string
+
+---
+
+##### `RotationPeriod`<sup>Required</sup> <a name="RotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.rotationPeriod"></a>
+
+```go
+func RotationPeriod() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `RotationSchedule`<sup>Required</sup> <a name="RotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.rotationSchedule"></a>
+
+```go
+func RotationSchedule() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RotationWindow`<sup>Required</sup> <a name="RotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.rotationWindow"></a>
+
+```go
+func RotationWindow() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -11810,8 +13578,12 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.resetAllowedRoles">ResetAllowedRoles</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.resetData">ResetData</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.resetDisableAutomatedRotation">ResetDisableAutomatedRotation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.resetPluginName">ResetPluginName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.resetRootRotationStatements">ResetRootRotationStatements</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.resetRotationPeriod">ResetRotationPeriod</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.resetRotationSchedule">ResetRotationSchedule</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.resetRotationWindow">ResetRotationWindow</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.resetVerifyConnection">ResetVerifyConnection</a></code> | *No description.* |
 
 ---
@@ -11978,6 +13750,12 @@ func ResetAllowedRoles()
 func ResetData()
 ```
 
+##### `ResetDisableAutomatedRotation` <a name="ResetDisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.resetDisableAutomatedRotation"></a>
+
+```go
+func ResetDisableAutomatedRotation()
+```
+
 ##### `ResetPluginName` <a name="ResetPluginName" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.resetPluginName"></a>
 
 ```go
@@ -11988,6 +13766,24 @@ func ResetPluginName()
 
 ```go
 func ResetRootRotationStatements()
+```
+
+##### `ResetRotationPeriod` <a name="ResetRotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.resetRotationPeriod"></a>
+
+```go
+func ResetRotationPeriod()
+```
+
+##### `ResetRotationSchedule` <a name="ResetRotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.resetRotationSchedule"></a>
+
+```go
+func ResetRotationSchedule()
+```
+
+##### `ResetRotationWindow` <a name="ResetRotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.resetRotationWindow"></a>
+
+```go
+func ResetRotationWindow()
 ```
 
 ##### `ResetVerifyConnection` <a name="ResetVerifyConnection" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.resetVerifyConnection"></a>
@@ -12005,21 +13801,29 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.allowedRolesInput">AllowedRolesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.dataInput">DataInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.pluginNameInput">PluginNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.privateKeyInput">PrivateKeyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.projectIdInput">ProjectIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.publicKeyInput">PublicKeyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.rootRotationStatementsInput">RootRotationStatementsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.rotationPeriodInput">RotationPeriodInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.rotationScheduleInput">RotationScheduleInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.rotationWindowInput">RotationWindowInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.allowedRoles">AllowedRoles</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.data">Data</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.pluginName">PluginName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.privateKey">PrivateKey</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.projectId">ProjectId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.publicKey">PublicKey</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.rootRotationStatements">RootRotationStatements</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.rotationPeriod">RotationPeriod</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.rotationSchedule">RotationSchedule</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.rotationWindow">RotationWindow</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
@@ -12066,6 +13870,16 @@ func DataInput() *map[string]*string
 ```
 
 - *Type:* *map[string]*string
+
+---
+
+##### `DisableAutomatedRotationInput`<sup>Optional</sup> <a name="DisableAutomatedRotationInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.disableAutomatedRotationInput"></a>
+
+```go
+func DisableAutomatedRotationInput() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -12129,6 +13943,36 @@ func RootRotationStatementsInput() *[]*string
 
 ---
 
+##### `RotationPeriodInput`<sup>Optional</sup> <a name="RotationPeriodInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.rotationPeriodInput"></a>
+
+```go
+func RotationPeriodInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `RotationScheduleInput`<sup>Optional</sup> <a name="RotationScheduleInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.rotationScheduleInput"></a>
+
+```go
+func RotationScheduleInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RotationWindowInput`<sup>Optional</sup> <a name="RotationWindowInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.rotationWindowInput"></a>
+
+```go
+func RotationWindowInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `VerifyConnectionInput`<sup>Optional</sup> <a name="VerifyConnectionInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.verifyConnectionInput"></a>
 
 ```go
@@ -12156,6 +14000,16 @@ func Data() *map[string]*string
 ```
 
 - *Type:* *map[string]*string
+
+---
+
+##### `DisableAutomatedRotation`<sup>Required</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.disableAutomatedRotation"></a>
+
+```go
+func DisableAutomatedRotation() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -12216,6 +14070,36 @@ func RootRotationStatements() *[]*string
 ```
 
 - *Type:* *[]*string
+
+---
+
+##### `RotationPeriod`<sup>Required</sup> <a name="RotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.rotationPeriod"></a>
+
+```go
+func RotationPeriod() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `RotationSchedule`<sup>Required</sup> <a name="RotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.rotationSchedule"></a>
+
+```go
+func RotationSchedule() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RotationWindow`<sup>Required</sup> <a name="RotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.rotationWindow"></a>
+
+```go
+func RotationWindow() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -12471,12 +14355,16 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.resetAllowedRoles">ResetAllowedRoles</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.resetConnectionUrl">ResetConnectionUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.resetData">ResetData</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.resetDisableAutomatedRotation">ResetDisableAutomatedRotation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.resetMaxConnectionLifetime">ResetMaxConnectionLifetime</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.resetMaxIdleConnections">ResetMaxIdleConnections</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.resetMaxOpenConnections">ResetMaxOpenConnections</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.resetPassword">ResetPassword</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.resetPluginName">ResetPluginName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.resetRootRotationStatements">ResetRootRotationStatements</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.resetRotationPeriod">ResetRotationPeriod</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.resetRotationSchedule">ResetRotationSchedule</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.resetRotationWindow">ResetRotationWindow</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.resetUsername">ResetUsername</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.resetUsernameTemplate">ResetUsernameTemplate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.resetVerifyConnection">ResetVerifyConnection</a></code> | *No description.* |
@@ -12651,6 +14539,12 @@ func ResetConnectionUrl()
 func ResetData()
 ```
 
+##### `ResetDisableAutomatedRotation` <a name="ResetDisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.resetDisableAutomatedRotation"></a>
+
+```go
+func ResetDisableAutomatedRotation()
+```
+
 ##### `ResetMaxConnectionLifetime` <a name="ResetMaxConnectionLifetime" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.resetMaxConnectionLifetime"></a>
 
 ```go
@@ -12687,6 +14581,24 @@ func ResetPluginName()
 func ResetRootRotationStatements()
 ```
 
+##### `ResetRotationPeriod` <a name="ResetRotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.resetRotationPeriod"></a>
+
+```go
+func ResetRotationPeriod()
+```
+
+##### `ResetRotationSchedule` <a name="ResetRotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.resetRotationSchedule"></a>
+
+```go
+func ResetRotationSchedule()
+```
+
+##### `ResetRotationWindow` <a name="ResetRotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.resetRotationWindow"></a>
+
+```go
+func ResetRotationWindow()
+```
+
 ##### `ResetUsername` <a name="ResetUsername" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.resetUsername"></a>
 
 ```go
@@ -12715,6 +14627,7 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.allowedRolesInput">AllowedRolesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.connectionUrlInput">ConnectionUrlInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.dataInput">DataInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.maxConnectionLifetimeInput">MaxConnectionLifetimeInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.maxIdleConnectionsInput">MaxIdleConnectionsInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.maxOpenConnectionsInput">MaxOpenConnectionsInput</a></code> | <code>*f64</code> | *No description.* |
@@ -12722,12 +14635,16 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.passwordInput">PasswordInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.pluginNameInput">PluginNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.rootRotationStatementsInput">RootRotationStatementsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.rotationPeriodInput">RotationPeriodInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.rotationScheduleInput">RotationScheduleInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.rotationWindowInput">RotationWindowInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.usernameInput">UsernameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.usernameTemplateInput">UsernameTemplateInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.allowedRoles">AllowedRoles</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.connectionUrl">ConnectionUrl</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.data">Data</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.maxOpenConnections">MaxOpenConnections</a></code> | <code>*f64</code> | *No description.* |
@@ -12735,6 +14652,9 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.password">Password</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.pluginName">PluginName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.rootRotationStatements">RootRotationStatements</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.rotationPeriod">RotationPeriod</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.rotationSchedule">RotationSchedule</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.rotationWindow">RotationWindow</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.username">Username</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.usernameTemplate">UsernameTemplate</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>interface{}</code> | *No description.* |
@@ -12793,6 +14713,16 @@ func DataInput() *map[string]*string
 ```
 
 - *Type:* *map[string]*string
+
+---
+
+##### `DisableAutomatedRotationInput`<sup>Optional</sup> <a name="DisableAutomatedRotationInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.disableAutomatedRotationInput"></a>
+
+```go
+func DisableAutomatedRotationInput() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -12866,6 +14796,36 @@ func RootRotationStatementsInput() *[]*string
 
 ---
 
+##### `RotationPeriodInput`<sup>Optional</sup> <a name="RotationPeriodInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.rotationPeriodInput"></a>
+
+```go
+func RotationPeriodInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `RotationScheduleInput`<sup>Optional</sup> <a name="RotationScheduleInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.rotationScheduleInput"></a>
+
+```go
+func RotationScheduleInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RotationWindowInput`<sup>Optional</sup> <a name="RotationWindowInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.rotationWindowInput"></a>
+
+```go
+func RotationWindowInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `UsernameInput`<sup>Optional</sup> <a name="UsernameInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.usernameInput"></a>
 
 ```go
@@ -12923,6 +14883,16 @@ func Data() *map[string]*string
 ```
 
 - *Type:* *map[string]*string
+
+---
+
+##### `DisableAutomatedRotation`<sup>Required</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.disableAutomatedRotation"></a>
+
+```go
+func DisableAutomatedRotation() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -12993,6 +14963,36 @@ func RootRotationStatements() *[]*string
 ```
 
 - *Type:* *[]*string
+
+---
+
+##### `RotationPeriod`<sup>Required</sup> <a name="RotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.rotationPeriod"></a>
+
+```go
+func RotationPeriod() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `RotationSchedule`<sup>Required</sup> <a name="RotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.rotationSchedule"></a>
+
+```go
+func RotationSchedule() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RotationWindow`<sup>Required</sup> <a name="RotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.rotationWindow"></a>
+
+```go
+func RotationWindow() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -13269,6 +15269,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.resetConnectionUrl">ResetConnectionUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.resetContainedDb">ResetContainedDb</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.resetData">ResetData</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.resetDisableAutomatedRotation">ResetDisableAutomatedRotation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.resetDisableEscaping">ResetDisableEscaping</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.resetMaxConnectionLifetime">ResetMaxConnectionLifetime</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.resetMaxIdleConnections">ResetMaxIdleConnections</a></code> | *No description.* |
@@ -13276,6 +15277,9 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.resetPassword">ResetPassword</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.resetPluginName">ResetPluginName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.resetRootRotationStatements">ResetRootRotationStatements</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.resetRotationPeriod">ResetRotationPeriod</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.resetRotationSchedule">ResetRotationSchedule</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.resetRotationWindow">ResetRotationWindow</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.resetUsername">ResetUsername</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.resetUsernameTemplate">ResetUsernameTemplate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.resetVerifyConnection">ResetVerifyConnection</a></code> | *No description.* |
@@ -13456,6 +15460,12 @@ func ResetContainedDb()
 func ResetData()
 ```
 
+##### `ResetDisableAutomatedRotation` <a name="ResetDisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.resetDisableAutomatedRotation"></a>
+
+```go
+func ResetDisableAutomatedRotation()
+```
+
 ##### `ResetDisableEscaping` <a name="ResetDisableEscaping" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.resetDisableEscaping"></a>
 
 ```go
@@ -13498,6 +15508,24 @@ func ResetPluginName()
 func ResetRootRotationStatements()
 ```
 
+##### `ResetRotationPeriod` <a name="ResetRotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.resetRotationPeriod"></a>
+
+```go
+func ResetRotationPeriod()
+```
+
+##### `ResetRotationSchedule` <a name="ResetRotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.resetRotationSchedule"></a>
+
+```go
+func ResetRotationSchedule()
+```
+
+##### `ResetRotationWindow` <a name="ResetRotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.resetRotationWindow"></a>
+
+```go
+func ResetRotationWindow()
+```
+
 ##### `ResetUsername` <a name="ResetUsername" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.resetUsername"></a>
 
 ```go
@@ -13527,6 +15555,7 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.connectionUrlInput">ConnectionUrlInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.containedDbInput">ContainedDbInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.dataInput">DataInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.disableEscapingInput">DisableEscapingInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.maxConnectionLifetimeInput">MaxConnectionLifetimeInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.maxIdleConnectionsInput">MaxIdleConnectionsInput</a></code> | <code>*f64</code> | *No description.* |
@@ -13535,6 +15564,9 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.passwordInput">PasswordInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.pluginNameInput">PluginNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.rootRotationStatementsInput">RootRotationStatementsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.rotationPeriodInput">RotationPeriodInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.rotationScheduleInput">RotationScheduleInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.rotationWindowInput">RotationWindowInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.usernameInput">UsernameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.usernameTemplateInput">UsernameTemplateInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -13542,6 +15574,7 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.connectionUrl">ConnectionUrl</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.containedDb">ContainedDb</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.data">Data</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.disableEscaping">DisableEscaping</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>*f64</code> | *No description.* |
@@ -13550,6 +15583,9 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.password">Password</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.pluginName">PluginName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.rootRotationStatements">RootRotationStatements</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.rotationPeriod">RotationPeriod</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.rotationSchedule">RotationSchedule</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.rotationWindow">RotationWindow</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.username">Username</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.usernameTemplate">UsernameTemplate</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>interface{}</code> | *No description.* |
@@ -13618,6 +15654,16 @@ func DataInput() *map[string]*string
 ```
 
 - *Type:* *map[string]*string
+
+---
+
+##### `DisableAutomatedRotationInput`<sup>Optional</sup> <a name="DisableAutomatedRotationInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.disableAutomatedRotationInput"></a>
+
+```go
+func DisableAutomatedRotationInput() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -13701,6 +15747,36 @@ func RootRotationStatementsInput() *[]*string
 
 ---
 
+##### `RotationPeriodInput`<sup>Optional</sup> <a name="RotationPeriodInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.rotationPeriodInput"></a>
+
+```go
+func RotationPeriodInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `RotationScheduleInput`<sup>Optional</sup> <a name="RotationScheduleInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.rotationScheduleInput"></a>
+
+```go
+func RotationScheduleInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RotationWindowInput`<sup>Optional</sup> <a name="RotationWindowInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.rotationWindowInput"></a>
+
+```go
+func RotationWindowInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `UsernameInput`<sup>Optional</sup> <a name="UsernameInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.usernameInput"></a>
 
 ```go
@@ -13768,6 +15844,16 @@ func Data() *map[string]*string
 ```
 
 - *Type:* *map[string]*string
+
+---
+
+##### `DisableAutomatedRotation`<sup>Required</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.disableAutomatedRotation"></a>
+
+```go
+func DisableAutomatedRotation() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -13848,6 +15934,36 @@ func RootRotationStatements() *[]*string
 ```
 
 - *Type:* *[]*string
+
+---
+
+##### `RotationPeriod`<sup>Required</sup> <a name="RotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.rotationPeriod"></a>
+
+```go
+func RotationPeriod() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `RotationSchedule`<sup>Required</sup> <a name="RotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.rotationSchedule"></a>
+
+```go
+func RotationSchedule() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RotationWindow`<sup>Required</sup> <a name="RotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.rotationWindow"></a>
+
+```go
+func RotationWindow() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -14124,12 +16240,16 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.resetAuthType">ResetAuthType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.resetConnectionUrl">ResetConnectionUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.resetData">ResetData</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.resetDisableAutomatedRotation">ResetDisableAutomatedRotation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.resetMaxConnectionLifetime">ResetMaxConnectionLifetime</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.resetMaxIdleConnections">ResetMaxIdleConnections</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.resetMaxOpenConnections">ResetMaxOpenConnections</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.resetPassword">ResetPassword</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.resetPluginName">ResetPluginName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.resetRootRotationStatements">ResetRootRotationStatements</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.resetRotationPeriod">ResetRotationPeriod</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.resetRotationSchedule">ResetRotationSchedule</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.resetRotationWindow">ResetRotationWindow</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.resetServiceAccountJson">ResetServiceAccountJson</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.resetTlsCa">ResetTlsCa</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.resetTlsCertificateKey">ResetTlsCertificateKey</a></code> | *No description.* |
@@ -14313,6 +16433,12 @@ func ResetConnectionUrl()
 func ResetData()
 ```
 
+##### `ResetDisableAutomatedRotation` <a name="ResetDisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.resetDisableAutomatedRotation"></a>
+
+```go
+func ResetDisableAutomatedRotation()
+```
+
 ##### `ResetMaxConnectionLifetime` <a name="ResetMaxConnectionLifetime" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.resetMaxConnectionLifetime"></a>
 
 ```go
@@ -14347,6 +16473,24 @@ func ResetPluginName()
 
 ```go
 func ResetRootRotationStatements()
+```
+
+##### `ResetRotationPeriod` <a name="ResetRotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.resetRotationPeriod"></a>
+
+```go
+func ResetRotationPeriod()
+```
+
+##### `ResetRotationSchedule` <a name="ResetRotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.resetRotationSchedule"></a>
+
+```go
+func ResetRotationSchedule()
+```
+
+##### `ResetRotationWindow` <a name="ResetRotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.resetRotationWindow"></a>
+
+```go
+func ResetRotationWindow()
 ```
 
 ##### `ResetServiceAccountJson` <a name="ResetServiceAccountJson" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.resetServiceAccountJson"></a>
@@ -14396,6 +16540,7 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.authTypeInput">AuthTypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.connectionUrlInput">ConnectionUrlInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.dataInput">DataInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.maxConnectionLifetimeInput">MaxConnectionLifetimeInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.maxIdleConnectionsInput">MaxIdleConnectionsInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.maxOpenConnectionsInput">MaxOpenConnectionsInput</a></code> | <code>*f64</code> | *No description.* |
@@ -14403,6 +16548,9 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.passwordInput">PasswordInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.pluginNameInput">PluginNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.rootRotationStatementsInput">RootRotationStatementsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.rotationPeriodInput">RotationPeriodInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.rotationScheduleInput">RotationScheduleInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.rotationWindowInput">RotationWindowInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.serviceAccountJsonInput">ServiceAccountJsonInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.tlsCaInput">TlsCaInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.tlsCertificateKeyInput">TlsCertificateKeyInput</a></code> | <code>*string</code> | *No description.* |
@@ -14413,6 +16561,7 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.authType">AuthType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.connectionUrl">ConnectionUrl</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.data">Data</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.maxOpenConnections">MaxOpenConnections</a></code> | <code>*f64</code> | *No description.* |
@@ -14420,6 +16569,9 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.password">Password</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.pluginName">PluginName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.rootRotationStatements">RootRotationStatements</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.rotationPeriod">RotationPeriod</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.rotationSchedule">RotationSchedule</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.rotationWindow">RotationWindow</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.serviceAccountJson">ServiceAccountJson</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.tlsCa">TlsCa</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.tlsCertificateKey">TlsCertificateKey</a></code> | <code>*string</code> | *No description.* |
@@ -14494,6 +16646,16 @@ func DataInput() *map[string]*string
 
 ---
 
+##### `DisableAutomatedRotationInput`<sup>Optional</sup> <a name="DisableAutomatedRotationInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.disableAutomatedRotationInput"></a>
+
+```go
+func DisableAutomatedRotationInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `MaxConnectionLifetimeInput`<sup>Optional</sup> <a name="MaxConnectionLifetimeInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.maxConnectionLifetimeInput"></a>
 
 ```go
@@ -14561,6 +16723,36 @@ func RootRotationStatementsInput() *[]*string
 ```
 
 - *Type:* *[]*string
+
+---
+
+##### `RotationPeriodInput`<sup>Optional</sup> <a name="RotationPeriodInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.rotationPeriodInput"></a>
+
+```go
+func RotationPeriodInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `RotationScheduleInput`<sup>Optional</sup> <a name="RotationScheduleInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.rotationScheduleInput"></a>
+
+```go
+func RotationScheduleInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RotationWindowInput`<sup>Optional</sup> <a name="RotationWindowInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.rotationWindowInput"></a>
+
+```go
+func RotationWindowInput() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -14664,6 +16856,16 @@ func Data() *map[string]*string
 
 ---
 
+##### `DisableAutomatedRotation`<sup>Required</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.disableAutomatedRotation"></a>
+
+```go
+func DisableAutomatedRotation() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `MaxConnectionLifetime`<sup>Required</sup> <a name="MaxConnectionLifetime" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.maxConnectionLifetime"></a>
 
 ```go
@@ -14731,6 +16933,36 @@ func RootRotationStatements() *[]*string
 ```
 
 - *Type:* *[]*string
+
+---
+
+##### `RotationPeriod`<sup>Required</sup> <a name="RotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.rotationPeriod"></a>
+
+```go
+func RotationPeriod() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `RotationSchedule`<sup>Required</sup> <a name="RotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.rotationSchedule"></a>
+
+```go
+func RotationSchedule() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RotationWindow`<sup>Required</sup> <a name="RotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.rotationWindow"></a>
+
+```go
+func RotationWindow() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -15037,12 +17269,16 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.resetAuthType">ResetAuthType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.resetConnectionUrl">ResetConnectionUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.resetData">ResetData</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.resetDisableAutomatedRotation">ResetDisableAutomatedRotation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.resetMaxConnectionLifetime">ResetMaxConnectionLifetime</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.resetMaxIdleConnections">ResetMaxIdleConnections</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.resetMaxOpenConnections">ResetMaxOpenConnections</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.resetPassword">ResetPassword</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.resetPluginName">ResetPluginName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.resetRootRotationStatements">ResetRootRotationStatements</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.resetRotationPeriod">ResetRotationPeriod</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.resetRotationSchedule">ResetRotationSchedule</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.resetRotationWindow">ResetRotationWindow</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.resetServiceAccountJson">ResetServiceAccountJson</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.resetTlsCa">ResetTlsCa</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.resetTlsCertificateKey">ResetTlsCertificateKey</a></code> | *No description.* |
@@ -15226,6 +17462,12 @@ func ResetConnectionUrl()
 func ResetData()
 ```
 
+##### `ResetDisableAutomatedRotation` <a name="ResetDisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.resetDisableAutomatedRotation"></a>
+
+```go
+func ResetDisableAutomatedRotation()
+```
+
 ##### `ResetMaxConnectionLifetime` <a name="ResetMaxConnectionLifetime" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.resetMaxConnectionLifetime"></a>
 
 ```go
@@ -15260,6 +17502,24 @@ func ResetPluginName()
 
 ```go
 func ResetRootRotationStatements()
+```
+
+##### `ResetRotationPeriod` <a name="ResetRotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.resetRotationPeriod"></a>
+
+```go
+func ResetRotationPeriod()
+```
+
+##### `ResetRotationSchedule` <a name="ResetRotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.resetRotationSchedule"></a>
+
+```go
+func ResetRotationSchedule()
+```
+
+##### `ResetRotationWindow` <a name="ResetRotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.resetRotationWindow"></a>
+
+```go
+func ResetRotationWindow()
 ```
 
 ##### `ResetServiceAccountJson` <a name="ResetServiceAccountJson" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.resetServiceAccountJson"></a>
@@ -15309,6 +17569,7 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.authTypeInput">AuthTypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.connectionUrlInput">ConnectionUrlInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.dataInput">DataInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.maxConnectionLifetimeInput">MaxConnectionLifetimeInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.maxIdleConnectionsInput">MaxIdleConnectionsInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.maxOpenConnectionsInput">MaxOpenConnectionsInput</a></code> | <code>*f64</code> | *No description.* |
@@ -15316,6 +17577,9 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.passwordInput">PasswordInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.pluginNameInput">PluginNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.rootRotationStatementsInput">RootRotationStatementsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.rotationPeriodInput">RotationPeriodInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.rotationScheduleInput">RotationScheduleInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.rotationWindowInput">RotationWindowInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.serviceAccountJsonInput">ServiceAccountJsonInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.tlsCaInput">TlsCaInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.tlsCertificateKeyInput">TlsCertificateKeyInput</a></code> | <code>*string</code> | *No description.* |
@@ -15326,6 +17590,7 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.authType">AuthType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.connectionUrl">ConnectionUrl</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.data">Data</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.maxOpenConnections">MaxOpenConnections</a></code> | <code>*f64</code> | *No description.* |
@@ -15333,6 +17598,9 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.password">Password</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.pluginName">PluginName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.rootRotationStatements">RootRotationStatements</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.rotationPeriod">RotationPeriod</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.rotationSchedule">RotationSchedule</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.rotationWindow">RotationWindow</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.serviceAccountJson">ServiceAccountJson</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.tlsCa">TlsCa</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.tlsCertificateKey">TlsCertificateKey</a></code> | <code>*string</code> | *No description.* |
@@ -15407,6 +17675,16 @@ func DataInput() *map[string]*string
 
 ---
 
+##### `DisableAutomatedRotationInput`<sup>Optional</sup> <a name="DisableAutomatedRotationInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.disableAutomatedRotationInput"></a>
+
+```go
+func DisableAutomatedRotationInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `MaxConnectionLifetimeInput`<sup>Optional</sup> <a name="MaxConnectionLifetimeInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.maxConnectionLifetimeInput"></a>
 
 ```go
@@ -15474,6 +17752,36 @@ func RootRotationStatementsInput() *[]*string
 ```
 
 - *Type:* *[]*string
+
+---
+
+##### `RotationPeriodInput`<sup>Optional</sup> <a name="RotationPeriodInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.rotationPeriodInput"></a>
+
+```go
+func RotationPeriodInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `RotationScheduleInput`<sup>Optional</sup> <a name="RotationScheduleInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.rotationScheduleInput"></a>
+
+```go
+func RotationScheduleInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RotationWindowInput`<sup>Optional</sup> <a name="RotationWindowInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.rotationWindowInput"></a>
+
+```go
+func RotationWindowInput() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -15577,6 +17885,16 @@ func Data() *map[string]*string
 
 ---
 
+##### `DisableAutomatedRotation`<sup>Required</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.disableAutomatedRotation"></a>
+
+```go
+func DisableAutomatedRotation() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `MaxConnectionLifetime`<sup>Required</sup> <a name="MaxConnectionLifetime" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.maxConnectionLifetime"></a>
 
 ```go
@@ -15644,6 +17962,36 @@ func RootRotationStatements() *[]*string
 ```
 
 - *Type:* *[]*string
+
+---
+
+##### `RotationPeriod`<sup>Required</sup> <a name="RotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.rotationPeriod"></a>
+
+```go
+func RotationPeriod() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `RotationSchedule`<sup>Required</sup> <a name="RotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.rotationSchedule"></a>
+
+```go
+func RotationSchedule() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RotationWindow`<sup>Required</sup> <a name="RotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.rotationWindow"></a>
+
+```go
+func RotationWindow() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -15950,12 +18298,16 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.resetAuthType">ResetAuthType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.resetConnectionUrl">ResetConnectionUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.resetData">ResetData</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.resetDisableAutomatedRotation">ResetDisableAutomatedRotation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.resetMaxConnectionLifetime">ResetMaxConnectionLifetime</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.resetMaxIdleConnections">ResetMaxIdleConnections</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.resetMaxOpenConnections">ResetMaxOpenConnections</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.resetPassword">ResetPassword</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.resetPluginName">ResetPluginName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.resetRootRotationStatements">ResetRootRotationStatements</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.resetRotationPeriod">ResetRotationPeriod</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.resetRotationSchedule">ResetRotationSchedule</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.resetRotationWindow">ResetRotationWindow</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.resetServiceAccountJson">ResetServiceAccountJson</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.resetTlsCa">ResetTlsCa</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.resetTlsCertificateKey">ResetTlsCertificateKey</a></code> | *No description.* |
@@ -16139,6 +18491,12 @@ func ResetConnectionUrl()
 func ResetData()
 ```
 
+##### `ResetDisableAutomatedRotation` <a name="ResetDisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.resetDisableAutomatedRotation"></a>
+
+```go
+func ResetDisableAutomatedRotation()
+```
+
 ##### `ResetMaxConnectionLifetime` <a name="ResetMaxConnectionLifetime" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.resetMaxConnectionLifetime"></a>
 
 ```go
@@ -16173,6 +18531,24 @@ func ResetPluginName()
 
 ```go
 func ResetRootRotationStatements()
+```
+
+##### `ResetRotationPeriod` <a name="ResetRotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.resetRotationPeriod"></a>
+
+```go
+func ResetRotationPeriod()
+```
+
+##### `ResetRotationSchedule` <a name="ResetRotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.resetRotationSchedule"></a>
+
+```go
+func ResetRotationSchedule()
+```
+
+##### `ResetRotationWindow` <a name="ResetRotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.resetRotationWindow"></a>
+
+```go
+func ResetRotationWindow()
 ```
 
 ##### `ResetServiceAccountJson` <a name="ResetServiceAccountJson" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.resetServiceAccountJson"></a>
@@ -16222,6 +18598,7 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.authTypeInput">AuthTypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.connectionUrlInput">ConnectionUrlInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.dataInput">DataInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.maxConnectionLifetimeInput">MaxConnectionLifetimeInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.maxIdleConnectionsInput">MaxIdleConnectionsInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.maxOpenConnectionsInput">MaxOpenConnectionsInput</a></code> | <code>*f64</code> | *No description.* |
@@ -16229,6 +18606,9 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.passwordInput">PasswordInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.pluginNameInput">PluginNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.rootRotationStatementsInput">RootRotationStatementsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.rotationPeriodInput">RotationPeriodInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.rotationScheduleInput">RotationScheduleInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.rotationWindowInput">RotationWindowInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.serviceAccountJsonInput">ServiceAccountJsonInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.tlsCaInput">TlsCaInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.tlsCertificateKeyInput">TlsCertificateKeyInput</a></code> | <code>*string</code> | *No description.* |
@@ -16239,6 +18619,7 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.authType">AuthType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.connectionUrl">ConnectionUrl</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.data">Data</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.maxOpenConnections">MaxOpenConnections</a></code> | <code>*f64</code> | *No description.* |
@@ -16246,6 +18627,9 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.password">Password</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.pluginName">PluginName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.rootRotationStatements">RootRotationStatements</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.rotationPeriod">RotationPeriod</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.rotationSchedule">RotationSchedule</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.rotationWindow">RotationWindow</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.serviceAccountJson">ServiceAccountJson</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.tlsCa">TlsCa</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.tlsCertificateKey">TlsCertificateKey</a></code> | <code>*string</code> | *No description.* |
@@ -16320,6 +18704,16 @@ func DataInput() *map[string]*string
 
 ---
 
+##### `DisableAutomatedRotationInput`<sup>Optional</sup> <a name="DisableAutomatedRotationInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.disableAutomatedRotationInput"></a>
+
+```go
+func DisableAutomatedRotationInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `MaxConnectionLifetimeInput`<sup>Optional</sup> <a name="MaxConnectionLifetimeInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.maxConnectionLifetimeInput"></a>
 
 ```go
@@ -16387,6 +18781,36 @@ func RootRotationStatementsInput() *[]*string
 ```
 
 - *Type:* *[]*string
+
+---
+
+##### `RotationPeriodInput`<sup>Optional</sup> <a name="RotationPeriodInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.rotationPeriodInput"></a>
+
+```go
+func RotationPeriodInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `RotationScheduleInput`<sup>Optional</sup> <a name="RotationScheduleInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.rotationScheduleInput"></a>
+
+```go
+func RotationScheduleInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RotationWindowInput`<sup>Optional</sup> <a name="RotationWindowInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.rotationWindowInput"></a>
+
+```go
+func RotationWindowInput() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -16490,6 +18914,16 @@ func Data() *map[string]*string
 
 ---
 
+##### `DisableAutomatedRotation`<sup>Required</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.disableAutomatedRotation"></a>
+
+```go
+func DisableAutomatedRotation() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `MaxConnectionLifetime`<sup>Required</sup> <a name="MaxConnectionLifetime" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.maxConnectionLifetime"></a>
 
 ```go
@@ -16557,6 +18991,36 @@ func RootRotationStatements() *[]*string
 ```
 
 - *Type:* *[]*string
+
+---
+
+##### `RotationPeriod`<sup>Required</sup> <a name="RotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.rotationPeriod"></a>
+
+```go
+func RotationPeriod() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `RotationSchedule`<sup>Required</sup> <a name="RotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.rotationSchedule"></a>
+
+```go
+func RotationSchedule() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RotationWindow`<sup>Required</sup> <a name="RotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.rotationWindow"></a>
+
+```go
+func RotationWindow() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -16863,12 +19327,16 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.resetAuthType">ResetAuthType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.resetConnectionUrl">ResetConnectionUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.resetData">ResetData</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.resetDisableAutomatedRotation">ResetDisableAutomatedRotation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.resetMaxConnectionLifetime">ResetMaxConnectionLifetime</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.resetMaxIdleConnections">ResetMaxIdleConnections</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.resetMaxOpenConnections">ResetMaxOpenConnections</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.resetPassword">ResetPassword</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.resetPluginName">ResetPluginName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.resetRootRotationStatements">ResetRootRotationStatements</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.resetRotationPeriod">ResetRotationPeriod</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.resetRotationSchedule">ResetRotationSchedule</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.resetRotationWindow">ResetRotationWindow</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.resetServiceAccountJson">ResetServiceAccountJson</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.resetTlsCa">ResetTlsCa</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.resetTlsCertificateKey">ResetTlsCertificateKey</a></code> | *No description.* |
@@ -17052,6 +19520,12 @@ func ResetConnectionUrl()
 func ResetData()
 ```
 
+##### `ResetDisableAutomatedRotation` <a name="ResetDisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.resetDisableAutomatedRotation"></a>
+
+```go
+func ResetDisableAutomatedRotation()
+```
+
 ##### `ResetMaxConnectionLifetime` <a name="ResetMaxConnectionLifetime" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.resetMaxConnectionLifetime"></a>
 
 ```go
@@ -17086,6 +19560,24 @@ func ResetPluginName()
 
 ```go
 func ResetRootRotationStatements()
+```
+
+##### `ResetRotationPeriod` <a name="ResetRotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.resetRotationPeriod"></a>
+
+```go
+func ResetRotationPeriod()
+```
+
+##### `ResetRotationSchedule` <a name="ResetRotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.resetRotationSchedule"></a>
+
+```go
+func ResetRotationSchedule()
+```
+
+##### `ResetRotationWindow` <a name="ResetRotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.resetRotationWindow"></a>
+
+```go
+func ResetRotationWindow()
 ```
 
 ##### `ResetServiceAccountJson` <a name="ResetServiceAccountJson" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.resetServiceAccountJson"></a>
@@ -17135,6 +19627,7 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.authTypeInput">AuthTypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.connectionUrlInput">ConnectionUrlInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.dataInput">DataInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.maxConnectionLifetimeInput">MaxConnectionLifetimeInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.maxIdleConnectionsInput">MaxIdleConnectionsInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.maxOpenConnectionsInput">MaxOpenConnectionsInput</a></code> | <code>*f64</code> | *No description.* |
@@ -17142,6 +19635,9 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.passwordInput">PasswordInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.pluginNameInput">PluginNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.rootRotationStatementsInput">RootRotationStatementsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.rotationPeriodInput">RotationPeriodInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.rotationScheduleInput">RotationScheduleInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.rotationWindowInput">RotationWindowInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.serviceAccountJsonInput">ServiceAccountJsonInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.tlsCaInput">TlsCaInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.tlsCertificateKeyInput">TlsCertificateKeyInput</a></code> | <code>*string</code> | *No description.* |
@@ -17152,6 +19648,7 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.authType">AuthType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.connectionUrl">ConnectionUrl</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.data">Data</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.maxOpenConnections">MaxOpenConnections</a></code> | <code>*f64</code> | *No description.* |
@@ -17159,6 +19656,9 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.password">Password</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.pluginName">PluginName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.rootRotationStatements">RootRotationStatements</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.rotationPeriod">RotationPeriod</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.rotationSchedule">RotationSchedule</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.rotationWindow">RotationWindow</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.serviceAccountJson">ServiceAccountJson</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.tlsCa">TlsCa</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.tlsCertificateKey">TlsCertificateKey</a></code> | <code>*string</code> | *No description.* |
@@ -17233,6 +19733,16 @@ func DataInput() *map[string]*string
 
 ---
 
+##### `DisableAutomatedRotationInput`<sup>Optional</sup> <a name="DisableAutomatedRotationInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.disableAutomatedRotationInput"></a>
+
+```go
+func DisableAutomatedRotationInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `MaxConnectionLifetimeInput`<sup>Optional</sup> <a name="MaxConnectionLifetimeInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.maxConnectionLifetimeInput"></a>
 
 ```go
@@ -17300,6 +19810,36 @@ func RootRotationStatementsInput() *[]*string
 ```
 
 - *Type:* *[]*string
+
+---
+
+##### `RotationPeriodInput`<sup>Optional</sup> <a name="RotationPeriodInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.rotationPeriodInput"></a>
+
+```go
+func RotationPeriodInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `RotationScheduleInput`<sup>Optional</sup> <a name="RotationScheduleInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.rotationScheduleInput"></a>
+
+```go
+func RotationScheduleInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RotationWindowInput`<sup>Optional</sup> <a name="RotationWindowInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.rotationWindowInput"></a>
+
+```go
+func RotationWindowInput() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -17403,6 +19943,16 @@ func Data() *map[string]*string
 
 ---
 
+##### `DisableAutomatedRotation`<sup>Required</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.disableAutomatedRotation"></a>
+
+```go
+func DisableAutomatedRotation() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `MaxConnectionLifetime`<sup>Required</sup> <a name="MaxConnectionLifetime" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.maxConnectionLifetime"></a>
 
 ```go
@@ -17470,6 +20020,36 @@ func RootRotationStatements() *[]*string
 ```
 
 - *Type:* *[]*string
+
+---
+
+##### `RotationPeriod`<sup>Required</sup> <a name="RotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.rotationPeriod"></a>
+
+```go
+func RotationPeriod() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `RotationSchedule`<sup>Required</sup> <a name="RotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.rotationSchedule"></a>
+
+```go
+func RotationSchedule() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RotationWindow`<sup>Required</sup> <a name="RotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.rotationWindow"></a>
+
+```go
+func RotationWindow() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -17775,6 +20355,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.resetAllowedRoles">ResetAllowedRoles</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.resetConnectionUrl">ResetConnectionUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.resetData">ResetData</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.resetDisableAutomatedRotation">ResetDisableAutomatedRotation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.resetDisconnectSessions">ResetDisconnectSessions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.resetMaxConnectionLifetime">ResetMaxConnectionLifetime</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.resetMaxIdleConnections">ResetMaxIdleConnections</a></code> | *No description.* |
@@ -17782,6 +20363,9 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.resetPassword">ResetPassword</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.resetPluginName">ResetPluginName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.resetRootRotationStatements">ResetRootRotationStatements</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.resetRotationPeriod">ResetRotationPeriod</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.resetRotationSchedule">ResetRotationSchedule</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.resetRotationWindow">ResetRotationWindow</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.resetSplitStatements">ResetSplitStatements</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.resetUsername">ResetUsername</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.resetUsernameTemplate">ResetUsernameTemplate</a></code> | *No description.* |
@@ -17957,6 +20541,12 @@ func ResetConnectionUrl()
 func ResetData()
 ```
 
+##### `ResetDisableAutomatedRotation` <a name="ResetDisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.resetDisableAutomatedRotation"></a>
+
+```go
+func ResetDisableAutomatedRotation()
+```
+
 ##### `ResetDisconnectSessions` <a name="ResetDisconnectSessions" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.resetDisconnectSessions"></a>
 
 ```go
@@ -17999,6 +20589,24 @@ func ResetPluginName()
 func ResetRootRotationStatements()
 ```
 
+##### `ResetRotationPeriod` <a name="ResetRotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.resetRotationPeriod"></a>
+
+```go
+func ResetRotationPeriod()
+```
+
+##### `ResetRotationSchedule` <a name="ResetRotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.resetRotationSchedule"></a>
+
+```go
+func ResetRotationSchedule()
+```
+
+##### `ResetRotationWindow` <a name="ResetRotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.resetRotationWindow"></a>
+
+```go
+func ResetRotationWindow()
+```
+
 ##### `ResetSplitStatements` <a name="ResetSplitStatements" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.resetSplitStatements"></a>
 
 ```go
@@ -18033,6 +20641,7 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.allowedRolesInput">AllowedRolesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.connectionUrlInput">ConnectionUrlInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.dataInput">DataInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.disconnectSessionsInput">DisconnectSessionsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.maxConnectionLifetimeInput">MaxConnectionLifetimeInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.maxIdleConnectionsInput">MaxIdleConnectionsInput</a></code> | <code>*f64</code> | *No description.* |
@@ -18041,6 +20650,9 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.passwordInput">PasswordInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.pluginNameInput">PluginNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.rootRotationStatementsInput">RootRotationStatementsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.rotationPeriodInput">RotationPeriodInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.rotationScheduleInput">RotationScheduleInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.rotationWindowInput">RotationWindowInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.splitStatementsInput">SplitStatementsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.usernameInput">UsernameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.usernameTemplateInput">UsernameTemplateInput</a></code> | <code>*string</code> | *No description.* |
@@ -18048,6 +20660,7 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.allowedRoles">AllowedRoles</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.connectionUrl">ConnectionUrl</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.data">Data</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.disconnectSessions">DisconnectSessions</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>*f64</code> | *No description.* |
@@ -18056,6 +20669,9 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.password">Password</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.pluginName">PluginName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.rootRotationStatements">RootRotationStatements</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.rotationPeriod">RotationPeriod</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.rotationSchedule">RotationSchedule</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.rotationWindow">RotationWindow</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.splitStatements">SplitStatements</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.username">Username</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.usernameTemplate">UsernameTemplate</a></code> | <code>*string</code> | *No description.* |
@@ -18115,6 +20731,16 @@ func DataInput() *map[string]*string
 ```
 
 - *Type:* *map[string]*string
+
+---
+
+##### `DisableAutomatedRotationInput`<sup>Optional</sup> <a name="DisableAutomatedRotationInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.disableAutomatedRotationInput"></a>
+
+```go
+func DisableAutomatedRotationInput() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -18198,6 +20824,36 @@ func RootRotationStatementsInput() *[]*string
 
 ---
 
+##### `RotationPeriodInput`<sup>Optional</sup> <a name="RotationPeriodInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.rotationPeriodInput"></a>
+
+```go
+func RotationPeriodInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `RotationScheduleInput`<sup>Optional</sup> <a name="RotationScheduleInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.rotationScheduleInput"></a>
+
+```go
+func RotationScheduleInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RotationWindowInput`<sup>Optional</sup> <a name="RotationWindowInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.rotationWindowInput"></a>
+
+```go
+func RotationWindowInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `SplitStatementsInput`<sup>Optional</sup> <a name="SplitStatementsInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.splitStatementsInput"></a>
 
 ```go
@@ -18265,6 +20921,16 @@ func Data() *map[string]*string
 ```
 
 - *Type:* *map[string]*string
+
+---
+
+##### `DisableAutomatedRotation`<sup>Required</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.disableAutomatedRotation"></a>
+
+```go
+func DisableAutomatedRotation() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -18345,6 +21011,36 @@ func RootRotationStatements() *[]*string
 ```
 
 - *Type:* *[]*string
+
+---
+
+##### `RotationPeriod`<sup>Required</sup> <a name="RotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.rotationPeriod"></a>
+
+```go
+func RotationPeriod() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `RotationSchedule`<sup>Required</sup> <a name="RotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.rotationSchedule"></a>
+
+```go
+func RotationSchedule() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RotationWindow`<sup>Required</sup> <a name="RotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.rotationWindow"></a>
+
+```go
+func RotationWindow() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -18631,6 +21327,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.resetAuthType">ResetAuthType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.resetConnectionUrl">ResetConnectionUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.resetData">ResetData</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.resetDisableAutomatedRotation">ResetDisableAutomatedRotation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.resetDisableEscaping">ResetDisableEscaping</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.resetMaxConnectionLifetime">ResetMaxConnectionLifetime</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.resetMaxIdleConnections">ResetMaxIdleConnections</a></code> | *No description.* |
@@ -18640,6 +21337,9 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.resetPluginName">ResetPluginName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.resetPrivateKey">ResetPrivateKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.resetRootRotationStatements">ResetRootRotationStatements</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.resetRotationPeriod">ResetRotationPeriod</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.resetRotationSchedule">ResetRotationSchedule</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.resetRotationWindow">ResetRotationWindow</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.resetSelfManaged">ResetSelfManaged</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.resetServiceAccountJson">ResetServiceAccountJson</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.resetTlsCa">ResetTlsCa</a></code> | *No description.* |
@@ -18824,6 +21524,12 @@ func ResetConnectionUrl()
 func ResetData()
 ```
 
+##### `ResetDisableAutomatedRotation` <a name="ResetDisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.resetDisableAutomatedRotation"></a>
+
+```go
+func ResetDisableAutomatedRotation()
+```
+
 ##### `ResetDisableEscaping` <a name="ResetDisableEscaping" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.resetDisableEscaping"></a>
 
 ```go
@@ -18876,6 +21582,24 @@ func ResetPrivateKey()
 
 ```go
 func ResetRootRotationStatements()
+```
+
+##### `ResetRotationPeriod` <a name="ResetRotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.resetRotationPeriod"></a>
+
+```go
+func ResetRotationPeriod()
+```
+
+##### `ResetRotationSchedule` <a name="ResetRotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.resetRotationSchedule"></a>
+
+```go
+func ResetRotationSchedule()
+```
+
+##### `ResetRotationWindow` <a name="ResetRotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.resetRotationWindow"></a>
+
+```go
+func ResetRotationWindow()
 ```
 
 ##### `ResetSelfManaged` <a name="ResetSelfManaged" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.resetSelfManaged"></a>
@@ -18931,6 +21655,7 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.authTypeInput">AuthTypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.connectionUrlInput">ConnectionUrlInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.dataInput">DataInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.disableEscapingInput">DisableEscapingInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.maxConnectionLifetimeInput">MaxConnectionLifetimeInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.maxIdleConnectionsInput">MaxIdleConnectionsInput</a></code> | <code>*f64</code> | *No description.* |
@@ -18941,6 +21666,9 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.pluginNameInput">PluginNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.privateKeyInput">PrivateKeyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.rootRotationStatementsInput">RootRotationStatementsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.rotationPeriodInput">RotationPeriodInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.rotationScheduleInput">RotationScheduleInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.rotationWindowInput">RotationWindowInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.selfManagedInput">SelfManagedInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.serviceAccountJsonInput">ServiceAccountJsonInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.tlsCaInput">TlsCaInput</a></code> | <code>*string</code> | *No description.* |
@@ -18952,6 +21680,7 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.authType">AuthType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.connectionUrl">ConnectionUrl</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.data">Data</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.disableEscaping">DisableEscaping</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>*f64</code> | *No description.* |
@@ -18962,6 +21691,9 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.pluginName">PluginName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.privateKey">PrivateKey</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.rootRotationStatements">RootRotationStatements</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.rotationPeriod">RotationPeriod</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.rotationSchedule">RotationSchedule</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.rotationWindow">RotationWindow</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.selfManaged">SelfManaged</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.serviceAccountJson">ServiceAccountJson</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.tlsCa">TlsCa</a></code> | <code>*string</code> | *No description.* |
@@ -19034,6 +21766,16 @@ func DataInput() *map[string]*string
 ```
 
 - *Type:* *map[string]*string
+
+---
+
+##### `DisableAutomatedRotationInput`<sup>Optional</sup> <a name="DisableAutomatedRotationInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.disableAutomatedRotationInput"></a>
+
+```go
+func DisableAutomatedRotationInput() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -19134,6 +21876,36 @@ func RootRotationStatementsInput() *[]*string
 ```
 
 - *Type:* *[]*string
+
+---
+
+##### `RotationPeriodInput`<sup>Optional</sup> <a name="RotationPeriodInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.rotationPeriodInput"></a>
+
+```go
+func RotationPeriodInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `RotationScheduleInput`<sup>Optional</sup> <a name="RotationScheduleInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.rotationScheduleInput"></a>
+
+```go
+func RotationScheduleInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RotationWindowInput`<sup>Optional</sup> <a name="RotationWindowInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.rotationWindowInput"></a>
+
+```go
+func RotationWindowInput() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -19247,6 +22019,16 @@ func Data() *map[string]*string
 
 ---
 
+##### `DisableAutomatedRotation`<sup>Required</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.disableAutomatedRotation"></a>
+
+```go
+func DisableAutomatedRotation() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `DisableEscaping`<sup>Required</sup> <a name="DisableEscaping" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.disableEscaping"></a>
 
 ```go
@@ -19344,6 +22126,36 @@ func RootRotationStatements() *[]*string
 ```
 
 - *Type:* *[]*string
+
+---
+
+##### `RotationPeriod`<sup>Required</sup> <a name="RotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.rotationPeriod"></a>
+
+```go
+func RotationPeriod() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `RotationSchedule`<sup>Required</sup> <a name="RotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.rotationSchedule"></a>
+
+```go
+func RotationSchedule() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RotationWindow`<sup>Required</sup> <a name="RotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.rotationWindow"></a>
+
+```go
+func RotationWindow() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -19658,10 +22470,14 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.resetAllowedRoles">ResetAllowedRoles</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.resetData">ResetData</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.resetDisableAutomatedRotation">ResetDisableAutomatedRotation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.resetPassword">ResetPassword</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.resetPluginName">ResetPluginName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.resetRootRotationStatements">ResetRootRotationStatements</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.resetRotationPeriod">ResetRotationPeriod</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.resetRotationSchedule">ResetRotationSchedule</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.resetRotationWindow">ResetRotationWindow</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.resetUsername">ResetUsername</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.resetVerifyConnection">ResetVerifyConnection</a></code> | *No description.* |
 
@@ -19829,6 +22645,12 @@ func ResetAllowedRoles()
 func ResetData()
 ```
 
+##### `ResetDisableAutomatedRotation` <a name="ResetDisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.resetDisableAutomatedRotation"></a>
+
+```go
+func ResetDisableAutomatedRotation()
+```
+
 ##### `ResetPassword` <a name="ResetPassword" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.resetPassword"></a>
 
 ```go
@@ -19853,6 +22675,24 @@ func ResetRegion()
 func ResetRootRotationStatements()
 ```
 
+##### `ResetRotationPeriod` <a name="ResetRotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.resetRotationPeriod"></a>
+
+```go
+func ResetRotationPeriod()
+```
+
+##### `ResetRotationSchedule` <a name="ResetRotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.resetRotationSchedule"></a>
+
+```go
+func ResetRotationSchedule()
+```
+
+##### `ResetRotationWindow` <a name="ResetRotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.resetRotationWindow"></a>
+
+```go
+func ResetRotationWindow()
+```
+
 ##### `ResetUsername` <a name="ResetUsername" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.resetUsername"></a>
 
 ```go
@@ -19874,21 +22714,29 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.allowedRolesInput">AllowedRolesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.dataInput">DataInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.passwordInput">PasswordInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.pluginNameInput">PluginNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.rootRotationStatementsInput">RootRotationStatementsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.rotationPeriodInput">RotationPeriodInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.rotationScheduleInput">RotationScheduleInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.rotationWindowInput">RotationWindowInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.urlInput">UrlInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.usernameInput">UsernameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.allowedRoles">AllowedRoles</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.data">Data</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.password">Password</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.pluginName">PluginName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.rootRotationStatements">RootRotationStatements</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.rotationPeriod">RotationPeriod</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.rotationSchedule">RotationSchedule</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.rotationWindow">RotationWindow</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.url">Url</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.username">Username</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>interface{}</code> | *No description.* |
@@ -19937,6 +22785,16 @@ func DataInput() *map[string]*string
 ```
 
 - *Type:* *map[string]*string
+
+---
+
+##### `DisableAutomatedRotationInput`<sup>Optional</sup> <a name="DisableAutomatedRotationInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.disableAutomatedRotationInput"></a>
+
+```go
+func DisableAutomatedRotationInput() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -19990,6 +22848,36 @@ func RootRotationStatementsInput() *[]*string
 
 ---
 
+##### `RotationPeriodInput`<sup>Optional</sup> <a name="RotationPeriodInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.rotationPeriodInput"></a>
+
+```go
+func RotationPeriodInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `RotationScheduleInput`<sup>Optional</sup> <a name="RotationScheduleInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.rotationScheduleInput"></a>
+
+```go
+func RotationScheduleInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RotationWindowInput`<sup>Optional</sup> <a name="RotationWindowInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.rotationWindowInput"></a>
+
+```go
+func RotationWindowInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `UrlInput`<sup>Optional</sup> <a name="UrlInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.urlInput"></a>
 
 ```go
@@ -20040,6 +22928,16 @@ func Data() *map[string]*string
 
 ---
 
+##### `DisableAutomatedRotation`<sup>Required</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.disableAutomatedRotation"></a>
+
+```go
+func DisableAutomatedRotation() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.name"></a>
 
 ```go
@@ -20087,6 +22985,36 @@ func RootRotationStatements() *[]*string
 ```
 
 - *Type:* *[]*string
+
+---
+
+##### `RotationPeriod`<sup>Required</sup> <a name="RotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.rotationPeriod"></a>
+
+```go
+func RotationPeriod() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `RotationSchedule`<sup>Required</sup> <a name="RotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.rotationSchedule"></a>
+
+```go
+func RotationSchedule() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RotationWindow`<sup>Required</sup> <a name="RotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.rotationWindow"></a>
+
+```go
+func RotationWindow() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -20362,10 +23290,14 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.resetAllowedRoles">ResetAllowedRoles</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.resetCaCert">ResetCaCert</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.resetData">ResetData</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.resetDisableAutomatedRotation">ResetDisableAutomatedRotation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.resetInsecureTls">ResetInsecureTls</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.resetPluginName">ResetPluginName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.resetPort">ResetPort</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.resetRootRotationStatements">ResetRootRotationStatements</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.resetRotationPeriod">ResetRotationPeriod</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.resetRotationSchedule">ResetRotationSchedule</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.resetRotationWindow">ResetRotationWindow</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.resetTls">ResetTls</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.resetVerifyConnection">ResetVerifyConnection</a></code> | *No description.* |
 
@@ -20539,6 +23471,12 @@ func ResetCaCert()
 func ResetData()
 ```
 
+##### `ResetDisableAutomatedRotation` <a name="ResetDisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.resetDisableAutomatedRotation"></a>
+
+```go
+func ResetDisableAutomatedRotation()
+```
+
 ##### `ResetInsecureTls` <a name="ResetInsecureTls" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.resetInsecureTls"></a>
 
 ```go
@@ -20563,6 +23501,24 @@ func ResetPort()
 func ResetRootRotationStatements()
 ```
 
+##### `ResetRotationPeriod` <a name="ResetRotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.resetRotationPeriod"></a>
+
+```go
+func ResetRotationPeriod()
+```
+
+##### `ResetRotationSchedule` <a name="ResetRotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.resetRotationSchedule"></a>
+
+```go
+func ResetRotationSchedule()
+```
+
+##### `ResetRotationWindow` <a name="ResetRotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.resetRotationWindow"></a>
+
+```go
+func ResetRotationWindow()
+```
+
 ##### `ResetTls` <a name="ResetTls" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.resetTls"></a>
 
 ```go
@@ -20585,6 +23541,7 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.allowedRolesInput">AllowedRolesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.caCertInput">CaCertInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.dataInput">DataInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.hostInput">HostInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.insecureTlsInput">InsecureTlsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
@@ -20592,12 +23549,16 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.pluginNameInput">PluginNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.portInput">PortInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.rootRotationStatementsInput">RootRotationStatementsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.rotationPeriodInput">RotationPeriodInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.rotationScheduleInput">RotationScheduleInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.rotationWindowInput">RotationWindowInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.tlsInput">TlsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.usernameInput">UsernameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.allowedRoles">AllowedRoles</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.caCert">CaCert</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.data">Data</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.host">Host</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.insecureTls">InsecureTls</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
@@ -20605,6 +23566,9 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.pluginName">PluginName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.port">Port</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.rootRotationStatements">RootRotationStatements</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.rotationPeriod">RotationPeriod</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.rotationSchedule">RotationSchedule</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.rotationWindow">RotationWindow</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.tls">Tls</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.username">Username</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>interface{}</code> | *No description.* |
@@ -20663,6 +23627,16 @@ func DataInput() *map[string]*string
 ```
 
 - *Type:* *map[string]*string
+
+---
+
+##### `DisableAutomatedRotationInput`<sup>Optional</sup> <a name="DisableAutomatedRotationInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.disableAutomatedRotationInput"></a>
+
+```go
+func DisableAutomatedRotationInput() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -20736,6 +23710,36 @@ func RootRotationStatementsInput() *[]*string
 
 ---
 
+##### `RotationPeriodInput`<sup>Optional</sup> <a name="RotationPeriodInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.rotationPeriodInput"></a>
+
+```go
+func RotationPeriodInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `RotationScheduleInput`<sup>Optional</sup> <a name="RotationScheduleInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.rotationScheduleInput"></a>
+
+```go
+func RotationScheduleInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RotationWindowInput`<sup>Optional</sup> <a name="RotationWindowInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.rotationWindowInput"></a>
+
+```go
+func RotationWindowInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `TlsInput`<sup>Optional</sup> <a name="TlsInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.tlsInput"></a>
 
 ```go
@@ -20793,6 +23797,16 @@ func Data() *map[string]*string
 ```
 
 - *Type:* *map[string]*string
+
+---
+
+##### `DisableAutomatedRotation`<sup>Required</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.disableAutomatedRotation"></a>
+
+```go
+func DisableAutomatedRotation() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -20863,6 +23877,36 @@ func RootRotationStatements() *[]*string
 ```
 
 - *Type:* *[]*string
+
+---
+
+##### `RotationPeriod`<sup>Required</sup> <a name="RotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.rotationPeriod"></a>
+
+```go
+func RotationPeriod() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `RotationSchedule`<sup>Required</sup> <a name="RotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.rotationSchedule"></a>
+
+```go
+func RotationSchedule() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RotationWindow`<sup>Required</sup> <a name="RotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.rotationWindow"></a>
+
+```go
+func RotationWindow() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -21138,6 +24182,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.resetAllowedRoles">ResetAllowedRoles</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.resetConnectionUrl">ResetConnectionUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.resetData">ResetData</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.resetDisableAutomatedRotation">ResetDisableAutomatedRotation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.resetDisableEscaping">ResetDisableEscaping</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.resetMaxConnectionLifetime">ResetMaxConnectionLifetime</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.resetMaxIdleConnections">ResetMaxIdleConnections</a></code> | *No description.* |
@@ -21145,6 +24190,9 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.resetPassword">ResetPassword</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.resetPluginName">ResetPluginName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.resetRootRotationStatements">ResetRootRotationStatements</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.resetRotationPeriod">ResetRotationPeriod</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.resetRotationSchedule">ResetRotationSchedule</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.resetRotationWindow">ResetRotationWindow</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.resetUsername">ResetUsername</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.resetUsernameTemplate">ResetUsernameTemplate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.resetVerifyConnection">ResetVerifyConnection</a></code> | *No description.* |
@@ -21319,6 +24367,12 @@ func ResetConnectionUrl()
 func ResetData()
 ```
 
+##### `ResetDisableAutomatedRotation` <a name="ResetDisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.resetDisableAutomatedRotation"></a>
+
+```go
+func ResetDisableAutomatedRotation()
+```
+
 ##### `ResetDisableEscaping` <a name="ResetDisableEscaping" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.resetDisableEscaping"></a>
 
 ```go
@@ -21361,6 +24415,24 @@ func ResetPluginName()
 func ResetRootRotationStatements()
 ```
 
+##### `ResetRotationPeriod` <a name="ResetRotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.resetRotationPeriod"></a>
+
+```go
+func ResetRotationPeriod()
+```
+
+##### `ResetRotationSchedule` <a name="ResetRotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.resetRotationSchedule"></a>
+
+```go
+func ResetRotationSchedule()
+```
+
+##### `ResetRotationWindow` <a name="ResetRotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.resetRotationWindow"></a>
+
+```go
+func ResetRotationWindow()
+```
+
 ##### `ResetUsername` <a name="ResetUsername" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.resetUsername"></a>
 
 ```go
@@ -21389,6 +24461,7 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.allowedRolesInput">AllowedRolesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.connectionUrlInput">ConnectionUrlInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.dataInput">DataInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.disableEscapingInput">DisableEscapingInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.maxConnectionLifetimeInput">MaxConnectionLifetimeInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.maxIdleConnectionsInput">MaxIdleConnectionsInput</a></code> | <code>*f64</code> | *No description.* |
@@ -21397,12 +24470,16 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.passwordInput">PasswordInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.pluginNameInput">PluginNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.rootRotationStatementsInput">RootRotationStatementsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.rotationPeriodInput">RotationPeriodInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.rotationScheduleInput">RotationScheduleInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.rotationWindowInput">RotationWindowInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.usernameInput">UsernameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.usernameTemplateInput">UsernameTemplateInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.allowedRoles">AllowedRoles</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.connectionUrl">ConnectionUrl</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.data">Data</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.disableEscaping">DisableEscaping</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>*f64</code> | *No description.* |
@@ -21411,6 +24488,9 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.password">Password</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.pluginName">PluginName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.rootRotationStatements">RootRotationStatements</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.rotationPeriod">RotationPeriod</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.rotationSchedule">RotationSchedule</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.rotationWindow">RotationWindow</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.username">Username</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.usernameTemplate">UsernameTemplate</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>interface{}</code> | *No description.* |
@@ -21469,6 +24549,16 @@ func DataInput() *map[string]*string
 ```
 
 - *Type:* *map[string]*string
+
+---
+
+##### `DisableAutomatedRotationInput`<sup>Optional</sup> <a name="DisableAutomatedRotationInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.disableAutomatedRotationInput"></a>
+
+```go
+func DisableAutomatedRotationInput() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -21552,6 +24642,36 @@ func RootRotationStatementsInput() *[]*string
 
 ---
 
+##### `RotationPeriodInput`<sup>Optional</sup> <a name="RotationPeriodInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.rotationPeriodInput"></a>
+
+```go
+func RotationPeriodInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `RotationScheduleInput`<sup>Optional</sup> <a name="RotationScheduleInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.rotationScheduleInput"></a>
+
+```go
+func RotationScheduleInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RotationWindowInput`<sup>Optional</sup> <a name="RotationWindowInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.rotationWindowInput"></a>
+
+```go
+func RotationWindowInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `UsernameInput`<sup>Optional</sup> <a name="UsernameInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.usernameInput"></a>
 
 ```go
@@ -21609,6 +24729,16 @@ func Data() *map[string]*string
 ```
 
 - *Type:* *map[string]*string
+
+---
+
+##### `DisableAutomatedRotation`<sup>Required</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.disableAutomatedRotation"></a>
+
+```go
+func DisableAutomatedRotation() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -21689,6 +24819,36 @@ func RootRotationStatements() *[]*string
 ```
 
 - *Type:* *[]*string
+
+---
+
+##### `RotationPeriod`<sup>Required</sup> <a name="RotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.rotationPeriod"></a>
+
+```go
+func RotationPeriod() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `RotationSchedule`<sup>Required</sup> <a name="RotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.rotationSchedule"></a>
+
+```go
+func RotationSchedule() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RotationWindow`<sup>Required</sup> <a name="RotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.rotationWindow"></a>
+
+```go
+func RotationWindow() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -21964,12 +25124,16 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.resetAllowedRoles">ResetAllowedRoles</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.resetConnectionUrl">ResetConnectionUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.resetData">ResetData</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.resetDisableAutomatedRotation">ResetDisableAutomatedRotation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.resetMaxConnectionLifetime">ResetMaxConnectionLifetime</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.resetMaxIdleConnections">ResetMaxIdleConnections</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.resetMaxOpenConnections">ResetMaxOpenConnections</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.resetPassword">ResetPassword</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.resetPluginName">ResetPluginName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.resetRootRotationStatements">ResetRootRotationStatements</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.resetRotationPeriod">ResetRotationPeriod</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.resetRotationSchedule">ResetRotationSchedule</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.resetRotationWindow">ResetRotationWindow</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.resetUsername">ResetUsername</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.resetUsernameTemplate">ResetUsernameTemplate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.resetVerifyConnection">ResetVerifyConnection</a></code> | *No description.* |
@@ -22144,6 +25308,12 @@ func ResetConnectionUrl()
 func ResetData()
 ```
 
+##### `ResetDisableAutomatedRotation` <a name="ResetDisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.resetDisableAutomatedRotation"></a>
+
+```go
+func ResetDisableAutomatedRotation()
+```
+
 ##### `ResetMaxConnectionLifetime` <a name="ResetMaxConnectionLifetime" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.resetMaxConnectionLifetime"></a>
 
 ```go
@@ -22180,6 +25350,24 @@ func ResetPluginName()
 func ResetRootRotationStatements()
 ```
 
+##### `ResetRotationPeriod` <a name="ResetRotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.resetRotationPeriod"></a>
+
+```go
+func ResetRotationPeriod()
+```
+
+##### `ResetRotationSchedule` <a name="ResetRotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.resetRotationSchedule"></a>
+
+```go
+func ResetRotationSchedule()
+```
+
+##### `ResetRotationWindow` <a name="ResetRotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.resetRotationWindow"></a>
+
+```go
+func ResetRotationWindow()
+```
+
 ##### `ResetUsername` <a name="ResetUsername" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.resetUsername"></a>
 
 ```go
@@ -22208,6 +25396,7 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.allowedRolesInput">AllowedRolesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.connectionUrlInput">ConnectionUrlInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.dataInput">DataInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.maxConnectionLifetimeInput">MaxConnectionLifetimeInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.maxIdleConnectionsInput">MaxIdleConnectionsInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.maxOpenConnectionsInput">MaxOpenConnectionsInput</a></code> | <code>*f64</code> | *No description.* |
@@ -22215,12 +25404,16 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.passwordInput">PasswordInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.pluginNameInput">PluginNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.rootRotationStatementsInput">RootRotationStatementsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.rotationPeriodInput">RotationPeriodInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.rotationScheduleInput">RotationScheduleInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.rotationWindowInput">RotationWindowInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.usernameInput">UsernameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.usernameTemplateInput">UsernameTemplateInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.allowedRoles">AllowedRoles</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.connectionUrl">ConnectionUrl</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.data">Data</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.maxOpenConnections">MaxOpenConnections</a></code> | <code>*f64</code> | *No description.* |
@@ -22228,6 +25421,9 @@ func ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.password">Password</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.pluginName">PluginName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.rootRotationStatements">RootRotationStatements</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.rotationPeriod">RotationPeriod</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.rotationSchedule">RotationSchedule</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.rotationWindow">RotationWindow</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.username">Username</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.usernameTemplate">UsernameTemplate</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>interface{}</code> | *No description.* |
@@ -22286,6 +25482,16 @@ func DataInput() *map[string]*string
 ```
 
 - *Type:* *map[string]*string
+
+---
+
+##### `DisableAutomatedRotationInput`<sup>Optional</sup> <a name="DisableAutomatedRotationInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.disableAutomatedRotationInput"></a>
+
+```go
+func DisableAutomatedRotationInput() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -22359,6 +25565,36 @@ func RootRotationStatementsInput() *[]*string
 
 ---
 
+##### `RotationPeriodInput`<sup>Optional</sup> <a name="RotationPeriodInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.rotationPeriodInput"></a>
+
+```go
+func RotationPeriodInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `RotationScheduleInput`<sup>Optional</sup> <a name="RotationScheduleInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.rotationScheduleInput"></a>
+
+```go
+func RotationScheduleInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RotationWindowInput`<sup>Optional</sup> <a name="RotationWindowInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.rotationWindowInput"></a>
+
+```go
+func RotationWindowInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `UsernameInput`<sup>Optional</sup> <a name="UsernameInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.usernameInput"></a>
 
 ```go
@@ -22416,6 +25652,16 @@ func Data() *map[string]*string
 ```
 
 - *Type:* *map[string]*string
+
+---
+
+##### `DisableAutomatedRotation`<sup>Required</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.disableAutomatedRotation"></a>
+
+```go
+func DisableAutomatedRotation() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -22486,6 +25732,36 @@ func RootRotationStatements() *[]*string
 ```
 
 - *Type:* *[]*string
+
+---
+
+##### `RotationPeriod`<sup>Required</sup> <a name="RotationPeriod" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.rotationPeriod"></a>
+
+```go
+func RotationPeriod() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `RotationSchedule`<sup>Required</sup> <a name="RotationSchedule" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.rotationSchedule"></a>
+
+```go
+func RotationSchedule() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RotationWindow`<sup>Required</sup> <a name="RotationWindow" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.rotationWindow"></a>
+
+```go
+func RotationWindow() *f64
+```
+
+- *Type:* *f64
 
 ---
 

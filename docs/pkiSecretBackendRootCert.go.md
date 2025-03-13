@@ -4,7 +4,7 @@
 
 ### PkiSecretBackendRootCert <a name="PkiSecretBackendRootCert" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.Initializer"></a>
 
@@ -76,6 +76,10 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.resetAltNames">ResetAltNames</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.resetCountry">ResetCountry</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.resetExcludeCnFromSans">ResetExcludeCnFromSans</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.resetExcludedDnsDomains">ResetExcludedDnsDomains</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.resetExcludedEmailAddresses">ResetExcludedEmailAddresses</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.resetExcludedIpRanges">ResetExcludedIpRanges</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.resetExcludedUriDomains">ResetExcludedUriDomains</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.resetFormat">ResetFormat</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.resetIpSans">ResetIpSans</a></code> | *No description.* |
@@ -89,13 +93,18 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.resetManagedKeyName">ResetManagedKeyName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.resetMaxPathLength">ResetMaxPathLength</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.resetNamespace">ResetNamespace</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.resetNotAfter">ResetNotAfter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.resetOrganization">ResetOrganization</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.resetOtherSans">ResetOtherSans</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.resetOu">ResetOu</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.resetPermittedDnsDomains">ResetPermittedDnsDomains</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.resetPermittedEmailAddresses">ResetPermittedEmailAddresses</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.resetPermittedIpRanges">ResetPermittedIpRanges</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.resetPermittedUriDomains">ResetPermittedUriDomains</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.resetPostalCode">ResetPostalCode</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.resetPrivateKeyFormat">ResetPrivateKeyFormat</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.resetProvince">ResetProvince</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.resetSignatureBits">ResetSignatureBits</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.resetStreetAddress">ResetStreetAddress</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.resetTtl">ResetTtl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.resetUriSans">ResetUriSans</a></code> | *No description.* |
@@ -408,6 +417,30 @@ func ResetCountry()
 func ResetExcludeCnFromSans()
 ```
 
+##### `ResetExcludedDnsDomains` <a name="ResetExcludedDnsDomains" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.resetExcludedDnsDomains"></a>
+
+```go
+func ResetExcludedDnsDomains()
+```
+
+##### `ResetExcludedEmailAddresses` <a name="ResetExcludedEmailAddresses" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.resetExcludedEmailAddresses"></a>
+
+```go
+func ResetExcludedEmailAddresses()
+```
+
+##### `ResetExcludedIpRanges` <a name="ResetExcludedIpRanges" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.resetExcludedIpRanges"></a>
+
+```go
+func ResetExcludedIpRanges()
+```
+
+##### `ResetExcludedUriDomains` <a name="ResetExcludedUriDomains" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.resetExcludedUriDomains"></a>
+
+```go
+func ResetExcludedUriDomains()
+```
+
 ##### `ResetFormat` <a name="ResetFormat" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.resetFormat"></a>
 
 ```go
@@ -486,6 +519,12 @@ func ResetMaxPathLength()
 func ResetNamespace()
 ```
 
+##### `ResetNotAfter` <a name="ResetNotAfter" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.resetNotAfter"></a>
+
+```go
+func ResetNotAfter()
+```
+
 ##### `ResetOrganization` <a name="ResetOrganization" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.resetOrganization"></a>
 
 ```go
@@ -510,6 +549,24 @@ func ResetOu()
 func ResetPermittedDnsDomains()
 ```
 
+##### `ResetPermittedEmailAddresses` <a name="ResetPermittedEmailAddresses" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.resetPermittedEmailAddresses"></a>
+
+```go
+func ResetPermittedEmailAddresses()
+```
+
+##### `ResetPermittedIpRanges` <a name="ResetPermittedIpRanges" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.resetPermittedIpRanges"></a>
+
+```go
+func ResetPermittedIpRanges()
+```
+
+##### `ResetPermittedUriDomains` <a name="ResetPermittedUriDomains" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.resetPermittedUriDomains"></a>
+
+```go
+func ResetPermittedUriDomains()
+```
+
 ##### `ResetPostalCode` <a name="ResetPostalCode" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.resetPostalCode"></a>
 
 ```go
@@ -526,6 +583,12 @@ func ResetPrivateKeyFormat()
 
 ```go
 func ResetProvince()
+```
+
+##### `ResetSignatureBits` <a name="ResetSignatureBits" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.resetSignatureBits"></a>
+
+```go
+func ResetSignatureBits()
 ```
 
 ##### `ResetStreetAddress` <a name="ResetStreetAddress" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.resetStreetAddress"></a>
@@ -649,7 +712,7 @@ The construct id used in the generated config for the PkiSecretBackendRootCert t
 
 The id of the existing PkiSecretBackendRootCert that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_root_cert#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -689,6 +752,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.commonNameInput">CommonNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.countryInput">CountryInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.excludeCnFromSansInput">ExcludeCnFromSansInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.excludedDnsDomainsInput">ExcludedDnsDomainsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.excludedEmailAddressesInput">ExcludedEmailAddressesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.excludedIpRangesInput">ExcludedIpRangesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.excludedUriDomainsInput">ExcludedUriDomainsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.formatInput">FormatInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.ipSansInput">IpSansInput</a></code> | <code>*[]*string</code> | *No description.* |
@@ -702,13 +769,18 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.managedKeyNameInput">ManagedKeyNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.maxPathLengthInput">MaxPathLengthInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.namespaceInput">NamespaceInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.notAfterInput">NotAfterInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.organizationInput">OrganizationInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.otherSansInput">OtherSansInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.ouInput">OuInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.permittedDnsDomainsInput">PermittedDnsDomainsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.permittedEmailAddressesInput">PermittedEmailAddressesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.permittedIpRangesInput">PermittedIpRangesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.permittedUriDomainsInput">PermittedUriDomainsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.postalCodeInput">PostalCodeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.privateKeyFormatInput">PrivateKeyFormatInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.provinceInput">ProvinceInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.signatureBitsInput">SignatureBitsInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.streetAddressInput">StreetAddressInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.ttlInput">TtlInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
@@ -718,6 +790,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.commonName">CommonName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.country">Country</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.excludeCnFromSans">ExcludeCnFromSans</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.excludedDnsDomains">ExcludedDnsDomains</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.excludedEmailAddresses">ExcludedEmailAddresses</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.excludedIpRanges">ExcludedIpRanges</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.excludedUriDomains">ExcludedUriDomains</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.format">Format</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.ipSans">IpSans</a></code> | <code>*[]*string</code> | *No description.* |
@@ -731,13 +807,18 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.managedKeyName">ManagedKeyName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.maxPathLength">MaxPathLength</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.namespace">Namespace</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.notAfter">NotAfter</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.organization">Organization</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.otherSans">OtherSans</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.ou">Ou</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.permittedDnsDomains">PermittedDnsDomains</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.permittedEmailAddresses">PermittedEmailAddresses</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.permittedIpRanges">PermittedIpRanges</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.permittedUriDomains">PermittedUriDomains</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.postalCode">PostalCode</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.privateKeyFormat">PrivateKeyFormat</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.province">Province</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.signatureBits">SignatureBits</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.streetAddress">StreetAddress</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.ttl">Ttl</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.type">Type</a></code> | <code>*string</code> | *No description.* |
@@ -987,6 +1068,46 @@ func ExcludeCnFromSansInput() interface{}
 
 ---
 
+##### `ExcludedDnsDomainsInput`<sup>Optional</sup> <a name="ExcludedDnsDomainsInput" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.excludedDnsDomainsInput"></a>
+
+```go
+func ExcludedDnsDomainsInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `ExcludedEmailAddressesInput`<sup>Optional</sup> <a name="ExcludedEmailAddressesInput" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.excludedEmailAddressesInput"></a>
+
+```go
+func ExcludedEmailAddressesInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `ExcludedIpRangesInput`<sup>Optional</sup> <a name="ExcludedIpRangesInput" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.excludedIpRangesInput"></a>
+
+```go
+func ExcludedIpRangesInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `ExcludedUriDomainsInput`<sup>Optional</sup> <a name="ExcludedUriDomainsInput" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.excludedUriDomainsInput"></a>
+
+```go
+func ExcludedUriDomainsInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
 ##### `FormatInput`<sup>Optional</sup> <a name="FormatInput" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.formatInput"></a>
 
 ```go
@@ -1117,6 +1238,16 @@ func NamespaceInput() *string
 
 ---
 
+##### `NotAfterInput`<sup>Optional</sup> <a name="NotAfterInput" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.notAfterInput"></a>
+
+```go
+func NotAfterInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `OrganizationInput`<sup>Optional</sup> <a name="OrganizationInput" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.organizationInput"></a>
 
 ```go
@@ -1157,6 +1288,36 @@ func PermittedDnsDomainsInput() *[]*string
 
 ---
 
+##### `PermittedEmailAddressesInput`<sup>Optional</sup> <a name="PermittedEmailAddressesInput" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.permittedEmailAddressesInput"></a>
+
+```go
+func PermittedEmailAddressesInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `PermittedIpRangesInput`<sup>Optional</sup> <a name="PermittedIpRangesInput" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.permittedIpRangesInput"></a>
+
+```go
+func PermittedIpRangesInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `PermittedUriDomainsInput`<sup>Optional</sup> <a name="PermittedUriDomainsInput" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.permittedUriDomainsInput"></a>
+
+```go
+func PermittedUriDomainsInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
 ##### `PostalCodeInput`<sup>Optional</sup> <a name="PostalCodeInput" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.postalCodeInput"></a>
 
 ```go
@@ -1184,6 +1345,16 @@ func ProvinceInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `SignatureBitsInput`<sup>Optional</sup> <a name="SignatureBitsInput" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.signatureBitsInput"></a>
+
+```go
+func SignatureBitsInput() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -1274,6 +1445,46 @@ func ExcludeCnFromSans() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `ExcludedDnsDomains`<sup>Required</sup> <a name="ExcludedDnsDomains" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.excludedDnsDomains"></a>
+
+```go
+func ExcludedDnsDomains() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `ExcludedEmailAddresses`<sup>Required</sup> <a name="ExcludedEmailAddresses" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.excludedEmailAddresses"></a>
+
+```go
+func ExcludedEmailAddresses() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `ExcludedIpRanges`<sup>Required</sup> <a name="ExcludedIpRanges" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.excludedIpRanges"></a>
+
+```go
+func ExcludedIpRanges() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `ExcludedUriDomains`<sup>Required</sup> <a name="ExcludedUriDomains" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.excludedUriDomains"></a>
+
+```go
+func ExcludedUriDomains() *[]*string
+```
+
+- *Type:* *[]*string
 
 ---
 
@@ -1407,6 +1618,16 @@ func Namespace() *string
 
 ---
 
+##### `NotAfter`<sup>Required</sup> <a name="NotAfter" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.notAfter"></a>
+
+```go
+func NotAfter() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Organization`<sup>Required</sup> <a name="Organization" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.organization"></a>
 
 ```go
@@ -1447,6 +1668,36 @@ func PermittedDnsDomains() *[]*string
 
 ---
 
+##### `PermittedEmailAddresses`<sup>Required</sup> <a name="PermittedEmailAddresses" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.permittedEmailAddresses"></a>
+
+```go
+func PermittedEmailAddresses() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `PermittedIpRanges`<sup>Required</sup> <a name="PermittedIpRanges" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.permittedIpRanges"></a>
+
+```go
+func PermittedIpRanges() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `PermittedUriDomains`<sup>Required</sup> <a name="PermittedUriDomains" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.permittedUriDomains"></a>
+
+```go
+func PermittedUriDomains() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
 ##### `PostalCode`<sup>Required</sup> <a name="PostalCode" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.postalCode"></a>
 
 ```go
@@ -1474,6 +1725,16 @@ func Province() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `SignatureBits`<sup>Required</sup> <a name="SignatureBits" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCert.property.signatureBits"></a>
+
+```go
+func SignatureBits() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -1558,6 +1819,10 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/pkisecretbackendrootc
 	AltNames: *[]*string,
 	Country: *string,
 	ExcludeCnFromSans: interface{},
+	ExcludedDnsDomains: *[]*string,
+	ExcludedEmailAddresses: *[]*string,
+	ExcludedIpRanges: *[]*string,
+	ExcludedUriDomains: *[]*string,
 	Format: *string,
 	Id: *string,
 	IpSans: *[]*string,
@@ -1571,13 +1836,18 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/pkisecretbackendrootc
 	ManagedKeyName: *string,
 	MaxPathLength: *f64,
 	Namespace: *string,
+	NotAfter: *string,
 	Organization: *string,
 	OtherSans: *[]*string,
 	Ou: *string,
 	PermittedDnsDomains: *[]*string,
+	PermittedEmailAddresses: *[]*string,
+	PermittedIpRanges: *[]*string,
+	PermittedUriDomains: *[]*string,
 	PostalCode: *string,
 	PrivateKeyFormat: *string,
 	Province: *string,
+	SignatureBits: *f64,
 	StreetAddress: *string,
 	Ttl: *string,
 	UriSans: *[]*string,
@@ -1601,8 +1871,12 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/pkisecretbackendrootc
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCertConfig.property.altNames">AltNames</a></code> | <code>*[]*string</code> | List of alternative names. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCertConfig.property.country">Country</a></code> | <code>*string</code> | The country. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCertConfig.property.excludeCnFromSans">ExcludeCnFromSans</a></code> | <code>interface{}</code> | Flag to exclude CN from SANs. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCertConfig.property.excludedDnsDomains">ExcludedDnsDomains</a></code> | <code>*[]*string</code> | List of domains for which certificates are not allowed to be issued. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCertConfig.property.excludedEmailAddresses">ExcludedEmailAddresses</a></code> | <code>*[]*string</code> | List of email addresses for which certificates are not allowed to be issued. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCertConfig.property.excludedIpRanges">ExcludedIpRanges</a></code> | <code>*[]*string</code> | List of IP ranges for which certificates are not allowed to be issued. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCertConfig.property.excludedUriDomains">ExcludedUriDomains</a></code> | <code>*[]*string</code> | List of URI domains for which certificates are not allowed to be issued. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCertConfig.property.format">Format</a></code> | <code>*string</code> | The format of data. |
-| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCertConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_root_cert#id PkiSecretBackendRootCert#id}. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCertConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert#id PkiSecretBackendRootCert#id}. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCertConfig.property.ipSans">IpSans</a></code> | <code>*[]*string</code> | List of alternative IPs. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCertConfig.property.issuerName">IssuerName</a></code> | <code>*string</code> | Provides a name to the specified issuer. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCertConfig.property.keyBits">KeyBits</a></code> | <code>*f64</code> | The number of bits to use. |
@@ -1614,13 +1888,18 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/pkisecretbackendrootc
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCertConfig.property.managedKeyName">ManagedKeyName</a></code> | <code>*string</code> | The name of the previously configured managed key. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCertConfig.property.maxPathLength">MaxPathLength</a></code> | <code>*f64</code> | The maximum path length to encode in the generated certificate. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCertConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCertConfig.property.notAfter">NotAfter</a></code> | <code>*string</code> | Set the Not After field of the certificate with specified date value. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCertConfig.property.organization">Organization</a></code> | <code>*string</code> | The organization. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCertConfig.property.otherSans">OtherSans</a></code> | <code>*[]*string</code> | List of other SANs. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCertConfig.property.ou">Ou</a></code> | <code>*string</code> | The organization unit. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCertConfig.property.permittedDnsDomains">PermittedDnsDomains</a></code> | <code>*[]*string</code> | List of domains for which certificates are allowed to be issued. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCertConfig.property.permittedEmailAddresses">PermittedEmailAddresses</a></code> | <code>*[]*string</code> | List of email addresses for which certificates are allowed to be issued. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCertConfig.property.permittedIpRanges">PermittedIpRanges</a></code> | <code>*[]*string</code> | List of IP ranges for which certificates are allowed to be issued. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCertConfig.property.permittedUriDomains">PermittedUriDomains</a></code> | <code>*[]*string</code> | List of URI domains for which certificates are allowed to be issued. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCertConfig.property.postalCode">PostalCode</a></code> | <code>*string</code> | The postal code. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCertConfig.property.privateKeyFormat">PrivateKeyFormat</a></code> | <code>*string</code> | The private key format. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCertConfig.property.province">Province</a></code> | <code>*string</code> | The province. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCertConfig.property.signatureBits">SignatureBits</a></code> | <code>*f64</code> | The number of bits to use in the signature algorithm. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCertConfig.property.streetAddress">StreetAddress</a></code> | <code>*string</code> | The street address. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCertConfig.property.ttl">Ttl</a></code> | <code>*string</code> | Time to live. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCertConfig.property.uriSans">UriSans</a></code> | <code>*[]*string</code> | List of alternative URIs. |
@@ -1707,7 +1986,7 @@ Backend *string
 
 The PKI secret backend the resource belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_root_cert#backend PkiSecretBackendRootCert#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert#backend PkiSecretBackendRootCert#backend}
 
 ---
 
@@ -1721,7 +2000,7 @@ CommonName *string
 
 CN of root to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_root_cert#common_name PkiSecretBackendRootCert#common_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert#common_name PkiSecretBackendRootCert#common_name}
 
 ---
 
@@ -1735,7 +2014,7 @@ Type *string
 
 Type of root to create. Must be either "existing", "exported", "internal" or "kms".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_root_cert#type PkiSecretBackendRootCert#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert#type PkiSecretBackendRootCert#type}
 
 ---
 
@@ -1749,7 +2028,7 @@ AltNames *[]*string
 
 List of alternative names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_root_cert#alt_names PkiSecretBackendRootCert#alt_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert#alt_names PkiSecretBackendRootCert#alt_names}
 
 ---
 
@@ -1763,7 +2042,7 @@ Country *string
 
 The country.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_root_cert#country PkiSecretBackendRootCert#country}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert#country PkiSecretBackendRootCert#country}
 
 ---
 
@@ -1777,7 +2056,63 @@ ExcludeCnFromSans interface{}
 
 Flag to exclude CN from SANs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_root_cert#exclude_cn_from_sans PkiSecretBackendRootCert#exclude_cn_from_sans}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert#exclude_cn_from_sans PkiSecretBackendRootCert#exclude_cn_from_sans}
+
+---
+
+##### `ExcludedDnsDomains`<sup>Optional</sup> <a name="ExcludedDnsDomains" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCertConfig.property.excludedDnsDomains"></a>
+
+```go
+ExcludedDnsDomains *[]*string
+```
+
+- *Type:* *[]*string
+
+List of domains for which certificates are not allowed to be issued.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert#excluded_dns_domains PkiSecretBackendRootCert#excluded_dns_domains}
+
+---
+
+##### `ExcludedEmailAddresses`<sup>Optional</sup> <a name="ExcludedEmailAddresses" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCertConfig.property.excludedEmailAddresses"></a>
+
+```go
+ExcludedEmailAddresses *[]*string
+```
+
+- *Type:* *[]*string
+
+List of email addresses for which certificates are not allowed to be issued.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert#excluded_email_addresses PkiSecretBackendRootCert#excluded_email_addresses}
+
+---
+
+##### `ExcludedIpRanges`<sup>Optional</sup> <a name="ExcludedIpRanges" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCertConfig.property.excludedIpRanges"></a>
+
+```go
+ExcludedIpRanges *[]*string
+```
+
+- *Type:* *[]*string
+
+List of IP ranges for which certificates are not allowed to be issued.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert#excluded_ip_ranges PkiSecretBackendRootCert#excluded_ip_ranges}
+
+---
+
+##### `ExcludedUriDomains`<sup>Optional</sup> <a name="ExcludedUriDomains" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCertConfig.property.excludedUriDomains"></a>
+
+```go
+ExcludedUriDomains *[]*string
+```
+
+- *Type:* *[]*string
+
+List of URI domains for which certificates are not allowed to be issued.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert#excluded_uri_domains PkiSecretBackendRootCert#excluded_uri_domains}
 
 ---
 
@@ -1791,7 +2126,7 @@ Format *string
 
 The format of data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_root_cert#format PkiSecretBackendRootCert#format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert#format PkiSecretBackendRootCert#format}
 
 ---
 
@@ -1803,7 +2138,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_root_cert#id PkiSecretBackendRootCert#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert#id PkiSecretBackendRootCert#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1820,7 +2155,7 @@ IpSans *[]*string
 
 List of alternative IPs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_root_cert#ip_sans PkiSecretBackendRootCert#ip_sans}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert#ip_sans PkiSecretBackendRootCert#ip_sans}
 
 ---
 
@@ -1836,7 +2171,7 @@ Provides a name to the specified issuer.
 
 The name must be unique across all issuers and not be the reserved value 'default'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_root_cert#issuer_name PkiSecretBackendRootCert#issuer_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert#issuer_name PkiSecretBackendRootCert#issuer_name}
 
 ---
 
@@ -1850,7 +2185,7 @@ KeyBits *f64
 
 The number of bits to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_root_cert#key_bits PkiSecretBackendRootCert#key_bits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert#key_bits PkiSecretBackendRootCert#key_bits}
 
 ---
 
@@ -1864,7 +2199,7 @@ KeyName *string
 
 When a new key is created with this request, optionally specifies the name for this.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_root_cert#key_name PkiSecretBackendRootCert#key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert#key_name PkiSecretBackendRootCert#key_name}
 
 ---
 
@@ -1878,7 +2213,7 @@ KeyRef *string
 
 Specifies the key to use for generating this request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_root_cert#key_ref PkiSecretBackendRootCert#key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert#key_ref PkiSecretBackendRootCert#key_ref}
 
 ---
 
@@ -1892,7 +2227,7 @@ KeyType *string
 
 The desired key type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_root_cert#key_type PkiSecretBackendRootCert#key_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert#key_type PkiSecretBackendRootCert#key_type}
 
 ---
 
@@ -1906,7 +2241,7 @@ Locality *string
 
 The locality.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_root_cert#locality PkiSecretBackendRootCert#locality}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert#locality PkiSecretBackendRootCert#locality}
 
 ---
 
@@ -1920,7 +2255,7 @@ ManagedKeyId *string
 
 The ID of the previously configured managed key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_root_cert#managed_key_id PkiSecretBackendRootCert#managed_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert#managed_key_id PkiSecretBackendRootCert#managed_key_id}
 
 ---
 
@@ -1934,7 +2269,7 @@ ManagedKeyName *string
 
 The name of the previously configured managed key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_root_cert#managed_key_name PkiSecretBackendRootCert#managed_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert#managed_key_name PkiSecretBackendRootCert#managed_key_name}
 
 ---
 
@@ -1948,7 +2283,7 @@ MaxPathLength *f64
 
 The maximum path length to encode in the generated certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_root_cert#max_path_length PkiSecretBackendRootCert#max_path_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert#max_path_length PkiSecretBackendRootCert#max_path_length}
 
 ---
 
@@ -1962,7 +2297,23 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_root_cert#namespace PkiSecretBackendRootCert#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert#namespace PkiSecretBackendRootCert#namespace}
+
+---
+
+##### `NotAfter`<sup>Optional</sup> <a name="NotAfter" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCertConfig.property.notAfter"></a>
+
+```go
+NotAfter *string
+```
+
+- *Type:* *string
+
+Set the Not After field of the certificate with specified date value.
+
+The value format should be given in UTC format YYYY-MM-ddTHH:MM:SSZ. Supports the Y10K end date for IEEE 802.1AR-2018 standard devices, 9999-12-31T23:59:59Z.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert#not_after PkiSecretBackendRootCert#not_after}
 
 ---
 
@@ -1976,7 +2327,7 @@ Organization *string
 
 The organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_root_cert#organization PkiSecretBackendRootCert#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert#organization PkiSecretBackendRootCert#organization}
 
 ---
 
@@ -1990,7 +2341,7 @@ OtherSans *[]*string
 
 List of other SANs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_root_cert#other_sans PkiSecretBackendRootCert#other_sans}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert#other_sans PkiSecretBackendRootCert#other_sans}
 
 ---
 
@@ -2004,7 +2355,7 @@ Ou *string
 
 The organization unit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_root_cert#ou PkiSecretBackendRootCert#ou}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert#ou PkiSecretBackendRootCert#ou}
 
 ---
 
@@ -2018,7 +2369,49 @@ PermittedDnsDomains *[]*string
 
 List of domains for which certificates are allowed to be issued.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_root_cert#permitted_dns_domains PkiSecretBackendRootCert#permitted_dns_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert#permitted_dns_domains PkiSecretBackendRootCert#permitted_dns_domains}
+
+---
+
+##### `PermittedEmailAddresses`<sup>Optional</sup> <a name="PermittedEmailAddresses" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCertConfig.property.permittedEmailAddresses"></a>
+
+```go
+PermittedEmailAddresses *[]*string
+```
+
+- *Type:* *[]*string
+
+List of email addresses for which certificates are allowed to be issued.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert#permitted_email_addresses PkiSecretBackendRootCert#permitted_email_addresses}
+
+---
+
+##### `PermittedIpRanges`<sup>Optional</sup> <a name="PermittedIpRanges" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCertConfig.property.permittedIpRanges"></a>
+
+```go
+PermittedIpRanges *[]*string
+```
+
+- *Type:* *[]*string
+
+List of IP ranges for which certificates are allowed to be issued.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert#permitted_ip_ranges PkiSecretBackendRootCert#permitted_ip_ranges}
+
+---
+
+##### `PermittedUriDomains`<sup>Optional</sup> <a name="PermittedUriDomains" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCertConfig.property.permittedUriDomains"></a>
+
+```go
+PermittedUriDomains *[]*string
+```
+
+- *Type:* *[]*string
+
+List of URI domains for which certificates are allowed to be issued.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert#permitted_uri_domains PkiSecretBackendRootCert#permitted_uri_domains}
 
 ---
 
@@ -2032,7 +2425,7 @@ PostalCode *string
 
 The postal code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_root_cert#postal_code PkiSecretBackendRootCert#postal_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert#postal_code PkiSecretBackendRootCert#postal_code}
 
 ---
 
@@ -2046,7 +2439,7 @@ PrivateKeyFormat *string
 
 The private key format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_root_cert#private_key_format PkiSecretBackendRootCert#private_key_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert#private_key_format PkiSecretBackendRootCert#private_key_format}
 
 ---
 
@@ -2060,7 +2453,21 @@ Province *string
 
 The province.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_root_cert#province PkiSecretBackendRootCert#province}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert#province PkiSecretBackendRootCert#province}
+
+---
+
+##### `SignatureBits`<sup>Optional</sup> <a name="SignatureBits" id="@cdktf/provider-vault.pkiSecretBackendRootCert.PkiSecretBackendRootCertConfig.property.signatureBits"></a>
+
+```go
+SignatureBits *f64
+```
+
+- *Type:* *f64
+
+The number of bits to use in the signature algorithm.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert#signature_bits PkiSecretBackendRootCert#signature_bits}
 
 ---
 
@@ -2074,7 +2481,7 @@ StreetAddress *string
 
 The street address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_root_cert#street_address PkiSecretBackendRootCert#street_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert#street_address PkiSecretBackendRootCert#street_address}
 
 ---
 
@@ -2088,7 +2495,7 @@ Ttl *string
 
 Time to live.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_root_cert#ttl PkiSecretBackendRootCert#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert#ttl PkiSecretBackendRootCert#ttl}
 
 ---
 
@@ -2102,7 +2509,7 @@ UriSans *[]*string
 
 List of alternative URIs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_root_cert#uri_sans PkiSecretBackendRootCert#uri_sans}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert#uri_sans PkiSecretBackendRootCert#uri_sans}
 
 ---
 

@@ -108,6 +108,7 @@ export * as passwordPolicy from './password-policy';
 export * as pkiSecretBackendAcmeEab from './pki-secret-backend-acme-eab';
 export * as pkiSecretBackendCert from './pki-secret-backend-cert';
 export * as pkiSecretBackendConfigAcme from './pki-secret-backend-config-acme';
+export * as pkiSecretBackendConfigAutoTidy from './pki-secret-backend-config-auto-tidy';
 export * as pkiSecretBackendConfigCa from './pki-secret-backend-config-ca';
 export * as pkiSecretBackendConfigCluster from './pki-secret-backend-config-cluster';
 export * as pkiSecretBackendConfigCmpv2 from './pki-secret-backend-config-cmpv2';
@@ -183,6 +184,7 @@ export * as dataVaultLdapStaticCredentials from './data-vault-ldap-static-creden
 export * as dataVaultNamespace from './data-vault-namespace';
 export * as dataVaultNamespaces from './data-vault-namespaces';
 export * as dataVaultNomadAccessToken from './data-vault-nomad-access-token';
+export * as dataVaultPkiSecretBackendCertMetadata from './data-vault-pki-secret-backend-cert-metadata';
 export * as dataVaultPkiSecretBackendConfigCmpv2 from './data-vault-pki-secret-backend-config-cmpv2';
 export * as dataVaultPkiSecretBackendConfigEst from './data-vault-pki-secret-backend-config-est';
 export * as dataVaultPkiSecretBackendIssuer from './data-vault-pki-secret-backend-issuer';
@@ -191,9 +193,12 @@ export * as dataVaultPkiSecretBackendKey from './data-vault-pki-secret-backend-k
 export * as dataVaultPkiSecretBackendKeys from './data-vault-pki-secret-backend-keys';
 export * as dataVaultPolicyDocument from './data-vault-policy-document';
 export * as dataVaultRaftAutopilotState from './data-vault-raft-autopilot-state';
+export * as dataVaultSshSecretBackendSign from './data-vault-ssh-secret-backend-sign';
 export * as dataVaultTransformDecode from './data-vault-transform-decode';
 export * as dataVaultTransformEncode from './data-vault-transform-encode';
 export * as dataVaultTransitDecrypt from './data-vault-transit-decrypt';
 export * as dataVaultTransitEncrypt from './data-vault-transit-encrypt';
+export * as dataVaultTransitSign from './data-vault-transit-sign';
+export * as dataVaultTransitVerify from './data-vault-transit-verify';
 export * as provider from './provider';
 

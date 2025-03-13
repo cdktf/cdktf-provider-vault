@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend_static_role
+// https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend_static_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,31 @@ import * as cdktf from 'cdktf';
 
 export interface AwsSecretBackendStaticRoleConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The ARN of the role to assume when managing the static role. This is required for cross-account role management. 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend_static_role#assume_role_arn AwsSecretBackendStaticRole#assume_role_arn}
+  */
+  readonly assumeRoleArn?: string;
+  /**
+  * Session name to use when assuming the role.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend_static_role#assume_role_session_name AwsSecretBackendStaticRole#assume_role_session_name}
+  */
+  readonly assumeRoleSessionName?: string;
+  /**
   * The path where the AWS secrets backend is mounted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend_static_role#backend AwsSecretBackendStaticRole#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend_static_role#backend AwsSecretBackendStaticRole#backend}
   */
   readonly backend?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend_static_role#id AwsSecretBackendStaticRole#id}
+  * External ID to use when assuming the role.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend_static_role#external_id AwsSecretBackendStaticRole#external_id}
+  */
+  readonly externalId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend_static_role#id AwsSecretBackendStaticRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,31 +46,31 @@ export interface AwsSecretBackendStaticRoleConfig extends cdktf.TerraformMetaArg
   /**
   * Name of the role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend_static_role#name AwsSecretBackendStaticRole#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend_static_role#name AwsSecretBackendStaticRole#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend_static_role#namespace AwsSecretBackendStaticRole#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend_static_role#namespace AwsSecretBackendStaticRole#namespace}
   */
   readonly namespace?: string;
   /**
   * How often Vault should rotate the password of the user entry.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend_static_role#rotation_period AwsSecretBackendStaticRole#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend_static_role#rotation_period AwsSecretBackendStaticRole#rotation_period}
   */
   readonly rotationPeriod: number;
   /**
   * The username of the existing AWS IAM user to manage password rotation for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend_static_role#username AwsSecretBackendStaticRole#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend_static_role#username AwsSecretBackendStaticRole#username}
   */
   readonly username: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend_static_role vault_aws_secret_backend_static_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend_static_role vault_aws_secret_backend_static_role}
 */
 export class AwsSecretBackendStaticRole extends cdktf.TerraformResource {
 
@@ -68,7 +86,7 @@ export class AwsSecretBackendStaticRole extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AwsSecretBackendStaticRole resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AwsSecretBackendStaticRole to import
-  * @param importFromId The id of the existing AwsSecretBackendStaticRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend_static_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AwsSecretBackendStaticRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend_static_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AwsSecretBackendStaticRole to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -80,7 +98,7 @@ export class AwsSecretBackendStaticRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend_static_role vault_aws_secret_backend_static_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend_static_role vault_aws_secret_backend_static_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -91,7 +109,7 @@ export class AwsSecretBackendStaticRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_aws_secret_backend_static_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '4.6.0',
+        providerVersion: '4.7.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -102,7 +120,10 @@ export class AwsSecretBackendStaticRole extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._assumeRoleArn = config.assumeRoleArn;
+    this._assumeRoleSessionName = config.assumeRoleSessionName;
     this._backend = config.backend;
+    this._externalId = config.externalId;
     this._id = config.id;
     this._name = config.name;
     this._namespace = config.namespace;
@@ -113,6 +134,38 @@ export class AwsSecretBackendStaticRole extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // assume_role_arn - computed: false, optional: true, required: false
+  private _assumeRoleArn?: string; 
+  public get assumeRoleArn() {
+    return this.getStringAttribute('assume_role_arn');
+  }
+  public set assumeRoleArn(value: string) {
+    this._assumeRoleArn = value;
+  }
+  public resetAssumeRoleArn() {
+    this._assumeRoleArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get assumeRoleArnInput() {
+    return this._assumeRoleArn;
+  }
+
+  // assume_role_session_name - computed: false, optional: true, required: false
+  private _assumeRoleSessionName?: string; 
+  public get assumeRoleSessionName() {
+    return this.getStringAttribute('assume_role_session_name');
+  }
+  public set assumeRoleSessionName(value: string) {
+    this._assumeRoleSessionName = value;
+  }
+  public resetAssumeRoleSessionName() {
+    this._assumeRoleSessionName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get assumeRoleSessionNameInput() {
+    return this._assumeRoleSessionName;
+  }
 
   // backend - computed: false, optional: true, required: false
   private _backend?: string; 
@@ -128,6 +181,22 @@ export class AwsSecretBackendStaticRole extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get backendInput() {
     return this._backend;
+  }
+
+  // external_id - computed: false, optional: true, required: false
+  private _externalId?: string; 
+  public get externalId() {
+    return this.getStringAttribute('external_id');
+  }
+  public set externalId(value: string) {
+    this._externalId = value;
+  }
+  public resetExternalId() {
+    this._externalId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get externalIdInput() {
+    return this._externalId;
   }
 
   // id - computed: true, optional: true, required: false
@@ -207,7 +276,10 @@ export class AwsSecretBackendStaticRole extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      assume_role_arn: cdktf.stringToTerraform(this._assumeRoleArn),
+      assume_role_session_name: cdktf.stringToTerraform(this._assumeRoleSessionName),
       backend: cdktf.stringToTerraform(this._backend),
+      external_id: cdktf.stringToTerraform(this._externalId),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       namespace: cdktf.stringToTerraform(this._namespace),
@@ -218,8 +290,26 @@ export class AwsSecretBackendStaticRole extends cdktf.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      assume_role_arn: {
+        value: cdktf.stringToHclTerraform(this._assumeRoleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      assume_role_session_name: {
+        value: cdktf.stringToHclTerraform(this._assumeRoleSessionName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       backend: {
         value: cdktf.stringToHclTerraform(this._backend),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      external_id: {
+        value: cdktf.stringToHclTerraform(this._externalId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
