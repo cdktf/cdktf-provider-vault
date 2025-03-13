@@ -4,7 +4,7 @@
 
 ### GcpAuthBackend <a name="GcpAuthBackend" id="@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend vault_gcp_auth_backend}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend vault_gcp_auth_backend}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.Initializer"></a>
 
@@ -26,6 +26,7 @@ gcpAuthBackend.GcpAuthBackend(
   credentials: str = None,
   custom_endpoint: GcpAuthBackendCustomEndpoint = None,
   description: str = None,
+  disable_automated_rotation: typing.Union[bool, IResolvable] = None,
   disable_remount: typing.Union[bool, IResolvable] = None,
   id: str = None,
   identity_token_audience: str = None,
@@ -36,6 +37,9 @@ gcpAuthBackend.GcpAuthBackend(
   path: str = None,
   private_key_id: str = None,
   project_id: str = None,
+  rotation_period: typing.Union[int, float] = None,
+  rotation_schedule: str = None,
+  rotation_window: typing.Union[int, float] = None,
   service_account_email: str = None,
   tune: typing.Union[IResolvable, typing.List[GcpAuthBackendTune]] = None
 )
@@ -52,23 +56,27 @@ gcpAuthBackend.GcpAuthBackend(
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.Initializer.parameter.clientEmail">client_email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#client_email GcpAuthBackend#client_email}. |
-| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.Initializer.parameter.clientId">client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#client_id GcpAuthBackend#client_id}. |
-| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.Initializer.parameter.credentials">credentials</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#credentials GcpAuthBackend#credentials}. |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.Initializer.parameter.clientEmail">client_email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#client_email GcpAuthBackend#client_email}. |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.Initializer.parameter.clientId">client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#client_id GcpAuthBackend#client_id}. |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.Initializer.parameter.credentials">credentials</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#credentials GcpAuthBackend#credentials}. |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.Initializer.parameter.customEndpoint">custom_endpoint</a></code> | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendCustomEndpoint">GcpAuthBackendCustomEndpoint</a></code> | custom_endpoint block. |
-| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#description GcpAuthBackend#description}. |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#description GcpAuthBackend#description}. |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.Initializer.parameter.disableAutomatedRotation">disable_automated_rotation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.Initializer.parameter.disableRemount">disable_remount</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set, opts out of mount migration on path updates. |
-| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#id GcpAuthBackend#id}. |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#id GcpAuthBackend#id}. |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.Initializer.parameter.identityTokenAudience">identity_token_audience</a></code> | <code>str</code> | The audience claim value for plugin identity tokens. |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.Initializer.parameter.identityTokenKey">identity_token_key</a></code> | <code>str</code> | The key to use for signing identity tokens. |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.Initializer.parameter.identityTokenTtl">identity_token_ttl</a></code> | <code>typing.Union[int, float]</code> | The TTL of generated tokens. |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.Initializer.parameter.local">local</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies if the auth method is local only. |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
-| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.Initializer.parameter.path">path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#path GcpAuthBackend#path}. |
-| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.Initializer.parameter.privateKeyId">private_key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#private_key_id GcpAuthBackend#private_key_id}. |
-| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.Initializer.parameter.projectId">project_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#project_id GcpAuthBackend#project_id}. |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.Initializer.parameter.path">path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#path GcpAuthBackend#path}. |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.Initializer.parameter.privateKeyId">private_key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#private_key_id GcpAuthBackend#private_key_id}. |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.Initializer.parameter.projectId">project_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#project_id GcpAuthBackend#project_id}. |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.Initializer.parameter.rotationPeriod">rotation_period</a></code> | <code>typing.Union[int, float]</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.Initializer.parameter.rotationSchedule">rotation_schedule</a></code> | <code>str</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.Initializer.parameter.rotationWindow">rotation_window</a></code> | <code>typing.Union[int, float]</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.Initializer.parameter.serviceAccountEmail">service_account_email</a></code> | <code>str</code> | Service Account to impersonate for plugin workload identity federation. |
-| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.Initializer.parameter.tune">tune</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendTune">GcpAuthBackendTune</a>]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#tune GcpAuthBackend#tune}. |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.Initializer.parameter.tune">tune</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendTune">GcpAuthBackendTune</a>]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#tune GcpAuthBackend#tune}. |
 
 ---
 
@@ -136,7 +144,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#client_email GcpAuthBackend#client_email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#client_email GcpAuthBackend#client_email}.
 
 ---
 
@@ -144,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#client_id GcpAuthBackend#client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#client_id GcpAuthBackend#client_id}.
 
 ---
 
@@ -152,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#credentials GcpAuthBackend#credentials}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#credentials GcpAuthBackend#credentials}.
 
 ---
 
@@ -162,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 custom_endpoint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#custom_endpoint GcpAuthBackend#custom_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#custom_endpoint GcpAuthBackend#custom_endpoint}
 
 ---
 
@@ -170,7 +178,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#description GcpAuthBackend#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#description GcpAuthBackend#description}.
+
+---
+
+##### `disable_automated_rotation`<sup>Optional</sup> <a name="disable_automated_rotation" id="@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.Initializer.parameter.disableAutomatedRotation"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Stops rotation of the root credential until set to false.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#disable_automated_rotation GcpAuthBackend#disable_automated_rotation}
 
 ---
 
@@ -180,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If set, opts out of mount migration on path updates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#disable_remount GcpAuthBackend#disable_remount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#disable_remount GcpAuthBackend#disable_remount}
 
 ---
 
@@ -188,7 +206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#id GcpAuthBackend#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#id GcpAuthBackend#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -201,7 +219,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The audience claim value for plugin identity tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#identity_token_audience GcpAuthBackend#identity_token_audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#identity_token_audience GcpAuthBackend#identity_token_audience}
 
 ---
 
@@ -211,7 +229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The key to use for signing identity tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#identity_token_key GcpAuthBackend#identity_token_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#identity_token_key GcpAuthBackend#identity_token_key}
 
 ---
 
@@ -221,7 +239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The TTL of generated tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#identity_token_ttl GcpAuthBackend#identity_token_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#identity_token_ttl GcpAuthBackend#identity_token_ttl}
 
 ---
 
@@ -231,7 +249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies if the auth method is local only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#local GcpAuthBackend#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#local GcpAuthBackend#local}
 
 ---
 
@@ -241,7 +259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#namespace GcpAuthBackend#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#namespace GcpAuthBackend#namespace}
 
 ---
 
@@ -249,7 +267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#path GcpAuthBackend#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#path GcpAuthBackend#path}.
 
 ---
 
@@ -257,7 +275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#private_key_id GcpAuthBackend#private_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#private_key_id GcpAuthBackend#private_key_id}.
 
 ---
 
@@ -265,7 +283,39 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#project_id GcpAuthBackend#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#project_id GcpAuthBackend#project_id}.
+
+---
+
+##### `rotation_period`<sup>Optional</sup> <a name="rotation_period" id="@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.Initializer.parameter.rotationPeriod"></a>
+
+- *Type:* typing.Union[int, float]
+
+The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#rotation_period GcpAuthBackend#rotation_period}
+
+---
+
+##### `rotation_schedule`<sup>Optional</sup> <a name="rotation_schedule" id="@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.Initializer.parameter.rotationSchedule"></a>
+
+- *Type:* str
+
+The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#rotation_schedule GcpAuthBackend#rotation_schedule}
+
+---
+
+##### `rotation_window`<sup>Optional</sup> <a name="rotation_window" id="@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.Initializer.parameter.rotationWindow"></a>
+
+- *Type:* typing.Union[int, float]
+
+The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered.
+
+Can only be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#rotation_window GcpAuthBackend#rotation_window}
 
 ---
 
@@ -275,7 +325,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Service Account to impersonate for plugin workload identity federation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#service_account_email GcpAuthBackend#service_account_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#service_account_email GcpAuthBackend#service_account_email}
 
 ---
 
@@ -283,7 +333,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendTune">GcpAuthBackendTune</a>]]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#tune GcpAuthBackend#tune}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#tune GcpAuthBackend#tune}.
 
 ---
 
@@ -321,6 +371,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.resetCredentials">reset_credentials</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.resetCustomEndpoint">reset_custom_endpoint</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.resetDisableAutomatedRotation">reset_disable_automated_rotation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.resetDisableRemount">reset_disable_remount</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.resetIdentityTokenAudience">reset_identity_token_audience</a></code> | *No description.* |
@@ -331,6 +382,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.resetPath">reset_path</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.resetPrivateKeyId">reset_private_key_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.resetProjectId">reset_project_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.resetRotationPeriod">reset_rotation_period</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.resetRotationSchedule">reset_rotation_schedule</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.resetRotationWindow">reset_rotation_window</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.resetServiceAccountEmail">reset_service_account_email</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.resetTune">reset_tune</a></code> | *No description.* |
 
@@ -678,7 +732,7 @@ def put_custom_endpoint(
 
 Replaces the service endpoint used in API requests to https://www.googleapis.com.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#api GcpAuthBackend#api}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#api GcpAuthBackend#api}
 
 ---
 
@@ -688,7 +742,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Replaces the service endpoint used in API requests to `https://compute.googleapis.com`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#compute GcpAuthBackend#compute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#compute GcpAuthBackend#compute}
 
 ---
 
@@ -698,7 +752,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Replaces the service endpoint used in API requests to `https://cloudresourcemanager.googleapis.com`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#crm GcpAuthBackend#crm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#crm GcpAuthBackend#crm}
 
 ---
 
@@ -708,7 +762,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Replaces the service endpoint used in API requests to `https://iam.googleapis.com`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#iam GcpAuthBackend#iam}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#iam GcpAuthBackend#iam}
 
 ---
 
@@ -754,6 +808,12 @@ def reset_custom_endpoint() -> None
 
 ```python
 def reset_description() -> None
+```
+
+##### `reset_disable_automated_rotation` <a name="reset_disable_automated_rotation" id="@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.resetDisableAutomatedRotation"></a>
+
+```python
+def reset_disable_automated_rotation() -> None
 ```
 
 ##### `reset_disable_remount` <a name="reset_disable_remount" id="@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.resetDisableRemount"></a>
@@ -814,6 +874,24 @@ def reset_private_key_id() -> None
 
 ```python
 def reset_project_id() -> None
+```
+
+##### `reset_rotation_period` <a name="reset_rotation_period" id="@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.resetRotationPeriod"></a>
+
+```python
+def reset_rotation_period() -> None
+```
+
+##### `reset_rotation_schedule` <a name="reset_rotation_schedule" id="@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.resetRotationSchedule"></a>
+
+```python
+def reset_rotation_schedule() -> None
+```
+
+##### `reset_rotation_window` <a name="reset_rotation_window" id="@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.resetRotationWindow"></a>
+
+```python
+def reset_rotation_window() -> None
 ```
 
 ##### `reset_service_account_email` <a name="reset_service_account_email" id="@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.resetServiceAccountEmail"></a>
@@ -942,7 +1020,7 @@ The construct id used in the generated config for the GcpAuthBackend to import.
 
 The id of the existing GcpAuthBackend that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -980,6 +1058,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.property.credentialsInput">credentials_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.property.customEndpointInput">custom_endpoint_input</a></code> | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendCustomEndpoint">GcpAuthBackendCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.property.disableAutomatedRotationInput">disable_automated_rotation_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.property.disableRemountInput">disable_remount_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.property.identityTokenAudienceInput">identity_token_audience_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.property.identityTokenKeyInput">identity_token_key_input</a></code> | <code>str</code> | *No description.* |
@@ -990,12 +1069,16 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.property.pathInput">path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.property.privateKeyIdInput">private_key_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.property.projectIdInput">project_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.property.rotationPeriodInput">rotation_period_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.property.rotationScheduleInput">rotation_schedule_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.property.rotationWindowInput">rotation_window_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.property.serviceAccountEmailInput">service_account_email_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.property.tuneInput">tune_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendTune">GcpAuthBackendTune</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.property.clientEmail">client_email</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.property.clientId">client_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.property.credentials">credentials</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.property.disableAutomatedRotation">disable_automated_rotation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.property.disableRemount">disable_remount</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.property.identityTokenAudience">identity_token_audience</a></code> | <code>str</code> | *No description.* |
@@ -1006,6 +1089,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.property.path">path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.property.privateKeyId">private_key_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.property.projectId">project_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.property.rotationPeriod">rotation_period</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.property.rotationSchedule">rotation_schedule</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.property.rotationWindow">rotation_window</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.property.serviceAccountEmail">service_account_email</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -1232,6 +1318,16 @@ description_input: str
 
 ---
 
+##### `disable_automated_rotation_input`<sup>Optional</sup> <a name="disable_automated_rotation_input" id="@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.property.disableAutomatedRotationInput"></a>
+
+```python
+disable_automated_rotation_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `disable_remount_input`<sup>Optional</sup> <a name="disable_remount_input" id="@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.property.disableRemountInput"></a>
 
 ```python
@@ -1332,6 +1428,36 @@ project_id_input: str
 
 ---
 
+##### `rotation_period_input`<sup>Optional</sup> <a name="rotation_period_input" id="@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.property.rotationPeriodInput"></a>
+
+```python
+rotation_period_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `rotation_schedule_input`<sup>Optional</sup> <a name="rotation_schedule_input" id="@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.property.rotationScheduleInput"></a>
+
+```python
+rotation_schedule_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `rotation_window_input`<sup>Optional</sup> <a name="rotation_window_input" id="@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.property.rotationWindowInput"></a>
+
+```python
+rotation_window_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `service_account_email_input`<sup>Optional</sup> <a name="service_account_email_input" id="@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.property.serviceAccountEmailInput"></a>
 
 ```python
@@ -1389,6 +1515,16 @@ description: str
 ```
 
 - *Type:* str
+
+---
+
+##### `disable_automated_rotation`<sup>Required</sup> <a name="disable_automated_rotation" id="@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.property.disableAutomatedRotation"></a>
+
+```python
+disable_automated_rotation: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
 
 ---
 
@@ -1492,6 +1628,36 @@ project_id: str
 
 ---
 
+##### `rotation_period`<sup>Required</sup> <a name="rotation_period" id="@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.property.rotationPeriod"></a>
+
+```python
+rotation_period: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `rotation_schedule`<sup>Required</sup> <a name="rotation_schedule" id="@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.property.rotationSchedule"></a>
+
+```python
+rotation_schedule: str
+```
+
+- *Type:* str
+
+---
+
+##### `rotation_window`<sup>Required</sup> <a name="rotation_window" id="@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.property.rotationWindow"></a>
+
+```python
+rotation_window: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `service_account_email`<sup>Required</sup> <a name="service_account_email" id="@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend.property.serviceAccountEmail"></a>
 
 ```python
@@ -1542,6 +1708,7 @@ gcpAuthBackend.GcpAuthBackendConfig(
   credentials: str = None,
   custom_endpoint: GcpAuthBackendCustomEndpoint = None,
   description: str = None,
+  disable_automated_rotation: typing.Union[bool, IResolvable] = None,
   disable_remount: typing.Union[bool, IResolvable] = None,
   id: str = None,
   identity_token_audience: str = None,
@@ -1552,6 +1719,9 @@ gcpAuthBackend.GcpAuthBackendConfig(
   path: str = None,
   private_key_id: str = None,
   project_id: str = None,
+  rotation_period: typing.Union[int, float] = None,
+  rotation_schedule: str = None,
+  rotation_window: typing.Union[int, float] = None,
   service_account_email: str = None,
   tune: typing.Union[IResolvable, typing.List[GcpAuthBackendTune]] = None
 )
@@ -1568,23 +1738,27 @@ gcpAuthBackend.GcpAuthBackendConfig(
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendConfig.property.clientEmail">client_email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#client_email GcpAuthBackend#client_email}. |
-| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendConfig.property.clientId">client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#client_id GcpAuthBackend#client_id}. |
-| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendConfig.property.credentials">credentials</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#credentials GcpAuthBackend#credentials}. |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendConfig.property.clientEmail">client_email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#client_email GcpAuthBackend#client_email}. |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendConfig.property.clientId">client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#client_id GcpAuthBackend#client_id}. |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendConfig.property.credentials">credentials</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#credentials GcpAuthBackend#credentials}. |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendConfig.property.customEndpoint">custom_endpoint</a></code> | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendCustomEndpoint">GcpAuthBackendCustomEndpoint</a></code> | custom_endpoint block. |
-| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#description GcpAuthBackend#description}. |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#description GcpAuthBackend#description}. |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendConfig.property.disableAutomatedRotation">disable_automated_rotation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendConfig.property.disableRemount">disable_remount</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set, opts out of mount migration on path updates. |
-| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#id GcpAuthBackend#id}. |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#id GcpAuthBackend#id}. |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendConfig.property.identityTokenAudience">identity_token_audience</a></code> | <code>str</code> | The audience claim value for plugin identity tokens. |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendConfig.property.identityTokenKey">identity_token_key</a></code> | <code>str</code> | The key to use for signing identity tokens. |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendConfig.property.identityTokenTtl">identity_token_ttl</a></code> | <code>typing.Union[int, float]</code> | The TTL of generated tokens. |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendConfig.property.local">local</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies if the auth method is local only. |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
-| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendConfig.property.path">path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#path GcpAuthBackend#path}. |
-| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendConfig.property.privateKeyId">private_key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#private_key_id GcpAuthBackend#private_key_id}. |
-| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendConfig.property.projectId">project_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#project_id GcpAuthBackend#project_id}. |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendConfig.property.path">path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#path GcpAuthBackend#path}. |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendConfig.property.privateKeyId">private_key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#private_key_id GcpAuthBackend#private_key_id}. |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendConfig.property.projectId">project_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#project_id GcpAuthBackend#project_id}. |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendConfig.property.rotationPeriod">rotation_period</a></code> | <code>typing.Union[int, float]</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendConfig.property.rotationSchedule">rotation_schedule</a></code> | <code>str</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendConfig.property.rotationWindow">rotation_window</a></code> | <code>typing.Union[int, float]</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
 | <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendConfig.property.serviceAccountEmail">service_account_email</a></code> | <code>str</code> | Service Account to impersonate for plugin workload identity federation. |
-| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendConfig.property.tune">tune</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendTune">GcpAuthBackendTune</a>]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#tune GcpAuthBackend#tune}. |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendConfig.property.tune">tune</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendTune">GcpAuthBackendTune</a>]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#tune GcpAuthBackend#tune}. |
 
 ---
 
@@ -1666,7 +1840,7 @@ client_email: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#client_email GcpAuthBackend#client_email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#client_email GcpAuthBackend#client_email}.
 
 ---
 
@@ -1678,7 +1852,7 @@ client_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#client_id GcpAuthBackend#client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#client_id GcpAuthBackend#client_id}.
 
 ---
 
@@ -1690,7 +1864,7 @@ credentials: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#credentials GcpAuthBackend#credentials}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#credentials GcpAuthBackend#credentials}.
 
 ---
 
@@ -1704,7 +1878,7 @@ custom_endpoint: GcpAuthBackendCustomEndpoint
 
 custom_endpoint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#custom_endpoint GcpAuthBackend#custom_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#custom_endpoint GcpAuthBackend#custom_endpoint}
 
 ---
 
@@ -1716,7 +1890,21 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#description GcpAuthBackend#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#description GcpAuthBackend#description}.
+
+---
+
+##### `disable_automated_rotation`<sup>Optional</sup> <a name="disable_automated_rotation" id="@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendConfig.property.disableAutomatedRotation"></a>
+
+```python
+disable_automated_rotation: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Stops rotation of the root credential until set to false.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#disable_automated_rotation GcpAuthBackend#disable_automated_rotation}
 
 ---
 
@@ -1730,7 +1918,7 @@ disable_remount: typing.Union[bool, IResolvable]
 
 If set, opts out of mount migration on path updates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#disable_remount GcpAuthBackend#disable_remount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#disable_remount GcpAuthBackend#disable_remount}
 
 ---
 
@@ -1742,7 +1930,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#id GcpAuthBackend#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#id GcpAuthBackend#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1759,7 +1947,7 @@ identity_token_audience: str
 
 The audience claim value for plugin identity tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#identity_token_audience GcpAuthBackend#identity_token_audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#identity_token_audience GcpAuthBackend#identity_token_audience}
 
 ---
 
@@ -1773,7 +1961,7 @@ identity_token_key: str
 
 The key to use for signing identity tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#identity_token_key GcpAuthBackend#identity_token_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#identity_token_key GcpAuthBackend#identity_token_key}
 
 ---
 
@@ -1787,7 +1975,7 @@ identity_token_ttl: typing.Union[int, float]
 
 The TTL of generated tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#identity_token_ttl GcpAuthBackend#identity_token_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#identity_token_ttl GcpAuthBackend#identity_token_ttl}
 
 ---
 
@@ -1801,7 +1989,7 @@ local: typing.Union[bool, IResolvable]
 
 Specifies if the auth method is local only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#local GcpAuthBackend#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#local GcpAuthBackend#local}
 
 ---
 
@@ -1815,7 +2003,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#namespace GcpAuthBackend#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#namespace GcpAuthBackend#namespace}
 
 ---
 
@@ -1827,7 +2015,7 @@ path: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#path GcpAuthBackend#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#path GcpAuthBackend#path}.
 
 ---
 
@@ -1839,7 +2027,7 @@ private_key_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#private_key_id GcpAuthBackend#private_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#private_key_id GcpAuthBackend#private_key_id}.
 
 ---
 
@@ -1851,7 +2039,51 @@ project_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#project_id GcpAuthBackend#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#project_id GcpAuthBackend#project_id}.
+
+---
+
+##### `rotation_period`<sup>Optional</sup> <a name="rotation_period" id="@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendConfig.property.rotationPeriod"></a>
+
+```python
+rotation_period: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#rotation_period GcpAuthBackend#rotation_period}
+
+---
+
+##### `rotation_schedule`<sup>Optional</sup> <a name="rotation_schedule" id="@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendConfig.property.rotationSchedule"></a>
+
+```python
+rotation_schedule: str
+```
+
+- *Type:* str
+
+The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#rotation_schedule GcpAuthBackend#rotation_schedule}
+
+---
+
+##### `rotation_window`<sup>Optional</sup> <a name="rotation_window" id="@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendConfig.property.rotationWindow"></a>
+
+```python
+rotation_window: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered.
+
+Can only be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#rotation_window GcpAuthBackend#rotation_window}
 
 ---
 
@@ -1865,7 +2097,7 @@ service_account_email: str
 
 Service Account to impersonate for plugin workload identity federation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#service_account_email GcpAuthBackend#service_account_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#service_account_email GcpAuthBackend#service_account_email}
 
 ---
 
@@ -1877,7 +2109,7 @@ tune: typing.Union[IResolvable, typing.List[GcpAuthBackendTune]]
 
 - *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendTune">GcpAuthBackendTune</a>]]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#tune GcpAuthBackend#tune}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#tune GcpAuthBackend#tune}.
 
 ---
 
@@ -1917,7 +2149,7 @@ api: str
 
 Replaces the service endpoint used in API requests to https://www.googleapis.com.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#api GcpAuthBackend#api}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#api GcpAuthBackend#api}
 
 ---
 
@@ -1931,7 +2163,7 @@ compute: str
 
 Replaces the service endpoint used in API requests to `https://compute.googleapis.com`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#compute GcpAuthBackend#compute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#compute GcpAuthBackend#compute}
 
 ---
 
@@ -1945,7 +2177,7 @@ crm: str
 
 Replaces the service endpoint used in API requests to `https://cloudresourcemanager.googleapis.com`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#crm GcpAuthBackend#crm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#crm GcpAuthBackend#crm}
 
 ---
 
@@ -1959,7 +2191,7 @@ iam: str
 
 Replaces the service endpoint used in API requests to `https://iam.googleapis.com`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#iam GcpAuthBackend#iam}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#iam GcpAuthBackend#iam}
 
 ---
 
@@ -1986,14 +2218,14 @@ gcpAuthBackend.GcpAuthBackendTune(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendTune.property.allowedResponseHeaders">allowed_response_headers</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#allowed_response_headers GcpAuthBackend#allowed_response_headers}. |
-| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendTune.property.auditNonHmacRequestKeys">audit_non_hmac_request_keys</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#audit_non_hmac_request_keys GcpAuthBackend#audit_non_hmac_request_keys}. |
-| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendTune.property.auditNonHmacResponseKeys">audit_non_hmac_response_keys</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#audit_non_hmac_response_keys GcpAuthBackend#audit_non_hmac_response_keys}. |
-| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendTune.property.defaultLeaseTtl">default_lease_ttl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#default_lease_ttl GcpAuthBackend#default_lease_ttl}. |
-| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendTune.property.listingVisibility">listing_visibility</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#listing_visibility GcpAuthBackend#listing_visibility}. |
-| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendTune.property.maxLeaseTtl">max_lease_ttl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#max_lease_ttl GcpAuthBackend#max_lease_ttl}. |
-| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendTune.property.passthroughRequestHeaders">passthrough_request_headers</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#passthrough_request_headers GcpAuthBackend#passthrough_request_headers}. |
-| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendTune.property.tokenType">token_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#token_type GcpAuthBackend#token_type}. |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendTune.property.allowedResponseHeaders">allowed_response_headers</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#allowed_response_headers GcpAuthBackend#allowed_response_headers}. |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendTune.property.auditNonHmacRequestKeys">audit_non_hmac_request_keys</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#audit_non_hmac_request_keys GcpAuthBackend#audit_non_hmac_request_keys}. |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendTune.property.auditNonHmacResponseKeys">audit_non_hmac_response_keys</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#audit_non_hmac_response_keys GcpAuthBackend#audit_non_hmac_response_keys}. |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendTune.property.defaultLeaseTtl">default_lease_ttl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#default_lease_ttl GcpAuthBackend#default_lease_ttl}. |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendTune.property.listingVisibility">listing_visibility</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#listing_visibility GcpAuthBackend#listing_visibility}. |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendTune.property.maxLeaseTtl">max_lease_ttl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#max_lease_ttl GcpAuthBackend#max_lease_ttl}. |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendTune.property.passthroughRequestHeaders">passthrough_request_headers</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#passthrough_request_headers GcpAuthBackend#passthrough_request_headers}. |
+| <code><a href="#@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackendTune.property.tokenType">token_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#token_type GcpAuthBackend#token_type}. |
 
 ---
 
@@ -2005,7 +2237,7 @@ allowed_response_headers: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#allowed_response_headers GcpAuthBackend#allowed_response_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#allowed_response_headers GcpAuthBackend#allowed_response_headers}.
 
 ---
 
@@ -2017,7 +2249,7 @@ audit_non_hmac_request_keys: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#audit_non_hmac_request_keys GcpAuthBackend#audit_non_hmac_request_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#audit_non_hmac_request_keys GcpAuthBackend#audit_non_hmac_request_keys}.
 
 ---
 
@@ -2029,7 +2261,7 @@ audit_non_hmac_response_keys: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#audit_non_hmac_response_keys GcpAuthBackend#audit_non_hmac_response_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#audit_non_hmac_response_keys GcpAuthBackend#audit_non_hmac_response_keys}.
 
 ---
 
@@ -2041,7 +2273,7 @@ default_lease_ttl: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#default_lease_ttl GcpAuthBackend#default_lease_ttl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#default_lease_ttl GcpAuthBackend#default_lease_ttl}.
 
 ---
 
@@ -2053,7 +2285,7 @@ listing_visibility: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#listing_visibility GcpAuthBackend#listing_visibility}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#listing_visibility GcpAuthBackend#listing_visibility}.
 
 ---
 
@@ -2065,7 +2297,7 @@ max_lease_ttl: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#max_lease_ttl GcpAuthBackend#max_lease_ttl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#max_lease_ttl GcpAuthBackend#max_lease_ttl}.
 
 ---
 
@@ -2077,7 +2309,7 @@ passthrough_request_headers: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#passthrough_request_headers GcpAuthBackend#passthrough_request_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#passthrough_request_headers GcpAuthBackend#passthrough_request_headers}.
 
 ---
 
@@ -2089,7 +2321,7 @@ token_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend#token_type GcpAuthBackend#token_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend#token_type GcpAuthBackend#token_type}.
 
 ---
 

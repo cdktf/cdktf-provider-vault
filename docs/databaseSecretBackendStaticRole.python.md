@@ -4,7 +4,7 @@
 
 ### DatabaseSecretBackendStaticRole <a name="DatabaseSecretBackendStaticRole" id="@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secret_backend_static_role vault_database_secret_backend_static_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secret_backend_static_role vault_database_secret_backend_static_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.Initializer"></a>
 
@@ -25,13 +25,16 @@ databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole(
   db_name: str,
   name: str,
   username: str,
+  credential_config: typing.Mapping[str] = None,
+  credential_type: str = None,
   id: str = None,
   namespace: str = None,
   rotation_period: typing.Union[int, float] = None,
   rotation_schedule: str = None,
   rotation_statements: typing.List[str] = None,
   rotation_window: typing.Union[int, float] = None,
-  self_managed_password: str = None
+  self_managed_password: str = None,
+  skip_import_rotation: typing.Union[bool, IResolvable] = None
 )
 ```
 
@@ -50,13 +53,16 @@ databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole(
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.Initializer.parameter.dbName">db_name</a></code> | <code>str</code> | Database connection to use for this role. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.Initializer.parameter.name">name</a></code> | <code>str</code> | Unique name for the static role. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.Initializer.parameter.username">username</a></code> | <code>str</code> | The database username that this role corresponds to. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secret_backend_static_role#id DatabaseSecretBackendStaticRole#id}. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.Initializer.parameter.credentialConfig">credential_config</a></code> | <code>typing.Mapping[str]</code> | The configuration for the credential type.Full documentation for the allowed values can be found under "https://developer.hashicorp.com/vault/api-docs/secret/databases#credential_config". |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.Initializer.parameter.credentialType">credential_type</a></code> | <code>str</code> | The credential type for the user, can be one of "password", "rsa_private_key" or "client_certificate".The configuration can be done in `credential_config`. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secret_backend_static_role#id DatabaseSecretBackendStaticRole#id}. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.Initializer.parameter.rotationPeriod">rotation_period</a></code> | <code>typing.Union[int, float]</code> | The amount of time Vault should wait before rotating the password, in seconds. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.Initializer.parameter.rotationSchedule">rotation_schedule</a></code> | <code>str</code> | A cron-style string that will define the schedule on which rotations should occur. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.Initializer.parameter.rotationStatements">rotation_statements</a></code> | <code>typing.List[str]</code> | Database statements to execute to rotate the password for the configured database user. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.Initializer.parameter.rotationWindow">rotation_window</a></code> | <code>typing.Union[int, float]</code> | The amount of time in seconds in which the rotations are allowed to occur starting from a given rotation_schedule. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.Initializer.parameter.selfManagedPassword">self_managed_password</a></code> | <code>str</code> | The password corresponding to the username in the database. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.Initializer.parameter.skipImportRotation">skip_import_rotation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Skip rotation of the password on import. |
 
 ---
 
@@ -126,7 +132,7 @@ Must be unique amongst siblings in the same scope
 
 The path of the Database Secret Backend the role belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secret_backend_static_role#backend DatabaseSecretBackendStaticRole#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secret_backend_static_role#backend DatabaseSecretBackendStaticRole#backend}
 
 ---
 
@@ -136,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Database connection to use for this role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secret_backend_static_role#db_name DatabaseSecretBackendStaticRole#db_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secret_backend_static_role#db_name DatabaseSecretBackendStaticRole#db_name}
 
 ---
 
@@ -146,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Unique name for the static role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secret_backend_static_role#name DatabaseSecretBackendStaticRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secret_backend_static_role#name DatabaseSecretBackendStaticRole#name}
 
 ---
 
@@ -156,7 +162,27 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The database username that this role corresponds to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secret_backend_static_role#username DatabaseSecretBackendStaticRole#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secret_backend_static_role#username DatabaseSecretBackendStaticRole#username}
+
+---
+
+##### `credential_config`<sup>Optional</sup> <a name="credential_config" id="@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.Initializer.parameter.credentialConfig"></a>
+
+- *Type:* typing.Mapping[str]
+
+The configuration for the credential type.Full documentation for the allowed values can be found under "https://developer.hashicorp.com/vault/api-docs/secret/databases#credential_config".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secret_backend_static_role#credential_config DatabaseSecretBackendStaticRole#credential_config}
+
+---
+
+##### `credential_type`<sup>Optional</sup> <a name="credential_type" id="@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.Initializer.parameter.credentialType"></a>
+
+- *Type:* str
+
+The credential type for the user, can be one of "password", "rsa_private_key" or "client_certificate".The configuration can be done in `credential_config`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secret_backend_static_role#credential_type DatabaseSecretBackendStaticRole#credential_type}
 
 ---
 
@@ -164,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secret_backend_static_role#id DatabaseSecretBackendStaticRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secret_backend_static_role#id DatabaseSecretBackendStaticRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -177,7 +203,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secret_backend_static_role#namespace DatabaseSecretBackendStaticRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secret_backend_static_role#namespace DatabaseSecretBackendStaticRole#namespace}
 
 ---
 
@@ -187,7 +213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The amount of time Vault should wait before rotating the password, in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secret_backend_static_role#rotation_period DatabaseSecretBackendStaticRole#rotation_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secret_backend_static_role#rotation_period DatabaseSecretBackendStaticRole#rotation_period}
 
 ---
 
@@ -197,7 +223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A cron-style string that will define the schedule on which rotations should occur.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secret_backend_static_role#rotation_schedule DatabaseSecretBackendStaticRole#rotation_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secret_backend_static_role#rotation_schedule DatabaseSecretBackendStaticRole#rotation_schedule}
 
 ---
 
@@ -207,7 +233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Database statements to execute to rotate the password for the configured database user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secret_backend_static_role#rotation_statements DatabaseSecretBackendStaticRole#rotation_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secret_backend_static_role#rotation_statements DatabaseSecretBackendStaticRole#rotation_statements}
 
 ---
 
@@ -217,7 +243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The amount of time in seconds in which the rotations are allowed to occur starting from a given rotation_schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secret_backend_static_role#rotation_window DatabaseSecretBackendStaticRole#rotation_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secret_backend_static_role#rotation_window DatabaseSecretBackendStaticRole#rotation_window}
 
 ---
 
@@ -229,7 +255,17 @@ The password corresponding to the username in the database.
 
 Required when using the Rootless Password Rotation workflow for static roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secret_backend_static_role#self_managed_password DatabaseSecretBackendStaticRole#self_managed_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secret_backend_static_role#self_managed_password DatabaseSecretBackendStaticRole#self_managed_password}
+
+---
+
+##### `skip_import_rotation`<sup>Optional</sup> <a name="skip_import_rotation" id="@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.Initializer.parameter.skipImportRotation"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Skip rotation of the password on import.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secret_backend_static_role#skip_import_rotation DatabaseSecretBackendStaticRole#skip_import_rotation}
 
 ---
 
@@ -260,6 +296,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.resetCredentialConfig">reset_credential_config</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.resetCredentialType">reset_credential_type</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.resetNamespace">reset_namespace</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.resetRotationPeriod">reset_rotation_period</a></code> | *No description.* |
@@ -267,6 +305,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.resetRotationStatements">reset_rotation_statements</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.resetRotationWindow">reset_rotation_window</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.resetSelfManagedPassword">reset_self_managed_password</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.resetSkipImportRotation">reset_skip_import_rotation</a></code> | *No description.* |
 
 ---
 
@@ -595,6 +634,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `reset_credential_config` <a name="reset_credential_config" id="@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.resetCredentialConfig"></a>
+
+```python
+def reset_credential_config() -> None
+```
+
+##### `reset_credential_type` <a name="reset_credential_type" id="@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.resetCredentialType"></a>
+
+```python
+def reset_credential_type() -> None
+```
+
 ##### `reset_id` <a name="reset_id" id="@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.resetId"></a>
 
 ```python
@@ -635,6 +686,12 @@ def reset_rotation_window() -> None
 
 ```python
 def reset_self_managed_password() -> None
+```
+
+##### `reset_skip_import_rotation` <a name="reset_skip_import_rotation" id="@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.resetSkipImportRotation"></a>
+
+```python
+def reset_skip_import_rotation() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -751,7 +808,7 @@ The construct id used in the generated config for the DatabaseSecretBackendStati
 
 The id of the existing DatabaseSecretBackendStaticRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secret_backend_static_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secret_backend_static_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -782,6 +839,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.property.backendInput">backend_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.property.credentialConfigInput">credential_config_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.property.credentialTypeInput">credential_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.property.dbNameInput">db_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
@@ -791,8 +850,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.property.rotationStatementsInput">rotation_statements_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.property.rotationWindowInput">rotation_window_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.property.selfManagedPasswordInput">self_managed_password_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.property.skipImportRotationInput">skip_import_rotation_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.property.usernameInput">username_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.property.backend">backend</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.property.credentialConfig">credential_config</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.property.credentialType">credential_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.property.dbName">db_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.property.name">name</a></code> | <code>str</code> | *No description.* |
@@ -802,6 +864,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.property.rotationStatements">rotation_statements</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.property.rotationWindow">rotation_window</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.property.selfManagedPassword">self_managed_password</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.property.skipImportRotation">skip_import_rotation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.property.username">username</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -958,6 +1021,26 @@ backend_input: str
 
 ---
 
+##### `credential_config_input`<sup>Optional</sup> <a name="credential_config_input" id="@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.property.credentialConfigInput"></a>
+
+```python
+credential_config_input: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+---
+
+##### `credential_type_input`<sup>Optional</sup> <a name="credential_type_input" id="@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.property.credentialTypeInput"></a>
+
+```python
+credential_type_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `db_name_input`<sup>Optional</sup> <a name="db_name_input" id="@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.property.dbNameInput"></a>
 
 ```python
@@ -1048,6 +1131,16 @@ self_managed_password_input: str
 
 ---
 
+##### `skip_import_rotation_input`<sup>Optional</sup> <a name="skip_import_rotation_input" id="@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.property.skipImportRotationInput"></a>
+
+```python
+skip_import_rotation_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `username_input`<sup>Optional</sup> <a name="username_input" id="@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.property.usernameInput"></a>
 
 ```python
@@ -1062,6 +1155,26 @@ username_input: str
 
 ```python
 backend: str
+```
+
+- *Type:* str
+
+---
+
+##### `credential_config`<sup>Required</sup> <a name="credential_config" id="@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.property.credentialConfig"></a>
+
+```python
+credential_config: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+---
+
+##### `credential_type`<sup>Required</sup> <a name="credential_type" id="@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.property.credentialType"></a>
+
+```python
+credential_type: str
 ```
 
 - *Type:* str
@@ -1158,6 +1271,16 @@ self_managed_password: str
 
 ---
 
+##### `skip_import_rotation`<sup>Required</sup> <a name="skip_import_rotation" id="@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.property.skipImportRotation"></a>
+
+```python
+skip_import_rotation: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `username`<sup>Required</sup> <a name="username" id="@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRole.property.username"></a>
 
 ```python
@@ -1207,13 +1330,16 @@ databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRoleConfig(
   db_name: str,
   name: str,
   username: str,
+  credential_config: typing.Mapping[str] = None,
+  credential_type: str = None,
   id: str = None,
   namespace: str = None,
   rotation_period: typing.Union[int, float] = None,
   rotation_schedule: str = None,
   rotation_statements: typing.List[str] = None,
   rotation_window: typing.Union[int, float] = None,
-  self_managed_password: str = None
+  self_managed_password: str = None,
+  skip_import_rotation: typing.Union[bool, IResolvable] = None
 )
 ```
 
@@ -1232,13 +1358,16 @@ databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRoleConfig(
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRoleConfig.property.dbName">db_name</a></code> | <code>str</code> | Database connection to use for this role. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRoleConfig.property.name">name</a></code> | <code>str</code> | Unique name for the static role. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRoleConfig.property.username">username</a></code> | <code>str</code> | The database username that this role corresponds to. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secret_backend_static_role#id DatabaseSecretBackendStaticRole#id}. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRoleConfig.property.credentialConfig">credential_config</a></code> | <code>typing.Mapping[str]</code> | The configuration for the credential type.Full documentation for the allowed values can be found under "https://developer.hashicorp.com/vault/api-docs/secret/databases#credential_config". |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRoleConfig.property.credentialType">credential_type</a></code> | <code>str</code> | The credential type for the user, can be one of "password", "rsa_private_key" or "client_certificate".The configuration can be done in `credential_config`. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secret_backend_static_role#id DatabaseSecretBackendStaticRole#id}. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRoleConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRoleConfig.property.rotationPeriod">rotation_period</a></code> | <code>typing.Union[int, float]</code> | The amount of time Vault should wait before rotating the password, in seconds. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRoleConfig.property.rotationSchedule">rotation_schedule</a></code> | <code>str</code> | A cron-style string that will define the schedule on which rotations should occur. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRoleConfig.property.rotationStatements">rotation_statements</a></code> | <code>typing.List[str]</code> | Database statements to execute to rotate the password for the configured database user. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRoleConfig.property.rotationWindow">rotation_window</a></code> | <code>typing.Union[int, float]</code> | The amount of time in seconds in which the rotations are allowed to occur starting from a given rotation_schedule. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRoleConfig.property.selfManagedPassword">self_managed_password</a></code> | <code>str</code> | The password corresponding to the username in the database. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRoleConfig.property.skipImportRotation">skip_import_rotation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Skip rotation of the password on import. |
 
 ---
 
@@ -1322,7 +1451,7 @@ backend: str
 
 The path of the Database Secret Backend the role belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secret_backend_static_role#backend DatabaseSecretBackendStaticRole#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secret_backend_static_role#backend DatabaseSecretBackendStaticRole#backend}
 
 ---
 
@@ -1336,7 +1465,7 @@ db_name: str
 
 Database connection to use for this role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secret_backend_static_role#db_name DatabaseSecretBackendStaticRole#db_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secret_backend_static_role#db_name DatabaseSecretBackendStaticRole#db_name}
 
 ---
 
@@ -1350,7 +1479,7 @@ name: str
 
 Unique name for the static role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secret_backend_static_role#name DatabaseSecretBackendStaticRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secret_backend_static_role#name DatabaseSecretBackendStaticRole#name}
 
 ---
 
@@ -1364,7 +1493,35 @@ username: str
 
 The database username that this role corresponds to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secret_backend_static_role#username DatabaseSecretBackendStaticRole#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secret_backend_static_role#username DatabaseSecretBackendStaticRole#username}
+
+---
+
+##### `credential_config`<sup>Optional</sup> <a name="credential_config" id="@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRoleConfig.property.credentialConfig"></a>
+
+```python
+credential_config: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+The configuration for the credential type.Full documentation for the allowed values can be found under "https://developer.hashicorp.com/vault/api-docs/secret/databases#credential_config".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secret_backend_static_role#credential_config DatabaseSecretBackendStaticRole#credential_config}
+
+---
+
+##### `credential_type`<sup>Optional</sup> <a name="credential_type" id="@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRoleConfig.property.credentialType"></a>
+
+```python
+credential_type: str
+```
+
+- *Type:* str
+
+The credential type for the user, can be one of "password", "rsa_private_key" or "client_certificate".The configuration can be done in `credential_config`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secret_backend_static_role#credential_type DatabaseSecretBackendStaticRole#credential_type}
 
 ---
 
@@ -1376,7 +1533,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secret_backend_static_role#id DatabaseSecretBackendStaticRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secret_backend_static_role#id DatabaseSecretBackendStaticRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1393,7 +1550,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secret_backend_static_role#namespace DatabaseSecretBackendStaticRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secret_backend_static_role#namespace DatabaseSecretBackendStaticRole#namespace}
 
 ---
 
@@ -1407,7 +1564,7 @@ rotation_period: typing.Union[int, float]
 
 The amount of time Vault should wait before rotating the password, in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secret_backend_static_role#rotation_period DatabaseSecretBackendStaticRole#rotation_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secret_backend_static_role#rotation_period DatabaseSecretBackendStaticRole#rotation_period}
 
 ---
 
@@ -1421,7 +1578,7 @@ rotation_schedule: str
 
 A cron-style string that will define the schedule on which rotations should occur.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secret_backend_static_role#rotation_schedule DatabaseSecretBackendStaticRole#rotation_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secret_backend_static_role#rotation_schedule DatabaseSecretBackendStaticRole#rotation_schedule}
 
 ---
 
@@ -1435,7 +1592,7 @@ rotation_statements: typing.List[str]
 
 Database statements to execute to rotate the password for the configured database user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secret_backend_static_role#rotation_statements DatabaseSecretBackendStaticRole#rotation_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secret_backend_static_role#rotation_statements DatabaseSecretBackendStaticRole#rotation_statements}
 
 ---
 
@@ -1449,7 +1606,7 @@ rotation_window: typing.Union[int, float]
 
 The amount of time in seconds in which the rotations are allowed to occur starting from a given rotation_schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secret_backend_static_role#rotation_window DatabaseSecretBackendStaticRole#rotation_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secret_backend_static_role#rotation_window DatabaseSecretBackendStaticRole#rotation_window}
 
 ---
 
@@ -1465,7 +1622,21 @@ The password corresponding to the username in the database.
 
 Required when using the Rootless Password Rotation workflow for static roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secret_backend_static_role#self_managed_password DatabaseSecretBackendStaticRole#self_managed_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secret_backend_static_role#self_managed_password DatabaseSecretBackendStaticRole#self_managed_password}
+
+---
+
+##### `skip_import_rotation`<sup>Optional</sup> <a name="skip_import_rotation" id="@cdktf/provider-vault.databaseSecretBackendStaticRole.DatabaseSecretBackendStaticRoleConfig.property.skipImportRotation"></a>
+
+```python
+skip_import_rotation: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Skip rotation of the password on import.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secret_backend_static_role#skip_import_rotation DatabaseSecretBackendStaticRole#skip_import_rotation}
 
 ---
 

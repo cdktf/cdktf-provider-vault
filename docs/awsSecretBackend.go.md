@@ -4,12 +4,12 @@
 
 ### AwsSecretBackend <a name="AwsSecretBackend" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend vault_aws_secret_backend}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend vault_aws_secret_backend}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/awssecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awssecretbackend"
 
 awssecretbackend.NewAwsSecretBackend(scope Construct, id *string, config AwsSecretBackendConfig) AwsSecretBackend
 ```
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetAccessKey">ResetAccessKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetDefaultLeaseTtlSeconds">ResetDefaultLeaseTtlSeconds</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetDescription">ResetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetDisableAutomatedRotation">ResetDisableAutomatedRotation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetDisableRemount">ResetDisableRemount</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetIamEndpoint">ResetIamEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetId">ResetId</a></code> | *No description.* |
@@ -88,6 +89,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetPath">ResetPath</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetRoleArn">ResetRoleArn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetRotationPeriod">ResetRotationPeriod</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetRotationSchedule">ResetRotationSchedule</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetRotationWindow">ResetRotationWindow</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetSecretKey">ResetSecretKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetStsEndpoint">ResetStsEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetStsFallbackEndpoints">ResetStsFallbackEndpoints</a></code> | *No description.* |
@@ -403,6 +407,12 @@ func ResetDefaultLeaseTtlSeconds()
 func ResetDescription()
 ```
 
+##### `ResetDisableAutomatedRotation` <a name="ResetDisableAutomatedRotation" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetDisableAutomatedRotation"></a>
+
+```go
+func ResetDisableAutomatedRotation()
+```
+
 ##### `ResetDisableRemount` <a name="ResetDisableRemount" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetDisableRemount"></a>
 
 ```go
@@ -475,6 +485,24 @@ func ResetRegion()
 func ResetRoleArn()
 ```
 
+##### `ResetRotationPeriod` <a name="ResetRotationPeriod" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetRotationPeriod"></a>
+
+```go
+func ResetRotationPeriod()
+```
+
+##### `ResetRotationSchedule` <a name="ResetRotationSchedule" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetRotationSchedule"></a>
+
+```go
+func ResetRotationSchedule()
+```
+
+##### `ResetRotationWindow` <a name="ResetRotationWindow" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetRotationWindow"></a>
+
+```go
+func ResetRotationWindow()
+```
+
 ##### `ResetSecretKey` <a name="ResetSecretKey" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetSecretKey"></a>
 
 ```go
@@ -525,7 +553,7 @@ func ResetUsernameTemplate()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/awssecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awssecretbackend"
 
 awssecretbackend.AwsSecretBackend_IsConstruct(x interface{}) *bool
 ```
@@ -557,7 +585,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/awssecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awssecretbackend"
 
 awssecretbackend.AwsSecretBackend_IsTerraformElement(x interface{}) *bool
 ```
@@ -571,7 +599,7 @@ awssecretbackend.AwsSecretBackend_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/awssecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awssecretbackend"
 
 awssecretbackend.AwsSecretBackend_IsTerraformResource(x interface{}) *bool
 ```
@@ -585,7 +613,7 @@ awssecretbackend.AwsSecretBackend_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/awssecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awssecretbackend"
 
 awssecretbackend.AwsSecretBackend_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -614,7 +642,7 @@ The construct id used in the generated config for the AwsSecretBackend to import
 
 The id of the existing AwsSecretBackend that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -647,6 +675,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.accessKeyInput">AccessKeyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.defaultLeaseTtlSecondsInput">DefaultLeaseTtlSecondsInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.disableRemountInput">DisableRemountInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.iamEndpointInput">IamEndpointInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.identityTokenAudienceInput">IdentityTokenAudienceInput</a></code> | <code>*string</code> | *No description.* |
@@ -659,6 +688,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.pathInput">PathInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.roleArnInput">RoleArnInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.rotationPeriodInput">RotationPeriodInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.rotationScheduleInput">RotationScheduleInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.rotationWindowInput">RotationWindowInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.secretKeyInput">SecretKeyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.stsEndpointInput">StsEndpointInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.stsFallbackEndpointsInput">StsFallbackEndpointsInput</a></code> | <code>*[]*string</code> | *No description.* |
@@ -668,6 +700,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.accessKey">AccessKey</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.defaultLeaseTtlSeconds">DefaultLeaseTtlSeconds</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.description">Description</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.disableRemount">DisableRemount</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.iamEndpoint">IamEndpoint</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.id">Id</a></code> | <code>*string</code> | *No description.* |
@@ -680,6 +713,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.path">Path</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.roleArn">RoleArn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.rotationPeriod">RotationPeriod</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.rotationSchedule">RotationSchedule</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.rotationWindow">RotationWindow</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.secretKey">SecretKey</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.stsEndpoint">StsEndpoint</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.stsFallbackEndpoints">StsFallbackEndpoints</a></code> | <code>*[]*string</code> | *No description.* |
@@ -861,6 +897,16 @@ func DescriptionInput() *string
 
 ---
 
+##### `DisableAutomatedRotationInput`<sup>Optional</sup> <a name="DisableAutomatedRotationInput" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.disableAutomatedRotationInput"></a>
+
+```go
+func DisableAutomatedRotationInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `DisableRemountInput`<sup>Optional</sup> <a name="DisableRemountInput" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.disableRemountInput"></a>
 
 ```go
@@ -981,6 +1027,36 @@ func RoleArnInput() *string
 
 ---
 
+##### `RotationPeriodInput`<sup>Optional</sup> <a name="RotationPeriodInput" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.rotationPeriodInput"></a>
+
+```go
+func RotationPeriodInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `RotationScheduleInput`<sup>Optional</sup> <a name="RotationScheduleInput" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.rotationScheduleInput"></a>
+
+```go
+func RotationScheduleInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RotationWindowInput`<sup>Optional</sup> <a name="RotationWindowInput" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.rotationWindowInput"></a>
+
+```go
+func RotationWindowInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `SecretKeyInput`<sup>Optional</sup> <a name="SecretKeyInput" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.secretKeyInput"></a>
 
 ```go
@@ -1068,6 +1144,16 @@ func Description() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `DisableAutomatedRotation`<sup>Required</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.disableAutomatedRotation"></a>
+
+```go
+func DisableAutomatedRotation() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -1191,6 +1277,36 @@ func RoleArn() *string
 
 ---
 
+##### `RotationPeriod`<sup>Required</sup> <a name="RotationPeriod" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.rotationPeriod"></a>
+
+```go
+func RotationPeriod() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `RotationSchedule`<sup>Required</sup> <a name="RotationSchedule" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.rotationSchedule"></a>
+
+```go
+func RotationSchedule() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RotationWindow`<sup>Required</sup> <a name="RotationWindow" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.rotationWindow"></a>
+
+```go
+func RotationWindow() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `SecretKey`<sup>Required</sup> <a name="SecretKey" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.secretKey"></a>
 
 ```go
@@ -1276,7 +1392,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/awssecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awssecretbackend"
 
 &awssecretbackend.AwsSecretBackendConfig {
 	Connection: interface{},
@@ -1289,6 +1405,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/awssecretbackend"
 	AccessKey: *string,
 	DefaultLeaseTtlSeconds: *f64,
 	Description: *string,
+	DisableAutomatedRotation: interface{},
 	DisableRemount: interface{},
 	IamEndpoint: *string,
 	Id: *string,
@@ -1301,6 +1418,9 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/awssecretbackend"
 	Path: *string,
 	Region: *string,
 	RoleArn: *string,
+	RotationPeriod: *f64,
+	RotationSchedule: *string,
+	RotationWindow: *f64,
 	SecretKey: *string,
 	StsEndpoint: *string,
 	StsFallbackEndpoints: *[]*string,
@@ -1324,9 +1444,10 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/awssecretbackend"
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.accessKey">AccessKey</a></code> | <code>*string</code> | The AWS Access Key ID to use when generating new credentials. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.defaultLeaseTtlSeconds">DefaultLeaseTtlSeconds</a></code> | <code>*f64</code> | Default lease duration for secrets in seconds. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.description">Description</a></code> | <code>*string</code> | Human-friendly description of the mount for the backend. |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>interface{}</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.disableRemount">DisableRemount</a></code> | <code>interface{}</code> | If set, opts out of mount migration on path updates. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.iamEndpoint">IamEndpoint</a></code> | <code>*string</code> | Specifies a custom HTTP IAM endpoint to use. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend#id AwsSecretBackend#id}. |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend#id AwsSecretBackend#id}. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.identityTokenAudience">IdentityTokenAudience</a></code> | <code>*string</code> | The audience claim value. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.identityTokenKey">IdentityTokenKey</a></code> | <code>*string</code> | The key to use for signing identity tokens. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.identityTokenTtl">IdentityTokenTtl</a></code> | <code>*f64</code> | The TTL of generated identity tokens in seconds. |
@@ -1336,6 +1457,9 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/awssecretbackend"
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.path">Path</a></code> | <code>*string</code> | Path to mount the backend at. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.region">Region</a></code> | <code>*string</code> | The AWS region to make API calls against. Defaults to us-east-1. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.roleArn">RoleArn</a></code> | <code>*string</code> | Role ARN to assume for plugin identity token federation. |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.rotationPeriod">RotationPeriod</a></code> | <code>*f64</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.rotationSchedule">RotationSchedule</a></code> | <code>*string</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.rotationWindow">RotationWindow</a></code> | <code>*f64</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.secretKey">SecretKey</a></code> | <code>*string</code> | The AWS Secret Access Key to use when generating new credentials. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.stsEndpoint">StsEndpoint</a></code> | <code>*string</code> | Specifies a custom HTTP STS endpoint to use. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.stsFallbackEndpoints">StsFallbackEndpoints</a></code> | <code>*[]*string</code> | Specifies a list of custom STS fallback endpoints to use (in order). |
@@ -1425,7 +1549,7 @@ AccessKey *string
 
 The AWS Access Key ID to use when generating new credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend#access_key AwsSecretBackend#access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend#access_key AwsSecretBackend#access_key}
 
 ---
 
@@ -1439,7 +1563,7 @@ DefaultLeaseTtlSeconds *f64
 
 Default lease duration for secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend#default_lease_ttl_seconds AwsSecretBackend#default_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend#default_lease_ttl_seconds AwsSecretBackend#default_lease_ttl_seconds}
 
 ---
 
@@ -1453,7 +1577,21 @@ Description *string
 
 Human-friendly description of the mount for the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend#description AwsSecretBackend#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend#description AwsSecretBackend#description}
+
+---
+
+##### `DisableAutomatedRotation`<sup>Optional</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.disableAutomatedRotation"></a>
+
+```go
+DisableAutomatedRotation interface{}
+```
+
+- *Type:* interface{}
+
+Stops rotation of the root credential until set to false.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend#disable_automated_rotation AwsSecretBackend#disable_automated_rotation}
 
 ---
 
@@ -1467,7 +1605,7 @@ DisableRemount interface{}
 
 If set, opts out of mount migration on path updates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend#disable_remount AwsSecretBackend#disable_remount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend#disable_remount AwsSecretBackend#disable_remount}
 
 ---
 
@@ -1481,7 +1619,7 @@ IamEndpoint *string
 
 Specifies a custom HTTP IAM endpoint to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend#iam_endpoint AwsSecretBackend#iam_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend#iam_endpoint AwsSecretBackend#iam_endpoint}
 
 ---
 
@@ -1493,7 +1631,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend#id AwsSecretBackend#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend#id AwsSecretBackend#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1510,7 +1648,7 @@ IdentityTokenAudience *string
 
 The audience claim value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend#identity_token_audience AwsSecretBackend#identity_token_audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend#identity_token_audience AwsSecretBackend#identity_token_audience}
 
 ---
 
@@ -1524,7 +1662,7 @@ IdentityTokenKey *string
 
 The key to use for signing identity tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend#identity_token_key AwsSecretBackend#identity_token_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend#identity_token_key AwsSecretBackend#identity_token_key}
 
 ---
 
@@ -1538,7 +1676,7 @@ IdentityTokenTtl *f64
 
 The TTL of generated identity tokens in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend#identity_token_ttl AwsSecretBackend#identity_token_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend#identity_token_ttl AwsSecretBackend#identity_token_ttl}
 
 ---
 
@@ -1552,7 +1690,7 @@ Local interface{}
 
 Specifies if the secret backend is local only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend#local AwsSecretBackend#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend#local AwsSecretBackend#local}
 
 ---
 
@@ -1566,7 +1704,7 @@ MaxLeaseTtlSeconds *f64
 
 Maximum possible lease duration for secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend#max_lease_ttl_seconds AwsSecretBackend#max_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend#max_lease_ttl_seconds AwsSecretBackend#max_lease_ttl_seconds}
 
 ---
 
@@ -1580,7 +1718,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend#namespace AwsSecretBackend#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend#namespace AwsSecretBackend#namespace}
 
 ---
 
@@ -1594,7 +1732,7 @@ Path *string
 
 Path to mount the backend at.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend#path AwsSecretBackend#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend#path AwsSecretBackend#path}
 
 ---
 
@@ -1608,7 +1746,7 @@ Region *string
 
 The AWS region to make API calls against. Defaults to us-east-1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend#region AwsSecretBackend#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend#region AwsSecretBackend#region}
 
 ---
 
@@ -1622,7 +1760,51 @@ RoleArn *string
 
 Role ARN to assume for plugin identity token federation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend#role_arn AwsSecretBackend#role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend#role_arn AwsSecretBackend#role_arn}
+
+---
+
+##### `RotationPeriod`<sup>Optional</sup> <a name="RotationPeriod" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.rotationPeriod"></a>
+
+```go
+RotationPeriod *f64
+```
+
+- *Type:* *f64
+
+The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend#rotation_period AwsSecretBackend#rotation_period}
+
+---
+
+##### `RotationSchedule`<sup>Optional</sup> <a name="RotationSchedule" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.rotationSchedule"></a>
+
+```go
+RotationSchedule *string
+```
+
+- *Type:* *string
+
+The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend#rotation_schedule AwsSecretBackend#rotation_schedule}
+
+---
+
+##### `RotationWindow`<sup>Optional</sup> <a name="RotationWindow" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.rotationWindow"></a>
+
+```go
+RotationWindow *f64
+```
+
+- *Type:* *f64
+
+The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered.
+
+Can only be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend#rotation_window AwsSecretBackend#rotation_window}
 
 ---
 
@@ -1636,7 +1818,7 @@ SecretKey *string
 
 The AWS Secret Access Key to use when generating new credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend#secret_key AwsSecretBackend#secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend#secret_key AwsSecretBackend#secret_key}
 
 ---
 
@@ -1650,7 +1832,7 @@ StsEndpoint *string
 
 Specifies a custom HTTP STS endpoint to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend#sts_endpoint AwsSecretBackend#sts_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend#sts_endpoint AwsSecretBackend#sts_endpoint}
 
 ---
 
@@ -1664,7 +1846,7 @@ StsFallbackEndpoints *[]*string
 
 Specifies a list of custom STS fallback endpoints to use (in order).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend#sts_fallback_endpoints AwsSecretBackend#sts_fallback_endpoints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend#sts_fallback_endpoints AwsSecretBackend#sts_fallback_endpoints}
 
 ---
 
@@ -1678,7 +1860,7 @@ StsFallbackRegions *[]*string
 
 Specifies a list of custom STS fallback regions to use (in order).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend#sts_fallback_regions AwsSecretBackend#sts_fallback_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend#sts_fallback_regions AwsSecretBackend#sts_fallback_regions}
 
 ---
 
@@ -1692,7 +1874,7 @@ StsRegion *string
 
 Specifies a custom STS region to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend#sts_region AwsSecretBackend#sts_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend#sts_region AwsSecretBackend#sts_region}
 
 ---
 
@@ -1706,7 +1888,7 @@ UsernameTemplate *string
 
 Template describing how dynamic usernames are generated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend#username_template AwsSecretBackend#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend#username_template AwsSecretBackend#username_template}
 
 ---
 

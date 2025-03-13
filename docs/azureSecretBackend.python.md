@@ -4,7 +4,7 @@
 
 ### AzureSecretBackend <a name="AzureSecretBackend" id="@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/azure_secret_backend vault_azure_secret_backend}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend vault_azure_secret_backend}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.Initializer"></a>
 
@@ -26,6 +26,7 @@ azureSecretBackend.AzureSecretBackend(
   client_id: str = None,
   client_secret: str = None,
   description: str = None,
+  disable_automated_rotation: typing.Union[bool, IResolvable] = None,
   disable_remount: typing.Union[bool, IResolvable] = None,
   environment: str = None,
   id: str = None,
@@ -34,6 +35,9 @@ azureSecretBackend.AzureSecretBackend(
   identity_token_ttl: typing.Union[int, float] = None,
   namespace: str = None,
   path: str = None,
+  rotation_period: typing.Union[int, float] = None,
+  rotation_schedule: str = None,
+  rotation_window: typing.Union[int, float] = None,
   use_microsoft_graph_api: typing.Union[bool, IResolvable] = None
 )
 ```
@@ -54,14 +58,18 @@ azureSecretBackend.AzureSecretBackend(
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.Initializer.parameter.clientId">client_id</a></code> | <code>str</code> | The client id for credentials to query the Azure APIs. Currently read permissions to query compute resources are required. |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.Initializer.parameter.clientSecret">client_secret</a></code> | <code>str</code> | The client secret for credentials to query the Azure APIs. |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.Initializer.parameter.description">description</a></code> | <code>str</code> | Human-friendly description of the mount for the backend. |
+| <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.Initializer.parameter.disableAutomatedRotation">disable_automated_rotation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.Initializer.parameter.disableRemount">disable_remount</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set, opts out of mount migration on path updates. |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.Initializer.parameter.environment">environment</a></code> | <code>str</code> | The Azure cloud environment. Valid values: AzurePublicCloud, AzureUSGovernmentCloud, AzureChinaCloud, AzureGermanCloud. |
-| <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/azure_secret_backend#id AzureSecretBackend#id}. |
+| <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend#id AzureSecretBackend#id}. |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.Initializer.parameter.identityTokenAudience">identity_token_audience</a></code> | <code>str</code> | The audience claim value. |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.Initializer.parameter.identityTokenKey">identity_token_key</a></code> | <code>str</code> | The key to use for signing identity tokens. |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.Initializer.parameter.identityTokenTtl">identity_token_ttl</a></code> | <code>typing.Union[int, float]</code> | The TTL of generated identity tokens in seconds. |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.Initializer.parameter.path">path</a></code> | <code>str</code> | Path to mount the backend at. |
+| <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.Initializer.parameter.rotationPeriod">rotation_period</a></code> | <code>typing.Union[int, float]</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
+| <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.Initializer.parameter.rotationSchedule">rotation_schedule</a></code> | <code>str</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
+| <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.Initializer.parameter.rotationWindow">rotation_window</a></code> | <code>typing.Union[int, float]</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.Initializer.parameter.useMicrosoftGraphApi">use_microsoft_graph_api</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Use the Microsoft Graph API. Should be set to true on vault-1.10+. |
 
 ---
@@ -132,7 +140,7 @@ Must be unique amongst siblings in the same scope
 
 The subscription id for the Azure Active Directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/azure_secret_backend#subscription_id AzureSecretBackend#subscription_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend#subscription_id AzureSecretBackend#subscription_id}
 
 ---
 
@@ -142,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The tenant id for the Azure Active Directory organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/azure_secret_backend#tenant_id AzureSecretBackend#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend#tenant_id AzureSecretBackend#tenant_id}
 
 ---
 
@@ -152,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The client id for credentials to query the Azure APIs. Currently read permissions to query compute resources are required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/azure_secret_backend#client_id AzureSecretBackend#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend#client_id AzureSecretBackend#client_id}
 
 ---
 
@@ -162,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The client secret for credentials to query the Azure APIs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/azure_secret_backend#client_secret AzureSecretBackend#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend#client_secret AzureSecretBackend#client_secret}
 
 ---
 
@@ -172,7 +180,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Human-friendly description of the mount for the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/azure_secret_backend#description AzureSecretBackend#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend#description AzureSecretBackend#description}
+
+---
+
+##### `disable_automated_rotation`<sup>Optional</sup> <a name="disable_automated_rotation" id="@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.Initializer.parameter.disableAutomatedRotation"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Stops rotation of the root credential until set to false.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend#disable_automated_rotation AzureSecretBackend#disable_automated_rotation}
 
 ---
 
@@ -182,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If set, opts out of mount migration on path updates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/azure_secret_backend#disable_remount AzureSecretBackend#disable_remount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend#disable_remount AzureSecretBackend#disable_remount}
 
 ---
 
@@ -192,7 +210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Azure cloud environment. Valid values: AzurePublicCloud, AzureUSGovernmentCloud, AzureChinaCloud, AzureGermanCloud.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/azure_secret_backend#environment AzureSecretBackend#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend#environment AzureSecretBackend#environment}
 
 ---
 
@@ -200,7 +218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/azure_secret_backend#id AzureSecretBackend#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend#id AzureSecretBackend#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -213,7 +231,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The audience claim value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/azure_secret_backend#identity_token_audience AzureSecretBackend#identity_token_audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend#identity_token_audience AzureSecretBackend#identity_token_audience}
 
 ---
 
@@ -223,7 +241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The key to use for signing identity tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/azure_secret_backend#identity_token_key AzureSecretBackend#identity_token_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend#identity_token_key AzureSecretBackend#identity_token_key}
 
 ---
 
@@ -233,7 +251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The TTL of generated identity tokens in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/azure_secret_backend#identity_token_ttl AzureSecretBackend#identity_token_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend#identity_token_ttl AzureSecretBackend#identity_token_ttl}
 
 ---
 
@@ -243,7 +261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/azure_secret_backend#namespace AzureSecretBackend#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend#namespace AzureSecretBackend#namespace}
 
 ---
 
@@ -253,7 +271,39 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Path to mount the backend at.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/azure_secret_backend#path AzureSecretBackend#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend#path AzureSecretBackend#path}
+
+---
+
+##### `rotation_period`<sup>Optional</sup> <a name="rotation_period" id="@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.Initializer.parameter.rotationPeriod"></a>
+
+- *Type:* typing.Union[int, float]
+
+The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend#rotation_period AzureSecretBackend#rotation_period}
+
+---
+
+##### `rotation_schedule`<sup>Optional</sup> <a name="rotation_schedule" id="@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.Initializer.parameter.rotationSchedule"></a>
+
+- *Type:* str
+
+The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend#rotation_schedule AzureSecretBackend#rotation_schedule}
+
+---
+
+##### `rotation_window`<sup>Optional</sup> <a name="rotation_window" id="@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.Initializer.parameter.rotationWindow"></a>
+
+- *Type:* typing.Union[int, float]
+
+The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered.
+
+Can only be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend#rotation_window AzureSecretBackend#rotation_window}
 
 ---
 
@@ -263,7 +313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Use the Microsoft Graph API. Should be set to true on vault-1.10+.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/azure_secret_backend#use_microsoft_graph_api AzureSecretBackend#use_microsoft_graph_api}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend#use_microsoft_graph_api AzureSecretBackend#use_microsoft_graph_api}
 
 ---
 
@@ -297,6 +347,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.resetClientId">reset_client_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.resetClientSecret">reset_client_secret</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.resetDisableAutomatedRotation">reset_disable_automated_rotation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.resetDisableRemount">reset_disable_remount</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.resetEnvironment">reset_environment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.resetId">reset_id</a></code> | *No description.* |
@@ -305,6 +356,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.resetIdentityTokenTtl">reset_identity_token_ttl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.resetNamespace">reset_namespace</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.resetPath">reset_path</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.resetRotationPeriod">reset_rotation_period</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.resetRotationSchedule">reset_rotation_schedule</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.resetRotationWindow">reset_rotation_window</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.resetUseMicrosoftGraphApi">reset_use_microsoft_graph_api</a></code> | *No description.* |
 
 ---
@@ -652,6 +706,12 @@ def reset_client_secret() -> None
 def reset_description() -> None
 ```
 
+##### `reset_disable_automated_rotation` <a name="reset_disable_automated_rotation" id="@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.resetDisableAutomatedRotation"></a>
+
+```python
+def reset_disable_automated_rotation() -> None
+```
+
 ##### `reset_disable_remount` <a name="reset_disable_remount" id="@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.resetDisableRemount"></a>
 
 ```python
@@ -698,6 +758,24 @@ def reset_namespace() -> None
 
 ```python
 def reset_path() -> None
+```
+
+##### `reset_rotation_period` <a name="reset_rotation_period" id="@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.resetRotationPeriod"></a>
+
+```python
+def reset_rotation_period() -> None
+```
+
+##### `reset_rotation_schedule` <a name="reset_rotation_schedule" id="@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.resetRotationSchedule"></a>
+
+```python
+def reset_rotation_schedule() -> None
+```
+
+##### `reset_rotation_window` <a name="reset_rotation_window" id="@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.resetRotationWindow"></a>
+
+```python
+def reset_rotation_window() -> None
 ```
 
 ##### `reset_use_microsoft_graph_api` <a name="reset_use_microsoft_graph_api" id="@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.resetUseMicrosoftGraphApi"></a>
@@ -820,7 +898,7 @@ The construct id used in the generated config for the AzureSecretBackend to impo
 
 The id of the existing AzureSecretBackend that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/azure_secret_backend#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -853,6 +931,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.clientIdInput">client_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.clientSecretInput">client_secret_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.disableAutomatedRotationInput">disable_automated_rotation_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.disableRemountInput">disable_remount_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.environmentInput">environment_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.identityTokenAudienceInput">identity_token_audience_input</a></code> | <code>str</code> | *No description.* |
@@ -861,12 +940,16 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.namespaceInput">namespace_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.pathInput">path_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.rotationPeriodInput">rotation_period_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.rotationScheduleInput">rotation_schedule_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.rotationWindowInput">rotation_window_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.subscriptionIdInput">subscription_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.tenantIdInput">tenant_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.useMicrosoftGraphApiInput">use_microsoft_graph_api_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.clientId">client_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.clientSecret">client_secret</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.disableAutomatedRotation">disable_automated_rotation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.disableRemount">disable_remount</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.environment">environment</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -875,6 +958,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.identityTokenTtl">identity_token_ttl</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.namespace">namespace</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.path">path</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.rotationPeriod">rotation_period</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.rotationSchedule">rotation_schedule</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.rotationWindow">rotation_window</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.subscriptionId">subscription_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.tenantId">tenant_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.useMicrosoftGraphApi">use_microsoft_graph_api</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -1053,6 +1139,16 @@ description_input: str
 
 ---
 
+##### `disable_automated_rotation_input`<sup>Optional</sup> <a name="disable_automated_rotation_input" id="@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.disableAutomatedRotationInput"></a>
+
+```python
+disable_automated_rotation_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `disable_remount_input`<sup>Optional</sup> <a name="disable_remount_input" id="@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.disableRemountInput"></a>
 
 ```python
@@ -1133,6 +1229,36 @@ path_input: str
 
 ---
 
+##### `rotation_period_input`<sup>Optional</sup> <a name="rotation_period_input" id="@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.rotationPeriodInput"></a>
+
+```python
+rotation_period_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `rotation_schedule_input`<sup>Optional</sup> <a name="rotation_schedule_input" id="@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.rotationScheduleInput"></a>
+
+```python
+rotation_schedule_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `rotation_window_input`<sup>Optional</sup> <a name="rotation_window_input" id="@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.rotationWindowInput"></a>
+
+```python
+rotation_window_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `subscription_id_input`<sup>Optional</sup> <a name="subscription_id_input" id="@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.subscriptionIdInput"></a>
 
 ```python
@@ -1190,6 +1316,16 @@ description: str
 ```
 
 - *Type:* str
+
+---
+
+##### `disable_automated_rotation`<sup>Required</sup> <a name="disable_automated_rotation" id="@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.disableAutomatedRotation"></a>
+
+```python
+disable_automated_rotation: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
 
 ---
 
@@ -1273,6 +1409,36 @@ path: str
 
 ---
 
+##### `rotation_period`<sup>Required</sup> <a name="rotation_period" id="@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.rotationPeriod"></a>
+
+```python
+rotation_period: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `rotation_schedule`<sup>Required</sup> <a name="rotation_schedule" id="@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.rotationSchedule"></a>
+
+```python
+rotation_schedule: str
+```
+
+- *Type:* str
+
+---
+
+##### `rotation_window`<sup>Required</sup> <a name="rotation_window" id="@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.rotationWindow"></a>
+
+```python
+rotation_window: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `subscription_id`<sup>Required</sup> <a name="subscription_id" id="@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend.property.subscriptionId"></a>
 
 ```python
@@ -1343,6 +1509,7 @@ azureSecretBackend.AzureSecretBackendConfig(
   client_id: str = None,
   client_secret: str = None,
   description: str = None,
+  disable_automated_rotation: typing.Union[bool, IResolvable] = None,
   disable_remount: typing.Union[bool, IResolvable] = None,
   environment: str = None,
   id: str = None,
@@ -1351,6 +1518,9 @@ azureSecretBackend.AzureSecretBackendConfig(
   identity_token_ttl: typing.Union[int, float] = None,
   namespace: str = None,
   path: str = None,
+  rotation_period: typing.Union[int, float] = None,
+  rotation_schedule: str = None,
+  rotation_window: typing.Union[int, float] = None,
   use_microsoft_graph_api: typing.Union[bool, IResolvable] = None
 )
 ```
@@ -1371,14 +1541,18 @@ azureSecretBackend.AzureSecretBackendConfig(
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackendConfig.property.clientId">client_id</a></code> | <code>str</code> | The client id for credentials to query the Azure APIs. Currently read permissions to query compute resources are required. |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackendConfig.property.clientSecret">client_secret</a></code> | <code>str</code> | The client secret for credentials to query the Azure APIs. |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackendConfig.property.description">description</a></code> | <code>str</code> | Human-friendly description of the mount for the backend. |
+| <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackendConfig.property.disableAutomatedRotation">disable_automated_rotation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackendConfig.property.disableRemount">disable_remount</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set, opts out of mount migration on path updates. |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackendConfig.property.environment">environment</a></code> | <code>str</code> | The Azure cloud environment. Valid values: AzurePublicCloud, AzureUSGovernmentCloud, AzureChinaCloud, AzureGermanCloud. |
-| <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackendConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/azure_secret_backend#id AzureSecretBackend#id}. |
+| <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackendConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend#id AzureSecretBackend#id}. |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackendConfig.property.identityTokenAudience">identity_token_audience</a></code> | <code>str</code> | The audience claim value. |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackendConfig.property.identityTokenKey">identity_token_key</a></code> | <code>str</code> | The key to use for signing identity tokens. |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackendConfig.property.identityTokenTtl">identity_token_ttl</a></code> | <code>typing.Union[int, float]</code> | The TTL of generated identity tokens in seconds. |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackendConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackendConfig.property.path">path</a></code> | <code>str</code> | Path to mount the backend at. |
+| <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackendConfig.property.rotationPeriod">rotation_period</a></code> | <code>typing.Union[int, float]</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
+| <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackendConfig.property.rotationSchedule">rotation_schedule</a></code> | <code>str</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
+| <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackendConfig.property.rotationWindow">rotation_window</a></code> | <code>typing.Union[int, float]</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackend.AzureSecretBackendConfig.property.useMicrosoftGraphApi">use_microsoft_graph_api</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Use the Microsoft Graph API. Should be set to true on vault-1.10+. |
 
 ---
@@ -1463,7 +1637,7 @@ subscription_id: str
 
 The subscription id for the Azure Active Directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/azure_secret_backend#subscription_id AzureSecretBackend#subscription_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend#subscription_id AzureSecretBackend#subscription_id}
 
 ---
 
@@ -1477,7 +1651,7 @@ tenant_id: str
 
 The tenant id for the Azure Active Directory organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/azure_secret_backend#tenant_id AzureSecretBackend#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend#tenant_id AzureSecretBackend#tenant_id}
 
 ---
 
@@ -1491,7 +1665,7 @@ client_id: str
 
 The client id for credentials to query the Azure APIs. Currently read permissions to query compute resources are required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/azure_secret_backend#client_id AzureSecretBackend#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend#client_id AzureSecretBackend#client_id}
 
 ---
 
@@ -1505,7 +1679,7 @@ client_secret: str
 
 The client secret for credentials to query the Azure APIs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/azure_secret_backend#client_secret AzureSecretBackend#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend#client_secret AzureSecretBackend#client_secret}
 
 ---
 
@@ -1519,7 +1693,21 @@ description: str
 
 Human-friendly description of the mount for the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/azure_secret_backend#description AzureSecretBackend#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend#description AzureSecretBackend#description}
+
+---
+
+##### `disable_automated_rotation`<sup>Optional</sup> <a name="disable_automated_rotation" id="@cdktf/provider-vault.azureSecretBackend.AzureSecretBackendConfig.property.disableAutomatedRotation"></a>
+
+```python
+disable_automated_rotation: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Stops rotation of the root credential until set to false.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend#disable_automated_rotation AzureSecretBackend#disable_automated_rotation}
 
 ---
 
@@ -1533,7 +1721,7 @@ disable_remount: typing.Union[bool, IResolvable]
 
 If set, opts out of mount migration on path updates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/azure_secret_backend#disable_remount AzureSecretBackend#disable_remount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend#disable_remount AzureSecretBackend#disable_remount}
 
 ---
 
@@ -1547,7 +1735,7 @@ environment: str
 
 The Azure cloud environment. Valid values: AzurePublicCloud, AzureUSGovernmentCloud, AzureChinaCloud, AzureGermanCloud.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/azure_secret_backend#environment AzureSecretBackend#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend#environment AzureSecretBackend#environment}
 
 ---
 
@@ -1559,7 +1747,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/azure_secret_backend#id AzureSecretBackend#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend#id AzureSecretBackend#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1576,7 +1764,7 @@ identity_token_audience: str
 
 The audience claim value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/azure_secret_backend#identity_token_audience AzureSecretBackend#identity_token_audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend#identity_token_audience AzureSecretBackend#identity_token_audience}
 
 ---
 
@@ -1590,7 +1778,7 @@ identity_token_key: str
 
 The key to use for signing identity tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/azure_secret_backend#identity_token_key AzureSecretBackend#identity_token_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend#identity_token_key AzureSecretBackend#identity_token_key}
 
 ---
 
@@ -1604,7 +1792,7 @@ identity_token_ttl: typing.Union[int, float]
 
 The TTL of generated identity tokens in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/azure_secret_backend#identity_token_ttl AzureSecretBackend#identity_token_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend#identity_token_ttl AzureSecretBackend#identity_token_ttl}
 
 ---
 
@@ -1618,7 +1806,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/azure_secret_backend#namespace AzureSecretBackend#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend#namespace AzureSecretBackend#namespace}
 
 ---
 
@@ -1632,7 +1820,51 @@ path: str
 
 Path to mount the backend at.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/azure_secret_backend#path AzureSecretBackend#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend#path AzureSecretBackend#path}
+
+---
+
+##### `rotation_period`<sup>Optional</sup> <a name="rotation_period" id="@cdktf/provider-vault.azureSecretBackend.AzureSecretBackendConfig.property.rotationPeriod"></a>
+
+```python
+rotation_period: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend#rotation_period AzureSecretBackend#rotation_period}
+
+---
+
+##### `rotation_schedule`<sup>Optional</sup> <a name="rotation_schedule" id="@cdktf/provider-vault.azureSecretBackend.AzureSecretBackendConfig.property.rotationSchedule"></a>
+
+```python
+rotation_schedule: str
+```
+
+- *Type:* str
+
+The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend#rotation_schedule AzureSecretBackend#rotation_schedule}
+
+---
+
+##### `rotation_window`<sup>Optional</sup> <a name="rotation_window" id="@cdktf/provider-vault.azureSecretBackend.AzureSecretBackendConfig.property.rotationWindow"></a>
+
+```python
+rotation_window: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered.
+
+Can only be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend#rotation_window AzureSecretBackend#rotation_window}
 
 ---
 
@@ -1646,7 +1878,7 @@ use_microsoft_graph_api: typing.Union[bool, IResolvable]
 
 Use the Microsoft Graph API. Should be set to true on vault-1.10+.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/azure_secret_backend#use_microsoft_graph_api AzureSecretBackend#use_microsoft_graph_api}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend#use_microsoft_graph_api AzureSecretBackend#use_microsoft_graph_api}
 
 ---
 

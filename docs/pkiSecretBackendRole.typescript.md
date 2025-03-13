@@ -4,7 +4,7 @@
 
 ### PkiSecretBackendRole <a name="PkiSecretBackendRole" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.Initializer"></a>
 
@@ -107,6 +107,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.resetMaxTtl">resetMaxTtl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.resetNamespace">resetNamespace</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.resetNoStore">resetNoStore</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.resetNoStoreMetadata">resetNoStoreMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.resetNotAfter">resetNotAfter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.resetNotBeforeDuration">resetNotBeforeDuration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.resetOrganization">resetOrganization</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.resetOu">resetOu</a></code> | *No description.* |
@@ -115,11 +117,14 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.resetPostalCode">resetPostalCode</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.resetProvince">resetProvince</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.resetRequireCn">resetRequireCn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.resetSerialNumberSource">resetSerialNumberSource</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.resetServerFlag">resetServerFlag</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.resetSignatureBits">resetSignatureBits</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.resetStreetAddress">resetStreetAddress</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.resetTtl">resetTtl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.resetUseCsrCommonName">resetUseCsrCommonName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.resetUseCsrSans">resetUseCsrSans</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.resetUsePss">resetUsePss</a></code> | *No description.* |
 
 ---
 
@@ -621,6 +626,18 @@ public resetNamespace(): void
 public resetNoStore(): void
 ```
 
+##### `resetNoStoreMetadata` <a name="resetNoStoreMetadata" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.resetNoStoreMetadata"></a>
+
+```typescript
+public resetNoStoreMetadata(): void
+```
+
+##### `resetNotAfter` <a name="resetNotAfter" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.resetNotAfter"></a>
+
+```typescript
+public resetNotAfter(): void
+```
+
 ##### `resetNotBeforeDuration` <a name="resetNotBeforeDuration" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.resetNotBeforeDuration"></a>
 
 ```typescript
@@ -669,10 +686,22 @@ public resetProvince(): void
 public resetRequireCn(): void
 ```
 
+##### `resetSerialNumberSource` <a name="resetSerialNumberSource" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.resetSerialNumberSource"></a>
+
+```typescript
+public resetSerialNumberSource(): void
+```
+
 ##### `resetServerFlag` <a name="resetServerFlag" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.resetServerFlag"></a>
 
 ```typescript
 public resetServerFlag(): void
+```
+
+##### `resetSignatureBits` <a name="resetSignatureBits" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.resetSignatureBits"></a>
+
+```typescript
+public resetSignatureBits(): void
 ```
 
 ##### `resetStreetAddress` <a name="resetStreetAddress" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.resetStreetAddress"></a>
@@ -697,6 +726,12 @@ public resetUseCsrCommonName(): void
 
 ```typescript
 public resetUseCsrSans(): void
+```
+
+##### `resetUsePss` <a name="resetUsePss" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.resetUsePss"></a>
+
+```typescript
+public resetUsePss(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -802,7 +837,7 @@ The construct id used in the generated config for the PkiSecretBackendRole to im
 
 The id of the existing PkiSecretBackendRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -868,6 +903,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.namespaceInput">namespaceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.noStoreInput">noStoreInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.noStoreMetadataInput">noStoreMetadataInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.notAfterInput">notAfterInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.notBeforeDurationInput">notBeforeDurationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.organizationInput">organizationInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.ouInput">ouInput</a></code> | <code>string[]</code> | *No description.* |
@@ -876,11 +913,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.postalCodeInput">postalCodeInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.provinceInput">provinceInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.requireCnInput">requireCnInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.serialNumberSourceInput">serialNumberSourceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.serverFlagInput">serverFlagInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.signatureBitsInput">signatureBitsInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.streetAddressInput">streetAddressInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.ttlInput">ttlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.useCsrCommonNameInput">useCsrCommonNameInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.useCsrSansInput">useCsrSansInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.usePssInput">usePssInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.allowAnyName">allowAnyName</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.allowBareDomains">allowBareDomains</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.allowedDomains">allowedDomains</a></code> | <code>string[]</code> | *No description.* |
@@ -916,6 +956,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.namespace">namespace</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.noStore">noStore</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.noStoreMetadata">noStoreMetadata</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.notAfter">notAfter</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.notBeforeDuration">notBeforeDuration</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.organization">organization</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.ou">ou</a></code> | <code>string[]</code> | *No description.* |
@@ -923,11 +965,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.postalCode">postalCode</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.province">province</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.requireCn">requireCn</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.serialNumberSource">serialNumberSource</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.serverFlag">serverFlag</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.signatureBits">signatureBits</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.streetAddress">streetAddress</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.ttl">ttl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.useCsrCommonName">useCsrCommonName</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.useCsrSans">useCsrSans</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.usePss">usePss</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -1433,6 +1478,26 @@ public readonly noStoreInput: boolean | IResolvable;
 
 ---
 
+##### `noStoreMetadataInput`<sup>Optional</sup> <a name="noStoreMetadataInput" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.noStoreMetadataInput"></a>
+
+```typescript
+public readonly noStoreMetadataInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `notAfterInput`<sup>Optional</sup> <a name="notAfterInput" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.notAfterInput"></a>
+
+```typescript
+public readonly notAfterInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `notBeforeDurationInput`<sup>Optional</sup> <a name="notBeforeDurationInput" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.notBeforeDurationInput"></a>
 
 ```typescript
@@ -1513,6 +1578,16 @@ public readonly requireCnInput: boolean | IResolvable;
 
 ---
 
+##### `serialNumberSourceInput`<sup>Optional</sup> <a name="serialNumberSourceInput" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.serialNumberSourceInput"></a>
+
+```typescript
+public readonly serialNumberSourceInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `serverFlagInput`<sup>Optional</sup> <a name="serverFlagInput" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.serverFlagInput"></a>
 
 ```typescript
@@ -1520,6 +1595,16 @@ public readonly serverFlagInput: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `signatureBitsInput`<sup>Optional</sup> <a name="signatureBitsInput" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.signatureBitsInput"></a>
+
+```typescript
+public readonly signatureBitsInput: number;
+```
+
+- *Type:* number
 
 ---
 
@@ -1557,6 +1642,16 @@ public readonly useCsrCommonNameInput: boolean | IResolvable;
 
 ```typescript
 public readonly useCsrSansInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `usePssInput`<sup>Optional</sup> <a name="usePssInput" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.usePssInput"></a>
+
+```typescript
+public readonly usePssInput: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktf.IResolvable
@@ -1913,6 +2008,26 @@ public readonly noStore: boolean | IResolvable;
 
 ---
 
+##### `noStoreMetadata`<sup>Required</sup> <a name="noStoreMetadata" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.noStoreMetadata"></a>
+
+```typescript
+public readonly noStoreMetadata: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `notAfter`<sup>Required</sup> <a name="notAfter" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.notAfter"></a>
+
+```typescript
+public readonly notAfter: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `notBeforeDuration`<sup>Required</sup> <a name="notBeforeDuration" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.notBeforeDuration"></a>
 
 ```typescript
@@ -1983,6 +2098,16 @@ public readonly requireCn: boolean | IResolvable;
 
 ---
 
+##### `serialNumberSource`<sup>Required</sup> <a name="serialNumberSource" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.serialNumberSource"></a>
+
+```typescript
+public readonly serialNumberSource: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `serverFlag`<sup>Required</sup> <a name="serverFlag" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.serverFlag"></a>
 
 ```typescript
@@ -1990,6 +2115,16 @@ public readonly serverFlag: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `signatureBits`<sup>Required</sup> <a name="signatureBits" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.signatureBits"></a>
+
+```typescript
+public readonly signatureBits: number;
+```
+
+- *Type:* number
 
 ---
 
@@ -2027,6 +2162,16 @@ public readonly useCsrCommonName: boolean | IResolvable;
 
 ```typescript
 public readonly useCsrSans: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `usePss`<sup>Required</sup> <a name="usePss" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole.property.usePss"></a>
+
+```typescript
+public readonly usePss: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktf.IResolvable
@@ -2100,7 +2245,7 @@ const pkiSecretBackendRoleConfig: pkiSecretBackendRole.PkiSecretBackendRoleConfi
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.extKeyUsage">extKeyUsage</a></code> | <code>string[]</code> | Specify the allowed extended key usage constraint on issued certificates. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.extKeyUsageOids">extKeyUsageOids</a></code> | <code>string[]</code> | A list of extended key usage OIDs. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.generateLease">generateLease</a></code> | <code>boolean \| cdktf.IResolvable</code> | Flag to generate leases with certificates. |
-| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#id PkiSecretBackendRole#id}. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#id PkiSecretBackendRole#id}. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.issuerRef">issuerRef</a></code> | <code>string</code> | Specifies the default issuer of this request. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.keyBits">keyBits</a></code> | <code>number</code> | The number of bits of generated keys. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.keyType">keyType</a></code> | <code>string</code> | The generated key type. |
@@ -2109,6 +2254,8 @@ const pkiSecretBackendRoleConfig: pkiSecretBackendRole.PkiSecretBackendRoleConfi
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.maxTtl">maxTtl</a></code> | <code>string</code> | The maximum TTL. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.namespace">namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.noStore">noStore</a></code> | <code>boolean \| cdktf.IResolvable</code> | Flag to not store certificates in the storage backend. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.noStoreMetadata">noStoreMetadata</a></code> | <code>boolean \| cdktf.IResolvable</code> | Allows metadata to be stored keyed on the certificate's serial number. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.notAfter">notAfter</a></code> | <code>string</code> | Set the Not After field of the certificate with specified date value. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.notBeforeDuration">notBeforeDuration</a></code> | <code>string</code> | Specifies the duration by which to backdate the NotBefore property. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.organization">organization</a></code> | <code>string[]</code> | The organization of generated certificates. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.ou">ou</a></code> | <code>string[]</code> | The organization unit of generated certificates. |
@@ -2117,11 +2264,14 @@ const pkiSecretBackendRoleConfig: pkiSecretBackendRole.PkiSecretBackendRoleConfi
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.postalCode">postalCode</a></code> | <code>string[]</code> | The postal code of generated certificates. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.province">province</a></code> | <code>string[]</code> | The province of generated certificates. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.requireCn">requireCn</a></code> | <code>boolean \| cdktf.IResolvable</code> | Flag to force CN usage. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.serialNumberSource">serialNumberSource</a></code> | <code>string</code> | Specifies the source of the subject serial number. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.serverFlag">serverFlag</a></code> | <code>boolean \| cdktf.IResolvable</code> | Flag to specify certificates for server use. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.signatureBits">signatureBits</a></code> | <code>number</code> | The number of bits to use in the signature algorithm. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.streetAddress">streetAddress</a></code> | <code>string[]</code> | The street address of generated certificates. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.ttl">ttl</a></code> | <code>string</code> | The TTL. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.useCsrCommonName">useCsrCommonName</a></code> | <code>boolean \| cdktf.IResolvable</code> | Flag to use the CN in the CSR. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.useCsrSans">useCsrSans</a></code> | <code>boolean \| cdktf.IResolvable</code> | Flag to use the SANs in the CSR. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.usePss">usePss</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies whether or not to use PSS signatures over PKCS#1v1.5 signatures when a RSA-type issuer is used. Ignored for ECDSA/Ed25519 issuers. |
 
 ---
 
@@ -2205,7 +2355,7 @@ public readonly backend: string;
 
 The path of the PKI secret backend the resource belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#backend PkiSecretBackendRole#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#backend PkiSecretBackendRole#backend}
 
 ---
 
@@ -2219,7 +2369,7 @@ public readonly name: string;
 
 Unique name for the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#name PkiSecretBackendRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#name PkiSecretBackendRole#name}
 
 ---
 
@@ -2233,7 +2383,7 @@ public readonly allowAnyName: boolean | IResolvable;
 
 Flag to allow any name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#allow_any_name PkiSecretBackendRole#allow_any_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#allow_any_name PkiSecretBackendRole#allow_any_name}
 
 ---
 
@@ -2247,7 +2397,7 @@ public readonly allowBareDomains: boolean | IResolvable;
 
 Flag to allow certificates matching the actual domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#allow_bare_domains PkiSecretBackendRole#allow_bare_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#allow_bare_domains PkiSecretBackendRole#allow_bare_domains}
 
 ---
 
@@ -2261,7 +2411,7 @@ public readonly allowedDomains: string[];
 
 The domains of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#allowed_domains PkiSecretBackendRole#allowed_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#allowed_domains PkiSecretBackendRole#allowed_domains}
 
 ---
 
@@ -2275,7 +2425,7 @@ public readonly allowedDomainsTemplate: boolean | IResolvable;
 
 Flag to indicate that `allowed_domains` specifies a template expression (e.g. {{identity.entity.aliases.<mount accessor>.name}}).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#allowed_domains_template PkiSecretBackendRole#allowed_domains_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#allowed_domains_template PkiSecretBackendRole#allowed_domains_template}
 
 ---
 
@@ -2289,7 +2439,7 @@ public readonly allowedOtherSans: string[];
 
 Defines allowed custom SANs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#allowed_other_sans PkiSecretBackendRole#allowed_other_sans}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#allowed_other_sans PkiSecretBackendRole#allowed_other_sans}
 
 ---
 
@@ -2303,7 +2453,7 @@ public readonly allowedSerialNumbers: string[];
 
 Defines allowed Subject serial numbers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#allowed_serial_numbers PkiSecretBackendRole#allowed_serial_numbers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#allowed_serial_numbers PkiSecretBackendRole#allowed_serial_numbers}
 
 ---
 
@@ -2317,7 +2467,7 @@ public readonly allowedUriSans: string[];
 
 Defines allowed URI SANs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#allowed_uri_sans PkiSecretBackendRole#allowed_uri_sans}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#allowed_uri_sans PkiSecretBackendRole#allowed_uri_sans}
 
 ---
 
@@ -2331,7 +2481,7 @@ public readonly allowedUriSansTemplate: boolean | IResolvable;
 
 Flag to indicate that `allowed_uri_sans` specifies a template expression (e.g. {{identity.entity.aliases.<mount accessor>.name}}).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#allowed_uri_sans_template PkiSecretBackendRole#allowed_uri_sans_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#allowed_uri_sans_template PkiSecretBackendRole#allowed_uri_sans_template}
 
 ---
 
@@ -2345,7 +2495,7 @@ public readonly allowedUserIds: string[];
 
 The allowed User ID's.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#allowed_user_ids PkiSecretBackendRole#allowed_user_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#allowed_user_ids PkiSecretBackendRole#allowed_user_ids}
 
 ---
 
@@ -2359,7 +2509,7 @@ public readonly allowGlobDomains: boolean | IResolvable;
 
 Flag to allow names containing glob patterns.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#allow_glob_domains PkiSecretBackendRole#allow_glob_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#allow_glob_domains PkiSecretBackendRole#allow_glob_domains}
 
 ---
 
@@ -2373,7 +2523,7 @@ public readonly allowIpSans: boolean | IResolvable;
 
 Flag to allow IP SANs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#allow_ip_sans PkiSecretBackendRole#allow_ip_sans}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#allow_ip_sans PkiSecretBackendRole#allow_ip_sans}
 
 ---
 
@@ -2387,7 +2537,7 @@ public readonly allowLocalhost: boolean | IResolvable;
 
 Flag to allow certificates for localhost.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#allow_localhost PkiSecretBackendRole#allow_localhost}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#allow_localhost PkiSecretBackendRole#allow_localhost}
 
 ---
 
@@ -2401,7 +2551,7 @@ public readonly allowSubdomains: boolean | IResolvable;
 
 Flag to allow certificates matching subdomains.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#allow_subdomains PkiSecretBackendRole#allow_subdomains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#allow_subdomains PkiSecretBackendRole#allow_subdomains}
 
 ---
 
@@ -2415,7 +2565,7 @@ public readonly allowWildcardCertificates: boolean | IResolvable;
 
 Flag to allow wildcard certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#allow_wildcard_certificates PkiSecretBackendRole#allow_wildcard_certificates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#allow_wildcard_certificates PkiSecretBackendRole#allow_wildcard_certificates}
 
 ---
 
@@ -2429,7 +2579,7 @@ public readonly basicConstraintsValidForNonCa: boolean | IResolvable;
 
 Flag to mark basic constraints valid when issuing non-CA certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#basic_constraints_valid_for_non_ca PkiSecretBackendRole#basic_constraints_valid_for_non_ca}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#basic_constraints_valid_for_non_ca PkiSecretBackendRole#basic_constraints_valid_for_non_ca}
 
 ---
 
@@ -2443,7 +2593,7 @@ public readonly clientFlag: boolean | IResolvable;
 
 Flag to specify certificates for client use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#client_flag PkiSecretBackendRole#client_flag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#client_flag PkiSecretBackendRole#client_flag}
 
 ---
 
@@ -2457,7 +2607,7 @@ public readonly cnValidations: string[];
 
 Specify validations to run on the Common Name field of the certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#cn_validations PkiSecretBackendRole#cn_validations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#cn_validations PkiSecretBackendRole#cn_validations}
 
 ---
 
@@ -2471,7 +2621,7 @@ public readonly codeSigningFlag: boolean | IResolvable;
 
 Flag to specify certificates for code signing use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#code_signing_flag PkiSecretBackendRole#code_signing_flag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#code_signing_flag PkiSecretBackendRole#code_signing_flag}
 
 ---
 
@@ -2485,7 +2635,7 @@ public readonly country: string[];
 
 The country of generated certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#country PkiSecretBackendRole#country}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#country PkiSecretBackendRole#country}
 
 ---
 
@@ -2499,7 +2649,7 @@ public readonly emailProtectionFlag: boolean | IResolvable;
 
 Flag to specify certificates for email protection use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#email_protection_flag PkiSecretBackendRole#email_protection_flag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#email_protection_flag PkiSecretBackendRole#email_protection_flag}
 
 ---
 
@@ -2513,7 +2663,7 @@ public readonly enforceHostnames: boolean | IResolvable;
 
 Flag to allow only valid host names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#enforce_hostnames PkiSecretBackendRole#enforce_hostnames}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#enforce_hostnames PkiSecretBackendRole#enforce_hostnames}
 
 ---
 
@@ -2527,7 +2677,7 @@ public readonly extKeyUsage: string[];
 
 Specify the allowed extended key usage constraint on issued certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#ext_key_usage PkiSecretBackendRole#ext_key_usage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#ext_key_usage PkiSecretBackendRole#ext_key_usage}
 
 ---
 
@@ -2541,7 +2691,7 @@ public readonly extKeyUsageOids: string[];
 
 A list of extended key usage OIDs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#ext_key_usage_oids PkiSecretBackendRole#ext_key_usage_oids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#ext_key_usage_oids PkiSecretBackendRole#ext_key_usage_oids}
 
 ---
 
@@ -2555,7 +2705,7 @@ public readonly generateLease: boolean | IResolvable;
 
 Flag to generate leases with certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#generate_lease PkiSecretBackendRole#generate_lease}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#generate_lease PkiSecretBackendRole#generate_lease}
 
 ---
 
@@ -2567,7 +2717,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#id PkiSecretBackendRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#id PkiSecretBackendRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2584,7 +2734,7 @@ public readonly issuerRef: string;
 
 Specifies the default issuer of this request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#issuer_ref PkiSecretBackendRole#issuer_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#issuer_ref PkiSecretBackendRole#issuer_ref}
 
 ---
 
@@ -2598,7 +2748,7 @@ public readonly keyBits: number;
 
 The number of bits of generated keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#key_bits PkiSecretBackendRole#key_bits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#key_bits PkiSecretBackendRole#key_bits}
 
 ---
 
@@ -2612,7 +2762,7 @@ public readonly keyType: string;
 
 The generated key type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#key_type PkiSecretBackendRole#key_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#key_type PkiSecretBackendRole#key_type}
 
 ---
 
@@ -2626,7 +2776,7 @@ public readonly keyUsage: string[];
 
 Specify the allowed key usage constraint on issued certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#key_usage PkiSecretBackendRole#key_usage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#key_usage PkiSecretBackendRole#key_usage}
 
 ---
 
@@ -2640,7 +2790,7 @@ public readonly locality: string[];
 
 The locality of generated certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#locality PkiSecretBackendRole#locality}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#locality PkiSecretBackendRole#locality}
 
 ---
 
@@ -2654,7 +2804,7 @@ public readonly maxTtl: string;
 
 The maximum TTL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#max_ttl PkiSecretBackendRole#max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#max_ttl PkiSecretBackendRole#max_ttl}
 
 ---
 
@@ -2668,7 +2818,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#namespace PkiSecretBackendRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#namespace PkiSecretBackendRole#namespace}
 
 ---
 
@@ -2682,7 +2832,39 @@ public readonly noStore: boolean | IResolvable;
 
 Flag to not store certificates in the storage backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#no_store PkiSecretBackendRole#no_store}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#no_store PkiSecretBackendRole#no_store}
+
+---
+
+##### `noStoreMetadata`<sup>Optional</sup> <a name="noStoreMetadata" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.noStoreMetadata"></a>
+
+```typescript
+public readonly noStoreMetadata: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Allows metadata to be stored keyed on the certificate's serial number.
+
+The field is independent of no_store, allowing metadata storage regardless of whether certificates are stored. If true, metadata is not stored and an error is returned if the metadata field is specified on issuance APIs
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#no_store_metadata PkiSecretBackendRole#no_store_metadata}
+
+---
+
+##### `notAfter`<sup>Optional</sup> <a name="notAfter" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.notAfter"></a>
+
+```typescript
+public readonly notAfter: string;
+```
+
+- *Type:* string
+
+Set the Not After field of the certificate with specified date value.
+
+The value format should be given in UTC format YYYY-MM-ddTHH:MM:SSZ. Supports the Y10K end date for IEEE 802.1AR-2018 standard devices, 9999-12-31T23:59:59Z.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#not_after PkiSecretBackendRole#not_after}
 
 ---
 
@@ -2696,7 +2878,7 @@ public readonly notBeforeDuration: string;
 
 Specifies the duration by which to backdate the NotBefore property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#not_before_duration PkiSecretBackendRole#not_before_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#not_before_duration PkiSecretBackendRole#not_before_duration}
 
 ---
 
@@ -2710,7 +2892,7 @@ public readonly organization: string[];
 
 The organization of generated certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#organization PkiSecretBackendRole#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#organization PkiSecretBackendRole#organization}
 
 ---
 
@@ -2724,7 +2906,7 @@ public readonly ou: string[];
 
 The organization unit of generated certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#ou PkiSecretBackendRole#ou}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#ou PkiSecretBackendRole#ou}
 
 ---
 
@@ -2738,7 +2920,7 @@ public readonly policyIdentifier: IResolvable | PkiSecretBackendRolePolicyIdenti
 
 policy_identifier block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#policy_identifier PkiSecretBackendRole#policy_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#policy_identifier PkiSecretBackendRole#policy_identifier}
 
 ---
 
@@ -2752,7 +2934,7 @@ public readonly policyIdentifiers: string[];
 
 Specify the list of allowed policies OIDs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#policy_identifiers PkiSecretBackendRole#policy_identifiers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#policy_identifiers PkiSecretBackendRole#policy_identifiers}
 
 ---
 
@@ -2766,7 +2948,7 @@ public readonly postalCode: string[];
 
 The postal code of generated certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#postal_code PkiSecretBackendRole#postal_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#postal_code PkiSecretBackendRole#postal_code}
 
 ---
 
@@ -2780,7 +2962,7 @@ public readonly province: string[];
 
 The province of generated certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#province PkiSecretBackendRole#province}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#province PkiSecretBackendRole#province}
 
 ---
 
@@ -2794,7 +2976,23 @@ public readonly requireCn: boolean | IResolvable;
 
 Flag to force CN usage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#require_cn PkiSecretBackendRole#require_cn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#require_cn PkiSecretBackendRole#require_cn}
+
+---
+
+##### `serialNumberSource`<sup>Optional</sup> <a name="serialNumberSource" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.serialNumberSource"></a>
+
+```typescript
+public readonly serialNumberSource: string;
+```
+
+- *Type:* string
+
+Specifies the source of the subject serial number.
+
+Valid values are json-csr (default) or json. When set to json-csr, the subject serial number is taken from the serial_number parameter and falls back to the serial number in the CSR. When set to json, the subject serial number is taken from the serial_number parameter but will ignore any value in the CSR. For backwards compatibility an empty value for this field will default to the json-csr behavior.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#serial_number_source PkiSecretBackendRole#serial_number_source}
 
 ---
 
@@ -2808,7 +3006,21 @@ public readonly serverFlag: boolean | IResolvable;
 
 Flag to specify certificates for server use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#server_flag PkiSecretBackendRole#server_flag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#server_flag PkiSecretBackendRole#server_flag}
+
+---
+
+##### `signatureBits`<sup>Optional</sup> <a name="signatureBits" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.signatureBits"></a>
+
+```typescript
+public readonly signatureBits: number;
+```
+
+- *Type:* number
+
+The number of bits to use in the signature algorithm.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#signature_bits PkiSecretBackendRole#signature_bits}
 
 ---
 
@@ -2822,7 +3034,7 @@ public readonly streetAddress: string[];
 
 The street address of generated certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#street_address PkiSecretBackendRole#street_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#street_address PkiSecretBackendRole#street_address}
 
 ---
 
@@ -2836,7 +3048,7 @@ public readonly ttl: string;
 
 The TTL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#ttl PkiSecretBackendRole#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#ttl PkiSecretBackendRole#ttl}
 
 ---
 
@@ -2850,7 +3062,7 @@ public readonly useCsrCommonName: boolean | IResolvable;
 
 Flag to use the CN in the CSR.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#use_csr_common_name PkiSecretBackendRole#use_csr_common_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#use_csr_common_name PkiSecretBackendRole#use_csr_common_name}
 
 ---
 
@@ -2864,7 +3076,21 @@ public readonly useCsrSans: boolean | IResolvable;
 
 Flag to use the SANs in the CSR.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#use_csr_sans PkiSecretBackendRole#use_csr_sans}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#use_csr_sans PkiSecretBackendRole#use_csr_sans}
+
+---
+
+##### `usePss`<sup>Optional</sup> <a name="usePss" id="@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRoleConfig.property.usePss"></a>
+
+```typescript
+public readonly usePss: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Specifies whether or not to use PSS signatures over PKCS#1v1.5 signatures when a RSA-type issuer is used. Ignored for ECDSA/Ed25519 issuers.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#use_pss PkiSecretBackendRole#use_pss}
 
 ---
 
@@ -2898,7 +3124,7 @@ public readonly oid: string;
 
 OID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#oid PkiSecretBackendRole#oid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#oid PkiSecretBackendRole#oid}
 
 ---
 
@@ -2912,7 +3138,7 @@ public readonly cps: string;
 
 Optional CPS URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#cps PkiSecretBackendRole#cps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#cps PkiSecretBackendRole#cps}
 
 ---
 
@@ -2926,7 +3152,7 @@ public readonly notice: string;
 
 Optional notice.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role#notice PkiSecretBackendRole#notice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role#notice PkiSecretBackendRole#notice}
 
 ---
 

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_config_est
+// https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_config_est
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,41 +10,41 @@ export interface PkiSecretBackendConfigEstConfig extends cdktf.TerraformMetaArgu
   /**
   * Fields parsed from the CSR that appear in the audit and can be used by sentinel policies
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_config_est#audit_fields PkiSecretBackendConfigEst#audit_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_config_est#audit_fields PkiSecretBackendConfigEst#audit_fields}
   */
   readonly auditFields?: string[];
   /**
   * The PKI secret backend the resource belongs to
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_config_est#backend PkiSecretBackendConfigEst#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_config_est#backend PkiSecretBackendConfigEst#backend}
   */
   readonly backend: string;
   /**
   * If set, this mount will register the default `.well-known/est` URL path. Only a single mount can enable this across a Vault cluster
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_config_est#default_mount PkiSecretBackendConfigEst#default_mount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_config_est#default_mount PkiSecretBackendConfigEst#default_mount}
   */
   readonly defaultMount?: boolean | cdktf.IResolvable;
   /**
   * Required to be set if default_mount is enabled. Specifies the behavior for requests using the default EST label. Can be sign-verbatim or a role given by role:<role_name>
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_config_est#default_path_policy PkiSecretBackendConfigEst#default_path_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_config_est#default_path_policy PkiSecretBackendConfigEst#default_path_policy}
   */
   readonly defaultPathPolicy?: string;
   /**
   * If set, parse out fields from the provided CSR making them available for Sentinel policies
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_config_est#enable_sentinel_parsing PkiSecretBackendConfigEst#enable_sentinel_parsing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_config_est#enable_sentinel_parsing PkiSecretBackendConfigEst#enable_sentinel_parsing}
   */
   readonly enableSentinelParsing?: boolean | cdktf.IResolvable;
   /**
   * Specifies whether EST is enabled
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_config_est#enabled PkiSecretBackendConfigEst#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_config_est#enabled PkiSecretBackendConfigEst#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_config_est#id PkiSecretBackendConfigEst#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_config_est#id PkiSecretBackendConfigEst#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,29 +53,29 @@ export interface PkiSecretBackendConfigEstConfig extends cdktf.TerraformMetaArgu
   /**
   * Configures a pairing of an EST label with the redirected behavior for requests hitting that role. The path policy can be sign-verbatim or a role given by role:<role_name>. Labels must be unique across Vault cluster, and will register .well-known/est/<label> URL paths
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_config_est#label_to_path_policy PkiSecretBackendConfigEst#label_to_path_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_config_est#label_to_path_policy PkiSecretBackendConfigEst#label_to_path_policy}
   */
   readonly labelToPathPolicy?: { [key: string]: string };
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_config_est#namespace PkiSecretBackendConfigEst#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_config_est#namespace PkiSecretBackendConfigEst#namespace}
   */
   readonly namespace?: string;
   /**
   * authenticators block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_config_est#authenticators PkiSecretBackendConfigEst#authenticators}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_config_est#authenticators PkiSecretBackendConfigEst#authenticators}
   */
   readonly authenticators?: PkiSecretBackendConfigEstAuthenticators;
 }
 export interface PkiSecretBackendConfigEstAuthenticators {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_config_est#cert PkiSecretBackendConfigEst#cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_config_est#cert PkiSecretBackendConfigEst#cert}
   */
   readonly cert?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_config_est#userpass PkiSecretBackendConfigEst#userpass}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_config_est#userpass PkiSecretBackendConfigEst#userpass}
   */
   readonly userpass?: { [key: string]: string };
 }
@@ -193,7 +188,7 @@ export class PkiSecretBackendConfigEstAuthenticatorsOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_config_est vault_pki_secret_backend_config_est}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_config_est vault_pki_secret_backend_config_est}
 */
 export class PkiSecretBackendConfigEst extends cdktf.TerraformResource {
 
@@ -209,7 +204,7 @@ export class PkiSecretBackendConfigEst extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a PkiSecretBackendConfigEst resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PkiSecretBackendConfigEst to import
-  * @param importFromId The id of the existing PkiSecretBackendConfigEst that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_config_est#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PkiSecretBackendConfigEst that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_config_est#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PkiSecretBackendConfigEst to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -221,7 +216,7 @@ export class PkiSecretBackendConfigEst extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_config_est vault_pki_secret_backend_config_est} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_config_est vault_pki_secret_backend_config_est} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -232,7 +227,7 @@ export class PkiSecretBackendConfigEst extends cdktf.TerraformResource {
       terraformResourceType: 'vault_pki_secret_backend_config_est',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '4.6.0',
+        providerVersion: '4.7.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

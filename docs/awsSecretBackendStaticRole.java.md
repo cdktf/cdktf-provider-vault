@@ -4,7 +4,7 @@
 
 ### AwsSecretBackendStaticRole <a name="AwsSecretBackendStaticRole" id="@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend_static_role vault_aws_secret_backend_static_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend_static_role vault_aws_secret_backend_static_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.Initializer"></a>
 
@@ -26,7 +26,10 @@ AwsSecretBackendStaticRole.Builder.create(Construct scope, java.lang.String id)
     .name(java.lang.String)
     .rotationPeriod(java.lang.Number)
     .username(java.lang.String)
+//  .assumeRoleArn(java.lang.String)
+//  .assumeRoleSessionName(java.lang.String)
 //  .backend(java.lang.String)
+//  .externalId(java.lang.String)
 //  .id(java.lang.String)
 //  .namespace(java.lang.String)
     .build();
@@ -46,8 +49,11 @@ AwsSecretBackendStaticRole.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of the role. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.Initializer.parameter.rotationPeriod">rotationPeriod</a></code> | <code>java.lang.Number</code> | How often Vault should rotate the password of the user entry. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.Initializer.parameter.username">username</a></code> | <code>java.lang.String</code> | The username of the existing AWS IAM user to manage password rotation for. |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.Initializer.parameter.assumeRoleArn">assumeRoleArn</a></code> | <code>java.lang.String</code> | The ARN of the role to assume when managing the static role. |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.Initializer.parameter.assumeRoleSessionName">assumeRoleSessionName</a></code> | <code>java.lang.String</code> | Session name to use when assuming the role. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.Initializer.parameter.backend">backend</a></code> | <code>java.lang.String</code> | The path where the AWS secrets backend is mounted. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend_static_role#id AwsSecretBackendStaticRole#id}. |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.Initializer.parameter.externalId">externalId</a></code> | <code>java.lang.String</code> | External ID to use when assuming the role. |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend_static_role#id AwsSecretBackendStaticRole#id}. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -118,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend_static_role#name AwsSecretBackendStaticRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend_static_role#name AwsSecretBackendStaticRole#name}
 
 ---
 
@@ -128,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 How often Vault should rotate the password of the user entry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend_static_role#rotation_period AwsSecretBackendStaticRole#rotation_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend_static_role#rotation_period AwsSecretBackendStaticRole#rotation_period}
 
 ---
 
@@ -138,7 +144,29 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The username of the existing AWS IAM user to manage password rotation for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend_static_role#username AwsSecretBackendStaticRole#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend_static_role#username AwsSecretBackendStaticRole#username}
+
+---
+
+##### `assumeRoleArn`<sup>Optional</sup> <a name="assumeRoleArn" id="@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.Initializer.parameter.assumeRoleArn"></a>
+
+- *Type:* java.lang.String
+
+The ARN of the role to assume when managing the static role.
+
+This is required for cross-account role management.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend_static_role#assume_role_arn AwsSecretBackendStaticRole#assume_role_arn}
+
+---
+
+##### `assumeRoleSessionName`<sup>Optional</sup> <a name="assumeRoleSessionName" id="@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.Initializer.parameter.assumeRoleSessionName"></a>
+
+- *Type:* java.lang.String
+
+Session name to use when assuming the role.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend_static_role#assume_role_session_name AwsSecretBackendStaticRole#assume_role_session_name}
 
 ---
 
@@ -148,7 +176,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The path where the AWS secrets backend is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend_static_role#backend AwsSecretBackendStaticRole#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend_static_role#backend AwsSecretBackendStaticRole#backend}
+
+---
+
+##### `externalId`<sup>Optional</sup> <a name="externalId" id="@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.Initializer.parameter.externalId"></a>
+
+- *Type:* java.lang.String
+
+External ID to use when assuming the role.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend_static_role#external_id AwsSecretBackendStaticRole#external_id}
 
 ---
 
@@ -156,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend_static_role#id AwsSecretBackendStaticRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend_static_role#id AwsSecretBackendStaticRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -169,7 +207,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend_static_role#namespace AwsSecretBackendStaticRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend_static_role#namespace AwsSecretBackendStaticRole#namespace}
 
 ---
 
@@ -200,7 +238,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.resetAssumeRoleArn">resetAssumeRoleArn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.resetAssumeRoleSessionName">resetAssumeRoleSessionName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.resetBackend">resetBackend</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.resetExternalId">resetExternalId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.resetNamespace">resetNamespace</a></code> | *No description.* |
 
@@ -496,10 +537,28 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `resetAssumeRoleArn` <a name="resetAssumeRoleArn" id="@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.resetAssumeRoleArn"></a>
+
+```java
+public void resetAssumeRoleArn()
+```
+
+##### `resetAssumeRoleSessionName` <a name="resetAssumeRoleSessionName" id="@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.resetAssumeRoleSessionName"></a>
+
+```java
+public void resetAssumeRoleSessionName()
+```
+
 ##### `resetBackend` <a name="resetBackend" id="@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.resetBackend"></a>
 
 ```java
 public void resetBackend()
+```
+
+##### `resetExternalId` <a name="resetExternalId" id="@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.resetExternalId"></a>
+
+```java
+public void resetExternalId()
 ```
 
 ##### `resetId` <a name="resetId" id="@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.resetId"></a>
@@ -617,7 +676,7 @@ The construct id used in the generated config for the AwsSecretBackendStaticRole
 
 The id of the existing AwsSecretBackendStaticRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend_static_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend_static_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -647,13 +706,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.property.assumeRoleArnInput">assumeRoleArnInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.property.assumeRoleSessionNameInput">assumeRoleSessionNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.property.backendInput">backendInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.property.externalIdInput">externalIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.property.namespaceInput">namespaceInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.property.rotationPeriodInput">rotationPeriodInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.property.usernameInput">usernameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.property.assumeRoleArn">assumeRoleArn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.property.assumeRoleSessionName">assumeRoleSessionName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.property.backend">backend</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.property.externalId">externalId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.property.namespace">namespace</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -804,10 +869,40 @@ public java.lang.Object getProvisioners();
 
 ---
 
+##### `assumeRoleArnInput`<sup>Optional</sup> <a name="assumeRoleArnInput" id="@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.property.assumeRoleArnInput"></a>
+
+```java
+public java.lang.String getAssumeRoleArnInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `assumeRoleSessionNameInput`<sup>Optional</sup> <a name="assumeRoleSessionNameInput" id="@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.property.assumeRoleSessionNameInput"></a>
+
+```java
+public java.lang.String getAssumeRoleSessionNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `backendInput`<sup>Optional</sup> <a name="backendInput" id="@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.property.backendInput"></a>
 
 ```java
 public java.lang.String getBackendInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `externalIdInput`<sup>Optional</sup> <a name="externalIdInput" id="@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.property.externalIdInput"></a>
+
+```java
+public java.lang.String getExternalIdInput();
 ```
 
 - *Type:* java.lang.String
@@ -864,10 +959,40 @@ public java.lang.String getUsernameInput();
 
 ---
 
+##### `assumeRoleArn`<sup>Required</sup> <a name="assumeRoleArn" id="@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.property.assumeRoleArn"></a>
+
+```java
+public java.lang.String getAssumeRoleArn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `assumeRoleSessionName`<sup>Required</sup> <a name="assumeRoleSessionName" id="@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.property.assumeRoleSessionName"></a>
+
+```java
+public java.lang.String getAssumeRoleSessionName();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `backend`<sup>Required</sup> <a name="backend" id="@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.property.backend"></a>
 
 ```java
 public java.lang.String getBackend();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `externalId`<sup>Required</sup> <a name="externalId" id="@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole.property.externalId"></a>
+
+```java
+public java.lang.String getExternalId();
 ```
 
 - *Type:* java.lang.String
@@ -966,7 +1091,10 @@ AwsSecretBackendStaticRoleConfig.builder()
     .name(java.lang.String)
     .rotationPeriod(java.lang.Number)
     .username(java.lang.String)
+//  .assumeRoleArn(java.lang.String)
+//  .assumeRoleSessionName(java.lang.String)
 //  .backend(java.lang.String)
+//  .externalId(java.lang.String)
 //  .id(java.lang.String)
 //  .namespace(java.lang.String)
     .build();
@@ -986,8 +1114,11 @@ AwsSecretBackendStaticRoleConfig.builder()
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRoleConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of the role. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRoleConfig.property.rotationPeriod">rotationPeriod</a></code> | <code>java.lang.Number</code> | How often Vault should rotate the password of the user entry. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRoleConfig.property.username">username</a></code> | <code>java.lang.String</code> | The username of the existing AWS IAM user to manage password rotation for. |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRoleConfig.property.assumeRoleArn">assumeRoleArn</a></code> | <code>java.lang.String</code> | The ARN of the role to assume when managing the static role. |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRoleConfig.property.assumeRoleSessionName">assumeRoleSessionName</a></code> | <code>java.lang.String</code> | Session name to use when assuming the role. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRoleConfig.property.backend">backend</a></code> | <code>java.lang.String</code> | The path where the AWS secrets backend is mounted. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRoleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend_static_role#id AwsSecretBackendStaticRole#id}. |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRoleConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | External ID to use when assuming the role. |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRoleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend_static_role#id AwsSecretBackendStaticRole#id}. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRoleConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -1072,7 +1203,7 @@ public java.lang.String getName();
 
 Name of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend_static_role#name AwsSecretBackendStaticRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend_static_role#name AwsSecretBackendStaticRole#name}
 
 ---
 
@@ -1086,7 +1217,7 @@ public java.lang.Number getRotationPeriod();
 
 How often Vault should rotate the password of the user entry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend_static_role#rotation_period AwsSecretBackendStaticRole#rotation_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend_static_role#rotation_period AwsSecretBackendStaticRole#rotation_period}
 
 ---
 
@@ -1100,7 +1231,37 @@ public java.lang.String getUsername();
 
 The username of the existing AWS IAM user to manage password rotation for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend_static_role#username AwsSecretBackendStaticRole#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend_static_role#username AwsSecretBackendStaticRole#username}
+
+---
+
+##### `assumeRoleArn`<sup>Optional</sup> <a name="assumeRoleArn" id="@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRoleConfig.property.assumeRoleArn"></a>
+
+```java
+public java.lang.String getAssumeRoleArn();
+```
+
+- *Type:* java.lang.String
+
+The ARN of the role to assume when managing the static role.
+
+This is required for cross-account role management.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend_static_role#assume_role_arn AwsSecretBackendStaticRole#assume_role_arn}
+
+---
+
+##### `assumeRoleSessionName`<sup>Optional</sup> <a name="assumeRoleSessionName" id="@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRoleConfig.property.assumeRoleSessionName"></a>
+
+```java
+public java.lang.String getAssumeRoleSessionName();
+```
+
+- *Type:* java.lang.String
+
+Session name to use when assuming the role.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend_static_role#assume_role_session_name AwsSecretBackendStaticRole#assume_role_session_name}
 
 ---
 
@@ -1114,7 +1275,21 @@ public java.lang.String getBackend();
 
 The path where the AWS secrets backend is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend_static_role#backend AwsSecretBackendStaticRole#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend_static_role#backend AwsSecretBackendStaticRole#backend}
+
+---
+
+##### `externalId`<sup>Optional</sup> <a name="externalId" id="@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRoleConfig.property.externalId"></a>
+
+```java
+public java.lang.String getExternalId();
+```
+
+- *Type:* java.lang.String
+
+External ID to use when assuming the role.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend_static_role#external_id AwsSecretBackendStaticRole#external_id}
 
 ---
 
@@ -1126,7 +1301,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend_static_role#id AwsSecretBackendStaticRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend_static_role#id AwsSecretBackendStaticRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1143,7 +1318,7 @@ public java.lang.String getNamespace();
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend_static_role#namespace AwsSecretBackendStaticRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend_static_role#namespace AwsSecretBackendStaticRole#namespace}
 
 ---
 

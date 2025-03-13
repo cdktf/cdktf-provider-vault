@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ad_secret_backend
+// https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ad_secret_backend
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,101 +10,101 @@ export interface AdSecretBackendConfig extends cdktf.TerraformMetaArguments {
   /**
   * Use anonymous binds when performing LDAP group searches (if true the initial credentials will still be used for the initial connection test).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ad_secret_backend#anonymous_group_search AdSecretBackend#anonymous_group_search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ad_secret_backend#anonymous_group_search AdSecretBackend#anonymous_group_search}
   */
   readonly anonymousGroupSearch?: boolean | cdktf.IResolvable;
   /**
   * The mount path for a backend, for example, the path given in "$ vault auth enable -path=my-ad ad".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ad_secret_backend#backend AdSecretBackend#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ad_secret_backend#backend AdSecretBackend#backend}
   */
   readonly backend?: string;
   /**
   * Distinguished name of object to bind when performing user and group search.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ad_secret_backend#binddn AdSecretBackend#binddn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ad_secret_backend#binddn AdSecretBackend#binddn}
   */
   readonly binddn: string;
   /**
   * LDAP password for searching for the user DN.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ad_secret_backend#bindpass AdSecretBackend#bindpass}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ad_secret_backend#bindpass AdSecretBackend#bindpass}
   */
   readonly bindpass: string;
   /**
   * If true, case sensitivity will be used when comparing usernames and groups for matching policies.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ad_secret_backend#case_sensitive_names AdSecretBackend#case_sensitive_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ad_secret_backend#case_sensitive_names AdSecretBackend#case_sensitive_names}
   */
   readonly caseSensitiveNames?: boolean | cdktf.IResolvable;
   /**
   * CA certificate to use when verifying LDAP server certificate, must be x509 PEM encoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ad_secret_backend#certificate AdSecretBackend#certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ad_secret_backend#certificate AdSecretBackend#certificate}
   */
   readonly certificate?: string;
   /**
   * Client certificate to provide to the LDAP server, must be x509 PEM encoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ad_secret_backend#client_tls_cert AdSecretBackend#client_tls_cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ad_secret_backend#client_tls_cert AdSecretBackend#client_tls_cert}
   */
   readonly clientTlsCert?: string;
   /**
   * Client certificate key to provide to the LDAP server, must be x509 PEM encoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ad_secret_backend#client_tls_key AdSecretBackend#client_tls_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ad_secret_backend#client_tls_key AdSecretBackend#client_tls_key}
   */
   readonly clientTlsKey?: string;
   /**
   * Default lease duration for secrets in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ad_secret_backend#default_lease_ttl_seconds AdSecretBackend#default_lease_ttl_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ad_secret_backend#default_lease_ttl_seconds AdSecretBackend#default_lease_ttl_seconds}
   */
   readonly defaultLeaseTtlSeconds?: number;
   /**
   * Denies an unauthenticated LDAP bind request if the user's password is empty; defaults to true
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ad_secret_backend#deny_null_bind AdSecretBackend#deny_null_bind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ad_secret_backend#deny_null_bind AdSecretBackend#deny_null_bind}
   */
   readonly denyNullBind?: boolean | cdktf.IResolvable;
   /**
   * Human-friendly description of the mount for the backend.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ad_secret_backend#description AdSecretBackend#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ad_secret_backend#description AdSecretBackend#description}
   */
   readonly description?: string;
   /**
   * If set, opts out of mount migration on path updates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ad_secret_backend#disable_remount AdSecretBackend#disable_remount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ad_secret_backend#disable_remount AdSecretBackend#disable_remount}
   */
   readonly disableRemount?: boolean | cdktf.IResolvable;
   /**
   * Use anonymous bind to discover the bind DN of a user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ad_secret_backend#discoverdn AdSecretBackend#discoverdn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ad_secret_backend#discoverdn AdSecretBackend#discoverdn}
   */
   readonly discoverdn?: boolean | cdktf.IResolvable;
   /**
   * LDAP attribute to follow on objects returned by <groupfilter> in order to enumerate user group membership. Examples: "cn" or "memberOf", etc. Default: cn
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ad_secret_backend#groupattr AdSecretBackend#groupattr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ad_secret_backend#groupattr AdSecretBackend#groupattr}
   */
   readonly groupattr?: string;
   /**
   * LDAP search base to use for group membership search (eg: ou=Groups,dc=example,dc=org)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ad_secret_backend#groupdn AdSecretBackend#groupdn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ad_secret_backend#groupdn AdSecretBackend#groupdn}
   */
   readonly groupdn?: string;
   /**
   * Go template for querying group membership of user. The template can access the following context variables: UserDN, Username Example: (&(objectClass=group)(member:1.2.840.113556.1.4.1941:={{.UserDN}})) Default: (|(memberUid={{.Username}})(member={{.UserDN}})(uniqueMember={{.UserDN}}))
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ad_secret_backend#groupfilter AdSecretBackend#groupfilter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ad_secret_backend#groupfilter AdSecretBackend#groupfilter}
   */
   readonly groupfilter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ad_secret_backend#id AdSecretBackend#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ad_secret_backend#id AdSecretBackend#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -118,115 +113,115 @@ export interface AdSecretBackendConfig extends cdktf.TerraformMetaArguments {
   /**
   * Skip LDAP server SSL Certificate verification - insecure and not recommended for production use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ad_secret_backend#insecure_tls AdSecretBackend#insecure_tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ad_secret_backend#insecure_tls AdSecretBackend#insecure_tls}
   */
   readonly insecureTls?: boolean | cdktf.IResolvable;
   /**
   * The number of seconds after a Vault rotation where, if Active Directory shows a later rotation, it should be considered out-of-band.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ad_secret_backend#last_rotation_tolerance AdSecretBackend#last_rotation_tolerance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ad_secret_backend#last_rotation_tolerance AdSecretBackend#last_rotation_tolerance}
   */
   readonly lastRotationTolerance?: number;
   /**
   * Mark the secrets engine as local-only. Local engines are not replicated or removed by replication.Tolerance duration to use when checking the last rotation time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ad_secret_backend#local AdSecretBackend#local}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ad_secret_backend#local AdSecretBackend#local}
   */
   readonly local?: boolean | cdktf.IResolvable;
   /**
   * Maximum possible lease duration for secrets in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ad_secret_backend#max_lease_ttl_seconds AdSecretBackend#max_lease_ttl_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ad_secret_backend#max_lease_ttl_seconds AdSecretBackend#max_lease_ttl_seconds}
   */
   readonly maxLeaseTtlSeconds?: number;
   /**
   * In seconds, the maximum password time-to-live.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ad_secret_backend#max_ttl AdSecretBackend#max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ad_secret_backend#max_ttl AdSecretBackend#max_ttl}
   */
   readonly maxTtl?: number;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ad_secret_backend#namespace AdSecretBackend#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ad_secret_backend#namespace AdSecretBackend#namespace}
   */
   readonly namespace?: string;
   /**
   * Name of the password policy to use to generate passwords.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ad_secret_backend#password_policy AdSecretBackend#password_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ad_secret_backend#password_policy AdSecretBackend#password_policy}
   */
   readonly passwordPolicy?: string;
   /**
   * Timeout, in seconds, for the connection when making requests against the server before returning back an error.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ad_secret_backend#request_timeout AdSecretBackend#request_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ad_secret_backend#request_timeout AdSecretBackend#request_timeout}
   */
   readonly requestTimeout?: number;
   /**
   * Issue a StartTLS command after establishing unencrypted connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ad_secret_backend#starttls AdSecretBackend#starttls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ad_secret_backend#starttls AdSecretBackend#starttls}
   */
   readonly starttls?: boolean | cdktf.IResolvable;
   /**
   * Maximum TLS version to use. Accepted values are 'tls10', 'tls11', 'tls12' or 'tls13'. Defaults to 'tls12'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ad_secret_backend#tls_max_version AdSecretBackend#tls_max_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ad_secret_backend#tls_max_version AdSecretBackend#tls_max_version}
   */
   readonly tlsMaxVersion?: string;
   /**
   * Minimum TLS version to use. Accepted values are 'tls10', 'tls11', 'tls12' or 'tls13'. Defaults to 'tls12'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ad_secret_backend#tls_min_version AdSecretBackend#tls_min_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ad_secret_backend#tls_min_version AdSecretBackend#tls_min_version}
   */
   readonly tlsMinVersion?: string;
   /**
   * In seconds, the default password time-to-live.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ad_secret_backend#ttl AdSecretBackend#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ad_secret_backend#ttl AdSecretBackend#ttl}
   */
   readonly ttl?: number;
   /**
   * Enables userPrincipalDomain login with [username]@UPNDomain.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ad_secret_backend#upndomain AdSecretBackend#upndomain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ad_secret_backend#upndomain AdSecretBackend#upndomain}
   */
   readonly upndomain?: string;
   /**
   * LDAP URL to connect to (default: ldap://127.0.0.1). Multiple URLs can be specified by concatenating them with commas; they will be tried in-order.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ad_secret_backend#url AdSecretBackend#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ad_secret_backend#url AdSecretBackend#url}
   */
   readonly url?: string;
   /**
   * In Vault 1.1.1 a fix for handling group CN values of different cases unfortunately introduced a regression that could cause previously defined groups to not be found due to a change in the resulting name. If set true, the pre-1.1.1 behavior for matching group CNs will be used. This is only needed in some upgrade scenarios for backwards compatibility. It is enabled by default if the config is upgraded but disabled by default on new configurations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ad_secret_backend#use_pre111_group_cn_behavior AdSecretBackend#use_pre111_group_cn_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ad_secret_backend#use_pre111_group_cn_behavior AdSecretBackend#use_pre111_group_cn_behavior}
   */
   readonly usePre111GroupCnBehavior?: boolean | cdktf.IResolvable;
   /**
   * If true, use the Active Directory tokenGroups constructed attribute of the user to find the group memberships. This will find all security groups including nested ones.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ad_secret_backend#use_token_groups AdSecretBackend#use_token_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ad_secret_backend#use_token_groups AdSecretBackend#use_token_groups}
   */
   readonly useTokenGroups?: boolean | cdktf.IResolvable;
   /**
   * Attribute used for users (default: cn)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ad_secret_backend#userattr AdSecretBackend#userattr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ad_secret_backend#userattr AdSecretBackend#userattr}
   */
   readonly userattr?: string;
   /**
   * LDAP domain to use for users (eg: ou=People,dc=example,dc=org)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ad_secret_backend#userdn AdSecretBackend#userdn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ad_secret_backend#userdn AdSecretBackend#userdn}
   */
   readonly userdn?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ad_secret_backend vault_ad_secret_backend}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ad_secret_backend vault_ad_secret_backend}
 */
 export class AdSecretBackend extends cdktf.TerraformResource {
 
@@ -242,7 +237,7 @@ export class AdSecretBackend extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AdSecretBackend resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AdSecretBackend to import
-  * @param importFromId The id of the existing AdSecretBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ad_secret_backend#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AdSecretBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ad_secret_backend#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AdSecretBackend to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -254,7 +249,7 @@ export class AdSecretBackend extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ad_secret_backend vault_ad_secret_backend} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ad_secret_backend vault_ad_secret_backend} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -265,7 +260,7 @@ export class AdSecretBackend extends cdktf.TerraformResource {
       terraformResourceType: 'vault_ad_secret_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '4.6.0',
+        providerVersion: '4.7.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

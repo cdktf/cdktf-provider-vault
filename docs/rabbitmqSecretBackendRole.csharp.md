@@ -4,7 +4,7 @@
 
 ### RabbitmqSecretBackendRole <a name="RabbitmqSecretBackendRole" id="@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/rabbitmq_secret_backend_role vault_rabbitmq_secret_backend_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/rabbitmq_secret_backend_role vault_rabbitmq_secret_backend_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRole.Initializer"></a>
 
@@ -528,7 +528,7 @@ The construct id used in the generated config for the RabbitmqSecretBackendRole 
 
 The id of the existing RabbitmqSecretBackendRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/rabbitmq_secret_backend_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/rabbitmq_secret_backend_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -915,7 +915,7 @@ new RabbitmqSecretBackendRoleConfig {
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleConfig.property.backend">Backend</a></code> | <code>string</code> | The path of the Rabbitmq Secret Backend the role belongs to. |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleConfig.property.name">Name</a></code> | <code>string</code> | Unique name for the role. |
-| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/rabbitmq_secret_backend_role#id RabbitmqSecretBackendRole#id}. |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/rabbitmq_secret_backend_role#id RabbitmqSecretBackendRole#id}. |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleConfig.property.tags">Tags</a></code> | <code>string</code> | Specifies a comma-separated RabbitMQ management tags. |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackendRole.RabbitmqSecretBackendRoleConfig.property.vhost">Vhost</a></code> | <code>object</code> | vhost block. |
@@ -1003,7 +1003,7 @@ public string Backend { get; set; }
 
 The path of the Rabbitmq Secret Backend the role belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/rabbitmq_secret_backend_role#backend RabbitmqSecretBackendRole#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/rabbitmq_secret_backend_role#backend RabbitmqSecretBackendRole#backend}
 
 ---
 
@@ -1017,7 +1017,7 @@ public string Name { get; set; }
 
 Unique name for the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/rabbitmq_secret_backend_role#name RabbitmqSecretBackendRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/rabbitmq_secret_backend_role#name RabbitmqSecretBackendRole#name}
 
 ---
 
@@ -1029,7 +1029,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/rabbitmq_secret_backend_role#id RabbitmqSecretBackendRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/rabbitmq_secret_backend_role#id RabbitmqSecretBackendRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1046,7 +1046,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/rabbitmq_secret_backend_role#namespace RabbitmqSecretBackendRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/rabbitmq_secret_backend_role#namespace RabbitmqSecretBackendRole#namespace}
 
 ---
 
@@ -1060,7 +1060,7 @@ public string Tags { get; set; }
 
 Specifies a comma-separated RabbitMQ management tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/rabbitmq_secret_backend_role#tags RabbitmqSecretBackendRole#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/rabbitmq_secret_backend_role#tags RabbitmqSecretBackendRole#tags}
 
 ---
 
@@ -1074,7 +1074,7 @@ public object Vhost { get; set; }
 
 vhost block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/rabbitmq_secret_backend_role#vhost RabbitmqSecretBackendRole#vhost}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/rabbitmq_secret_backend_role#vhost RabbitmqSecretBackendRole#vhost}
 
 ---
 
@@ -1088,7 +1088,7 @@ public object VhostTopic { get; set; }
 
 vhost_topic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/rabbitmq_secret_backend_role#vhost_topic RabbitmqSecretBackendRole#vhost_topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/rabbitmq_secret_backend_role#vhost_topic RabbitmqSecretBackendRole#vhost_topic}
 
 ---
 
@@ -1128,7 +1128,7 @@ public string Configure { get; set; }
 
 The configure permissions for this vhost.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/rabbitmq_secret_backend_role#configure RabbitmqSecretBackendRole#configure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/rabbitmq_secret_backend_role#configure RabbitmqSecretBackendRole#configure}
 
 ---
 
@@ -1142,7 +1142,7 @@ public string Host { get; set; }
 
 The vhost to set permissions for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/rabbitmq_secret_backend_role#host RabbitmqSecretBackendRole#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/rabbitmq_secret_backend_role#host RabbitmqSecretBackendRole#host}
 
 ---
 
@@ -1156,7 +1156,7 @@ public string Read { get; set; }
 
 The read permissions for this vhost.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/rabbitmq_secret_backend_role#read RabbitmqSecretBackendRole#read}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/rabbitmq_secret_backend_role#read RabbitmqSecretBackendRole#read}
 
 ---
 
@@ -1170,7 +1170,7 @@ public string Write { get; set; }
 
 The write permissions for this vhost.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/rabbitmq_secret_backend_role#write RabbitmqSecretBackendRole#write}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/rabbitmq_secret_backend_role#write RabbitmqSecretBackendRole#write}
 
 ---
 
@@ -1206,7 +1206,7 @@ public string Host { get; set; }
 
 The vhost to set permissions for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/rabbitmq_secret_backend_role#host RabbitmqSecretBackendRole#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/rabbitmq_secret_backend_role#host RabbitmqSecretBackendRole#host}
 
 ---
 
@@ -1220,7 +1220,7 @@ public object Vhost { get; set; }
 
 vhost block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/rabbitmq_secret_backend_role#vhost RabbitmqSecretBackendRole#vhost}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/rabbitmq_secret_backend_role#vhost RabbitmqSecretBackendRole#vhost}
 
 ---
 
@@ -1258,7 +1258,7 @@ public string Read { get; set; }
 
 The read permissions for this vhost.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/rabbitmq_secret_backend_role#read RabbitmqSecretBackendRole#read}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/rabbitmq_secret_backend_role#read RabbitmqSecretBackendRole#read}
 
 ---
 
@@ -1272,7 +1272,7 @@ public string Topic { get; set; }
 
 The vhost to set permissions for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/rabbitmq_secret_backend_role#topic RabbitmqSecretBackendRole#topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/rabbitmq_secret_backend_role#topic RabbitmqSecretBackendRole#topic}
 
 ---
 
@@ -1286,7 +1286,7 @@ public string Write { get; set; }
 
 The write permissions for this vhost.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/rabbitmq_secret_backend_role#write RabbitmqSecretBackendRole#write}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/rabbitmq_secret_backend_role#write RabbitmqSecretBackendRole#write}
 
 ---
 

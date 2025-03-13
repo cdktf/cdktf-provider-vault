@@ -4,7 +4,7 @@
 
 ### RaftAutopilot <a name="RaftAutopilot" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/raft_autopilot vault_raft_autopilot}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/raft_autopilot vault_raft_autopilot}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.Initializer"></a>
 
@@ -47,7 +47,7 @@ raftAutopilot.RaftAutopilot(
 | <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.Initializer.parameter.cleanupDeadServers">cleanup_dead_servers</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether to remove dead server nodes periodically or when a new server joins. |
 | <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.Initializer.parameter.deadServerLastContactThreshold">dead_server_last_contact_threshold</a></code> | <code>str</code> | Limit the amount of time a server can go without leader contact before being considered failed. |
 | <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.Initializer.parameter.disableUpgradeMigration">disable_upgrade_migration</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disables automatically upgrading Vault using autopilot. (Enterprise-only). |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/raft_autopilot#id RaftAutopilot#id}. |
+| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/raft_autopilot#id RaftAutopilot#id}. |
 | <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.Initializer.parameter.lastContactThreshold">last_contact_threshold</a></code> | <code>str</code> | Limit the amount of time a server can go without leader contact before being considered unhealthy. |
 | <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.Initializer.parameter.maxTrailingLogs">max_trailing_logs</a></code> | <code>typing.Union[int, float]</code> | Maximum number of log entries in the Raft log that a server can be behind its leader before being considered unhealthy. |
 | <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.Initializer.parameter.minQuorum">min_quorum</a></code> | <code>typing.Union[int, float]</code> | Minimum number of servers allowed in a cluster before autopilot can prune dead servers. |
@@ -124,7 +124,7 @@ Specifies whether to remove dead server nodes periodically or when a new server 
 
 This requires that min-quorum is also set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/raft_autopilot#cleanup_dead_servers RaftAutopilot#cleanup_dead_servers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/raft_autopilot#cleanup_dead_servers RaftAutopilot#cleanup_dead_servers}
 
 ---
 
@@ -136,7 +136,7 @@ Limit the amount of time a server can go without leader contact before being con
 
 This only takes effect when cleanup_dead_servers is set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/raft_autopilot#dead_server_last_contact_threshold RaftAutopilot#dead_server_last_contact_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/raft_autopilot#dead_server_last_contact_threshold RaftAutopilot#dead_server_last_contact_threshold}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Disables automatically upgrading Vault using autopilot. (Enterprise-only).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/raft_autopilot#disable_upgrade_migration RaftAutopilot#disable_upgrade_migration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/raft_autopilot#disable_upgrade_migration RaftAutopilot#disable_upgrade_migration}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/raft_autopilot#id RaftAutopilot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/raft_autopilot#id RaftAutopilot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -167,7 +167,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Limit the amount of time a server can go without leader contact before being considered unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/raft_autopilot#last_contact_threshold RaftAutopilot#last_contact_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/raft_autopilot#last_contact_threshold RaftAutopilot#last_contact_threshold}
 
 ---
 
@@ -177,7 +177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Maximum number of log entries in the Raft log that a server can be behind its leader before being considered unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/raft_autopilot#max_trailing_logs RaftAutopilot#max_trailing_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/raft_autopilot#max_trailing_logs RaftAutopilot#max_trailing_logs}
 
 ---
 
@@ -189,7 +189,7 @@ Minimum number of servers allowed in a cluster before autopilot can prune dead s
 
 This should at least be 3. Applicable only for voting nodes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/raft_autopilot#min_quorum RaftAutopilot#min_quorum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/raft_autopilot#min_quorum RaftAutopilot#min_quorum}
 
 ---
 
@@ -199,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/raft_autopilot#namespace RaftAutopilot#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/raft_autopilot#namespace RaftAutopilot#namespace}
 
 ---
 
@@ -209,7 +209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Minimum amount of time a server must be stable in the 'healthy' state before being added to the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/raft_autopilot#server_stabilization_time RaftAutopilot#server_stabilization_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/raft_autopilot#server_stabilization_time RaftAutopilot#server_stabilization_time}
 
 ---
 
@@ -745,7 +745,7 @@ The construct id used in the generated config for the RaftAutopilot to import.
 
 The id of the existing RaftAutopilot that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/raft_autopilot#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/raft_autopilot#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1179,7 +1179,7 @@ raftAutopilot.RaftAutopilotConfig(
 | <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.cleanupDeadServers">cleanup_dead_servers</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether to remove dead server nodes periodically or when a new server joins. |
 | <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.deadServerLastContactThreshold">dead_server_last_contact_threshold</a></code> | <code>str</code> | Limit the amount of time a server can go without leader contact before being considered failed. |
 | <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.disableUpgradeMigration">disable_upgrade_migration</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disables automatically upgrading Vault using autopilot. (Enterprise-only). |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/raft_autopilot#id RaftAutopilot#id}. |
+| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/raft_autopilot#id RaftAutopilot#id}. |
 | <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.lastContactThreshold">last_contact_threshold</a></code> | <code>str</code> | Limit the amount of time a server can go without leader contact before being considered unhealthy. |
 | <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.maxTrailingLogs">max_trailing_logs</a></code> | <code>typing.Union[int, float]</code> | Maximum number of log entries in the Raft log that a server can be behind its leader before being considered unhealthy. |
 | <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.minQuorum">min_quorum</a></code> | <code>typing.Union[int, float]</code> | Minimum number of servers allowed in a cluster before autopilot can prune dead servers. |
@@ -1270,7 +1270,7 @@ Specifies whether to remove dead server nodes periodically or when a new server 
 
 This requires that min-quorum is also set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/raft_autopilot#cleanup_dead_servers RaftAutopilot#cleanup_dead_servers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/raft_autopilot#cleanup_dead_servers RaftAutopilot#cleanup_dead_servers}
 
 ---
 
@@ -1286,7 +1286,7 @@ Limit the amount of time a server can go without leader contact before being con
 
 This only takes effect when cleanup_dead_servers is set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/raft_autopilot#dead_server_last_contact_threshold RaftAutopilot#dead_server_last_contact_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/raft_autopilot#dead_server_last_contact_threshold RaftAutopilot#dead_server_last_contact_threshold}
 
 ---
 
@@ -1300,7 +1300,7 @@ disable_upgrade_migration: typing.Union[bool, IResolvable]
 
 Disables automatically upgrading Vault using autopilot. (Enterprise-only).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/raft_autopilot#disable_upgrade_migration RaftAutopilot#disable_upgrade_migration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/raft_autopilot#disable_upgrade_migration RaftAutopilot#disable_upgrade_migration}
 
 ---
 
@@ -1312,7 +1312,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/raft_autopilot#id RaftAutopilot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/raft_autopilot#id RaftAutopilot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1329,7 +1329,7 @@ last_contact_threshold: str
 
 Limit the amount of time a server can go without leader contact before being considered unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/raft_autopilot#last_contact_threshold RaftAutopilot#last_contact_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/raft_autopilot#last_contact_threshold RaftAutopilot#last_contact_threshold}
 
 ---
 
@@ -1343,7 +1343,7 @@ max_trailing_logs: typing.Union[int, float]
 
 Maximum number of log entries in the Raft log that a server can be behind its leader before being considered unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/raft_autopilot#max_trailing_logs RaftAutopilot#max_trailing_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/raft_autopilot#max_trailing_logs RaftAutopilot#max_trailing_logs}
 
 ---
 
@@ -1359,7 +1359,7 @@ Minimum number of servers allowed in a cluster before autopilot can prune dead s
 
 This should at least be 3. Applicable only for voting nodes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/raft_autopilot#min_quorum RaftAutopilot#min_quorum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/raft_autopilot#min_quorum RaftAutopilot#min_quorum}
 
 ---
 
@@ -1373,7 +1373,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/raft_autopilot#namespace RaftAutopilot#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/raft_autopilot#namespace RaftAutopilot#namespace}
 
 ---
 
@@ -1387,7 +1387,7 @@ server_stabilization_time: str
 
 Minimum amount of time a server must be stable in the 'healthy' state before being added to the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/raft_autopilot#server_stabilization_time RaftAutopilot#server_stabilization_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/raft_autopilot#server_stabilization_time RaftAutopilot#server_stabilization_time}
 
 ---
 

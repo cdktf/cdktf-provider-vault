@@ -4,7 +4,7 @@
 
 ### PkiSecretBackendCert <a name="PkiSecretBackendCert" id="@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_cert vault_pki_secret_backend_cert}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_cert vault_pki_secret_backend_cert}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetAltNames">ResetAltNames</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetAutoRenew">ResetAutoRenew</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetCertMetadata">ResetCertMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetExcludeCnFromSans">ResetExcludeCnFromSans</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetFormat">ResetFormat</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetId">ResetId</a></code> | *No description.* |
@@ -82,9 +83,11 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetIssuerRef">ResetIssuerRef</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetMinSecondsRemaining">ResetMinSecondsRemaining</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetNamespace">ResetNamespace</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetNotAfter">ResetNotAfter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetOtherSans">ResetOtherSans</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetPrivateKeyFormat">ResetPrivateKeyFormat</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetRevoke">ResetRevoke</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetRevokeWithKey">ResetRevokeWithKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetTtl">ResetTtl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetUriSans">ResetUriSans</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetUserIds">ResetUserIds</a></code> | *No description.* |
@@ -391,6 +394,12 @@ private void ResetAltNames()
 private void ResetAutoRenew()
 ```
 
+##### `ResetCertMetadata` <a name="ResetCertMetadata" id="@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetCertMetadata"></a>
+
+```csharp
+private void ResetCertMetadata()
+```
+
 ##### `ResetExcludeCnFromSans` <a name="ResetExcludeCnFromSans" id="@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetExcludeCnFromSans"></a>
 
 ```csharp
@@ -433,6 +442,12 @@ private void ResetMinSecondsRemaining()
 private void ResetNamespace()
 ```
 
+##### `ResetNotAfter` <a name="ResetNotAfter" id="@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetNotAfter"></a>
+
+```csharp
+private void ResetNotAfter()
+```
+
 ##### `ResetOtherSans` <a name="ResetOtherSans" id="@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetOtherSans"></a>
 
 ```csharp
@@ -449,6 +464,12 @@ private void ResetPrivateKeyFormat()
 
 ```csharp
 private void ResetRevoke()
+```
+
+##### `ResetRevokeWithKey` <a name="ResetRevokeWithKey" id="@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetRevokeWithKey"></a>
+
+```csharp
+private void ResetRevokeWithKey()
 ```
 
 ##### `ResetTtl` <a name="ResetTtl" id="@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetTtl"></a>
@@ -572,7 +593,7 @@ The construct id used in the generated config for the PkiSecretBackendCert to im
 
 The id of the existing PkiSecretBackendCert that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_cert#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_cert#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -613,6 +634,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.altNamesInput">AltNamesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.autoRenewInput">AutoRenewInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.backendInput">BackendInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.certMetadataInput">CertMetadataInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.commonNameInput">CommonNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.excludeCnFromSansInput">ExcludeCnFromSansInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.formatInput">FormatInput</a></code> | <code>string</code> | *No description.* |
@@ -622,15 +644,18 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.minSecondsRemainingInput">MinSecondsRemainingInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.namespaceInput">NamespaceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.notAfterInput">NotAfterInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.otherSansInput">OtherSansInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.privateKeyFormatInput">PrivateKeyFormatInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.revokeInput">RevokeInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.revokeWithKeyInput">RevokeWithKeyInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.ttlInput">TtlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.uriSansInput">UriSansInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.userIdsInput">UserIdsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.altNames">AltNames</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.autoRenew">AutoRenew</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.backend">Backend</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.certMetadata">CertMetadata</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.commonName">CommonName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.excludeCnFromSans">ExcludeCnFromSans</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.format">Format</a></code> | <code>string</code> | *No description.* |
@@ -640,9 +665,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.minSecondsRemaining">MinSecondsRemaining</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.namespace">Namespace</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.notAfter">NotAfter</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.otherSans">OtherSans</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.privateKeyFormat">PrivateKeyFormat</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.revoke">Revoke</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.revokeWithKey">RevokeWithKey</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.ttl">Ttl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.uriSans">UriSans</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.userIds">UserIds</a></code> | <code>string[]</code> | *No description.* |
@@ -901,6 +928,16 @@ public string BackendInput { get; }
 
 ---
 
+##### `CertMetadataInput`<sup>Optional</sup> <a name="CertMetadataInput" id="@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.certMetadataInput"></a>
+
+```csharp
+public string CertMetadataInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `CommonNameInput`<sup>Optional</sup> <a name="CommonNameInput" id="@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.commonNameInput"></a>
 
 ```csharp
@@ -991,6 +1028,16 @@ public string NamespaceInput { get; }
 
 ---
 
+##### `NotAfterInput`<sup>Optional</sup> <a name="NotAfterInput" id="@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.notAfterInput"></a>
+
+```csharp
+public string NotAfterInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `OtherSansInput`<sup>Optional</sup> <a name="OtherSansInput" id="@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.otherSansInput"></a>
 
 ```csharp
@@ -1015,6 +1062,16 @@ public string PrivateKeyFormatInput { get; }
 
 ```csharp
 public object RevokeInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `RevokeWithKeyInput`<sup>Optional</sup> <a name="RevokeWithKeyInput" id="@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.revokeWithKeyInput"></a>
+
+```csharp
+public object RevokeWithKeyInput { get; }
 ```
 
 - *Type:* object
@@ -1075,6 +1132,16 @@ public object AutoRenew { get; }
 
 ```csharp
 public string Backend { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CertMetadata`<sup>Required</sup> <a name="CertMetadata" id="@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.certMetadata"></a>
+
+```csharp
+public string CertMetadata { get; }
 ```
 
 - *Type:* string
@@ -1171,6 +1238,16 @@ public string Namespace { get; }
 
 ---
 
+##### `NotAfter`<sup>Required</sup> <a name="NotAfter" id="@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.notAfter"></a>
+
+```csharp
+public string NotAfter { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `OtherSans`<sup>Required</sup> <a name="OtherSans" id="@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.otherSans"></a>
 
 ```csharp
@@ -1195,6 +1272,16 @@ public string PrivateKeyFormat { get; }
 
 ```csharp
 public object Revoke { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `RevokeWithKey`<sup>Required</sup> <a name="RevokeWithKey" id="@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.revokeWithKey"></a>
+
+```csharp
+public object RevokeWithKey { get; }
 ```
 
 - *Type:* object
@@ -1271,6 +1358,7 @@ new PkiSecretBackendCertConfig {
     string Name,
     string[] AltNames = null,
     object AutoRenew = null,
+    string CertMetadata = null,
     object ExcludeCnFromSans = null,
     string Format = null,
     string Id = null,
@@ -1278,9 +1366,11 @@ new PkiSecretBackendCertConfig {
     string IssuerRef = null,
     double MinSecondsRemaining = null,
     string Namespace = null,
+    string NotAfter = null,
     string[] OtherSans = null,
     string PrivateKeyFormat = null,
     object Revoke = null,
+    object RevokeWithKey = null,
     string Ttl = null,
     string[] UriSans = null,
     string[] UserIds = null
@@ -1303,16 +1393,19 @@ new PkiSecretBackendCertConfig {
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.name">Name</a></code> | <code>string</code> | Name of the role to create the certificate against. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.altNames">AltNames</a></code> | <code>string[]</code> | List of alternative names. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.autoRenew">AutoRenew</a></code> | <code>object</code> | If enabled, a new certificate will be generated if the expiration is within min_seconds_remaining. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.certMetadata">CertMetadata</a></code> | <code>string</code> | A base 64 encoded value or an empty string to associate with the certificate's serial number. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.excludeCnFromSans">ExcludeCnFromSans</a></code> | <code>object</code> | Flag to exclude CN from SANs. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.format">Format</a></code> | <code>string</code> | The format of data. |
-| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_cert#id PkiSecretBackendCert#id}. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_cert#id PkiSecretBackendCert#id}. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.ipSans">IpSans</a></code> | <code>string[]</code> | List of alternative IPs. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.issuerRef">IssuerRef</a></code> | <code>string</code> | Specifies the default issuer of this request. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.minSecondsRemaining">MinSecondsRemaining</a></code> | <code>double</code> | Generate a new certificate when the expiration is within this number of seconds. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.notAfter">NotAfter</a></code> | <code>string</code> | Set the Not After field of the certificate with specified date value. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.otherSans">OtherSans</a></code> | <code>string[]</code> | List of other SANs. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.privateKeyFormat">PrivateKeyFormat</a></code> | <code>string</code> | The private key format. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.revoke">Revoke</a></code> | <code>object</code> | Revoke the certificate upon resource destruction. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.revokeWithKey">RevokeWithKey</a></code> | <code>object</code> | Revoke the certificate with private key method upon resource destruction. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.ttl">Ttl</a></code> | <code>string</code> | Time to live. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.uriSans">UriSans</a></code> | <code>string[]</code> | List of alternative URIs. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.userIds">UserIds</a></code> | <code>string[]</code> | List of Subject User IDs. |
@@ -1399,7 +1492,7 @@ public string Backend { get; set; }
 
 The PKI secret backend the resource belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_cert#backend PkiSecretBackendCert#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_cert#backend PkiSecretBackendCert#backend}
 
 ---
 
@@ -1413,7 +1506,7 @@ public string CommonName { get; set; }
 
 CN of the certificate to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_cert#common_name PkiSecretBackendCert#common_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_cert#common_name PkiSecretBackendCert#common_name}
 
 ---
 
@@ -1427,7 +1520,7 @@ public string Name { get; set; }
 
 Name of the role to create the certificate against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_cert#name PkiSecretBackendCert#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_cert#name PkiSecretBackendCert#name}
 
 ---
 
@@ -1441,7 +1534,7 @@ public string[] AltNames { get; set; }
 
 List of alternative names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_cert#alt_names PkiSecretBackendCert#alt_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_cert#alt_names PkiSecretBackendCert#alt_names}
 
 ---
 
@@ -1455,7 +1548,23 @@ public object AutoRenew { get; set; }
 
 If enabled, a new certificate will be generated if the expiration is within min_seconds_remaining.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_cert#auto_renew PkiSecretBackendCert#auto_renew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_cert#auto_renew PkiSecretBackendCert#auto_renew}
+
+---
+
+##### `CertMetadata`<sup>Optional</sup> <a name="CertMetadata" id="@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.certMetadata"></a>
+
+```csharp
+public string CertMetadata { get; set; }
+```
+
+- *Type:* string
+
+A base 64 encoded value or an empty string to associate with the certificate's serial number.
+
+The role's no_store_metadata must be set to false, otherwise an error is returned when specified.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_cert#cert_metadata PkiSecretBackendCert#cert_metadata}
 
 ---
 
@@ -1469,7 +1578,7 @@ public object ExcludeCnFromSans { get; set; }
 
 Flag to exclude CN from SANs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_cert#exclude_cn_from_sans PkiSecretBackendCert#exclude_cn_from_sans}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_cert#exclude_cn_from_sans PkiSecretBackendCert#exclude_cn_from_sans}
 
 ---
 
@@ -1483,7 +1592,7 @@ public string Format { get; set; }
 
 The format of data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_cert#format PkiSecretBackendCert#format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_cert#format PkiSecretBackendCert#format}
 
 ---
 
@@ -1495,7 +1604,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_cert#id PkiSecretBackendCert#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_cert#id PkiSecretBackendCert#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1512,7 +1621,7 @@ public string[] IpSans { get; set; }
 
 List of alternative IPs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_cert#ip_sans PkiSecretBackendCert#ip_sans}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_cert#ip_sans PkiSecretBackendCert#ip_sans}
 
 ---
 
@@ -1526,7 +1635,7 @@ public string IssuerRef { get; set; }
 
 Specifies the default issuer of this request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_cert#issuer_ref PkiSecretBackendCert#issuer_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_cert#issuer_ref PkiSecretBackendCert#issuer_ref}
 
 ---
 
@@ -1540,7 +1649,7 @@ public double MinSecondsRemaining { get; set; }
 
 Generate a new certificate when the expiration is within this number of seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_cert#min_seconds_remaining PkiSecretBackendCert#min_seconds_remaining}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_cert#min_seconds_remaining PkiSecretBackendCert#min_seconds_remaining}
 
 ---
 
@@ -1554,7 +1663,23 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_cert#namespace PkiSecretBackendCert#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_cert#namespace PkiSecretBackendCert#namespace}
+
+---
+
+##### `NotAfter`<sup>Optional</sup> <a name="NotAfter" id="@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.notAfter"></a>
+
+```csharp
+public string NotAfter { get; set; }
+```
+
+- *Type:* string
+
+Set the Not After field of the certificate with specified date value.
+
+The value format should be given in UTC format YYYY-MM-ddTHH:MM:SSZ. Supports the Y10K end date for IEEE 802.1AR-2018 standard devices, 9999-12-31T23:59:59Z.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_cert#not_after PkiSecretBackendCert#not_after}
 
 ---
 
@@ -1568,7 +1693,7 @@ public string[] OtherSans { get; set; }
 
 List of other SANs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_cert#other_sans PkiSecretBackendCert#other_sans}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_cert#other_sans PkiSecretBackendCert#other_sans}
 
 ---
 
@@ -1582,7 +1707,7 @@ public string PrivateKeyFormat { get; set; }
 
 The private key format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_cert#private_key_format PkiSecretBackendCert#private_key_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_cert#private_key_format PkiSecretBackendCert#private_key_format}
 
 ---
 
@@ -1596,7 +1721,21 @@ public object Revoke { get; set; }
 
 Revoke the certificate upon resource destruction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_cert#revoke PkiSecretBackendCert#revoke}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_cert#revoke PkiSecretBackendCert#revoke}
+
+---
+
+##### `RevokeWithKey`<sup>Optional</sup> <a name="RevokeWithKey" id="@cdktf/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.revokeWithKey"></a>
+
+```csharp
+public object RevokeWithKey { get; set; }
+```
+
+- *Type:* object
+
+Revoke the certificate with private key method upon resource destruction.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_cert#revoke_with_key PkiSecretBackendCert#revoke_with_key}
 
 ---
 
@@ -1610,7 +1749,7 @@ public string Ttl { get; set; }
 
 Time to live.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_cert#ttl PkiSecretBackendCert#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_cert#ttl PkiSecretBackendCert#ttl}
 
 ---
 
@@ -1624,7 +1763,7 @@ public string[] UriSans { get; set; }
 
 List of alternative URIs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_cert#uri_sans PkiSecretBackendCert#uri_sans}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_cert#uri_sans PkiSecretBackendCert#uri_sans}
 
 ---
 
@@ -1638,7 +1777,7 @@ public string[] UserIds { get; set; }
 
 List of Subject User IDs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_cert#user_ids PkiSecretBackendCert#user_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_cert#user_ids PkiSecretBackendCert#user_ids}
 
 ---
 

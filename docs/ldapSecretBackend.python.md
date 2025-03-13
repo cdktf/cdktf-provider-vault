@@ -4,7 +4,7 @@
 
 ### LdapSecretBackend <a name="LdapSecretBackend" id="@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend vault_ldap_secret_backend}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend vault_ldap_secret_backend}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.Initializer"></a>
 
@@ -34,6 +34,7 @@ ldapSecretBackend.LdapSecretBackend(
   default_lease_ttl_seconds: typing.Union[int, float] = None,
   delegated_auth_accessors: typing.List[str] = None,
   description: str = None,
+  disable_automated_rotation: typing.Union[bool, IResolvable] = None,
   disable_remount: typing.Union[bool, IResolvable] = None,
   external_entropy_access: typing.Union[bool, IResolvable] = None,
   id: str = None,
@@ -49,6 +50,9 @@ ldapSecretBackend.LdapSecretBackend(
   path: str = None,
   plugin_version: str = None,
   request_timeout: typing.Union[int, float] = None,
+  rotation_period: typing.Union[int, float] = None,
+  rotation_schedule: str = None,
+  rotation_window: typing.Union[int, float] = None,
   schema: str = None,
   seal_wrap: typing.Union[bool, IResolvable] = None,
   skip_static_role_import_rotation: typing.Union[bool, IResolvable] = None,
@@ -84,9 +88,10 @@ ldapSecretBackend.LdapSecretBackend(
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.Initializer.parameter.defaultLeaseTtlSeconds">default_lease_ttl_seconds</a></code> | <code>typing.Union[int, float]</code> | Default lease duration for tokens and secrets in seconds. |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.Initializer.parameter.delegatedAuthAccessors">delegated_auth_accessors</a></code> | <code>typing.List[str]</code> | List of headers to allow and pass from the request to the plugin. |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.Initializer.parameter.description">description</a></code> | <code>str</code> | Human-friendly description of the mount. |
+| <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.Initializer.parameter.disableAutomatedRotation">disable_automated_rotation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.Initializer.parameter.disableRemount">disable_remount</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set, opts out of mount migration on path updates. |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.Initializer.parameter.externalEntropyAccess">external_entropy_access</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable the secrets engine to access Vault's external entropy source. |
-| <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#id LdapSecretBackend#id}. |
+| <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#id LdapSecretBackend#id}. |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.Initializer.parameter.identityTokenKey">identity_token_key</a></code> | <code>str</code> | The key to use for signing plugin workload identity tokens. |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.Initializer.parameter.insecureTls">insecure_tls</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Skip LDAP server SSL Certificate verification - insecure and not recommended for production use. |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.Initializer.parameter.listingVisibility">listing_visibility</a></code> | <code>str</code> | Specifies whether to show this mount in the UI-specific listing endpoint. |
@@ -99,6 +104,9 @@ ldapSecretBackend.LdapSecretBackend(
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.Initializer.parameter.path">path</a></code> | <code>str</code> | The path where the LDAP secrets backend is mounted. |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.Initializer.parameter.pluginVersion">plugin_version</a></code> | <code>str</code> | Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'. |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.Initializer.parameter.requestTimeout">request_timeout</a></code> | <code>typing.Union[int, float]</code> | Timeout, in seconds, for the connection when making requests against the server before returning back an error. |
+| <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.Initializer.parameter.rotationPeriod">rotation_period</a></code> | <code>typing.Union[int, float]</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
+| <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.Initializer.parameter.rotationSchedule">rotation_schedule</a></code> | <code>str</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
+| <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.Initializer.parameter.rotationWindow">rotation_window</a></code> | <code>typing.Union[int, float]</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.Initializer.parameter.schema">schema</a></code> | <code>str</code> | The LDAP schema to use when storing entry passwords. Valid schemas include openldap, ad, and racf. |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.Initializer.parameter.sealWrap">seal_wrap</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability. |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.Initializer.parameter.skipStaticRoleImportRotation">skip_static_role_import_rotation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Skip rotation of static role secrets on import. |
@@ -176,7 +184,7 @@ Must be unique amongst siblings in the same scope
 
 Distinguished name of object to bind when performing user and group search.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#binddn LdapSecretBackend#binddn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#binddn LdapSecretBackend#binddn}
 
 ---
 
@@ -186,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 LDAP password for searching for the user DN.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#bindpass LdapSecretBackend#bindpass}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#bindpass LdapSecretBackend#bindpass}
 
 ---
 
@@ -196,7 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of managed key registry entry names that the mount in question is allowed to access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#allowed_managed_keys LdapSecretBackend#allowed_managed_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#allowed_managed_keys LdapSecretBackend#allowed_managed_keys}
 
 ---
 
@@ -206,7 +214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of headers to allow and pass from the request to the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#allowed_response_headers LdapSecretBackend#allowed_response_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#allowed_response_headers LdapSecretBackend#allowed_response_headers}
 
 ---
 
@@ -216,7 +224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the list of keys that will not be HMAC'd by audit devices in the request data object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#audit_non_hmac_request_keys LdapSecretBackend#audit_non_hmac_request_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#audit_non_hmac_request_keys LdapSecretBackend#audit_non_hmac_request_keys}
 
 ---
 
@@ -226,7 +234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the list of keys that will not be HMAC'd by audit devices in the response data object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#audit_non_hmac_response_keys LdapSecretBackend#audit_non_hmac_response_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#audit_non_hmac_response_keys LdapSecretBackend#audit_non_hmac_response_keys}
 
 ---
 
@@ -236,7 +244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 CA certificate to use when verifying LDAP server certificate, must be x509 PEM encoded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#certificate LdapSecretBackend#certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#certificate LdapSecretBackend#certificate}
 
 ---
 
@@ -246,7 +254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Client certificate to provide to the LDAP server, must be x509 PEM encoded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#client_tls_cert LdapSecretBackend#client_tls_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#client_tls_cert LdapSecretBackend#client_tls_cert}
 
 ---
 
@@ -256,7 +264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Client certificate key to provide to the LDAP server, must be x509 PEM encoded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#client_tls_key LdapSecretBackend#client_tls_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#client_tls_key LdapSecretBackend#client_tls_key}
 
 ---
 
@@ -266,7 +274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Timeout, in seconds, when attempting to connect to the LDAP server before trying the next URL in the configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#connection_timeout LdapSecretBackend#connection_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#connection_timeout LdapSecretBackend#connection_timeout}
 
 ---
 
@@ -276,7 +284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Default lease duration for tokens and secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#default_lease_ttl_seconds LdapSecretBackend#default_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#default_lease_ttl_seconds LdapSecretBackend#default_lease_ttl_seconds}
 
 ---
 
@@ -286,7 +294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of headers to allow and pass from the request to the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#delegated_auth_accessors LdapSecretBackend#delegated_auth_accessors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#delegated_auth_accessors LdapSecretBackend#delegated_auth_accessors}
 
 ---
 
@@ -296,7 +304,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Human-friendly description of the mount.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#description LdapSecretBackend#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#description LdapSecretBackend#description}
+
+---
+
+##### `disable_automated_rotation`<sup>Optional</sup> <a name="disable_automated_rotation" id="@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.Initializer.parameter.disableAutomatedRotation"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Stops rotation of the root credential until set to false.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#disable_automated_rotation LdapSecretBackend#disable_automated_rotation}
 
 ---
 
@@ -306,7 +324,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If set, opts out of mount migration on path updates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#disable_remount LdapSecretBackend#disable_remount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#disable_remount LdapSecretBackend#disable_remount}
 
 ---
 
@@ -316,7 +334,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Enable the secrets engine to access Vault's external entropy source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#external_entropy_access LdapSecretBackend#external_entropy_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#external_entropy_access LdapSecretBackend#external_entropy_access}
 
 ---
 
@@ -324,7 +342,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#id LdapSecretBackend#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#id LdapSecretBackend#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -337,7 +355,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The key to use for signing plugin workload identity tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#identity_token_key LdapSecretBackend#identity_token_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#identity_token_key LdapSecretBackend#identity_token_key}
 
 ---
 
@@ -347,7 +365,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Skip LDAP server SSL Certificate verification - insecure and not recommended for production use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#insecure_tls LdapSecretBackend#insecure_tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#insecure_tls LdapSecretBackend#insecure_tls}
 
 ---
 
@@ -357,7 +375,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies whether to show this mount in the UI-specific listing endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#listing_visibility LdapSecretBackend#listing_visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#listing_visibility LdapSecretBackend#listing_visibility}
 
 ---
 
@@ -367,7 +385,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Local mount flag that can be explicitly set to true to enforce local mount in HA environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#local LdapSecretBackend#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#local LdapSecretBackend#local}
 
 ---
 
@@ -377,7 +395,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Maximum possible lease duration for tokens and secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#max_lease_ttl_seconds LdapSecretBackend#max_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#max_lease_ttl_seconds LdapSecretBackend#max_lease_ttl_seconds}
 
 ---
 
@@ -387,7 +405,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#namespace LdapSecretBackend#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#namespace LdapSecretBackend#namespace}
 
 ---
 
@@ -397,7 +415,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies mount type specific options that are passed to the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#options LdapSecretBackend#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#options LdapSecretBackend#options}
 
 ---
 
@@ -407,7 +425,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of headers to allow and pass from the request to the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#passthrough_request_headers LdapSecretBackend#passthrough_request_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#passthrough_request_headers LdapSecretBackend#passthrough_request_headers}
 
 ---
 
@@ -417,7 +435,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the password policy to use to generate passwords.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#password_policy LdapSecretBackend#password_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#password_policy LdapSecretBackend#password_policy}
 
 ---
 
@@ -427,7 +445,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The path where the LDAP secrets backend is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#path LdapSecretBackend#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#path LdapSecretBackend#path}
 
 ---
 
@@ -437,7 +455,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#plugin_version LdapSecretBackend#plugin_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#plugin_version LdapSecretBackend#plugin_version}
 
 ---
 
@@ -447,7 +465,39 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Timeout, in seconds, for the connection when making requests against the server before returning back an error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#request_timeout LdapSecretBackend#request_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#request_timeout LdapSecretBackend#request_timeout}
+
+---
+
+##### `rotation_period`<sup>Optional</sup> <a name="rotation_period" id="@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.Initializer.parameter.rotationPeriod"></a>
+
+- *Type:* typing.Union[int, float]
+
+The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#rotation_period LdapSecretBackend#rotation_period}
+
+---
+
+##### `rotation_schedule`<sup>Optional</sup> <a name="rotation_schedule" id="@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.Initializer.parameter.rotationSchedule"></a>
+
+- *Type:* str
+
+The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#rotation_schedule LdapSecretBackend#rotation_schedule}
+
+---
+
+##### `rotation_window`<sup>Optional</sup> <a name="rotation_window" id="@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.Initializer.parameter.rotationWindow"></a>
+
+- *Type:* typing.Union[int, float]
+
+The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered.
+
+Can only be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#rotation_window LdapSecretBackend#rotation_window}
 
 ---
 
@@ -457,7 +507,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The LDAP schema to use when storing entry passwords. Valid schemas include openldap, ad, and racf.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#schema LdapSecretBackend#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#schema LdapSecretBackend#schema}
 
 ---
 
@@ -467,7 +517,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#seal_wrap LdapSecretBackend#seal_wrap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#seal_wrap LdapSecretBackend#seal_wrap}
 
 ---
 
@@ -477,7 +527,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Skip rotation of static role secrets on import.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#skip_static_role_import_rotation LdapSecretBackend#skip_static_role_import_rotation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#skip_static_role_import_rotation LdapSecretBackend#skip_static_role_import_rotation}
 
 ---
 
@@ -487,7 +537,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Issue a StartTLS command after establishing unencrypted connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#starttls LdapSecretBackend#starttls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#starttls LdapSecretBackend#starttls}
 
 ---
 
@@ -497,7 +547,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Enables userPrincipalDomain login with [username]@UPNDomain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#upndomain LdapSecretBackend#upndomain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#upndomain LdapSecretBackend#upndomain}
 
 ---
 
@@ -507,7 +557,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 LDAP URL to connect to (default: ldap://127.0.0.1). Multiple URLs can be specified by concatenating them with commas; they will be tried in-order.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#url LdapSecretBackend#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#url LdapSecretBackend#url}
 
 ---
 
@@ -517,7 +567,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Attribute used for users (default: cn).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#userattr LdapSecretBackend#userattr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#userattr LdapSecretBackend#userattr}
 
 ---
 
@@ -527,7 +577,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 LDAP domain to use for users (eg: ou=People,dc=example,dc=org).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#userdn LdapSecretBackend#userdn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#userdn LdapSecretBackend#userdn}
 
 ---
 
@@ -569,6 +619,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.resetDefaultLeaseTtlSeconds">reset_default_lease_ttl_seconds</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.resetDelegatedAuthAccessors">reset_delegated_auth_accessors</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.resetDisableAutomatedRotation">reset_disable_automated_rotation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.resetDisableRemount">reset_disable_remount</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.resetExternalEntropyAccess">reset_external_entropy_access</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.resetId">reset_id</a></code> | *No description.* |
@@ -584,6 +635,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.resetPath">reset_path</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.resetPluginVersion">reset_plugin_version</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.resetRequestTimeout">reset_request_timeout</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.resetRotationPeriod">reset_rotation_period</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.resetRotationSchedule">reset_rotation_schedule</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.resetRotationWindow">reset_rotation_window</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.resetSchema">reset_schema</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.resetSealWrap">reset_seal_wrap</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.resetSkipStaticRoleImportRotation">reset_skip_static_role_import_rotation</a></code> | *No description.* |
@@ -986,6 +1040,12 @@ def reset_delegated_auth_accessors() -> None
 def reset_description() -> None
 ```
 
+##### `reset_disable_automated_rotation` <a name="reset_disable_automated_rotation" id="@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.resetDisableAutomatedRotation"></a>
+
+```python
+def reset_disable_automated_rotation() -> None
+```
+
 ##### `reset_disable_remount` <a name="reset_disable_remount" id="@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.resetDisableRemount"></a>
 
 ```python
@@ -1074,6 +1134,24 @@ def reset_plugin_version() -> None
 
 ```python
 def reset_request_timeout() -> None
+```
+
+##### `reset_rotation_period` <a name="reset_rotation_period" id="@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.resetRotationPeriod"></a>
+
+```python
+def reset_rotation_period() -> None
+```
+
+##### `reset_rotation_schedule` <a name="reset_rotation_schedule" id="@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.resetRotationSchedule"></a>
+
+```python
+def reset_rotation_schedule() -> None
+```
+
+##### `reset_rotation_window` <a name="reset_rotation_window" id="@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.resetRotationWindow"></a>
+
+```python
+def reset_rotation_window() -> None
 ```
 
 ##### `reset_schema` <a name="reset_schema" id="@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.resetSchema"></a>
@@ -1238,7 +1316,7 @@ The construct id used in the generated config for the LdapSecretBackend to impor
 
 The id of the existing LdapSecretBackend that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1282,6 +1360,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.defaultLeaseTtlSecondsInput">default_lease_ttl_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.delegatedAuthAccessorsInput">delegated_auth_accessors_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.disableAutomatedRotationInput">disable_automated_rotation_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.disableRemountInput">disable_remount_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.externalEntropyAccessInput">external_entropy_access_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.identityTokenKeyInput">identity_token_key_input</a></code> | <code>str</code> | *No description.* |
@@ -1297,6 +1376,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.pathInput">path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.pluginVersionInput">plugin_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.requestTimeoutInput">request_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.rotationPeriodInput">rotation_period_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.rotationScheduleInput">rotation_schedule_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.rotationWindowInput">rotation_window_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.schemaInput">schema_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.sealWrapInput">seal_wrap_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.skipStaticRoleImportRotationInput">skip_static_role_import_rotation_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -1318,6 +1400,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.defaultLeaseTtlSeconds">default_lease_ttl_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.delegatedAuthAccessors">delegated_auth_accessors</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.disableAutomatedRotation">disable_automated_rotation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.disableRemount">disable_remount</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.externalEntropyAccess">external_entropy_access</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -1333,6 +1416,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.path">path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.pluginVersion">plugin_version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.requestTimeout">request_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.rotationPeriod">rotation_period</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.rotationSchedule">rotation_schedule</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.rotationWindow">rotation_window</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.schema">schema</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.sealWrap">seal_wrap</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.skipStaticRoleImportRotation">skip_static_role_import_rotation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -1626,6 +1712,16 @@ description_input: str
 
 ---
 
+##### `disable_automated_rotation_input`<sup>Optional</sup> <a name="disable_automated_rotation_input" id="@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.disableAutomatedRotationInput"></a>
+
+```python
+disable_automated_rotation_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `disable_remount_input`<sup>Optional</sup> <a name="disable_remount_input" id="@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.disableRemountInput"></a>
 
 ```python
@@ -1770,6 +1866,36 @@ plugin_version_input: str
 
 ```python
 request_timeout_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `rotation_period_input`<sup>Optional</sup> <a name="rotation_period_input" id="@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.rotationPeriodInput"></a>
+
+```python
+rotation_period_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `rotation_schedule_input`<sup>Optional</sup> <a name="rotation_schedule_input" id="@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.rotationScheduleInput"></a>
+
+```python
+rotation_schedule_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `rotation_window_input`<sup>Optional</sup> <a name="rotation_window_input" id="@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.rotationWindowInput"></a>
+
+```python
+rotation_window_input: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
@@ -1986,6 +2112,16 @@ description: str
 
 ---
 
+##### `disable_automated_rotation`<sup>Required</sup> <a name="disable_automated_rotation" id="@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.disableAutomatedRotation"></a>
+
+```python
+disable_automated_rotation: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `disable_remount`<sup>Required</sup> <a name="disable_remount" id="@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.disableRemount"></a>
 
 ```python
@@ -2136,6 +2272,36 @@ request_timeout: typing.Union[int, float]
 
 ---
 
+##### `rotation_period`<sup>Required</sup> <a name="rotation_period" id="@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.rotationPeriod"></a>
+
+```python
+rotation_period: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `rotation_schedule`<sup>Required</sup> <a name="rotation_schedule" id="@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.rotationSchedule"></a>
+
+```python
+rotation_schedule: str
+```
+
+- *Type:* str
+
+---
+
+##### `rotation_window`<sup>Required</sup> <a name="rotation_window" id="@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.rotationWindow"></a>
+
+```python
+rotation_window: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackend.property.schema"></a>
 
 ```python
@@ -2264,6 +2430,7 @@ ldapSecretBackend.LdapSecretBackendConfig(
   default_lease_ttl_seconds: typing.Union[int, float] = None,
   delegated_auth_accessors: typing.List[str] = None,
   description: str = None,
+  disable_automated_rotation: typing.Union[bool, IResolvable] = None,
   disable_remount: typing.Union[bool, IResolvable] = None,
   external_entropy_access: typing.Union[bool, IResolvable] = None,
   id: str = None,
@@ -2279,6 +2446,9 @@ ldapSecretBackend.LdapSecretBackendConfig(
   path: str = None,
   plugin_version: str = None,
   request_timeout: typing.Union[int, float] = None,
+  rotation_period: typing.Union[int, float] = None,
+  rotation_schedule: str = None,
+  rotation_window: typing.Union[int, float] = None,
   schema: str = None,
   seal_wrap: typing.Union[bool, IResolvable] = None,
   skip_static_role_import_rotation: typing.Union[bool, IResolvable] = None,
@@ -2314,9 +2484,10 @@ ldapSecretBackend.LdapSecretBackendConfig(
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackendConfig.property.defaultLeaseTtlSeconds">default_lease_ttl_seconds</a></code> | <code>typing.Union[int, float]</code> | Default lease duration for tokens and secrets in seconds. |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackendConfig.property.delegatedAuthAccessors">delegated_auth_accessors</a></code> | <code>typing.List[str]</code> | List of headers to allow and pass from the request to the plugin. |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackendConfig.property.description">description</a></code> | <code>str</code> | Human-friendly description of the mount. |
+| <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackendConfig.property.disableAutomatedRotation">disable_automated_rotation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackendConfig.property.disableRemount">disable_remount</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set, opts out of mount migration on path updates. |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackendConfig.property.externalEntropyAccess">external_entropy_access</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable the secrets engine to access Vault's external entropy source. |
-| <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackendConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#id LdapSecretBackend#id}. |
+| <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackendConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#id LdapSecretBackend#id}. |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackendConfig.property.identityTokenKey">identity_token_key</a></code> | <code>str</code> | The key to use for signing plugin workload identity tokens. |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackendConfig.property.insecureTls">insecure_tls</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Skip LDAP server SSL Certificate verification - insecure and not recommended for production use. |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackendConfig.property.listingVisibility">listing_visibility</a></code> | <code>str</code> | Specifies whether to show this mount in the UI-specific listing endpoint. |
@@ -2329,6 +2500,9 @@ ldapSecretBackend.LdapSecretBackendConfig(
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackendConfig.property.path">path</a></code> | <code>str</code> | The path where the LDAP secrets backend is mounted. |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackendConfig.property.pluginVersion">plugin_version</a></code> | <code>str</code> | Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'. |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackendConfig.property.requestTimeout">request_timeout</a></code> | <code>typing.Union[int, float]</code> | Timeout, in seconds, for the connection when making requests against the server before returning back an error. |
+| <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackendConfig.property.rotationPeriod">rotation_period</a></code> | <code>typing.Union[int, float]</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
+| <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackendConfig.property.rotationSchedule">rotation_schedule</a></code> | <code>str</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
+| <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackendConfig.property.rotationWindow">rotation_window</a></code> | <code>typing.Union[int, float]</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackendConfig.property.schema">schema</a></code> | <code>str</code> | The LDAP schema to use when storing entry passwords. Valid schemas include openldap, ad, and racf. |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackendConfig.property.sealWrap">seal_wrap</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability. |
 | <code><a href="#@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackendConfig.property.skipStaticRoleImportRotation">skip_static_role_import_rotation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Skip rotation of static role secrets on import. |
@@ -2420,7 +2594,7 @@ binddn: str
 
 Distinguished name of object to bind when performing user and group search.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#binddn LdapSecretBackend#binddn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#binddn LdapSecretBackend#binddn}
 
 ---
 
@@ -2434,7 +2608,7 @@ bindpass: str
 
 LDAP password for searching for the user DN.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#bindpass LdapSecretBackend#bindpass}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#bindpass LdapSecretBackend#bindpass}
 
 ---
 
@@ -2448,7 +2622,7 @@ allowed_managed_keys: typing.List[str]
 
 List of managed key registry entry names that the mount in question is allowed to access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#allowed_managed_keys LdapSecretBackend#allowed_managed_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#allowed_managed_keys LdapSecretBackend#allowed_managed_keys}
 
 ---
 
@@ -2462,7 +2636,7 @@ allowed_response_headers: typing.List[str]
 
 List of headers to allow and pass from the request to the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#allowed_response_headers LdapSecretBackend#allowed_response_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#allowed_response_headers LdapSecretBackend#allowed_response_headers}
 
 ---
 
@@ -2476,7 +2650,7 @@ audit_non_hmac_request_keys: typing.List[str]
 
 Specifies the list of keys that will not be HMAC'd by audit devices in the request data object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#audit_non_hmac_request_keys LdapSecretBackend#audit_non_hmac_request_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#audit_non_hmac_request_keys LdapSecretBackend#audit_non_hmac_request_keys}
 
 ---
 
@@ -2490,7 +2664,7 @@ audit_non_hmac_response_keys: typing.List[str]
 
 Specifies the list of keys that will not be HMAC'd by audit devices in the response data object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#audit_non_hmac_response_keys LdapSecretBackend#audit_non_hmac_response_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#audit_non_hmac_response_keys LdapSecretBackend#audit_non_hmac_response_keys}
 
 ---
 
@@ -2504,7 +2678,7 @@ certificate: str
 
 CA certificate to use when verifying LDAP server certificate, must be x509 PEM encoded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#certificate LdapSecretBackend#certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#certificate LdapSecretBackend#certificate}
 
 ---
 
@@ -2518,7 +2692,7 @@ client_tls_cert: str
 
 Client certificate to provide to the LDAP server, must be x509 PEM encoded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#client_tls_cert LdapSecretBackend#client_tls_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#client_tls_cert LdapSecretBackend#client_tls_cert}
 
 ---
 
@@ -2532,7 +2706,7 @@ client_tls_key: str
 
 Client certificate key to provide to the LDAP server, must be x509 PEM encoded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#client_tls_key LdapSecretBackend#client_tls_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#client_tls_key LdapSecretBackend#client_tls_key}
 
 ---
 
@@ -2546,7 +2720,7 @@ connection_timeout: typing.Union[int, float]
 
 Timeout, in seconds, when attempting to connect to the LDAP server before trying the next URL in the configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#connection_timeout LdapSecretBackend#connection_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#connection_timeout LdapSecretBackend#connection_timeout}
 
 ---
 
@@ -2560,7 +2734,7 @@ default_lease_ttl_seconds: typing.Union[int, float]
 
 Default lease duration for tokens and secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#default_lease_ttl_seconds LdapSecretBackend#default_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#default_lease_ttl_seconds LdapSecretBackend#default_lease_ttl_seconds}
 
 ---
 
@@ -2574,7 +2748,7 @@ delegated_auth_accessors: typing.List[str]
 
 List of headers to allow and pass from the request to the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#delegated_auth_accessors LdapSecretBackend#delegated_auth_accessors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#delegated_auth_accessors LdapSecretBackend#delegated_auth_accessors}
 
 ---
 
@@ -2588,7 +2762,21 @@ description: str
 
 Human-friendly description of the mount.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#description LdapSecretBackend#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#description LdapSecretBackend#description}
+
+---
+
+##### `disable_automated_rotation`<sup>Optional</sup> <a name="disable_automated_rotation" id="@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackendConfig.property.disableAutomatedRotation"></a>
+
+```python
+disable_automated_rotation: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Stops rotation of the root credential until set to false.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#disable_automated_rotation LdapSecretBackend#disable_automated_rotation}
 
 ---
 
@@ -2602,7 +2790,7 @@ disable_remount: typing.Union[bool, IResolvable]
 
 If set, opts out of mount migration on path updates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#disable_remount LdapSecretBackend#disable_remount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#disable_remount LdapSecretBackend#disable_remount}
 
 ---
 
@@ -2616,7 +2804,7 @@ external_entropy_access: typing.Union[bool, IResolvable]
 
 Enable the secrets engine to access Vault's external entropy source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#external_entropy_access LdapSecretBackend#external_entropy_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#external_entropy_access LdapSecretBackend#external_entropy_access}
 
 ---
 
@@ -2628,7 +2816,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#id LdapSecretBackend#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#id LdapSecretBackend#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2645,7 +2833,7 @@ identity_token_key: str
 
 The key to use for signing plugin workload identity tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#identity_token_key LdapSecretBackend#identity_token_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#identity_token_key LdapSecretBackend#identity_token_key}
 
 ---
 
@@ -2659,7 +2847,7 @@ insecure_tls: typing.Union[bool, IResolvable]
 
 Skip LDAP server SSL Certificate verification - insecure and not recommended for production use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#insecure_tls LdapSecretBackend#insecure_tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#insecure_tls LdapSecretBackend#insecure_tls}
 
 ---
 
@@ -2673,7 +2861,7 @@ listing_visibility: str
 
 Specifies whether to show this mount in the UI-specific listing endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#listing_visibility LdapSecretBackend#listing_visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#listing_visibility LdapSecretBackend#listing_visibility}
 
 ---
 
@@ -2687,7 +2875,7 @@ local: typing.Union[bool, IResolvable]
 
 Local mount flag that can be explicitly set to true to enforce local mount in HA environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#local LdapSecretBackend#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#local LdapSecretBackend#local}
 
 ---
 
@@ -2701,7 +2889,7 @@ max_lease_ttl_seconds: typing.Union[int, float]
 
 Maximum possible lease duration for tokens and secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#max_lease_ttl_seconds LdapSecretBackend#max_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#max_lease_ttl_seconds LdapSecretBackend#max_lease_ttl_seconds}
 
 ---
 
@@ -2715,7 +2903,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#namespace LdapSecretBackend#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#namespace LdapSecretBackend#namespace}
 
 ---
 
@@ -2729,7 +2917,7 @@ options: typing.Mapping[str]
 
 Specifies mount type specific options that are passed to the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#options LdapSecretBackend#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#options LdapSecretBackend#options}
 
 ---
 
@@ -2743,7 +2931,7 @@ passthrough_request_headers: typing.List[str]
 
 List of headers to allow and pass from the request to the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#passthrough_request_headers LdapSecretBackend#passthrough_request_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#passthrough_request_headers LdapSecretBackend#passthrough_request_headers}
 
 ---
 
@@ -2757,7 +2945,7 @@ password_policy: str
 
 Name of the password policy to use to generate passwords.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#password_policy LdapSecretBackend#password_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#password_policy LdapSecretBackend#password_policy}
 
 ---
 
@@ -2771,7 +2959,7 @@ path: str
 
 The path where the LDAP secrets backend is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#path LdapSecretBackend#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#path LdapSecretBackend#path}
 
 ---
 
@@ -2785,7 +2973,7 @@ plugin_version: str
 
 Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#plugin_version LdapSecretBackend#plugin_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#plugin_version LdapSecretBackend#plugin_version}
 
 ---
 
@@ -2799,7 +2987,51 @@ request_timeout: typing.Union[int, float]
 
 Timeout, in seconds, for the connection when making requests against the server before returning back an error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#request_timeout LdapSecretBackend#request_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#request_timeout LdapSecretBackend#request_timeout}
+
+---
+
+##### `rotation_period`<sup>Optional</sup> <a name="rotation_period" id="@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackendConfig.property.rotationPeriod"></a>
+
+```python
+rotation_period: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#rotation_period LdapSecretBackend#rotation_period}
+
+---
+
+##### `rotation_schedule`<sup>Optional</sup> <a name="rotation_schedule" id="@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackendConfig.property.rotationSchedule"></a>
+
+```python
+rotation_schedule: str
+```
+
+- *Type:* str
+
+The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#rotation_schedule LdapSecretBackend#rotation_schedule}
+
+---
+
+##### `rotation_window`<sup>Optional</sup> <a name="rotation_window" id="@cdktf/provider-vault.ldapSecretBackend.LdapSecretBackendConfig.property.rotationWindow"></a>
+
+```python
+rotation_window: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered.
+
+Can only be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#rotation_window LdapSecretBackend#rotation_window}
 
 ---
 
@@ -2813,7 +3045,7 @@ schema: str
 
 The LDAP schema to use when storing entry passwords. Valid schemas include openldap, ad, and racf.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#schema LdapSecretBackend#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#schema LdapSecretBackend#schema}
 
 ---
 
@@ -2827,7 +3059,7 @@ seal_wrap: typing.Union[bool, IResolvable]
 
 Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#seal_wrap LdapSecretBackend#seal_wrap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#seal_wrap LdapSecretBackend#seal_wrap}
 
 ---
 
@@ -2841,7 +3073,7 @@ skip_static_role_import_rotation: typing.Union[bool, IResolvable]
 
 Skip rotation of static role secrets on import.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#skip_static_role_import_rotation LdapSecretBackend#skip_static_role_import_rotation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#skip_static_role_import_rotation LdapSecretBackend#skip_static_role_import_rotation}
 
 ---
 
@@ -2855,7 +3087,7 @@ starttls: typing.Union[bool, IResolvable]
 
 Issue a StartTLS command after establishing unencrypted connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#starttls LdapSecretBackend#starttls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#starttls LdapSecretBackend#starttls}
 
 ---
 
@@ -2869,7 +3101,7 @@ upndomain: str
 
 Enables userPrincipalDomain login with [username]@UPNDomain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#upndomain LdapSecretBackend#upndomain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#upndomain LdapSecretBackend#upndomain}
 
 ---
 
@@ -2883,7 +3115,7 @@ url: str
 
 LDAP URL to connect to (default: ldap://127.0.0.1). Multiple URLs can be specified by concatenating them with commas; they will be tried in-order.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#url LdapSecretBackend#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#url LdapSecretBackend#url}
 
 ---
 
@@ -2897,7 +3129,7 @@ userattr: str
 
 Attribute used for users (default: cn).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#userattr LdapSecretBackend#userattr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#userattr LdapSecretBackend#userattr}
 
 ---
 
@@ -2911,7 +3143,7 @@ userdn: str
 
 LDAP domain to use for users (eg: ou=People,dc=example,dc=org).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/ldap_secret_backend#userdn LdapSecretBackend#userdn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/ldap_secret_backend#userdn LdapSecretBackend#userdn}
 
 ---
 

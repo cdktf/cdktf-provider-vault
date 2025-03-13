@@ -4,7 +4,7 @@
 
 ### TransitSecretBackendKey <a name="TransitSecretBackendKey" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.Initializer"></a>
 
@@ -29,11 +29,14 @@ transitSecretBackendKey.TransitSecretBackendKey(
   deletion_allowed: typing.Union[bool, IResolvable] = None,
   derived: typing.Union[bool, IResolvable] = None,
   exportable: typing.Union[bool, IResolvable] = None,
+  hybrid_key_type_ec: str = None,
+  hybrid_key_type_pqc: str = None,
   id: str = None,
   key_size: typing.Union[int, float] = None,
   min_decryption_version: typing.Union[int, float] = None,
   min_encryption_version: typing.Union[int, float] = None,
   namespace: str = None,
+  parameter_set: str = None,
   type: str = None
 )
 ```
@@ -57,11 +60,14 @@ transitSecretBackendKey.TransitSecretBackendKey(
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.Initializer.parameter.deletionAllowed">deletion_allowed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies if the key is allowed to be deleted. |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.Initializer.parameter.derived">derived</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies if key derivation is to be used. |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.Initializer.parameter.exportable">exportable</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enables keys to be exportable. |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/transit_secret_backend_key#id TransitSecretBackendKey#id}. |
+| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.Initializer.parameter.hybridKeyTypeEc">hybrid_key_type_ec</a></code> | <code>str</code> | The elliptic curve algorithm to use for hybrid signatures. Supported key types are `ecdsa-p256`, `ecdsa-p384`, `ecdsa-p521`, and `ed25519`. |
+| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.Initializer.parameter.hybridKeyTypePqc">hybrid_key_type_pqc</a></code> | <code>str</code> | The post-quantum algorithm to use for hybrid signatures. Currently, ML-DSA is the only supported key type. |
+| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/transit_secret_backend_key#id TransitSecretBackendKey#id}. |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.Initializer.parameter.keySize">key_size</a></code> | <code>typing.Union[int, float]</code> | The key size in bytes for algorithms that allow variable key sizes. |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.Initializer.parameter.minDecryptionVersion">min_decryption_version</a></code> | <code>typing.Union[int, float]</code> | Minimum key version to use for decryption. |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.Initializer.parameter.minEncryptionVersion">min_encryption_version</a></code> | <code>typing.Union[int, float]</code> | Minimum key version to use for encryption. |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
+| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.Initializer.parameter.parameterSet">parameter_set</a></code> | <code>str</code> | The parameter set to use for ML-DSA. |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.Initializer.parameter.type">type</a></code> | <code>str</code> | Specifies the type of key to create. |
 
 ---
@@ -132,7 +138,7 @@ Must be unique amongst siblings in the same scope
 
 The Transit secret backend the resource belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/transit_secret_backend_key#backend TransitSecretBackendKey#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/transit_secret_backend_key#backend TransitSecretBackendKey#backend}
 
 ---
 
@@ -142,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the encryption key to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/transit_secret_backend_key#name TransitSecretBackendKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/transit_secret_backend_key#name TransitSecretBackendKey#name}
 
 ---
 
@@ -152,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If set, enables taking backup of named key in the plaintext format. Once set, this cannot be disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/transit_secret_backend_key#allow_plaintext_backup TransitSecretBackendKey#allow_plaintext_backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/transit_secret_backend_key#allow_plaintext_backup TransitSecretBackendKey#allow_plaintext_backup}
 
 ---
 
@@ -164,7 +170,7 @@ Amount of seconds the key should live before being automatically rotated.
 
 A value of 0 disables automatic rotation for the key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/transit_secret_backend_key#auto_rotate_period TransitSecretBackendKey#auto_rotate_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/transit_secret_backend_key#auto_rotate_period TransitSecretBackendKey#auto_rotate_period}
 
 ---
 
@@ -176,7 +182,7 @@ Whether or not to support convergent encryption, where the same plaintext create
 
 This requires derived to be set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/transit_secret_backend_key#convergent_encryption TransitSecretBackendKey#convergent_encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/transit_secret_backend_key#convergent_encryption TransitSecretBackendKey#convergent_encryption}
 
 ---
 
@@ -186,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies if the key is allowed to be deleted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/transit_secret_backend_key#deletion_allowed TransitSecretBackendKey#deletion_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/transit_secret_backend_key#deletion_allowed TransitSecretBackendKey#deletion_allowed}
 
 ---
 
@@ -198,7 +204,7 @@ Specifies if key derivation is to be used.
 
 If enabled, all encrypt/decrypt requests to this key must provide a context which is used for key derivation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/transit_secret_backend_key#derived TransitSecretBackendKey#derived}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/transit_secret_backend_key#derived TransitSecretBackendKey#derived}
 
 ---
 
@@ -210,7 +216,27 @@ Enables keys to be exportable.
 
 This allows for all the valid keys in the key ring to be exported. Once set, this cannot be disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/transit_secret_backend_key#exportable TransitSecretBackendKey#exportable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/transit_secret_backend_key#exportable TransitSecretBackendKey#exportable}
+
+---
+
+##### `hybrid_key_type_ec`<sup>Optional</sup> <a name="hybrid_key_type_ec" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.Initializer.parameter.hybridKeyTypeEc"></a>
+
+- *Type:* str
+
+The elliptic curve algorithm to use for hybrid signatures. Supported key types are `ecdsa-p256`, `ecdsa-p384`, `ecdsa-p521`, and `ed25519`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/transit_secret_backend_key#hybrid_key_type_ec TransitSecretBackendKey#hybrid_key_type_ec}
+
+---
+
+##### `hybrid_key_type_pqc`<sup>Optional</sup> <a name="hybrid_key_type_pqc" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.Initializer.parameter.hybridKeyTypePqc"></a>
+
+- *Type:* str
+
+The post-quantum algorithm to use for hybrid signatures. Currently, ML-DSA is the only supported key type.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/transit_secret_backend_key#hybrid_key_type_pqc TransitSecretBackendKey#hybrid_key_type_pqc}
 
 ---
 
@@ -218,7 +244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/transit_secret_backend_key#id TransitSecretBackendKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/transit_secret_backend_key#id TransitSecretBackendKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -233,7 +259,7 @@ The key size in bytes for algorithms that allow variable key sizes.
 
 Currently only applicable to HMAC; this value must be between 32 and 512.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/transit_secret_backend_key#key_size TransitSecretBackendKey#key_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/transit_secret_backend_key#key_size TransitSecretBackendKey#key_size}
 
 ---
 
@@ -243,7 +269,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Minimum key version to use for decryption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/transit_secret_backend_key#min_decryption_version TransitSecretBackendKey#min_decryption_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/transit_secret_backend_key#min_decryption_version TransitSecretBackendKey#min_decryption_version}
 
 ---
 
@@ -253,7 +279,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Minimum key version to use for encryption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/transit_secret_backend_key#min_encryption_version TransitSecretBackendKey#min_encryption_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/transit_secret_backend_key#min_encryption_version TransitSecretBackendKey#min_encryption_version}
 
 ---
 
@@ -263,7 +289,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/transit_secret_backend_key#namespace TransitSecretBackendKey#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/transit_secret_backend_key#namespace TransitSecretBackendKey#namespace}
+
+---
+
+##### `parameter_set`<sup>Optional</sup> <a name="parameter_set" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.Initializer.parameter.parameterSet"></a>
+
+- *Type:* str
+
+The parameter set to use for ML-DSA.
+
+Required for ML-DSA and hybrid keys. Valid values are 44, 65, and 87.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/transit_secret_backend_key#parameter_set TransitSecretBackendKey#parameter_set}
 
 ---
 
@@ -275,7 +313,7 @@ Specifies the type of key to create.
 
 The currently-supported types are: aes128-gcm96, aes256-gcm96, chacha20-poly1305, ed25519, ecdsa-p256, ecdsa-p384, ecdsa-p521, hmac, rsa-2048, rsa-3072, rsa-4096
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/transit_secret_backend_key#type TransitSecretBackendKey#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/transit_secret_backend_key#type TransitSecretBackendKey#type}
 
 ---
 
@@ -312,11 +350,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetDeletionAllowed">reset_deletion_allowed</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetDerived">reset_derived</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetExportable">reset_exportable</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetHybridKeyTypeEc">reset_hybrid_key_type_ec</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetHybridKeyTypePqc">reset_hybrid_key_type_pqc</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetKeySize">reset_key_size</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetMinDecryptionVersion">reset_min_decryption_version</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetMinEncryptionVersion">reset_min_encryption_version</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetNamespace">reset_namespace</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetParameterSet">reset_parameter_set</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetType">reset_type</a></code> | *No description.* |
 
 ---
@@ -682,6 +723,18 @@ def reset_derived() -> None
 def reset_exportable() -> None
 ```
 
+##### `reset_hybrid_key_type_ec` <a name="reset_hybrid_key_type_ec" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetHybridKeyTypeEc"></a>
+
+```python
+def reset_hybrid_key_type_ec() -> None
+```
+
+##### `reset_hybrid_key_type_pqc` <a name="reset_hybrid_key_type_pqc" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetHybridKeyTypePqc"></a>
+
+```python
+def reset_hybrid_key_type_pqc() -> None
+```
+
 ##### `reset_id` <a name="reset_id" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetId"></a>
 
 ```python
@@ -710,6 +763,12 @@ def reset_min_encryption_version() -> None
 
 ```python
 def reset_namespace() -> None
+```
+
+##### `reset_parameter_set` <a name="reset_parameter_set" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetParameterSet"></a>
+
+```python
+def reset_parameter_set() -> None
 ```
 
 ##### `reset_type` <a name="reset_type" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetType"></a>
@@ -832,7 +891,7 @@ The construct id used in the generated config for the TransitSecretBackendKey to
 
 The id of the existing TransitSecretBackendKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/transit_secret_backend_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/transit_secret_backend_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -876,12 +935,15 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.deletionAllowedInput">deletion_allowed_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.derivedInput">derived_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.exportableInput">exportable_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.hybridKeyTypeEcInput">hybrid_key_type_ec_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.hybridKeyTypePqcInput">hybrid_key_type_pqc_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.keySizeInput">key_size_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.minDecryptionVersionInput">min_decryption_version_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.minEncryptionVersionInput">min_encryption_version_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.namespaceInput">namespace_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.parameterSetInput">parameter_set_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.allowPlaintextBackup">allow_plaintext_backup</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.autoRotatePeriod">auto_rotate_period</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -890,12 +952,15 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.deletionAllowed">deletion_allowed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.derived">derived</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.exportable">exportable</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.hybridKeyTypeEc">hybrid_key_type_ec</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.hybridKeyTypePqc">hybrid_key_type_pqc</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.keySize">key_size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.minDecryptionVersion">min_decryption_version</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.minEncryptionVersion">min_encryption_version</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.namespace">namespace</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.parameterSet">parameter_set</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.type">type</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -1182,6 +1247,26 @@ exportable_input: typing.Union[bool, IResolvable]
 
 ---
 
+##### `hybrid_key_type_ec_input`<sup>Optional</sup> <a name="hybrid_key_type_ec_input" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.hybridKeyTypeEcInput"></a>
+
+```python
+hybrid_key_type_ec_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `hybrid_key_type_pqc_input`<sup>Optional</sup> <a name="hybrid_key_type_pqc_input" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.hybridKeyTypePqcInput"></a>
+
+```python
+hybrid_key_type_pqc_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.idInput"></a>
 
 ```python
@@ -1236,6 +1321,16 @@ name_input: str
 
 ```python
 namespace_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `parameter_set_input`<sup>Optional</sup> <a name="parameter_set_input" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.parameterSetInput"></a>
+
+```python
+parameter_set_input: str
 ```
 
 - *Type:* str
@@ -1322,6 +1417,26 @@ exportable: typing.Union[bool, IResolvable]
 
 ---
 
+##### `hybrid_key_type_ec`<sup>Required</sup> <a name="hybrid_key_type_ec" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.hybridKeyTypeEc"></a>
+
+```python
+hybrid_key_type_ec: str
+```
+
+- *Type:* str
+
+---
+
+##### `hybrid_key_type_pqc`<sup>Required</sup> <a name="hybrid_key_type_pqc" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.hybridKeyTypePqc"></a>
+
+```python
+hybrid_key_type_pqc: str
+```
+
+- *Type:* str
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.id"></a>
 
 ```python
@@ -1382,6 +1497,16 @@ namespace: str
 
 ---
 
+##### `parameter_set`<sup>Required</sup> <a name="parameter_set" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.parameterSet"></a>
+
+```python
+parameter_set: str
+```
+
+- *Type:* str
+
+---
+
 ##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.type"></a>
 
 ```python
@@ -1435,11 +1560,14 @@ transitSecretBackendKey.TransitSecretBackendKeyConfig(
   deletion_allowed: typing.Union[bool, IResolvable] = None,
   derived: typing.Union[bool, IResolvable] = None,
   exportable: typing.Union[bool, IResolvable] = None,
+  hybrid_key_type_ec: str = None,
+  hybrid_key_type_pqc: str = None,
   id: str = None,
   key_size: typing.Union[int, float] = None,
   min_decryption_version: typing.Union[int, float] = None,
   min_encryption_version: typing.Union[int, float] = None,
   namespace: str = None,
+  parameter_set: str = None,
   type: str = None
 )
 ```
@@ -1463,11 +1591,14 @@ transitSecretBackendKey.TransitSecretBackendKeyConfig(
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.deletionAllowed">deletion_allowed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies if the key is allowed to be deleted. |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.derived">derived</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies if key derivation is to be used. |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.exportable">exportable</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enables keys to be exportable. |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/transit_secret_backend_key#id TransitSecretBackendKey#id}. |
+| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.hybridKeyTypeEc">hybrid_key_type_ec</a></code> | <code>str</code> | The elliptic curve algorithm to use for hybrid signatures. Supported key types are `ecdsa-p256`, `ecdsa-p384`, `ecdsa-p521`, and `ed25519`. |
+| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.hybridKeyTypePqc">hybrid_key_type_pqc</a></code> | <code>str</code> | The post-quantum algorithm to use for hybrid signatures. Currently, ML-DSA is the only supported key type. |
+| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/transit_secret_backend_key#id TransitSecretBackendKey#id}. |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.keySize">key_size</a></code> | <code>typing.Union[int, float]</code> | The key size in bytes for algorithms that allow variable key sizes. |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.minDecryptionVersion">min_decryption_version</a></code> | <code>typing.Union[int, float]</code> | Minimum key version to use for decryption. |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.minEncryptionVersion">min_encryption_version</a></code> | <code>typing.Union[int, float]</code> | Minimum key version to use for encryption. |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
+| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.parameterSet">parameter_set</a></code> | <code>str</code> | The parameter set to use for ML-DSA. |
 | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.type">type</a></code> | <code>str</code> | Specifies the type of key to create. |
 
 ---
@@ -1552,7 +1683,7 @@ backend: str
 
 The Transit secret backend the resource belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/transit_secret_backend_key#backend TransitSecretBackendKey#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/transit_secret_backend_key#backend TransitSecretBackendKey#backend}
 
 ---
 
@@ -1566,7 +1697,7 @@ name: str
 
 Name of the encryption key to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/transit_secret_backend_key#name TransitSecretBackendKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/transit_secret_backend_key#name TransitSecretBackendKey#name}
 
 ---
 
@@ -1580,7 +1711,7 @@ allow_plaintext_backup: typing.Union[bool, IResolvable]
 
 If set, enables taking backup of named key in the plaintext format. Once set, this cannot be disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/transit_secret_backend_key#allow_plaintext_backup TransitSecretBackendKey#allow_plaintext_backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/transit_secret_backend_key#allow_plaintext_backup TransitSecretBackendKey#allow_plaintext_backup}
 
 ---
 
@@ -1596,7 +1727,7 @@ Amount of seconds the key should live before being automatically rotated.
 
 A value of 0 disables automatic rotation for the key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/transit_secret_backend_key#auto_rotate_period TransitSecretBackendKey#auto_rotate_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/transit_secret_backend_key#auto_rotate_period TransitSecretBackendKey#auto_rotate_period}
 
 ---
 
@@ -1612,7 +1743,7 @@ Whether or not to support convergent encryption, where the same plaintext create
 
 This requires derived to be set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/transit_secret_backend_key#convergent_encryption TransitSecretBackendKey#convergent_encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/transit_secret_backend_key#convergent_encryption TransitSecretBackendKey#convergent_encryption}
 
 ---
 
@@ -1626,7 +1757,7 @@ deletion_allowed: typing.Union[bool, IResolvable]
 
 Specifies if the key is allowed to be deleted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/transit_secret_backend_key#deletion_allowed TransitSecretBackendKey#deletion_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/transit_secret_backend_key#deletion_allowed TransitSecretBackendKey#deletion_allowed}
 
 ---
 
@@ -1642,7 +1773,7 @@ Specifies if key derivation is to be used.
 
 If enabled, all encrypt/decrypt requests to this key must provide a context which is used for key derivation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/transit_secret_backend_key#derived TransitSecretBackendKey#derived}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/transit_secret_backend_key#derived TransitSecretBackendKey#derived}
 
 ---
 
@@ -1658,7 +1789,35 @@ Enables keys to be exportable.
 
 This allows for all the valid keys in the key ring to be exported. Once set, this cannot be disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/transit_secret_backend_key#exportable TransitSecretBackendKey#exportable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/transit_secret_backend_key#exportable TransitSecretBackendKey#exportable}
+
+---
+
+##### `hybrid_key_type_ec`<sup>Optional</sup> <a name="hybrid_key_type_ec" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.hybridKeyTypeEc"></a>
+
+```python
+hybrid_key_type_ec: str
+```
+
+- *Type:* str
+
+The elliptic curve algorithm to use for hybrid signatures. Supported key types are `ecdsa-p256`, `ecdsa-p384`, `ecdsa-p521`, and `ed25519`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/transit_secret_backend_key#hybrid_key_type_ec TransitSecretBackendKey#hybrid_key_type_ec}
+
+---
+
+##### `hybrid_key_type_pqc`<sup>Optional</sup> <a name="hybrid_key_type_pqc" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.hybridKeyTypePqc"></a>
+
+```python
+hybrid_key_type_pqc: str
+```
+
+- *Type:* str
+
+The post-quantum algorithm to use for hybrid signatures. Currently, ML-DSA is the only supported key type.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/transit_secret_backend_key#hybrid_key_type_pqc TransitSecretBackendKey#hybrid_key_type_pqc}
 
 ---
 
@@ -1670,7 +1829,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/transit_secret_backend_key#id TransitSecretBackendKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/transit_secret_backend_key#id TransitSecretBackendKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1689,7 +1848,7 @@ The key size in bytes for algorithms that allow variable key sizes.
 
 Currently only applicable to HMAC; this value must be between 32 and 512.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/transit_secret_backend_key#key_size TransitSecretBackendKey#key_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/transit_secret_backend_key#key_size TransitSecretBackendKey#key_size}
 
 ---
 
@@ -1703,7 +1862,7 @@ min_decryption_version: typing.Union[int, float]
 
 Minimum key version to use for decryption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/transit_secret_backend_key#min_decryption_version TransitSecretBackendKey#min_decryption_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/transit_secret_backend_key#min_decryption_version TransitSecretBackendKey#min_decryption_version}
 
 ---
 
@@ -1717,7 +1876,7 @@ min_encryption_version: typing.Union[int, float]
 
 Minimum key version to use for encryption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/transit_secret_backend_key#min_encryption_version TransitSecretBackendKey#min_encryption_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/transit_secret_backend_key#min_encryption_version TransitSecretBackendKey#min_encryption_version}
 
 ---
 
@@ -1731,7 +1890,23 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/transit_secret_backend_key#namespace TransitSecretBackendKey#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/transit_secret_backend_key#namespace TransitSecretBackendKey#namespace}
+
+---
+
+##### `parameter_set`<sup>Optional</sup> <a name="parameter_set" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.parameterSet"></a>
+
+```python
+parameter_set: str
+```
+
+- *Type:* str
+
+The parameter set to use for ML-DSA.
+
+Required for ML-DSA and hybrid keys. Valid values are 44, 65, and 87.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/transit_secret_backend_key#parameter_set TransitSecretBackendKey#parameter_set}
 
 ---
 
@@ -1747,7 +1922,7 @@ Specifies the type of key to create.
 
 The currently-supported types are: aes128-gcm96, aes256-gcm96, chacha20-poly1305, ed25519, ecdsa-p256, ecdsa-p384, ecdsa-p521, hmac, rsa-2048, rsa-3072, rsa-4096
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/transit_secret_backend_key#type TransitSecretBackendKey#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/transit_secret_backend_key#type TransitSecretBackendKey#type}
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### PkiSecretBackendIssuer <a name="PkiSecretBackendIssuer" id="@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_issuer vault_pki_secret_backend_issuer}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_issuer vault_pki_secret_backend_issuer}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/pkisecretbackendissuer"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendissuer"
 
 pkisecretbackendissuer.NewPkiSecretBackendIssuer(scope Construct, id *string, config PkiSecretBackendIssuerConfig) PkiSecretBackendIssuer
 ```
@@ -74,6 +74,10 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.resetCrlDistributionPoints">ResetCrlDistributionPoints</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.resetDisableCriticalExtensionChecks">ResetDisableCriticalExtensionChecks</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.resetDisableNameChecks">ResetDisableNameChecks</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.resetDisableNameConstraintChecks">ResetDisableNameConstraintChecks</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.resetDisablePathLengthChecks">ResetDisablePathLengthChecks</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.resetEnableAiaUrlTemplating">ResetEnableAiaUrlTemplating</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.resetIssuerName">ResetIssuerName</a></code> | *No description.* |
@@ -381,6 +385,30 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 func ResetCrlDistributionPoints()
 ```
 
+##### `ResetDisableCriticalExtensionChecks` <a name="ResetDisableCriticalExtensionChecks" id="@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.resetDisableCriticalExtensionChecks"></a>
+
+```go
+func ResetDisableCriticalExtensionChecks()
+```
+
+##### `ResetDisableNameChecks` <a name="ResetDisableNameChecks" id="@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.resetDisableNameChecks"></a>
+
+```go
+func ResetDisableNameChecks()
+```
+
+##### `ResetDisableNameConstraintChecks` <a name="ResetDisableNameConstraintChecks" id="@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.resetDisableNameConstraintChecks"></a>
+
+```go
+func ResetDisableNameConstraintChecks()
+```
+
+##### `ResetDisablePathLengthChecks` <a name="ResetDisablePathLengthChecks" id="@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.resetDisablePathLengthChecks"></a>
+
+```go
+func ResetDisablePathLengthChecks()
+```
+
 ##### `ResetEnableAiaUrlTemplating` <a name="ResetEnableAiaUrlTemplating" id="@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.resetEnableAiaUrlTemplating"></a>
 
 ```go
@@ -455,7 +483,7 @@ func ResetUsage()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/pkisecretbackendissuer"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendissuer"
 
 pkisecretbackendissuer.PkiSecretBackendIssuer_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +515,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/pkisecretbackendissuer"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendissuer"
 
 pkisecretbackendissuer.PkiSecretBackendIssuer_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +529,7 @@ pkisecretbackendissuer.PkiSecretBackendIssuer_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/pkisecretbackendissuer"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendissuer"
 
 pkisecretbackendissuer.PkiSecretBackendIssuer_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +543,7 @@ pkisecretbackendissuer.PkiSecretBackendIssuer_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/pkisecretbackendissuer"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendissuer"
 
 pkisecretbackendissuer.PkiSecretBackendIssuer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -544,7 +572,7 @@ The construct id used in the generated config for the PkiSecretBackendIssuer to 
 
 The id of the existing PkiSecretBackendIssuer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_issuer#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_issuer#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -577,6 +605,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.property.issuerId">IssuerId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.property.backendInput">BackendInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.property.crlDistributionPointsInput">CrlDistributionPointsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.property.disableCriticalExtensionChecksInput">DisableCriticalExtensionChecksInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.property.disableNameChecksInput">DisableNameChecksInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.property.disableNameConstraintChecksInput">DisableNameConstraintChecksInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.property.disablePathLengthChecksInput">DisablePathLengthChecksInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.property.enableAiaUrlTemplatingInput">EnableAiaUrlTemplatingInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.property.issuerNameInput">IssuerNameInput</a></code> | <code>*string</code> | *No description.* |
@@ -590,6 +622,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.property.usageInput">UsageInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.property.backend">Backend</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.property.crlDistributionPoints">CrlDistributionPoints</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.property.disableCriticalExtensionChecks">DisableCriticalExtensionChecks</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.property.disableNameChecks">DisableNameChecks</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.property.disableNameConstraintChecks">DisableNameConstraintChecks</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.property.disablePathLengthChecks">DisablePathLengthChecks</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.property.enableAiaUrlTemplating">EnableAiaUrlTemplating</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.property.issuerName">IssuerName</a></code> | <code>*string</code> | *No description.* |
@@ -776,6 +812,46 @@ func CrlDistributionPointsInput() *[]*string
 
 ---
 
+##### `DisableCriticalExtensionChecksInput`<sup>Optional</sup> <a name="DisableCriticalExtensionChecksInput" id="@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.property.disableCriticalExtensionChecksInput"></a>
+
+```go
+func DisableCriticalExtensionChecksInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `DisableNameChecksInput`<sup>Optional</sup> <a name="DisableNameChecksInput" id="@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.property.disableNameChecksInput"></a>
+
+```go
+func DisableNameChecksInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `DisableNameConstraintChecksInput`<sup>Optional</sup> <a name="DisableNameConstraintChecksInput" id="@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.property.disableNameConstraintChecksInput"></a>
+
+```go
+func DisableNameConstraintChecksInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `DisablePathLengthChecksInput`<sup>Optional</sup> <a name="DisablePathLengthChecksInput" id="@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.property.disablePathLengthChecksInput"></a>
+
+```go
+func DisablePathLengthChecksInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `EnableAiaUrlTemplatingInput`<sup>Optional</sup> <a name="EnableAiaUrlTemplatingInput" id="@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.property.enableAiaUrlTemplatingInput"></a>
 
 ```go
@@ -903,6 +979,46 @@ func CrlDistributionPoints() *[]*string
 ```
 
 - *Type:* *[]*string
+
+---
+
+##### `DisableCriticalExtensionChecks`<sup>Required</sup> <a name="DisableCriticalExtensionChecks" id="@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.property.disableCriticalExtensionChecks"></a>
+
+```go
+func DisableCriticalExtensionChecks() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `DisableNameChecks`<sup>Required</sup> <a name="DisableNameChecks" id="@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.property.disableNameChecks"></a>
+
+```go
+func DisableNameChecks() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `DisableNameConstraintChecks`<sup>Required</sup> <a name="DisableNameConstraintChecks" id="@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.property.disableNameConstraintChecks"></a>
+
+```go
+func DisableNameConstraintChecks() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `DisablePathLengthChecks`<sup>Required</sup> <a name="DisablePathLengthChecks" id="@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuer.property.disablePathLengthChecks"></a>
+
+```go
+func DisablePathLengthChecks() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -1041,7 +1157,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/pkisecretbackendissuer"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendissuer"
 
 &pkisecretbackendissuer.PkiSecretBackendIssuerConfig {
 	Connection: interface{},
@@ -1054,6 +1170,10 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/pkisecretbackendissue
 	Backend: *string,
 	IssuerRef: *string,
 	CrlDistributionPoints: *[]*string,
+	DisableCriticalExtensionChecks: interface{},
+	DisableNameChecks: interface{},
+	DisableNameConstraintChecks: interface{},
+	DisablePathLengthChecks: interface{},
 	EnableAiaUrlTemplating: interface{},
 	Id: *string,
 	IssuerName: *string,
@@ -1081,8 +1201,12 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/pkisecretbackendissue
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuerConfig.property.backend">Backend</a></code> | <code>*string</code> | Full path where PKI backend is mounted. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuerConfig.property.issuerRef">IssuerRef</a></code> | <code>*string</code> | Reference to an existing issuer. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuerConfig.property.crlDistributionPoints">CrlDistributionPoints</a></code> | <code>*[]*string</code> | Specifies the URL values for the CRL Distribution Points field. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuerConfig.property.disableCriticalExtensionChecks">DisableCriticalExtensionChecks</a></code> | <code>interface{}</code> | This determines whether this issuer is able to issue certificates where the chain of trust (including the issued certificate) contain critical extensions not processed by Vault. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuerConfig.property.disableNameChecks">DisableNameChecks</a></code> | <code>interface{}</code> | This determines whether this issuer is able to issue certificates where the chain of trust (including the final issued certificate) contains a link in which the subject of the issuing certificate does not match the named issuer of the certificate it signed. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuerConfig.property.disableNameConstraintChecks">DisableNameConstraintChecks</a></code> | <code>interface{}</code> | This determines whether this issuer is able to issue certificates where the chain of trust (including the final issued certificate) violates the name constraints critical extension of one of the issuer certificates in the chain. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuerConfig.property.disablePathLengthChecks">DisablePathLengthChecks</a></code> | <code>interface{}</code> | This determines whether this issuer is able to issue certificates where the chain of trust (including the final issued certificate) is longer than allowed by a certificate authority in that chain. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuerConfig.property.enableAiaUrlTemplating">EnableAiaUrlTemplating</a></code> | <code>interface{}</code> | Specifies that the AIA URL values should be templated. |
-| <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_issuer#id PkiSecretBackendIssuer#id}. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_issuer#id PkiSecretBackendIssuer#id}. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuerConfig.property.issuerName">IssuerName</a></code> | <code>*string</code> | Reference to an existing issuer. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuerConfig.property.issuingCertificates">IssuingCertificates</a></code> | <code>*[]*string</code> | Specifies the URL values for the Issuing Certificate field. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuerConfig.property.leafNotAfterBehavior">LeafNotAfterBehavior</a></code> | <code>*string</code> | Behavior of a leaf's 'NotAfter' field during issuance. |
@@ -1174,7 +1298,7 @@ Backend *string
 
 Full path where PKI backend is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_issuer#backend PkiSecretBackendIssuer#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_issuer#backend PkiSecretBackendIssuer#backend}
 
 ---
 
@@ -1188,7 +1312,7 @@ IssuerRef *string
 
 Reference to an existing issuer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_issuer#issuer_ref PkiSecretBackendIssuer#issuer_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_issuer#issuer_ref PkiSecretBackendIssuer#issuer_ref}
 
 ---
 
@@ -1202,7 +1326,63 @@ CrlDistributionPoints *[]*string
 
 Specifies the URL values for the CRL Distribution Points field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_issuer#crl_distribution_points PkiSecretBackendIssuer#crl_distribution_points}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_issuer#crl_distribution_points PkiSecretBackendIssuer#crl_distribution_points}
+
+---
+
+##### `DisableCriticalExtensionChecks`<sup>Optional</sup> <a name="DisableCriticalExtensionChecks" id="@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuerConfig.property.disableCriticalExtensionChecks"></a>
+
+```go
+DisableCriticalExtensionChecks interface{}
+```
+
+- *Type:* interface{}
+
+This determines whether this issuer is able to issue certificates where the chain of trust (including the issued certificate) contain critical extensions not processed by Vault.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_issuer#disable_critical_extension_checks PkiSecretBackendIssuer#disable_critical_extension_checks}
+
+---
+
+##### `DisableNameChecks`<sup>Optional</sup> <a name="DisableNameChecks" id="@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuerConfig.property.disableNameChecks"></a>
+
+```go
+DisableNameChecks interface{}
+```
+
+- *Type:* interface{}
+
+This determines whether this issuer is able to issue certificates where the chain of trust (including the final issued certificate) contains a link in which the subject of the issuing certificate does not match the named issuer of the certificate it signed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_issuer#disable_name_checks PkiSecretBackendIssuer#disable_name_checks}
+
+---
+
+##### `DisableNameConstraintChecks`<sup>Optional</sup> <a name="DisableNameConstraintChecks" id="@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuerConfig.property.disableNameConstraintChecks"></a>
+
+```go
+DisableNameConstraintChecks interface{}
+```
+
+- *Type:* interface{}
+
+This determines whether this issuer is able to issue certificates where the chain of trust (including the final issued certificate) violates the name constraints critical extension of one of the issuer certificates in the chain.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_issuer#disable_name_constraint_checks PkiSecretBackendIssuer#disable_name_constraint_checks}
+
+---
+
+##### `DisablePathLengthChecks`<sup>Optional</sup> <a name="DisablePathLengthChecks" id="@cdktf/provider-vault.pkiSecretBackendIssuer.PkiSecretBackendIssuerConfig.property.disablePathLengthChecks"></a>
+
+```go
+DisablePathLengthChecks interface{}
+```
+
+- *Type:* interface{}
+
+This determines whether this issuer is able to issue certificates where the chain of trust (including the final issued certificate) is longer than allowed by a certificate authority in that chain.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_issuer#disable_path_length_checks PkiSecretBackendIssuer#disable_path_length_checks}
 
 ---
 
@@ -1216,7 +1396,7 @@ EnableAiaUrlTemplating interface{}
 
 Specifies that the AIA URL values should be templated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_issuer#enable_aia_url_templating PkiSecretBackendIssuer#enable_aia_url_templating}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_issuer#enable_aia_url_templating PkiSecretBackendIssuer#enable_aia_url_templating}
 
 ---
 
@@ -1228,7 +1408,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_issuer#id PkiSecretBackendIssuer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_issuer#id PkiSecretBackendIssuer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1245,7 +1425,7 @@ IssuerName *string
 
 Reference to an existing issuer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_issuer#issuer_name PkiSecretBackendIssuer#issuer_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_issuer#issuer_name PkiSecretBackendIssuer#issuer_name}
 
 ---
 
@@ -1259,7 +1439,7 @@ IssuingCertificates *[]*string
 
 Specifies the URL values for the Issuing Certificate field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_issuer#issuing_certificates PkiSecretBackendIssuer#issuing_certificates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_issuer#issuing_certificates PkiSecretBackendIssuer#issuing_certificates}
 
 ---
 
@@ -1273,7 +1453,7 @@ LeafNotAfterBehavior *string
 
 Behavior of a leaf's 'NotAfter' field during issuance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_issuer#leaf_not_after_behavior PkiSecretBackendIssuer#leaf_not_after_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_issuer#leaf_not_after_behavior PkiSecretBackendIssuer#leaf_not_after_behavior}
 
 ---
 
@@ -1287,7 +1467,7 @@ ManualChain *[]*string
 
 Chain of issuer references to build this issuer's computed CAChain field from, when non-empty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_issuer#manual_chain PkiSecretBackendIssuer#manual_chain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_issuer#manual_chain PkiSecretBackendIssuer#manual_chain}
 
 ---
 
@@ -1301,7 +1481,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_issuer#namespace PkiSecretBackendIssuer#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_issuer#namespace PkiSecretBackendIssuer#namespace}
 
 ---
 
@@ -1315,7 +1495,7 @@ OcspServers *[]*string
 
 Specifies the URL values for the OCSP Servers field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_issuer#ocsp_servers PkiSecretBackendIssuer#ocsp_servers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_issuer#ocsp_servers PkiSecretBackendIssuer#ocsp_servers}
 
 ---
 
@@ -1329,7 +1509,7 @@ RevocationSignatureAlgorithm *string
 
 Which signature algorithm to use when building CRLs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_issuer#revocation_signature_algorithm PkiSecretBackendIssuer#revocation_signature_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_issuer#revocation_signature_algorithm PkiSecretBackendIssuer#revocation_signature_algorithm}
 
 ---
 
@@ -1343,7 +1523,7 @@ Usage *string
 
 Comma-separated list of allowed usages for this issuer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_issuer#usage PkiSecretBackendIssuer#usage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_issuer#usage PkiSecretBackendIssuer#usage}
 
 ---
 
