@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaulttransitverify"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/datavaulttransitverify"
 
 datavaulttransitverify.NewDataVaultTransitVerify(scope Construct, id *string, config DataVaultTransitVerifyConfig) DataVaultTransitVerify
 ```
@@ -395,7 +395,7 @@ func ResetValid()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaulttransitverify"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/datavaulttransitverify"
 
 datavaulttransitverify.DataVaultTransitVerify_IsConstruct(x interface{}) *bool
 ```
@@ -427,7 +427,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaulttransitverify"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/datavaulttransitverify"
 
 datavaulttransitverify.DataVaultTransitVerify_IsTerraformElement(x interface{}) *bool
 ```
@@ -441,7 +441,7 @@ datavaulttransitverify.DataVaultTransitVerify_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaulttransitverify"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/datavaulttransitverify"
 
 datavaulttransitverify.DataVaultTransitVerify_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -455,7 +455,7 @@ datavaulttransitverify.DataVaultTransitVerify_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaulttransitverify"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/datavaulttransitverify"
 
 datavaulttransitverify.DataVaultTransitVerify_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1080,7 +1080,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaulttransitverify"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/datavaulttransitverify"
 
 &datavaulttransitverify.DataVaultTransitVerifyConfig {
 	Connection: interface{},
