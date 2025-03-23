@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.pkiSecretBackendRootSignIntermediate.PkiSecretBackendRootSignIntermediate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/pkisecretbackendrootsignintermediate"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendrootsignintermediate"
 
 pkisecretbackendrootsignintermediate.NewPkiSecretBackendRootSignIntermediate(scope Construct, id *string, config PkiSecretBackendRootSignIntermediateConfig) PkiSecretBackendRootSignIntermediate
 ```
@@ -609,7 +609,7 @@ func ResetUsePss()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.pkiSecretBackendRootSignIntermediate.PkiSecretBackendRootSignIntermediate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/pkisecretbackendrootsignintermediate"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendrootsignintermediate"
 
 pkisecretbackendrootsignintermediate.PkiSecretBackendRootSignIntermediate_IsConstruct(x interface{}) *bool
 ```
@@ -641,7 +641,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.pkiSecretBackendRootSignIntermediate.PkiSecretBackendRootSignIntermediate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/pkisecretbackendrootsignintermediate"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendrootsignintermediate"
 
 pkisecretbackendrootsignintermediate.PkiSecretBackendRootSignIntermediate_IsTerraformElement(x interface{}) *bool
 ```
@@ -655,7 +655,7 @@ pkisecretbackendrootsignintermediate.PkiSecretBackendRootSignIntermediate_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.pkiSecretBackendRootSignIntermediate.PkiSecretBackendRootSignIntermediate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/pkisecretbackendrootsignintermediate"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendrootsignintermediate"
 
 pkisecretbackendrootsignintermediate.PkiSecretBackendRootSignIntermediate_IsTerraformResource(x interface{}) *bool
 ```
@@ -669,7 +669,7 @@ pkisecretbackendrootsignintermediate.PkiSecretBackendRootSignIntermediate_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.pkiSecretBackendRootSignIntermediate.PkiSecretBackendRootSignIntermediate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/pkisecretbackendrootsignintermediate"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendrootsignintermediate"
 
 pkisecretbackendrootsignintermediate.PkiSecretBackendRootSignIntermediate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1745,7 +1745,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.pkiSecretBackendRootSignIntermediate.PkiSecretBackendRootSignIntermediateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/pkisecretbackendrootsignintermediate"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendrootsignintermediate"
 
 &pkisecretbackendrootsignintermediate.PkiSecretBackendRootSignIntermediateConfig {
 	Connection: interface{},
