@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.identityOidcKey.IdentityOidcKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/identityoidckey"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identityoidckey"
 
 identityoidckey.NewIdentityOidcKey(scope Construct, id *string, config IdentityOidcKeyConfig) IdentityOidcKey
 ```
@@ -420,7 +420,7 @@ func ResetVerificationTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.identityOidcKey.IdentityOidcKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/identityoidckey"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identityoidckey"
 
 identityoidckey.IdentityOidcKey_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.identityOidcKey.IdentityOidcKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/identityoidckey"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identityoidckey"
 
 identityoidckey.IdentityOidcKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ identityoidckey.IdentityOidcKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.identityOidcKey.IdentityOidcKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/identityoidckey"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identityoidckey"
 
 identityoidckey.IdentityOidcKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ identityoidckey.IdentityOidcKey_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.identityOidcKey.IdentityOidcKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/identityoidckey"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identityoidckey"
 
 identityoidckey.IdentityOidcKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -863,7 +863,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.identityOidcKey.IdentityOidcKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/identityoidckey"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identityoidckey"
 
 &identityoidckey.IdentityOidcKeyConfig {
 	Connection: interface{},
