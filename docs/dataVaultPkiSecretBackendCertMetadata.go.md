@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultPkiSecretBackendCertMetadata.DataVaultPkiSecretBackendCertMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/datavaultpkisecretbackendcertmetadata"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultpkisecretbackendcertmetadata"
 
 datavaultpkisecretbackendcertmetadata.NewDataVaultPkiSecretBackendCertMetadata(scope Construct, id *string, config DataVaultPkiSecretBackendCertMetadataConfig) DataVaultPkiSecretBackendCertMetadata
 ```
@@ -290,7 +290,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.dataVaultPkiSecretBackendCertMetadata.DataVaultPkiSecretBackendCertMetadata.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/datavaultpkisecretbackendcertmetadata"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultpkisecretbackendcertmetadata"
 
 datavaultpkisecretbackendcertmetadata.DataVaultPkiSecretBackendCertMetadata_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.dataVaultPkiSecretBackendCertMetadata.DataVaultPkiSecretBackendCertMetadata.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/datavaultpkisecretbackendcertmetadata"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultpkisecretbackendcertmetadata"
 
 datavaultpkisecretbackendcertmetadata.DataVaultPkiSecretBackendCertMetadata_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datavaultpkisecretbackendcertmetadata.DataVaultPkiSecretBackendCertMetadata_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vault.dataVaultPkiSecretBackendCertMetadata.DataVaultPkiSecretBackendCertMetadata.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/datavaultpkisecretbackendcertmetadata"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultpkisecretbackendcertmetadata"
 
 datavaultpkisecretbackendcertmetadata.DataVaultPkiSecretBackendCertMetadata_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datavaultpkisecretbackendcertmetadata.DataVaultPkiSecretBackendCertMetadata_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.dataVaultPkiSecretBackendCertMetadata.DataVaultPkiSecretBackendCertMetadata.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/datavaultpkisecretbackendcertmetadata"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultpkisecretbackendcertmetadata"
 
 datavaultpkisecretbackendcertmetadata.DataVaultPkiSecretBackendCertMetadata_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -700,7 +700,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.dataVaultPkiSecretBackendCertMetadata.DataVaultPkiSecretBackendCertMetadataConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/datavaultpkisecretbackendcertmetadata"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaultpkisecretbackendcertmetadata"
 
 &datavaultpkisecretbackendcertmetadata.DataVaultPkiSecretBackendCertMetadataConfig {
 	Connection: interface{},
