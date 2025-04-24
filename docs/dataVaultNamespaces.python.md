@@ -4,7 +4,7 @@
 
 ### DataVaultNamespaces <a name="DataVaultNamespaces" id="@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/namespaces vault_namespaces}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/namespaces vault_namespaces}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.Initializer"></a>
 
@@ -22,7 +22,8 @@ dataVaultNamespaces.DataVaultNamespaces(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   id: str = None,
-  namespace: str = None
+  namespace: str = None,
+  recursive: typing.Union[bool, IResolvable] = None
 )
 ```
 
@@ -37,8 +38,9 @@ dataVaultNamespaces.DataVaultNamespaces(
 | <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/namespaces#id DataVaultNamespaces#id}. |
+| <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/namespaces#id DataVaultNamespaces#id}. |
 | <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
+| <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.Initializer.parameter.recursive">recursive</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | True to fetch all child namespaces. |
 
 ---
 
@@ -106,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/namespaces#id DataVaultNamespaces#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/namespaces#id DataVaultNamespaces#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -119,7 +121,17 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/namespaces#namespace DataVaultNamespaces#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/namespaces#namespace DataVaultNamespaces#namespace}
+
+---
+
+##### `recursive`<sup>Optional</sup> <a name="recursive" id="@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.Initializer.parameter.recursive"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+True to fetch all child namespaces.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/namespaces#recursive DataVaultNamespaces#recursive}
 
 ---
 
@@ -146,6 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.resetNamespace">reset_namespace</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.resetRecursive">reset_recursive</a></code> | *No description.* |
 
 ---
 
@@ -378,6 +391,12 @@ def reset_id() -> None
 def reset_namespace() -> None
 ```
 
+##### `reset_recursive` <a name="reset_recursive" id="@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.resetRecursive"></a>
+
+```python
+def reset_recursive() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -492,7 +511,7 @@ The construct id used in the generated config for the DataVaultNamespaces to imp
 
 The id of the existing DataVaultNamespaces that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/namespaces#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/namespaces#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -521,10 +540,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.
 | <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.property.paths">paths</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.property.pathsFq">paths_fq</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.property.namespaceInput">namespace_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.property.recursiveInput">recursive_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.property.namespace">namespace</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.property.recursive">recursive</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 
 ---
 
@@ -660,6 +682,16 @@ paths: typing.List[str]
 
 ---
 
+##### `paths_fq`<sup>Required</sup> <a name="paths_fq" id="@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.property.pathsFq"></a>
+
+```python
+paths_fq: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 ##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.property.idInput"></a>
 
 ```python
@@ -680,6 +712,16 @@ namespace_input: str
 
 ---
 
+##### `recursive_input`<sup>Optional</sup> <a name="recursive_input" id="@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.property.recursiveInput"></a>
+
+```python
+recursive_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.property.id"></a>
 
 ```python
@@ -697,6 +739,16 @@ namespace: str
 ```
 
 - *Type:* str
+
+---
+
+##### `recursive`<sup>Required</sup> <a name="recursive" id="@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.property.recursive"></a>
+
+```python
+recursive: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
 
 ---
 
@@ -736,7 +788,8 @@ dataVaultNamespaces.DataVaultNamespacesConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   id: str = None,
-  namespace: str = None
+  namespace: str = None,
+  recursive: typing.Union[bool, IResolvable] = None
 )
 ```
 
@@ -751,8 +804,9 @@ dataVaultNamespaces.DataVaultNamespacesConfig(
 | <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespacesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespacesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespacesConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespacesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/namespaces#id DataVaultNamespaces#id}. |
+| <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespacesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/namespaces#id DataVaultNamespaces#id}. |
 | <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespacesConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
+| <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespacesConfig.property.recursive">recursive</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | True to fetch all child namespaces. |
 
 ---
 
@@ -834,7 +888,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/namespaces#id DataVaultNamespaces#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/namespaces#id DataVaultNamespaces#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -851,7 +905,21 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/namespaces#namespace DataVaultNamespaces#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/namespaces#namespace DataVaultNamespaces#namespace}
+
+---
+
+##### `recursive`<sup>Optional</sup> <a name="recursive" id="@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespacesConfig.property.recursive"></a>
+
+```python
+recursive: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+True to fetch all child namespaces.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/namespaces#recursive DataVaultNamespaces#recursive}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataVaultNamespaces <a name="DataVaultNamespaces" id="@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/namespaces vault_namespaces}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/namespaces vault_namespaces}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.Initializer"></a>
 
@@ -69,6 +69,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.resetNamespace">ResetNamespace</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.resetRecursive">ResetRecursive</a></code> | *No description.* |
 
 ---
 
@@ -276,6 +277,12 @@ func ResetId()
 func ResetNamespace()
 ```
 
+##### `ResetRecursive` <a name="ResetRecursive" id="@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.resetRecursive"></a>
+
+```go
+func ResetRecursive()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -379,7 +386,7 @@ The construct id used in the generated config for the DataVaultNamespaces to imp
 
 The id of the existing DataVaultNamespaces that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/namespaces#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/namespaces#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -408,10 +415,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.
 | <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.property.paths">Paths</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.property.pathsFq">PathsFq</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.property.namespaceInput">NamespaceInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.property.recursiveInput">RecursiveInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.property.namespace">Namespace</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.property.recursive">Recursive</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
@@ -547,6 +557,16 @@ func Paths() *[]*string
 
 ---
 
+##### `PathsFq`<sup>Required</sup> <a name="PathsFq" id="@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.property.pathsFq"></a>
+
+```go
+func PathsFq() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
 ##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.property.idInput"></a>
 
 ```go
@@ -567,6 +587,16 @@ func NamespaceInput() *string
 
 ---
 
+##### `RecursiveInput`<sup>Optional</sup> <a name="RecursiveInput" id="@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.property.recursiveInput"></a>
+
+```go
+func RecursiveInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.property.id"></a>
 
 ```go
@@ -584,6 +614,16 @@ func Namespace() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `Recursive`<sup>Required</sup> <a name="Recursive" id="@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespaces.property.recursive"></a>
+
+```go
+func Recursive() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -624,6 +664,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/datavaultnamespaces"
 	Provisioners: *[]interface{},
 	Id: *string,
 	Namespace: *string,
+	Recursive: interface{},
 }
 ```
 
@@ -638,8 +679,9 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/datavaultnamespaces"
 | <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespacesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespacesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespacesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespacesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/namespaces#id DataVaultNamespaces#id}. |
+| <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespacesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/namespaces#id DataVaultNamespaces#id}. |
 | <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespacesConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
+| <code><a href="#@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespacesConfig.property.recursive">Recursive</a></code> | <code>interface{}</code> | True to fetch all child namespaces. |
 
 ---
 
@@ -721,7 +763,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/namespaces#id DataVaultNamespaces#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/namespaces#id DataVaultNamespaces#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -738,7 +780,21 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/namespaces#namespace DataVaultNamespaces#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/namespaces#namespace DataVaultNamespaces#namespace}
+
+---
+
+##### `Recursive`<sup>Optional</sup> <a name="Recursive" id="@cdktf/provider-vault.dataVaultNamespaces.DataVaultNamespacesConfig.property.recursive"></a>
+
+```go
+Recursive interface{}
+```
+
+- *Type:* interface{}
+
+True to fetch all child namespaces.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/namespaces#recursive DataVaultNamespaces#recursive}
 
 ---
 
