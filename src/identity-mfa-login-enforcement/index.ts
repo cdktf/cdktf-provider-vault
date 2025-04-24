@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/identity_mfa_login_enforcement
+// https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/identity_mfa_login_enforcement
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface IdentityMfaLoginEnforcementConfig extends cdktf.TerraformMetaAr
   /**
   * Set of auth method accessor IDs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/identity_mfa_login_enforcement#auth_method_accessors IdentityMfaLoginEnforcement#auth_method_accessors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/identity_mfa_login_enforcement#auth_method_accessors IdentityMfaLoginEnforcement#auth_method_accessors}
   */
   readonly authMethodAccessors?: string[];
   /**
   * Set of auth method types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/identity_mfa_login_enforcement#auth_method_types IdentityMfaLoginEnforcement#auth_method_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/identity_mfa_login_enforcement#auth_method_types IdentityMfaLoginEnforcement#auth_method_types}
   */
   readonly authMethodTypes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/identity_mfa_login_enforcement#id IdentityMfaLoginEnforcement#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/identity_mfa_login_enforcement#id IdentityMfaLoginEnforcement#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,37 +29,37 @@ export interface IdentityMfaLoginEnforcementConfig extends cdktf.TerraformMetaAr
   /**
   * Set of identity entity IDs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/identity_mfa_login_enforcement#identity_entity_ids IdentityMfaLoginEnforcement#identity_entity_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/identity_mfa_login_enforcement#identity_entity_ids IdentityMfaLoginEnforcement#identity_entity_ids}
   */
   readonly identityEntityIds?: string[];
   /**
   * Set of identity group IDs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/identity_mfa_login_enforcement#identity_group_ids IdentityMfaLoginEnforcement#identity_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/identity_mfa_login_enforcement#identity_group_ids IdentityMfaLoginEnforcement#identity_group_ids}
   */
   readonly identityGroupIds?: string[];
   /**
   * Set of MFA method UUIDs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/identity_mfa_login_enforcement#mfa_method_ids IdentityMfaLoginEnforcement#mfa_method_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/identity_mfa_login_enforcement#mfa_method_ids IdentityMfaLoginEnforcement#mfa_method_ids}
   */
   readonly mfaMethodIds: string[];
   /**
   * Login enforcement name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/identity_mfa_login_enforcement#name IdentityMfaLoginEnforcement#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/identity_mfa_login_enforcement#name IdentityMfaLoginEnforcement#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/identity_mfa_login_enforcement#namespace IdentityMfaLoginEnforcement#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/identity_mfa_login_enforcement#namespace IdentityMfaLoginEnforcement#namespace}
   */
   readonly namespace?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/identity_mfa_login_enforcement vault_identity_mfa_login_enforcement}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/identity_mfa_login_enforcement vault_identity_mfa_login_enforcement}
 */
 export class IdentityMfaLoginEnforcement extends cdktf.TerraformResource {
 
@@ -80,7 +75,7 @@ export class IdentityMfaLoginEnforcement extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a IdentityMfaLoginEnforcement resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IdentityMfaLoginEnforcement to import
-  * @param importFromId The id of the existing IdentityMfaLoginEnforcement that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/identity_mfa_login_enforcement#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IdentityMfaLoginEnforcement that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/identity_mfa_login_enforcement#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IdentityMfaLoginEnforcement to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -92,7 +87,7 @@ export class IdentityMfaLoginEnforcement extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/identity_mfa_login_enforcement vault_identity_mfa_login_enforcement} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/identity_mfa_login_enforcement vault_identity_mfa_login_enforcement} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -103,7 +98,7 @@ export class IdentityMfaLoginEnforcement extends cdktf.TerraformResource {
       terraformResourceType: 'vault_identity_mfa_login_enforcement',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '4.7.0',
+        providerVersion: '4.8.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

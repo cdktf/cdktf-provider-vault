@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/policy_document
+// https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/policy_document
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataVaultPolicyDocumentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/policy_document#id DataVaultPolicyDocument#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/policy_document#id DataVaultPolicyDocument#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,23 +17,27 @@ export interface DataVaultPolicyDocumentConfig extends cdktf.TerraformMetaArgume
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/policy_document#namespace DataVaultPolicyDocument#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/policy_document#namespace DataVaultPolicyDocument#namespace}
   */
   readonly namespace?: string;
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/policy_document#rule DataVaultPolicyDocument#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/policy_document#rule DataVaultPolicyDocument#rule}
   */
   readonly rule?: DataVaultPolicyDocumentRule[] | cdktf.IResolvable;
 }
 export interface DataVaultPolicyDocumentRuleAllowedParameter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/policy_document#key DataVaultPolicyDocument#key}
+  * Name of permitted key.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/policy_document#key DataVaultPolicyDocument#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/policy_document#value DataVaultPolicyDocument#value}
+  * A list of values what are permitted by policy rule.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/policy_document#value DataVaultPolicyDocument#value}
   */
   readonly value: string[];
 }
@@ -177,11 +176,15 @@ export class DataVaultPolicyDocumentRuleAllowedParameterList extends cdktf.Compl
 }
 export interface DataVaultPolicyDocumentRuleDeniedParameter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/policy_document#key DataVaultPolicyDocument#key}
+  * Name of denied key.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/policy_document#key DataVaultPolicyDocument#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/policy_document#value DataVaultPolicyDocument#value}
+  * A list of values what are denied by policy rule.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/policy_document#value DataVaultPolicyDocument#value}
   */
   readonly value: string[];
 }
@@ -320,39 +323,57 @@ export class DataVaultPolicyDocumentRuleDeniedParameterList extends cdktf.Comple
 }
 export interface DataVaultPolicyDocumentRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/policy_document#capabilities DataVaultPolicyDocument#capabilities}
+  * A list of capabilities to apply to the specified path.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/policy_document#capabilities DataVaultPolicyDocument#capabilities}
   */
   readonly capabilities: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/policy_document#description DataVaultPolicyDocument#description}
+  * Description of the rule.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/policy_document#description DataVaultPolicyDocument#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/policy_document#max_wrapping_ttl DataVaultPolicyDocument#max_wrapping_ttl}
+  * The maximum allowed TTL that clients can specify for a wrapped response.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/policy_document#max_wrapping_ttl DataVaultPolicyDocument#max_wrapping_ttl}
   */
   readonly maxWrappingTtl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/policy_document#min_wrapping_ttl DataVaultPolicyDocument#min_wrapping_ttl}
+  * The minimum allowed TTL that clients can specify for a wrapped response.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/policy_document#min_wrapping_ttl DataVaultPolicyDocument#min_wrapping_ttl}
   */
   readonly minWrappingTtl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/policy_document#path DataVaultPolicyDocument#path}
+  * A path in Vault that this rule applies to.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/policy_document#path DataVaultPolicyDocument#path}
   */
   readonly path: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/policy_document#required_parameters DataVaultPolicyDocument#required_parameters}
+  * A list of parameters that must be specified.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/policy_document#required_parameters DataVaultPolicyDocument#required_parameters}
   */
   readonly requiredParameters?: string[];
   /**
+  * A list of event types to subscribe to when using `subscribe` capability
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/policy_document#subscribe_event_types DataVaultPolicyDocument#subscribe_event_types}
+  */
+  readonly subscribeEventTypes?: string[];
+  /**
   * allowed_parameter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/policy_document#allowed_parameter DataVaultPolicyDocument#allowed_parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/policy_document#allowed_parameter DataVaultPolicyDocument#allowed_parameter}
   */
   readonly allowedParameter?: DataVaultPolicyDocumentRuleAllowedParameter[] | cdktf.IResolvable;
   /**
   * denied_parameter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/policy_document#denied_parameter DataVaultPolicyDocument#denied_parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/policy_document#denied_parameter DataVaultPolicyDocument#denied_parameter}
   */
   readonly deniedParameter?: DataVaultPolicyDocumentRuleDeniedParameter[] | cdktf.IResolvable;
 }
@@ -369,6 +390,7 @@ export function dataVaultPolicyDocumentRuleToTerraform(struct?: DataVaultPolicyD
     min_wrapping_ttl: cdktf.stringToTerraform(struct!.minWrappingTtl),
     path: cdktf.stringToTerraform(struct!.path),
     required_parameters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.requiredParameters),
+    subscribe_event_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subscribeEventTypes),
     allowed_parameter: cdktf.listMapper(dataVaultPolicyDocumentRuleAllowedParameterToTerraform, true)(struct!.allowedParameter),
     denied_parameter: cdktf.listMapper(dataVaultPolicyDocumentRuleDeniedParameterToTerraform, true)(struct!.deniedParameter),
   }
@@ -413,6 +435,12 @@ export function dataVaultPolicyDocumentRuleToHclTerraform(struct?: DataVaultPoli
     },
     required_parameters: {
       value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.requiredParameters),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    subscribe_event_types: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subscribeEventTypes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -479,6 +507,10 @@ export class DataVaultPolicyDocumentRuleOutputReference extends cdktf.ComplexObj
       hasAnyValues = true;
       internalValueResult.requiredParameters = this._requiredParameters;
     }
+    if (this._subscribeEventTypes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.subscribeEventTypes = this._subscribeEventTypes;
+    }
     if (this._allowedParameter?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.allowedParameter = this._allowedParameter?.internalValue;
@@ -500,6 +532,7 @@ export class DataVaultPolicyDocumentRuleOutputReference extends cdktf.ComplexObj
       this._minWrappingTtl = undefined;
       this._path = undefined;
       this._requiredParameters = undefined;
+      this._subscribeEventTypes = undefined;
       this._allowedParameter.internalValue = undefined;
       this._deniedParameter.internalValue = undefined;
     }
@@ -516,6 +549,7 @@ export class DataVaultPolicyDocumentRuleOutputReference extends cdktf.ComplexObj
       this._minWrappingTtl = value.minWrappingTtl;
       this._path = value.path;
       this._requiredParameters = value.requiredParameters;
+      this._subscribeEventTypes = value.subscribeEventTypes;
       this._allowedParameter.internalValue = value.allowedParameter;
       this._deniedParameter.internalValue = value.deniedParameter;
     }
@@ -611,6 +645,22 @@ export class DataVaultPolicyDocumentRuleOutputReference extends cdktf.ComplexObj
     return this._requiredParameters;
   }
 
+  // subscribe_event_types - computed: false, optional: true, required: false
+  private _subscribeEventTypes?: string[]; 
+  public get subscribeEventTypes() {
+    return this.getListAttribute('subscribe_event_types');
+  }
+  public set subscribeEventTypes(value: string[]) {
+    this._subscribeEventTypes = value;
+  }
+  public resetSubscribeEventTypes() {
+    this._subscribeEventTypes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subscribeEventTypesInput() {
+    return this._subscribeEventTypes;
+  }
+
   // allowed_parameter - computed: false, optional: true, required: false
   private _allowedParameter = new DataVaultPolicyDocumentRuleAllowedParameterList(this, "allowed_parameter", false);
   public get allowedParameter() {
@@ -665,7 +715,7 @@ export class DataVaultPolicyDocumentRuleList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/policy_document vault_policy_document}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/policy_document vault_policy_document}
 */
 export class DataVaultPolicyDocument extends cdktf.TerraformDataSource {
 
@@ -681,7 +731,7 @@ export class DataVaultPolicyDocument extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataVaultPolicyDocument resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataVaultPolicyDocument to import
-  * @param importFromId The id of the existing DataVaultPolicyDocument that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/policy_document#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataVaultPolicyDocument that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/policy_document#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataVaultPolicyDocument to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -693,7 +743,7 @@ export class DataVaultPolicyDocument extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/policy_document vault_policy_document} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/policy_document vault_policy_document} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -704,7 +754,7 @@ export class DataVaultPolicyDocument extends cdktf.TerraformDataSource {
       terraformResourceType: 'vault_policy_document',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '4.7.0',
+        providerVersion: '4.8.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
