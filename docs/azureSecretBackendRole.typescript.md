@@ -4,7 +4,7 @@
 
 ### AzureSecretBackendRole <a name="AzureSecretBackendRole" id="@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend_role vault_azure_secret_backend_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/azure_secret_backend_role vault_azure_secret_backend_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.Initializer"></a>
 
@@ -80,6 +80,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.resetAzureRoles">resetAzureRoles</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.resetBackend">resetBackend</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.resetDescription">resetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.resetExplicitMaxTtl">resetExplicitMaxTtl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.resetMaxTtl">resetMaxTtl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.resetNamespace">resetNamespace</a></code> | *No description.* |
@@ -432,6 +433,12 @@ public resetBackend(): void
 public resetDescription(): void
 ```
 
+##### `resetExplicitMaxTtl` <a name="resetExplicitMaxTtl" id="@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.resetExplicitMaxTtl"></a>
+
+```typescript
+public resetExplicitMaxTtl(): void
+```
+
 ##### `resetId` <a name="resetId" id="@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.resetId"></a>
 
 ```typescript
@@ -577,7 +584,7 @@ The construct id used in the generated config for the AzureSecretBackendRole to 
 
 The id of the existing AzureSecretBackendRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/azure_secret_backend_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -614,6 +621,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.
 | <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.property.azureRolesInput">azureRolesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureRoles">AzureSecretBackendRoleAzureRoles</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.property.backendInput">backendInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.property.explicitMaxTtlInput">explicitMaxTtlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.property.maxTtlInput">maxTtlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.property.namespaceInput">namespaceInput</a></code> | <code>string</code> | *No description.* |
@@ -625,6 +633,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.
 | <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.property.applicationObjectId">applicationObjectId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.property.backend">backend</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.property.description">description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.property.explicitMaxTtl">explicitMaxTtl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.property.maxTtl">maxTtl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.property.namespace">namespace</a></code> | <code>string</code> | *No description.* |
@@ -848,6 +857,16 @@ public readonly descriptionInput: string;
 
 ---
 
+##### `explicitMaxTtlInput`<sup>Optional</sup> <a name="explicitMaxTtlInput" id="@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.property.explicitMaxTtlInput"></a>
+
+```typescript
+public readonly explicitMaxTtlInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.property.idInput"></a>
 
 ```typescript
@@ -952,6 +971,16 @@ public readonly backend: string;
 
 ```typescript
 public readonly description: string;
+```
+
+- *Type:* string
+
+---
+
+##### `explicitMaxTtl`<sup>Required</sup> <a name="explicitMaxTtl" id="@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRole.property.explicitMaxTtl"></a>
+
+```typescript
+public readonly explicitMaxTtl: string;
 ```
 
 - *Type:* string
@@ -1072,7 +1101,7 @@ const azureSecretBackendRoleAzureGroups: azureSecretBackendRole.AzureSecretBacke
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureGroups.property.groupName">groupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend_role#group_name AzureSecretBackendRole#group_name}. |
+| <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureGroups.property.groupName">groupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/azure_secret_backend_role#group_name AzureSecretBackendRole#group_name}. |
 
 ---
 
@@ -1084,7 +1113,7 @@ public readonly groupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend_role#group_name AzureSecretBackendRole#group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/azure_secret_backend_role#group_name AzureSecretBackendRole#group_name}.
 
 ---
 
@@ -1102,9 +1131,9 @@ const azureSecretBackendRoleAzureRoles: azureSecretBackendRole.AzureSecretBacken
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureRoles.property.scope">scope</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend_role#scope AzureSecretBackendRole#scope}. |
-| <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureRoles.property.roleId">roleId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend_role#role_id AzureSecretBackendRole#role_id}. |
-| <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureRoles.property.roleName">roleName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend_role#role_name AzureSecretBackendRole#role_name}. |
+| <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureRoles.property.scope">scope</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/azure_secret_backend_role#scope AzureSecretBackendRole#scope}. |
+| <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureRoles.property.roleId">roleId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/azure_secret_backend_role#role_id AzureSecretBackendRole#role_id}. |
+| <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureRoles.property.roleName">roleName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/azure_secret_backend_role#role_name AzureSecretBackendRole#role_name}. |
 
 ---
 
@@ -1116,7 +1145,7 @@ public readonly scope: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend_role#scope AzureSecretBackendRole#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/azure_secret_backend_role#scope AzureSecretBackendRole#scope}.
 
 ---
 
@@ -1128,7 +1157,7 @@ public readonly roleId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend_role#role_id AzureSecretBackendRole#role_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/azure_secret_backend_role#role_id AzureSecretBackendRole#role_id}.
 
 ---
 
@@ -1140,7 +1169,7 @@ public readonly roleName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend_role#role_name AzureSecretBackendRole#role_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/azure_secret_backend_role#role_name AzureSecretBackendRole#role_name}.
 
 ---
 
@@ -1171,7 +1200,8 @@ const azureSecretBackendRoleConfig: azureSecretBackendRole.AzureSecretBackendRol
 | <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleConfig.property.azureRoles">azureRoles</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleAzureRoles">AzureSecretBackendRoleAzureRoles</a>[]</code> | azure_roles block. |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleConfig.property.backend">backend</a></code> | <code>string</code> | Unique name of the auth backend to configure. |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleConfig.property.description">description</a></code> | <code>string</code> | Human-friendly description of the mount for the backend. |
-| <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend_role#id AzureSecretBackendRole#id}. |
+| <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleConfig.property.explicitMaxTtl">explicitMaxTtl</a></code> | <code>string</code> | Specifies the explicit maximum lifetime of the lease and service principal. |
+| <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/azure_secret_backend_role#id AzureSecretBackendRole#id}. |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleConfig.property.maxTtl">maxTtl</a></code> | <code>string</code> | Human-friendly description of the mount for the backend. |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleConfig.property.namespace">namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleConfig.property.permanentlyDelete">permanentlyDelete</a></code> | <code>boolean \| cdktf.IResolvable</code> | Indicates whether the applications and service principals created by Vault will be permanently deleted when the corresponding leases expire. |
@@ -1261,7 +1291,7 @@ public readonly role: string;
 
 Name of the role to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend_role#role AzureSecretBackendRole#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/azure_secret_backend_role#role AzureSecretBackendRole#role}
 
 ---
 
@@ -1275,7 +1305,7 @@ public readonly applicationObjectId: string;
 
 Application Object ID for an existing service principal that will be used instead of creating dynamic service principals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend_role#application_object_id AzureSecretBackendRole#application_object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/azure_secret_backend_role#application_object_id AzureSecretBackendRole#application_object_id}
 
 ---
 
@@ -1289,7 +1319,7 @@ public readonly azureGroups: IResolvable | AzureSecretBackendRoleAzureGroups[];
 
 azure_groups block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend_role#azure_groups AzureSecretBackendRole#azure_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/azure_secret_backend_role#azure_groups AzureSecretBackendRole#azure_groups}
 
 ---
 
@@ -1303,7 +1333,7 @@ public readonly azureRoles: IResolvable | AzureSecretBackendRoleAzureRoles[];
 
 azure_roles block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend_role#azure_roles AzureSecretBackendRole#azure_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/azure_secret_backend_role#azure_roles AzureSecretBackendRole#azure_roles}
 
 ---
 
@@ -1317,7 +1347,7 @@ public readonly backend: string;
 
 Unique name of the auth backend to configure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend_role#backend AzureSecretBackendRole#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/azure_secret_backend_role#backend AzureSecretBackendRole#backend}
 
 ---
 
@@ -1331,7 +1361,21 @@ public readonly description: string;
 
 Human-friendly description of the mount for the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend_role#description AzureSecretBackendRole#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/azure_secret_backend_role#description AzureSecretBackendRole#description}
+
+---
+
+##### `explicitMaxTtl`<sup>Optional</sup> <a name="explicitMaxTtl" id="@cdktf/provider-vault.azureSecretBackendRole.AzureSecretBackendRoleConfig.property.explicitMaxTtl"></a>
+
+```typescript
+public readonly explicitMaxTtl: string;
+```
+
+- *Type:* string
+
+Specifies the explicit maximum lifetime of the lease and service principal.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/azure_secret_backend_role#explicit_max_ttl AzureSecretBackendRole#explicit_max_ttl}
 
 ---
 
@@ -1343,7 +1387,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend_role#id AzureSecretBackendRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/azure_secret_backend_role#id AzureSecretBackendRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1360,7 +1404,7 @@ public readonly maxTtl: string;
 
 Human-friendly description of the mount for the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend_role#max_ttl AzureSecretBackendRole#max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/azure_secret_backend_role#max_ttl AzureSecretBackendRole#max_ttl}
 
 ---
 
@@ -1374,7 +1418,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend_role#namespace AzureSecretBackendRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/azure_secret_backend_role#namespace AzureSecretBackendRole#namespace}
 
 ---
 
@@ -1388,7 +1432,7 @@ public readonly permanentlyDelete: boolean | IResolvable;
 
 Indicates whether the applications and service principals created by Vault will be permanently deleted when the corresponding leases expire.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend_role#permanently_delete AzureSecretBackendRole#permanently_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/azure_secret_backend_role#permanently_delete AzureSecretBackendRole#permanently_delete}
 
 ---
 
@@ -1404,7 +1448,7 @@ Specifies the security principal types that are allowed to sign in to the applic
 
 Valid values are: AzureADMyOrg, AzureADMultipleOrgs, AzureADandPersonalMicrosoftAccount, PersonalMicrosoftAccount
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend_role#sign_in_audience AzureSecretBackendRole#sign_in_audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/azure_secret_backend_role#sign_in_audience AzureSecretBackendRole#sign_in_audience}
 
 ---
 
@@ -1418,7 +1462,7 @@ public readonly tags: string[];
 
 Comma-separated strings of Azure tags to attach to an application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend_role#tags AzureSecretBackendRole#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/azure_secret_backend_role#tags AzureSecretBackendRole#tags}
 
 ---
 
@@ -1432,7 +1476,7 @@ public readonly ttl: string;
 
 Human-friendly description of the mount for the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend_role#ttl AzureSecretBackendRole#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/azure_secret_backend_role#ttl AzureSecretBackendRole#ttl}
 
 ---
 

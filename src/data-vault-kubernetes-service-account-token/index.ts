@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/kubernetes_service_account_token
+// https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/kubernetes_service_account_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface DataVaultKubernetesServiceAccountTokenConfig extends cdktf.Terr
   /**
   * The Kubernetes secret backend to generate service account tokens from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/kubernetes_service_account_token#backend DataVaultKubernetesServiceAccountToken#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/kubernetes_service_account_token#backend DataVaultKubernetesServiceAccountToken#backend}
   */
   readonly backend: string;
   /**
   * If true, generate a ClusterRoleBinding to grant permissions across the whole cluster instead of within a namespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/kubernetes_service_account_token#cluster_role_binding DataVaultKubernetesServiceAccountToken#cluster_role_binding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/kubernetes_service_account_token#cluster_role_binding DataVaultKubernetesServiceAccountToken#cluster_role_binding}
   */
   readonly clusterRoleBinding?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/kubernetes_service_account_token#id DataVaultKubernetesServiceAccountToken#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/kubernetes_service_account_token#id DataVaultKubernetesServiceAccountToken#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,31 +34,31 @@ export interface DataVaultKubernetesServiceAccountTokenConfig extends cdktf.Terr
   /**
   * The name of the Kubernetes namespace in which to generate the credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/kubernetes_service_account_token#kubernetes_namespace DataVaultKubernetesServiceAccountToken#kubernetes_namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/kubernetes_service_account_token#kubernetes_namespace DataVaultKubernetesServiceAccountToken#kubernetes_namespace}
   */
   readonly kubernetesNamespace: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/kubernetes_service_account_token#namespace DataVaultKubernetesServiceAccountToken#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/kubernetes_service_account_token#namespace DataVaultKubernetesServiceAccountToken#namespace}
   */
   readonly namespace?: string;
   /**
   * The name of the role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/kubernetes_service_account_token#role DataVaultKubernetesServiceAccountToken#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/kubernetes_service_account_token#role DataVaultKubernetesServiceAccountToken#role}
   */
   readonly role: string;
   /**
   * The TTL of the generated Kubernetes service account token, specified in seconds or as a Go duration format string
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/kubernetes_service_account_token#ttl DataVaultKubernetesServiceAccountToken#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/kubernetes_service_account_token#ttl DataVaultKubernetesServiceAccountToken#ttl}
   */
   readonly ttl?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/kubernetes_service_account_token vault_kubernetes_service_account_token}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/kubernetes_service_account_token vault_kubernetes_service_account_token}
 */
 export class DataVaultKubernetesServiceAccountToken extends cdktf.TerraformDataSource {
 
@@ -74,7 +74,7 @@ export class DataVaultKubernetesServiceAccountToken extends cdktf.TerraformDataS
   * Generates CDKTF code for importing a DataVaultKubernetesServiceAccountToken resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataVaultKubernetesServiceAccountToken to import
-  * @param importFromId The id of the existing DataVaultKubernetesServiceAccountToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/kubernetes_service_account_token#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataVaultKubernetesServiceAccountToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/kubernetes_service_account_token#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataVaultKubernetesServiceAccountToken to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -86,7 +86,7 @@ export class DataVaultKubernetesServiceAccountToken extends cdktf.TerraformDataS
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/kubernetes_service_account_token vault_kubernetes_service_account_token} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/kubernetes_service_account_token vault_kubernetes_service_account_token} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -97,7 +97,7 @@ export class DataVaultKubernetesServiceAccountToken extends cdktf.TerraformDataS
       terraformResourceType: 'vault_kubernetes_service_account_token',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '4.7.0',
+        providerVersion: '4.8.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
