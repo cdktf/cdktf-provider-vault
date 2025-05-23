@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.pkiSecretBackendConfigAutoTidy.PkiSecretBackendConfigAutoTidy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/pkisecretbackendconfigautotidy"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v14/pkisecretbackendconfigautotidy"
 
 pkisecretbackendconfigautotidy.NewPkiSecretBackendConfigAutoTidy(scope Construct, id *string, config PkiSecretBackendConfigAutoTidyConfig) PkiSecretBackendConfigAutoTidy
 ```
@@ -532,7 +532,7 @@ func ResetTidyRevokedCerts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.pkiSecretBackendConfigAutoTidy.PkiSecretBackendConfigAutoTidy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/pkisecretbackendconfigautotidy"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v14/pkisecretbackendconfigautotidy"
 
 pkisecretbackendconfigautotidy.PkiSecretBackendConfigAutoTidy_IsConstruct(x interface{}) *bool
 ```
@@ -564,7 +564,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.pkiSecretBackendConfigAutoTidy.PkiSecretBackendConfigAutoTidy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/pkisecretbackendconfigautotidy"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v14/pkisecretbackendconfigautotidy"
 
 pkisecretbackendconfigautotidy.PkiSecretBackendConfigAutoTidy_IsTerraformElement(x interface{}) *bool
 ```
@@ -578,7 +578,7 @@ pkisecretbackendconfigautotidy.PkiSecretBackendConfigAutoTidy_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.pkiSecretBackendConfigAutoTidy.PkiSecretBackendConfigAutoTidy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/pkisecretbackendconfigautotidy"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v14/pkisecretbackendconfigautotidy"
 
 pkisecretbackendconfigautotidy.PkiSecretBackendConfigAutoTidy_IsTerraformResource(x interface{}) *bool
 ```
@@ -592,7 +592,7 @@ pkisecretbackendconfigautotidy.PkiSecretBackendConfigAutoTidy_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.pkiSecretBackendConfigAutoTidy.PkiSecretBackendConfigAutoTidy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/pkisecretbackendconfigautotidy"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v14/pkisecretbackendconfigautotidy"
 
 pkisecretbackendconfigautotidy.PkiSecretBackendConfigAutoTidy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1349,7 +1349,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.pkiSecretBackendConfigAutoTidy.PkiSecretBackendConfigAutoTidyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v13/pkisecretbackendconfigautotidy"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v14/pkisecretbackendconfigautotidy"
 
 &pkisecretbackendconfigautotidy.PkiSecretBackendConfigAutoTidyConfig {
 	Connection: interface{},
