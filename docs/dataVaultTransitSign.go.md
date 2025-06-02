@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultTransitSign.DataVaultTransitSign.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v14/datavaulttransitsign"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/datavaulttransitsign"
 
 datavaulttransitsign.NewDataVaultTransitSign(scope Construct, id *string, config DataVaultTransitSignConfig) DataVaultTransitSign
 ```
@@ -381,7 +381,7 @@ func ResetSignatureContext()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.dataVaultTransitSign.DataVaultTransitSign.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v14/datavaulttransitsign"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/datavaulttransitsign"
 
 datavaulttransitsign.DataVaultTransitSign_IsConstruct(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.dataVaultTransitSign.DataVaultTransitSign.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v14/datavaulttransitsign"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/datavaulttransitsign"
 
 datavaulttransitsign.DataVaultTransitSign_IsTerraformElement(x interface{}) *bool
 ```
@@ -427,7 +427,7 @@ datavaulttransitsign.DataVaultTransitSign_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vault.dataVaultTransitSign.DataVaultTransitSign.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v14/datavaulttransitsign"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/datavaulttransitsign"
 
 datavaulttransitsign.DataVaultTransitSign_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -441,7 +441,7 @@ datavaulttransitsign.DataVaultTransitSign_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.dataVaultTransitSign.DataVaultTransitSign.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v14/datavaulttransitsign"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/datavaulttransitsign"
 
 datavaulttransitsign.DataVaultTransitSign_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1022,7 +1022,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.dataVaultTransitSign.DataVaultTransitSignConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v14/datavaulttransitsign"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/datavaulttransitsign"
 
 &datavaulttransitsign.DataVaultTransitSignConfig {
 	Connection: interface{},
