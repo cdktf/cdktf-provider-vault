@@ -4,7 +4,7 @@
 
 ### KvSecretV2 <a name="KvSecretV2" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/kv_secret_v2 vault_kv_secret_v2}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/kv_secret_v2 vault_kv_secret_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2.Initializer"></a>
 
@@ -23,11 +23,13 @@ KvSecretV2.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
-    .dataJson(java.lang.String)
     .mount(java.lang.String)
     .name(java.lang.String)
 //  .cas(java.lang.Number)
 //  .customMetadata(KvSecretV2CustomMetadata)
+//  .dataJson(java.lang.String)
+//  .dataJsonWo(java.lang.String)
+//  .dataJsonWoVersion(java.lang.Number)
 //  .deleteAllVersions(java.lang.Boolean)
 //  .deleteAllVersions(IResolvable)
 //  .disableRead(java.lang.Boolean)
@@ -49,14 +51,16 @@ KvSecretV2.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.Initializer.parameter.dataJson">dataJson</a></code> | <code>java.lang.String</code> | JSON-encoded secret data to write. |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.Initializer.parameter.mount">mount</a></code> | <code>java.lang.String</code> | Path where KV-V2 engine is mounted. |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Full name of the secret. |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.Initializer.parameter.cas">cas</a></code> | <code>java.lang.Number</code> | This flag is required if cas_required is set to true on either the secret or the engine's config. |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.Initializer.parameter.customMetadata">customMetadata</a></code> | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2CustomMetadata">KvSecretV2CustomMetadata</a></code> | custom_metadata block. |
+| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.Initializer.parameter.dataJson">dataJson</a></code> | <code>java.lang.String</code> | JSON-encoded secret data to write. |
+| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.Initializer.parameter.dataJsonWo">dataJsonWo</a></code> | <code>java.lang.String</code> | Write-Only JSON-encoded secret data to write. |
+| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.Initializer.parameter.dataJsonWoVersion">dataJsonWoVersion</a></code> | <code>java.lang.Number</code> | Version counter for write-only secret data. |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.Initializer.parameter.deleteAllVersions">deleteAllVersions</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If set to true, permanently deletes all versions for the specified key. |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.Initializer.parameter.disableRead">disableRead</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If set to true, disables reading secret from Vault; note: drift won't be detected. |
-| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/kv_secret_v2#id KvSecretV2#id}. |
+| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/kv_secret_v2#id KvSecretV2#id}. |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.Initializer.parameter.options">options</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | An object that holds option settings. |
 
@@ -122,23 +126,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `dataJson`<sup>Required</sup> <a name="dataJson" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2.Initializer.parameter.dataJson"></a>
-
-- *Type:* java.lang.String
-
-JSON-encoded secret data to write.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/kv_secret_v2#data_json KvSecretV2#data_json}
-
----
-
 ##### `mount`<sup>Required</sup> <a name="mount" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2.Initializer.parameter.mount"></a>
 
 - *Type:* java.lang.String
 
 Path where KV-V2 engine is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/kv_secret_v2#mount KvSecretV2#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/kv_secret_v2#mount KvSecretV2#mount}
 
 ---
 
@@ -150,7 +144,7 @@ Full name of the secret.
 
 For a nested secret, the name is the nested path excluding the mount and data prefix. For example, for a secret at 'kvv2/data/foo/bar/baz', the name is 'foo/bar/baz'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/kv_secret_v2#name KvSecretV2#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/kv_secret_v2#name KvSecretV2#name}
 
 ---
 
@@ -162,7 +156,7 @@ This flag is required if cas_required is set to true on either the secret or the
 
 In order for a write to be successful, cas must be set to the current version of the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/kv_secret_v2#cas KvSecretV2#cas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/kv_secret_v2#cas KvSecretV2#cas}
 
 ---
 
@@ -172,7 +166,37 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 custom_metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/kv_secret_v2#custom_metadata KvSecretV2#custom_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/kv_secret_v2#custom_metadata KvSecretV2#custom_metadata}
+
+---
+
+##### `dataJson`<sup>Optional</sup> <a name="dataJson" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2.Initializer.parameter.dataJson"></a>
+
+- *Type:* java.lang.String
+
+JSON-encoded secret data to write.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/kv_secret_v2#data_json KvSecretV2#data_json}
+
+---
+
+##### `dataJsonWo`<sup>Optional</sup> <a name="dataJsonWo" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2.Initializer.parameter.dataJsonWo"></a>
+
+- *Type:* java.lang.String
+
+Write-Only JSON-encoded secret data to write.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/kv_secret_v2#data_json_wo KvSecretV2#data_json_wo}
+
+---
+
+##### `dataJsonWoVersion`<sup>Optional</sup> <a name="dataJsonWoVersion" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2.Initializer.parameter.dataJsonWoVersion"></a>
+
+- *Type:* java.lang.Number
+
+Version counter for write-only secret data.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/kv_secret_v2#data_json_wo_version KvSecretV2#data_json_wo_version}
 
 ---
 
@@ -182,7 +206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If set to true, permanently deletes all versions for the specified key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/kv_secret_v2#delete_all_versions KvSecretV2#delete_all_versions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/kv_secret_v2#delete_all_versions KvSecretV2#delete_all_versions}
 
 ---
 
@@ -192,7 +216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If set to true, disables reading secret from Vault; note: drift won't be detected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/kv_secret_v2#disable_read KvSecretV2#disable_read}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/kv_secret_v2#disable_read KvSecretV2#disable_read}
 
 ---
 
@@ -200,7 +224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/kv_secret_v2#id KvSecretV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/kv_secret_v2#id KvSecretV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -213,7 +237,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/kv_secret_v2#namespace KvSecretV2#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/kv_secret_v2#namespace KvSecretV2#namespace}
 
 ---
 
@@ -223,7 +247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 An object that holds option settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/kv_secret_v2#options KvSecretV2#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/kv_secret_v2#options KvSecretV2#options}
 
 ---
 
@@ -257,6 +281,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.putCustomMetadata">putCustomMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.resetCas">resetCas</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.resetCustomMetadata">resetCustomMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.resetDataJson">resetDataJson</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.resetDataJsonWo">resetDataJsonWo</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.resetDataJsonWoVersion">resetDataJsonWoVersion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.resetDeleteAllVersions">resetDeleteAllVersions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.resetDisableRead">resetDisableRead</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.resetId">resetId</a></code> | *No description.* |
@@ -579,6 +606,24 @@ public void resetCas()
 public void resetCustomMetadata()
 ```
 
+##### `resetDataJson` <a name="resetDataJson" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2.resetDataJson"></a>
+
+```java
+public void resetDataJson()
+```
+
+##### `resetDataJsonWo` <a name="resetDataJsonWo" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2.resetDataJsonWo"></a>
+
+```java
+public void resetDataJsonWo()
+```
+
+##### `resetDataJsonWoVersion` <a name="resetDataJsonWoVersion" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2.resetDataJsonWoVersion"></a>
+
+```java
+public void resetDataJsonWoVersion()
+```
+
 ##### `resetDeleteAllVersions` <a name="resetDeleteAllVersions" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2.resetDeleteAllVersions"></a>
 
 ```java
@@ -712,7 +757,7 @@ The construct id used in the generated config for the KvSecretV2 to import.
 
 The id of the existing KvSecretV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/kv_secret_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/kv_secret_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -749,6 +794,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.casInput">casInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.customMetadataInput">customMetadataInput</a></code> | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2CustomMetadata">KvSecretV2CustomMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.dataJsonInput">dataJsonInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.dataJsonWoInput">dataJsonWoInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.dataJsonWoVersionInput">dataJsonWoVersionInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.deleteAllVersionsInput">deleteAllVersionsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.disableReadInput">disableReadInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -758,6 +805,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.optionsInput">optionsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.cas">cas</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.dataJson">dataJson</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.dataJsonWo">dataJsonWo</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.dataJsonWoVersion">dataJsonWoVersion</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.deleteAllVersions">deleteAllVersions</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.disableRead">disableRead</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -980,6 +1029,26 @@ public java.lang.String getDataJsonInput();
 
 ---
 
+##### `dataJsonWoInput`<sup>Optional</sup> <a name="dataJsonWoInput" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.dataJsonWoInput"></a>
+
+```java
+public java.lang.String getDataJsonWoInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `dataJsonWoVersionInput`<sup>Optional</sup> <a name="dataJsonWoVersionInput" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.dataJsonWoVersionInput"></a>
+
+```java
+public java.lang.Number getDataJsonWoVersionInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
 ##### `deleteAllVersionsInput`<sup>Optional</sup> <a name="deleteAllVersionsInput" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.deleteAllVersionsInput"></a>
 
 ```java
@@ -1067,6 +1136,26 @@ public java.lang.String getDataJson();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `dataJsonWo`<sup>Required</sup> <a name="dataJsonWo" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.dataJsonWo"></a>
+
+```java
+public java.lang.String getDataJsonWo();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `dataJsonWoVersion`<sup>Required</sup> <a name="dataJsonWoVersion" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.dataJsonWoVersion"></a>
+
+```java
+public java.lang.Number getDataJsonWoVersion();
+```
+
+- *Type:* java.lang.Number
 
 ---
 
@@ -1179,11 +1268,13 @@ KvSecretV2Config.builder()
 //  .provisioners(java.util.List<FileProvisioner)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
-    .dataJson(java.lang.String)
     .mount(java.lang.String)
     .name(java.lang.String)
 //  .cas(java.lang.Number)
 //  .customMetadata(KvSecretV2CustomMetadata)
+//  .dataJson(java.lang.String)
+//  .dataJsonWo(java.lang.String)
+//  .dataJsonWoVersion(java.lang.Number)
 //  .deleteAllVersions(java.lang.Boolean)
 //  .deleteAllVersions(IResolvable)
 //  .disableRead(java.lang.Boolean)
@@ -1205,14 +1296,16 @@ KvSecretV2Config.builder()
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.dataJson">dataJson</a></code> | <code>java.lang.String</code> | JSON-encoded secret data to write. |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.mount">mount</a></code> | <code>java.lang.String</code> | Path where KV-V2 engine is mounted. |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.name">name</a></code> | <code>java.lang.String</code> | Full name of the secret. |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.cas">cas</a></code> | <code>java.lang.Number</code> | This flag is required if cas_required is set to true on either the secret or the engine's config. |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.customMetadata">customMetadata</a></code> | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2CustomMetadata">KvSecretV2CustomMetadata</a></code> | custom_metadata block. |
+| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.dataJson">dataJson</a></code> | <code>java.lang.String</code> | JSON-encoded secret data to write. |
+| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.dataJsonWo">dataJsonWo</a></code> | <code>java.lang.String</code> | Write-Only JSON-encoded secret data to write. |
+| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.dataJsonWoVersion">dataJsonWoVersion</a></code> | <code>java.lang.Number</code> | Version counter for write-only secret data. |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.deleteAllVersions">deleteAllVersions</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If set to true, permanently deletes all versions for the specified key. |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.disableRead">disableRead</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If set to true, disables reading secret from Vault; note: drift won't be detected. |
-| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/kv_secret_v2#id KvSecretV2#id}. |
+| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/kv_secret_v2#id KvSecretV2#id}. |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.options">options</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | An object that holds option settings. |
 
@@ -1288,20 +1381,6 @@ public java.lang.Object getProvisioners();
 
 ---
 
-##### `dataJson`<sup>Required</sup> <a name="dataJson" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.dataJson"></a>
-
-```java
-public java.lang.String getDataJson();
-```
-
-- *Type:* java.lang.String
-
-JSON-encoded secret data to write.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/kv_secret_v2#data_json KvSecretV2#data_json}
-
----
-
 ##### `mount`<sup>Required</sup> <a name="mount" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.mount"></a>
 
 ```java
@@ -1312,7 +1391,7 @@ public java.lang.String getMount();
 
 Path where KV-V2 engine is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/kv_secret_v2#mount KvSecretV2#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/kv_secret_v2#mount KvSecretV2#mount}
 
 ---
 
@@ -1328,7 +1407,7 @@ Full name of the secret.
 
 For a nested secret, the name is the nested path excluding the mount and data prefix. For example, for a secret at 'kvv2/data/foo/bar/baz', the name is 'foo/bar/baz'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/kv_secret_v2#name KvSecretV2#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/kv_secret_v2#name KvSecretV2#name}
 
 ---
 
@@ -1344,7 +1423,7 @@ This flag is required if cas_required is set to true on either the secret or the
 
 In order for a write to be successful, cas must be set to the current version of the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/kv_secret_v2#cas KvSecretV2#cas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/kv_secret_v2#cas KvSecretV2#cas}
 
 ---
 
@@ -1358,7 +1437,49 @@ public KvSecretV2CustomMetadata getCustomMetadata();
 
 custom_metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/kv_secret_v2#custom_metadata KvSecretV2#custom_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/kv_secret_v2#custom_metadata KvSecretV2#custom_metadata}
+
+---
+
+##### `dataJson`<sup>Optional</sup> <a name="dataJson" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.dataJson"></a>
+
+```java
+public java.lang.String getDataJson();
+```
+
+- *Type:* java.lang.String
+
+JSON-encoded secret data to write.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/kv_secret_v2#data_json KvSecretV2#data_json}
+
+---
+
+##### `dataJsonWo`<sup>Optional</sup> <a name="dataJsonWo" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.dataJsonWo"></a>
+
+```java
+public java.lang.String getDataJsonWo();
+```
+
+- *Type:* java.lang.String
+
+Write-Only JSON-encoded secret data to write.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/kv_secret_v2#data_json_wo KvSecretV2#data_json_wo}
+
+---
+
+##### `dataJsonWoVersion`<sup>Optional</sup> <a name="dataJsonWoVersion" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.dataJsonWoVersion"></a>
+
+```java
+public java.lang.Number getDataJsonWoVersion();
+```
+
+- *Type:* java.lang.Number
+
+Version counter for write-only secret data.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/kv_secret_v2#data_json_wo_version KvSecretV2#data_json_wo_version}
 
 ---
 
@@ -1372,7 +1493,7 @@ public java.lang.Object getDeleteAllVersions();
 
 If set to true, permanently deletes all versions for the specified key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/kv_secret_v2#delete_all_versions KvSecretV2#delete_all_versions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/kv_secret_v2#delete_all_versions KvSecretV2#delete_all_versions}
 
 ---
 
@@ -1386,7 +1507,7 @@ public java.lang.Object getDisableRead();
 
 If set to true, disables reading secret from Vault; note: drift won't be detected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/kv_secret_v2#disable_read KvSecretV2#disable_read}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/kv_secret_v2#disable_read KvSecretV2#disable_read}
 
 ---
 
@@ -1398,7 +1519,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/kv_secret_v2#id KvSecretV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/kv_secret_v2#id KvSecretV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1415,7 +1536,7 @@ public java.lang.String getNamespace();
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/kv_secret_v2#namespace KvSecretV2#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/kv_secret_v2#namespace KvSecretV2#namespace}
 
 ---
 
@@ -1429,7 +1550,7 @@ public java.util.Map<java.lang.String, java.lang.String> getOptions();
 
 An object that holds option settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/kv_secret_v2#options KvSecretV2#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/kv_secret_v2#options KvSecretV2#options}
 
 ---
 
@@ -1470,7 +1591,7 @@ public java.lang.Object getCasRequired();
 
 If true, all keys will require the cas parameter to be set on all write requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/kv_secret_v2#cas_required KvSecretV2#cas_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/kv_secret_v2#cas_required KvSecretV2#cas_required}
 
 ---
 
@@ -1484,7 +1605,7 @@ public java.util.Map<java.lang.String, java.lang.String> getData();
 
 A map of arbitrary string to string valued user-provided metadata meant to describe the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/kv_secret_v2#data KvSecretV2#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/kv_secret_v2#data KvSecretV2#data}
 
 ---
 
@@ -1498,7 +1619,7 @@ public java.lang.Number getDeleteVersionAfter();
 
 If set, specifies the length of time before a version is deleted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/kv_secret_v2#delete_version_after KvSecretV2#delete_version_after}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/kv_secret_v2#delete_version_after KvSecretV2#delete_version_after}
 
 ---
 
@@ -1512,7 +1633,7 @@ public java.lang.Number getMaxVersions();
 
 The number of versions to keep per key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/kv_secret_v2#max_versions KvSecretV2#max_versions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/kv_secret_v2#max_versions KvSecretV2#max_versions}
 
 ---
 

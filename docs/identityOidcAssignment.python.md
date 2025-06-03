@@ -4,7 +4,7 @@
 
 ### IdentityOidcAssignment <a name="IdentityOidcAssignment" id="@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/identity_oidc_assignment vault_identity_oidc_assignment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/identity_oidc_assignment vault_identity_oidc_assignment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.Initializer"></a>
 
@@ -43,7 +43,7 @@ identityOidcAssignment.IdentityOidcAssignment(
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the assignment. |
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.Initializer.parameter.entityIds">entity_ids</a></code> | <code>typing.List[str]</code> | A list of Vault entity IDs. |
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.Initializer.parameter.groupIds">group_ids</a></code> | <code>typing.List[str]</code> | A list of Vault group IDs. |
-| <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/identity_oidc_assignment#id IdentityOidcAssignment#id}. |
+| <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/identity_oidc_assignment#id IdentityOidcAssignment#id}. |
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignment.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the assignment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/identity_oidc_assignment#name IdentityOidcAssignment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/identity_oidc_assignment#name IdentityOidcAssignment#name}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A list of Vault entity IDs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/identity_oidc_assignment#entity_ids IdentityOidcAssignment#entity_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/identity_oidc_assignment#entity_ids IdentityOidcAssignment#entity_ids}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A list of Vault group IDs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/identity_oidc_assignment#group_ids IdentityOidcAssignment#group_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/identity_oidc_assignment#group_ids IdentityOidcAssignment#group_ids}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/identity_oidc_assignment#id IdentityOidcAssignment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/identity_oidc_assignment#id IdentityOidcAssignment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -155,7 +155,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/identity_oidc_assignment#namespace IdentityOidcAssignment#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/identity_oidc_assignment#namespace IdentityOidcAssignment#namespace}
 
 ---
 
@@ -656,7 +656,7 @@ The construct id used in the generated config for the IdentityOidcAssignment to 
 
 The id of the existing IdentityOidcAssignment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/identity_oidc_assignment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/identity_oidc_assignment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -998,7 +998,7 @@ identityOidcAssignment.IdentityOidcAssignmentConfig(
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignmentConfig.property.name">name</a></code> | <code>str</code> | The name of the assignment. |
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignmentConfig.property.entityIds">entity_ids</a></code> | <code>typing.List[str]</code> | A list of Vault entity IDs. |
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignmentConfig.property.groupIds">group_ids</a></code> | <code>typing.List[str]</code> | A list of Vault group IDs. |
-| <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/identity_oidc_assignment#id IdentityOidcAssignment#id}. |
+| <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/identity_oidc_assignment#id IdentityOidcAssignment#id}. |
 | <code><a href="#@cdktf/provider-vault.identityOidcAssignment.IdentityOidcAssignmentConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -1083,7 +1083,7 @@ name: str
 
 The name of the assignment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/identity_oidc_assignment#name IdentityOidcAssignment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/identity_oidc_assignment#name IdentityOidcAssignment#name}
 
 ---
 
@@ -1097,7 +1097,7 @@ entity_ids: typing.List[str]
 
 A list of Vault entity IDs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/identity_oidc_assignment#entity_ids IdentityOidcAssignment#entity_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/identity_oidc_assignment#entity_ids IdentityOidcAssignment#entity_ids}
 
 ---
 
@@ -1111,7 +1111,7 @@ group_ids: typing.List[str]
 
 A list of Vault group IDs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/identity_oidc_assignment#group_ids IdentityOidcAssignment#group_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/identity_oidc_assignment#group_ids IdentityOidcAssignment#group_ids}
 
 ---
 
@@ -1123,7 +1123,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/identity_oidc_assignment#id IdentityOidcAssignment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/identity_oidc_assignment#id IdentityOidcAssignment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1140,7 +1140,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/identity_oidc_assignment#namespace IdentityOidcAssignment#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/identity_oidc_assignment#namespace IdentityOidcAssignment#namespace}
 
 ---
 

@@ -4,14 +4,14 @@
 
 ### VaultProvider <a name="VaultProvider" id="@cdktf/provider-vault.provider.VaultProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs vault}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs vault}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.provider.VaultProvider.Initializer"></a>
 
 ```csharp
 using HashiCorp.Cdktf.Providers.Vault;
 
-new VaultProvider(Construct Scope, string Id, VaultProviderConfig Config);
+new VaultProvider(Construct Scope, string Id, VaultProviderConfig Config = null);
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `Config`<sup>Required</sup> <a name="Config" id="@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.config"></a>
+##### `Config`<sup>Optional</sup> <a name="Config" id="@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderConfig">VaultProviderConfig</a>
 
@@ -58,6 +58,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.resetAddAddressToEnv">ResetAddAddressToEnv</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.resetAddress">ResetAddress</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.resetAlias">ResetAlias</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.resetAuthLogin">ResetAuthLogin</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.resetAuthLoginAws">ResetAuthLoginAws</a></code> | *No description.* |
@@ -164,6 +165,12 @@ Adds this resource to the terraform JSON output.
 
 ```csharp
 private void ResetAddAddressToEnv()
+```
+
+##### `ResetAddress` <a name="ResetAddress" id="@cdktf/provider-vault.provider.VaultProvider.resetAddress"></a>
+
+```csharp
+private void ResetAddress()
 ```
 
 ##### `ResetAlias` <a name="ResetAlias" id="@cdktf/provider-vault.provider.VaultProvider.resetAlias"></a>
@@ -443,7 +450,7 @@ The construct id used in the generated config for the VaultProvider to import.
 
 The id of the existing VaultProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -471,21 +478,21 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.addAddressToEnvInput">AddAddressToEnvInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.addressInput">AddressInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.aliasInput">AliasInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginAwsInput">AuthLoginAwsInput</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginAzureInput">AuthLoginAzureInput</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginCertInput">AuthLoginCertInput</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginGcpInput">AuthLoginGcpInput</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginInput">AuthLoginInput</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginJwtInput">AuthLoginJwtInput</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginKerberosInput">AuthLoginKerberosInput</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginOciInput">AuthLoginOciInput</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginOidcInput">AuthLoginOidcInput</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginRadiusInput">AuthLoginRadiusInput</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginTokenFileInput">AuthLoginTokenFileInput</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginUserpassInput">AuthLoginUserpassInput</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginAwsInput">AuthLoginAwsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginAzureInput">AuthLoginAzureInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginCertInput">AuthLoginCertInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginGcpInput">AuthLoginGcpInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginInput">AuthLoginInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginJwtInput">AuthLoginJwtInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginKerberosInput">AuthLoginKerberosInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginOciInput">AuthLoginOciInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginOidcInput">AuthLoginOidcInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginRadiusInput">AuthLoginRadiusInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginTokenFileInput">AuthLoginTokenFileInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginUserpassInput">AuthLoginUserpassInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.caCertDirInput">CaCertDirInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.caCertFileInput">CaCertFileInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.clientAuthInput">ClientAuthInput</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.clientAuthInput">ClientAuthInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.headersInput">HeadersInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.maxLeaseTtlSecondsInput">MaxLeaseTtlSecondsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.maxRetriesCccInput">MaxRetriesCccInput</a></code> | <code>double</code> | *No description.* |
@@ -501,21 +508,21 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.vaultVersionOverrideInput">VaultVersionOverrideInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.addAddressToEnv">AddAddressToEnv</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.address">Address</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLogin">AuthLogin</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginAws">AuthLoginAws</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginAzure">AuthLoginAzure</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginCert">AuthLoginCert</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginGcp">AuthLoginGcp</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginJwt">AuthLoginJwt</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginKerberos">AuthLoginKerberos</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginOci">AuthLoginOci</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginOidc">AuthLoginOidc</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginRadius">AuthLoginRadius</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginTokenFile">AuthLoginTokenFile</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginUserpass">AuthLoginUserpass</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLogin">AuthLogin</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginAws">AuthLoginAws</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginAzure">AuthLoginAzure</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginCert">AuthLoginCert</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginGcp">AuthLoginGcp</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginJwt">AuthLoginJwt</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginKerberos">AuthLoginKerberos</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginOci">AuthLoginOci</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginOidc">AuthLoginOidc</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginRadius">AuthLoginRadius</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginTokenFile">AuthLoginTokenFile</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginUserpass">AuthLoginUserpass</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.caCertDir">CaCertDir</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.caCertFile">CaCertFile</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.clientAuth">ClientAuth</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.clientAuth">ClientAuth</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.headers">Headers</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.maxLeaseTtlSeconds">MaxLeaseTtlSeconds</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.maxRetries">MaxRetries</a></code> | <code>double</code> | *No description.* |
@@ -657,120 +664,120 @@ public string AliasInput { get; }
 ##### `AuthLoginAwsInput`<sup>Optional</sup> <a name="AuthLoginAwsInput" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginAwsInput"></a>
 
 ```csharp
-public VaultProviderAuthLoginAws AuthLoginAwsInput { get; }
+public object AuthLoginAwsInput { get; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a>
+- *Type:* object
 
 ---
 
 ##### `AuthLoginAzureInput`<sup>Optional</sup> <a name="AuthLoginAzureInput" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginAzureInput"></a>
 
 ```csharp
-public VaultProviderAuthLoginAzure AuthLoginAzureInput { get; }
+public object AuthLoginAzureInput { get; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a>
+- *Type:* object
 
 ---
 
 ##### `AuthLoginCertInput`<sup>Optional</sup> <a name="AuthLoginCertInput" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginCertInput"></a>
 
 ```csharp
-public VaultProviderAuthLoginCert AuthLoginCertInput { get; }
+public object AuthLoginCertInput { get; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a>
+- *Type:* object
 
 ---
 
 ##### `AuthLoginGcpInput`<sup>Optional</sup> <a name="AuthLoginGcpInput" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginGcpInput"></a>
 
 ```csharp
-public VaultProviderAuthLoginGcp AuthLoginGcpInput { get; }
+public object AuthLoginGcpInput { get; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a>
+- *Type:* object
 
 ---
 
 ##### `AuthLoginInput`<sup>Optional</sup> <a name="AuthLoginInput" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginInput"></a>
 
 ```csharp
-public VaultProviderAuthLogin AuthLoginInput { get; }
+public object AuthLoginInput { get; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a>
+- *Type:* object
 
 ---
 
 ##### `AuthLoginJwtInput`<sup>Optional</sup> <a name="AuthLoginJwtInput" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginJwtInput"></a>
 
 ```csharp
-public VaultProviderAuthLoginJwt AuthLoginJwtInput { get; }
+public object AuthLoginJwtInput { get; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a>
+- *Type:* object
 
 ---
 
 ##### `AuthLoginKerberosInput`<sup>Optional</sup> <a name="AuthLoginKerberosInput" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginKerberosInput"></a>
 
 ```csharp
-public VaultProviderAuthLoginKerberos AuthLoginKerberosInput { get; }
+public object AuthLoginKerberosInput { get; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a>
+- *Type:* object
 
 ---
 
 ##### `AuthLoginOciInput`<sup>Optional</sup> <a name="AuthLoginOciInput" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginOciInput"></a>
 
 ```csharp
-public VaultProviderAuthLoginOci AuthLoginOciInput { get; }
+public object AuthLoginOciInput { get; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a>
+- *Type:* object
 
 ---
 
 ##### `AuthLoginOidcInput`<sup>Optional</sup> <a name="AuthLoginOidcInput" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginOidcInput"></a>
 
 ```csharp
-public VaultProviderAuthLoginOidc AuthLoginOidcInput { get; }
+public object AuthLoginOidcInput { get; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a>
+- *Type:* object
 
 ---
 
 ##### `AuthLoginRadiusInput`<sup>Optional</sup> <a name="AuthLoginRadiusInput" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginRadiusInput"></a>
 
 ```csharp
-public VaultProviderAuthLoginRadius AuthLoginRadiusInput { get; }
+public object AuthLoginRadiusInput { get; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>
+- *Type:* object
 
 ---
 
 ##### `AuthLoginTokenFileInput`<sup>Optional</sup> <a name="AuthLoginTokenFileInput" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginTokenFileInput"></a>
 
 ```csharp
-public VaultProviderAuthLoginTokenFile AuthLoginTokenFileInput { get; }
+public object AuthLoginTokenFileInput { get; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>
+- *Type:* object
 
 ---
 
 ##### `AuthLoginUserpassInput`<sup>Optional</sup> <a name="AuthLoginUserpassInput" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginUserpassInput"></a>
 
 ```csharp
-public VaultProviderAuthLoginUserpass AuthLoginUserpassInput { get; }
+public object AuthLoginUserpassInput { get; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a>
+- *Type:* object
 
 ---
 
@@ -797,10 +804,10 @@ public string CaCertFileInput { get; }
 ##### `ClientAuthInput`<sup>Optional</sup> <a name="ClientAuthInput" id="@cdktf/provider-vault.provider.VaultProvider.property.clientAuthInput"></a>
 
 ```csharp
-public VaultProviderClientAuth ClientAuthInput { get; }
+public object ClientAuthInput { get; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a>
+- *Type:* object
 
 ---
 
@@ -957,120 +964,120 @@ public string Address { get; }
 ##### `AuthLogin`<sup>Optional</sup> <a name="AuthLogin" id="@cdktf/provider-vault.provider.VaultProvider.property.authLogin"></a>
 
 ```csharp
-public VaultProviderAuthLogin AuthLogin { get; }
+public object AuthLogin { get; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a>
+- *Type:* object
 
 ---
 
 ##### `AuthLoginAws`<sup>Optional</sup> <a name="AuthLoginAws" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginAws"></a>
 
 ```csharp
-public VaultProviderAuthLoginAws AuthLoginAws { get; }
+public object AuthLoginAws { get; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a>
+- *Type:* object
 
 ---
 
 ##### `AuthLoginAzure`<sup>Optional</sup> <a name="AuthLoginAzure" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginAzure"></a>
 
 ```csharp
-public VaultProviderAuthLoginAzure AuthLoginAzure { get; }
+public object AuthLoginAzure { get; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a>
+- *Type:* object
 
 ---
 
 ##### `AuthLoginCert`<sup>Optional</sup> <a name="AuthLoginCert" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginCert"></a>
 
 ```csharp
-public VaultProviderAuthLoginCert AuthLoginCert { get; }
+public object AuthLoginCert { get; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a>
+- *Type:* object
 
 ---
 
 ##### `AuthLoginGcp`<sup>Optional</sup> <a name="AuthLoginGcp" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginGcp"></a>
 
 ```csharp
-public VaultProviderAuthLoginGcp AuthLoginGcp { get; }
+public object AuthLoginGcp { get; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a>
+- *Type:* object
 
 ---
 
 ##### `AuthLoginJwt`<sup>Optional</sup> <a name="AuthLoginJwt" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginJwt"></a>
 
 ```csharp
-public VaultProviderAuthLoginJwt AuthLoginJwt { get; }
+public object AuthLoginJwt { get; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a>
+- *Type:* object
 
 ---
 
 ##### `AuthLoginKerberos`<sup>Optional</sup> <a name="AuthLoginKerberos" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginKerberos"></a>
 
 ```csharp
-public VaultProviderAuthLoginKerberos AuthLoginKerberos { get; }
+public object AuthLoginKerberos { get; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a>
+- *Type:* object
 
 ---
 
 ##### `AuthLoginOci`<sup>Optional</sup> <a name="AuthLoginOci" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginOci"></a>
 
 ```csharp
-public VaultProviderAuthLoginOci AuthLoginOci { get; }
+public object AuthLoginOci { get; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a>
+- *Type:* object
 
 ---
 
 ##### `AuthLoginOidc`<sup>Optional</sup> <a name="AuthLoginOidc" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginOidc"></a>
 
 ```csharp
-public VaultProviderAuthLoginOidc AuthLoginOidc { get; }
+public object AuthLoginOidc { get; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a>
+- *Type:* object
 
 ---
 
 ##### `AuthLoginRadius`<sup>Optional</sup> <a name="AuthLoginRadius" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginRadius"></a>
 
 ```csharp
-public VaultProviderAuthLoginRadius AuthLoginRadius { get; }
+public object AuthLoginRadius { get; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>
+- *Type:* object
 
 ---
 
 ##### `AuthLoginTokenFile`<sup>Optional</sup> <a name="AuthLoginTokenFile" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginTokenFile"></a>
 
 ```csharp
-public VaultProviderAuthLoginTokenFile AuthLoginTokenFile { get; }
+public object AuthLoginTokenFile { get; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>
+- *Type:* object
 
 ---
 
 ##### `AuthLoginUserpass`<sup>Optional</sup> <a name="AuthLoginUserpass" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginUserpass"></a>
 
 ```csharp
-public VaultProviderAuthLoginUserpass AuthLoginUserpass { get; }
+public object AuthLoginUserpass { get; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a>
+- *Type:* object
 
 ---
 
@@ -1097,10 +1104,10 @@ public string CaCertFile { get; }
 ##### `ClientAuth`<sup>Optional</sup> <a name="ClientAuth" id="@cdktf/provider-vault.provider.VaultProvider.property.clientAuth"></a>
 
 ```csharp
-public VaultProviderClientAuth ClientAuth { get; }
+public object ClientAuth { get; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a>
+- *Type:* object
 
 ---
 
@@ -1274,10 +1281,10 @@ new VaultProviderAuthLogin {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.path">Path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#path VaultProvider#path}. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.method">Method</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#method VaultProvider#method}. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.path">Path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#path VaultProvider#path}. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.method">Method</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#method VaultProvider#method}. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.namespace">Namespace</a></code> | <code>string</code> | The authentication engine's namespace. Conflicts with use_root_namespace. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.parameters">Parameters</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#parameters VaultProvider#parameters}. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.parameters">Parameters</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#parameters VaultProvider#parameters}. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.useRootNamespace">UseRootNamespace</a></code> | <code>object</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
 
 ---
@@ -1290,7 +1297,7 @@ public string Path { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#path VaultProvider#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#path VaultProvider#path}.
 
 ---
 
@@ -1302,7 +1309,7 @@ public string Method { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#method VaultProvider#method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#method VaultProvider#method}.
 
 ---
 
@@ -1316,7 +1323,7 @@ public string Namespace { get; set; }
 
 The authentication engine's namespace. Conflicts with use_root_namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#namespace VaultProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#namespace VaultProvider#namespace}
 
 ---
 
@@ -1328,7 +1335,7 @@ public System.Collections.Generic.IDictionary<string, string> Parameters { get; 
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#parameters VaultProvider#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#parameters VaultProvider#parameters}.
 
 ---
 
@@ -1342,7 +1349,7 @@ public object UseRootNamespace { get; set; }
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#use_root_namespace VaultProvider#use_root_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#use_root_namespace VaultProvider#use_root_namespace}
 
 ---
 
@@ -1406,7 +1413,7 @@ public string Role { get; set; }
 
 The Vault role to use when logging into Vault.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#role VaultProvider#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#role VaultProvider#role}
 
 ---
 
@@ -1420,7 +1427,7 @@ public string AwsAccessKeyId { get; set; }
 
 The AWS access key ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#aws_access_key_id VaultProvider#aws_access_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#aws_access_key_id VaultProvider#aws_access_key_id}
 
 ---
 
@@ -1434,7 +1441,7 @@ public string AwsIamEndpoint { get; set; }
 
 The IAM endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#aws_iam_endpoint VaultProvider#aws_iam_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#aws_iam_endpoint VaultProvider#aws_iam_endpoint}
 
 ---
 
@@ -1448,7 +1455,7 @@ public string AwsProfile { get; set; }
 
 The name of the AWS profile.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#aws_profile VaultProvider#aws_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#aws_profile VaultProvider#aws_profile}
 
 ---
 
@@ -1462,7 +1469,7 @@ public string AwsRegion { get; set; }
 
 The AWS region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#aws_region VaultProvider#aws_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#aws_region VaultProvider#aws_region}
 
 ---
 
@@ -1476,7 +1483,7 @@ public string AwsRoleArn { get; set; }
 
 The ARN of the AWS Role to assume.Used during STS AssumeRole.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#aws_role_arn VaultProvider#aws_role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#aws_role_arn VaultProvider#aws_role_arn}
 
 ---
 
@@ -1490,7 +1497,7 @@ public string AwsRoleSessionName { get; set; }
 
 Specifies the name to attach to the AWS role session. Used during STS AssumeRole.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#aws_role_session_name VaultProvider#aws_role_session_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#aws_role_session_name VaultProvider#aws_role_session_name}
 
 ---
 
@@ -1504,7 +1511,7 @@ public string AwsSecretAccessKey { get; set; }
 
 The AWS secret access key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#aws_secret_access_key VaultProvider#aws_secret_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#aws_secret_access_key VaultProvider#aws_secret_access_key}
 
 ---
 
@@ -1518,7 +1525,7 @@ public string AwsSessionToken { get; set; }
 
 The AWS session token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#aws_session_token VaultProvider#aws_session_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#aws_session_token VaultProvider#aws_session_token}
 
 ---
 
@@ -1532,7 +1539,7 @@ public string AwsSharedCredentialsFile { get; set; }
 
 Path to the AWS shared credentials file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#aws_shared_credentials_file VaultProvider#aws_shared_credentials_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#aws_shared_credentials_file VaultProvider#aws_shared_credentials_file}
 
 ---
 
@@ -1546,7 +1553,7 @@ public string AwsStsEndpoint { get; set; }
 
 The STS endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#aws_sts_endpoint VaultProvider#aws_sts_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#aws_sts_endpoint VaultProvider#aws_sts_endpoint}
 
 ---
 
@@ -1560,7 +1567,7 @@ public string AwsWebIdentityTokenFile { get; set; }
 
 Path to the file containing an OAuth 2.0 access token or OpenID Connect ID token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#aws_web_identity_token_file VaultProvider#aws_web_identity_token_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#aws_web_identity_token_file VaultProvider#aws_web_identity_token_file}
 
 ---
 
@@ -1574,7 +1581,7 @@ public string HeaderValue { get; set; }
 
 The Vault header value to include in the STS signing request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#header_value VaultProvider#header_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#header_value VaultProvider#header_value}
 
 ---
 
@@ -1588,7 +1595,7 @@ public string Mount { get; set; }
 
 The path where the authentication engine is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#mount VaultProvider#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#mount VaultProvider#mount}
 
 ---
 
@@ -1602,7 +1609,7 @@ public string Namespace { get; set; }
 
 The authentication engine's namespace. Conflicts with use_root_namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#namespace VaultProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#namespace VaultProvider#namespace}
 
 ---
 
@@ -1616,7 +1623,7 @@ public object UseRootNamespace { get; set; }
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#use_root_namespace VaultProvider#use_root_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#use_root_namespace VaultProvider#use_root_namespace}
 
 ---
 
@@ -1672,7 +1679,7 @@ public string ResourceGroupName { get; set; }
 
 The resource group for the machine that generated the MSI token. This information can be obtained through instance metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#resource_group_name VaultProvider#resource_group_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#resource_group_name VaultProvider#resource_group_name}
 
 ---
 
@@ -1686,7 +1693,7 @@ public string Role { get; set; }
 
 Name of the login role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#role VaultProvider#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#role VaultProvider#role}
 
 ---
 
@@ -1700,7 +1707,7 @@ public string SubscriptionId { get; set; }
 
 The subscription ID for the machine that generated the MSI token. This information can be obtained through instance metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#subscription_id VaultProvider#subscription_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#subscription_id VaultProvider#subscription_id}
 
 ---
 
@@ -1714,7 +1721,7 @@ public string ClientId { get; set; }
 
 The identity's client ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#client_id VaultProvider#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#client_id VaultProvider#client_id}
 
 ---
 
@@ -1728,7 +1735,7 @@ public string Jwt { get; set; }
 
 A signed JSON Web Token. If not specified on will be created automatically.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#jwt VaultProvider#jwt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#jwt VaultProvider#jwt}
 
 ---
 
@@ -1742,7 +1749,7 @@ public string Mount { get; set; }
 
 The path where the authentication engine is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#mount VaultProvider#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#mount VaultProvider#mount}
 
 ---
 
@@ -1756,7 +1763,7 @@ public string Namespace { get; set; }
 
 The authentication engine's namespace. Conflicts with use_root_namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#namespace VaultProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#namespace VaultProvider#namespace}
 
 ---
 
@@ -1770,7 +1777,7 @@ public string Scope { get; set; }
 
 The scopes to include in the token request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#scope VaultProvider#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#scope VaultProvider#scope}
 
 ---
 
@@ -1784,7 +1791,7 @@ public string TenantId { get; set; }
 
 Provides the tenant ID to use in a multi-tenant authentication scenario.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#tenant_id VaultProvider#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#tenant_id VaultProvider#tenant_id}
 
 ---
 
@@ -1798,7 +1805,7 @@ public object UseRootNamespace { get; set; }
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#use_root_namespace VaultProvider#use_root_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#use_root_namespace VaultProvider#use_root_namespace}
 
 ---
 
@@ -1814,7 +1821,7 @@ The virtual machine name for the machine that generated the MSI token.
 
 This information can be obtained through instance metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#vm_name VaultProvider#vm_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#vm_name VaultProvider#vm_name}
 
 ---
 
@@ -1830,7 +1837,7 @@ The virtual machine scale set name for the machine that generated the MSI token.
 
 This information can be obtained through instance metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#vmss_name VaultProvider#vmss_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#vmss_name VaultProvider#vmss_name}
 
 ---
 
@@ -1874,7 +1881,7 @@ public string CertFile { get; set; }
 
 Path to a file containing the client certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#cert_file VaultProvider#cert_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#cert_file VaultProvider#cert_file}
 
 ---
 
@@ -1888,7 +1895,7 @@ public string KeyFile { get; set; }
 
 Path to a file containing the private key that the certificate was issued for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#key_file VaultProvider#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#key_file VaultProvider#key_file}
 
 ---
 
@@ -1902,7 +1909,7 @@ public string Mount { get; set; }
 
 The path where the authentication engine is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#mount VaultProvider#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#mount VaultProvider#mount}
 
 ---
 
@@ -1916,7 +1923,7 @@ public string Name { get; set; }
 
 Name of the certificate's role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#name VaultProvider#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#name VaultProvider#name}
 
 ---
 
@@ -1930,7 +1937,7 @@ public string Namespace { get; set; }
 
 The authentication engine's namespace. Conflicts with use_root_namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#namespace VaultProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#namespace VaultProvider#namespace}
 
 ---
 
@@ -1944,7 +1951,7 @@ public object UseRootNamespace { get; set; }
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#use_root_namespace VaultProvider#use_root_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#use_root_namespace VaultProvider#use_root_namespace}
 
 ---
 
@@ -1990,7 +1997,7 @@ public string Role { get; set; }
 
 Name of the login role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#role VaultProvider#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#role VaultProvider#role}
 
 ---
 
@@ -2004,7 +2011,7 @@ public string Credentials { get; set; }
 
 Path to the Google Cloud credentials file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#credentials VaultProvider#credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#credentials VaultProvider#credentials}
 
 ---
 
@@ -2018,7 +2025,7 @@ public string Jwt { get; set; }
 
 A signed JSON Web Token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#jwt VaultProvider#jwt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#jwt VaultProvider#jwt}
 
 ---
 
@@ -2032,7 +2039,7 @@ public string Mount { get; set; }
 
 The path where the authentication engine is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#mount VaultProvider#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#mount VaultProvider#mount}
 
 ---
 
@@ -2046,7 +2053,7 @@ public string Namespace { get; set; }
 
 The authentication engine's namespace. Conflicts with use_root_namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#namespace VaultProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#namespace VaultProvider#namespace}
 
 ---
 
@@ -2060,7 +2067,7 @@ public string ServiceAccount { get; set; }
 
 IAM service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#service_account VaultProvider#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#service_account VaultProvider#service_account}
 
 ---
 
@@ -2074,7 +2081,7 @@ public object UseRootNamespace { get; set; }
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#use_root_namespace VaultProvider#use_root_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#use_root_namespace VaultProvider#use_root_namespace}
 
 ---
 
@@ -2086,8 +2093,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Vault;
 
 new VaultProviderAuthLoginJwt {
-    string Jwt,
     string Role,
+    string Jwt = null,
     string Mount = null,
     string Namespace = null,
     object UseRootNamespace = null
@@ -2098,25 +2105,11 @@ new VaultProviderAuthLoginJwt {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt.property.jwt">Jwt</a></code> | <code>string</code> | A signed JSON Web Token. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt.property.role">Role</a></code> | <code>string</code> | Name of the login role. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt.property.jwt">Jwt</a></code> | <code>string</code> | A signed JSON Web Token. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt.property.mount">Mount</a></code> | <code>string</code> | The path where the authentication engine is mounted. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt.property.namespace">Namespace</a></code> | <code>string</code> | The authentication engine's namespace. Conflicts with use_root_namespace. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt.property.useRootNamespace">UseRootNamespace</a></code> | <code>object</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
-
----
-
-##### `Jwt`<sup>Required</sup> <a name="Jwt" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt.property.jwt"></a>
-
-```csharp
-public string Jwt { get; set; }
-```
-
-- *Type:* string
-
-A signed JSON Web Token.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#jwt VaultProvider#jwt}
 
 ---
 
@@ -2130,7 +2123,21 @@ public string Role { get; set; }
 
 Name of the login role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#role VaultProvider#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#role VaultProvider#role}
+
+---
+
+##### `Jwt`<sup>Optional</sup> <a name="Jwt" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt.property.jwt"></a>
+
+```csharp
+public string Jwt { get; set; }
+```
+
+- *Type:* string
+
+A signed JSON Web Token.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#jwt VaultProvider#jwt}
 
 ---
 
@@ -2144,7 +2151,7 @@ public string Mount { get; set; }
 
 The path where the authentication engine is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#mount VaultProvider#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#mount VaultProvider#mount}
 
 ---
 
@@ -2158,7 +2165,7 @@ public string Namespace { get; set; }
 
 The authentication engine's namespace. Conflicts with use_root_namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#namespace VaultProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#namespace VaultProvider#namespace}
 
 ---
 
@@ -2172,7 +2179,7 @@ public object UseRootNamespace { get; set; }
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#use_root_namespace VaultProvider#use_root_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#use_root_namespace VaultProvider#use_root_namespace}
 
 ---
 
@@ -2226,7 +2233,7 @@ public object DisableFastNegotiation { get; set; }
 
 Disable the Kerberos FAST negotiation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#disable_fast_negotiation VaultProvider#disable_fast_negotiation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#disable_fast_negotiation VaultProvider#disable_fast_negotiation}
 
 ---
 
@@ -2240,7 +2247,7 @@ public string KeytabPath { get; set; }
 
 The Kerberos keytab file containing the entry of the login entity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#keytab_path VaultProvider#keytab_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#keytab_path VaultProvider#keytab_path}
 
 ---
 
@@ -2254,7 +2261,7 @@ public string Krb5ConfPath { get; set; }
 
 A valid Kerberos configuration file e.g. /etc/krb5.conf.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#krb5conf_path VaultProvider#krb5conf_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#krb5conf_path VaultProvider#krb5conf_path}
 
 ---
 
@@ -2268,7 +2275,7 @@ public string Mount { get; set; }
 
 The path where the authentication engine is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#mount VaultProvider#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#mount VaultProvider#mount}
 
 ---
 
@@ -2282,7 +2289,7 @@ public string Namespace { get; set; }
 
 The authentication engine's namespace. Conflicts with use_root_namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#namespace VaultProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#namespace VaultProvider#namespace}
 
 ---
 
@@ -2296,7 +2303,7 @@ public string Realm { get; set; }
 
 The Kerberos server's authoritative authentication domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#realm VaultProvider#realm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#realm VaultProvider#realm}
 
 ---
 
@@ -2310,7 +2317,7 @@ public object RemoveInstanceName { get; set; }
 
 Strip the host from the username found in the keytab.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#remove_instance_name VaultProvider#remove_instance_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#remove_instance_name VaultProvider#remove_instance_name}
 
 ---
 
@@ -2324,7 +2331,7 @@ public string Service { get; set; }
 
 The service principle name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#service VaultProvider#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#service VaultProvider#service}
 
 ---
 
@@ -2338,7 +2345,7 @@ public string Token { get; set; }
 
 Simple and Protected GSSAPI Negotiation Mechanism (SPNEGO) token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#token VaultProvider#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#token VaultProvider#token}
 
 ---
 
@@ -2352,7 +2359,7 @@ public string Username { get; set; }
 
 The username to login into Kerberos with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#username VaultProvider#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#username VaultProvider#username}
 
 ---
 
@@ -2366,7 +2373,7 @@ public object UseRootNamespace { get; set; }
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#use_root_namespace VaultProvider#use_root_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#use_root_namespace VaultProvider#use_root_namespace}
 
 ---
 
@@ -2408,7 +2415,7 @@ public string AuthType { get; set; }
 
 Authentication type to use when getting OCI credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#auth_type VaultProvider#auth_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#auth_type VaultProvider#auth_type}
 
 ---
 
@@ -2422,7 +2429,7 @@ public string Role { get; set; }
 
 Name of the login role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#role VaultProvider#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#role VaultProvider#role}
 
 ---
 
@@ -2436,7 +2443,7 @@ public string Mount { get; set; }
 
 The path where the authentication engine is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#mount VaultProvider#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#mount VaultProvider#mount}
 
 ---
 
@@ -2450,7 +2457,7 @@ public string Namespace { get; set; }
 
 The authentication engine's namespace. Conflicts with use_root_namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#namespace VaultProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#namespace VaultProvider#namespace}
 
 ---
 
@@ -2464,7 +2471,7 @@ public object UseRootNamespace { get; set; }
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#use_root_namespace VaultProvider#use_root_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#use_root_namespace VaultProvider#use_root_namespace}
 
 ---
 
@@ -2508,7 +2515,7 @@ public string Role { get; set; }
 
 Name of the login role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#role VaultProvider#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#role VaultProvider#role}
 
 ---
 
@@ -2522,7 +2529,7 @@ public string CallbackAddress { get; set; }
 
 The callback address. Must be a valid URI without the path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#callback_address VaultProvider#callback_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#callback_address VaultProvider#callback_address}
 
 ---
 
@@ -2536,7 +2543,7 @@ public string CallbackListenerAddress { get; set; }
 
 The callback listener's address. Must be a valid URI without the path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#callback_listener_address VaultProvider#callback_listener_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#callback_listener_address VaultProvider#callback_listener_address}
 
 ---
 
@@ -2550,7 +2557,7 @@ public string Mount { get; set; }
 
 The path where the authentication engine is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#mount VaultProvider#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#mount VaultProvider#mount}
 
 ---
 
@@ -2564,7 +2571,7 @@ public string Namespace { get; set; }
 
 The authentication engine's namespace. Conflicts with use_root_namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#namespace VaultProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#namespace VaultProvider#namespace}
 
 ---
 
@@ -2578,7 +2585,7 @@ public object UseRootNamespace { get; set; }
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#use_root_namespace VaultProvider#use_root_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#use_root_namespace VaultProvider#use_root_namespace}
 
 ---
 
@@ -2590,10 +2597,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Vault;
 
 new VaultProviderAuthLoginRadius {
-    string Password,
-    string Username,
     string Mount = null,
     string Namespace = null,
+    string Password = null,
+    string Username = null,
     object UseRootNamespace = null
 };
 ```
@@ -2602,39 +2609,11 @@ new VaultProviderAuthLoginRadius {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius.property.password">Password</a></code> | <code>string</code> | The Radius password for username. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius.property.username">Username</a></code> | <code>string</code> | The Radius username. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius.property.mount">Mount</a></code> | <code>string</code> | The path where the authentication engine is mounted. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius.property.namespace">Namespace</a></code> | <code>string</code> | The authentication engine's namespace. Conflicts with use_root_namespace. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius.property.password">Password</a></code> | <code>string</code> | The Radius password for username. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius.property.username">Username</a></code> | <code>string</code> | The Radius username. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius.property.useRootNamespace">UseRootNamespace</a></code> | <code>object</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
-
----
-
-##### `Password`<sup>Required</sup> <a name="Password" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius.property.password"></a>
-
-```csharp
-public string Password { get; set; }
-```
-
-- *Type:* string
-
-The Radius password for username.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#password VaultProvider#password}
-
----
-
-##### `Username`<sup>Required</sup> <a name="Username" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius.property.username"></a>
-
-```csharp
-public string Username { get; set; }
-```
-
-- *Type:* string
-
-The Radius username.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#username VaultProvider#username}
 
 ---
 
@@ -2648,7 +2627,7 @@ public string Mount { get; set; }
 
 The path where the authentication engine is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#mount VaultProvider#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#mount VaultProvider#mount}
 
 ---
 
@@ -2662,7 +2641,35 @@ public string Namespace { get; set; }
 
 The authentication engine's namespace. Conflicts with use_root_namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#namespace VaultProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#namespace VaultProvider#namespace}
+
+---
+
+##### `Password`<sup>Optional</sup> <a name="Password" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius.property.password"></a>
+
+```csharp
+public string Password { get; set; }
+```
+
+- *Type:* string
+
+The Radius password for username.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#password VaultProvider#password}
+
+---
+
+##### `Username`<sup>Optional</sup> <a name="Username" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius.property.username"></a>
+
+```csharp
+public string Username { get; set; }
+```
+
+- *Type:* string
+
+The Radius username.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#username VaultProvider#username}
 
 ---
 
@@ -2676,7 +2683,7 @@ public object UseRootNamespace { get; set; }
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#use_root_namespace VaultProvider#use_root_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#use_root_namespace VaultProvider#use_root_namespace}
 
 ---
 
@@ -2688,7 +2695,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Vault;
 
 new VaultProviderAuthLoginTokenFile {
-    string Filename,
+    string Filename = null,
     string Namespace = null,
     object UseRootNamespace = null
 };
@@ -2704,7 +2711,7 @@ new VaultProviderAuthLoginTokenFile {
 
 ---
 
-##### `Filename`<sup>Required</sup> <a name="Filename" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile.property.filename"></a>
+##### `Filename`<sup>Optional</sup> <a name="Filename" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile.property.filename"></a>
 
 ```csharp
 public string Filename { get; set; }
@@ -2714,7 +2721,7 @@ public string Filename { get; set; }
 
 The name of a file containing a single line that is a valid Vault token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#filename VaultProvider#filename}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#filename VaultProvider#filename}
 
 ---
 
@@ -2728,7 +2735,7 @@ public string Namespace { get; set; }
 
 The authentication engine's namespace. Conflicts with use_root_namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#namespace VaultProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#namespace VaultProvider#namespace}
 
 ---
 
@@ -2742,7 +2749,7 @@ public object UseRootNamespace { get; set; }
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#use_root_namespace VaultProvider#use_root_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#use_root_namespace VaultProvider#use_root_namespace}
 
 ---
 
@@ -2754,11 +2761,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Vault;
 
 new VaultProviderAuthLoginUserpass {
-    string Username,
     string Mount = null,
     string Namespace = null,
     string Password = null,
     string PasswordFile = null,
+    string Username = null,
     object UseRootNamespace = null
 };
 ```
@@ -2767,26 +2774,12 @@ new VaultProviderAuthLoginUserpass {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass.property.username">Username</a></code> | <code>string</code> | Login with username. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass.property.mount">Mount</a></code> | <code>string</code> | The path where the authentication engine is mounted. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass.property.namespace">Namespace</a></code> | <code>string</code> | The authentication engine's namespace. Conflicts with use_root_namespace. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass.property.password">Password</a></code> | <code>string</code> | Login with password. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass.property.passwordFile">PasswordFile</a></code> | <code>string</code> | Login with password from a file. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass.property.username">Username</a></code> | <code>string</code> | Login with username. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass.property.useRootNamespace">UseRootNamespace</a></code> | <code>object</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
-
----
-
-##### `Username`<sup>Required</sup> <a name="Username" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass.property.username"></a>
-
-```csharp
-public string Username { get; set; }
-```
-
-- *Type:* string
-
-Login with username.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#username VaultProvider#username}
 
 ---
 
@@ -2800,7 +2793,7 @@ public string Mount { get; set; }
 
 The path where the authentication engine is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#mount VaultProvider#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#mount VaultProvider#mount}
 
 ---
 
@@ -2814,7 +2807,7 @@ public string Namespace { get; set; }
 
 The authentication engine's namespace. Conflicts with use_root_namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#namespace VaultProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#namespace VaultProvider#namespace}
 
 ---
 
@@ -2828,7 +2821,7 @@ public string Password { get; set; }
 
 Login with password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#password VaultProvider#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#password VaultProvider#password}
 
 ---
 
@@ -2842,7 +2835,21 @@ public string PasswordFile { get; set; }
 
 Login with password from a file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#password_file VaultProvider#password_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#password_file VaultProvider#password_file}
+
+---
+
+##### `Username`<sup>Optional</sup> <a name="Username" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass.property.username"></a>
+
+```csharp
+public string Username { get; set; }
+```
+
+- *Type:* string
+
+Login with username.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#username VaultProvider#username}
 
 ---
 
@@ -2856,7 +2863,7 @@ public object UseRootNamespace { get; set; }
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#use_root_namespace VaultProvider#use_root_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#use_root_namespace VaultProvider#use_root_namespace}
 
 ---
 
@@ -2868,8 +2875,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Vault;
 
 new VaultProviderClientAuth {
-    string CertFile = null,
-    string KeyFile = null
+    string CertFile,
+    string KeyFile
 };
 ```
 
@@ -2882,7 +2889,7 @@ new VaultProviderClientAuth {
 
 ---
 
-##### `CertFile`<sup>Optional</sup> <a name="CertFile" id="@cdktf/provider-vault.provider.VaultProviderClientAuth.property.certFile"></a>
+##### `CertFile`<sup>Required</sup> <a name="CertFile" id="@cdktf/provider-vault.provider.VaultProviderClientAuth.property.certFile"></a>
 
 ```csharp
 public string CertFile { get; set; }
@@ -2892,11 +2899,11 @@ public string CertFile { get; set; }
 
 Path to a file containing the client certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#cert_file VaultProvider#cert_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#cert_file VaultProvider#cert_file}
 
 ---
 
-##### `KeyFile`<sup>Optional</sup> <a name="KeyFile" id="@cdktf/provider-vault.provider.VaultProviderClientAuth.property.keyFile"></a>
+##### `KeyFile`<sup>Required</sup> <a name="KeyFile" id="@cdktf/provider-vault.provider.VaultProviderClientAuth.property.keyFile"></a>
 
 ```csharp
 public string KeyFile { get; set; }
@@ -2906,7 +2913,7 @@ public string KeyFile { get; set; }
 
 Path to a file containing the private key that the certificate was issued for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#key_file VaultProvider#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#key_file VaultProvider#key_file}
 
 ---
 
@@ -2918,24 +2925,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Vault;
 
 new VaultProviderConfig {
-    string Address,
     string AddAddressToEnv = null,
+    string Address = null,
     string Alias = null,
-    VaultProviderAuthLogin AuthLogin = null,
-    VaultProviderAuthLoginAws AuthLoginAws = null,
-    VaultProviderAuthLoginAzure AuthLoginAzure = null,
-    VaultProviderAuthLoginCert AuthLoginCert = null,
-    VaultProviderAuthLoginGcp AuthLoginGcp = null,
-    VaultProviderAuthLoginJwt AuthLoginJwt = null,
-    VaultProviderAuthLoginKerberos AuthLoginKerberos = null,
-    VaultProviderAuthLoginOci AuthLoginOci = null,
-    VaultProviderAuthLoginOidc AuthLoginOidc = null,
-    VaultProviderAuthLoginRadius AuthLoginRadius = null,
-    VaultProviderAuthLoginTokenFile AuthLoginTokenFile = null,
-    VaultProviderAuthLoginUserpass AuthLoginUserpass = null,
+    object AuthLogin = null,
+    object AuthLoginAws = null,
+    object AuthLoginAzure = null,
+    object AuthLoginCert = null,
+    object AuthLoginGcp = null,
+    object AuthLoginJwt = null,
+    object AuthLoginKerberos = null,
+    object AuthLoginOci = null,
+    object AuthLoginOidc = null,
+    object AuthLoginRadius = null,
+    object AuthLoginTokenFile = null,
+    object AuthLoginUserpass = null,
     string CaCertDir = null,
     string CaCertFile = null,
-    VaultProviderClientAuth ClientAuth = null,
+    object ClientAuth = null,
     object Headers = null,
     double MaxLeaseTtlSeconds = null,
     double MaxRetries = null,
@@ -2956,24 +2963,24 @@ new VaultProviderConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.address">Address</a></code> | <code>string</code> | URL of the root of the target Vault server. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.addAddressToEnv">AddAddressToEnv</a></code> | <code>string</code> | If true, adds the value of the `address` argument to the Terraform process environment. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.address">Address</a></code> | <code>string</code> | URL of the root of the target Vault server. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.alias">Alias</a></code> | <code>string</code> | Alias name. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLogin">AuthLogin</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a></code> | auth_login block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginAws">AuthLoginAws</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a></code> | auth_login_aws block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginAzure">AuthLoginAzure</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a></code> | auth_login_azure block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginCert">AuthLoginCert</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a></code> | auth_login_cert block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginGcp">AuthLoginGcp</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a></code> | auth_login_gcp block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginJwt">AuthLoginJwt</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a></code> | auth_login_jwt block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginKerberos">AuthLoginKerberos</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a></code> | auth_login_kerberos block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginOci">AuthLoginOci</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a></code> | auth_login_oci block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginOidc">AuthLoginOidc</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a></code> | auth_login_oidc block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginRadius">AuthLoginRadius</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a></code> | auth_login_radius block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginTokenFile">AuthLoginTokenFile</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a></code> | auth_login_token_file block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginUserpass">AuthLoginUserpass</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a></code> | auth_login_userpass block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLogin">AuthLogin</a></code> | <code>object</code> | auth_login block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginAws">AuthLoginAws</a></code> | <code>object</code> | auth_login_aws block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginAzure">AuthLoginAzure</a></code> | <code>object</code> | auth_login_azure block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginCert">AuthLoginCert</a></code> | <code>object</code> | auth_login_cert block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginGcp">AuthLoginGcp</a></code> | <code>object</code> | auth_login_gcp block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginJwt">AuthLoginJwt</a></code> | <code>object</code> | auth_login_jwt block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginKerberos">AuthLoginKerberos</a></code> | <code>object</code> | auth_login_kerberos block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginOci">AuthLoginOci</a></code> | <code>object</code> | auth_login_oci block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginOidc">AuthLoginOidc</a></code> | <code>object</code> | auth_login_oidc block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginRadius">AuthLoginRadius</a></code> | <code>object</code> | auth_login_radius block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginTokenFile">AuthLoginTokenFile</a></code> | <code>object</code> | auth_login_token_file block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginUserpass">AuthLoginUserpass</a></code> | <code>object</code> | auth_login_userpass block. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.caCertDir">CaCertDir</a></code> | <code>string</code> | Path to directory containing CA certificate files to validate the server's certificate. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.caCertFile">CaCertFile</a></code> | <code>string</code> | Path to a CA certificate file to validate the server's certificate. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.clientAuth">ClientAuth</a></code> | <code><a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a></code> | client_auth block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.clientAuth">ClientAuth</a></code> | <code>object</code> | client_auth block. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.headers">Headers</a></code> | <code>object</code> | headers block. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.maxLeaseTtlSeconds">MaxLeaseTtlSeconds</a></code> | <code>double</code> | Maximum TTL for secret leases requested by this provider. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.maxRetries">MaxRetries</a></code> | <code>double</code> | Maximum number of retries when a 5xx error code is encountered. |
@@ -2990,20 +2997,6 @@ new VaultProviderConfig {
 
 ---
 
-##### `Address`<sup>Required</sup> <a name="Address" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.address"></a>
-
-```csharp
-public string Address { get; set; }
-```
-
-- *Type:* string
-
-URL of the root of the target Vault server.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#address VaultProvider#address}
-
----
-
 ##### `AddAddressToEnv`<sup>Optional</sup> <a name="AddAddressToEnv" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.addAddressToEnv"></a>
 
 ```csharp
@@ -3014,7 +3007,21 @@ public string AddAddressToEnv { get; set; }
 
 If true, adds the value of the `address` argument to the Terraform process environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#add_address_to_env VaultProvider#add_address_to_env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#add_address_to_env VaultProvider#add_address_to_env}
+
+---
+
+##### `Address`<sup>Optional</sup> <a name="Address" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.address"></a>
+
+```csharp
+public string Address { get; set; }
+```
+
+- *Type:* string
+
+URL of the root of the target Vault server.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#address VaultProvider#address}
 
 ---
 
@@ -3028,175 +3035,175 @@ public string Alias { get; set; }
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#alias VaultProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#alias VaultProvider#alias}
 
 ---
 
 ##### `AuthLogin`<sup>Optional</sup> <a name="AuthLogin" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLogin"></a>
 
 ```csharp
-public VaultProviderAuthLogin AuthLogin { get; set; }
+public object AuthLogin { get; set; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a>
+- *Type:* object
 
 auth_login block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#auth_login VaultProvider#auth_login}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#auth_login VaultProvider#auth_login}
 
 ---
 
 ##### `AuthLoginAws`<sup>Optional</sup> <a name="AuthLoginAws" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginAws"></a>
 
 ```csharp
-public VaultProviderAuthLoginAws AuthLoginAws { get; set; }
+public object AuthLoginAws { get; set; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a>
+- *Type:* object
 
 auth_login_aws block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#auth_login_aws VaultProvider#auth_login_aws}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#auth_login_aws VaultProvider#auth_login_aws}
 
 ---
 
 ##### `AuthLoginAzure`<sup>Optional</sup> <a name="AuthLoginAzure" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginAzure"></a>
 
 ```csharp
-public VaultProviderAuthLoginAzure AuthLoginAzure { get; set; }
+public object AuthLoginAzure { get; set; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a>
+- *Type:* object
 
 auth_login_azure block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#auth_login_azure VaultProvider#auth_login_azure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#auth_login_azure VaultProvider#auth_login_azure}
 
 ---
 
 ##### `AuthLoginCert`<sup>Optional</sup> <a name="AuthLoginCert" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginCert"></a>
 
 ```csharp
-public VaultProviderAuthLoginCert AuthLoginCert { get; set; }
+public object AuthLoginCert { get; set; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a>
+- *Type:* object
 
 auth_login_cert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#auth_login_cert VaultProvider#auth_login_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#auth_login_cert VaultProvider#auth_login_cert}
 
 ---
 
 ##### `AuthLoginGcp`<sup>Optional</sup> <a name="AuthLoginGcp" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginGcp"></a>
 
 ```csharp
-public VaultProviderAuthLoginGcp AuthLoginGcp { get; set; }
+public object AuthLoginGcp { get; set; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a>
+- *Type:* object
 
 auth_login_gcp block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#auth_login_gcp VaultProvider#auth_login_gcp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#auth_login_gcp VaultProvider#auth_login_gcp}
 
 ---
 
 ##### `AuthLoginJwt`<sup>Optional</sup> <a name="AuthLoginJwt" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginJwt"></a>
 
 ```csharp
-public VaultProviderAuthLoginJwt AuthLoginJwt { get; set; }
+public object AuthLoginJwt { get; set; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a>
+- *Type:* object
 
 auth_login_jwt block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#auth_login_jwt VaultProvider#auth_login_jwt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#auth_login_jwt VaultProvider#auth_login_jwt}
 
 ---
 
 ##### `AuthLoginKerberos`<sup>Optional</sup> <a name="AuthLoginKerberos" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginKerberos"></a>
 
 ```csharp
-public VaultProviderAuthLoginKerberos AuthLoginKerberos { get; set; }
+public object AuthLoginKerberos { get; set; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a>
+- *Type:* object
 
 auth_login_kerberos block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#auth_login_kerberos VaultProvider#auth_login_kerberos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#auth_login_kerberos VaultProvider#auth_login_kerberos}
 
 ---
 
 ##### `AuthLoginOci`<sup>Optional</sup> <a name="AuthLoginOci" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginOci"></a>
 
 ```csharp
-public VaultProviderAuthLoginOci AuthLoginOci { get; set; }
+public object AuthLoginOci { get; set; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a>
+- *Type:* object
 
 auth_login_oci block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#auth_login_oci VaultProvider#auth_login_oci}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#auth_login_oci VaultProvider#auth_login_oci}
 
 ---
 
 ##### `AuthLoginOidc`<sup>Optional</sup> <a name="AuthLoginOidc" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginOidc"></a>
 
 ```csharp
-public VaultProviderAuthLoginOidc AuthLoginOidc { get; set; }
+public object AuthLoginOidc { get; set; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a>
+- *Type:* object
 
 auth_login_oidc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#auth_login_oidc VaultProvider#auth_login_oidc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#auth_login_oidc VaultProvider#auth_login_oidc}
 
 ---
 
 ##### `AuthLoginRadius`<sup>Optional</sup> <a name="AuthLoginRadius" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginRadius"></a>
 
 ```csharp
-public VaultProviderAuthLoginRadius AuthLoginRadius { get; set; }
+public object AuthLoginRadius { get; set; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>
+- *Type:* object
 
 auth_login_radius block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#auth_login_radius VaultProvider#auth_login_radius}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#auth_login_radius VaultProvider#auth_login_radius}
 
 ---
 
 ##### `AuthLoginTokenFile`<sup>Optional</sup> <a name="AuthLoginTokenFile" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginTokenFile"></a>
 
 ```csharp
-public VaultProviderAuthLoginTokenFile AuthLoginTokenFile { get; set; }
+public object AuthLoginTokenFile { get; set; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>
+- *Type:* object
 
 auth_login_token_file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#auth_login_token_file VaultProvider#auth_login_token_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#auth_login_token_file VaultProvider#auth_login_token_file}
 
 ---
 
 ##### `AuthLoginUserpass`<sup>Optional</sup> <a name="AuthLoginUserpass" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginUserpass"></a>
 
 ```csharp
-public VaultProviderAuthLoginUserpass AuthLoginUserpass { get; set; }
+public object AuthLoginUserpass { get; set; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a>
+- *Type:* object
 
 auth_login_userpass block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#auth_login_userpass VaultProvider#auth_login_userpass}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#auth_login_userpass VaultProvider#auth_login_userpass}
 
 ---
 
@@ -3210,7 +3217,7 @@ public string CaCertDir { get; set; }
 
 Path to directory containing CA certificate files to validate the server's certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#ca_cert_dir VaultProvider#ca_cert_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#ca_cert_dir VaultProvider#ca_cert_dir}
 
 ---
 
@@ -3224,21 +3231,21 @@ public string CaCertFile { get; set; }
 
 Path to a CA certificate file to validate the server's certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#ca_cert_file VaultProvider#ca_cert_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#ca_cert_file VaultProvider#ca_cert_file}
 
 ---
 
 ##### `ClientAuth`<sup>Optional</sup> <a name="ClientAuth" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.clientAuth"></a>
 
 ```csharp
-public VaultProviderClientAuth ClientAuth { get; set; }
+public object ClientAuth { get; set; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a>
+- *Type:* object
 
 client_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#client_auth VaultProvider#client_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#client_auth VaultProvider#client_auth}
 
 ---
 
@@ -3252,7 +3259,7 @@ public object Headers { get; set; }
 
 headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#headers VaultProvider#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#headers VaultProvider#headers}
 
 ---
 
@@ -3266,7 +3273,7 @@ public double MaxLeaseTtlSeconds { get; set; }
 
 Maximum TTL for secret leases requested by this provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#max_lease_ttl_seconds VaultProvider#max_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#max_lease_ttl_seconds VaultProvider#max_lease_ttl_seconds}
 
 ---
 
@@ -3280,7 +3287,7 @@ public double MaxRetries { get; set; }
 
 Maximum number of retries when a 5xx error code is encountered.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#max_retries VaultProvider#max_retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#max_retries VaultProvider#max_retries}
 
 ---
 
@@ -3294,7 +3301,7 @@ public double MaxRetriesCcc { get; set; }
 
 Maximum number of retries for Client Controlled Consistency related operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#max_retries_ccc VaultProvider#max_retries_ccc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#max_retries_ccc VaultProvider#max_retries_ccc}
 
 ---
 
@@ -3308,7 +3315,7 @@ public string Namespace { get; set; }
 
 The namespace to use. Available only for Vault Enterprise.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#namespace VaultProvider#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#namespace VaultProvider#namespace}
 
 ---
 
@@ -3322,7 +3329,7 @@ public object SetNamespaceFromToken { get; set; }
 
 In the case where the Vault token is for a specific namespace and the provider namespace is not configured, use the token namespace as the root namespace for all resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#set_namespace_from_token VaultProvider#set_namespace_from_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#set_namespace_from_token VaultProvider#set_namespace_from_token}
 
 ---
 
@@ -3336,7 +3343,7 @@ public object SkipChildToken { get; set; }
 
 Set this to true to prevent the creation of ephemeral child token used by this provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#skip_child_token VaultProvider#skip_child_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#skip_child_token VaultProvider#skip_child_token}
 
 ---
 
@@ -3350,7 +3357,7 @@ public object SkipGetVaultVersion { get; set; }
 
 Skip the dynamic fetching of the Vault server version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#skip_get_vault_version VaultProvider#skip_get_vault_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#skip_get_vault_version VaultProvider#skip_get_vault_version}
 
 ---
 
@@ -3364,7 +3371,7 @@ public object SkipTlsVerify { get; set; }
 
 Set this to true only if the target Vault server is an insecure development instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#skip_tls_verify VaultProvider#skip_tls_verify}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#skip_tls_verify VaultProvider#skip_tls_verify}
 
 ---
 
@@ -3378,7 +3385,7 @@ public string TlsServerName { get; set; }
 
 Name to use as the SNI host when connecting via TLS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#tls_server_name VaultProvider#tls_server_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#tls_server_name VaultProvider#tls_server_name}
 
 ---
 
@@ -3392,7 +3399,7 @@ public string Token { get; set; }
 
 Token to use to authenticate to Vault.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#token VaultProvider#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#token VaultProvider#token}
 
 ---
 
@@ -3406,7 +3413,7 @@ public string TokenName { get; set; }
 
 Token name to use for creating the Vault child token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#token_name VaultProvider#token_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#token_name VaultProvider#token_name}
 
 ---
 
@@ -3420,7 +3427,7 @@ public string VaultVersionOverride { get; set; }
 
 Override the Vault server version, which is normally determined dynamically from the target Vault server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#vault_version_override VaultProvider#vault_version_override}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#vault_version_override VaultProvider#vault_version_override}
 
 ---
 
@@ -3456,7 +3463,7 @@ public string Name { get; set; }
 
 The header name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#name VaultProvider#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#name VaultProvider#name}
 
 ---
 
@@ -3470,7 +3477,7 @@ public string Value { get; set; }
 
 The header value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs#value VaultProvider#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs#value VaultProvider#value}
 
 ---
 
