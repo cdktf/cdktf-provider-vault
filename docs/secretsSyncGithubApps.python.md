@@ -4,7 +4,7 @@
 
 ### SecretsSyncGithubApps <a name="SecretsSyncGithubApps" id="@cdktf/provider-vault.secretsSyncGithubApps.SecretsSyncGithubApps"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/secrets_sync_github_apps vault_secrets_sync_github_apps}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/secrets_sync_github_apps vault_secrets_sync_github_apps}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.secretsSyncGithubApps.SecretsSyncGithubApps.Initializer"></a>
 
@@ -43,7 +43,7 @@ secretsSyncGithubApps.SecretsSyncGithubApps(
 | <code><a href="#@cdktf/provider-vault.secretsSyncGithubApps.SecretsSyncGithubApps.Initializer.parameter.appId">app_id</a></code> | <code>typing.Union[int, float]</code> | The GitHub application ID. |
 | <code><a href="#@cdktf/provider-vault.secretsSyncGithubApps.SecretsSyncGithubApps.Initializer.parameter.name">name</a></code> | <code>str</code> | The user-defined name of the GitHub App configuration. |
 | <code><a href="#@cdktf/provider-vault.secretsSyncGithubApps.SecretsSyncGithubApps.Initializer.parameter.privateKey">private_key</a></code> | <code>str</code> | The content of a PEM formatted private key generated on GitHub for the app. |
-| <code><a href="#@cdktf/provider-vault.secretsSyncGithubApps.SecretsSyncGithubApps.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/secrets_sync_github_apps#id SecretsSyncGithubApps#id}. |
+| <code><a href="#@cdktf/provider-vault.secretsSyncGithubApps.SecretsSyncGithubApps.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/secrets_sync_github_apps#id SecretsSyncGithubApps#id}. |
 | <code><a href="#@cdktf/provider-vault.secretsSyncGithubApps.SecretsSyncGithubApps.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The GitHub application ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/secrets_sync_github_apps#app_id SecretsSyncGithubApps#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/secrets_sync_github_apps#app_id SecretsSyncGithubApps#app_id}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The user-defined name of the GitHub App configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/secrets_sync_github_apps#name SecretsSyncGithubApps#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/secrets_sync_github_apps#name SecretsSyncGithubApps#name}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The content of a PEM formatted private key generated on GitHub for the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/secrets_sync_github_apps#private_key SecretsSyncGithubApps#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/secrets_sync_github_apps#private_key SecretsSyncGithubApps#private_key}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/secrets_sync_github_apps#id SecretsSyncGithubApps#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/secrets_sync_github_apps#id SecretsSyncGithubApps#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -155,7 +155,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/secrets_sync_github_apps#namespace SecretsSyncGithubApps#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/secrets_sync_github_apps#namespace SecretsSyncGithubApps#namespace}
 
 ---
 
@@ -642,7 +642,7 @@ The construct id used in the generated config for the SecretsSyncGithubApps to i
 
 The id of the existing SecretsSyncGithubApps that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/secrets_sync_github_apps#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/secrets_sync_github_apps#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -995,7 +995,7 @@ secretsSyncGithubApps.SecretsSyncGithubAppsConfig(
 | <code><a href="#@cdktf/provider-vault.secretsSyncGithubApps.SecretsSyncGithubAppsConfig.property.appId">app_id</a></code> | <code>typing.Union[int, float]</code> | The GitHub application ID. |
 | <code><a href="#@cdktf/provider-vault.secretsSyncGithubApps.SecretsSyncGithubAppsConfig.property.name">name</a></code> | <code>str</code> | The user-defined name of the GitHub App configuration. |
 | <code><a href="#@cdktf/provider-vault.secretsSyncGithubApps.SecretsSyncGithubAppsConfig.property.privateKey">private_key</a></code> | <code>str</code> | The content of a PEM formatted private key generated on GitHub for the app. |
-| <code><a href="#@cdktf/provider-vault.secretsSyncGithubApps.SecretsSyncGithubAppsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/secrets_sync_github_apps#id SecretsSyncGithubApps#id}. |
+| <code><a href="#@cdktf/provider-vault.secretsSyncGithubApps.SecretsSyncGithubAppsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/secrets_sync_github_apps#id SecretsSyncGithubApps#id}. |
 | <code><a href="#@cdktf/provider-vault.secretsSyncGithubApps.SecretsSyncGithubAppsConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -1080,7 +1080,7 @@ app_id: typing.Union[int, float]
 
 The GitHub application ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/secrets_sync_github_apps#app_id SecretsSyncGithubApps#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/secrets_sync_github_apps#app_id SecretsSyncGithubApps#app_id}
 
 ---
 
@@ -1094,7 +1094,7 @@ name: str
 
 The user-defined name of the GitHub App configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/secrets_sync_github_apps#name SecretsSyncGithubApps#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/secrets_sync_github_apps#name SecretsSyncGithubApps#name}
 
 ---
 
@@ -1108,7 +1108,7 @@ private_key: str
 
 The content of a PEM formatted private key generated on GitHub for the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/secrets_sync_github_apps#private_key SecretsSyncGithubApps#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/secrets_sync_github_apps#private_key SecretsSyncGithubApps#private_key}
 
 ---
 
@@ -1120,7 +1120,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/secrets_sync_github_apps#id SecretsSyncGithubApps#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/secrets_sync_github_apps#id SecretsSyncGithubApps#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1137,7 +1137,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/secrets_sync_github_apps#namespace SecretsSyncGithubApps#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/secrets_sync_github_apps#namespace SecretsSyncGithubApps#namespace}
 
 ---
 
