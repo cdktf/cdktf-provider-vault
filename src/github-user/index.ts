@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/github_user
+// https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/github_user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface GithubUserConfig extends cdktf.TerraformMetaArguments {
   /**
   * Auth backend to which user mapping will be congigured.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/github_user#backend GithubUser#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/github_user#backend GithubUser#backend}
   */
   readonly backend?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/github_user#id GithubUser#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/github_user#id GithubUser#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,25 +23,25 @@ export interface GithubUserConfig extends cdktf.TerraformMetaArguments {
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/github_user#namespace GithubUser#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/github_user#namespace GithubUser#namespace}
   */
   readonly namespace?: string;
   /**
   * Policies to be assigned to this user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/github_user#policies GithubUser#policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/github_user#policies GithubUser#policies}
   */
   readonly policies?: string[];
   /**
   * GitHub user name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/github_user#user GithubUser#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/github_user#user GithubUser#user}
   */
   readonly user: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/github_user vault_github_user}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/github_user vault_github_user}
 */
 export class GithubUser extends cdktf.TerraformResource {
 
@@ -62,7 +57,7 @@ export class GithubUser extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GithubUser resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GithubUser to import
-  * @param importFromId The id of the existing GithubUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/github_user#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GithubUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/github_user#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GithubUser to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +69,7 @@ export class GithubUser extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/github_user vault_github_user} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/github_user vault_github_user} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,8 +80,8 @@ export class GithubUser extends cdktf.TerraformResource {
       terraformResourceType: 'vault_github_user',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '4.8.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.0.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
