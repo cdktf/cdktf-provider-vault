@@ -114,6 +114,7 @@ Object.defineProperty(exports, 'pkiSecretBackendConfigCluster', { get: function 
 Object.defineProperty(exports, 'pkiSecretBackendConfigCmpv2', { get: function () { return require('./pki-secret-backend-config-cmpv2'); } });
 Object.defineProperty(exports, 'pkiSecretBackendConfigEst', { get: function () { return require('./pki-secret-backend-config-est'); } });
 Object.defineProperty(exports, 'pkiSecretBackendConfigIssuers', { get: function () { return require('./pki-secret-backend-config-issuers'); } });
+Object.defineProperty(exports, 'pkiSecretBackendConfigScep', { get: function () { return require('./pki-secret-backend-config-scep'); } });
 Object.defineProperty(exports, 'pkiSecretBackendConfigUrls', { get: function () { return require('./pki-secret-backend-config-urls'); } });
 Object.defineProperty(exports, 'pkiSecretBackendCrlConfig', { get: function () { return require('./pki-secret-backend-crl-config'); } });
 Object.defineProperty(exports, 'pkiSecretBackendIntermediateCertRequest', { get: function () { return require('./pki-secret-backend-intermediate-cert-request'); } });
@@ -136,6 +137,7 @@ Object.defineProperty(exports, 'raftSnapshotAgentConfig', { get: function () { r
 Object.defineProperty(exports, 'rgpPolicy', { get: function () { return require('./rgp-policy'); } });
 Object.defineProperty(exports, 'samlAuthBackend', { get: function () { return require('./saml-auth-backend'); } });
 Object.defineProperty(exports, 'samlAuthBackendRole', { get: function () { return require('./saml-auth-backend-role'); } });
+Object.defineProperty(exports, 'scepAuthBackendRole', { get: function () { return require('./scep-auth-backend-role'); } });
 Object.defineProperty(exports, 'secretsSyncAssociation', { get: function () { return require('./secrets-sync-association'); } });
 Object.defineProperty(exports, 'secretsSyncAwsDestination', { get: function () { return require('./secrets-sync-aws-destination'); } });
 Object.defineProperty(exports, 'secretsSyncAzureDestination', { get: function () { return require('./secrets-sync-azure-destination'); } });
@@ -187,6 +189,7 @@ Object.defineProperty(exports, 'dataVaultNomadAccessToken', { get: function () {
 Object.defineProperty(exports, 'dataVaultPkiSecretBackendCertMetadata', { get: function () { return require('./data-vault-pki-secret-backend-cert-metadata'); } });
 Object.defineProperty(exports, 'dataVaultPkiSecretBackendConfigCmpv2', { get: function () { return require('./data-vault-pki-secret-backend-config-cmpv2'); } });
 Object.defineProperty(exports, 'dataVaultPkiSecretBackendConfigEst', { get: function () { return require('./data-vault-pki-secret-backend-config-est'); } });
+Object.defineProperty(exports, 'dataVaultPkiSecretBackendConfigScep', { get: function () { return require('./data-vault-pki-secret-backend-config-scep'); } });
 Object.defineProperty(exports, 'dataVaultPkiSecretBackendIssuer', { get: function () { return require('./data-vault-pki-secret-backend-issuer'); } });
 Object.defineProperty(exports, 'dataVaultPkiSecretBackendIssuers', { get: function () { return require('./data-vault-pki-secret-backend-issuers'); } });
 Object.defineProperty(exports, 'dataVaultPkiSecretBackendKey', { get: function () { return require('./data-vault-pki-secret-backend-key'); } });
@@ -196,6 +199,7 @@ Object.defineProperty(exports, 'dataVaultRaftAutopilotState', { get: function ()
 Object.defineProperty(exports, 'dataVaultSshSecretBackendSign', { get: function () { return require('./data-vault-ssh-secret-backend-sign'); } });
 Object.defineProperty(exports, 'dataVaultTransformDecode', { get: function () { return require('./data-vault-transform-decode'); } });
 Object.defineProperty(exports, 'dataVaultTransformEncode', { get: function () { return require('./data-vault-transform-encode'); } });
+Object.defineProperty(exports, 'dataVaultTransitCmac', { get: function () { return require('./data-vault-transit-cmac'); } });
 Object.defineProperty(exports, 'dataVaultTransitDecrypt', { get: function () { return require('./data-vault-transit-decrypt'); } });
 Object.defineProperty(exports, 'dataVaultTransitEncrypt', { get: function () { return require('./data-vault-transit-encrypt'); } });
 Object.defineProperty(exports, 'dataVaultTransitSign', { get: function () { return require('./data-vault-transit-sign'); } });

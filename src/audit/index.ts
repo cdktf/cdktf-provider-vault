@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/audit
+// https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/audit
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface AuditConfig extends cdktf.TerraformMetaArguments {
   /**
   * Human-friendly description of the audit device.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/audit#description Audit#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/audit#description Audit#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/audit#id Audit#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/audit#id Audit#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,37 +28,37 @@ export interface AuditConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies if the audit device is a local only. Local audit devices are not replicated nor (if a secondary) removed by replication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/audit#local Audit#local}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/audit#local Audit#local}
   */
   readonly local?: boolean | cdktf.IResolvable;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/audit#namespace Audit#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/audit#namespace Audit#namespace}
   */
   readonly namespace?: string;
   /**
   * Configuration options to pass to the audit device itself.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/audit#options Audit#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/audit#options Audit#options}
   */
   readonly options: { [key: string]: string };
   /**
   * Path in which to enable the audit device.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/audit#path Audit#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/audit#path Audit#path}
   */
   readonly path?: string;
   /**
   * Type of the audit device, such as 'file'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/audit#type Audit#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/audit#type Audit#type}
   */
   readonly type: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/audit vault_audit}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/audit vault_audit}
 */
 export class Audit extends cdktf.TerraformResource {
 
@@ -74,7 +74,7 @@ export class Audit extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Audit resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Audit to import
-  * @param importFromId The id of the existing Audit that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/audit#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Audit that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/audit#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Audit to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -86,7 +86,7 @@ export class Audit extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/audit vault_audit} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/audit vault_audit} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -97,7 +97,7 @@ export class Audit extends cdktf.TerraformResource {
       terraformResourceType: 'vault_audit',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.0.0',
+        providerVersion: '5.1.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
