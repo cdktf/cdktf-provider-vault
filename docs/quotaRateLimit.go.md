@@ -4,7 +4,7 @@
 
 ### QuotaRateLimit <a name="QuotaRateLimit" id="@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/quota_rate_limit vault_quota_rate_limit}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/quota_rate_limit vault_quota_rate_limit}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.Initializer"></a>
 
@@ -74,12 +74,14 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.resetBlockInterval">ResetBlockInterval</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.resetGroupBy">ResetGroupBy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.resetInheritable">ResetInheritable</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.resetInterval">ResetInterval</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.resetNamespace">ResetNamespace</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.resetPath">ResetPath</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.resetRole">ResetRole</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.resetSecondaryRate">ResetSecondaryRate</a></code> | *No description.* |
 
 ---
 
@@ -377,6 +379,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 func ResetBlockInterval()
 ```
 
+##### `ResetGroupBy` <a name="ResetGroupBy" id="@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.resetGroupBy"></a>
+
+```go
+func ResetGroupBy()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.resetId"></a>
 
 ```go
@@ -411,6 +419,12 @@ func ResetPath()
 
 ```go
 func ResetRole()
+```
+
+##### `ResetSecondaryRate` <a name="ResetSecondaryRate" id="@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.resetSecondaryRate"></a>
+
+```go
+func ResetSecondaryRate()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -516,7 +530,7 @@ The construct id used in the generated config for the QuotaRateLimit to import.
 
 The id of the existing QuotaRateLimit that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/quota_rate_limit#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/quota_rate_limit#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -547,6 +561,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.blockIntervalInput">BlockIntervalInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.groupByInput">GroupByInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.inheritableInput">InheritableInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.intervalInput">IntervalInput</a></code> | <code>*f64</code> | *No description.* |
@@ -555,7 +570,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.pathInput">PathInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.rateInput">RateInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.roleInput">RoleInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.secondaryRateInput">SecondaryRateInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.blockInterval">BlockInterval</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.groupBy">GroupBy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.inheritable">Inheritable</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.interval">Interval</a></code> | <code>*f64</code> | *No description.* |
@@ -564,6 +581,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.path">Path</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.rate">Rate</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.role">Role</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.secondaryRate">SecondaryRate</a></code> | <code>*f64</code> | *No description.* |
 
 ---
 
@@ -719,6 +737,16 @@ func BlockIntervalInput() *f64
 
 ---
 
+##### `GroupByInput`<sup>Optional</sup> <a name="GroupByInput" id="@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.groupByInput"></a>
+
+```go
+func GroupByInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.idInput"></a>
 
 ```go
@@ -799,6 +827,16 @@ func RoleInput() *string
 
 ---
 
+##### `SecondaryRateInput`<sup>Optional</sup> <a name="SecondaryRateInput" id="@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.secondaryRateInput"></a>
+
+```go
+func SecondaryRateInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `BlockInterval`<sup>Required</sup> <a name="BlockInterval" id="@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.blockInterval"></a>
 
 ```go
@@ -806,6 +844,16 @@ func BlockInterval() *f64
 ```
 
 - *Type:* *f64
+
+---
+
+##### `GroupBy`<sup>Required</sup> <a name="GroupBy" id="@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.groupBy"></a>
+
+```go
+func GroupBy() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -889,6 +937,16 @@ func Role() *string
 
 ---
 
+##### `SecondaryRate`<sup>Required</sup> <a name="SecondaryRate" id="@cdktf/provider-vault.quotaRateLimit.QuotaRateLimit.property.secondaryRate"></a>
+
+```go
+func SecondaryRate() *f64
+```
+
+- *Type:* *f64
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -927,12 +985,14 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/quotaratelimit"
 	Name: *string,
 	Rate: *f64,
 	BlockInterval: *f64,
+	GroupBy: *string,
 	Id: *string,
 	Inheritable: interface{},
 	Interval: *f64,
 	Namespace: *string,
 	Path: *string,
 	Role: *string,
+	SecondaryRate: *f64,
 }
 ```
 
@@ -950,12 +1010,14 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/quotaratelimit"
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimitConfig.property.name">Name</a></code> | <code>*string</code> | The name of the quota. |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimitConfig.property.rate">Rate</a></code> | <code>*f64</code> | The maximum number of requests at any given second to be allowed by the quota rule. |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimitConfig.property.blockInterval">BlockInterval</a></code> | <code>*f64</code> | If set, when a client reaches a rate limit threshold, the client will be prohibited from any further requests until after the 'block_interval' in seconds has elapsed. |
-| <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimitConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/quota_rate_limit#id QuotaRateLimit#id}. |
+| <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimitConfig.property.groupBy">GroupBy</a></code> | <code>*string</code> | Attribute used to group requests for rate limiting. |
+| <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimitConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/quota_rate_limit#id QuotaRateLimit#id}. |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimitConfig.property.inheritable">Inheritable</a></code> | <code>interface{}</code> | If set to true on a quota where path is set to a namespace, the same quota will be cumulatively applied to all child namespace. |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimitConfig.property.interval">Interval</a></code> | <code>*f64</code> | The duration in seconds to enforce rate limiting for. |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimitConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimitConfig.property.path">Path</a></code> | <code>*string</code> | Path of the mount or namespace to apply the quota. A blank path configures a global rate limit quota. |
 | <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimitConfig.property.role">Role</a></code> | <code>*string</code> | If set on a quota where path is set to an auth mount with a concept of roles (such as /auth/approle/), this will make the quota restrict login requests to that mount that are made with the specified role. |
+| <code><a href="#@cdktf/provider-vault.quotaRateLimit.QuotaRateLimitConfig.property.secondaryRate">SecondaryRate</a></code> | <code>*f64</code> | Only available when using the "entity_then_ip" or "entity_then_none" group_by modes. |
 
 ---
 
@@ -1039,7 +1101,7 @@ Name *string
 
 The name of the quota.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/quota_rate_limit#name QuotaRateLimit#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/quota_rate_limit#name QuotaRateLimit#name}
 
 ---
 
@@ -1055,7 +1117,7 @@ The maximum number of requests at any given second to be allowed by the quota ru
 
 The rate must be positive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/quota_rate_limit#rate QuotaRateLimit#rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/quota_rate_limit#rate QuotaRateLimit#rate}
 
 ---
 
@@ -1069,7 +1131,23 @@ BlockInterval *f64
 
 If set, when a client reaches a rate limit threshold, the client will be prohibited from any further requests until after the 'block_interval' in seconds has elapsed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/quota_rate_limit#block_interval QuotaRateLimit#block_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/quota_rate_limit#block_interval QuotaRateLimit#block_interval}
+
+---
+
+##### `GroupBy`<sup>Optional</sup> <a name="GroupBy" id="@cdktf/provider-vault.quotaRateLimit.QuotaRateLimitConfig.property.groupBy"></a>
+
+```go
+GroupBy *string
+```
+
+- *Type:* *string
+
+Attribute used to group requests for rate limiting.
+
+Limits are enforced independently for each group. Valid group_by modes are: 1) "ip" that groups requests by their source IP address (group_by defaults to ip if unset); 2) "none" that groups all requests that match the rate limit quota rule together; 3) "entity_then_ip" that groups requests by their entity ID for authenticated requests that carry one, or by their IP for unauthenticated requests (or requests whose authentication is not connected to an entity); and 4) "entity_then_none" which also groups requests by their entity ID when available, but the rest is all grouped together (i.e. unauthenticated or with authentication not connected to an entity).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/quota_rate_limit#group_by QuotaRateLimit#group_by}
 
 ---
 
@@ -1081,7 +1159,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/quota_rate_limit#id QuotaRateLimit#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/quota_rate_limit#id QuotaRateLimit#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1100,7 +1178,7 @@ If set to true on a quota where path is set to a namespace, the same quota will 
 
 The inheritable parameter cannot be set to true if the path does not specify a namespace. Only the quotas associated with the root namespace are inheritable by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/quota_rate_limit#inheritable QuotaRateLimit#inheritable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/quota_rate_limit#inheritable QuotaRateLimit#inheritable}
 
 ---
 
@@ -1114,7 +1192,7 @@ Interval *f64
 
 The duration in seconds to enforce rate limiting for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/quota_rate_limit#interval QuotaRateLimit#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/quota_rate_limit#interval QuotaRateLimit#interval}
 
 ---
 
@@ -1128,7 +1206,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/quota_rate_limit#namespace QuotaRateLimit#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/quota_rate_limit#namespace QuotaRateLimit#namespace}
 
 ---
 
@@ -1142,7 +1220,7 @@ Path *string
 
 Path of the mount or namespace to apply the quota. A blank path configures a global rate limit quota.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/quota_rate_limit#path QuotaRateLimit#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/quota_rate_limit#path QuotaRateLimit#path}
 
 ---
 
@@ -1156,7 +1234,23 @@ Role *string
 
 If set on a quota where path is set to an auth mount with a concept of roles (such as /auth/approle/), this will make the quota restrict login requests to that mount that are made with the specified role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/quota_rate_limit#role QuotaRateLimit#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/quota_rate_limit#role QuotaRateLimit#role}
+
+---
+
+##### `SecondaryRate`<sup>Optional</sup> <a name="SecondaryRate" id="@cdktf/provider-vault.quotaRateLimit.QuotaRateLimitConfig.property.secondaryRate"></a>
+
+```go
+SecondaryRate *f64
+```
+
+- *Type:* *f64
+
+Only available when using the "entity_then_ip" or "entity_then_none" group_by modes.
+
+This is the rate limit applied to the requests that fall under the "ip" or "none" groupings, while the authenticated requests that contain an entity ID are subject to the "rate" field instead. Defaults to the same value as "rate".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/quota_rate_limit#secondary_rate QuotaRateLimit#secondary_rate}
 
 ---
 
