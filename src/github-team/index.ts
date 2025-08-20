@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/github_team
+// https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/github_team
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface GithubTeamConfig extends cdktf.TerraformMetaArguments {
   /**
   * Auth backend to which team mapping will be configured.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/github_team#backend GithubTeam#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/github_team#backend GithubTeam#backend}
   */
   readonly backend?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/github_team#id GithubTeam#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/github_team#id GithubTeam#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,25 +28,25 @@ export interface GithubTeamConfig extends cdktf.TerraformMetaArguments {
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/github_team#namespace GithubTeam#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/github_team#namespace GithubTeam#namespace}
   */
   readonly namespace?: string;
   /**
   * Policies to be assigned to this team.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/github_team#policies GithubTeam#policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/github_team#policies GithubTeam#policies}
   */
   readonly policies?: string[];
   /**
   * GitHub team name in "slugified" format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/github_team#team GithubTeam#team}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/github_team#team GithubTeam#team}
   */
   readonly team: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/github_team vault_github_team}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/github_team vault_github_team}
 */
 export class GithubTeam extends cdktf.TerraformResource {
 
@@ -62,7 +62,7 @@ export class GithubTeam extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GithubTeam resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GithubTeam to import
-  * @param importFromId The id of the existing GithubTeam that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/github_team#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GithubTeam that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/github_team#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GithubTeam to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +74,7 @@ export class GithubTeam extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/github_team vault_github_team} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/github_team vault_github_team} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,7 @@ export class GithubTeam extends cdktf.TerraformResource {
       terraformResourceType: 'vault_github_team',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.1.0',
+        providerVersion: '5.2.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

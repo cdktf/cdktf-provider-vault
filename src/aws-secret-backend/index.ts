@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/aws_secret_backend
+// https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,41 +15,83 @@ export interface AwsSecretBackendConfig extends cdktf.TerraformMetaArguments {
   /**
   * The AWS Access Key ID to use when generating new credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/aws_secret_backend#access_key AwsSecretBackend#access_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend#access_key AwsSecretBackend#access_key}
   */
   readonly accessKey?: string;
   /**
+  * List of managed key registry entry names that the mount in question is allowed to access
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend#allowed_managed_keys AwsSecretBackend#allowed_managed_keys}
+  */
+  readonly allowedManagedKeys?: string[];
+  /**
+  * List of headers to allow and pass from the request to the plugin
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend#allowed_response_headers AwsSecretBackend#allowed_response_headers}
+  */
+  readonly allowedResponseHeaders?: string[];
+  /**
+  * Specifies the list of keys that will not be HMAC'd by audit devices in the request data object.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend#audit_non_hmac_request_keys AwsSecretBackend#audit_non_hmac_request_keys}
+  */
+  readonly auditNonHmacRequestKeys?: string[];
+  /**
+  * Specifies the list of keys that will not be HMAC'd by audit devices in the response data object.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend#audit_non_hmac_response_keys AwsSecretBackend#audit_non_hmac_response_keys}
+  */
+  readonly auditNonHmacResponseKeys?: string[];
+  /**
   * Default lease duration for secrets in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/aws_secret_backend#default_lease_ttl_seconds AwsSecretBackend#default_lease_ttl_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend#default_lease_ttl_seconds AwsSecretBackend#default_lease_ttl_seconds}
   */
   readonly defaultLeaseTtlSeconds?: number;
   /**
+  * List of headers to allow and pass from the request to the plugin
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend#delegated_auth_accessors AwsSecretBackend#delegated_auth_accessors}
+  */
+  readonly delegatedAuthAccessors?: string[];
+  /**
   * Human-friendly description of the mount for the backend.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/aws_secret_backend#description AwsSecretBackend#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend#description AwsSecretBackend#description}
   */
   readonly description?: string;
   /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/aws_secret_backend#disable_automated_rotation AwsSecretBackend#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend#disable_automated_rotation AwsSecretBackend#disable_automated_rotation}
   */
   readonly disableAutomatedRotation?: boolean | cdktf.IResolvable;
   /**
   * If set, opts out of mount migration on path updates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/aws_secret_backend#disable_remount AwsSecretBackend#disable_remount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend#disable_remount AwsSecretBackend#disable_remount}
   */
   readonly disableRemount?: boolean | cdktf.IResolvable;
   /**
+  * Enable the secrets engine to access Vault's external entropy source
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend#external_entropy_access AwsSecretBackend#external_entropy_access}
+  */
+  readonly externalEntropyAccess?: boolean | cdktf.IResolvable;
+  /**
+  * If set to true, disables caching.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend#force_no_cache AwsSecretBackend#force_no_cache}
+  */
+  readonly forceNoCache?: boolean | cdktf.IResolvable;
+  /**
   * Specifies a custom HTTP IAM endpoint to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/aws_secret_backend#iam_endpoint AwsSecretBackend#iam_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend#iam_endpoint AwsSecretBackend#iam_endpoint}
   */
   readonly iamEndpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/aws_secret_backend#id AwsSecretBackend#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend#id AwsSecretBackend#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,115 +100,145 @@ export interface AwsSecretBackendConfig extends cdktf.TerraformMetaArguments {
   /**
   * The audience claim value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/aws_secret_backend#identity_token_audience AwsSecretBackend#identity_token_audience}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend#identity_token_audience AwsSecretBackend#identity_token_audience}
   */
   readonly identityTokenAudience?: string;
   /**
   * The key to use for signing identity tokens.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/aws_secret_backend#identity_token_key AwsSecretBackend#identity_token_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend#identity_token_key AwsSecretBackend#identity_token_key}
   */
   readonly identityTokenKey?: string;
   /**
   * The TTL of generated identity tokens in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/aws_secret_backend#identity_token_ttl AwsSecretBackend#identity_token_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend#identity_token_ttl AwsSecretBackend#identity_token_ttl}
   */
   readonly identityTokenTtl?: number;
   /**
+  * Specifies whether to show this mount in the UI-specific listing endpoint
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend#listing_visibility AwsSecretBackend#listing_visibility}
+  */
+  readonly listingVisibility?: string;
+  /**
   * Specifies if the secret backend is local only
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/aws_secret_backend#local AwsSecretBackend#local}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend#local AwsSecretBackend#local}
   */
   readonly local?: boolean | cdktf.IResolvable;
   /**
   * Maximum possible lease duration for secrets in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/aws_secret_backend#max_lease_ttl_seconds AwsSecretBackend#max_lease_ttl_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend#max_lease_ttl_seconds AwsSecretBackend#max_lease_ttl_seconds}
   */
   readonly maxLeaseTtlSeconds?: number;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/aws_secret_backend#namespace AwsSecretBackend#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend#namespace AwsSecretBackend#namespace}
   */
   readonly namespace?: string;
   /**
+  * Specifies mount type specific options that are passed to the backend
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend#options AwsSecretBackend#options}
+  */
+  readonly options?: { [key: string]: string };
+  /**
+  * List of headers to allow and pass from the request to the plugin
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend#passthrough_request_headers AwsSecretBackend#passthrough_request_headers}
+  */
+  readonly passthroughRequestHeaders?: string[];
+  /**
   * Path to mount the backend at.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/aws_secret_backend#path AwsSecretBackend#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend#path AwsSecretBackend#path}
   */
   readonly path?: string;
   /**
+  * Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend#plugin_version AwsSecretBackend#plugin_version}
+  */
+  readonly pluginVersion?: string;
+  /**
   * The AWS region to make API calls against. Defaults to us-east-1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/aws_secret_backend#region AwsSecretBackend#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend#region AwsSecretBackend#region}
   */
   readonly region?: string;
   /**
   * Role ARN to assume for plugin identity token federation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/aws_secret_backend#role_arn AwsSecretBackend#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend#role_arn AwsSecretBackend#role_arn}
   */
   readonly roleArn?: string;
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/aws_secret_backend#rotation_period AwsSecretBackend#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend#rotation_period AwsSecretBackend#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/aws_secret_backend#rotation_schedule AwsSecretBackend#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend#rotation_schedule AwsSecretBackend#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/aws_secret_backend#rotation_window AwsSecretBackend#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend#rotation_window AwsSecretBackend#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
+  * Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend#seal_wrap AwsSecretBackend#seal_wrap}
+  */
+  readonly sealWrap?: boolean | cdktf.IResolvable;
+  /**
   * The AWS Secret Access Key to use when generating new credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/aws_secret_backend#secret_key AwsSecretBackend#secret_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend#secret_key AwsSecretBackend#secret_key}
   */
   readonly secretKey?: string;
   /**
   * Specifies a custom HTTP STS endpoint to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/aws_secret_backend#sts_endpoint AwsSecretBackend#sts_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend#sts_endpoint AwsSecretBackend#sts_endpoint}
   */
   readonly stsEndpoint?: string;
   /**
   * Specifies a list of custom STS fallback endpoints to use (in order).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/aws_secret_backend#sts_fallback_endpoints AwsSecretBackend#sts_fallback_endpoints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend#sts_fallback_endpoints AwsSecretBackend#sts_fallback_endpoints}
   */
   readonly stsFallbackEndpoints?: string[];
   /**
   * Specifies a list of custom STS fallback regions to use (in order).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/aws_secret_backend#sts_fallback_regions AwsSecretBackend#sts_fallback_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend#sts_fallback_regions AwsSecretBackend#sts_fallback_regions}
   */
   readonly stsFallbackRegions?: string[];
   /**
   * Specifies a custom STS region to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/aws_secret_backend#sts_region AwsSecretBackend#sts_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend#sts_region AwsSecretBackend#sts_region}
   */
   readonly stsRegion?: string;
   /**
   * Template describing how dynamic usernames are generated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/aws_secret_backend#username_template AwsSecretBackend#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend#username_template AwsSecretBackend#username_template}
   */
   readonly usernameTemplate?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/aws_secret_backend vault_aws_secret_backend}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend vault_aws_secret_backend}
 */
 export class AwsSecretBackend extends cdktf.TerraformResource {
 
@@ -182,7 +254,7 @@ export class AwsSecretBackend extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AwsSecretBackend resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AwsSecretBackend to import
-  * @param importFromId The id of the existing AwsSecretBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/aws_secret_backend#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AwsSecretBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AwsSecretBackend to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -194,7 +266,7 @@ export class AwsSecretBackend extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/aws_secret_backend vault_aws_secret_backend} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend vault_aws_secret_backend} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -205,7 +277,7 @@ export class AwsSecretBackend extends cdktf.TerraformResource {
       terraformResourceType: 'vault_aws_secret_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.1.0',
+        providerVersion: '5.2.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -217,24 +289,36 @@ export class AwsSecretBackend extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._accessKey = config.accessKey;
+    this._allowedManagedKeys = config.allowedManagedKeys;
+    this._allowedResponseHeaders = config.allowedResponseHeaders;
+    this._auditNonHmacRequestKeys = config.auditNonHmacRequestKeys;
+    this._auditNonHmacResponseKeys = config.auditNonHmacResponseKeys;
     this._defaultLeaseTtlSeconds = config.defaultLeaseTtlSeconds;
+    this._delegatedAuthAccessors = config.delegatedAuthAccessors;
     this._description = config.description;
     this._disableAutomatedRotation = config.disableAutomatedRotation;
     this._disableRemount = config.disableRemount;
+    this._externalEntropyAccess = config.externalEntropyAccess;
+    this._forceNoCache = config.forceNoCache;
     this._iamEndpoint = config.iamEndpoint;
     this._id = config.id;
     this._identityTokenAudience = config.identityTokenAudience;
     this._identityTokenKey = config.identityTokenKey;
     this._identityTokenTtl = config.identityTokenTtl;
+    this._listingVisibility = config.listingVisibility;
     this._local = config.local;
     this._maxLeaseTtlSeconds = config.maxLeaseTtlSeconds;
     this._namespace = config.namespace;
+    this._options = config.options;
+    this._passthroughRequestHeaders = config.passthroughRequestHeaders;
     this._path = config.path;
+    this._pluginVersion = config.pluginVersion;
     this._region = config.region;
     this._roleArn = config.roleArn;
     this._rotationPeriod = config.rotationPeriod;
     this._rotationSchedule = config.rotationSchedule;
     this._rotationWindow = config.rotationWindow;
+    this._sealWrap = config.sealWrap;
     this._secretKey = config.secretKey;
     this._stsEndpoint = config.stsEndpoint;
     this._stsFallbackEndpoints = config.stsFallbackEndpoints;
@@ -263,6 +347,75 @@ export class AwsSecretBackend extends cdktf.TerraformResource {
     return this._accessKey;
   }
 
+  // accessor - computed: true, optional: false, required: false
+  public get accessor() {
+    return this.getStringAttribute('accessor');
+  }
+
+  // allowed_managed_keys - computed: false, optional: true, required: false
+  private _allowedManagedKeys?: string[]; 
+  public get allowedManagedKeys() {
+    return cdktf.Fn.tolist(this.getListAttribute('allowed_managed_keys'));
+  }
+  public set allowedManagedKeys(value: string[]) {
+    this._allowedManagedKeys = value;
+  }
+  public resetAllowedManagedKeys() {
+    this._allowedManagedKeys = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedManagedKeysInput() {
+    return this._allowedManagedKeys;
+  }
+
+  // allowed_response_headers - computed: false, optional: true, required: false
+  private _allowedResponseHeaders?: string[]; 
+  public get allowedResponseHeaders() {
+    return this.getListAttribute('allowed_response_headers');
+  }
+  public set allowedResponseHeaders(value: string[]) {
+    this._allowedResponseHeaders = value;
+  }
+  public resetAllowedResponseHeaders() {
+    this._allowedResponseHeaders = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedResponseHeadersInput() {
+    return this._allowedResponseHeaders;
+  }
+
+  // audit_non_hmac_request_keys - computed: true, optional: true, required: false
+  private _auditNonHmacRequestKeys?: string[]; 
+  public get auditNonHmacRequestKeys() {
+    return this.getListAttribute('audit_non_hmac_request_keys');
+  }
+  public set auditNonHmacRequestKeys(value: string[]) {
+    this._auditNonHmacRequestKeys = value;
+  }
+  public resetAuditNonHmacRequestKeys() {
+    this._auditNonHmacRequestKeys = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get auditNonHmacRequestKeysInput() {
+    return this._auditNonHmacRequestKeys;
+  }
+
+  // audit_non_hmac_response_keys - computed: true, optional: true, required: false
+  private _auditNonHmacResponseKeys?: string[]; 
+  public get auditNonHmacResponseKeys() {
+    return this.getListAttribute('audit_non_hmac_response_keys');
+  }
+  public set auditNonHmacResponseKeys(value: string[]) {
+    this._auditNonHmacResponseKeys = value;
+  }
+  public resetAuditNonHmacResponseKeys() {
+    this._auditNonHmacResponseKeys = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get auditNonHmacResponseKeysInput() {
+    return this._auditNonHmacResponseKeys;
+  }
+
   // default_lease_ttl_seconds - computed: true, optional: true, required: false
   private _defaultLeaseTtlSeconds?: number; 
   public get defaultLeaseTtlSeconds() {
@@ -277,6 +430,22 @@ export class AwsSecretBackend extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get defaultLeaseTtlSecondsInput() {
     return this._defaultLeaseTtlSeconds;
+  }
+
+  // delegated_auth_accessors - computed: false, optional: true, required: false
+  private _delegatedAuthAccessors?: string[]; 
+  public get delegatedAuthAccessors() {
+    return this.getListAttribute('delegated_auth_accessors');
+  }
+  public set delegatedAuthAccessors(value: string[]) {
+    this._delegatedAuthAccessors = value;
+  }
+  public resetDelegatedAuthAccessors() {
+    this._delegatedAuthAccessors = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get delegatedAuthAccessorsInput() {
+    return this._delegatedAuthAccessors;
   }
 
   // description - computed: false, optional: true, required: false
@@ -325,6 +494,38 @@ export class AwsSecretBackend extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get disableRemountInput() {
     return this._disableRemount;
+  }
+
+  // external_entropy_access - computed: false, optional: true, required: false
+  private _externalEntropyAccess?: boolean | cdktf.IResolvable; 
+  public get externalEntropyAccess() {
+    return this.getBooleanAttribute('external_entropy_access');
+  }
+  public set externalEntropyAccess(value: boolean | cdktf.IResolvable) {
+    this._externalEntropyAccess = value;
+  }
+  public resetExternalEntropyAccess() {
+    this._externalEntropyAccess = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get externalEntropyAccessInput() {
+    return this._externalEntropyAccess;
+  }
+
+  // force_no_cache - computed: true, optional: true, required: false
+  private _forceNoCache?: boolean | cdktf.IResolvable; 
+  public get forceNoCache() {
+    return this.getBooleanAttribute('force_no_cache');
+  }
+  public set forceNoCache(value: boolean | cdktf.IResolvable) {
+    this._forceNoCache = value;
+  }
+  public resetForceNoCache() {
+    this._forceNoCache = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forceNoCacheInput() {
+    return this._forceNoCache;
   }
 
   // iam_endpoint - computed: false, optional: true, required: false
@@ -407,6 +608,22 @@ export class AwsSecretBackend extends cdktf.TerraformResource {
     return this._identityTokenTtl;
   }
 
+  // listing_visibility - computed: false, optional: true, required: false
+  private _listingVisibility?: string; 
+  public get listingVisibility() {
+    return this.getStringAttribute('listing_visibility');
+  }
+  public set listingVisibility(value: string) {
+    this._listingVisibility = value;
+  }
+  public resetListingVisibility() {
+    this._listingVisibility = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get listingVisibilityInput() {
+    return this._listingVisibility;
+  }
+
   // local - computed: false, optional: true, required: false
   private _local?: boolean | cdktf.IResolvable; 
   public get local() {
@@ -455,6 +672,38 @@ export class AwsSecretBackend extends cdktf.TerraformResource {
     return this._namespace;
   }
 
+  // options - computed: false, optional: true, required: false
+  private _options?: { [key: string]: string }; 
+  public get options() {
+    return this.getStringMapAttribute('options');
+  }
+  public set options(value: { [key: string]: string }) {
+    this._options = value;
+  }
+  public resetOptions() {
+    this._options = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get optionsInput() {
+    return this._options;
+  }
+
+  // passthrough_request_headers - computed: false, optional: true, required: false
+  private _passthroughRequestHeaders?: string[]; 
+  public get passthroughRequestHeaders() {
+    return this.getListAttribute('passthrough_request_headers');
+  }
+  public set passthroughRequestHeaders(value: string[]) {
+    this._passthroughRequestHeaders = value;
+  }
+  public resetPassthroughRequestHeaders() {
+    this._passthroughRequestHeaders = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passthroughRequestHeadersInput() {
+    return this._passthroughRequestHeaders;
+  }
+
   // path - computed: false, optional: true, required: false
   private _path?: string; 
   public get path() {
@@ -469,6 +718,22 @@ export class AwsSecretBackend extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get pathInput() {
     return this._path;
+  }
+
+  // plugin_version - computed: false, optional: true, required: false
+  private _pluginVersion?: string; 
+  public get pluginVersion() {
+    return this.getStringAttribute('plugin_version');
+  }
+  public set pluginVersion(value: string) {
+    this._pluginVersion = value;
+  }
+  public resetPluginVersion() {
+    this._pluginVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pluginVersionInput() {
+    return this._pluginVersion;
   }
 
   // region - computed: true, optional: true, required: false
@@ -549,6 +814,22 @@ export class AwsSecretBackend extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get rotationWindowInput() {
     return this._rotationWindow;
+  }
+
+  // seal_wrap - computed: true, optional: true, required: false
+  private _sealWrap?: boolean | cdktf.IResolvable; 
+  public get sealWrap() {
+    return this.getBooleanAttribute('seal_wrap');
+  }
+  public set sealWrap(value: boolean | cdktf.IResolvable) {
+    this._sealWrap = value;
+  }
+  public resetSealWrap() {
+    this._sealWrap = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sealWrapInput() {
+    return this._sealWrap;
   }
 
   // secret_key - computed: false, optional: true, required: false
@@ -654,24 +935,36 @@ export class AwsSecretBackend extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       access_key: cdktf.stringToTerraform(this._accessKey),
+      allowed_managed_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedManagedKeys),
+      allowed_response_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedResponseHeaders),
+      audit_non_hmac_request_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._auditNonHmacRequestKeys),
+      audit_non_hmac_response_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._auditNonHmacResponseKeys),
       default_lease_ttl_seconds: cdktf.numberToTerraform(this._defaultLeaseTtlSeconds),
+      delegated_auth_accessors: cdktf.listMapper(cdktf.stringToTerraform, false)(this._delegatedAuthAccessors),
       description: cdktf.stringToTerraform(this._description),
       disable_automated_rotation: cdktf.booleanToTerraform(this._disableAutomatedRotation),
       disable_remount: cdktf.booleanToTerraform(this._disableRemount),
+      external_entropy_access: cdktf.booleanToTerraform(this._externalEntropyAccess),
+      force_no_cache: cdktf.booleanToTerraform(this._forceNoCache),
       iam_endpoint: cdktf.stringToTerraform(this._iamEndpoint),
       id: cdktf.stringToTerraform(this._id),
       identity_token_audience: cdktf.stringToTerraform(this._identityTokenAudience),
       identity_token_key: cdktf.stringToTerraform(this._identityTokenKey),
       identity_token_ttl: cdktf.numberToTerraform(this._identityTokenTtl),
+      listing_visibility: cdktf.stringToTerraform(this._listingVisibility),
       local: cdktf.booleanToTerraform(this._local),
       max_lease_ttl_seconds: cdktf.numberToTerraform(this._maxLeaseTtlSeconds),
       namespace: cdktf.stringToTerraform(this._namespace),
+      options: cdktf.hashMapper(cdktf.stringToTerraform)(this._options),
+      passthrough_request_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._passthroughRequestHeaders),
       path: cdktf.stringToTerraform(this._path),
+      plugin_version: cdktf.stringToTerraform(this._pluginVersion),
       region: cdktf.stringToTerraform(this._region),
       role_arn: cdktf.stringToTerraform(this._roleArn),
       rotation_period: cdktf.numberToTerraform(this._rotationPeriod),
       rotation_schedule: cdktf.stringToTerraform(this._rotationSchedule),
       rotation_window: cdktf.numberToTerraform(this._rotationWindow),
+      seal_wrap: cdktf.booleanToTerraform(this._sealWrap),
       secret_key: cdktf.stringToTerraform(this._secretKey),
       sts_endpoint: cdktf.stringToTerraform(this._stsEndpoint),
       sts_fallback_endpoints: cdktf.listMapper(cdktf.stringToTerraform, false)(this._stsFallbackEndpoints),
@@ -689,11 +982,41 @@ export class AwsSecretBackend extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      allowed_managed_keys: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedManagedKeys),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      allowed_response_headers: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedResponseHeaders),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      audit_non_hmac_request_keys: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._auditNonHmacRequestKeys),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      audit_non_hmac_response_keys: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._auditNonHmacResponseKeys),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
       default_lease_ttl_seconds: {
         value: cdktf.numberToHclTerraform(this._defaultLeaseTtlSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
+      },
+      delegated_auth_accessors: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._delegatedAuthAccessors),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
       },
       description: {
         value: cdktf.stringToHclTerraform(this._description),
@@ -709,6 +1032,18 @@ export class AwsSecretBackend extends cdktf.TerraformResource {
       },
       disable_remount: {
         value: cdktf.booleanToHclTerraform(this._disableRemount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      external_entropy_access: {
+        value: cdktf.booleanToHclTerraform(this._externalEntropyAccess),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      force_no_cache: {
+        value: cdktf.booleanToHclTerraform(this._forceNoCache),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
@@ -743,6 +1078,12 @@ export class AwsSecretBackend extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "number",
       },
+      listing_visibility: {
+        value: cdktf.stringToHclTerraform(this._listingVisibility),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       local: {
         value: cdktf.booleanToHclTerraform(this._local),
         isBlock: false,
@@ -761,8 +1102,26 @@ export class AwsSecretBackend extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      options: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._options),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      passthrough_request_headers: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._passthroughRequestHeaders),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
       path: {
         value: cdktf.stringToHclTerraform(this._path),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      plugin_version: {
+        value: cdktf.stringToHclTerraform(this._pluginVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -796,6 +1155,12 @@ export class AwsSecretBackend extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "number",
+      },
+      seal_wrap: {
+        value: cdktf.booleanToHclTerraform(this._sealWrap),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
       secret_key: {
         value: cdktf.stringToHclTerraform(this._secretKey),

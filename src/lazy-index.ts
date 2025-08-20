@@ -101,6 +101,8 @@ Object.defineProperty(exports, 'mount', { get: function () { return require('./m
 Object.defineProperty(exports, 'namespace', { get: function () { return require('./namespace'); } });
 Object.defineProperty(exports, 'nomadSecretBackend', { get: function () { return require('./nomad-secret-backend'); } });
 Object.defineProperty(exports, 'nomadSecretRole', { get: function () { return require('./nomad-secret-role'); } });
+Object.defineProperty(exports, 'ociAuthBackend', { get: function () { return require('./oci-auth-backend'); } });
+Object.defineProperty(exports, 'ociAuthBackendRole', { get: function () { return require('./oci-auth-backend-role'); } });
 Object.defineProperty(exports, 'oktaAuthBackend', { get: function () { return require('./okta-auth-backend'); } });
 Object.defineProperty(exports, 'oktaAuthBackendGroup', { get: function () { return require('./okta-auth-backend-group'); } });
 Object.defineProperty(exports, 'oktaAuthBackendUser', { get: function () { return require('./okta-auth-backend-user'); } });

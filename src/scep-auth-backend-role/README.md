@@ -1,3 +1,3 @@
 # `vault_scep_auth_backend_role`
 
-Refer to the Terraform Registry for docs: [`vault_scep_auth_backend_role`](https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/scep_auth_backend_role).
+Refer to the Terraform Registry for docs: [`vault_scep_auth_backend_role`](https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/scep_auth_backend_role).

@@ -101,6 +101,8 @@ export * as mount from './mount';
 export * as namespace from './namespace';
 export * as nomadSecretBackend from './nomad-secret-backend';
 export * as nomadSecretRole from './nomad-secret-role';
+export * as ociAuthBackend from './oci-auth-backend';
+export * as ociAuthBackendRole from './oci-auth-backend-role';
 export * as oktaAuthBackend from './okta-auth-backend';
 export * as oktaAuthBackendGroup from './okta-auth-backend-group';
 export * as oktaAuthBackendUser from './okta-auth-backend-user';
