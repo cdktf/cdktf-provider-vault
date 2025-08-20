@@ -4,7 +4,7 @@
 
 ### ConsulSecretBackend <a name="ConsulSecretBackend" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/consul_secret_backend vault_consul_secret_backend}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/consul_secret_backend vault_consul_secret_backend}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.Initializer"></a>
 
@@ -73,19 +73,32 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetAllowedManagedKeys">resetAllowedManagedKeys</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetAllowedResponseHeaders">resetAllowedResponseHeaders</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetAuditNonHmacRequestKeys">resetAuditNonHmacRequestKeys</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetAuditNonHmacResponseKeys">resetAuditNonHmacResponseKeys</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetBootstrap">resetBootstrap</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetCaCert">resetCaCert</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetClientCert">resetClientCert</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetClientKey">resetClientKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetDefaultLeaseTtlSeconds">resetDefaultLeaseTtlSeconds</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetDelegatedAuthAccessors">resetDelegatedAuthAccessors</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetDisableRemount">resetDisableRemount</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetExternalEntropyAccess">resetExternalEntropyAccess</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetForceNoCache">resetForceNoCache</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetIdentityTokenKey">resetIdentityTokenKey</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetListingVisibility">resetListingVisibility</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetLocal">resetLocal</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetMaxLeaseTtlSeconds">resetMaxLeaseTtlSeconds</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetNamespace">resetNamespace</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetOptions">resetOptions</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetPassthroughRequestHeaders">resetPassthroughRequestHeaders</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetPath">resetPath</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetPluginVersion">resetPluginVersion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetScheme">resetScheme</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetSealWrap">resetSealWrap</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetToken">resetToken</a></code> | *No description.* |
 
 ---
@@ -378,6 +391,30 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `resetAllowedManagedKeys` <a name="resetAllowedManagedKeys" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetAllowedManagedKeys"></a>
+
+```typescript
+public resetAllowedManagedKeys(): void
+```
+
+##### `resetAllowedResponseHeaders` <a name="resetAllowedResponseHeaders" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetAllowedResponseHeaders"></a>
+
+```typescript
+public resetAllowedResponseHeaders(): void
+```
+
+##### `resetAuditNonHmacRequestKeys` <a name="resetAuditNonHmacRequestKeys" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetAuditNonHmacRequestKeys"></a>
+
+```typescript
+public resetAuditNonHmacRequestKeys(): void
+```
+
+##### `resetAuditNonHmacResponseKeys` <a name="resetAuditNonHmacResponseKeys" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetAuditNonHmacResponseKeys"></a>
+
+```typescript
+public resetAuditNonHmacResponseKeys(): void
+```
+
 ##### `resetBootstrap` <a name="resetBootstrap" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetBootstrap"></a>
 
 ```typescript
@@ -408,6 +445,12 @@ public resetClientKey(): void
 public resetDefaultLeaseTtlSeconds(): void
 ```
 
+##### `resetDelegatedAuthAccessors` <a name="resetDelegatedAuthAccessors" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetDelegatedAuthAccessors"></a>
+
+```typescript
+public resetDelegatedAuthAccessors(): void
+```
+
 ##### `resetDescription` <a name="resetDescription" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetDescription"></a>
 
 ```typescript
@@ -420,10 +463,34 @@ public resetDescription(): void
 public resetDisableRemount(): void
 ```
 
+##### `resetExternalEntropyAccess` <a name="resetExternalEntropyAccess" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetExternalEntropyAccess"></a>
+
+```typescript
+public resetExternalEntropyAccess(): void
+```
+
+##### `resetForceNoCache` <a name="resetForceNoCache" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetForceNoCache"></a>
+
+```typescript
+public resetForceNoCache(): void
+```
+
 ##### `resetId` <a name="resetId" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetId"></a>
 
 ```typescript
 public resetId(): void
+```
+
+##### `resetIdentityTokenKey` <a name="resetIdentityTokenKey" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetIdentityTokenKey"></a>
+
+```typescript
+public resetIdentityTokenKey(): void
+```
+
+##### `resetListingVisibility` <a name="resetListingVisibility" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetListingVisibility"></a>
+
+```typescript
+public resetListingVisibility(): void
 ```
 
 ##### `resetLocal` <a name="resetLocal" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetLocal"></a>
@@ -444,16 +511,40 @@ public resetMaxLeaseTtlSeconds(): void
 public resetNamespace(): void
 ```
 
+##### `resetOptions` <a name="resetOptions" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetOptions"></a>
+
+```typescript
+public resetOptions(): void
+```
+
+##### `resetPassthroughRequestHeaders` <a name="resetPassthroughRequestHeaders" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetPassthroughRequestHeaders"></a>
+
+```typescript
+public resetPassthroughRequestHeaders(): void
+```
+
 ##### `resetPath` <a name="resetPath" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetPath"></a>
 
 ```typescript
 public resetPath(): void
 ```
 
+##### `resetPluginVersion` <a name="resetPluginVersion" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetPluginVersion"></a>
+
+```typescript
+public resetPluginVersion(): void
+```
+
 ##### `resetScheme` <a name="resetScheme" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetScheme"></a>
 
 ```typescript
 public resetScheme(): void
+```
+
+##### `resetSealWrap` <a name="resetSealWrap" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetSealWrap"></a>
+
+```typescript
+public resetSealWrap(): void
 ```
 
 ##### `resetToken` <a name="resetToken" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.resetToken"></a>
@@ -565,7 +656,7 @@ The construct id used in the generated config for the ConsulSecretBackend to imp
 
 The id of the existing ConsulSecretBackend that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/consul_secret_backend#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/consul_secret_backend#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -595,35 +686,62 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.accessor">accessor</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.addressInput">addressInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.allowedManagedKeysInput">allowedManagedKeysInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.allowedResponseHeadersInput">allowedResponseHeadersInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.auditNonHmacRequestKeysInput">auditNonHmacRequestKeysInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.auditNonHmacResponseKeysInput">auditNonHmacResponseKeysInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.bootstrapInput">bootstrapInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.caCertInput">caCertInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.clientCertInput">clientCertInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.clientKeyInput">clientKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.defaultLeaseTtlSecondsInput">defaultLeaseTtlSecondsInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.delegatedAuthAccessorsInput">delegatedAuthAccessorsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.disableRemountInput">disableRemountInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.externalEntropyAccessInput">externalEntropyAccessInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.forceNoCacheInput">forceNoCacheInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.identityTokenKeyInput">identityTokenKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.listingVisibilityInput">listingVisibilityInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.localInput">localInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.maxLeaseTtlSecondsInput">maxLeaseTtlSecondsInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.namespaceInput">namespaceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.optionsInput">optionsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.passthroughRequestHeadersInput">passthroughRequestHeadersInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.pathInput">pathInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.pluginVersionInput">pluginVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.schemeInput">schemeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.sealWrapInput">sealWrapInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.tokenInput">tokenInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.address">address</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.allowedManagedKeys">allowedManagedKeys</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.allowedResponseHeaders">allowedResponseHeaders</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.auditNonHmacRequestKeys">auditNonHmacRequestKeys</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.auditNonHmacResponseKeys">auditNonHmacResponseKeys</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.bootstrap">bootstrap</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.caCert">caCert</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.clientCert">clientCert</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.clientKey">clientKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.defaultLeaseTtlSeconds">defaultLeaseTtlSeconds</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.delegatedAuthAccessors">delegatedAuthAccessors</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.disableRemount">disableRemount</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.externalEntropyAccess">externalEntropyAccess</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.forceNoCache">forceNoCache</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.identityTokenKey">identityTokenKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.listingVisibility">listingVisibility</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.local">local</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.maxLeaseTtlSeconds">maxLeaseTtlSeconds</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.namespace">namespace</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.options">options</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.passthroughRequestHeaders">passthroughRequestHeaders</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.path">path</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.pluginVersion">pluginVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.scheme">scheme</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.sealWrap">sealWrap</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.token">token</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -770,6 +888,16 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
+##### `accessor`<sup>Required</sup> <a name="accessor" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.accessor"></a>
+
+```typescript
+public readonly accessor: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `addressInput`<sup>Optional</sup> <a name="addressInput" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.addressInput"></a>
 
 ```typescript
@@ -777,6 +905,46 @@ public readonly addressInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `allowedManagedKeysInput`<sup>Optional</sup> <a name="allowedManagedKeysInput" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.allowedManagedKeysInput"></a>
+
+```typescript
+public readonly allowedManagedKeysInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `allowedResponseHeadersInput`<sup>Optional</sup> <a name="allowedResponseHeadersInput" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.allowedResponseHeadersInput"></a>
+
+```typescript
+public readonly allowedResponseHeadersInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `auditNonHmacRequestKeysInput`<sup>Optional</sup> <a name="auditNonHmacRequestKeysInput" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.auditNonHmacRequestKeysInput"></a>
+
+```typescript
+public readonly auditNonHmacRequestKeysInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `auditNonHmacResponseKeysInput`<sup>Optional</sup> <a name="auditNonHmacResponseKeysInput" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.auditNonHmacResponseKeysInput"></a>
+
+```typescript
+public readonly auditNonHmacResponseKeysInput: string[];
+```
+
+- *Type:* string[]
 
 ---
 
@@ -830,6 +998,16 @@ public readonly defaultLeaseTtlSecondsInput: number;
 
 ---
 
+##### `delegatedAuthAccessorsInput`<sup>Optional</sup> <a name="delegatedAuthAccessorsInput" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.delegatedAuthAccessorsInput"></a>
+
+```typescript
+public readonly delegatedAuthAccessorsInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
 ##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.descriptionInput"></a>
 
 ```typescript
@@ -850,10 +1028,50 @@ public readonly disableRemountInput: boolean | IResolvable;
 
 ---
 
+##### `externalEntropyAccessInput`<sup>Optional</sup> <a name="externalEntropyAccessInput" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.externalEntropyAccessInput"></a>
+
+```typescript
+public readonly externalEntropyAccessInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `forceNoCacheInput`<sup>Optional</sup> <a name="forceNoCacheInput" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.forceNoCacheInput"></a>
+
+```typescript
+public readonly forceNoCacheInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `identityTokenKeyInput`<sup>Optional</sup> <a name="identityTokenKeyInput" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.identityTokenKeyInput"></a>
+
+```typescript
+public readonly identityTokenKeyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.idInput"></a>
 
 ```typescript
 public readonly idInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `listingVisibilityInput`<sup>Optional</sup> <a name="listingVisibilityInput" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.listingVisibilityInput"></a>
+
+```typescript
+public readonly listingVisibilityInput: string;
 ```
 
 - *Type:* string
@@ -890,10 +1108,40 @@ public readonly namespaceInput: string;
 
 ---
 
+##### `optionsInput`<sup>Optional</sup> <a name="optionsInput" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.optionsInput"></a>
+
+```typescript
+public readonly optionsInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+---
+
+##### `passthroughRequestHeadersInput`<sup>Optional</sup> <a name="passthroughRequestHeadersInput" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.passthroughRequestHeadersInput"></a>
+
+```typescript
+public readonly passthroughRequestHeadersInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
 ##### `pathInput`<sup>Optional</sup> <a name="pathInput" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.pathInput"></a>
 
 ```typescript
 public readonly pathInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `pluginVersionInput`<sup>Optional</sup> <a name="pluginVersionInput" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.pluginVersionInput"></a>
+
+```typescript
+public readonly pluginVersionInput: string;
 ```
 
 - *Type:* string
@@ -907,6 +1155,16 @@ public readonly schemeInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `sealWrapInput`<sup>Optional</sup> <a name="sealWrapInput" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.sealWrapInput"></a>
+
+```typescript
+public readonly sealWrapInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -927,6 +1185,46 @@ public readonly address: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `allowedManagedKeys`<sup>Required</sup> <a name="allowedManagedKeys" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.allowedManagedKeys"></a>
+
+```typescript
+public readonly allowedManagedKeys: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `allowedResponseHeaders`<sup>Required</sup> <a name="allowedResponseHeaders" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.allowedResponseHeaders"></a>
+
+```typescript
+public readonly allowedResponseHeaders: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `auditNonHmacRequestKeys`<sup>Required</sup> <a name="auditNonHmacRequestKeys" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.auditNonHmacRequestKeys"></a>
+
+```typescript
+public readonly auditNonHmacRequestKeys: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `auditNonHmacResponseKeys`<sup>Required</sup> <a name="auditNonHmacResponseKeys" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.auditNonHmacResponseKeys"></a>
+
+```typescript
+public readonly auditNonHmacResponseKeys: string[];
+```
+
+- *Type:* string[]
 
 ---
 
@@ -980,6 +1278,16 @@ public readonly defaultLeaseTtlSeconds: number;
 
 ---
 
+##### `delegatedAuthAccessors`<sup>Required</sup> <a name="delegatedAuthAccessors" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.delegatedAuthAccessors"></a>
+
+```typescript
+public readonly delegatedAuthAccessors: string[];
+```
+
+- *Type:* string[]
+
+---
+
 ##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.description"></a>
 
 ```typescript
@@ -1000,10 +1308,50 @@ public readonly disableRemount: boolean | IResolvable;
 
 ---
 
+##### `externalEntropyAccess`<sup>Required</sup> <a name="externalEntropyAccess" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.externalEntropyAccess"></a>
+
+```typescript
+public readonly externalEntropyAccess: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `forceNoCache`<sup>Required</sup> <a name="forceNoCache" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.forceNoCache"></a>
+
+```typescript
+public readonly forceNoCache: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.id"></a>
 
 ```typescript
 public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `identityTokenKey`<sup>Required</sup> <a name="identityTokenKey" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.identityTokenKey"></a>
+
+```typescript
+public readonly identityTokenKey: string;
+```
+
+- *Type:* string
+
+---
+
+##### `listingVisibility`<sup>Required</sup> <a name="listingVisibility" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.listingVisibility"></a>
+
+```typescript
+public readonly listingVisibility: string;
 ```
 
 - *Type:* string
@@ -1040,10 +1388,40 @@ public readonly namespace: string;
 
 ---
 
+##### `options`<sup>Required</sup> <a name="options" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.options"></a>
+
+```typescript
+public readonly options: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+---
+
+##### `passthroughRequestHeaders`<sup>Required</sup> <a name="passthroughRequestHeaders" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.passthroughRequestHeaders"></a>
+
+```typescript
+public readonly passthroughRequestHeaders: string[];
+```
+
+- *Type:* string[]
+
+---
+
 ##### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.path"></a>
 
 ```typescript
 public readonly path: string;
+```
+
+- *Type:* string
+
+---
+
+##### `pluginVersion`<sup>Required</sup> <a name="pluginVersion" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.pluginVersion"></a>
+
+```typescript
+public readonly pluginVersion: string;
 ```
 
 - *Type:* string
@@ -1057,6 +1435,16 @@ public readonly scheme: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `sealWrap`<sup>Required</sup> <a name="sealWrap" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.property.sealWrap"></a>
+
+```typescript
+public readonly sealWrap: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -1112,19 +1500,32 @@ const consulSecretBackendConfig: consulSecretBackend.ConsulSecretBackendConfig =
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.address">address</a></code> | <code>string</code> | Specifies the address of the Consul instance, provided as "host:port" like "127.0.0.1:8500". |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.allowedManagedKeys">allowedManagedKeys</a></code> | <code>string[]</code> | List of managed key registry entry names that the mount in question is allowed to access. |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.allowedResponseHeaders">allowedResponseHeaders</a></code> | <code>string[]</code> | List of headers to allow and pass from the request to the plugin. |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.auditNonHmacRequestKeys">auditNonHmacRequestKeys</a></code> | <code>string[]</code> | Specifies the list of keys that will not be HMAC'd by audit devices in the request data object. |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.auditNonHmacResponseKeys">auditNonHmacResponseKeys</a></code> | <code>string[]</code> | Specifies the list of keys that will not be HMAC'd by audit devices in the response data object. |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.bootstrap">bootstrap</a></code> | <code>boolean \| cdktf.IResolvable</code> | Denotes a backend resource that is used to bootstrap the Consul ACL system. |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.caCert">caCert</a></code> | <code>string</code> | CA certificate to use when verifying Consul server certificate, must be x509 PEM encoded. |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.clientCert">clientCert</a></code> | <code>string</code> | Client certificate used for Consul's TLS communication, must be x509 PEM encoded and if this is set you need to also set client_key. |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.clientKey">clientKey</a></code> | <code>string</code> | Client key used for Consul's TLS communication, must be x509 PEM encoded and if this is set you need to also set client_cert. |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.defaultLeaseTtlSeconds">defaultLeaseTtlSeconds</a></code> | <code>number</code> | Default lease duration for secrets in seconds. |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.delegatedAuthAccessors">delegatedAuthAccessors</a></code> | <code>string[]</code> | List of headers to allow and pass from the request to the plugin. |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.description">description</a></code> | <code>string</code> | Human-friendly description of the mount for the backend. |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.disableRemount">disableRemount</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set, opts out of mount migration on path updates. |
-| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/consul_secret_backend#id ConsulSecretBackend#id}. |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.externalEntropyAccess">externalEntropyAccess</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable the secrets engine to access Vault's external entropy source. |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.forceNoCache">forceNoCache</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to true, disables caching. |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/consul_secret_backend#id ConsulSecretBackend#id}. |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.identityTokenKey">identityTokenKey</a></code> | <code>string</code> | The key to use for signing plugin workload identity tokens. |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.listingVisibility">listingVisibility</a></code> | <code>string</code> | Specifies whether to show this mount in the UI-specific listing endpoint. |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.local">local</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies if the secret backend is local only. |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.maxLeaseTtlSeconds">maxLeaseTtlSeconds</a></code> | <code>number</code> | Maximum possible lease duration for secrets in seconds. |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.namespace">namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.options">options</a></code> | <code>{[ key: string ]: string}</code> | Specifies mount type specific options that are passed to the backend. |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.passthroughRequestHeaders">passthroughRequestHeaders</a></code> | <code>string[]</code> | List of headers to allow and pass from the request to the plugin. |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.path">path</a></code> | <code>string</code> | Unique name of the Vault Consul mount to configure. |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.pluginVersion">pluginVersion</a></code> | <code>string</code> | Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'. |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.scheme">scheme</a></code> | <code>string</code> | Specifies the URL scheme to use. Defaults to "http". |
+| <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.sealWrap">sealWrap</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability. |
 | <code><a href="#@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.token">token</a></code> | <code>string</code> | Specifies the Consul token to use when managing or issuing new tokens. |
 
 ---
@@ -1209,7 +1610,63 @@ public readonly address: string;
 
 Specifies the address of the Consul instance, provided as "host:port" like "127.0.0.1:8500".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/consul_secret_backend#address ConsulSecretBackend#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/consul_secret_backend#address ConsulSecretBackend#address}
+
+---
+
+##### `allowedManagedKeys`<sup>Optional</sup> <a name="allowedManagedKeys" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.allowedManagedKeys"></a>
+
+```typescript
+public readonly allowedManagedKeys: string[];
+```
+
+- *Type:* string[]
+
+List of managed key registry entry names that the mount in question is allowed to access.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/consul_secret_backend#allowed_managed_keys ConsulSecretBackend#allowed_managed_keys}
+
+---
+
+##### `allowedResponseHeaders`<sup>Optional</sup> <a name="allowedResponseHeaders" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.allowedResponseHeaders"></a>
+
+```typescript
+public readonly allowedResponseHeaders: string[];
+```
+
+- *Type:* string[]
+
+List of headers to allow and pass from the request to the plugin.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/consul_secret_backend#allowed_response_headers ConsulSecretBackend#allowed_response_headers}
+
+---
+
+##### `auditNonHmacRequestKeys`<sup>Optional</sup> <a name="auditNonHmacRequestKeys" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.auditNonHmacRequestKeys"></a>
+
+```typescript
+public readonly auditNonHmacRequestKeys: string[];
+```
+
+- *Type:* string[]
+
+Specifies the list of keys that will not be HMAC'd by audit devices in the request data object.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/consul_secret_backend#audit_non_hmac_request_keys ConsulSecretBackend#audit_non_hmac_request_keys}
+
+---
+
+##### `auditNonHmacResponseKeys`<sup>Optional</sup> <a name="auditNonHmacResponseKeys" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.auditNonHmacResponseKeys"></a>
+
+```typescript
+public readonly auditNonHmacResponseKeys: string[];
+```
+
+- *Type:* string[]
+
+Specifies the list of keys that will not be HMAC'd by audit devices in the response data object.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/consul_secret_backend#audit_non_hmac_response_keys ConsulSecretBackend#audit_non_hmac_response_keys}
 
 ---
 
@@ -1225,7 +1682,7 @@ Denotes a backend resource that is used to bootstrap the Consul ACL system.
 
 Only one resource may be used to bootstrap.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/consul_secret_backend#bootstrap ConsulSecretBackend#bootstrap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/consul_secret_backend#bootstrap ConsulSecretBackend#bootstrap}
 
 ---
 
@@ -1239,7 +1696,7 @@ public readonly caCert: string;
 
 CA certificate to use when verifying Consul server certificate, must be x509 PEM encoded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/consul_secret_backend#ca_cert ConsulSecretBackend#ca_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/consul_secret_backend#ca_cert ConsulSecretBackend#ca_cert}
 
 ---
 
@@ -1253,7 +1710,7 @@ public readonly clientCert: string;
 
 Client certificate used for Consul's TLS communication, must be x509 PEM encoded and if this is set you need to also set client_key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/consul_secret_backend#client_cert ConsulSecretBackend#client_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/consul_secret_backend#client_cert ConsulSecretBackend#client_cert}
 
 ---
 
@@ -1267,7 +1724,7 @@ public readonly clientKey: string;
 
 Client key used for Consul's TLS communication, must be x509 PEM encoded and if this is set you need to also set client_cert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/consul_secret_backend#client_key ConsulSecretBackend#client_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/consul_secret_backend#client_key ConsulSecretBackend#client_key}
 
 ---
 
@@ -1281,7 +1738,21 @@ public readonly defaultLeaseTtlSeconds: number;
 
 Default lease duration for secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/consul_secret_backend#default_lease_ttl_seconds ConsulSecretBackend#default_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/consul_secret_backend#default_lease_ttl_seconds ConsulSecretBackend#default_lease_ttl_seconds}
+
+---
+
+##### `delegatedAuthAccessors`<sup>Optional</sup> <a name="delegatedAuthAccessors" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.delegatedAuthAccessors"></a>
+
+```typescript
+public readonly delegatedAuthAccessors: string[];
+```
+
+- *Type:* string[]
+
+List of headers to allow and pass from the request to the plugin.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/consul_secret_backend#delegated_auth_accessors ConsulSecretBackend#delegated_auth_accessors}
 
 ---
 
@@ -1295,7 +1766,7 @@ public readonly description: string;
 
 Human-friendly description of the mount for the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/consul_secret_backend#description ConsulSecretBackend#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/consul_secret_backend#description ConsulSecretBackend#description}
 
 ---
 
@@ -1309,7 +1780,35 @@ public readonly disableRemount: boolean | IResolvable;
 
 If set, opts out of mount migration on path updates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/consul_secret_backend#disable_remount ConsulSecretBackend#disable_remount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/consul_secret_backend#disable_remount ConsulSecretBackend#disable_remount}
+
+---
+
+##### `externalEntropyAccess`<sup>Optional</sup> <a name="externalEntropyAccess" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.externalEntropyAccess"></a>
+
+```typescript
+public readonly externalEntropyAccess: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Enable the secrets engine to access Vault's external entropy source.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/consul_secret_backend#external_entropy_access ConsulSecretBackend#external_entropy_access}
+
+---
+
+##### `forceNoCache`<sup>Optional</sup> <a name="forceNoCache" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.forceNoCache"></a>
+
+```typescript
+public readonly forceNoCache: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+If set to true, disables caching.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/consul_secret_backend#force_no_cache ConsulSecretBackend#force_no_cache}
 
 ---
 
@@ -1321,10 +1820,38 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/consul_secret_backend#id ConsulSecretBackend#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/consul_secret_backend#id ConsulSecretBackend#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `identityTokenKey`<sup>Optional</sup> <a name="identityTokenKey" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.identityTokenKey"></a>
+
+```typescript
+public readonly identityTokenKey: string;
+```
+
+- *Type:* string
+
+The key to use for signing plugin workload identity tokens.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/consul_secret_backend#identity_token_key ConsulSecretBackend#identity_token_key}
+
+---
+
+##### `listingVisibility`<sup>Optional</sup> <a name="listingVisibility" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.listingVisibility"></a>
+
+```typescript
+public readonly listingVisibility: string;
+```
+
+- *Type:* string
+
+Specifies whether to show this mount in the UI-specific listing endpoint.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/consul_secret_backend#listing_visibility ConsulSecretBackend#listing_visibility}
 
 ---
 
@@ -1338,7 +1865,7 @@ public readonly local: boolean | IResolvable;
 
 Specifies if the secret backend is local only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/consul_secret_backend#local ConsulSecretBackend#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/consul_secret_backend#local ConsulSecretBackend#local}
 
 ---
 
@@ -1352,7 +1879,7 @@ public readonly maxLeaseTtlSeconds: number;
 
 Maximum possible lease duration for secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/consul_secret_backend#max_lease_ttl_seconds ConsulSecretBackend#max_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/consul_secret_backend#max_lease_ttl_seconds ConsulSecretBackend#max_lease_ttl_seconds}
 
 ---
 
@@ -1366,7 +1893,35 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/consul_secret_backend#namespace ConsulSecretBackend#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/consul_secret_backend#namespace ConsulSecretBackend#namespace}
+
+---
+
+##### `options`<sup>Optional</sup> <a name="options" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.options"></a>
+
+```typescript
+public readonly options: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+Specifies mount type specific options that are passed to the backend.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/consul_secret_backend#options ConsulSecretBackend#options}
+
+---
+
+##### `passthroughRequestHeaders`<sup>Optional</sup> <a name="passthroughRequestHeaders" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.passthroughRequestHeaders"></a>
+
+```typescript
+public readonly passthroughRequestHeaders: string[];
+```
+
+- *Type:* string[]
+
+List of headers to allow and pass from the request to the plugin.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/consul_secret_backend#passthrough_request_headers ConsulSecretBackend#passthrough_request_headers}
 
 ---
 
@@ -1380,7 +1935,21 @@ public readonly path: string;
 
 Unique name of the Vault Consul mount to configure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/consul_secret_backend#path ConsulSecretBackend#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/consul_secret_backend#path ConsulSecretBackend#path}
+
+---
+
+##### `pluginVersion`<sup>Optional</sup> <a name="pluginVersion" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.pluginVersion"></a>
+
+```typescript
+public readonly pluginVersion: string;
+```
+
+- *Type:* string
+
+Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/consul_secret_backend#plugin_version ConsulSecretBackend#plugin_version}
 
 ---
 
@@ -1394,7 +1963,21 @@ public readonly scheme: string;
 
 Specifies the URL scheme to use. Defaults to "http".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/consul_secret_backend#scheme ConsulSecretBackend#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/consul_secret_backend#scheme ConsulSecretBackend#scheme}
+
+---
+
+##### `sealWrap`<sup>Optional</sup> <a name="sealWrap" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.property.sealWrap"></a>
+
+```typescript
+public readonly sealWrap: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/consul_secret_backend#seal_wrap ConsulSecretBackend#seal_wrap}
 
 ---
 
@@ -1408,7 +1991,7 @@ public readonly token: string;
 
 Specifies the Consul token to use when managing or issuing new tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/consul_secret_backend#token ConsulSecretBackend#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/consul_secret_backend#token ConsulSecretBackend#token}
 
 ---
 

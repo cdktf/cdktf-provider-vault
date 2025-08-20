@@ -4,7 +4,7 @@
 
 ### RabbitmqSecretBackend <a name="RabbitmqSecretBackend" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/rabbitmq_secret_backend vault_rabbitmq_secret_backend}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/rabbitmq_secret_backend vault_rabbitmq_secret_backend}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.Initializer"></a>
 
@@ -73,14 +73,28 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetAllowedManagedKeys">ResetAllowedManagedKeys</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetAllowedResponseHeaders">ResetAllowedResponseHeaders</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetAuditNonHmacRequestKeys">ResetAuditNonHmacRequestKeys</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetAuditNonHmacResponseKeys">ResetAuditNonHmacResponseKeys</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetDefaultLeaseTtlSeconds">ResetDefaultLeaseTtlSeconds</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetDelegatedAuthAccessors">ResetDelegatedAuthAccessors</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetDisableRemount">ResetDisableRemount</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetExternalEntropyAccess">ResetExternalEntropyAccess</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetForceNoCache">ResetForceNoCache</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetIdentityTokenKey">ResetIdentityTokenKey</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetListingVisibility">ResetListingVisibility</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetLocal">ResetLocal</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetMaxLeaseTtlSeconds">ResetMaxLeaseTtlSeconds</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetNamespace">ResetNamespace</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetOptions">ResetOptions</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetPassthroughRequestHeaders">ResetPassthroughRequestHeaders</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetPasswordPolicy">ResetPasswordPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetPath">ResetPath</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetPluginVersion">ResetPluginVersion</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetSealWrap">ResetSealWrap</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetUsernameTemplate">ResetUsernameTemplate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetVerifyConnection">ResetVerifyConnection</a></code> | *No description.* |
 
@@ -374,10 +388,40 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `ResetAllowedManagedKeys` <a name="ResetAllowedManagedKeys" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetAllowedManagedKeys"></a>
+
+```go
+func ResetAllowedManagedKeys()
+```
+
+##### `ResetAllowedResponseHeaders` <a name="ResetAllowedResponseHeaders" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetAllowedResponseHeaders"></a>
+
+```go
+func ResetAllowedResponseHeaders()
+```
+
+##### `ResetAuditNonHmacRequestKeys` <a name="ResetAuditNonHmacRequestKeys" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetAuditNonHmacRequestKeys"></a>
+
+```go
+func ResetAuditNonHmacRequestKeys()
+```
+
+##### `ResetAuditNonHmacResponseKeys` <a name="ResetAuditNonHmacResponseKeys" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetAuditNonHmacResponseKeys"></a>
+
+```go
+func ResetAuditNonHmacResponseKeys()
+```
+
 ##### `ResetDefaultLeaseTtlSeconds` <a name="ResetDefaultLeaseTtlSeconds" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetDefaultLeaseTtlSeconds"></a>
 
 ```go
 func ResetDefaultLeaseTtlSeconds()
+```
+
+##### `ResetDelegatedAuthAccessors` <a name="ResetDelegatedAuthAccessors" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetDelegatedAuthAccessors"></a>
+
+```go
+func ResetDelegatedAuthAccessors()
 ```
 
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetDescription"></a>
@@ -392,10 +436,40 @@ func ResetDescription()
 func ResetDisableRemount()
 ```
 
+##### `ResetExternalEntropyAccess` <a name="ResetExternalEntropyAccess" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetExternalEntropyAccess"></a>
+
+```go
+func ResetExternalEntropyAccess()
+```
+
+##### `ResetForceNoCache` <a name="ResetForceNoCache" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetForceNoCache"></a>
+
+```go
+func ResetForceNoCache()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetId"></a>
 
 ```go
 func ResetId()
+```
+
+##### `ResetIdentityTokenKey` <a name="ResetIdentityTokenKey" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetIdentityTokenKey"></a>
+
+```go
+func ResetIdentityTokenKey()
+```
+
+##### `ResetListingVisibility` <a name="ResetListingVisibility" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetListingVisibility"></a>
+
+```go
+func ResetListingVisibility()
+```
+
+##### `ResetLocal` <a name="ResetLocal" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetLocal"></a>
+
+```go
+func ResetLocal()
 ```
 
 ##### `ResetMaxLeaseTtlSeconds` <a name="ResetMaxLeaseTtlSeconds" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetMaxLeaseTtlSeconds"></a>
@@ -410,6 +484,18 @@ func ResetMaxLeaseTtlSeconds()
 func ResetNamespace()
 ```
 
+##### `ResetOptions` <a name="ResetOptions" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetOptions"></a>
+
+```go
+func ResetOptions()
+```
+
+##### `ResetPassthroughRequestHeaders` <a name="ResetPassthroughRequestHeaders" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetPassthroughRequestHeaders"></a>
+
+```go
+func ResetPassthroughRequestHeaders()
+```
+
 ##### `ResetPasswordPolicy` <a name="ResetPasswordPolicy" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetPasswordPolicy"></a>
 
 ```go
@@ -420,6 +506,18 @@ func ResetPasswordPolicy()
 
 ```go
 func ResetPath()
+```
+
+##### `ResetPluginVersion` <a name="ResetPluginVersion" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetPluginVersion"></a>
+
+```go
+func ResetPluginVersion()
+```
+
+##### `ResetSealWrap` <a name="ResetSealWrap" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetSealWrap"></a>
+
+```go
+func ResetSealWrap()
 ```
 
 ##### `ResetUsernameTemplate` <a name="ResetUsernameTemplate" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.resetUsernameTemplate"></a>
@@ -537,7 +635,7 @@ The construct id used in the generated config for the RabbitmqSecretBackend to i
 
 The id of the existing RabbitmqSecretBackend that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/rabbitmq_secret_backend#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/rabbitmq_secret_backend#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -567,29 +665,58 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.accessor">Accessor</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.allowedManagedKeysInput">AllowedManagedKeysInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.allowedResponseHeadersInput">AllowedResponseHeadersInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.auditNonHmacRequestKeysInput">AuditNonHmacRequestKeysInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.auditNonHmacResponseKeysInput">AuditNonHmacResponseKeysInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.connectionUriInput">ConnectionUriInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.defaultLeaseTtlSecondsInput">DefaultLeaseTtlSecondsInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.delegatedAuthAccessorsInput">DelegatedAuthAccessorsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.disableRemountInput">DisableRemountInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.externalEntropyAccessInput">ExternalEntropyAccessInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.forceNoCacheInput">ForceNoCacheInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.identityTokenKeyInput">IdentityTokenKeyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.listingVisibilityInput">ListingVisibilityInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.localInput">LocalInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.maxLeaseTtlSecondsInput">MaxLeaseTtlSecondsInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.namespaceInput">NamespaceInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.optionsInput">OptionsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.passthroughRequestHeadersInput">PassthroughRequestHeadersInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.passwordInput">PasswordInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.passwordPolicyInput">PasswordPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.pathInput">PathInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.pluginVersionInput">PluginVersionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.sealWrapInput">SealWrapInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.usernameInput">UsernameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.usernameTemplateInput">UsernameTemplateInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.allowedManagedKeys">AllowedManagedKeys</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.allowedResponseHeaders">AllowedResponseHeaders</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.auditNonHmacRequestKeys">AuditNonHmacRequestKeys</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.auditNonHmacResponseKeys">AuditNonHmacResponseKeys</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.connectionUri">ConnectionUri</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.defaultLeaseTtlSeconds">DefaultLeaseTtlSeconds</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.delegatedAuthAccessors">DelegatedAuthAccessors</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.disableRemount">DisableRemount</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.externalEntropyAccess">ExternalEntropyAccess</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.forceNoCache">ForceNoCache</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.identityTokenKey">IdentityTokenKey</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.listingVisibility">ListingVisibility</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.local">Local</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.maxLeaseTtlSeconds">MaxLeaseTtlSeconds</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.namespace">Namespace</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.options">Options</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.passthroughRequestHeaders">PassthroughRequestHeaders</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.password">Password</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.passwordPolicy">PasswordPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.path">Path</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.pluginVersion">PluginVersion</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.sealWrap">SealWrap</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.username">Username</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.usernameTemplate">UsernameTemplate</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.verifyConnection">VerifyConnection</a></code> | <code>interface{}</code> | *No description.* |
@@ -738,6 +865,56 @@ func Provisioners() *[]interface{}
 
 ---
 
+##### `Accessor`<sup>Required</sup> <a name="Accessor" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.accessor"></a>
+
+```go
+func Accessor() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AllowedManagedKeysInput`<sup>Optional</sup> <a name="AllowedManagedKeysInput" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.allowedManagedKeysInput"></a>
+
+```go
+func AllowedManagedKeysInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `AllowedResponseHeadersInput`<sup>Optional</sup> <a name="AllowedResponseHeadersInput" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.allowedResponseHeadersInput"></a>
+
+```go
+func AllowedResponseHeadersInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `AuditNonHmacRequestKeysInput`<sup>Optional</sup> <a name="AuditNonHmacRequestKeysInput" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.auditNonHmacRequestKeysInput"></a>
+
+```go
+func AuditNonHmacRequestKeysInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `AuditNonHmacResponseKeysInput`<sup>Optional</sup> <a name="AuditNonHmacResponseKeysInput" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.auditNonHmacResponseKeysInput"></a>
+
+```go
+func AuditNonHmacResponseKeysInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
 ##### `ConnectionUriInput`<sup>Optional</sup> <a name="ConnectionUriInput" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.connectionUriInput"></a>
 
 ```go
@@ -755,6 +932,16 @@ func DefaultLeaseTtlSecondsInput() *f64
 ```
 
 - *Type:* *f64
+
+---
+
+##### `DelegatedAuthAccessorsInput`<sup>Optional</sup> <a name="DelegatedAuthAccessorsInput" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.delegatedAuthAccessorsInput"></a>
+
+```go
+func DelegatedAuthAccessorsInput() *[]*string
+```
+
+- *Type:* *[]*string
 
 ---
 
@@ -778,6 +965,36 @@ func DisableRemountInput() interface{}
 
 ---
 
+##### `ExternalEntropyAccessInput`<sup>Optional</sup> <a name="ExternalEntropyAccessInput" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.externalEntropyAccessInput"></a>
+
+```go
+func ExternalEntropyAccessInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `ForceNoCacheInput`<sup>Optional</sup> <a name="ForceNoCacheInput" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.forceNoCacheInput"></a>
+
+```go
+func ForceNoCacheInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `IdentityTokenKeyInput`<sup>Optional</sup> <a name="IdentityTokenKeyInput" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.identityTokenKeyInput"></a>
+
+```go
+func IdentityTokenKeyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.idInput"></a>
 
 ```go
@@ -785,6 +1002,26 @@ func IdInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `ListingVisibilityInput`<sup>Optional</sup> <a name="ListingVisibilityInput" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.listingVisibilityInput"></a>
+
+```go
+func ListingVisibilityInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `LocalInput`<sup>Optional</sup> <a name="LocalInput" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.localInput"></a>
+
+```go
+func LocalInput() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -805,6 +1042,26 @@ func NamespaceInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `OptionsInput`<sup>Optional</sup> <a name="OptionsInput" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.optionsInput"></a>
+
+```go
+func OptionsInput() *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+---
+
+##### `PassthroughRequestHeadersInput`<sup>Optional</sup> <a name="PassthroughRequestHeadersInput" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.passthroughRequestHeadersInput"></a>
+
+```go
+func PassthroughRequestHeadersInput() *[]*string
+```
+
+- *Type:* *[]*string
 
 ---
 
@@ -838,6 +1095,26 @@ func PathInput() *string
 
 ---
 
+##### `PluginVersionInput`<sup>Optional</sup> <a name="PluginVersionInput" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.pluginVersionInput"></a>
+
+```go
+func PluginVersionInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `SealWrapInput`<sup>Optional</sup> <a name="SealWrapInput" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.sealWrapInput"></a>
+
+```go
+func SealWrapInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `UsernameInput`<sup>Optional</sup> <a name="UsernameInput" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.usernameInput"></a>
 
 ```go
@@ -868,6 +1145,46 @@ func VerifyConnectionInput() interface{}
 
 ---
 
+##### `AllowedManagedKeys`<sup>Required</sup> <a name="AllowedManagedKeys" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.allowedManagedKeys"></a>
+
+```go
+func AllowedManagedKeys() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `AllowedResponseHeaders`<sup>Required</sup> <a name="AllowedResponseHeaders" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.allowedResponseHeaders"></a>
+
+```go
+func AllowedResponseHeaders() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `AuditNonHmacRequestKeys`<sup>Required</sup> <a name="AuditNonHmacRequestKeys" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.auditNonHmacRequestKeys"></a>
+
+```go
+func AuditNonHmacRequestKeys() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `AuditNonHmacResponseKeys`<sup>Required</sup> <a name="AuditNonHmacResponseKeys" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.auditNonHmacResponseKeys"></a>
+
+```go
+func AuditNonHmacResponseKeys() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
 ##### `ConnectionUri`<sup>Required</sup> <a name="ConnectionUri" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.connectionUri"></a>
 
 ```go
@@ -885,6 +1202,16 @@ func DefaultLeaseTtlSeconds() *f64
 ```
 
 - *Type:* *f64
+
+---
+
+##### `DelegatedAuthAccessors`<sup>Required</sup> <a name="DelegatedAuthAccessors" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.delegatedAuthAccessors"></a>
+
+```go
+func DelegatedAuthAccessors() *[]*string
+```
+
+- *Type:* *[]*string
 
 ---
 
@@ -908,6 +1235,26 @@ func DisableRemount() interface{}
 
 ---
 
+##### `ExternalEntropyAccess`<sup>Required</sup> <a name="ExternalEntropyAccess" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.externalEntropyAccess"></a>
+
+```go
+func ExternalEntropyAccess() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `ForceNoCache`<sup>Required</sup> <a name="ForceNoCache" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.forceNoCache"></a>
+
+```go
+func ForceNoCache() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.id"></a>
 
 ```go
@@ -915,6 +1262,36 @@ func Id() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `IdentityTokenKey`<sup>Required</sup> <a name="IdentityTokenKey" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.identityTokenKey"></a>
+
+```go
+func IdentityTokenKey() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ListingVisibility`<sup>Required</sup> <a name="ListingVisibility" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.listingVisibility"></a>
+
+```go
+func ListingVisibility() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Local`<sup>Required</sup> <a name="Local" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.local"></a>
+
+```go
+func Local() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -935,6 +1312,26 @@ func Namespace() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `Options`<sup>Required</sup> <a name="Options" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.options"></a>
+
+```go
+func Options() *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+---
+
+##### `PassthroughRequestHeaders`<sup>Required</sup> <a name="PassthroughRequestHeaders" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.passthroughRequestHeaders"></a>
+
+```go
+func PassthroughRequestHeaders() *[]*string
+```
+
+- *Type:* *[]*string
 
 ---
 
@@ -965,6 +1362,26 @@ func Path() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `PluginVersion`<sup>Required</sup> <a name="PluginVersion" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.pluginVersion"></a>
+
+```go
+func PluginVersion() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `SealWrap`<sup>Required</sup> <a name="SealWrap" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackend.property.sealWrap"></a>
+
+```go
+func SealWrap() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -1036,14 +1453,28 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/rabbitmqsecretbackend
 	ConnectionUri: *string,
 	Password: *string,
 	Username: *string,
+	AllowedManagedKeys: *[]*string,
+	AllowedResponseHeaders: *[]*string,
+	AuditNonHmacRequestKeys: *[]*string,
+	AuditNonHmacResponseKeys: *[]*string,
 	DefaultLeaseTtlSeconds: *f64,
+	DelegatedAuthAccessors: *[]*string,
 	Description: *string,
 	DisableRemount: interface{},
+	ExternalEntropyAccess: interface{},
+	ForceNoCache: interface{},
 	Id: *string,
+	IdentityTokenKey: *string,
+	ListingVisibility: *string,
+	Local: interface{},
 	MaxLeaseTtlSeconds: *f64,
 	Namespace: *string,
+	Options: *map[string]*string,
+	PassthroughRequestHeaders: *[]*string,
 	PasswordPolicy: *string,
 	Path: *string,
+	PluginVersion: *string,
+	SealWrap: interface{},
 	UsernameTemplate: *string,
 	VerifyConnection: interface{},
 }
@@ -1063,14 +1494,28 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/rabbitmqsecretbackend
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.connectionUri">ConnectionUri</a></code> | <code>*string</code> | Specifies the RabbitMQ connection URI. |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.password">Password</a></code> | <code>*string</code> | Specifies the RabbitMQ management administrator password. |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.username">Username</a></code> | <code>*string</code> | Specifies the RabbitMQ management administrator username. |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.allowedManagedKeys">AllowedManagedKeys</a></code> | <code>*[]*string</code> | List of managed key registry entry names that the mount in question is allowed to access. |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.allowedResponseHeaders">AllowedResponseHeaders</a></code> | <code>*[]*string</code> | List of headers to allow and pass from the request to the plugin. |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.auditNonHmacRequestKeys">AuditNonHmacRequestKeys</a></code> | <code>*[]*string</code> | Specifies the list of keys that will not be HMAC'd by audit devices in the request data object. |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.auditNonHmacResponseKeys">AuditNonHmacResponseKeys</a></code> | <code>*[]*string</code> | Specifies the list of keys that will not be HMAC'd by audit devices in the response data object. |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.defaultLeaseTtlSeconds">DefaultLeaseTtlSeconds</a></code> | <code>*f64</code> | Default lease duration for secrets in seconds. |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.delegatedAuthAccessors">DelegatedAuthAccessors</a></code> | <code>*[]*string</code> | List of headers to allow and pass from the request to the plugin. |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.description">Description</a></code> | <code>*string</code> | Human-friendly description of the mount for the backend. |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.disableRemount">DisableRemount</a></code> | <code>interface{}</code> | If set, opts out of mount migration on path updates. |
-| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/rabbitmq_secret_backend#id RabbitmqSecretBackend#id}. |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.externalEntropyAccess">ExternalEntropyAccess</a></code> | <code>interface{}</code> | Enable the secrets engine to access Vault's external entropy source. |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.forceNoCache">ForceNoCache</a></code> | <code>interface{}</code> | If set to true, disables caching. |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/rabbitmq_secret_backend#id RabbitmqSecretBackend#id}. |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.identityTokenKey">IdentityTokenKey</a></code> | <code>*string</code> | The key to use for signing plugin workload identity tokens. |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.listingVisibility">ListingVisibility</a></code> | <code>*string</code> | Specifies whether to show this mount in the UI-specific listing endpoint. |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.local">Local</a></code> | <code>interface{}</code> | Local mount flag that can be explicitly set to true to enforce local mount in HA environment. |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.maxLeaseTtlSeconds">MaxLeaseTtlSeconds</a></code> | <code>*f64</code> | Maximum possible lease duration for secrets in seconds. |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.options">Options</a></code> | <code>*map[string]*string</code> | Specifies mount type specific options that are passed to the backend. |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.passthroughRequestHeaders">PassthroughRequestHeaders</a></code> | <code>*[]*string</code> | List of headers to allow and pass from the request to the plugin. |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.passwordPolicy">PasswordPolicy</a></code> | <code>*string</code> | Specifies a password policy to use when creating dynamic credentials. Defaults to generating an alphanumeric password if not set. |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.path">Path</a></code> | <code>*string</code> | The path of the RabbitMQ Secret Backend where the connection should be configured. |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.pluginVersion">PluginVersion</a></code> | <code>*string</code> | Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'. |
+| <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.sealWrap">SealWrap</a></code> | <code>interface{}</code> | Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability. |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.usernameTemplate">UsernameTemplate</a></code> | <code>*string</code> | Template describing how dynamic usernames are generated. |
 | <code><a href="#@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.verifyConnection">VerifyConnection</a></code> | <code>interface{}</code> | Specifies whether to verify connection URI, username, and password. |
 
@@ -1156,7 +1601,7 @@ ConnectionUri *string
 
 Specifies the RabbitMQ connection URI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/rabbitmq_secret_backend#connection_uri RabbitmqSecretBackend#connection_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/rabbitmq_secret_backend#connection_uri RabbitmqSecretBackend#connection_uri}
 
 ---
 
@@ -1170,7 +1615,7 @@ Password *string
 
 Specifies the RabbitMQ management administrator password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/rabbitmq_secret_backend#password RabbitmqSecretBackend#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/rabbitmq_secret_backend#password RabbitmqSecretBackend#password}
 
 ---
 
@@ -1184,7 +1629,63 @@ Username *string
 
 Specifies the RabbitMQ management administrator username.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/rabbitmq_secret_backend#username RabbitmqSecretBackend#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/rabbitmq_secret_backend#username RabbitmqSecretBackend#username}
+
+---
+
+##### `AllowedManagedKeys`<sup>Optional</sup> <a name="AllowedManagedKeys" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.allowedManagedKeys"></a>
+
+```go
+AllowedManagedKeys *[]*string
+```
+
+- *Type:* *[]*string
+
+List of managed key registry entry names that the mount in question is allowed to access.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/rabbitmq_secret_backend#allowed_managed_keys RabbitmqSecretBackend#allowed_managed_keys}
+
+---
+
+##### `AllowedResponseHeaders`<sup>Optional</sup> <a name="AllowedResponseHeaders" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.allowedResponseHeaders"></a>
+
+```go
+AllowedResponseHeaders *[]*string
+```
+
+- *Type:* *[]*string
+
+List of headers to allow and pass from the request to the plugin.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/rabbitmq_secret_backend#allowed_response_headers RabbitmqSecretBackend#allowed_response_headers}
+
+---
+
+##### `AuditNonHmacRequestKeys`<sup>Optional</sup> <a name="AuditNonHmacRequestKeys" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.auditNonHmacRequestKeys"></a>
+
+```go
+AuditNonHmacRequestKeys *[]*string
+```
+
+- *Type:* *[]*string
+
+Specifies the list of keys that will not be HMAC'd by audit devices in the request data object.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/rabbitmq_secret_backend#audit_non_hmac_request_keys RabbitmqSecretBackend#audit_non_hmac_request_keys}
+
+---
+
+##### `AuditNonHmacResponseKeys`<sup>Optional</sup> <a name="AuditNonHmacResponseKeys" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.auditNonHmacResponseKeys"></a>
+
+```go
+AuditNonHmacResponseKeys *[]*string
+```
+
+- *Type:* *[]*string
+
+Specifies the list of keys that will not be HMAC'd by audit devices in the response data object.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/rabbitmq_secret_backend#audit_non_hmac_response_keys RabbitmqSecretBackend#audit_non_hmac_response_keys}
 
 ---
 
@@ -1198,7 +1699,21 @@ DefaultLeaseTtlSeconds *f64
 
 Default lease duration for secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/rabbitmq_secret_backend#default_lease_ttl_seconds RabbitmqSecretBackend#default_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/rabbitmq_secret_backend#default_lease_ttl_seconds RabbitmqSecretBackend#default_lease_ttl_seconds}
+
+---
+
+##### `DelegatedAuthAccessors`<sup>Optional</sup> <a name="DelegatedAuthAccessors" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.delegatedAuthAccessors"></a>
+
+```go
+DelegatedAuthAccessors *[]*string
+```
+
+- *Type:* *[]*string
+
+List of headers to allow and pass from the request to the plugin.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/rabbitmq_secret_backend#delegated_auth_accessors RabbitmqSecretBackend#delegated_auth_accessors}
 
 ---
 
@@ -1212,7 +1727,7 @@ Description *string
 
 Human-friendly description of the mount for the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/rabbitmq_secret_backend#description RabbitmqSecretBackend#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/rabbitmq_secret_backend#description RabbitmqSecretBackend#description}
 
 ---
 
@@ -1226,7 +1741,35 @@ DisableRemount interface{}
 
 If set, opts out of mount migration on path updates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/rabbitmq_secret_backend#disable_remount RabbitmqSecretBackend#disable_remount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/rabbitmq_secret_backend#disable_remount RabbitmqSecretBackend#disable_remount}
+
+---
+
+##### `ExternalEntropyAccess`<sup>Optional</sup> <a name="ExternalEntropyAccess" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.externalEntropyAccess"></a>
+
+```go
+ExternalEntropyAccess interface{}
+```
+
+- *Type:* interface{}
+
+Enable the secrets engine to access Vault's external entropy source.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/rabbitmq_secret_backend#external_entropy_access RabbitmqSecretBackend#external_entropy_access}
+
+---
+
+##### `ForceNoCache`<sup>Optional</sup> <a name="ForceNoCache" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.forceNoCache"></a>
+
+```go
+ForceNoCache interface{}
+```
+
+- *Type:* interface{}
+
+If set to true, disables caching.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/rabbitmq_secret_backend#force_no_cache RabbitmqSecretBackend#force_no_cache}
 
 ---
 
@@ -1238,10 +1781,52 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/rabbitmq_secret_backend#id RabbitmqSecretBackend#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/rabbitmq_secret_backend#id RabbitmqSecretBackend#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `IdentityTokenKey`<sup>Optional</sup> <a name="IdentityTokenKey" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.identityTokenKey"></a>
+
+```go
+IdentityTokenKey *string
+```
+
+- *Type:* *string
+
+The key to use for signing plugin workload identity tokens.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/rabbitmq_secret_backend#identity_token_key RabbitmqSecretBackend#identity_token_key}
+
+---
+
+##### `ListingVisibility`<sup>Optional</sup> <a name="ListingVisibility" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.listingVisibility"></a>
+
+```go
+ListingVisibility *string
+```
+
+- *Type:* *string
+
+Specifies whether to show this mount in the UI-specific listing endpoint.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/rabbitmq_secret_backend#listing_visibility RabbitmqSecretBackend#listing_visibility}
+
+---
+
+##### `Local`<sup>Optional</sup> <a name="Local" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.local"></a>
+
+```go
+Local interface{}
+```
+
+- *Type:* interface{}
+
+Local mount flag that can be explicitly set to true to enforce local mount in HA environment.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/rabbitmq_secret_backend#local RabbitmqSecretBackend#local}
 
 ---
 
@@ -1255,7 +1840,7 @@ MaxLeaseTtlSeconds *f64
 
 Maximum possible lease duration for secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/rabbitmq_secret_backend#max_lease_ttl_seconds RabbitmqSecretBackend#max_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/rabbitmq_secret_backend#max_lease_ttl_seconds RabbitmqSecretBackend#max_lease_ttl_seconds}
 
 ---
 
@@ -1269,7 +1854,35 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/rabbitmq_secret_backend#namespace RabbitmqSecretBackend#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/rabbitmq_secret_backend#namespace RabbitmqSecretBackend#namespace}
+
+---
+
+##### `Options`<sup>Optional</sup> <a name="Options" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.options"></a>
+
+```go
+Options *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+Specifies mount type specific options that are passed to the backend.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/rabbitmq_secret_backend#options RabbitmqSecretBackend#options}
+
+---
+
+##### `PassthroughRequestHeaders`<sup>Optional</sup> <a name="PassthroughRequestHeaders" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.passthroughRequestHeaders"></a>
+
+```go
+PassthroughRequestHeaders *[]*string
+```
+
+- *Type:* *[]*string
+
+List of headers to allow and pass from the request to the plugin.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/rabbitmq_secret_backend#passthrough_request_headers RabbitmqSecretBackend#passthrough_request_headers}
 
 ---
 
@@ -1283,7 +1896,7 @@ PasswordPolicy *string
 
 Specifies a password policy to use when creating dynamic credentials. Defaults to generating an alphanumeric password if not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/rabbitmq_secret_backend#password_policy RabbitmqSecretBackend#password_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/rabbitmq_secret_backend#password_policy RabbitmqSecretBackend#password_policy}
 
 ---
 
@@ -1297,7 +1910,35 @@ Path *string
 
 The path of the RabbitMQ Secret Backend where the connection should be configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/rabbitmq_secret_backend#path RabbitmqSecretBackend#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/rabbitmq_secret_backend#path RabbitmqSecretBackend#path}
+
+---
+
+##### `PluginVersion`<sup>Optional</sup> <a name="PluginVersion" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.pluginVersion"></a>
+
+```go
+PluginVersion *string
+```
+
+- *Type:* *string
+
+Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/rabbitmq_secret_backend#plugin_version RabbitmqSecretBackend#plugin_version}
+
+---
+
+##### `SealWrap`<sup>Optional</sup> <a name="SealWrap" id="@cdktf/provider-vault.rabbitmqSecretBackend.RabbitmqSecretBackendConfig.property.sealWrap"></a>
+
+```go
+SealWrap interface{}
+```
+
+- *Type:* interface{}
+
+Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/rabbitmq_secret_backend#seal_wrap RabbitmqSecretBackend#seal_wrap}
 
 ---
 
@@ -1311,7 +1952,7 @@ UsernameTemplate *string
 
 Template describing how dynamic usernames are generated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/rabbitmq_secret_backend#username_template RabbitmqSecretBackend#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/rabbitmq_secret_backend#username_template RabbitmqSecretBackend#username_template}
 
 ---
 
@@ -1325,7 +1966,7 @@ VerifyConnection interface{}
 
 Specifies whether to verify connection URI, username, and password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/rabbitmq_secret_backend#verify_connection RabbitmqSecretBackend#verify_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/rabbitmq_secret_backend#verify_connection RabbitmqSecretBackend#verify_connection}
 
 ---
 

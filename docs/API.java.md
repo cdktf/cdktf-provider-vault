@@ -146,6 +146,8 @@ The following submodules are available:
 - [namespace](./namespace.java.md)
 - [nomadSecretBackend](./nomadSecretBackend.java.md)
 - [nomadSecretRole](./nomadSecretRole.java.md)
+- [ociAuthBackend](./ociAuthBackend.java.md)
+- [ociAuthBackendRole](./ociAuthBackendRole.java.md)
 - [oktaAuthBackend](./oktaAuthBackend.java.md)
 - [oktaAuthBackendGroup](./oktaAuthBackendGroup.java.md)
 - [oktaAuthBackendUser](./oktaAuthBackendUser.java.md)

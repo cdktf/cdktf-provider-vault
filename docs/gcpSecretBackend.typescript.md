@@ -4,7 +4,7 @@
 
 ### GcpSecretBackend <a name="GcpSecretBackend" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/gcp_secret_backend vault_gcp_secret_backend}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/gcp_secret_backend vault_gcp_secret_backend}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.Initializer"></a>
 
@@ -73,24 +73,36 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetAllowedManagedKeys">resetAllowedManagedKeys</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetAllowedResponseHeaders">resetAllowedResponseHeaders</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetAuditNonHmacRequestKeys">resetAuditNonHmacRequestKeys</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetAuditNonHmacResponseKeys">resetAuditNonHmacResponseKeys</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetCredentials">resetCredentials</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetCredentialsWo">resetCredentialsWo</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetCredentialsWoVersion">resetCredentialsWoVersion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetDefaultLeaseTtlSeconds">resetDefaultLeaseTtlSeconds</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetDelegatedAuthAccessors">resetDelegatedAuthAccessors</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetDisableAutomatedRotation">resetDisableAutomatedRotation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetDisableRemount">resetDisableRemount</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetExternalEntropyAccess">resetExternalEntropyAccess</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetForceNoCache">resetForceNoCache</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetIdentityTokenAudience">resetIdentityTokenAudience</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetIdentityTokenKey">resetIdentityTokenKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetIdentityTokenTtl">resetIdentityTokenTtl</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetListingVisibility">resetListingVisibility</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetLocal">resetLocal</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetMaxLeaseTtlSeconds">resetMaxLeaseTtlSeconds</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetNamespace">resetNamespace</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetOptions">resetOptions</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetPassthroughRequestHeaders">resetPassthroughRequestHeaders</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetPath">resetPath</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetPluginVersion">resetPluginVersion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetRotationPeriod">resetRotationPeriod</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetRotationSchedule">resetRotationSchedule</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetRotationWindow">resetRotationWindow</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetSealWrap">resetSealWrap</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetServiceAccountEmail">resetServiceAccountEmail</a></code> | *No description.* |
 
 ---
@@ -383,6 +395,30 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `resetAllowedManagedKeys` <a name="resetAllowedManagedKeys" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetAllowedManagedKeys"></a>
+
+```typescript
+public resetAllowedManagedKeys(): void
+```
+
+##### `resetAllowedResponseHeaders` <a name="resetAllowedResponseHeaders" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetAllowedResponseHeaders"></a>
+
+```typescript
+public resetAllowedResponseHeaders(): void
+```
+
+##### `resetAuditNonHmacRequestKeys` <a name="resetAuditNonHmacRequestKeys" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetAuditNonHmacRequestKeys"></a>
+
+```typescript
+public resetAuditNonHmacRequestKeys(): void
+```
+
+##### `resetAuditNonHmacResponseKeys` <a name="resetAuditNonHmacResponseKeys" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetAuditNonHmacResponseKeys"></a>
+
+```typescript
+public resetAuditNonHmacResponseKeys(): void
+```
+
 ##### `resetCredentials` <a name="resetCredentials" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetCredentials"></a>
 
 ```typescript
@@ -407,6 +443,12 @@ public resetCredentialsWoVersion(): void
 public resetDefaultLeaseTtlSeconds(): void
 ```
 
+##### `resetDelegatedAuthAccessors` <a name="resetDelegatedAuthAccessors" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetDelegatedAuthAccessors"></a>
+
+```typescript
+public resetDelegatedAuthAccessors(): void
+```
+
 ##### `resetDescription` <a name="resetDescription" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetDescription"></a>
 
 ```typescript
@@ -423,6 +465,18 @@ public resetDisableAutomatedRotation(): void
 
 ```typescript
 public resetDisableRemount(): void
+```
+
+##### `resetExternalEntropyAccess` <a name="resetExternalEntropyAccess" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetExternalEntropyAccess"></a>
+
+```typescript
+public resetExternalEntropyAccess(): void
+```
+
+##### `resetForceNoCache` <a name="resetForceNoCache" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetForceNoCache"></a>
+
+```typescript
+public resetForceNoCache(): void
 ```
 
 ##### `resetId` <a name="resetId" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetId"></a>
@@ -449,6 +503,12 @@ public resetIdentityTokenKey(): void
 public resetIdentityTokenTtl(): void
 ```
 
+##### `resetListingVisibility` <a name="resetListingVisibility" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetListingVisibility"></a>
+
+```typescript
+public resetListingVisibility(): void
+```
+
 ##### `resetLocal` <a name="resetLocal" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetLocal"></a>
 
 ```typescript
@@ -467,10 +527,28 @@ public resetMaxLeaseTtlSeconds(): void
 public resetNamespace(): void
 ```
 
+##### `resetOptions` <a name="resetOptions" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetOptions"></a>
+
+```typescript
+public resetOptions(): void
+```
+
+##### `resetPassthroughRequestHeaders` <a name="resetPassthroughRequestHeaders" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetPassthroughRequestHeaders"></a>
+
+```typescript
+public resetPassthroughRequestHeaders(): void
+```
+
 ##### `resetPath` <a name="resetPath" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetPath"></a>
 
 ```typescript
 public resetPath(): void
+```
+
+##### `resetPluginVersion` <a name="resetPluginVersion" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetPluginVersion"></a>
+
+```typescript
+public resetPluginVersion(): void
 ```
 
 ##### `resetRotationPeriod` <a name="resetRotationPeriod" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetRotationPeriod"></a>
@@ -489,6 +567,12 @@ public resetRotationSchedule(): void
 
 ```typescript
 public resetRotationWindow(): void
+```
+
+##### `resetSealWrap` <a name="resetSealWrap" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetSealWrap"></a>
+
+```typescript
+public resetSealWrap(): void
 ```
 
 ##### `resetServiceAccountEmail` <a name="resetServiceAccountEmail" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.resetServiceAccountEmail"></a>
@@ -600,7 +684,7 @@ The construct id used in the generated config for the GcpSecretBackend to import
 
 The id of the existing GcpSecretBackend that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/gcp_secret_backend#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/gcp_secret_backend#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -631,43 +715,67 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.accessor">accessor</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.allowedManagedKeysInput">allowedManagedKeysInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.allowedResponseHeadersInput">allowedResponseHeadersInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.auditNonHmacRequestKeysInput">auditNonHmacRequestKeysInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.auditNonHmacResponseKeysInput">auditNonHmacResponseKeysInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.credentialsInput">credentialsInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.credentialsWoInput">credentialsWoInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.credentialsWoVersionInput">credentialsWoVersionInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.defaultLeaseTtlSecondsInput">defaultLeaseTtlSecondsInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.delegatedAuthAccessorsInput">delegatedAuthAccessorsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.disableAutomatedRotationInput">disableAutomatedRotationInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.disableRemountInput">disableRemountInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.externalEntropyAccessInput">externalEntropyAccessInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.forceNoCacheInput">forceNoCacheInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.identityTokenAudienceInput">identityTokenAudienceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.identityTokenKeyInput">identityTokenKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.identityTokenTtlInput">identityTokenTtlInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.listingVisibilityInput">listingVisibilityInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.localInput">localInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.maxLeaseTtlSecondsInput">maxLeaseTtlSecondsInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.namespaceInput">namespaceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.optionsInput">optionsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.passthroughRequestHeadersInput">passthroughRequestHeadersInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.pathInput">pathInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.pluginVersionInput">pluginVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.rotationPeriodInput">rotationPeriodInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.rotationScheduleInput">rotationScheduleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.rotationWindowInput">rotationWindowInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.sealWrapInput">sealWrapInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.serviceAccountEmailInput">serviceAccountEmailInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.allowedManagedKeys">allowedManagedKeys</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.allowedResponseHeaders">allowedResponseHeaders</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.auditNonHmacRequestKeys">auditNonHmacRequestKeys</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.auditNonHmacResponseKeys">auditNonHmacResponseKeys</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.credentials">credentials</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.credentialsWo">credentialsWo</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.credentialsWoVersion">credentialsWoVersion</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.defaultLeaseTtlSeconds">defaultLeaseTtlSeconds</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.delegatedAuthAccessors">delegatedAuthAccessors</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.disableAutomatedRotation">disableAutomatedRotation</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.disableRemount">disableRemount</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.externalEntropyAccess">externalEntropyAccess</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.forceNoCache">forceNoCache</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.identityTokenAudience">identityTokenAudience</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.identityTokenKey">identityTokenKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.identityTokenTtl">identityTokenTtl</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.listingVisibility">listingVisibility</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.local">local</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.maxLeaseTtlSeconds">maxLeaseTtlSeconds</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.namespace">namespace</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.options">options</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.passthroughRequestHeaders">passthroughRequestHeaders</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.path">path</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.pluginVersion">pluginVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.rotationPeriod">rotationPeriod</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.rotationSchedule">rotationSchedule</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.rotationWindow">rotationWindow</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.sealWrap">sealWrap</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.serviceAccountEmail">serviceAccountEmail</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -824,6 +932,46 @@ public readonly accessor: string;
 
 ---
 
+##### `allowedManagedKeysInput`<sup>Optional</sup> <a name="allowedManagedKeysInput" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.allowedManagedKeysInput"></a>
+
+```typescript
+public readonly allowedManagedKeysInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `allowedResponseHeadersInput`<sup>Optional</sup> <a name="allowedResponseHeadersInput" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.allowedResponseHeadersInput"></a>
+
+```typescript
+public readonly allowedResponseHeadersInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `auditNonHmacRequestKeysInput`<sup>Optional</sup> <a name="auditNonHmacRequestKeysInput" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.auditNonHmacRequestKeysInput"></a>
+
+```typescript
+public readonly auditNonHmacRequestKeysInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `auditNonHmacResponseKeysInput`<sup>Optional</sup> <a name="auditNonHmacResponseKeysInput" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.auditNonHmacResponseKeysInput"></a>
+
+```typescript
+public readonly auditNonHmacResponseKeysInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
 ##### `credentialsInput`<sup>Optional</sup> <a name="credentialsInput" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.credentialsInput"></a>
 
 ```typescript
@@ -864,6 +1012,16 @@ public readonly defaultLeaseTtlSecondsInput: number;
 
 ---
 
+##### `delegatedAuthAccessorsInput`<sup>Optional</sup> <a name="delegatedAuthAccessorsInput" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.delegatedAuthAccessorsInput"></a>
+
+```typescript
+public readonly delegatedAuthAccessorsInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
 ##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.descriptionInput"></a>
 
 ```typescript
@@ -888,6 +1046,26 @@ public readonly disableAutomatedRotationInput: boolean | IResolvable;
 
 ```typescript
 public readonly disableRemountInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `externalEntropyAccessInput`<sup>Optional</sup> <a name="externalEntropyAccessInput" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.externalEntropyAccessInput"></a>
+
+```typescript
+public readonly externalEntropyAccessInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `forceNoCacheInput`<sup>Optional</sup> <a name="forceNoCacheInput" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.forceNoCacheInput"></a>
+
+```typescript
+public readonly forceNoCacheInput: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktf.IResolvable
@@ -934,6 +1112,16 @@ public readonly idInput: string;
 
 ---
 
+##### `listingVisibilityInput`<sup>Optional</sup> <a name="listingVisibilityInput" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.listingVisibilityInput"></a>
+
+```typescript
+public readonly listingVisibilityInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `localInput`<sup>Optional</sup> <a name="localInput" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.localInput"></a>
 
 ```typescript
@@ -964,10 +1152,40 @@ public readonly namespaceInput: string;
 
 ---
 
+##### `optionsInput`<sup>Optional</sup> <a name="optionsInput" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.optionsInput"></a>
+
+```typescript
+public readonly optionsInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+---
+
+##### `passthroughRequestHeadersInput`<sup>Optional</sup> <a name="passthroughRequestHeadersInput" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.passthroughRequestHeadersInput"></a>
+
+```typescript
+public readonly passthroughRequestHeadersInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
 ##### `pathInput`<sup>Optional</sup> <a name="pathInput" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.pathInput"></a>
 
 ```typescript
 public readonly pathInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `pluginVersionInput`<sup>Optional</sup> <a name="pluginVersionInput" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.pluginVersionInput"></a>
+
+```typescript
+public readonly pluginVersionInput: string;
 ```
 
 - *Type:* string
@@ -1004,6 +1222,16 @@ public readonly rotationWindowInput: number;
 
 ---
 
+##### `sealWrapInput`<sup>Optional</sup> <a name="sealWrapInput" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.sealWrapInput"></a>
+
+```typescript
+public readonly sealWrapInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `serviceAccountEmailInput`<sup>Optional</sup> <a name="serviceAccountEmailInput" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.serviceAccountEmailInput"></a>
 
 ```typescript
@@ -1011,6 +1239,46 @@ public readonly serviceAccountEmailInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `allowedManagedKeys`<sup>Required</sup> <a name="allowedManagedKeys" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.allowedManagedKeys"></a>
+
+```typescript
+public readonly allowedManagedKeys: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `allowedResponseHeaders`<sup>Required</sup> <a name="allowedResponseHeaders" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.allowedResponseHeaders"></a>
+
+```typescript
+public readonly allowedResponseHeaders: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `auditNonHmacRequestKeys`<sup>Required</sup> <a name="auditNonHmacRequestKeys" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.auditNonHmacRequestKeys"></a>
+
+```typescript
+public readonly auditNonHmacRequestKeys: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `auditNonHmacResponseKeys`<sup>Required</sup> <a name="auditNonHmacResponseKeys" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.auditNonHmacResponseKeys"></a>
+
+```typescript
+public readonly auditNonHmacResponseKeys: string[];
+```
+
+- *Type:* string[]
 
 ---
 
@@ -1054,6 +1322,16 @@ public readonly defaultLeaseTtlSeconds: number;
 
 ---
 
+##### `delegatedAuthAccessors`<sup>Required</sup> <a name="delegatedAuthAccessors" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.delegatedAuthAccessors"></a>
+
+```typescript
+public readonly delegatedAuthAccessors: string[];
+```
+
+- *Type:* string[]
+
+---
+
 ##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.description"></a>
 
 ```typescript
@@ -1078,6 +1356,26 @@ public readonly disableAutomatedRotation: boolean | IResolvable;
 
 ```typescript
 public readonly disableRemount: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `externalEntropyAccess`<sup>Required</sup> <a name="externalEntropyAccess" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.externalEntropyAccess"></a>
+
+```typescript
+public readonly externalEntropyAccess: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `forceNoCache`<sup>Required</sup> <a name="forceNoCache" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.forceNoCache"></a>
+
+```typescript
+public readonly forceNoCache: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktf.IResolvable
@@ -1124,6 +1422,16 @@ public readonly identityTokenTtl: number;
 
 ---
 
+##### `listingVisibility`<sup>Required</sup> <a name="listingVisibility" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.listingVisibility"></a>
+
+```typescript
+public readonly listingVisibility: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `local`<sup>Required</sup> <a name="local" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.local"></a>
 
 ```typescript
@@ -1154,10 +1462,40 @@ public readonly namespace: string;
 
 ---
 
+##### `options`<sup>Required</sup> <a name="options" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.options"></a>
+
+```typescript
+public readonly options: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+---
+
+##### `passthroughRequestHeaders`<sup>Required</sup> <a name="passthroughRequestHeaders" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.passthroughRequestHeaders"></a>
+
+```typescript
+public readonly passthroughRequestHeaders: string[];
+```
+
+- *Type:* string[]
+
+---
+
 ##### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.path"></a>
 
 ```typescript
 public readonly path: string;
+```
+
+- *Type:* string
+
+---
+
+##### `pluginVersion`<sup>Required</sup> <a name="pluginVersion" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.pluginVersion"></a>
+
+```typescript
+public readonly pluginVersion: string;
 ```
 
 - *Type:* string
@@ -1191,6 +1529,16 @@ public readonly rotationWindow: number;
 ```
 
 - *Type:* number
+
+---
+
+##### `sealWrap`<sup>Required</sup> <a name="sealWrap" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend.property.sealWrap"></a>
+
+```typescript
+public readonly sealWrap: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -1245,24 +1593,36 @@ const gcpSecretBackendConfig: gcpSecretBackend.GcpSecretBackendConfig = { ... }
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.allowedManagedKeys">allowedManagedKeys</a></code> | <code>string[]</code> | List of managed key registry entry names that the mount in question is allowed to access. |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.allowedResponseHeaders">allowedResponseHeaders</a></code> | <code>string[]</code> | List of headers to allow and pass from the request to the plugin. |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.auditNonHmacRequestKeys">auditNonHmacRequestKeys</a></code> | <code>string[]</code> | Specifies the list of keys that will not be HMAC'd by audit devices in the request data object. |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.auditNonHmacResponseKeys">auditNonHmacResponseKeys</a></code> | <code>string[]</code> | Specifies the list of keys that will not be HMAC'd by audit devices in the response data object. |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.credentials">credentials</a></code> | <code>string</code> | JSON-encoded credentials to use to connect to GCP. |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.credentialsWo">credentialsWo</a></code> | <code>string</code> | Write-only JSON-encoded credentials to use to connect to GCP. |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.credentialsWoVersion">credentialsWoVersion</a></code> | <code>number</code> | Version counter for write-only JSON-encoded credentials. |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.defaultLeaseTtlSeconds">defaultLeaseTtlSeconds</a></code> | <code>number</code> | Default lease duration for secrets in seconds. |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.delegatedAuthAccessors">delegatedAuthAccessors</a></code> | <code>string[]</code> | List of headers to allow and pass from the request to the plugin. |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.description">description</a></code> | <code>string</code> | Human-friendly description of the mount for the backend. |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.disableAutomatedRotation">disableAutomatedRotation</a></code> | <code>boolean \| cdktf.IResolvable</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.disableRemount">disableRemount</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set, opts out of mount migration on path updates. |
-| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/gcp_secret_backend#id GcpSecretBackend#id}. |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.externalEntropyAccess">externalEntropyAccess</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable the secrets engine to access Vault's external entropy source. |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.forceNoCache">forceNoCache</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to true, disables caching. |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/gcp_secret_backend#id GcpSecretBackend#id}. |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.identityTokenAudience">identityTokenAudience</a></code> | <code>string</code> | The audience claim value for plugin identity tokens. |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.identityTokenKey">identityTokenKey</a></code> | <code>string</code> | The key to use for signing identity tokens. |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.identityTokenTtl">identityTokenTtl</a></code> | <code>number</code> | The TTL of generated tokens. |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.listingVisibility">listingVisibility</a></code> | <code>string</code> | Specifies whether to show this mount in the UI-specific listing endpoint. |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.local">local</a></code> | <code>boolean \| cdktf.IResolvable</code> | Local mount flag that can be explicitly set to true to enforce local mount in HA environment. |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.maxLeaseTtlSeconds">maxLeaseTtlSeconds</a></code> | <code>number</code> | Maximum possible lease duration for secrets in seconds. |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.namespace">namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.options">options</a></code> | <code>{[ key: string ]: string}</code> | Specifies mount type specific options that are passed to the backend. |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.passthroughRequestHeaders">passthroughRequestHeaders</a></code> | <code>string[]</code> | List of headers to allow and pass from the request to the plugin. |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.path">path</a></code> | <code>string</code> | Path to mount the backend at. |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.pluginVersion">pluginVersion</a></code> | <code>string</code> | Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'. |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.rotationPeriod">rotationPeriod</a></code> | <code>number</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.rotationSchedule">rotationSchedule</a></code> | <code>string</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.rotationWindow">rotationWindow</a></code> | <code>number</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
+| <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.sealWrap">sealWrap</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability. |
 | <code><a href="#@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.serviceAccountEmail">serviceAccountEmail</a></code> | <code>string</code> | Service Account to impersonate for plugin workload identity federation. |
 
 ---
@@ -1337,6 +1697,62 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
+##### `allowedManagedKeys`<sup>Optional</sup> <a name="allowedManagedKeys" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.allowedManagedKeys"></a>
+
+```typescript
+public readonly allowedManagedKeys: string[];
+```
+
+- *Type:* string[]
+
+List of managed key registry entry names that the mount in question is allowed to access.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/gcp_secret_backend#allowed_managed_keys GcpSecretBackend#allowed_managed_keys}
+
+---
+
+##### `allowedResponseHeaders`<sup>Optional</sup> <a name="allowedResponseHeaders" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.allowedResponseHeaders"></a>
+
+```typescript
+public readonly allowedResponseHeaders: string[];
+```
+
+- *Type:* string[]
+
+List of headers to allow and pass from the request to the plugin.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/gcp_secret_backend#allowed_response_headers GcpSecretBackend#allowed_response_headers}
+
+---
+
+##### `auditNonHmacRequestKeys`<sup>Optional</sup> <a name="auditNonHmacRequestKeys" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.auditNonHmacRequestKeys"></a>
+
+```typescript
+public readonly auditNonHmacRequestKeys: string[];
+```
+
+- *Type:* string[]
+
+Specifies the list of keys that will not be HMAC'd by audit devices in the request data object.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/gcp_secret_backend#audit_non_hmac_request_keys GcpSecretBackend#audit_non_hmac_request_keys}
+
+---
+
+##### `auditNonHmacResponseKeys`<sup>Optional</sup> <a name="auditNonHmacResponseKeys" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.auditNonHmacResponseKeys"></a>
+
+```typescript
+public readonly auditNonHmacResponseKeys: string[];
+```
+
+- *Type:* string[]
+
+Specifies the list of keys that will not be HMAC'd by audit devices in the response data object.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/gcp_secret_backend#audit_non_hmac_response_keys GcpSecretBackend#audit_non_hmac_response_keys}
+
+---
+
 ##### `credentials`<sup>Optional</sup> <a name="credentials" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.credentials"></a>
 
 ```typescript
@@ -1347,7 +1763,7 @@ public readonly credentials: string;
 
 JSON-encoded credentials to use to connect to GCP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/gcp_secret_backend#credentials GcpSecretBackend#credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/gcp_secret_backend#credentials GcpSecretBackend#credentials}
 
 ---
 
@@ -1361,7 +1777,7 @@ public readonly credentialsWo: string;
 
 Write-only JSON-encoded credentials to use to connect to GCP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/gcp_secret_backend#credentials_wo GcpSecretBackend#credentials_wo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/gcp_secret_backend#credentials_wo GcpSecretBackend#credentials_wo}
 
 ---
 
@@ -1375,7 +1791,7 @@ public readonly credentialsWoVersion: number;
 
 Version counter for write-only JSON-encoded credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/gcp_secret_backend#credentials_wo_version GcpSecretBackend#credentials_wo_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/gcp_secret_backend#credentials_wo_version GcpSecretBackend#credentials_wo_version}
 
 ---
 
@@ -1389,7 +1805,21 @@ public readonly defaultLeaseTtlSeconds: number;
 
 Default lease duration for secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/gcp_secret_backend#default_lease_ttl_seconds GcpSecretBackend#default_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/gcp_secret_backend#default_lease_ttl_seconds GcpSecretBackend#default_lease_ttl_seconds}
+
+---
+
+##### `delegatedAuthAccessors`<sup>Optional</sup> <a name="delegatedAuthAccessors" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.delegatedAuthAccessors"></a>
+
+```typescript
+public readonly delegatedAuthAccessors: string[];
+```
+
+- *Type:* string[]
+
+List of headers to allow and pass from the request to the plugin.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/gcp_secret_backend#delegated_auth_accessors GcpSecretBackend#delegated_auth_accessors}
 
 ---
 
@@ -1403,7 +1833,7 @@ public readonly description: string;
 
 Human-friendly description of the mount for the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/gcp_secret_backend#description GcpSecretBackend#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/gcp_secret_backend#description GcpSecretBackend#description}
 
 ---
 
@@ -1417,7 +1847,7 @@ public readonly disableAutomatedRotation: boolean | IResolvable;
 
 Stops rotation of the root credential until set to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/gcp_secret_backend#disable_automated_rotation GcpSecretBackend#disable_automated_rotation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/gcp_secret_backend#disable_automated_rotation GcpSecretBackend#disable_automated_rotation}
 
 ---
 
@@ -1431,7 +1861,35 @@ public readonly disableRemount: boolean | IResolvable;
 
 If set, opts out of mount migration on path updates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/gcp_secret_backend#disable_remount GcpSecretBackend#disable_remount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/gcp_secret_backend#disable_remount GcpSecretBackend#disable_remount}
+
+---
+
+##### `externalEntropyAccess`<sup>Optional</sup> <a name="externalEntropyAccess" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.externalEntropyAccess"></a>
+
+```typescript
+public readonly externalEntropyAccess: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Enable the secrets engine to access Vault's external entropy source.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/gcp_secret_backend#external_entropy_access GcpSecretBackend#external_entropy_access}
+
+---
+
+##### `forceNoCache`<sup>Optional</sup> <a name="forceNoCache" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.forceNoCache"></a>
+
+```typescript
+public readonly forceNoCache: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+If set to true, disables caching.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/gcp_secret_backend#force_no_cache GcpSecretBackend#force_no_cache}
 
 ---
 
@@ -1443,7 +1901,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/gcp_secret_backend#id GcpSecretBackend#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/gcp_secret_backend#id GcpSecretBackend#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1460,7 +1918,7 @@ public readonly identityTokenAudience: string;
 
 The audience claim value for plugin identity tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/gcp_secret_backend#identity_token_audience GcpSecretBackend#identity_token_audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/gcp_secret_backend#identity_token_audience GcpSecretBackend#identity_token_audience}
 
 ---
 
@@ -1474,7 +1932,7 @@ public readonly identityTokenKey: string;
 
 The key to use for signing identity tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/gcp_secret_backend#identity_token_key GcpSecretBackend#identity_token_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/gcp_secret_backend#identity_token_key GcpSecretBackend#identity_token_key}
 
 ---
 
@@ -1488,7 +1946,21 @@ public readonly identityTokenTtl: number;
 
 The TTL of generated tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/gcp_secret_backend#identity_token_ttl GcpSecretBackend#identity_token_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/gcp_secret_backend#identity_token_ttl GcpSecretBackend#identity_token_ttl}
+
+---
+
+##### `listingVisibility`<sup>Optional</sup> <a name="listingVisibility" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.listingVisibility"></a>
+
+```typescript
+public readonly listingVisibility: string;
+```
+
+- *Type:* string
+
+Specifies whether to show this mount in the UI-specific listing endpoint.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/gcp_secret_backend#listing_visibility GcpSecretBackend#listing_visibility}
 
 ---
 
@@ -1502,7 +1974,7 @@ public readonly local: boolean | IResolvable;
 
 Local mount flag that can be explicitly set to true to enforce local mount in HA environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/gcp_secret_backend#local GcpSecretBackend#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/gcp_secret_backend#local GcpSecretBackend#local}
 
 ---
 
@@ -1516,7 +1988,7 @@ public readonly maxLeaseTtlSeconds: number;
 
 Maximum possible lease duration for secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/gcp_secret_backend#max_lease_ttl_seconds GcpSecretBackend#max_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/gcp_secret_backend#max_lease_ttl_seconds GcpSecretBackend#max_lease_ttl_seconds}
 
 ---
 
@@ -1530,7 +2002,35 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/gcp_secret_backend#namespace GcpSecretBackend#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/gcp_secret_backend#namespace GcpSecretBackend#namespace}
+
+---
+
+##### `options`<sup>Optional</sup> <a name="options" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.options"></a>
+
+```typescript
+public readonly options: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+Specifies mount type specific options that are passed to the backend.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/gcp_secret_backend#options GcpSecretBackend#options}
+
+---
+
+##### `passthroughRequestHeaders`<sup>Optional</sup> <a name="passthroughRequestHeaders" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.passthroughRequestHeaders"></a>
+
+```typescript
+public readonly passthroughRequestHeaders: string[];
+```
+
+- *Type:* string[]
+
+List of headers to allow and pass from the request to the plugin.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/gcp_secret_backend#passthrough_request_headers GcpSecretBackend#passthrough_request_headers}
 
 ---
 
@@ -1544,7 +2044,21 @@ public readonly path: string;
 
 Path to mount the backend at.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/gcp_secret_backend#path GcpSecretBackend#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/gcp_secret_backend#path GcpSecretBackend#path}
+
+---
+
+##### `pluginVersion`<sup>Optional</sup> <a name="pluginVersion" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.pluginVersion"></a>
+
+```typescript
+public readonly pluginVersion: string;
+```
+
+- *Type:* string
+
+Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/gcp_secret_backend#plugin_version GcpSecretBackend#plugin_version}
 
 ---
 
@@ -1558,7 +2072,7 @@ public readonly rotationPeriod: number;
 
 The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/gcp_secret_backend#rotation_period GcpSecretBackend#rotation_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/gcp_secret_backend#rotation_period GcpSecretBackend#rotation_period}
 
 ---
 
@@ -1572,7 +2086,7 @@ public readonly rotationSchedule: string;
 
 The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/gcp_secret_backend#rotation_schedule GcpSecretBackend#rotation_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/gcp_secret_backend#rotation_schedule GcpSecretBackend#rotation_schedule}
 
 ---
 
@@ -1588,7 +2102,21 @@ The maximum amount of time in seconds Vault is allowed to complete a rotation on
 
 Can only be used with rotation_schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/gcp_secret_backend#rotation_window GcpSecretBackend#rotation_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/gcp_secret_backend#rotation_window GcpSecretBackend#rotation_window}
+
+---
+
+##### `sealWrap`<sup>Optional</sup> <a name="sealWrap" id="@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackendConfig.property.sealWrap"></a>
+
+```typescript
+public readonly sealWrap: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/gcp_secret_backend#seal_wrap GcpSecretBackend#seal_wrap}
 
 ---
 
@@ -1602,7 +2130,7 @@ public readonly serviceAccountEmail: string;
 
 Service Account to impersonate for plugin workload identity federation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/gcp_secret_backend#service_account_email GcpSecretBackend#service_account_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/gcp_secret_backend#service_account_email GcpSecretBackend#service_account_email}
 
 ---
 

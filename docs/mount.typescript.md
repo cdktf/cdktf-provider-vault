@@ -4,7 +4,7 @@
 
 ### Mount <a name="Mount" id="@cdktf/provider-vault.mount.Mount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/mount vault_mount}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/mount vault_mount}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.mount.Mount.Initializer"></a>
 
@@ -81,6 +81,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.mount.Mount.resetDelegatedAuthAccessors">resetDelegatedAuthAccessors</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.resetExternalEntropyAccess">resetExternalEntropyAccess</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.resetForceNoCache">resetForceNoCache</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.resetIdentityTokenKey">resetIdentityTokenKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.resetListingVisibility">resetListingVisibility</a></code> | *No description.* |
@@ -430,6 +431,12 @@ public resetDescription(): void
 public resetExternalEntropyAccess(): void
 ```
 
+##### `resetForceNoCache` <a name="resetForceNoCache" id="@cdktf/provider-vault.mount.Mount.resetForceNoCache"></a>
+
+```typescript
+public resetForceNoCache(): void
+```
+
 ##### `resetId` <a name="resetId" id="@cdktf/provider-vault.mount.Mount.resetId"></a>
 
 ```typescript
@@ -593,7 +600,7 @@ The construct id used in the generated config for the Mount to import.
 
 The id of the existing Mount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/mount#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/mount#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -632,6 +639,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.delegatedAuthAccessorsInput">delegatedAuthAccessorsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.externalEntropyAccessInput">externalEntropyAccessInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.property.forceNoCacheInput">forceNoCacheInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.identityTokenKeyInput">identityTokenKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.listingVisibilityInput">listingVisibilityInput</a></code> | <code>string</code> | *No description.* |
@@ -652,6 +660,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.delegatedAuthAccessors">delegatedAuthAccessors</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.externalEntropyAccess">externalEntropyAccess</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.mount.Mount.property.forceNoCache">forceNoCache</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.identityTokenKey">identityTokenKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.mount.Mount.property.listingVisibility">listingVisibility</a></code> | <code>string</code> | *No description.* |
@@ -899,6 +908,16 @@ public readonly externalEntropyAccessInput: boolean | IResolvable;
 
 ---
 
+##### `forceNoCacheInput`<sup>Optional</sup> <a name="forceNoCacheInput" id="@cdktf/provider-vault.mount.Mount.property.forceNoCacheInput"></a>
+
+```typescript
+public readonly forceNoCacheInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `identityTokenKeyInput`<sup>Optional</sup> <a name="identityTokenKeyInput" id="@cdktf/provider-vault.mount.Mount.property.identityTokenKeyInput"></a>
 
 ```typescript
@@ -1099,6 +1118,16 @@ public readonly externalEntropyAccess: boolean | IResolvable;
 
 ---
 
+##### `forceNoCache`<sup>Required</sup> <a name="forceNoCache" id="@cdktf/provider-vault.mount.Mount.property.forceNoCache"></a>
+
+```typescript
+public readonly forceNoCache: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.mount.Mount.property.id"></a>
 
 ```typescript
@@ -1270,7 +1299,8 @@ const mountConfig: mount.MountConfig = { ... }
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.delegatedAuthAccessors">delegatedAuthAccessors</a></code> | <code>string[]</code> | List of headers to allow and pass from the request to the plugin. |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.description">description</a></code> | <code>string</code> | Human-friendly description of the mount. |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.externalEntropyAccess">externalEntropyAccess</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable the secrets engine to access Vault's external entropy source. |
-| <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/mount#id Mount#id}. |
+| <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.forceNoCache">forceNoCache</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to true, disables caching. |
+| <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/mount#id Mount#id}. |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.identityTokenKey">identityTokenKey</a></code> | <code>string</code> | The key to use for signing plugin workload identity tokens. |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.listingVisibility">listingVisibility</a></code> | <code>string</code> | Specifies whether to show this mount in the UI-specific listing endpoint. |
 | <code><a href="#@cdktf/provider-vault.mount.MountConfig.property.local">local</a></code> | <code>boolean \| cdktf.IResolvable</code> | Local mount flag that can be explicitly set to true to enforce local mount in HA environment. |
@@ -1363,7 +1393,7 @@ public readonly path: string;
 
 Where the secret backend will be mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/mount#path Mount#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/mount#path Mount#path}
 
 ---
 
@@ -1377,7 +1407,7 @@ public readonly type: string;
 
 Type of the backend, such as 'aws'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/mount#type Mount#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/mount#type Mount#type}
 
 ---
 
@@ -1391,7 +1421,7 @@ public readonly allowedManagedKeys: string[];
 
 List of managed key registry entry names that the mount in question is allowed to access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/mount#allowed_managed_keys Mount#allowed_managed_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/mount#allowed_managed_keys Mount#allowed_managed_keys}
 
 ---
 
@@ -1405,7 +1435,7 @@ public readonly allowedResponseHeaders: string[];
 
 List of headers to allow and pass from the request to the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/mount#allowed_response_headers Mount#allowed_response_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/mount#allowed_response_headers Mount#allowed_response_headers}
 
 ---
 
@@ -1419,7 +1449,7 @@ public readonly auditNonHmacRequestKeys: string[];
 
 Specifies the list of keys that will not be HMAC'd by audit devices in the request data object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/mount#audit_non_hmac_request_keys Mount#audit_non_hmac_request_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/mount#audit_non_hmac_request_keys Mount#audit_non_hmac_request_keys}
 
 ---
 
@@ -1433,7 +1463,7 @@ public readonly auditNonHmacResponseKeys: string[];
 
 Specifies the list of keys that will not be HMAC'd by audit devices in the response data object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/mount#audit_non_hmac_response_keys Mount#audit_non_hmac_response_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/mount#audit_non_hmac_response_keys Mount#audit_non_hmac_response_keys}
 
 ---
 
@@ -1447,7 +1477,7 @@ public readonly defaultLeaseTtlSeconds: number;
 
 Default lease duration for tokens and secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/mount#default_lease_ttl_seconds Mount#default_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/mount#default_lease_ttl_seconds Mount#default_lease_ttl_seconds}
 
 ---
 
@@ -1461,7 +1491,7 @@ public readonly delegatedAuthAccessors: string[];
 
 List of headers to allow and pass from the request to the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/mount#delegated_auth_accessors Mount#delegated_auth_accessors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/mount#delegated_auth_accessors Mount#delegated_auth_accessors}
 
 ---
 
@@ -1475,7 +1505,7 @@ public readonly description: string;
 
 Human-friendly description of the mount.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/mount#description Mount#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/mount#description Mount#description}
 
 ---
 
@@ -1489,7 +1519,21 @@ public readonly externalEntropyAccess: boolean | IResolvable;
 
 Enable the secrets engine to access Vault's external entropy source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/mount#external_entropy_access Mount#external_entropy_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/mount#external_entropy_access Mount#external_entropy_access}
+
+---
+
+##### `forceNoCache`<sup>Optional</sup> <a name="forceNoCache" id="@cdktf/provider-vault.mount.MountConfig.property.forceNoCache"></a>
+
+```typescript
+public readonly forceNoCache: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+If set to true, disables caching.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/mount#force_no_cache Mount#force_no_cache}
 
 ---
 
@@ -1501,7 +1545,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/mount#id Mount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/mount#id Mount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1518,7 +1562,7 @@ public readonly identityTokenKey: string;
 
 The key to use for signing plugin workload identity tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/mount#identity_token_key Mount#identity_token_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/mount#identity_token_key Mount#identity_token_key}
 
 ---
 
@@ -1532,7 +1576,7 @@ public readonly listingVisibility: string;
 
 Specifies whether to show this mount in the UI-specific listing endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/mount#listing_visibility Mount#listing_visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/mount#listing_visibility Mount#listing_visibility}
 
 ---
 
@@ -1546,7 +1590,7 @@ public readonly local: boolean | IResolvable;
 
 Local mount flag that can be explicitly set to true to enforce local mount in HA environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/mount#local Mount#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/mount#local Mount#local}
 
 ---
 
@@ -1560,7 +1604,7 @@ public readonly maxLeaseTtlSeconds: number;
 
 Maximum possible lease duration for tokens and secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/mount#max_lease_ttl_seconds Mount#max_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/mount#max_lease_ttl_seconds Mount#max_lease_ttl_seconds}
 
 ---
 
@@ -1574,7 +1618,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/mount#namespace Mount#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/mount#namespace Mount#namespace}
 
 ---
 
@@ -1588,7 +1632,7 @@ public readonly options: {[ key: string ]: string};
 
 Specifies mount type specific options that are passed to the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/mount#options Mount#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/mount#options Mount#options}
 
 ---
 
@@ -1602,7 +1646,7 @@ public readonly passthroughRequestHeaders: string[];
 
 List of headers to allow and pass from the request to the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/mount#passthrough_request_headers Mount#passthrough_request_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/mount#passthrough_request_headers Mount#passthrough_request_headers}
 
 ---
 
@@ -1616,7 +1660,7 @@ public readonly pluginVersion: string;
 
 Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/mount#plugin_version Mount#plugin_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/mount#plugin_version Mount#plugin_version}
 
 ---
 
@@ -1630,7 +1674,7 @@ public readonly sealWrap: boolean | IResolvable;
 
 Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/mount#seal_wrap Mount#seal_wrap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/mount#seal_wrap Mount#seal_wrap}
 
 ---
 
