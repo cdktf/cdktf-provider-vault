@@ -146,6 +146,8 @@ The following submodules are available:
 - [namespace](./namespace.typescript.md)
 - [nomadSecretBackend](./nomadSecretBackend.typescript.md)
 - [nomadSecretRole](./nomadSecretRole.typescript.md)
+- [ociAuthBackend](./ociAuthBackend.typescript.md)
+- [ociAuthBackendRole](./ociAuthBackendRole.typescript.md)
 - [oktaAuthBackend](./oktaAuthBackend.typescript.md)
 - [oktaAuthBackendGroup](./oktaAuthBackendGroup.typescript.md)
 - [oktaAuthBackendUser](./oktaAuthBackendUser.typescript.md)

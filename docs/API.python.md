@@ -146,6 +146,8 @@ The following submodules are available:
 - [namespace](./namespace.python.md)
 - [nomadSecretBackend](./nomadSecretBackend.python.md)
 - [nomadSecretRole](./nomadSecretRole.python.md)
+- [ociAuthBackend](./ociAuthBackend.python.md)
+- [ociAuthBackendRole](./ociAuthBackendRole.python.md)
 - [oktaAuthBackend](./oktaAuthBackend.python.md)
 - [oktaAuthBackendGroup](./oktaAuthBackendGroup.python.md)
 - [oktaAuthBackendUser](./oktaAuthBackendUser.python.md)

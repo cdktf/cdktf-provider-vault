@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/data-sources/ssh_secret_backend_sign
+// https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/data-sources/ssh_secret_backend_sign
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface DataVaultSshSecretBackendSignConfig extends cdktf.TerraformMeta
   /**
   * Specifies the type of certificate to be created; either "user" or "host".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/data-sources/ssh_secret_backend_sign#cert_type DataVaultSshSecretBackendSign#cert_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/data-sources/ssh_secret_backend_sign#cert_type DataVaultSshSecretBackendSign#cert_type}
   */
   readonly certType?: string;
   /**
   * Specifies a map of the critical options that the certificate should be signed for. Defaults to none.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/data-sources/ssh_secret_backend_sign#critical_options DataVaultSshSecretBackendSign#critical_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/data-sources/ssh_secret_backend_sign#critical_options DataVaultSshSecretBackendSign#critical_options}
   */
   readonly criticalOptions?: { [key: string]: string };
   /**
   * Specifies a map of the extensions that the certificate should be signed for. Defaults to none.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/data-sources/ssh_secret_backend_sign#extensions DataVaultSshSecretBackendSign#extensions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/data-sources/ssh_secret_backend_sign#extensions DataVaultSshSecretBackendSign#extensions}
   */
   readonly extensions?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/data-sources/ssh_secret_backend_sign#id DataVaultSshSecretBackendSign#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/data-sources/ssh_secret_backend_sign#id DataVaultSshSecretBackendSign#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,49 +40,49 @@ export interface DataVaultSshSecretBackendSignConfig extends cdktf.TerraformMeta
   /**
   * Specifies the key id that the created certificate should have. If not specified, the display name of the token will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/data-sources/ssh_secret_backend_sign#key_id DataVaultSshSecretBackendSign#key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/data-sources/ssh_secret_backend_sign#key_id DataVaultSshSecretBackendSign#key_id}
   */
   readonly keyId?: string;
   /**
   * Specifies the name of the role to sign.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/data-sources/ssh_secret_backend_sign#name DataVaultSshSecretBackendSign#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/data-sources/ssh_secret_backend_sign#name DataVaultSshSecretBackendSign#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/data-sources/ssh_secret_backend_sign#namespace DataVaultSshSecretBackendSign#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/data-sources/ssh_secret_backend_sign#namespace DataVaultSshSecretBackendSign#namespace}
   */
   readonly namespace?: string;
   /**
   * Full path where SSH backend is mounted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/data-sources/ssh_secret_backend_sign#path DataVaultSshSecretBackendSign#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/data-sources/ssh_secret_backend_sign#path DataVaultSshSecretBackendSign#path}
   */
   readonly path: string;
   /**
   * Specifies the SSH public key that should be signed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/data-sources/ssh_secret_backend_sign#public_key DataVaultSshSecretBackendSign#public_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/data-sources/ssh_secret_backend_sign#public_key DataVaultSshSecretBackendSign#public_key}
   */
   readonly publicKey: string;
   /**
   * Specifies the Requested Time To Live. Cannot be greater than the role's max_ttl value. If not provided, the role's ttl value will be used. Note that the role values default to system values if not explicitly set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/data-sources/ssh_secret_backend_sign#ttl DataVaultSshSecretBackendSign#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/data-sources/ssh_secret_backend_sign#ttl DataVaultSshSecretBackendSign#ttl}
   */
   readonly ttl?: string;
   /**
   * Specifies valid principals, either usernames or hostnames, that the certificate should be signed for. Required unless the role has specified allow_empty_principals or a value has been set for either the default_user or default_user_template role parameters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/data-sources/ssh_secret_backend_sign#valid_principals DataVaultSshSecretBackendSign#valid_principals}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/data-sources/ssh_secret_backend_sign#valid_principals DataVaultSshSecretBackendSign#valid_principals}
   */
   readonly validPrincipals?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/data-sources/ssh_secret_backend_sign vault_ssh_secret_backend_sign}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/data-sources/ssh_secret_backend_sign vault_ssh_secret_backend_sign}
 */
 export class DataVaultSshSecretBackendSign extends cdktf.TerraformDataSource {
 
@@ -98,7 +98,7 @@ export class DataVaultSshSecretBackendSign extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataVaultSshSecretBackendSign resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataVaultSshSecretBackendSign to import
-  * @param importFromId The id of the existing DataVaultSshSecretBackendSign that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/data-sources/ssh_secret_backend_sign#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataVaultSshSecretBackendSign that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/data-sources/ssh_secret_backend_sign#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataVaultSshSecretBackendSign to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -110,7 +110,7 @@ export class DataVaultSshSecretBackendSign extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/data-sources/ssh_secret_backend_sign vault_ssh_secret_backend_sign} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/data-sources/ssh_secret_backend_sign vault_ssh_secret_backend_sign} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -121,7 +121,7 @@ export class DataVaultSshSecretBackendSign extends cdktf.TerraformDataSource {
       terraformResourceType: 'vault_ssh_secret_backend_sign',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.1.0',
+        providerVersion: '5.2.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

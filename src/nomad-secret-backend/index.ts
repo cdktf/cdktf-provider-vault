@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/nomad_secret_backend
+// https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/nomad_secret_backend
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,104 +15,182 @@ export interface NomadSecretBackendConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies the address of the Nomad instance, provided as "protocol://host:port" like "http://127.0.0.1:4646".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/nomad_secret_backend#address NomadSecretBackend#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/nomad_secret_backend#address NomadSecretBackend#address}
   */
   readonly address?: string;
   /**
+  * List of managed key registry entry names that the mount in question is allowed to access
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/nomad_secret_backend#allowed_managed_keys NomadSecretBackend#allowed_managed_keys}
+  */
+  readonly allowedManagedKeys?: string[];
+  /**
+  * List of headers to allow and pass from the request to the plugin
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/nomad_secret_backend#allowed_response_headers NomadSecretBackend#allowed_response_headers}
+  */
+  readonly allowedResponseHeaders?: string[];
+  /**
+  * Specifies the list of keys that will not be HMAC'd by audit devices in the request data object.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/nomad_secret_backend#audit_non_hmac_request_keys NomadSecretBackend#audit_non_hmac_request_keys}
+  */
+  readonly auditNonHmacRequestKeys?: string[];
+  /**
+  * Specifies the list of keys that will not be HMAC'd by audit devices in the response data object.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/nomad_secret_backend#audit_non_hmac_response_keys NomadSecretBackend#audit_non_hmac_response_keys}
+  */
+  readonly auditNonHmacResponseKeys?: string[];
+  /**
   * The mount path for the Nomad backend.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/nomad_secret_backend#backend NomadSecretBackend#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/nomad_secret_backend#backend NomadSecretBackend#backend}
   */
   readonly backend?: string;
   /**
   * CA certificate to use when verifying Nomad server certificate, must be x509 PEM encoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/nomad_secret_backend#ca_cert NomadSecretBackend#ca_cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/nomad_secret_backend#ca_cert NomadSecretBackend#ca_cert}
   */
   readonly caCert?: string;
   /**
   * Client certificate used for Nomad's TLS communication, must be x509 PEM encoded and if this is set you need to also set client_key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/nomad_secret_backend#client_cert NomadSecretBackend#client_cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/nomad_secret_backend#client_cert NomadSecretBackend#client_cert}
   */
   readonly clientCert?: string;
   /**
   * Client key used for Nomad's TLS communication, must be x509 PEM encoded and if this is set you need to also set client_cert.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/nomad_secret_backend#client_key NomadSecretBackend#client_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/nomad_secret_backend#client_key NomadSecretBackend#client_key}
   */
   readonly clientKey?: string;
   /**
   * Default lease duration for secrets in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/nomad_secret_backend#default_lease_ttl_seconds NomadSecretBackend#default_lease_ttl_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/nomad_secret_backend#default_lease_ttl_seconds NomadSecretBackend#default_lease_ttl_seconds}
   */
   readonly defaultLeaseTtlSeconds?: number;
   /**
+  * List of headers to allow and pass from the request to the plugin
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/nomad_secret_backend#delegated_auth_accessors NomadSecretBackend#delegated_auth_accessors}
+  */
+  readonly delegatedAuthAccessors?: string[];
+  /**
   * Human-friendly description of the mount for the backend.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/nomad_secret_backend#description NomadSecretBackend#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/nomad_secret_backend#description NomadSecretBackend#description}
   */
   readonly description?: string;
   /**
   * If set, opts out of mount migration on path updates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/nomad_secret_backend#disable_remount NomadSecretBackend#disable_remount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/nomad_secret_backend#disable_remount NomadSecretBackend#disable_remount}
   */
   readonly disableRemount?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/nomad_secret_backend#id NomadSecretBackend#id}
+  * Enable the secrets engine to access Vault's external entropy source
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/nomad_secret_backend#external_entropy_access NomadSecretBackend#external_entropy_access}
+  */
+  readonly externalEntropyAccess?: boolean | cdktf.IResolvable;
+  /**
+  * If set to true, disables caching.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/nomad_secret_backend#force_no_cache NomadSecretBackend#force_no_cache}
+  */
+  readonly forceNoCache?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/nomad_secret_backend#id NomadSecretBackend#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
+  * The key to use for signing plugin workload identity tokens
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/nomad_secret_backend#identity_token_key NomadSecretBackend#identity_token_key}
+  */
+  readonly identityTokenKey?: string;
+  /**
+  * Specifies whether to show this mount in the UI-specific listing endpoint
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/nomad_secret_backend#listing_visibility NomadSecretBackend#listing_visibility}
+  */
+  readonly listingVisibility?: string;
+  /**
   * Mark the secrets engine as local-only. Local engines are not replicated or removed by replication. Tolerance duration to use when checking the last rotation time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/nomad_secret_backend#local NomadSecretBackend#local}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/nomad_secret_backend#local NomadSecretBackend#local}
   */
   readonly local?: boolean | cdktf.IResolvable;
   /**
   * Maximum possible lease duration for secrets in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/nomad_secret_backend#max_lease_ttl_seconds NomadSecretBackend#max_lease_ttl_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/nomad_secret_backend#max_lease_ttl_seconds NomadSecretBackend#max_lease_ttl_seconds}
   */
   readonly maxLeaseTtlSeconds?: number;
   /**
   * Specifies the maximum length to use for the name of the Nomad token generated with Generate Credential. If omitted, 0 is used and ignored, defaulting to the max value allowed by the Nomad version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/nomad_secret_backend#max_token_name_length NomadSecretBackend#max_token_name_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/nomad_secret_backend#max_token_name_length NomadSecretBackend#max_token_name_length}
   */
   readonly maxTokenNameLength?: number;
   /**
   * Maximum possible lease duration for secrets in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/nomad_secret_backend#max_ttl NomadSecretBackend#max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/nomad_secret_backend#max_ttl NomadSecretBackend#max_ttl}
   */
   readonly maxTtl?: number;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/nomad_secret_backend#namespace NomadSecretBackend#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/nomad_secret_backend#namespace NomadSecretBackend#namespace}
   */
   readonly namespace?: string;
   /**
+  * Specifies mount type specific options that are passed to the backend
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/nomad_secret_backend#options NomadSecretBackend#options}
+  */
+  readonly options?: { [key: string]: string };
+  /**
+  * List of headers to allow and pass from the request to the plugin
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/nomad_secret_backend#passthrough_request_headers NomadSecretBackend#passthrough_request_headers}
+  */
+  readonly passthroughRequestHeaders?: string[];
+  /**
+  * Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/nomad_secret_backend#plugin_version NomadSecretBackend#plugin_version}
+  */
+  readonly pluginVersion?: string;
+  /**
+  * Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/nomad_secret_backend#seal_wrap NomadSecretBackend#seal_wrap}
+  */
+  readonly sealWrap?: boolean | cdktf.IResolvable;
+  /**
   * Specifies the Nomad Management token to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/nomad_secret_backend#token NomadSecretBackend#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/nomad_secret_backend#token NomadSecretBackend#token}
   */
   readonly token?: string;
   /**
   * Maximum possible lease duration for secrets in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/nomad_secret_backend#ttl NomadSecretBackend#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/nomad_secret_backend#ttl NomadSecretBackend#ttl}
   */
   readonly ttl?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/nomad_secret_backend vault_nomad_secret_backend}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/nomad_secret_backend vault_nomad_secret_backend}
 */
 export class NomadSecretBackend extends cdktf.TerraformResource {
 
@@ -128,7 +206,7 @@ export class NomadSecretBackend extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a NomadSecretBackend resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NomadSecretBackend to import
-  * @param importFromId The id of the existing NomadSecretBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/nomad_secret_backend#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NomadSecretBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/nomad_secret_backend#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NomadSecretBackend to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -140,7 +218,7 @@ export class NomadSecretBackend extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/nomad_secret_backend vault_nomad_secret_backend} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/nomad_secret_backend vault_nomad_secret_backend} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -151,7 +229,7 @@ export class NomadSecretBackend extends cdktf.TerraformResource {
       terraformResourceType: 'vault_nomad_secret_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.1.0',
+        providerVersion: '5.2.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -163,19 +241,32 @@ export class NomadSecretBackend extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._address = config.address;
+    this._allowedManagedKeys = config.allowedManagedKeys;
+    this._allowedResponseHeaders = config.allowedResponseHeaders;
+    this._auditNonHmacRequestKeys = config.auditNonHmacRequestKeys;
+    this._auditNonHmacResponseKeys = config.auditNonHmacResponseKeys;
     this._backend = config.backend;
     this._caCert = config.caCert;
     this._clientCert = config.clientCert;
     this._clientKey = config.clientKey;
     this._defaultLeaseTtlSeconds = config.defaultLeaseTtlSeconds;
+    this._delegatedAuthAccessors = config.delegatedAuthAccessors;
     this._description = config.description;
     this._disableRemount = config.disableRemount;
+    this._externalEntropyAccess = config.externalEntropyAccess;
+    this._forceNoCache = config.forceNoCache;
     this._id = config.id;
+    this._identityTokenKey = config.identityTokenKey;
+    this._listingVisibility = config.listingVisibility;
     this._local = config.local;
     this._maxLeaseTtlSeconds = config.maxLeaseTtlSeconds;
     this._maxTokenNameLength = config.maxTokenNameLength;
     this._maxTtl = config.maxTtl;
     this._namespace = config.namespace;
+    this._options = config.options;
+    this._passthroughRequestHeaders = config.passthroughRequestHeaders;
+    this._pluginVersion = config.pluginVersion;
+    this._sealWrap = config.sealWrap;
     this._token = config.token;
     this._ttl = config.ttl;
   }
@@ -183,6 +274,11 @@ export class NomadSecretBackend extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // accessor - computed: true, optional: false, required: false
+  public get accessor() {
+    return this.getStringAttribute('accessor');
+  }
 
   // address - computed: false, optional: true, required: false
   private _address?: string; 
@@ -198,6 +294,70 @@ export class NomadSecretBackend extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get addressInput() {
     return this._address;
+  }
+
+  // allowed_managed_keys - computed: false, optional: true, required: false
+  private _allowedManagedKeys?: string[]; 
+  public get allowedManagedKeys() {
+    return cdktf.Fn.tolist(this.getListAttribute('allowed_managed_keys'));
+  }
+  public set allowedManagedKeys(value: string[]) {
+    this._allowedManagedKeys = value;
+  }
+  public resetAllowedManagedKeys() {
+    this._allowedManagedKeys = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedManagedKeysInput() {
+    return this._allowedManagedKeys;
+  }
+
+  // allowed_response_headers - computed: false, optional: true, required: false
+  private _allowedResponseHeaders?: string[]; 
+  public get allowedResponseHeaders() {
+    return this.getListAttribute('allowed_response_headers');
+  }
+  public set allowedResponseHeaders(value: string[]) {
+    this._allowedResponseHeaders = value;
+  }
+  public resetAllowedResponseHeaders() {
+    this._allowedResponseHeaders = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedResponseHeadersInput() {
+    return this._allowedResponseHeaders;
+  }
+
+  // audit_non_hmac_request_keys - computed: true, optional: true, required: false
+  private _auditNonHmacRequestKeys?: string[]; 
+  public get auditNonHmacRequestKeys() {
+    return this.getListAttribute('audit_non_hmac_request_keys');
+  }
+  public set auditNonHmacRequestKeys(value: string[]) {
+    this._auditNonHmacRequestKeys = value;
+  }
+  public resetAuditNonHmacRequestKeys() {
+    this._auditNonHmacRequestKeys = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get auditNonHmacRequestKeysInput() {
+    return this._auditNonHmacRequestKeys;
+  }
+
+  // audit_non_hmac_response_keys - computed: true, optional: true, required: false
+  private _auditNonHmacResponseKeys?: string[]; 
+  public get auditNonHmacResponseKeys() {
+    return this.getListAttribute('audit_non_hmac_response_keys');
+  }
+  public set auditNonHmacResponseKeys(value: string[]) {
+    this._auditNonHmacResponseKeys = value;
+  }
+  public resetAuditNonHmacResponseKeys() {
+    this._auditNonHmacResponseKeys = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get auditNonHmacResponseKeysInput() {
+    return this._auditNonHmacResponseKeys;
   }
 
   // backend - computed: false, optional: true, required: false
@@ -280,6 +440,22 @@ export class NomadSecretBackend extends cdktf.TerraformResource {
     return this._defaultLeaseTtlSeconds;
   }
 
+  // delegated_auth_accessors - computed: false, optional: true, required: false
+  private _delegatedAuthAccessors?: string[]; 
+  public get delegatedAuthAccessors() {
+    return this.getListAttribute('delegated_auth_accessors');
+  }
+  public set delegatedAuthAccessors(value: string[]) {
+    this._delegatedAuthAccessors = value;
+  }
+  public resetDelegatedAuthAccessors() {
+    this._delegatedAuthAccessors = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get delegatedAuthAccessorsInput() {
+    return this._delegatedAuthAccessors;
+  }
+
   // description - computed: false, optional: true, required: false
   private _description?: string; 
   public get description() {
@@ -312,6 +488,38 @@ export class NomadSecretBackend extends cdktf.TerraformResource {
     return this._disableRemount;
   }
 
+  // external_entropy_access - computed: false, optional: true, required: false
+  private _externalEntropyAccess?: boolean | cdktf.IResolvable; 
+  public get externalEntropyAccess() {
+    return this.getBooleanAttribute('external_entropy_access');
+  }
+  public set externalEntropyAccess(value: boolean | cdktf.IResolvable) {
+    this._externalEntropyAccess = value;
+  }
+  public resetExternalEntropyAccess() {
+    this._externalEntropyAccess = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get externalEntropyAccessInput() {
+    return this._externalEntropyAccess;
+  }
+
+  // force_no_cache - computed: true, optional: true, required: false
+  private _forceNoCache?: boolean | cdktf.IResolvable; 
+  public get forceNoCache() {
+    return this.getBooleanAttribute('force_no_cache');
+  }
+  public set forceNoCache(value: boolean | cdktf.IResolvable) {
+    this._forceNoCache = value;
+  }
+  public resetForceNoCache() {
+    this._forceNoCache = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forceNoCacheInput() {
+    return this._forceNoCache;
+  }
+
   // id - computed: true, optional: true, required: false
   private _id?: string; 
   public get id() {
@@ -326,6 +534,38 @@ export class NomadSecretBackend extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // identity_token_key - computed: false, optional: true, required: false
+  private _identityTokenKey?: string; 
+  public get identityTokenKey() {
+    return this.getStringAttribute('identity_token_key');
+  }
+  public set identityTokenKey(value: string) {
+    this._identityTokenKey = value;
+  }
+  public resetIdentityTokenKey() {
+    this._identityTokenKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityTokenKeyInput() {
+    return this._identityTokenKey;
+  }
+
+  // listing_visibility - computed: false, optional: true, required: false
+  private _listingVisibility?: string; 
+  public get listingVisibility() {
+    return this.getStringAttribute('listing_visibility');
+  }
+  public set listingVisibility(value: string) {
+    this._listingVisibility = value;
+  }
+  public resetListingVisibility() {
+    this._listingVisibility = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get listingVisibilityInput() {
+    return this._listingVisibility;
   }
 
   // local - computed: false, optional: true, required: false
@@ -408,6 +648,70 @@ export class NomadSecretBackend extends cdktf.TerraformResource {
     return this._namespace;
   }
 
+  // options - computed: false, optional: true, required: false
+  private _options?: { [key: string]: string }; 
+  public get options() {
+    return this.getStringMapAttribute('options');
+  }
+  public set options(value: { [key: string]: string }) {
+    this._options = value;
+  }
+  public resetOptions() {
+    this._options = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get optionsInput() {
+    return this._options;
+  }
+
+  // passthrough_request_headers - computed: false, optional: true, required: false
+  private _passthroughRequestHeaders?: string[]; 
+  public get passthroughRequestHeaders() {
+    return this.getListAttribute('passthrough_request_headers');
+  }
+  public set passthroughRequestHeaders(value: string[]) {
+    this._passthroughRequestHeaders = value;
+  }
+  public resetPassthroughRequestHeaders() {
+    this._passthroughRequestHeaders = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passthroughRequestHeadersInput() {
+    return this._passthroughRequestHeaders;
+  }
+
+  // plugin_version - computed: false, optional: true, required: false
+  private _pluginVersion?: string; 
+  public get pluginVersion() {
+    return this.getStringAttribute('plugin_version');
+  }
+  public set pluginVersion(value: string) {
+    this._pluginVersion = value;
+  }
+  public resetPluginVersion() {
+    this._pluginVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pluginVersionInput() {
+    return this._pluginVersion;
+  }
+
+  // seal_wrap - computed: true, optional: true, required: false
+  private _sealWrap?: boolean | cdktf.IResolvable; 
+  public get sealWrap() {
+    return this.getBooleanAttribute('seal_wrap');
+  }
+  public set sealWrap(value: boolean | cdktf.IResolvable) {
+    this._sealWrap = value;
+  }
+  public resetSealWrap() {
+    this._sealWrap = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sealWrapInput() {
+    return this._sealWrap;
+  }
+
   // token - computed: false, optional: true, required: false
   private _token?: string; 
   public get token() {
@@ -447,19 +751,32 @@ export class NomadSecretBackend extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       address: cdktf.stringToTerraform(this._address),
+      allowed_managed_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedManagedKeys),
+      allowed_response_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedResponseHeaders),
+      audit_non_hmac_request_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._auditNonHmacRequestKeys),
+      audit_non_hmac_response_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._auditNonHmacResponseKeys),
       backend: cdktf.stringToTerraform(this._backend),
       ca_cert: cdktf.stringToTerraform(this._caCert),
       client_cert: cdktf.stringToTerraform(this._clientCert),
       client_key: cdktf.stringToTerraform(this._clientKey),
       default_lease_ttl_seconds: cdktf.numberToTerraform(this._defaultLeaseTtlSeconds),
+      delegated_auth_accessors: cdktf.listMapper(cdktf.stringToTerraform, false)(this._delegatedAuthAccessors),
       description: cdktf.stringToTerraform(this._description),
       disable_remount: cdktf.booleanToTerraform(this._disableRemount),
+      external_entropy_access: cdktf.booleanToTerraform(this._externalEntropyAccess),
+      force_no_cache: cdktf.booleanToTerraform(this._forceNoCache),
       id: cdktf.stringToTerraform(this._id),
+      identity_token_key: cdktf.stringToTerraform(this._identityTokenKey),
+      listing_visibility: cdktf.stringToTerraform(this._listingVisibility),
       local: cdktf.booleanToTerraform(this._local),
       max_lease_ttl_seconds: cdktf.numberToTerraform(this._maxLeaseTtlSeconds),
       max_token_name_length: cdktf.numberToTerraform(this._maxTokenNameLength),
       max_ttl: cdktf.numberToTerraform(this._maxTtl),
       namespace: cdktf.stringToTerraform(this._namespace),
+      options: cdktf.hashMapper(cdktf.stringToTerraform)(this._options),
+      passthrough_request_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._passthroughRequestHeaders),
+      plugin_version: cdktf.stringToTerraform(this._pluginVersion),
+      seal_wrap: cdktf.booleanToTerraform(this._sealWrap),
       token: cdktf.stringToTerraform(this._token),
       ttl: cdktf.numberToTerraform(this._ttl),
     };
@@ -472,6 +789,30 @@ export class NomadSecretBackend extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      allowed_managed_keys: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedManagedKeys),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      allowed_response_headers: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedResponseHeaders),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      audit_non_hmac_request_keys: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._auditNonHmacRequestKeys),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      audit_non_hmac_response_keys: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._auditNonHmacResponseKeys),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
       },
       backend: {
         value: cdktf.stringToHclTerraform(this._backend),
@@ -503,6 +844,12 @@ export class NomadSecretBackend extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "number",
       },
+      delegated_auth_accessors: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._delegatedAuthAccessors),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
       description: {
         value: cdktf.stringToHclTerraform(this._description),
         isBlock: false,
@@ -515,8 +862,32 @@ export class NomadSecretBackend extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "boolean",
       },
+      external_entropy_access: {
+        value: cdktf.booleanToHclTerraform(this._externalEntropyAccess),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      force_no_cache: {
+        value: cdktf.booleanToHclTerraform(this._forceNoCache),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      identity_token_key: {
+        value: cdktf.stringToHclTerraform(this._identityTokenKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      listing_visibility: {
+        value: cdktf.stringToHclTerraform(this._listingVisibility),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -550,6 +921,30 @@ export class NomadSecretBackend extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      options: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._options),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      passthrough_request_headers: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._passthroughRequestHeaders),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      plugin_version: {
+        value: cdktf.stringToHclTerraform(this._pluginVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      seal_wrap: {
+        value: cdktf.booleanToHclTerraform(this._sealWrap),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
       token: {
         value: cdktf.stringToHclTerraform(this._token),

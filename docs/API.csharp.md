@@ -146,6 +146,8 @@ The following submodules are available:
 - [namespace](./namespace.csharp.md)
 - [nomadSecretBackend](./nomadSecretBackend.csharp.md)
 - [nomadSecretRole](./nomadSecretRole.csharp.md)
+- [ociAuthBackend](./ociAuthBackend.csharp.md)
+- [ociAuthBackendRole](./ociAuthBackendRole.csharp.md)
 - [oktaAuthBackend](./oktaAuthBackend.csharp.md)
 - [oktaAuthBackendGroup](./oktaAuthBackendGroup.csharp.md)
 - [oktaAuthBackendUser](./oktaAuthBackendUser.csharp.md)

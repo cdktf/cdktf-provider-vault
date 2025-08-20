@@ -4,7 +4,7 @@
 
 ### TransformTemplate <a name="TransformTemplate" id="@cdktf/provider-vault.transformTemplate.TransformTemplate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/transform_template vault_transform_template}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/transform_template vault_transform_template}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.transformTemplate.TransformTemplate.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the TransformTemplate to impor
 
 The id of the existing TransformTemplate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/transform_template#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/transform_template#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -952,7 +952,7 @@ new TransformTemplateConfig {
 | <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplateConfig.property.alphabet">Alphabet</a></code> | <code>string</code> | The alphabet to use for this template. This is only used during FPE transformations. |
 | <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplateConfig.property.decodeFormats">DecodeFormats</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | The map of regular expression templates used to customize decoded outputs. Only applicable to FPE transformations. |
 | <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplateConfig.property.encodeFormat">EncodeFormat</a></code> | <code>string</code> | The regular expression template used for encoding values. Only applicable to FPE transformations. |
-| <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplateConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/transform_template#id TransformTemplate#id}. |
+| <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplateConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/transform_template#id TransformTemplate#id}. |
 | <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplateConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplateConfig.property.pattern">Pattern</a></code> | <code>string</code> | The pattern used for matching. Currently, only regular expression pattern is supported. |
 | <code><a href="#@cdktf/provider-vault.transformTemplate.TransformTemplateConfig.property.type">Type</a></code> | <code>string</code> | The pattern type to use for match detection. Currently, only regex is supported. |
@@ -1039,7 +1039,7 @@ public string Name { get; set; }
 
 The name of the template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/transform_template#name TransformTemplate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/transform_template#name TransformTemplate#name}
 
 ---
 
@@ -1053,7 +1053,7 @@ public string Path { get; set; }
 
 The mount path for a back-end, for example, the path given in "$ vault auth enable -path=my-aws aws".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/transform_template#path TransformTemplate#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/transform_template#path TransformTemplate#path}
 
 ---
 
@@ -1067,7 +1067,7 @@ public string Alphabet { get; set; }
 
 The alphabet to use for this template. This is only used during FPE transformations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/transform_template#alphabet TransformTemplate#alphabet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/transform_template#alphabet TransformTemplate#alphabet}
 
 ---
 
@@ -1081,7 +1081,7 @@ public System.Collections.Generic.IDictionary<string, string> DecodeFormats { ge
 
 The map of regular expression templates used to customize decoded outputs. Only applicable to FPE transformations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/transform_template#decode_formats TransformTemplate#decode_formats}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/transform_template#decode_formats TransformTemplate#decode_formats}
 
 ---
 
@@ -1095,7 +1095,7 @@ public string EncodeFormat { get; set; }
 
 The regular expression template used for encoding values. Only applicable to FPE transformations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/transform_template#encode_format TransformTemplate#encode_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/transform_template#encode_format TransformTemplate#encode_format}
 
 ---
 
@@ -1107,7 +1107,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/transform_template#id TransformTemplate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/transform_template#id TransformTemplate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1124,7 +1124,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/transform_template#namespace TransformTemplate#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/transform_template#namespace TransformTemplate#namespace}
 
 ---
 
@@ -1138,7 +1138,7 @@ public string Pattern { get; set; }
 
 The pattern used for matching. Currently, only regular expression pattern is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/transform_template#pattern TransformTemplate#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/transform_template#pattern TransformTemplate#pattern}
 
 ---
 
@@ -1152,7 +1152,7 @@ public string Type { get; set; }
 
 The pattern type to use for match detection. Currently, only regex is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/transform_template#type TransformTemplate#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/transform_template#type TransformTemplate#type}
 
 ---
 

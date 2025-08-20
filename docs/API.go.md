@@ -146,6 +146,8 @@ The following submodules are available:
 - [namespace](./namespace.go.md)
 - [nomadSecretBackend](./nomadSecretBackend.go.md)
 - [nomadSecretRole](./nomadSecretRole.go.md)
+- [ociAuthBackend](./ociAuthBackend.go.md)
+- [ociAuthBackendRole](./ociAuthBackendRole.go.md)
 - [oktaAuthBackend](./oktaAuthBackend.go.md)
 - [oktaAuthBackendGroup](./oktaAuthBackendGroup.go.md)
 - [oktaAuthBackendUser](./oktaAuthBackendUser.go.md)
