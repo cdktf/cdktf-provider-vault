@@ -4,7 +4,7 @@
 
 ### DataVaultTransformEncode <a name="DataVaultTransformEncode" id="@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/data-sources/transform_encode vault_transform_encode}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/data-sources/transform_encode vault_transform_encode}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncode.Initializer"></a>
 
@@ -421,7 +421,7 @@ The construct id used in the generated config for the DataVaultTransformEncode t
 
 The id of the existing DataVaultTransformEncode that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/data-sources/transform_encode#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/data-sources/transform_encode#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -840,7 +840,7 @@ const dataVaultTransformEncodeConfig: dataVaultTransformEncode.DataVaultTransfor
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.batchInput">batchInput</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: string}[]</code> | Specifies a list of items to be encoded in a single batch. |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.batchResults">batchResults</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: string}[]</code> | The result of encoding batch_input. |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.encodedValue">encodedValue</a></code> | <code>string</code> | The result of encoding a value. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/data-sources/transform_encode#id DataVaultTransformEncode#id}. |
+| <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/data-sources/transform_encode#id DataVaultTransformEncode#id}. |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.namespace">namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.transformation">transformation</a></code> | <code>string</code> | The transformation to perform. |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransformEncode.DataVaultTransformEncodeConfig.property.tweak">tweak</a></code> | <code>string</code> | The tweak value to use. Only applicable for FPE transformations. |
@@ -928,7 +928,7 @@ public readonly path: string;
 
 Path to backend from which to retrieve data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/data-sources/transform_encode#path DataVaultTransformEncode#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/data-sources/transform_encode#path DataVaultTransformEncode#path}
 
 ---
 
@@ -942,7 +942,7 @@ public readonly roleName: string;
 
 The name of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/data-sources/transform_encode#role_name DataVaultTransformEncode#role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/data-sources/transform_encode#role_name DataVaultTransformEncode#role_name}
 
 ---
 
@@ -958,7 +958,7 @@ Specifies a list of items to be encoded in a single batch.
 
 If this parameter is set, the parameters 'value', 'transformation' and 'tweak' will be ignored. Each batch item within the list can specify these parameters instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/data-sources/transform_encode#batch_input DataVaultTransformEncode#batch_input}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/data-sources/transform_encode#batch_input DataVaultTransformEncode#batch_input}
 
 ---
 
@@ -972,7 +972,7 @@ public readonly batchResults: IResolvable | {[ key: string ]: string}[];
 
 The result of encoding batch_input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/data-sources/transform_encode#batch_results DataVaultTransformEncode#batch_results}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/data-sources/transform_encode#batch_results DataVaultTransformEncode#batch_results}
 
 ---
 
@@ -986,7 +986,7 @@ public readonly encodedValue: string;
 
 The result of encoding a value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/data-sources/transform_encode#encoded_value DataVaultTransformEncode#encoded_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/data-sources/transform_encode#encoded_value DataVaultTransformEncode#encoded_value}
 
 ---
 
@@ -998,7 +998,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/data-sources/transform_encode#id DataVaultTransformEncode#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/data-sources/transform_encode#id DataVaultTransformEncode#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1015,7 +1015,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/data-sources/transform_encode#namespace DataVaultTransformEncode#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/data-sources/transform_encode#namespace DataVaultTransformEncode#namespace}
 
 ---
 
@@ -1031,7 +1031,7 @@ The transformation to perform.
 
 If no value is provided and the role contains a single transformation, this value will be inferred from the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/data-sources/transform_encode#transformation DataVaultTransformEncode#transformation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/data-sources/transform_encode#transformation DataVaultTransformEncode#transformation}
 
 ---
 
@@ -1045,7 +1045,7 @@ public readonly tweak: string;
 
 The tweak value to use. Only applicable for FPE transformations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/data-sources/transform_encode#tweak DataVaultTransformEncode#tweak}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/data-sources/transform_encode#tweak DataVaultTransformEncode#tweak}
 
 ---
 
@@ -1059,7 +1059,7 @@ public readonly value: string;
 
 The value in which to encode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/data-sources/transform_encode#value DataVaultTransformEncode#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/data-sources/transform_encode#value DataVaultTransformEncode#value}
 
 ---
 
