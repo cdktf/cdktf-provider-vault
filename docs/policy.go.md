@@ -4,7 +4,7 @@
 
 ### Policy <a name="Policy" id="@cdktf/provider-vault.policy.Policy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/policy vault_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/policy vault_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.policy.Policy.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the Policy to import.
 
 The id of the existing Policy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -799,7 +799,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/policy"
 | <code><a href="#@cdktf/provider-vault.policy.PolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.policy.PolicyConfig.property.name">Name</a></code> | <code>*string</code> | Name of the policy. |
 | <code><a href="#@cdktf/provider-vault.policy.PolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | The policy document. |
-| <code><a href="#@cdktf/provider-vault.policy.PolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/policy#id Policy#id}. |
+| <code><a href="#@cdktf/provider-vault.policy.PolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/policy#id Policy#id}. |
 | <code><a href="#@cdktf/provider-vault.policy.PolicyConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -884,7 +884,7 @@ Name *string
 
 Name of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/policy#name Policy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/policy#name Policy#name}
 
 ---
 
@@ -898,7 +898,7 @@ Policy *string
 
 The policy document.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/policy#policy Policy#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/policy#policy Policy#policy}
 
 ---
 
@@ -910,7 +910,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/policy#id Policy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/policy#id Policy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -927,7 +927,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/policy#namespace Policy#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/policy#namespace Policy#namespace}
 
 ---
 

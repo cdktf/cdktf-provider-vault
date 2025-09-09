@@ -4,7 +4,7 @@
 
 ### PluginPinnedVersion <a name="PluginPinnedVersion" id="@cdktf/provider-vault.pluginPinnedVersion.PluginPinnedVersion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/plugin_pinned_version vault_plugin_pinned_version}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/plugin_pinned_version vault_plugin_pinned_version}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.pluginPinnedVersion.PluginPinnedVersion.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the PluginPinnedVersion to imp
 
 The id of the existing PluginPinnedVersion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/plugin_pinned_version#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/plugin_pinned_version#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -781,7 +781,7 @@ const pluginPinnedVersionConfig: pluginPinnedVersion.PluginPinnedVersionConfig =
 | <code><a href="#@cdktf/provider-vault.pluginPinnedVersion.PluginPinnedVersionConfig.property.name">name</a></code> | <code>string</code> | Name of the plugin. |
 | <code><a href="#@cdktf/provider-vault.pluginPinnedVersion.PluginPinnedVersionConfig.property.type">type</a></code> | <code>string</code> | Type of plugin; one of "auth", "secret", or "database". |
 | <code><a href="#@cdktf/provider-vault.pluginPinnedVersion.PluginPinnedVersionConfig.property.version">version</a></code> | <code>string</code> | Semantic pinned plugin version. |
-| <code><a href="#@cdktf/provider-vault.pluginPinnedVersion.PluginPinnedVersionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/plugin_pinned_version#id PluginPinnedVersion#id}. |
+| <code><a href="#@cdktf/provider-vault.pluginPinnedVersion.PluginPinnedVersionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/plugin_pinned_version#id PluginPinnedVersion#id}. |
 
 ---
 
@@ -865,7 +865,7 @@ public readonly name: string;
 
 Name of the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/plugin_pinned_version#name PluginPinnedVersion#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/plugin_pinned_version#name PluginPinnedVersion#name}
 
 ---
 
@@ -879,7 +879,7 @@ public readonly type: string;
 
 Type of plugin; one of "auth", "secret", or "database".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/plugin_pinned_version#type PluginPinnedVersion#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/plugin_pinned_version#type PluginPinnedVersion#type}
 
 ---
 
@@ -893,7 +893,7 @@ public readonly version: string;
 
 Semantic pinned plugin version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/plugin_pinned_version#version PluginPinnedVersion#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/plugin_pinned_version#version PluginPinnedVersion#version}
 
 ---
 
@@ -905,7 +905,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/plugin_pinned_version#id PluginPinnedVersion#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/plugin_pinned_version#id PluginPinnedVersion#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
