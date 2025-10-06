@@ -284,7 +284,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2.importFrom"></a>
@@ -338,7 +338,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -353,7 +353,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -573,13 +573,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.customMetadata">CustomMetadata</a></code> | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2CustomMetadataOutputReference">KvSecretV2CustomMetadataOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.data">Data</a></code> | <code>HashiCorp.Cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.metadata">Metadata</a></code> | <code>HashiCorp.Cdktf.StringMap</code> | *No description.* |
@@ -589,8 +589,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.dataJsonInput">DataJsonInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.dataJsonWoInput">DataJsonWoInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.dataJsonWoVersionInput">DataJsonWoVersionInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.deleteAllVersionsInput">DeleteAllVersionsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.disableReadInput">DisableReadInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.deleteAllVersionsInput">DeleteAllVersionsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.disableReadInput">DisableReadInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.mountInput">MountInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
@@ -600,8 +600,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.dataJson">DataJson</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.dataJsonWo">DataJsonWo</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.dataJsonWoVersion">DataJsonWoVersion</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.deleteAllVersions">DeleteAllVersions</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.disableRead">DisableRead</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.deleteAllVersions">DeleteAllVersions</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.disableRead">DisableRead</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.mount">Mount</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.name">Name</a></code> | <code>string</code> | *No description.* |
@@ -685,20 +685,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -745,10 +745,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -845,20 +845,20 @@ public double DataJsonWoVersionInput { get; }
 ##### `DeleteAllVersionsInput`<sup>Optional</sup> <a name="DeleteAllVersionsInput" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.deleteAllVersionsInput"></a>
 
 ```csharp
-public object DeleteAllVersionsInput { get; }
+public bool|IResolvable DeleteAllVersionsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DisableReadInput`<sup>Optional</sup> <a name="DisableReadInput" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.disableReadInput"></a>
 
 ```csharp
-public object DisableReadInput { get; }
+public bool|IResolvable DisableReadInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -955,20 +955,20 @@ public double DataJsonWoVersion { get; }
 ##### `DeleteAllVersions`<sup>Required</sup> <a name="DeleteAllVersions" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.deleteAllVersions"></a>
 
 ```csharp
-public object DeleteAllVersions { get; }
+public bool|IResolvable DeleteAllVersions { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DisableRead`<sup>Required</sup> <a name="DisableRead" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2.property.disableRead"></a>
 
 ```csharp
-public object DisableRead { get; }
+public bool|IResolvable DisableRead { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1050,13 +1050,13 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Vault;
 
 new KvSecretV2Config {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Mount,
     string Name,
     double Cas = null,
@@ -1064,8 +1064,8 @@ new KvSecretV2Config {
     string DataJson = null,
     string DataJsonWo = null,
     double DataJsonWoVersion = null,
-    object DeleteAllVersions = null,
-    object DisableRead = null,
+    bool|IResolvable DeleteAllVersions = null,
+    bool|IResolvable DisableRead = null,
     string Id = null,
     string Namespace = null,
     System.Collections.Generic.IDictionary<string, string> Options = null
@@ -1076,13 +1076,13 @@ new KvSecretV2Config {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.mount">Mount</a></code> | <code>string</code> | Path where KV-V2 engine is mounted. |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.name">Name</a></code> | <code>string</code> | Full name of the secret. |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.cas">Cas</a></code> | <code>double</code> | This flag is required if cas_required is set to true on either the secret or the engine's config. |
@@ -1090,8 +1090,8 @@ new KvSecretV2Config {
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.dataJson">DataJson</a></code> | <code>string</code> | JSON-encoded secret data to write. |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.dataJsonWo">DataJsonWo</a></code> | <code>string</code> | Write-Only JSON-encoded secret data to write. |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.dataJsonWoVersion">DataJsonWoVersion</a></code> | <code>double</code> | Version counter for write-only secret data. |
-| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.deleteAllVersions">DeleteAllVersions</a></code> | <code>object</code> | If set to true, permanently deletes all versions for the specified key. |
-| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.disableRead">DisableRead</a></code> | <code>object</code> | If set to true, disables reading secret from Vault; note: drift won't be detected. |
+| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.deleteAllVersions">DeleteAllVersions</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If set to true, permanently deletes all versions for the specified key. |
+| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.disableRead">DisableRead</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If set to true, disables reading secret from Vault; note: drift won't be detected. |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/kv_secret_v2#id KvSecretV2#id}. |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.options">Options</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | An object that holds option settings. |
@@ -1101,20 +1101,20 @@ new KvSecretV2Config {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1161,10 +1161,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1273,10 +1273,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `DeleteAllVersions`<sup>Optional</sup> <a name="DeleteAllVersions" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.deleteAllVersions"></a>
 
 ```csharp
-public object DeleteAllVersions { get; set; }
+public bool|IResolvable DeleteAllVersions { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If set to true, permanently deletes all versions for the specified key.
 
@@ -1287,10 +1287,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `DisableRead`<sup>Optional</sup> <a name="DisableRead" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2Config.property.disableRead"></a>
 
 ```csharp
-public object DisableRead { get; set; }
+public bool|IResolvable DisableRead { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If set to true, disables reading secret from Vault; note: drift won't be detected.
 
@@ -1349,7 +1349,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Vault;
 
 new KvSecretV2CustomMetadata {
-    object CasRequired = null,
+    bool|IResolvable CasRequired = null,
     System.Collections.Generic.IDictionary<string, string> Data = null,
     double DeleteVersionAfter = null,
     double MaxVersions = null
@@ -1360,7 +1360,7 @@ new KvSecretV2CustomMetadata {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2CustomMetadata.property.casRequired">CasRequired</a></code> | <code>object</code> | If true, all keys will require the cas parameter to be set on all write requests. |
+| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2CustomMetadata.property.casRequired">CasRequired</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If true, all keys will require the cas parameter to be set on all write requests. |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2CustomMetadata.property.data">Data</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A map of arbitrary string to string valued user-provided metadata meant to describe the secret. |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2CustomMetadata.property.deleteVersionAfter">DeleteVersionAfter</a></code> | <code>double</code> | If set, specifies the length of time before a version is deleted. |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2CustomMetadata.property.maxVersions">MaxVersions</a></code> | <code>double</code> | The number of versions to keep per key. |
@@ -1370,10 +1370,10 @@ new KvSecretV2CustomMetadata {
 ##### `CasRequired`<sup>Optional</sup> <a name="CasRequired" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2CustomMetadata.property.casRequired"></a>
 
 ```csharp
-public object CasRequired { get; set; }
+public bool|IResolvable CasRequired { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If true, all keys will require the cas parameter to be set on all write requests.
 
@@ -1663,11 +1663,11 @@ private void ResetMaxVersions()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2CustomMetadataOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2CustomMetadataOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2CustomMetadataOutputReference.property.casRequiredInput">CasRequiredInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2CustomMetadataOutputReference.property.casRequiredInput">CasRequiredInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2CustomMetadataOutputReference.property.dataInput">DataInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2CustomMetadataOutputReference.property.deleteVersionAfterInput">DeleteVersionAfterInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2CustomMetadataOutputReference.property.maxVersionsInput">MaxVersionsInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2CustomMetadataOutputReference.property.casRequired">CasRequired</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2CustomMetadataOutputReference.property.casRequired">CasRequired</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2CustomMetadataOutputReference.property.data">Data</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2CustomMetadataOutputReference.property.deleteVersionAfter">DeleteVersionAfter</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kvSecretV2.KvSecretV2CustomMetadataOutputReference.property.maxVersions">MaxVersions</a></code> | <code>double</code> | *No description.* |
@@ -1702,10 +1702,10 @@ public string Fqn { get; }
 ##### `CasRequiredInput`<sup>Optional</sup> <a name="CasRequiredInput" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2CustomMetadataOutputReference.property.casRequiredInput"></a>
 
 ```csharp
-public object CasRequiredInput { get; }
+public bool|IResolvable CasRequiredInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1742,10 +1742,10 @@ public double MaxVersionsInput { get; }
 ##### `CasRequired`<sup>Required</sup> <a name="CasRequired" id="@cdktf/provider-vault.kvSecretV2.KvSecretV2CustomMetadataOutputReference.property.casRequired"></a>
 
 ```csharp
-public object CasRequired { get; }
+public bool|IResolvable CasRequired { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 

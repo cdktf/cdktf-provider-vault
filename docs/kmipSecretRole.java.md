@@ -12,50 +12,32 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.
 import com.hashicorp.cdktf.providers.vault.kmip_secret_role.KmipSecretRole;
 
 KmipSecretRole.Builder.create(Construct scope, java.lang.String id)
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .path(java.lang.String)
     .role(java.lang.String)
     .scope(java.lang.String)
 //  .id(java.lang.String)
 //  .namespace(java.lang.String)
-//  .operationActivate(java.lang.Boolean)
-//  .operationActivate(IResolvable)
-//  .operationAddAttribute(java.lang.Boolean)
-//  .operationAddAttribute(IResolvable)
-//  .operationAll(java.lang.Boolean)
-//  .operationAll(IResolvable)
-//  .operationCreate(java.lang.Boolean)
-//  .operationCreate(IResolvable)
-//  .operationDestroy(java.lang.Boolean)
-//  .operationDestroy(IResolvable)
-//  .operationDiscoverVersions(java.lang.Boolean)
-//  .operationDiscoverVersions(IResolvable)
-//  .operationGet(java.lang.Boolean)
-//  .operationGet(IResolvable)
-//  .operationGetAttributeList(java.lang.Boolean)
-//  .operationGetAttributeList(IResolvable)
-//  .operationGetAttributes(java.lang.Boolean)
-//  .operationGetAttributes(IResolvable)
-//  .operationLocate(java.lang.Boolean)
-//  .operationLocate(IResolvable)
-//  .operationNone(java.lang.Boolean)
-//  .operationNone(IResolvable)
-//  .operationRegister(java.lang.Boolean)
-//  .operationRegister(IResolvable)
-//  .operationRekey(java.lang.Boolean)
-//  .operationRekey(IResolvable)
-//  .operationRevoke(java.lang.Boolean)
-//  .operationRevoke(IResolvable)
+//  .operationActivate(java.lang.Boolean|IResolvable)
+//  .operationAddAttribute(java.lang.Boolean|IResolvable)
+//  .operationAll(java.lang.Boolean|IResolvable)
+//  .operationCreate(java.lang.Boolean|IResolvable)
+//  .operationDestroy(java.lang.Boolean|IResolvable)
+//  .operationDiscoverVersions(java.lang.Boolean|IResolvable)
+//  .operationGet(java.lang.Boolean|IResolvable)
+//  .operationGetAttributeList(java.lang.Boolean|IResolvable)
+//  .operationGetAttributes(java.lang.Boolean|IResolvable)
+//  .operationLocate(java.lang.Boolean|IResolvable)
+//  .operationNone(java.lang.Boolean|IResolvable)
+//  .operationRegister(java.lang.Boolean|IResolvable)
+//  .operationRekey(java.lang.Boolean|IResolvable)
+//  .operationRevoke(java.lang.Boolean|IResolvable)
 //  .tlsClientKeyBits(java.lang.Number)
 //  .tlsClientKeyType(java.lang.String)
 //  .tlsClientTtl(java.lang.Number)
@@ -66,32 +48,32 @@ KmipSecretRole.Builder.create(Construct scope, java.lang.String id)
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.path">path</a></code> | <code>java.lang.String</code> | Path where KMIP backend is mounted. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Name of the role. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.scope">scope</a></code> | <code>java.lang.String</code> | Name of the scope. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/kmip_secret_role#id KmipSecretRole#id}. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationActivate">operationActivate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Activate operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationAddAttribute">operationAddAttribute</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Add Attribute operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationAll">operationAll</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Grant all permissions to this role. May not be specified with any other operation_* params. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationCreate">operationCreate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Create operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationDestroy">operationDestroy</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Destroy operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationDiscoverVersions">operationDiscoverVersions</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Discover Version operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationGet">operationGet</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Get operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationGetAttributeList">operationGetAttributeList</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Get Attribute List operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationGetAttributes">operationGetAttributes</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Get Attributes operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationLocate">operationLocate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Locate operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationNone">operationNone</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Remove all permissions from this role. May not be specified with any other operation_* params. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationRegister">operationRegister</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Register operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationRekey">operationRekey</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Rekey operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationRevoke">operationRevoke</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Revoke operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationActivate">operationActivate</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Activate operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationAddAttribute">operationAddAttribute</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Add Attribute operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationAll">operationAll</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Grant all permissions to this role. May not be specified with any other operation_* params. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationCreate">operationCreate</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Create operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationDestroy">operationDestroy</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Destroy operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationDiscoverVersions">operationDiscoverVersions</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Discover Version operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationGet">operationGet</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Get operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationGetAttributeList">operationGetAttributeList</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Get Attribute List operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationGetAttributes">operationGetAttributes</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Get Attributes operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationLocate">operationLocate</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Locate operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationNone">operationNone</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Remove all permissions from this role. May not be specified with any other operation_* params. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationRegister">operationRegister</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Register operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationRekey">operationRekey</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Rekey operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationRevoke">operationRevoke</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Revoke operation. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.tlsClientKeyBits">tlsClientKeyBits</a></code> | <code>java.lang.Number</code> | Client certificate key bits, valid values depend on key type. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.tlsClientKeyType">tlsClientKeyType</a></code> | <code>java.lang.String</code> | Client certificate key type, rsa or ec. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.tlsClientTtl">tlsClientTtl</a></code> | <code>java.lang.Number</code> | Client certificate TTL in seconds. |
@@ -118,13 +100,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.connection"></a>
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -154,7 +136,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.provisioners"></a>
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -211,7 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `operationActivate`<sup>Optional</sup> <a name="operationActivate" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationActivate"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Grant permission to use the KMIP Activate operation.
 
@@ -221,7 +203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `operationAddAttribute`<sup>Optional</sup> <a name="operationAddAttribute" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationAddAttribute"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Grant permission to use the KMIP Add Attribute operation.
 
@@ -231,7 +213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `operationAll`<sup>Optional</sup> <a name="operationAll" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationAll"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Grant all permissions to this role. May not be specified with any other operation_* params.
 
@@ -241,7 +223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `operationCreate`<sup>Optional</sup> <a name="operationCreate" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationCreate"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Grant permission to use the KMIP Create operation.
 
@@ -251,7 +233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `operationDestroy`<sup>Optional</sup> <a name="operationDestroy" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationDestroy"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Grant permission to use the KMIP Destroy operation.
 
@@ -261,7 +243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `operationDiscoverVersions`<sup>Optional</sup> <a name="operationDiscoverVersions" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationDiscoverVersions"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Grant permission to use the KMIP Discover Version operation.
 
@@ -271,7 +253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `operationGet`<sup>Optional</sup> <a name="operationGet" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationGet"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Grant permission to use the KMIP Get operation.
 
@@ -281,7 +263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `operationGetAttributeList`<sup>Optional</sup> <a name="operationGetAttributeList" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationGetAttributeList"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Grant permission to use the KMIP Get Attribute List operation.
 
@@ -291,7 +273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `operationGetAttributes`<sup>Optional</sup> <a name="operationGetAttributes" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationGetAttributes"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Grant permission to use the KMIP Get Attributes operation.
 
@@ -301,7 +283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `operationLocate`<sup>Optional</sup> <a name="operationLocate" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationLocate"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Grant permission to use the KMIP Locate operation.
 
@@ -311,7 +293,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `operationNone`<sup>Optional</sup> <a name="operationNone" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationNone"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Remove all permissions from this role. May not be specified with any other operation_* params.
 
@@ -321,7 +303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `operationRegister`<sup>Optional</sup> <a name="operationRegister" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationRegister"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Grant permission to use the KMIP Register operation.
 
@@ -331,7 +313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `operationRekey`<sup>Optional</sup> <a name="operationRekey" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationRekey"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Grant permission to use the KMIP Rekey operation.
 
@@ -341,7 +323,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `operationRevoke`<sup>Optional</sup> <a name="operationRevoke" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationRevoke"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Grant permission to use the KMIP Revoke operation.
 
@@ -625,7 +607,7 @@ public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(j
 ##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.hasResourceMove"></a>
 
 ```java
-public TerraformResourceMoveByTarget OR TerraformResourceMoveById hasResourceMove()
+public TerraformResourceMoveByTarget|TerraformResourceMoveById hasResourceMove()
 ```
 
 ##### `importFrom` <a name="importFrom" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.importFrom"></a>
@@ -681,7 +663,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ```java
 public void moveTo(java.lang.String moveTarget)
-public void moveTo(java.lang.String moveTarget, java.lang.String OR java.lang.Number index)
+public void moveTo(java.lang.String moveTarget, java.lang.String|java.lang.Number index)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -696,7 +678,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.moveTo.parameter.index"></a>
 
-- *Type:* java.lang.String OR java.lang.Number
+- *Type:* java.lang.String|java.lang.Number
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -958,29 +940,29 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.namespaceInput">namespaceInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationActivateInput">operationActivateInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationAddAttributeInput">operationAddAttributeInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationAllInput">operationAllInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationCreateInput">operationCreateInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationDestroyInput">operationDestroyInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationDiscoverVersionsInput">operationDiscoverVersionsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetAttributeListInput">operationGetAttributeListInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetAttributesInput">operationGetAttributesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetInput">operationGetInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationLocateInput">operationLocateInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationNoneInput">operationNoneInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRegisterInput">operationRegisterInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRekeyInput">operationRekeyInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRevokeInput">operationRevokeInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationActivateInput">operationActivateInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationAddAttributeInput">operationAddAttributeInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationAllInput">operationAllInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationCreateInput">operationCreateInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationDestroyInput">operationDestroyInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationDiscoverVersionsInput">operationDiscoverVersionsInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetAttributeListInput">operationGetAttributeListInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetAttributesInput">operationGetAttributesInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetInput">operationGetInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationLocateInput">operationLocateInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationNoneInput">operationNoneInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRegisterInput">operationRegisterInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRekeyInput">operationRekeyInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRevokeInput">operationRevokeInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.pathInput">pathInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.roleInput">roleInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.scopeInput">scopeInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -989,20 +971,20 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.tlsClientTtlInput">tlsClientTtlInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.namespace">namespace</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationActivate">operationActivate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationAddAttribute">operationAddAttribute</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationAll">operationAll</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationCreate">operationCreate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationDestroy">operationDestroy</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationDiscoverVersions">operationDiscoverVersions</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGet">operationGet</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetAttributeList">operationGetAttributeList</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetAttributes">operationGetAttributes</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationLocate">operationLocate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationNone">operationNone</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRegister">operationRegister</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRekey">operationRekey</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRevoke">operationRevoke</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationActivate">operationActivate</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationAddAttribute">operationAddAttribute</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationAll">operationAll</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationCreate">operationCreate</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationDestroy">operationDestroy</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationDiscoverVersions">operationDiscoverVersions</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGet">operationGet</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetAttributeList">operationGetAttributeList</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetAttributes">operationGetAttributes</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationLocate">operationLocate</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationNone">operationNone</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRegister">operationRegister</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRekey">operationRekey</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRevoke">operationRevoke</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.path">path</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.role">role</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.scope">scope</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1087,20 +1069,20 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1147,10 +1129,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -1177,140 +1159,140 @@ public java.lang.String getNamespaceInput();
 ##### `operationActivateInput`<sup>Optional</sup> <a name="operationActivateInput" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationActivateInput"></a>
 
 ```java
-public java.lang.Object getOperationActivateInput();
+public java.lang.Boolean|IResolvable getOperationActivateInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `operationAddAttributeInput`<sup>Optional</sup> <a name="operationAddAttributeInput" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationAddAttributeInput"></a>
 
 ```java
-public java.lang.Object getOperationAddAttributeInput();
+public java.lang.Boolean|IResolvable getOperationAddAttributeInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `operationAllInput`<sup>Optional</sup> <a name="operationAllInput" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationAllInput"></a>
 
 ```java
-public java.lang.Object getOperationAllInput();
+public java.lang.Boolean|IResolvable getOperationAllInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `operationCreateInput`<sup>Optional</sup> <a name="operationCreateInput" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationCreateInput"></a>
 
 ```java
-public java.lang.Object getOperationCreateInput();
+public java.lang.Boolean|IResolvable getOperationCreateInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `operationDestroyInput`<sup>Optional</sup> <a name="operationDestroyInput" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationDestroyInput"></a>
 
 ```java
-public java.lang.Object getOperationDestroyInput();
+public java.lang.Boolean|IResolvable getOperationDestroyInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `operationDiscoverVersionsInput`<sup>Optional</sup> <a name="operationDiscoverVersionsInput" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationDiscoverVersionsInput"></a>
 
 ```java
-public java.lang.Object getOperationDiscoverVersionsInput();
+public java.lang.Boolean|IResolvable getOperationDiscoverVersionsInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `operationGetAttributeListInput`<sup>Optional</sup> <a name="operationGetAttributeListInput" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetAttributeListInput"></a>
 
 ```java
-public java.lang.Object getOperationGetAttributeListInput();
+public java.lang.Boolean|IResolvable getOperationGetAttributeListInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `operationGetAttributesInput`<sup>Optional</sup> <a name="operationGetAttributesInput" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetAttributesInput"></a>
 
 ```java
-public java.lang.Object getOperationGetAttributesInput();
+public java.lang.Boolean|IResolvable getOperationGetAttributesInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `operationGetInput`<sup>Optional</sup> <a name="operationGetInput" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetInput"></a>
 
 ```java
-public java.lang.Object getOperationGetInput();
+public java.lang.Boolean|IResolvable getOperationGetInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `operationLocateInput`<sup>Optional</sup> <a name="operationLocateInput" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationLocateInput"></a>
 
 ```java
-public java.lang.Object getOperationLocateInput();
+public java.lang.Boolean|IResolvable getOperationLocateInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `operationNoneInput`<sup>Optional</sup> <a name="operationNoneInput" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationNoneInput"></a>
 
 ```java
-public java.lang.Object getOperationNoneInput();
+public java.lang.Boolean|IResolvable getOperationNoneInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `operationRegisterInput`<sup>Optional</sup> <a name="operationRegisterInput" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRegisterInput"></a>
 
 ```java
-public java.lang.Object getOperationRegisterInput();
+public java.lang.Boolean|IResolvable getOperationRegisterInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `operationRekeyInput`<sup>Optional</sup> <a name="operationRekeyInput" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRekeyInput"></a>
 
 ```java
-public java.lang.Object getOperationRekeyInput();
+public java.lang.Boolean|IResolvable getOperationRekeyInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `operationRevokeInput`<sup>Optional</sup> <a name="operationRevokeInput" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRevokeInput"></a>
 
 ```java
-public java.lang.Object getOperationRevokeInput();
+public java.lang.Boolean|IResolvable getOperationRevokeInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1397,140 +1379,140 @@ public java.lang.String getNamespace();
 ##### `operationActivate`<sup>Required</sup> <a name="operationActivate" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationActivate"></a>
 
 ```java
-public java.lang.Object getOperationActivate();
+public java.lang.Boolean|IResolvable getOperationActivate();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `operationAddAttribute`<sup>Required</sup> <a name="operationAddAttribute" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationAddAttribute"></a>
 
 ```java
-public java.lang.Object getOperationAddAttribute();
+public java.lang.Boolean|IResolvable getOperationAddAttribute();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `operationAll`<sup>Required</sup> <a name="operationAll" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationAll"></a>
 
 ```java
-public java.lang.Object getOperationAll();
+public java.lang.Boolean|IResolvable getOperationAll();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `operationCreate`<sup>Required</sup> <a name="operationCreate" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationCreate"></a>
 
 ```java
-public java.lang.Object getOperationCreate();
+public java.lang.Boolean|IResolvable getOperationCreate();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `operationDestroy`<sup>Required</sup> <a name="operationDestroy" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationDestroy"></a>
 
 ```java
-public java.lang.Object getOperationDestroy();
+public java.lang.Boolean|IResolvable getOperationDestroy();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `operationDiscoverVersions`<sup>Required</sup> <a name="operationDiscoverVersions" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationDiscoverVersions"></a>
 
 ```java
-public java.lang.Object getOperationDiscoverVersions();
+public java.lang.Boolean|IResolvable getOperationDiscoverVersions();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `operationGet`<sup>Required</sup> <a name="operationGet" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGet"></a>
 
 ```java
-public java.lang.Object getOperationGet();
+public java.lang.Boolean|IResolvable getOperationGet();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `operationGetAttributeList`<sup>Required</sup> <a name="operationGetAttributeList" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetAttributeList"></a>
 
 ```java
-public java.lang.Object getOperationGetAttributeList();
+public java.lang.Boolean|IResolvable getOperationGetAttributeList();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `operationGetAttributes`<sup>Required</sup> <a name="operationGetAttributes" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetAttributes"></a>
 
 ```java
-public java.lang.Object getOperationGetAttributes();
+public java.lang.Boolean|IResolvable getOperationGetAttributes();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `operationLocate`<sup>Required</sup> <a name="operationLocate" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationLocate"></a>
 
 ```java
-public java.lang.Object getOperationLocate();
+public java.lang.Boolean|IResolvable getOperationLocate();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `operationNone`<sup>Required</sup> <a name="operationNone" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationNone"></a>
 
 ```java
-public java.lang.Object getOperationNone();
+public java.lang.Boolean|IResolvable getOperationNone();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `operationRegister`<sup>Required</sup> <a name="operationRegister" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRegister"></a>
 
 ```java
-public java.lang.Object getOperationRegister();
+public java.lang.Boolean|IResolvable getOperationRegister();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `operationRekey`<sup>Required</sup> <a name="operationRekey" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRekey"></a>
 
 ```java
-public java.lang.Object getOperationRekey();
+public java.lang.Boolean|IResolvable getOperationRekey();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `operationRevoke`<sup>Required</sup> <a name="operationRevoke" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRevoke"></a>
 
 ```java
-public java.lang.Object getOperationRevoke();
+public java.lang.Boolean|IResolvable getOperationRevoke();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1622,50 +1604,32 @@ public java.lang.String getTfResourceType();
 import com.hashicorp.cdktf.providers.vault.kmip_secret_role.KmipSecretRoleConfig;
 
 KmipSecretRoleConfig.builder()
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .path(java.lang.String)
     .role(java.lang.String)
     .scope(java.lang.String)
 //  .id(java.lang.String)
 //  .namespace(java.lang.String)
-//  .operationActivate(java.lang.Boolean)
-//  .operationActivate(IResolvable)
-//  .operationAddAttribute(java.lang.Boolean)
-//  .operationAddAttribute(IResolvable)
-//  .operationAll(java.lang.Boolean)
-//  .operationAll(IResolvable)
-//  .operationCreate(java.lang.Boolean)
-//  .operationCreate(IResolvable)
-//  .operationDestroy(java.lang.Boolean)
-//  .operationDestroy(IResolvable)
-//  .operationDiscoverVersions(java.lang.Boolean)
-//  .operationDiscoverVersions(IResolvable)
-//  .operationGet(java.lang.Boolean)
-//  .operationGet(IResolvable)
-//  .operationGetAttributeList(java.lang.Boolean)
-//  .operationGetAttributeList(IResolvable)
-//  .operationGetAttributes(java.lang.Boolean)
-//  .operationGetAttributes(IResolvable)
-//  .operationLocate(java.lang.Boolean)
-//  .operationLocate(IResolvable)
-//  .operationNone(java.lang.Boolean)
-//  .operationNone(IResolvable)
-//  .operationRegister(java.lang.Boolean)
-//  .operationRegister(IResolvable)
-//  .operationRekey(java.lang.Boolean)
-//  .operationRekey(IResolvable)
-//  .operationRevoke(java.lang.Boolean)
-//  .operationRevoke(IResolvable)
+//  .operationActivate(java.lang.Boolean|IResolvable)
+//  .operationAddAttribute(java.lang.Boolean|IResolvable)
+//  .operationAll(java.lang.Boolean|IResolvable)
+//  .operationCreate(java.lang.Boolean|IResolvable)
+//  .operationDestroy(java.lang.Boolean|IResolvable)
+//  .operationDiscoverVersions(java.lang.Boolean|IResolvable)
+//  .operationGet(java.lang.Boolean|IResolvable)
+//  .operationGetAttributeList(java.lang.Boolean|IResolvable)
+//  .operationGetAttributes(java.lang.Boolean|IResolvable)
+//  .operationLocate(java.lang.Boolean|IResolvable)
+//  .operationNone(java.lang.Boolean|IResolvable)
+//  .operationRegister(java.lang.Boolean|IResolvable)
+//  .operationRekey(java.lang.Boolean|IResolvable)
+//  .operationRevoke(java.lang.Boolean|IResolvable)
 //  .tlsClientKeyBits(java.lang.Number)
 //  .tlsClientKeyType(java.lang.String)
 //  .tlsClientTtl(java.lang.Number)
@@ -1676,32 +1640,32 @@ KmipSecretRoleConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.path">path</a></code> | <code>java.lang.String</code> | Path where KMIP backend is mounted. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.role">role</a></code> | <code>java.lang.String</code> | Name of the role. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.scope">scope</a></code> | <code>java.lang.String</code> | Name of the scope. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/kmip_secret_role#id KmipSecretRole#id}. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationActivate">operationActivate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Activate operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationAddAttribute">operationAddAttribute</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Add Attribute operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationAll">operationAll</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Grant all permissions to this role. May not be specified with any other operation_* params. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationCreate">operationCreate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Create operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationDestroy">operationDestroy</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Destroy operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationDiscoverVersions">operationDiscoverVersions</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Discover Version operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationGet">operationGet</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Get operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationGetAttributeList">operationGetAttributeList</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Get Attribute List operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationGetAttributes">operationGetAttributes</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Get Attributes operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationLocate">operationLocate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Locate operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationNone">operationNone</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Remove all permissions from this role. May not be specified with any other operation_* params. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationRegister">operationRegister</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Register operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationRekey">operationRekey</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Rekey operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationRevoke">operationRevoke</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Revoke operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationActivate">operationActivate</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Activate operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationAddAttribute">operationAddAttribute</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Add Attribute operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationAll">operationAll</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Grant all permissions to this role. May not be specified with any other operation_* params. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationCreate">operationCreate</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Create operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationDestroy">operationDestroy</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Destroy operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationDiscoverVersions">operationDiscoverVersions</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Discover Version operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationGet">operationGet</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Get operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationGetAttributeList">operationGetAttributeList</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Get Attribute List operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationGetAttributes">operationGetAttributes</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Get Attributes operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationLocate">operationLocate</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Locate operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationNone">operationNone</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Remove all permissions from this role. May not be specified with any other operation_* params. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationRegister">operationRegister</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Register operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationRekey">operationRekey</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Rekey operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationRevoke">operationRevoke</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Grant permission to use the KMIP Revoke operation. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.tlsClientKeyBits">tlsClientKeyBits</a></code> | <code>java.lang.Number</code> | Client certificate key bits, valid values depend on key type. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.tlsClientKeyType">tlsClientKeyType</a></code> | <code>java.lang.String</code> | Client certificate key type, rsa or ec. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.tlsClientTtl">tlsClientTtl</a></code> | <code>java.lang.Number</code> | Client certificate TTL in seconds. |
@@ -1711,20 +1675,20 @@ KmipSecretRoleConfig.builder()
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1771,10 +1735,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -1852,10 +1816,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `operationActivate`<sup>Optional</sup> <a name="operationActivate" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationActivate"></a>
 
 ```java
-public java.lang.Object getOperationActivate();
+public java.lang.Boolean|IResolvable getOperationActivate();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Grant permission to use the KMIP Activate operation.
 
@@ -1866,10 +1830,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `operationAddAttribute`<sup>Optional</sup> <a name="operationAddAttribute" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationAddAttribute"></a>
 
 ```java
-public java.lang.Object getOperationAddAttribute();
+public java.lang.Boolean|IResolvable getOperationAddAttribute();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Grant permission to use the KMIP Add Attribute operation.
 
@@ -1880,10 +1844,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `operationAll`<sup>Optional</sup> <a name="operationAll" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationAll"></a>
 
 ```java
-public java.lang.Object getOperationAll();
+public java.lang.Boolean|IResolvable getOperationAll();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Grant all permissions to this role. May not be specified with any other operation_* params.
 
@@ -1894,10 +1858,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `operationCreate`<sup>Optional</sup> <a name="operationCreate" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationCreate"></a>
 
 ```java
-public java.lang.Object getOperationCreate();
+public java.lang.Boolean|IResolvable getOperationCreate();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Grant permission to use the KMIP Create operation.
 
@@ -1908,10 +1872,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `operationDestroy`<sup>Optional</sup> <a name="operationDestroy" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationDestroy"></a>
 
 ```java
-public java.lang.Object getOperationDestroy();
+public java.lang.Boolean|IResolvable getOperationDestroy();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Grant permission to use the KMIP Destroy operation.
 
@@ -1922,10 +1886,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `operationDiscoverVersions`<sup>Optional</sup> <a name="operationDiscoverVersions" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationDiscoverVersions"></a>
 
 ```java
-public java.lang.Object getOperationDiscoverVersions();
+public java.lang.Boolean|IResolvable getOperationDiscoverVersions();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Grant permission to use the KMIP Discover Version operation.
 
@@ -1936,10 +1900,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `operationGet`<sup>Optional</sup> <a name="operationGet" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationGet"></a>
 
 ```java
-public java.lang.Object getOperationGet();
+public java.lang.Boolean|IResolvable getOperationGet();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Grant permission to use the KMIP Get operation.
 
@@ -1950,10 +1914,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `operationGetAttributeList`<sup>Optional</sup> <a name="operationGetAttributeList" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationGetAttributeList"></a>
 
 ```java
-public java.lang.Object getOperationGetAttributeList();
+public java.lang.Boolean|IResolvable getOperationGetAttributeList();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Grant permission to use the KMIP Get Attribute List operation.
 
@@ -1964,10 +1928,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `operationGetAttributes`<sup>Optional</sup> <a name="operationGetAttributes" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationGetAttributes"></a>
 
 ```java
-public java.lang.Object getOperationGetAttributes();
+public java.lang.Boolean|IResolvable getOperationGetAttributes();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Grant permission to use the KMIP Get Attributes operation.
 
@@ -1978,10 +1942,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `operationLocate`<sup>Optional</sup> <a name="operationLocate" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationLocate"></a>
 
 ```java
-public java.lang.Object getOperationLocate();
+public java.lang.Boolean|IResolvable getOperationLocate();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Grant permission to use the KMIP Locate operation.
 
@@ -1992,10 +1956,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `operationNone`<sup>Optional</sup> <a name="operationNone" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationNone"></a>
 
 ```java
-public java.lang.Object getOperationNone();
+public java.lang.Boolean|IResolvable getOperationNone();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Remove all permissions from this role. May not be specified with any other operation_* params.
 
@@ -2006,10 +1970,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `operationRegister`<sup>Optional</sup> <a name="operationRegister" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationRegister"></a>
 
 ```java
-public java.lang.Object getOperationRegister();
+public java.lang.Boolean|IResolvable getOperationRegister();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Grant permission to use the KMIP Register operation.
 
@@ -2020,10 +1984,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `operationRekey`<sup>Optional</sup> <a name="operationRekey" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationRekey"></a>
 
 ```java
-public java.lang.Object getOperationRekey();
+public java.lang.Boolean|IResolvable getOperationRekey();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Grant permission to use the KMIP Rekey operation.
 
@@ -2034,10 +1998,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `operationRevoke`<sup>Optional</sup> <a name="operationRevoke" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationRevoke"></a>
 
 ```java
-public java.lang.Object getOperationRevoke();
+public java.lang.Boolean|IResolvable getOperationRevoke();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Grant permission to use the KMIP Revoke operation.
 

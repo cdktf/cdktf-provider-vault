@@ -478,60 +478,60 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.addAddressToEnvInput">AddAddressToEnvInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.addressInput">AddressInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.aliasInput">AliasInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginAwsInput">AuthLoginAwsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginAzureInput">AuthLoginAzureInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginCertInput">AuthLoginCertInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginGcpInput">AuthLoginGcpInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginInput">AuthLoginInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginJwtInput">AuthLoginJwtInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginKerberosInput">AuthLoginKerberosInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginOciInput">AuthLoginOciInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginOidcInput">AuthLoginOidcInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginRadiusInput">AuthLoginRadiusInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginTokenFileInput">AuthLoginTokenFileInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginUserpassInput">AuthLoginUserpassInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginAwsInput">AuthLoginAwsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginAzureInput">AuthLoginAzureInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginCertInput">AuthLoginCertInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginGcpInput">AuthLoginGcpInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginInput">AuthLoginInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginJwtInput">AuthLoginJwtInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginKerberosInput">AuthLoginKerberosInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginOciInput">AuthLoginOciInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginOidcInput">AuthLoginOidcInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginRadiusInput">AuthLoginRadiusInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginTokenFileInput">AuthLoginTokenFileInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginUserpassInput">AuthLoginUserpassInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.caCertDirInput">CaCertDirInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.caCertFileInput">CaCertFileInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.clientAuthInput">ClientAuthInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.headersInput">HeadersInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.clientAuthInput">ClientAuthInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.headersInput">HeadersInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderHeaders">VaultProviderHeaders</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.maxLeaseTtlSecondsInput">MaxLeaseTtlSecondsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.maxRetriesCccInput">MaxRetriesCccInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.maxRetriesInput">MaxRetriesInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.namespaceInput">NamespaceInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.setNamespaceFromTokenInput">SetNamespaceFromTokenInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.skipChildTokenInput">SkipChildTokenInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.skipGetVaultVersionInput">SkipGetVaultVersionInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.skipTlsVerifyInput">SkipTlsVerifyInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.setNamespaceFromTokenInput">SetNamespaceFromTokenInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.skipChildTokenInput">SkipChildTokenInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.skipGetVaultVersionInput">SkipGetVaultVersionInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.skipTlsVerifyInput">SkipTlsVerifyInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.tlsServerNameInput">TlsServerNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.tokenInput">TokenInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.tokenNameInput">TokenNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.vaultVersionOverrideInput">VaultVersionOverrideInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.addAddressToEnv">AddAddressToEnv</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.address">Address</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLogin">AuthLogin</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginAws">AuthLoginAws</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginAzure">AuthLoginAzure</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginCert">AuthLoginCert</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginGcp">AuthLoginGcp</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginJwt">AuthLoginJwt</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginKerberos">AuthLoginKerberos</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginOci">AuthLoginOci</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginOidc">AuthLoginOidc</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginRadius">AuthLoginRadius</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginTokenFile">AuthLoginTokenFile</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginUserpass">AuthLoginUserpass</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLogin">AuthLogin</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginAws">AuthLoginAws</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginAzure">AuthLoginAzure</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginCert">AuthLoginCert</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginGcp">AuthLoginGcp</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginJwt">AuthLoginJwt</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginKerberos">AuthLoginKerberos</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginOci">AuthLoginOci</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginOidc">AuthLoginOidc</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginRadius">AuthLoginRadius</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginTokenFile">AuthLoginTokenFile</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginUserpass">AuthLoginUserpass</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.caCertDir">CaCertDir</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.caCertFile">CaCertFile</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.clientAuth">ClientAuth</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.headers">Headers</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.clientAuth">ClientAuth</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.headers">Headers</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderHeaders">VaultProviderHeaders</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.maxLeaseTtlSeconds">MaxLeaseTtlSeconds</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.maxRetries">MaxRetries</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.maxRetriesCcc">MaxRetriesCcc</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.namespace">Namespace</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.setNamespaceFromToken">SetNamespaceFromToken</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.skipChildToken">SkipChildToken</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.skipGetVaultVersion">SkipGetVaultVersion</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.skipTlsVerify">SkipTlsVerify</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.setNamespaceFromToken">SetNamespaceFromToken</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.skipChildToken">SkipChildToken</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.skipGetVaultVersion">SkipGetVaultVersion</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.skipTlsVerify">SkipTlsVerify</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.tlsServerName">TlsServerName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.token">Token</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.tokenName">TokenName</a></code> | <code>string</code> | *No description.* |
@@ -664,120 +664,120 @@ public string AliasInput { get; }
 ##### `AuthLoginAwsInput`<sup>Optional</sup> <a name="AuthLoginAwsInput" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginAwsInput"></a>
 
 ```csharp
-public object AuthLoginAwsInput { get; }
+public IResolvable|VaultProviderAuthLoginAws[] AuthLoginAwsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a>[]
 
 ---
 
 ##### `AuthLoginAzureInput`<sup>Optional</sup> <a name="AuthLoginAzureInput" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginAzureInput"></a>
 
 ```csharp
-public object AuthLoginAzureInput { get; }
+public IResolvable|VaultProviderAuthLoginAzure[] AuthLoginAzureInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a>[]
 
 ---
 
 ##### `AuthLoginCertInput`<sup>Optional</sup> <a name="AuthLoginCertInput" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginCertInput"></a>
 
 ```csharp
-public object AuthLoginCertInput { get; }
+public IResolvable|VaultProviderAuthLoginCert[] AuthLoginCertInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a>[]
 
 ---
 
 ##### `AuthLoginGcpInput`<sup>Optional</sup> <a name="AuthLoginGcpInput" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginGcpInput"></a>
 
 ```csharp
-public object AuthLoginGcpInput { get; }
+public IResolvable|VaultProviderAuthLoginGcp[] AuthLoginGcpInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a>[]
 
 ---
 
 ##### `AuthLoginInput`<sup>Optional</sup> <a name="AuthLoginInput" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginInput"></a>
 
 ```csharp
-public object AuthLoginInput { get; }
+public IResolvable|VaultProviderAuthLogin[] AuthLoginInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a>[]
 
 ---
 
 ##### `AuthLoginJwtInput`<sup>Optional</sup> <a name="AuthLoginJwtInput" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginJwtInput"></a>
 
 ```csharp
-public object AuthLoginJwtInput { get; }
+public IResolvable|VaultProviderAuthLoginJwt[] AuthLoginJwtInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a>[]
 
 ---
 
 ##### `AuthLoginKerberosInput`<sup>Optional</sup> <a name="AuthLoginKerberosInput" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginKerberosInput"></a>
 
 ```csharp
-public object AuthLoginKerberosInput { get; }
+public IResolvable|VaultProviderAuthLoginKerberos[] AuthLoginKerberosInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a>[]
 
 ---
 
 ##### `AuthLoginOciInput`<sup>Optional</sup> <a name="AuthLoginOciInput" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginOciInput"></a>
 
 ```csharp
-public object AuthLoginOciInput { get; }
+public IResolvable|VaultProviderAuthLoginOci[] AuthLoginOciInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a>[]
 
 ---
 
 ##### `AuthLoginOidcInput`<sup>Optional</sup> <a name="AuthLoginOidcInput" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginOidcInput"></a>
 
 ```csharp
-public object AuthLoginOidcInput { get; }
+public IResolvable|VaultProviderAuthLoginOidc[] AuthLoginOidcInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a>[]
 
 ---
 
 ##### `AuthLoginRadiusInput`<sup>Optional</sup> <a name="AuthLoginRadiusInput" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginRadiusInput"></a>
 
 ```csharp
-public object AuthLoginRadiusInput { get; }
+public IResolvable|VaultProviderAuthLoginRadius[] AuthLoginRadiusInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>[]
 
 ---
 
 ##### `AuthLoginTokenFileInput`<sup>Optional</sup> <a name="AuthLoginTokenFileInput" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginTokenFileInput"></a>
 
 ```csharp
-public object AuthLoginTokenFileInput { get; }
+public IResolvable|VaultProviderAuthLoginTokenFile[] AuthLoginTokenFileInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>[]
 
 ---
 
 ##### `AuthLoginUserpassInput`<sup>Optional</sup> <a name="AuthLoginUserpassInput" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginUserpassInput"></a>
 
 ```csharp
-public object AuthLoginUserpassInput { get; }
+public IResolvable|VaultProviderAuthLoginUserpass[] AuthLoginUserpassInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a>[]
 
 ---
 
@@ -804,20 +804,20 @@ public string CaCertFileInput { get; }
 ##### `ClientAuthInput`<sup>Optional</sup> <a name="ClientAuthInput" id="@cdktf/provider-vault.provider.VaultProvider.property.clientAuthInput"></a>
 
 ```csharp
-public object ClientAuthInput { get; }
+public IResolvable|VaultProviderClientAuth[] ClientAuthInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a>[]
 
 ---
 
 ##### `HeadersInput`<sup>Optional</sup> <a name="HeadersInput" id="@cdktf/provider-vault.provider.VaultProvider.property.headersInput"></a>
 
 ```csharp
-public object HeadersInput { get; }
+public IResolvable|VaultProviderHeaders[] HeadersInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderHeaders">VaultProviderHeaders</a>[]
 
 ---
 
@@ -864,40 +864,40 @@ public string NamespaceInput { get; }
 ##### `SetNamespaceFromTokenInput`<sup>Optional</sup> <a name="SetNamespaceFromTokenInput" id="@cdktf/provider-vault.provider.VaultProvider.property.setNamespaceFromTokenInput"></a>
 
 ```csharp
-public object SetNamespaceFromTokenInput { get; }
+public bool|IResolvable SetNamespaceFromTokenInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `SkipChildTokenInput`<sup>Optional</sup> <a name="SkipChildTokenInput" id="@cdktf/provider-vault.provider.VaultProvider.property.skipChildTokenInput"></a>
 
 ```csharp
-public object SkipChildTokenInput { get; }
+public bool|IResolvable SkipChildTokenInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `SkipGetVaultVersionInput`<sup>Optional</sup> <a name="SkipGetVaultVersionInput" id="@cdktf/provider-vault.provider.VaultProvider.property.skipGetVaultVersionInput"></a>
 
 ```csharp
-public object SkipGetVaultVersionInput { get; }
+public bool|IResolvable SkipGetVaultVersionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `SkipTlsVerifyInput`<sup>Optional</sup> <a name="SkipTlsVerifyInput" id="@cdktf/provider-vault.provider.VaultProvider.property.skipTlsVerifyInput"></a>
 
 ```csharp
-public object SkipTlsVerifyInput { get; }
+public bool|IResolvable SkipTlsVerifyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -964,120 +964,120 @@ public string Address { get; }
 ##### `AuthLogin`<sup>Optional</sup> <a name="AuthLogin" id="@cdktf/provider-vault.provider.VaultProvider.property.authLogin"></a>
 
 ```csharp
-public object AuthLogin { get; }
+public IResolvable|VaultProviderAuthLogin[] AuthLogin { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a>[]
 
 ---
 
 ##### `AuthLoginAws`<sup>Optional</sup> <a name="AuthLoginAws" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginAws"></a>
 
 ```csharp
-public object AuthLoginAws { get; }
+public IResolvable|VaultProviderAuthLoginAws[] AuthLoginAws { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a>[]
 
 ---
 
 ##### `AuthLoginAzure`<sup>Optional</sup> <a name="AuthLoginAzure" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginAzure"></a>
 
 ```csharp
-public object AuthLoginAzure { get; }
+public IResolvable|VaultProviderAuthLoginAzure[] AuthLoginAzure { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a>[]
 
 ---
 
 ##### `AuthLoginCert`<sup>Optional</sup> <a name="AuthLoginCert" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginCert"></a>
 
 ```csharp
-public object AuthLoginCert { get; }
+public IResolvable|VaultProviderAuthLoginCert[] AuthLoginCert { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a>[]
 
 ---
 
 ##### `AuthLoginGcp`<sup>Optional</sup> <a name="AuthLoginGcp" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginGcp"></a>
 
 ```csharp
-public object AuthLoginGcp { get; }
+public IResolvable|VaultProviderAuthLoginGcp[] AuthLoginGcp { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a>[]
 
 ---
 
 ##### `AuthLoginJwt`<sup>Optional</sup> <a name="AuthLoginJwt" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginJwt"></a>
 
 ```csharp
-public object AuthLoginJwt { get; }
+public IResolvable|VaultProviderAuthLoginJwt[] AuthLoginJwt { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a>[]
 
 ---
 
 ##### `AuthLoginKerberos`<sup>Optional</sup> <a name="AuthLoginKerberos" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginKerberos"></a>
 
 ```csharp
-public object AuthLoginKerberos { get; }
+public IResolvable|VaultProviderAuthLoginKerberos[] AuthLoginKerberos { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a>[]
 
 ---
 
 ##### `AuthLoginOci`<sup>Optional</sup> <a name="AuthLoginOci" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginOci"></a>
 
 ```csharp
-public object AuthLoginOci { get; }
+public IResolvable|VaultProviderAuthLoginOci[] AuthLoginOci { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a>[]
 
 ---
 
 ##### `AuthLoginOidc`<sup>Optional</sup> <a name="AuthLoginOidc" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginOidc"></a>
 
 ```csharp
-public object AuthLoginOidc { get; }
+public IResolvable|VaultProviderAuthLoginOidc[] AuthLoginOidc { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a>[]
 
 ---
 
 ##### `AuthLoginRadius`<sup>Optional</sup> <a name="AuthLoginRadius" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginRadius"></a>
 
 ```csharp
-public object AuthLoginRadius { get; }
+public IResolvable|VaultProviderAuthLoginRadius[] AuthLoginRadius { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>[]
 
 ---
 
 ##### `AuthLoginTokenFile`<sup>Optional</sup> <a name="AuthLoginTokenFile" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginTokenFile"></a>
 
 ```csharp
-public object AuthLoginTokenFile { get; }
+public IResolvable|VaultProviderAuthLoginTokenFile[] AuthLoginTokenFile { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>[]
 
 ---
 
 ##### `AuthLoginUserpass`<sup>Optional</sup> <a name="AuthLoginUserpass" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginUserpass"></a>
 
 ```csharp
-public object AuthLoginUserpass { get; }
+public IResolvable|VaultProviderAuthLoginUserpass[] AuthLoginUserpass { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a>[]
 
 ---
 
@@ -1104,20 +1104,20 @@ public string CaCertFile { get; }
 ##### `ClientAuth`<sup>Optional</sup> <a name="ClientAuth" id="@cdktf/provider-vault.provider.VaultProvider.property.clientAuth"></a>
 
 ```csharp
-public object ClientAuth { get; }
+public IResolvable|VaultProviderClientAuth[] ClientAuth { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a>[]
 
 ---
 
 ##### `Headers`<sup>Optional</sup> <a name="Headers" id="@cdktf/provider-vault.provider.VaultProvider.property.headers"></a>
 
 ```csharp
-public object Headers { get; }
+public IResolvable|VaultProviderHeaders[] Headers { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderHeaders">VaultProviderHeaders</a>[]
 
 ---
 
@@ -1164,40 +1164,40 @@ public string Namespace { get; }
 ##### `SetNamespaceFromToken`<sup>Optional</sup> <a name="SetNamespaceFromToken" id="@cdktf/provider-vault.provider.VaultProvider.property.setNamespaceFromToken"></a>
 
 ```csharp
-public object SetNamespaceFromToken { get; }
+public bool|IResolvable SetNamespaceFromToken { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `SkipChildToken`<sup>Optional</sup> <a name="SkipChildToken" id="@cdktf/provider-vault.provider.VaultProvider.property.skipChildToken"></a>
 
 ```csharp
-public object SkipChildToken { get; }
+public bool|IResolvable SkipChildToken { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `SkipGetVaultVersion`<sup>Optional</sup> <a name="SkipGetVaultVersion" id="@cdktf/provider-vault.provider.VaultProvider.property.skipGetVaultVersion"></a>
 
 ```csharp
-public object SkipGetVaultVersion { get; }
+public bool|IResolvable SkipGetVaultVersion { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `SkipTlsVerify`<sup>Optional</sup> <a name="SkipTlsVerify" id="@cdktf/provider-vault.provider.VaultProvider.property.skipTlsVerify"></a>
 
 ```csharp
-public object SkipTlsVerify { get; }
+public bool|IResolvable SkipTlsVerify { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1273,7 +1273,7 @@ new VaultProviderAuthLogin {
     string Method = null,
     string Namespace = null,
     System.Collections.Generic.IDictionary<string, string> Parameters = null,
-    object UseRootNamespace = null
+    bool|IResolvable UseRootNamespace = null
 };
 ```
 
@@ -1285,7 +1285,7 @@ new VaultProviderAuthLogin {
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.method">Method</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs#method VaultProvider#method}. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.namespace">Namespace</a></code> | <code>string</code> | The authentication engine's namespace. Conflicts with use_root_namespace. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.parameters">Parameters</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs#parameters VaultProvider#parameters}. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.useRootNamespace">UseRootNamespace</a></code> | <code>object</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.useRootNamespace">UseRootNamespace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
 
 ---
 
@@ -1342,10 +1342,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `UseRootNamespace`<sup>Optional</sup> <a name="UseRootNamespace" id="@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.useRootNamespace"></a>
 
 ```csharp
-public object UseRootNamespace { get; set; }
+public bool|IResolvable UseRootNamespace { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
@@ -1376,7 +1376,7 @@ new VaultProviderAuthLoginAws {
     string HeaderValue = null,
     string Mount = null,
     string Namespace = null,
-    object UseRootNamespace = null
+    bool|IResolvable UseRootNamespace = null
 };
 ```
 
@@ -1399,7 +1399,7 @@ new VaultProviderAuthLoginAws {
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws.property.headerValue">HeaderValue</a></code> | <code>string</code> | The Vault header value to include in the STS signing request. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws.property.mount">Mount</a></code> | <code>string</code> | The path where the authentication engine is mounted. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws.property.namespace">Namespace</a></code> | <code>string</code> | The authentication engine's namespace. Conflicts with use_root_namespace. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws.property.useRootNamespace">UseRootNamespace</a></code> | <code>object</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws.property.useRootNamespace">UseRootNamespace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
 
 ---
 
@@ -1616,10 +1616,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `UseRootNamespace`<sup>Optional</sup> <a name="UseRootNamespace" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginAws.property.useRootNamespace"></a>
 
 ```csharp
-public object UseRootNamespace { get; set; }
+public bool|IResolvable UseRootNamespace { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
@@ -1644,7 +1644,7 @@ new VaultProviderAuthLoginAzure {
     string Namespace = null,
     string Scope = null,
     string TenantId = null,
-    object UseRootNamespace = null,
+    bool|IResolvable UseRootNamespace = null,
     string VmName = null,
     string VmssName = null
 };
@@ -1663,7 +1663,7 @@ new VaultProviderAuthLoginAzure {
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure.property.namespace">Namespace</a></code> | <code>string</code> | The authentication engine's namespace. Conflicts with use_root_namespace. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure.property.scope">Scope</a></code> | <code>string</code> | The scopes to include in the token request. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure.property.tenantId">TenantId</a></code> | <code>string</code> | Provides the tenant ID to use in a multi-tenant authentication scenario. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure.property.useRootNamespace">UseRootNamespace</a></code> | <code>object</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure.property.useRootNamespace">UseRootNamespace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure.property.vmName">VmName</a></code> | <code>string</code> | The virtual machine name for the machine that generated the MSI token. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure.property.vmssName">VmssName</a></code> | <code>string</code> | The virtual machine scale set name for the machine that generated the MSI token. |
 
@@ -1798,10 +1798,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `UseRootNamespace`<sup>Optional</sup> <a name="UseRootNamespace" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure.property.useRootNamespace"></a>
 
 ```csharp
-public object UseRootNamespace { get; set; }
+public bool|IResolvable UseRootNamespace { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
@@ -1854,7 +1854,7 @@ new VaultProviderAuthLoginCert {
     string Mount = null,
     string Name = null,
     string Namespace = null,
-    object UseRootNamespace = null
+    bool|IResolvable UseRootNamespace = null
 };
 ```
 
@@ -1867,7 +1867,7 @@ new VaultProviderAuthLoginCert {
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert.property.mount">Mount</a></code> | <code>string</code> | The path where the authentication engine is mounted. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert.property.name">Name</a></code> | <code>string</code> | Name of the certificate's role. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert.property.namespace">Namespace</a></code> | <code>string</code> | The authentication engine's namespace. Conflicts with use_root_namespace. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert.property.useRootNamespace">UseRootNamespace</a></code> | <code>object</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert.property.useRootNamespace">UseRootNamespace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
 
 ---
 
@@ -1944,10 +1944,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `UseRootNamespace`<sup>Optional</sup> <a name="UseRootNamespace" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginCert.property.useRootNamespace"></a>
 
 ```csharp
-public object UseRootNamespace { get; set; }
+public bool|IResolvable UseRootNamespace { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
@@ -1969,7 +1969,7 @@ new VaultProviderAuthLoginGcp {
     string Mount = null,
     string Namespace = null,
     string ServiceAccount = null,
-    object UseRootNamespace = null
+    bool|IResolvable UseRootNamespace = null
 };
 ```
 
@@ -1983,7 +1983,7 @@ new VaultProviderAuthLoginGcp {
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp.property.mount">Mount</a></code> | <code>string</code> | The path where the authentication engine is mounted. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp.property.namespace">Namespace</a></code> | <code>string</code> | The authentication engine's namespace. Conflicts with use_root_namespace. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp.property.serviceAccount">ServiceAccount</a></code> | <code>string</code> | IAM service account. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp.property.useRootNamespace">UseRootNamespace</a></code> | <code>object</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp.property.useRootNamespace">UseRootNamespace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
 
 ---
 
@@ -2074,10 +2074,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `UseRootNamespace`<sup>Optional</sup> <a name="UseRootNamespace" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp.property.useRootNamespace"></a>
 
 ```csharp
-public object UseRootNamespace { get; set; }
+public bool|IResolvable UseRootNamespace { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
@@ -2097,7 +2097,7 @@ new VaultProviderAuthLoginJwt {
     string Jwt = null,
     string Mount = null,
     string Namespace = null,
-    object UseRootNamespace = null
+    bool|IResolvable UseRootNamespace = null
 };
 ```
 
@@ -2109,7 +2109,7 @@ new VaultProviderAuthLoginJwt {
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt.property.jwt">Jwt</a></code> | <code>string</code> | A signed JSON Web Token. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt.property.mount">Mount</a></code> | <code>string</code> | The path where the authentication engine is mounted. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt.property.namespace">Namespace</a></code> | <code>string</code> | The authentication engine's namespace. Conflicts with use_root_namespace. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt.property.useRootNamespace">UseRootNamespace</a></code> | <code>object</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt.property.useRootNamespace">UseRootNamespace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
 
 ---
 
@@ -2172,10 +2172,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `UseRootNamespace`<sup>Optional</sup> <a name="UseRootNamespace" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt.property.useRootNamespace"></a>
 
 ```csharp
-public object UseRootNamespace { get; set; }
+public bool|IResolvable UseRootNamespace { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
@@ -2191,17 +2191,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Vault;
 
 new VaultProviderAuthLoginKerberos {
-    object DisableFastNegotiation = null,
+    bool|IResolvable DisableFastNegotiation = null,
     string KeytabPath = null,
     string Krb5ConfPath = null,
     string Mount = null,
     string Namespace = null,
     string Realm = null,
-    object RemoveInstanceName = null,
+    bool|IResolvable RemoveInstanceName = null,
     string Service = null,
     string Token = null,
     string Username = null,
-    object UseRootNamespace = null
+    bool|IResolvable UseRootNamespace = null
 };
 ```
 
@@ -2209,27 +2209,27 @@ new VaultProviderAuthLoginKerberos {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.disableFastNegotiation">DisableFastNegotiation</a></code> | <code>object</code> | Disable the Kerberos FAST negotiation. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.disableFastNegotiation">DisableFastNegotiation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Disable the Kerberos FAST negotiation. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.keytabPath">KeytabPath</a></code> | <code>string</code> | The Kerberos keytab file containing the entry of the login entity. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.krb5ConfPath">Krb5ConfPath</a></code> | <code>string</code> | A valid Kerberos configuration file e.g. /etc/krb5.conf. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.mount">Mount</a></code> | <code>string</code> | The path where the authentication engine is mounted. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.namespace">Namespace</a></code> | <code>string</code> | The authentication engine's namespace. Conflicts with use_root_namespace. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.realm">Realm</a></code> | <code>string</code> | The Kerberos server's authoritative authentication domain. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.removeInstanceName">RemoveInstanceName</a></code> | <code>object</code> | Strip the host from the username found in the keytab. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.removeInstanceName">RemoveInstanceName</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Strip the host from the username found in the keytab. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.service">Service</a></code> | <code>string</code> | The service principle name. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.token">Token</a></code> | <code>string</code> | Simple and Protected GSSAPI Negotiation Mechanism (SPNEGO) token. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.username">Username</a></code> | <code>string</code> | The username to login into Kerberos with. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.useRootNamespace">UseRootNamespace</a></code> | <code>object</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.useRootNamespace">UseRootNamespace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
 
 ---
 
 ##### `DisableFastNegotiation`<sup>Optional</sup> <a name="DisableFastNegotiation" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.disableFastNegotiation"></a>
 
 ```csharp
-public object DisableFastNegotiation { get; set; }
+public bool|IResolvable DisableFastNegotiation { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Disable the Kerberos FAST negotiation.
 
@@ -2310,10 +2310,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `RemoveInstanceName`<sup>Optional</sup> <a name="RemoveInstanceName" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.removeInstanceName"></a>
 
 ```csharp
-public object RemoveInstanceName { get; set; }
+public bool|IResolvable RemoveInstanceName { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Strip the host from the username found in the keytab.
 
@@ -2366,10 +2366,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `UseRootNamespace`<sup>Optional</sup> <a name="UseRootNamespace" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.useRootNamespace"></a>
 
 ```csharp
-public object UseRootNamespace { get; set; }
+public bool|IResolvable UseRootNamespace { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
@@ -2389,7 +2389,7 @@ new VaultProviderAuthLoginOci {
     string Role,
     string Mount = null,
     string Namespace = null,
-    object UseRootNamespace = null
+    bool|IResolvable UseRootNamespace = null
 };
 ```
 
@@ -2401,7 +2401,7 @@ new VaultProviderAuthLoginOci {
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci.property.role">Role</a></code> | <code>string</code> | Name of the login role. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci.property.mount">Mount</a></code> | <code>string</code> | The path where the authentication engine is mounted. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci.property.namespace">Namespace</a></code> | <code>string</code> | The authentication engine's namespace. Conflicts with use_root_namespace. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci.property.useRootNamespace">UseRootNamespace</a></code> | <code>object</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci.property.useRootNamespace">UseRootNamespace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
 
 ---
 
@@ -2464,10 +2464,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `UseRootNamespace`<sup>Optional</sup> <a name="UseRootNamespace" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginOci.property.useRootNamespace"></a>
 
 ```csharp
-public object UseRootNamespace { get; set; }
+public bool|IResolvable UseRootNamespace { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
@@ -2488,7 +2488,7 @@ new VaultProviderAuthLoginOidc {
     string CallbackListenerAddress = null,
     string Mount = null,
     string Namespace = null,
-    object UseRootNamespace = null
+    bool|IResolvable UseRootNamespace = null
 };
 ```
 
@@ -2501,7 +2501,7 @@ new VaultProviderAuthLoginOidc {
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc.property.callbackListenerAddress">CallbackListenerAddress</a></code> | <code>string</code> | The callback listener's address. Must be a valid URI without the path. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc.property.mount">Mount</a></code> | <code>string</code> | The path where the authentication engine is mounted. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc.property.namespace">Namespace</a></code> | <code>string</code> | The authentication engine's namespace. Conflicts with use_root_namespace. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc.property.useRootNamespace">UseRootNamespace</a></code> | <code>object</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc.property.useRootNamespace">UseRootNamespace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
 
 ---
 
@@ -2578,10 +2578,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `UseRootNamespace`<sup>Optional</sup> <a name="UseRootNamespace" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc.property.useRootNamespace"></a>
 
 ```csharp
-public object UseRootNamespace { get; set; }
+public bool|IResolvable UseRootNamespace { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
@@ -2601,7 +2601,7 @@ new VaultProviderAuthLoginRadius {
     string Namespace = null,
     string Password = null,
     string Username = null,
-    object UseRootNamespace = null
+    bool|IResolvable UseRootNamespace = null
 };
 ```
 
@@ -2613,7 +2613,7 @@ new VaultProviderAuthLoginRadius {
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius.property.namespace">Namespace</a></code> | <code>string</code> | The authentication engine's namespace. Conflicts with use_root_namespace. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius.property.password">Password</a></code> | <code>string</code> | The Radius password for username. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius.property.username">Username</a></code> | <code>string</code> | The Radius username. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius.property.useRootNamespace">UseRootNamespace</a></code> | <code>object</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius.property.useRootNamespace">UseRootNamespace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
 
 ---
 
@@ -2676,10 +2676,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `UseRootNamespace`<sup>Optional</sup> <a name="UseRootNamespace" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius.property.useRootNamespace"></a>
 
 ```csharp
-public object UseRootNamespace { get; set; }
+public bool|IResolvable UseRootNamespace { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
@@ -2697,7 +2697,7 @@ using HashiCorp.Cdktf.Providers.Vault;
 new VaultProviderAuthLoginTokenFile {
     string Filename = null,
     string Namespace = null,
-    object UseRootNamespace = null
+    bool|IResolvable UseRootNamespace = null
 };
 ```
 
@@ -2707,7 +2707,7 @@ new VaultProviderAuthLoginTokenFile {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile.property.filename">Filename</a></code> | <code>string</code> | The name of a file containing a single line that is a valid Vault token. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile.property.namespace">Namespace</a></code> | <code>string</code> | The authentication engine's namespace. Conflicts with use_root_namespace. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile.property.useRootNamespace">UseRootNamespace</a></code> | <code>object</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile.property.useRootNamespace">UseRootNamespace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
 
 ---
 
@@ -2742,10 +2742,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `UseRootNamespace`<sup>Optional</sup> <a name="UseRootNamespace" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile.property.useRootNamespace"></a>
 
 ```csharp
-public object UseRootNamespace { get; set; }
+public bool|IResolvable UseRootNamespace { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
@@ -2766,7 +2766,7 @@ new VaultProviderAuthLoginUserpass {
     string Password = null,
     string PasswordFile = null,
     string Username = null,
-    object UseRootNamespace = null
+    bool|IResolvable UseRootNamespace = null
 };
 ```
 
@@ -2779,7 +2779,7 @@ new VaultProviderAuthLoginUserpass {
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass.property.password">Password</a></code> | <code>string</code> | Login with password. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass.property.passwordFile">PasswordFile</a></code> | <code>string</code> | Login with password from a file. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass.property.username">Username</a></code> | <code>string</code> | Login with username. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass.property.useRootNamespace">UseRootNamespace</a></code> | <code>object</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass.property.useRootNamespace">UseRootNamespace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
 
 ---
 
@@ -2856,10 +2856,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `UseRootNamespace`<sup>Optional</sup> <a name="UseRootNamespace" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass.property.useRootNamespace"></a>
 
 ```csharp
-public object UseRootNamespace { get; set; }
+public bool|IResolvable UseRootNamespace { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
@@ -2928,30 +2928,30 @@ new VaultProviderConfig {
     string AddAddressToEnv = null,
     string Address = null,
     string Alias = null,
-    object AuthLogin = null,
-    object AuthLoginAws = null,
-    object AuthLoginAzure = null,
-    object AuthLoginCert = null,
-    object AuthLoginGcp = null,
-    object AuthLoginJwt = null,
-    object AuthLoginKerberos = null,
-    object AuthLoginOci = null,
-    object AuthLoginOidc = null,
-    object AuthLoginRadius = null,
-    object AuthLoginTokenFile = null,
-    object AuthLoginUserpass = null,
+    IResolvable|VaultProviderAuthLogin[] AuthLogin = null,
+    IResolvable|VaultProviderAuthLoginAws[] AuthLoginAws = null,
+    IResolvable|VaultProviderAuthLoginAzure[] AuthLoginAzure = null,
+    IResolvable|VaultProviderAuthLoginCert[] AuthLoginCert = null,
+    IResolvable|VaultProviderAuthLoginGcp[] AuthLoginGcp = null,
+    IResolvable|VaultProviderAuthLoginJwt[] AuthLoginJwt = null,
+    IResolvable|VaultProviderAuthLoginKerberos[] AuthLoginKerberos = null,
+    IResolvable|VaultProviderAuthLoginOci[] AuthLoginOci = null,
+    IResolvable|VaultProviderAuthLoginOidc[] AuthLoginOidc = null,
+    IResolvable|VaultProviderAuthLoginRadius[] AuthLoginRadius = null,
+    IResolvable|VaultProviderAuthLoginTokenFile[] AuthLoginTokenFile = null,
+    IResolvable|VaultProviderAuthLoginUserpass[] AuthLoginUserpass = null,
     string CaCertDir = null,
     string CaCertFile = null,
-    object ClientAuth = null,
-    object Headers = null,
+    IResolvable|VaultProviderClientAuth[] ClientAuth = null,
+    IResolvable|VaultProviderHeaders[] Headers = null,
     double MaxLeaseTtlSeconds = null,
     double MaxRetries = null,
     double MaxRetriesCcc = null,
     string Namespace = null,
-    object SetNamespaceFromToken = null,
-    object SkipChildToken = null,
-    object SkipGetVaultVersion = null,
-    object SkipTlsVerify = null,
+    bool|IResolvable SetNamespaceFromToken = null,
+    bool|IResolvable SkipChildToken = null,
+    bool|IResolvable SkipGetVaultVersion = null,
+    bool|IResolvable SkipTlsVerify = null,
     string TlsServerName = null,
     string Token = null,
     string TokenName = null,
@@ -2966,30 +2966,30 @@ new VaultProviderConfig {
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.addAddressToEnv">AddAddressToEnv</a></code> | <code>string</code> | If true, adds the value of the `address` argument to the Terraform process environment. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.address">Address</a></code> | <code>string</code> | URL of the root of the target Vault server. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.alias">Alias</a></code> | <code>string</code> | Alias name. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLogin">AuthLogin</a></code> | <code>object</code> | auth_login block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginAws">AuthLoginAws</a></code> | <code>object</code> | auth_login_aws block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginAzure">AuthLoginAzure</a></code> | <code>object</code> | auth_login_azure block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginCert">AuthLoginCert</a></code> | <code>object</code> | auth_login_cert block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginGcp">AuthLoginGcp</a></code> | <code>object</code> | auth_login_gcp block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginJwt">AuthLoginJwt</a></code> | <code>object</code> | auth_login_jwt block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginKerberos">AuthLoginKerberos</a></code> | <code>object</code> | auth_login_kerberos block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginOci">AuthLoginOci</a></code> | <code>object</code> | auth_login_oci block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginOidc">AuthLoginOidc</a></code> | <code>object</code> | auth_login_oidc block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginRadius">AuthLoginRadius</a></code> | <code>object</code> | auth_login_radius block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginTokenFile">AuthLoginTokenFile</a></code> | <code>object</code> | auth_login_token_file block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginUserpass">AuthLoginUserpass</a></code> | <code>object</code> | auth_login_userpass block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLogin">AuthLogin</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a>[]</code> | auth_login block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginAws">AuthLoginAws</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a>[]</code> | auth_login_aws block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginAzure">AuthLoginAzure</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a>[]</code> | auth_login_azure block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginCert">AuthLoginCert</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a>[]</code> | auth_login_cert block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginGcp">AuthLoginGcp</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a>[]</code> | auth_login_gcp block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginJwt">AuthLoginJwt</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a>[]</code> | auth_login_jwt block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginKerberos">AuthLoginKerberos</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a>[]</code> | auth_login_kerberos block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginOci">AuthLoginOci</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a>[]</code> | auth_login_oci block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginOidc">AuthLoginOidc</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a>[]</code> | auth_login_oidc block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginRadius">AuthLoginRadius</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>[]</code> | auth_login_radius block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginTokenFile">AuthLoginTokenFile</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>[]</code> | auth_login_token_file block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginUserpass">AuthLoginUserpass</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a>[]</code> | auth_login_userpass block. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.caCertDir">CaCertDir</a></code> | <code>string</code> | Path to directory containing CA certificate files to validate the server's certificate. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.caCertFile">CaCertFile</a></code> | <code>string</code> | Path to a CA certificate file to validate the server's certificate. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.clientAuth">ClientAuth</a></code> | <code>object</code> | client_auth block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.headers">Headers</a></code> | <code>object</code> | headers block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.clientAuth">ClientAuth</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a>[]</code> | client_auth block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.headers">Headers</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.provider.VaultProviderHeaders">VaultProviderHeaders</a>[]</code> | headers block. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.maxLeaseTtlSeconds">MaxLeaseTtlSeconds</a></code> | <code>double</code> | Maximum TTL for secret leases requested by this provider. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.maxRetries">MaxRetries</a></code> | <code>double</code> | Maximum number of retries when a 5xx error code is encountered. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.maxRetriesCcc">MaxRetriesCcc</a></code> | <code>double</code> | Maximum number of retries for Client Controlled Consistency related operations. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.namespace">Namespace</a></code> | <code>string</code> | The namespace to use. Available only for Vault Enterprise. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.setNamespaceFromToken">SetNamespaceFromToken</a></code> | <code>object</code> | In the case where the Vault token is for a specific namespace and the provider namespace is not configured, use the token namespace as the root namespace for all resources. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.skipChildToken">SkipChildToken</a></code> | <code>object</code> | Set this to true to prevent the creation of ephemeral child token used by this provider. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.skipGetVaultVersion">SkipGetVaultVersion</a></code> | <code>object</code> | Skip the dynamic fetching of the Vault server version. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.skipTlsVerify">SkipTlsVerify</a></code> | <code>object</code> | Set this to true only if the target Vault server is an insecure development instance. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.setNamespaceFromToken">SetNamespaceFromToken</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | In the case where the Vault token is for a specific namespace and the provider namespace is not configured, use the token namespace as the root namespace for all resources. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.skipChildToken">SkipChildToken</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set this to true to prevent the creation of ephemeral child token used by this provider. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.skipGetVaultVersion">SkipGetVaultVersion</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Skip the dynamic fetching of the Vault server version. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.skipTlsVerify">SkipTlsVerify</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set this to true only if the target Vault server is an insecure development instance. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.tlsServerName">TlsServerName</a></code> | <code>string</code> | Name to use as the SNI host when connecting via TLS. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.token">Token</a></code> | <code>string</code> | Token to use to authenticate to Vault. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.tokenName">TokenName</a></code> | <code>string</code> | Token name to use for creating the Vault child token. |
@@ -3042,10 +3042,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AuthLogin`<sup>Optional</sup> <a name="AuthLogin" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLogin"></a>
 
 ```csharp
-public object AuthLogin { get; set; }
+public IResolvable|VaultProviderAuthLogin[] AuthLogin { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a>[]
 
 auth_login block.
 
@@ -3056,10 +3056,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AuthLoginAws`<sup>Optional</sup> <a name="AuthLoginAws" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginAws"></a>
 
 ```csharp
-public object AuthLoginAws { get; set; }
+public IResolvable|VaultProviderAuthLoginAws[] AuthLoginAws { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a>[]
 
 auth_login_aws block.
 
@@ -3070,10 +3070,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AuthLoginAzure`<sup>Optional</sup> <a name="AuthLoginAzure" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginAzure"></a>
 
 ```csharp
-public object AuthLoginAzure { get; set; }
+public IResolvable|VaultProviderAuthLoginAzure[] AuthLoginAzure { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a>[]
 
 auth_login_azure block.
 
@@ -3084,10 +3084,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AuthLoginCert`<sup>Optional</sup> <a name="AuthLoginCert" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginCert"></a>
 
 ```csharp
-public object AuthLoginCert { get; set; }
+public IResolvable|VaultProviderAuthLoginCert[] AuthLoginCert { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a>[]
 
 auth_login_cert block.
 
@@ -3098,10 +3098,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AuthLoginGcp`<sup>Optional</sup> <a name="AuthLoginGcp" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginGcp"></a>
 
 ```csharp
-public object AuthLoginGcp { get; set; }
+public IResolvable|VaultProviderAuthLoginGcp[] AuthLoginGcp { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a>[]
 
 auth_login_gcp block.
 
@@ -3112,10 +3112,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AuthLoginJwt`<sup>Optional</sup> <a name="AuthLoginJwt" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginJwt"></a>
 
 ```csharp
-public object AuthLoginJwt { get; set; }
+public IResolvable|VaultProviderAuthLoginJwt[] AuthLoginJwt { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a>[]
 
 auth_login_jwt block.
 
@@ -3126,10 +3126,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AuthLoginKerberos`<sup>Optional</sup> <a name="AuthLoginKerberos" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginKerberos"></a>
 
 ```csharp
-public object AuthLoginKerberos { get; set; }
+public IResolvable|VaultProviderAuthLoginKerberos[] AuthLoginKerberos { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a>[]
 
 auth_login_kerberos block.
 
@@ -3140,10 +3140,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AuthLoginOci`<sup>Optional</sup> <a name="AuthLoginOci" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginOci"></a>
 
 ```csharp
-public object AuthLoginOci { get; set; }
+public IResolvable|VaultProviderAuthLoginOci[] AuthLoginOci { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a>[]
 
 auth_login_oci block.
 
@@ -3154,10 +3154,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AuthLoginOidc`<sup>Optional</sup> <a name="AuthLoginOidc" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginOidc"></a>
 
 ```csharp
-public object AuthLoginOidc { get; set; }
+public IResolvable|VaultProviderAuthLoginOidc[] AuthLoginOidc { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a>[]
 
 auth_login_oidc block.
 
@@ -3168,10 +3168,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AuthLoginRadius`<sup>Optional</sup> <a name="AuthLoginRadius" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginRadius"></a>
 
 ```csharp
-public object AuthLoginRadius { get; set; }
+public IResolvable|VaultProviderAuthLoginRadius[] AuthLoginRadius { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>[]
 
 auth_login_radius block.
 
@@ -3182,10 +3182,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AuthLoginTokenFile`<sup>Optional</sup> <a name="AuthLoginTokenFile" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginTokenFile"></a>
 
 ```csharp
-public object AuthLoginTokenFile { get; set; }
+public IResolvable|VaultProviderAuthLoginTokenFile[] AuthLoginTokenFile { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>[]
 
 auth_login_token_file block.
 
@@ -3196,10 +3196,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AuthLoginUserpass`<sup>Optional</sup> <a name="AuthLoginUserpass" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginUserpass"></a>
 
 ```csharp
-public object AuthLoginUserpass { get; set; }
+public IResolvable|VaultProviderAuthLoginUserpass[] AuthLoginUserpass { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a>[]
 
 auth_login_userpass block.
 
@@ -3238,10 +3238,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ClientAuth`<sup>Optional</sup> <a name="ClientAuth" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.clientAuth"></a>
 
 ```csharp
-public object ClientAuth { get; set; }
+public IResolvable|VaultProviderClientAuth[] ClientAuth { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a>[]
 
 client_auth block.
 
@@ -3252,10 +3252,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Headers`<sup>Optional</sup> <a name="Headers" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.headers"></a>
 
 ```csharp
-public object Headers { get; set; }
+public IResolvable|VaultProviderHeaders[] Headers { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.provider.VaultProviderHeaders">VaultProviderHeaders</a>[]
 
 headers block.
 
@@ -3322,10 +3322,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `SetNamespaceFromToken`<sup>Optional</sup> <a name="SetNamespaceFromToken" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.setNamespaceFromToken"></a>
 
 ```csharp
-public object SetNamespaceFromToken { get; set; }
+public bool|IResolvable SetNamespaceFromToken { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 In the case where the Vault token is for a specific namespace and the provider namespace is not configured, use the token namespace as the root namespace for all resources.
 
@@ -3336,10 +3336,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `SkipChildToken`<sup>Optional</sup> <a name="SkipChildToken" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.skipChildToken"></a>
 
 ```csharp
-public object SkipChildToken { get; set; }
+public bool|IResolvable SkipChildToken { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set this to true to prevent the creation of ephemeral child token used by this provider.
 
@@ -3350,10 +3350,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `SkipGetVaultVersion`<sup>Optional</sup> <a name="SkipGetVaultVersion" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.skipGetVaultVersion"></a>
 
 ```csharp
-public object SkipGetVaultVersion { get; set; }
+public bool|IResolvable SkipGetVaultVersion { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Skip the dynamic fetching of the Vault server version.
 
@@ -3364,10 +3364,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `SkipTlsVerify`<sup>Optional</sup> <a name="SkipTlsVerify" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.skipTlsVerify"></a>
 
 ```csharp
-public object SkipTlsVerify { get; set; }
+public bool|IResolvable SkipTlsVerify { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set this to true only if the target Vault server is an insecure development instance.
 

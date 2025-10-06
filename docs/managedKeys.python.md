@@ -14,18 +14,18 @@ from cdktf_cdktf_provider_vault import managed_keys
 managedKeys.ManagedKeys(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  aws: typing.Union[IResolvable, typing.List[ManagedKeysAws]] = None,
-  azure: typing.Union[IResolvable, typing.List[ManagedKeysAzure]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  aws: IResolvable | typing.List[ManagedKeysAws] = None,
+  azure: IResolvable | typing.List[ManagedKeysAzure] = None,
   id: str = None,
   namespace: str = None,
-  pkcs: typing.Union[IResolvable, typing.List[ManagedKeysPkcs]] = None
+  pkcs: IResolvable | typing.List[ManagedKeysPkcs] = None
 )
 ```
 
@@ -33,18 +33,18 @@ managedKeys.ManagedKeys(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.aws">aws</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a>]]</code> | aws block. |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.azure">azure</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a>]]</code> | azure block. |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.aws">aws</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a>]</code> | aws block. |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.azure">azure</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a>]</code> | azure block. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/managed_keys#id ManagedKeys#id}. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.pkcs">pkcs</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a>]]</code> | pkcs block. |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.pkcs">pkcs</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a>]</code> | pkcs block. |
 
 ---
 
@@ -68,13 +68,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -104,13 +104,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
 ##### `aws`<sup>Optional</sup> <a name="aws" id="@cdktf/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.aws"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a>]
 
 aws block.
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `azure`<sup>Optional</sup> <a name="azure" id="@cdktf/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.azure"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a>]
 
 azure block.
 
@@ -151,7 +151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `pkcs`<sup>Optional</sup> <a name="pkcs" id="@cdktf/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.pkcs"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a>]
 
 pkcs block.
 
@@ -419,7 +419,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-vault.managedKeys.ManagedKeys.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-vault.managedKeys.ManagedKeys.importFrom"></a>
@@ -482,7 +482,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -498,7 +498,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-vault.managedKeys.ManagedKeys.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -526,13 +526,13 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_aws(
-  value: typing.Union[IResolvable, typing.List[ManagedKeysAws]]
+  value: IResolvable | typing.List[ManagedKeysAws]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-vault.managedKeys.ManagedKeys.putAws.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a>]
 
 ---
 
@@ -540,13 +540,13 @@ def put_aws(
 
 ```python
 def put_azure(
-  value: typing.Union[IResolvable, typing.List[ManagedKeysAzure]]
+  value: IResolvable | typing.List[ManagedKeysAzure]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-vault.managedKeys.ManagedKeys.putAzure.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a>]
 
 ---
 
@@ -554,13 +554,13 @@ def put_azure(
 
 ```python
 def put_pkcs(
-  value: typing.Union[IResolvable, typing.List[ManagedKeysPkcs]]
+  value: IResolvable | typing.List[ManagedKeysPkcs]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-vault.managedKeys.ManagedKeys.putPkcs.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a>]
 
 ---
 
@@ -731,21 +731,21 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.aws">aws</a></code> | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsList">ManagedKeysAwsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.azure">azure</a></code> | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureList">ManagedKeysAzureList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.pkcs">pkcs</a></code> | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsList">ManagedKeysPkcsList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.awsInput">aws_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.azureInput">azure_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.awsInput">aws_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.azureInput">azure_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.namespaceInput">namespace_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.pkcsInput">pkcs_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.pkcsInput">pkcs_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.namespace">namespace</a></code> | <code>str</code> | *No description.* |
 
@@ -826,20 +826,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-vault.managedKeys.ManagedKeys.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.managedKeys.ManagedKeys.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -886,10 +886,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-vault.managedKeys.ManagedKeys.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -926,20 +926,20 @@ pkcs: ManagedKeysPkcsList
 ##### `aws_input`<sup>Optional</sup> <a name="aws_input" id="@cdktf/provider-vault.managedKeys.ManagedKeys.property.awsInput"></a>
 
 ```python
-aws_input: typing.Union[IResolvable, typing.List[ManagedKeysAws]]
+aws_input: IResolvable | typing.List[ManagedKeysAws]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a>]
 
 ---
 
 ##### `azure_input`<sup>Optional</sup> <a name="azure_input" id="@cdktf/provider-vault.managedKeys.ManagedKeys.property.azureInput"></a>
 
 ```python
-azure_input: typing.Union[IResolvable, typing.List[ManagedKeysAzure]]
+azure_input: IResolvable | typing.List[ManagedKeysAzure]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a>]
 
 ---
 
@@ -966,10 +966,10 @@ namespace_input: str
 ##### `pkcs_input`<sup>Optional</sup> <a name="pkcs_input" id="@cdktf/provider-vault.managedKeys.ManagedKeys.property.pkcsInput"></a>
 
 ```python
-pkcs_input: typing.Union[IResolvable, typing.List[ManagedKeysPkcs]]
+pkcs_input: IResolvable | typing.List[ManagedKeysPkcs]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a>]
 
 ---
 
@@ -1027,10 +1027,10 @@ managedKeys.ManagedKeysAws(
   kms_key: str,
   name: str,
   secret_key: str,
-  allow_generate_key: typing.Union[bool, IResolvable] = None,
-  allow_replace_key: typing.Union[bool, IResolvable] = None,
-  allow_store_key: typing.Union[bool, IResolvable] = None,
-  any_mount: typing.Union[bool, IResolvable] = None,
+  allow_generate_key: bool | IResolvable = None,
+  allow_replace_key: bool | IResolvable = None,
+  allow_store_key: bool | IResolvable = None,
+  any_mount: bool | IResolvable = None,
   curve: str = None,
   endpoint: str = None,
   region: str = None
@@ -1047,10 +1047,10 @@ managedKeys.ManagedKeysAws(
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws.property.kmsKey">kms_key</a></code> | <code>str</code> | An identifier for the key. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws.property.name">name</a></code> | <code>str</code> | A unique lowercase name that serves as identifying the key. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws.property.secretKey">secret_key</a></code> | <code>str</code> | The AWS secret key to use. |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws.property.allowGenerateKey">allow_generate_key</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If no existing key can be found in the referenced backend, instructs Vault to generate a key within the backend. |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws.property.allowReplaceKey">allow_replace_key</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Controls the ability for Vault to replace through generation or importing a key into the configured backend even if a key is present, if set to false those operations are forbidden if a key exists. |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws.property.allowStoreKey">allow_store_key</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Controls the ability for Vault to import a key to the configured backend, if 'false', those operations will be forbidden. |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws.property.anyMount">any_mount</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow usage from any mount point within the namespace if 'true'. |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws.property.allowGenerateKey">allow_generate_key</a></code> | <code>bool \| cdktf.IResolvable</code> | If no existing key can be found in the referenced backend, instructs Vault to generate a key within the backend. |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws.property.allowReplaceKey">allow_replace_key</a></code> | <code>bool \| cdktf.IResolvable</code> | Controls the ability for Vault to replace through generation or importing a key into the configured backend even if a key is present, if set to false those operations are forbidden if a key exists. |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws.property.allowStoreKey">allow_store_key</a></code> | <code>bool \| cdktf.IResolvable</code> | Controls the ability for Vault to import a key to the configured backend, if 'false', those operations will be forbidden. |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws.property.anyMount">any_mount</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow usage from any mount point within the namespace if 'true'. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws.property.curve">curve</a></code> | <code>str</code> | The curve to use for an ECDSA key. Used when key_type is 'ECDSA'. Required if 'allow_generate_key' is true. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws.property.endpoint">endpoint</a></code> | <code>str</code> | Used to specify a custom AWS endpoint. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws.property.region">region</a></code> | <code>str</code> | The AWS region where the keys are stored (or will be stored). |
@@ -1144,10 +1144,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `allow_generate_key`<sup>Optional</sup> <a name="allow_generate_key" id="@cdktf/provider-vault.managedKeys.ManagedKeysAws.property.allowGenerateKey"></a>
 
 ```python
-allow_generate_key: typing.Union[bool, IResolvable]
+allow_generate_key: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If no existing key can be found in the referenced backend, instructs Vault to generate a key within the backend.
 
@@ -1158,10 +1158,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `allow_replace_key`<sup>Optional</sup> <a name="allow_replace_key" id="@cdktf/provider-vault.managedKeys.ManagedKeysAws.property.allowReplaceKey"></a>
 
 ```python
-allow_replace_key: typing.Union[bool, IResolvable]
+allow_replace_key: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Controls the ability for Vault to replace through generation or importing a key into the configured backend even if a key is present, if set to false those operations are forbidden if a key exists.
 
@@ -1172,10 +1172,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `allow_store_key`<sup>Optional</sup> <a name="allow_store_key" id="@cdktf/provider-vault.managedKeys.ManagedKeysAws.property.allowStoreKey"></a>
 
 ```python
-allow_store_key: typing.Union[bool, IResolvable]
+allow_store_key: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Controls the ability for Vault to import a key to the configured backend, if 'false', those operations will be forbidden.
 
@@ -1186,10 +1186,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `any_mount`<sup>Optional</sup> <a name="any_mount" id="@cdktf/provider-vault.managedKeys.ManagedKeysAws.property.anyMount"></a>
 
 ```python
-any_mount: typing.Union[bool, IResolvable]
+any_mount: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow usage from any mount point within the namespace if 'true'.
 
@@ -1254,10 +1254,10 @@ managedKeys.ManagedKeysAzure(
   name: str,
   tenant_id: str,
   vault_name: str,
-  allow_generate_key: typing.Union[bool, IResolvable] = None,
-  allow_replace_key: typing.Union[bool, IResolvable] = None,
-  allow_store_key: typing.Union[bool, IResolvable] = None,
-  any_mount: typing.Union[bool, IResolvable] = None,
+  allow_generate_key: bool | IResolvable = None,
+  allow_replace_key: bool | IResolvable = None,
+  allow_store_key: bool | IResolvable = None,
+  any_mount: bool | IResolvable = None,
   environment: str = None,
   key_bits: str = None,
   resource: str = None
@@ -1275,10 +1275,10 @@ managedKeys.ManagedKeysAzure(
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure.property.name">name</a></code> | <code>str</code> | A unique lowercase name that serves as identifying the key. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure.property.tenantId">tenant_id</a></code> | <code>str</code> | The tenant id for the Azure Active Directory organization. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure.property.vaultName">vault_name</a></code> | <code>str</code> | The Key Vault vault to use the encryption keys for encryption and decryption. |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure.property.allowGenerateKey">allow_generate_key</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If no existing key can be found in the referenced backend, instructs Vault to generate a key within the backend. |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure.property.allowReplaceKey">allow_replace_key</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Controls the ability for Vault to replace through generation or importing a key into the configured backend even if a key is present, if set to false those operations are forbidden if a key exists. |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure.property.allowStoreKey">allow_store_key</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Controls the ability for Vault to import a key to the configured backend, if 'false', those operations will be forbidden. |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure.property.anyMount">any_mount</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow usage from any mount point within the namespace if 'true'. |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure.property.allowGenerateKey">allow_generate_key</a></code> | <code>bool \| cdktf.IResolvable</code> | If no existing key can be found in the referenced backend, instructs Vault to generate a key within the backend. |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure.property.allowReplaceKey">allow_replace_key</a></code> | <code>bool \| cdktf.IResolvable</code> | Controls the ability for Vault to replace through generation or importing a key into the configured backend even if a key is present, if set to false those operations are forbidden if a key exists. |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure.property.allowStoreKey">allow_store_key</a></code> | <code>bool \| cdktf.IResolvable</code> | Controls the ability for Vault to import a key to the configured backend, if 'false', those operations will be forbidden. |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure.property.anyMount">any_mount</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow usage from any mount point within the namespace if 'true'. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure.property.environment">environment</a></code> | <code>str</code> | The Azure Cloud environment API endpoints to use. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure.property.keyBits">key_bits</a></code> | <code>str</code> | The size in bits for an RSA key. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure.property.resource">resource</a></code> | <code>str</code> | The Azure Key Vault resource's DNS Suffix to connect to. |
@@ -1386,10 +1386,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `allow_generate_key`<sup>Optional</sup> <a name="allow_generate_key" id="@cdktf/provider-vault.managedKeys.ManagedKeysAzure.property.allowGenerateKey"></a>
 
 ```python
-allow_generate_key: typing.Union[bool, IResolvable]
+allow_generate_key: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If no existing key can be found in the referenced backend, instructs Vault to generate a key within the backend.
 
@@ -1400,10 +1400,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `allow_replace_key`<sup>Optional</sup> <a name="allow_replace_key" id="@cdktf/provider-vault.managedKeys.ManagedKeysAzure.property.allowReplaceKey"></a>
 
 ```python
-allow_replace_key: typing.Union[bool, IResolvable]
+allow_replace_key: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Controls the ability for Vault to replace through generation or importing a key into the configured backend even if a key is present, if set to false those operations are forbidden if a key exists.
 
@@ -1414,10 +1414,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `allow_store_key`<sup>Optional</sup> <a name="allow_store_key" id="@cdktf/provider-vault.managedKeys.ManagedKeysAzure.property.allowStoreKey"></a>
 
 ```python
-allow_store_key: typing.Union[bool, IResolvable]
+allow_store_key: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Controls the ability for Vault to import a key to the configured backend, if 'false', those operations will be forbidden.
 
@@ -1428,10 +1428,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `any_mount`<sup>Optional</sup> <a name="any_mount" id="@cdktf/provider-vault.managedKeys.ManagedKeysAzure.property.anyMount"></a>
 
 ```python
-any_mount: typing.Union[bool, IResolvable]
+any_mount: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow usage from any mount point within the namespace if 'true'.
 
@@ -1491,18 +1491,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_vault import managed_keys
 
 managedKeys.ManagedKeysConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  aws: typing.Union[IResolvable, typing.List[ManagedKeysAws]] = None,
-  azure: typing.Union[IResolvable, typing.List[ManagedKeysAzure]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  aws: IResolvable | typing.List[ManagedKeysAws] = None,
+  azure: IResolvable | typing.List[ManagedKeysAzure] = None,
   id: str = None,
   namespace: str = None,
-  pkcs: typing.Union[IResolvable, typing.List[ManagedKeysPkcs]] = None
+  pkcs: IResolvable | typing.List[ManagedKeysPkcs] = None
 )
 ```
 
@@ -1510,38 +1510,38 @@ managedKeys.ManagedKeysConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.aws">aws</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a>]]</code> | aws block. |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.azure">azure</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a>]]</code> | azure block. |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.aws">aws</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a>]</code> | aws block. |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.azure">azure</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a>]</code> | azure block. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/managed_keys#id ManagedKeys#id}. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.pkcs">pkcs</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a>]]</code> | pkcs block. |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.pkcs">pkcs</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a>]</code> | pkcs block. |
 
 ---
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1588,20 +1588,20 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
 ##### `aws`<sup>Optional</sup> <a name="aws" id="@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.aws"></a>
 
 ```python
-aws: typing.Union[IResolvable, typing.List[ManagedKeysAws]]
+aws: IResolvable | typing.List[ManagedKeysAws]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a>]
 
 aws block.
 
@@ -1612,10 +1612,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `azure`<sup>Optional</sup> <a name="azure" id="@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.azure"></a>
 
 ```python
-azure: typing.Union[IResolvable, typing.List[ManagedKeysAzure]]
+azure: IResolvable | typing.List[ManagedKeysAzure]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a>]
 
 azure block.
 
@@ -1655,10 +1655,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `pkcs`<sup>Optional</sup> <a name="pkcs" id="@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.pkcs"></a>
 
 ```python
-pkcs: typing.Union[IResolvable, typing.List[ManagedKeysPkcs]]
+pkcs: IResolvable | typing.List[ManagedKeysPkcs]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a>]
 
 pkcs block.
 
@@ -1680,10 +1680,10 @@ managedKeys.ManagedKeysPkcs(
   mechanism: str,
   name: str,
   pin: str,
-  allow_generate_key: typing.Union[bool, IResolvable] = None,
-  allow_replace_key: typing.Union[bool, IResolvable] = None,
-  allow_store_key: typing.Union[bool, IResolvable] = None,
-  any_mount: typing.Union[bool, IResolvable] = None,
+  allow_generate_key: bool | IResolvable = None,
+  allow_replace_key: bool | IResolvable = None,
+  allow_store_key: bool | IResolvable = None,
+  any_mount: bool | IResolvable = None,
   curve: str = None,
   force_rw_session: str = None,
   key_bits: str = None,
@@ -1702,10 +1702,10 @@ managedKeys.ManagedKeysPkcs(
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs.property.mechanism">mechanism</a></code> | <code>str</code> | The encryption/decryption mechanism to use, specified as a hexadecimal (prefixed by 0x) string. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs.property.name">name</a></code> | <code>str</code> | A unique lowercase name that serves as identifying the key. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs.property.pin">pin</a></code> | <code>str</code> | The PIN for login. |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs.property.allowGenerateKey">allow_generate_key</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If no existing key can be found in the referenced backend, instructs Vault to generate a key within the backend. |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs.property.allowReplaceKey">allow_replace_key</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Controls the ability for Vault to replace through generation or importing a key into the configured backend even if a key is present, if set to false those operations are forbidden if a key exists. |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs.property.allowStoreKey">allow_store_key</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Controls the ability for Vault to import a key to the configured backend, if 'false', those operations will be forbidden. |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs.property.anyMount">any_mount</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow usage from any mount point within the namespace if 'true'. |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs.property.allowGenerateKey">allow_generate_key</a></code> | <code>bool \| cdktf.IResolvable</code> | If no existing key can be found in the referenced backend, instructs Vault to generate a key within the backend. |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs.property.allowReplaceKey">allow_replace_key</a></code> | <code>bool \| cdktf.IResolvable</code> | Controls the ability for Vault to replace through generation or importing a key into the configured backend even if a key is present, if set to false those operations are forbidden if a key exists. |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs.property.allowStoreKey">allow_store_key</a></code> | <code>bool \| cdktf.IResolvable</code> | Controls the ability for Vault to import a key to the configured backend, if 'false', those operations will be forbidden. |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs.property.anyMount">any_mount</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow usage from any mount point within the namespace if 'true'. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs.property.curve">curve</a></code> | <code>str</code> | Supplies the curve value when using the 'CKM_ECDSA' mechanism. Required if 'allow_generate_key' is true. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs.property.forceRwSession">force_rw_session</a></code> | <code>str</code> | Force all operations to open up a read-write session to the HSM. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs.property.keyBits">key_bits</a></code> | <code>str</code> | Supplies the size in bits of the key when using 'CKM_RSA_PKCS_PSS', 'CKM_RSA_PKCS_OAEP' or 'CKM_RSA_PKCS' as a value for 'mechanism'. |
@@ -1801,10 +1801,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `allow_generate_key`<sup>Optional</sup> <a name="allow_generate_key" id="@cdktf/provider-vault.managedKeys.ManagedKeysPkcs.property.allowGenerateKey"></a>
 
 ```python
-allow_generate_key: typing.Union[bool, IResolvable]
+allow_generate_key: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If no existing key can be found in the referenced backend, instructs Vault to generate a key within the backend.
 
@@ -1815,10 +1815,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `allow_replace_key`<sup>Optional</sup> <a name="allow_replace_key" id="@cdktf/provider-vault.managedKeys.ManagedKeysPkcs.property.allowReplaceKey"></a>
 
 ```python
-allow_replace_key: typing.Union[bool, IResolvable]
+allow_replace_key: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Controls the ability for Vault to replace through generation or importing a key into the configured backend even if a key is present, if set to false those operations are forbidden if a key exists.
 
@@ -1829,10 +1829,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `allow_store_key`<sup>Optional</sup> <a name="allow_store_key" id="@cdktf/provider-vault.managedKeys.ManagedKeysPkcs.property.allowStoreKey"></a>
 
 ```python
-allow_store_key: typing.Union[bool, IResolvable]
+allow_store_key: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Controls the ability for Vault to import a key to the configured backend, if 'false', those operations will be forbidden.
 
@@ -1843,10 +1843,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `any_mount`<sup>Optional</sup> <a name="any_mount" id="@cdktf/provider-vault.managedKeys.ManagedKeysPkcs.property.anyMount"></a>
 
 ```python
-any_mount: typing.Union[bool, IResolvable]
+any_mount: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow usage from any mount point within the namespace if 'true'.
 
@@ -2059,7 +2059,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a>]</code> | *No description.* |
 
 ---
 
@@ -2090,10 +2090,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-vault.managedKeys.ManagedKeysAwsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ManagedKeysAws]]
+internal_value: IResolvable | typing.List[ManagedKeysAws]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a>]
 
 ---
 
@@ -2404,10 +2404,10 @@ def reset_region() -> None
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.uuid">uuid</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.accessKeyInput">access_key_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.allowGenerateKeyInput">allow_generate_key_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.allowReplaceKeyInput">allow_replace_key_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.allowStoreKeyInput">allow_store_key_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.anyMountInput">any_mount_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.allowGenerateKeyInput">allow_generate_key_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.allowReplaceKeyInput">allow_replace_key_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.allowStoreKeyInput">allow_store_key_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.anyMountInput">any_mount_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.curveInput">curve_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.endpointInput">endpoint_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.keyBitsInput">key_bits_input</a></code> | <code>str</code> | *No description.* |
@@ -2417,10 +2417,10 @@ def reset_region() -> None
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.secretKeyInput">secret_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.accessKey">access_key</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.allowGenerateKey">allow_generate_key</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.allowReplaceKey">allow_replace_key</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.allowStoreKey">allow_store_key</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.anyMount">any_mount</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.allowGenerateKey">allow_generate_key</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.allowReplaceKey">allow_replace_key</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.allowStoreKey">allow_store_key</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.anyMount">any_mount</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.curve">curve</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.endpoint">endpoint</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.keyBits">key_bits</a></code> | <code>str</code> | *No description.* |
@@ -2429,7 +2429,7 @@ def reset_region() -> None
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.region">region</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.secretKey">secret_key</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a></code> | *No description.* |
 
 ---
 
@@ -2480,40 +2480,40 @@ access_key_input: str
 ##### `allow_generate_key_input`<sup>Optional</sup> <a name="allow_generate_key_input" id="@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.allowGenerateKeyInput"></a>
 
 ```python
-allow_generate_key_input: typing.Union[bool, IResolvable]
+allow_generate_key_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `allow_replace_key_input`<sup>Optional</sup> <a name="allow_replace_key_input" id="@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.allowReplaceKeyInput"></a>
 
 ```python
-allow_replace_key_input: typing.Union[bool, IResolvable]
+allow_replace_key_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `allow_store_key_input`<sup>Optional</sup> <a name="allow_store_key_input" id="@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.allowStoreKeyInput"></a>
 
 ```python
-allow_store_key_input: typing.Union[bool, IResolvable]
+allow_store_key_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `any_mount_input`<sup>Optional</sup> <a name="any_mount_input" id="@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.anyMountInput"></a>
 
 ```python
-any_mount_input: typing.Union[bool, IResolvable]
+any_mount_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2610,40 +2610,40 @@ access_key: str
 ##### `allow_generate_key`<sup>Required</sup> <a name="allow_generate_key" id="@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.allowGenerateKey"></a>
 
 ```python
-allow_generate_key: typing.Union[bool, IResolvable]
+allow_generate_key: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `allow_replace_key`<sup>Required</sup> <a name="allow_replace_key" id="@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.allowReplaceKey"></a>
 
 ```python
-allow_replace_key: typing.Union[bool, IResolvable]
+allow_replace_key: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `allow_store_key`<sup>Required</sup> <a name="allow_store_key" id="@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.allowStoreKey"></a>
 
 ```python
-allow_store_key: typing.Union[bool, IResolvable]
+allow_store_key: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `any_mount`<sup>Required</sup> <a name="any_mount" id="@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.anyMount"></a>
 
 ```python
-any_mount: typing.Union[bool, IResolvable]
+any_mount: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2730,10 +2730,10 @@ secret_key: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ManagedKeysAws]
+internal_value: IResolvable | ManagedKeysAws
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a>
 
 ---
 
@@ -2869,7 +2869,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a>]</code> | *No description.* |
 
 ---
 
@@ -2900,10 +2900,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-vault.managedKeys.ManagedKeysAzureList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ManagedKeysAzure]]
+internal_value: IResolvable | typing.List[ManagedKeysAzure]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a>]
 
 ---
 
@@ -3213,10 +3213,10 @@ def reset_resource() -> None
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.uuid">uuid</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.allowGenerateKeyInput">allow_generate_key_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.allowReplaceKeyInput">allow_replace_key_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.allowStoreKeyInput">allow_store_key_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.anyMountInput">any_mount_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.allowGenerateKeyInput">allow_generate_key_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.allowReplaceKeyInput">allow_replace_key_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.allowStoreKeyInput">allow_store_key_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.anyMountInput">any_mount_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.clientIdInput">client_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.clientSecretInput">client_secret_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.environmentInput">environment_input</a></code> | <code>str</code> | *No description.* |
@@ -3227,10 +3227,10 @@ def reset_resource() -> None
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.resourceInput">resource_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.tenantIdInput">tenant_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.vaultNameInput">vault_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.allowGenerateKey">allow_generate_key</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.allowReplaceKey">allow_replace_key</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.allowStoreKey">allow_store_key</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.anyMount">any_mount</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.allowGenerateKey">allow_generate_key</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.allowReplaceKey">allow_replace_key</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.allowStoreKey">allow_store_key</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.anyMount">any_mount</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.clientId">client_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.clientSecret">client_secret</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.environment">environment</a></code> | <code>str</code> | *No description.* |
@@ -3241,7 +3241,7 @@ def reset_resource() -> None
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.resource">resource</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.tenantId">tenant_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.vaultName">vault_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a></code> | *No description.* |
 
 ---
 
@@ -3282,40 +3282,40 @@ uuid: str
 ##### `allow_generate_key_input`<sup>Optional</sup> <a name="allow_generate_key_input" id="@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.allowGenerateKeyInput"></a>
 
 ```python
-allow_generate_key_input: typing.Union[bool, IResolvable]
+allow_generate_key_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `allow_replace_key_input`<sup>Optional</sup> <a name="allow_replace_key_input" id="@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.allowReplaceKeyInput"></a>
 
 ```python
-allow_replace_key_input: typing.Union[bool, IResolvable]
+allow_replace_key_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `allow_store_key_input`<sup>Optional</sup> <a name="allow_store_key_input" id="@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.allowStoreKeyInput"></a>
 
 ```python
-allow_store_key_input: typing.Union[bool, IResolvable]
+allow_store_key_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `any_mount_input`<sup>Optional</sup> <a name="any_mount_input" id="@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.anyMountInput"></a>
 
 ```python
-any_mount_input: typing.Union[bool, IResolvable]
+any_mount_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3422,40 +3422,40 @@ vault_name_input: str
 ##### `allow_generate_key`<sup>Required</sup> <a name="allow_generate_key" id="@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.allowGenerateKey"></a>
 
 ```python
-allow_generate_key: typing.Union[bool, IResolvable]
+allow_generate_key: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `allow_replace_key`<sup>Required</sup> <a name="allow_replace_key" id="@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.allowReplaceKey"></a>
 
 ```python
-allow_replace_key: typing.Union[bool, IResolvable]
+allow_replace_key: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `allow_store_key`<sup>Required</sup> <a name="allow_store_key" id="@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.allowStoreKey"></a>
 
 ```python
-allow_store_key: typing.Union[bool, IResolvable]
+allow_store_key: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `any_mount`<sup>Required</sup> <a name="any_mount" id="@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.anyMount"></a>
 
 ```python
-any_mount: typing.Union[bool, IResolvable]
+any_mount: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3562,10 +3562,10 @@ vault_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ManagedKeysAzure]
+internal_value: IResolvable | ManagedKeysAzure
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a>
 
 ---
 
@@ -3701,7 +3701,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a>]</code> | *No description.* |
 
 ---
 
@@ -3732,10 +3732,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-vault.managedKeys.ManagedKeysPkcsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ManagedKeysPkcs]]
+internal_value: IResolvable | typing.List[ManagedKeysPkcs]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a>]
 
 ---
 
@@ -4059,10 +4059,10 @@ def reset_token_label() -> None
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.uuid">uuid</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.allowGenerateKeyInput">allow_generate_key_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.allowReplaceKeyInput">allow_replace_key_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.allowStoreKeyInput">allow_store_key_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.anyMountInput">any_mount_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.allowGenerateKeyInput">allow_generate_key_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.allowReplaceKeyInput">allow_replace_key_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.allowStoreKeyInput">allow_store_key_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.anyMountInput">any_mount_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.curveInput">curve_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.forceRwSessionInput">force_rw_session_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.keyBitsInput">key_bits_input</a></code> | <code>str</code> | *No description.* |
@@ -4074,10 +4074,10 @@ def reset_token_label() -> None
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.pinInput">pin_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.slotInput">slot_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.tokenLabelInput">token_label_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.allowGenerateKey">allow_generate_key</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.allowReplaceKey">allow_replace_key</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.allowStoreKey">allow_store_key</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.anyMount">any_mount</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.allowGenerateKey">allow_generate_key</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.allowReplaceKey">allow_replace_key</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.allowStoreKey">allow_store_key</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.anyMount">any_mount</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.curve">curve</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.forceRwSession">force_rw_session</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.keyBits">key_bits</a></code> | <code>str</code> | *No description.* |
@@ -4089,7 +4089,7 @@ def reset_token_label() -> None
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.pin">pin</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.slot">slot</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.tokenLabel">token_label</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a></code> | *No description.* |
 
 ---
 
@@ -4130,40 +4130,40 @@ uuid: str
 ##### `allow_generate_key_input`<sup>Optional</sup> <a name="allow_generate_key_input" id="@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.allowGenerateKeyInput"></a>
 
 ```python
-allow_generate_key_input: typing.Union[bool, IResolvable]
+allow_generate_key_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `allow_replace_key_input`<sup>Optional</sup> <a name="allow_replace_key_input" id="@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.allowReplaceKeyInput"></a>
 
 ```python
-allow_replace_key_input: typing.Union[bool, IResolvable]
+allow_replace_key_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `allow_store_key_input`<sup>Optional</sup> <a name="allow_store_key_input" id="@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.allowStoreKeyInput"></a>
 
 ```python
-allow_store_key_input: typing.Union[bool, IResolvable]
+allow_store_key_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `any_mount_input`<sup>Optional</sup> <a name="any_mount_input" id="@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.anyMountInput"></a>
 
 ```python
-any_mount_input: typing.Union[bool, IResolvable]
+any_mount_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4280,40 +4280,40 @@ token_label_input: str
 ##### `allow_generate_key`<sup>Required</sup> <a name="allow_generate_key" id="@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.allowGenerateKey"></a>
 
 ```python
-allow_generate_key: typing.Union[bool, IResolvable]
+allow_generate_key: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `allow_replace_key`<sup>Required</sup> <a name="allow_replace_key" id="@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.allowReplaceKey"></a>
 
 ```python
-allow_replace_key: typing.Union[bool, IResolvable]
+allow_replace_key: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `allow_store_key`<sup>Required</sup> <a name="allow_store_key" id="@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.allowStoreKey"></a>
 
 ```python
-allow_store_key: typing.Union[bool, IResolvable]
+allow_store_key: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `any_mount`<sup>Required</sup> <a name="any_mount" id="@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.anyMount"></a>
 
 ```python
-any_mount: typing.Union[bool, IResolvable]
+any_mount: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4430,10 +4430,10 @@ token_label: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ManagedKeysPkcs]
+internal_value: IResolvable | ManagedKeysPkcs
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a>
 
 ---
 

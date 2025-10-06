@@ -292,7 +292,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.importFrom"></a>
@@ -346,7 +346,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -361,7 +361,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -623,29 +623,29 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.namespaceInput">NamespaceInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationActivateInput">OperationActivateInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationAddAttributeInput">OperationAddAttributeInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationAllInput">OperationAllInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationCreateInput">OperationCreateInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationDestroyInput">OperationDestroyInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationDiscoverVersionsInput">OperationDiscoverVersionsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetAttributeListInput">OperationGetAttributeListInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetAttributesInput">OperationGetAttributesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetInput">OperationGetInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationLocateInput">OperationLocateInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationNoneInput">OperationNoneInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRegisterInput">OperationRegisterInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRekeyInput">OperationRekeyInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRevokeInput">OperationRevokeInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationActivateInput">OperationActivateInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationAddAttributeInput">OperationAddAttributeInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationAllInput">OperationAllInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationCreateInput">OperationCreateInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationDestroyInput">OperationDestroyInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationDiscoverVersionsInput">OperationDiscoverVersionsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetAttributeListInput">OperationGetAttributeListInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetAttributesInput">OperationGetAttributesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetInput">OperationGetInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationLocateInput">OperationLocateInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationNoneInput">OperationNoneInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRegisterInput">OperationRegisterInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRekeyInput">OperationRekeyInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRevokeInput">OperationRevokeInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.pathInput">PathInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.roleInput">RoleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.scopeInput">ScopeInput</a></code> | <code>string</code> | *No description.* |
@@ -654,20 +654,20 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.tlsClientTtlInput">TlsClientTtlInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.namespace">Namespace</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationActivate">OperationActivate</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationAddAttribute">OperationAddAttribute</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationAll">OperationAll</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationCreate">OperationCreate</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationDestroy">OperationDestroy</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationDiscoverVersions">OperationDiscoverVersions</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGet">OperationGet</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetAttributeList">OperationGetAttributeList</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetAttributes">OperationGetAttributes</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationLocate">OperationLocate</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationNone">OperationNone</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRegister">OperationRegister</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRekey">OperationRekey</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRevoke">OperationRevoke</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationActivate">OperationActivate</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationAddAttribute">OperationAddAttribute</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationAll">OperationAll</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationCreate">OperationCreate</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationDestroy">OperationDestroy</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationDiscoverVersions">OperationDiscoverVersions</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGet">OperationGet</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetAttributeList">OperationGetAttributeList</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetAttributes">OperationGetAttributes</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationLocate">OperationLocate</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationNone">OperationNone</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRegister">OperationRegister</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRekey">OperationRekey</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRevoke">OperationRevoke</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.path">Path</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.role">Role</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.scope">Scope</a></code> | <code>string</code> | *No description.* |
@@ -752,20 +752,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -812,10 +812,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -842,140 +842,140 @@ public string NamespaceInput { get; }
 ##### `OperationActivateInput`<sup>Optional</sup> <a name="OperationActivateInput" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationActivateInput"></a>
 
 ```csharp
-public object OperationActivateInput { get; }
+public bool|IResolvable OperationActivateInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OperationAddAttributeInput`<sup>Optional</sup> <a name="OperationAddAttributeInput" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationAddAttributeInput"></a>
 
 ```csharp
-public object OperationAddAttributeInput { get; }
+public bool|IResolvable OperationAddAttributeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OperationAllInput`<sup>Optional</sup> <a name="OperationAllInput" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationAllInput"></a>
 
 ```csharp
-public object OperationAllInput { get; }
+public bool|IResolvable OperationAllInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OperationCreateInput`<sup>Optional</sup> <a name="OperationCreateInput" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationCreateInput"></a>
 
 ```csharp
-public object OperationCreateInput { get; }
+public bool|IResolvable OperationCreateInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OperationDestroyInput`<sup>Optional</sup> <a name="OperationDestroyInput" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationDestroyInput"></a>
 
 ```csharp
-public object OperationDestroyInput { get; }
+public bool|IResolvable OperationDestroyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OperationDiscoverVersionsInput`<sup>Optional</sup> <a name="OperationDiscoverVersionsInput" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationDiscoverVersionsInput"></a>
 
 ```csharp
-public object OperationDiscoverVersionsInput { get; }
+public bool|IResolvable OperationDiscoverVersionsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OperationGetAttributeListInput`<sup>Optional</sup> <a name="OperationGetAttributeListInput" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetAttributeListInput"></a>
 
 ```csharp
-public object OperationGetAttributeListInput { get; }
+public bool|IResolvable OperationGetAttributeListInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OperationGetAttributesInput`<sup>Optional</sup> <a name="OperationGetAttributesInput" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetAttributesInput"></a>
 
 ```csharp
-public object OperationGetAttributesInput { get; }
+public bool|IResolvable OperationGetAttributesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OperationGetInput`<sup>Optional</sup> <a name="OperationGetInput" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetInput"></a>
 
 ```csharp
-public object OperationGetInput { get; }
+public bool|IResolvable OperationGetInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OperationLocateInput`<sup>Optional</sup> <a name="OperationLocateInput" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationLocateInput"></a>
 
 ```csharp
-public object OperationLocateInput { get; }
+public bool|IResolvable OperationLocateInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OperationNoneInput`<sup>Optional</sup> <a name="OperationNoneInput" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationNoneInput"></a>
 
 ```csharp
-public object OperationNoneInput { get; }
+public bool|IResolvable OperationNoneInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OperationRegisterInput`<sup>Optional</sup> <a name="OperationRegisterInput" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRegisterInput"></a>
 
 ```csharp
-public object OperationRegisterInput { get; }
+public bool|IResolvable OperationRegisterInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OperationRekeyInput`<sup>Optional</sup> <a name="OperationRekeyInput" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRekeyInput"></a>
 
 ```csharp
-public object OperationRekeyInput { get; }
+public bool|IResolvable OperationRekeyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OperationRevokeInput`<sup>Optional</sup> <a name="OperationRevokeInput" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRevokeInput"></a>
 
 ```csharp
-public object OperationRevokeInput { get; }
+public bool|IResolvable OperationRevokeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1062,140 +1062,140 @@ public string Namespace { get; }
 ##### `OperationActivate`<sup>Required</sup> <a name="OperationActivate" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationActivate"></a>
 
 ```csharp
-public object OperationActivate { get; }
+public bool|IResolvable OperationActivate { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OperationAddAttribute`<sup>Required</sup> <a name="OperationAddAttribute" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationAddAttribute"></a>
 
 ```csharp
-public object OperationAddAttribute { get; }
+public bool|IResolvable OperationAddAttribute { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OperationAll`<sup>Required</sup> <a name="OperationAll" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationAll"></a>
 
 ```csharp
-public object OperationAll { get; }
+public bool|IResolvable OperationAll { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OperationCreate`<sup>Required</sup> <a name="OperationCreate" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationCreate"></a>
 
 ```csharp
-public object OperationCreate { get; }
+public bool|IResolvable OperationCreate { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OperationDestroy`<sup>Required</sup> <a name="OperationDestroy" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationDestroy"></a>
 
 ```csharp
-public object OperationDestroy { get; }
+public bool|IResolvable OperationDestroy { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OperationDiscoverVersions`<sup>Required</sup> <a name="OperationDiscoverVersions" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationDiscoverVersions"></a>
 
 ```csharp
-public object OperationDiscoverVersions { get; }
+public bool|IResolvable OperationDiscoverVersions { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OperationGet`<sup>Required</sup> <a name="OperationGet" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGet"></a>
 
 ```csharp
-public object OperationGet { get; }
+public bool|IResolvable OperationGet { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OperationGetAttributeList`<sup>Required</sup> <a name="OperationGetAttributeList" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetAttributeList"></a>
 
 ```csharp
-public object OperationGetAttributeList { get; }
+public bool|IResolvable OperationGetAttributeList { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OperationGetAttributes`<sup>Required</sup> <a name="OperationGetAttributes" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetAttributes"></a>
 
 ```csharp
-public object OperationGetAttributes { get; }
+public bool|IResolvable OperationGetAttributes { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OperationLocate`<sup>Required</sup> <a name="OperationLocate" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationLocate"></a>
 
 ```csharp
-public object OperationLocate { get; }
+public bool|IResolvable OperationLocate { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OperationNone`<sup>Required</sup> <a name="OperationNone" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationNone"></a>
 
 ```csharp
-public object OperationNone { get; }
+public bool|IResolvable OperationNone { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OperationRegister`<sup>Required</sup> <a name="OperationRegister" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRegister"></a>
 
 ```csharp
-public object OperationRegister { get; }
+public bool|IResolvable OperationRegister { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OperationRekey`<sup>Required</sup> <a name="OperationRekey" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRekey"></a>
 
 ```csharp
-public object OperationRekey { get; }
+public bool|IResolvable OperationRekey { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OperationRevoke`<sup>Required</sup> <a name="OperationRevoke" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRevoke"></a>
 
 ```csharp
-public object OperationRevoke { get; }
+public bool|IResolvable OperationRevoke { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1287,32 +1287,32 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Vault;
 
 new KmipSecretRoleConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Path,
     string Role,
     string Scope,
     string Id = null,
     string Namespace = null,
-    object OperationActivate = null,
-    object OperationAddAttribute = null,
-    object OperationAll = null,
-    object OperationCreate = null,
-    object OperationDestroy = null,
-    object OperationDiscoverVersions = null,
-    object OperationGet = null,
-    object OperationGetAttributeList = null,
-    object OperationGetAttributes = null,
-    object OperationLocate = null,
-    object OperationNone = null,
-    object OperationRegister = null,
-    object OperationRekey = null,
-    object OperationRevoke = null,
+    bool|IResolvable OperationActivate = null,
+    bool|IResolvable OperationAddAttribute = null,
+    bool|IResolvable OperationAll = null,
+    bool|IResolvable OperationCreate = null,
+    bool|IResolvable OperationDestroy = null,
+    bool|IResolvable OperationDiscoverVersions = null,
+    bool|IResolvable OperationGet = null,
+    bool|IResolvable OperationGetAttributeList = null,
+    bool|IResolvable OperationGetAttributes = null,
+    bool|IResolvable OperationLocate = null,
+    bool|IResolvable OperationNone = null,
+    bool|IResolvable OperationRegister = null,
+    bool|IResolvable OperationRekey = null,
+    bool|IResolvable OperationRevoke = null,
     double TlsClientKeyBits = null,
     string TlsClientKeyType = null,
     double TlsClientTtl = null
@@ -1323,32 +1323,32 @@ new KmipSecretRoleConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.path">Path</a></code> | <code>string</code> | Path where KMIP backend is mounted. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.role">Role</a></code> | <code>string</code> | Name of the role. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.scope">Scope</a></code> | <code>string</code> | Name of the scope. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/kmip_secret_role#id KmipSecretRole#id}. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationActivate">OperationActivate</a></code> | <code>object</code> | Grant permission to use the KMIP Activate operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationAddAttribute">OperationAddAttribute</a></code> | <code>object</code> | Grant permission to use the KMIP Add Attribute operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationAll">OperationAll</a></code> | <code>object</code> | Grant all permissions to this role. May not be specified with any other operation_* params. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationCreate">OperationCreate</a></code> | <code>object</code> | Grant permission to use the KMIP Create operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationDestroy">OperationDestroy</a></code> | <code>object</code> | Grant permission to use the KMIP Destroy operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationDiscoverVersions">OperationDiscoverVersions</a></code> | <code>object</code> | Grant permission to use the KMIP Discover Version operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationGet">OperationGet</a></code> | <code>object</code> | Grant permission to use the KMIP Get operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationGetAttributeList">OperationGetAttributeList</a></code> | <code>object</code> | Grant permission to use the KMIP Get Attribute List operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationGetAttributes">OperationGetAttributes</a></code> | <code>object</code> | Grant permission to use the KMIP Get Attributes operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationLocate">OperationLocate</a></code> | <code>object</code> | Grant permission to use the KMIP Locate operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationNone">OperationNone</a></code> | <code>object</code> | Remove all permissions from this role. May not be specified with any other operation_* params. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationRegister">OperationRegister</a></code> | <code>object</code> | Grant permission to use the KMIP Register operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationRekey">OperationRekey</a></code> | <code>object</code> | Grant permission to use the KMIP Rekey operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationRevoke">OperationRevoke</a></code> | <code>object</code> | Grant permission to use the KMIP Revoke operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationActivate">OperationActivate</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Grant permission to use the KMIP Activate operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationAddAttribute">OperationAddAttribute</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Grant permission to use the KMIP Add Attribute operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationAll">OperationAll</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Grant all permissions to this role. May not be specified with any other operation_* params. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationCreate">OperationCreate</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Grant permission to use the KMIP Create operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationDestroy">OperationDestroy</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Grant permission to use the KMIP Destroy operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationDiscoverVersions">OperationDiscoverVersions</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Grant permission to use the KMIP Discover Version operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationGet">OperationGet</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Grant permission to use the KMIP Get operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationGetAttributeList">OperationGetAttributeList</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Grant permission to use the KMIP Get Attribute List operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationGetAttributes">OperationGetAttributes</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Grant permission to use the KMIP Get Attributes operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationLocate">OperationLocate</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Grant permission to use the KMIP Locate operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationNone">OperationNone</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Remove all permissions from this role. May not be specified with any other operation_* params. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationRegister">OperationRegister</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Grant permission to use the KMIP Register operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationRekey">OperationRekey</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Grant permission to use the KMIP Rekey operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationRevoke">OperationRevoke</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Grant permission to use the KMIP Revoke operation. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.tlsClientKeyBits">TlsClientKeyBits</a></code> | <code>double</code> | Client certificate key bits, valid values depend on key type. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.tlsClientKeyType">TlsClientKeyType</a></code> | <code>string</code> | Client certificate key type, rsa or ec. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.tlsClientTtl">TlsClientTtl</a></code> | <code>double</code> | Client certificate TTL in seconds. |
@@ -1358,20 +1358,20 @@ new KmipSecretRoleConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1418,10 +1418,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1499,10 +1499,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `OperationActivate`<sup>Optional</sup> <a name="OperationActivate" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationActivate"></a>
 
 ```csharp
-public object OperationActivate { get; set; }
+public bool|IResolvable OperationActivate { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Grant permission to use the KMIP Activate operation.
 
@@ -1513,10 +1513,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `OperationAddAttribute`<sup>Optional</sup> <a name="OperationAddAttribute" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationAddAttribute"></a>
 
 ```csharp
-public object OperationAddAttribute { get; set; }
+public bool|IResolvable OperationAddAttribute { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Grant permission to use the KMIP Add Attribute operation.
 
@@ -1527,10 +1527,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `OperationAll`<sup>Optional</sup> <a name="OperationAll" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationAll"></a>
 
 ```csharp
-public object OperationAll { get; set; }
+public bool|IResolvable OperationAll { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Grant all permissions to this role. May not be specified with any other operation_* params.
 
@@ -1541,10 +1541,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `OperationCreate`<sup>Optional</sup> <a name="OperationCreate" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationCreate"></a>
 
 ```csharp
-public object OperationCreate { get; set; }
+public bool|IResolvable OperationCreate { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Grant permission to use the KMIP Create operation.
 
@@ -1555,10 +1555,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `OperationDestroy`<sup>Optional</sup> <a name="OperationDestroy" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationDestroy"></a>
 
 ```csharp
-public object OperationDestroy { get; set; }
+public bool|IResolvable OperationDestroy { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Grant permission to use the KMIP Destroy operation.
 
@@ -1569,10 +1569,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `OperationDiscoverVersions`<sup>Optional</sup> <a name="OperationDiscoverVersions" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationDiscoverVersions"></a>
 
 ```csharp
-public object OperationDiscoverVersions { get; set; }
+public bool|IResolvable OperationDiscoverVersions { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Grant permission to use the KMIP Discover Version operation.
 
@@ -1583,10 +1583,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `OperationGet`<sup>Optional</sup> <a name="OperationGet" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationGet"></a>
 
 ```csharp
-public object OperationGet { get; set; }
+public bool|IResolvable OperationGet { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Grant permission to use the KMIP Get operation.
 
@@ -1597,10 +1597,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `OperationGetAttributeList`<sup>Optional</sup> <a name="OperationGetAttributeList" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationGetAttributeList"></a>
 
 ```csharp
-public object OperationGetAttributeList { get; set; }
+public bool|IResolvable OperationGetAttributeList { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Grant permission to use the KMIP Get Attribute List operation.
 
@@ -1611,10 +1611,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `OperationGetAttributes`<sup>Optional</sup> <a name="OperationGetAttributes" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationGetAttributes"></a>
 
 ```csharp
-public object OperationGetAttributes { get; set; }
+public bool|IResolvable OperationGetAttributes { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Grant permission to use the KMIP Get Attributes operation.
 
@@ -1625,10 +1625,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `OperationLocate`<sup>Optional</sup> <a name="OperationLocate" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationLocate"></a>
 
 ```csharp
-public object OperationLocate { get; set; }
+public bool|IResolvable OperationLocate { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Grant permission to use the KMIP Locate operation.
 
@@ -1639,10 +1639,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `OperationNone`<sup>Optional</sup> <a name="OperationNone" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationNone"></a>
 
 ```csharp
-public object OperationNone { get; set; }
+public bool|IResolvable OperationNone { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Remove all permissions from this role. May not be specified with any other operation_* params.
 
@@ -1653,10 +1653,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `OperationRegister`<sup>Optional</sup> <a name="OperationRegister" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationRegister"></a>
 
 ```csharp
-public object OperationRegister { get; set; }
+public bool|IResolvable OperationRegister { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Grant permission to use the KMIP Register operation.
 
@@ -1667,10 +1667,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `OperationRekey`<sup>Optional</sup> <a name="OperationRekey" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationRekey"></a>
 
 ```csharp
-public object OperationRekey { get; set; }
+public bool|IResolvable OperationRekey { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Grant permission to use the KMIP Rekey operation.
 
@@ -1681,10 +1681,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `OperationRevoke`<sup>Optional</sup> <a name="OperationRevoke" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationRevoke"></a>
 
 ```csharp
-public object OperationRevoke { get; set; }
+public bool|IResolvable OperationRevoke { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Grant permission to use the KMIP Revoke operation.
 

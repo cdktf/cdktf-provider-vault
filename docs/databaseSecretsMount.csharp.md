@@ -328,7 +328,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.importFrom"></a>
@@ -382,7 +382,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -397,7 +397,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -422,216 +422,216 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `PutCassandra` <a name="PutCassandra" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.putCassandra"></a>
 
 ```csharp
-private void PutCassandra(object Value)
+private void PutCassandra(IResolvable|DatabaseSecretsMountCassandra[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.putCassandra.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra">DatabaseSecretsMountCassandra</a>[]
 
 ---
 
 ##### `PutCouchbase` <a name="PutCouchbase" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.putCouchbase"></a>
 
 ```csharp
-private void PutCouchbase(object Value)
+private void PutCouchbase(IResolvable|DatabaseSecretsMountCouchbase[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.putCouchbase.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase">DatabaseSecretsMountCouchbase</a>[]
 
 ---
 
 ##### `PutElasticsearch` <a name="PutElasticsearch" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.putElasticsearch"></a>
 
 ```csharp
-private void PutElasticsearch(object Value)
+private void PutElasticsearch(IResolvable|DatabaseSecretsMountElasticsearch[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.putElasticsearch.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch">DatabaseSecretsMountElasticsearch</a>[]
 
 ---
 
 ##### `PutHana` <a name="PutHana" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.putHana"></a>
 
 ```csharp
-private void PutHana(object Value)
+private void PutHana(IResolvable|DatabaseSecretsMountHana[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.putHana.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana">DatabaseSecretsMountHana</a>[]
 
 ---
 
 ##### `PutInfluxdb` <a name="PutInfluxdb" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.putInfluxdb"></a>
 
 ```csharp
-private void PutInfluxdb(object Value)
+private void PutInfluxdb(IResolvable|DatabaseSecretsMountInfluxdb[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.putInfluxdb.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb">DatabaseSecretsMountInfluxdb</a>[]
 
 ---
 
 ##### `PutMongodb` <a name="PutMongodb" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.putMongodb"></a>
 
 ```csharp
-private void PutMongodb(object Value)
+private void PutMongodb(IResolvable|DatabaseSecretsMountMongodb[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.putMongodb.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb">DatabaseSecretsMountMongodb</a>[]
 
 ---
 
 ##### `PutMongodbatlas` <a name="PutMongodbatlas" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.putMongodbatlas"></a>
 
 ```csharp
-private void PutMongodbatlas(object Value)
+private void PutMongodbatlas(IResolvable|DatabaseSecretsMountMongodbatlas[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.putMongodbatlas.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas">DatabaseSecretsMountMongodbatlas</a>[]
 
 ---
 
 ##### `PutMssql` <a name="PutMssql" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.putMssql"></a>
 
 ```csharp
-private void PutMssql(object Value)
+private void PutMssql(IResolvable|DatabaseSecretsMountMssql[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.putMssql.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql">DatabaseSecretsMountMssql</a>[]
 
 ---
 
 ##### `PutMysql` <a name="PutMysql" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.putMysql"></a>
 
 ```csharp
-private void PutMysql(object Value)
+private void PutMysql(IResolvable|DatabaseSecretsMountMysql[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.putMysql.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql">DatabaseSecretsMountMysql</a>[]
 
 ---
 
 ##### `PutMysqlAurora` <a name="PutMysqlAurora" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.putMysqlAurora"></a>
 
 ```csharp
-private void PutMysqlAurora(object Value)
+private void PutMysqlAurora(IResolvable|DatabaseSecretsMountMysqlAurora[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.putMysqlAurora.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora">DatabaseSecretsMountMysqlAurora</a>[]
 
 ---
 
 ##### `PutMysqlLegacy` <a name="PutMysqlLegacy" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.putMysqlLegacy"></a>
 
 ```csharp
-private void PutMysqlLegacy(object Value)
+private void PutMysqlLegacy(IResolvable|DatabaseSecretsMountMysqlLegacy[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.putMysqlLegacy.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy">DatabaseSecretsMountMysqlLegacy</a>[]
 
 ---
 
 ##### `PutMysqlRds` <a name="PutMysqlRds" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.putMysqlRds"></a>
 
 ```csharp
-private void PutMysqlRds(object Value)
+private void PutMysqlRds(IResolvable|DatabaseSecretsMountMysqlRds[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.putMysqlRds.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds">DatabaseSecretsMountMysqlRds</a>[]
 
 ---
 
 ##### `PutOracle` <a name="PutOracle" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.putOracle"></a>
 
 ```csharp
-private void PutOracle(object Value)
+private void PutOracle(IResolvable|DatabaseSecretsMountOracle[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.putOracle.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle">DatabaseSecretsMountOracle</a>[]
 
 ---
 
 ##### `PutPostgresql` <a name="PutPostgresql" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.putPostgresql"></a>
 
 ```csharp
-private void PutPostgresql(object Value)
+private void PutPostgresql(IResolvable|DatabaseSecretsMountPostgresql[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.putPostgresql.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql">DatabaseSecretsMountPostgresql</a>[]
 
 ---
 
 ##### `PutRedis` <a name="PutRedis" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.putRedis"></a>
 
 ```csharp
-private void PutRedis(object Value)
+private void PutRedis(IResolvable|DatabaseSecretsMountRedis[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.putRedis.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis">DatabaseSecretsMountRedis</a>[]
 
 ---
 
 ##### `PutRedisElasticache` <a name="PutRedisElasticache" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.putRedisElasticache"></a>
 
 ```csharp
-private void PutRedisElasticache(object Value)
+private void PutRedisElasticache(IResolvable|DatabaseSecretsMountRedisElasticache[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.putRedisElasticache.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache">DatabaseSecretsMountRedisElasticache</a>[]
 
 ---
 
 ##### `PutRedshift` <a name="PutRedshift" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.putRedshift"></a>
 
 ```csharp
-private void PutRedshift(object Value)
+private void PutRedshift(IResolvable|DatabaseSecretsMountRedshift[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.putRedshift.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift">DatabaseSecretsMountRedshift</a>[]
 
 ---
 
 ##### `PutSnowflake` <a name="PutSnowflake" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.putSnowflake"></a>
 
 ```csharp
-private void PutSnowflake(object Value)
+private void PutSnowflake(IResolvable|DatabaseSecretsMountSnowflake[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.putSnowflake.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake">DatabaseSecretsMountSnowflake</a>[]
 
 ---
 
@@ -983,13 +983,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.accessor">Accessor</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.cassandra">Cassandra</a></code> | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraList">DatabaseSecretsMountCassandraList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.couchbase">Couchbase</a></code> | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseList">DatabaseSecretsMountCouchbaseList</a></code> | *No description.* |
@@ -1014,40 +1014,40 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.allowedResponseHeadersInput">AllowedResponseHeadersInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.auditNonHmacRequestKeysInput">AuditNonHmacRequestKeysInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.auditNonHmacResponseKeysInput">AuditNonHmacResponseKeysInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.cassandraInput">CassandraInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.couchbaseInput">CouchbaseInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.cassandraInput">CassandraInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra">DatabaseSecretsMountCassandra</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.couchbaseInput">CouchbaseInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase">DatabaseSecretsMountCouchbase</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.defaultLeaseTtlSecondsInput">DefaultLeaseTtlSecondsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.delegatedAuthAccessorsInput">DelegatedAuthAccessorsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.elasticsearchInput">ElasticsearchInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.externalEntropyAccessInput">ExternalEntropyAccessInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.forceNoCacheInput">ForceNoCacheInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.hanaInput">HanaInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.elasticsearchInput">ElasticsearchInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch">DatabaseSecretsMountElasticsearch</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.externalEntropyAccessInput">ExternalEntropyAccessInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.forceNoCacheInput">ForceNoCacheInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.hanaInput">HanaInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana">DatabaseSecretsMountHana</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.identityTokenKeyInput">IdentityTokenKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.influxdbInput">InfluxdbInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.influxdbInput">InfluxdbInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb">DatabaseSecretsMountInfluxdb</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.listingVisibilityInput">ListingVisibilityInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.localInput">LocalInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.localInput">LocalInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.maxLeaseTtlSecondsInput">MaxLeaseTtlSecondsInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.mongodbatlasInput">MongodbatlasInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.mongodbInput">MongodbInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.mssqlInput">MssqlInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.mysqlAuroraInput">MysqlAuroraInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.mysqlInput">MysqlInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.mysqlLegacyInput">MysqlLegacyInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.mysqlRdsInput">MysqlRdsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.mongodbatlasInput">MongodbatlasInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas">DatabaseSecretsMountMongodbatlas</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.mongodbInput">MongodbInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb">DatabaseSecretsMountMongodb</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.mssqlInput">MssqlInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql">DatabaseSecretsMountMssql</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.mysqlAuroraInput">MysqlAuroraInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora">DatabaseSecretsMountMysqlAurora</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.mysqlInput">MysqlInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql">DatabaseSecretsMountMysql</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.mysqlLegacyInput">MysqlLegacyInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy">DatabaseSecretsMountMysqlLegacy</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.mysqlRdsInput">MysqlRdsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds">DatabaseSecretsMountMysqlRds</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.namespaceInput">NamespaceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.optionsInput">OptionsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.oracleInput">OracleInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.oracleInput">OracleInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle">DatabaseSecretsMountOracle</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.passthroughRequestHeadersInput">PassthroughRequestHeadersInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.pathInput">PathInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.pluginVersionInput">PluginVersionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.postgresqlInput">PostgresqlInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.redisElasticacheInput">RedisElasticacheInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.redisInput">RedisInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.redshiftInput">RedshiftInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.sealWrapInput">SealWrapInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.snowflakeInput">SnowflakeInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.postgresqlInput">PostgresqlInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql">DatabaseSecretsMountPostgresql</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.redisElasticacheInput">RedisElasticacheInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache">DatabaseSecretsMountRedisElasticache</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.redisInput">RedisInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis">DatabaseSecretsMountRedis</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.redshiftInput">RedshiftInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift">DatabaseSecretsMountRedshift</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.sealWrapInput">SealWrapInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.snowflakeInput">SnowflakeInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake">DatabaseSecretsMountSnowflake</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.allowedManagedKeys">AllowedManagedKeys</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.allowedResponseHeaders">AllowedResponseHeaders</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.auditNonHmacRequestKeys">AuditNonHmacRequestKeys</a></code> | <code>string[]</code> | *No description.* |
@@ -1055,19 +1055,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.defaultLeaseTtlSeconds">DefaultLeaseTtlSeconds</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.delegatedAuthAccessors">DelegatedAuthAccessors</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.description">Description</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.externalEntropyAccess">ExternalEntropyAccess</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.forceNoCache">ForceNoCache</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.externalEntropyAccess">ExternalEntropyAccess</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.forceNoCache">ForceNoCache</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.identityTokenKey">IdentityTokenKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.listingVisibility">ListingVisibility</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.local">Local</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.local">Local</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.maxLeaseTtlSeconds">MaxLeaseTtlSeconds</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.namespace">Namespace</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.options">Options</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.passthroughRequestHeaders">PassthroughRequestHeaders</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.path">Path</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.pluginVersion">PluginVersion</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.sealWrap">SealWrap</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.sealWrap">SealWrap</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -1146,20 +1146,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1206,10 +1206,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1456,20 +1456,20 @@ public string[] AuditNonHmacResponseKeysInput { get; }
 ##### `CassandraInput`<sup>Optional</sup> <a name="CassandraInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.cassandraInput"></a>
 
 ```csharp
-public object CassandraInput { get; }
+public IResolvable|DatabaseSecretsMountCassandra[] CassandraInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra">DatabaseSecretsMountCassandra</a>[]
 
 ---
 
 ##### `CouchbaseInput`<sup>Optional</sup> <a name="CouchbaseInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.couchbaseInput"></a>
 
 ```csharp
-public object CouchbaseInput { get; }
+public IResolvable|DatabaseSecretsMountCouchbase[] CouchbaseInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase">DatabaseSecretsMountCouchbase</a>[]
 
 ---
 
@@ -1506,40 +1506,40 @@ public string DescriptionInput { get; }
 ##### `ElasticsearchInput`<sup>Optional</sup> <a name="ElasticsearchInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.elasticsearchInput"></a>
 
 ```csharp
-public object ElasticsearchInput { get; }
+public IResolvable|DatabaseSecretsMountElasticsearch[] ElasticsearchInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch">DatabaseSecretsMountElasticsearch</a>[]
 
 ---
 
 ##### `ExternalEntropyAccessInput`<sup>Optional</sup> <a name="ExternalEntropyAccessInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.externalEntropyAccessInput"></a>
 
 ```csharp
-public object ExternalEntropyAccessInput { get; }
+public bool|IResolvable ExternalEntropyAccessInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ForceNoCacheInput`<sup>Optional</sup> <a name="ForceNoCacheInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.forceNoCacheInput"></a>
 
 ```csharp
-public object ForceNoCacheInput { get; }
+public bool|IResolvable ForceNoCacheInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `HanaInput`<sup>Optional</sup> <a name="HanaInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.hanaInput"></a>
 
 ```csharp
-public object HanaInput { get; }
+public IResolvable|DatabaseSecretsMountHana[] HanaInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana">DatabaseSecretsMountHana</a>[]
 
 ---
 
@@ -1566,10 +1566,10 @@ public string IdInput { get; }
 ##### `InfluxdbInput`<sup>Optional</sup> <a name="InfluxdbInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.influxdbInput"></a>
 
 ```csharp
-public object InfluxdbInput { get; }
+public IResolvable|DatabaseSecretsMountInfluxdb[] InfluxdbInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb">DatabaseSecretsMountInfluxdb</a>[]
 
 ---
 
@@ -1586,10 +1586,10 @@ public string ListingVisibilityInput { get; }
 ##### `LocalInput`<sup>Optional</sup> <a name="LocalInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.localInput"></a>
 
 ```csharp
-public object LocalInput { get; }
+public bool|IResolvable LocalInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1606,70 +1606,70 @@ public double MaxLeaseTtlSecondsInput { get; }
 ##### `MongodbatlasInput`<sup>Optional</sup> <a name="MongodbatlasInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.mongodbatlasInput"></a>
 
 ```csharp
-public object MongodbatlasInput { get; }
+public IResolvable|DatabaseSecretsMountMongodbatlas[] MongodbatlasInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas">DatabaseSecretsMountMongodbatlas</a>[]
 
 ---
 
 ##### `MongodbInput`<sup>Optional</sup> <a name="MongodbInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.mongodbInput"></a>
 
 ```csharp
-public object MongodbInput { get; }
+public IResolvable|DatabaseSecretsMountMongodb[] MongodbInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb">DatabaseSecretsMountMongodb</a>[]
 
 ---
 
 ##### `MssqlInput`<sup>Optional</sup> <a name="MssqlInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.mssqlInput"></a>
 
 ```csharp
-public object MssqlInput { get; }
+public IResolvable|DatabaseSecretsMountMssql[] MssqlInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql">DatabaseSecretsMountMssql</a>[]
 
 ---
 
 ##### `MysqlAuroraInput`<sup>Optional</sup> <a name="MysqlAuroraInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.mysqlAuroraInput"></a>
 
 ```csharp
-public object MysqlAuroraInput { get; }
+public IResolvable|DatabaseSecretsMountMysqlAurora[] MysqlAuroraInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora">DatabaseSecretsMountMysqlAurora</a>[]
 
 ---
 
 ##### `MysqlInput`<sup>Optional</sup> <a name="MysqlInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.mysqlInput"></a>
 
 ```csharp
-public object MysqlInput { get; }
+public IResolvable|DatabaseSecretsMountMysql[] MysqlInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql">DatabaseSecretsMountMysql</a>[]
 
 ---
 
 ##### `MysqlLegacyInput`<sup>Optional</sup> <a name="MysqlLegacyInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.mysqlLegacyInput"></a>
 
 ```csharp
-public object MysqlLegacyInput { get; }
+public IResolvable|DatabaseSecretsMountMysqlLegacy[] MysqlLegacyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy">DatabaseSecretsMountMysqlLegacy</a>[]
 
 ---
 
 ##### `MysqlRdsInput`<sup>Optional</sup> <a name="MysqlRdsInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.mysqlRdsInput"></a>
 
 ```csharp
-public object MysqlRdsInput { get; }
+public IResolvable|DatabaseSecretsMountMysqlRds[] MysqlRdsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds">DatabaseSecretsMountMysqlRds</a>[]
 
 ---
 
@@ -1696,10 +1696,10 @@ public System.Collections.Generic.IDictionary<string, string> OptionsInput { get
 ##### `OracleInput`<sup>Optional</sup> <a name="OracleInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.oracleInput"></a>
 
 ```csharp
-public object OracleInput { get; }
+public IResolvable|DatabaseSecretsMountOracle[] OracleInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle">DatabaseSecretsMountOracle</a>[]
 
 ---
 
@@ -1736,60 +1736,60 @@ public string PluginVersionInput { get; }
 ##### `PostgresqlInput`<sup>Optional</sup> <a name="PostgresqlInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.postgresqlInput"></a>
 
 ```csharp
-public object PostgresqlInput { get; }
+public IResolvable|DatabaseSecretsMountPostgresql[] PostgresqlInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql">DatabaseSecretsMountPostgresql</a>[]
 
 ---
 
 ##### `RedisElasticacheInput`<sup>Optional</sup> <a name="RedisElasticacheInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.redisElasticacheInput"></a>
 
 ```csharp
-public object RedisElasticacheInput { get; }
+public IResolvable|DatabaseSecretsMountRedisElasticache[] RedisElasticacheInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache">DatabaseSecretsMountRedisElasticache</a>[]
 
 ---
 
 ##### `RedisInput`<sup>Optional</sup> <a name="RedisInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.redisInput"></a>
 
 ```csharp
-public object RedisInput { get; }
+public IResolvable|DatabaseSecretsMountRedis[] RedisInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis">DatabaseSecretsMountRedis</a>[]
 
 ---
 
 ##### `RedshiftInput`<sup>Optional</sup> <a name="RedshiftInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.redshiftInput"></a>
 
 ```csharp
-public object RedshiftInput { get; }
+public IResolvable|DatabaseSecretsMountRedshift[] RedshiftInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift">DatabaseSecretsMountRedshift</a>[]
 
 ---
 
 ##### `SealWrapInput`<sup>Optional</sup> <a name="SealWrapInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.sealWrapInput"></a>
 
 ```csharp
-public object SealWrapInput { get; }
+public bool|IResolvable SealWrapInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `SnowflakeInput`<sup>Optional</sup> <a name="SnowflakeInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.snowflakeInput"></a>
 
 ```csharp
-public object SnowflakeInput { get; }
+public IResolvable|DatabaseSecretsMountSnowflake[] SnowflakeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake">DatabaseSecretsMountSnowflake</a>[]
 
 ---
 
@@ -1866,20 +1866,20 @@ public string Description { get; }
 ##### `ExternalEntropyAccess`<sup>Required</sup> <a name="ExternalEntropyAccess" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.externalEntropyAccess"></a>
 
 ```csharp
-public object ExternalEntropyAccess { get; }
+public bool|IResolvable ExternalEntropyAccess { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ForceNoCache`<sup>Required</sup> <a name="ForceNoCache" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.forceNoCache"></a>
 
 ```csharp
-public object ForceNoCache { get; }
+public bool|IResolvable ForceNoCache { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1916,10 +1916,10 @@ public string ListingVisibility { get; }
 ##### `Local`<sup>Required</sup> <a name="Local" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.local"></a>
 
 ```csharp
-public object Local { get; }
+public bool|IResolvable Local { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1986,10 +1986,10 @@ public string PluginVersion { get; }
 ##### `SealWrap`<sup>Required</sup> <a name="SealWrap" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount.property.sealWrap"></a>
 
 ```csharp
-public object SealWrap { get; }
+public bool|IResolvable SealWrap { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2025,9 +2025,9 @@ new DatabaseSecretsMountCassandra {
     string[] AllowedRoles = null,
     double ConnectTimeout = null,
     System.Collections.Generic.IDictionary<string, string> Data = null,
-    object DisableAutomatedRotation = null,
+    bool|IResolvable DisableAutomatedRotation = null,
     string[] Hosts = null,
-    object InsecureTls = null,
+    bool|IResolvable InsecureTls = null,
     string Password = null,
     string PemBundle = null,
     string PemJson = null,
@@ -2038,10 +2038,10 @@ new DatabaseSecretsMountCassandra {
     double RotationPeriod = null,
     string RotationSchedule = null,
     double RotationWindow = null,
-    object SkipVerification = null,
-    object Tls = null,
+    bool|IResolvable SkipVerification = null,
+    bool|IResolvable Tls = null,
     string Username = null,
-    object VerifyConnection = null
+    bool|IResolvable VerifyConnection = null
 };
 ```
 
@@ -2053,9 +2053,9 @@ new DatabaseSecretsMountCassandra {
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.allowedRoles">AllowedRoles</a></code> | <code>string[]</code> | A list of roles that are allowed to use this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.connectTimeout">ConnectTimeout</a></code> | <code>double</code> | The number of seconds to use as a connection timeout. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.data">Data</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A map of sensitive data to pass to the endpoint. Useful for templated connection strings. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>object</code> | Stops rotation of the root credential until set to false. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.hosts">Hosts</a></code> | <code>string[]</code> | Cassandra hosts to connect to. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.insecureTls">InsecureTls</a></code> | <code>object</code> | Whether to skip verification of the server certificate when using TLS. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.insecureTls">InsecureTls</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to skip verification of the server certificate when using TLS. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.password">Password</a></code> | <code>string</code> | The password to use when authenticating with Cassandra. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.pemBundle">PemBundle</a></code> | <code>string</code> | Concatenated PEM blocks containing a certificate and private key; |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.pemJson">PemJson</a></code> | <code>string</code> | Specifies JSON containing a certificate and private key; |
@@ -2066,10 +2066,10 @@ new DatabaseSecretsMountCassandra {
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.rotationPeriod">RotationPeriod</a></code> | <code>double</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.rotationSchedule">RotationSchedule</a></code> | <code>string</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.rotationWindow">RotationWindow</a></code> | <code>double</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.skipVerification">SkipVerification</a></code> | <code>object</code> | Skip permissions checks when a connection to Cassandra is first created. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.tls">Tls</a></code> | <code>object</code> | Whether to use TLS when connecting to Cassandra. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.skipVerification">SkipVerification</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Skip permissions checks when a connection to Cassandra is first created. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.tls">Tls</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to use TLS when connecting to Cassandra. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.username">Username</a></code> | <code>string</code> | The username to use when authenticating with Cassandra. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.verifyConnection">VerifyConnection</a></code> | <code>object</code> | Specifies if the connection is verified during initial configuration. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.verifyConnection">VerifyConnection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies if the connection is verified during initial configuration. |
 
 ---
 
@@ -2132,10 +2132,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `DisableAutomatedRotation`<sup>Optional</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.disableAutomatedRotation"></a>
 
 ```csharp
-public object DisableAutomatedRotation { get; set; }
+public bool|IResolvable DisableAutomatedRotation { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Stops rotation of the root credential until set to false.
 
@@ -2160,10 +2160,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `InsecureTls`<sup>Optional</sup> <a name="InsecureTls" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.insecureTls"></a>
 
 ```csharp
-public object InsecureTls { get; set; }
+public bool|IResolvable InsecureTls { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to skip verification of the server certificate when using TLS.
 
@@ -2322,10 +2322,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `SkipVerification`<sup>Optional</sup> <a name="SkipVerification" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.skipVerification"></a>
 
 ```csharp
-public object SkipVerification { get; set; }
+public bool|IResolvable SkipVerification { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Skip permissions checks when a connection to Cassandra is first created.
 
@@ -2338,10 +2338,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Tls`<sup>Optional</sup> <a name="Tls" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.tls"></a>
 
 ```csharp
-public object Tls { get; set; }
+public bool|IResolvable Tls { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to use TLS when connecting to Cassandra.
 
@@ -2366,10 +2366,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `VerifyConnection`<sup>Optional</sup> <a name="VerifyConnection" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra.property.verifyConnection"></a>
 
 ```csharp
-public object VerifyConnection { get; set; }
+public bool|IResolvable VerifyConnection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies if the connection is verified during initial configuration.
 
@@ -2385,51 +2385,51 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Vault;
 
 new DatabaseSecretsMountConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Path,
     string[] AllowedManagedKeys = null,
     string[] AllowedResponseHeaders = null,
     string[] AuditNonHmacRequestKeys = null,
     string[] AuditNonHmacResponseKeys = null,
-    object Cassandra = null,
-    object Couchbase = null,
+    IResolvable|DatabaseSecretsMountCassandra[] Cassandra = null,
+    IResolvable|DatabaseSecretsMountCouchbase[] Couchbase = null,
     double DefaultLeaseTtlSeconds = null,
     string[] DelegatedAuthAccessors = null,
     string Description = null,
-    object Elasticsearch = null,
-    object ExternalEntropyAccess = null,
-    object ForceNoCache = null,
-    object Hana = null,
+    IResolvable|DatabaseSecretsMountElasticsearch[] Elasticsearch = null,
+    bool|IResolvable ExternalEntropyAccess = null,
+    bool|IResolvable ForceNoCache = null,
+    IResolvable|DatabaseSecretsMountHana[] Hana = null,
     string Id = null,
     string IdentityTokenKey = null,
-    object Influxdb = null,
+    IResolvable|DatabaseSecretsMountInfluxdb[] Influxdb = null,
     string ListingVisibility = null,
-    object Local = null,
+    bool|IResolvable Local = null,
     double MaxLeaseTtlSeconds = null,
-    object Mongodb = null,
-    object Mongodbatlas = null,
-    object Mssql = null,
-    object Mysql = null,
-    object MysqlAurora = null,
-    object MysqlLegacy = null,
-    object MysqlRds = null,
+    IResolvable|DatabaseSecretsMountMongodb[] Mongodb = null,
+    IResolvable|DatabaseSecretsMountMongodbatlas[] Mongodbatlas = null,
+    IResolvable|DatabaseSecretsMountMssql[] Mssql = null,
+    IResolvable|DatabaseSecretsMountMysql[] Mysql = null,
+    IResolvable|DatabaseSecretsMountMysqlAurora[] MysqlAurora = null,
+    IResolvable|DatabaseSecretsMountMysqlLegacy[] MysqlLegacy = null,
+    IResolvable|DatabaseSecretsMountMysqlRds[] MysqlRds = null,
     string Namespace = null,
     System.Collections.Generic.IDictionary<string, string> Options = null,
-    object Oracle = null,
+    IResolvable|DatabaseSecretsMountOracle[] Oracle = null,
     string[] PassthroughRequestHeaders = null,
     string PluginVersion = null,
-    object Postgresql = null,
-    object Redis = null,
-    object RedisElasticache = null,
-    object Redshift = null,
-    object SealWrap = null,
-    object Snowflake = null
+    IResolvable|DatabaseSecretsMountPostgresql[] Postgresql = null,
+    IResolvable|DatabaseSecretsMountRedis[] Redis = null,
+    IResolvable|DatabaseSecretsMountRedisElasticache[] RedisElasticache = null,
+    IResolvable|DatabaseSecretsMountRedshift[] Redshift = null,
+    bool|IResolvable SealWrap = null,
+    IResolvable|DatabaseSecretsMountSnowflake[] Snowflake = null
 };
 ```
 
@@ -2437,71 +2437,71 @@ new DatabaseSecretsMountConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.path">Path</a></code> | <code>string</code> | Where the secret backend will be mounted. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.allowedManagedKeys">AllowedManagedKeys</a></code> | <code>string[]</code> | List of managed key registry entry names that the mount in question is allowed to access. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.allowedResponseHeaders">AllowedResponseHeaders</a></code> | <code>string[]</code> | List of headers to allow and pass from the request to the plugin. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.auditNonHmacRequestKeys">AuditNonHmacRequestKeys</a></code> | <code>string[]</code> | Specifies the list of keys that will not be HMAC'd by audit devices in the request data object. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.auditNonHmacResponseKeys">AuditNonHmacResponseKeys</a></code> | <code>string[]</code> | Specifies the list of keys that will not be HMAC'd by audit devices in the response data object. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.cassandra">Cassandra</a></code> | <code>object</code> | cassandra block. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.couchbase">Couchbase</a></code> | <code>object</code> | couchbase block. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.cassandra">Cassandra</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra">DatabaseSecretsMountCassandra</a>[]</code> | cassandra block. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.couchbase">Couchbase</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase">DatabaseSecretsMountCouchbase</a>[]</code> | couchbase block. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.defaultLeaseTtlSeconds">DefaultLeaseTtlSeconds</a></code> | <code>double</code> | Default lease duration for tokens and secrets in seconds. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.delegatedAuthAccessors">DelegatedAuthAccessors</a></code> | <code>string[]</code> | List of headers to allow and pass from the request to the plugin. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.description">Description</a></code> | <code>string</code> | Human-friendly description of the mount. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.elasticsearch">Elasticsearch</a></code> | <code>object</code> | elasticsearch block. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.externalEntropyAccess">ExternalEntropyAccess</a></code> | <code>object</code> | Enable the secrets engine to access Vault's external entropy source. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.forceNoCache">ForceNoCache</a></code> | <code>object</code> | If set to true, disables caching. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.hana">Hana</a></code> | <code>object</code> | hana block. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.elasticsearch">Elasticsearch</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch">DatabaseSecretsMountElasticsearch</a>[]</code> | elasticsearch block. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.externalEntropyAccess">ExternalEntropyAccess</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable the secrets engine to access Vault's external entropy source. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.forceNoCache">ForceNoCache</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If set to true, disables caching. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.hana">Hana</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana">DatabaseSecretsMountHana</a>[]</code> | hana block. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/database_secrets_mount#id DatabaseSecretsMount#id}. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.identityTokenKey">IdentityTokenKey</a></code> | <code>string</code> | The key to use for signing plugin workload identity tokens. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.influxdb">Influxdb</a></code> | <code>object</code> | influxdb block. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.influxdb">Influxdb</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb">DatabaseSecretsMountInfluxdb</a>[]</code> | influxdb block. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.listingVisibility">ListingVisibility</a></code> | <code>string</code> | Specifies whether to show this mount in the UI-specific listing endpoint. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.local">Local</a></code> | <code>object</code> | Local mount flag that can be explicitly set to true to enforce local mount in HA environment. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.local">Local</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Local mount flag that can be explicitly set to true to enforce local mount in HA environment. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.maxLeaseTtlSeconds">MaxLeaseTtlSeconds</a></code> | <code>double</code> | Maximum possible lease duration for tokens and secrets in seconds. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.mongodb">Mongodb</a></code> | <code>object</code> | mongodb block. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.mongodbatlas">Mongodbatlas</a></code> | <code>object</code> | mongodbatlas block. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.mssql">Mssql</a></code> | <code>object</code> | mssql block. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.mysql">Mysql</a></code> | <code>object</code> | mysql block. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.mysqlAurora">MysqlAurora</a></code> | <code>object</code> | mysql_aurora block. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.mysqlLegacy">MysqlLegacy</a></code> | <code>object</code> | mysql_legacy block. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.mysqlRds">MysqlRds</a></code> | <code>object</code> | mysql_rds block. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.mongodb">Mongodb</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb">DatabaseSecretsMountMongodb</a>[]</code> | mongodb block. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.mongodbatlas">Mongodbatlas</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas">DatabaseSecretsMountMongodbatlas</a>[]</code> | mongodbatlas block. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.mssql">Mssql</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql">DatabaseSecretsMountMssql</a>[]</code> | mssql block. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.mysql">Mysql</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql">DatabaseSecretsMountMysql</a>[]</code> | mysql block. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.mysqlAurora">MysqlAurora</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora">DatabaseSecretsMountMysqlAurora</a>[]</code> | mysql_aurora block. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.mysqlLegacy">MysqlLegacy</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy">DatabaseSecretsMountMysqlLegacy</a>[]</code> | mysql_legacy block. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.mysqlRds">MysqlRds</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds">DatabaseSecretsMountMysqlRds</a>[]</code> | mysql_rds block. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.options">Options</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Specifies mount type specific options that are passed to the backend. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.oracle">Oracle</a></code> | <code>object</code> | oracle block. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.oracle">Oracle</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle">DatabaseSecretsMountOracle</a>[]</code> | oracle block. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.passthroughRequestHeaders">PassthroughRequestHeaders</a></code> | <code>string[]</code> | List of headers to allow and pass from the request to the plugin. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.pluginVersion">PluginVersion</a></code> | <code>string</code> | Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.postgresql">Postgresql</a></code> | <code>object</code> | postgresql block. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.redis">Redis</a></code> | <code>object</code> | redis block. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.redisElasticache">RedisElasticache</a></code> | <code>object</code> | redis_elasticache block. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.redshift">Redshift</a></code> | <code>object</code> | redshift block. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.sealWrap">SealWrap</a></code> | <code>object</code> | Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.snowflake">Snowflake</a></code> | <code>object</code> | snowflake block. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.postgresql">Postgresql</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql">DatabaseSecretsMountPostgresql</a>[]</code> | postgresql block. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.redis">Redis</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis">DatabaseSecretsMountRedis</a>[]</code> | redis block. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.redisElasticache">RedisElasticache</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache">DatabaseSecretsMountRedisElasticache</a>[]</code> | redis_elasticache block. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.redshift">Redshift</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift">DatabaseSecretsMountRedshift</a>[]</code> | redshift block. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.sealWrap">SealWrap</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.snowflake">Snowflake</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake">DatabaseSecretsMountSnowflake</a>[]</code> | snowflake block. |
 
 ---
 
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -2548,10 +2548,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -2628,10 +2628,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Cassandra`<sup>Optional</sup> <a name="Cassandra" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.cassandra"></a>
 
 ```csharp
-public object Cassandra { get; set; }
+public IResolvable|DatabaseSecretsMountCassandra[] Cassandra { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra">DatabaseSecretsMountCassandra</a>[]
 
 cassandra block.
 
@@ -2642,10 +2642,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Couchbase`<sup>Optional</sup> <a name="Couchbase" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.couchbase"></a>
 
 ```csharp
-public object Couchbase { get; set; }
+public IResolvable|DatabaseSecretsMountCouchbase[] Couchbase { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase">DatabaseSecretsMountCouchbase</a>[]
 
 couchbase block.
 
@@ -2698,10 +2698,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Elasticsearch`<sup>Optional</sup> <a name="Elasticsearch" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.elasticsearch"></a>
 
 ```csharp
-public object Elasticsearch { get; set; }
+public IResolvable|DatabaseSecretsMountElasticsearch[] Elasticsearch { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch">DatabaseSecretsMountElasticsearch</a>[]
 
 elasticsearch block.
 
@@ -2712,10 +2712,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ExternalEntropyAccess`<sup>Optional</sup> <a name="ExternalEntropyAccess" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.externalEntropyAccess"></a>
 
 ```csharp
-public object ExternalEntropyAccess { get; set; }
+public bool|IResolvable ExternalEntropyAccess { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable the secrets engine to access Vault's external entropy source.
 
@@ -2726,10 +2726,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ForceNoCache`<sup>Optional</sup> <a name="ForceNoCache" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.forceNoCache"></a>
 
 ```csharp
-public object ForceNoCache { get; set; }
+public bool|IResolvable ForceNoCache { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If set to true, disables caching.
 
@@ -2740,10 +2740,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Hana`<sup>Optional</sup> <a name="Hana" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.hana"></a>
 
 ```csharp
-public object Hana { get; set; }
+public IResolvable|DatabaseSecretsMountHana[] Hana { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana">DatabaseSecretsMountHana</a>[]
 
 hana block.
 
@@ -2783,10 +2783,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Influxdb`<sup>Optional</sup> <a name="Influxdb" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.influxdb"></a>
 
 ```csharp
-public object Influxdb { get; set; }
+public IResolvable|DatabaseSecretsMountInfluxdb[] Influxdb { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb">DatabaseSecretsMountInfluxdb</a>[]
 
 influxdb block.
 
@@ -2811,10 +2811,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Local`<sup>Optional</sup> <a name="Local" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.local"></a>
 
 ```csharp
-public object Local { get; set; }
+public bool|IResolvable Local { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Local mount flag that can be explicitly set to true to enforce local mount in HA environment.
 
@@ -2839,10 +2839,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Mongodb`<sup>Optional</sup> <a name="Mongodb" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.mongodb"></a>
 
 ```csharp
-public object Mongodb { get; set; }
+public IResolvable|DatabaseSecretsMountMongodb[] Mongodb { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb">DatabaseSecretsMountMongodb</a>[]
 
 mongodb block.
 
@@ -2853,10 +2853,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Mongodbatlas`<sup>Optional</sup> <a name="Mongodbatlas" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.mongodbatlas"></a>
 
 ```csharp
-public object Mongodbatlas { get; set; }
+public IResolvable|DatabaseSecretsMountMongodbatlas[] Mongodbatlas { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas">DatabaseSecretsMountMongodbatlas</a>[]
 
 mongodbatlas block.
 
@@ -2867,10 +2867,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Mssql`<sup>Optional</sup> <a name="Mssql" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.mssql"></a>
 
 ```csharp
-public object Mssql { get; set; }
+public IResolvable|DatabaseSecretsMountMssql[] Mssql { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql">DatabaseSecretsMountMssql</a>[]
 
 mssql block.
 
@@ -2881,10 +2881,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Mysql`<sup>Optional</sup> <a name="Mysql" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.mysql"></a>
 
 ```csharp
-public object Mysql { get; set; }
+public IResolvable|DatabaseSecretsMountMysql[] Mysql { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql">DatabaseSecretsMountMysql</a>[]
 
 mysql block.
 
@@ -2895,10 +2895,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `MysqlAurora`<sup>Optional</sup> <a name="MysqlAurora" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.mysqlAurora"></a>
 
 ```csharp
-public object MysqlAurora { get; set; }
+public IResolvable|DatabaseSecretsMountMysqlAurora[] MysqlAurora { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora">DatabaseSecretsMountMysqlAurora</a>[]
 
 mysql_aurora block.
 
@@ -2909,10 +2909,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `MysqlLegacy`<sup>Optional</sup> <a name="MysqlLegacy" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.mysqlLegacy"></a>
 
 ```csharp
-public object MysqlLegacy { get; set; }
+public IResolvable|DatabaseSecretsMountMysqlLegacy[] MysqlLegacy { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy">DatabaseSecretsMountMysqlLegacy</a>[]
 
 mysql_legacy block.
 
@@ -2923,10 +2923,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `MysqlRds`<sup>Optional</sup> <a name="MysqlRds" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.mysqlRds"></a>
 
 ```csharp
-public object MysqlRds { get; set; }
+public IResolvable|DatabaseSecretsMountMysqlRds[] MysqlRds { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds">DatabaseSecretsMountMysqlRds</a>[]
 
 mysql_rds block.
 
@@ -2965,10 +2965,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Oracle`<sup>Optional</sup> <a name="Oracle" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.oracle"></a>
 
 ```csharp
-public object Oracle { get; set; }
+public IResolvable|DatabaseSecretsMountOracle[] Oracle { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle">DatabaseSecretsMountOracle</a>[]
 
 oracle block.
 
@@ -3007,10 +3007,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Postgresql`<sup>Optional</sup> <a name="Postgresql" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.postgresql"></a>
 
 ```csharp
-public object Postgresql { get; set; }
+public IResolvable|DatabaseSecretsMountPostgresql[] Postgresql { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql">DatabaseSecretsMountPostgresql</a>[]
 
 postgresql block.
 
@@ -3021,10 +3021,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Redis`<sup>Optional</sup> <a name="Redis" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.redis"></a>
 
 ```csharp
-public object Redis { get; set; }
+public IResolvable|DatabaseSecretsMountRedis[] Redis { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis">DatabaseSecretsMountRedis</a>[]
 
 redis block.
 
@@ -3035,10 +3035,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `RedisElasticache`<sup>Optional</sup> <a name="RedisElasticache" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.redisElasticache"></a>
 
 ```csharp
-public object RedisElasticache { get; set; }
+public IResolvable|DatabaseSecretsMountRedisElasticache[] RedisElasticache { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache">DatabaseSecretsMountRedisElasticache</a>[]
 
 redis_elasticache block.
 
@@ -3049,10 +3049,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Redshift`<sup>Optional</sup> <a name="Redshift" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.redshift"></a>
 
 ```csharp
-public object Redshift { get; set; }
+public IResolvable|DatabaseSecretsMountRedshift[] Redshift { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift">DatabaseSecretsMountRedshift</a>[]
 
 redshift block.
 
@@ -3063,10 +3063,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `SealWrap`<sup>Optional</sup> <a name="SealWrap" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.sealWrap"></a>
 
 ```csharp
-public object SealWrap { get; set; }
+public bool|IResolvable SealWrap { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability.
 
@@ -3077,10 +3077,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Snowflake`<sup>Optional</sup> <a name="Snowflake" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountConfig.property.snowflake"></a>
 
 ```csharp
-public object Snowflake { get; set; }
+public IResolvable|DatabaseSecretsMountSnowflake[] Snowflake { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake">DatabaseSecretsMountSnowflake</a>[]
 
 snowflake block.
 
@@ -3104,16 +3104,16 @@ new DatabaseSecretsMountCouchbase {
     string Base64Pem = null,
     string BucketName = null,
     System.Collections.Generic.IDictionary<string, string> Data = null,
-    object DisableAutomatedRotation = null,
-    object InsecureTls = null,
+    bool|IResolvable DisableAutomatedRotation = null,
+    bool|IResolvable InsecureTls = null,
     string PluginName = null,
     string[] RootRotationStatements = null,
     double RotationPeriod = null,
     string RotationSchedule = null,
     double RotationWindow = null,
-    object Tls = null,
+    bool|IResolvable Tls = null,
     string UsernameTemplate = null,
-    object VerifyConnection = null
+    bool|IResolvable VerifyConnection = null
 };
 ```
 
@@ -3129,16 +3129,16 @@ new DatabaseSecretsMountCouchbase {
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase.property.base64Pem">Base64Pem</a></code> | <code>string</code> | Required if `tls` is `true`. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase.property.bucketName">BucketName</a></code> | <code>string</code> | Required for Couchbase versions prior to 6.5.0. This is only used to verify vault's connection to the server. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase.property.data">Data</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A map of sensitive data to pass to the endpoint. Useful for templated connection strings. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>object</code> | Stops rotation of the root credential until set to false. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase.property.insecureTls">InsecureTls</a></code> | <code>object</code> | Specifies whether to skip verification of the server certificate when using TLS. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Stops rotation of the root credential until set to false. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase.property.insecureTls">InsecureTls</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies whether to skip verification of the server certificate when using TLS. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase.property.pluginName">PluginName</a></code> | <code>string</code> | Specifies the name of the plugin to use for this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase.property.rootRotationStatements">RootRotationStatements</a></code> | <code>string[]</code> | A list of database statements to be executed to rotate the root user's credentials. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase.property.rotationPeriod">RotationPeriod</a></code> | <code>double</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase.property.rotationSchedule">RotationSchedule</a></code> | <code>string</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase.property.rotationWindow">RotationWindow</a></code> | <code>double</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase.property.tls">Tls</a></code> | <code>object</code> | Specifies whether to use TLS when connecting to Couchbase. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase.property.tls">Tls</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies whether to use TLS when connecting to Couchbase. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase.property.usernameTemplate">UsernameTemplate</a></code> | <code>string</code> | Template describing how dynamic usernames are generated. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase.property.verifyConnection">VerifyConnection</a></code> | <code>object</code> | Specifies if the connection is verified during initial configuration. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase.property.verifyConnection">VerifyConnection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies if the connection is verified during initial configuration. |
 
 ---
 
@@ -3259,10 +3259,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `DisableAutomatedRotation`<sup>Optional</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase.property.disableAutomatedRotation"></a>
 
 ```csharp
-public object DisableAutomatedRotation { get; set; }
+public bool|IResolvable DisableAutomatedRotation { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Stops rotation of the root credential until set to false.
 
@@ -3273,10 +3273,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `InsecureTls`<sup>Optional</sup> <a name="InsecureTls" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase.property.insecureTls"></a>
 
 ```csharp
-public object InsecureTls { get; set; }
+public bool|IResolvable InsecureTls { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies whether to skip verification of the server certificate when using TLS.
 
@@ -3361,10 +3361,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Tls`<sup>Optional</sup> <a name="Tls" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase.property.tls"></a>
 
 ```csharp
-public object Tls { get; set; }
+public bool|IResolvable Tls { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies whether to use TLS when connecting to Couchbase.
 
@@ -3389,10 +3389,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `VerifyConnection`<sup>Optional</sup> <a name="VerifyConnection" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase.property.verifyConnection"></a>
 
 ```csharp
-public object VerifyConnection { get; set; }
+public bool|IResolvable VerifyConnection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies if the connection is verified during initial configuration.
 
@@ -3418,8 +3418,8 @@ new DatabaseSecretsMountElasticsearch {
     string ClientCert = null,
     string ClientKey = null,
     System.Collections.Generic.IDictionary<string, string> Data = null,
-    object DisableAutomatedRotation = null,
-    object Insecure = null,
+    bool|IResolvable DisableAutomatedRotation = null,
+    bool|IResolvable Insecure = null,
     string PluginName = null,
     string[] RootRotationStatements = null,
     double RotationPeriod = null,
@@ -3427,7 +3427,7 @@ new DatabaseSecretsMountElasticsearch {
     double RotationWindow = null,
     string TlsServerName = null,
     string UsernameTemplate = null,
-    object VerifyConnection = null
+    bool|IResolvable VerifyConnection = null
 };
 ```
 
@@ -3445,8 +3445,8 @@ new DatabaseSecretsMountElasticsearch {
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch.property.clientCert">ClientCert</a></code> | <code>string</code> | The path to the certificate for the Elasticsearch client to present for communication. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch.property.clientKey">ClientKey</a></code> | <code>string</code> | The path to the key for the Elasticsearch client to use for communication. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch.property.data">Data</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A map of sensitive data to pass to the endpoint. Useful for templated connection strings. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>object</code> | Stops rotation of the root credential until set to false. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch.property.insecure">Insecure</a></code> | <code>object</code> | Whether to disable certificate verification. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Stops rotation of the root credential until set to false. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch.property.insecure">Insecure</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to disable certificate verification. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch.property.pluginName">PluginName</a></code> | <code>string</code> | Specifies the name of the plugin to use for this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch.property.rootRotationStatements">RootRotationStatements</a></code> | <code>string[]</code> | A list of database statements to be executed to rotate the root user's credentials. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch.property.rotationPeriod">RotationPeriod</a></code> | <code>double</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
@@ -3454,7 +3454,7 @@ new DatabaseSecretsMountElasticsearch {
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch.property.rotationWindow">RotationWindow</a></code> | <code>double</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch.property.tlsServerName">TlsServerName</a></code> | <code>string</code> | This, if set, is used to set the SNI host when connecting via TLS. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch.property.usernameTemplate">UsernameTemplate</a></code> | <code>string</code> | Template describing how dynamic usernames are generated. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch.property.verifyConnection">VerifyConnection</a></code> | <code>object</code> | Specifies if the connection is verified during initial configuration. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch.property.verifyConnection">VerifyConnection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies if the connection is verified during initial configuration. |
 
 ---
 
@@ -3601,10 +3601,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `DisableAutomatedRotation`<sup>Optional</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch.property.disableAutomatedRotation"></a>
 
 ```csharp
-public object DisableAutomatedRotation { get; set; }
+public bool|IResolvable DisableAutomatedRotation { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Stops rotation of the root credential until set to false.
 
@@ -3615,10 +3615,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Insecure`<sup>Optional</sup> <a name="Insecure" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch.property.insecure"></a>
 
 ```csharp
-public object Insecure { get; set; }
+public bool|IResolvable Insecure { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to disable certificate verification.
 
@@ -3731,10 +3731,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `VerifyConnection`<sup>Optional</sup> <a name="VerifyConnection" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch.property.verifyConnection"></a>
 
 ```csharp
-public object VerifyConnection { get; set; }
+public bool|IResolvable VerifyConnection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies if the connection is verified during initial configuration.
 
@@ -3754,8 +3754,8 @@ new DatabaseSecretsMountHana {
     string[] AllowedRoles = null,
     string ConnectionUrl = null,
     System.Collections.Generic.IDictionary<string, string> Data = null,
-    object DisableAutomatedRotation = null,
-    object DisableEscaping = null,
+    bool|IResolvable DisableAutomatedRotation = null,
+    bool|IResolvable DisableEscaping = null,
     double MaxConnectionLifetime = null,
     double MaxIdleConnections = null,
     double MaxOpenConnections = null,
@@ -3768,7 +3768,7 @@ new DatabaseSecretsMountHana {
     string RotationSchedule = null,
     double RotationWindow = null,
     string Username = null,
-    object VerifyConnection = null
+    bool|IResolvable VerifyConnection = null
 };
 ```
 
@@ -3780,8 +3780,8 @@ new DatabaseSecretsMountHana {
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana.property.allowedRoles">AllowedRoles</a></code> | <code>string[]</code> | A list of roles that are allowed to use this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana.property.connectionUrl">ConnectionUrl</a></code> | <code>string</code> | Connection string to use to connect to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana.property.data">Data</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A map of sensitive data to pass to the endpoint. Useful for templated connection strings. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>object</code> | Stops rotation of the root credential until set to false. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana.property.disableEscaping">DisableEscaping</a></code> | <code>object</code> | Disable special character escaping in username and password. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Stops rotation of the root credential until set to false. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana.property.disableEscaping">DisableEscaping</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Disable special character escaping in username and password. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>double</code> | Maximum number of seconds a connection may be reused. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>double</code> | Maximum number of idle connections to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana.property.maxOpenConnections">MaxOpenConnections</a></code> | <code>double</code> | Maximum number of open connections to the database. |
@@ -3794,7 +3794,7 @@ new DatabaseSecretsMountHana {
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana.property.rotationSchedule">RotationSchedule</a></code> | <code>string</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana.property.rotationWindow">RotationWindow</a></code> | <code>double</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana.property.username">Username</a></code> | <code>string</code> | The root credential username used in the connection URL. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana.property.verifyConnection">VerifyConnection</a></code> | <code>object</code> | Specifies if the connection is verified during initial configuration. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana.property.verifyConnection">VerifyConnection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies if the connection is verified during initial configuration. |
 
 ---
 
@@ -3857,10 +3857,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `DisableAutomatedRotation`<sup>Optional</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana.property.disableAutomatedRotation"></a>
 
 ```csharp
-public object DisableAutomatedRotation { get; set; }
+public bool|IResolvable DisableAutomatedRotation { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Stops rotation of the root credential until set to false.
 
@@ -3871,10 +3871,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `DisableEscaping`<sup>Optional</sup> <a name="DisableEscaping" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana.property.disableEscaping"></a>
 
 ```csharp
-public object DisableEscaping { get; set; }
+public bool|IResolvable DisableEscaping { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Disable special character escaping in username and password.
 
@@ -4057,10 +4057,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `VerifyConnection`<sup>Optional</sup> <a name="VerifyConnection" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana.property.verifyConnection"></a>
 
 ```csharp
-public object VerifyConnection { get; set; }
+public bool|IResolvable VerifyConnection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies if the connection is verified during initial configuration.
 
@@ -4083,8 +4083,8 @@ new DatabaseSecretsMountInfluxdb {
     string[] AllowedRoles = null,
     double ConnectTimeout = null,
     System.Collections.Generic.IDictionary<string, string> Data = null,
-    object DisableAutomatedRotation = null,
-    object InsecureTls = null,
+    bool|IResolvable DisableAutomatedRotation = null,
+    bool|IResolvable InsecureTls = null,
     string PemBundle = null,
     string PemJson = null,
     string PluginName = null,
@@ -4093,9 +4093,9 @@ new DatabaseSecretsMountInfluxdb {
     double RotationPeriod = null,
     string RotationSchedule = null,
     double RotationWindow = null,
-    object Tls = null,
+    bool|IResolvable Tls = null,
     string UsernameTemplate = null,
-    object VerifyConnection = null
+    bool|IResolvable VerifyConnection = null
 };
 ```
 
@@ -4110,8 +4110,8 @@ new DatabaseSecretsMountInfluxdb {
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.allowedRoles">AllowedRoles</a></code> | <code>string[]</code> | A list of roles that are allowed to use this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.connectTimeout">ConnectTimeout</a></code> | <code>double</code> | The number of seconds to use as a connection timeout. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.data">Data</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A map of sensitive data to pass to the endpoint. Useful for templated connection strings. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>object</code> | Stops rotation of the root credential until set to false. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.insecureTls">InsecureTls</a></code> | <code>object</code> | Whether to skip verification of the server certificate when using TLS. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Stops rotation of the root credential until set to false. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.insecureTls">InsecureTls</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to skip verification of the server certificate when using TLS. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.pemBundle">PemBundle</a></code> | <code>string</code> | Concatenated PEM blocks containing a certificate and private key; |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.pemJson">PemJson</a></code> | <code>string</code> | Specifies JSON containing a certificate and private key; |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.pluginName">PluginName</a></code> | <code>string</code> | Specifies the name of the plugin to use for this connection. |
@@ -4120,9 +4120,9 @@ new DatabaseSecretsMountInfluxdb {
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.rotationPeriod">RotationPeriod</a></code> | <code>double</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.rotationSchedule">RotationSchedule</a></code> | <code>string</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.rotationWindow">RotationWindow</a></code> | <code>double</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.tls">Tls</a></code> | <code>object</code> | Whether to use TLS when connecting to Influxdb. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.tls">Tls</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to use TLS when connecting to Influxdb. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.usernameTemplate">UsernameTemplate</a></code> | <code>string</code> | Template describing how dynamic usernames are generated. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.verifyConnection">VerifyConnection</a></code> | <code>object</code> | Specifies if the connection is verified during initial configuration. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.verifyConnection">VerifyConnection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies if the connection is verified during initial configuration. |
 
 ---
 
@@ -4227,10 +4227,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `DisableAutomatedRotation`<sup>Optional</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.disableAutomatedRotation"></a>
 
 ```csharp
-public object DisableAutomatedRotation { get; set; }
+public bool|IResolvable DisableAutomatedRotation { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Stops rotation of the root credential until set to false.
 
@@ -4241,10 +4241,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `InsecureTls`<sup>Optional</sup> <a name="InsecureTls" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.insecureTls"></a>
 
 ```csharp
-public object InsecureTls { get; set; }
+public bool|IResolvable InsecureTls { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to skip verification of the server certificate when using TLS.
 
@@ -4375,10 +4375,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Tls`<sup>Optional</sup> <a name="Tls" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.tls"></a>
 
 ```csharp
-public object Tls { get; set; }
+public bool|IResolvable Tls { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to use TLS when connecting to Influxdb.
 
@@ -4403,10 +4403,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `VerifyConnection`<sup>Optional</sup> <a name="VerifyConnection" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb.property.verifyConnection"></a>
 
 ```csharp
-public object VerifyConnection { get; set; }
+public bool|IResolvable VerifyConnection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies if the connection is verified during initial configuration.
 
@@ -4426,7 +4426,7 @@ new DatabaseSecretsMountMongodb {
     string[] AllowedRoles = null,
     string ConnectionUrl = null,
     System.Collections.Generic.IDictionary<string, string> Data = null,
-    object DisableAutomatedRotation = null,
+    bool|IResolvable DisableAutomatedRotation = null,
     double MaxConnectionLifetime = null,
     double MaxIdleConnections = null,
     double MaxOpenConnections = null,
@@ -4440,7 +4440,7 @@ new DatabaseSecretsMountMongodb {
     double RotationWindow = null,
     string Username = null,
     string UsernameTemplate = null,
-    object VerifyConnection = null
+    bool|IResolvable VerifyConnection = null
 };
 ```
 
@@ -4452,7 +4452,7 @@ new DatabaseSecretsMountMongodb {
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb.property.allowedRoles">AllowedRoles</a></code> | <code>string[]</code> | A list of roles that are allowed to use this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb.property.connectionUrl">ConnectionUrl</a></code> | <code>string</code> | Connection string to use to connect to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb.property.data">Data</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A map of sensitive data to pass to the endpoint. Useful for templated connection strings. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>object</code> | Stops rotation of the root credential until set to false. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>double</code> | Maximum number of seconds a connection may be reused. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>double</code> | Maximum number of idle connections to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb.property.maxOpenConnections">MaxOpenConnections</a></code> | <code>double</code> | Maximum number of open connections to the database. |
@@ -4466,7 +4466,7 @@ new DatabaseSecretsMountMongodb {
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb.property.rotationWindow">RotationWindow</a></code> | <code>double</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb.property.username">Username</a></code> | <code>string</code> | The root credential username used in the connection URL. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb.property.usernameTemplate">UsernameTemplate</a></code> | <code>string</code> | Username generation template. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb.property.verifyConnection">VerifyConnection</a></code> | <code>object</code> | Specifies if the connection is verified during initial configuration. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb.property.verifyConnection">VerifyConnection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies if the connection is verified during initial configuration. |
 
 ---
 
@@ -4529,10 +4529,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `DisableAutomatedRotation`<sup>Optional</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb.property.disableAutomatedRotation"></a>
 
 ```csharp
-public object DisableAutomatedRotation { get; set; }
+public bool|IResolvable DisableAutomatedRotation { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Stops rotation of the root credential until set to false.
 
@@ -4729,10 +4729,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `VerifyConnection`<sup>Optional</sup> <a name="VerifyConnection" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb.property.verifyConnection"></a>
 
 ```csharp
-public object VerifyConnection { get; set; }
+public bool|IResolvable VerifyConnection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies if the connection is verified during initial configuration.
 
@@ -4754,13 +4754,13 @@ new DatabaseSecretsMountMongodbatlas {
     string PublicKey,
     string[] AllowedRoles = null,
     System.Collections.Generic.IDictionary<string, string> Data = null,
-    object DisableAutomatedRotation = null,
+    bool|IResolvable DisableAutomatedRotation = null,
     string PluginName = null,
     string[] RootRotationStatements = null,
     double RotationPeriod = null,
     string RotationSchedule = null,
     double RotationWindow = null,
-    object VerifyConnection = null
+    bool|IResolvable VerifyConnection = null
 };
 ```
 
@@ -4774,13 +4774,13 @@ new DatabaseSecretsMountMongodbatlas {
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas.property.publicKey">PublicKey</a></code> | <code>string</code> | The Public Programmatic API Key used to authenticate with the MongoDB Atlas API. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas.property.allowedRoles">AllowedRoles</a></code> | <code>string[]</code> | A list of roles that are allowed to use this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas.property.data">Data</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A map of sensitive data to pass to the endpoint. Useful for templated connection strings. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>object</code> | Stops rotation of the root credential until set to false. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas.property.pluginName">PluginName</a></code> | <code>string</code> | Specifies the name of the plugin to use for this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas.property.rootRotationStatements">RootRotationStatements</a></code> | <code>string[]</code> | A list of database statements to be executed to rotate the root user's credentials. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas.property.rotationPeriod">RotationPeriod</a></code> | <code>double</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas.property.rotationSchedule">RotationSchedule</a></code> | <code>string</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas.property.rotationWindow">RotationWindow</a></code> | <code>double</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas.property.verifyConnection">VerifyConnection</a></code> | <code>object</code> | Specifies if the connection is verified during initial configuration. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas.property.verifyConnection">VerifyConnection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies if the connection is verified during initial configuration. |
 
 ---
 
@@ -4871,10 +4871,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `DisableAutomatedRotation`<sup>Optional</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas.property.disableAutomatedRotation"></a>
 
 ```csharp
-public object DisableAutomatedRotation { get; set; }
+public bool|IResolvable DisableAutomatedRotation { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Stops rotation of the root credential until set to false.
 
@@ -4959,10 +4959,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `VerifyConnection`<sup>Optional</sup> <a name="VerifyConnection" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas.property.verifyConnection"></a>
 
 ```csharp
-public object VerifyConnection { get; set; }
+public bool|IResolvable VerifyConnection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies if the connection is verified during initial configuration.
 
@@ -4981,10 +4981,10 @@ new DatabaseSecretsMountMssql {
     string Name,
     string[] AllowedRoles = null,
     string ConnectionUrl = null,
-    object ContainedDb = null,
+    bool|IResolvable ContainedDb = null,
     System.Collections.Generic.IDictionary<string, string> Data = null,
-    object DisableAutomatedRotation = null,
-    object DisableEscaping = null,
+    bool|IResolvable DisableAutomatedRotation = null,
+    bool|IResolvable DisableEscaping = null,
     double MaxConnectionLifetime = null,
     double MaxIdleConnections = null,
     double MaxOpenConnections = null,
@@ -4998,7 +4998,7 @@ new DatabaseSecretsMountMssql {
     double RotationWindow = null,
     string Username = null,
     string UsernameTemplate = null,
-    object VerifyConnection = null
+    bool|IResolvable VerifyConnection = null
 };
 ```
 
@@ -5009,10 +5009,10 @@ new DatabaseSecretsMountMssql {
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.name">Name</a></code> | <code>string</code> | Name of the database connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.allowedRoles">AllowedRoles</a></code> | <code>string[]</code> | A list of roles that are allowed to use this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.connectionUrl">ConnectionUrl</a></code> | <code>string</code> | Connection string to use to connect to the database. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.containedDb">ContainedDb</a></code> | <code>object</code> | Set to true when the target is a Contained Database, e.g. AzureSQL. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.containedDb">ContainedDb</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to true when the target is a Contained Database, e.g. AzureSQL. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.data">Data</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A map of sensitive data to pass to the endpoint. Useful for templated connection strings. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>object</code> | Stops rotation of the root credential until set to false. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.disableEscaping">DisableEscaping</a></code> | <code>object</code> | Disable special character escaping in username and password. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Stops rotation of the root credential until set to false. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.disableEscaping">DisableEscaping</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Disable special character escaping in username and password. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>double</code> | Maximum number of seconds a connection may be reused. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>double</code> | Maximum number of idle connections to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.maxOpenConnections">MaxOpenConnections</a></code> | <code>double</code> | Maximum number of open connections to the database. |
@@ -5026,7 +5026,7 @@ new DatabaseSecretsMountMssql {
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.rotationWindow">RotationWindow</a></code> | <code>double</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.username">Username</a></code> | <code>string</code> | The root credential username used in the connection URL. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.usernameTemplate">UsernameTemplate</a></code> | <code>string</code> | Username generation template. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.verifyConnection">VerifyConnection</a></code> | <code>object</code> | Specifies if the connection is verified during initial configuration. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.verifyConnection">VerifyConnection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies if the connection is verified during initial configuration. |
 
 ---
 
@@ -5075,10 +5075,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ContainedDb`<sup>Optional</sup> <a name="ContainedDb" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.containedDb"></a>
 
 ```csharp
-public object ContainedDb { get; set; }
+public bool|IResolvable ContainedDb { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set to true when the target is a Contained Database, e.g. AzureSQL.
 
@@ -5103,10 +5103,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `DisableAutomatedRotation`<sup>Optional</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.disableAutomatedRotation"></a>
 
 ```csharp
-public object DisableAutomatedRotation { get; set; }
+public bool|IResolvable DisableAutomatedRotation { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Stops rotation of the root credential until set to false.
 
@@ -5117,10 +5117,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `DisableEscaping`<sup>Optional</sup> <a name="DisableEscaping" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.disableEscaping"></a>
 
 ```csharp
-public object DisableEscaping { get; set; }
+public bool|IResolvable DisableEscaping { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Disable special character escaping in username and password.
 
@@ -5317,10 +5317,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `VerifyConnection`<sup>Optional</sup> <a name="VerifyConnection" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql.property.verifyConnection"></a>
 
 ```csharp
-public object VerifyConnection { get; set; }
+public bool|IResolvable VerifyConnection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies if the connection is verified during initial configuration.
 
@@ -5341,7 +5341,7 @@ new DatabaseSecretsMountMysql {
     string AuthType = null,
     string ConnectionUrl = null,
     System.Collections.Generic.IDictionary<string, string> Data = null,
-    object DisableAutomatedRotation = null,
+    bool|IResolvable DisableAutomatedRotation = null,
     double MaxConnectionLifetime = null,
     double MaxIdleConnections = null,
     double MaxOpenConnections = null,
@@ -5358,7 +5358,7 @@ new DatabaseSecretsMountMysql {
     string TlsCertificateKey = null,
     string Username = null,
     string UsernameTemplate = null,
-    object VerifyConnection = null
+    bool|IResolvable VerifyConnection = null
 };
 ```
 
@@ -5371,7 +5371,7 @@ new DatabaseSecretsMountMysql {
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql.property.authType">AuthType</a></code> | <code>string</code> | Specify alternative authorization type. (Only 'gcp_iam' is valid currently). |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql.property.connectionUrl">ConnectionUrl</a></code> | <code>string</code> | Connection string to use to connect to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql.property.data">Data</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A map of sensitive data to pass to the endpoint. Useful for templated connection strings. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>object</code> | Stops rotation of the root credential until set to false. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>double</code> | Maximum number of seconds a connection may be reused. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>double</code> | Maximum number of idle connections to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql.property.maxOpenConnections">MaxOpenConnections</a></code> | <code>double</code> | Maximum number of open connections to the database. |
@@ -5388,7 +5388,7 @@ new DatabaseSecretsMountMysql {
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql.property.tlsCertificateKey">TlsCertificateKey</a></code> | <code>string</code> | x509 certificate for connecting to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql.property.username">Username</a></code> | <code>string</code> | The root credential username used in the connection URL. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql.property.usernameTemplate">UsernameTemplate</a></code> | <code>string</code> | Username generation template. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql.property.verifyConnection">VerifyConnection</a></code> | <code>object</code> | Specifies if the connection is verified during initial configuration. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql.property.verifyConnection">VerifyConnection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies if the connection is verified during initial configuration. |
 
 ---
 
@@ -5465,10 +5465,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `DisableAutomatedRotation`<sup>Optional</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql.property.disableAutomatedRotation"></a>
 
 ```csharp
-public object DisableAutomatedRotation { get; set; }
+public bool|IResolvable DisableAutomatedRotation { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Stops rotation of the root credential until set to false.
 
@@ -5709,10 +5709,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `VerifyConnection`<sup>Optional</sup> <a name="VerifyConnection" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql.property.verifyConnection"></a>
 
 ```csharp
-public object VerifyConnection { get; set; }
+public bool|IResolvable VerifyConnection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies if the connection is verified during initial configuration.
 
@@ -5733,7 +5733,7 @@ new DatabaseSecretsMountMysqlAurora {
     string AuthType = null,
     string ConnectionUrl = null,
     System.Collections.Generic.IDictionary<string, string> Data = null,
-    object DisableAutomatedRotation = null,
+    bool|IResolvable DisableAutomatedRotation = null,
     double MaxConnectionLifetime = null,
     double MaxIdleConnections = null,
     double MaxOpenConnections = null,
@@ -5750,7 +5750,7 @@ new DatabaseSecretsMountMysqlAurora {
     string TlsCertificateKey = null,
     string Username = null,
     string UsernameTemplate = null,
-    object VerifyConnection = null
+    bool|IResolvable VerifyConnection = null
 };
 ```
 
@@ -5763,7 +5763,7 @@ new DatabaseSecretsMountMysqlAurora {
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora.property.authType">AuthType</a></code> | <code>string</code> | Specify alternative authorization type. (Only 'gcp_iam' is valid currently). |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora.property.connectionUrl">ConnectionUrl</a></code> | <code>string</code> | Connection string to use to connect to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora.property.data">Data</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A map of sensitive data to pass to the endpoint. Useful for templated connection strings. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>object</code> | Stops rotation of the root credential until set to false. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>double</code> | Maximum number of seconds a connection may be reused. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>double</code> | Maximum number of idle connections to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora.property.maxOpenConnections">MaxOpenConnections</a></code> | <code>double</code> | Maximum number of open connections to the database. |
@@ -5780,7 +5780,7 @@ new DatabaseSecretsMountMysqlAurora {
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora.property.tlsCertificateKey">TlsCertificateKey</a></code> | <code>string</code> | x509 certificate for connecting to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora.property.username">Username</a></code> | <code>string</code> | The root credential username used in the connection URL. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora.property.usernameTemplate">UsernameTemplate</a></code> | <code>string</code> | Username generation template. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora.property.verifyConnection">VerifyConnection</a></code> | <code>object</code> | Specifies if the connection is verified during initial configuration. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora.property.verifyConnection">VerifyConnection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies if the connection is verified during initial configuration. |
 
 ---
 
@@ -5857,10 +5857,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `DisableAutomatedRotation`<sup>Optional</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora.property.disableAutomatedRotation"></a>
 
 ```csharp
-public object DisableAutomatedRotation { get; set; }
+public bool|IResolvable DisableAutomatedRotation { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Stops rotation of the root credential until set to false.
 
@@ -6101,10 +6101,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `VerifyConnection`<sup>Optional</sup> <a name="VerifyConnection" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora.property.verifyConnection"></a>
 
 ```csharp
-public object VerifyConnection { get; set; }
+public bool|IResolvable VerifyConnection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies if the connection is verified during initial configuration.
 
@@ -6125,7 +6125,7 @@ new DatabaseSecretsMountMysqlLegacy {
     string AuthType = null,
     string ConnectionUrl = null,
     System.Collections.Generic.IDictionary<string, string> Data = null,
-    object DisableAutomatedRotation = null,
+    bool|IResolvable DisableAutomatedRotation = null,
     double MaxConnectionLifetime = null,
     double MaxIdleConnections = null,
     double MaxOpenConnections = null,
@@ -6142,7 +6142,7 @@ new DatabaseSecretsMountMysqlLegacy {
     string TlsCertificateKey = null,
     string Username = null,
     string UsernameTemplate = null,
-    object VerifyConnection = null
+    bool|IResolvable VerifyConnection = null
 };
 ```
 
@@ -6155,7 +6155,7 @@ new DatabaseSecretsMountMysqlLegacy {
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy.property.authType">AuthType</a></code> | <code>string</code> | Specify alternative authorization type. (Only 'gcp_iam' is valid currently). |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy.property.connectionUrl">ConnectionUrl</a></code> | <code>string</code> | Connection string to use to connect to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy.property.data">Data</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A map of sensitive data to pass to the endpoint. Useful for templated connection strings. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>object</code> | Stops rotation of the root credential until set to false. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>double</code> | Maximum number of seconds a connection may be reused. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>double</code> | Maximum number of idle connections to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy.property.maxOpenConnections">MaxOpenConnections</a></code> | <code>double</code> | Maximum number of open connections to the database. |
@@ -6172,7 +6172,7 @@ new DatabaseSecretsMountMysqlLegacy {
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy.property.tlsCertificateKey">TlsCertificateKey</a></code> | <code>string</code> | x509 certificate for connecting to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy.property.username">Username</a></code> | <code>string</code> | The root credential username used in the connection URL. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy.property.usernameTemplate">UsernameTemplate</a></code> | <code>string</code> | Username generation template. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy.property.verifyConnection">VerifyConnection</a></code> | <code>object</code> | Specifies if the connection is verified during initial configuration. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy.property.verifyConnection">VerifyConnection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies if the connection is verified during initial configuration. |
 
 ---
 
@@ -6249,10 +6249,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `DisableAutomatedRotation`<sup>Optional</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy.property.disableAutomatedRotation"></a>
 
 ```csharp
-public object DisableAutomatedRotation { get; set; }
+public bool|IResolvable DisableAutomatedRotation { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Stops rotation of the root credential until set to false.
 
@@ -6493,10 +6493,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `VerifyConnection`<sup>Optional</sup> <a name="VerifyConnection" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy.property.verifyConnection"></a>
 
 ```csharp
-public object VerifyConnection { get; set; }
+public bool|IResolvable VerifyConnection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies if the connection is verified during initial configuration.
 
@@ -6517,7 +6517,7 @@ new DatabaseSecretsMountMysqlRds {
     string AuthType = null,
     string ConnectionUrl = null,
     System.Collections.Generic.IDictionary<string, string> Data = null,
-    object DisableAutomatedRotation = null,
+    bool|IResolvable DisableAutomatedRotation = null,
     double MaxConnectionLifetime = null,
     double MaxIdleConnections = null,
     double MaxOpenConnections = null,
@@ -6534,7 +6534,7 @@ new DatabaseSecretsMountMysqlRds {
     string TlsCertificateKey = null,
     string Username = null,
     string UsernameTemplate = null,
-    object VerifyConnection = null
+    bool|IResolvable VerifyConnection = null
 };
 ```
 
@@ -6547,7 +6547,7 @@ new DatabaseSecretsMountMysqlRds {
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds.property.authType">AuthType</a></code> | <code>string</code> | Specify alternative authorization type. (Only 'gcp_iam' is valid currently). |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds.property.connectionUrl">ConnectionUrl</a></code> | <code>string</code> | Connection string to use to connect to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds.property.data">Data</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A map of sensitive data to pass to the endpoint. Useful for templated connection strings. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>object</code> | Stops rotation of the root credential until set to false. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>double</code> | Maximum number of seconds a connection may be reused. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>double</code> | Maximum number of idle connections to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds.property.maxOpenConnections">MaxOpenConnections</a></code> | <code>double</code> | Maximum number of open connections to the database. |
@@ -6564,7 +6564,7 @@ new DatabaseSecretsMountMysqlRds {
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds.property.tlsCertificateKey">TlsCertificateKey</a></code> | <code>string</code> | x509 certificate for connecting to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds.property.username">Username</a></code> | <code>string</code> | The root credential username used in the connection URL. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds.property.usernameTemplate">UsernameTemplate</a></code> | <code>string</code> | Username generation template. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds.property.verifyConnection">VerifyConnection</a></code> | <code>object</code> | Specifies if the connection is verified during initial configuration. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds.property.verifyConnection">VerifyConnection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies if the connection is verified during initial configuration. |
 
 ---
 
@@ -6641,10 +6641,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `DisableAutomatedRotation`<sup>Optional</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds.property.disableAutomatedRotation"></a>
 
 ```csharp
-public object DisableAutomatedRotation { get; set; }
+public bool|IResolvable DisableAutomatedRotation { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Stops rotation of the root credential until set to false.
 
@@ -6885,10 +6885,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `VerifyConnection`<sup>Optional</sup> <a name="VerifyConnection" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds.property.verifyConnection"></a>
 
 ```csharp
-public object VerifyConnection { get; set; }
+public bool|IResolvable VerifyConnection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies if the connection is verified during initial configuration.
 
@@ -6908,8 +6908,8 @@ new DatabaseSecretsMountOracle {
     string[] AllowedRoles = null,
     string ConnectionUrl = null,
     System.Collections.Generic.IDictionary<string, string> Data = null,
-    object DisableAutomatedRotation = null,
-    object DisconnectSessions = null,
+    bool|IResolvable DisableAutomatedRotation = null,
+    bool|IResolvable DisconnectSessions = null,
     double MaxConnectionLifetime = null,
     double MaxIdleConnections = null,
     double MaxOpenConnections = null,
@@ -6921,10 +6921,10 @@ new DatabaseSecretsMountOracle {
     double RotationPeriod = null,
     string RotationSchedule = null,
     double RotationWindow = null,
-    object SplitStatements = null,
+    bool|IResolvable SplitStatements = null,
     string Username = null,
     string UsernameTemplate = null,
-    object VerifyConnection = null
+    bool|IResolvable VerifyConnection = null
 };
 ```
 
@@ -6936,8 +6936,8 @@ new DatabaseSecretsMountOracle {
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.allowedRoles">AllowedRoles</a></code> | <code>string[]</code> | A list of roles that are allowed to use this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.connectionUrl">ConnectionUrl</a></code> | <code>string</code> | Connection string to use to connect to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.data">Data</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A map of sensitive data to pass to the endpoint. Useful for templated connection strings. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>object</code> | Stops rotation of the root credential until set to false. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.disconnectSessions">DisconnectSessions</a></code> | <code>object</code> | Set to true to disconnect any open sessions prior to running the revocation statements. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Stops rotation of the root credential until set to false. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.disconnectSessions">DisconnectSessions</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to true to disconnect any open sessions prior to running the revocation statements. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>double</code> | Maximum number of seconds a connection may be reused. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>double</code> | Maximum number of idle connections to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.maxOpenConnections">MaxOpenConnections</a></code> | <code>double</code> | Maximum number of open connections to the database. |
@@ -6949,10 +6949,10 @@ new DatabaseSecretsMountOracle {
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.rotationPeriod">RotationPeriod</a></code> | <code>double</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.rotationSchedule">RotationSchedule</a></code> | <code>string</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.rotationWindow">RotationWindow</a></code> | <code>double</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.splitStatements">SplitStatements</a></code> | <code>object</code> | Set to true in order to split statements after semi-colons. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.splitStatements">SplitStatements</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to true in order to split statements after semi-colons. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.username">Username</a></code> | <code>string</code> | The root credential username used in the connection URL. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.usernameTemplate">UsernameTemplate</a></code> | <code>string</code> | Username generation template. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.verifyConnection">VerifyConnection</a></code> | <code>object</code> | Specifies if the connection is verified during initial configuration. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.verifyConnection">VerifyConnection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies if the connection is verified during initial configuration. |
 
 ---
 
@@ -7015,10 +7015,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `DisableAutomatedRotation`<sup>Optional</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.disableAutomatedRotation"></a>
 
 ```csharp
-public object DisableAutomatedRotation { get; set; }
+public bool|IResolvable DisableAutomatedRotation { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Stops rotation of the root credential until set to false.
 
@@ -7029,10 +7029,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `DisconnectSessions`<sup>Optional</sup> <a name="DisconnectSessions" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.disconnectSessions"></a>
 
 ```csharp
-public object DisconnectSessions { get; set; }
+public bool|IResolvable DisconnectSessions { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set to true to disconnect any open sessions prior to running the revocation statements.
 
@@ -7201,10 +7201,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `SplitStatements`<sup>Optional</sup> <a name="SplitStatements" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.splitStatements"></a>
 
 ```csharp
-public object SplitStatements { get; set; }
+public bool|IResolvable SplitStatements { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set to true in order to split statements after semi-colons.
 
@@ -7243,10 +7243,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `VerifyConnection`<sup>Optional</sup> <a name="VerifyConnection" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle.property.verifyConnection"></a>
 
 ```csharp
-public object VerifyConnection { get; set; }
+public bool|IResolvable VerifyConnection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies if the connection is verified during initial configuration.
 
@@ -7267,8 +7267,8 @@ new DatabaseSecretsMountPostgresql {
     string AuthType = null,
     string ConnectionUrl = null,
     System.Collections.Generic.IDictionary<string, string> Data = null,
-    object DisableAutomatedRotation = null,
-    object DisableEscaping = null,
+    bool|IResolvable DisableAutomatedRotation = null,
+    bool|IResolvable DisableEscaping = null,
     double MaxConnectionLifetime = null,
     double MaxIdleConnections = null,
     double MaxOpenConnections = null,
@@ -7282,13 +7282,13 @@ new DatabaseSecretsMountPostgresql {
     double RotationPeriod = null,
     string RotationSchedule = null,
     double RotationWindow = null,
-    object SelfManaged = null,
+    bool|IResolvable SelfManaged = null,
     string ServiceAccountJson = null,
     string TlsCa = null,
     string TlsCertificate = null,
     string Username = null,
     string UsernameTemplate = null,
-    object VerifyConnection = null
+    bool|IResolvable VerifyConnection = null
 };
 ```
 
@@ -7301,8 +7301,8 @@ new DatabaseSecretsMountPostgresql {
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.authType">AuthType</a></code> | <code>string</code> | Specify alternative authorization type. (Only 'gcp_iam' is valid currently). |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.connectionUrl">ConnectionUrl</a></code> | <code>string</code> | Connection string to use to connect to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.data">Data</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A map of sensitive data to pass to the endpoint. Useful for templated connection strings. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>object</code> | Stops rotation of the root credential until set to false. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.disableEscaping">DisableEscaping</a></code> | <code>object</code> | Disable special character escaping in username and password. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Stops rotation of the root credential until set to false. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.disableEscaping">DisableEscaping</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Disable special character escaping in username and password. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>double</code> | Maximum number of seconds a connection may be reused. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>double</code> | Maximum number of idle connections to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.maxOpenConnections">MaxOpenConnections</a></code> | <code>double</code> | Maximum number of open connections to the database. |
@@ -7316,13 +7316,13 @@ new DatabaseSecretsMountPostgresql {
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.rotationPeriod">RotationPeriod</a></code> | <code>double</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.rotationSchedule">RotationSchedule</a></code> | <code>string</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.rotationWindow">RotationWindow</a></code> | <code>double</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.selfManaged">SelfManaged</a></code> | <code>object</code> | If set, allows onboarding static roles with a rootless connection configuration. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.selfManaged">SelfManaged</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If set, allows onboarding static roles with a rootless connection configuration. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.serviceAccountJson">ServiceAccountJson</a></code> | <code>string</code> | A JSON encoded credential for use with IAM authorization. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.tlsCa">TlsCa</a></code> | <code>string</code> | The x509 CA file for validating the certificate presented by the PostgreSQL server. Must be PEM encoded. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.tlsCertificate">TlsCertificate</a></code> | <code>string</code> | The x509 client certificate for connecting to the database. Must be PEM encoded. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.username">Username</a></code> | <code>string</code> | The root credential username used in the connection URL. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.usernameTemplate">UsernameTemplate</a></code> | <code>string</code> | Username generation template. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.verifyConnection">VerifyConnection</a></code> | <code>object</code> | Specifies if the connection is verified during initial configuration. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.verifyConnection">VerifyConnection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies if the connection is verified during initial configuration. |
 
 ---
 
@@ -7399,10 +7399,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `DisableAutomatedRotation`<sup>Optional</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.disableAutomatedRotation"></a>
 
 ```csharp
-public object DisableAutomatedRotation { get; set; }
+public bool|IResolvable DisableAutomatedRotation { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Stops rotation of the root credential until set to false.
 
@@ -7413,10 +7413,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `DisableEscaping`<sup>Optional</sup> <a name="DisableEscaping" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.disableEscaping"></a>
 
 ```csharp
-public object DisableEscaping { get; set; }
+public bool|IResolvable DisableEscaping { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Disable special character escaping in username and password.
 
@@ -7613,10 +7613,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `SelfManaged`<sup>Optional</sup> <a name="SelfManaged" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.selfManaged"></a>
 
 ```csharp
-public object SelfManaged { get; set; }
+public bool|IResolvable SelfManaged { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If set, allows onboarding static roles with a rootless connection configuration.
 
@@ -7697,10 +7697,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `VerifyConnection`<sup>Optional</sup> <a name="VerifyConnection" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql.property.verifyConnection"></a>
 
 ```csharp
-public object VerifyConnection { get; set; }
+public bool|IResolvable VerifyConnection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies if the connection is verified during initial configuration.
 
@@ -7723,16 +7723,16 @@ new DatabaseSecretsMountRedis {
     string[] AllowedRoles = null,
     string CaCert = null,
     System.Collections.Generic.IDictionary<string, string> Data = null,
-    object DisableAutomatedRotation = null,
-    object InsecureTls = null,
+    bool|IResolvable DisableAutomatedRotation = null,
+    bool|IResolvable InsecureTls = null,
     string PluginName = null,
     double Port = null,
     string[] RootRotationStatements = null,
     double RotationPeriod = null,
     string RotationSchedule = null,
     double RotationWindow = null,
-    object Tls = null,
-    object VerifyConnection = null
+    bool|IResolvable Tls = null,
+    bool|IResolvable VerifyConnection = null
 };
 ```
 
@@ -7747,16 +7747,16 @@ new DatabaseSecretsMountRedis {
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis.property.allowedRoles">AllowedRoles</a></code> | <code>string[]</code> | A list of roles that are allowed to use this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis.property.caCert">CaCert</a></code> | <code>string</code> | The contents of a PEM-encoded CA cert file to use to verify the Redis server's identity. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis.property.data">Data</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A map of sensitive data to pass to the endpoint. Useful for templated connection strings. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>object</code> | Stops rotation of the root credential until set to false. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis.property.insecureTls">InsecureTls</a></code> | <code>object</code> | Specifies whether to skip verification of the server certificate when using TLS. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Stops rotation of the root credential until set to false. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis.property.insecureTls">InsecureTls</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies whether to skip verification of the server certificate when using TLS. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis.property.pluginName">PluginName</a></code> | <code>string</code> | Specifies the name of the plugin to use for this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis.property.port">Port</a></code> | <code>double</code> | The transport port to use to connect to Redis. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis.property.rootRotationStatements">RootRotationStatements</a></code> | <code>string[]</code> | A list of database statements to be executed to rotate the root user's credentials. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis.property.rotationPeriod">RotationPeriod</a></code> | <code>double</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis.property.rotationSchedule">RotationSchedule</a></code> | <code>string</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis.property.rotationWindow">RotationWindow</a></code> | <code>double</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis.property.tls">Tls</a></code> | <code>object</code> | Specifies whether to use TLS when connecting to Redis. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis.property.verifyConnection">VerifyConnection</a></code> | <code>object</code> | Specifies if the connection is verified during initial configuration. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis.property.tls">Tls</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies whether to use TLS when connecting to Redis. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis.property.verifyConnection">VerifyConnection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies if the connection is verified during initial configuration. |
 
 ---
 
@@ -7861,10 +7861,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `DisableAutomatedRotation`<sup>Optional</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis.property.disableAutomatedRotation"></a>
 
 ```csharp
-public object DisableAutomatedRotation { get; set; }
+public bool|IResolvable DisableAutomatedRotation { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Stops rotation of the root credential until set to false.
 
@@ -7875,10 +7875,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `InsecureTls`<sup>Optional</sup> <a name="InsecureTls" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis.property.insecureTls"></a>
 
 ```csharp
-public object InsecureTls { get; set; }
+public bool|IResolvable InsecureTls { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies whether to skip verification of the server certificate when using TLS.
 
@@ -7977,10 +7977,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Tls`<sup>Optional</sup> <a name="Tls" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis.property.tls"></a>
 
 ```csharp
-public object Tls { get; set; }
+public bool|IResolvable Tls { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies whether to use TLS when connecting to Redis.
 
@@ -7991,10 +7991,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `VerifyConnection`<sup>Optional</sup> <a name="VerifyConnection" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis.property.verifyConnection"></a>
 
 ```csharp
-public object VerifyConnection { get; set; }
+public bool|IResolvable VerifyConnection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies if the connection is verified during initial configuration.
 
@@ -8014,7 +8014,7 @@ new DatabaseSecretsMountRedisElasticache {
     string Url,
     string[] AllowedRoles = null,
     System.Collections.Generic.IDictionary<string, string> Data = null,
-    object DisableAutomatedRotation = null,
+    bool|IResolvable DisableAutomatedRotation = null,
     string Password = null,
     string PluginName = null,
     string Region = null,
@@ -8023,7 +8023,7 @@ new DatabaseSecretsMountRedisElasticache {
     string RotationSchedule = null,
     double RotationWindow = null,
     string Username = null,
-    object VerifyConnection = null
+    bool|IResolvable VerifyConnection = null
 };
 ```
 
@@ -8035,7 +8035,7 @@ new DatabaseSecretsMountRedisElasticache {
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache.property.url">Url</a></code> | <code>string</code> | The configuration endpoint for the ElastiCache cluster to connect to. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache.property.allowedRoles">AllowedRoles</a></code> | <code>string[]</code> | A list of roles that are allowed to use this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache.property.data">Data</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A map of sensitive data to pass to the endpoint. Useful for templated connection strings. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>object</code> | Stops rotation of the root credential until set to false. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache.property.password">Password</a></code> | <code>string</code> | The AWS secret key id to use to talk to ElastiCache. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache.property.pluginName">PluginName</a></code> | <code>string</code> | Specifies the name of the plugin to use for this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache.property.region">Region</a></code> | <code>string</code> | The AWS region where the ElastiCache cluster is hosted. |
@@ -8044,7 +8044,7 @@ new DatabaseSecretsMountRedisElasticache {
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache.property.rotationSchedule">RotationSchedule</a></code> | <code>string</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache.property.rotationWindow">RotationWindow</a></code> | <code>double</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache.property.username">Username</a></code> | <code>string</code> | The AWS access key id to use to talk to ElastiCache. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache.property.verifyConnection">VerifyConnection</a></code> | <code>object</code> | Specifies if the connection is verified during initial configuration. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache.property.verifyConnection">VerifyConnection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies if the connection is verified during initial configuration. |
 
 ---
 
@@ -8107,10 +8107,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `DisableAutomatedRotation`<sup>Optional</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache.property.disableAutomatedRotation"></a>
 
 ```csharp
-public object DisableAutomatedRotation { get; set; }
+public bool|IResolvable DisableAutomatedRotation { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Stops rotation of the root credential until set to false.
 
@@ -8243,10 +8243,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `VerifyConnection`<sup>Optional</sup> <a name="VerifyConnection" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache.property.verifyConnection"></a>
 
 ```csharp
-public object VerifyConnection { get; set; }
+public bool|IResolvable VerifyConnection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies if the connection is verified during initial configuration.
 
@@ -8266,8 +8266,8 @@ new DatabaseSecretsMountRedshift {
     string[] AllowedRoles = null,
     string ConnectionUrl = null,
     System.Collections.Generic.IDictionary<string, string> Data = null,
-    object DisableAutomatedRotation = null,
-    object DisableEscaping = null,
+    bool|IResolvable DisableAutomatedRotation = null,
+    bool|IResolvable DisableEscaping = null,
     double MaxConnectionLifetime = null,
     double MaxIdleConnections = null,
     double MaxOpenConnections = null,
@@ -8281,7 +8281,7 @@ new DatabaseSecretsMountRedshift {
     double RotationWindow = null,
     string Username = null,
     string UsernameTemplate = null,
-    object VerifyConnection = null
+    bool|IResolvable VerifyConnection = null
 };
 ```
 
@@ -8293,8 +8293,8 @@ new DatabaseSecretsMountRedshift {
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift.property.allowedRoles">AllowedRoles</a></code> | <code>string[]</code> | A list of roles that are allowed to use this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift.property.connectionUrl">ConnectionUrl</a></code> | <code>string</code> | Connection string to use to connect to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift.property.data">Data</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A map of sensitive data to pass to the endpoint. Useful for templated connection strings. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>object</code> | Stops rotation of the root credential until set to false. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift.property.disableEscaping">DisableEscaping</a></code> | <code>object</code> | Disable special character escaping in username and password. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Stops rotation of the root credential until set to false. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift.property.disableEscaping">DisableEscaping</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Disable special character escaping in username and password. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>double</code> | Maximum number of seconds a connection may be reused. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>double</code> | Maximum number of idle connections to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift.property.maxOpenConnections">MaxOpenConnections</a></code> | <code>double</code> | Maximum number of open connections to the database. |
@@ -8308,7 +8308,7 @@ new DatabaseSecretsMountRedshift {
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift.property.rotationWindow">RotationWindow</a></code> | <code>double</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift.property.username">Username</a></code> | <code>string</code> | The root credential username used in the connection URL. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift.property.usernameTemplate">UsernameTemplate</a></code> | <code>string</code> | Username generation template. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift.property.verifyConnection">VerifyConnection</a></code> | <code>object</code> | Specifies if the connection is verified during initial configuration. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift.property.verifyConnection">VerifyConnection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies if the connection is verified during initial configuration. |
 
 ---
 
@@ -8371,10 +8371,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `DisableAutomatedRotation`<sup>Optional</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift.property.disableAutomatedRotation"></a>
 
 ```csharp
-public object DisableAutomatedRotation { get; set; }
+public bool|IResolvable DisableAutomatedRotation { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Stops rotation of the root credential until set to false.
 
@@ -8385,10 +8385,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `DisableEscaping`<sup>Optional</sup> <a name="DisableEscaping" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift.property.disableEscaping"></a>
 
 ```csharp
-public object DisableEscaping { get; set; }
+public bool|IResolvable DisableEscaping { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Disable special character escaping in username and password.
 
@@ -8585,10 +8585,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `VerifyConnection`<sup>Optional</sup> <a name="VerifyConnection" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift.property.verifyConnection"></a>
 
 ```csharp
-public object VerifyConnection { get; set; }
+public bool|IResolvable VerifyConnection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies if the connection is verified during initial configuration.
 
@@ -8608,7 +8608,7 @@ new DatabaseSecretsMountSnowflake {
     string[] AllowedRoles = null,
     string ConnectionUrl = null,
     System.Collections.Generic.IDictionary<string, string> Data = null,
-    object DisableAutomatedRotation = null,
+    bool|IResolvable DisableAutomatedRotation = null,
     double MaxConnectionLifetime = null,
     double MaxIdleConnections = null,
     double MaxOpenConnections = null,
@@ -8624,7 +8624,7 @@ new DatabaseSecretsMountSnowflake {
     double RotationWindow = null,
     string Username = null,
     string UsernameTemplate = null,
-    object VerifyConnection = null
+    bool|IResolvable VerifyConnection = null
 };
 ```
 
@@ -8636,7 +8636,7 @@ new DatabaseSecretsMountSnowflake {
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake.property.allowedRoles">AllowedRoles</a></code> | <code>string[]</code> | A list of roles that are allowed to use this connection. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake.property.connectionUrl">ConnectionUrl</a></code> | <code>string</code> | Connection string to use to connect to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake.property.data">Data</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A map of sensitive data to pass to the endpoint. Useful for templated connection strings. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>object</code> | Stops rotation of the root credential until set to false. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>double</code> | Maximum number of seconds a connection may be reused. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>double</code> | Maximum number of idle connections to the database. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake.property.maxOpenConnections">MaxOpenConnections</a></code> | <code>double</code> | Maximum number of open connections to the database. |
@@ -8652,7 +8652,7 @@ new DatabaseSecretsMountSnowflake {
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake.property.rotationWindow">RotationWindow</a></code> | <code>double</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake.property.username">Username</a></code> | <code>string</code> | The root credential username used in the connection URL. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake.property.usernameTemplate">UsernameTemplate</a></code> | <code>string</code> | Username generation template. |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake.property.verifyConnection">VerifyConnection</a></code> | <code>object</code> | Specifies if the connection is verified during initial configuration. |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake.property.verifyConnection">VerifyConnection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies if the connection is verified during initial configuration. |
 
 ---
 
@@ -8715,10 +8715,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `DisableAutomatedRotation`<sup>Optional</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake.property.disableAutomatedRotation"></a>
 
 ```csharp
-public object DisableAutomatedRotation { get; set; }
+public bool|IResolvable DisableAutomatedRotation { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Stops rotation of the root credential until set to false.
 
@@ -8943,10 +8943,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `VerifyConnection`<sup>Optional</sup> <a name="VerifyConnection" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake.property.verifyConnection"></a>
 
 ```csharp
-public object VerifyConnection { get; set; }
+public bool|IResolvable VerifyConnection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies if the connection is verified during initial configuration.
 
@@ -9077,7 +9077,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra">DatabaseSecretsMountCassandra</a>[]</code> | *No description.* |
 
 ---
 
@@ -9108,10 +9108,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseSecretsMountCassandra[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra">DatabaseSecretsMountCassandra</a>[]
 
 ---
 
@@ -9487,9 +9487,9 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.allowedRolesInput">AllowedRolesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.connectTimeoutInput">ConnectTimeoutInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.dataInput">DataInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.hostsInput">HostsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.insecureTlsInput">InsecureTlsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.insecureTlsInput">InsecureTlsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.passwordInput">PasswordInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.pemBundleInput">PemBundleInput</a></code> | <code>string</code> | *No description.* |
@@ -9501,16 +9501,16 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.rotationPeriodInput">RotationPeriodInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.rotationScheduleInput">RotationScheduleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.rotationWindowInput">RotationWindowInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.skipVerificationInput">SkipVerificationInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.tlsInput">TlsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.skipVerificationInput">SkipVerificationInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.tlsInput">TlsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.usernameInput">UsernameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.allowedRoles">AllowedRoles</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.connectTimeout">ConnectTimeout</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.data">Data</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.hosts">Hosts</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.insecureTls">InsecureTls</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.insecureTls">InsecureTls</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.password">Password</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.pemBundle">PemBundle</a></code> | <code>string</code> | *No description.* |
@@ -9522,11 +9522,11 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.rotationPeriod">RotationPeriod</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.rotationSchedule">RotationSchedule</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.rotationWindow">RotationWindow</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.skipVerification">SkipVerification</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.tls">Tls</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.skipVerification">SkipVerification</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.tls">Tls</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.username">Username</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra">DatabaseSecretsMountCassandra</a></code> | *No description.* |
 
 ---
 
@@ -9587,10 +9587,10 @@ public System.Collections.Generic.IDictionary<string, string> DataInput { get; }
 ##### `DisableAutomatedRotationInput`<sup>Optional</sup> <a name="DisableAutomatedRotationInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.disableAutomatedRotationInput"></a>
 
 ```csharp
-public object DisableAutomatedRotationInput { get; }
+public bool|IResolvable DisableAutomatedRotationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -9607,10 +9607,10 @@ public string[] HostsInput { get; }
 ##### `InsecureTlsInput`<sup>Optional</sup> <a name="InsecureTlsInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.insecureTlsInput"></a>
 
 ```csharp
-public object InsecureTlsInput { get; }
+public bool|IResolvable InsecureTlsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -9727,20 +9727,20 @@ public double RotationWindowInput { get; }
 ##### `SkipVerificationInput`<sup>Optional</sup> <a name="SkipVerificationInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.skipVerificationInput"></a>
 
 ```csharp
-public object SkipVerificationInput { get; }
+public bool|IResolvable SkipVerificationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `TlsInput`<sup>Optional</sup> <a name="TlsInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.tlsInput"></a>
 
 ```csharp
-public object TlsInput { get; }
+public bool|IResolvable TlsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -9757,10 +9757,10 @@ public string UsernameInput { get; }
 ##### `VerifyConnectionInput`<sup>Optional</sup> <a name="VerifyConnectionInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.verifyConnectionInput"></a>
 
 ```csharp
-public object VerifyConnectionInput { get; }
+public bool|IResolvable VerifyConnectionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -9797,10 +9797,10 @@ public System.Collections.Generic.IDictionary<string, string> Data { get; }
 ##### `DisableAutomatedRotation`<sup>Required</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.disableAutomatedRotation"></a>
 
 ```csharp
-public object DisableAutomatedRotation { get; }
+public bool|IResolvable DisableAutomatedRotation { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -9817,10 +9817,10 @@ public string[] Hosts { get; }
 ##### `InsecureTls`<sup>Required</sup> <a name="InsecureTls" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.insecureTls"></a>
 
 ```csharp
-public object InsecureTls { get; }
+public bool|IResolvable InsecureTls { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -9937,20 +9937,20 @@ public double RotationWindow { get; }
 ##### `SkipVerification`<sup>Required</sup> <a name="SkipVerification" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.skipVerification"></a>
 
 ```csharp
-public object SkipVerification { get; }
+public bool|IResolvable SkipVerification { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `Tls`<sup>Required</sup> <a name="Tls" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.tls"></a>
 
 ```csharp
-public object Tls { get; }
+public bool|IResolvable Tls { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -9967,20 +9967,20 @@ public string Username { get; }
 ##### `VerifyConnection`<sup>Required</sup> <a name="VerifyConnection" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.verifyConnection"></a>
 
 ```csharp
-public object VerifyConnection { get; }
+public bool|IResolvable VerifyConnection { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseSecretsMountCassandra InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandra">DatabaseSecretsMountCassandra</a>
 
 ---
 
@@ -10106,7 +10106,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase">DatabaseSecretsMountCouchbase</a>[]</code> | *No description.* |
 
 ---
 
@@ -10137,10 +10137,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseSecretsMountCouchbase[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase">DatabaseSecretsMountCouchbase</a>[]
 
 ---
 
@@ -10475,9 +10475,9 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.base64PemInput">Base64PemInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.bucketNameInput">BucketNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.dataInput">DataInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.hostsInput">HostsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.insecureTlsInput">InsecureTlsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.insecureTlsInput">InsecureTlsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.passwordInput">PasswordInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.pluginNameInput">PluginNameInput</a></code> | <code>string</code> | *No description.* |
@@ -10485,17 +10485,17 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.rotationPeriodInput">RotationPeriodInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.rotationScheduleInput">RotationScheduleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.rotationWindowInput">RotationWindowInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.tlsInput">TlsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.tlsInput">TlsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.usernameInput">UsernameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.usernameTemplateInput">UsernameTemplateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.allowedRoles">AllowedRoles</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.base64Pem">Base64Pem</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.bucketName">BucketName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.data">Data</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.hosts">Hosts</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.insecureTls">InsecureTls</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.insecureTls">InsecureTls</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.password">Password</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.pluginName">PluginName</a></code> | <code>string</code> | *No description.* |
@@ -10503,11 +10503,11 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.rotationPeriod">RotationPeriod</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.rotationSchedule">RotationSchedule</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.rotationWindow">RotationWindow</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.tls">Tls</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.tls">Tls</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.username">Username</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.usernameTemplate">UsernameTemplate</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase">DatabaseSecretsMountCouchbase</a></code> | *No description.* |
 
 ---
 
@@ -10578,10 +10578,10 @@ public System.Collections.Generic.IDictionary<string, string> DataInput { get; }
 ##### `DisableAutomatedRotationInput`<sup>Optional</sup> <a name="DisableAutomatedRotationInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.disableAutomatedRotationInput"></a>
 
 ```csharp
-public object DisableAutomatedRotationInput { get; }
+public bool|IResolvable DisableAutomatedRotationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -10598,10 +10598,10 @@ public string[] HostsInput { get; }
 ##### `InsecureTlsInput`<sup>Optional</sup> <a name="InsecureTlsInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.insecureTlsInput"></a>
 
 ```csharp
-public object InsecureTlsInput { get; }
+public bool|IResolvable InsecureTlsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -10678,10 +10678,10 @@ public double RotationWindowInput { get; }
 ##### `TlsInput`<sup>Optional</sup> <a name="TlsInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.tlsInput"></a>
 
 ```csharp
-public object TlsInput { get; }
+public bool|IResolvable TlsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -10708,10 +10708,10 @@ public string UsernameTemplateInput { get; }
 ##### `VerifyConnectionInput`<sup>Optional</sup> <a name="VerifyConnectionInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.verifyConnectionInput"></a>
 
 ```csharp
-public object VerifyConnectionInput { get; }
+public bool|IResolvable VerifyConnectionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -10758,10 +10758,10 @@ public System.Collections.Generic.IDictionary<string, string> Data { get; }
 ##### `DisableAutomatedRotation`<sup>Required</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.disableAutomatedRotation"></a>
 
 ```csharp
-public object DisableAutomatedRotation { get; }
+public bool|IResolvable DisableAutomatedRotation { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -10778,10 +10778,10 @@ public string[] Hosts { get; }
 ##### `InsecureTls`<sup>Required</sup> <a name="InsecureTls" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.insecureTls"></a>
 
 ```csharp
-public object InsecureTls { get; }
+public bool|IResolvable InsecureTls { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -10858,10 +10858,10 @@ public double RotationWindow { get; }
 ##### `Tls`<sup>Required</sup> <a name="Tls" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.tls"></a>
 
 ```csharp
-public object Tls { get; }
+public bool|IResolvable Tls { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -10888,20 +10888,20 @@ public string UsernameTemplate { get; }
 ##### `VerifyConnection`<sup>Required</sup> <a name="VerifyConnection" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.verifyConnection"></a>
 
 ```csharp
-public object VerifyConnection { get; }
+public bool|IResolvable VerifyConnection { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseSecretsMountCouchbase InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbase">DatabaseSecretsMountCouchbase</a>
 
 ---
 
@@ -11027,7 +11027,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch">DatabaseSecretsMountElasticsearch</a>[]</code> | *No description.* |
 
 ---
 
@@ -11058,10 +11058,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseSecretsMountElasticsearch[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch">DatabaseSecretsMountElasticsearch</a>[]
 
 ---
 
@@ -11412,8 +11412,8 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.clientCertInput">ClientCertInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.clientKeyInput">ClientKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.dataInput">DataInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.insecureInput">InsecureInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.insecureInput">InsecureInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.passwordInput">PasswordInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.pluginNameInput">PluginNameInput</a></code> | <code>string</code> | *No description.* |
@@ -11425,15 +11425,15 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.urlInput">UrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.usernameInput">UsernameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.usernameTemplateInput">UsernameTemplateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.allowedRoles">AllowedRoles</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.caCert">CaCert</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.caPath">CaPath</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.clientCert">ClientCert</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.clientKey">ClientKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.data">Data</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.insecure">Insecure</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.insecure">Insecure</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.password">Password</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.pluginName">PluginName</a></code> | <code>string</code> | *No description.* |
@@ -11445,8 +11445,8 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.url">Url</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.username">Username</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.usernameTemplate">UsernameTemplate</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch">DatabaseSecretsMountElasticsearch</a></code> | *No description.* |
 
 ---
 
@@ -11537,20 +11537,20 @@ public System.Collections.Generic.IDictionary<string, string> DataInput { get; }
 ##### `DisableAutomatedRotationInput`<sup>Optional</sup> <a name="DisableAutomatedRotationInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.disableAutomatedRotationInput"></a>
 
 ```csharp
-public object DisableAutomatedRotationInput { get; }
+public bool|IResolvable DisableAutomatedRotationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InsecureInput`<sup>Optional</sup> <a name="InsecureInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.insecureInput"></a>
 
 ```csharp
-public object InsecureInput { get; }
+public bool|IResolvable InsecureInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -11667,10 +11667,10 @@ public string UsernameTemplateInput { get; }
 ##### `VerifyConnectionInput`<sup>Optional</sup> <a name="VerifyConnectionInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.verifyConnectionInput"></a>
 
 ```csharp
-public object VerifyConnectionInput { get; }
+public bool|IResolvable VerifyConnectionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -11737,20 +11737,20 @@ public System.Collections.Generic.IDictionary<string, string> Data { get; }
 ##### `DisableAutomatedRotation`<sup>Required</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.disableAutomatedRotation"></a>
 
 ```csharp
-public object DisableAutomatedRotation { get; }
+public bool|IResolvable DisableAutomatedRotation { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `Insecure`<sup>Required</sup> <a name="Insecure" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.insecure"></a>
 
 ```csharp
-public object Insecure { get; }
+public bool|IResolvable Insecure { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -11867,20 +11867,20 @@ public string UsernameTemplate { get; }
 ##### `VerifyConnection`<sup>Required</sup> <a name="VerifyConnection" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.verifyConnection"></a>
 
 ```csharp
-public object VerifyConnection { get; }
+public bool|IResolvable VerifyConnection { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseSecretsMountElasticsearch InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearch">DatabaseSecretsMountElasticsearch</a>
 
 ---
 
@@ -12006,7 +12006,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana">DatabaseSecretsMountHana</a>[]</code> | *No description.* |
 
 ---
 
@@ -12037,10 +12037,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseSecretsMountHana[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana">DatabaseSecretsMountHana</a>[]
 
 ---
 
@@ -12402,8 +12402,8 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.allowedRolesInput">AllowedRolesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.connectionUrlInput">ConnectionUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.dataInput">DataInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.disableEscapingInput">DisableEscapingInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.disableEscapingInput">DisableEscapingInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.maxConnectionLifetimeInput">MaxConnectionLifetimeInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.maxIdleConnectionsInput">MaxIdleConnectionsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.maxOpenConnectionsInput">MaxOpenConnectionsInput</a></code> | <code>double</code> | *No description.* |
@@ -12417,12 +12417,12 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.rotationScheduleInput">RotationScheduleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.rotationWindowInput">RotationWindowInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.usernameInput">UsernameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.allowedRoles">AllowedRoles</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.connectionUrl">ConnectionUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.data">Data</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.disableEscaping">DisableEscaping</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.disableEscaping">DisableEscaping</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.maxOpenConnections">MaxOpenConnections</a></code> | <code>double</code> | *No description.* |
@@ -12436,8 +12436,8 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.rotationSchedule">RotationSchedule</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.rotationWindow">RotationWindow</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.username">Username</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana">DatabaseSecretsMountHana</a></code> | *No description.* |
 
 ---
 
@@ -12498,20 +12498,20 @@ public System.Collections.Generic.IDictionary<string, string> DataInput { get; }
 ##### `DisableAutomatedRotationInput`<sup>Optional</sup> <a name="DisableAutomatedRotationInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.disableAutomatedRotationInput"></a>
 
 ```csharp
-public object DisableAutomatedRotationInput { get; }
+public bool|IResolvable DisableAutomatedRotationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DisableEscapingInput`<sup>Optional</sup> <a name="DisableEscapingInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.disableEscapingInput"></a>
 
 ```csharp
-public object DisableEscapingInput { get; }
+public bool|IResolvable DisableEscapingInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -12648,10 +12648,10 @@ public string UsernameInput { get; }
 ##### `VerifyConnectionInput`<sup>Optional</sup> <a name="VerifyConnectionInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.verifyConnectionInput"></a>
 
 ```csharp
-public object VerifyConnectionInput { get; }
+public bool|IResolvable VerifyConnectionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -12688,20 +12688,20 @@ public System.Collections.Generic.IDictionary<string, string> Data { get; }
 ##### `DisableAutomatedRotation`<sup>Required</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.disableAutomatedRotation"></a>
 
 ```csharp
-public object DisableAutomatedRotation { get; }
+public bool|IResolvable DisableAutomatedRotation { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DisableEscaping`<sup>Required</sup> <a name="DisableEscaping" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.disableEscaping"></a>
 
 ```csharp
-public object DisableEscaping { get; }
+public bool|IResolvable DisableEscaping { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -12838,20 +12838,20 @@ public string Username { get; }
 ##### `VerifyConnection`<sup>Required</sup> <a name="VerifyConnection" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.verifyConnection"></a>
 
 ```csharp
-public object VerifyConnection { get; }
+public bool|IResolvable VerifyConnection { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseSecretsMountHana InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHana">DatabaseSecretsMountHana</a>
 
 ---
 
@@ -12977,7 +12977,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb">DatabaseSecretsMountInfluxdb</a>[]</code> | *No description.* |
 
 ---
 
@@ -13008,10 +13008,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseSecretsMountInfluxdb[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb">DatabaseSecretsMountInfluxdb</a>[]
 
 ---
 
@@ -13359,9 +13359,9 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.allowedRolesInput">AllowedRolesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.connectTimeoutInput">ConnectTimeoutInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.dataInput">DataInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.hostInput">HostInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.insecureTlsInput">InsecureTlsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.insecureTlsInput">InsecureTlsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.passwordInput">PasswordInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.pemBundleInput">PemBundleInput</a></code> | <code>string</code> | *No description.* |
@@ -13372,16 +13372,16 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.rotationPeriodInput">RotationPeriodInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.rotationScheduleInput">RotationScheduleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.rotationWindowInput">RotationWindowInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.tlsInput">TlsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.tlsInput">TlsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.usernameInput">UsernameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.usernameTemplateInput">UsernameTemplateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.allowedRoles">AllowedRoles</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.connectTimeout">ConnectTimeout</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.data">Data</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.host">Host</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.insecureTls">InsecureTls</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.insecureTls">InsecureTls</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.password">Password</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.pemBundle">PemBundle</a></code> | <code>string</code> | *No description.* |
@@ -13392,11 +13392,11 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.rotationPeriod">RotationPeriod</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.rotationSchedule">RotationSchedule</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.rotationWindow">RotationWindow</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.tls">Tls</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.tls">Tls</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.username">Username</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.usernameTemplate">UsernameTemplate</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb">DatabaseSecretsMountInfluxdb</a></code> | *No description.* |
 
 ---
 
@@ -13457,10 +13457,10 @@ public System.Collections.Generic.IDictionary<string, string> DataInput { get; }
 ##### `DisableAutomatedRotationInput`<sup>Optional</sup> <a name="DisableAutomatedRotationInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.disableAutomatedRotationInput"></a>
 
 ```csharp
-public object DisableAutomatedRotationInput { get; }
+public bool|IResolvable DisableAutomatedRotationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -13477,10 +13477,10 @@ public string HostInput { get; }
 ##### `InsecureTlsInput`<sup>Optional</sup> <a name="InsecureTlsInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.insecureTlsInput"></a>
 
 ```csharp
-public object InsecureTlsInput { get; }
+public bool|IResolvable InsecureTlsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -13587,10 +13587,10 @@ public double RotationWindowInput { get; }
 ##### `TlsInput`<sup>Optional</sup> <a name="TlsInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.tlsInput"></a>
 
 ```csharp
-public object TlsInput { get; }
+public bool|IResolvable TlsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -13617,10 +13617,10 @@ public string UsernameTemplateInput { get; }
 ##### `VerifyConnectionInput`<sup>Optional</sup> <a name="VerifyConnectionInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.verifyConnectionInput"></a>
 
 ```csharp
-public object VerifyConnectionInput { get; }
+public bool|IResolvable VerifyConnectionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -13657,10 +13657,10 @@ public System.Collections.Generic.IDictionary<string, string> Data { get; }
 ##### `DisableAutomatedRotation`<sup>Required</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.disableAutomatedRotation"></a>
 
 ```csharp
-public object DisableAutomatedRotation { get; }
+public bool|IResolvable DisableAutomatedRotation { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -13677,10 +13677,10 @@ public string Host { get; }
 ##### `InsecureTls`<sup>Required</sup> <a name="InsecureTls" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.insecureTls"></a>
 
 ```csharp
-public object InsecureTls { get; }
+public bool|IResolvable InsecureTls { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -13787,10 +13787,10 @@ public double RotationWindow { get; }
 ##### `Tls`<sup>Required</sup> <a name="Tls" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.tls"></a>
 
 ```csharp
-public object Tls { get; }
+public bool|IResolvable Tls { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -13817,20 +13817,20 @@ public string UsernameTemplate { get; }
 ##### `VerifyConnection`<sup>Required</sup> <a name="VerifyConnection" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.verifyConnection"></a>
 
 ```csharp
-public object VerifyConnection { get; }
+public bool|IResolvable VerifyConnection { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseSecretsMountInfluxdb InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdb">DatabaseSecretsMountInfluxdb</a>
 
 ---
 
@@ -13956,7 +13956,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas">DatabaseSecretsMountMongodbatlas</a>[]</code> | *No description.* |
 
 ---
 
@@ -13987,10 +13987,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseSecretsMountMongodbatlas[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas">DatabaseSecretsMountMongodbatlas</a>[]
 
 ---
 
@@ -14288,7 +14288,7 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.allowedRolesInput">AllowedRolesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.dataInput">DataInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.pluginNameInput">PluginNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.privateKeyInput">PrivateKeyInput</a></code> | <code>string</code> | *No description.* |
@@ -14298,10 +14298,10 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.rotationPeriodInput">RotationPeriodInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.rotationScheduleInput">RotationScheduleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.rotationWindowInput">RotationWindowInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.allowedRoles">AllowedRoles</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.data">Data</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.pluginName">PluginName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.privateKey">PrivateKey</a></code> | <code>string</code> | *No description.* |
@@ -14311,8 +14311,8 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.rotationPeriod">RotationPeriod</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.rotationSchedule">RotationSchedule</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.rotationWindow">RotationWindow</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas">DatabaseSecretsMountMongodbatlas</a></code> | *No description.* |
 
 ---
 
@@ -14363,10 +14363,10 @@ public System.Collections.Generic.IDictionary<string, string> DataInput { get; }
 ##### `DisableAutomatedRotationInput`<sup>Optional</sup> <a name="DisableAutomatedRotationInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.disableAutomatedRotationInput"></a>
 
 ```csharp
-public object DisableAutomatedRotationInput { get; }
+public bool|IResolvable DisableAutomatedRotationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -14463,10 +14463,10 @@ public double RotationWindowInput { get; }
 ##### `VerifyConnectionInput`<sup>Optional</sup> <a name="VerifyConnectionInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.verifyConnectionInput"></a>
 
 ```csharp
-public object VerifyConnectionInput { get; }
+public bool|IResolvable VerifyConnectionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -14493,10 +14493,10 @@ public System.Collections.Generic.IDictionary<string, string> Data { get; }
 ##### `DisableAutomatedRotation`<sup>Required</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.disableAutomatedRotation"></a>
 
 ```csharp
-public object DisableAutomatedRotation { get; }
+public bool|IResolvable DisableAutomatedRotation { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -14593,20 +14593,20 @@ public double RotationWindow { get; }
 ##### `VerifyConnection`<sup>Required</sup> <a name="VerifyConnection" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.verifyConnection"></a>
 
 ```csharp
-public object VerifyConnection { get; }
+public bool|IResolvable VerifyConnection { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseSecretsMountMongodbatlas InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlas">DatabaseSecretsMountMongodbatlas</a>
 
 ---
 
@@ -14732,7 +14732,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb">DatabaseSecretsMountMongodb</a>[]</code> | *No description.* |
 
 ---
 
@@ -14763,10 +14763,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseSecretsMountMongodb[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb">DatabaseSecretsMountMongodb</a>[]
 
 ---
 
@@ -15128,7 +15128,7 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.allowedRolesInput">AllowedRolesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.connectionUrlInput">ConnectionUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.dataInput">DataInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.maxConnectionLifetimeInput">MaxConnectionLifetimeInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.maxIdleConnectionsInput">MaxIdleConnectionsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.maxOpenConnectionsInput">MaxOpenConnectionsInput</a></code> | <code>double</code> | *No description.* |
@@ -15143,11 +15143,11 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.rotationWindowInput">RotationWindowInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.usernameInput">UsernameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.usernameTemplateInput">UsernameTemplateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.allowedRoles">AllowedRoles</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.connectionUrl">ConnectionUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.data">Data</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.maxOpenConnections">MaxOpenConnections</a></code> | <code>double</code> | *No description.* |
@@ -15162,8 +15162,8 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.rotationWindow">RotationWindow</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.username">Username</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.usernameTemplate">UsernameTemplate</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb">DatabaseSecretsMountMongodb</a></code> | *No description.* |
 
 ---
 
@@ -15224,10 +15224,10 @@ public System.Collections.Generic.IDictionary<string, string> DataInput { get; }
 ##### `DisableAutomatedRotationInput`<sup>Optional</sup> <a name="DisableAutomatedRotationInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.disableAutomatedRotationInput"></a>
 
 ```csharp
-public object DisableAutomatedRotationInput { get; }
+public bool|IResolvable DisableAutomatedRotationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -15374,10 +15374,10 @@ public string UsernameTemplateInput { get; }
 ##### `VerifyConnectionInput`<sup>Optional</sup> <a name="VerifyConnectionInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.verifyConnectionInput"></a>
 
 ```csharp
-public object VerifyConnectionInput { get; }
+public bool|IResolvable VerifyConnectionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -15414,10 +15414,10 @@ public System.Collections.Generic.IDictionary<string, string> Data { get; }
 ##### `DisableAutomatedRotation`<sup>Required</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.disableAutomatedRotation"></a>
 
 ```csharp
-public object DisableAutomatedRotation { get; }
+public bool|IResolvable DisableAutomatedRotation { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -15564,20 +15564,20 @@ public string UsernameTemplate { get; }
 ##### `VerifyConnection`<sup>Required</sup> <a name="VerifyConnection" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.verifyConnection"></a>
 
 ```csharp
-public object VerifyConnection { get; }
+public bool|IResolvable VerifyConnection { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseSecretsMountMongodb InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodb">DatabaseSecretsMountMongodb</a>
 
 ---
 
@@ -15703,7 +15703,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql">DatabaseSecretsMountMssql</a>[]</code> | *No description.* |
 
 ---
 
@@ -15734,10 +15734,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseSecretsMountMssql[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql">DatabaseSecretsMountMssql</a>[]
 
 ---
 
@@ -16112,10 +16112,10 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.allowedRolesInput">AllowedRolesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.connectionUrlInput">ConnectionUrlInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.containedDbInput">ContainedDbInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.containedDbInput">ContainedDbInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.dataInput">DataInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.disableEscapingInput">DisableEscapingInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.disableEscapingInput">DisableEscapingInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.maxConnectionLifetimeInput">MaxConnectionLifetimeInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.maxIdleConnectionsInput">MaxIdleConnectionsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.maxOpenConnectionsInput">MaxOpenConnectionsInput</a></code> | <code>double</code> | *No description.* |
@@ -16130,13 +16130,13 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.rotationWindowInput">RotationWindowInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.usernameInput">UsernameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.usernameTemplateInput">UsernameTemplateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.allowedRoles">AllowedRoles</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.connectionUrl">ConnectionUrl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.containedDb">ContainedDb</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.containedDb">ContainedDb</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.data">Data</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.disableEscaping">DisableEscaping</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.disableEscaping">DisableEscaping</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.maxOpenConnections">MaxOpenConnections</a></code> | <code>double</code> | *No description.* |
@@ -16151,8 +16151,8 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.rotationWindow">RotationWindow</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.username">Username</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.usernameTemplate">UsernameTemplate</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql">DatabaseSecretsMountMssql</a></code> | *No description.* |
 
 ---
 
@@ -16203,10 +16203,10 @@ public string ConnectionUrlInput { get; }
 ##### `ContainedDbInput`<sup>Optional</sup> <a name="ContainedDbInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.containedDbInput"></a>
 
 ```csharp
-public object ContainedDbInput { get; }
+public bool|IResolvable ContainedDbInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -16223,20 +16223,20 @@ public System.Collections.Generic.IDictionary<string, string> DataInput { get; }
 ##### `DisableAutomatedRotationInput`<sup>Optional</sup> <a name="DisableAutomatedRotationInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.disableAutomatedRotationInput"></a>
 
 ```csharp
-public object DisableAutomatedRotationInput { get; }
+public bool|IResolvable DisableAutomatedRotationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DisableEscapingInput`<sup>Optional</sup> <a name="DisableEscapingInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.disableEscapingInput"></a>
 
 ```csharp
-public object DisableEscapingInput { get; }
+public bool|IResolvable DisableEscapingInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -16383,10 +16383,10 @@ public string UsernameTemplateInput { get; }
 ##### `VerifyConnectionInput`<sup>Optional</sup> <a name="VerifyConnectionInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.verifyConnectionInput"></a>
 
 ```csharp
-public object VerifyConnectionInput { get; }
+public bool|IResolvable VerifyConnectionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -16413,10 +16413,10 @@ public string ConnectionUrl { get; }
 ##### `ContainedDb`<sup>Required</sup> <a name="ContainedDb" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.containedDb"></a>
 
 ```csharp
-public object ContainedDb { get; }
+public bool|IResolvable ContainedDb { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -16433,20 +16433,20 @@ public System.Collections.Generic.IDictionary<string, string> Data { get; }
 ##### `DisableAutomatedRotation`<sup>Required</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.disableAutomatedRotation"></a>
 
 ```csharp
-public object DisableAutomatedRotation { get; }
+public bool|IResolvable DisableAutomatedRotation { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DisableEscaping`<sup>Required</sup> <a name="DisableEscaping" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.disableEscaping"></a>
 
 ```csharp
-public object DisableEscaping { get; }
+public bool|IResolvable DisableEscaping { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -16593,20 +16593,20 @@ public string UsernameTemplate { get; }
 ##### `VerifyConnection`<sup>Required</sup> <a name="VerifyConnection" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.verifyConnection"></a>
 
 ```csharp
-public object VerifyConnection { get; }
+public bool|IResolvable VerifyConnection { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseSecretsMountMssql InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssql">DatabaseSecretsMountMssql</a>
 
 ---
 
@@ -16732,7 +16732,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora">DatabaseSecretsMountMysqlAurora</a>[]</code> | *No description.* |
 
 ---
 
@@ -16763,10 +16763,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseSecretsMountMysqlAurora[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora">DatabaseSecretsMountMysqlAurora</a>[]
 
 ---
 
@@ -17157,7 +17157,7 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.authTypeInput">AuthTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.connectionUrlInput">ConnectionUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.dataInput">DataInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.maxConnectionLifetimeInput">MaxConnectionLifetimeInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.maxIdleConnectionsInput">MaxIdleConnectionsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.maxOpenConnectionsInput">MaxOpenConnectionsInput</a></code> | <code>double</code> | *No description.* |
@@ -17175,12 +17175,12 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.tlsCertificateKeyInput">TlsCertificateKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.usernameInput">UsernameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.usernameTemplateInput">UsernameTemplateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.allowedRoles">AllowedRoles</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.authType">AuthType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.connectionUrl">ConnectionUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.data">Data</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.maxOpenConnections">MaxOpenConnections</a></code> | <code>double</code> | *No description.* |
@@ -17198,8 +17198,8 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.tlsCertificateKey">TlsCertificateKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.username">Username</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.usernameTemplate">UsernameTemplate</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora">DatabaseSecretsMountMysqlAurora</a></code> | *No description.* |
 
 ---
 
@@ -17270,10 +17270,10 @@ public System.Collections.Generic.IDictionary<string, string> DataInput { get; }
 ##### `DisableAutomatedRotationInput`<sup>Optional</sup> <a name="DisableAutomatedRotationInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.disableAutomatedRotationInput"></a>
 
 ```csharp
-public object DisableAutomatedRotationInput { get; }
+public bool|IResolvable DisableAutomatedRotationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -17450,10 +17450,10 @@ public string UsernameTemplateInput { get; }
 ##### `VerifyConnectionInput`<sup>Optional</sup> <a name="VerifyConnectionInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.verifyConnectionInput"></a>
 
 ```csharp
-public object VerifyConnectionInput { get; }
+public bool|IResolvable VerifyConnectionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -17500,10 +17500,10 @@ public System.Collections.Generic.IDictionary<string, string> Data { get; }
 ##### `DisableAutomatedRotation`<sup>Required</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.disableAutomatedRotation"></a>
 
 ```csharp
-public object DisableAutomatedRotation { get; }
+public bool|IResolvable DisableAutomatedRotation { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -17680,20 +17680,20 @@ public string UsernameTemplate { get; }
 ##### `VerifyConnection`<sup>Required</sup> <a name="VerifyConnection" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.verifyConnection"></a>
 
 ```csharp
-public object VerifyConnection { get; }
+public bool|IResolvable VerifyConnection { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseSecretsMountMysqlAurora InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAurora">DatabaseSecretsMountMysqlAurora</a>
 
 ---
 
@@ -17819,7 +17819,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy">DatabaseSecretsMountMysqlLegacy</a>[]</code> | *No description.* |
 
 ---
 
@@ -17850,10 +17850,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseSecretsMountMysqlLegacy[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy">DatabaseSecretsMountMysqlLegacy</a>[]
 
 ---
 
@@ -18244,7 +18244,7 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.authTypeInput">AuthTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.connectionUrlInput">ConnectionUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.dataInput">DataInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.maxConnectionLifetimeInput">MaxConnectionLifetimeInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.maxIdleConnectionsInput">MaxIdleConnectionsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.maxOpenConnectionsInput">MaxOpenConnectionsInput</a></code> | <code>double</code> | *No description.* |
@@ -18262,12 +18262,12 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.tlsCertificateKeyInput">TlsCertificateKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.usernameInput">UsernameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.usernameTemplateInput">UsernameTemplateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.allowedRoles">AllowedRoles</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.authType">AuthType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.connectionUrl">ConnectionUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.data">Data</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.maxOpenConnections">MaxOpenConnections</a></code> | <code>double</code> | *No description.* |
@@ -18285,8 +18285,8 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.tlsCertificateKey">TlsCertificateKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.username">Username</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.usernameTemplate">UsernameTemplate</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy">DatabaseSecretsMountMysqlLegacy</a></code> | *No description.* |
 
 ---
 
@@ -18357,10 +18357,10 @@ public System.Collections.Generic.IDictionary<string, string> DataInput { get; }
 ##### `DisableAutomatedRotationInput`<sup>Optional</sup> <a name="DisableAutomatedRotationInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.disableAutomatedRotationInput"></a>
 
 ```csharp
-public object DisableAutomatedRotationInput { get; }
+public bool|IResolvable DisableAutomatedRotationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -18537,10 +18537,10 @@ public string UsernameTemplateInput { get; }
 ##### `VerifyConnectionInput`<sup>Optional</sup> <a name="VerifyConnectionInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.verifyConnectionInput"></a>
 
 ```csharp
-public object VerifyConnectionInput { get; }
+public bool|IResolvable VerifyConnectionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -18587,10 +18587,10 @@ public System.Collections.Generic.IDictionary<string, string> Data { get; }
 ##### `DisableAutomatedRotation`<sup>Required</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.disableAutomatedRotation"></a>
 
 ```csharp
-public object DisableAutomatedRotation { get; }
+public bool|IResolvable DisableAutomatedRotation { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -18767,20 +18767,20 @@ public string UsernameTemplate { get; }
 ##### `VerifyConnection`<sup>Required</sup> <a name="VerifyConnection" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.verifyConnection"></a>
 
 ```csharp
-public object VerifyConnection { get; }
+public bool|IResolvable VerifyConnection { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseSecretsMountMysqlLegacy InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacy">DatabaseSecretsMountMysqlLegacy</a>
 
 ---
 
@@ -18906,7 +18906,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql">DatabaseSecretsMountMysql</a>[]</code> | *No description.* |
 
 ---
 
@@ -18937,10 +18937,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseSecretsMountMysql[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql">DatabaseSecretsMountMysql</a>[]
 
 ---
 
@@ -19331,7 +19331,7 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.authTypeInput">AuthTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.connectionUrlInput">ConnectionUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.dataInput">DataInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.maxConnectionLifetimeInput">MaxConnectionLifetimeInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.maxIdleConnectionsInput">MaxIdleConnectionsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.maxOpenConnectionsInput">MaxOpenConnectionsInput</a></code> | <code>double</code> | *No description.* |
@@ -19349,12 +19349,12 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.tlsCertificateKeyInput">TlsCertificateKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.usernameInput">UsernameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.usernameTemplateInput">UsernameTemplateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.allowedRoles">AllowedRoles</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.authType">AuthType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.connectionUrl">ConnectionUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.data">Data</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.maxOpenConnections">MaxOpenConnections</a></code> | <code>double</code> | *No description.* |
@@ -19372,8 +19372,8 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.tlsCertificateKey">TlsCertificateKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.username">Username</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.usernameTemplate">UsernameTemplate</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql">DatabaseSecretsMountMysql</a></code> | *No description.* |
 
 ---
 
@@ -19444,10 +19444,10 @@ public System.Collections.Generic.IDictionary<string, string> DataInput { get; }
 ##### `DisableAutomatedRotationInput`<sup>Optional</sup> <a name="DisableAutomatedRotationInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.disableAutomatedRotationInput"></a>
 
 ```csharp
-public object DisableAutomatedRotationInput { get; }
+public bool|IResolvable DisableAutomatedRotationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -19624,10 +19624,10 @@ public string UsernameTemplateInput { get; }
 ##### `VerifyConnectionInput`<sup>Optional</sup> <a name="VerifyConnectionInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.verifyConnectionInput"></a>
 
 ```csharp
-public object VerifyConnectionInput { get; }
+public bool|IResolvable VerifyConnectionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -19674,10 +19674,10 @@ public System.Collections.Generic.IDictionary<string, string> Data { get; }
 ##### `DisableAutomatedRotation`<sup>Required</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.disableAutomatedRotation"></a>
 
 ```csharp
-public object DisableAutomatedRotation { get; }
+public bool|IResolvable DisableAutomatedRotation { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -19854,20 +19854,20 @@ public string UsernameTemplate { get; }
 ##### `VerifyConnection`<sup>Required</sup> <a name="VerifyConnection" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.verifyConnection"></a>
 
 ```csharp
-public object VerifyConnection { get; }
+public bool|IResolvable VerifyConnection { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseSecretsMountMysql InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysql">DatabaseSecretsMountMysql</a>
 
 ---
 
@@ -19993,7 +19993,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds">DatabaseSecretsMountMysqlRds</a>[]</code> | *No description.* |
 
 ---
 
@@ -20024,10 +20024,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseSecretsMountMysqlRds[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds">DatabaseSecretsMountMysqlRds</a>[]
 
 ---
 
@@ -20418,7 +20418,7 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.authTypeInput">AuthTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.connectionUrlInput">ConnectionUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.dataInput">DataInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.maxConnectionLifetimeInput">MaxConnectionLifetimeInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.maxIdleConnectionsInput">MaxIdleConnectionsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.maxOpenConnectionsInput">MaxOpenConnectionsInput</a></code> | <code>double</code> | *No description.* |
@@ -20436,12 +20436,12 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.tlsCertificateKeyInput">TlsCertificateKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.usernameInput">UsernameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.usernameTemplateInput">UsernameTemplateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.allowedRoles">AllowedRoles</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.authType">AuthType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.connectionUrl">ConnectionUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.data">Data</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.maxOpenConnections">MaxOpenConnections</a></code> | <code>double</code> | *No description.* |
@@ -20459,8 +20459,8 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.tlsCertificateKey">TlsCertificateKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.username">Username</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.usernameTemplate">UsernameTemplate</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds">DatabaseSecretsMountMysqlRds</a></code> | *No description.* |
 
 ---
 
@@ -20531,10 +20531,10 @@ public System.Collections.Generic.IDictionary<string, string> DataInput { get; }
 ##### `DisableAutomatedRotationInput`<sup>Optional</sup> <a name="DisableAutomatedRotationInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.disableAutomatedRotationInput"></a>
 
 ```csharp
-public object DisableAutomatedRotationInput { get; }
+public bool|IResolvable DisableAutomatedRotationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -20711,10 +20711,10 @@ public string UsernameTemplateInput { get; }
 ##### `VerifyConnectionInput`<sup>Optional</sup> <a name="VerifyConnectionInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.verifyConnectionInput"></a>
 
 ```csharp
-public object VerifyConnectionInput { get; }
+public bool|IResolvable VerifyConnectionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -20761,10 +20761,10 @@ public System.Collections.Generic.IDictionary<string, string> Data { get; }
 ##### `DisableAutomatedRotation`<sup>Required</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.disableAutomatedRotation"></a>
 
 ```csharp
-public object DisableAutomatedRotation { get; }
+public bool|IResolvable DisableAutomatedRotation { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -20941,20 +20941,20 @@ public string UsernameTemplate { get; }
 ##### `VerifyConnection`<sup>Required</sup> <a name="VerifyConnection" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.verifyConnection"></a>
 
 ```csharp
-public object VerifyConnection { get; }
+public bool|IResolvable VerifyConnection { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseSecretsMountMysqlRds InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRds">DatabaseSecretsMountMysqlRds</a>
 
 ---
 
@@ -21080,7 +21080,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle">DatabaseSecretsMountOracle</a>[]</code> | *No description.* |
 
 ---
 
@@ -21111,10 +21111,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseSecretsMountOracle[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle">DatabaseSecretsMountOracle</a>[]
 
 ---
 
@@ -21490,8 +21490,8 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.allowedRolesInput">AllowedRolesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.connectionUrlInput">ConnectionUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.dataInput">DataInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.disconnectSessionsInput">DisconnectSessionsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.disconnectSessionsInput">DisconnectSessionsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.maxConnectionLifetimeInput">MaxConnectionLifetimeInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.maxIdleConnectionsInput">MaxIdleConnectionsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.maxOpenConnectionsInput">MaxOpenConnectionsInput</a></code> | <code>double</code> | *No description.* |
@@ -21504,15 +21504,15 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.rotationPeriodInput">RotationPeriodInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.rotationScheduleInput">RotationScheduleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.rotationWindowInput">RotationWindowInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.splitStatementsInput">SplitStatementsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.splitStatementsInput">SplitStatementsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.usernameInput">UsernameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.usernameTemplateInput">UsernameTemplateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.allowedRoles">AllowedRoles</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.connectionUrl">ConnectionUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.data">Data</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.disconnectSessions">DisconnectSessions</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.disconnectSessions">DisconnectSessions</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.maxOpenConnections">MaxOpenConnections</a></code> | <code>double</code> | *No description.* |
@@ -21525,11 +21525,11 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.rotationPeriod">RotationPeriod</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.rotationSchedule">RotationSchedule</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.rotationWindow">RotationWindow</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.splitStatements">SplitStatements</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.splitStatements">SplitStatements</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.username">Username</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.usernameTemplate">UsernameTemplate</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle">DatabaseSecretsMountOracle</a></code> | *No description.* |
 
 ---
 
@@ -21590,20 +21590,20 @@ public System.Collections.Generic.IDictionary<string, string> DataInput { get; }
 ##### `DisableAutomatedRotationInput`<sup>Optional</sup> <a name="DisableAutomatedRotationInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.disableAutomatedRotationInput"></a>
 
 ```csharp
-public object DisableAutomatedRotationInput { get; }
+public bool|IResolvable DisableAutomatedRotationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DisconnectSessionsInput`<sup>Optional</sup> <a name="DisconnectSessionsInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.disconnectSessionsInput"></a>
 
 ```csharp
-public object DisconnectSessionsInput { get; }
+public bool|IResolvable DisconnectSessionsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -21730,10 +21730,10 @@ public double RotationWindowInput { get; }
 ##### `SplitStatementsInput`<sup>Optional</sup> <a name="SplitStatementsInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.splitStatementsInput"></a>
 
 ```csharp
-public object SplitStatementsInput { get; }
+public bool|IResolvable SplitStatementsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -21760,10 +21760,10 @@ public string UsernameTemplateInput { get; }
 ##### `VerifyConnectionInput`<sup>Optional</sup> <a name="VerifyConnectionInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.verifyConnectionInput"></a>
 
 ```csharp
-public object VerifyConnectionInput { get; }
+public bool|IResolvable VerifyConnectionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -21800,20 +21800,20 @@ public System.Collections.Generic.IDictionary<string, string> Data { get; }
 ##### `DisableAutomatedRotation`<sup>Required</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.disableAutomatedRotation"></a>
 
 ```csharp
-public object DisableAutomatedRotation { get; }
+public bool|IResolvable DisableAutomatedRotation { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DisconnectSessions`<sup>Required</sup> <a name="DisconnectSessions" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.disconnectSessions"></a>
 
 ```csharp
-public object DisconnectSessions { get; }
+public bool|IResolvable DisconnectSessions { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -21940,10 +21940,10 @@ public double RotationWindow { get; }
 ##### `SplitStatements`<sup>Required</sup> <a name="SplitStatements" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.splitStatements"></a>
 
 ```csharp
-public object SplitStatements { get; }
+public bool|IResolvable SplitStatements { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -21970,20 +21970,20 @@ public string UsernameTemplate { get; }
 ##### `VerifyConnection`<sup>Required</sup> <a name="VerifyConnection" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.verifyConnection"></a>
 
 ```csharp
-public object VerifyConnection { get; }
+public bool|IResolvable VerifyConnection { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseSecretsMountOracle InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracle">DatabaseSecretsMountOracle</a>
 
 ---
 
@@ -22109,7 +22109,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql">DatabaseSecretsMountPostgresql</a>[]</code> | *No description.* |
 
 ---
 
@@ -22140,10 +22140,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseSecretsMountPostgresql[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql">DatabaseSecretsMountPostgresql</a>[]
 
 ---
 
@@ -22562,8 +22562,8 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.authTypeInput">AuthTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.connectionUrlInput">ConnectionUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.dataInput">DataInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.disableEscapingInput">DisableEscapingInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.disableEscapingInput">DisableEscapingInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.maxConnectionLifetimeInput">MaxConnectionLifetimeInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.maxIdleConnectionsInput">MaxIdleConnectionsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.maxOpenConnectionsInput">MaxOpenConnectionsInput</a></code> | <code>double</code> | *No description.* |
@@ -22578,19 +22578,19 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.rotationPeriodInput">RotationPeriodInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.rotationScheduleInput">RotationScheduleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.rotationWindowInput">RotationWindowInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.selfManagedInput">SelfManagedInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.selfManagedInput">SelfManagedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.serviceAccountJsonInput">ServiceAccountJsonInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.tlsCaInput">TlsCaInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.tlsCertificateInput">TlsCertificateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.usernameInput">UsernameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.usernameTemplateInput">UsernameTemplateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.allowedRoles">AllowedRoles</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.authType">AuthType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.connectionUrl">ConnectionUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.data">Data</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.disableEscaping">DisableEscaping</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.disableEscaping">DisableEscaping</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.maxOpenConnections">MaxOpenConnections</a></code> | <code>double</code> | *No description.* |
@@ -22605,14 +22605,14 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.rotationPeriod">RotationPeriod</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.rotationSchedule">RotationSchedule</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.rotationWindow">RotationWindow</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.selfManaged">SelfManaged</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.selfManaged">SelfManaged</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.serviceAccountJson">ServiceAccountJson</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.tlsCa">TlsCa</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.tlsCertificate">TlsCertificate</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.username">Username</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.usernameTemplate">UsernameTemplate</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql">DatabaseSecretsMountPostgresql</a></code> | *No description.* |
 
 ---
 
@@ -22683,20 +22683,20 @@ public System.Collections.Generic.IDictionary<string, string> DataInput { get; }
 ##### `DisableAutomatedRotationInput`<sup>Optional</sup> <a name="DisableAutomatedRotationInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.disableAutomatedRotationInput"></a>
 
 ```csharp
-public object DisableAutomatedRotationInput { get; }
+public bool|IResolvable DisableAutomatedRotationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DisableEscapingInput`<sup>Optional</sup> <a name="DisableEscapingInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.disableEscapingInput"></a>
 
 ```csharp
-public object DisableEscapingInput { get; }
+public bool|IResolvable DisableEscapingInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -22843,10 +22843,10 @@ public double RotationWindowInput { get; }
 ##### `SelfManagedInput`<sup>Optional</sup> <a name="SelfManagedInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.selfManagedInput"></a>
 
 ```csharp
-public object SelfManagedInput { get; }
+public bool|IResolvable SelfManagedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -22903,10 +22903,10 @@ public string UsernameTemplateInput { get; }
 ##### `VerifyConnectionInput`<sup>Optional</sup> <a name="VerifyConnectionInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.verifyConnectionInput"></a>
 
 ```csharp
-public object VerifyConnectionInput { get; }
+public bool|IResolvable VerifyConnectionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -22953,20 +22953,20 @@ public System.Collections.Generic.IDictionary<string, string> Data { get; }
 ##### `DisableAutomatedRotation`<sup>Required</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.disableAutomatedRotation"></a>
 
 ```csharp
-public object DisableAutomatedRotation { get; }
+public bool|IResolvable DisableAutomatedRotation { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DisableEscaping`<sup>Required</sup> <a name="DisableEscaping" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.disableEscaping"></a>
 
 ```csharp
-public object DisableEscaping { get; }
+public bool|IResolvable DisableEscaping { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -23113,10 +23113,10 @@ public double RotationWindow { get; }
 ##### `SelfManaged`<sup>Required</sup> <a name="SelfManaged" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.selfManaged"></a>
 
 ```csharp
-public object SelfManaged { get; }
+public bool|IResolvable SelfManaged { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -23173,20 +23173,20 @@ public string UsernameTemplate { get; }
 ##### `VerifyConnection`<sup>Required</sup> <a name="VerifyConnection" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.verifyConnection"></a>
 
 ```csharp
-public object VerifyConnection { get; }
+public bool|IResolvable VerifyConnection { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseSecretsMountPostgresql InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresql">DatabaseSecretsMountPostgresql</a>
 
 ---
 
@@ -23312,7 +23312,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache">DatabaseSecretsMountRedisElasticache</a>[]</code> | *No description.* |
 
 ---
 
@@ -23343,10 +23343,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseSecretsMountRedisElasticache[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache">DatabaseSecretsMountRedisElasticache</a>[]
 
 ---
 
@@ -23665,7 +23665,7 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.allowedRolesInput">AllowedRolesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.dataInput">DataInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.passwordInput">PasswordInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.pluginNameInput">PluginNameInput</a></code> | <code>string</code> | *No description.* |
@@ -23676,10 +23676,10 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.rotationWindowInput">RotationWindowInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.urlInput">UrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.usernameInput">UsernameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.allowedRoles">AllowedRoles</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.data">Data</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.password">Password</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.pluginName">PluginName</a></code> | <code>string</code> | *No description.* |
@@ -23690,8 +23690,8 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.rotationWindow">RotationWindow</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.url">Url</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.username">Username</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache">DatabaseSecretsMountRedisElasticache</a></code> | *No description.* |
 
 ---
 
@@ -23742,10 +23742,10 @@ public System.Collections.Generic.IDictionary<string, string> DataInput { get; }
 ##### `DisableAutomatedRotationInput`<sup>Optional</sup> <a name="DisableAutomatedRotationInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.disableAutomatedRotationInput"></a>
 
 ```csharp
-public object DisableAutomatedRotationInput { get; }
+public bool|IResolvable DisableAutomatedRotationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -23852,10 +23852,10 @@ public string UsernameInput { get; }
 ##### `VerifyConnectionInput`<sup>Optional</sup> <a name="VerifyConnectionInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.verifyConnectionInput"></a>
 
 ```csharp
-public object VerifyConnectionInput { get; }
+public bool|IResolvable VerifyConnectionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -23882,10 +23882,10 @@ public System.Collections.Generic.IDictionary<string, string> Data { get; }
 ##### `DisableAutomatedRotation`<sup>Required</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.disableAutomatedRotation"></a>
 
 ```csharp
-public object DisableAutomatedRotation { get; }
+public bool|IResolvable DisableAutomatedRotation { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -23992,20 +23992,20 @@ public string Username { get; }
 ##### `VerifyConnection`<sup>Required</sup> <a name="VerifyConnection" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.verifyConnection"></a>
 
 ```csharp
-public object VerifyConnection { get; }
+public bool|IResolvable VerifyConnection { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseSecretsMountRedisElasticache InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticache">DatabaseSecretsMountRedisElasticache</a>
 
 ---
 
@@ -24131,7 +24131,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis">DatabaseSecretsMountRedis</a>[]</code> | *No description.* |
 
 ---
 
@@ -24162,10 +24162,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseSecretsMountRedis[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis">DatabaseSecretsMountRedis</a>[]
 
 ---
 
@@ -24492,9 +24492,9 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.allowedRolesInput">AllowedRolesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.caCertInput">CaCertInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.dataInput">DataInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.hostInput">HostInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.insecureTlsInput">InsecureTlsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.insecureTlsInput">InsecureTlsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.passwordInput">PasswordInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.pluginNameInput">PluginNameInput</a></code> | <code>string</code> | *No description.* |
@@ -24503,15 +24503,15 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.rotationPeriodInput">RotationPeriodInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.rotationScheduleInput">RotationScheduleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.rotationWindowInput">RotationWindowInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.tlsInput">TlsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.tlsInput">TlsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.usernameInput">UsernameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.allowedRoles">AllowedRoles</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.caCert">CaCert</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.data">Data</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.host">Host</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.insecureTls">InsecureTls</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.insecureTls">InsecureTls</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.password">Password</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.pluginName">PluginName</a></code> | <code>string</code> | *No description.* |
@@ -24520,10 +24520,10 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.rotationPeriod">RotationPeriod</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.rotationSchedule">RotationSchedule</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.rotationWindow">RotationWindow</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.tls">Tls</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.tls">Tls</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.username">Username</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis">DatabaseSecretsMountRedis</a></code> | *No description.* |
 
 ---
 
@@ -24584,10 +24584,10 @@ public System.Collections.Generic.IDictionary<string, string> DataInput { get; }
 ##### `DisableAutomatedRotationInput`<sup>Optional</sup> <a name="DisableAutomatedRotationInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.disableAutomatedRotationInput"></a>
 
 ```csharp
-public object DisableAutomatedRotationInput { get; }
+public bool|IResolvable DisableAutomatedRotationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -24604,10 +24604,10 @@ public string HostInput { get; }
 ##### `InsecureTlsInput`<sup>Optional</sup> <a name="InsecureTlsInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.insecureTlsInput"></a>
 
 ```csharp
-public object InsecureTlsInput { get; }
+public bool|IResolvable InsecureTlsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -24694,10 +24694,10 @@ public double RotationWindowInput { get; }
 ##### `TlsInput`<sup>Optional</sup> <a name="TlsInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.tlsInput"></a>
 
 ```csharp
-public object TlsInput { get; }
+public bool|IResolvable TlsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -24714,10 +24714,10 @@ public string UsernameInput { get; }
 ##### `VerifyConnectionInput`<sup>Optional</sup> <a name="VerifyConnectionInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.verifyConnectionInput"></a>
 
 ```csharp
-public object VerifyConnectionInput { get; }
+public bool|IResolvable VerifyConnectionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -24754,10 +24754,10 @@ public System.Collections.Generic.IDictionary<string, string> Data { get; }
 ##### `DisableAutomatedRotation`<sup>Required</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.disableAutomatedRotation"></a>
 
 ```csharp
-public object DisableAutomatedRotation { get; }
+public bool|IResolvable DisableAutomatedRotation { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -24774,10 +24774,10 @@ public string Host { get; }
 ##### `InsecureTls`<sup>Required</sup> <a name="InsecureTls" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.insecureTls"></a>
 
 ```csharp
-public object InsecureTls { get; }
+public bool|IResolvable InsecureTls { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -24864,10 +24864,10 @@ public double RotationWindow { get; }
 ##### `Tls`<sup>Required</sup> <a name="Tls" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.tls"></a>
 
 ```csharp
-public object Tls { get; }
+public bool|IResolvable Tls { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -24884,20 +24884,20 @@ public string Username { get; }
 ##### `VerifyConnection`<sup>Required</sup> <a name="VerifyConnection" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.verifyConnection"></a>
 
 ```csharp
-public object VerifyConnection { get; }
+public bool|IResolvable VerifyConnection { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseSecretsMountRedis InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedis">DatabaseSecretsMountRedis</a>
 
 ---
 
@@ -25023,7 +25023,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift">DatabaseSecretsMountRedshift</a>[]</code> | *No description.* |
 
 ---
 
@@ -25054,10 +25054,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseSecretsMountRedshift[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift">DatabaseSecretsMountRedshift</a>[]
 
 ---
 
@@ -25426,8 +25426,8 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.allowedRolesInput">AllowedRolesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.connectionUrlInput">ConnectionUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.dataInput">DataInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.disableEscapingInput">DisableEscapingInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.disableEscapingInput">DisableEscapingInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.maxConnectionLifetimeInput">MaxConnectionLifetimeInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.maxIdleConnectionsInput">MaxIdleConnectionsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.maxOpenConnectionsInput">MaxOpenConnectionsInput</a></code> | <code>double</code> | *No description.* |
@@ -25442,12 +25442,12 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.rotationWindowInput">RotationWindowInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.usernameInput">UsernameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.usernameTemplateInput">UsernameTemplateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.allowedRoles">AllowedRoles</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.connectionUrl">ConnectionUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.data">Data</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.disableEscaping">DisableEscaping</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.disableEscaping">DisableEscaping</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.maxOpenConnections">MaxOpenConnections</a></code> | <code>double</code> | *No description.* |
@@ -25462,8 +25462,8 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.rotationWindow">RotationWindow</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.username">Username</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.usernameTemplate">UsernameTemplate</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift">DatabaseSecretsMountRedshift</a></code> | *No description.* |
 
 ---
 
@@ -25524,20 +25524,20 @@ public System.Collections.Generic.IDictionary<string, string> DataInput { get; }
 ##### `DisableAutomatedRotationInput`<sup>Optional</sup> <a name="DisableAutomatedRotationInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.disableAutomatedRotationInput"></a>
 
 ```csharp
-public object DisableAutomatedRotationInput { get; }
+public bool|IResolvable DisableAutomatedRotationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DisableEscapingInput`<sup>Optional</sup> <a name="DisableEscapingInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.disableEscapingInput"></a>
 
 ```csharp
-public object DisableEscapingInput { get; }
+public bool|IResolvable DisableEscapingInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -25684,10 +25684,10 @@ public string UsernameTemplateInput { get; }
 ##### `VerifyConnectionInput`<sup>Optional</sup> <a name="VerifyConnectionInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.verifyConnectionInput"></a>
 
 ```csharp
-public object VerifyConnectionInput { get; }
+public bool|IResolvable VerifyConnectionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -25724,20 +25724,20 @@ public System.Collections.Generic.IDictionary<string, string> Data { get; }
 ##### `DisableAutomatedRotation`<sup>Required</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.disableAutomatedRotation"></a>
 
 ```csharp
-public object DisableAutomatedRotation { get; }
+public bool|IResolvable DisableAutomatedRotation { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DisableEscaping`<sup>Required</sup> <a name="DisableEscaping" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.disableEscaping"></a>
 
 ```csharp
-public object DisableEscaping { get; }
+public bool|IResolvable DisableEscaping { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -25884,20 +25884,20 @@ public string UsernameTemplate { get; }
 ##### `VerifyConnection`<sup>Required</sup> <a name="VerifyConnection" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.verifyConnection"></a>
 
 ```csharp
-public object VerifyConnection { get; }
+public bool|IResolvable VerifyConnection { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseSecretsMountRedshift InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshift">DatabaseSecretsMountRedshift</a>
 
 ---
 
@@ -26023,7 +26023,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake">DatabaseSecretsMountSnowflake</a>[]</code> | *No description.* |
 
 ---
 
@@ -26054,10 +26054,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseSecretsMountSnowflake[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake">DatabaseSecretsMountSnowflake</a>[]
 
 ---
 
@@ -26433,7 +26433,7 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.allowedRolesInput">AllowedRolesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.connectionUrlInput">ConnectionUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.dataInput">DataInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.maxConnectionLifetimeInput">MaxConnectionLifetimeInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.maxIdleConnectionsInput">MaxIdleConnectionsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.maxOpenConnectionsInput">MaxOpenConnectionsInput</a></code> | <code>double</code> | *No description.* |
@@ -26450,11 +26450,11 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.rotationWindowInput">RotationWindowInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.usernameInput">UsernameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.usernameTemplateInput">UsernameTemplateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.verifyConnectionInput">VerifyConnectionInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.allowedRoles">AllowedRoles</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.connectionUrl">ConnectionUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.data">Data</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.maxConnectionLifetime">MaxConnectionLifetime</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.maxIdleConnections">MaxIdleConnections</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.maxOpenConnections">MaxOpenConnections</a></code> | <code>double</code> | *No description.* |
@@ -26471,8 +26471,8 @@ private void ResetVerifyConnection()
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.rotationWindow">RotationWindow</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.username">Username</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.usernameTemplate">UsernameTemplate</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.verifyConnection">VerifyConnection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake">DatabaseSecretsMountSnowflake</a></code> | *No description.* |
 
 ---
 
@@ -26533,10 +26533,10 @@ public System.Collections.Generic.IDictionary<string, string> DataInput { get; }
 ##### `DisableAutomatedRotationInput`<sup>Optional</sup> <a name="DisableAutomatedRotationInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.disableAutomatedRotationInput"></a>
 
 ```csharp
-public object DisableAutomatedRotationInput { get; }
+public bool|IResolvable DisableAutomatedRotationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -26703,10 +26703,10 @@ public string UsernameTemplateInput { get; }
 ##### `VerifyConnectionInput`<sup>Optional</sup> <a name="VerifyConnectionInput" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.verifyConnectionInput"></a>
 
 ```csharp
-public object VerifyConnectionInput { get; }
+public bool|IResolvable VerifyConnectionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -26743,10 +26743,10 @@ public System.Collections.Generic.IDictionary<string, string> Data { get; }
 ##### `DisableAutomatedRotation`<sup>Required</sup> <a name="DisableAutomatedRotation" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.disableAutomatedRotation"></a>
 
 ```csharp
-public object DisableAutomatedRotation { get; }
+public bool|IResolvable DisableAutomatedRotation { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -26913,20 +26913,20 @@ public string UsernameTemplate { get; }
 ##### `VerifyConnection`<sup>Required</sup> <a name="VerifyConnection" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.verifyConnection"></a>
 
 ```csharp
-public object VerifyConnection { get; }
+public bool|IResolvable VerifyConnection { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DatabaseSecretsMountSnowflake InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflake">DatabaseSecretsMountSnowflake</a>
 
 ---
 

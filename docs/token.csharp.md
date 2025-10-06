@@ -289,7 +289,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-vault.token.Token.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-vault.token.Token.importFrom"></a>
@@ -343,7 +343,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-vault.token.Token.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -358,7 +358,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-vault.token.Token.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -602,13 +602,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.
 | <code><a href="#@cdktf/provider-vault.token.Token.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.token.Token.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.token.Token.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.token.Token.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.token.Token.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.token.Token.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.token.Token.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.token.Token.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.token.Token.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.token.Token.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.token.Token.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.token.Token.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.token.Token.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.token.Token.property.clientToken">ClientToken</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.token.Token.property.leaseDuration">LeaseDuration</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.token.Token.property.leaseStarted">LeaseStarted</a></code> | <code>string</code> | *No description.* |
@@ -619,12 +619,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.
 | <code><a href="#@cdktf/provider-vault.token.Token.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.token.Token.property.metadataInput">MetadataInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.token.Token.property.namespaceInput">NamespaceInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.token.Token.property.noDefaultPolicyInput">NoDefaultPolicyInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.token.Token.property.noParentInput">NoParentInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.token.Token.property.noDefaultPolicyInput">NoDefaultPolicyInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.token.Token.property.noParentInput">NoParentInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.token.Token.property.numUsesInput">NumUsesInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.token.Token.property.periodInput">PeriodInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.token.Token.property.policiesInput">PoliciesInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.token.Token.property.renewableInput">RenewableInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.token.Token.property.renewableInput">RenewableInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.token.Token.property.renewIncrementInput">RenewIncrementInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.token.Token.property.renewMinLeaseInput">RenewMinLeaseInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.token.Token.property.roleNameInput">RoleNameInput</a></code> | <code>string</code> | *No description.* |
@@ -635,12 +635,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.
 | <code><a href="#@cdktf/provider-vault.token.Token.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.token.Token.property.metadata">Metadata</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.token.Token.property.namespace">Namespace</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.token.Token.property.noDefaultPolicy">NoDefaultPolicy</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.token.Token.property.noParent">NoParent</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.token.Token.property.noDefaultPolicy">NoDefaultPolicy</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.token.Token.property.noParent">NoParent</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.token.Token.property.numUses">NumUses</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.token.Token.property.period">Period</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.token.Token.property.policies">Policies</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.token.Token.property.renewable">Renewable</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.token.Token.property.renewable">Renewable</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.token.Token.property.renewIncrement">RenewIncrement</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.token.Token.property.renewMinLease">RenewMinLease</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.token.Token.property.roleName">RoleName</a></code> | <code>string</code> | *No description.* |
@@ -724,20 +724,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-vault.token.Token.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.token.Token.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -784,10 +784,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-vault.token.Token.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -894,20 +894,20 @@ public string NamespaceInput { get; }
 ##### `NoDefaultPolicyInput`<sup>Optional</sup> <a name="NoDefaultPolicyInput" id="@cdktf/provider-vault.token.Token.property.noDefaultPolicyInput"></a>
 
 ```csharp
-public object NoDefaultPolicyInput { get; }
+public bool|IResolvable NoDefaultPolicyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `NoParentInput`<sup>Optional</sup> <a name="NoParentInput" id="@cdktf/provider-vault.token.Token.property.noParentInput"></a>
 
 ```csharp
-public object NoParentInput { get; }
+public bool|IResolvable NoParentInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -944,10 +944,10 @@ public string[] PoliciesInput { get; }
 ##### `RenewableInput`<sup>Optional</sup> <a name="RenewableInput" id="@cdktf/provider-vault.token.Token.property.renewableInput"></a>
 
 ```csharp
-public object RenewableInput { get; }
+public bool|IResolvable RenewableInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1054,20 +1054,20 @@ public string Namespace { get; }
 ##### `NoDefaultPolicy`<sup>Required</sup> <a name="NoDefaultPolicy" id="@cdktf/provider-vault.token.Token.property.noDefaultPolicy"></a>
 
 ```csharp
-public object NoDefaultPolicy { get; }
+public bool|IResolvable NoDefaultPolicy { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `NoParent`<sup>Required</sup> <a name="NoParent" id="@cdktf/provider-vault.token.Token.property.noParent"></a>
 
 ```csharp
-public object NoParent { get; }
+public bool|IResolvable NoParent { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1104,10 +1104,10 @@ public string[] Policies { get; }
 ##### `Renewable`<sup>Required</sup> <a name="Renewable" id="@cdktf/provider-vault.token.Token.property.renewable"></a>
 
 ```csharp
-public object Renewable { get; }
+public bool|IResolvable Renewable { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1189,24 +1189,24 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Vault;
 
 new TokenConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string DisplayName = null,
     string ExplicitMaxTtl = null,
     string Id = null,
     System.Collections.Generic.IDictionary<string, string> Metadata = null,
     string Namespace = null,
-    object NoDefaultPolicy = null,
-    object NoParent = null,
+    bool|IResolvable NoDefaultPolicy = null,
+    bool|IResolvable NoParent = null,
     double NumUses = null,
     string Period = null,
     string[] Policies = null,
-    object Renewable = null,
+    bool|IResolvable Renewable = null,
     double RenewIncrement = null,
     double RenewMinLease = null,
     string RoleName = null,
@@ -1219,24 +1219,24 @@ new TokenConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.token.TokenConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.token.TokenConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.token.TokenConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.token.TokenConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.token.TokenConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.token.TokenConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.token.TokenConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.token.TokenConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.token.TokenConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.token.TokenConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.token.TokenConfig.property.displayName">DisplayName</a></code> | <code>string</code> | The display name of the token. |
 | <code><a href="#@cdktf/provider-vault.token.TokenConfig.property.explicitMaxTtl">ExplicitMaxTtl</a></code> | <code>string</code> | The explicit max TTL of the token. |
 | <code><a href="#@cdktf/provider-vault.token.TokenConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/token#id Token#id}. |
 | <code><a href="#@cdktf/provider-vault.token.TokenConfig.property.metadata">Metadata</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Metadata to be associated with the token. |
 | <code><a href="#@cdktf/provider-vault.token.TokenConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
-| <code><a href="#@cdktf/provider-vault.token.TokenConfig.property.noDefaultPolicy">NoDefaultPolicy</a></code> | <code>object</code> | Flag to disable the default policy. |
-| <code><a href="#@cdktf/provider-vault.token.TokenConfig.property.noParent">NoParent</a></code> | <code>object</code> | Flag to create a token without parent. |
+| <code><a href="#@cdktf/provider-vault.token.TokenConfig.property.noDefaultPolicy">NoDefaultPolicy</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Flag to disable the default policy. |
+| <code><a href="#@cdktf/provider-vault.token.TokenConfig.property.noParent">NoParent</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Flag to create a token without parent. |
 | <code><a href="#@cdktf/provider-vault.token.TokenConfig.property.numUses">NumUses</a></code> | <code>double</code> | The number of allowed uses of the token. |
 | <code><a href="#@cdktf/provider-vault.token.TokenConfig.property.period">Period</a></code> | <code>string</code> | The period of the token. |
 | <code><a href="#@cdktf/provider-vault.token.TokenConfig.property.policies">Policies</a></code> | <code>string[]</code> | List of policies. |
-| <code><a href="#@cdktf/provider-vault.token.TokenConfig.property.renewable">Renewable</a></code> | <code>object</code> | Flag to allow the token to be renewed. |
+| <code><a href="#@cdktf/provider-vault.token.TokenConfig.property.renewable">Renewable</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Flag to allow the token to be renewed. |
 | <code><a href="#@cdktf/provider-vault.token.TokenConfig.property.renewIncrement">RenewIncrement</a></code> | <code>double</code> | The renew increment. |
 | <code><a href="#@cdktf/provider-vault.token.TokenConfig.property.renewMinLease">RenewMinLease</a></code> | <code>double</code> | The minimum lease to renew token. |
 | <code><a href="#@cdktf/provider-vault.token.TokenConfig.property.roleName">RoleName</a></code> | <code>string</code> | The token role name. |
@@ -1248,20 +1248,20 @@ new TokenConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-vault.token.TokenConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.token.TokenConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1308,10 +1308,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-vault.token.TokenConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1389,10 +1389,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `NoDefaultPolicy`<sup>Optional</sup> <a name="NoDefaultPolicy" id="@cdktf/provider-vault.token.TokenConfig.property.noDefaultPolicy"></a>
 
 ```csharp
-public object NoDefaultPolicy { get; set; }
+public bool|IResolvable NoDefaultPolicy { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Flag to disable the default policy.
 
@@ -1403,10 +1403,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `NoParent`<sup>Optional</sup> <a name="NoParent" id="@cdktf/provider-vault.token.TokenConfig.property.noParent"></a>
 
 ```csharp
-public object NoParent { get; set; }
+public bool|IResolvable NoParent { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Flag to create a token without parent.
 
@@ -1459,10 +1459,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Renewable`<sup>Optional</sup> <a name="Renewable" id="@cdktf/provider-vault.token.TokenConfig.property.renewable"></a>
 
 ```csharp
-public object Renewable { get; set; }
+public bool|IResolvable Renewable { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Flag to allow the token to be renewed.
 

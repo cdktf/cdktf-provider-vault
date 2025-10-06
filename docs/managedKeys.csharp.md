@@ -281,7 +281,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-vault.managedKeys.ManagedKeys.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-vault.managedKeys.ManagedKeys.importFrom"></a>
@@ -335,7 +335,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-vault.managedKeys.ManagedKeys.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -350,7 +350,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-vault.managedKeys.ManagedKeys.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -375,36 +375,36 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `PutAws` <a name="PutAws" id="@cdktf/provider-vault.managedKeys.ManagedKeys.putAws"></a>
 
 ```csharp
-private void PutAws(object Value)
+private void PutAws(IResolvable|ManagedKeysAws[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-vault.managedKeys.ManagedKeys.putAws.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a>[]
 
 ---
 
 ##### `PutAzure` <a name="PutAzure" id="@cdktf/provider-vault.managedKeys.ManagedKeys.putAzure"></a>
 
 ```csharp
-private void PutAzure(object Value)
+private void PutAzure(IResolvable|ManagedKeysAzure[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-vault.managedKeys.ManagedKeys.putAzure.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a>[]
 
 ---
 
 ##### `PutPkcs` <a name="PutPkcs" id="@cdktf/provider-vault.managedKeys.ManagedKeys.putPkcs"></a>
 
 ```csharp
-private void PutPkcs(object Value)
+private void PutPkcs(IResolvable|ManagedKeysPkcs[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-vault.managedKeys.ManagedKeys.putPkcs.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a>[]
 
 ---
 
@@ -564,21 +564,21 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.aws">Aws</a></code> | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsList">ManagedKeysAwsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.azure">Azure</a></code> | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureList">ManagedKeysAzureList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.pkcs">Pkcs</a></code> | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsList">ManagedKeysPkcsList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.awsInput">AwsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.azureInput">AzureInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.awsInput">AwsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.azureInput">AzureInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.namespaceInput">NamespaceInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.pkcsInput">PkcsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.pkcsInput">PkcsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeys.property.namespace">Namespace</a></code> | <code>string</code> | *No description.* |
 
@@ -659,20 +659,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-vault.managedKeys.ManagedKeys.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.managedKeys.ManagedKeys.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -719,10 +719,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-vault.managedKeys.ManagedKeys.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -759,20 +759,20 @@ public ManagedKeysPkcsList Pkcs { get; }
 ##### `AwsInput`<sup>Optional</sup> <a name="AwsInput" id="@cdktf/provider-vault.managedKeys.ManagedKeys.property.awsInput"></a>
 
 ```csharp
-public object AwsInput { get; }
+public IResolvable|ManagedKeysAws[] AwsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a>[]
 
 ---
 
 ##### `AzureInput`<sup>Optional</sup> <a name="AzureInput" id="@cdktf/provider-vault.managedKeys.ManagedKeys.property.azureInput"></a>
 
 ```csharp
-public object AzureInput { get; }
+public IResolvable|ManagedKeysAzure[] AzureInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a>[]
 
 ---
 
@@ -799,10 +799,10 @@ public string NamespaceInput { get; }
 ##### `PkcsInput`<sup>Optional</sup> <a name="PkcsInput" id="@cdktf/provider-vault.managedKeys.ManagedKeys.property.pkcsInput"></a>
 
 ```csharp
-public object PkcsInput { get; }
+public IResolvable|ManagedKeysPkcs[] PkcsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a>[]
 
 ---
 
@@ -860,10 +860,10 @@ new ManagedKeysAws {
     string KmsKey,
     string Name,
     string SecretKey,
-    object AllowGenerateKey = null,
-    object AllowReplaceKey = null,
-    object AllowStoreKey = null,
-    object AnyMount = null,
+    bool|IResolvable AllowGenerateKey = null,
+    bool|IResolvable AllowReplaceKey = null,
+    bool|IResolvable AllowStoreKey = null,
+    bool|IResolvable AnyMount = null,
     string Curve = null,
     string Endpoint = null,
     string Region = null
@@ -880,10 +880,10 @@ new ManagedKeysAws {
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws.property.kmsKey">KmsKey</a></code> | <code>string</code> | An identifier for the key. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws.property.name">Name</a></code> | <code>string</code> | A unique lowercase name that serves as identifying the key. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws.property.secretKey">SecretKey</a></code> | <code>string</code> | The AWS secret key to use. |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws.property.allowGenerateKey">AllowGenerateKey</a></code> | <code>object</code> | If no existing key can be found in the referenced backend, instructs Vault to generate a key within the backend. |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws.property.allowReplaceKey">AllowReplaceKey</a></code> | <code>object</code> | Controls the ability for Vault to replace through generation or importing a key into the configured backend even if a key is present, if set to false those operations are forbidden if a key exists. |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws.property.allowStoreKey">AllowStoreKey</a></code> | <code>object</code> | Controls the ability for Vault to import a key to the configured backend, if 'false', those operations will be forbidden. |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws.property.anyMount">AnyMount</a></code> | <code>object</code> | Allow usage from any mount point within the namespace if 'true'. |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws.property.allowGenerateKey">AllowGenerateKey</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If no existing key can be found in the referenced backend, instructs Vault to generate a key within the backend. |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws.property.allowReplaceKey">AllowReplaceKey</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Controls the ability for Vault to replace through generation or importing a key into the configured backend even if a key is present, if set to false those operations are forbidden if a key exists. |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws.property.allowStoreKey">AllowStoreKey</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Controls the ability for Vault to import a key to the configured backend, if 'false', those operations will be forbidden. |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws.property.anyMount">AnyMount</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Allow usage from any mount point within the namespace if 'true'. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws.property.curve">Curve</a></code> | <code>string</code> | The curve to use for an ECDSA key. Used when key_type is 'ECDSA'. Required if 'allow_generate_key' is true. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws.property.endpoint">Endpoint</a></code> | <code>string</code> | Used to specify a custom AWS endpoint. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws.property.region">Region</a></code> | <code>string</code> | The AWS region where the keys are stored (or will be stored). |
@@ -977,10 +977,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AllowGenerateKey`<sup>Optional</sup> <a name="AllowGenerateKey" id="@cdktf/provider-vault.managedKeys.ManagedKeysAws.property.allowGenerateKey"></a>
 
 ```csharp
-public object AllowGenerateKey { get; set; }
+public bool|IResolvable AllowGenerateKey { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If no existing key can be found in the referenced backend, instructs Vault to generate a key within the backend.
 
@@ -991,10 +991,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AllowReplaceKey`<sup>Optional</sup> <a name="AllowReplaceKey" id="@cdktf/provider-vault.managedKeys.ManagedKeysAws.property.allowReplaceKey"></a>
 
 ```csharp
-public object AllowReplaceKey { get; set; }
+public bool|IResolvable AllowReplaceKey { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Controls the ability for Vault to replace through generation or importing a key into the configured backend even if a key is present, if set to false those operations are forbidden if a key exists.
 
@@ -1005,10 +1005,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AllowStoreKey`<sup>Optional</sup> <a name="AllowStoreKey" id="@cdktf/provider-vault.managedKeys.ManagedKeysAws.property.allowStoreKey"></a>
 
 ```csharp
-public object AllowStoreKey { get; set; }
+public bool|IResolvable AllowStoreKey { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Controls the ability for Vault to import a key to the configured backend, if 'false', those operations will be forbidden.
 
@@ -1019,10 +1019,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AnyMount`<sup>Optional</sup> <a name="AnyMount" id="@cdktf/provider-vault.managedKeys.ManagedKeysAws.property.anyMount"></a>
 
 ```csharp
-public object AnyMount { get; set; }
+public bool|IResolvable AnyMount { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Allow usage from any mount point within the namespace if 'true'.
 
@@ -1087,10 +1087,10 @@ new ManagedKeysAzure {
     string Name,
     string TenantId,
     string VaultName,
-    object AllowGenerateKey = null,
-    object AllowReplaceKey = null,
-    object AllowStoreKey = null,
-    object AnyMount = null,
+    bool|IResolvable AllowGenerateKey = null,
+    bool|IResolvable AllowReplaceKey = null,
+    bool|IResolvable AllowStoreKey = null,
+    bool|IResolvable AnyMount = null,
     string Environment = null,
     string KeyBits = null,
     string Resource = null
@@ -1108,10 +1108,10 @@ new ManagedKeysAzure {
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure.property.name">Name</a></code> | <code>string</code> | A unique lowercase name that serves as identifying the key. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure.property.tenantId">TenantId</a></code> | <code>string</code> | The tenant id for the Azure Active Directory organization. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure.property.vaultName">VaultName</a></code> | <code>string</code> | The Key Vault vault to use the encryption keys for encryption and decryption. |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure.property.allowGenerateKey">AllowGenerateKey</a></code> | <code>object</code> | If no existing key can be found in the referenced backend, instructs Vault to generate a key within the backend. |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure.property.allowReplaceKey">AllowReplaceKey</a></code> | <code>object</code> | Controls the ability for Vault to replace through generation or importing a key into the configured backend even if a key is present, if set to false those operations are forbidden if a key exists. |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure.property.allowStoreKey">AllowStoreKey</a></code> | <code>object</code> | Controls the ability for Vault to import a key to the configured backend, if 'false', those operations will be forbidden. |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure.property.anyMount">AnyMount</a></code> | <code>object</code> | Allow usage from any mount point within the namespace if 'true'. |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure.property.allowGenerateKey">AllowGenerateKey</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If no existing key can be found in the referenced backend, instructs Vault to generate a key within the backend. |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure.property.allowReplaceKey">AllowReplaceKey</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Controls the ability for Vault to replace through generation or importing a key into the configured backend even if a key is present, if set to false those operations are forbidden if a key exists. |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure.property.allowStoreKey">AllowStoreKey</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Controls the ability for Vault to import a key to the configured backend, if 'false', those operations will be forbidden. |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure.property.anyMount">AnyMount</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Allow usage from any mount point within the namespace if 'true'. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure.property.environment">Environment</a></code> | <code>string</code> | The Azure Cloud environment API endpoints to use. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure.property.keyBits">KeyBits</a></code> | <code>string</code> | The size in bits for an RSA key. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure.property.resource">Resource</a></code> | <code>string</code> | The Azure Key Vault resource's DNS Suffix to connect to. |
@@ -1219,10 +1219,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AllowGenerateKey`<sup>Optional</sup> <a name="AllowGenerateKey" id="@cdktf/provider-vault.managedKeys.ManagedKeysAzure.property.allowGenerateKey"></a>
 
 ```csharp
-public object AllowGenerateKey { get; set; }
+public bool|IResolvable AllowGenerateKey { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If no existing key can be found in the referenced backend, instructs Vault to generate a key within the backend.
 
@@ -1233,10 +1233,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AllowReplaceKey`<sup>Optional</sup> <a name="AllowReplaceKey" id="@cdktf/provider-vault.managedKeys.ManagedKeysAzure.property.allowReplaceKey"></a>
 
 ```csharp
-public object AllowReplaceKey { get; set; }
+public bool|IResolvable AllowReplaceKey { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Controls the ability for Vault to replace through generation or importing a key into the configured backend even if a key is present, if set to false those operations are forbidden if a key exists.
 
@@ -1247,10 +1247,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AllowStoreKey`<sup>Optional</sup> <a name="AllowStoreKey" id="@cdktf/provider-vault.managedKeys.ManagedKeysAzure.property.allowStoreKey"></a>
 
 ```csharp
-public object AllowStoreKey { get; set; }
+public bool|IResolvable AllowStoreKey { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Controls the ability for Vault to import a key to the configured backend, if 'false', those operations will be forbidden.
 
@@ -1261,10 +1261,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AnyMount`<sup>Optional</sup> <a name="AnyMount" id="@cdktf/provider-vault.managedKeys.ManagedKeysAzure.property.anyMount"></a>
 
 ```csharp
-public object AnyMount { get; set; }
+public bool|IResolvable AnyMount { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Allow usage from any mount point within the namespace if 'true'.
 
@@ -1324,18 +1324,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Vault;
 
 new ManagedKeysConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
-    object Aws = null,
-    object Azure = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
+    IResolvable|ManagedKeysAws[] Aws = null,
+    IResolvable|ManagedKeysAzure[] Azure = null,
     string Id = null,
     string Namespace = null,
-    object Pkcs = null
+    IResolvable|ManagedKeysPkcs[] Pkcs = null
 };
 ```
 
@@ -1343,38 +1343,38 @@ new ManagedKeysConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.aws">Aws</a></code> | <code>object</code> | aws block. |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.azure">Azure</a></code> | <code>object</code> | azure block. |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.aws">Aws</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a>[]</code> | aws block. |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.azure">Azure</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a>[]</code> | azure block. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/managed_keys#id ManagedKeys#id}. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.pkcs">Pkcs</a></code> | <code>object</code> | pkcs block. |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.pkcs">Pkcs</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a>[]</code> | pkcs block. |
 
 ---
 
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1421,20 +1421,20 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
 ##### `Aws`<sup>Optional</sup> <a name="Aws" id="@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.aws"></a>
 
 ```csharp
-public object Aws { get; set; }
+public IResolvable|ManagedKeysAws[] Aws { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a>[]
 
 aws block.
 
@@ -1445,10 +1445,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Azure`<sup>Optional</sup> <a name="Azure" id="@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.azure"></a>
 
 ```csharp
-public object Azure { get; set; }
+public IResolvable|ManagedKeysAzure[] Azure { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a>[]
 
 azure block.
 
@@ -1488,10 +1488,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Pkcs`<sup>Optional</sup> <a name="Pkcs" id="@cdktf/provider-vault.managedKeys.ManagedKeysConfig.property.pkcs"></a>
 
 ```csharp
-public object Pkcs { get; set; }
+public IResolvable|ManagedKeysPkcs[] Pkcs { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a>[]
 
 pkcs block.
 
@@ -1513,10 +1513,10 @@ new ManagedKeysPkcs {
     string Mechanism,
     string Name,
     string Pin,
-    object AllowGenerateKey = null,
-    object AllowReplaceKey = null,
-    object AllowStoreKey = null,
-    object AnyMount = null,
+    bool|IResolvable AllowGenerateKey = null,
+    bool|IResolvable AllowReplaceKey = null,
+    bool|IResolvable AllowStoreKey = null,
+    bool|IResolvable AnyMount = null,
     string Curve = null,
     string ForceRwSession = null,
     string KeyBits = null,
@@ -1535,10 +1535,10 @@ new ManagedKeysPkcs {
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs.property.mechanism">Mechanism</a></code> | <code>string</code> | The encryption/decryption mechanism to use, specified as a hexadecimal (prefixed by 0x) string. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs.property.name">Name</a></code> | <code>string</code> | A unique lowercase name that serves as identifying the key. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs.property.pin">Pin</a></code> | <code>string</code> | The PIN for login. |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs.property.allowGenerateKey">AllowGenerateKey</a></code> | <code>object</code> | If no existing key can be found in the referenced backend, instructs Vault to generate a key within the backend. |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs.property.allowReplaceKey">AllowReplaceKey</a></code> | <code>object</code> | Controls the ability for Vault to replace through generation or importing a key into the configured backend even if a key is present, if set to false those operations are forbidden if a key exists. |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs.property.allowStoreKey">AllowStoreKey</a></code> | <code>object</code> | Controls the ability for Vault to import a key to the configured backend, if 'false', those operations will be forbidden. |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs.property.anyMount">AnyMount</a></code> | <code>object</code> | Allow usage from any mount point within the namespace if 'true'. |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs.property.allowGenerateKey">AllowGenerateKey</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If no existing key can be found in the referenced backend, instructs Vault to generate a key within the backend. |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs.property.allowReplaceKey">AllowReplaceKey</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Controls the ability for Vault to replace through generation or importing a key into the configured backend even if a key is present, if set to false those operations are forbidden if a key exists. |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs.property.allowStoreKey">AllowStoreKey</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Controls the ability for Vault to import a key to the configured backend, if 'false', those operations will be forbidden. |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs.property.anyMount">AnyMount</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Allow usage from any mount point within the namespace if 'true'. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs.property.curve">Curve</a></code> | <code>string</code> | Supplies the curve value when using the 'CKM_ECDSA' mechanism. Required if 'allow_generate_key' is true. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs.property.forceRwSession">ForceRwSession</a></code> | <code>string</code> | Force all operations to open up a read-write session to the HSM. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs.property.keyBits">KeyBits</a></code> | <code>string</code> | Supplies the size in bits of the key when using 'CKM_RSA_PKCS_PSS', 'CKM_RSA_PKCS_OAEP' or 'CKM_RSA_PKCS' as a value for 'mechanism'. |
@@ -1634,10 +1634,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AllowGenerateKey`<sup>Optional</sup> <a name="AllowGenerateKey" id="@cdktf/provider-vault.managedKeys.ManagedKeysPkcs.property.allowGenerateKey"></a>
 
 ```csharp
-public object AllowGenerateKey { get; set; }
+public bool|IResolvable AllowGenerateKey { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If no existing key can be found in the referenced backend, instructs Vault to generate a key within the backend.
 
@@ -1648,10 +1648,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AllowReplaceKey`<sup>Optional</sup> <a name="AllowReplaceKey" id="@cdktf/provider-vault.managedKeys.ManagedKeysPkcs.property.allowReplaceKey"></a>
 
 ```csharp
-public object AllowReplaceKey { get; set; }
+public bool|IResolvable AllowReplaceKey { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Controls the ability for Vault to replace through generation or importing a key into the configured backend even if a key is present, if set to false those operations are forbidden if a key exists.
 
@@ -1662,10 +1662,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AllowStoreKey`<sup>Optional</sup> <a name="AllowStoreKey" id="@cdktf/provider-vault.managedKeys.ManagedKeysPkcs.property.allowStoreKey"></a>
 
 ```csharp
-public object AllowStoreKey { get; set; }
+public bool|IResolvable AllowStoreKey { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Controls the ability for Vault to import a key to the configured backend, if 'false', those operations will be forbidden.
 
@@ -1676,10 +1676,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AnyMount`<sup>Optional</sup> <a name="AnyMount" id="@cdktf/provider-vault.managedKeys.ManagedKeysPkcs.property.anyMount"></a>
 
 ```csharp
-public object AnyMount { get; set; }
+public bool|IResolvable AnyMount { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Allow usage from any mount point within the namespace if 'true'.
 
@@ -1882,7 +1882,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a>[]</code> | *No description.* |
 
 ---
 
@@ -1913,10 +1913,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.managedKeys.ManagedKeysAwsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ManagedKeysAws[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a>[]
 
 ---
 
@@ -2200,10 +2200,10 @@ private void ResetRegion()
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.uuid">Uuid</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.accessKeyInput">AccessKeyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.allowGenerateKeyInput">AllowGenerateKeyInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.allowReplaceKeyInput">AllowReplaceKeyInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.allowStoreKeyInput">AllowStoreKeyInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.anyMountInput">AnyMountInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.allowGenerateKeyInput">AllowGenerateKeyInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.allowReplaceKeyInput">AllowReplaceKeyInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.allowStoreKeyInput">AllowStoreKeyInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.anyMountInput">AnyMountInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.curveInput">CurveInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.endpointInput">EndpointInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.keyBitsInput">KeyBitsInput</a></code> | <code>string</code> | *No description.* |
@@ -2213,10 +2213,10 @@ private void ResetRegion()
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.secretKeyInput">SecretKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.accessKey">AccessKey</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.allowGenerateKey">AllowGenerateKey</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.allowReplaceKey">AllowReplaceKey</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.allowStoreKey">AllowStoreKey</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.anyMount">AnyMount</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.allowGenerateKey">AllowGenerateKey</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.allowReplaceKey">AllowReplaceKey</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.allowStoreKey">AllowStoreKey</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.anyMount">AnyMount</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.curve">Curve</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.endpoint">Endpoint</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.keyBits">KeyBits</a></code> | <code>string</code> | *No description.* |
@@ -2225,7 +2225,7 @@ private void ResetRegion()
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.region">Region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.secretKey">SecretKey</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a></code> | *No description.* |
 
 ---
 
@@ -2276,40 +2276,40 @@ public string AccessKeyInput { get; }
 ##### `AllowGenerateKeyInput`<sup>Optional</sup> <a name="AllowGenerateKeyInput" id="@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.allowGenerateKeyInput"></a>
 
 ```csharp
-public object AllowGenerateKeyInput { get; }
+public bool|IResolvable AllowGenerateKeyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowReplaceKeyInput`<sup>Optional</sup> <a name="AllowReplaceKeyInput" id="@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.allowReplaceKeyInput"></a>
 
 ```csharp
-public object AllowReplaceKeyInput { get; }
+public bool|IResolvable AllowReplaceKeyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowStoreKeyInput`<sup>Optional</sup> <a name="AllowStoreKeyInput" id="@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.allowStoreKeyInput"></a>
 
 ```csharp
-public object AllowStoreKeyInput { get; }
+public bool|IResolvable AllowStoreKeyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AnyMountInput`<sup>Optional</sup> <a name="AnyMountInput" id="@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.anyMountInput"></a>
 
 ```csharp
-public object AnyMountInput { get; }
+public bool|IResolvable AnyMountInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2406,40 +2406,40 @@ public string AccessKey { get; }
 ##### `AllowGenerateKey`<sup>Required</sup> <a name="AllowGenerateKey" id="@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.allowGenerateKey"></a>
 
 ```csharp
-public object AllowGenerateKey { get; }
+public bool|IResolvable AllowGenerateKey { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowReplaceKey`<sup>Required</sup> <a name="AllowReplaceKey" id="@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.allowReplaceKey"></a>
 
 ```csharp
-public object AllowReplaceKey { get; }
+public bool|IResolvable AllowReplaceKey { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowStoreKey`<sup>Required</sup> <a name="AllowStoreKey" id="@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.allowStoreKey"></a>
 
 ```csharp
-public object AllowStoreKey { get; }
+public bool|IResolvable AllowStoreKey { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AnyMount`<sup>Required</sup> <a name="AnyMount" id="@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.anyMount"></a>
 
 ```csharp
-public object AnyMount { get; }
+public bool|IResolvable AnyMount { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2526,10 +2526,10 @@ public string SecretKey { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ManagedKeysAws InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a>
 
 ---
 
@@ -2655,7 +2655,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a>[]</code> | *No description.* |
 
 ---
 
@@ -2686,10 +2686,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.managedKeys.ManagedKeysAzureList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ManagedKeysAzure[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a>[]
 
 ---
 
@@ -2972,10 +2972,10 @@ private void ResetResource()
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.uuid">Uuid</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.allowGenerateKeyInput">AllowGenerateKeyInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.allowReplaceKeyInput">AllowReplaceKeyInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.allowStoreKeyInput">AllowStoreKeyInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.anyMountInput">AnyMountInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.allowGenerateKeyInput">AllowGenerateKeyInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.allowReplaceKeyInput">AllowReplaceKeyInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.allowStoreKeyInput">AllowStoreKeyInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.anyMountInput">AnyMountInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.clientIdInput">ClientIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.clientSecretInput">ClientSecretInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.environmentInput">EnvironmentInput</a></code> | <code>string</code> | *No description.* |
@@ -2986,10 +2986,10 @@ private void ResetResource()
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.resourceInput">ResourceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.tenantIdInput">TenantIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.vaultNameInput">VaultNameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.allowGenerateKey">AllowGenerateKey</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.allowReplaceKey">AllowReplaceKey</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.allowStoreKey">AllowStoreKey</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.anyMount">AnyMount</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.allowGenerateKey">AllowGenerateKey</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.allowReplaceKey">AllowReplaceKey</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.allowStoreKey">AllowStoreKey</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.anyMount">AnyMount</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.clientId">ClientId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.clientSecret">ClientSecret</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.environment">Environment</a></code> | <code>string</code> | *No description.* |
@@ -3000,7 +3000,7 @@ private void ResetResource()
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.resource">Resource</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.tenantId">TenantId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.vaultName">VaultName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a></code> | *No description.* |
 
 ---
 
@@ -3041,40 +3041,40 @@ public string Uuid { get; }
 ##### `AllowGenerateKeyInput`<sup>Optional</sup> <a name="AllowGenerateKeyInput" id="@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.allowGenerateKeyInput"></a>
 
 ```csharp
-public object AllowGenerateKeyInput { get; }
+public bool|IResolvable AllowGenerateKeyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowReplaceKeyInput`<sup>Optional</sup> <a name="AllowReplaceKeyInput" id="@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.allowReplaceKeyInput"></a>
 
 ```csharp
-public object AllowReplaceKeyInput { get; }
+public bool|IResolvable AllowReplaceKeyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowStoreKeyInput`<sup>Optional</sup> <a name="AllowStoreKeyInput" id="@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.allowStoreKeyInput"></a>
 
 ```csharp
-public object AllowStoreKeyInput { get; }
+public bool|IResolvable AllowStoreKeyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AnyMountInput`<sup>Optional</sup> <a name="AnyMountInput" id="@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.anyMountInput"></a>
 
 ```csharp
-public object AnyMountInput { get; }
+public bool|IResolvable AnyMountInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3181,40 +3181,40 @@ public string VaultNameInput { get; }
 ##### `AllowGenerateKey`<sup>Required</sup> <a name="AllowGenerateKey" id="@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.allowGenerateKey"></a>
 
 ```csharp
-public object AllowGenerateKey { get; }
+public bool|IResolvable AllowGenerateKey { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowReplaceKey`<sup>Required</sup> <a name="AllowReplaceKey" id="@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.allowReplaceKey"></a>
 
 ```csharp
-public object AllowReplaceKey { get; }
+public bool|IResolvable AllowReplaceKey { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowStoreKey`<sup>Required</sup> <a name="AllowStoreKey" id="@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.allowStoreKey"></a>
 
 ```csharp
-public object AllowStoreKey { get; }
+public bool|IResolvable AllowStoreKey { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AnyMount`<sup>Required</sup> <a name="AnyMount" id="@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.anyMount"></a>
 
 ```csharp
-public object AnyMount { get; }
+public bool|IResolvable AnyMount { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3321,10 +3321,10 @@ public string VaultName { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ManagedKeysAzure InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a>
 
 ---
 
@@ -3450,7 +3450,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a>[]</code> | *No description.* |
 
 ---
 
@@ -3481,10 +3481,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.managedKeys.ManagedKeysPkcsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ManagedKeysPkcs[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a>[]
 
 ---
 
@@ -3781,10 +3781,10 @@ private void ResetTokenLabel()
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.uuid">Uuid</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.allowGenerateKeyInput">AllowGenerateKeyInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.allowReplaceKeyInput">AllowReplaceKeyInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.allowStoreKeyInput">AllowStoreKeyInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.anyMountInput">AnyMountInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.allowGenerateKeyInput">AllowGenerateKeyInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.allowReplaceKeyInput">AllowReplaceKeyInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.allowStoreKeyInput">AllowStoreKeyInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.anyMountInput">AnyMountInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.curveInput">CurveInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.forceRwSessionInput">ForceRwSessionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.keyBitsInput">KeyBitsInput</a></code> | <code>string</code> | *No description.* |
@@ -3796,10 +3796,10 @@ private void ResetTokenLabel()
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.pinInput">PinInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.slotInput">SlotInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.tokenLabelInput">TokenLabelInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.allowGenerateKey">AllowGenerateKey</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.allowReplaceKey">AllowReplaceKey</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.allowStoreKey">AllowStoreKey</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.anyMount">AnyMount</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.allowGenerateKey">AllowGenerateKey</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.allowReplaceKey">AllowReplaceKey</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.allowStoreKey">AllowStoreKey</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.anyMount">AnyMount</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.curve">Curve</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.forceRwSession">ForceRwSession</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.keyBits">KeyBits</a></code> | <code>string</code> | *No description.* |
@@ -3811,7 +3811,7 @@ private void ResetTokenLabel()
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.pin">Pin</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.slot">Slot</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.tokenLabel">TokenLabel</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a></code> | *No description.* |
 
 ---
 
@@ -3852,40 +3852,40 @@ public string Uuid { get; }
 ##### `AllowGenerateKeyInput`<sup>Optional</sup> <a name="AllowGenerateKeyInput" id="@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.allowGenerateKeyInput"></a>
 
 ```csharp
-public object AllowGenerateKeyInput { get; }
+public bool|IResolvable AllowGenerateKeyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowReplaceKeyInput`<sup>Optional</sup> <a name="AllowReplaceKeyInput" id="@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.allowReplaceKeyInput"></a>
 
 ```csharp
-public object AllowReplaceKeyInput { get; }
+public bool|IResolvable AllowReplaceKeyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowStoreKeyInput`<sup>Optional</sup> <a name="AllowStoreKeyInput" id="@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.allowStoreKeyInput"></a>
 
 ```csharp
-public object AllowStoreKeyInput { get; }
+public bool|IResolvable AllowStoreKeyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AnyMountInput`<sup>Optional</sup> <a name="AnyMountInput" id="@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.anyMountInput"></a>
 
 ```csharp
-public object AnyMountInput { get; }
+public bool|IResolvable AnyMountInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -4002,40 +4002,40 @@ public string TokenLabelInput { get; }
 ##### `AllowGenerateKey`<sup>Required</sup> <a name="AllowGenerateKey" id="@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.allowGenerateKey"></a>
 
 ```csharp
-public object AllowGenerateKey { get; }
+public bool|IResolvable AllowGenerateKey { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowReplaceKey`<sup>Required</sup> <a name="AllowReplaceKey" id="@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.allowReplaceKey"></a>
 
 ```csharp
-public object AllowReplaceKey { get; }
+public bool|IResolvable AllowReplaceKey { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowStoreKey`<sup>Required</sup> <a name="AllowStoreKey" id="@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.allowStoreKey"></a>
 
 ```csharp
-public object AllowStoreKey { get; }
+public bool|IResolvable AllowStoreKey { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AnyMount`<sup>Required</sup> <a name="AnyMount" id="@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.anyMount"></a>
 
 ```csharp
-public object AnyMount { get; }
+public bool|IResolvable AnyMount { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -4152,10 +4152,10 @@ public string TokenLabel { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ManagedKeysPkcs InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a>
 
 ---
 

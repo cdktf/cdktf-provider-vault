@@ -14,48 +14,48 @@ from cdktf_cdktf_provider_vault import ad_secret_backend
 adSecretBackend.AdSecretBackend(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   binddn: str,
   bindpass: str,
-  anonymous_group_search: typing.Union[bool, IResolvable] = None,
+  anonymous_group_search: bool | IResolvable = None,
   backend: str = None,
-  case_sensitive_names: typing.Union[bool, IResolvable] = None,
+  case_sensitive_names: bool | IResolvable = None,
   certificate: str = None,
   client_tls_cert: str = None,
   client_tls_key: str = None,
   default_lease_ttl_seconds: typing.Union[int, float] = None,
-  deny_null_bind: typing.Union[bool, IResolvable] = None,
+  deny_null_bind: bool | IResolvable = None,
   description: str = None,
-  disable_remount: typing.Union[bool, IResolvable] = None,
-  discoverdn: typing.Union[bool, IResolvable] = None,
+  disable_remount: bool | IResolvable = None,
+  discoverdn: bool | IResolvable = None,
   groupattr: str = None,
   groupdn: str = None,
   groupfilter: str = None,
   id: str = None,
-  insecure_tls: typing.Union[bool, IResolvable] = None,
+  insecure_tls: bool | IResolvable = None,
   last_rotation_tolerance: typing.Union[int, float] = None,
-  local: typing.Union[bool, IResolvable] = None,
+  local: bool | IResolvable = None,
   max_lease_ttl_seconds: typing.Union[int, float] = None,
   max_ttl: typing.Union[int, float] = None,
   namespace: str = None,
   password_policy: str = None,
   request_timeout: typing.Union[int, float] = None,
-  starttls: typing.Union[bool, IResolvable] = None,
+  starttls: bool | IResolvable = None,
   tls_max_version: str = None,
   tls_min_version: str = None,
   ttl: typing.Union[int, float] = None,
   upndomain: str = None,
   url: str = None,
-  use_pre111_group_cn_behavior: typing.Union[bool, IResolvable] = None,
+  use_pre111_group_cn_behavior: bool | IResolvable = None,
   userattr: str = None,
   userdn: str = None,
-  use_token_groups: typing.Union[bool, IResolvable] = None
+  use_token_groups: bool | IResolvable = None
 )
 ```
 
@@ -63,48 +63,48 @@ adSecretBackend.AdSecretBackend(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.binddn">binddn</a></code> | <code>str</code> | Distinguished name of object to bind when performing user and group search. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.bindpass">bindpass</a></code> | <code>str</code> | LDAP password for searching for the user DN. |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.anonymousGroupSearch">anonymous_group_search</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Use anonymous binds when performing LDAP group searches (if true the initial credentials will still be used for the initial connection test). |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.anonymousGroupSearch">anonymous_group_search</a></code> | <code>bool \| cdktf.IResolvable</code> | Use anonymous binds when performing LDAP group searches (if true the initial credentials will still be used for the initial connection test). |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.backend">backend</a></code> | <code>str</code> | The mount path for a backend, for example, the path given in "$ vault auth enable -path=my-ad ad". |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.caseSensitiveNames">case_sensitive_names</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, case sensitivity will be used when comparing usernames and groups for matching policies. |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.caseSensitiveNames">case_sensitive_names</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, case sensitivity will be used when comparing usernames and groups for matching policies. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.certificate">certificate</a></code> | <code>str</code> | CA certificate to use when verifying LDAP server certificate, must be x509 PEM encoded. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.clientTlsCert">client_tls_cert</a></code> | <code>str</code> | Client certificate to provide to the LDAP server, must be x509 PEM encoded. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.clientTlsKey">client_tls_key</a></code> | <code>str</code> | Client certificate key to provide to the LDAP server, must be x509 PEM encoded. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.defaultLeaseTtlSeconds">default_lease_ttl_seconds</a></code> | <code>typing.Union[int, float]</code> | Default lease duration for secrets in seconds. |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.denyNullBind">deny_null_bind</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Denies an unauthenticated LDAP bind request if the user's password is empty; defaults to true. |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.denyNullBind">deny_null_bind</a></code> | <code>bool \| cdktf.IResolvable</code> | Denies an unauthenticated LDAP bind request if the user's password is empty; defaults to true. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.description">description</a></code> | <code>str</code> | Human-friendly description of the mount for the backend. |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.disableRemount">disable_remount</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set, opts out of mount migration on path updates. |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.discoverdn">discoverdn</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Use anonymous bind to discover the bind DN of a user. |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.disableRemount">disable_remount</a></code> | <code>bool \| cdktf.IResolvable</code> | If set, opts out of mount migration on path updates. |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.discoverdn">discoverdn</a></code> | <code>bool \| cdktf.IResolvable</code> | Use anonymous bind to discover the bind DN of a user. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.groupattr">groupattr</a></code> | <code>str</code> | LDAP attribute to follow on objects returned by <groupfilter> in order to enumerate user group membership. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.groupdn">groupdn</a></code> | <code>str</code> | LDAP search base to use for group membership search (eg: ou=Groups,dc=example,dc=org). |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.groupfilter">groupfilter</a></code> | <code>str</code> | Go template for querying group membership of user. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ad_secret_backend#id AdSecretBackend#id}. |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.insecureTls">insecure_tls</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Skip LDAP server SSL Certificate verification - insecure and not recommended for production use. |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.insecureTls">insecure_tls</a></code> | <code>bool \| cdktf.IResolvable</code> | Skip LDAP server SSL Certificate verification - insecure and not recommended for production use. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.lastRotationTolerance">last_rotation_tolerance</a></code> | <code>typing.Union[int, float]</code> | The number of seconds after a Vault rotation where, if Active Directory shows a later rotation, it should be considered out-of-band. |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.local">local</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Mark the secrets engine as local-only. |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.local">local</a></code> | <code>bool \| cdktf.IResolvable</code> | Mark the secrets engine as local-only. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.maxLeaseTtlSeconds">max_lease_ttl_seconds</a></code> | <code>typing.Union[int, float]</code> | Maximum possible lease duration for secrets in seconds. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.maxTtl">max_ttl</a></code> | <code>typing.Union[int, float]</code> | In seconds, the maximum password time-to-live. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.passwordPolicy">password_policy</a></code> | <code>str</code> | Name of the password policy to use to generate passwords. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.requestTimeout">request_timeout</a></code> | <code>typing.Union[int, float]</code> | Timeout, in seconds, for the connection when making requests against the server before returning back an error. |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.starttls">starttls</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Issue a StartTLS command after establishing unencrypted connection. |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.starttls">starttls</a></code> | <code>bool \| cdktf.IResolvable</code> | Issue a StartTLS command after establishing unencrypted connection. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.tlsMaxVersion">tls_max_version</a></code> | <code>str</code> | Maximum TLS version to use. Accepted values are 'tls10', 'tls11', 'tls12' or 'tls13'. Defaults to 'tls12'. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.tlsMinVersion">tls_min_version</a></code> | <code>str</code> | Minimum TLS version to use. Accepted values are 'tls10', 'tls11', 'tls12' or 'tls13'. Defaults to 'tls12'. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.ttl">ttl</a></code> | <code>typing.Union[int, float]</code> | In seconds, the default password time-to-live. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.upndomain">upndomain</a></code> | <code>str</code> | Enables userPrincipalDomain login with [username]@UPNDomain. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.url">url</a></code> | <code>str</code> | LDAP URL to connect to (default: ldap://127.0.0.1). Multiple URLs can be specified by concatenating them with commas; they will be tried in-order. |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.usePre111GroupCnBehavior">use_pre111_group_cn_behavior</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | In Vault 1.1.1 a fix for handling group CN values of different cases unfortunately introduced a regression that could cause previously defined groups to not be found due to a change in the resulting name. If set true, the pre-1.1.1 behavior for matching group CNs will be used. This is only needed in some upgrade scenarios for backwards compatibility. It is enabled by default if the config is upgraded but disabled by default on new configurations. |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.usePre111GroupCnBehavior">use_pre111_group_cn_behavior</a></code> | <code>bool \| cdktf.IResolvable</code> | In Vault 1.1.1 a fix for handling group CN values of different cases unfortunately introduced a regression that could cause previously defined groups to not be found due to a change in the resulting name. If set true, the pre-1.1.1 behavior for matching group CNs will be used. This is only needed in some upgrade scenarios for backwards compatibility. It is enabled by default if the config is upgraded but disabled by default on new configurations. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.userattr">userattr</a></code> | <code>str</code> | Attribute used for users (default: cn). |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.userdn">userdn</a></code> | <code>str</code> | LDAP domain to use for users (eg: ou=People,dc=example,dc=org). |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.useTokenGroups">use_token_groups</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, use the Active Directory tokenGroups constructed attribute of the user to find the group memberships. |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.useTokenGroups">use_token_groups</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, use the Active Directory tokenGroups constructed attribute of the user to find the group memberships. |
 
 ---
 
@@ -128,13 +128,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -164,7 +164,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -190,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `anonymous_group_search`<sup>Optional</sup> <a name="anonymous_group_search" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.anonymousGroupSearch"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Use anonymous binds when performing LDAP group searches (if true the initial credentials will still be used for the initial connection test).
 
@@ -210,7 +210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `case_sensitive_names`<sup>Optional</sup> <a name="case_sensitive_names" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.caseSensitiveNames"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If true, case sensitivity will be used when comparing usernames and groups for matching policies.
 
@@ -260,7 +260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `deny_null_bind`<sup>Optional</sup> <a name="deny_null_bind" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.denyNullBind"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Denies an unauthenticated LDAP bind request if the user's password is empty; defaults to true.
 
@@ -280,7 +280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `disable_remount`<sup>Optional</sup> <a name="disable_remount" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.disableRemount"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If set, opts out of mount migration on path updates.
 
@@ -290,7 +290,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `discoverdn`<sup>Optional</sup> <a name="discoverdn" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.discoverdn"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Use anonymous bind to discover the bind DN of a user.
 
@@ -345,7 +345,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `insecure_tls`<sup>Optional</sup> <a name="insecure_tls" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.insecureTls"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Skip LDAP server SSL Certificate verification - insecure and not recommended for production use.
 
@@ -365,7 +365,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `local`<sup>Optional</sup> <a name="local" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.local"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Mark the secrets engine as local-only.
 
@@ -427,7 +427,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `starttls`<sup>Optional</sup> <a name="starttls" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.starttls"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Issue a StartTLS command after establishing unencrypted connection.
 
@@ -487,7 +487,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `use_pre111_group_cn_behavior`<sup>Optional</sup> <a name="use_pre111_group_cn_behavior" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.usePre111GroupCnBehavior"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 In Vault 1.1.1 a fix for handling group CN values of different cases unfortunately introduced a regression that could cause previously defined groups to not be found due to a change in the resulting name. If set true, the pre-1.1.1 behavior for matching group CNs will be used. This is only needed in some upgrade scenarios for backwards compatibility. It is enabled by default if the config is upgraded but disabled by default on new configurations.
 
@@ -517,7 +517,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `use_token_groups`<sup>Optional</sup> <a name="use_token_groups" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.Initializer.parameter.useTokenGroups"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If true, use the Active Directory tokenGroups constructed attribute of the user to find the group memberships.
 
@@ -812,7 +812,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.importFrom"></a>
@@ -875,7 +875,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -891,7 +891,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -1250,83 +1250,83 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.anonymousGroupSearchInput">anonymous_group_search_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.anonymousGroupSearchInput">anonymous_group_search_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.backendInput">backend_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.binddnInput">binddn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.bindpassInput">bindpass_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.caseSensitiveNamesInput">case_sensitive_names_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.caseSensitiveNamesInput">case_sensitive_names_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.certificateInput">certificate_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.clientTlsCertInput">client_tls_cert_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.clientTlsKeyInput">client_tls_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.defaultLeaseTtlSecondsInput">default_lease_ttl_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.denyNullBindInput">deny_null_bind_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.denyNullBindInput">deny_null_bind_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.disableRemountInput">disable_remount_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.discoverdnInput">discoverdn_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.disableRemountInput">disable_remount_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.discoverdnInput">discoverdn_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.groupattrInput">groupattr_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.groupdnInput">groupdn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.groupfilterInput">groupfilter_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.insecureTlsInput">insecure_tls_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.insecureTlsInput">insecure_tls_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.lastRotationToleranceInput">last_rotation_tolerance_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.localInput">local_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.localInput">local_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.maxLeaseTtlSecondsInput">max_lease_ttl_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.maxTtlInput">max_ttl_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.namespaceInput">namespace_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.passwordPolicyInput">password_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.requestTimeoutInput">request_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.starttlsInput">starttls_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.starttlsInput">starttls_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.tlsMaxVersionInput">tls_max_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.tlsMinVersionInput">tls_min_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.ttlInput">ttl_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.upndomainInput">upndomain_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.urlInput">url_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.usePre111GroupCnBehaviorInput">use_pre111_group_cn_behavior_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.usePre111GroupCnBehaviorInput">use_pre111_group_cn_behavior_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.userattrInput">userattr_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.userdnInput">userdn_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.useTokenGroupsInput">use_token_groups_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.anonymousGroupSearch">anonymous_group_search</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.useTokenGroupsInput">use_token_groups_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.anonymousGroupSearch">anonymous_group_search</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.backend">backend</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.binddn">binddn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.bindpass">bindpass</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.caseSensitiveNames">case_sensitive_names</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.caseSensitiveNames">case_sensitive_names</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.certificate">certificate</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.clientTlsCert">client_tls_cert</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.clientTlsKey">client_tls_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.defaultLeaseTtlSeconds">default_lease_ttl_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.denyNullBind">deny_null_bind</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.denyNullBind">deny_null_bind</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.disableRemount">disable_remount</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.discoverdn">discoverdn</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.disableRemount">disable_remount</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.discoverdn">discoverdn</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.groupattr">groupattr</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.groupdn">groupdn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.groupfilter">groupfilter</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.insecureTls">insecure_tls</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.insecureTls">insecure_tls</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.lastRotationTolerance">last_rotation_tolerance</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.local">local</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.local">local</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.maxLeaseTtlSeconds">max_lease_ttl_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.maxTtl">max_ttl</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.namespace">namespace</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.passwordPolicy">password_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.requestTimeout">request_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.starttls">starttls</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.starttls">starttls</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.tlsMaxVersion">tls_max_version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.tlsMinVersion">tls_min_version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.ttl">ttl</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.upndomain">upndomain</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.url">url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.usePre111GroupCnBehavior">use_pre111_group_cn_behavior</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.usePre111GroupCnBehavior">use_pre111_group_cn_behavior</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.userattr">userattr</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.userdn">userdn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.useTokenGroups">use_token_groups</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.useTokenGroups">use_token_groups</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -1405,20 +1405,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1465,20 +1465,20 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
 ##### `anonymous_group_search_input`<sup>Optional</sup> <a name="anonymous_group_search_input" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.anonymousGroupSearchInput"></a>
 
 ```python
-anonymous_group_search_input: typing.Union[bool, IResolvable]
+anonymous_group_search_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1515,10 +1515,10 @@ bindpass_input: str
 ##### `case_sensitive_names_input`<sup>Optional</sup> <a name="case_sensitive_names_input" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.caseSensitiveNamesInput"></a>
 
 ```python
-case_sensitive_names_input: typing.Union[bool, IResolvable]
+case_sensitive_names_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1565,10 +1565,10 @@ default_lease_ttl_seconds_input: typing.Union[int, float]
 ##### `deny_null_bind_input`<sup>Optional</sup> <a name="deny_null_bind_input" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.denyNullBindInput"></a>
 
 ```python
-deny_null_bind_input: typing.Union[bool, IResolvable]
+deny_null_bind_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1585,20 +1585,20 @@ description_input: str
 ##### `disable_remount_input`<sup>Optional</sup> <a name="disable_remount_input" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.disableRemountInput"></a>
 
 ```python
-disable_remount_input: typing.Union[bool, IResolvable]
+disable_remount_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `discoverdn_input`<sup>Optional</sup> <a name="discoverdn_input" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.discoverdnInput"></a>
 
 ```python
-discoverdn_input: typing.Union[bool, IResolvable]
+discoverdn_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1645,10 +1645,10 @@ id_input: str
 ##### `insecure_tls_input`<sup>Optional</sup> <a name="insecure_tls_input" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.insecureTlsInput"></a>
 
 ```python
-insecure_tls_input: typing.Union[bool, IResolvable]
+insecure_tls_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1665,10 +1665,10 @@ last_rotation_tolerance_input: typing.Union[int, float]
 ##### `local_input`<sup>Optional</sup> <a name="local_input" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.localInput"></a>
 
 ```python
-local_input: typing.Union[bool, IResolvable]
+local_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1725,10 +1725,10 @@ request_timeout_input: typing.Union[int, float]
 ##### `starttls_input`<sup>Optional</sup> <a name="starttls_input" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.starttlsInput"></a>
 
 ```python
-starttls_input: typing.Union[bool, IResolvable]
+starttls_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1785,10 +1785,10 @@ url_input: str
 ##### `use_pre111_group_cn_behavior_input`<sup>Optional</sup> <a name="use_pre111_group_cn_behavior_input" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.usePre111GroupCnBehaviorInput"></a>
 
 ```python
-use_pre111_group_cn_behavior_input: typing.Union[bool, IResolvable]
+use_pre111_group_cn_behavior_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1815,20 +1815,20 @@ userdn_input: str
 ##### `use_token_groups_input`<sup>Optional</sup> <a name="use_token_groups_input" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.useTokenGroupsInput"></a>
 
 ```python
-use_token_groups_input: typing.Union[bool, IResolvable]
+use_token_groups_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `anonymous_group_search`<sup>Required</sup> <a name="anonymous_group_search" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.anonymousGroupSearch"></a>
 
 ```python
-anonymous_group_search: typing.Union[bool, IResolvable]
+anonymous_group_search: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1865,10 +1865,10 @@ bindpass: str
 ##### `case_sensitive_names`<sup>Required</sup> <a name="case_sensitive_names" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.caseSensitiveNames"></a>
 
 ```python
-case_sensitive_names: typing.Union[bool, IResolvable]
+case_sensitive_names: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1915,10 +1915,10 @@ default_lease_ttl_seconds: typing.Union[int, float]
 ##### `deny_null_bind`<sup>Required</sup> <a name="deny_null_bind" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.denyNullBind"></a>
 
 ```python
-deny_null_bind: typing.Union[bool, IResolvable]
+deny_null_bind: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1935,20 +1935,20 @@ description: str
 ##### `disable_remount`<sup>Required</sup> <a name="disable_remount" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.disableRemount"></a>
 
 ```python
-disable_remount: typing.Union[bool, IResolvable]
+disable_remount: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `discoverdn`<sup>Required</sup> <a name="discoverdn" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.discoverdn"></a>
 
 ```python
-discoverdn: typing.Union[bool, IResolvable]
+discoverdn: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1995,10 +1995,10 @@ id: str
 ##### `insecure_tls`<sup>Required</sup> <a name="insecure_tls" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.insecureTls"></a>
 
 ```python
-insecure_tls: typing.Union[bool, IResolvable]
+insecure_tls: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2015,10 +2015,10 @@ last_rotation_tolerance: typing.Union[int, float]
 ##### `local`<sup>Required</sup> <a name="local" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.local"></a>
 
 ```python
-local: typing.Union[bool, IResolvable]
+local: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2075,10 +2075,10 @@ request_timeout: typing.Union[int, float]
 ##### `starttls`<sup>Required</sup> <a name="starttls" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.starttls"></a>
 
 ```python
-starttls: typing.Union[bool, IResolvable]
+starttls: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2135,10 +2135,10 @@ url: str
 ##### `use_pre111_group_cn_behavior`<sup>Required</sup> <a name="use_pre111_group_cn_behavior" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.usePre111GroupCnBehavior"></a>
 
 ```python
-use_pre111_group_cn_behavior: typing.Union[bool, IResolvable]
+use_pre111_group_cn_behavior: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2165,10 +2165,10 @@ userdn: str
 ##### `use_token_groups`<sup>Required</sup> <a name="use_token_groups" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackend.property.useTokenGroups"></a>
 
 ```python
-use_token_groups: typing.Union[bool, IResolvable]
+use_token_groups: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2200,48 +2200,48 @@ tfResourceType: str
 from cdktf_cdktf_provider_vault import ad_secret_backend
 
 adSecretBackend.AdSecretBackendConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   binddn: str,
   bindpass: str,
-  anonymous_group_search: typing.Union[bool, IResolvable] = None,
+  anonymous_group_search: bool | IResolvable = None,
   backend: str = None,
-  case_sensitive_names: typing.Union[bool, IResolvable] = None,
+  case_sensitive_names: bool | IResolvable = None,
   certificate: str = None,
   client_tls_cert: str = None,
   client_tls_key: str = None,
   default_lease_ttl_seconds: typing.Union[int, float] = None,
-  deny_null_bind: typing.Union[bool, IResolvable] = None,
+  deny_null_bind: bool | IResolvable = None,
   description: str = None,
-  disable_remount: typing.Union[bool, IResolvable] = None,
-  discoverdn: typing.Union[bool, IResolvable] = None,
+  disable_remount: bool | IResolvable = None,
+  discoverdn: bool | IResolvable = None,
   groupattr: str = None,
   groupdn: str = None,
   groupfilter: str = None,
   id: str = None,
-  insecure_tls: typing.Union[bool, IResolvable] = None,
+  insecure_tls: bool | IResolvable = None,
   last_rotation_tolerance: typing.Union[int, float] = None,
-  local: typing.Union[bool, IResolvable] = None,
+  local: bool | IResolvable = None,
   max_lease_ttl_seconds: typing.Union[int, float] = None,
   max_ttl: typing.Union[int, float] = None,
   namespace: str = None,
   password_policy: str = None,
   request_timeout: typing.Union[int, float] = None,
-  starttls: typing.Union[bool, IResolvable] = None,
+  starttls: bool | IResolvable = None,
   tls_max_version: str = None,
   tls_min_version: str = None,
   ttl: typing.Union[int, float] = None,
   upndomain: str = None,
   url: str = None,
-  use_pre111_group_cn_behavior: typing.Union[bool, IResolvable] = None,
+  use_pre111_group_cn_behavior: bool | IResolvable = None,
   userattr: str = None,
   userdn: str = None,
-  use_token_groups: typing.Union[bool, IResolvable] = None
+  use_token_groups: bool | IResolvable = None
 )
 ```
 
@@ -2249,68 +2249,68 @@ adSecretBackend.AdSecretBackendConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.binddn">binddn</a></code> | <code>str</code> | Distinguished name of object to bind when performing user and group search. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.bindpass">bindpass</a></code> | <code>str</code> | LDAP password for searching for the user DN. |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.anonymousGroupSearch">anonymous_group_search</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Use anonymous binds when performing LDAP group searches (if true the initial credentials will still be used for the initial connection test). |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.anonymousGroupSearch">anonymous_group_search</a></code> | <code>bool \| cdktf.IResolvable</code> | Use anonymous binds when performing LDAP group searches (if true the initial credentials will still be used for the initial connection test). |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.backend">backend</a></code> | <code>str</code> | The mount path for a backend, for example, the path given in "$ vault auth enable -path=my-ad ad". |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.caseSensitiveNames">case_sensitive_names</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, case sensitivity will be used when comparing usernames and groups for matching policies. |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.caseSensitiveNames">case_sensitive_names</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, case sensitivity will be used when comparing usernames and groups for matching policies. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.certificate">certificate</a></code> | <code>str</code> | CA certificate to use when verifying LDAP server certificate, must be x509 PEM encoded. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.clientTlsCert">client_tls_cert</a></code> | <code>str</code> | Client certificate to provide to the LDAP server, must be x509 PEM encoded. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.clientTlsKey">client_tls_key</a></code> | <code>str</code> | Client certificate key to provide to the LDAP server, must be x509 PEM encoded. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.defaultLeaseTtlSeconds">default_lease_ttl_seconds</a></code> | <code>typing.Union[int, float]</code> | Default lease duration for secrets in seconds. |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.denyNullBind">deny_null_bind</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Denies an unauthenticated LDAP bind request if the user's password is empty; defaults to true. |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.denyNullBind">deny_null_bind</a></code> | <code>bool \| cdktf.IResolvable</code> | Denies an unauthenticated LDAP bind request if the user's password is empty; defaults to true. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.description">description</a></code> | <code>str</code> | Human-friendly description of the mount for the backend. |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.disableRemount">disable_remount</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set, opts out of mount migration on path updates. |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.discoverdn">discoverdn</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Use anonymous bind to discover the bind DN of a user. |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.disableRemount">disable_remount</a></code> | <code>bool \| cdktf.IResolvable</code> | If set, opts out of mount migration on path updates. |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.discoverdn">discoverdn</a></code> | <code>bool \| cdktf.IResolvable</code> | Use anonymous bind to discover the bind DN of a user. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.groupattr">groupattr</a></code> | <code>str</code> | LDAP attribute to follow on objects returned by <groupfilter> in order to enumerate user group membership. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.groupdn">groupdn</a></code> | <code>str</code> | LDAP search base to use for group membership search (eg: ou=Groups,dc=example,dc=org). |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.groupfilter">groupfilter</a></code> | <code>str</code> | Go template for querying group membership of user. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ad_secret_backend#id AdSecretBackend#id}. |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.insecureTls">insecure_tls</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Skip LDAP server SSL Certificate verification - insecure and not recommended for production use. |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.insecureTls">insecure_tls</a></code> | <code>bool \| cdktf.IResolvable</code> | Skip LDAP server SSL Certificate verification - insecure and not recommended for production use. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.lastRotationTolerance">last_rotation_tolerance</a></code> | <code>typing.Union[int, float]</code> | The number of seconds after a Vault rotation where, if Active Directory shows a later rotation, it should be considered out-of-band. |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.local">local</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Mark the secrets engine as local-only. |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.local">local</a></code> | <code>bool \| cdktf.IResolvable</code> | Mark the secrets engine as local-only. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.maxLeaseTtlSeconds">max_lease_ttl_seconds</a></code> | <code>typing.Union[int, float]</code> | Maximum possible lease duration for secrets in seconds. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.maxTtl">max_ttl</a></code> | <code>typing.Union[int, float]</code> | In seconds, the maximum password time-to-live. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.passwordPolicy">password_policy</a></code> | <code>str</code> | Name of the password policy to use to generate passwords. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.requestTimeout">request_timeout</a></code> | <code>typing.Union[int, float]</code> | Timeout, in seconds, for the connection when making requests against the server before returning back an error. |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.starttls">starttls</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Issue a StartTLS command after establishing unencrypted connection. |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.starttls">starttls</a></code> | <code>bool \| cdktf.IResolvable</code> | Issue a StartTLS command after establishing unencrypted connection. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.tlsMaxVersion">tls_max_version</a></code> | <code>str</code> | Maximum TLS version to use. Accepted values are 'tls10', 'tls11', 'tls12' or 'tls13'. Defaults to 'tls12'. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.tlsMinVersion">tls_min_version</a></code> | <code>str</code> | Minimum TLS version to use. Accepted values are 'tls10', 'tls11', 'tls12' or 'tls13'. Defaults to 'tls12'. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.ttl">ttl</a></code> | <code>typing.Union[int, float]</code> | In seconds, the default password time-to-live. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.upndomain">upndomain</a></code> | <code>str</code> | Enables userPrincipalDomain login with [username]@UPNDomain. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.url">url</a></code> | <code>str</code> | LDAP URL to connect to (default: ldap://127.0.0.1). Multiple URLs can be specified by concatenating them with commas; they will be tried in-order. |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.usePre111GroupCnBehavior">use_pre111_group_cn_behavior</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | In Vault 1.1.1 a fix for handling group CN values of different cases unfortunately introduced a regression that could cause previously defined groups to not be found due to a change in the resulting name. If set true, the pre-1.1.1 behavior for matching group CNs will be used. This is only needed in some upgrade scenarios for backwards compatibility. It is enabled by default if the config is upgraded but disabled by default on new configurations. |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.usePre111GroupCnBehavior">use_pre111_group_cn_behavior</a></code> | <code>bool \| cdktf.IResolvable</code> | In Vault 1.1.1 a fix for handling group CN values of different cases unfortunately introduced a regression that could cause previously defined groups to not be found due to a change in the resulting name. If set true, the pre-1.1.1 behavior for matching group CNs will be used. This is only needed in some upgrade scenarios for backwards compatibility. It is enabled by default if the config is upgraded but disabled by default on new configurations. |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.userattr">userattr</a></code> | <code>str</code> | Attribute used for users (default: cn). |
 | <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.userdn">userdn</a></code> | <code>str</code> | LDAP domain to use for users (eg: ou=People,dc=example,dc=org). |
-| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.useTokenGroups">use_token_groups</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, use the Active Directory tokenGroups constructed attribute of the user to find the group memberships. |
+| <code><a href="#@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.useTokenGroups">use_token_groups</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, use the Active Directory tokenGroups constructed attribute of the user to find the group memberships. |
 
 ---
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -2357,10 +2357,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -2395,10 +2395,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `anonymous_group_search`<sup>Optional</sup> <a name="anonymous_group_search" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.anonymousGroupSearch"></a>
 
 ```python
-anonymous_group_search: typing.Union[bool, IResolvable]
+anonymous_group_search: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Use anonymous binds when performing LDAP group searches (if true the initial credentials will still be used for the initial connection test).
 
@@ -2423,10 +2423,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `case_sensitive_names`<sup>Optional</sup> <a name="case_sensitive_names" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.caseSensitiveNames"></a>
 
 ```python
-case_sensitive_names: typing.Union[bool, IResolvable]
+case_sensitive_names: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If true, case sensitivity will be used when comparing usernames and groups for matching policies.
 
@@ -2493,10 +2493,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `deny_null_bind`<sup>Optional</sup> <a name="deny_null_bind" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.denyNullBind"></a>
 
 ```python
-deny_null_bind: typing.Union[bool, IResolvable]
+deny_null_bind: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Denies an unauthenticated LDAP bind request if the user's password is empty; defaults to true.
 
@@ -2521,10 +2521,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `disable_remount`<sup>Optional</sup> <a name="disable_remount" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.disableRemount"></a>
 
 ```python
-disable_remount: typing.Union[bool, IResolvable]
+disable_remount: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If set, opts out of mount migration on path updates.
 
@@ -2535,10 +2535,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `discoverdn`<sup>Optional</sup> <a name="discoverdn" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.discoverdn"></a>
 
 ```python
-discoverdn: typing.Union[bool, IResolvable]
+discoverdn: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Use anonymous bind to discover the bind DN of a user.
 
@@ -2610,10 +2610,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `insecure_tls`<sup>Optional</sup> <a name="insecure_tls" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.insecureTls"></a>
 
 ```python
-insecure_tls: typing.Union[bool, IResolvable]
+insecure_tls: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Skip LDAP server SSL Certificate verification - insecure and not recommended for production use.
 
@@ -2638,10 +2638,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `local`<sup>Optional</sup> <a name="local" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.local"></a>
 
 ```python
-local: typing.Union[bool, IResolvable]
+local: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Mark the secrets engine as local-only.
 
@@ -2724,10 +2724,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `starttls`<sup>Optional</sup> <a name="starttls" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.starttls"></a>
 
 ```python
-starttls: typing.Union[bool, IResolvable]
+starttls: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Issue a StartTLS command after establishing unencrypted connection.
 
@@ -2808,10 +2808,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `use_pre111_group_cn_behavior`<sup>Optional</sup> <a name="use_pre111_group_cn_behavior" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.usePre111GroupCnBehavior"></a>
 
 ```python
-use_pre111_group_cn_behavior: typing.Union[bool, IResolvable]
+use_pre111_group_cn_behavior: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 In Vault 1.1.1 a fix for handling group CN values of different cases unfortunately introduced a regression that could cause previously defined groups to not be found due to a change in the resulting name. If set true, the pre-1.1.1 behavior for matching group CNs will be used. This is only needed in some upgrade scenarios for backwards compatibility. It is enabled by default if the config is upgraded but disabled by default on new configurations.
 
@@ -2850,10 +2850,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `use_token_groups`<sup>Optional</sup> <a name="use_token_groups" id="@cdktf/provider-vault.adSecretBackend.AdSecretBackendConfig.property.useTokenGroups"></a>
 
 ```python
-use_token_groups: typing.Union[bool, IResolvable]
+use_token_groups: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If true, use the Active Directory tokenGroups constructed attribute of the user to find the group memberships.
 
