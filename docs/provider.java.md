@@ -15,48 +15,30 @@ VaultProvider.Builder.create(Construct scope, java.lang.String id)
 //  .addAddressToEnv(java.lang.String)
 //  .address(java.lang.String)
 //  .alias(java.lang.String)
-//  .authLogin(IResolvable)
-//  .authLogin(java.util.List<VaultProviderAuthLogin>)
-//  .authLoginAws(IResolvable)
-//  .authLoginAws(java.util.List<VaultProviderAuthLoginAws>)
-//  .authLoginAzure(IResolvable)
-//  .authLoginAzure(java.util.List<VaultProviderAuthLoginAzure>)
-//  .authLoginCert(IResolvable)
-//  .authLoginCert(java.util.List<VaultProviderAuthLoginCert>)
-//  .authLoginGcp(IResolvable)
-//  .authLoginGcp(java.util.List<VaultProviderAuthLoginGcp>)
-//  .authLoginJwt(IResolvable)
-//  .authLoginJwt(java.util.List<VaultProviderAuthLoginJwt>)
-//  .authLoginKerberos(IResolvable)
-//  .authLoginKerberos(java.util.List<VaultProviderAuthLoginKerberos>)
-//  .authLoginOci(IResolvable)
-//  .authLoginOci(java.util.List<VaultProviderAuthLoginOci>)
-//  .authLoginOidc(IResolvable)
-//  .authLoginOidc(java.util.List<VaultProviderAuthLoginOidc>)
-//  .authLoginRadius(IResolvable)
-//  .authLoginRadius(java.util.List<VaultProviderAuthLoginRadius>)
-//  .authLoginTokenFile(IResolvable)
-//  .authLoginTokenFile(java.util.List<VaultProviderAuthLoginTokenFile>)
-//  .authLoginUserpass(IResolvable)
-//  .authLoginUserpass(java.util.List<VaultProviderAuthLoginUserpass>)
+//  .authLogin(IResolvable|java.util.List<VaultProviderAuthLogin>)
+//  .authLoginAws(IResolvable|java.util.List<VaultProviderAuthLoginAws>)
+//  .authLoginAzure(IResolvable|java.util.List<VaultProviderAuthLoginAzure>)
+//  .authLoginCert(IResolvable|java.util.List<VaultProviderAuthLoginCert>)
+//  .authLoginGcp(IResolvable|java.util.List<VaultProviderAuthLoginGcp>)
+//  .authLoginJwt(IResolvable|java.util.List<VaultProviderAuthLoginJwt>)
+//  .authLoginKerberos(IResolvable|java.util.List<VaultProviderAuthLoginKerberos>)
+//  .authLoginOci(IResolvable|java.util.List<VaultProviderAuthLoginOci>)
+//  .authLoginOidc(IResolvable|java.util.List<VaultProviderAuthLoginOidc>)
+//  .authLoginRadius(IResolvable|java.util.List<VaultProviderAuthLoginRadius>)
+//  .authLoginTokenFile(IResolvable|java.util.List<VaultProviderAuthLoginTokenFile>)
+//  .authLoginUserpass(IResolvable|java.util.List<VaultProviderAuthLoginUserpass>)
 //  .caCertDir(java.lang.String)
 //  .caCertFile(java.lang.String)
-//  .clientAuth(IResolvable)
-//  .clientAuth(java.util.List<VaultProviderClientAuth>)
-//  .headers(IResolvable)
-//  .headers(java.util.List<VaultProviderHeaders>)
+//  .clientAuth(IResolvable|java.util.List<VaultProviderClientAuth>)
+//  .headers(IResolvable|java.util.List<VaultProviderHeaders>)
 //  .maxLeaseTtlSeconds(java.lang.Number)
 //  .maxRetries(java.lang.Number)
 //  .maxRetriesCcc(java.lang.Number)
 //  .namespace(java.lang.String)
-//  .setNamespaceFromToken(java.lang.Boolean)
-//  .setNamespaceFromToken(IResolvable)
-//  .skipChildToken(java.lang.Boolean)
-//  .skipChildToken(IResolvable)
-//  .skipGetVaultVersion(java.lang.Boolean)
-//  .skipGetVaultVersion(IResolvable)
-//  .skipTlsVerify(java.lang.Boolean)
-//  .skipTlsVerify(IResolvable)
+//  .setNamespaceFromToken(java.lang.Boolean|IResolvable)
+//  .skipChildToken(java.lang.Boolean|IResolvable)
+//  .skipGetVaultVersion(java.lang.Boolean|IResolvable)
+//  .skipTlsVerify(java.lang.Boolean|IResolvable)
 //  .tlsServerName(java.lang.String)
 //  .token(java.lang.String)
 //  .tokenName(java.lang.String)
@@ -71,30 +53,30 @@ VaultProvider.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.addAddressToEnv">addAddressToEnv</a></code> | <code>java.lang.String</code> | If true, adds the value of the `address` argument to the Terraform process environment. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.address">address</a></code> | <code>java.lang.String</code> | URL of the root of the target Vault server. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLogin">authLogin</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a>></code> | auth_login block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginAws">authLoginAws</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a>></code> | auth_login_aws block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginAzure">authLoginAzure</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a>></code> | auth_login_azure block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginCert">authLoginCert</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a>></code> | auth_login_cert block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginGcp">authLoginGcp</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a>></code> | auth_login_gcp block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginJwt">authLoginJwt</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a>></code> | auth_login_jwt block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginKerberos">authLoginKerberos</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a>></code> | auth_login_kerberos block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginOci">authLoginOci</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a>></code> | auth_login_oci block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginOidc">authLoginOidc</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a>></code> | auth_login_oidc block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginRadius">authLoginRadius</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>></code> | auth_login_radius block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginTokenFile">authLoginTokenFile</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>></code> | auth_login_token_file block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginUserpass">authLoginUserpass</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a>></code> | auth_login_userpass block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLogin">authLogin</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a>></code> | auth_login block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginAws">authLoginAws</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a>></code> | auth_login_aws block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginAzure">authLoginAzure</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a>></code> | auth_login_azure block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginCert">authLoginCert</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a>></code> | auth_login_cert block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginGcp">authLoginGcp</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a>></code> | auth_login_gcp block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginJwt">authLoginJwt</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a>></code> | auth_login_jwt block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginKerberos">authLoginKerberos</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a>></code> | auth_login_kerberos block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginOci">authLoginOci</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a>></code> | auth_login_oci block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginOidc">authLoginOidc</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a>></code> | auth_login_oidc block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginRadius">authLoginRadius</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>></code> | auth_login_radius block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginTokenFile">authLoginTokenFile</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>></code> | auth_login_token_file block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginUserpass">authLoginUserpass</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a>></code> | auth_login_userpass block. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.caCertDir">caCertDir</a></code> | <code>java.lang.String</code> | Path to directory containing CA certificate files to validate the server's certificate. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.caCertFile">caCertFile</a></code> | <code>java.lang.String</code> | Path to a CA certificate file to validate the server's certificate. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.clientAuth">clientAuth</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a>></code> | client_auth block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.headers">headers</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderHeaders">VaultProviderHeaders</a>></code> | headers block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.clientAuth">clientAuth</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a>></code> | client_auth block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.headers">headers</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderHeaders">VaultProviderHeaders</a>></code> | headers block. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.maxLeaseTtlSeconds">maxLeaseTtlSeconds</a></code> | <code>java.lang.Number</code> | Maximum TTL for secret leases requested by this provider. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.maxRetries">maxRetries</a></code> | <code>java.lang.Number</code> | Maximum number of retries when a 5xx error code is encountered. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.maxRetriesCcc">maxRetriesCcc</a></code> | <code>java.lang.Number</code> | Maximum number of retries for Client Controlled Consistency related operations. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | The namespace to use. Available only for Vault Enterprise. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.setNamespaceFromToken">setNamespaceFromToken</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | In the case where the Vault token is for a specific namespace and the provider namespace is not configured, use the token namespace as the root namespace for all resources. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.skipChildToken">skipChildToken</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set this to true to prevent the creation of ephemeral child token used by this provider. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.skipGetVaultVersion">skipGetVaultVersion</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Skip the dynamic fetching of the Vault server version. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.skipTlsVerify">skipTlsVerify</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set this to true only if the target Vault server is an insecure development instance. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.setNamespaceFromToken">setNamespaceFromToken</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | In the case where the Vault token is for a specific namespace and the provider namespace is not configured, use the token namespace as the root namespace for all resources. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.skipChildToken">skipChildToken</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Set this to true to prevent the creation of ephemeral child token used by this provider. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.skipGetVaultVersion">skipGetVaultVersion</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Skip the dynamic fetching of the Vault server version. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.skipTlsVerify">skipTlsVerify</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Set this to true only if the target Vault server is an insecure development instance. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.tlsServerName">tlsServerName</a></code> | <code>java.lang.String</code> | Name to use as the SNI host when connecting via TLS. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.token">token</a></code> | <code>java.lang.String</code> | Token to use to authenticate to Vault. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.tokenName">tokenName</a></code> | <code>java.lang.String</code> | Token name to use for creating the Vault child token. |
@@ -152,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `authLogin`<sup>Optional</sup> <a name="authLogin" id="@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLogin"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a>>
 
 auth_login block.
 
@@ -162,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `authLoginAws`<sup>Optional</sup> <a name="authLoginAws" id="@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginAws"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a>>
 
 auth_login_aws block.
 
@@ -172,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `authLoginAzure`<sup>Optional</sup> <a name="authLoginAzure" id="@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginAzure"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a>>
 
 auth_login_azure block.
 
@@ -182,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `authLoginCert`<sup>Optional</sup> <a name="authLoginCert" id="@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginCert"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a>>
 
 auth_login_cert block.
 
@@ -192,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `authLoginGcp`<sup>Optional</sup> <a name="authLoginGcp" id="@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginGcp"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a>>
 
 auth_login_gcp block.
 
@@ -202,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `authLoginJwt`<sup>Optional</sup> <a name="authLoginJwt" id="@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginJwt"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a>>
 
 auth_login_jwt block.
 
@@ -212,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `authLoginKerberos`<sup>Optional</sup> <a name="authLoginKerberos" id="@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginKerberos"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a>>
 
 auth_login_kerberos block.
 
@@ -222,7 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `authLoginOci`<sup>Optional</sup> <a name="authLoginOci" id="@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginOci"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a>>
 
 auth_login_oci block.
 
@@ -232,7 +214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `authLoginOidc`<sup>Optional</sup> <a name="authLoginOidc" id="@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginOidc"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a>>
 
 auth_login_oidc block.
 
@@ -242,7 +224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `authLoginRadius`<sup>Optional</sup> <a name="authLoginRadius" id="@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginRadius"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>>
 
 auth_login_radius block.
 
@@ -252,7 +234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `authLoginTokenFile`<sup>Optional</sup> <a name="authLoginTokenFile" id="@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginTokenFile"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>>
 
 auth_login_token_file block.
 
@@ -262,7 +244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `authLoginUserpass`<sup>Optional</sup> <a name="authLoginUserpass" id="@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginUserpass"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a>>
 
 auth_login_userpass block.
 
@@ -292,7 +274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `clientAuth`<sup>Optional</sup> <a name="clientAuth" id="@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.clientAuth"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a>>
 
 client_auth block.
 
@@ -302,7 +284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `headers`<sup>Optional</sup> <a name="headers" id="@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.headers"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderHeaders">VaultProviderHeaders</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderHeaders">VaultProviderHeaders</a>>
 
 headers block.
 
@@ -352,7 +334,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `setNamespaceFromToken`<sup>Optional</sup> <a name="setNamespaceFromToken" id="@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.setNamespaceFromToken"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 In the case where the Vault token is for a specific namespace and the provider namespace is not configured, use the token namespace as the root namespace for all resources.
 
@@ -362,7 +344,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `skipChildToken`<sup>Optional</sup> <a name="skipChildToken" id="@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.skipChildToken"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Set this to true to prevent the creation of ephemeral child token used by this provider.
 
@@ -372,7 +354,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `skipGetVaultVersion`<sup>Optional</sup> <a name="skipGetVaultVersion" id="@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.skipGetVaultVersion"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Skip the dynamic fetching of the Vault server version.
 
@@ -382,7 +364,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `skipTlsVerify`<sup>Optional</sup> <a name="skipTlsVerify" id="@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.skipTlsVerify"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Set this to true only if the target Vault server is an insecure development instance.
 
@@ -862,60 +844,60 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.addAddressToEnvInput">addAddressToEnvInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.addressInput">addressInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.aliasInput">aliasInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginAwsInput">authLoginAwsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginAzureInput">authLoginAzureInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginCertInput">authLoginCertInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginGcpInput">authLoginGcpInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginInput">authLoginInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginJwtInput">authLoginJwtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginKerberosInput">authLoginKerberosInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginOciInput">authLoginOciInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginOidcInput">authLoginOidcInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginRadiusInput">authLoginRadiusInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginTokenFileInput">authLoginTokenFileInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginUserpassInput">authLoginUserpassInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginAwsInput">authLoginAwsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginAzureInput">authLoginAzureInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginCertInput">authLoginCertInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginGcpInput">authLoginGcpInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginInput">authLoginInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginJwtInput">authLoginJwtInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginKerberosInput">authLoginKerberosInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginOciInput">authLoginOciInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginOidcInput">authLoginOidcInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginRadiusInput">authLoginRadiusInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginTokenFileInput">authLoginTokenFileInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginUserpassInput">authLoginUserpassInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.caCertDirInput">caCertDirInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.caCertFileInput">caCertFileInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.clientAuthInput">clientAuthInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.headersInput">headersInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderHeaders">VaultProviderHeaders</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.clientAuthInput">clientAuthInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.headersInput">headersInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderHeaders">VaultProviderHeaders</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.maxLeaseTtlSecondsInput">maxLeaseTtlSecondsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.maxRetriesCccInput">maxRetriesCccInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.maxRetriesInput">maxRetriesInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.namespaceInput">namespaceInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.setNamespaceFromTokenInput">setNamespaceFromTokenInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.skipChildTokenInput">skipChildTokenInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.skipGetVaultVersionInput">skipGetVaultVersionInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.skipTlsVerifyInput">skipTlsVerifyInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.setNamespaceFromTokenInput">setNamespaceFromTokenInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.skipChildTokenInput">skipChildTokenInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.skipGetVaultVersionInput">skipGetVaultVersionInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.skipTlsVerifyInput">skipTlsVerifyInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.tlsServerNameInput">tlsServerNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.tokenInput">tokenInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.tokenNameInput">tokenNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.vaultVersionOverrideInput">vaultVersionOverrideInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.addAddressToEnv">addAddressToEnv</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.address">address</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLogin">authLogin</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginAws">authLoginAws</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginAzure">authLoginAzure</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginCert">authLoginCert</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginGcp">authLoginGcp</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginJwt">authLoginJwt</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginKerberos">authLoginKerberos</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginOci">authLoginOci</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginOidc">authLoginOidc</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginRadius">authLoginRadius</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginTokenFile">authLoginTokenFile</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginUserpass">authLoginUserpass</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLogin">authLogin</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginAws">authLoginAws</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginAzure">authLoginAzure</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginCert">authLoginCert</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginGcp">authLoginGcp</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginJwt">authLoginJwt</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginKerberos">authLoginKerberos</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginOci">authLoginOci</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginOidc">authLoginOidc</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginRadius">authLoginRadius</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginTokenFile">authLoginTokenFile</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginUserpass">authLoginUserpass</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.caCertDir">caCertDir</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.caCertFile">caCertFile</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.clientAuth">clientAuth</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.headers">headers</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderHeaders">VaultProviderHeaders</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.clientAuth">clientAuth</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.headers">headers</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderHeaders">VaultProviderHeaders</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.maxLeaseTtlSeconds">maxLeaseTtlSeconds</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.maxRetries">maxRetries</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.maxRetriesCcc">maxRetriesCcc</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.namespace">namespace</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.setNamespaceFromToken">setNamespaceFromToken</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.skipChildToken">skipChildToken</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.skipGetVaultVersion">skipGetVaultVersion</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.skipTlsVerify">skipTlsVerify</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.setNamespaceFromToken">setNamespaceFromToken</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.skipChildToken">skipChildToken</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.skipGetVaultVersion">skipGetVaultVersion</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.skipTlsVerify">skipTlsVerify</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.tlsServerName">tlsServerName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.token">token</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.tokenName">tokenName</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1048,120 +1030,120 @@ public java.lang.String getAliasInput();
 ##### `authLoginAwsInput`<sup>Optional</sup> <a name="authLoginAwsInput" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginAwsInput"></a>
 
 ```java
-public java.lang.Object getAuthLoginAwsInput();
+public IResolvable|java.util.List<VaultProviderAuthLoginAws> getAuthLoginAwsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a>>
 
 ---
 
 ##### `authLoginAzureInput`<sup>Optional</sup> <a name="authLoginAzureInput" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginAzureInput"></a>
 
 ```java
-public java.lang.Object getAuthLoginAzureInput();
+public IResolvable|java.util.List<VaultProviderAuthLoginAzure> getAuthLoginAzureInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a>>
 
 ---
 
 ##### `authLoginCertInput`<sup>Optional</sup> <a name="authLoginCertInput" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginCertInput"></a>
 
 ```java
-public java.lang.Object getAuthLoginCertInput();
+public IResolvable|java.util.List<VaultProviderAuthLoginCert> getAuthLoginCertInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a>>
 
 ---
 
 ##### `authLoginGcpInput`<sup>Optional</sup> <a name="authLoginGcpInput" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginGcpInput"></a>
 
 ```java
-public java.lang.Object getAuthLoginGcpInput();
+public IResolvable|java.util.List<VaultProviderAuthLoginGcp> getAuthLoginGcpInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a>>
 
 ---
 
 ##### `authLoginInput`<sup>Optional</sup> <a name="authLoginInput" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginInput"></a>
 
 ```java
-public java.lang.Object getAuthLoginInput();
+public IResolvable|java.util.List<VaultProviderAuthLogin> getAuthLoginInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a>>
 
 ---
 
 ##### `authLoginJwtInput`<sup>Optional</sup> <a name="authLoginJwtInput" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginJwtInput"></a>
 
 ```java
-public java.lang.Object getAuthLoginJwtInput();
+public IResolvable|java.util.List<VaultProviderAuthLoginJwt> getAuthLoginJwtInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a>>
 
 ---
 
 ##### `authLoginKerberosInput`<sup>Optional</sup> <a name="authLoginKerberosInput" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginKerberosInput"></a>
 
 ```java
-public java.lang.Object getAuthLoginKerberosInput();
+public IResolvable|java.util.List<VaultProviderAuthLoginKerberos> getAuthLoginKerberosInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a>>
 
 ---
 
 ##### `authLoginOciInput`<sup>Optional</sup> <a name="authLoginOciInput" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginOciInput"></a>
 
 ```java
-public java.lang.Object getAuthLoginOciInput();
+public IResolvable|java.util.List<VaultProviderAuthLoginOci> getAuthLoginOciInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a>>
 
 ---
 
 ##### `authLoginOidcInput`<sup>Optional</sup> <a name="authLoginOidcInput" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginOidcInput"></a>
 
 ```java
-public java.lang.Object getAuthLoginOidcInput();
+public IResolvable|java.util.List<VaultProviderAuthLoginOidc> getAuthLoginOidcInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a>>
 
 ---
 
 ##### `authLoginRadiusInput`<sup>Optional</sup> <a name="authLoginRadiusInput" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginRadiusInput"></a>
 
 ```java
-public java.lang.Object getAuthLoginRadiusInput();
+public IResolvable|java.util.List<VaultProviderAuthLoginRadius> getAuthLoginRadiusInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>>
 
 ---
 
 ##### `authLoginTokenFileInput`<sup>Optional</sup> <a name="authLoginTokenFileInput" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginTokenFileInput"></a>
 
 ```java
-public java.lang.Object getAuthLoginTokenFileInput();
+public IResolvable|java.util.List<VaultProviderAuthLoginTokenFile> getAuthLoginTokenFileInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>>
 
 ---
 
 ##### `authLoginUserpassInput`<sup>Optional</sup> <a name="authLoginUserpassInput" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginUserpassInput"></a>
 
 ```java
-public java.lang.Object getAuthLoginUserpassInput();
+public IResolvable|java.util.List<VaultProviderAuthLoginUserpass> getAuthLoginUserpassInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a>>
 
 ---
 
@@ -1188,20 +1170,20 @@ public java.lang.String getCaCertFileInput();
 ##### `clientAuthInput`<sup>Optional</sup> <a name="clientAuthInput" id="@cdktf/provider-vault.provider.VaultProvider.property.clientAuthInput"></a>
 
 ```java
-public java.lang.Object getClientAuthInput();
+public IResolvable|java.util.List<VaultProviderClientAuth> getClientAuthInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a>>
 
 ---
 
 ##### `headersInput`<sup>Optional</sup> <a name="headersInput" id="@cdktf/provider-vault.provider.VaultProvider.property.headersInput"></a>
 
 ```java
-public java.lang.Object getHeadersInput();
+public IResolvable|java.util.List<VaultProviderHeaders> getHeadersInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderHeaders">VaultProviderHeaders</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderHeaders">VaultProviderHeaders</a>>
 
 ---
 
@@ -1248,40 +1230,40 @@ public java.lang.String getNamespaceInput();
 ##### `setNamespaceFromTokenInput`<sup>Optional</sup> <a name="setNamespaceFromTokenInput" id="@cdktf/provider-vault.provider.VaultProvider.property.setNamespaceFromTokenInput"></a>
 
 ```java
-public java.lang.Object getSetNamespaceFromTokenInput();
+public java.lang.Boolean|IResolvable getSetNamespaceFromTokenInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `skipChildTokenInput`<sup>Optional</sup> <a name="skipChildTokenInput" id="@cdktf/provider-vault.provider.VaultProvider.property.skipChildTokenInput"></a>
 
 ```java
-public java.lang.Object getSkipChildTokenInput();
+public java.lang.Boolean|IResolvable getSkipChildTokenInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `skipGetVaultVersionInput`<sup>Optional</sup> <a name="skipGetVaultVersionInput" id="@cdktf/provider-vault.provider.VaultProvider.property.skipGetVaultVersionInput"></a>
 
 ```java
-public java.lang.Object getSkipGetVaultVersionInput();
+public java.lang.Boolean|IResolvable getSkipGetVaultVersionInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `skipTlsVerifyInput`<sup>Optional</sup> <a name="skipTlsVerifyInput" id="@cdktf/provider-vault.provider.VaultProvider.property.skipTlsVerifyInput"></a>
 
 ```java
-public java.lang.Object getSkipTlsVerifyInput();
+public java.lang.Boolean|IResolvable getSkipTlsVerifyInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1348,120 +1330,120 @@ public java.lang.String getAddress();
 ##### `authLogin`<sup>Optional</sup> <a name="authLogin" id="@cdktf/provider-vault.provider.VaultProvider.property.authLogin"></a>
 
 ```java
-public java.lang.Object getAuthLogin();
+public IResolvable|java.util.List<VaultProviderAuthLogin> getAuthLogin();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a>>
 
 ---
 
 ##### `authLoginAws`<sup>Optional</sup> <a name="authLoginAws" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginAws"></a>
 
 ```java
-public java.lang.Object getAuthLoginAws();
+public IResolvable|java.util.List<VaultProviderAuthLoginAws> getAuthLoginAws();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a>>
 
 ---
 
 ##### `authLoginAzure`<sup>Optional</sup> <a name="authLoginAzure" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginAzure"></a>
 
 ```java
-public java.lang.Object getAuthLoginAzure();
+public IResolvable|java.util.List<VaultProviderAuthLoginAzure> getAuthLoginAzure();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a>>
 
 ---
 
 ##### `authLoginCert`<sup>Optional</sup> <a name="authLoginCert" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginCert"></a>
 
 ```java
-public java.lang.Object getAuthLoginCert();
+public IResolvable|java.util.List<VaultProviderAuthLoginCert> getAuthLoginCert();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a>>
 
 ---
 
 ##### `authLoginGcp`<sup>Optional</sup> <a name="authLoginGcp" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginGcp"></a>
 
 ```java
-public java.lang.Object getAuthLoginGcp();
+public IResolvable|java.util.List<VaultProviderAuthLoginGcp> getAuthLoginGcp();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a>>
 
 ---
 
 ##### `authLoginJwt`<sup>Optional</sup> <a name="authLoginJwt" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginJwt"></a>
 
 ```java
-public java.lang.Object getAuthLoginJwt();
+public IResolvable|java.util.List<VaultProviderAuthLoginJwt> getAuthLoginJwt();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a>>
 
 ---
 
 ##### `authLoginKerberos`<sup>Optional</sup> <a name="authLoginKerberos" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginKerberos"></a>
 
 ```java
-public java.lang.Object getAuthLoginKerberos();
+public IResolvable|java.util.List<VaultProviderAuthLoginKerberos> getAuthLoginKerberos();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a>>
 
 ---
 
 ##### `authLoginOci`<sup>Optional</sup> <a name="authLoginOci" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginOci"></a>
 
 ```java
-public java.lang.Object getAuthLoginOci();
+public IResolvable|java.util.List<VaultProviderAuthLoginOci> getAuthLoginOci();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a>>
 
 ---
 
 ##### `authLoginOidc`<sup>Optional</sup> <a name="authLoginOidc" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginOidc"></a>
 
 ```java
-public java.lang.Object getAuthLoginOidc();
+public IResolvable|java.util.List<VaultProviderAuthLoginOidc> getAuthLoginOidc();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a>>
 
 ---
 
 ##### `authLoginRadius`<sup>Optional</sup> <a name="authLoginRadius" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginRadius"></a>
 
 ```java
-public java.lang.Object getAuthLoginRadius();
+public IResolvable|java.util.List<VaultProviderAuthLoginRadius> getAuthLoginRadius();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>>
 
 ---
 
 ##### `authLoginTokenFile`<sup>Optional</sup> <a name="authLoginTokenFile" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginTokenFile"></a>
 
 ```java
-public java.lang.Object getAuthLoginTokenFile();
+public IResolvable|java.util.List<VaultProviderAuthLoginTokenFile> getAuthLoginTokenFile();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>>
 
 ---
 
 ##### `authLoginUserpass`<sup>Optional</sup> <a name="authLoginUserpass" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginUserpass"></a>
 
 ```java
-public java.lang.Object getAuthLoginUserpass();
+public IResolvable|java.util.List<VaultProviderAuthLoginUserpass> getAuthLoginUserpass();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a>>
 
 ---
 
@@ -1488,20 +1470,20 @@ public java.lang.String getCaCertFile();
 ##### `clientAuth`<sup>Optional</sup> <a name="clientAuth" id="@cdktf/provider-vault.provider.VaultProvider.property.clientAuth"></a>
 
 ```java
-public java.lang.Object getClientAuth();
+public IResolvable|java.util.List<VaultProviderClientAuth> getClientAuth();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a>>
 
 ---
 
 ##### `headers`<sup>Optional</sup> <a name="headers" id="@cdktf/provider-vault.provider.VaultProvider.property.headers"></a>
 
 ```java
-public java.lang.Object getHeaders();
+public IResolvable|java.util.List<VaultProviderHeaders> getHeaders();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderHeaders">VaultProviderHeaders</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderHeaders">VaultProviderHeaders</a>>
 
 ---
 
@@ -1548,40 +1530,40 @@ public java.lang.String getNamespace();
 ##### `setNamespaceFromToken`<sup>Optional</sup> <a name="setNamespaceFromToken" id="@cdktf/provider-vault.provider.VaultProvider.property.setNamespaceFromToken"></a>
 
 ```java
-public java.lang.Object getSetNamespaceFromToken();
+public java.lang.Boolean|IResolvable getSetNamespaceFromToken();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `skipChildToken`<sup>Optional</sup> <a name="skipChildToken" id="@cdktf/provider-vault.provider.VaultProvider.property.skipChildToken"></a>
 
 ```java
-public java.lang.Object getSkipChildToken();
+public java.lang.Boolean|IResolvable getSkipChildToken();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `skipGetVaultVersion`<sup>Optional</sup> <a name="skipGetVaultVersion" id="@cdktf/provider-vault.provider.VaultProvider.property.skipGetVaultVersion"></a>
 
 ```java
-public java.lang.Object getSkipGetVaultVersion();
+public java.lang.Boolean|IResolvable getSkipGetVaultVersion();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `skipTlsVerify`<sup>Optional</sup> <a name="skipTlsVerify" id="@cdktf/provider-vault.provider.VaultProvider.property.skipTlsVerify"></a>
 
 ```java
-public java.lang.Object getSkipTlsVerify();
+public java.lang.Boolean|IResolvable getSkipTlsVerify();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1657,8 +1639,7 @@ VaultProviderAuthLogin.builder()
 //  .method(java.lang.String)
 //  .namespace(java.lang.String)
 //  .parameters(java.util.Map<java.lang.String, java.lang.String>)
-//  .useRootNamespace(java.lang.Boolean)
-//  .useRootNamespace(IResolvable)
+//  .useRootNamespace(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -1670,7 +1651,7 @@ VaultProviderAuthLogin.builder()
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.method">method</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs#method VaultProvider#method}. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.namespace">namespace</a></code> | <code>java.lang.String</code> | The authentication engine's namespace. Conflicts with use_root_namespace. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.parameters">parameters</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs#parameters VaultProvider#parameters}. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.useRootNamespace">useRootNamespace</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.useRootNamespace">useRootNamespace</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
 
 ---
 
@@ -1727,10 +1708,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `useRootNamespace`<sup>Optional</sup> <a name="useRootNamespace" id="@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.useRootNamespace"></a>
 
 ```java
-public java.lang.Object getUseRootNamespace();
+public java.lang.Boolean|IResolvable getUseRootNamespace();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
@@ -1761,8 +1742,7 @@ VaultProviderAuthLoginAws.builder()
 //  .headerValue(java.lang.String)
 //  .mount(java.lang.String)
 //  .namespace(java.lang.String)
-//  .useRootNamespace(java.lang.Boolean)
-//  .useRootNamespace(IResolvable)
+//  .useRootNamespace(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -1785,7 +1765,7 @@ VaultProviderAuthLoginAws.builder()
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws.property.headerValue">headerValue</a></code> | <code>java.lang.String</code> | The Vault header value to include in the STS signing request. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws.property.mount">mount</a></code> | <code>java.lang.String</code> | The path where the authentication engine is mounted. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws.property.namespace">namespace</a></code> | <code>java.lang.String</code> | The authentication engine's namespace. Conflicts with use_root_namespace. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws.property.useRootNamespace">useRootNamespace</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws.property.useRootNamespace">useRootNamespace</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
 
 ---
 
@@ -2002,10 +1982,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `useRootNamespace`<sup>Optional</sup> <a name="useRootNamespace" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginAws.property.useRootNamespace"></a>
 
 ```java
-public java.lang.Object getUseRootNamespace();
+public java.lang.Boolean|IResolvable getUseRootNamespace();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
@@ -2030,8 +2010,7 @@ VaultProviderAuthLoginAzure.builder()
 //  .namespace(java.lang.String)
 //  .scope(java.lang.String)
 //  .tenantId(java.lang.String)
-//  .useRootNamespace(java.lang.Boolean)
-//  .useRootNamespace(IResolvable)
+//  .useRootNamespace(java.lang.Boolean|IResolvable)
 //  .vmName(java.lang.String)
 //  .vmssName(java.lang.String)
     .build();
@@ -2050,7 +2029,7 @@ VaultProviderAuthLoginAzure.builder()
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure.property.namespace">namespace</a></code> | <code>java.lang.String</code> | The authentication engine's namespace. Conflicts with use_root_namespace. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure.property.scope">scope</a></code> | <code>java.lang.String</code> | The scopes to include in the token request. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure.property.tenantId">tenantId</a></code> | <code>java.lang.String</code> | Provides the tenant ID to use in a multi-tenant authentication scenario. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure.property.useRootNamespace">useRootNamespace</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure.property.useRootNamespace">useRootNamespace</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure.property.vmName">vmName</a></code> | <code>java.lang.String</code> | The virtual machine name for the machine that generated the MSI token. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure.property.vmssName">vmssName</a></code> | <code>java.lang.String</code> | The virtual machine scale set name for the machine that generated the MSI token. |
 
@@ -2185,10 +2164,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `useRootNamespace`<sup>Optional</sup> <a name="useRootNamespace" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure.property.useRootNamespace"></a>
 
 ```java
-public java.lang.Object getUseRootNamespace();
+public java.lang.Boolean|IResolvable getUseRootNamespace();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
@@ -2241,8 +2220,7 @@ VaultProviderAuthLoginCert.builder()
 //  .mount(java.lang.String)
 //  .name(java.lang.String)
 //  .namespace(java.lang.String)
-//  .useRootNamespace(java.lang.Boolean)
-//  .useRootNamespace(IResolvable)
+//  .useRootNamespace(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -2255,7 +2233,7 @@ VaultProviderAuthLoginCert.builder()
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert.property.mount">mount</a></code> | <code>java.lang.String</code> | The path where the authentication engine is mounted. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert.property.name">name</a></code> | <code>java.lang.String</code> | Name of the certificate's role. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert.property.namespace">namespace</a></code> | <code>java.lang.String</code> | The authentication engine's namespace. Conflicts with use_root_namespace. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert.property.useRootNamespace">useRootNamespace</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert.property.useRootNamespace">useRootNamespace</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
 
 ---
 
@@ -2332,10 +2310,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `useRootNamespace`<sup>Optional</sup> <a name="useRootNamespace" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginCert.property.useRootNamespace"></a>
 
 ```java
-public java.lang.Object getUseRootNamespace();
+public java.lang.Boolean|IResolvable getUseRootNamespace();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
@@ -2357,8 +2335,7 @@ VaultProviderAuthLoginGcp.builder()
 //  .mount(java.lang.String)
 //  .namespace(java.lang.String)
 //  .serviceAccount(java.lang.String)
-//  .useRootNamespace(java.lang.Boolean)
-//  .useRootNamespace(IResolvable)
+//  .useRootNamespace(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -2372,7 +2349,7 @@ VaultProviderAuthLoginGcp.builder()
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp.property.mount">mount</a></code> | <code>java.lang.String</code> | The path where the authentication engine is mounted. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp.property.namespace">namespace</a></code> | <code>java.lang.String</code> | The authentication engine's namespace. Conflicts with use_root_namespace. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp.property.serviceAccount">serviceAccount</a></code> | <code>java.lang.String</code> | IAM service account. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp.property.useRootNamespace">useRootNamespace</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp.property.useRootNamespace">useRootNamespace</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
 
 ---
 
@@ -2463,10 +2440,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `useRootNamespace`<sup>Optional</sup> <a name="useRootNamespace" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp.property.useRootNamespace"></a>
 
 ```java
-public java.lang.Object getUseRootNamespace();
+public java.lang.Boolean|IResolvable getUseRootNamespace();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
@@ -2486,8 +2463,7 @@ VaultProviderAuthLoginJwt.builder()
 //  .jwt(java.lang.String)
 //  .mount(java.lang.String)
 //  .namespace(java.lang.String)
-//  .useRootNamespace(java.lang.Boolean)
-//  .useRootNamespace(IResolvable)
+//  .useRootNamespace(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -2499,7 +2475,7 @@ VaultProviderAuthLoginJwt.builder()
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt.property.jwt">jwt</a></code> | <code>java.lang.String</code> | A signed JSON Web Token. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt.property.mount">mount</a></code> | <code>java.lang.String</code> | The path where the authentication engine is mounted. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt.property.namespace">namespace</a></code> | <code>java.lang.String</code> | The authentication engine's namespace. Conflicts with use_root_namespace. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt.property.useRootNamespace">useRootNamespace</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt.property.useRootNamespace">useRootNamespace</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
 
 ---
 
@@ -2562,10 +2538,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `useRootNamespace`<sup>Optional</sup> <a name="useRootNamespace" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt.property.useRootNamespace"></a>
 
 ```java
-public java.lang.Object getUseRootNamespace();
+public java.lang.Boolean|IResolvable getUseRootNamespace();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
@@ -2581,20 +2557,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 import com.hashicorp.cdktf.providers.vault.provider.VaultProviderAuthLoginKerberos;
 
 VaultProviderAuthLoginKerberos.builder()
-//  .disableFastNegotiation(java.lang.Boolean)
-//  .disableFastNegotiation(IResolvable)
+//  .disableFastNegotiation(java.lang.Boolean|IResolvable)
 //  .keytabPath(java.lang.String)
 //  .krb5ConfPath(java.lang.String)
 //  .mount(java.lang.String)
 //  .namespace(java.lang.String)
 //  .realm(java.lang.String)
-//  .removeInstanceName(java.lang.Boolean)
-//  .removeInstanceName(IResolvable)
+//  .removeInstanceName(java.lang.Boolean|IResolvable)
 //  .service(java.lang.String)
 //  .token(java.lang.String)
 //  .username(java.lang.String)
-//  .useRootNamespace(java.lang.Boolean)
-//  .useRootNamespace(IResolvable)
+//  .useRootNamespace(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -2602,27 +2575,27 @@ VaultProviderAuthLoginKerberos.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.disableFastNegotiation">disableFastNegotiation</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Disable the Kerberos FAST negotiation. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.disableFastNegotiation">disableFastNegotiation</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Disable the Kerberos FAST negotiation. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.keytabPath">keytabPath</a></code> | <code>java.lang.String</code> | The Kerberos keytab file containing the entry of the login entity. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.krb5ConfPath">krb5ConfPath</a></code> | <code>java.lang.String</code> | A valid Kerberos configuration file e.g. /etc/krb5.conf. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.mount">mount</a></code> | <code>java.lang.String</code> | The path where the authentication engine is mounted. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.namespace">namespace</a></code> | <code>java.lang.String</code> | The authentication engine's namespace. Conflicts with use_root_namespace. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.realm">realm</a></code> | <code>java.lang.String</code> | The Kerberos server's authoritative authentication domain. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.removeInstanceName">removeInstanceName</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Strip the host from the username found in the keytab. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.removeInstanceName">removeInstanceName</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Strip the host from the username found in the keytab. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.service">service</a></code> | <code>java.lang.String</code> | The service principle name. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.token">token</a></code> | <code>java.lang.String</code> | Simple and Protected GSSAPI Negotiation Mechanism (SPNEGO) token. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.username">username</a></code> | <code>java.lang.String</code> | The username to login into Kerberos with. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.useRootNamespace">useRootNamespace</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.useRootNamespace">useRootNamespace</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
 
 ---
 
 ##### `disableFastNegotiation`<sup>Optional</sup> <a name="disableFastNegotiation" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.disableFastNegotiation"></a>
 
 ```java
-public java.lang.Object getDisableFastNegotiation();
+public java.lang.Boolean|IResolvable getDisableFastNegotiation();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Disable the Kerberos FAST negotiation.
 
@@ -2703,10 +2676,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `removeInstanceName`<sup>Optional</sup> <a name="removeInstanceName" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.removeInstanceName"></a>
 
 ```java
-public java.lang.Object getRemoveInstanceName();
+public java.lang.Boolean|IResolvable getRemoveInstanceName();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Strip the host from the username found in the keytab.
 
@@ -2759,10 +2732,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `useRootNamespace`<sup>Optional</sup> <a name="useRootNamespace" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.useRootNamespace"></a>
 
 ```java
-public java.lang.Object getUseRootNamespace();
+public java.lang.Boolean|IResolvable getUseRootNamespace();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
@@ -2782,8 +2755,7 @@ VaultProviderAuthLoginOci.builder()
     .role(java.lang.String)
 //  .mount(java.lang.String)
 //  .namespace(java.lang.String)
-//  .useRootNamespace(java.lang.Boolean)
-//  .useRootNamespace(IResolvable)
+//  .useRootNamespace(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -2795,7 +2767,7 @@ VaultProviderAuthLoginOci.builder()
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci.property.role">role</a></code> | <code>java.lang.String</code> | Name of the login role. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci.property.mount">mount</a></code> | <code>java.lang.String</code> | The path where the authentication engine is mounted. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci.property.namespace">namespace</a></code> | <code>java.lang.String</code> | The authentication engine's namespace. Conflicts with use_root_namespace. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci.property.useRootNamespace">useRootNamespace</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci.property.useRootNamespace">useRootNamespace</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
 
 ---
 
@@ -2858,10 +2830,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `useRootNamespace`<sup>Optional</sup> <a name="useRootNamespace" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginOci.property.useRootNamespace"></a>
 
 ```java
-public java.lang.Object getUseRootNamespace();
+public java.lang.Boolean|IResolvable getUseRootNamespace();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
@@ -2882,8 +2854,7 @@ VaultProviderAuthLoginOidc.builder()
 //  .callbackListenerAddress(java.lang.String)
 //  .mount(java.lang.String)
 //  .namespace(java.lang.String)
-//  .useRootNamespace(java.lang.Boolean)
-//  .useRootNamespace(IResolvable)
+//  .useRootNamespace(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -2896,7 +2867,7 @@ VaultProviderAuthLoginOidc.builder()
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc.property.callbackListenerAddress">callbackListenerAddress</a></code> | <code>java.lang.String</code> | The callback listener's address. Must be a valid URI without the path. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc.property.mount">mount</a></code> | <code>java.lang.String</code> | The path where the authentication engine is mounted. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc.property.namespace">namespace</a></code> | <code>java.lang.String</code> | The authentication engine's namespace. Conflicts with use_root_namespace. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc.property.useRootNamespace">useRootNamespace</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc.property.useRootNamespace">useRootNamespace</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
 
 ---
 
@@ -2973,10 +2944,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `useRootNamespace`<sup>Optional</sup> <a name="useRootNamespace" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc.property.useRootNamespace"></a>
 
 ```java
-public java.lang.Object getUseRootNamespace();
+public java.lang.Boolean|IResolvable getUseRootNamespace();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
@@ -2996,8 +2967,7 @@ VaultProviderAuthLoginRadius.builder()
 //  .namespace(java.lang.String)
 //  .password(java.lang.String)
 //  .username(java.lang.String)
-//  .useRootNamespace(java.lang.Boolean)
-//  .useRootNamespace(IResolvable)
+//  .useRootNamespace(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -3009,7 +2979,7 @@ VaultProviderAuthLoginRadius.builder()
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius.property.namespace">namespace</a></code> | <code>java.lang.String</code> | The authentication engine's namespace. Conflicts with use_root_namespace. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius.property.password">password</a></code> | <code>java.lang.String</code> | The Radius password for username. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius.property.username">username</a></code> | <code>java.lang.String</code> | The Radius username. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius.property.useRootNamespace">useRootNamespace</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius.property.useRootNamespace">useRootNamespace</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
 
 ---
 
@@ -3072,10 +3042,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `useRootNamespace`<sup>Optional</sup> <a name="useRootNamespace" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius.property.useRootNamespace"></a>
 
 ```java
-public java.lang.Object getUseRootNamespace();
+public java.lang.Boolean|IResolvable getUseRootNamespace();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
@@ -3093,8 +3063,7 @@ import com.hashicorp.cdktf.providers.vault.provider.VaultProviderAuthLoginTokenF
 VaultProviderAuthLoginTokenFile.builder()
 //  .filename(java.lang.String)
 //  .namespace(java.lang.String)
-//  .useRootNamespace(java.lang.Boolean)
-//  .useRootNamespace(IResolvable)
+//  .useRootNamespace(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -3104,7 +3073,7 @@ VaultProviderAuthLoginTokenFile.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile.property.filename">filename</a></code> | <code>java.lang.String</code> | The name of a file containing a single line that is a valid Vault token. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile.property.namespace">namespace</a></code> | <code>java.lang.String</code> | The authentication engine's namespace. Conflicts with use_root_namespace. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile.property.useRootNamespace">useRootNamespace</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile.property.useRootNamespace">useRootNamespace</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
 
 ---
 
@@ -3139,10 +3108,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `useRootNamespace`<sup>Optional</sup> <a name="useRootNamespace" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile.property.useRootNamespace"></a>
 
 ```java
-public java.lang.Object getUseRootNamespace();
+public java.lang.Boolean|IResolvable getUseRootNamespace();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
@@ -3163,8 +3132,7 @@ VaultProviderAuthLoginUserpass.builder()
 //  .password(java.lang.String)
 //  .passwordFile(java.lang.String)
 //  .username(java.lang.String)
-//  .useRootNamespace(java.lang.Boolean)
-//  .useRootNamespace(IResolvable)
+//  .useRootNamespace(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -3177,7 +3145,7 @@ VaultProviderAuthLoginUserpass.builder()
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass.property.password">password</a></code> | <code>java.lang.String</code> | Login with password. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass.property.passwordFile">passwordFile</a></code> | <code>java.lang.String</code> | Login with password from a file. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass.property.username">username</a></code> | <code>java.lang.String</code> | Login with username. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass.property.useRootNamespace">useRootNamespace</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass.property.useRootNamespace">useRootNamespace</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
 
 ---
 
@@ -3254,10 +3222,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `useRootNamespace`<sup>Optional</sup> <a name="useRootNamespace" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass.property.useRootNamespace"></a>
 
 ```java
-public java.lang.Object getUseRootNamespace();
+public java.lang.Boolean|IResolvable getUseRootNamespace();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
@@ -3326,48 +3294,30 @@ VaultProviderConfig.builder()
 //  .addAddressToEnv(java.lang.String)
 //  .address(java.lang.String)
 //  .alias(java.lang.String)
-//  .authLogin(IResolvable)
-//  .authLogin(java.util.List<VaultProviderAuthLogin>)
-//  .authLoginAws(IResolvable)
-//  .authLoginAws(java.util.List<VaultProviderAuthLoginAws>)
-//  .authLoginAzure(IResolvable)
-//  .authLoginAzure(java.util.List<VaultProviderAuthLoginAzure>)
-//  .authLoginCert(IResolvable)
-//  .authLoginCert(java.util.List<VaultProviderAuthLoginCert>)
-//  .authLoginGcp(IResolvable)
-//  .authLoginGcp(java.util.List<VaultProviderAuthLoginGcp>)
-//  .authLoginJwt(IResolvable)
-//  .authLoginJwt(java.util.List<VaultProviderAuthLoginJwt>)
-//  .authLoginKerberos(IResolvable)
-//  .authLoginKerberos(java.util.List<VaultProviderAuthLoginKerberos>)
-//  .authLoginOci(IResolvable)
-//  .authLoginOci(java.util.List<VaultProviderAuthLoginOci>)
-//  .authLoginOidc(IResolvable)
-//  .authLoginOidc(java.util.List<VaultProviderAuthLoginOidc>)
-//  .authLoginRadius(IResolvable)
-//  .authLoginRadius(java.util.List<VaultProviderAuthLoginRadius>)
-//  .authLoginTokenFile(IResolvable)
-//  .authLoginTokenFile(java.util.List<VaultProviderAuthLoginTokenFile>)
-//  .authLoginUserpass(IResolvable)
-//  .authLoginUserpass(java.util.List<VaultProviderAuthLoginUserpass>)
+//  .authLogin(IResolvable|java.util.List<VaultProviderAuthLogin>)
+//  .authLoginAws(IResolvable|java.util.List<VaultProviderAuthLoginAws>)
+//  .authLoginAzure(IResolvable|java.util.List<VaultProviderAuthLoginAzure>)
+//  .authLoginCert(IResolvable|java.util.List<VaultProviderAuthLoginCert>)
+//  .authLoginGcp(IResolvable|java.util.List<VaultProviderAuthLoginGcp>)
+//  .authLoginJwt(IResolvable|java.util.List<VaultProviderAuthLoginJwt>)
+//  .authLoginKerberos(IResolvable|java.util.List<VaultProviderAuthLoginKerberos>)
+//  .authLoginOci(IResolvable|java.util.List<VaultProviderAuthLoginOci>)
+//  .authLoginOidc(IResolvable|java.util.List<VaultProviderAuthLoginOidc>)
+//  .authLoginRadius(IResolvable|java.util.List<VaultProviderAuthLoginRadius>)
+//  .authLoginTokenFile(IResolvable|java.util.List<VaultProviderAuthLoginTokenFile>)
+//  .authLoginUserpass(IResolvable|java.util.List<VaultProviderAuthLoginUserpass>)
 //  .caCertDir(java.lang.String)
 //  .caCertFile(java.lang.String)
-//  .clientAuth(IResolvable)
-//  .clientAuth(java.util.List<VaultProviderClientAuth>)
-//  .headers(IResolvable)
-//  .headers(java.util.List<VaultProviderHeaders>)
+//  .clientAuth(IResolvable|java.util.List<VaultProviderClientAuth>)
+//  .headers(IResolvable|java.util.List<VaultProviderHeaders>)
 //  .maxLeaseTtlSeconds(java.lang.Number)
 //  .maxRetries(java.lang.Number)
 //  .maxRetriesCcc(java.lang.Number)
 //  .namespace(java.lang.String)
-//  .setNamespaceFromToken(java.lang.Boolean)
-//  .setNamespaceFromToken(IResolvable)
-//  .skipChildToken(java.lang.Boolean)
-//  .skipChildToken(IResolvable)
-//  .skipGetVaultVersion(java.lang.Boolean)
-//  .skipGetVaultVersion(IResolvable)
-//  .skipTlsVerify(java.lang.Boolean)
-//  .skipTlsVerify(IResolvable)
+//  .setNamespaceFromToken(java.lang.Boolean|IResolvable)
+//  .skipChildToken(java.lang.Boolean|IResolvable)
+//  .skipGetVaultVersion(java.lang.Boolean|IResolvable)
+//  .skipTlsVerify(java.lang.Boolean|IResolvable)
 //  .tlsServerName(java.lang.String)
 //  .token(java.lang.String)
 //  .tokenName(java.lang.String)
@@ -3382,30 +3332,30 @@ VaultProviderConfig.builder()
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.addAddressToEnv">addAddressToEnv</a></code> | <code>java.lang.String</code> | If true, adds the value of the `address` argument to the Terraform process environment. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.address">address</a></code> | <code>java.lang.String</code> | URL of the root of the target Vault server. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLogin">authLogin</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a>></code> | auth_login block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginAws">authLoginAws</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a>></code> | auth_login_aws block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginAzure">authLoginAzure</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a>></code> | auth_login_azure block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginCert">authLoginCert</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a>></code> | auth_login_cert block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginGcp">authLoginGcp</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a>></code> | auth_login_gcp block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginJwt">authLoginJwt</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a>></code> | auth_login_jwt block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginKerberos">authLoginKerberos</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a>></code> | auth_login_kerberos block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginOci">authLoginOci</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a>></code> | auth_login_oci block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginOidc">authLoginOidc</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a>></code> | auth_login_oidc block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginRadius">authLoginRadius</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>></code> | auth_login_radius block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginTokenFile">authLoginTokenFile</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>></code> | auth_login_token_file block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginUserpass">authLoginUserpass</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a>></code> | auth_login_userpass block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLogin">authLogin</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a>></code> | auth_login block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginAws">authLoginAws</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a>></code> | auth_login_aws block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginAzure">authLoginAzure</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a>></code> | auth_login_azure block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginCert">authLoginCert</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a>></code> | auth_login_cert block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginGcp">authLoginGcp</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a>></code> | auth_login_gcp block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginJwt">authLoginJwt</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a>></code> | auth_login_jwt block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginKerberos">authLoginKerberos</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a>></code> | auth_login_kerberos block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginOci">authLoginOci</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a>></code> | auth_login_oci block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginOidc">authLoginOidc</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a>></code> | auth_login_oidc block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginRadius">authLoginRadius</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>></code> | auth_login_radius block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginTokenFile">authLoginTokenFile</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>></code> | auth_login_token_file block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginUserpass">authLoginUserpass</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a>></code> | auth_login_userpass block. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.caCertDir">caCertDir</a></code> | <code>java.lang.String</code> | Path to directory containing CA certificate files to validate the server's certificate. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.caCertFile">caCertFile</a></code> | <code>java.lang.String</code> | Path to a CA certificate file to validate the server's certificate. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.clientAuth">clientAuth</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a>></code> | client_auth block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.headers">headers</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderHeaders">VaultProviderHeaders</a>></code> | headers block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.clientAuth">clientAuth</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a>></code> | client_auth block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.headers">headers</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderHeaders">VaultProviderHeaders</a>></code> | headers block. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.maxLeaseTtlSeconds">maxLeaseTtlSeconds</a></code> | <code>java.lang.Number</code> | Maximum TTL for secret leases requested by this provider. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.maxRetries">maxRetries</a></code> | <code>java.lang.Number</code> | Maximum number of retries when a 5xx error code is encountered. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.maxRetriesCcc">maxRetriesCcc</a></code> | <code>java.lang.Number</code> | Maximum number of retries for Client Controlled Consistency related operations. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | The namespace to use. Available only for Vault Enterprise. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.setNamespaceFromToken">setNamespaceFromToken</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | In the case where the Vault token is for a specific namespace and the provider namespace is not configured, use the token namespace as the root namespace for all resources. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.skipChildToken">skipChildToken</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set this to true to prevent the creation of ephemeral child token used by this provider. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.skipGetVaultVersion">skipGetVaultVersion</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Skip the dynamic fetching of the Vault server version. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.skipTlsVerify">skipTlsVerify</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set this to true only if the target Vault server is an insecure development instance. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.setNamespaceFromToken">setNamespaceFromToken</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | In the case where the Vault token is for a specific namespace and the provider namespace is not configured, use the token namespace as the root namespace for all resources. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.skipChildToken">skipChildToken</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Set this to true to prevent the creation of ephemeral child token used by this provider. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.skipGetVaultVersion">skipGetVaultVersion</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Skip the dynamic fetching of the Vault server version. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.skipTlsVerify">skipTlsVerify</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Set this to true only if the target Vault server is an insecure development instance. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.tlsServerName">tlsServerName</a></code> | <code>java.lang.String</code> | Name to use as the SNI host when connecting via TLS. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.token">token</a></code> | <code>java.lang.String</code> | Token to use to authenticate to Vault. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.tokenName">tokenName</a></code> | <code>java.lang.String</code> | Token name to use for creating the Vault child token. |
@@ -3458,10 +3408,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `authLogin`<sup>Optional</sup> <a name="authLogin" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLogin"></a>
 
 ```java
-public java.lang.Object getAuthLogin();
+public IResolvable|java.util.List<VaultProviderAuthLogin> getAuthLogin();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a>>
 
 auth_login block.
 
@@ -3472,10 +3422,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `authLoginAws`<sup>Optional</sup> <a name="authLoginAws" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginAws"></a>
 
 ```java
-public java.lang.Object getAuthLoginAws();
+public IResolvable|java.util.List<VaultProviderAuthLoginAws> getAuthLoginAws();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a>>
 
 auth_login_aws block.
 
@@ -3486,10 +3436,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `authLoginAzure`<sup>Optional</sup> <a name="authLoginAzure" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginAzure"></a>
 
 ```java
-public java.lang.Object getAuthLoginAzure();
+public IResolvable|java.util.List<VaultProviderAuthLoginAzure> getAuthLoginAzure();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a>>
 
 auth_login_azure block.
 
@@ -3500,10 +3450,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `authLoginCert`<sup>Optional</sup> <a name="authLoginCert" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginCert"></a>
 
 ```java
-public java.lang.Object getAuthLoginCert();
+public IResolvable|java.util.List<VaultProviderAuthLoginCert> getAuthLoginCert();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a>>
 
 auth_login_cert block.
 
@@ -3514,10 +3464,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `authLoginGcp`<sup>Optional</sup> <a name="authLoginGcp" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginGcp"></a>
 
 ```java
-public java.lang.Object getAuthLoginGcp();
+public IResolvable|java.util.List<VaultProviderAuthLoginGcp> getAuthLoginGcp();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a>>
 
 auth_login_gcp block.
 
@@ -3528,10 +3478,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `authLoginJwt`<sup>Optional</sup> <a name="authLoginJwt" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginJwt"></a>
 
 ```java
-public java.lang.Object getAuthLoginJwt();
+public IResolvable|java.util.List<VaultProviderAuthLoginJwt> getAuthLoginJwt();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a>>
 
 auth_login_jwt block.
 
@@ -3542,10 +3492,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `authLoginKerberos`<sup>Optional</sup> <a name="authLoginKerberos" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginKerberos"></a>
 
 ```java
-public java.lang.Object getAuthLoginKerberos();
+public IResolvable|java.util.List<VaultProviderAuthLoginKerberos> getAuthLoginKerberos();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a>>
 
 auth_login_kerberos block.
 
@@ -3556,10 +3506,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `authLoginOci`<sup>Optional</sup> <a name="authLoginOci" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginOci"></a>
 
 ```java
-public java.lang.Object getAuthLoginOci();
+public IResolvable|java.util.List<VaultProviderAuthLoginOci> getAuthLoginOci();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a>>
 
 auth_login_oci block.
 
@@ -3570,10 +3520,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `authLoginOidc`<sup>Optional</sup> <a name="authLoginOidc" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginOidc"></a>
 
 ```java
-public java.lang.Object getAuthLoginOidc();
+public IResolvable|java.util.List<VaultProviderAuthLoginOidc> getAuthLoginOidc();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a>>
 
 auth_login_oidc block.
 
@@ -3584,10 +3534,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `authLoginRadius`<sup>Optional</sup> <a name="authLoginRadius" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginRadius"></a>
 
 ```java
-public java.lang.Object getAuthLoginRadius();
+public IResolvable|java.util.List<VaultProviderAuthLoginRadius> getAuthLoginRadius();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>>
 
 auth_login_radius block.
 
@@ -3598,10 +3548,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `authLoginTokenFile`<sup>Optional</sup> <a name="authLoginTokenFile" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginTokenFile"></a>
 
 ```java
-public java.lang.Object getAuthLoginTokenFile();
+public IResolvable|java.util.List<VaultProviderAuthLoginTokenFile> getAuthLoginTokenFile();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>>
 
 auth_login_token_file block.
 
@@ -3612,10 +3562,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `authLoginUserpass`<sup>Optional</sup> <a name="authLoginUserpass" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginUserpass"></a>
 
 ```java
-public java.lang.Object getAuthLoginUserpass();
+public IResolvable|java.util.List<VaultProviderAuthLoginUserpass> getAuthLoginUserpass();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a>>
 
 auth_login_userpass block.
 
@@ -3654,10 +3604,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `clientAuth`<sup>Optional</sup> <a name="clientAuth" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.clientAuth"></a>
 
 ```java
-public java.lang.Object getClientAuth();
+public IResolvable|java.util.List<VaultProviderClientAuth> getClientAuth();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a>>
 
 client_auth block.
 
@@ -3668,10 +3618,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `headers`<sup>Optional</sup> <a name="headers" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.headers"></a>
 
 ```java
-public java.lang.Object getHeaders();
+public IResolvable|java.util.List<VaultProviderHeaders> getHeaders();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderHeaders">VaultProviderHeaders</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vault.provider.VaultProviderHeaders">VaultProviderHeaders</a>>
 
 headers block.
 
@@ -3738,10 +3688,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `setNamespaceFromToken`<sup>Optional</sup> <a name="setNamespaceFromToken" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.setNamespaceFromToken"></a>
 
 ```java
-public java.lang.Object getSetNamespaceFromToken();
+public java.lang.Boolean|IResolvable getSetNamespaceFromToken();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 In the case where the Vault token is for a specific namespace and the provider namespace is not configured, use the token namespace as the root namespace for all resources.
 
@@ -3752,10 +3702,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `skipChildToken`<sup>Optional</sup> <a name="skipChildToken" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.skipChildToken"></a>
 
 ```java
-public java.lang.Object getSkipChildToken();
+public java.lang.Boolean|IResolvable getSkipChildToken();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Set this to true to prevent the creation of ephemeral child token used by this provider.
 
@@ -3766,10 +3716,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `skipGetVaultVersion`<sup>Optional</sup> <a name="skipGetVaultVersion" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.skipGetVaultVersion"></a>
 
 ```java
-public java.lang.Object getSkipGetVaultVersion();
+public java.lang.Boolean|IResolvable getSkipGetVaultVersion();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Skip the dynamic fetching of the Vault server version.
 
@@ -3780,10 +3730,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `skipTlsVerify`<sup>Optional</sup> <a name="skipTlsVerify" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.skipTlsVerify"></a>
 
 ```java
-public java.lang.Object getSkipTlsVerify();
+public java.lang.Boolean|IResolvable getSkipTlsVerify();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Set this to true only if the target Vault server is an insecure development instance.
 

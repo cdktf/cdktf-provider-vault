@@ -14,32 +14,32 @@ from cdktf_cdktf_provider_vault import kmip_secret_role
 kmipSecretRole.KmipSecretRole(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   path: str,
   role: str,
   scope: str,
   id: str = None,
   namespace: str = None,
-  operation_activate: typing.Union[bool, IResolvable] = None,
-  operation_add_attribute: typing.Union[bool, IResolvable] = None,
-  operation_all: typing.Union[bool, IResolvable] = None,
-  operation_create: typing.Union[bool, IResolvable] = None,
-  operation_destroy: typing.Union[bool, IResolvable] = None,
-  operation_discover_versions: typing.Union[bool, IResolvable] = None,
-  operation_get: typing.Union[bool, IResolvable] = None,
-  operation_get_attribute_list: typing.Union[bool, IResolvable] = None,
-  operation_get_attributes: typing.Union[bool, IResolvable] = None,
-  operation_locate: typing.Union[bool, IResolvable] = None,
-  operation_none: typing.Union[bool, IResolvable] = None,
-  operation_register: typing.Union[bool, IResolvable] = None,
-  operation_rekey: typing.Union[bool, IResolvable] = None,
-  operation_revoke: typing.Union[bool, IResolvable] = None,
+  operation_activate: bool | IResolvable = None,
+  operation_add_attribute: bool | IResolvable = None,
+  operation_all: bool | IResolvable = None,
+  operation_create: bool | IResolvable = None,
+  operation_destroy: bool | IResolvable = None,
+  operation_discover_versions: bool | IResolvable = None,
+  operation_get: bool | IResolvable = None,
+  operation_get_attribute_list: bool | IResolvable = None,
+  operation_get_attributes: bool | IResolvable = None,
+  operation_locate: bool | IResolvable = None,
+  operation_none: bool | IResolvable = None,
+  operation_register: bool | IResolvable = None,
+  operation_rekey: bool | IResolvable = None,
+  operation_revoke: bool | IResolvable = None,
   tls_client_key_bits: typing.Union[int, float] = None,
   tls_client_key_type: str = None,
   tls_client_ttl: typing.Union[int, float] = None
@@ -50,32 +50,32 @@ kmipSecretRole.KmipSecretRole(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.path">path</a></code> | <code>str</code> | Path where KMIP backend is mounted. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.role">role</a></code> | <code>str</code> | Name of the role. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.scope">scope</a></code> | <code>str</code> | Name of the scope. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/kmip_secret_role#id KmipSecretRole#id}. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationActivate">operation_activate</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Grant permission to use the KMIP Activate operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationAddAttribute">operation_add_attribute</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Grant permission to use the KMIP Add Attribute operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationAll">operation_all</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Grant all permissions to this role. May not be specified with any other operation_* params. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationCreate">operation_create</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Grant permission to use the KMIP Create operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationDestroy">operation_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Grant permission to use the KMIP Destroy operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationDiscoverVersions">operation_discover_versions</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Grant permission to use the KMIP Discover Version operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationGet">operation_get</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Grant permission to use the KMIP Get operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationGetAttributeList">operation_get_attribute_list</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Grant permission to use the KMIP Get Attribute List operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationGetAttributes">operation_get_attributes</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Grant permission to use the KMIP Get Attributes operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationLocate">operation_locate</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Grant permission to use the KMIP Locate operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationNone">operation_none</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Remove all permissions from this role. May not be specified with any other operation_* params. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationRegister">operation_register</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Grant permission to use the KMIP Register operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationRekey">operation_rekey</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Grant permission to use the KMIP Rekey operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationRevoke">operation_revoke</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Grant permission to use the KMIP Revoke operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationActivate">operation_activate</a></code> | <code>bool \| cdktf.IResolvable</code> | Grant permission to use the KMIP Activate operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationAddAttribute">operation_add_attribute</a></code> | <code>bool \| cdktf.IResolvable</code> | Grant permission to use the KMIP Add Attribute operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationAll">operation_all</a></code> | <code>bool \| cdktf.IResolvable</code> | Grant all permissions to this role. May not be specified with any other operation_* params. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationCreate">operation_create</a></code> | <code>bool \| cdktf.IResolvable</code> | Grant permission to use the KMIP Create operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationDestroy">operation_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | Grant permission to use the KMIP Destroy operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationDiscoverVersions">operation_discover_versions</a></code> | <code>bool \| cdktf.IResolvable</code> | Grant permission to use the KMIP Discover Version operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationGet">operation_get</a></code> | <code>bool \| cdktf.IResolvable</code> | Grant permission to use the KMIP Get operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationGetAttributeList">operation_get_attribute_list</a></code> | <code>bool \| cdktf.IResolvable</code> | Grant permission to use the KMIP Get Attribute List operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationGetAttributes">operation_get_attributes</a></code> | <code>bool \| cdktf.IResolvable</code> | Grant permission to use the KMIP Get Attributes operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationLocate">operation_locate</a></code> | <code>bool \| cdktf.IResolvable</code> | Grant permission to use the KMIP Locate operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationNone">operation_none</a></code> | <code>bool \| cdktf.IResolvable</code> | Remove all permissions from this role. May not be specified with any other operation_* params. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationRegister">operation_register</a></code> | <code>bool \| cdktf.IResolvable</code> | Grant permission to use the KMIP Register operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationRekey">operation_rekey</a></code> | <code>bool \| cdktf.IResolvable</code> | Grant permission to use the KMIP Rekey operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationRevoke">operation_revoke</a></code> | <code>bool \| cdktf.IResolvable</code> | Grant permission to use the KMIP Revoke operation. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.tlsClientKeyBits">tls_client_key_bits</a></code> | <code>typing.Union[int, float]</code> | Client certificate key bits, valid values depend on key type. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.tlsClientKeyType">tls_client_key_type</a></code> | <code>str</code> | Client certificate key type, rsa or ec. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.tlsClientTtl">tls_client_ttl</a></code> | <code>typing.Union[int, float]</code> | Client certificate TTL in seconds. |
@@ -102,13 +102,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -138,7 +138,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -195,7 +195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `operation_activate`<sup>Optional</sup> <a name="operation_activate" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationActivate"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Grant permission to use the KMIP Activate operation.
 
@@ -205,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `operation_add_attribute`<sup>Optional</sup> <a name="operation_add_attribute" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationAddAttribute"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Grant permission to use the KMIP Add Attribute operation.
 
@@ -215,7 +215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `operation_all`<sup>Optional</sup> <a name="operation_all" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationAll"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Grant all permissions to this role. May not be specified with any other operation_* params.
 
@@ -225,7 +225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `operation_create`<sup>Optional</sup> <a name="operation_create" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationCreate"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Grant permission to use the KMIP Create operation.
 
@@ -235,7 +235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `operation_destroy`<sup>Optional</sup> <a name="operation_destroy" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationDestroy"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Grant permission to use the KMIP Destroy operation.
 
@@ -245,7 +245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `operation_discover_versions`<sup>Optional</sup> <a name="operation_discover_versions" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationDiscoverVersions"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Grant permission to use the KMIP Discover Version operation.
 
@@ -255,7 +255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `operation_get`<sup>Optional</sup> <a name="operation_get" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationGet"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Grant permission to use the KMIP Get operation.
 
@@ -265,7 +265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `operation_get_attribute_list`<sup>Optional</sup> <a name="operation_get_attribute_list" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationGetAttributeList"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Grant permission to use the KMIP Get Attribute List operation.
 
@@ -275,7 +275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `operation_get_attributes`<sup>Optional</sup> <a name="operation_get_attributes" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationGetAttributes"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Grant permission to use the KMIP Get Attributes operation.
 
@@ -285,7 +285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `operation_locate`<sup>Optional</sup> <a name="operation_locate" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationLocate"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Grant permission to use the KMIP Locate operation.
 
@@ -295,7 +295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `operation_none`<sup>Optional</sup> <a name="operation_none" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationNone"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Remove all permissions from this role. May not be specified with any other operation_* params.
 
@@ -305,7 +305,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `operation_register`<sup>Optional</sup> <a name="operation_register" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationRegister"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Grant permission to use the KMIP Register operation.
 
@@ -315,7 +315,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `operation_rekey`<sup>Optional</sup> <a name="operation_rekey" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationRekey"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Grant permission to use the KMIP Rekey operation.
 
@@ -325,7 +325,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `operation_revoke`<sup>Optional</sup> <a name="operation_revoke" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.Initializer.parameter.operationRevoke"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Grant permission to use the KMIP Revoke operation.
 
@@ -634,7 +634,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.importFrom"></a>
@@ -697,7 +697,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -713,7 +713,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -988,29 +988,29 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.namespaceInput">namespace_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationActivateInput">operation_activate_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationAddAttributeInput">operation_add_attribute_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationAllInput">operation_all_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationCreateInput">operation_create_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationDestroyInput">operation_destroy_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationDiscoverVersionsInput">operation_discover_versions_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetAttributeListInput">operation_get_attribute_list_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetAttributesInput">operation_get_attributes_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetInput">operation_get_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationLocateInput">operation_locate_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationNoneInput">operation_none_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRegisterInput">operation_register_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRekeyInput">operation_rekey_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRevokeInput">operation_revoke_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationActivateInput">operation_activate_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationAddAttributeInput">operation_add_attribute_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationAllInput">operation_all_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationCreateInput">operation_create_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationDestroyInput">operation_destroy_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationDiscoverVersionsInput">operation_discover_versions_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetAttributeListInput">operation_get_attribute_list_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetAttributesInput">operation_get_attributes_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetInput">operation_get_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationLocateInput">operation_locate_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationNoneInput">operation_none_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRegisterInput">operation_register_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRekeyInput">operation_rekey_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRevokeInput">operation_revoke_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.pathInput">path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.roleInput">role_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.scopeInput">scope_input</a></code> | <code>str</code> | *No description.* |
@@ -1019,20 +1019,20 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.tlsClientTtlInput">tls_client_ttl_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.namespace">namespace</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationActivate">operation_activate</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationAddAttribute">operation_add_attribute</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationAll">operation_all</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationCreate">operation_create</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationDestroy">operation_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationDiscoverVersions">operation_discover_versions</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGet">operation_get</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetAttributeList">operation_get_attribute_list</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetAttributes">operation_get_attributes</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationLocate">operation_locate</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationNone">operation_none</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRegister">operation_register</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRekey">operation_rekey</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRevoke">operation_revoke</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationActivate">operation_activate</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationAddAttribute">operation_add_attribute</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationAll">operation_all</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationCreate">operation_create</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationDestroy">operation_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationDiscoverVersions">operation_discover_versions</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGet">operation_get</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetAttributeList">operation_get_attribute_list</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetAttributes">operation_get_attributes</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationLocate">operation_locate</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationNone">operation_none</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRegister">operation_register</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRekey">operation_rekey</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRevoke">operation_revoke</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.path">path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.role">role</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.scope">scope</a></code> | <code>str</code> | *No description.* |
@@ -1117,20 +1117,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1177,10 +1177,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1207,140 +1207,140 @@ namespace_input: str
 ##### `operation_activate_input`<sup>Optional</sup> <a name="operation_activate_input" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationActivateInput"></a>
 
 ```python
-operation_activate_input: typing.Union[bool, IResolvable]
+operation_activate_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `operation_add_attribute_input`<sup>Optional</sup> <a name="operation_add_attribute_input" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationAddAttributeInput"></a>
 
 ```python
-operation_add_attribute_input: typing.Union[bool, IResolvable]
+operation_add_attribute_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `operation_all_input`<sup>Optional</sup> <a name="operation_all_input" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationAllInput"></a>
 
 ```python
-operation_all_input: typing.Union[bool, IResolvable]
+operation_all_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `operation_create_input`<sup>Optional</sup> <a name="operation_create_input" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationCreateInput"></a>
 
 ```python
-operation_create_input: typing.Union[bool, IResolvable]
+operation_create_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `operation_destroy_input`<sup>Optional</sup> <a name="operation_destroy_input" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationDestroyInput"></a>
 
 ```python
-operation_destroy_input: typing.Union[bool, IResolvable]
+operation_destroy_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `operation_discover_versions_input`<sup>Optional</sup> <a name="operation_discover_versions_input" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationDiscoverVersionsInput"></a>
 
 ```python
-operation_discover_versions_input: typing.Union[bool, IResolvable]
+operation_discover_versions_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `operation_get_attribute_list_input`<sup>Optional</sup> <a name="operation_get_attribute_list_input" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetAttributeListInput"></a>
 
 ```python
-operation_get_attribute_list_input: typing.Union[bool, IResolvable]
+operation_get_attribute_list_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `operation_get_attributes_input`<sup>Optional</sup> <a name="operation_get_attributes_input" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetAttributesInput"></a>
 
 ```python
-operation_get_attributes_input: typing.Union[bool, IResolvable]
+operation_get_attributes_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `operation_get_input`<sup>Optional</sup> <a name="operation_get_input" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetInput"></a>
 
 ```python
-operation_get_input: typing.Union[bool, IResolvable]
+operation_get_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `operation_locate_input`<sup>Optional</sup> <a name="operation_locate_input" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationLocateInput"></a>
 
 ```python
-operation_locate_input: typing.Union[bool, IResolvable]
+operation_locate_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `operation_none_input`<sup>Optional</sup> <a name="operation_none_input" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationNoneInput"></a>
 
 ```python
-operation_none_input: typing.Union[bool, IResolvable]
+operation_none_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `operation_register_input`<sup>Optional</sup> <a name="operation_register_input" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRegisterInput"></a>
 
 ```python
-operation_register_input: typing.Union[bool, IResolvable]
+operation_register_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `operation_rekey_input`<sup>Optional</sup> <a name="operation_rekey_input" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRekeyInput"></a>
 
 ```python
-operation_rekey_input: typing.Union[bool, IResolvable]
+operation_rekey_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `operation_revoke_input`<sup>Optional</sup> <a name="operation_revoke_input" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRevokeInput"></a>
 
 ```python
-operation_revoke_input: typing.Union[bool, IResolvable]
+operation_revoke_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1427,140 +1427,140 @@ namespace: str
 ##### `operation_activate`<sup>Required</sup> <a name="operation_activate" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationActivate"></a>
 
 ```python
-operation_activate: typing.Union[bool, IResolvable]
+operation_activate: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `operation_add_attribute`<sup>Required</sup> <a name="operation_add_attribute" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationAddAttribute"></a>
 
 ```python
-operation_add_attribute: typing.Union[bool, IResolvable]
+operation_add_attribute: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `operation_all`<sup>Required</sup> <a name="operation_all" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationAll"></a>
 
 ```python
-operation_all: typing.Union[bool, IResolvable]
+operation_all: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `operation_create`<sup>Required</sup> <a name="operation_create" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationCreate"></a>
 
 ```python
-operation_create: typing.Union[bool, IResolvable]
+operation_create: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `operation_destroy`<sup>Required</sup> <a name="operation_destroy" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationDestroy"></a>
 
 ```python
-operation_destroy: typing.Union[bool, IResolvable]
+operation_destroy: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `operation_discover_versions`<sup>Required</sup> <a name="operation_discover_versions" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationDiscoverVersions"></a>
 
 ```python
-operation_discover_versions: typing.Union[bool, IResolvable]
+operation_discover_versions: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `operation_get`<sup>Required</sup> <a name="operation_get" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGet"></a>
 
 ```python
-operation_get: typing.Union[bool, IResolvable]
+operation_get: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `operation_get_attribute_list`<sup>Required</sup> <a name="operation_get_attribute_list" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetAttributeList"></a>
 
 ```python
-operation_get_attribute_list: typing.Union[bool, IResolvable]
+operation_get_attribute_list: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `operation_get_attributes`<sup>Required</sup> <a name="operation_get_attributes" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationGetAttributes"></a>
 
 ```python
-operation_get_attributes: typing.Union[bool, IResolvable]
+operation_get_attributes: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `operation_locate`<sup>Required</sup> <a name="operation_locate" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationLocate"></a>
 
 ```python
-operation_locate: typing.Union[bool, IResolvable]
+operation_locate: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `operation_none`<sup>Required</sup> <a name="operation_none" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationNone"></a>
 
 ```python
-operation_none: typing.Union[bool, IResolvable]
+operation_none: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `operation_register`<sup>Required</sup> <a name="operation_register" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRegister"></a>
 
 ```python
-operation_register: typing.Union[bool, IResolvable]
+operation_register: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `operation_rekey`<sup>Required</sup> <a name="operation_rekey" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRekey"></a>
 
 ```python
-operation_rekey: typing.Union[bool, IResolvable]
+operation_rekey: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `operation_revoke`<sup>Required</sup> <a name="operation_revoke" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRole.property.operationRevoke"></a>
 
 ```python
-operation_revoke: typing.Union[bool, IResolvable]
+operation_revoke: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1652,32 +1652,32 @@ tfResourceType: str
 from cdktf_cdktf_provider_vault import kmip_secret_role
 
 kmipSecretRole.KmipSecretRoleConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   path: str,
   role: str,
   scope: str,
   id: str = None,
   namespace: str = None,
-  operation_activate: typing.Union[bool, IResolvable] = None,
-  operation_add_attribute: typing.Union[bool, IResolvable] = None,
-  operation_all: typing.Union[bool, IResolvable] = None,
-  operation_create: typing.Union[bool, IResolvable] = None,
-  operation_destroy: typing.Union[bool, IResolvable] = None,
-  operation_discover_versions: typing.Union[bool, IResolvable] = None,
-  operation_get: typing.Union[bool, IResolvable] = None,
-  operation_get_attribute_list: typing.Union[bool, IResolvable] = None,
-  operation_get_attributes: typing.Union[bool, IResolvable] = None,
-  operation_locate: typing.Union[bool, IResolvable] = None,
-  operation_none: typing.Union[bool, IResolvable] = None,
-  operation_register: typing.Union[bool, IResolvable] = None,
-  operation_rekey: typing.Union[bool, IResolvable] = None,
-  operation_revoke: typing.Union[bool, IResolvable] = None,
+  operation_activate: bool | IResolvable = None,
+  operation_add_attribute: bool | IResolvable = None,
+  operation_all: bool | IResolvable = None,
+  operation_create: bool | IResolvable = None,
+  operation_destroy: bool | IResolvable = None,
+  operation_discover_versions: bool | IResolvable = None,
+  operation_get: bool | IResolvable = None,
+  operation_get_attribute_list: bool | IResolvable = None,
+  operation_get_attributes: bool | IResolvable = None,
+  operation_locate: bool | IResolvable = None,
+  operation_none: bool | IResolvable = None,
+  operation_register: bool | IResolvable = None,
+  operation_rekey: bool | IResolvable = None,
+  operation_revoke: bool | IResolvable = None,
   tls_client_key_bits: typing.Union[int, float] = None,
   tls_client_key_type: str = None,
   tls_client_ttl: typing.Union[int, float] = None
@@ -1688,32 +1688,32 @@ kmipSecretRole.KmipSecretRoleConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.path">path</a></code> | <code>str</code> | Path where KMIP backend is mounted. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.role">role</a></code> | <code>str</code> | Name of the role. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.scope">scope</a></code> | <code>str</code> | Name of the scope. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/kmip_secret_role#id KmipSecretRole#id}. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationActivate">operation_activate</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Grant permission to use the KMIP Activate operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationAddAttribute">operation_add_attribute</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Grant permission to use the KMIP Add Attribute operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationAll">operation_all</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Grant all permissions to this role. May not be specified with any other operation_* params. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationCreate">operation_create</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Grant permission to use the KMIP Create operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationDestroy">operation_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Grant permission to use the KMIP Destroy operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationDiscoverVersions">operation_discover_versions</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Grant permission to use the KMIP Discover Version operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationGet">operation_get</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Grant permission to use the KMIP Get operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationGetAttributeList">operation_get_attribute_list</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Grant permission to use the KMIP Get Attribute List operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationGetAttributes">operation_get_attributes</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Grant permission to use the KMIP Get Attributes operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationLocate">operation_locate</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Grant permission to use the KMIP Locate operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationNone">operation_none</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Remove all permissions from this role. May not be specified with any other operation_* params. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationRegister">operation_register</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Grant permission to use the KMIP Register operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationRekey">operation_rekey</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Grant permission to use the KMIP Rekey operation. |
-| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationRevoke">operation_revoke</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Grant permission to use the KMIP Revoke operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationActivate">operation_activate</a></code> | <code>bool \| cdktf.IResolvable</code> | Grant permission to use the KMIP Activate operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationAddAttribute">operation_add_attribute</a></code> | <code>bool \| cdktf.IResolvable</code> | Grant permission to use the KMIP Add Attribute operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationAll">operation_all</a></code> | <code>bool \| cdktf.IResolvable</code> | Grant all permissions to this role. May not be specified with any other operation_* params. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationCreate">operation_create</a></code> | <code>bool \| cdktf.IResolvable</code> | Grant permission to use the KMIP Create operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationDestroy">operation_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | Grant permission to use the KMIP Destroy operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationDiscoverVersions">operation_discover_versions</a></code> | <code>bool \| cdktf.IResolvable</code> | Grant permission to use the KMIP Discover Version operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationGet">operation_get</a></code> | <code>bool \| cdktf.IResolvable</code> | Grant permission to use the KMIP Get operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationGetAttributeList">operation_get_attribute_list</a></code> | <code>bool \| cdktf.IResolvable</code> | Grant permission to use the KMIP Get Attribute List operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationGetAttributes">operation_get_attributes</a></code> | <code>bool \| cdktf.IResolvable</code> | Grant permission to use the KMIP Get Attributes operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationLocate">operation_locate</a></code> | <code>bool \| cdktf.IResolvable</code> | Grant permission to use the KMIP Locate operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationNone">operation_none</a></code> | <code>bool \| cdktf.IResolvable</code> | Remove all permissions from this role. May not be specified with any other operation_* params. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationRegister">operation_register</a></code> | <code>bool \| cdktf.IResolvable</code> | Grant permission to use the KMIP Register operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationRekey">operation_rekey</a></code> | <code>bool \| cdktf.IResolvable</code> | Grant permission to use the KMIP Rekey operation. |
+| <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationRevoke">operation_revoke</a></code> | <code>bool \| cdktf.IResolvable</code> | Grant permission to use the KMIP Revoke operation. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.tlsClientKeyBits">tls_client_key_bits</a></code> | <code>typing.Union[int, float]</code> | Client certificate key bits, valid values depend on key type. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.tlsClientKeyType">tls_client_key_type</a></code> | <code>str</code> | Client certificate key type, rsa or ec. |
 | <code><a href="#@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.tlsClientTtl">tls_client_ttl</a></code> | <code>typing.Union[int, float]</code> | Client certificate TTL in seconds. |
@@ -1723,20 +1723,20 @@ kmipSecretRole.KmipSecretRoleConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1783,10 +1783,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1864,10 +1864,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `operation_activate`<sup>Optional</sup> <a name="operation_activate" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationActivate"></a>
 
 ```python
-operation_activate: typing.Union[bool, IResolvable]
+operation_activate: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Grant permission to use the KMIP Activate operation.
 
@@ -1878,10 +1878,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `operation_add_attribute`<sup>Optional</sup> <a name="operation_add_attribute" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationAddAttribute"></a>
 
 ```python
-operation_add_attribute: typing.Union[bool, IResolvable]
+operation_add_attribute: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Grant permission to use the KMIP Add Attribute operation.
 
@@ -1892,10 +1892,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `operation_all`<sup>Optional</sup> <a name="operation_all" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationAll"></a>
 
 ```python
-operation_all: typing.Union[bool, IResolvable]
+operation_all: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Grant all permissions to this role. May not be specified with any other operation_* params.
 
@@ -1906,10 +1906,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `operation_create`<sup>Optional</sup> <a name="operation_create" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationCreate"></a>
 
 ```python
-operation_create: typing.Union[bool, IResolvable]
+operation_create: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Grant permission to use the KMIP Create operation.
 
@@ -1920,10 +1920,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `operation_destroy`<sup>Optional</sup> <a name="operation_destroy" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationDestroy"></a>
 
 ```python
-operation_destroy: typing.Union[bool, IResolvable]
+operation_destroy: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Grant permission to use the KMIP Destroy operation.
 
@@ -1934,10 +1934,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `operation_discover_versions`<sup>Optional</sup> <a name="operation_discover_versions" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationDiscoverVersions"></a>
 
 ```python
-operation_discover_versions: typing.Union[bool, IResolvable]
+operation_discover_versions: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Grant permission to use the KMIP Discover Version operation.
 
@@ -1948,10 +1948,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `operation_get`<sup>Optional</sup> <a name="operation_get" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationGet"></a>
 
 ```python
-operation_get: typing.Union[bool, IResolvable]
+operation_get: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Grant permission to use the KMIP Get operation.
 
@@ -1962,10 +1962,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `operation_get_attribute_list`<sup>Optional</sup> <a name="operation_get_attribute_list" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationGetAttributeList"></a>
 
 ```python
-operation_get_attribute_list: typing.Union[bool, IResolvable]
+operation_get_attribute_list: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Grant permission to use the KMIP Get Attribute List operation.
 
@@ -1976,10 +1976,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `operation_get_attributes`<sup>Optional</sup> <a name="operation_get_attributes" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationGetAttributes"></a>
 
 ```python
-operation_get_attributes: typing.Union[bool, IResolvable]
+operation_get_attributes: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Grant permission to use the KMIP Get Attributes operation.
 
@@ -1990,10 +1990,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `operation_locate`<sup>Optional</sup> <a name="operation_locate" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationLocate"></a>
 
 ```python
-operation_locate: typing.Union[bool, IResolvable]
+operation_locate: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Grant permission to use the KMIP Locate operation.
 
@@ -2004,10 +2004,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `operation_none`<sup>Optional</sup> <a name="operation_none" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationNone"></a>
 
 ```python
-operation_none: typing.Union[bool, IResolvable]
+operation_none: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Remove all permissions from this role. May not be specified with any other operation_* params.
 
@@ -2018,10 +2018,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `operation_register`<sup>Optional</sup> <a name="operation_register" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationRegister"></a>
 
 ```python
-operation_register: typing.Union[bool, IResolvable]
+operation_register: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Grant permission to use the KMIP Register operation.
 
@@ -2032,10 +2032,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `operation_rekey`<sup>Optional</sup> <a name="operation_rekey" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationRekey"></a>
 
 ```python
-operation_rekey: typing.Union[bool, IResolvable]
+operation_rekey: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Grant permission to use the KMIP Rekey operation.
 
@@ -2046,10 +2046,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `operation_revoke`<sup>Optional</sup> <a name="operation_revoke" id="@cdktf/provider-vault.kmipSecretRole.KmipSecretRoleConfig.property.operationRevoke"></a>
 
 ```python
-operation_revoke: typing.Union[bool, IResolvable]
+operation_revoke: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Grant permission to use the KMIP Revoke operation.
 

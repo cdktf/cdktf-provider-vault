@@ -17,30 +17,30 @@ provider.VaultProvider(
   add_address_to_env: str = None,
   address: str = None,
   alias: str = None,
-  auth_login: typing.Union[IResolvable, typing.List[VaultProviderAuthLogin]] = None,
-  auth_login_aws: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginAws]] = None,
-  auth_login_azure: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginAzure]] = None,
-  auth_login_cert: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginCert]] = None,
-  auth_login_gcp: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginGcp]] = None,
-  auth_login_jwt: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginJwt]] = None,
-  auth_login_kerberos: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginKerberos]] = None,
-  auth_login_oci: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginOci]] = None,
-  auth_login_oidc: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginOidc]] = None,
-  auth_login_radius: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginRadius]] = None,
-  auth_login_token_file: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginTokenFile]] = None,
-  auth_login_userpass: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginUserpass]] = None,
+  auth_login: IResolvable | typing.List[VaultProviderAuthLogin] = None,
+  auth_login_aws: IResolvable | typing.List[VaultProviderAuthLoginAws] = None,
+  auth_login_azure: IResolvable | typing.List[VaultProviderAuthLoginAzure] = None,
+  auth_login_cert: IResolvable | typing.List[VaultProviderAuthLoginCert] = None,
+  auth_login_gcp: IResolvable | typing.List[VaultProviderAuthLoginGcp] = None,
+  auth_login_jwt: IResolvable | typing.List[VaultProviderAuthLoginJwt] = None,
+  auth_login_kerberos: IResolvable | typing.List[VaultProviderAuthLoginKerberos] = None,
+  auth_login_oci: IResolvable | typing.List[VaultProviderAuthLoginOci] = None,
+  auth_login_oidc: IResolvable | typing.List[VaultProviderAuthLoginOidc] = None,
+  auth_login_radius: IResolvable | typing.List[VaultProviderAuthLoginRadius] = None,
+  auth_login_token_file: IResolvable | typing.List[VaultProviderAuthLoginTokenFile] = None,
+  auth_login_userpass: IResolvable | typing.List[VaultProviderAuthLoginUserpass] = None,
   ca_cert_dir: str = None,
   ca_cert_file: str = None,
-  client_auth: typing.Union[IResolvable, typing.List[VaultProviderClientAuth]] = None,
-  headers: typing.Union[IResolvable, typing.List[VaultProviderHeaders]] = None,
+  client_auth: IResolvable | typing.List[VaultProviderClientAuth] = None,
+  headers: IResolvable | typing.List[VaultProviderHeaders] = None,
   max_lease_ttl_seconds: typing.Union[int, float] = None,
   max_retries: typing.Union[int, float] = None,
   max_retries_ccc: typing.Union[int, float] = None,
   namespace: str = None,
-  set_namespace_from_token: typing.Union[bool, IResolvable] = None,
-  skip_child_token: typing.Union[bool, IResolvable] = None,
-  skip_get_vault_version: typing.Union[bool, IResolvable] = None,
-  skip_tls_verify: typing.Union[bool, IResolvable] = None,
+  set_namespace_from_token: bool | IResolvable = None,
+  skip_child_token: bool | IResolvable = None,
+  skip_get_vault_version: bool | IResolvable = None,
+  skip_tls_verify: bool | IResolvable = None,
   tls_server_name: str = None,
   token: str = None,
   token_name: str = None,
@@ -55,30 +55,30 @@ provider.VaultProvider(
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.addAddressToEnv">add_address_to_env</a></code> | <code>str</code> | If true, adds the value of the `address` argument to the Terraform process environment. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.address">address</a></code> | <code>str</code> | URL of the root of the target Vault server. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.alias">alias</a></code> | <code>str</code> | Alias name. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLogin">auth_login</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a>]]</code> | auth_login block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginAws">auth_login_aws</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a>]]</code> | auth_login_aws block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginAzure">auth_login_azure</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a>]]</code> | auth_login_azure block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginCert">auth_login_cert</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a>]]</code> | auth_login_cert block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginGcp">auth_login_gcp</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a>]]</code> | auth_login_gcp block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginJwt">auth_login_jwt</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a>]]</code> | auth_login_jwt block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginKerberos">auth_login_kerberos</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a>]]</code> | auth_login_kerberos block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginOci">auth_login_oci</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a>]]</code> | auth_login_oci block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginOidc">auth_login_oidc</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a>]]</code> | auth_login_oidc block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginRadius">auth_login_radius</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>]]</code> | auth_login_radius block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginTokenFile">auth_login_token_file</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>]]</code> | auth_login_token_file block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginUserpass">auth_login_userpass</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a>]]</code> | auth_login_userpass block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLogin">auth_login</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a>]</code> | auth_login block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginAws">auth_login_aws</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a>]</code> | auth_login_aws block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginAzure">auth_login_azure</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a>]</code> | auth_login_azure block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginCert">auth_login_cert</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a>]</code> | auth_login_cert block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginGcp">auth_login_gcp</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a>]</code> | auth_login_gcp block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginJwt">auth_login_jwt</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a>]</code> | auth_login_jwt block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginKerberos">auth_login_kerberos</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a>]</code> | auth_login_kerberos block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginOci">auth_login_oci</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a>]</code> | auth_login_oci block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginOidc">auth_login_oidc</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a>]</code> | auth_login_oidc block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginRadius">auth_login_radius</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>]</code> | auth_login_radius block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginTokenFile">auth_login_token_file</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>]</code> | auth_login_token_file block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginUserpass">auth_login_userpass</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a>]</code> | auth_login_userpass block. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.caCertDir">ca_cert_dir</a></code> | <code>str</code> | Path to directory containing CA certificate files to validate the server's certificate. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.caCertFile">ca_cert_file</a></code> | <code>str</code> | Path to a CA certificate file to validate the server's certificate. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.clientAuth">client_auth</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a>]]</code> | client_auth block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.headers">headers</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderHeaders">VaultProviderHeaders</a>]]</code> | headers block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.clientAuth">client_auth</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a>]</code> | client_auth block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.headers">headers</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderHeaders">VaultProviderHeaders</a>]</code> | headers block. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.maxLeaseTtlSeconds">max_lease_ttl_seconds</a></code> | <code>typing.Union[int, float]</code> | Maximum TTL for secret leases requested by this provider. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.maxRetries">max_retries</a></code> | <code>typing.Union[int, float]</code> | Maximum number of retries when a 5xx error code is encountered. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.maxRetriesCcc">max_retries_ccc</a></code> | <code>typing.Union[int, float]</code> | Maximum number of retries for Client Controlled Consistency related operations. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | The namespace to use. Available only for Vault Enterprise. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.setNamespaceFromToken">set_namespace_from_token</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | In the case where the Vault token is for a specific namespace and the provider namespace is not configured, use the token namespace as the root namespace for all resources. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.skipChildToken">skip_child_token</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set this to true to prevent the creation of ephemeral child token used by this provider. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.skipGetVaultVersion">skip_get_vault_version</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Skip the dynamic fetching of the Vault server version. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.skipTlsVerify">skip_tls_verify</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set this to true only if the target Vault server is an insecure development instance. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.setNamespaceFromToken">set_namespace_from_token</a></code> | <code>bool \| cdktf.IResolvable</code> | In the case where the Vault token is for a specific namespace and the provider namespace is not configured, use the token namespace as the root namespace for all resources. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.skipChildToken">skip_child_token</a></code> | <code>bool \| cdktf.IResolvable</code> | Set this to true to prevent the creation of ephemeral child token used by this provider. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.skipGetVaultVersion">skip_get_vault_version</a></code> | <code>bool \| cdktf.IResolvable</code> | Skip the dynamic fetching of the Vault server version. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.skipTlsVerify">skip_tls_verify</a></code> | <code>bool \| cdktf.IResolvable</code> | Set this to true only if the target Vault server is an insecure development instance. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.tlsServerName">tls_server_name</a></code> | <code>str</code> | Name to use as the SNI host when connecting via TLS. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.token">token</a></code> | <code>str</code> | Token to use to authenticate to Vault. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.tokenName">token_name</a></code> | <code>str</code> | Token name to use for creating the Vault child token. |
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `auth_login`<sup>Optional</sup> <a name="auth_login" id="@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLogin"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a>]
 
 auth_login block.
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `auth_login_aws`<sup>Optional</sup> <a name="auth_login_aws" id="@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginAws"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a>]
 
 auth_login_aws block.
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `auth_login_azure`<sup>Optional</sup> <a name="auth_login_azure" id="@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginAzure"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a>]
 
 auth_login_azure block.
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `auth_login_cert`<sup>Optional</sup> <a name="auth_login_cert" id="@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginCert"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a>]
 
 auth_login_cert block.
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `auth_login_gcp`<sup>Optional</sup> <a name="auth_login_gcp" id="@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginGcp"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a>]
 
 auth_login_gcp block.
 
@@ -186,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `auth_login_jwt`<sup>Optional</sup> <a name="auth_login_jwt" id="@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginJwt"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a>]
 
 auth_login_jwt block.
 
@@ -196,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `auth_login_kerberos`<sup>Optional</sup> <a name="auth_login_kerberos" id="@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginKerberos"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a>]
 
 auth_login_kerberos block.
 
@@ -206,7 +206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `auth_login_oci`<sup>Optional</sup> <a name="auth_login_oci" id="@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginOci"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a>]
 
 auth_login_oci block.
 
@@ -216,7 +216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `auth_login_oidc`<sup>Optional</sup> <a name="auth_login_oidc" id="@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginOidc"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a>]
 
 auth_login_oidc block.
 
@@ -226,7 +226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `auth_login_radius`<sup>Optional</sup> <a name="auth_login_radius" id="@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginRadius"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>]
 
 auth_login_radius block.
 
@@ -236,7 +236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `auth_login_token_file`<sup>Optional</sup> <a name="auth_login_token_file" id="@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginTokenFile"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>]
 
 auth_login_token_file block.
 
@@ -246,7 +246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `auth_login_userpass`<sup>Optional</sup> <a name="auth_login_userpass" id="@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.authLoginUserpass"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a>]
 
 auth_login_userpass block.
 
@@ -276,7 +276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `client_auth`<sup>Optional</sup> <a name="client_auth" id="@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.clientAuth"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a>]
 
 client_auth block.
 
@@ -286,7 +286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `headers`<sup>Optional</sup> <a name="headers" id="@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.headers"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderHeaders">VaultProviderHeaders</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderHeaders">VaultProviderHeaders</a>]
 
 headers block.
 
@@ -336,7 +336,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `set_namespace_from_token`<sup>Optional</sup> <a name="set_namespace_from_token" id="@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.setNamespaceFromToken"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 In the case where the Vault token is for a specific namespace and the provider namespace is not configured, use the token namespace as the root namespace for all resources.
 
@@ -346,7 +346,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `skip_child_token`<sup>Optional</sup> <a name="skip_child_token" id="@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.skipChildToken"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set this to true to prevent the creation of ephemeral child token used by this provider.
 
@@ -356,7 +356,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `skip_get_vault_version`<sup>Optional</sup> <a name="skip_get_vault_version" id="@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.skipGetVaultVersion"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Skip the dynamic fetching of the Vault server version.
 
@@ -366,7 +366,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `skip_tls_verify`<sup>Optional</sup> <a name="skip_tls_verify" id="@cdktf/provider-vault.provider.VaultProvider.Initializer.parameter.skipTlsVerify"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set this to true only if the target Vault server is an insecure development instance.
 
@@ -862,60 +862,60 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.addAddressToEnvInput">add_address_to_env_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.addressInput">address_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.aliasInput">alias_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginAwsInput">auth_login_aws_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginAzureInput">auth_login_azure_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginCertInput">auth_login_cert_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginGcpInput">auth_login_gcp_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginInput">auth_login_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginJwtInput">auth_login_jwt_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginKerberosInput">auth_login_kerberos_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginOciInput">auth_login_oci_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginOidcInput">auth_login_oidc_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginRadiusInput">auth_login_radius_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginTokenFileInput">auth_login_token_file_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginUserpassInput">auth_login_userpass_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginAwsInput">auth_login_aws_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginAzureInput">auth_login_azure_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginCertInput">auth_login_cert_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginGcpInput">auth_login_gcp_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginInput">auth_login_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginJwtInput">auth_login_jwt_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginKerberosInput">auth_login_kerberos_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginOciInput">auth_login_oci_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginOidcInput">auth_login_oidc_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginRadiusInput">auth_login_radius_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginTokenFileInput">auth_login_token_file_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginUserpassInput">auth_login_userpass_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.caCertDirInput">ca_cert_dir_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.caCertFileInput">ca_cert_file_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.clientAuthInput">client_auth_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.headersInput">headers_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderHeaders">VaultProviderHeaders</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.clientAuthInput">client_auth_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.headersInput">headers_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderHeaders">VaultProviderHeaders</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.maxLeaseTtlSecondsInput">max_lease_ttl_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.maxRetriesCccInput">max_retries_ccc_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.maxRetriesInput">max_retries_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.namespaceInput">namespace_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.setNamespaceFromTokenInput">set_namespace_from_token_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.skipChildTokenInput">skip_child_token_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.skipGetVaultVersionInput">skip_get_vault_version_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.skipTlsVerifyInput">skip_tls_verify_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.setNamespaceFromTokenInput">set_namespace_from_token_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.skipChildTokenInput">skip_child_token_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.skipGetVaultVersionInput">skip_get_vault_version_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.skipTlsVerifyInput">skip_tls_verify_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.tlsServerNameInput">tls_server_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.tokenInput">token_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.tokenNameInput">token_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.vaultVersionOverrideInput">vault_version_override_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.addAddressToEnv">add_address_to_env</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.address">address</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLogin">auth_login</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginAws">auth_login_aws</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginAzure">auth_login_azure</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginCert">auth_login_cert</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginGcp">auth_login_gcp</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginJwt">auth_login_jwt</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginKerberos">auth_login_kerberos</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginOci">auth_login_oci</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginOidc">auth_login_oidc</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginRadius">auth_login_radius</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginTokenFile">auth_login_token_file</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginUserpass">auth_login_userpass</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLogin">auth_login</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginAws">auth_login_aws</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginAzure">auth_login_azure</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginCert">auth_login_cert</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginGcp">auth_login_gcp</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginJwt">auth_login_jwt</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginKerberos">auth_login_kerberos</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginOci">auth_login_oci</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginOidc">auth_login_oidc</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginRadius">auth_login_radius</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginTokenFile">auth_login_token_file</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.authLoginUserpass">auth_login_userpass</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.caCertDir">ca_cert_dir</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.caCertFile">ca_cert_file</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.clientAuth">client_auth</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.headers">headers</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderHeaders">VaultProviderHeaders</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.clientAuth">client_auth</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.headers">headers</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderHeaders">VaultProviderHeaders</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.maxLeaseTtlSeconds">max_lease_ttl_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.maxRetries">max_retries</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.maxRetriesCcc">max_retries_ccc</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.namespace">namespace</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.setNamespaceFromToken">set_namespace_from_token</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.skipChildToken">skip_child_token</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.skipGetVaultVersion">skip_get_vault_version</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.skipTlsVerify">skip_tls_verify</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.setNamespaceFromToken">set_namespace_from_token</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.skipChildToken">skip_child_token</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.skipGetVaultVersion">skip_get_vault_version</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.skipTlsVerify">skip_tls_verify</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.tlsServerName">tls_server_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.token">token</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProvider.property.tokenName">token_name</a></code> | <code>str</code> | *No description.* |
@@ -1048,120 +1048,120 @@ alias_input: str
 ##### `auth_login_aws_input`<sup>Optional</sup> <a name="auth_login_aws_input" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginAwsInput"></a>
 
 ```python
-auth_login_aws_input: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginAws]]
+auth_login_aws_input: IResolvable | typing.List[VaultProviderAuthLoginAws]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a>]
 
 ---
 
 ##### `auth_login_azure_input`<sup>Optional</sup> <a name="auth_login_azure_input" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginAzureInput"></a>
 
 ```python
-auth_login_azure_input: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginAzure]]
+auth_login_azure_input: IResolvable | typing.List[VaultProviderAuthLoginAzure]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a>]
 
 ---
 
 ##### `auth_login_cert_input`<sup>Optional</sup> <a name="auth_login_cert_input" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginCertInput"></a>
 
 ```python
-auth_login_cert_input: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginCert]]
+auth_login_cert_input: IResolvable | typing.List[VaultProviderAuthLoginCert]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a>]
 
 ---
 
 ##### `auth_login_gcp_input`<sup>Optional</sup> <a name="auth_login_gcp_input" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginGcpInput"></a>
 
 ```python
-auth_login_gcp_input: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginGcp]]
+auth_login_gcp_input: IResolvable | typing.List[VaultProviderAuthLoginGcp]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a>]
 
 ---
 
 ##### `auth_login_input`<sup>Optional</sup> <a name="auth_login_input" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginInput"></a>
 
 ```python
-auth_login_input: typing.Union[IResolvable, typing.List[VaultProviderAuthLogin]]
+auth_login_input: IResolvable | typing.List[VaultProviderAuthLogin]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a>]
 
 ---
 
 ##### `auth_login_jwt_input`<sup>Optional</sup> <a name="auth_login_jwt_input" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginJwtInput"></a>
 
 ```python
-auth_login_jwt_input: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginJwt]]
+auth_login_jwt_input: IResolvable | typing.List[VaultProviderAuthLoginJwt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a>]
 
 ---
 
 ##### `auth_login_kerberos_input`<sup>Optional</sup> <a name="auth_login_kerberos_input" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginKerberosInput"></a>
 
 ```python
-auth_login_kerberos_input: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginKerberos]]
+auth_login_kerberos_input: IResolvable | typing.List[VaultProviderAuthLoginKerberos]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a>]
 
 ---
 
 ##### `auth_login_oci_input`<sup>Optional</sup> <a name="auth_login_oci_input" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginOciInput"></a>
 
 ```python
-auth_login_oci_input: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginOci]]
+auth_login_oci_input: IResolvable | typing.List[VaultProviderAuthLoginOci]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a>]
 
 ---
 
 ##### `auth_login_oidc_input`<sup>Optional</sup> <a name="auth_login_oidc_input" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginOidcInput"></a>
 
 ```python
-auth_login_oidc_input: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginOidc]]
+auth_login_oidc_input: IResolvable | typing.List[VaultProviderAuthLoginOidc]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a>]
 
 ---
 
 ##### `auth_login_radius_input`<sup>Optional</sup> <a name="auth_login_radius_input" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginRadiusInput"></a>
 
 ```python
-auth_login_radius_input: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginRadius]]
+auth_login_radius_input: IResolvable | typing.List[VaultProviderAuthLoginRadius]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>]
 
 ---
 
 ##### `auth_login_token_file_input`<sup>Optional</sup> <a name="auth_login_token_file_input" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginTokenFileInput"></a>
 
 ```python
-auth_login_token_file_input: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginTokenFile]]
+auth_login_token_file_input: IResolvable | typing.List[VaultProviderAuthLoginTokenFile]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>]
 
 ---
 
 ##### `auth_login_userpass_input`<sup>Optional</sup> <a name="auth_login_userpass_input" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginUserpassInput"></a>
 
 ```python
-auth_login_userpass_input: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginUserpass]]
+auth_login_userpass_input: IResolvable | typing.List[VaultProviderAuthLoginUserpass]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a>]
 
 ---
 
@@ -1188,20 +1188,20 @@ ca_cert_file_input: str
 ##### `client_auth_input`<sup>Optional</sup> <a name="client_auth_input" id="@cdktf/provider-vault.provider.VaultProvider.property.clientAuthInput"></a>
 
 ```python
-client_auth_input: typing.Union[IResolvable, typing.List[VaultProviderClientAuth]]
+client_auth_input: IResolvable | typing.List[VaultProviderClientAuth]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a>]
 
 ---
 
 ##### `headers_input`<sup>Optional</sup> <a name="headers_input" id="@cdktf/provider-vault.provider.VaultProvider.property.headersInput"></a>
 
 ```python
-headers_input: typing.Union[IResolvable, typing.List[VaultProviderHeaders]]
+headers_input: IResolvable | typing.List[VaultProviderHeaders]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderHeaders">VaultProviderHeaders</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderHeaders">VaultProviderHeaders</a>]
 
 ---
 
@@ -1248,40 +1248,40 @@ namespace_input: str
 ##### `set_namespace_from_token_input`<sup>Optional</sup> <a name="set_namespace_from_token_input" id="@cdktf/provider-vault.provider.VaultProvider.property.setNamespaceFromTokenInput"></a>
 
 ```python
-set_namespace_from_token_input: typing.Union[bool, IResolvable]
+set_namespace_from_token_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `skip_child_token_input`<sup>Optional</sup> <a name="skip_child_token_input" id="@cdktf/provider-vault.provider.VaultProvider.property.skipChildTokenInput"></a>
 
 ```python
-skip_child_token_input: typing.Union[bool, IResolvable]
+skip_child_token_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `skip_get_vault_version_input`<sup>Optional</sup> <a name="skip_get_vault_version_input" id="@cdktf/provider-vault.provider.VaultProvider.property.skipGetVaultVersionInput"></a>
 
 ```python
-skip_get_vault_version_input: typing.Union[bool, IResolvable]
+skip_get_vault_version_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `skip_tls_verify_input`<sup>Optional</sup> <a name="skip_tls_verify_input" id="@cdktf/provider-vault.provider.VaultProvider.property.skipTlsVerifyInput"></a>
 
 ```python
-skip_tls_verify_input: typing.Union[bool, IResolvable]
+skip_tls_verify_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1348,120 +1348,120 @@ address: str
 ##### `auth_login`<sup>Optional</sup> <a name="auth_login" id="@cdktf/provider-vault.provider.VaultProvider.property.authLogin"></a>
 
 ```python
-auth_login: typing.Union[IResolvable, typing.List[VaultProviderAuthLogin]]
+auth_login: IResolvable | typing.List[VaultProviderAuthLogin]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a>]
 
 ---
 
 ##### `auth_login_aws`<sup>Optional</sup> <a name="auth_login_aws" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginAws"></a>
 
 ```python
-auth_login_aws: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginAws]]
+auth_login_aws: IResolvable | typing.List[VaultProviderAuthLoginAws]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a>]
 
 ---
 
 ##### `auth_login_azure`<sup>Optional</sup> <a name="auth_login_azure" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginAzure"></a>
 
 ```python
-auth_login_azure: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginAzure]]
+auth_login_azure: IResolvable | typing.List[VaultProviderAuthLoginAzure]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a>]
 
 ---
 
 ##### `auth_login_cert`<sup>Optional</sup> <a name="auth_login_cert" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginCert"></a>
 
 ```python
-auth_login_cert: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginCert]]
+auth_login_cert: IResolvable | typing.List[VaultProviderAuthLoginCert]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a>]
 
 ---
 
 ##### `auth_login_gcp`<sup>Optional</sup> <a name="auth_login_gcp" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginGcp"></a>
 
 ```python
-auth_login_gcp: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginGcp]]
+auth_login_gcp: IResolvable | typing.List[VaultProviderAuthLoginGcp]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a>]
 
 ---
 
 ##### `auth_login_jwt`<sup>Optional</sup> <a name="auth_login_jwt" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginJwt"></a>
 
 ```python
-auth_login_jwt: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginJwt]]
+auth_login_jwt: IResolvable | typing.List[VaultProviderAuthLoginJwt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a>]
 
 ---
 
 ##### `auth_login_kerberos`<sup>Optional</sup> <a name="auth_login_kerberos" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginKerberos"></a>
 
 ```python
-auth_login_kerberos: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginKerberos]]
+auth_login_kerberos: IResolvable | typing.List[VaultProviderAuthLoginKerberos]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a>]
 
 ---
 
 ##### `auth_login_oci`<sup>Optional</sup> <a name="auth_login_oci" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginOci"></a>
 
 ```python
-auth_login_oci: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginOci]]
+auth_login_oci: IResolvable | typing.List[VaultProviderAuthLoginOci]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a>]
 
 ---
 
 ##### `auth_login_oidc`<sup>Optional</sup> <a name="auth_login_oidc" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginOidc"></a>
 
 ```python
-auth_login_oidc: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginOidc]]
+auth_login_oidc: IResolvable | typing.List[VaultProviderAuthLoginOidc]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a>]
 
 ---
 
 ##### `auth_login_radius`<sup>Optional</sup> <a name="auth_login_radius" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginRadius"></a>
 
 ```python
-auth_login_radius: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginRadius]]
+auth_login_radius: IResolvable | typing.List[VaultProviderAuthLoginRadius]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>]
 
 ---
 
 ##### `auth_login_token_file`<sup>Optional</sup> <a name="auth_login_token_file" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginTokenFile"></a>
 
 ```python
-auth_login_token_file: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginTokenFile]]
+auth_login_token_file: IResolvable | typing.List[VaultProviderAuthLoginTokenFile]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>]
 
 ---
 
 ##### `auth_login_userpass`<sup>Optional</sup> <a name="auth_login_userpass" id="@cdktf/provider-vault.provider.VaultProvider.property.authLoginUserpass"></a>
 
 ```python
-auth_login_userpass: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginUserpass]]
+auth_login_userpass: IResolvable | typing.List[VaultProviderAuthLoginUserpass]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a>]
 
 ---
 
@@ -1488,20 +1488,20 @@ ca_cert_file: str
 ##### `client_auth`<sup>Optional</sup> <a name="client_auth" id="@cdktf/provider-vault.provider.VaultProvider.property.clientAuth"></a>
 
 ```python
-client_auth: typing.Union[IResolvable, typing.List[VaultProviderClientAuth]]
+client_auth: IResolvable | typing.List[VaultProviderClientAuth]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a>]
 
 ---
 
 ##### `headers`<sup>Optional</sup> <a name="headers" id="@cdktf/provider-vault.provider.VaultProvider.property.headers"></a>
 
 ```python
-headers: typing.Union[IResolvable, typing.List[VaultProviderHeaders]]
+headers: IResolvable | typing.List[VaultProviderHeaders]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderHeaders">VaultProviderHeaders</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderHeaders">VaultProviderHeaders</a>]
 
 ---
 
@@ -1548,40 +1548,40 @@ namespace: str
 ##### `set_namespace_from_token`<sup>Optional</sup> <a name="set_namespace_from_token" id="@cdktf/provider-vault.provider.VaultProvider.property.setNamespaceFromToken"></a>
 
 ```python
-set_namespace_from_token: typing.Union[bool, IResolvable]
+set_namespace_from_token: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `skip_child_token`<sup>Optional</sup> <a name="skip_child_token" id="@cdktf/provider-vault.provider.VaultProvider.property.skipChildToken"></a>
 
 ```python
-skip_child_token: typing.Union[bool, IResolvable]
+skip_child_token: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `skip_get_vault_version`<sup>Optional</sup> <a name="skip_get_vault_version" id="@cdktf/provider-vault.provider.VaultProvider.property.skipGetVaultVersion"></a>
 
 ```python
-skip_get_vault_version: typing.Union[bool, IResolvable]
+skip_get_vault_version: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `skip_tls_verify`<sup>Optional</sup> <a name="skip_tls_verify" id="@cdktf/provider-vault.provider.VaultProvider.property.skipTlsVerify"></a>
 
 ```python
-skip_tls_verify: typing.Union[bool, IResolvable]
+skip_tls_verify: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1657,7 +1657,7 @@ provider.VaultProviderAuthLogin(
   method: str = None,
   namespace: str = None,
   parameters: typing.Mapping[str] = None,
-  use_root_namespace: typing.Union[bool, IResolvable] = None
+  use_root_namespace: bool | IResolvable = None
 )
 ```
 
@@ -1669,7 +1669,7 @@ provider.VaultProviderAuthLogin(
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.method">method</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs#method VaultProvider#method}. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.namespace">namespace</a></code> | <code>str</code> | The authentication engine's namespace. Conflicts with use_root_namespace. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.parameters">parameters</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs#parameters VaultProvider#parameters}. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.useRootNamespace">use_root_namespace</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.useRootNamespace">use_root_namespace</a></code> | <code>bool \| cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
 
 ---
 
@@ -1726,10 +1726,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `use_root_namespace`<sup>Optional</sup> <a name="use_root_namespace" id="@cdktf/provider-vault.provider.VaultProviderAuthLogin.property.useRootNamespace"></a>
 
 ```python
-use_root_namespace: typing.Union[bool, IResolvable]
+use_root_namespace: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
@@ -1760,7 +1760,7 @@ provider.VaultProviderAuthLoginAws(
   header_value: str = None,
   mount: str = None,
   namespace: str = None,
-  use_root_namespace: typing.Union[bool, IResolvable] = None
+  use_root_namespace: bool | IResolvable = None
 )
 ```
 
@@ -1783,7 +1783,7 @@ provider.VaultProviderAuthLoginAws(
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws.property.headerValue">header_value</a></code> | <code>str</code> | The Vault header value to include in the STS signing request. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws.property.mount">mount</a></code> | <code>str</code> | The path where the authentication engine is mounted. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws.property.namespace">namespace</a></code> | <code>str</code> | The authentication engine's namespace. Conflicts with use_root_namespace. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws.property.useRootNamespace">use_root_namespace</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws.property.useRootNamespace">use_root_namespace</a></code> | <code>bool \| cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
 
 ---
 
@@ -2000,10 +2000,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `use_root_namespace`<sup>Optional</sup> <a name="use_root_namespace" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginAws.property.useRootNamespace"></a>
 
 ```python
-use_root_namespace: typing.Union[bool, IResolvable]
+use_root_namespace: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
@@ -2028,7 +2028,7 @@ provider.VaultProviderAuthLoginAzure(
   namespace: str = None,
   scope: str = None,
   tenant_id: str = None,
-  use_root_namespace: typing.Union[bool, IResolvable] = None,
+  use_root_namespace: bool | IResolvable = None,
   vm_name: str = None,
   vmss_name: str = None
 )
@@ -2047,7 +2047,7 @@ provider.VaultProviderAuthLoginAzure(
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure.property.namespace">namespace</a></code> | <code>str</code> | The authentication engine's namespace. Conflicts with use_root_namespace. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure.property.scope">scope</a></code> | <code>str</code> | The scopes to include in the token request. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure.property.tenantId">tenant_id</a></code> | <code>str</code> | Provides the tenant ID to use in a multi-tenant authentication scenario. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure.property.useRootNamespace">use_root_namespace</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure.property.useRootNamespace">use_root_namespace</a></code> | <code>bool \| cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure.property.vmName">vm_name</a></code> | <code>str</code> | The virtual machine name for the machine that generated the MSI token. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure.property.vmssName">vmss_name</a></code> | <code>str</code> | The virtual machine scale set name for the machine that generated the MSI token. |
 
@@ -2182,10 +2182,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `use_root_namespace`<sup>Optional</sup> <a name="use_root_namespace" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure.property.useRootNamespace"></a>
 
 ```python
-use_root_namespace: typing.Union[bool, IResolvable]
+use_root_namespace: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
@@ -2238,7 +2238,7 @@ provider.VaultProviderAuthLoginCert(
   mount: str = None,
   name: str = None,
   namespace: str = None,
-  use_root_namespace: typing.Union[bool, IResolvable] = None
+  use_root_namespace: bool | IResolvable = None
 )
 ```
 
@@ -2251,7 +2251,7 @@ provider.VaultProviderAuthLoginCert(
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert.property.mount">mount</a></code> | <code>str</code> | The path where the authentication engine is mounted. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert.property.name">name</a></code> | <code>str</code> | Name of the certificate's role. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert.property.namespace">namespace</a></code> | <code>str</code> | The authentication engine's namespace. Conflicts with use_root_namespace. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert.property.useRootNamespace">use_root_namespace</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert.property.useRootNamespace">use_root_namespace</a></code> | <code>bool \| cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
 
 ---
 
@@ -2328,10 +2328,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `use_root_namespace`<sup>Optional</sup> <a name="use_root_namespace" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginCert.property.useRootNamespace"></a>
 
 ```python
-use_root_namespace: typing.Union[bool, IResolvable]
+use_root_namespace: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
@@ -2353,7 +2353,7 @@ provider.VaultProviderAuthLoginGcp(
   mount: str = None,
   namespace: str = None,
   service_account: str = None,
-  use_root_namespace: typing.Union[bool, IResolvable] = None
+  use_root_namespace: bool | IResolvable = None
 )
 ```
 
@@ -2367,7 +2367,7 @@ provider.VaultProviderAuthLoginGcp(
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp.property.mount">mount</a></code> | <code>str</code> | The path where the authentication engine is mounted. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp.property.namespace">namespace</a></code> | <code>str</code> | The authentication engine's namespace. Conflicts with use_root_namespace. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp.property.serviceAccount">service_account</a></code> | <code>str</code> | IAM service account. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp.property.useRootNamespace">use_root_namespace</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp.property.useRootNamespace">use_root_namespace</a></code> | <code>bool \| cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
 
 ---
 
@@ -2458,10 +2458,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `use_root_namespace`<sup>Optional</sup> <a name="use_root_namespace" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp.property.useRootNamespace"></a>
 
 ```python
-use_root_namespace: typing.Union[bool, IResolvable]
+use_root_namespace: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
@@ -2481,7 +2481,7 @@ provider.VaultProviderAuthLoginJwt(
   jwt: str = None,
   mount: str = None,
   namespace: str = None,
-  use_root_namespace: typing.Union[bool, IResolvable] = None
+  use_root_namespace: bool | IResolvable = None
 )
 ```
 
@@ -2493,7 +2493,7 @@ provider.VaultProviderAuthLoginJwt(
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt.property.jwt">jwt</a></code> | <code>str</code> | A signed JSON Web Token. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt.property.mount">mount</a></code> | <code>str</code> | The path where the authentication engine is mounted. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt.property.namespace">namespace</a></code> | <code>str</code> | The authentication engine's namespace. Conflicts with use_root_namespace. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt.property.useRootNamespace">use_root_namespace</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt.property.useRootNamespace">use_root_namespace</a></code> | <code>bool \| cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
 
 ---
 
@@ -2556,10 +2556,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `use_root_namespace`<sup>Optional</sup> <a name="use_root_namespace" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt.property.useRootNamespace"></a>
 
 ```python
-use_root_namespace: typing.Union[bool, IResolvable]
+use_root_namespace: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
@@ -2575,17 +2575,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_vault import provider
 
 provider.VaultProviderAuthLoginKerberos(
-  disable_fast_negotiation: typing.Union[bool, IResolvable] = None,
+  disable_fast_negotiation: bool | IResolvable = None,
   keytab_path: str = None,
   krb5_conf_path: str = None,
   mount: str = None,
   namespace: str = None,
   realm: str = None,
-  remove_instance_name: typing.Union[bool, IResolvable] = None,
+  remove_instance_name: bool | IResolvable = None,
   service: str = None,
   token: str = None,
   username: str = None,
-  use_root_namespace: typing.Union[bool, IResolvable] = None
+  use_root_namespace: bool | IResolvable = None
 )
 ```
 
@@ -2593,27 +2593,27 @@ provider.VaultProviderAuthLoginKerberos(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.disableFastNegotiation">disable_fast_negotiation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disable the Kerberos FAST negotiation. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.disableFastNegotiation">disable_fast_negotiation</a></code> | <code>bool \| cdktf.IResolvable</code> | Disable the Kerberos FAST negotiation. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.keytabPath">keytab_path</a></code> | <code>str</code> | The Kerberos keytab file containing the entry of the login entity. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.krb5ConfPath">krb5_conf_path</a></code> | <code>str</code> | A valid Kerberos configuration file e.g. /etc/krb5.conf. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.mount">mount</a></code> | <code>str</code> | The path where the authentication engine is mounted. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.namespace">namespace</a></code> | <code>str</code> | The authentication engine's namespace. Conflicts with use_root_namespace. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.realm">realm</a></code> | <code>str</code> | The Kerberos server's authoritative authentication domain. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.removeInstanceName">remove_instance_name</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Strip the host from the username found in the keytab. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.removeInstanceName">remove_instance_name</a></code> | <code>bool \| cdktf.IResolvable</code> | Strip the host from the username found in the keytab. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.service">service</a></code> | <code>str</code> | The service principle name. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.token">token</a></code> | <code>str</code> | Simple and Protected GSSAPI Negotiation Mechanism (SPNEGO) token. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.username">username</a></code> | <code>str</code> | The username to login into Kerberos with. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.useRootNamespace">use_root_namespace</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.useRootNamespace">use_root_namespace</a></code> | <code>bool \| cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
 
 ---
 
 ##### `disable_fast_negotiation`<sup>Optional</sup> <a name="disable_fast_negotiation" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.disableFastNegotiation"></a>
 
 ```python
-disable_fast_negotiation: typing.Union[bool, IResolvable]
+disable_fast_negotiation: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Disable the Kerberos FAST negotiation.
 
@@ -2694,10 +2694,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `remove_instance_name`<sup>Optional</sup> <a name="remove_instance_name" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.removeInstanceName"></a>
 
 ```python
-remove_instance_name: typing.Union[bool, IResolvable]
+remove_instance_name: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Strip the host from the username found in the keytab.
 
@@ -2750,10 +2750,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `use_root_namespace`<sup>Optional</sup> <a name="use_root_namespace" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.property.useRootNamespace"></a>
 
 ```python
-use_root_namespace: typing.Union[bool, IResolvable]
+use_root_namespace: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
@@ -2773,7 +2773,7 @@ provider.VaultProviderAuthLoginOci(
   role: str,
   mount: str = None,
   namespace: str = None,
-  use_root_namespace: typing.Union[bool, IResolvable] = None
+  use_root_namespace: bool | IResolvable = None
 )
 ```
 
@@ -2785,7 +2785,7 @@ provider.VaultProviderAuthLoginOci(
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci.property.role">role</a></code> | <code>str</code> | Name of the login role. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci.property.mount">mount</a></code> | <code>str</code> | The path where the authentication engine is mounted. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci.property.namespace">namespace</a></code> | <code>str</code> | The authentication engine's namespace. Conflicts with use_root_namespace. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci.property.useRootNamespace">use_root_namespace</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci.property.useRootNamespace">use_root_namespace</a></code> | <code>bool \| cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
 
 ---
 
@@ -2848,10 +2848,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `use_root_namespace`<sup>Optional</sup> <a name="use_root_namespace" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginOci.property.useRootNamespace"></a>
 
 ```python
-use_root_namespace: typing.Union[bool, IResolvable]
+use_root_namespace: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
@@ -2872,7 +2872,7 @@ provider.VaultProviderAuthLoginOidc(
   callback_listener_address: str = None,
   mount: str = None,
   namespace: str = None,
-  use_root_namespace: typing.Union[bool, IResolvable] = None
+  use_root_namespace: bool | IResolvable = None
 )
 ```
 
@@ -2885,7 +2885,7 @@ provider.VaultProviderAuthLoginOidc(
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc.property.callbackListenerAddress">callback_listener_address</a></code> | <code>str</code> | The callback listener's address. Must be a valid URI without the path. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc.property.mount">mount</a></code> | <code>str</code> | The path where the authentication engine is mounted. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc.property.namespace">namespace</a></code> | <code>str</code> | The authentication engine's namespace. Conflicts with use_root_namespace. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc.property.useRootNamespace">use_root_namespace</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc.property.useRootNamespace">use_root_namespace</a></code> | <code>bool \| cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
 
 ---
 
@@ -2962,10 +2962,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `use_root_namespace`<sup>Optional</sup> <a name="use_root_namespace" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc.property.useRootNamespace"></a>
 
 ```python
-use_root_namespace: typing.Union[bool, IResolvable]
+use_root_namespace: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
@@ -2985,7 +2985,7 @@ provider.VaultProviderAuthLoginRadius(
   namespace: str = None,
   password: str = None,
   username: str = None,
-  use_root_namespace: typing.Union[bool, IResolvable] = None
+  use_root_namespace: bool | IResolvable = None
 )
 ```
 
@@ -2997,7 +2997,7 @@ provider.VaultProviderAuthLoginRadius(
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius.property.namespace">namespace</a></code> | <code>str</code> | The authentication engine's namespace. Conflicts with use_root_namespace. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius.property.password">password</a></code> | <code>str</code> | The Radius password for username. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius.property.username">username</a></code> | <code>str</code> | The Radius username. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius.property.useRootNamespace">use_root_namespace</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius.property.useRootNamespace">use_root_namespace</a></code> | <code>bool \| cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
 
 ---
 
@@ -3060,10 +3060,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `use_root_namespace`<sup>Optional</sup> <a name="use_root_namespace" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius.property.useRootNamespace"></a>
 
 ```python
-use_root_namespace: typing.Union[bool, IResolvable]
+use_root_namespace: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
@@ -3081,7 +3081,7 @@ from cdktf_cdktf_provider_vault import provider
 provider.VaultProviderAuthLoginTokenFile(
   filename: str = None,
   namespace: str = None,
-  use_root_namespace: typing.Union[bool, IResolvable] = None
+  use_root_namespace: bool | IResolvable = None
 )
 ```
 
@@ -3091,7 +3091,7 @@ provider.VaultProviderAuthLoginTokenFile(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile.property.filename">filename</a></code> | <code>str</code> | The name of a file containing a single line that is a valid Vault token. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile.property.namespace">namespace</a></code> | <code>str</code> | The authentication engine's namespace. Conflicts with use_root_namespace. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile.property.useRootNamespace">use_root_namespace</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile.property.useRootNamespace">use_root_namespace</a></code> | <code>bool \| cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
 
 ---
 
@@ -3126,10 +3126,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `use_root_namespace`<sup>Optional</sup> <a name="use_root_namespace" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile.property.useRootNamespace"></a>
 
 ```python
-use_root_namespace: typing.Union[bool, IResolvable]
+use_root_namespace: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
@@ -3150,7 +3150,7 @@ provider.VaultProviderAuthLoginUserpass(
   password: str = None,
   password_file: str = None,
   username: str = None,
-  use_root_namespace: typing.Union[bool, IResolvable] = None
+  use_root_namespace: bool | IResolvable = None
 )
 ```
 
@@ -3163,7 +3163,7 @@ provider.VaultProviderAuthLoginUserpass(
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass.property.password">password</a></code> | <code>str</code> | Login with password. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass.property.passwordFile">password_file</a></code> | <code>str</code> | Login with password from a file. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass.property.username">username</a></code> | <code>str</code> | Login with username. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass.property.useRootNamespace">use_root_namespace</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass.property.useRootNamespace">use_root_namespace</a></code> | <code>bool \| cdktf.IResolvable</code> | Authenticate to the root Vault namespace. Conflicts with namespace. |
 
 ---
 
@@ -3240,10 +3240,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `use_root_namespace`<sup>Optional</sup> <a name="use_root_namespace" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass.property.useRootNamespace"></a>
 
 ```python
-use_root_namespace: typing.Union[bool, IResolvable]
+use_root_namespace: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Authenticate to the root Vault namespace. Conflicts with namespace.
 
@@ -3312,30 +3312,30 @@ provider.VaultProviderConfig(
   add_address_to_env: str = None,
   address: str = None,
   alias: str = None,
-  auth_login: typing.Union[IResolvable, typing.List[VaultProviderAuthLogin]] = None,
-  auth_login_aws: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginAws]] = None,
-  auth_login_azure: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginAzure]] = None,
-  auth_login_cert: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginCert]] = None,
-  auth_login_gcp: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginGcp]] = None,
-  auth_login_jwt: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginJwt]] = None,
-  auth_login_kerberos: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginKerberos]] = None,
-  auth_login_oci: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginOci]] = None,
-  auth_login_oidc: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginOidc]] = None,
-  auth_login_radius: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginRadius]] = None,
-  auth_login_token_file: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginTokenFile]] = None,
-  auth_login_userpass: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginUserpass]] = None,
+  auth_login: IResolvable | typing.List[VaultProviderAuthLogin] = None,
+  auth_login_aws: IResolvable | typing.List[VaultProviderAuthLoginAws] = None,
+  auth_login_azure: IResolvable | typing.List[VaultProviderAuthLoginAzure] = None,
+  auth_login_cert: IResolvable | typing.List[VaultProviderAuthLoginCert] = None,
+  auth_login_gcp: IResolvable | typing.List[VaultProviderAuthLoginGcp] = None,
+  auth_login_jwt: IResolvable | typing.List[VaultProviderAuthLoginJwt] = None,
+  auth_login_kerberos: IResolvable | typing.List[VaultProviderAuthLoginKerberos] = None,
+  auth_login_oci: IResolvable | typing.List[VaultProviderAuthLoginOci] = None,
+  auth_login_oidc: IResolvable | typing.List[VaultProviderAuthLoginOidc] = None,
+  auth_login_radius: IResolvable | typing.List[VaultProviderAuthLoginRadius] = None,
+  auth_login_token_file: IResolvable | typing.List[VaultProviderAuthLoginTokenFile] = None,
+  auth_login_userpass: IResolvable | typing.List[VaultProviderAuthLoginUserpass] = None,
   ca_cert_dir: str = None,
   ca_cert_file: str = None,
-  client_auth: typing.Union[IResolvable, typing.List[VaultProviderClientAuth]] = None,
-  headers: typing.Union[IResolvable, typing.List[VaultProviderHeaders]] = None,
+  client_auth: IResolvable | typing.List[VaultProviderClientAuth] = None,
+  headers: IResolvable | typing.List[VaultProviderHeaders] = None,
   max_lease_ttl_seconds: typing.Union[int, float] = None,
   max_retries: typing.Union[int, float] = None,
   max_retries_ccc: typing.Union[int, float] = None,
   namespace: str = None,
-  set_namespace_from_token: typing.Union[bool, IResolvable] = None,
-  skip_child_token: typing.Union[bool, IResolvable] = None,
-  skip_get_vault_version: typing.Union[bool, IResolvable] = None,
-  skip_tls_verify: typing.Union[bool, IResolvable] = None,
+  set_namespace_from_token: bool | IResolvable = None,
+  skip_child_token: bool | IResolvable = None,
+  skip_get_vault_version: bool | IResolvable = None,
+  skip_tls_verify: bool | IResolvable = None,
   tls_server_name: str = None,
   token: str = None,
   token_name: str = None,
@@ -3350,30 +3350,30 @@ provider.VaultProviderConfig(
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.addAddressToEnv">add_address_to_env</a></code> | <code>str</code> | If true, adds the value of the `address` argument to the Terraform process environment. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.address">address</a></code> | <code>str</code> | URL of the root of the target Vault server. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.alias">alias</a></code> | <code>str</code> | Alias name. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLogin">auth_login</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a>]]</code> | auth_login block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginAws">auth_login_aws</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a>]]</code> | auth_login_aws block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginAzure">auth_login_azure</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a>]]</code> | auth_login_azure block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginCert">auth_login_cert</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a>]]</code> | auth_login_cert block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginGcp">auth_login_gcp</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a>]]</code> | auth_login_gcp block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginJwt">auth_login_jwt</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a>]]</code> | auth_login_jwt block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginKerberos">auth_login_kerberos</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a>]]</code> | auth_login_kerberos block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginOci">auth_login_oci</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a>]]</code> | auth_login_oci block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginOidc">auth_login_oidc</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a>]]</code> | auth_login_oidc block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginRadius">auth_login_radius</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>]]</code> | auth_login_radius block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginTokenFile">auth_login_token_file</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>]]</code> | auth_login_token_file block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginUserpass">auth_login_userpass</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a>]]</code> | auth_login_userpass block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLogin">auth_login</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a>]</code> | auth_login block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginAws">auth_login_aws</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a>]</code> | auth_login_aws block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginAzure">auth_login_azure</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a>]</code> | auth_login_azure block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginCert">auth_login_cert</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a>]</code> | auth_login_cert block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginGcp">auth_login_gcp</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a>]</code> | auth_login_gcp block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginJwt">auth_login_jwt</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a>]</code> | auth_login_jwt block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginKerberos">auth_login_kerberos</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a>]</code> | auth_login_kerberos block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginOci">auth_login_oci</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a>]</code> | auth_login_oci block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginOidc">auth_login_oidc</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a>]</code> | auth_login_oidc block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginRadius">auth_login_radius</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>]</code> | auth_login_radius block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginTokenFile">auth_login_token_file</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>]</code> | auth_login_token_file block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginUserpass">auth_login_userpass</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a>]</code> | auth_login_userpass block. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.caCertDir">ca_cert_dir</a></code> | <code>str</code> | Path to directory containing CA certificate files to validate the server's certificate. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.caCertFile">ca_cert_file</a></code> | <code>str</code> | Path to a CA certificate file to validate the server's certificate. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.clientAuth">client_auth</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a>]]</code> | client_auth block. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.headers">headers</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderHeaders">VaultProviderHeaders</a>]]</code> | headers block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.clientAuth">client_auth</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a>]</code> | client_auth block. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.headers">headers</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderHeaders">VaultProviderHeaders</a>]</code> | headers block. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.maxLeaseTtlSeconds">max_lease_ttl_seconds</a></code> | <code>typing.Union[int, float]</code> | Maximum TTL for secret leases requested by this provider. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.maxRetries">max_retries</a></code> | <code>typing.Union[int, float]</code> | Maximum number of retries when a 5xx error code is encountered. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.maxRetriesCcc">max_retries_ccc</a></code> | <code>typing.Union[int, float]</code> | Maximum number of retries for Client Controlled Consistency related operations. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.namespace">namespace</a></code> | <code>str</code> | The namespace to use. Available only for Vault Enterprise. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.setNamespaceFromToken">set_namespace_from_token</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | In the case where the Vault token is for a specific namespace and the provider namespace is not configured, use the token namespace as the root namespace for all resources. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.skipChildToken">skip_child_token</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set this to true to prevent the creation of ephemeral child token used by this provider. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.skipGetVaultVersion">skip_get_vault_version</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Skip the dynamic fetching of the Vault server version. |
-| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.skipTlsVerify">skip_tls_verify</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set this to true only if the target Vault server is an insecure development instance. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.setNamespaceFromToken">set_namespace_from_token</a></code> | <code>bool \| cdktf.IResolvable</code> | In the case where the Vault token is for a specific namespace and the provider namespace is not configured, use the token namespace as the root namespace for all resources. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.skipChildToken">skip_child_token</a></code> | <code>bool \| cdktf.IResolvable</code> | Set this to true to prevent the creation of ephemeral child token used by this provider. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.skipGetVaultVersion">skip_get_vault_version</a></code> | <code>bool \| cdktf.IResolvable</code> | Skip the dynamic fetching of the Vault server version. |
+| <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.skipTlsVerify">skip_tls_verify</a></code> | <code>bool \| cdktf.IResolvable</code> | Set this to true only if the target Vault server is an insecure development instance. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.tlsServerName">tls_server_name</a></code> | <code>str</code> | Name to use as the SNI host when connecting via TLS. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.token">token</a></code> | <code>str</code> | Token to use to authenticate to Vault. |
 | <code><a href="#@cdktf/provider-vault.provider.VaultProviderConfig.property.tokenName">token_name</a></code> | <code>str</code> | Token name to use for creating the Vault child token. |
@@ -3426,10 +3426,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `auth_login`<sup>Optional</sup> <a name="auth_login" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLogin"></a>
 
 ```python
-auth_login: typing.Union[IResolvable, typing.List[VaultProviderAuthLogin]]
+auth_login: IResolvable | typing.List[VaultProviderAuthLogin]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLogin">VaultProviderAuthLogin</a>]
 
 auth_login block.
 
@@ -3440,10 +3440,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `auth_login_aws`<sup>Optional</sup> <a name="auth_login_aws" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginAws"></a>
 
 ```python
-auth_login_aws: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginAws]]
+auth_login_aws: IResolvable | typing.List[VaultProviderAuthLoginAws]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAws">VaultProviderAuthLoginAws</a>]
 
 auth_login_aws block.
 
@@ -3454,10 +3454,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `auth_login_azure`<sup>Optional</sup> <a name="auth_login_azure" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginAzure"></a>
 
 ```python
-auth_login_azure: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginAzure]]
+auth_login_azure: IResolvable | typing.List[VaultProviderAuthLoginAzure]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure">VaultProviderAuthLoginAzure</a>]
 
 auth_login_azure block.
 
@@ -3468,10 +3468,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `auth_login_cert`<sup>Optional</sup> <a name="auth_login_cert" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginCert"></a>
 
 ```python
-auth_login_cert: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginCert]]
+auth_login_cert: IResolvable | typing.List[VaultProviderAuthLoginCert]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginCert">VaultProviderAuthLoginCert</a>]
 
 auth_login_cert block.
 
@@ -3482,10 +3482,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `auth_login_gcp`<sup>Optional</sup> <a name="auth_login_gcp" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginGcp"></a>
 
 ```python
-auth_login_gcp: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginGcp]]
+auth_login_gcp: IResolvable | typing.List[VaultProviderAuthLoginGcp]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp">VaultProviderAuthLoginGcp</a>]
 
 auth_login_gcp block.
 
@@ -3496,10 +3496,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `auth_login_jwt`<sup>Optional</sup> <a name="auth_login_jwt" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginJwt"></a>
 
 ```python
-auth_login_jwt: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginJwt]]
+auth_login_jwt: IResolvable | typing.List[VaultProviderAuthLoginJwt]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt">VaultProviderAuthLoginJwt</a>]
 
 auth_login_jwt block.
 
@@ -3510,10 +3510,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `auth_login_kerberos`<sup>Optional</sup> <a name="auth_login_kerberos" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginKerberos"></a>
 
 ```python
-auth_login_kerberos: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginKerberos]]
+auth_login_kerberos: IResolvable | typing.List[VaultProviderAuthLoginKerberos]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos">VaultProviderAuthLoginKerberos</a>]
 
 auth_login_kerberos block.
 
@@ -3524,10 +3524,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `auth_login_oci`<sup>Optional</sup> <a name="auth_login_oci" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginOci"></a>
 
 ```python
-auth_login_oci: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginOci]]
+auth_login_oci: IResolvable | typing.List[VaultProviderAuthLoginOci]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOci">VaultProviderAuthLoginOci</a>]
 
 auth_login_oci block.
 
@@ -3538,10 +3538,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `auth_login_oidc`<sup>Optional</sup> <a name="auth_login_oidc" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginOidc"></a>
 
 ```python
-auth_login_oidc: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginOidc]]
+auth_login_oidc: IResolvable | typing.List[VaultProviderAuthLoginOidc]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc">VaultProviderAuthLoginOidc</a>]
 
 auth_login_oidc block.
 
@@ -3552,10 +3552,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `auth_login_radius`<sup>Optional</sup> <a name="auth_login_radius" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginRadius"></a>
 
 ```python
-auth_login_radius: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginRadius]]
+auth_login_radius: IResolvable | typing.List[VaultProviderAuthLoginRadius]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius">VaultProviderAuthLoginRadius</a>]
 
 auth_login_radius block.
 
@@ -3566,10 +3566,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `auth_login_token_file`<sup>Optional</sup> <a name="auth_login_token_file" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginTokenFile"></a>
 
 ```python
-auth_login_token_file: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginTokenFile]]
+auth_login_token_file: IResolvable | typing.List[VaultProviderAuthLoginTokenFile]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile">VaultProviderAuthLoginTokenFile</a>]
 
 auth_login_token_file block.
 
@@ -3580,10 +3580,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `auth_login_userpass`<sup>Optional</sup> <a name="auth_login_userpass" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.authLoginUserpass"></a>
 
 ```python
-auth_login_userpass: typing.Union[IResolvable, typing.List[VaultProviderAuthLoginUserpass]]
+auth_login_userpass: IResolvable | typing.List[VaultProviderAuthLoginUserpass]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass">VaultProviderAuthLoginUserpass</a>]
 
 auth_login_userpass block.
 
@@ -3622,10 +3622,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `client_auth`<sup>Optional</sup> <a name="client_auth" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.clientAuth"></a>
 
 ```python
-client_auth: typing.Union[IResolvable, typing.List[VaultProviderClientAuth]]
+client_auth: IResolvable | typing.List[VaultProviderClientAuth]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderClientAuth">VaultProviderClientAuth</a>]
 
 client_auth block.
 
@@ -3636,10 +3636,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `headers`<sup>Optional</sup> <a name="headers" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.headers"></a>
 
 ```python
-headers: typing.Union[IResolvable, typing.List[VaultProviderHeaders]]
+headers: IResolvable | typing.List[VaultProviderHeaders]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderHeaders">VaultProviderHeaders</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vault.provider.VaultProviderHeaders">VaultProviderHeaders</a>]
 
 headers block.
 
@@ -3706,10 +3706,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `set_namespace_from_token`<sup>Optional</sup> <a name="set_namespace_from_token" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.setNamespaceFromToken"></a>
 
 ```python
-set_namespace_from_token: typing.Union[bool, IResolvable]
+set_namespace_from_token: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 In the case where the Vault token is for a specific namespace and the provider namespace is not configured, use the token namespace as the root namespace for all resources.
 
@@ -3720,10 +3720,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `skip_child_token`<sup>Optional</sup> <a name="skip_child_token" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.skipChildToken"></a>
 
 ```python
-skip_child_token: typing.Union[bool, IResolvable]
+skip_child_token: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set this to true to prevent the creation of ephemeral child token used by this provider.
 
@@ -3734,10 +3734,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `skip_get_vault_version`<sup>Optional</sup> <a name="skip_get_vault_version" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.skipGetVaultVersion"></a>
 
 ```python
-skip_get_vault_version: typing.Union[bool, IResolvable]
+skip_get_vault_version: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Skip the dynamic fetching of the Vault server version.
 
@@ -3748,10 +3748,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `skip_tls_verify`<sup>Optional</sup> <a name="skip_tls_verify" id="@cdktf/provider-vault.provider.VaultProviderConfig.property.skipTlsVerify"></a>
 
 ```python
-skip_tls_verify: typing.Union[bool, IResolvable]
+skip_tls_verify: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set this to true only if the target Vault server is an insecure development instance.
 
