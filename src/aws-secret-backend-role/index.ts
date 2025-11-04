@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend_role
+// https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,41 +15,41 @@ export interface AwsSecretBackendRoleConfig extends cdktf.TerraformMetaArguments
   /**
   * The path of the AWS Secret Backend the role belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend_role#backend AwsSecretBackendRole#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend_role#backend AwsSecretBackendRole#backend}
   */
   readonly backend: string;
   /**
   * Role credential type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend_role#credential_type AwsSecretBackendRole#credential_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend_role#credential_type AwsSecretBackendRole#credential_type}
   */
   readonly credentialType: string;
   /**
   * The default TTL in seconds for STS credentials. When a TTL is not specified when STS credentials are requested, and a default TTL is specified on the role, then this default TTL will be used. Valid only when credential_type is one of assumed_role or federation_token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend_role#default_sts_ttl AwsSecretBackendRole#default_sts_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend_role#default_sts_ttl AwsSecretBackendRole#default_sts_ttl}
   */
   readonly defaultStsTtl?: number;
   /**
   * External ID to set for assume role creds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend_role#external_id AwsSecretBackendRole#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend_role#external_id AwsSecretBackendRole#external_id}
   */
   readonly externalId?: string;
   /**
   * A list of IAM group names. IAM users generated against this vault role will be added to these IAM Groups. For a credential type of assumed_role or federation_token, the policies sent to the corresponding AWS call (sts:AssumeRole or sts:GetFederation) will be the policies from each group in iam_groups combined with the policy_document and policy_arns parameters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend_role#iam_groups AwsSecretBackendRole#iam_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend_role#iam_groups AwsSecretBackendRole#iam_groups}
   */
   readonly iamGroups?: string[];
   /**
   * A map of strings representing key/value pairs used as tags for any IAM user created by this role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend_role#iam_tags AwsSecretBackendRole#iam_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend_role#iam_tags AwsSecretBackendRole#iam_tags}
   */
   readonly iamTags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend_role#id AwsSecretBackendRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend_role#id AwsSecretBackendRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,61 +58,67 @@ export interface AwsSecretBackendRoleConfig extends cdktf.TerraformMetaArguments
   /**
   * The max allowed TTL in seconds for STS credentials (credentials TTL are capped to max_sts_ttl). Valid only when credential_type is one of assumed_role or federation_token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend_role#max_sts_ttl AwsSecretBackendRole#max_sts_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend_role#max_sts_ttl AwsSecretBackendRole#max_sts_ttl}
   */
   readonly maxStsTtl?: number;
   /**
+  * The ARN or hardware device number of the device configured to the IAM user for multi-factor authentication. Only required if the IAM user has an MFA device set up in AWS.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend_role#mfa_serial_number AwsSecretBackendRole#mfa_serial_number}
+  */
+  readonly mfaSerialNumber?: string;
+  /**
   * Unique name for the role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend_role#name AwsSecretBackendRole#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend_role#name AwsSecretBackendRole#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend_role#namespace AwsSecretBackendRole#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend_role#namespace AwsSecretBackendRole#namespace}
   */
   readonly namespace?: string;
   /**
   * The ARN of the AWS Permissions Boundary to attach to IAM users created in the role. Valid only when credential_type is iam_user. If not specified, then no permissions boundary policy will be attached.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend_role#permissions_boundary_arn AwsSecretBackendRole#permissions_boundary_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend_role#permissions_boundary_arn AwsSecretBackendRole#permissions_boundary_arn}
   */
   readonly permissionsBoundaryArn?: string;
   /**
   * ARN for an existing IAM policy the role should use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend_role#policy_arns AwsSecretBackendRole#policy_arns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend_role#policy_arns AwsSecretBackendRole#policy_arns}
   */
   readonly policyArns?: string[];
   /**
   * IAM policy the role should use in JSON format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend_role#policy_document AwsSecretBackendRole#policy_document}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend_role#policy_document AwsSecretBackendRole#policy_document}
   */
   readonly policyDocument?: string;
   /**
   * ARNs of AWS roles allowed to be assumed. Only valid when credential_type is 'assumed_role'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend_role#role_arns AwsSecretBackendRole#role_arns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend_role#role_arns AwsSecretBackendRole#role_arns}
   */
   readonly roleArns?: string[];
   /**
   * Session tags to be set for assume role creds created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend_role#session_tags AwsSecretBackendRole#session_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend_role#session_tags AwsSecretBackendRole#session_tags}
   */
   readonly sessionTags?: { [key: string]: string };
   /**
   * The path for the user name. Valid only when credential_type is iam_user. Default is /
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend_role#user_path AwsSecretBackendRole#user_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend_role#user_path AwsSecretBackendRole#user_path}
   */
   readonly userPath?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend_role vault_aws_secret_backend_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend_role vault_aws_secret_backend_role}
 */
 export class AwsSecretBackendRole extends cdktf.TerraformResource {
 
@@ -128,7 +134,7 @@ export class AwsSecretBackendRole extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AwsSecretBackendRole resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AwsSecretBackendRole to import
-  * @param importFromId The id of the existing AwsSecretBackendRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AwsSecretBackendRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AwsSecretBackendRole to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -140,7 +146,7 @@ export class AwsSecretBackendRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend_role vault_aws_secret_backend_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend_role vault_aws_secret_backend_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -151,7 +157,7 @@ export class AwsSecretBackendRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_aws_secret_backend_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.3.0',
+        providerVersion: '5.4.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -170,6 +176,7 @@ export class AwsSecretBackendRole extends cdktf.TerraformResource {
     this._iamTags = config.iamTags;
     this._id = config.id;
     this._maxStsTtl = config.maxStsTtl;
+    this._mfaSerialNumber = config.mfaSerialNumber;
     this._name = config.name;
     this._namespace = config.namespace;
     this._permissionsBoundaryArn = config.permissionsBoundaryArn;
@@ -304,6 +311,22 @@ export class AwsSecretBackendRole extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get maxStsTtlInput() {
     return this._maxStsTtl;
+  }
+
+  // mfa_serial_number - computed: false, optional: true, required: false
+  private _mfaSerialNumber?: string; 
+  public get mfaSerialNumber() {
+    return this.getStringAttribute('mfa_serial_number');
+  }
+  public set mfaSerialNumber(value: string) {
+    this._mfaSerialNumber = value;
+  }
+  public resetMfaSerialNumber() {
+    this._mfaSerialNumber = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mfaSerialNumberInput() {
+    return this._mfaSerialNumber;
   }
 
   // name - computed: false, optional: false, required: true
@@ -445,6 +468,7 @@ export class AwsSecretBackendRole extends cdktf.TerraformResource {
       iam_tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._iamTags),
       id: cdktf.stringToTerraform(this._id),
       max_sts_ttl: cdktf.numberToTerraform(this._maxStsTtl),
+      mfa_serial_number: cdktf.stringToTerraform(this._mfaSerialNumber),
       name: cdktf.stringToTerraform(this._name),
       namespace: cdktf.stringToTerraform(this._namespace),
       permissions_boundary_arn: cdktf.stringToTerraform(this._permissionsBoundaryArn),
@@ -505,6 +529,12 @@ export class AwsSecretBackendRole extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "number",
+      },
+      mfa_serial_number: {
+        value: cdktf.stringToHclTerraform(this._mfaSerialNumber),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       name: {
         value: cdktf.stringToHclTerraform(this._name),

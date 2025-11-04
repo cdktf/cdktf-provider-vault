@@ -30,6 +30,7 @@ Object.defineProperty(exports, 'azureAuthBackendConfig', { get: function () { re
 Object.defineProperty(exports, 'azureAuthBackendRole', { get: function () { return require('./azure-auth-backend-role'); } });
 Object.defineProperty(exports, 'azureSecretBackend', { get: function () { return require('./azure-secret-backend'); } });
 Object.defineProperty(exports, 'azureSecretBackendRole', { get: function () { return require('./azure-secret-backend-role'); } });
+Object.defineProperty(exports, 'azureSecretBackendStaticRole', { get: function () { return require('./azure-secret-backend-static-role'); } });
 Object.defineProperty(exports, 'certAuthBackendRole', { get: function () { return require('./cert-auth-backend-role'); } });
 Object.defineProperty(exports, 'configUiCustomMessage', { get: function () { return require('./config-ui-custom-message'); } });
 Object.defineProperty(exports, 'consulSecretBackend', { get: function () { return require('./consul-secret-backend'); } });
@@ -148,6 +149,8 @@ Object.defineProperty(exports, 'secretsSyncGcpDestination', { get: function () {
 Object.defineProperty(exports, 'secretsSyncGhDestination', { get: function () { return require('./secrets-sync-gh-destination'); } });
 Object.defineProperty(exports, 'secretsSyncGithubApps', { get: function () { return require('./secrets-sync-github-apps'); } });
 Object.defineProperty(exports, 'secretsSyncVercelDestination', { get: function () { return require('./secrets-sync-vercel-destination'); } });
+Object.defineProperty(exports, 'spiffeAuthBackendConfig', { get: function () { return require('./spiffe-auth-backend-config'); } });
+Object.defineProperty(exports, 'spiffeAuthBackendRole', { get: function () { return require('./spiffe-auth-backend-role'); } });
 Object.defineProperty(exports, 'sshSecretBackendCa', { get: function () { return require('./ssh-secret-backend-ca'); } });
 Object.defineProperty(exports, 'sshSecretBackendRole', { get: function () { return require('./ssh-secret-backend-role'); } });
 Object.defineProperty(exports, 'terraformCloudSecretBackend', { get: function () { return require('./terraform-cloud-secret-backend'); } });

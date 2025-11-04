@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/transform_transformation
+// https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/transform_transformation
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface TransformTransformationConfig extends cdktf.TerraformMetaArgume
   /**
   * The set of roles allowed to perform this transformation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/transform_transformation#allowed_roles TransformTransformation#allowed_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/transform_transformation#allowed_roles TransformTransformation#allowed_roles}
   */
   readonly allowedRoles?: string[];
   /**
   * If true, this transform can be deleted. Otherwise deletion is blocked while this value remains false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/transform_transformation#deletion_allowed TransformTransformation#deletion_allowed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/transform_transformation#deletion_allowed TransformTransformation#deletion_allowed}
   */
   readonly deletionAllowed?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/transform_transformation#id TransformTransformation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/transform_transformation#id TransformTransformation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,55 +34,55 @@ export interface TransformTransformationConfig extends cdktf.TerraformMetaArgume
   /**
   * The character used to replace data when in masking mode
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/transform_transformation#masking_character TransformTransformation#masking_character}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/transform_transformation#masking_character TransformTransformation#masking_character}
   */
   readonly maskingCharacter?: string;
   /**
   * The name of the transformation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/transform_transformation#name TransformTransformation#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/transform_transformation#name TransformTransformation#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/transform_transformation#namespace TransformTransformation#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/transform_transformation#namespace TransformTransformation#namespace}
   */
   readonly namespace?: string;
   /**
   * The mount path for a back-end, for example, the path given in "$ vault auth enable -path=my-aws aws".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/transform_transformation#path TransformTransformation#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/transform_transformation#path TransformTransformation#path}
   */
   readonly path: string;
   /**
   * The name of the template to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/transform_transformation#template TransformTransformation#template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/transform_transformation#template TransformTransformation#template}
   */
   readonly template?: string;
   /**
   * Templates configured for transformation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/transform_transformation#templates TransformTransformation#templates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/transform_transformation#templates TransformTransformation#templates}
   */
   readonly templates?: string[];
   /**
   * The source of where the tweak value comes from. Only valid when in FPE mode.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/transform_transformation#tweak_source TransformTransformation#tweak_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/transform_transformation#tweak_source TransformTransformation#tweak_source}
   */
   readonly tweakSource?: string;
   /**
   * The type of transformation to perform.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/transform_transformation#type TransformTransformation#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/transform_transformation#type TransformTransformation#type}
   */
   readonly type?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/transform_transformation vault_transform_transformation}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/transform_transformation vault_transform_transformation}
 */
 export class TransformTransformation extends cdktf.TerraformResource {
 
@@ -98,7 +98,7 @@ export class TransformTransformation extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a TransformTransformation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TransformTransformation to import
-  * @param importFromId The id of the existing TransformTransformation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/transform_transformation#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TransformTransformation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/transform_transformation#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TransformTransformation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -110,7 +110,7 @@ export class TransformTransformation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/transform_transformation vault_transform_transformation} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/transform_transformation vault_transform_transformation} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -121,7 +121,7 @@ export class TransformTransformation extends cdktf.TerraformResource {
       terraformResourceType: 'vault_transform_transformation',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.3.0',
+        providerVersion: '5.4.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

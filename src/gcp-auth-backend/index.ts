@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend
+// https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,35 +13,59 @@ import * as cdktf from 'cdktf';
 
 export interface GcpAuthBackendConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend#client_email GcpAuthBackend#client_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend#client_email GcpAuthBackend#client_email}
   */
   readonly clientEmail?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend#client_id GcpAuthBackend#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend#client_id GcpAuthBackend#client_id}
   */
   readonly clientId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend#credentials GcpAuthBackend#credentials}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend#credentials GcpAuthBackend#credentials}
   */
   readonly credentials?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend#description GcpAuthBackend#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend#description GcpAuthBackend#description}
   */
   readonly description?: string;
   /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend#disable_automated_rotation GcpAuthBackend#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend#disable_automated_rotation GcpAuthBackend#disable_automated_rotation}
   */
   readonly disableAutomatedRotation?: boolean | cdktf.IResolvable;
   /**
   * If set, opts out of mount migration on path updates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend#disable_remount GcpAuthBackend#disable_remount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend#disable_remount GcpAuthBackend#disable_remount}
   */
   readonly disableRemount?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend#id GcpAuthBackend#id}
+  * Defines what alias needs to be used during login and refelects the same in token metadata and audit logs.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend#gce_alias GcpAuthBackend#gce_alias}
+  */
+  readonly gceAlias?: string;
+  /**
+  * Controls which instance metadata fields from the GCE login are captured into Vault's token metadata or audit logs.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend#gce_metadata GcpAuthBackend#gce_metadata}
+  */
+  readonly gceMetadata?: string[];
+  /**
+  * Defines what alias needs to be used during login and refelects the same in token metadata and audit logs.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend#iam_alias GcpAuthBackend#iam_alias}
+  */
+  readonly iamAlias?: string;
+  /**
+  * Controls the metadata to include on the token returned by the login endpoint.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend#iam_metadata GcpAuthBackend#iam_metadata}
+  */
+  readonly iamMetadata?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend#id GcpAuthBackend#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -50,111 +74,111 @@ export interface GcpAuthBackendConfig extends cdktf.TerraformMetaArguments {
   /**
   * The audience claim value for plugin identity tokens.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend#identity_token_audience GcpAuthBackend#identity_token_audience}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend#identity_token_audience GcpAuthBackend#identity_token_audience}
   */
   readonly identityTokenAudience?: string;
   /**
   * The key to use for signing identity tokens.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend#identity_token_key GcpAuthBackend#identity_token_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend#identity_token_key GcpAuthBackend#identity_token_key}
   */
   readonly identityTokenKey?: string;
   /**
   * The TTL of generated tokens.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend#identity_token_ttl GcpAuthBackend#identity_token_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend#identity_token_ttl GcpAuthBackend#identity_token_ttl}
   */
   readonly identityTokenTtl?: number;
   /**
   * Specifies if the auth method is local only
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend#local GcpAuthBackend#local}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend#local GcpAuthBackend#local}
   */
   readonly local?: boolean | cdktf.IResolvable;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend#namespace GcpAuthBackend#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend#namespace GcpAuthBackend#namespace}
   */
   readonly namespace?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend#path GcpAuthBackend#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend#path GcpAuthBackend#path}
   */
   readonly path?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend#private_key_id GcpAuthBackend#private_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend#private_key_id GcpAuthBackend#private_key_id}
   */
   readonly privateKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend#project_id GcpAuthBackend#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend#project_id GcpAuthBackend#project_id}
   */
   readonly projectId?: string;
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend#rotation_period GcpAuthBackend#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend#rotation_period GcpAuthBackend#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend#rotation_schedule GcpAuthBackend#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend#rotation_schedule GcpAuthBackend#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend#rotation_window GcpAuthBackend#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend#rotation_window GcpAuthBackend#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
   * Service Account to impersonate for plugin workload identity federation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend#service_account_email GcpAuthBackend#service_account_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend#service_account_email GcpAuthBackend#service_account_email}
   */
   readonly serviceAccountEmail?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend#tune GcpAuthBackend#tune}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend#tune GcpAuthBackend#tune}
   */
   readonly tune?: GcpAuthBackendTune[] | cdktf.IResolvable;
   /**
   * custom_endpoint block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend#custom_endpoint GcpAuthBackend#custom_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend#custom_endpoint GcpAuthBackend#custom_endpoint}
   */
   readonly customEndpoint?: GcpAuthBackendCustomEndpoint;
 }
 export interface GcpAuthBackendTune {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend#allowed_response_headers GcpAuthBackend#allowed_response_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend#allowed_response_headers GcpAuthBackend#allowed_response_headers}
   */
   readonly allowedResponseHeaders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend#audit_non_hmac_request_keys GcpAuthBackend#audit_non_hmac_request_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend#audit_non_hmac_request_keys GcpAuthBackend#audit_non_hmac_request_keys}
   */
   readonly auditNonHmacRequestKeys?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend#audit_non_hmac_response_keys GcpAuthBackend#audit_non_hmac_response_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend#audit_non_hmac_response_keys GcpAuthBackend#audit_non_hmac_response_keys}
   */
   readonly auditNonHmacResponseKeys?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend#default_lease_ttl GcpAuthBackend#default_lease_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend#default_lease_ttl GcpAuthBackend#default_lease_ttl}
   */
   readonly defaultLeaseTtl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend#listing_visibility GcpAuthBackend#listing_visibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend#listing_visibility GcpAuthBackend#listing_visibility}
   */
   readonly listingVisibility?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend#max_lease_ttl GcpAuthBackend#max_lease_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend#max_lease_ttl GcpAuthBackend#max_lease_ttl}
   */
   readonly maxLeaseTtl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend#passthrough_request_headers GcpAuthBackend#passthrough_request_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend#passthrough_request_headers GcpAuthBackend#passthrough_request_headers}
   */
   readonly passthroughRequestHeaders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend#token_type GcpAuthBackend#token_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend#token_type GcpAuthBackend#token_type}
   */
   readonly tokenType?: string;
 }
@@ -475,25 +499,25 @@ export interface GcpAuthBackendCustomEndpoint {
   /**
   * Replaces the service endpoint used in API requests to https://www.googleapis.com.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend#api GcpAuthBackend#api}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend#api GcpAuthBackend#api}
   */
   readonly api?: string;
   /**
   * Replaces the service endpoint used in API requests to `https://compute.googleapis.com`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend#compute GcpAuthBackend#compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend#compute GcpAuthBackend#compute}
   */
   readonly compute?: string;
   /**
   * Replaces the service endpoint used in API requests to `https://cloudresourcemanager.googleapis.com`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend#crm GcpAuthBackend#crm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend#crm GcpAuthBackend#crm}
   */
   readonly crm?: string;
   /**
   * Replaces the service endpoint used in API requests to `https://iam.googleapis.com`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend#iam GcpAuthBackend#iam}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend#iam GcpAuthBackend#iam}
   */
   readonly iam?: string;
 }
@@ -664,7 +688,7 @@ export class GcpAuthBackendCustomEndpointOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend vault_gcp_auth_backend}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend vault_gcp_auth_backend}
 */
 export class GcpAuthBackend extends cdktf.TerraformResource {
 
@@ -680,7 +704,7 @@ export class GcpAuthBackend extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GcpAuthBackend resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GcpAuthBackend to import
-  * @param importFromId The id of the existing GcpAuthBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GcpAuthBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GcpAuthBackend to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -692,7 +716,7 @@ export class GcpAuthBackend extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend vault_gcp_auth_backend} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend vault_gcp_auth_backend} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -703,7 +727,7 @@ export class GcpAuthBackend extends cdktf.TerraformResource {
       terraformResourceType: 'vault_gcp_auth_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.3.0',
+        providerVersion: '5.4.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -720,6 +744,10 @@ export class GcpAuthBackend extends cdktf.TerraformResource {
     this._description = config.description;
     this._disableAutomatedRotation = config.disableAutomatedRotation;
     this._disableRemount = config.disableRemount;
+    this._gceAlias = config.gceAlias;
+    this._gceMetadata = config.gceMetadata;
+    this._iamAlias = config.iamAlias;
+    this._iamMetadata = config.iamMetadata;
     this._id = config.id;
     this._identityTokenAudience = config.identityTokenAudience;
     this._identityTokenKey = config.identityTokenKey;
@@ -840,6 +868,70 @@ export class GcpAuthBackend extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get disableRemountInput() {
     return this._disableRemount;
+  }
+
+  // gce_alias - computed: true, optional: true, required: false
+  private _gceAlias?: string; 
+  public get gceAlias() {
+    return this.getStringAttribute('gce_alias');
+  }
+  public set gceAlias(value: string) {
+    this._gceAlias = value;
+  }
+  public resetGceAlias() {
+    this._gceAlias = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gceAliasInput() {
+    return this._gceAlias;
+  }
+
+  // gce_metadata - computed: true, optional: true, required: false
+  private _gceMetadata?: string[]; 
+  public get gceMetadata() {
+    return cdktf.Fn.tolist(this.getListAttribute('gce_metadata'));
+  }
+  public set gceMetadata(value: string[]) {
+    this._gceMetadata = value;
+  }
+  public resetGceMetadata() {
+    this._gceMetadata = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gceMetadataInput() {
+    return this._gceMetadata;
+  }
+
+  // iam_alias - computed: true, optional: true, required: false
+  private _iamAlias?: string; 
+  public get iamAlias() {
+    return this.getStringAttribute('iam_alias');
+  }
+  public set iamAlias(value: string) {
+    this._iamAlias = value;
+  }
+  public resetIamAlias() {
+    this._iamAlias = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get iamAliasInput() {
+    return this._iamAlias;
+  }
+
+  // iam_metadata - computed: true, optional: true, required: false
+  private _iamMetadata?: string[]; 
+  public get iamMetadata() {
+    return cdktf.Fn.tolist(this.getListAttribute('iam_metadata'));
+  }
+  public set iamMetadata(value: string[]) {
+    this._iamMetadata = value;
+  }
+  public resetIamMetadata() {
+    this._iamMetadata = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get iamMetadataInput() {
+    return this._iamMetadata;
   }
 
   // id - computed: true, optional: true, required: false
@@ -1051,7 +1143,7 @@ export class GcpAuthBackend extends cdktf.TerraformResource {
   }
 
   // tune - computed: true, optional: true, required: false
-  private _tune = new GcpAuthBackendTuneList(this, "tune", true);
+  private _tune = new GcpAuthBackendTuneList(this, "tune", false);
   public get tune() {
     return this._tune;
   }
@@ -1094,6 +1186,10 @@ export class GcpAuthBackend extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       disable_automated_rotation: cdktf.booleanToTerraform(this._disableAutomatedRotation),
       disable_remount: cdktf.booleanToTerraform(this._disableRemount),
+      gce_alias: cdktf.stringToTerraform(this._gceAlias),
+      gce_metadata: cdktf.listMapper(cdktf.stringToTerraform, false)(this._gceMetadata),
+      iam_alias: cdktf.stringToTerraform(this._iamAlias),
+      iam_metadata: cdktf.listMapper(cdktf.stringToTerraform, false)(this._iamMetadata),
       id: cdktf.stringToTerraform(this._id),
       identity_token_audience: cdktf.stringToTerraform(this._identityTokenAudience),
       identity_token_key: cdktf.stringToTerraform(this._identityTokenKey),
@@ -1149,6 +1245,30 @@ export class GcpAuthBackend extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
+      },
+      gce_alias: {
+        value: cdktf.stringToHclTerraform(this._gceAlias),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      gce_metadata: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._gceMetadata),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      iam_alias: {
+        value: cdktf.stringToHclTerraform(this._iamAlias),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      iam_metadata: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._iamMetadata),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
       },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
@@ -1231,7 +1351,7 @@ export class GcpAuthBackend extends cdktf.TerraformResource {
       tune: {
         value: cdktf.listMapperHcl(gcpAuthBackendTuneToHclTerraform, false)(this._tune.internalValue),
         isBlock: true,
-        type: "set",
+        type: "list",
         storageClassType: "GcpAuthBackendTuneList",
       },
       custom_endpoint: {
