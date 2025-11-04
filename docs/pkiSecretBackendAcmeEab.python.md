@@ -4,7 +4,7 @@
 
 ### PkiSecretBackendAcmeEab <a name="PkiSecretBackendAcmeEab" id="@cdktf/provider-vault.pkiSecretBackendAcmeEab.PkiSecretBackendAcmeEab"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/pki_secret_backend_acme_eab vault_pki_secret_backend_acme_eab}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/pki_secret_backend_acme_eab vault_pki_secret_backend_acme_eab}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.pkiSecretBackendAcmeEab.PkiSecretBackendAcmeEab.Initializer"></a>
 
@@ -41,7 +41,7 @@ pkiSecretBackendAcmeEab.PkiSecretBackendAcmeEab(
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendAcmeEab.PkiSecretBackendAcmeEab.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendAcmeEab.PkiSecretBackendAcmeEab.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendAcmeEab.PkiSecretBackendAcmeEab.Initializer.parameter.backend">backend</a></code> | <code>str</code> | The PKI secret backend the resource belongs to. |
-| <code><a href="#@cdktf/provider-vault.pkiSecretBackendAcmeEab.PkiSecretBackendAcmeEab.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/pki_secret_backend_acme_eab#id PkiSecretBackendAcmeEab#id}. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendAcmeEab.PkiSecretBackendAcmeEab.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/pki_secret_backend_acme_eab#id PkiSecretBackendAcmeEab#id}. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendAcmeEab.PkiSecretBackendAcmeEab.Initializer.parameter.issuer">issuer</a></code> | <code>str</code> | Specifies the issuer reference to use for directory path. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendAcmeEab.PkiSecretBackendAcmeEab.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendAcmeEab.PkiSecretBackendAcmeEab.Initializer.parameter.role">role</a></code> | <code>str</code> | Specifies the role to use for directory path. |
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The PKI secret backend the resource belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/pki_secret_backend_acme_eab#backend PkiSecretBackendAcmeEab#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/pki_secret_backend_acme_eab#backend PkiSecretBackendAcmeEab#backend}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/pki_secret_backend_acme_eab#id PkiSecretBackendAcmeEab#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/pki_secret_backend_acme_eab#id PkiSecretBackendAcmeEab#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -135,7 +135,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Specifies the issuer reference to use for directory path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/pki_secret_backend_acme_eab#issuer PkiSecretBackendAcmeEab#issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/pki_secret_backend_acme_eab#issuer PkiSecretBackendAcmeEab#issuer}
 
 ---
 
@@ -145,7 +145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/pki_secret_backend_acme_eab#namespace PkiSecretBackendAcmeEab#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/pki_secret_backend_acme_eab#namespace PkiSecretBackendAcmeEab#namespace}
 
 ---
 
@@ -155,7 +155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the role to use for directory path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/pki_secret_backend_acme_eab#role PkiSecretBackendAcmeEab#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/pki_secret_backend_acme_eab#role PkiSecretBackendAcmeEab#role}
 
 ---
 
@@ -656,7 +656,7 @@ The construct id used in the generated config for the PkiSecretBackendAcmeEab to
 
 The id of the existing PkiSecretBackendAcmeEab that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/pki_secret_backend_acme_eab#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/pki_secret_backend_acme_eab#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1051,7 +1051,7 @@ pkiSecretBackendAcmeEab.PkiSecretBackendAcmeEabConfig(
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendAcmeEab.PkiSecretBackendAcmeEabConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendAcmeEab.PkiSecretBackendAcmeEabConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendAcmeEab.PkiSecretBackendAcmeEabConfig.property.backend">backend</a></code> | <code>str</code> | The PKI secret backend the resource belongs to. |
-| <code><a href="#@cdktf/provider-vault.pkiSecretBackendAcmeEab.PkiSecretBackendAcmeEabConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/pki_secret_backend_acme_eab#id PkiSecretBackendAcmeEab#id}. |
+| <code><a href="#@cdktf/provider-vault.pkiSecretBackendAcmeEab.PkiSecretBackendAcmeEabConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/pki_secret_backend_acme_eab#id PkiSecretBackendAcmeEab#id}. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendAcmeEab.PkiSecretBackendAcmeEabConfig.property.issuer">issuer</a></code> | <code>str</code> | Specifies the issuer reference to use for directory path. |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendAcmeEab.PkiSecretBackendAcmeEabConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.pkiSecretBackendAcmeEab.PkiSecretBackendAcmeEabConfig.property.role">role</a></code> | <code>str</code> | Specifies the role to use for directory path. |
@@ -1138,7 +1138,7 @@ backend: str
 
 The PKI secret backend the resource belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/pki_secret_backend_acme_eab#backend PkiSecretBackendAcmeEab#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/pki_secret_backend_acme_eab#backend PkiSecretBackendAcmeEab#backend}
 
 ---
 
@@ -1150,7 +1150,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/pki_secret_backend_acme_eab#id PkiSecretBackendAcmeEab#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/pki_secret_backend_acme_eab#id PkiSecretBackendAcmeEab#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1167,7 +1167,7 @@ issuer: str
 
 Specifies the issuer reference to use for directory path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/pki_secret_backend_acme_eab#issuer PkiSecretBackendAcmeEab#issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/pki_secret_backend_acme_eab#issuer PkiSecretBackendAcmeEab#issuer}
 
 ---
 
@@ -1181,7 +1181,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/pki_secret_backend_acme_eab#namespace PkiSecretBackendAcmeEab#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/pki_secret_backend_acme_eab#namespace PkiSecretBackendAcmeEab#namespace}
 
 ---
 
@@ -1195,7 +1195,7 @@ role: str
 
 Specifies the role to use for directory path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/pki_secret_backend_acme_eab#role PkiSecretBackendAcmeEab#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/pki_secret_backend_acme_eab#role PkiSecretBackendAcmeEab#role}
 
 ---
 

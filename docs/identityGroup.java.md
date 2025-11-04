@@ -4,7 +4,7 @@
 
 ### IdentityGroup <a name="IdentityGroup" id="@cdktf/provider-vault.identityGroup.IdentityGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/identity_group vault_identity_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/identity_group vault_identity_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.identityGroup.IdentityGroup.Initializer"></a>
 
@@ -47,7 +47,7 @@ IdentityGroup.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroup.Initializer.parameter.externalMemberEntityIds">externalMemberEntityIds</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Manage member entities externally through `vault_identity_group_member_entity_ids`. |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroup.Initializer.parameter.externalMemberGroupIds">externalMemberGroupIds</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Manage member groups externally through `vault_identity_group_member_group_ids`. |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroup.Initializer.parameter.externalPolicies">externalPolicies</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Manage policies externally through `vault_identity_group_policies`, allows using group ID in assigned policies. |
-| <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroup.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/identity_group#id IdentityGroup#id}. |
+| <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroup.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/identity_group#id IdentityGroup#id}. |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroup.Initializer.parameter.memberEntityIds">memberEntityIds</a></code> | <code>java.util.List<java.lang.String></code> | Entity IDs to be assigned as group members. |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroup.Initializer.parameter.memberGroupIds">memberGroupIds</a></code> | <code>java.util.List<java.lang.String></code> | Group IDs to be assigned as group members. |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroup.Initializer.parameter.metadata">metadata</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Metadata to be associated with the group. |
@@ -124,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 Manage member entities externally through `vault_identity_group_member_entity_ids`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/identity_group#external_member_entity_ids IdentityGroup#external_member_entity_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/identity_group#external_member_entity_ids IdentityGroup#external_member_entity_ids}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Manage member groups externally through `vault_identity_group_member_group_ids`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/identity_group#external_member_group_ids IdentityGroup#external_member_group_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/identity_group#external_member_group_ids IdentityGroup#external_member_group_ids}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Manage policies externally through `vault_identity_group_policies`, allows using group ID in assigned policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/identity_group#external_policies IdentityGroup#external_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/identity_group#external_policies IdentityGroup#external_policies}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/identity_group#id IdentityGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/identity_group#id IdentityGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -165,7 +165,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Entity IDs to be assigned as group members.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/identity_group#member_entity_ids IdentityGroup#member_entity_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/identity_group#member_entity_ids IdentityGroup#member_entity_ids}
 
 ---
 
@@ -175,7 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Group IDs to be assigned as group members.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/identity_group#member_group_ids IdentityGroup#member_group_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/identity_group#member_group_ids IdentityGroup#member_group_ids}
 
 ---
 
@@ -185,7 +185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Metadata to be associated with the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/identity_group#metadata IdentityGroup#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/identity_group#metadata IdentityGroup#metadata}
 
 ---
 
@@ -195,7 +195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/identity_group#name IdentityGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/identity_group#name IdentityGroup#name}
 
 ---
 
@@ -205,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/identity_group#namespace IdentityGroup#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/identity_group#namespace IdentityGroup#namespace}
 
 ---
 
@@ -215,7 +215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Policies to be tied to the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/identity_group#policies IdentityGroup#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/identity_group#policies IdentityGroup#policies}
 
 ---
 
@@ -225,7 +225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Type of the group, internal or external. Defaults to internal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/identity_group#type IdentityGroup#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/identity_group#type IdentityGroup#type}
 
 ---
 
@@ -729,7 +729,7 @@ The construct id used in the generated config for the IdentityGroup to import.
 
 The id of the existing IdentityGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/identity_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/identity_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1209,7 +1209,7 @@ IdentityGroupConfig.builder()
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.externalMemberEntityIds">externalMemberEntityIds</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Manage member entities externally through `vault_identity_group_member_entity_ids`. |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.externalMemberGroupIds">externalMemberGroupIds</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Manage member groups externally through `vault_identity_group_member_group_ids`. |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.externalPolicies">externalPolicies</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Manage policies externally through `vault_identity_group_policies`, allows using group ID in assigned policies. |
-| <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/identity_group#id IdentityGroup#id}. |
+| <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/identity_group#id IdentityGroup#id}. |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.memberEntityIds">memberEntityIds</a></code> | <code>java.util.List<java.lang.String></code> | Entity IDs to be assigned as group members. |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.memberGroupIds">memberGroupIds</a></code> | <code>java.util.List<java.lang.String></code> | Group IDs to be assigned as group members. |
 | <code><a href="#@cdktf/provider-vault.identityGroup.IdentityGroupConfig.property.metadata">metadata</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Metadata to be associated with the group. |
@@ -1300,7 +1300,7 @@ public java.lang.Boolean|IResolvable getExternalMemberEntityIds();
 
 Manage member entities externally through `vault_identity_group_member_entity_ids`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/identity_group#external_member_entity_ids IdentityGroup#external_member_entity_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/identity_group#external_member_entity_ids IdentityGroup#external_member_entity_ids}
 
 ---
 
@@ -1314,7 +1314,7 @@ public java.lang.Boolean|IResolvable getExternalMemberGroupIds();
 
 Manage member groups externally through `vault_identity_group_member_group_ids`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/identity_group#external_member_group_ids IdentityGroup#external_member_group_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/identity_group#external_member_group_ids IdentityGroup#external_member_group_ids}
 
 ---
 
@@ -1328,7 +1328,7 @@ public java.lang.Boolean|IResolvable getExternalPolicies();
 
 Manage policies externally through `vault_identity_group_policies`, allows using group ID in assigned policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/identity_group#external_policies IdentityGroup#external_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/identity_group#external_policies IdentityGroup#external_policies}
 
 ---
 
@@ -1340,7 +1340,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/identity_group#id IdentityGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/identity_group#id IdentityGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1357,7 +1357,7 @@ public java.util.List<java.lang.String> getMemberEntityIds();
 
 Entity IDs to be assigned as group members.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/identity_group#member_entity_ids IdentityGroup#member_entity_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/identity_group#member_entity_ids IdentityGroup#member_entity_ids}
 
 ---
 
@@ -1371,7 +1371,7 @@ public java.util.List<java.lang.String> getMemberGroupIds();
 
 Group IDs to be assigned as group members.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/identity_group#member_group_ids IdentityGroup#member_group_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/identity_group#member_group_ids IdentityGroup#member_group_ids}
 
 ---
 
@@ -1385,7 +1385,7 @@ public java.util.Map<java.lang.String, java.lang.String> getMetadata();
 
 Metadata to be associated with the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/identity_group#metadata IdentityGroup#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/identity_group#metadata IdentityGroup#metadata}
 
 ---
 
@@ -1399,7 +1399,7 @@ public java.lang.String getName();
 
 Name of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/identity_group#name IdentityGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/identity_group#name IdentityGroup#name}
 
 ---
 
@@ -1413,7 +1413,7 @@ public java.lang.String getNamespace();
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/identity_group#namespace IdentityGroup#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/identity_group#namespace IdentityGroup#namespace}
 
 ---
 
@@ -1427,7 +1427,7 @@ public java.util.List<java.lang.String> getPolicies();
 
 Policies to be tied to the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/identity_group#policies IdentityGroup#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/identity_group#policies IdentityGroup#policies}
 
 ---
 
@@ -1441,7 +1441,7 @@ public java.lang.String getType();
 
 Type of the group, internal or external. Defaults to internal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/identity_group#type IdentityGroup#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/identity_group#type IdentityGroup#type}
 
 ---
 
