@@ -4,7 +4,7 @@
 
 ### AwsAuthBackendClient <a name="AwsAuthBackendClient" id="@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.Initializer"></a>
 
@@ -22,6 +22,7 @@ awsAuthBackendClient.AwsAuthBackendClient(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   access_key: str = None,
+  allowed_sts_header_values: typing.List[str] = None,
   backend: str = None,
   disable_automated_rotation: bool | IResolvable = None,
   ec2_endpoint: str = None,
@@ -55,12 +56,13 @@ awsAuthBackendClient.AwsAuthBackendClient(
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.Initializer.parameter.accessKey">access_key</a></code> | <code>str</code> | AWS Access key with permissions to query AWS APIs. |
+| <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.Initializer.parameter.allowedStsHeaderValues">allowed_sts_header_values</a></code> | <code>typing.List[str]</code> | List of additional headers that are allowed to be in STS request headers. |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.Initializer.parameter.backend">backend</a></code> | <code>str</code> | Unique name of the auth backend to configure. |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.Initializer.parameter.disableAutomatedRotation">disable_automated_rotation</a></code> | <code>bool \| cdktf.IResolvable</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.Initializer.parameter.ec2Endpoint">ec2_endpoint</a></code> | <code>str</code> | URL to override the default generated endpoint for making AWS EC2 API calls. |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.Initializer.parameter.iamEndpoint">iam_endpoint</a></code> | <code>str</code> | URL to override the default generated endpoint for making AWS IAM API calls. |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.Initializer.parameter.iamServerIdHeaderValue">iam_server_id_header_value</a></code> | <code>str</code> | The value to require in the X-Vault-AWS-IAM-Server-ID header as part of GetCallerIdentity requests that are used in the iam auth method. |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client#id AwsAuthBackendClient#id}. |
+| <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#id AwsAuthBackendClient#id}. |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.Initializer.parameter.identityTokenAudience">identity_token_audience</a></code> | <code>str</code> | The audience claim value. |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.Initializer.parameter.identityTokenTtl">identity_token_ttl</a></code> | <code>typing.Union[int, float]</code> | The TTL of generated identity tokens in seconds. |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.Initializer.parameter.maxRetries">max_retries</a></code> | <code>typing.Union[int, float]</code> | Number of max retries the client should use for recoverable errors. |
@@ -142,7 +144,17 @@ Must be unique amongst siblings in the same scope
 
 AWS Access key with permissions to query AWS APIs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client#access_key AwsAuthBackendClient#access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#access_key AwsAuthBackendClient#access_key}
+
+---
+
+##### `allowed_sts_header_values`<sup>Optional</sup> <a name="allowed_sts_header_values" id="@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.Initializer.parameter.allowedStsHeaderValues"></a>
+
+- *Type:* typing.List[str]
+
+List of additional headers that are allowed to be in STS request headers.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#allowed_sts_header_values AwsAuthBackendClient#allowed_sts_header_values}
 
 ---
 
@@ -152,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Unique name of the auth backend to configure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client#backend AwsAuthBackendClient#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#backend AwsAuthBackendClient#backend}
 
 ---
 
@@ -162,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Stops rotation of the root credential until set to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client#disable_automated_rotation AwsAuthBackendClient#disable_automated_rotation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#disable_automated_rotation AwsAuthBackendClient#disable_automated_rotation}
 
 ---
 
@@ -172,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 URL to override the default generated endpoint for making AWS EC2 API calls.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client#ec2_endpoint AwsAuthBackendClient#ec2_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#ec2_endpoint AwsAuthBackendClient#ec2_endpoint}
 
 ---
 
@@ -182,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 URL to override the default generated endpoint for making AWS IAM API calls.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client#iam_endpoint AwsAuthBackendClient#iam_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#iam_endpoint AwsAuthBackendClient#iam_endpoint}
 
 ---
 
@@ -192,7 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The value to require in the X-Vault-AWS-IAM-Server-ID header as part of GetCallerIdentity requests that are used in the iam auth method.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client#iam_server_id_header_value AwsAuthBackendClient#iam_server_id_header_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#iam_server_id_header_value AwsAuthBackendClient#iam_server_id_header_value}
 
 ---
 
@@ -200,7 +212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client#id AwsAuthBackendClient#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#id AwsAuthBackendClient#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -213,7 +225,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The audience claim value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client#identity_token_audience AwsAuthBackendClient#identity_token_audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#identity_token_audience AwsAuthBackendClient#identity_token_audience}
 
 ---
 
@@ -223,7 +235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The TTL of generated identity tokens in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client#identity_token_ttl AwsAuthBackendClient#identity_token_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#identity_token_ttl AwsAuthBackendClient#identity_token_ttl}
 
 ---
 
@@ -233,7 +245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Number of max retries the client should use for recoverable errors.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client#max_retries AwsAuthBackendClient#max_retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#max_retries AwsAuthBackendClient#max_retries}
 
 ---
 
@@ -243,7 +255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client#namespace AwsAuthBackendClient#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#namespace AwsAuthBackendClient#namespace}
 
 ---
 
@@ -253,7 +265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Role ARN to assume for plugin identity token federation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client#role_arn AwsAuthBackendClient#role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#role_arn AwsAuthBackendClient#role_arn}
 
 ---
 
@@ -263,7 +275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client#rotation_period AwsAuthBackendClient#rotation_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#rotation_period AwsAuthBackendClient#rotation_period}
 
 ---
 
@@ -273,7 +285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client#rotation_schedule AwsAuthBackendClient#rotation_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#rotation_schedule AwsAuthBackendClient#rotation_schedule}
 
 ---
 
@@ -285,7 +297,7 @@ The maximum amount of time in seconds Vault is allowed to complete a rotation on
 
 Can only be used with rotation_schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client#rotation_window AwsAuthBackendClient#rotation_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#rotation_window AwsAuthBackendClient#rotation_window}
 
 ---
 
@@ -295,7 +307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 AWS Secret key with permissions to query AWS APIs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client#secret_key AwsAuthBackendClient#secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#secret_key AwsAuthBackendClient#secret_key}
 
 ---
 
@@ -305,7 +317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 URL to override the default generated endpoint for making AWS STS API calls.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client#sts_endpoint AwsAuthBackendClient#sts_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#sts_endpoint AwsAuthBackendClient#sts_endpoint}
 
 ---
 
@@ -315,7 +327,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region to override the default region for making AWS STS API calls.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client#sts_region AwsAuthBackendClient#sts_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#sts_region AwsAuthBackendClient#sts_region}
 
 ---
 
@@ -325,7 +337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If set, will override sts_region and use the region from the client request's header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client#use_sts_region_from_client AwsAuthBackendClient#use_sts_region_from_client}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#use_sts_region_from_client AwsAuthBackendClient#use_sts_region_from_client}
 
 ---
 
@@ -357,6 +369,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.resetAccessKey">reset_access_key</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.resetAllowedStsHeaderValues">reset_allowed_sts_header_values</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.resetBackend">reset_backend</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.resetDisableAutomatedRotation">reset_disable_automated_rotation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.resetEc2Endpoint">reset_ec2_endpoint</a></code> | *No description.* |
@@ -709,6 +722,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 def reset_access_key() -> None
 ```
 
+##### `reset_allowed_sts_header_values` <a name="reset_allowed_sts_header_values" id="@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.resetAllowedStsHeaderValues"></a>
+
+```python
+def reset_allowed_sts_header_values() -> None
+```
+
 ##### `reset_backend` <a name="reset_backend" id="@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.resetBackend"></a>
 
 ```python
@@ -931,7 +950,7 @@ The construct id used in the generated config for the AwsAuthBackendClient to im
 
 The id of the existing AwsAuthBackendClient that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -962,6 +981,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.property.accessKeyInput">access_key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.property.allowedStsHeaderValuesInput">allowed_sts_header_values_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.property.backendInput">backend_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.property.disableAutomatedRotationInput">disable_automated_rotation_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.property.ec2EndpointInput">ec2_endpoint_input</a></code> | <code>str</code> | *No description.* |
@@ -981,6 +1001,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.property.stsRegionInput">sts_region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.property.useStsRegionFromClientInput">use_sts_region_from_client_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.property.accessKey">access_key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.property.allowedStsHeaderValues">allowed_sts_header_values</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.property.backend">backend</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.property.disableAutomatedRotation">disable_automated_rotation</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.property.ec2Endpoint">ec2_endpoint</a></code> | <code>str</code> | *No description.* |
@@ -1151,6 +1172,16 @@ access_key_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `allowed_sts_header_values_input`<sup>Optional</sup> <a name="allowed_sts_header_values_input" id="@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.property.allowedStsHeaderValuesInput"></a>
+
+```python
+allowed_sts_header_values_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
 
 ---
 
@@ -1341,6 +1372,16 @@ access_key: str
 ```
 
 - *Type:* str
+
+---
+
+##### `allowed_sts_header_values`<sup>Required</sup> <a name="allowed_sts_header_values" id="@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClient.property.allowedStsHeaderValues"></a>
+
+```python
+allowed_sts_header_values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
 
 ---
 
@@ -1560,6 +1601,7 @@ awsAuthBackendClient.AwsAuthBackendClientConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   access_key: str = None,
+  allowed_sts_header_values: typing.List[str] = None,
   backend: str = None,
   disable_automated_rotation: bool | IResolvable = None,
   ec2_endpoint: str = None,
@@ -1593,12 +1635,13 @@ awsAuthBackendClient.AwsAuthBackendClientConfig(
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClientConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClientConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClientConfig.property.accessKey">access_key</a></code> | <code>str</code> | AWS Access key with permissions to query AWS APIs. |
+| <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClientConfig.property.allowedStsHeaderValues">allowed_sts_header_values</a></code> | <code>typing.List[str]</code> | List of additional headers that are allowed to be in STS request headers. |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClientConfig.property.backend">backend</a></code> | <code>str</code> | Unique name of the auth backend to configure. |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClientConfig.property.disableAutomatedRotation">disable_automated_rotation</a></code> | <code>bool \| cdktf.IResolvable</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClientConfig.property.ec2Endpoint">ec2_endpoint</a></code> | <code>str</code> | URL to override the default generated endpoint for making AWS EC2 API calls. |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClientConfig.property.iamEndpoint">iam_endpoint</a></code> | <code>str</code> | URL to override the default generated endpoint for making AWS IAM API calls. |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClientConfig.property.iamServerIdHeaderValue">iam_server_id_header_value</a></code> | <code>str</code> | The value to require in the X-Vault-AWS-IAM-Server-ID header as part of GetCallerIdentity requests that are used in the iam auth method. |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClientConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client#id AwsAuthBackendClient#id}. |
+| <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClientConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#id AwsAuthBackendClient#id}. |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClientConfig.property.identityTokenAudience">identity_token_audience</a></code> | <code>str</code> | The audience claim value. |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClientConfig.property.identityTokenTtl">identity_token_ttl</a></code> | <code>typing.Union[int, float]</code> | The TTL of generated identity tokens in seconds. |
 | <code><a href="#@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClientConfig.property.maxRetries">max_retries</a></code> | <code>typing.Union[int, float]</code> | Number of max retries the client should use for recoverable errors. |
@@ -1694,7 +1737,21 @@ access_key: str
 
 AWS Access key with permissions to query AWS APIs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client#access_key AwsAuthBackendClient#access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#access_key AwsAuthBackendClient#access_key}
+
+---
+
+##### `allowed_sts_header_values`<sup>Optional</sup> <a name="allowed_sts_header_values" id="@cdktf/provider-vault.awsAuthBackendClient.AwsAuthBackendClientConfig.property.allowedStsHeaderValues"></a>
+
+```python
+allowed_sts_header_values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+List of additional headers that are allowed to be in STS request headers.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#allowed_sts_header_values AwsAuthBackendClient#allowed_sts_header_values}
 
 ---
 
@@ -1708,7 +1765,7 @@ backend: str
 
 Unique name of the auth backend to configure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client#backend AwsAuthBackendClient#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#backend AwsAuthBackendClient#backend}
 
 ---
 
@@ -1722,7 +1779,7 @@ disable_automated_rotation: bool | IResolvable
 
 Stops rotation of the root credential until set to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client#disable_automated_rotation AwsAuthBackendClient#disable_automated_rotation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#disable_automated_rotation AwsAuthBackendClient#disable_automated_rotation}
 
 ---
 
@@ -1736,7 +1793,7 @@ ec2_endpoint: str
 
 URL to override the default generated endpoint for making AWS EC2 API calls.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client#ec2_endpoint AwsAuthBackendClient#ec2_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#ec2_endpoint AwsAuthBackendClient#ec2_endpoint}
 
 ---
 
@@ -1750,7 +1807,7 @@ iam_endpoint: str
 
 URL to override the default generated endpoint for making AWS IAM API calls.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client#iam_endpoint AwsAuthBackendClient#iam_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#iam_endpoint AwsAuthBackendClient#iam_endpoint}
 
 ---
 
@@ -1764,7 +1821,7 @@ iam_server_id_header_value: str
 
 The value to require in the X-Vault-AWS-IAM-Server-ID header as part of GetCallerIdentity requests that are used in the iam auth method.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client#iam_server_id_header_value AwsAuthBackendClient#iam_server_id_header_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#iam_server_id_header_value AwsAuthBackendClient#iam_server_id_header_value}
 
 ---
 
@@ -1776,7 +1833,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client#id AwsAuthBackendClient#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#id AwsAuthBackendClient#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1793,7 +1850,7 @@ identity_token_audience: str
 
 The audience claim value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client#identity_token_audience AwsAuthBackendClient#identity_token_audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#identity_token_audience AwsAuthBackendClient#identity_token_audience}
 
 ---
 
@@ -1807,7 +1864,7 @@ identity_token_ttl: typing.Union[int, float]
 
 The TTL of generated identity tokens in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client#identity_token_ttl AwsAuthBackendClient#identity_token_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#identity_token_ttl AwsAuthBackendClient#identity_token_ttl}
 
 ---
 
@@ -1821,7 +1878,7 @@ max_retries: typing.Union[int, float]
 
 Number of max retries the client should use for recoverable errors.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client#max_retries AwsAuthBackendClient#max_retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#max_retries AwsAuthBackendClient#max_retries}
 
 ---
 
@@ -1835,7 +1892,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client#namespace AwsAuthBackendClient#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#namespace AwsAuthBackendClient#namespace}
 
 ---
 
@@ -1849,7 +1906,7 @@ role_arn: str
 
 Role ARN to assume for plugin identity token federation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client#role_arn AwsAuthBackendClient#role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#role_arn AwsAuthBackendClient#role_arn}
 
 ---
 
@@ -1863,7 +1920,7 @@ rotation_period: typing.Union[int, float]
 
 The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client#rotation_period AwsAuthBackendClient#rotation_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#rotation_period AwsAuthBackendClient#rotation_period}
 
 ---
 
@@ -1877,7 +1934,7 @@ rotation_schedule: str
 
 The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client#rotation_schedule AwsAuthBackendClient#rotation_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#rotation_schedule AwsAuthBackendClient#rotation_schedule}
 
 ---
 
@@ -1893,7 +1950,7 @@ The maximum amount of time in seconds Vault is allowed to complete a rotation on
 
 Can only be used with rotation_schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client#rotation_window AwsAuthBackendClient#rotation_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#rotation_window AwsAuthBackendClient#rotation_window}
 
 ---
 
@@ -1907,7 +1964,7 @@ secret_key: str
 
 AWS Secret key with permissions to query AWS APIs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client#secret_key AwsAuthBackendClient#secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#secret_key AwsAuthBackendClient#secret_key}
 
 ---
 
@@ -1921,7 +1978,7 @@ sts_endpoint: str
 
 URL to override the default generated endpoint for making AWS STS API calls.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client#sts_endpoint AwsAuthBackendClient#sts_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#sts_endpoint AwsAuthBackendClient#sts_endpoint}
 
 ---
 
@@ -1935,7 +1992,7 @@ sts_region: str
 
 Region to override the default region for making AWS STS API calls.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client#sts_region AwsAuthBackendClient#sts_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#sts_region AwsAuthBackendClient#sts_region}
 
 ---
 
@@ -1949,7 +2006,7 @@ use_sts_region_from_client: bool | IResolvable
 
 If set, will override sts_region and use the region from the client request's header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client#use_sts_region_from_client AwsAuthBackendClient#use_sts_region_from_client}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client#use_sts_region_from_client AwsAuthBackendClient#use_sts_region_from_client}
 
 ---
 

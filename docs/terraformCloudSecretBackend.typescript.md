@@ -4,7 +4,7 @@
 
 ### TerraformCloudSecretBackend <a name="TerraformCloudSecretBackend" id="@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_backend vault_terraform_cloud_secret_backend}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_backend vault_terraform_cloud_secret_backend}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.Initializer"></a>
 
@@ -97,6 +97,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.resetPluginVersion">resetPluginVersion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.resetSealWrap">resetSealWrap</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.resetToken">resetToken</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.resetTokenWo">resetTokenWo</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.resetTokenWoVersion">resetTokenWoVersion</a></code> | *No description.* |
 
 ---
 
@@ -532,6 +534,18 @@ public resetSealWrap(): void
 public resetToken(): void
 ```
 
+##### `resetTokenWo` <a name="resetTokenWo" id="@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.resetTokenWo"></a>
+
+```typescript
+public resetTokenWo(): void
+```
+
+##### `resetTokenWoVersion` <a name="resetTokenWoVersion" id="@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.resetTokenWoVersion"></a>
+
+```typescript
+public resetTokenWoVersion(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -635,7 +649,7 @@ The construct id used in the generated config for the TerraformCloudSecretBacken
 
 The id of the existing TerraformCloudSecretBackend that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_backend#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_backend#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -690,6 +704,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.pluginVersionInput">pluginVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.sealWrapInput">sealWrapInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.tokenInput">tokenInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.tokenWoInput">tokenWoInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.tokenWoVersionInput">tokenWoVersionInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.address">address</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.allowedManagedKeys">allowedManagedKeys</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.allowedResponseHeaders">allowedResponseHeaders</a></code> | <code>string[]</code> | *No description.* |
@@ -714,6 +730,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.pluginVersion">pluginVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.sealWrap">sealWrap</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.token">token</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.tokenWo">tokenWo</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.tokenWoVersion">tokenWoVersion</a></code> | <code>number</code> | *No description.* |
 
 ---
 
@@ -1109,6 +1127,26 @@ public readonly tokenInput: string;
 
 ---
 
+##### `tokenWoInput`<sup>Optional</sup> <a name="tokenWoInput" id="@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.tokenWoInput"></a>
+
+```typescript
+public readonly tokenWoInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tokenWoVersionInput`<sup>Optional</sup> <a name="tokenWoVersionInput" id="@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.tokenWoVersionInput"></a>
+
+```typescript
+public readonly tokenWoVersionInput: number;
+```
+
+- *Type:* number
+
+---
+
 ##### `address`<sup>Required</sup> <a name="address" id="@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.address"></a>
 
 ```typescript
@@ -1349,6 +1387,26 @@ public readonly token: string;
 
 ---
 
+##### `tokenWo`<sup>Required</sup> <a name="tokenWo" id="@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.tokenWo"></a>
+
+```typescript
+public readonly tokenWo: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tokenWoVersion`<sup>Required</sup> <a name="tokenWoVersion" id="@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.tokenWoVersion"></a>
+
+```typescript
+public readonly tokenWoVersion: number;
+```
+
+- *Type:* number
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1403,7 +1461,7 @@ const terraformCloudSecretBackendConfig: terraformCloudSecretBackend.TerraformCl
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.disableRemount">disableRemount</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set, opts out of mount migration on path updates. |
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.externalEntropyAccess">externalEntropyAccess</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable the secrets engine to access Vault's external entropy source. |
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.forceNoCache">forceNoCache</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to true, disables caching. |
-| <code><a href="#@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_backend#id TerraformCloudSecretBackend#id}. |
+| <code><a href="#@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_backend#id TerraformCloudSecretBackend#id}. |
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.identityTokenKey">identityTokenKey</a></code> | <code>string</code> | The key to use for signing plugin workload identity tokens. |
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.listingVisibility">listingVisibility</a></code> | <code>string</code> | Specifies whether to show this mount in the UI-specific listing endpoint. |
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.local">local</a></code> | <code>boolean \| cdktf.IResolvable</code> | Local mount flag that can be explicitly set to true to enforce local mount in HA environment. |
@@ -1414,6 +1472,8 @@ const terraformCloudSecretBackendConfig: terraformCloudSecretBackend.TerraformCl
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.pluginVersion">pluginVersion</a></code> | <code>string</code> | Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'. |
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.sealWrap">sealWrap</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability. |
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.token">token</a></code> | <code>string</code> | Specifies the Terraform Cloud access token to use. |
+| <code><a href="#@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.tokenWo">tokenWo</a></code> | <code>string</code> | Write-only Terraform Cloud access token to use. |
+| <code><a href="#@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.tokenWoVersion">tokenWoVersion</a></code> | <code>number</code> | Version counter for write-only secret data. |
 
 ---
 
@@ -1497,7 +1557,7 @@ public readonly address: string;
 
 Specifies the address of the Terraform Cloud instance, provided as "host:port" like "127.0.0.1:8500".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_backend#address TerraformCloudSecretBackend#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_backend#address TerraformCloudSecretBackend#address}
 
 ---
 
@@ -1511,7 +1571,7 @@ public readonly allowedManagedKeys: string[];
 
 List of managed key registry entry names that the mount in question is allowed to access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_backend#allowed_managed_keys TerraformCloudSecretBackend#allowed_managed_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_backend#allowed_managed_keys TerraformCloudSecretBackend#allowed_managed_keys}
 
 ---
 
@@ -1525,7 +1585,7 @@ public readonly allowedResponseHeaders: string[];
 
 List of headers to allow and pass from the request to the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_backend#allowed_response_headers TerraformCloudSecretBackend#allowed_response_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_backend#allowed_response_headers TerraformCloudSecretBackend#allowed_response_headers}
 
 ---
 
@@ -1539,7 +1599,7 @@ public readonly auditNonHmacRequestKeys: string[];
 
 Specifies the list of keys that will not be HMAC'd by audit devices in the request data object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_backend#audit_non_hmac_request_keys TerraformCloudSecretBackend#audit_non_hmac_request_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_backend#audit_non_hmac_request_keys TerraformCloudSecretBackend#audit_non_hmac_request_keys}
 
 ---
 
@@ -1553,7 +1613,7 @@ public readonly auditNonHmacResponseKeys: string[];
 
 Specifies the list of keys that will not be HMAC'd by audit devices in the response data object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_backend#audit_non_hmac_response_keys TerraformCloudSecretBackend#audit_non_hmac_response_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_backend#audit_non_hmac_response_keys TerraformCloudSecretBackend#audit_non_hmac_response_keys}
 
 ---
 
@@ -1567,7 +1627,7 @@ public readonly backend: string;
 
 Unique name of the Vault Terraform Cloud mount to configure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_backend#backend TerraformCloudSecretBackend#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_backend#backend TerraformCloudSecretBackend#backend}
 
 ---
 
@@ -1581,7 +1641,7 @@ public readonly basePath: string;
 
 Specifies the base path for the Terraform Cloud or Enterprise API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_backend#base_path TerraformCloudSecretBackend#base_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_backend#base_path TerraformCloudSecretBackend#base_path}
 
 ---
 
@@ -1595,7 +1655,7 @@ public readonly defaultLeaseTtlSeconds: number;
 
 Default lease duration for secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_backend#default_lease_ttl_seconds TerraformCloudSecretBackend#default_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_backend#default_lease_ttl_seconds TerraformCloudSecretBackend#default_lease_ttl_seconds}
 
 ---
 
@@ -1609,7 +1669,7 @@ public readonly delegatedAuthAccessors: string[];
 
 List of headers to allow and pass from the request to the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_backend#delegated_auth_accessors TerraformCloudSecretBackend#delegated_auth_accessors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_backend#delegated_auth_accessors TerraformCloudSecretBackend#delegated_auth_accessors}
 
 ---
 
@@ -1623,7 +1683,7 @@ public readonly description: string;
 
 Human-friendly description of the mount for the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_backend#description TerraformCloudSecretBackend#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_backend#description TerraformCloudSecretBackend#description}
 
 ---
 
@@ -1637,7 +1697,7 @@ public readonly disableRemount: boolean | IResolvable;
 
 If set, opts out of mount migration on path updates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_backend#disable_remount TerraformCloudSecretBackend#disable_remount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_backend#disable_remount TerraformCloudSecretBackend#disable_remount}
 
 ---
 
@@ -1651,7 +1711,7 @@ public readonly externalEntropyAccess: boolean | IResolvable;
 
 Enable the secrets engine to access Vault's external entropy source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_backend#external_entropy_access TerraformCloudSecretBackend#external_entropy_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_backend#external_entropy_access TerraformCloudSecretBackend#external_entropy_access}
 
 ---
 
@@ -1665,7 +1725,7 @@ public readonly forceNoCache: boolean | IResolvable;
 
 If set to true, disables caching.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_backend#force_no_cache TerraformCloudSecretBackend#force_no_cache}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_backend#force_no_cache TerraformCloudSecretBackend#force_no_cache}
 
 ---
 
@@ -1677,7 +1737,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_backend#id TerraformCloudSecretBackend#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_backend#id TerraformCloudSecretBackend#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1694,7 +1754,7 @@ public readonly identityTokenKey: string;
 
 The key to use for signing plugin workload identity tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_backend#identity_token_key TerraformCloudSecretBackend#identity_token_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_backend#identity_token_key TerraformCloudSecretBackend#identity_token_key}
 
 ---
 
@@ -1708,7 +1768,7 @@ public readonly listingVisibility: string;
 
 Specifies whether to show this mount in the UI-specific listing endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_backend#listing_visibility TerraformCloudSecretBackend#listing_visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_backend#listing_visibility TerraformCloudSecretBackend#listing_visibility}
 
 ---
 
@@ -1722,7 +1782,7 @@ public readonly local: boolean | IResolvable;
 
 Local mount flag that can be explicitly set to true to enforce local mount in HA environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_backend#local TerraformCloudSecretBackend#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_backend#local TerraformCloudSecretBackend#local}
 
 ---
 
@@ -1736,7 +1796,7 @@ public readonly maxLeaseTtlSeconds: number;
 
 Maximum possible lease duration for secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_backend#max_lease_ttl_seconds TerraformCloudSecretBackend#max_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_backend#max_lease_ttl_seconds TerraformCloudSecretBackend#max_lease_ttl_seconds}
 
 ---
 
@@ -1750,7 +1810,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_backend#namespace TerraformCloudSecretBackend#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_backend#namespace TerraformCloudSecretBackend#namespace}
 
 ---
 
@@ -1764,7 +1824,7 @@ public readonly options: {[ key: string ]: string};
 
 Specifies mount type specific options that are passed to the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_backend#options TerraformCloudSecretBackend#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_backend#options TerraformCloudSecretBackend#options}
 
 ---
 
@@ -1778,7 +1838,7 @@ public readonly passthroughRequestHeaders: string[];
 
 List of headers to allow and pass from the request to the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_backend#passthrough_request_headers TerraformCloudSecretBackend#passthrough_request_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_backend#passthrough_request_headers TerraformCloudSecretBackend#passthrough_request_headers}
 
 ---
 
@@ -1792,7 +1852,7 @@ public readonly pluginVersion: string;
 
 Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_backend#plugin_version TerraformCloudSecretBackend#plugin_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_backend#plugin_version TerraformCloudSecretBackend#plugin_version}
 
 ---
 
@@ -1806,7 +1866,7 @@ public readonly sealWrap: boolean | IResolvable;
 
 Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_backend#seal_wrap TerraformCloudSecretBackend#seal_wrap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_backend#seal_wrap TerraformCloudSecretBackend#seal_wrap}
 
 ---
 
@@ -1820,7 +1880,35 @@ public readonly token: string;
 
 Specifies the Terraform Cloud access token to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_backend#token TerraformCloudSecretBackend#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_backend#token TerraformCloudSecretBackend#token}
+
+---
+
+##### `tokenWo`<sup>Optional</sup> <a name="tokenWo" id="@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.tokenWo"></a>
+
+```typescript
+public readonly tokenWo: string;
+```
+
+- *Type:* string
+
+Write-only Terraform Cloud access token to use.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_backend#token_wo TerraformCloudSecretBackend#token_wo}
+
+---
+
+##### `tokenWoVersion`<sup>Optional</sup> <a name="tokenWoVersion" id="@cdktf/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.tokenWoVersion"></a>
+
+```typescript
+public readonly tokenWoVersion: number;
+```
+
+- *Type:* number
+
+Version counter for write-only secret data.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_backend#token_wo_version TerraformCloudSecretBackend#token_wo_version}
 
 ---
 

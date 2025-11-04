@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/data-sources/transit_verify
+// https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_verify
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,41 +15,41 @@ export interface DataVaultTransitVerifyConfig extends cdktf.TerraformMetaArgumen
   /**
   * Specifies a list of items for processing. When this parameter is set, any supplied 'input' or 'context' parameters will be ignored. Responses are returned in the 'batch_results' array component of the 'data' element of the response. Any batch output will preserve the order of the batch input. If the input data value of an item is invalid, the corresponding item in the 'batch_results' will have the key 'error' with a value describing the error.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/data-sources/transit_verify#batch_input DataVaultTransitVerify#batch_input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_verify#batch_input DataVaultTransitVerify#batch_input}
   */
   readonly batchInput?: { [key: string]: string }[] | cdktf.IResolvable;
   /**
   * The results returned from Vault if using batch_input
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/data-sources/transit_verify#batch_results DataVaultTransitVerify#batch_results}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_verify#batch_results DataVaultTransitVerify#batch_results}
   */
   readonly batchResults?: { [key: string]: string }[] | cdktf.IResolvable;
   /**
   * (Enterprise only) Specifies the signature output from the /transit/cmac function. One of the following arguments must be supplied signature, hmac or cmac.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/data-sources/transit_verify#cmac DataVaultTransitVerify#cmac}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_verify#cmac DataVaultTransitVerify#cmac}
   */
   readonly cmac?: string;
   /**
   * Base64 encoded context for key derivation. Required if key derivation is enabled; currently only available with ed25519 keys.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/data-sources/transit_verify#context DataVaultTransitVerify#context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_verify#context DataVaultTransitVerify#context}
   */
   readonly context?: string;
   /**
   * Specifies the hash algorithm to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/data-sources/transit_verify#hash_algorithm DataVaultTransitVerify#hash_algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_verify#hash_algorithm DataVaultTransitVerify#hash_algorithm}
   */
   readonly hashAlgorithm?: string;
   /**
   * Specifies the signature output from the /transit/hmac function. One of the following arguments must be supplied signature, hmac or cmac.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/data-sources/transit_verify#hmac DataVaultTransitVerify#hmac}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_verify#hmac DataVaultTransitVerify#hmac}
   */
   readonly hmac?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/data-sources/transit_verify#id DataVaultTransitVerify#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_verify#id DataVaultTransitVerify#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,85 +58,85 @@ export interface DataVaultTransitVerifyConfig extends cdktf.TerraformMetaArgumen
   /**
   * Specifies the base64 encoded input data. One of input or batch_input must be supplied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/data-sources/transit_verify#input DataVaultTransitVerify#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_verify#input DataVaultTransitVerify#input}
   */
   readonly input?: string;
   /**
   * Specifies the MAC length used to generate a CMAC. The mac_length cannot be larger than the cipher's block size.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/data-sources/transit_verify#mac_length DataVaultTransitVerify#mac_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_verify#mac_length DataVaultTransitVerify#mac_length}
   */
   readonly macLength?: number;
   /**
   * Specifies the way in which the signature was originally marshaled. This currently only applies to ECDSA keys.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/data-sources/transit_verify#marshaling_algorithm DataVaultTransitVerify#marshaling_algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_verify#marshaling_algorithm DataVaultTransitVerify#marshaling_algorithm}
   */
   readonly marshalingAlgorithm?: string;
   /**
   * Specifies the name of the encryption key that was used to generate the signature or HMAC.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/data-sources/transit_verify#name DataVaultTransitVerify#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_verify#name DataVaultTransitVerify#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/data-sources/transit_verify#namespace DataVaultTransitVerify#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_verify#namespace DataVaultTransitVerify#namespace}
   */
   readonly namespace?: string;
   /**
   * The Transit secret backend the key belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/data-sources/transit_verify#path DataVaultTransitVerify#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_verify#path DataVaultTransitVerify#path}
   */
   readonly path: string;
   /**
   * Set to true when the input is already hashed. If the key type is rsa-2048, rsa-3072 or rsa-4096, then the algorithm used to hash the input should be indicated by the hash_algorithm parameter. Just as the value to sign should be the base64-encoded representation of the exact binary data you want signed, when set, input is expected to be base64-encoded binary hashed data, not hex-formatted. (As an example, on the command line, you could generate a suitable input via openssl dgst -sha256 -binary | base64.)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/data-sources/transit_verify#prehashed DataVaultTransitVerify#prehashed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_verify#prehashed DataVaultTransitVerify#prehashed}
   */
   readonly prehashed?: boolean | cdktf.IResolvable;
   /**
   * A user-supplied string that will be present in the reference field on the corresponding batch_results item in the response, to assist in understanding which result corresponds to a particular input. Only valid on batch requests when using ‘batch_input’ below.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/data-sources/transit_verify#reference DataVaultTransitVerify#reference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_verify#reference DataVaultTransitVerify#reference}
   */
   readonly reference?: string;
   /**
   * The salt length used to sign. This currently only applies to the RSA PSS signature scheme.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/data-sources/transit_verify#salt_length DataVaultTransitVerify#salt_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_verify#salt_length DataVaultTransitVerify#salt_length}
   */
   readonly saltLength?: string;
   /**
   * Specifies the signature output from the /transit/sign function. One of the following arguments must be supplied signature, hmac or cmac.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/data-sources/transit_verify#signature DataVaultTransitVerify#signature}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_verify#signature DataVaultTransitVerify#signature}
   */
   readonly signature?: string;
   /**
   * When using a RSA key, specifies the RSA signature algorithm to use for signature verification.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/data-sources/transit_verify#signature_algorithm DataVaultTransitVerify#signature_algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_verify#signature_algorithm DataVaultTransitVerify#signature_algorithm}
   */
   readonly signatureAlgorithm?: string;
   /**
   * Base64 encoded context for Ed25519ctx and Ed25519ph signatures.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/data-sources/transit_verify#signature_context DataVaultTransitVerify#signature_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_verify#signature_context DataVaultTransitVerify#signature_context}
   */
   readonly signatureContext?: string;
   /**
   * Indicates whether verification succeeded
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/data-sources/transit_verify#valid DataVaultTransitVerify#valid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_verify#valid DataVaultTransitVerify#valid}
   */
   readonly valid?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/data-sources/transit_verify vault_transit_verify}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_verify vault_transit_verify}
 */
 export class DataVaultTransitVerify extends cdktf.TerraformDataSource {
 
@@ -152,7 +152,7 @@ export class DataVaultTransitVerify extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataVaultTransitVerify resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataVaultTransitVerify to import
-  * @param importFromId The id of the existing DataVaultTransitVerify that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/data-sources/transit_verify#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataVaultTransitVerify that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_verify#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataVaultTransitVerify to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -164,7 +164,7 @@ export class DataVaultTransitVerify extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/data-sources/transit_verify vault_transit_verify} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_verify vault_transit_verify} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -175,7 +175,7 @@ export class DataVaultTransitVerify extends cdktf.TerraformDataSource {
       terraformResourceType: 'vault_transit_verify',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.3.0',
+        providerVersion: '5.4.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

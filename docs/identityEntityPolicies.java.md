@@ -4,7 +4,7 @@
 
 ### IdentityEntityPolicies <a name="IdentityEntityPolicies" id="@cdktf/provider-vault.identityEntityPolicies.IdentityEntityPolicies"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/identity_entity_policies vault_identity_entity_policies}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/identity_entity_policies vault_identity_entity_policies}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.identityEntityPolicies.IdentityEntityPolicies.Initializer"></a>
 
@@ -41,7 +41,7 @@ IdentityEntityPolicies.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vault.identityEntityPolicies.IdentityEntityPolicies.Initializer.parameter.entityId">entityId</a></code> | <code>java.lang.String</code> | ID of the entity. |
 | <code><a href="#@cdktf/provider-vault.identityEntityPolicies.IdentityEntityPolicies.Initializer.parameter.policies">policies</a></code> | <code>java.util.List<java.lang.String></code> | Policies to be tied to the entity. |
 | <code><a href="#@cdktf/provider-vault.identityEntityPolicies.IdentityEntityPolicies.Initializer.parameter.exclusive">exclusive</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Should the resource manage policies exclusively. |
-| <code><a href="#@cdktf/provider-vault.identityEntityPolicies.IdentityEntityPolicies.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/identity_entity_policies#id IdentityEntityPolicies#id}. |
+| <code><a href="#@cdktf/provider-vault.identityEntityPolicies.IdentityEntityPolicies.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/identity_entity_policies#id IdentityEntityPolicies#id}. |
 | <code><a href="#@cdktf/provider-vault.identityEntityPolicies.IdentityEntityPolicies.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 ID of the entity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/identity_entity_policies#entity_id IdentityEntityPolicies#entity_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/identity_entity_policies#entity_id IdentityEntityPolicies#entity_id}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Policies to be tied to the entity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/identity_entity_policies#policies IdentityEntityPolicies#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/identity_entity_policies#policies IdentityEntityPolicies#policies}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Should the resource manage policies exclusively.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/identity_entity_policies#exclusive IdentityEntityPolicies#exclusive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/identity_entity_policies#exclusive IdentityEntityPolicies#exclusive}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/identity_entity_policies#id IdentityEntityPolicies#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/identity_entity_policies#id IdentityEntityPolicies#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -153,7 +153,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/identity_entity_policies#namespace IdentityEntityPolicies#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/identity_entity_policies#namespace IdentityEntityPolicies#namespace}
 
 ---
 
@@ -601,7 +601,7 @@ The construct id used in the generated config for the IdentityEntityPolicies to 
 
 The id of the existing IdentityEntityPolicies that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/identity_entity_policies#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/identity_entity_policies#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -954,7 +954,7 @@ IdentityEntityPoliciesConfig.builder()
 | <code><a href="#@cdktf/provider-vault.identityEntityPolicies.IdentityEntityPoliciesConfig.property.entityId">entityId</a></code> | <code>java.lang.String</code> | ID of the entity. |
 | <code><a href="#@cdktf/provider-vault.identityEntityPolicies.IdentityEntityPoliciesConfig.property.policies">policies</a></code> | <code>java.util.List<java.lang.String></code> | Policies to be tied to the entity. |
 | <code><a href="#@cdktf/provider-vault.identityEntityPolicies.IdentityEntityPoliciesConfig.property.exclusive">exclusive</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Should the resource manage policies exclusively. |
-| <code><a href="#@cdktf/provider-vault.identityEntityPolicies.IdentityEntityPoliciesConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/identity_entity_policies#id IdentityEntityPolicies#id}. |
+| <code><a href="#@cdktf/provider-vault.identityEntityPolicies.IdentityEntityPoliciesConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/identity_entity_policies#id IdentityEntityPolicies#id}. |
 | <code><a href="#@cdktf/provider-vault.identityEntityPolicies.IdentityEntityPoliciesConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -1039,7 +1039,7 @@ public java.lang.String getEntityId();
 
 ID of the entity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/identity_entity_policies#entity_id IdentityEntityPolicies#entity_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/identity_entity_policies#entity_id IdentityEntityPolicies#entity_id}
 
 ---
 
@@ -1053,7 +1053,7 @@ public java.util.List<java.lang.String> getPolicies();
 
 Policies to be tied to the entity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/identity_entity_policies#policies IdentityEntityPolicies#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/identity_entity_policies#policies IdentityEntityPolicies#policies}
 
 ---
 
@@ -1067,7 +1067,7 @@ public java.lang.Boolean|IResolvable getExclusive();
 
 Should the resource manage policies exclusively.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/identity_entity_policies#exclusive IdentityEntityPolicies#exclusive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/identity_entity_policies#exclusive IdentityEntityPolicies#exclusive}
 
 ---
 
@@ -1079,7 +1079,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/identity_entity_policies#id IdentityEntityPolicies#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/identity_entity_policies#id IdentityEntityPolicies#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1096,7 +1096,7 @@ public java.lang.String getNamespace();
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/identity_entity_policies#namespace IdentityEntityPolicies#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/identity_entity_policies#namespace IdentityEntityPolicies#namespace}
 
 ---
 

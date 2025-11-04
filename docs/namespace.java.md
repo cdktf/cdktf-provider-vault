@@ -4,7 +4,7 @@
 
 ### Namespace <a name="Namespace" id="@cdktf/provider-vault.namespace.Namespace"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/namespace vault_namespace}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/namespace vault_namespace}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.namespace.Namespace.Initializer"></a>
 
@@ -40,7 +40,7 @@ Namespace.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vault.namespace.Namespace.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.namespace.Namespace.Initializer.parameter.path">path</a></code> | <code>java.lang.String</code> | Namespace path. |
 | <code><a href="#@cdktf/provider-vault.namespace.Namespace.Initializer.parameter.customMetadata">customMetadata</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Custom metadata describing this namespace. Value type is map[string]string. |
-| <code><a href="#@cdktf/provider-vault.namespace.Namespace.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/namespace#id Namespace#id}. |
+| <code><a href="#@cdktf/provider-vault.namespace.Namespace.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/namespace#id Namespace#id}. |
 | <code><a href="#@cdktf/provider-vault.namespace.Namespace.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.namespace.Namespace.Initializer.parameter.pathFq">pathFq</a></code> | <code>java.lang.String</code> | The fully qualified namespace path. |
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 Namespace path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/namespace#path Namespace#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/namespace#path Namespace#path}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Custom metadata describing this namespace. Value type is map[string]string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/namespace#custom_metadata Namespace#custom_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/namespace#custom_metadata Namespace#custom_metadata}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/namespace#id Namespace#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/namespace#id Namespace#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -143,7 +143,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/namespace#namespace Namespace#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/namespace#namespace Namespace#namespace}
 
 ---
 
@@ -153,7 +153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The fully qualified namespace path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/namespace#path_fq Namespace#path_fq}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/namespace#path_fq Namespace#path_fq}
 
 ---
 
@@ -608,7 +608,7 @@ The construct id used in the generated config for the Namespace to import.
 
 The id of the existing Namespace that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/namespace#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/namespace#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -960,7 +960,7 @@ NamespaceConfig.builder()
 | <code><a href="#@cdktf/provider-vault.namespace.NamespaceConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.namespace.NamespaceConfig.property.path">path</a></code> | <code>java.lang.String</code> | Namespace path. |
 | <code><a href="#@cdktf/provider-vault.namespace.NamespaceConfig.property.customMetadata">customMetadata</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Custom metadata describing this namespace. Value type is map[string]string. |
-| <code><a href="#@cdktf/provider-vault.namespace.NamespaceConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/namespace#id Namespace#id}. |
+| <code><a href="#@cdktf/provider-vault.namespace.NamespaceConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/namespace#id Namespace#id}. |
 | <code><a href="#@cdktf/provider-vault.namespace.NamespaceConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.namespace.NamespaceConfig.property.pathFq">pathFq</a></code> | <code>java.lang.String</code> | The fully qualified namespace path. |
 
@@ -1046,7 +1046,7 @@ public java.lang.String getPath();
 
 Namespace path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/namespace#path Namespace#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/namespace#path Namespace#path}
 
 ---
 
@@ -1060,7 +1060,7 @@ public java.util.Map<java.lang.String, java.lang.String> getCustomMetadata();
 
 Custom metadata describing this namespace. Value type is map[string]string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/namespace#custom_metadata Namespace#custom_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/namespace#custom_metadata Namespace#custom_metadata}
 
 ---
 
@@ -1072,7 +1072,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/namespace#id Namespace#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/namespace#id Namespace#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1089,7 +1089,7 @@ public java.lang.String getNamespace();
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/namespace#namespace Namespace#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/namespace#namespace Namespace#namespace}
 
 ---
 
@@ -1103,7 +1103,7 @@ public java.lang.String getPathFq();
 
 The fully qualified namespace path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/namespace#path_fq Namespace#path_fq}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/namespace#path_fq Namespace#path_fq}
 
 ---
 

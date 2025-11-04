@@ -4,7 +4,7 @@
 
 ### SecretsSyncConfig <a name="SecretsSyncConfig" id="@cdktf/provider-vault.secretsSyncConfig.SecretsSyncConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/secrets_sync_config vault_secrets_sync_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/secrets_sync_config vault_secrets_sync_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.secretsSyncConfig.SecretsSyncConfig.Initializer"></a>
 
@@ -38,7 +38,7 @@ SecretsSyncConfig.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vault.secretsSyncConfig.SecretsSyncConfig.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncConfig.SecretsSyncConfig.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncConfig.SecretsSyncConfig.Initializer.parameter.disabled">disabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Disables the syncing process between Vault and external destinations. |
-| <code><a href="#@cdktf/provider-vault.secretsSyncConfig.SecretsSyncConfig.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/secrets_sync_config#id SecretsSyncConfig#id}. |
+| <code><a href="#@cdktf/provider-vault.secretsSyncConfig.SecretsSyncConfig.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/secrets_sync_config#id SecretsSyncConfig#id}. |
 | <code><a href="#@cdktf/provider-vault.secretsSyncConfig.SecretsSyncConfig.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.secretsSyncConfig.SecretsSyncConfig.Initializer.parameter.queueCapacity">queueCapacity</a></code> | <code>java.lang.Number</code> | Maximum number of pending sync operations allowed on the queue. |
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Disables the syncing process between Vault and external destinations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/secrets_sync_config#disabled SecretsSyncConfig#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/secrets_sync_config#disabled SecretsSyncConfig#disabled}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/secrets_sync_config#id SecretsSyncConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/secrets_sync_config#id SecretsSyncConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -131,7 +131,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/secrets_sync_config#namespace SecretsSyncConfig#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/secrets_sync_config#namespace SecretsSyncConfig#namespace}
 
 ---
 
@@ -141,7 +141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Maximum number of pending sync operations allowed on the queue.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/secrets_sync_config#queue_capacity SecretsSyncConfig#queue_capacity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/secrets_sync_config#queue_capacity SecretsSyncConfig#queue_capacity}
 
 ---
 
@@ -596,7 +596,7 @@ The construct id used in the generated config for the SecretsSyncConfig to impor
 
 The id of the existing SecretsSyncConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/secrets_sync_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/secrets_sync_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -913,7 +913,7 @@ SecretsSyncConfigConfig.builder()
 | <code><a href="#@cdktf/provider-vault.secretsSyncConfig.SecretsSyncConfigConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncConfig.SecretsSyncConfigConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.secretsSyncConfig.SecretsSyncConfigConfig.property.disabled">disabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Disables the syncing process between Vault and external destinations. |
-| <code><a href="#@cdktf/provider-vault.secretsSyncConfig.SecretsSyncConfigConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/secrets_sync_config#id SecretsSyncConfig#id}. |
+| <code><a href="#@cdktf/provider-vault.secretsSyncConfig.SecretsSyncConfigConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/secrets_sync_config#id SecretsSyncConfig#id}. |
 | <code><a href="#@cdktf/provider-vault.secretsSyncConfig.SecretsSyncConfigConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.secretsSyncConfig.SecretsSyncConfigConfig.property.queueCapacity">queueCapacity</a></code> | <code>java.lang.Number</code> | Maximum number of pending sync operations allowed on the queue. |
 
@@ -999,7 +999,7 @@ public java.lang.Boolean|IResolvable getDisabled();
 
 Disables the syncing process between Vault and external destinations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/secrets_sync_config#disabled SecretsSyncConfig#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/secrets_sync_config#disabled SecretsSyncConfig#disabled}
 
 ---
 
@@ -1011,7 +1011,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/secrets_sync_config#id SecretsSyncConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/secrets_sync_config#id SecretsSyncConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1028,7 +1028,7 @@ public java.lang.String getNamespace();
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/secrets_sync_config#namespace SecretsSyncConfig#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/secrets_sync_config#namespace SecretsSyncConfig#namespace}
 
 ---
 
@@ -1042,7 +1042,7 @@ public java.lang.Number getQueueCapacity();
 
 Maximum number of pending sync operations allowed on the queue.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/secrets_sync_config#queue_capacity SecretsSyncConfig#queue_capacity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/secrets_sync_config#queue_capacity SecretsSyncConfig#queue_capacity}
 
 ---
 

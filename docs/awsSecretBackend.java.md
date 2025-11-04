@@ -4,7 +4,7 @@
 
 ### AwsSecretBackend <a name="AwsSecretBackend" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend vault_aws_secret_backend}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend vault_aws_secret_backend}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer"></a>
 
@@ -39,6 +39,7 @@ AwsSecretBackend.Builder.create(Construct scope, java.lang.String id)
 //  .listingVisibility(java.lang.String)
 //  .local(java.lang.Boolean|IResolvable)
 //  .maxLeaseTtlSeconds(java.lang.Number)
+//  .maxRetries(java.lang.Number)
 //  .namespace(java.lang.String)
 //  .options(java.util.Map<java.lang.String, java.lang.String>)
 //  .passthroughRequestHeaders(java.util.List<java.lang.String>)
@@ -83,13 +84,14 @@ AwsSecretBackend.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.externalEntropyAccess">externalEntropyAccess</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Enable the secrets engine to access Vault's external entropy source. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.forceNoCache">forceNoCache</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | If set to true, disables caching. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.iamEndpoint">iamEndpoint</a></code> | <code>java.lang.String</code> | Specifies a custom HTTP IAM endpoint to use. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#id AwsSecretBackend#id}. |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#id AwsSecretBackend#id}. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.identityTokenAudience">identityTokenAudience</a></code> | <code>java.lang.String</code> | The audience claim value. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.identityTokenKey">identityTokenKey</a></code> | <code>java.lang.String</code> | The key to use for signing identity tokens. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.identityTokenTtl">identityTokenTtl</a></code> | <code>java.lang.Number</code> | The TTL of generated identity tokens in seconds. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.listingVisibility">listingVisibility</a></code> | <code>java.lang.String</code> | Specifies whether to show this mount in the UI-specific listing endpoint. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.local">local</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Specifies if the secret backend is local only. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.maxLeaseTtlSeconds">maxLeaseTtlSeconds</a></code> | <code>java.lang.Number</code> | Maximum possible lease duration for secrets in seconds. |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.maxRetries">maxRetries</a></code> | <code>java.lang.Number</code> | Number of max retries the client should use for recoverable errors. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.options">options</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Specifies mount type specific options that are passed to the backend. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.passthroughRequestHeaders">passthroughRequestHeaders</a></code> | <code>java.util.List<java.lang.String></code> | List of headers to allow and pass from the request to the plugin. |
@@ -176,7 +178,7 @@ Must be unique amongst siblings in the same scope
 
 The AWS Access Key ID to use when generating new credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#access_key AwsSecretBackend#access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#access_key AwsSecretBackend#access_key}
 
 ---
 
@@ -186,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of managed key registry entry names that the mount in question is allowed to access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#allowed_managed_keys AwsSecretBackend#allowed_managed_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#allowed_managed_keys AwsSecretBackend#allowed_managed_keys}
 
 ---
 
@@ -196,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of headers to allow and pass from the request to the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#allowed_response_headers AwsSecretBackend#allowed_response_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#allowed_response_headers AwsSecretBackend#allowed_response_headers}
 
 ---
 
@@ -206,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the list of keys that will not be HMAC'd by audit devices in the request data object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#audit_non_hmac_request_keys AwsSecretBackend#audit_non_hmac_request_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#audit_non_hmac_request_keys AwsSecretBackend#audit_non_hmac_request_keys}
 
 ---
 
@@ -216,7 +218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the list of keys that will not be HMAC'd by audit devices in the response data object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#audit_non_hmac_response_keys AwsSecretBackend#audit_non_hmac_response_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#audit_non_hmac_response_keys AwsSecretBackend#audit_non_hmac_response_keys}
 
 ---
 
@@ -226,7 +228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Default lease duration for secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#default_lease_ttl_seconds AwsSecretBackend#default_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#default_lease_ttl_seconds AwsSecretBackend#default_lease_ttl_seconds}
 
 ---
 
@@ -236,7 +238,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of headers to allow and pass from the request to the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#delegated_auth_accessors AwsSecretBackend#delegated_auth_accessors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#delegated_auth_accessors AwsSecretBackend#delegated_auth_accessors}
 
 ---
 
@@ -246,7 +248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Human-friendly description of the mount for the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#description AwsSecretBackend#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#description AwsSecretBackend#description}
 
 ---
 
@@ -256,7 +258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Stops rotation of the root credential until set to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#disable_automated_rotation AwsSecretBackend#disable_automated_rotation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#disable_automated_rotation AwsSecretBackend#disable_automated_rotation}
 
 ---
 
@@ -266,7 +268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If set, opts out of mount migration on path updates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#disable_remount AwsSecretBackend#disable_remount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#disable_remount AwsSecretBackend#disable_remount}
 
 ---
 
@@ -276,7 +278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Enable the secrets engine to access Vault's external entropy source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#external_entropy_access AwsSecretBackend#external_entropy_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#external_entropy_access AwsSecretBackend#external_entropy_access}
 
 ---
 
@@ -286,7 +288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If set to true, disables caching.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#force_no_cache AwsSecretBackend#force_no_cache}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#force_no_cache AwsSecretBackend#force_no_cache}
 
 ---
 
@@ -296,7 +298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies a custom HTTP IAM endpoint to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#iam_endpoint AwsSecretBackend#iam_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#iam_endpoint AwsSecretBackend#iam_endpoint}
 
 ---
 
@@ -304,7 +306,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#id AwsSecretBackend#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#id AwsSecretBackend#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -317,7 +319,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The audience claim value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#identity_token_audience AwsSecretBackend#identity_token_audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#identity_token_audience AwsSecretBackend#identity_token_audience}
 
 ---
 
@@ -327,7 +329,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The key to use for signing identity tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#identity_token_key AwsSecretBackend#identity_token_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#identity_token_key AwsSecretBackend#identity_token_key}
 
 ---
 
@@ -337,7 +339,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The TTL of generated identity tokens in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#identity_token_ttl AwsSecretBackend#identity_token_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#identity_token_ttl AwsSecretBackend#identity_token_ttl}
 
 ---
 
@@ -347,7 +349,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies whether to show this mount in the UI-specific listing endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#listing_visibility AwsSecretBackend#listing_visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#listing_visibility AwsSecretBackend#listing_visibility}
 
 ---
 
@@ -357,7 +359,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies if the secret backend is local only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#local AwsSecretBackend#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#local AwsSecretBackend#local}
 
 ---
 
@@ -367,7 +369,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Maximum possible lease duration for secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#max_lease_ttl_seconds AwsSecretBackend#max_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#max_lease_ttl_seconds AwsSecretBackend#max_lease_ttl_seconds}
+
+---
+
+##### `maxRetries`<sup>Optional</sup> <a name="maxRetries" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.maxRetries"></a>
+
+- *Type:* java.lang.Number
+
+Number of max retries the client should use for recoverable errors.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#max_retries AwsSecretBackend#max_retries}
 
 ---
 
@@ -377,7 +389,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#namespace AwsSecretBackend#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#namespace AwsSecretBackend#namespace}
 
 ---
 
@@ -387,7 +399,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies mount type specific options that are passed to the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#options AwsSecretBackend#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#options AwsSecretBackend#options}
 
 ---
 
@@ -397,7 +409,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of headers to allow and pass from the request to the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#passthrough_request_headers AwsSecretBackend#passthrough_request_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#passthrough_request_headers AwsSecretBackend#passthrough_request_headers}
 
 ---
 
@@ -407,7 +419,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Path to mount the backend at.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#path AwsSecretBackend#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#path AwsSecretBackend#path}
 
 ---
 
@@ -417,7 +429,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#plugin_version AwsSecretBackend#plugin_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#plugin_version AwsSecretBackend#plugin_version}
 
 ---
 
@@ -427,7 +439,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The AWS region to make API calls against. Defaults to us-east-1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#region AwsSecretBackend#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#region AwsSecretBackend#region}
 
 ---
 
@@ -437,7 +449,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Role ARN to assume for plugin identity token federation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#role_arn AwsSecretBackend#role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#role_arn AwsSecretBackend#role_arn}
 
 ---
 
@@ -447,7 +459,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#rotation_period AwsSecretBackend#rotation_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#rotation_period AwsSecretBackend#rotation_period}
 
 ---
 
@@ -457,7 +469,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#rotation_schedule AwsSecretBackend#rotation_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#rotation_schedule AwsSecretBackend#rotation_schedule}
 
 ---
 
@@ -469,7 +481,7 @@ The maximum amount of time in seconds Vault is allowed to complete a rotation on
 
 Can only be used with rotation_schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#rotation_window AwsSecretBackend#rotation_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#rotation_window AwsSecretBackend#rotation_window}
 
 ---
 
@@ -479,7 +491,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#seal_wrap AwsSecretBackend#seal_wrap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#seal_wrap AwsSecretBackend#seal_wrap}
 
 ---
 
@@ -489,7 +501,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The AWS Secret Access Key to use when generating new credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#secret_key AwsSecretBackend#secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#secret_key AwsSecretBackend#secret_key}
 
 ---
 
@@ -499,7 +511,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies a custom HTTP STS endpoint to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#sts_endpoint AwsSecretBackend#sts_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#sts_endpoint AwsSecretBackend#sts_endpoint}
 
 ---
 
@@ -509,7 +521,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies a list of custom STS fallback endpoints to use (in order).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#sts_fallback_endpoints AwsSecretBackend#sts_fallback_endpoints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#sts_fallback_endpoints AwsSecretBackend#sts_fallback_endpoints}
 
 ---
 
@@ -519,7 +531,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies a list of custom STS fallback regions to use (in order).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#sts_fallback_regions AwsSecretBackend#sts_fallback_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#sts_fallback_regions AwsSecretBackend#sts_fallback_regions}
 
 ---
 
@@ -529,7 +541,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies a custom STS region to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#sts_region AwsSecretBackend#sts_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#sts_region AwsSecretBackend#sts_region}
 
 ---
 
@@ -539,7 +551,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Template describing how dynamic usernames are generated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#username_template AwsSecretBackend#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#username_template AwsSecretBackend#username_template}
 
 ---
 
@@ -590,6 +602,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetListingVisibility">resetListingVisibility</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetLocal">resetLocal</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetMaxLeaseTtlSeconds">resetMaxLeaseTtlSeconds</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetMaxRetries">resetMaxRetries</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetNamespace">resetNamespace</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetOptions">resetOptions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetPassthroughRequestHeaders">resetPassthroughRequestHeaders</a></code> | *No description.* |
@@ -1020,6 +1033,12 @@ public void resetLocal()
 public void resetMaxLeaseTtlSeconds()
 ```
 
+##### `resetMaxRetries` <a name="resetMaxRetries" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetMaxRetries"></a>
+
+```java
+public void resetMaxRetries()
+```
+
 ##### `resetNamespace` <a name="resetNamespace" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetNamespace"></a>
 
 ```java
@@ -1225,7 +1244,7 @@ The construct id used in the generated config for the AwsSecretBackend to import
 
 The id of the existing AwsSecretBackend that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1276,6 +1295,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.listingVisibilityInput">listingVisibilityInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.localInput">localInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.maxLeaseTtlSecondsInput">maxLeaseTtlSecondsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.maxRetriesInput">maxRetriesInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.namespaceInput">namespaceInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.optionsInput">optionsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.passthroughRequestHeadersInput">passthroughRequestHeadersInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -1313,6 +1333,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.listingVisibility">listingVisibility</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.local">local</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.maxLeaseTtlSeconds">maxLeaseTtlSeconds</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.maxRetries">maxRetries</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.namespace">namespace</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.options">options</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.passthroughRequestHeaders">passthroughRequestHeaders</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -1679,6 +1700,16 @@ public java.lang.Boolean|IResolvable getLocalInput();
 
 ```java
 public java.lang.Number getMaxLeaseTtlSecondsInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `maxRetriesInput`<sup>Optional</sup> <a name="maxRetriesInput" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.maxRetriesInput"></a>
+
+```java
+public java.lang.Number getMaxRetriesInput();
 ```
 
 - *Type:* java.lang.Number
@@ -2055,6 +2086,16 @@ public java.lang.Number getMaxLeaseTtlSeconds();
 
 ---
 
+##### `maxRetries`<sup>Required</sup> <a name="maxRetries" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.maxRetries"></a>
+
+```java
+public java.lang.Number getMaxRetries();
+```
+
+- *Type:* java.lang.Number
+
+---
+
 ##### `namespace`<sup>Required</sup> <a name="namespace" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.namespace"></a>
 
 ```java
@@ -2280,6 +2321,7 @@ AwsSecretBackendConfig.builder()
 //  .listingVisibility(java.lang.String)
 //  .local(java.lang.Boolean|IResolvable)
 //  .maxLeaseTtlSeconds(java.lang.Number)
+//  .maxRetries(java.lang.Number)
 //  .namespace(java.lang.String)
 //  .options(java.util.Map<java.lang.String, java.lang.String>)
 //  .passthroughRequestHeaders(java.util.List<java.lang.String>)
@@ -2324,13 +2366,14 @@ AwsSecretBackendConfig.builder()
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.externalEntropyAccess">externalEntropyAccess</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Enable the secrets engine to access Vault's external entropy source. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.forceNoCache">forceNoCache</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | If set to true, disables caching. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.iamEndpoint">iamEndpoint</a></code> | <code>java.lang.String</code> | Specifies a custom HTTP IAM endpoint to use. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#id AwsSecretBackend#id}. |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#id AwsSecretBackend#id}. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.identityTokenAudience">identityTokenAudience</a></code> | <code>java.lang.String</code> | The audience claim value. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.identityTokenKey">identityTokenKey</a></code> | <code>java.lang.String</code> | The key to use for signing identity tokens. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.identityTokenTtl">identityTokenTtl</a></code> | <code>java.lang.Number</code> | The TTL of generated identity tokens in seconds. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.listingVisibility">listingVisibility</a></code> | <code>java.lang.String</code> | Specifies whether to show this mount in the UI-specific listing endpoint. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.local">local</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Specifies if the secret backend is local only. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.maxLeaseTtlSeconds">maxLeaseTtlSeconds</a></code> | <code>java.lang.Number</code> | Maximum possible lease duration for secrets in seconds. |
+| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.maxRetries">maxRetries</a></code> | <code>java.lang.Number</code> | Number of max retries the client should use for recoverable errors. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.options">options</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Specifies mount type specific options that are passed to the backend. |
 | <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.passthroughRequestHeaders">passthroughRequestHeaders</a></code> | <code>java.util.List<java.lang.String></code> | List of headers to allow and pass from the request to the plugin. |
@@ -2431,7 +2474,7 @@ public java.lang.String getAccessKey();
 
 The AWS Access Key ID to use when generating new credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#access_key AwsSecretBackend#access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#access_key AwsSecretBackend#access_key}
 
 ---
 
@@ -2445,7 +2488,7 @@ public java.util.List<java.lang.String> getAllowedManagedKeys();
 
 List of managed key registry entry names that the mount in question is allowed to access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#allowed_managed_keys AwsSecretBackend#allowed_managed_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#allowed_managed_keys AwsSecretBackend#allowed_managed_keys}
 
 ---
 
@@ -2459,7 +2502,7 @@ public java.util.List<java.lang.String> getAllowedResponseHeaders();
 
 List of headers to allow and pass from the request to the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#allowed_response_headers AwsSecretBackend#allowed_response_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#allowed_response_headers AwsSecretBackend#allowed_response_headers}
 
 ---
 
@@ -2473,7 +2516,7 @@ public java.util.List<java.lang.String> getAuditNonHmacRequestKeys();
 
 Specifies the list of keys that will not be HMAC'd by audit devices in the request data object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#audit_non_hmac_request_keys AwsSecretBackend#audit_non_hmac_request_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#audit_non_hmac_request_keys AwsSecretBackend#audit_non_hmac_request_keys}
 
 ---
 
@@ -2487,7 +2530,7 @@ public java.util.List<java.lang.String> getAuditNonHmacResponseKeys();
 
 Specifies the list of keys that will not be HMAC'd by audit devices in the response data object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#audit_non_hmac_response_keys AwsSecretBackend#audit_non_hmac_response_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#audit_non_hmac_response_keys AwsSecretBackend#audit_non_hmac_response_keys}
 
 ---
 
@@ -2501,7 +2544,7 @@ public java.lang.Number getDefaultLeaseTtlSeconds();
 
 Default lease duration for secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#default_lease_ttl_seconds AwsSecretBackend#default_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#default_lease_ttl_seconds AwsSecretBackend#default_lease_ttl_seconds}
 
 ---
 
@@ -2515,7 +2558,7 @@ public java.util.List<java.lang.String> getDelegatedAuthAccessors();
 
 List of headers to allow and pass from the request to the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#delegated_auth_accessors AwsSecretBackend#delegated_auth_accessors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#delegated_auth_accessors AwsSecretBackend#delegated_auth_accessors}
 
 ---
 
@@ -2529,7 +2572,7 @@ public java.lang.String getDescription();
 
 Human-friendly description of the mount for the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#description AwsSecretBackend#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#description AwsSecretBackend#description}
 
 ---
 
@@ -2543,7 +2586,7 @@ public java.lang.Boolean|IResolvable getDisableAutomatedRotation();
 
 Stops rotation of the root credential until set to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#disable_automated_rotation AwsSecretBackend#disable_automated_rotation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#disable_automated_rotation AwsSecretBackend#disable_automated_rotation}
 
 ---
 
@@ -2557,7 +2600,7 @@ public java.lang.Boolean|IResolvable getDisableRemount();
 
 If set, opts out of mount migration on path updates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#disable_remount AwsSecretBackend#disable_remount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#disable_remount AwsSecretBackend#disable_remount}
 
 ---
 
@@ -2571,7 +2614,7 @@ public java.lang.Boolean|IResolvable getExternalEntropyAccess();
 
 Enable the secrets engine to access Vault's external entropy source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#external_entropy_access AwsSecretBackend#external_entropy_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#external_entropy_access AwsSecretBackend#external_entropy_access}
 
 ---
 
@@ -2585,7 +2628,7 @@ public java.lang.Boolean|IResolvable getForceNoCache();
 
 If set to true, disables caching.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#force_no_cache AwsSecretBackend#force_no_cache}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#force_no_cache AwsSecretBackend#force_no_cache}
 
 ---
 
@@ -2599,7 +2642,7 @@ public java.lang.String getIamEndpoint();
 
 Specifies a custom HTTP IAM endpoint to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#iam_endpoint AwsSecretBackend#iam_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#iam_endpoint AwsSecretBackend#iam_endpoint}
 
 ---
 
@@ -2611,7 +2654,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#id AwsSecretBackend#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#id AwsSecretBackend#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2628,7 +2671,7 @@ public java.lang.String getIdentityTokenAudience();
 
 The audience claim value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#identity_token_audience AwsSecretBackend#identity_token_audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#identity_token_audience AwsSecretBackend#identity_token_audience}
 
 ---
 
@@ -2642,7 +2685,7 @@ public java.lang.String getIdentityTokenKey();
 
 The key to use for signing identity tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#identity_token_key AwsSecretBackend#identity_token_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#identity_token_key AwsSecretBackend#identity_token_key}
 
 ---
 
@@ -2656,7 +2699,7 @@ public java.lang.Number getIdentityTokenTtl();
 
 The TTL of generated identity tokens in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#identity_token_ttl AwsSecretBackend#identity_token_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#identity_token_ttl AwsSecretBackend#identity_token_ttl}
 
 ---
 
@@ -2670,7 +2713,7 @@ public java.lang.String getListingVisibility();
 
 Specifies whether to show this mount in the UI-specific listing endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#listing_visibility AwsSecretBackend#listing_visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#listing_visibility AwsSecretBackend#listing_visibility}
 
 ---
 
@@ -2684,7 +2727,7 @@ public java.lang.Boolean|IResolvable getLocal();
 
 Specifies if the secret backend is local only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#local AwsSecretBackend#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#local AwsSecretBackend#local}
 
 ---
 
@@ -2698,7 +2741,21 @@ public java.lang.Number getMaxLeaseTtlSeconds();
 
 Maximum possible lease duration for secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#max_lease_ttl_seconds AwsSecretBackend#max_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#max_lease_ttl_seconds AwsSecretBackend#max_lease_ttl_seconds}
+
+---
+
+##### `maxRetries`<sup>Optional</sup> <a name="maxRetries" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.maxRetries"></a>
+
+```java
+public java.lang.Number getMaxRetries();
+```
+
+- *Type:* java.lang.Number
+
+Number of max retries the client should use for recoverable errors.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#max_retries AwsSecretBackend#max_retries}
 
 ---
 
@@ -2712,7 +2769,7 @@ public java.lang.String getNamespace();
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#namespace AwsSecretBackend#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#namespace AwsSecretBackend#namespace}
 
 ---
 
@@ -2726,7 +2783,7 @@ public java.util.Map<java.lang.String, java.lang.String> getOptions();
 
 Specifies mount type specific options that are passed to the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#options AwsSecretBackend#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#options AwsSecretBackend#options}
 
 ---
 
@@ -2740,7 +2797,7 @@ public java.util.List<java.lang.String> getPassthroughRequestHeaders();
 
 List of headers to allow and pass from the request to the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#passthrough_request_headers AwsSecretBackend#passthrough_request_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#passthrough_request_headers AwsSecretBackend#passthrough_request_headers}
 
 ---
 
@@ -2754,7 +2811,7 @@ public java.lang.String getPath();
 
 Path to mount the backend at.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#path AwsSecretBackend#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#path AwsSecretBackend#path}
 
 ---
 
@@ -2768,7 +2825,7 @@ public java.lang.String getPluginVersion();
 
 Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#plugin_version AwsSecretBackend#plugin_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#plugin_version AwsSecretBackend#plugin_version}
 
 ---
 
@@ -2782,7 +2839,7 @@ public java.lang.String getRegion();
 
 The AWS region to make API calls against. Defaults to us-east-1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#region AwsSecretBackend#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#region AwsSecretBackend#region}
 
 ---
 
@@ -2796,7 +2853,7 @@ public java.lang.String getRoleArn();
 
 Role ARN to assume for plugin identity token federation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#role_arn AwsSecretBackend#role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#role_arn AwsSecretBackend#role_arn}
 
 ---
 
@@ -2810,7 +2867,7 @@ public java.lang.Number getRotationPeriod();
 
 The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#rotation_period AwsSecretBackend#rotation_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#rotation_period AwsSecretBackend#rotation_period}
 
 ---
 
@@ -2824,7 +2881,7 @@ public java.lang.String getRotationSchedule();
 
 The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#rotation_schedule AwsSecretBackend#rotation_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#rotation_schedule AwsSecretBackend#rotation_schedule}
 
 ---
 
@@ -2840,7 +2897,7 @@ The maximum amount of time in seconds Vault is allowed to complete a rotation on
 
 Can only be used with rotation_schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#rotation_window AwsSecretBackend#rotation_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#rotation_window AwsSecretBackend#rotation_window}
 
 ---
 
@@ -2854,7 +2911,7 @@ public java.lang.Boolean|IResolvable getSealWrap();
 
 Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#seal_wrap AwsSecretBackend#seal_wrap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#seal_wrap AwsSecretBackend#seal_wrap}
 
 ---
 
@@ -2868,7 +2925,7 @@ public java.lang.String getSecretKey();
 
 The AWS Secret Access Key to use when generating new credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#secret_key AwsSecretBackend#secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#secret_key AwsSecretBackend#secret_key}
 
 ---
 
@@ -2882,7 +2939,7 @@ public java.lang.String getStsEndpoint();
 
 Specifies a custom HTTP STS endpoint to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#sts_endpoint AwsSecretBackend#sts_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#sts_endpoint AwsSecretBackend#sts_endpoint}
 
 ---
 
@@ -2896,7 +2953,7 @@ public java.util.List<java.lang.String> getStsFallbackEndpoints();
 
 Specifies a list of custom STS fallback endpoints to use (in order).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#sts_fallback_endpoints AwsSecretBackend#sts_fallback_endpoints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#sts_fallback_endpoints AwsSecretBackend#sts_fallback_endpoints}
 
 ---
 
@@ -2910,7 +2967,7 @@ public java.util.List<java.lang.String> getStsFallbackRegions();
 
 Specifies a list of custom STS fallback regions to use (in order).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#sts_fallback_regions AwsSecretBackend#sts_fallback_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#sts_fallback_regions AwsSecretBackend#sts_fallback_regions}
 
 ---
 
@@ -2924,7 +2981,7 @@ public java.lang.String getStsRegion();
 
 Specifies a custom STS region to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#sts_region AwsSecretBackend#sts_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#sts_region AwsSecretBackend#sts_region}
 
 ---
 
@@ -2938,7 +2995,7 @@ public java.lang.String getUsernameTemplate();
 
 Template describing how dynamic usernames are generated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend#username_template AwsSecretBackend#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend#username_template AwsSecretBackend#username_template}
 
 ---
 

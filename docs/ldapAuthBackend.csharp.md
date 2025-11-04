@@ -4,7 +4,7 @@
 
 ### LdapAuthBackend <a name="LdapAuthBackend" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend vault_ldap_auth_backend}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend vault_ldap_auth_backend}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.Initializer"></a>
 
@@ -73,6 +73,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.putTune">PutTune</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.resetAnonymousGroupSearch">ResetAnonymousGroupSearch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.resetBinddn">ResetBinddn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.resetBindpass">ResetBindpass</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.resetCaseSensitiveNames">ResetCaseSensitiveNames</a></code> | *No description.* |
@@ -81,10 +83,12 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.resetClientTlsKey">ResetClientTlsKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.resetConnectionTimeout">ResetConnectionTimeout</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.resetDenyNullBind">ResetDenyNullBind</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.resetDereferenceAliases">ResetDereferenceAliases</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.resetDisableAutomatedRotation">ResetDisableAutomatedRotation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.resetDisableRemount">ResetDisableRemount</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.resetDiscoverdn">ResetDiscoverdn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.resetEnableSamaccountnameLogin">ResetEnableSamaccountnameLogin</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.resetGroupattr">ResetGroupattr</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.resetGroupdn">ResetGroupdn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.resetGroupfilter">ResetGroupfilter</a></code> | *No description.* |
@@ -94,6 +98,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.resetMaxPageSize">ResetMaxPageSize</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.resetNamespace">ResetNamespace</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.resetPath">ResetPath</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.resetRequestTimeout">ResetRequestTimeout</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.resetRotationPeriod">ResetRotationPeriod</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.resetRotationSchedule">ResetRotationSchedule</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.resetRotationWindow">ResetRotationWindow</a></code> | *No description.* |
@@ -109,6 +114,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.resetTokenPolicies">ResetTokenPolicies</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.resetTokenTtl">ResetTokenTtl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.resetTokenType">ResetTokenType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.resetTune">ResetTune</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.resetUpndomain">ResetUpndomain</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.resetUserattr">ResetUserattr</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.resetUserdn">ResetUserdn</a></code> | *No description.* |
@@ -406,6 +412,24 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `PutTune` <a name="PutTune" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.putTune"></a>
+
+```csharp
+private void PutTune(IResolvable|LdapAuthBackendTune[] Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.putTune.parameter.value"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTune">LdapAuthBackendTune</a>[]
+
+---
+
+##### `ResetAnonymousGroupSearch` <a name="ResetAnonymousGroupSearch" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.resetAnonymousGroupSearch"></a>
+
+```csharp
+private void ResetAnonymousGroupSearch()
+```
+
 ##### `ResetBinddn` <a name="ResetBinddn" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.resetBinddn"></a>
 
 ```csharp
@@ -454,6 +478,12 @@ private void ResetConnectionTimeout()
 private void ResetDenyNullBind()
 ```
 
+##### `ResetDereferenceAliases` <a name="ResetDereferenceAliases" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.resetDereferenceAliases"></a>
+
+```csharp
+private void ResetDereferenceAliases()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.resetDescription"></a>
 
 ```csharp
@@ -476,6 +506,12 @@ private void ResetDisableRemount()
 
 ```csharp
 private void ResetDiscoverdn()
+```
+
+##### `ResetEnableSamaccountnameLogin` <a name="ResetEnableSamaccountnameLogin" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.resetEnableSamaccountnameLogin"></a>
+
+```csharp
+private void ResetEnableSamaccountnameLogin()
 ```
 
 ##### `ResetGroupattr` <a name="ResetGroupattr" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.resetGroupattr"></a>
@@ -530,6 +566,12 @@ private void ResetNamespace()
 
 ```csharp
 private void ResetPath()
+```
+
+##### `ResetRequestTimeout` <a name="ResetRequestTimeout" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.resetRequestTimeout"></a>
+
+```csharp
+private void ResetRequestTimeout()
 ```
 
 ##### `ResetRotationPeriod` <a name="ResetRotationPeriod" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.resetRotationPeriod"></a>
@@ -620,6 +662,12 @@ private void ResetTokenTtl()
 
 ```csharp
 private void ResetTokenType()
+```
+
+##### `ResetTune` <a name="ResetTune" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.resetTune"></a>
+
+```csharp
+private void ResetTune()
 ```
 
 ##### `ResetUpndomain` <a name="ResetUpndomain" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.resetUpndomain"></a>
@@ -761,7 +809,7 @@ The construct id used in the generated config for the LdapAuthBackend to import.
 
 The id of the existing LdapAuthBackend that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -792,6 +840,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.accessor">Accessor</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.tune">Tune</a></code> | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneList">LdapAuthBackendTuneList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.anonymousGroupSearchInput">AnonymousGroupSearchInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.binddnInput">BinddnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.bindpassInput">BindpassInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.caseSensitiveNamesInput">CaseSensitiveNamesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
@@ -800,10 +850,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.clientTlsKeyInput">ClientTlsKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.connectionTimeoutInput">ConnectionTimeoutInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.denyNullBindInput">DenyNullBindInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.dereferenceAliasesInput">DereferenceAliasesInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.disableRemountInput">DisableRemountInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.discoverdnInput">DiscoverdnInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.enableSamaccountnameLoginInput">EnableSamaccountnameLoginInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.groupattrInput">GroupattrInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.groupdnInput">GroupdnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.groupfilterInput">GroupfilterInput</a></code> | <code>string</code> | *No description.* |
@@ -813,6 +865,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.maxPageSizeInput">MaxPageSizeInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.namespaceInput">NamespaceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.pathInput">PathInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.requestTimeoutInput">RequestTimeoutInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.rotationPeriodInput">RotationPeriodInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.rotationScheduleInput">RotationScheduleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.rotationWindowInput">RotationWindowInput</a></code> | <code>double</code> | *No description.* |
@@ -828,6 +881,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.tokenPoliciesInput">TokenPoliciesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.tokenTtlInput">TokenTtlInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.tokenTypeInput">TokenTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.tuneInput">TuneInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTune">LdapAuthBackendTune</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.upndomainInput">UpndomainInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.urlInput">UrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.userattrInput">UserattrInput</a></code> | <code>string</code> | *No description.* |
@@ -835,6 +889,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.userfilterInput">UserfilterInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.usernameAsAliasInput">UsernameAsAliasInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.useTokenGroupsInput">UseTokenGroupsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.anonymousGroupSearch">AnonymousGroupSearch</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.binddn">Binddn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.bindpass">Bindpass</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.caseSensitiveNames">CaseSensitiveNames</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
@@ -843,10 +898,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.clientTlsKey">ClientTlsKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.connectionTimeout">ConnectionTimeout</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.denyNullBind">DenyNullBind</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.dereferenceAliases">DereferenceAliases</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.disableRemount">DisableRemount</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.discoverdn">Discoverdn</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.enableSamaccountnameLogin">EnableSamaccountnameLogin</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.groupattr">Groupattr</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.groupdn">Groupdn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.groupfilter">Groupfilter</a></code> | <code>string</code> | *No description.* |
@@ -856,6 +913,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.maxPageSize">MaxPageSize</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.namespace">Namespace</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.path">Path</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.requestTimeout">RequestTimeout</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.rotationPeriod">RotationPeriod</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.rotationSchedule">RotationSchedule</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.rotationWindow">RotationWindow</a></code> | <code>double</code> | *No description.* |
@@ -1033,6 +1091,26 @@ public string Accessor { get; }
 
 ---
 
+##### `Tune`<sup>Required</sup> <a name="Tune" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.tune"></a>
+
+```csharp
+public LdapAuthBackendTuneList Tune { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneList">LdapAuthBackendTuneList</a>
+
+---
+
+##### `AnonymousGroupSearchInput`<sup>Optional</sup> <a name="AnonymousGroupSearchInput" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.anonymousGroupSearchInput"></a>
+
+```csharp
+public bool|IResolvable AnonymousGroupSearchInput { get; }
+```
+
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
+
+---
+
 ##### `BinddnInput`<sup>Optional</sup> <a name="BinddnInput" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.binddnInput"></a>
 
 ```csharp
@@ -1113,6 +1191,16 @@ public bool|IResolvable DenyNullBindInput { get; }
 
 ---
 
+##### `DereferenceAliasesInput`<sup>Optional</sup> <a name="DereferenceAliasesInput" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.dereferenceAliasesInput"></a>
+
+```csharp
+public string DereferenceAliasesInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.descriptionInput"></a>
 
 ```csharp
@@ -1147,6 +1235,16 @@ public bool|IResolvable DisableRemountInput { get; }
 
 ```csharp
 public bool|IResolvable DiscoverdnInput { get; }
+```
+
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
+
+---
+
+##### `EnableSamaccountnameLoginInput`<sup>Optional</sup> <a name="EnableSamaccountnameLoginInput" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.enableSamaccountnameLoginInput"></a>
+
+```csharp
+public bool|IResolvable EnableSamaccountnameLoginInput { get; }
 ```
 
 - *Type:* bool|HashiCorp.Cdktf.IResolvable
@@ -1240,6 +1338,16 @@ public string PathInput { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `RequestTimeoutInput`<sup>Optional</sup> <a name="RequestTimeoutInput" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.requestTimeoutInput"></a>
+
+```csharp
+public double RequestTimeoutInput { get; }
+```
+
+- *Type:* double
 
 ---
 
@@ -1393,6 +1501,16 @@ public string TokenTypeInput { get; }
 
 ---
 
+##### `TuneInput`<sup>Optional</sup> <a name="TuneInput" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.tuneInput"></a>
+
+```csharp
+public IResolvable|LdapAuthBackendTune[] TuneInput { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTune">LdapAuthBackendTune</a>[]
+
+---
+
 ##### `UpndomainInput`<sup>Optional</sup> <a name="UpndomainInput" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.upndomainInput"></a>
 
 ```csharp
@@ -1457,6 +1575,16 @@ public bool|IResolvable UsernameAsAliasInput { get; }
 
 ```csharp
 public bool|IResolvable UseTokenGroupsInput { get; }
+```
+
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
+
+---
+
+##### `AnonymousGroupSearch`<sup>Required</sup> <a name="AnonymousGroupSearch" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.anonymousGroupSearch"></a>
+
+```csharp
+public bool|IResolvable AnonymousGroupSearch { get; }
 ```
 
 - *Type:* bool|HashiCorp.Cdktf.IResolvable
@@ -1543,6 +1671,16 @@ public bool|IResolvable DenyNullBind { get; }
 
 ---
 
+##### `DereferenceAliases`<sup>Required</sup> <a name="DereferenceAliases" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.dereferenceAliases"></a>
+
+```csharp
+public string DereferenceAliases { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `Description`<sup>Required</sup> <a name="Description" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.description"></a>
 
 ```csharp
@@ -1577,6 +1715,16 @@ public bool|IResolvable DisableRemount { get; }
 
 ```csharp
 public bool|IResolvable Discoverdn { get; }
+```
+
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
+
+---
+
+##### `EnableSamaccountnameLogin`<sup>Required</sup> <a name="EnableSamaccountnameLogin" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.enableSamaccountnameLogin"></a>
+
+```csharp
+public bool|IResolvable EnableSamaccountnameLogin { get; }
 ```
 
 - *Type:* bool|HashiCorp.Cdktf.IResolvable
@@ -1670,6 +1818,16 @@ public string Path { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `RequestTimeout`<sup>Required</sup> <a name="RequestTimeout" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend.property.requestTimeout"></a>
+
+```csharp
+public double RequestTimeout { get; }
+```
+
+- *Type:* double
 
 ---
 
@@ -1929,6 +2087,7 @@ new LdapAuthBackendConfig {
     TerraformProvider Provider = null,
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Url,
+    bool|IResolvable AnonymousGroupSearch = null,
     string Binddn = null,
     string Bindpass = null,
     bool|IResolvable CaseSensitiveNames = null,
@@ -1937,10 +2096,12 @@ new LdapAuthBackendConfig {
     string ClientTlsKey = null,
     double ConnectionTimeout = null,
     bool|IResolvable DenyNullBind = null,
+    string DereferenceAliases = null,
     string Description = null,
     bool|IResolvable DisableAutomatedRotation = null,
     bool|IResolvable DisableRemount = null,
     bool|IResolvable Discoverdn = null,
+    bool|IResolvable EnableSamaccountnameLogin = null,
     string Groupattr = null,
     string Groupdn = null,
     string Groupfilter = null,
@@ -1950,6 +2111,7 @@ new LdapAuthBackendConfig {
     double MaxPageSize = null,
     string Namespace = null,
     string Path = null,
+    double RequestTimeout = null,
     double RotationPeriod = null,
     string RotationSchedule = null,
     double RotationWindow = null,
@@ -1965,6 +2127,7 @@ new LdapAuthBackendConfig {
     string[] TokenPolicies = null,
     double TokenTtl = null,
     string TokenType = null,
+    IResolvable|LdapAuthBackendTune[] Tune = null,
     string Upndomain = null,
     string Userattr = null,
     string Userdn = null,
@@ -1985,34 +2148,38 @@ new LdapAuthBackendConfig {
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.url">Url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#url LdapAuthBackend#url}. |
-| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.binddn">Binddn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#binddn LdapAuthBackend#binddn}. |
-| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.bindpass">Bindpass</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#bindpass LdapAuthBackend#bindpass}. |
-| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.caseSensitiveNames">CaseSensitiveNames</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#case_sensitive_names LdapAuthBackend#case_sensitive_names}. |
-| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.certificate">Certificate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#certificate LdapAuthBackend#certificate}. |
-| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.clientTlsCert">ClientTlsCert</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#client_tls_cert LdapAuthBackend#client_tls_cert}. |
-| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.clientTlsKey">ClientTlsKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#client_tls_key LdapAuthBackend#client_tls_key}. |
-| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.connectionTimeout">ConnectionTimeout</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#connection_timeout LdapAuthBackend#connection_timeout}. |
-| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.denyNullBind">DenyNullBind</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#deny_null_bind LdapAuthBackend#deny_null_bind}. |
-| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#description LdapAuthBackend#description}. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.url">Url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#url LdapAuthBackend#url}. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.anonymousGroupSearch">AnonymousGroupSearch</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Allows anonymous group searches. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.binddn">Binddn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#binddn LdapAuthBackend#binddn}. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.bindpass">Bindpass</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#bindpass LdapAuthBackend#bindpass}. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.caseSensitiveNames">CaseSensitiveNames</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#case_sensitive_names LdapAuthBackend#case_sensitive_names}. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.certificate">Certificate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#certificate LdapAuthBackend#certificate}. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.clientTlsCert">ClientTlsCert</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#client_tls_cert LdapAuthBackend#client_tls_cert}. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.clientTlsKey">ClientTlsKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#client_tls_key LdapAuthBackend#client_tls_key}. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.connectionTimeout">ConnectionTimeout</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#connection_timeout LdapAuthBackend#connection_timeout}. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.denyNullBind">DenyNullBind</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#deny_null_bind LdapAuthBackend#deny_null_bind}. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.dereferenceAliases">DereferenceAliases</a></code> | <code>string</code> | Specifies how aliases are dereferenced during LDAP searches. Valid values are 'never','searching','finding', and 'always'. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#description LdapAuthBackend#description}. |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.disableRemount">DisableRemount</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If set, opts out of mount migration on path updates. |
-| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.discoverdn">Discoverdn</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#discoverdn LdapAuthBackend#discoverdn}. |
-| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.groupattr">Groupattr</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#groupattr LdapAuthBackend#groupattr}. |
-| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.groupdn">Groupdn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#groupdn LdapAuthBackend#groupdn}. |
-| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.groupfilter">Groupfilter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#groupfilter LdapAuthBackend#groupfilter}. |
-| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#id LdapAuthBackend#id}. |
-| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.insecureTls">InsecureTls</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#insecure_tls LdapAuthBackend#insecure_tls}. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.discoverdn">Discoverdn</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#discoverdn LdapAuthBackend#discoverdn}. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.enableSamaccountnameLogin">EnableSamaccountnameLogin</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enables login using the sAMAccountName attribute. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.groupattr">Groupattr</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#groupattr LdapAuthBackend#groupattr}. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.groupdn">Groupdn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#groupdn LdapAuthBackend#groupdn}. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.groupfilter">Groupfilter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#groupfilter LdapAuthBackend#groupfilter}. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#id LdapAuthBackend#id}. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.insecureTls">InsecureTls</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#insecure_tls LdapAuthBackend#insecure_tls}. |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.local">Local</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies if the auth method is local only. |
-| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.maxPageSize">MaxPageSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#max_page_size LdapAuthBackend#max_page_size}. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.maxPageSize">MaxPageSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#max_page_size LdapAuthBackend#max_page_size}. |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
-| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.path">Path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#path LdapAuthBackend#path}. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.path">Path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#path LdapAuthBackend#path}. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.requestTimeout">RequestTimeout</a></code> | <code>double</code> | The timeout(in sec) for requests to the LDAP server. |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.rotationPeriod">RotationPeriod</a></code> | <code>double</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.rotationSchedule">RotationSchedule</a></code> | <code>string</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.rotationWindow">RotationWindow</a></code> | <code>double</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
-| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.starttls">Starttls</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#starttls LdapAuthBackend#starttls}. |
-| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.tlsMaxVersion">TlsMaxVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#tls_max_version LdapAuthBackend#tls_max_version}. |
-| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.tlsMinVersion">TlsMinVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#tls_min_version LdapAuthBackend#tls_min_version}. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.starttls">Starttls</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#starttls LdapAuthBackend#starttls}. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.tlsMaxVersion">TlsMaxVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#tls_max_version LdapAuthBackend#tls_max_version}. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.tlsMinVersion">TlsMinVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#tls_min_version LdapAuthBackend#tls_min_version}. |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.tokenBoundCidrs">TokenBoundCidrs</a></code> | <code>string[]</code> | Specifies the blocks of IP addresses which are allowed to use the generated token. |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.tokenExplicitMaxTtl">TokenExplicitMaxTtl</a></code> | <code>double</code> | Generated Token's Explicit Maximum TTL in seconds. |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.tokenMaxTtl">TokenMaxTtl</a></code> | <code>double</code> | The maximum lifetime of the generated token. |
@@ -2022,12 +2189,13 @@ new LdapAuthBackendConfig {
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.tokenPolicies">TokenPolicies</a></code> | <code>string[]</code> | Generated Token's Policies. |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.tokenTtl">TokenTtl</a></code> | <code>double</code> | The initial ttl of the token to generate in seconds. |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.tokenType">TokenType</a></code> | <code>string</code> | The type of token to generate, service or batch. |
-| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.upndomain">Upndomain</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#upndomain LdapAuthBackend#upndomain}. |
-| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.userattr">Userattr</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#userattr LdapAuthBackend#userattr}. |
-| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.userdn">Userdn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#userdn LdapAuthBackend#userdn}. |
-| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.userfilter">Userfilter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#userfilter LdapAuthBackend#userfilter}. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.tune">Tune</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTune">LdapAuthBackendTune</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#tune LdapAuthBackend#tune}. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.upndomain">Upndomain</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#upndomain LdapAuthBackend#upndomain}. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.userattr">Userattr</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#userattr LdapAuthBackend#userattr}. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.userdn">Userdn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#userdn LdapAuthBackend#userdn}. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.userfilter">Userfilter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#userfilter LdapAuthBackend#userfilter}. |
 | <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.usernameAsAlias">UsernameAsAlias</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Force the auth method to use the username passed by the user as the alias name. |
-| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.useTokenGroups">UseTokenGroups</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#use_token_groups LdapAuthBackend#use_token_groups}. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.useTokenGroups">UseTokenGroups</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#use_token_groups LdapAuthBackend#use_token_groups}. |
 
 ---
 
@@ -2109,7 +2277,21 @@ public string Url { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#url LdapAuthBackend#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#url LdapAuthBackend#url}.
+
+---
+
+##### `AnonymousGroupSearch`<sup>Optional</sup> <a name="AnonymousGroupSearch" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.anonymousGroupSearch"></a>
+
+```csharp
+public bool|IResolvable AnonymousGroupSearch { get; set; }
+```
+
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
+
+Allows anonymous group searches.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#anonymous_group_search LdapAuthBackend#anonymous_group_search}
 
 ---
 
@@ -2121,7 +2303,7 @@ public string Binddn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#binddn LdapAuthBackend#binddn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#binddn LdapAuthBackend#binddn}.
 
 ---
 
@@ -2133,7 +2315,7 @@ public string Bindpass { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#bindpass LdapAuthBackend#bindpass}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#bindpass LdapAuthBackend#bindpass}.
 
 ---
 
@@ -2145,7 +2327,7 @@ public bool|IResolvable CaseSensitiveNames { get; set; }
 
 - *Type:* bool|HashiCorp.Cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#case_sensitive_names LdapAuthBackend#case_sensitive_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#case_sensitive_names LdapAuthBackend#case_sensitive_names}.
 
 ---
 
@@ -2157,7 +2339,7 @@ public string Certificate { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#certificate LdapAuthBackend#certificate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#certificate LdapAuthBackend#certificate}.
 
 ---
 
@@ -2169,7 +2351,7 @@ public string ClientTlsCert { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#client_tls_cert LdapAuthBackend#client_tls_cert}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#client_tls_cert LdapAuthBackend#client_tls_cert}.
 
 ---
 
@@ -2181,7 +2363,7 @@ public string ClientTlsKey { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#client_tls_key LdapAuthBackend#client_tls_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#client_tls_key LdapAuthBackend#client_tls_key}.
 
 ---
 
@@ -2193,7 +2375,7 @@ public double ConnectionTimeout { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#connection_timeout LdapAuthBackend#connection_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#connection_timeout LdapAuthBackend#connection_timeout}.
 
 ---
 
@@ -2205,7 +2387,21 @@ public bool|IResolvable DenyNullBind { get; set; }
 
 - *Type:* bool|HashiCorp.Cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#deny_null_bind LdapAuthBackend#deny_null_bind}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#deny_null_bind LdapAuthBackend#deny_null_bind}.
+
+---
+
+##### `DereferenceAliases`<sup>Optional</sup> <a name="DereferenceAliases" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.dereferenceAliases"></a>
+
+```csharp
+public string DereferenceAliases { get; set; }
+```
+
+- *Type:* string
+
+Specifies how aliases are dereferenced during LDAP searches. Valid values are 'never','searching','finding', and 'always'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#dereference_aliases LdapAuthBackend#dereference_aliases}
 
 ---
 
@@ -2217,7 +2413,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#description LdapAuthBackend#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#description LdapAuthBackend#description}.
 
 ---
 
@@ -2231,7 +2427,7 @@ public bool|IResolvable DisableAutomatedRotation { get; set; }
 
 Stops rotation of the root credential until set to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#disable_automated_rotation LdapAuthBackend#disable_automated_rotation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#disable_automated_rotation LdapAuthBackend#disable_automated_rotation}
 
 ---
 
@@ -2245,7 +2441,7 @@ public bool|IResolvable DisableRemount { get; set; }
 
 If set, opts out of mount migration on path updates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#disable_remount LdapAuthBackend#disable_remount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#disable_remount LdapAuthBackend#disable_remount}
 
 ---
 
@@ -2257,7 +2453,21 @@ public bool|IResolvable Discoverdn { get; set; }
 
 - *Type:* bool|HashiCorp.Cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#discoverdn LdapAuthBackend#discoverdn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#discoverdn LdapAuthBackend#discoverdn}.
+
+---
+
+##### `EnableSamaccountnameLogin`<sup>Optional</sup> <a name="EnableSamaccountnameLogin" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.enableSamaccountnameLogin"></a>
+
+```csharp
+public bool|IResolvable EnableSamaccountnameLogin { get; set; }
+```
+
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
+
+Enables login using the sAMAccountName attribute.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#enable_samaccountname_login LdapAuthBackend#enable_samaccountname_login}
 
 ---
 
@@ -2269,7 +2479,7 @@ public string Groupattr { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#groupattr LdapAuthBackend#groupattr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#groupattr LdapAuthBackend#groupattr}.
 
 ---
 
@@ -2281,7 +2491,7 @@ public string Groupdn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#groupdn LdapAuthBackend#groupdn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#groupdn LdapAuthBackend#groupdn}.
 
 ---
 
@@ -2293,7 +2503,7 @@ public string Groupfilter { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#groupfilter LdapAuthBackend#groupfilter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#groupfilter LdapAuthBackend#groupfilter}.
 
 ---
 
@@ -2305,7 +2515,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#id LdapAuthBackend#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#id LdapAuthBackend#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2320,7 +2530,7 @@ public bool|IResolvable InsecureTls { get; set; }
 
 - *Type:* bool|HashiCorp.Cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#insecure_tls LdapAuthBackend#insecure_tls}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#insecure_tls LdapAuthBackend#insecure_tls}.
 
 ---
 
@@ -2334,7 +2544,7 @@ public bool|IResolvable Local { get; set; }
 
 Specifies if the auth method is local only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#local LdapAuthBackend#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#local LdapAuthBackend#local}
 
 ---
 
@@ -2346,7 +2556,7 @@ public double MaxPageSize { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#max_page_size LdapAuthBackend#max_page_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#max_page_size LdapAuthBackend#max_page_size}.
 
 ---
 
@@ -2360,7 +2570,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#namespace LdapAuthBackend#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#namespace LdapAuthBackend#namespace}
 
 ---
 
@@ -2372,7 +2582,21 @@ public string Path { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#path LdapAuthBackend#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#path LdapAuthBackend#path}.
+
+---
+
+##### `RequestTimeout`<sup>Optional</sup> <a name="RequestTimeout" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.requestTimeout"></a>
+
+```csharp
+public double RequestTimeout { get; set; }
+```
+
+- *Type:* double
+
+The timeout(in sec) for requests to the LDAP server.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#request_timeout LdapAuthBackend#request_timeout}
 
 ---
 
@@ -2386,7 +2610,7 @@ public double RotationPeriod { get; set; }
 
 The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#rotation_period LdapAuthBackend#rotation_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#rotation_period LdapAuthBackend#rotation_period}
 
 ---
 
@@ -2400,7 +2624,7 @@ public string RotationSchedule { get; set; }
 
 The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#rotation_schedule LdapAuthBackend#rotation_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#rotation_schedule LdapAuthBackend#rotation_schedule}
 
 ---
 
@@ -2416,7 +2640,7 @@ The maximum amount of time in seconds Vault is allowed to complete a rotation on
 
 Can only be used with rotation_schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#rotation_window LdapAuthBackend#rotation_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#rotation_window LdapAuthBackend#rotation_window}
 
 ---
 
@@ -2428,7 +2652,7 @@ public bool|IResolvable Starttls { get; set; }
 
 - *Type:* bool|HashiCorp.Cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#starttls LdapAuthBackend#starttls}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#starttls LdapAuthBackend#starttls}.
 
 ---
 
@@ -2440,7 +2664,7 @@ public string TlsMaxVersion { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#tls_max_version LdapAuthBackend#tls_max_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#tls_max_version LdapAuthBackend#tls_max_version}.
 
 ---
 
@@ -2452,7 +2676,7 @@ public string TlsMinVersion { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#tls_min_version LdapAuthBackend#tls_min_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#tls_min_version LdapAuthBackend#tls_min_version}.
 
 ---
 
@@ -2466,7 +2690,7 @@ public string[] TokenBoundCidrs { get; set; }
 
 Specifies the blocks of IP addresses which are allowed to use the generated token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#token_bound_cidrs LdapAuthBackend#token_bound_cidrs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#token_bound_cidrs LdapAuthBackend#token_bound_cidrs}
 
 ---
 
@@ -2480,7 +2704,7 @@ public double TokenExplicitMaxTtl { get; set; }
 
 Generated Token's Explicit Maximum TTL in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#token_explicit_max_ttl LdapAuthBackend#token_explicit_max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#token_explicit_max_ttl LdapAuthBackend#token_explicit_max_ttl}
 
 ---
 
@@ -2494,7 +2718,7 @@ public double TokenMaxTtl { get; set; }
 
 The maximum lifetime of the generated token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#token_max_ttl LdapAuthBackend#token_max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#token_max_ttl LdapAuthBackend#token_max_ttl}
 
 ---
 
@@ -2508,7 +2732,7 @@ public bool|IResolvable TokenNoDefaultPolicy { get; set; }
 
 If true, the 'default' policy will not automatically be added to generated tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#token_no_default_policy LdapAuthBackend#token_no_default_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#token_no_default_policy LdapAuthBackend#token_no_default_policy}
 
 ---
 
@@ -2522,7 +2746,7 @@ public double TokenNumUses { get; set; }
 
 The maximum number of times a token may be used, a value of zero means unlimited.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#token_num_uses LdapAuthBackend#token_num_uses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#token_num_uses LdapAuthBackend#token_num_uses}
 
 ---
 
@@ -2536,7 +2760,7 @@ public double TokenPeriod { get; set; }
 
 Generated Token's Period.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#token_period LdapAuthBackend#token_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#token_period LdapAuthBackend#token_period}
 
 ---
 
@@ -2550,7 +2774,7 @@ public string[] TokenPolicies { get; set; }
 
 Generated Token's Policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#token_policies LdapAuthBackend#token_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#token_policies LdapAuthBackend#token_policies}
 
 ---
 
@@ -2564,7 +2788,7 @@ public double TokenTtl { get; set; }
 
 The initial ttl of the token to generate in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#token_ttl LdapAuthBackend#token_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#token_ttl LdapAuthBackend#token_ttl}
 
 ---
 
@@ -2578,7 +2802,19 @@ public string TokenType { get; set; }
 
 The type of token to generate, service or batch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#token_type LdapAuthBackend#token_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#token_type LdapAuthBackend#token_type}
+
+---
+
+##### `Tune`<sup>Optional</sup> <a name="Tune" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.property.tune"></a>
+
+```csharp
+public IResolvable|LdapAuthBackendTune[] Tune { get; set; }
+```
+
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTune">LdapAuthBackendTune</a>[]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#tune LdapAuthBackend#tune}.
 
 ---
 
@@ -2590,7 +2826,7 @@ public string Upndomain { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#upndomain LdapAuthBackend#upndomain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#upndomain LdapAuthBackend#upndomain}.
 
 ---
 
@@ -2602,7 +2838,7 @@ public string Userattr { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#userattr LdapAuthBackend#userattr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#userattr LdapAuthBackend#userattr}.
 
 ---
 
@@ -2614,7 +2850,7 @@ public string Userdn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#userdn LdapAuthBackend#userdn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#userdn LdapAuthBackend#userdn}.
 
 ---
 
@@ -2626,7 +2862,7 @@ public string Userfilter { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#userfilter LdapAuthBackend#userfilter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#userfilter LdapAuthBackend#userfilter}.
 
 ---
 
@@ -2640,7 +2876,7 @@ public bool|IResolvable UsernameAsAlias { get; set; }
 
 Force the auth method to use the username passed by the user as the alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#username_as_alias LdapAuthBackend#username_as_alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#username_as_alias LdapAuthBackend#username_as_alias}
 
 ---
 
@@ -2652,7 +2888,797 @@ public bool|IResolvable UseTokenGroups { get; set; }
 
 - *Type:* bool|HashiCorp.Cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend#use_token_groups LdapAuthBackend#use_token_groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#use_token_groups LdapAuthBackend#use_token_groups}.
+
+---
+
+### LdapAuthBackendTune <a name="LdapAuthBackendTune" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTune"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTune.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Vault;
+
+new LdapAuthBackendTune {
+    string[] AllowedResponseHeaders = null,
+    string[] AuditNonHmacRequestKeys = null,
+    string[] AuditNonHmacResponseKeys = null,
+    string DefaultLeaseTtl = null,
+    string ListingVisibility = null,
+    string MaxLeaseTtl = null,
+    string[] PassthroughRequestHeaders = null,
+    string TokenType = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTune.property.allowedResponseHeaders">AllowedResponseHeaders</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#allowed_response_headers LdapAuthBackend#allowed_response_headers}. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTune.property.auditNonHmacRequestKeys">AuditNonHmacRequestKeys</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#audit_non_hmac_request_keys LdapAuthBackend#audit_non_hmac_request_keys}. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTune.property.auditNonHmacResponseKeys">AuditNonHmacResponseKeys</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#audit_non_hmac_response_keys LdapAuthBackend#audit_non_hmac_response_keys}. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTune.property.defaultLeaseTtl">DefaultLeaseTtl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#default_lease_ttl LdapAuthBackend#default_lease_ttl}. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTune.property.listingVisibility">ListingVisibility</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#listing_visibility LdapAuthBackend#listing_visibility}. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTune.property.maxLeaseTtl">MaxLeaseTtl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#max_lease_ttl LdapAuthBackend#max_lease_ttl}. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTune.property.passthroughRequestHeaders">PassthroughRequestHeaders</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#passthrough_request_headers LdapAuthBackend#passthrough_request_headers}. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTune.property.tokenType">TokenType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#token_type LdapAuthBackend#token_type}. |
+
+---
+
+##### `AllowedResponseHeaders`<sup>Optional</sup> <a name="AllowedResponseHeaders" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTune.property.allowedResponseHeaders"></a>
+
+```csharp
+public string[] AllowedResponseHeaders { get; set; }
+```
+
+- *Type:* string[]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#allowed_response_headers LdapAuthBackend#allowed_response_headers}.
+
+---
+
+##### `AuditNonHmacRequestKeys`<sup>Optional</sup> <a name="AuditNonHmacRequestKeys" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTune.property.auditNonHmacRequestKeys"></a>
+
+```csharp
+public string[] AuditNonHmacRequestKeys { get; set; }
+```
+
+- *Type:* string[]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#audit_non_hmac_request_keys LdapAuthBackend#audit_non_hmac_request_keys}.
+
+---
+
+##### `AuditNonHmacResponseKeys`<sup>Optional</sup> <a name="AuditNonHmacResponseKeys" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTune.property.auditNonHmacResponseKeys"></a>
+
+```csharp
+public string[] AuditNonHmacResponseKeys { get; set; }
+```
+
+- *Type:* string[]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#audit_non_hmac_response_keys LdapAuthBackend#audit_non_hmac_response_keys}.
+
+---
+
+##### `DefaultLeaseTtl`<sup>Optional</sup> <a name="DefaultLeaseTtl" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTune.property.defaultLeaseTtl"></a>
+
+```csharp
+public string DefaultLeaseTtl { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#default_lease_ttl LdapAuthBackend#default_lease_ttl}.
+
+---
+
+##### `ListingVisibility`<sup>Optional</sup> <a name="ListingVisibility" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTune.property.listingVisibility"></a>
+
+```csharp
+public string ListingVisibility { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#listing_visibility LdapAuthBackend#listing_visibility}.
+
+---
+
+##### `MaxLeaseTtl`<sup>Optional</sup> <a name="MaxLeaseTtl" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTune.property.maxLeaseTtl"></a>
+
+```csharp
+public string MaxLeaseTtl { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#max_lease_ttl LdapAuthBackend#max_lease_ttl}.
+
+---
+
+##### `PassthroughRequestHeaders`<sup>Optional</sup> <a name="PassthroughRequestHeaders" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTune.property.passthroughRequestHeaders"></a>
+
+```csharp
+public string[] PassthroughRequestHeaders { get; set; }
+```
+
+- *Type:* string[]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#passthrough_request_headers LdapAuthBackend#passthrough_request_headers}.
+
+---
+
+##### `TokenType`<sup>Optional</sup> <a name="TokenType" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTune.property.tokenType"></a>
+
+```csharp
+public string TokenType { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend#token_type LdapAuthBackend#token_type}.
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### LdapAuthBackendTuneList <a name="LdapAuthBackendTuneList" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneList.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Vault;
+
+new LdapAuthBackendTuneList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneList.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneList.get"></a>
+
+```csharp
+private LdapAuthBackendTuneOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTune">LdapAuthBackendTune</a>[]</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneList.property.internalValue"></a>
+
+```csharp
+public IResolvable|LdapAuthBackendTune[] InternalValue { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTune">LdapAuthBackendTune</a>[]
+
+---
+
+
+### LdapAuthBackendTuneOutputReference <a name="LdapAuthBackendTuneOutputReference" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Vault;
+
+new LdapAuthBackendTuneOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.resetAllowedResponseHeaders">ResetAllowedResponseHeaders</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.resetAuditNonHmacRequestKeys">ResetAuditNonHmacRequestKeys</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.resetAuditNonHmacResponseKeys">ResetAuditNonHmacResponseKeys</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.resetDefaultLeaseTtl">ResetDefaultLeaseTtl</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.resetListingVisibility">ResetListingVisibility</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.resetMaxLeaseTtl">ResetMaxLeaseTtl</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.resetPassthroughRequestHeaders">ResetPassthroughRequestHeaders</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.resetTokenType">ResetTokenType</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetAllowedResponseHeaders` <a name="ResetAllowedResponseHeaders" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.resetAllowedResponseHeaders"></a>
+
+```csharp
+private void ResetAllowedResponseHeaders()
+```
+
+##### `ResetAuditNonHmacRequestKeys` <a name="ResetAuditNonHmacRequestKeys" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.resetAuditNonHmacRequestKeys"></a>
+
+```csharp
+private void ResetAuditNonHmacRequestKeys()
+```
+
+##### `ResetAuditNonHmacResponseKeys` <a name="ResetAuditNonHmacResponseKeys" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.resetAuditNonHmacResponseKeys"></a>
+
+```csharp
+private void ResetAuditNonHmacResponseKeys()
+```
+
+##### `ResetDefaultLeaseTtl` <a name="ResetDefaultLeaseTtl" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.resetDefaultLeaseTtl"></a>
+
+```csharp
+private void ResetDefaultLeaseTtl()
+```
+
+##### `ResetListingVisibility` <a name="ResetListingVisibility" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.resetListingVisibility"></a>
+
+```csharp
+private void ResetListingVisibility()
+```
+
+##### `ResetMaxLeaseTtl` <a name="ResetMaxLeaseTtl" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.resetMaxLeaseTtl"></a>
+
+```csharp
+private void ResetMaxLeaseTtl()
+```
+
+##### `ResetPassthroughRequestHeaders` <a name="ResetPassthroughRequestHeaders" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.resetPassthroughRequestHeaders"></a>
+
+```csharp
+private void ResetPassthroughRequestHeaders()
+```
+
+##### `ResetTokenType` <a name="ResetTokenType" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.resetTokenType"></a>
+
+```csharp
+private void ResetTokenType()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.property.allowedResponseHeadersInput">AllowedResponseHeadersInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.property.auditNonHmacRequestKeysInput">AuditNonHmacRequestKeysInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.property.auditNonHmacResponseKeysInput">AuditNonHmacResponseKeysInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.property.defaultLeaseTtlInput">DefaultLeaseTtlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.property.listingVisibilityInput">ListingVisibilityInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.property.maxLeaseTtlInput">MaxLeaseTtlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.property.passthroughRequestHeadersInput">PassthroughRequestHeadersInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.property.tokenTypeInput">TokenTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.property.allowedResponseHeaders">AllowedResponseHeaders</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.property.auditNonHmacRequestKeys">AuditNonHmacRequestKeys</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.property.auditNonHmacResponseKeys">AuditNonHmacResponseKeys</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.property.defaultLeaseTtl">DefaultLeaseTtl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.property.listingVisibility">ListingVisibility</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.property.maxLeaseTtl">MaxLeaseTtl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.property.passthroughRequestHeaders">PassthroughRequestHeaders</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.property.tokenType">TokenType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTune">LdapAuthBackendTune</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `AllowedResponseHeadersInput`<sup>Optional</sup> <a name="AllowedResponseHeadersInput" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.property.allowedResponseHeadersInput"></a>
+
+```csharp
+public string[] AllowedResponseHeadersInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `AuditNonHmacRequestKeysInput`<sup>Optional</sup> <a name="AuditNonHmacRequestKeysInput" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.property.auditNonHmacRequestKeysInput"></a>
+
+```csharp
+public string[] AuditNonHmacRequestKeysInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `AuditNonHmacResponseKeysInput`<sup>Optional</sup> <a name="AuditNonHmacResponseKeysInput" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.property.auditNonHmacResponseKeysInput"></a>
+
+```csharp
+public string[] AuditNonHmacResponseKeysInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `DefaultLeaseTtlInput`<sup>Optional</sup> <a name="DefaultLeaseTtlInput" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.property.defaultLeaseTtlInput"></a>
+
+```csharp
+public string DefaultLeaseTtlInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ListingVisibilityInput`<sup>Optional</sup> <a name="ListingVisibilityInput" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.property.listingVisibilityInput"></a>
+
+```csharp
+public string ListingVisibilityInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `MaxLeaseTtlInput`<sup>Optional</sup> <a name="MaxLeaseTtlInput" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.property.maxLeaseTtlInput"></a>
+
+```csharp
+public string MaxLeaseTtlInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `PassthroughRequestHeadersInput`<sup>Optional</sup> <a name="PassthroughRequestHeadersInput" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.property.passthroughRequestHeadersInput"></a>
+
+```csharp
+public string[] PassthroughRequestHeadersInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `TokenTypeInput`<sup>Optional</sup> <a name="TokenTypeInput" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.property.tokenTypeInput"></a>
+
+```csharp
+public string TokenTypeInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `AllowedResponseHeaders`<sup>Required</sup> <a name="AllowedResponseHeaders" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.property.allowedResponseHeaders"></a>
+
+```csharp
+public string[] AllowedResponseHeaders { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `AuditNonHmacRequestKeys`<sup>Required</sup> <a name="AuditNonHmacRequestKeys" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.property.auditNonHmacRequestKeys"></a>
+
+```csharp
+public string[] AuditNonHmacRequestKeys { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `AuditNonHmacResponseKeys`<sup>Required</sup> <a name="AuditNonHmacResponseKeys" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.property.auditNonHmacResponseKeys"></a>
+
+```csharp
+public string[] AuditNonHmacResponseKeys { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `DefaultLeaseTtl`<sup>Required</sup> <a name="DefaultLeaseTtl" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.property.defaultLeaseTtl"></a>
+
+```csharp
+public string DefaultLeaseTtl { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ListingVisibility`<sup>Required</sup> <a name="ListingVisibility" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.property.listingVisibility"></a>
+
+```csharp
+public string ListingVisibility { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `MaxLeaseTtl`<sup>Required</sup> <a name="MaxLeaseTtl" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.property.maxLeaseTtl"></a>
+
+```csharp
+public string MaxLeaseTtl { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `PassthroughRequestHeaders`<sup>Required</sup> <a name="PassthroughRequestHeaders" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.property.passthroughRequestHeaders"></a>
+
+```csharp
+public string[] PassthroughRequestHeaders { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `TokenType`<sup>Required</sup> <a name="TokenType" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.property.tokenType"></a>
+
+```csharp
+public string TokenType { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.property.internalValue"></a>
+
+```csharp
+public IResolvable|LdapAuthBackendTune InternalValue { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackendTune">LdapAuthBackendTune</a>
 
 ---
 

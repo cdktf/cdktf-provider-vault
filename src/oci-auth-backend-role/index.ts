@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/oci_auth_backend_role
+// https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/oci_auth_backend_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface OciAuthBackendRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Unique name of the auth backend to configure.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/oci_auth_backend_role#backend OciAuthBackendRole#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/oci_auth_backend_role#backend OciAuthBackendRole#backend}
   */
   readonly backend?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/oci_auth_backend_role#id OciAuthBackendRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/oci_auth_backend_role#id OciAuthBackendRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,79 +28,79 @@ export interface OciAuthBackendRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name of the role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/oci_auth_backend_role#name OciAuthBackendRole#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/oci_auth_backend_role#name OciAuthBackendRole#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/oci_auth_backend_role#namespace OciAuthBackendRole#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/oci_auth_backend_role#namespace OciAuthBackendRole#namespace}
   */
   readonly namespace?: string;
   /**
   * A list of Group or Dynamic Group OCIDs that can take this role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/oci_auth_backend_role#ocid_list OciAuthBackendRole#ocid_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/oci_auth_backend_role#ocid_list OciAuthBackendRole#ocid_list}
   */
   readonly ocidList?: string[];
   /**
   * Specifies the blocks of IP addresses which are allowed to use the generated token
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/oci_auth_backend_role#token_bound_cidrs OciAuthBackendRole#token_bound_cidrs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/oci_auth_backend_role#token_bound_cidrs OciAuthBackendRole#token_bound_cidrs}
   */
   readonly tokenBoundCidrs?: string[];
   /**
   * Generated Token's Explicit Maximum TTL in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/oci_auth_backend_role#token_explicit_max_ttl OciAuthBackendRole#token_explicit_max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/oci_auth_backend_role#token_explicit_max_ttl OciAuthBackendRole#token_explicit_max_ttl}
   */
   readonly tokenExplicitMaxTtl?: number;
   /**
   * The maximum lifetime of the generated token
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/oci_auth_backend_role#token_max_ttl OciAuthBackendRole#token_max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/oci_auth_backend_role#token_max_ttl OciAuthBackendRole#token_max_ttl}
   */
   readonly tokenMaxTtl?: number;
   /**
   * If true, the 'default' policy will not automatically be added to generated tokens
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/oci_auth_backend_role#token_no_default_policy OciAuthBackendRole#token_no_default_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/oci_auth_backend_role#token_no_default_policy OciAuthBackendRole#token_no_default_policy}
   */
   readonly tokenNoDefaultPolicy?: boolean | cdktf.IResolvable;
   /**
   * The maximum number of times a token may be used, a value of zero means unlimited
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/oci_auth_backend_role#token_num_uses OciAuthBackendRole#token_num_uses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/oci_auth_backend_role#token_num_uses OciAuthBackendRole#token_num_uses}
   */
   readonly tokenNumUses?: number;
   /**
   * Generated Token's Period
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/oci_auth_backend_role#token_period OciAuthBackendRole#token_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/oci_auth_backend_role#token_period OciAuthBackendRole#token_period}
   */
   readonly tokenPeriod?: number;
   /**
   * Generated Token's Policies
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/oci_auth_backend_role#token_policies OciAuthBackendRole#token_policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/oci_auth_backend_role#token_policies OciAuthBackendRole#token_policies}
   */
   readonly tokenPolicies?: string[];
   /**
   * The initial ttl of the token to generate in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/oci_auth_backend_role#token_ttl OciAuthBackendRole#token_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/oci_auth_backend_role#token_ttl OciAuthBackendRole#token_ttl}
   */
   readonly tokenTtl?: number;
   /**
   * The type of token to generate, service or batch
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/oci_auth_backend_role#token_type OciAuthBackendRole#token_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/oci_auth_backend_role#token_type OciAuthBackendRole#token_type}
   */
   readonly tokenType?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/oci_auth_backend_role vault_oci_auth_backend_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/oci_auth_backend_role vault_oci_auth_backend_role}
 */
 export class OciAuthBackendRole extends cdktf.TerraformResource {
 
@@ -116,7 +116,7 @@ export class OciAuthBackendRole extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a OciAuthBackendRole resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OciAuthBackendRole to import
-  * @param importFromId The id of the existing OciAuthBackendRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/oci_auth_backend_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OciAuthBackendRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/oci_auth_backend_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OciAuthBackendRole to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -128,7 +128,7 @@ export class OciAuthBackendRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/oci_auth_backend_role vault_oci_auth_backend_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/oci_auth_backend_role vault_oci_auth_backend_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -139,7 +139,7 @@ export class OciAuthBackendRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_oci_auth_backend_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.3.0',
+        providerVersion: '5.4.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

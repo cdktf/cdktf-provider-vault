@@ -4,7 +4,7 @@
 
 ### AzureAuthBackendConfig <a name="AzureAuthBackendConfig" id="@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.Initializer"></a>
 
@@ -81,7 +81,10 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.resetIdentityTokenAudience">ResetIdentityTokenAudience</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.resetIdentityTokenTtl">ResetIdentityTokenTtl</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.resetMaxRetries">ResetMaxRetries</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.resetMaxRetryDelay">ResetMaxRetryDelay</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.resetNamespace">ResetNamespace</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.resetRetryDelay">ResetRetryDelay</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.resetRotationPeriod">ResetRotationPeriod</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.resetRotationSchedule">ResetRotationSchedule</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.resetRotationWindow">ResetRotationWindow</a></code> | *No description.* |
@@ -424,10 +427,28 @@ func ResetIdentityTokenAudience()
 func ResetIdentityTokenTtl()
 ```
 
+##### `ResetMaxRetries` <a name="ResetMaxRetries" id="@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.resetMaxRetries"></a>
+
+```go
+func ResetMaxRetries()
+```
+
+##### `ResetMaxRetryDelay` <a name="ResetMaxRetryDelay" id="@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.resetMaxRetryDelay"></a>
+
+```go
+func ResetMaxRetryDelay()
+```
+
 ##### `ResetNamespace` <a name="ResetNamespace" id="@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.resetNamespace"></a>
 
 ```go
 func ResetNamespace()
+```
+
+##### `ResetRetryDelay` <a name="ResetRetryDelay" id="@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.resetRetryDelay"></a>
+
+```go
+func ResetRetryDelay()
 ```
 
 ##### `ResetRotationPeriod` <a name="ResetRotationPeriod" id="@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.resetRotationPeriod"></a>
@@ -551,7 +572,7 @@ The construct id used in the generated config for the AzureAuthBackendConfig to 
 
 The id of the existing AzureAuthBackendConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/azure_auth_backend_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/azure_auth_backend_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -589,8 +610,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.
 | <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.identityTokenAudienceInput">IdentityTokenAudienceInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.identityTokenTtlInput">IdentityTokenTtlInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.maxRetriesInput">MaxRetriesInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.maxRetryDelayInput">MaxRetryDelayInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.namespaceInput">NamespaceInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.resourceInput">ResourceInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.retryDelayInput">RetryDelayInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.rotationPeriodInput">RotationPeriodInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.rotationScheduleInput">RotationScheduleInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.rotationWindowInput">RotationWindowInput</a></code> | <code>*f64</code> | *No description.* |
@@ -603,8 +627,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.
 | <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.identityTokenAudience">IdentityTokenAudience</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.identityTokenTtl">IdentityTokenTtl</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.maxRetries">MaxRetries</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.maxRetryDelay">MaxRetryDelay</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.namespace">Namespace</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.resource">Resource</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.retryDelay">RetryDelay</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.rotationPeriod">RotationPeriod</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.rotationSchedule">RotationSchedule</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.rotationWindow">RotationWindow</a></code> | <code>*f64</code> | *No description.* |
@@ -834,6 +861,26 @@ func IdInput() *string
 
 ---
 
+##### `MaxRetriesInput`<sup>Optional</sup> <a name="MaxRetriesInput" id="@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.maxRetriesInput"></a>
+
+```go
+func MaxRetriesInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `MaxRetryDelayInput`<sup>Optional</sup> <a name="MaxRetryDelayInput" id="@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.maxRetryDelayInput"></a>
+
+```go
+func MaxRetryDelayInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `NamespaceInput`<sup>Optional</sup> <a name="NamespaceInput" id="@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.namespaceInput"></a>
 
 ```go
@@ -851,6 +898,16 @@ func ResourceInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `RetryDelayInput`<sup>Optional</sup> <a name="RetryDelayInput" id="@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.retryDelayInput"></a>
+
+```go
+func RetryDelayInput() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -974,6 +1031,26 @@ func IdentityTokenTtl() *f64
 
 ---
 
+##### `MaxRetries`<sup>Required</sup> <a name="MaxRetries" id="@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.maxRetries"></a>
+
+```go
+func MaxRetries() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `MaxRetryDelay`<sup>Required</sup> <a name="MaxRetryDelay" id="@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.maxRetryDelay"></a>
+
+```go
+func MaxRetryDelay() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `Namespace`<sup>Required</sup> <a name="Namespace" id="@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.namespace"></a>
 
 ```go
@@ -991,6 +1068,16 @@ func Resource() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `RetryDelay`<sup>Required</sup> <a name="RetryDelay" id="@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.retryDelay"></a>
+
+```go
+func RetryDelay() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -1079,7 +1166,10 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/azureauthbackendconfi
 	Id: *string,
 	IdentityTokenAudience: *string,
 	IdentityTokenTtl: *f64,
+	MaxRetries: *f64,
+	MaxRetryDelay: *f64,
 	Namespace: *string,
+	RetryDelay: *f64,
 	RotationPeriod: *f64,
 	RotationSchedule: *string,
 	RotationWindow: *f64,
@@ -1104,10 +1194,13 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/azureauthbackendconfi
 | <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfigConfig.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | The client secret for credentials to query the Azure APIs. |
 | <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfigConfig.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>interface{}</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfigConfig.property.environment">Environment</a></code> | <code>*string</code> | The Azure cloud environment. Valid values: AzurePublicCloud, AzureUSGovernmentCloud, AzureChinaCloud, AzureGermanCloud. |
-| <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/azure_auth_backend_config#id AzureAuthBackendConfig#id}. |
+| <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/azure_auth_backend_config#id AzureAuthBackendConfig#id}. |
 | <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfigConfig.property.identityTokenAudience">IdentityTokenAudience</a></code> | <code>*string</code> | The audience claim value. |
 | <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfigConfig.property.identityTokenTtl">IdentityTokenTtl</a></code> | <code>*f64</code> | The TTL of generated identity tokens in seconds. |
+| <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfigConfig.property.maxRetries">MaxRetries</a></code> | <code>*f64</code> | Maximum number of retries for Azure API requests. Defaults to 3. |
+| <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfigConfig.property.maxRetryDelay">MaxRetryDelay</a></code> | <code>*f64</code> | The maximum delay in seconds between retries for Azure API requests. Defaults to 60. |
 | <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfigConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
+| <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfigConfig.property.retryDelay">RetryDelay</a></code> | <code>*f64</code> | The initial delay in seconds between retries for Azure API requests. Defaults to 4. |
 | <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfigConfig.property.rotationPeriod">RotationPeriod</a></code> | <code>*f64</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
 | <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfigConfig.property.rotationSchedule">RotationSchedule</a></code> | <code>*string</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
 | <code><a href="#@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfigConfig.property.rotationWindow">RotationWindow</a></code> | <code>*f64</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
@@ -1194,7 +1287,7 @@ Resource *string
 
 The configured URL for the application registered in Azure Active Directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/azure_auth_backend_config#resource AzureAuthBackendConfig#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/azure_auth_backend_config#resource AzureAuthBackendConfig#resource}
 
 ---
 
@@ -1208,7 +1301,7 @@ TenantId *string
 
 The tenant id for the Azure Active Directory organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/azure_auth_backend_config#tenant_id AzureAuthBackendConfig#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/azure_auth_backend_config#tenant_id AzureAuthBackendConfig#tenant_id}
 
 ---
 
@@ -1222,7 +1315,7 @@ Backend *string
 
 Unique name of the auth backend to configure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/azure_auth_backend_config#backend AzureAuthBackendConfig#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/azure_auth_backend_config#backend AzureAuthBackendConfig#backend}
 
 ---
 
@@ -1236,7 +1329,7 @@ ClientId *string
 
 The client id for credentials to query the Azure APIs. Currently read permissions to query compute resources are required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/azure_auth_backend_config#client_id AzureAuthBackendConfig#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/azure_auth_backend_config#client_id AzureAuthBackendConfig#client_id}
 
 ---
 
@@ -1250,7 +1343,7 @@ ClientSecret *string
 
 The client secret for credentials to query the Azure APIs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/azure_auth_backend_config#client_secret AzureAuthBackendConfig#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/azure_auth_backend_config#client_secret AzureAuthBackendConfig#client_secret}
 
 ---
 
@@ -1264,7 +1357,7 @@ DisableAutomatedRotation interface{}
 
 Stops rotation of the root credential until set to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/azure_auth_backend_config#disable_automated_rotation AzureAuthBackendConfig#disable_automated_rotation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/azure_auth_backend_config#disable_automated_rotation AzureAuthBackendConfig#disable_automated_rotation}
 
 ---
 
@@ -1278,7 +1371,7 @@ Environment *string
 
 The Azure cloud environment. Valid values: AzurePublicCloud, AzureUSGovernmentCloud, AzureChinaCloud, AzureGermanCloud.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/azure_auth_backend_config#environment AzureAuthBackendConfig#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/azure_auth_backend_config#environment AzureAuthBackendConfig#environment}
 
 ---
 
@@ -1290,7 +1383,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/azure_auth_backend_config#id AzureAuthBackendConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/azure_auth_backend_config#id AzureAuthBackendConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1307,7 +1400,7 @@ IdentityTokenAudience *string
 
 The audience claim value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/azure_auth_backend_config#identity_token_audience AzureAuthBackendConfig#identity_token_audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/azure_auth_backend_config#identity_token_audience AzureAuthBackendConfig#identity_token_audience}
 
 ---
 
@@ -1321,7 +1414,35 @@ IdentityTokenTtl *f64
 
 The TTL of generated identity tokens in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/azure_auth_backend_config#identity_token_ttl AzureAuthBackendConfig#identity_token_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/azure_auth_backend_config#identity_token_ttl AzureAuthBackendConfig#identity_token_ttl}
+
+---
+
+##### `MaxRetries`<sup>Optional</sup> <a name="MaxRetries" id="@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfigConfig.property.maxRetries"></a>
+
+```go
+MaxRetries *f64
+```
+
+- *Type:* *f64
+
+Maximum number of retries for Azure API requests. Defaults to 3.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/azure_auth_backend_config#max_retries AzureAuthBackendConfig#max_retries}
+
+---
+
+##### `MaxRetryDelay`<sup>Optional</sup> <a name="MaxRetryDelay" id="@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfigConfig.property.maxRetryDelay"></a>
+
+```go
+MaxRetryDelay *f64
+```
+
+- *Type:* *f64
+
+The maximum delay in seconds between retries for Azure API requests. Defaults to 60.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/azure_auth_backend_config#max_retry_delay AzureAuthBackendConfig#max_retry_delay}
 
 ---
 
@@ -1335,7 +1456,21 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/azure_auth_backend_config#namespace AzureAuthBackendConfig#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/azure_auth_backend_config#namespace AzureAuthBackendConfig#namespace}
+
+---
+
+##### `RetryDelay`<sup>Optional</sup> <a name="RetryDelay" id="@cdktf/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfigConfig.property.retryDelay"></a>
+
+```go
+RetryDelay *f64
+```
+
+- *Type:* *f64
+
+The initial delay in seconds between retries for Azure API requests. Defaults to 4.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/azure_auth_backend_config#retry_delay AzureAuthBackendConfig#retry_delay}
 
 ---
 
@@ -1349,7 +1484,7 @@ RotationPeriod *f64
 
 The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/azure_auth_backend_config#rotation_period AzureAuthBackendConfig#rotation_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/azure_auth_backend_config#rotation_period AzureAuthBackendConfig#rotation_period}
 
 ---
 
@@ -1363,7 +1498,7 @@ RotationSchedule *string
 
 The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/azure_auth_backend_config#rotation_schedule AzureAuthBackendConfig#rotation_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/azure_auth_backend_config#rotation_schedule AzureAuthBackendConfig#rotation_schedule}
 
 ---
 
@@ -1379,7 +1514,7 @@ The maximum amount of time in seconds Vault is allowed to complete a rotation on
 
 Can only be used with rotation_schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/azure_auth_backend_config#rotation_window AzureAuthBackendConfig#rotation_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/azure_auth_backend_config#rotation_window AzureAuthBackendConfig#rotation_window}
 
 ---
 

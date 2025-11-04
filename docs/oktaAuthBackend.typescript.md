@@ -4,7 +4,7 @@
 
 ### OktaAuthBackend <a name="OktaAuthBackend" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/okta_auth_backend vault_okta_auth_backend}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend vault_okta_auth_backend}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend.putGroup">putGroup</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend.putTune">putTune</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend.putUser">putUser</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend.resetBaseUrl">resetBaseUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend.resetBypassOktaMfa">resetBypassOktaMfa</a></code> | *No description.* |
@@ -93,6 +94,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend.resetTokenPolicies">resetTokenPolicies</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend.resetTokenTtl">resetTokenTtl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend.resetTokenType">resetTokenType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend.resetTune">resetTune</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend.resetUser">resetUser</a></code> | *No description.* |
 
 ---
@@ -397,6 +399,18 @@ public putGroup(value: IResolvable | OktaAuthBackendGroup[]): void
 
 ---
 
+##### `putTune` <a name="putTune" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend.putTune"></a>
+
+```typescript
+public putTune(value: IResolvable | OktaAuthBackendTune[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend.putTune.parameter.value"></a>
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTune">OktaAuthBackendTune</a>[]
+
+---
+
 ##### `putUser` <a name="putUser" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend.putUser"></a>
 
 ```typescript
@@ -517,6 +531,12 @@ public resetTokenTtl(): void
 public resetTokenType(): void
 ```
 
+##### `resetTune` <a name="resetTune" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend.resetTune"></a>
+
+```typescript
+public resetTune(): void
+```
+
 ##### `resetUser` <a name="resetUser" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend.resetUser"></a>
 
 ```typescript
@@ -626,7 +646,7 @@ The construct id used in the generated config for the OktaAuthBackend to import.
 
 The id of the existing OktaAuthBackend that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/okta_auth_backend#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -658,6 +678,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend.property.accessor">accessor</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend.property.group">group</a></code> | <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendGroupList">OktaAuthBackendGroupList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend.property.tune">tune</a></code> | <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneList">OktaAuthBackendTuneList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend.property.user">user</a></code> | <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendUserList">OktaAuthBackendUserList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend.property.baseUrlInput">baseUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend.property.bypassOktaMfaInput">bypassOktaMfaInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -678,6 +699,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend.property.tokenPoliciesInput">tokenPoliciesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend.property.tokenTtlInput">tokenTtlInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend.property.tokenTypeInput">tokenTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend.property.tuneInput">tuneInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTune">OktaAuthBackendTune</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend.property.userInput">userInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendUser">OktaAuthBackendUser</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend.property.baseUrl">baseUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend.property.bypassOktaMfa">bypassOktaMfa</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -859,6 +881,16 @@ public readonly group: OktaAuthBackendGroupList;
 ```
 
 - *Type:* <a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendGroupList">OktaAuthBackendGroupList</a>
+
+---
+
+##### `tune`<sup>Required</sup> <a name="tune" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend.property.tune"></a>
+
+```typescript
+public readonly tune: OktaAuthBackendTuneList;
+```
+
+- *Type:* <a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneList">OktaAuthBackendTuneList</a>
 
 ---
 
@@ -1059,6 +1091,16 @@ public readonly tokenTypeInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `tuneInput`<sup>Optional</sup> <a name="tuneInput" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend.property.tuneInput"></a>
+
+```typescript
+public readonly tuneInput: IResolvable | OktaAuthBackendTune[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTune">OktaAuthBackendTune</a>[]
 
 ---
 
@@ -1298,8 +1340,8 @@ const oktaAuthBackendConfig: oktaAuthBackend.OktaAuthBackendConfig = { ... }
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendConfig.property.bypassOktaMfa">bypassOktaMfa</a></code> | <code>boolean \| cdktf.IResolvable</code> | When true, requests by Okta for a MFA check will be bypassed. |
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendConfig.property.description">description</a></code> | <code>string</code> | The description of the auth backend. |
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendConfig.property.disableRemount">disableRemount</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set, opts out of mount migration on path updates. |
-| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendConfig.property.group">group</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendGroup">OktaAuthBackendGroup</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/okta_auth_backend#group OktaAuthBackend#group}. |
-| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/okta_auth_backend#id OktaAuthBackend#id}. |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendConfig.property.group">group</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendGroup">OktaAuthBackendGroup</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#group OktaAuthBackend#group}. |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#id OktaAuthBackend#id}. |
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendConfig.property.namespace">namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendConfig.property.path">path</a></code> | <code>string</code> | path to mount the backend. |
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendConfig.property.token">token</a></code> | <code>string</code> | The Okta API token. |
@@ -1312,7 +1354,8 @@ const oktaAuthBackendConfig: oktaAuthBackend.OktaAuthBackendConfig = { ... }
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendConfig.property.tokenPolicies">tokenPolicies</a></code> | <code>string[]</code> | Generated Token's Policies. |
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendConfig.property.tokenTtl">tokenTtl</a></code> | <code>number</code> | The initial ttl of the token to generate in seconds. |
 | <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendConfig.property.tokenType">tokenType</a></code> | <code>string</code> | The type of token to generate, service or batch. |
-| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendConfig.property.user">user</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendUser">OktaAuthBackendUser</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/okta_auth_backend#user OktaAuthBackend#user}. |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendConfig.property.tune">tune</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTune">OktaAuthBackendTune</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#tune OktaAuthBackend#tune}. |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendConfig.property.user">user</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendUser">OktaAuthBackendUser</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#user OktaAuthBackend#user}. |
 
 ---
 
@@ -1396,7 +1439,7 @@ public readonly organization: string;
 
 The Okta organization. This will be the first part of the url https://XXX.okta.com.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/okta_auth_backend#organization OktaAuthBackend#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#organization OktaAuthBackend#organization}
 
 ---
 
@@ -1410,7 +1453,7 @@ public readonly baseUrl: string;
 
 The Okta url. Examples: oktapreview.com, okta.com (default).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/okta_auth_backend#base_url OktaAuthBackend#base_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#base_url OktaAuthBackend#base_url}
 
 ---
 
@@ -1426,7 +1469,7 @@ When true, requests by Okta for a MFA check will be bypassed.
 
 This also disallows certain status checks on the account, such as whether the password is expired.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/okta_auth_backend#bypass_okta_mfa OktaAuthBackend#bypass_okta_mfa}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#bypass_okta_mfa OktaAuthBackend#bypass_okta_mfa}
 
 ---
 
@@ -1440,7 +1483,7 @@ public readonly description: string;
 
 The description of the auth backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/okta_auth_backend#description OktaAuthBackend#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#description OktaAuthBackend#description}
 
 ---
 
@@ -1454,7 +1497,7 @@ public readonly disableRemount: boolean | IResolvable;
 
 If set, opts out of mount migration on path updates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/okta_auth_backend#disable_remount OktaAuthBackend#disable_remount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#disable_remount OktaAuthBackend#disable_remount}
 
 ---
 
@@ -1466,7 +1509,7 @@ public readonly group: IResolvable | OktaAuthBackendGroup[];
 
 - *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendGroup">OktaAuthBackendGroup</a>[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/okta_auth_backend#group OktaAuthBackend#group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#group OktaAuthBackend#group}.
 
 ---
 
@@ -1478,7 +1521,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/okta_auth_backend#id OktaAuthBackend#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#id OktaAuthBackend#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1495,7 +1538,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/okta_auth_backend#namespace OktaAuthBackend#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#namespace OktaAuthBackend#namespace}
 
 ---
 
@@ -1509,7 +1552,7 @@ public readonly path: string;
 
 path to mount the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/okta_auth_backend#path OktaAuthBackend#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#path OktaAuthBackend#path}
 
 ---
 
@@ -1525,7 +1568,7 @@ The Okta API token.
 
 This is required to query Okta for user group membership. If this is not supplied only locally configured groups will be enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/okta_auth_backend#token OktaAuthBackend#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#token OktaAuthBackend#token}
 
 ---
 
@@ -1539,7 +1582,7 @@ public readonly tokenBoundCidrs: string[];
 
 Specifies the blocks of IP addresses which are allowed to use the generated token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/okta_auth_backend#token_bound_cidrs OktaAuthBackend#token_bound_cidrs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#token_bound_cidrs OktaAuthBackend#token_bound_cidrs}
 
 ---
 
@@ -1553,7 +1596,7 @@ public readonly tokenExplicitMaxTtl: number;
 
 Generated Token's Explicit Maximum TTL in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/okta_auth_backend#token_explicit_max_ttl OktaAuthBackend#token_explicit_max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#token_explicit_max_ttl OktaAuthBackend#token_explicit_max_ttl}
 
 ---
 
@@ -1567,7 +1610,7 @@ public readonly tokenMaxTtl: number;
 
 The maximum lifetime of the generated token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/okta_auth_backend#token_max_ttl OktaAuthBackend#token_max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#token_max_ttl OktaAuthBackend#token_max_ttl}
 
 ---
 
@@ -1581,7 +1624,7 @@ public readonly tokenNoDefaultPolicy: boolean | IResolvable;
 
 If true, the 'default' policy will not automatically be added to generated tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/okta_auth_backend#token_no_default_policy OktaAuthBackend#token_no_default_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#token_no_default_policy OktaAuthBackend#token_no_default_policy}
 
 ---
 
@@ -1595,7 +1638,7 @@ public readonly tokenNumUses: number;
 
 The maximum number of times a token may be used, a value of zero means unlimited.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/okta_auth_backend#token_num_uses OktaAuthBackend#token_num_uses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#token_num_uses OktaAuthBackend#token_num_uses}
 
 ---
 
@@ -1609,7 +1652,7 @@ public readonly tokenPeriod: number;
 
 Generated Token's Period.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/okta_auth_backend#token_period OktaAuthBackend#token_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#token_period OktaAuthBackend#token_period}
 
 ---
 
@@ -1623,7 +1666,7 @@ public readonly tokenPolicies: string[];
 
 Generated Token's Policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/okta_auth_backend#token_policies OktaAuthBackend#token_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#token_policies OktaAuthBackend#token_policies}
 
 ---
 
@@ -1637,7 +1680,7 @@ public readonly tokenTtl: number;
 
 The initial ttl of the token to generate in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/okta_auth_backend#token_ttl OktaAuthBackend#token_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#token_ttl OktaAuthBackend#token_ttl}
 
 ---
 
@@ -1651,7 +1694,19 @@ public readonly tokenType: string;
 
 The type of token to generate, service or batch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/okta_auth_backend#token_type OktaAuthBackend#token_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#token_type OktaAuthBackend#token_type}
+
+---
+
+##### `tune`<sup>Optional</sup> <a name="tune" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendConfig.property.tune"></a>
+
+```typescript
+public readonly tune: IResolvable | OktaAuthBackendTune[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTune">OktaAuthBackendTune</a>[]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#tune OktaAuthBackend#tune}.
 
 ---
 
@@ -1663,7 +1718,7 @@ public readonly user: IResolvable | OktaAuthBackendUser[];
 
 - *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendUser">OktaAuthBackendUser</a>[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/okta_auth_backend#user OktaAuthBackend#user}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#user OktaAuthBackend#user}.
 
 ---
 
@@ -1681,8 +1736,8 @@ const oktaAuthBackendGroup: oktaAuthBackend.OktaAuthBackendGroup = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendGroup.property.groupName">groupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/okta_auth_backend#group_name OktaAuthBackend#group_name}. |
-| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendGroup.property.policies">policies</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/okta_auth_backend#policies OktaAuthBackend#policies}. |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendGroup.property.groupName">groupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#group_name OktaAuthBackend#group_name}. |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendGroup.property.policies">policies</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#policies OktaAuthBackend#policies}. |
 
 ---
 
@@ -1694,7 +1749,7 @@ public readonly groupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/okta_auth_backend#group_name OktaAuthBackend#group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#group_name OktaAuthBackend#group_name}.
 
 ---
 
@@ -1706,7 +1761,128 @@ public readonly policies: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/okta_auth_backend#policies OktaAuthBackend#policies}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#policies OktaAuthBackend#policies}.
+
+---
+
+### OktaAuthBackendTune <a name="OktaAuthBackendTune" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTune"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTune.Initializer"></a>
+
+```typescript
+import { oktaAuthBackend } from '@cdktf/provider-vault'
+
+const oktaAuthBackendTune: oktaAuthBackend.OktaAuthBackendTune = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTune.property.allowedResponseHeaders">allowedResponseHeaders</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#allowed_response_headers OktaAuthBackend#allowed_response_headers}. |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTune.property.auditNonHmacRequestKeys">auditNonHmacRequestKeys</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#audit_non_hmac_request_keys OktaAuthBackend#audit_non_hmac_request_keys}. |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTune.property.auditNonHmacResponseKeys">auditNonHmacResponseKeys</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#audit_non_hmac_response_keys OktaAuthBackend#audit_non_hmac_response_keys}. |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTune.property.defaultLeaseTtl">defaultLeaseTtl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#default_lease_ttl OktaAuthBackend#default_lease_ttl}. |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTune.property.listingVisibility">listingVisibility</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#listing_visibility OktaAuthBackend#listing_visibility}. |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTune.property.maxLeaseTtl">maxLeaseTtl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#max_lease_ttl OktaAuthBackend#max_lease_ttl}. |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTune.property.passthroughRequestHeaders">passthroughRequestHeaders</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#passthrough_request_headers OktaAuthBackend#passthrough_request_headers}. |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTune.property.tokenType">tokenType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#token_type OktaAuthBackend#token_type}. |
+
+---
+
+##### `allowedResponseHeaders`<sup>Optional</sup> <a name="allowedResponseHeaders" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTune.property.allowedResponseHeaders"></a>
+
+```typescript
+public readonly allowedResponseHeaders: string[];
+```
+
+- *Type:* string[]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#allowed_response_headers OktaAuthBackend#allowed_response_headers}.
+
+---
+
+##### `auditNonHmacRequestKeys`<sup>Optional</sup> <a name="auditNonHmacRequestKeys" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTune.property.auditNonHmacRequestKeys"></a>
+
+```typescript
+public readonly auditNonHmacRequestKeys: string[];
+```
+
+- *Type:* string[]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#audit_non_hmac_request_keys OktaAuthBackend#audit_non_hmac_request_keys}.
+
+---
+
+##### `auditNonHmacResponseKeys`<sup>Optional</sup> <a name="auditNonHmacResponseKeys" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTune.property.auditNonHmacResponseKeys"></a>
+
+```typescript
+public readonly auditNonHmacResponseKeys: string[];
+```
+
+- *Type:* string[]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#audit_non_hmac_response_keys OktaAuthBackend#audit_non_hmac_response_keys}.
+
+---
+
+##### `defaultLeaseTtl`<sup>Optional</sup> <a name="defaultLeaseTtl" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTune.property.defaultLeaseTtl"></a>
+
+```typescript
+public readonly defaultLeaseTtl: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#default_lease_ttl OktaAuthBackend#default_lease_ttl}.
+
+---
+
+##### `listingVisibility`<sup>Optional</sup> <a name="listingVisibility" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTune.property.listingVisibility"></a>
+
+```typescript
+public readonly listingVisibility: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#listing_visibility OktaAuthBackend#listing_visibility}.
+
+---
+
+##### `maxLeaseTtl`<sup>Optional</sup> <a name="maxLeaseTtl" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTune.property.maxLeaseTtl"></a>
+
+```typescript
+public readonly maxLeaseTtl: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#max_lease_ttl OktaAuthBackend#max_lease_ttl}.
+
+---
+
+##### `passthroughRequestHeaders`<sup>Optional</sup> <a name="passthroughRequestHeaders" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTune.property.passthroughRequestHeaders"></a>
+
+```typescript
+public readonly passthroughRequestHeaders: string[];
+```
+
+- *Type:* string[]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#passthrough_request_headers OktaAuthBackend#passthrough_request_headers}.
+
+---
+
+##### `tokenType`<sup>Optional</sup> <a name="tokenType" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTune.property.tokenType"></a>
+
+```typescript
+public readonly tokenType: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#token_type OktaAuthBackend#token_type}.
 
 ---
 
@@ -1724,9 +1900,9 @@ const oktaAuthBackendUser: oktaAuthBackend.OktaAuthBackendUser = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendUser.property.groups">groups</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/okta_auth_backend#groups OktaAuthBackend#groups}. |
-| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendUser.property.policies">policies</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/okta_auth_backend#policies OktaAuthBackend#policies}. |
-| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendUser.property.username">username</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/okta_auth_backend#username OktaAuthBackend#username}. |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendUser.property.groups">groups</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#groups OktaAuthBackend#groups}. |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendUser.property.policies">policies</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#policies OktaAuthBackend#policies}. |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendUser.property.username">username</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#username OktaAuthBackend#username}. |
 
 ---
 
@@ -1738,7 +1914,7 @@ public readonly groups: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/okta_auth_backend#groups OktaAuthBackend#groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#groups OktaAuthBackend#groups}.
 
 ---
 
@@ -1750,7 +1926,7 @@ public readonly policies: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/okta_auth_backend#policies OktaAuthBackend#policies}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#policies OktaAuthBackend#policies}.
 
 ---
 
@@ -1762,7 +1938,7 @@ public readonly username: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/okta_auth_backend#username OktaAuthBackend#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend#username OktaAuthBackend#username}.
 
 ---
 
@@ -2249,6 +2425,665 @@ public readonly internalValue: IResolvable | OktaAuthBackendGroup;
 ```
 
 - *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendGroup">OktaAuthBackendGroup</a>
+
+---
+
+
+### OktaAuthBackendTuneList <a name="OktaAuthBackendTuneList" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneList.Initializer"></a>
+
+```typescript
+import { oktaAuthBackend } from '@cdktf/provider-vault'
+
+new oktaAuthBackend.OktaAuthBackendTuneList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneList.get"></a>
+
+```typescript
+public get(index: number): OktaAuthBackendTuneOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTune">OktaAuthBackendTune</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | OktaAuthBackendTune[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTune">OktaAuthBackendTune</a>[]
+
+---
+
+
+### OktaAuthBackendTuneOutputReference <a name="OktaAuthBackendTuneOutputReference" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.Initializer"></a>
+
+```typescript
+import { oktaAuthBackend } from '@cdktf/provider-vault'
+
+new oktaAuthBackend.OktaAuthBackendTuneOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.resetAllowedResponseHeaders">resetAllowedResponseHeaders</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.resetAuditNonHmacRequestKeys">resetAuditNonHmacRequestKeys</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.resetAuditNonHmacResponseKeys">resetAuditNonHmacResponseKeys</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.resetDefaultLeaseTtl">resetDefaultLeaseTtl</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.resetListingVisibility">resetListingVisibility</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.resetMaxLeaseTtl">resetMaxLeaseTtl</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.resetPassthroughRequestHeaders">resetPassthroughRequestHeaders</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.resetTokenType">resetTokenType</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetAllowedResponseHeaders` <a name="resetAllowedResponseHeaders" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.resetAllowedResponseHeaders"></a>
+
+```typescript
+public resetAllowedResponseHeaders(): void
+```
+
+##### `resetAuditNonHmacRequestKeys` <a name="resetAuditNonHmacRequestKeys" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.resetAuditNonHmacRequestKeys"></a>
+
+```typescript
+public resetAuditNonHmacRequestKeys(): void
+```
+
+##### `resetAuditNonHmacResponseKeys` <a name="resetAuditNonHmacResponseKeys" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.resetAuditNonHmacResponseKeys"></a>
+
+```typescript
+public resetAuditNonHmacResponseKeys(): void
+```
+
+##### `resetDefaultLeaseTtl` <a name="resetDefaultLeaseTtl" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.resetDefaultLeaseTtl"></a>
+
+```typescript
+public resetDefaultLeaseTtl(): void
+```
+
+##### `resetListingVisibility` <a name="resetListingVisibility" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.resetListingVisibility"></a>
+
+```typescript
+public resetListingVisibility(): void
+```
+
+##### `resetMaxLeaseTtl` <a name="resetMaxLeaseTtl" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.resetMaxLeaseTtl"></a>
+
+```typescript
+public resetMaxLeaseTtl(): void
+```
+
+##### `resetPassthroughRequestHeaders` <a name="resetPassthroughRequestHeaders" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.resetPassthroughRequestHeaders"></a>
+
+```typescript
+public resetPassthroughRequestHeaders(): void
+```
+
+##### `resetTokenType` <a name="resetTokenType" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.resetTokenType"></a>
+
+```typescript
+public resetTokenType(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.property.allowedResponseHeadersInput">allowedResponseHeadersInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.property.auditNonHmacRequestKeysInput">auditNonHmacRequestKeysInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.property.auditNonHmacResponseKeysInput">auditNonHmacResponseKeysInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.property.defaultLeaseTtlInput">defaultLeaseTtlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.property.listingVisibilityInput">listingVisibilityInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.property.maxLeaseTtlInput">maxLeaseTtlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.property.passthroughRequestHeadersInput">passthroughRequestHeadersInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.property.tokenTypeInput">tokenTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.property.allowedResponseHeaders">allowedResponseHeaders</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.property.auditNonHmacRequestKeys">auditNonHmacRequestKeys</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.property.auditNonHmacResponseKeys">auditNonHmacResponseKeys</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.property.defaultLeaseTtl">defaultLeaseTtl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.property.listingVisibility">listingVisibility</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.property.maxLeaseTtl">maxLeaseTtl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.property.passthroughRequestHeaders">passthroughRequestHeaders</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.property.tokenType">tokenType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTune">OktaAuthBackendTune</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `allowedResponseHeadersInput`<sup>Optional</sup> <a name="allowedResponseHeadersInput" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.property.allowedResponseHeadersInput"></a>
+
+```typescript
+public readonly allowedResponseHeadersInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `auditNonHmacRequestKeysInput`<sup>Optional</sup> <a name="auditNonHmacRequestKeysInput" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.property.auditNonHmacRequestKeysInput"></a>
+
+```typescript
+public readonly auditNonHmacRequestKeysInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `auditNonHmacResponseKeysInput`<sup>Optional</sup> <a name="auditNonHmacResponseKeysInput" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.property.auditNonHmacResponseKeysInput"></a>
+
+```typescript
+public readonly auditNonHmacResponseKeysInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `defaultLeaseTtlInput`<sup>Optional</sup> <a name="defaultLeaseTtlInput" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.property.defaultLeaseTtlInput"></a>
+
+```typescript
+public readonly defaultLeaseTtlInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `listingVisibilityInput`<sup>Optional</sup> <a name="listingVisibilityInput" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.property.listingVisibilityInput"></a>
+
+```typescript
+public readonly listingVisibilityInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `maxLeaseTtlInput`<sup>Optional</sup> <a name="maxLeaseTtlInput" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.property.maxLeaseTtlInput"></a>
+
+```typescript
+public readonly maxLeaseTtlInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `passthroughRequestHeadersInput`<sup>Optional</sup> <a name="passthroughRequestHeadersInput" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.property.passthroughRequestHeadersInput"></a>
+
+```typescript
+public readonly passthroughRequestHeadersInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `tokenTypeInput`<sup>Optional</sup> <a name="tokenTypeInput" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.property.tokenTypeInput"></a>
+
+```typescript
+public readonly tokenTypeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `allowedResponseHeaders`<sup>Required</sup> <a name="allowedResponseHeaders" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.property.allowedResponseHeaders"></a>
+
+```typescript
+public readonly allowedResponseHeaders: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `auditNonHmacRequestKeys`<sup>Required</sup> <a name="auditNonHmacRequestKeys" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.property.auditNonHmacRequestKeys"></a>
+
+```typescript
+public readonly auditNonHmacRequestKeys: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `auditNonHmacResponseKeys`<sup>Required</sup> <a name="auditNonHmacResponseKeys" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.property.auditNonHmacResponseKeys"></a>
+
+```typescript
+public readonly auditNonHmacResponseKeys: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `defaultLeaseTtl`<sup>Required</sup> <a name="defaultLeaseTtl" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.property.defaultLeaseTtl"></a>
+
+```typescript
+public readonly defaultLeaseTtl: string;
+```
+
+- *Type:* string
+
+---
+
+##### `listingVisibility`<sup>Required</sup> <a name="listingVisibility" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.property.listingVisibility"></a>
+
+```typescript
+public readonly listingVisibility: string;
+```
+
+- *Type:* string
+
+---
+
+##### `maxLeaseTtl`<sup>Required</sup> <a name="maxLeaseTtl" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.property.maxLeaseTtl"></a>
+
+```typescript
+public readonly maxLeaseTtl: string;
+```
+
+- *Type:* string
+
+---
+
+##### `passthroughRequestHeaders`<sup>Required</sup> <a name="passthroughRequestHeaders" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.property.passthroughRequestHeaders"></a>
+
+```typescript
+public readonly passthroughRequestHeaders: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `tokenType`<sup>Required</sup> <a name="tokenType" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.property.tokenType"></a>
+
+```typescript
+public readonly tokenType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | OktaAuthBackendTune;
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTune">OktaAuthBackendTune</a>
 
 ---
 

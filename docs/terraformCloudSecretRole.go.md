@@ -4,7 +4,7 @@
 
 ### TerraformCloudSecretRole <a name="TerraformCloudSecretRole" id="@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_role vault_terraform_cloud_secret_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_role vault_terraform_cloud_secret_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRole.Initializer"></a>
 
@@ -74,6 +74,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRole.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRole.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRole.resetBackend">ResetBackend</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRole.resetCredentialType">ResetCredentialType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRole.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRole.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRole.resetMaxTtl">ResetMaxTtl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRole.resetNamespace">ResetNamespace</a></code> | *No description.* |
@@ -378,6 +380,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 func ResetBackend()
 ```
 
+##### `ResetCredentialType` <a name="ResetCredentialType" id="@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRole.resetCredentialType"></a>
+
+```go
+func ResetCredentialType()
+```
+
+##### `ResetDescription` <a name="ResetDescription" id="@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRole.resetDescription"></a>
+
+```go
+func ResetDescription()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRole.resetId"></a>
 
 ```go
@@ -523,7 +537,7 @@ The construct id used in the generated config for the TerraformCloudSecretRole t
 
 The id of the existing TerraformCloudSecretRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -554,6 +568,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRole.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRole.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRole.property.backendInput">BackendInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRole.property.credentialTypeInput">CredentialTypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRole.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRole.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRole.property.maxTtlInput">MaxTtlInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRole.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
@@ -563,6 +579,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRole.property.ttlInput">TtlInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRole.property.userIdInput">UserIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRole.property.backend">Backend</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRole.property.credentialType">CredentialType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRole.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRole.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRole.property.maxTtl">MaxTtl</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRole.property.name">Name</a></code> | <code>*string</code> | *No description.* |
@@ -726,6 +744,26 @@ func BackendInput() *string
 
 ---
 
+##### `CredentialTypeInput`<sup>Optional</sup> <a name="CredentialTypeInput" id="@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRole.property.credentialTypeInput"></a>
+
+```go
+func CredentialTypeInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRole.property.descriptionInput"></a>
+
+```go
+func DescriptionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRole.property.idInput"></a>
 
 ```go
@@ -810,6 +848,26 @@ func UserIdInput() *string
 
 ```go
 func Backend() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `CredentialType`<sup>Required</sup> <a name="CredentialType" id="@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRole.property.credentialType"></a>
+
+```go
+func CredentialType() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Description`<sup>Required</sup> <a name="Description" id="@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRole.property.description"></a>
+
+```go
+func Description() *string
 ```
 
 - *Type:* *string
@@ -933,6 +991,8 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/terraformcloudsecretr
 	Provisioners: *[]interface{},
 	Name: *string,
 	Backend: *string,
+	CredentialType: *string,
+	Description: *string,
 	Id: *string,
 	MaxTtl: *f64,
 	Namespace: *string,
@@ -956,7 +1016,9 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/terraformcloudsecretr
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRoleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRoleConfig.property.name">Name</a></code> | <code>*string</code> | The name of an existing role against which to create this Terraform Cloud credential. |
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRoleConfig.property.backend">Backend</a></code> | <code>*string</code> | The path of the Terraform Cloud Secret Backend the role belongs to. |
-| <code><a href="#@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_role#id TerraformCloudSecretRole#id}. |
+| <code><a href="#@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRoleConfig.property.credentialType">CredentialType</a></code> | <code>*string</code> | The type of credential to generate. Valid values are 'team', 'team_legacy', 'user', or 'organization'. |
+| <code><a href="#@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRoleConfig.property.description">Description</a></code> | <code>*string</code> | Description of the role. |
+| <code><a href="#@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_role#id TerraformCloudSecretRole#id}. |
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRoleConfig.property.maxTtl">MaxTtl</a></code> | <code>*f64</code> | Maximum allowed lease for generated credentials. If not set or set to 0, will use system default. |
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRoleConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRoleConfig.property.organization">Organization</a></code> | <code>*string</code> | Name of the Terraform Cloud or Enterprise organization. |
@@ -1046,7 +1108,7 @@ Name *string
 
 The name of an existing role against which to create this Terraform Cloud credential.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_role#name TerraformCloudSecretRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_role#name TerraformCloudSecretRole#name}
 
 ---
 
@@ -1060,7 +1122,37 @@ Backend *string
 
 The path of the Terraform Cloud Secret Backend the role belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_role#backend TerraformCloudSecretRole#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_role#backend TerraformCloudSecretRole#backend}
+
+---
+
+##### `CredentialType`<sup>Optional</sup> <a name="CredentialType" id="@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRoleConfig.property.credentialType"></a>
+
+```go
+CredentialType *string
+```
+
+- *Type:* *string
+
+The type of credential to generate. Valid values are 'team', 'team_legacy', 'user', or 'organization'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_role#credential_type TerraformCloudSecretRole#credential_type}
+
+---
+
+##### `Description`<sup>Optional</sup> <a name="Description" id="@cdktf/provider-vault.terraformCloudSecretRole.TerraformCloudSecretRoleConfig.property.description"></a>
+
+```go
+Description *string
+```
+
+- *Type:* *string
+
+Description of the role.
+
+This is used as a prefix to help identify the token in the HCP Terraform UI. Only valid with 'team' or 'user' credential types.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_role#description TerraformCloudSecretRole#description}
 
 ---
 
@@ -1072,7 +1164,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_role#id TerraformCloudSecretRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_role#id TerraformCloudSecretRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1089,7 +1181,7 @@ MaxTtl *f64
 
 Maximum allowed lease for generated credentials. If not set or set to 0, will use system default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_role#max_ttl TerraformCloudSecretRole#max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_role#max_ttl TerraformCloudSecretRole#max_ttl}
 
 ---
 
@@ -1103,7 +1195,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_role#namespace TerraformCloudSecretRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_role#namespace TerraformCloudSecretRole#namespace}
 
 ---
 
@@ -1117,7 +1209,7 @@ Organization *string
 
 Name of the Terraform Cloud or Enterprise organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_role#organization TerraformCloudSecretRole#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_role#organization TerraformCloudSecretRole#organization}
 
 ---
 
@@ -1131,7 +1223,7 @@ TeamId *string
 
 ID of the Terraform Cloud or Enterprise team under organization (e.g., settings/teams/team-xxxxxxxxxxxxx).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_role#team_id TerraformCloudSecretRole#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_role#team_id TerraformCloudSecretRole#team_id}
 
 ---
 
@@ -1145,7 +1237,7 @@ Ttl *f64
 
 Default lease for generated credentials. If not set or set to 0, will use system default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_role#ttl TerraformCloudSecretRole#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_role#ttl TerraformCloudSecretRole#ttl}
 
 ---
 
@@ -1159,7 +1251,7 @@ UserId *string
 
 ID of the Terraform Cloud or Enterprise user (e.g., user-xxxxxxxxxxxxxxxx).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_role#user_id TerraformCloudSecretRole#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_role#user_id TerraformCloudSecretRole#user_id}
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_secret_backend
+// https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_secret_backend
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,89 +15,89 @@ export interface GcpSecretBackendConfig extends cdktf.TerraformMetaArguments {
   /**
   * List of managed key registry entry names that the mount in question is allowed to access
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_secret_backend#allowed_managed_keys GcpSecretBackend#allowed_managed_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_secret_backend#allowed_managed_keys GcpSecretBackend#allowed_managed_keys}
   */
   readonly allowedManagedKeys?: string[];
   /**
   * List of headers to allow and pass from the request to the plugin
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_secret_backend#allowed_response_headers GcpSecretBackend#allowed_response_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_secret_backend#allowed_response_headers GcpSecretBackend#allowed_response_headers}
   */
   readonly allowedResponseHeaders?: string[];
   /**
   * Specifies the list of keys that will not be HMAC'd by audit devices in the request data object.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_secret_backend#audit_non_hmac_request_keys GcpSecretBackend#audit_non_hmac_request_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_secret_backend#audit_non_hmac_request_keys GcpSecretBackend#audit_non_hmac_request_keys}
   */
   readonly auditNonHmacRequestKeys?: string[];
   /**
   * Specifies the list of keys that will not be HMAC'd by audit devices in the response data object.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_secret_backend#audit_non_hmac_response_keys GcpSecretBackend#audit_non_hmac_response_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_secret_backend#audit_non_hmac_response_keys GcpSecretBackend#audit_non_hmac_response_keys}
   */
   readonly auditNonHmacResponseKeys?: string[];
   /**
   * JSON-encoded credentials to use to connect to GCP
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_secret_backend#credentials GcpSecretBackend#credentials}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_secret_backend#credentials GcpSecretBackend#credentials}
   */
   readonly credentials?: string;
   /**
   * Write-only JSON-encoded credentials to use to connect to GCP
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_secret_backend#credentials_wo GcpSecretBackend#credentials_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_secret_backend#credentials_wo GcpSecretBackend#credentials_wo}
   */
   readonly credentialsWo?: string;
   /**
   * Version counter for write-only JSON-encoded credentials
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_secret_backend#credentials_wo_version GcpSecretBackend#credentials_wo_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_secret_backend#credentials_wo_version GcpSecretBackend#credentials_wo_version}
   */
   readonly credentialsWoVersion?: number;
   /**
   * Default lease duration for secrets in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_secret_backend#default_lease_ttl_seconds GcpSecretBackend#default_lease_ttl_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_secret_backend#default_lease_ttl_seconds GcpSecretBackend#default_lease_ttl_seconds}
   */
   readonly defaultLeaseTtlSeconds?: number;
   /**
   * List of headers to allow and pass from the request to the plugin
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_secret_backend#delegated_auth_accessors GcpSecretBackend#delegated_auth_accessors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_secret_backend#delegated_auth_accessors GcpSecretBackend#delegated_auth_accessors}
   */
   readonly delegatedAuthAccessors?: string[];
   /**
   * Human-friendly description of the mount for the backend.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_secret_backend#description GcpSecretBackend#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_secret_backend#description GcpSecretBackend#description}
   */
   readonly description?: string;
   /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_secret_backend#disable_automated_rotation GcpSecretBackend#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_secret_backend#disable_automated_rotation GcpSecretBackend#disable_automated_rotation}
   */
   readonly disableAutomatedRotation?: boolean | cdktf.IResolvable;
   /**
   * If set, opts out of mount migration on path updates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_secret_backend#disable_remount GcpSecretBackend#disable_remount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_secret_backend#disable_remount GcpSecretBackend#disable_remount}
   */
   readonly disableRemount?: boolean | cdktf.IResolvable;
   /**
   * Enable the secrets engine to access Vault's external entropy source
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_secret_backend#external_entropy_access GcpSecretBackend#external_entropy_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_secret_backend#external_entropy_access GcpSecretBackend#external_entropy_access}
   */
   readonly externalEntropyAccess?: boolean | cdktf.IResolvable;
   /**
   * If set to true, disables caching.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_secret_backend#force_no_cache GcpSecretBackend#force_no_cache}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_secret_backend#force_no_cache GcpSecretBackend#force_no_cache}
   */
   readonly forceNoCache?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_secret_backend#id GcpSecretBackend#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_secret_backend#id GcpSecretBackend#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -106,103 +106,115 @@ export interface GcpSecretBackendConfig extends cdktf.TerraformMetaArguments {
   /**
   * The audience claim value for plugin identity tokens.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_secret_backend#identity_token_audience GcpSecretBackend#identity_token_audience}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_secret_backend#identity_token_audience GcpSecretBackend#identity_token_audience}
   */
   readonly identityTokenAudience?: string;
   /**
   * The key to use for signing identity tokens.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_secret_backend#identity_token_key GcpSecretBackend#identity_token_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_secret_backend#identity_token_key GcpSecretBackend#identity_token_key}
   */
   readonly identityTokenKey?: string;
   /**
   * The TTL of generated tokens.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_secret_backend#identity_token_ttl GcpSecretBackend#identity_token_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_secret_backend#identity_token_ttl GcpSecretBackend#identity_token_ttl}
   */
   readonly identityTokenTtl?: number;
   /**
   * Specifies whether to show this mount in the UI-specific listing endpoint
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_secret_backend#listing_visibility GcpSecretBackend#listing_visibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_secret_backend#listing_visibility GcpSecretBackend#listing_visibility}
   */
   readonly listingVisibility?: string;
   /**
   * Local mount flag that can be explicitly set to true to enforce local mount in HA environment
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_secret_backend#local GcpSecretBackend#local}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_secret_backend#local GcpSecretBackend#local}
   */
   readonly local?: boolean | cdktf.IResolvable;
   /**
   * Maximum possible lease duration for secrets in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_secret_backend#max_lease_ttl_seconds GcpSecretBackend#max_lease_ttl_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_secret_backend#max_lease_ttl_seconds GcpSecretBackend#max_lease_ttl_seconds}
   */
   readonly maxLeaseTtlSeconds?: number;
   /**
+  * The maximum TTL for long-lived credentials (i.e. service account keys).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_secret_backend#max_ttl GcpSecretBackend#max_ttl}
+  */
+  readonly maxTtl?: number;
+  /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_secret_backend#namespace GcpSecretBackend#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_secret_backend#namespace GcpSecretBackend#namespace}
   */
   readonly namespace?: string;
   /**
   * Specifies mount type specific options that are passed to the backend
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_secret_backend#options GcpSecretBackend#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_secret_backend#options GcpSecretBackend#options}
   */
   readonly options?: { [key: string]: string };
   /**
   * List of headers to allow and pass from the request to the plugin
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_secret_backend#passthrough_request_headers GcpSecretBackend#passthrough_request_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_secret_backend#passthrough_request_headers GcpSecretBackend#passthrough_request_headers}
   */
   readonly passthroughRequestHeaders?: string[];
   /**
   * Path to mount the backend at.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_secret_backend#path GcpSecretBackend#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_secret_backend#path GcpSecretBackend#path}
   */
   readonly path?: string;
   /**
   * Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_secret_backend#plugin_version GcpSecretBackend#plugin_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_secret_backend#plugin_version GcpSecretBackend#plugin_version}
   */
   readonly pluginVersion?: string;
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_secret_backend#rotation_period GcpSecretBackend#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_secret_backend#rotation_period GcpSecretBackend#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_secret_backend#rotation_schedule GcpSecretBackend#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_secret_backend#rotation_schedule GcpSecretBackend#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_secret_backend#rotation_window GcpSecretBackend#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_secret_backend#rotation_window GcpSecretBackend#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
   * Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_secret_backend#seal_wrap GcpSecretBackend#seal_wrap}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_secret_backend#seal_wrap GcpSecretBackend#seal_wrap}
   */
   readonly sealWrap?: boolean | cdktf.IResolvable;
   /**
   * Service Account to impersonate for plugin workload identity federation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_secret_backend#service_account_email GcpSecretBackend#service_account_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_secret_backend#service_account_email GcpSecretBackend#service_account_email}
   */
   readonly serviceAccountEmail?: string;
+  /**
+  * The default TTL for long-lived credentials (i.e. service account keys).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_secret_backend#ttl GcpSecretBackend#ttl}
+  */
+  readonly ttl?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_secret_backend vault_gcp_secret_backend}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_secret_backend vault_gcp_secret_backend}
 */
 export class GcpSecretBackend extends cdktf.TerraformResource {
 
@@ -218,7 +230,7 @@ export class GcpSecretBackend extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GcpSecretBackend resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GcpSecretBackend to import
-  * @param importFromId The id of the existing GcpSecretBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_secret_backend#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GcpSecretBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_secret_backend#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GcpSecretBackend to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -230,7 +242,7 @@ export class GcpSecretBackend extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_secret_backend vault_gcp_secret_backend} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_secret_backend vault_gcp_secret_backend} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -241,7 +253,7 @@ export class GcpSecretBackend extends cdktf.TerraformResource {
       terraformResourceType: 'vault_gcp_secret_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.3.0',
+        providerVersion: '5.4.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -273,6 +285,7 @@ export class GcpSecretBackend extends cdktf.TerraformResource {
     this._listingVisibility = config.listingVisibility;
     this._local = config.local;
     this._maxLeaseTtlSeconds = config.maxLeaseTtlSeconds;
+    this._maxTtl = config.maxTtl;
     this._namespace = config.namespace;
     this._options = config.options;
     this._passthroughRequestHeaders = config.passthroughRequestHeaders;
@@ -283,6 +296,7 @@ export class GcpSecretBackend extends cdktf.TerraformResource {
     this._rotationWindow = config.rotationWindow;
     this._sealWrap = config.sealWrap;
     this._serviceAccountEmail = config.serviceAccountEmail;
+    this._ttl = config.ttl;
   }
 
   // ==========
@@ -630,6 +644,22 @@ export class GcpSecretBackend extends cdktf.TerraformResource {
     return this._maxLeaseTtlSeconds;
   }
 
+  // max_ttl - computed: false, optional: true, required: false
+  private _maxTtl?: number; 
+  public get maxTtl() {
+    return this.getNumberAttribute('max_ttl');
+  }
+  public set maxTtl(value: number) {
+    this._maxTtl = value;
+  }
+  public resetMaxTtl() {
+    this._maxTtl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxTtlInput() {
+    return this._maxTtl;
+  }
+
   // namespace - computed: false, optional: true, required: false
   private _namespace?: string; 
   public get namespace() {
@@ -790,6 +820,22 @@ export class GcpSecretBackend extends cdktf.TerraformResource {
     return this._serviceAccountEmail;
   }
 
+  // ttl - computed: false, optional: true, required: false
+  private _ttl?: number; 
+  public get ttl() {
+    return this.getNumberAttribute('ttl');
+  }
+  public set ttl(value: number) {
+    this._ttl = value;
+  }
+  public resetTtl() {
+    this._ttl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ttlInput() {
+    return this._ttl;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -817,6 +863,7 @@ export class GcpSecretBackend extends cdktf.TerraformResource {
       listing_visibility: cdktf.stringToTerraform(this._listingVisibility),
       local: cdktf.booleanToTerraform(this._local),
       max_lease_ttl_seconds: cdktf.numberToTerraform(this._maxLeaseTtlSeconds),
+      max_ttl: cdktf.numberToTerraform(this._maxTtl),
       namespace: cdktf.stringToTerraform(this._namespace),
       options: cdktf.hashMapper(cdktf.stringToTerraform)(this._options),
       passthrough_request_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._passthroughRequestHeaders),
@@ -827,6 +874,7 @@ export class GcpSecretBackend extends cdktf.TerraformResource {
       rotation_window: cdktf.numberToTerraform(this._rotationWindow),
       seal_wrap: cdktf.booleanToTerraform(this._sealWrap),
       service_account_email: cdktf.stringToTerraform(this._serviceAccountEmail),
+      ttl: cdktf.numberToTerraform(this._ttl),
     };
   }
 
@@ -958,6 +1006,12 @@ export class GcpSecretBackend extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "number",
       },
+      max_ttl: {
+        value: cdktf.numberToHclTerraform(this._maxTtl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
       namespace: {
         value: cdktf.stringToHclTerraform(this._namespace),
         isBlock: false,
@@ -1017,6 +1071,12 @@ export class GcpSecretBackend extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      ttl: {
+        value: cdktf.numberToHclTerraform(this._ttl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
       },
     };
 
