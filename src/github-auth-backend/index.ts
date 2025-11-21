@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/github_auth_backend
+// https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/github_auth_backend
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,32 @@ import * as cdktf from 'cdktf';
 
 export interface GithubAuthBackendConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The metadata to be tied to generated entity alias.
+  *   This should be a list or map containing the metadata in key value pairs.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/github_auth_backend#alias_metadata GithubAuthBackend#alias_metadata}
+  */
+  readonly aliasMetadata?: { [key: string]: string };
+  /**
   * The API endpoint to use. Useful if you are running GitHub Enterprise or an API-compatible authentication server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/github_auth_backend#base_url GithubAuthBackend#base_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/github_auth_backend#base_url GithubAuthBackend#base_url}
   */
   readonly baseUrl?: string;
   /**
   * Specifies the description of the mount. This overrides the current stored value, if any.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/github_auth_backend#description GithubAuthBackend#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/github_auth_backend#description GithubAuthBackend#description}
   */
   readonly description?: string;
   /**
   * If set, opts out of mount migration on path updates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/github_auth_backend#disable_remount GithubAuthBackend#disable_remount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/github_auth_backend#disable_remount GithubAuthBackend#disable_remount}
   */
   readonly disableRemount?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/github_auth_backend#id GithubAuthBackend#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/github_auth_backend#id GithubAuthBackend#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,117 +47,117 @@ export interface GithubAuthBackendConfig extends cdktf.TerraformMetaArguments {
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/github_auth_backend#namespace GithubAuthBackend#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/github_auth_backend#namespace GithubAuthBackend#namespace}
   */
   readonly namespace?: string;
   /**
   * The organization users must be part of.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/github_auth_backend#organization GithubAuthBackend#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/github_auth_backend#organization GithubAuthBackend#organization}
   */
   readonly organization: string;
   /**
   * The ID of the organization users must be part of. Vault will attempt to fetch and set this value if it is not provided (vault-1.10+)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/github_auth_backend#organization_id GithubAuthBackend#organization_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/github_auth_backend#organization_id GithubAuthBackend#organization_id}
   */
   readonly organizationId?: number;
   /**
   * Path where the auth backend is mounted
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/github_auth_backend#path GithubAuthBackend#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/github_auth_backend#path GithubAuthBackend#path}
   */
   readonly path?: string;
   /**
   * Specifies the blocks of IP addresses which are allowed to use the generated token
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/github_auth_backend#token_bound_cidrs GithubAuthBackend#token_bound_cidrs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/github_auth_backend#token_bound_cidrs GithubAuthBackend#token_bound_cidrs}
   */
   readonly tokenBoundCidrs?: string[];
   /**
   * Generated Token's Explicit Maximum TTL in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/github_auth_backend#token_explicit_max_ttl GithubAuthBackend#token_explicit_max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/github_auth_backend#token_explicit_max_ttl GithubAuthBackend#token_explicit_max_ttl}
   */
   readonly tokenExplicitMaxTtl?: number;
   /**
   * The maximum lifetime of the generated token
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/github_auth_backend#token_max_ttl GithubAuthBackend#token_max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/github_auth_backend#token_max_ttl GithubAuthBackend#token_max_ttl}
   */
   readonly tokenMaxTtl?: number;
   /**
   * If true, the 'default' policy will not automatically be added to generated tokens
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/github_auth_backend#token_no_default_policy GithubAuthBackend#token_no_default_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/github_auth_backend#token_no_default_policy GithubAuthBackend#token_no_default_policy}
   */
   readonly tokenNoDefaultPolicy?: boolean | cdktf.IResolvable;
   /**
   * The maximum number of times a token may be used, a value of zero means unlimited
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/github_auth_backend#token_num_uses GithubAuthBackend#token_num_uses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/github_auth_backend#token_num_uses GithubAuthBackend#token_num_uses}
   */
   readonly tokenNumUses?: number;
   /**
   * Generated Token's Period
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/github_auth_backend#token_period GithubAuthBackend#token_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/github_auth_backend#token_period GithubAuthBackend#token_period}
   */
   readonly tokenPeriod?: number;
   /**
   * Generated Token's Policies
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/github_auth_backend#token_policies GithubAuthBackend#token_policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/github_auth_backend#token_policies GithubAuthBackend#token_policies}
   */
   readonly tokenPolicies?: string[];
   /**
   * The initial ttl of the token to generate in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/github_auth_backend#token_ttl GithubAuthBackend#token_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/github_auth_backend#token_ttl GithubAuthBackend#token_ttl}
   */
   readonly tokenTtl?: number;
   /**
   * The type of token to generate, service or batch
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/github_auth_backend#token_type GithubAuthBackend#token_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/github_auth_backend#token_type GithubAuthBackend#token_type}
   */
   readonly tokenType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/github_auth_backend#tune GithubAuthBackend#tune}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/github_auth_backend#tune GithubAuthBackend#tune}
   */
   readonly tune?: GithubAuthBackendTune[] | cdktf.IResolvable;
 }
 export interface GithubAuthBackendTune {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/github_auth_backend#allowed_response_headers GithubAuthBackend#allowed_response_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/github_auth_backend#allowed_response_headers GithubAuthBackend#allowed_response_headers}
   */
   readonly allowedResponseHeaders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/github_auth_backend#audit_non_hmac_request_keys GithubAuthBackend#audit_non_hmac_request_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/github_auth_backend#audit_non_hmac_request_keys GithubAuthBackend#audit_non_hmac_request_keys}
   */
   readonly auditNonHmacRequestKeys?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/github_auth_backend#audit_non_hmac_response_keys GithubAuthBackend#audit_non_hmac_response_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/github_auth_backend#audit_non_hmac_response_keys GithubAuthBackend#audit_non_hmac_response_keys}
   */
   readonly auditNonHmacResponseKeys?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/github_auth_backend#default_lease_ttl GithubAuthBackend#default_lease_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/github_auth_backend#default_lease_ttl GithubAuthBackend#default_lease_ttl}
   */
   readonly defaultLeaseTtl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/github_auth_backend#listing_visibility GithubAuthBackend#listing_visibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/github_auth_backend#listing_visibility GithubAuthBackend#listing_visibility}
   */
   readonly listingVisibility?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/github_auth_backend#max_lease_ttl GithubAuthBackend#max_lease_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/github_auth_backend#max_lease_ttl GithubAuthBackend#max_lease_ttl}
   */
   readonly maxLeaseTtl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/github_auth_backend#passthrough_request_headers GithubAuthBackend#passthrough_request_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/github_auth_backend#passthrough_request_headers GithubAuthBackend#passthrough_request_headers}
   */
   readonly passthroughRequestHeaders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/github_auth_backend#token_type GithubAuthBackend#token_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/github_auth_backend#token_type GithubAuthBackend#token_type}
   */
   readonly tokenType?: string;
 }
@@ -469,7 +476,7 @@ export class GithubAuthBackendTuneList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/github_auth_backend vault_github_auth_backend}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/github_auth_backend vault_github_auth_backend}
 */
 export class GithubAuthBackend extends cdktf.TerraformResource {
 
@@ -485,7 +492,7 @@ export class GithubAuthBackend extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GithubAuthBackend resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GithubAuthBackend to import
-  * @param importFromId The id of the existing GithubAuthBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/github_auth_backend#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GithubAuthBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/github_auth_backend#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GithubAuthBackend to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -497,7 +504,7 @@ export class GithubAuthBackend extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/github_auth_backend vault_github_auth_backend} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/github_auth_backend vault_github_auth_backend} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -508,7 +515,7 @@ export class GithubAuthBackend extends cdktf.TerraformResource {
       terraformResourceType: 'vault_github_auth_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.4.0',
+        providerVersion: '5.5.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -519,6 +526,7 @@ export class GithubAuthBackend extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._aliasMetadata = config.aliasMetadata;
     this._baseUrl = config.baseUrl;
     this._description = config.description;
     this._disableRemount = config.disableRemount;
@@ -546,6 +554,22 @@ export class GithubAuthBackend extends cdktf.TerraformResource {
   // accessor - computed: true, optional: false, required: false
   public get accessor() {
     return this.getStringAttribute('accessor');
+  }
+
+  // alias_metadata - computed: false, optional: true, required: false
+  private _aliasMetadata?: { [key: string]: string }; 
+  public get aliasMetadata() {
+    return this.getStringMapAttribute('alias_metadata');
+  }
+  public set aliasMetadata(value: { [key: string]: string }) {
+    this._aliasMetadata = value;
+  }
+  public resetAliasMetadata() {
+    this._aliasMetadata = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get aliasMetadataInput() {
+    return this._aliasMetadata;
   }
 
   // base_url - computed: false, optional: true, required: false
@@ -839,6 +863,7 @@ export class GithubAuthBackend extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      alias_metadata: cdktf.hashMapper(cdktf.stringToTerraform)(this._aliasMetadata),
       base_url: cdktf.stringToTerraform(this._baseUrl),
       description: cdktf.stringToTerraform(this._description),
       disable_remount: cdktf.booleanToTerraform(this._disableRemount),
@@ -862,6 +887,12 @@ export class GithubAuthBackend extends cdktf.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      alias_metadata: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._aliasMetadata),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
       base_url: {
         value: cdktf.stringToHclTerraform(this._baseUrl),
         isBlock: false,

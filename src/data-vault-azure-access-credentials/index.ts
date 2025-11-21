@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/azure_access_credentials
+// https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/azure_access_credentials
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataVaultAzureAccessCredentialsConfig extends cdktf.TerraformMe
   /**
   * Azure Secret Backend to read credentials from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/azure_access_credentials#backend DataVaultAzureAccessCredentials#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/azure_access_credentials#backend DataVaultAzureAccessCredentials#backend}
   */
   readonly backend: string;
   /**
@@ -23,11 +23,11 @@ export interface DataVaultAzureAccessCredentialsConfig extends cdktf.TerraformMe
   * Defaults to the Azure Public Cloud.
   * Some possible values: AzurePublicCloud, AzureUSGovernmentCloud
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/azure_access_credentials#environment DataVaultAzureAccessCredentials#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/azure_access_credentials#environment DataVaultAzureAccessCredentials#environment}
   */
   readonly environment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/azure_access_credentials#id DataVaultAzureAccessCredentials#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/azure_access_credentials#id DataVaultAzureAccessCredentials#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -36,55 +36,55 @@ export interface DataVaultAzureAccessCredentialsConfig extends cdktf.TerraformMe
   /**
   * If 'validate_creds' is true, the number of seconds after which to give up validating credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/azure_access_credentials#max_cred_validation_seconds DataVaultAzureAccessCredentials#max_cred_validation_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/azure_access_credentials#max_cred_validation_seconds DataVaultAzureAccessCredentials#max_cred_validation_seconds}
   */
   readonly maxCredValidationSeconds?: number;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/azure_access_credentials#namespace DataVaultAzureAccessCredentials#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/azure_access_credentials#namespace DataVaultAzureAccessCredentials#namespace}
   */
   readonly namespace?: string;
   /**
   * If 'validate_creds' is true, the number of seconds to wait between each test of generated credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/azure_access_credentials#num_seconds_between_tests DataVaultAzureAccessCredentials#num_seconds_between_tests}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/azure_access_credentials#num_seconds_between_tests DataVaultAzureAccessCredentials#num_seconds_between_tests}
   */
   readonly numSecondsBetweenTests?: number;
   /**
   * If 'validate_creds' is true, the number of sequential successes required to validate generated credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/azure_access_credentials#num_sequential_successes DataVaultAzureAccessCredentials#num_sequential_successes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/azure_access_credentials#num_sequential_successes DataVaultAzureAccessCredentials#num_sequential_successes}
   */
   readonly numSequentialSuccesses?: number;
   /**
   * Azure Secret Role to read credentials from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/azure_access_credentials#role DataVaultAzureAccessCredentials#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/azure_access_credentials#role DataVaultAzureAccessCredentials#role}
   */
   readonly role: string;
   /**
   * The subscription ID to use during credential validation. Defaults to the subscription ID configured in the Vault backend
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/azure_access_credentials#subscription_id DataVaultAzureAccessCredentials#subscription_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/azure_access_credentials#subscription_id DataVaultAzureAccessCredentials#subscription_id}
   */
   readonly subscriptionId?: string;
   /**
   * The tenant ID to use during credential validation. Defaults to the tenant ID configured in the Vault backend
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/azure_access_credentials#tenant_id DataVaultAzureAccessCredentials#tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/azure_access_credentials#tenant_id DataVaultAzureAccessCredentials#tenant_id}
   */
   readonly tenantId?: string;
   /**
   * Whether generated credentials should be validated before being returned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/azure_access_credentials#validate_creds DataVaultAzureAccessCredentials#validate_creds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/azure_access_credentials#validate_creds DataVaultAzureAccessCredentials#validate_creds}
   */
   readonly validateCreds?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/azure_access_credentials vault_azure_access_credentials}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/azure_access_credentials vault_azure_access_credentials}
 */
 export class DataVaultAzureAccessCredentials extends cdktf.TerraformDataSource {
 
@@ -100,7 +100,7 @@ export class DataVaultAzureAccessCredentials extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataVaultAzureAccessCredentials resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataVaultAzureAccessCredentials to import
-  * @param importFromId The id of the existing DataVaultAzureAccessCredentials that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/azure_access_credentials#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataVaultAzureAccessCredentials that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/azure_access_credentials#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataVaultAzureAccessCredentials to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -112,7 +112,7 @@ export class DataVaultAzureAccessCredentials extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/azure_access_credentials vault_azure_access_credentials} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/azure_access_credentials vault_azure_access_credentials} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -123,7 +123,7 @@ export class DataVaultAzureAccessCredentials extends cdktf.TerraformDataSource {
       terraformResourceType: 'vault_azure_access_credentials',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.4.0',
+        providerVersion: '5.5.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
