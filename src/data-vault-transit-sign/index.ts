@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_sign
+// https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_sign
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +15,29 @@ export interface DataVaultTransitSignConfig extends cdktf.TerraformMetaArguments
   /**
   * Specifies a list of items for processing. When this parameter is set, any supplied 'input' or 'context' parameters will be ignored. Responses are returned in the 'batch_results' array component of the 'data' element of the response. Any batch output will preserve the order of the batch input. If the input data value of an item is invalid, the corresponding item in the 'batch_results' will have the key 'error' with a value describing the error.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_sign#batch_input DataVaultTransitSign#batch_input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_sign#batch_input DataVaultTransitSign#batch_input}
   */
   readonly batchInput?: { [key: string]: string }[] | cdktf.IResolvable;
   /**
   * The results returned from Vault if using batch_input
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_sign#batch_results DataVaultTransitSign#batch_results}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_sign#batch_results DataVaultTransitSign#batch_results}
   */
   readonly batchResults?: { [key: string]: string }[] | cdktf.IResolvable;
   /**
   * Base64 encoded context for key derivation. Required if key derivation is enabled; currently only available with ed25519 keys.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_sign#context DataVaultTransitSign#context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_sign#context DataVaultTransitSign#context}
   */
   readonly context?: string;
   /**
   * Specifies the hash algorithm to use for supporting key types (notably, not including ed25519 which specifies its own hash algorithm).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_sign#hash_algorithm DataVaultTransitSign#hash_algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_sign#hash_algorithm DataVaultTransitSign#hash_algorithm}
   */
   readonly hashAlgorithm?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_sign#id DataVaultTransitSign#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_sign#id DataVaultTransitSign#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,79 +46,79 @@ export interface DataVaultTransitSignConfig extends cdktf.TerraformMetaArguments
   /**
   * Specifies the base64 encoded input data. One of input or batch_input must be supplied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_sign#input DataVaultTransitSign#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_sign#input DataVaultTransitSign#input}
   */
   readonly input?: string;
   /**
   * The version of the key to use
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_sign#key_version DataVaultTransitSign#key_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_sign#key_version DataVaultTransitSign#key_version}
   */
   readonly keyVersion?: number;
   /**
   * Specifies the way in which the signature should be marshaled. This currently only applies to ECDSA keys.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_sign#marshaling_algorithm DataVaultTransitSign#marshaling_algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_sign#marshaling_algorithm DataVaultTransitSign#marshaling_algorithm}
   */
   readonly marshalingAlgorithm?: string;
   /**
   * Name of the signing key to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_sign#name DataVaultTransitSign#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_sign#name DataVaultTransitSign#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_sign#namespace DataVaultTransitSign#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_sign#namespace DataVaultTransitSign#namespace}
   */
   readonly namespace?: string;
   /**
   * The Transit secret backend the key belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_sign#path DataVaultTransitSign#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_sign#path DataVaultTransitSign#path}
   */
   readonly path: string;
   /**
   * Set to true when the input is already hashed. If the key type is rsa-2048, rsa-3072 or rsa-4096, then the algorithm used to hash the input should be indicated by the hash_algorithm parameter. Just as the value to sign should be the base64-encoded representation of the exact binary data you want signed, when set, input is expected to be base64-encoded binary hashed data, not hex-formatted. (As an example, on the command line, you could generate a suitable input via openssl dgst -sha256 -binary | base64.)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_sign#prehashed DataVaultTransitSign#prehashed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_sign#prehashed DataVaultTransitSign#prehashed}
   */
   readonly prehashed?: boolean | cdktf.IResolvable;
   /**
   * A user-supplied string that will be present in the reference field on the corresponding batch_results item in the response, to assist in understanding which result corresponds to a particular input. Only valid on batch requests when using ‘batch_input’ below.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_sign#reference DataVaultTransitSign#reference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_sign#reference DataVaultTransitSign#reference}
   */
   readonly reference?: string;
   /**
   * The salt length used to sign. This currently only applies to the RSA PSS signature scheme.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_sign#salt_length DataVaultTransitSign#salt_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_sign#salt_length DataVaultTransitSign#salt_length}
   */
   readonly saltLength?: string;
   /**
   * The signature returned from Vault if using input
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_sign#signature DataVaultTransitSign#signature}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_sign#signature DataVaultTransitSign#signature}
   */
   readonly signature?: string;
   /**
   * When using a RSA key, specifies the RSA signature algorithm to use for signing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_sign#signature_algorithm DataVaultTransitSign#signature_algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_sign#signature_algorithm DataVaultTransitSign#signature_algorithm}
   */
   readonly signatureAlgorithm?: string;
   /**
   * Base64 encoded context for Ed25519ctx and Ed25519ph signatures.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_sign#signature_context DataVaultTransitSign#signature_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_sign#signature_context DataVaultTransitSign#signature_context}
   */
   readonly signatureContext?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_sign vault_transit_sign}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_sign vault_transit_sign}
 */
 export class DataVaultTransitSign extends cdktf.TerraformDataSource {
 
@@ -134,7 +134,7 @@ export class DataVaultTransitSign extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataVaultTransitSign resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataVaultTransitSign to import
-  * @param importFromId The id of the existing DataVaultTransitSign that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_sign#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataVaultTransitSign that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_sign#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataVaultTransitSign to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -146,7 +146,7 @@ export class DataVaultTransitSign extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/transit_sign vault_transit_sign} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_sign vault_transit_sign} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -157,7 +157,7 @@ export class DataVaultTransitSign extends cdktf.TerraformDataSource {
       terraformResourceType: 'vault_transit_sign',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.4.0',
+        providerVersion: '5.5.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
