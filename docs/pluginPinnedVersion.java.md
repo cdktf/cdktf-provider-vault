@@ -4,7 +4,7 @@
 
 ### PluginPinnedVersion <a name="PluginPinnedVersion" id="@cdktf/provider-vault.pluginPinnedVersion.PluginPinnedVersion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/plugin_pinned_version vault_plugin_pinned_version}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/plugin_pinned_version vault_plugin_pinned_version}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.pluginPinnedVersion.PluginPinnedVersion.Initializer"></a>
 
@@ -40,7 +40,7 @@ PluginPinnedVersion.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vault.pluginPinnedVersion.PluginPinnedVersion.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of the plugin. |
 | <code><a href="#@cdktf/provider-vault.pluginPinnedVersion.PluginPinnedVersion.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | Type of plugin; one of "auth", "secret", or "database". |
 | <code><a href="#@cdktf/provider-vault.pluginPinnedVersion.PluginPinnedVersion.Initializer.parameter.version">version</a></code> | <code>java.lang.String</code> | Semantic pinned plugin version. |
-| <code><a href="#@cdktf/provider-vault.pluginPinnedVersion.PluginPinnedVersion.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/plugin_pinned_version#id PluginPinnedVersion#id}. |
+| <code><a href="#@cdktf/provider-vault.pluginPinnedVersion.PluginPinnedVersion.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/plugin_pinned_version#id PluginPinnedVersion#id}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/plugin_pinned_version#name PluginPinnedVersion#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/plugin_pinned_version#name PluginPinnedVersion#name}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Type of plugin; one of "auth", "secret", or "database".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/plugin_pinned_version#type PluginPinnedVersion#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/plugin_pinned_version#type PluginPinnedVersion#type}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Semantic pinned plugin version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/plugin_pinned_version#version PluginPinnedVersion#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/plugin_pinned_version#version PluginPinnedVersion#version}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/plugin_pinned_version#id PluginPinnedVersion#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/plugin_pinned_version#id PluginPinnedVersion#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -575,7 +575,7 @@ The construct id used in the generated config for the PluginPinnedVersion to imp
 
 The id of the existing PluginPinnedVersion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/plugin_pinned_version#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/plugin_pinned_version#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -894,7 +894,7 @@ PluginPinnedVersionConfig.builder()
 | <code><a href="#@cdktf/provider-vault.pluginPinnedVersion.PluginPinnedVersionConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of the plugin. |
 | <code><a href="#@cdktf/provider-vault.pluginPinnedVersion.PluginPinnedVersionConfig.property.type">type</a></code> | <code>java.lang.String</code> | Type of plugin; one of "auth", "secret", or "database". |
 | <code><a href="#@cdktf/provider-vault.pluginPinnedVersion.PluginPinnedVersionConfig.property.version">version</a></code> | <code>java.lang.String</code> | Semantic pinned plugin version. |
-| <code><a href="#@cdktf/provider-vault.pluginPinnedVersion.PluginPinnedVersionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/plugin_pinned_version#id PluginPinnedVersion#id}. |
+| <code><a href="#@cdktf/provider-vault.pluginPinnedVersion.PluginPinnedVersionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/plugin_pinned_version#id PluginPinnedVersion#id}. |
 
 ---
 
@@ -978,7 +978,7 @@ public java.lang.String getName();
 
 Name of the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/plugin_pinned_version#name PluginPinnedVersion#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/plugin_pinned_version#name PluginPinnedVersion#name}
 
 ---
 
@@ -992,7 +992,7 @@ public java.lang.String getType();
 
 Type of plugin; one of "auth", "secret", or "database".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/plugin_pinned_version#type PluginPinnedVersion#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/plugin_pinned_version#type PluginPinnedVersion#type}
 
 ---
 
@@ -1006,7 +1006,7 @@ public java.lang.String getVersion();
 
 Semantic pinned plugin version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/plugin_pinned_version#version PluginPinnedVersion#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/plugin_pinned_version#version PluginPinnedVersion#version}
 
 ---
 
@@ -1018,7 +1018,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/plugin_pinned_version#id PluginPinnedVersion#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/plugin_pinned_version#id PluginPinnedVersion#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
