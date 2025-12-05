@@ -4,7 +4,7 @@
 
 ### SecretsSyncAssociation <a name="SecretsSyncAssociation" id="@cdktf/provider-vault.secretsSyncAssociation.SecretsSyncAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/secrets_sync_association vault_secrets_sync_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_association vault_secrets_sync_association}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.secretsSyncAssociation.SecretsSyncAssociation.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the SecretsSyncAssociation to 
 
 The id of the existing SecretsSyncAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/secrets_sync_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -858,7 +858,7 @@ new SecretsSyncAssociationConfig {
 | <code><a href="#@cdktf/provider-vault.secretsSyncAssociation.SecretsSyncAssociationConfig.property.name">Name</a></code> | <code>string</code> | Name of the destination. |
 | <code><a href="#@cdktf/provider-vault.secretsSyncAssociation.SecretsSyncAssociationConfig.property.secretName">SecretName</a></code> | <code>string</code> | Specifies the name of the secret to synchronize. |
 | <code><a href="#@cdktf/provider-vault.secretsSyncAssociation.SecretsSyncAssociationConfig.property.type">Type</a></code> | <code>string</code> | Type of sync destination. |
-| <code><a href="#@cdktf/provider-vault.secretsSyncAssociation.SecretsSyncAssociationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/secrets_sync_association#id SecretsSyncAssociation#id}. |
+| <code><a href="#@cdktf/provider-vault.secretsSyncAssociation.SecretsSyncAssociationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_association#id SecretsSyncAssociation#id}. |
 | <code><a href="#@cdktf/provider-vault.secretsSyncAssociation.SecretsSyncAssociationConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -943,7 +943,7 @@ public string Mount { get; set; }
 
 Specifies the mount where the secret is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/secrets_sync_association#mount SecretsSyncAssociation#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_association#mount SecretsSyncAssociation#mount}
 
 ---
 
@@ -957,7 +957,7 @@ public string Name { get; set; }
 
 Name of the destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/secrets_sync_association#name SecretsSyncAssociation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_association#name SecretsSyncAssociation#name}
 
 ---
 
@@ -971,7 +971,7 @@ public string SecretName { get; set; }
 
 Specifies the name of the secret to synchronize.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/secrets_sync_association#secret_name SecretsSyncAssociation#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_association#secret_name SecretsSyncAssociation#secret_name}
 
 ---
 
@@ -985,7 +985,7 @@ public string Type { get; set; }
 
 Type of sync destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/secrets_sync_association#type SecretsSyncAssociation#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_association#type SecretsSyncAssociation#type}
 
 ---
 
@@ -997,7 +997,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/secrets_sync_association#id SecretsSyncAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_association#id SecretsSyncAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1014,7 +1014,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/secrets_sync_association#namespace SecretsSyncAssociation#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_association#namespace SecretsSyncAssociation#namespace}
 
 ---
 

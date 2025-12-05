@@ -4,7 +4,7 @@
 
 ### DataVaultTransitVerify <a name="DataVaultTransitVerify" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_verify vault_transit_verify}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify vault_transit_verify}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer"></a>
 
@@ -491,7 +491,7 @@ The construct id used in the generated config for the DataVaultTransitVerify to 
 
 The id of the existing DataVaultTransitVerify that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_verify#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1161,7 +1161,7 @@ new DataVaultTransitVerifyConfig {
 | <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.context">Context</a></code> | <code>string</code> | Base64 encoded context for key derivation. Required if key derivation is enabled; currently only available with ed25519 keys. |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.hashAlgorithm">HashAlgorithm</a></code> | <code>string</code> | Specifies the hash algorithm to use. |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.hmac">Hmac</a></code> | <code>string</code> | Specifies the signature output from the /transit/hmac function. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_verify#id DataVaultTransitVerify#id}. |
+| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#id DataVaultTransitVerify#id}. |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.input">Input</a></code> | <code>string</code> | Specifies the base64 encoded input data. One of input or batch_input must be supplied. |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.macLength">MacLength</a></code> | <code>double</code> | Specifies the MAC length used to generate a CMAC. The mac_length cannot be larger than the cipher's block size. |
 | <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.marshalingAlgorithm">MarshalingAlgorithm</a></code> | <code>string</code> | Specifies the way in which the signature was originally marshaled. This currently only applies to ECDSA keys. |
@@ -1256,7 +1256,7 @@ public string Name { get; set; }
 
 Specifies the name of the encryption key that was used to generate the signature or HMAC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_verify#name DataVaultTransitVerify#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#name DataVaultTransitVerify#name}
 
 ---
 
@@ -1270,7 +1270,7 @@ public string Path { get; set; }
 
 The Transit secret backend the key belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_verify#path DataVaultTransitVerify#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#path DataVaultTransitVerify#path}
 
 ---
 
@@ -1286,7 +1286,7 @@ Specifies a list of items for processing.
 
 When this parameter is set, any supplied 'input' or 'context' parameters will be ignored. Responses are returned in the 'batch_results' array component of the 'data' element of the response. Any batch output will preserve the order of the batch input. If the input data value of an item is invalid, the corresponding item in the 'batch_results' will have the key 'error' with a value describing the error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_verify#batch_input DataVaultTransitVerify#batch_input}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#batch_input DataVaultTransitVerify#batch_input}
 
 ---
 
@@ -1300,7 +1300,7 @@ public IResolvable|System.Collections.Generic.IDictionary<string, string>[] Batc
 
 The results returned from Vault if using batch_input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_verify#batch_results DataVaultTransitVerify#batch_results}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#batch_results DataVaultTransitVerify#batch_results}
 
 ---
 
@@ -1316,7 +1316,7 @@ public string Cmac { get; set; }
 
 One of the following arguments must be supplied signature, hmac or cmac.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_verify#cmac DataVaultTransitVerify#cmac}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#cmac DataVaultTransitVerify#cmac}
 
 ---
 
@@ -1330,7 +1330,7 @@ public string Context { get; set; }
 
 Base64 encoded context for key derivation. Required if key derivation is enabled; currently only available with ed25519 keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_verify#context DataVaultTransitVerify#context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#context DataVaultTransitVerify#context}
 
 ---
 
@@ -1344,7 +1344,7 @@ public string HashAlgorithm { get; set; }
 
 Specifies the hash algorithm to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_verify#hash_algorithm DataVaultTransitVerify#hash_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#hash_algorithm DataVaultTransitVerify#hash_algorithm}
 
 ---
 
@@ -1360,7 +1360,7 @@ Specifies the signature output from the /transit/hmac function.
 
 One of the following arguments must be supplied signature, hmac or cmac.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_verify#hmac DataVaultTransitVerify#hmac}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#hmac DataVaultTransitVerify#hmac}
 
 ---
 
@@ -1372,7 +1372,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_verify#id DataVaultTransitVerify#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#id DataVaultTransitVerify#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1389,7 +1389,7 @@ public string Input { get; set; }
 
 Specifies the base64 encoded input data. One of input or batch_input must be supplied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_verify#input DataVaultTransitVerify#input}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#input DataVaultTransitVerify#input}
 
 ---
 
@@ -1403,7 +1403,7 @@ public double MacLength { get; set; }
 
 Specifies the MAC length used to generate a CMAC. The mac_length cannot be larger than the cipher's block size.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_verify#mac_length DataVaultTransitVerify#mac_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#mac_length DataVaultTransitVerify#mac_length}
 
 ---
 
@@ -1417,7 +1417,7 @@ public string MarshalingAlgorithm { get; set; }
 
 Specifies the way in which the signature was originally marshaled. This currently only applies to ECDSA keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_verify#marshaling_algorithm DataVaultTransitVerify#marshaling_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#marshaling_algorithm DataVaultTransitVerify#marshaling_algorithm}
 
 ---
 
@@ -1431,7 +1431,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_verify#namespace DataVaultTransitVerify#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#namespace DataVaultTransitVerify#namespace}
 
 ---
 
@@ -1447,7 +1447,7 @@ Set to true when the input is already hashed.
 
 If the key type is rsa-2048, rsa-3072 or rsa-4096, then the algorithm used to hash the input should be indicated by the hash_algorithm parameter. Just as the value to sign should be the base64-encoded representation of the exact binary data you want signed, when set, input is expected to be base64-encoded binary hashed data, not hex-formatted. (As an example, on the command line, you could generate a suitable input via openssl dgst -sha256 -binary | base64.)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_verify#prehashed DataVaultTransitVerify#prehashed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#prehashed DataVaultTransitVerify#prehashed}
 
 ---
 
@@ -1463,7 +1463,7 @@ A user-supplied string that will be present in the reference field on the corres
 
 Only valid on batch requests when using ‘batch_input’ below.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_verify#reference DataVaultTransitVerify#reference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#reference DataVaultTransitVerify#reference}
 
 ---
 
@@ -1477,7 +1477,7 @@ public string SaltLength { get; set; }
 
 The salt length used to sign. This currently only applies to the RSA PSS signature scheme.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_verify#salt_length DataVaultTransitVerify#salt_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#salt_length DataVaultTransitVerify#salt_length}
 
 ---
 
@@ -1493,7 +1493,7 @@ Specifies the signature output from the /transit/sign function.
 
 One of the following arguments must be supplied signature, hmac or cmac.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_verify#signature DataVaultTransitVerify#signature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#signature DataVaultTransitVerify#signature}
 
 ---
 
@@ -1507,7 +1507,7 @@ public string SignatureAlgorithm { get; set; }
 
 When using a RSA key, specifies the RSA signature algorithm to use for signature verification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_verify#signature_algorithm DataVaultTransitVerify#signature_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#signature_algorithm DataVaultTransitVerify#signature_algorithm}
 
 ---
 
@@ -1521,7 +1521,7 @@ public string SignatureContext { get; set; }
 
 Base64 encoded context for Ed25519ctx and Ed25519ph signatures.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_verify#signature_context DataVaultTransitVerify#signature_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#signature_context DataVaultTransitVerify#signature_context}
 
 ---
 
@@ -1535,7 +1535,7 @@ public bool|IResolvable Valid { get; set; }
 
 Indicates whether verification succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/transit_verify#valid DataVaultTransitVerify#valid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#valid DataVaultTransitVerify#valid}
 
 ---
 

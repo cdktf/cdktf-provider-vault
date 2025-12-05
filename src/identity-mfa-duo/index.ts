@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/identity_mfa_duo
+// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_duo
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface IdentityMfaDuoConfig extends cdktf.TerraformMetaArguments {
   /**
   * API hostname for Duo
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/identity_mfa_duo#api_hostname IdentityMfaDuo#api_hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_duo#api_hostname IdentityMfaDuo#api_hostname}
   */
   readonly apiHostname: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/identity_mfa_duo#id IdentityMfaDuo#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_duo#id IdentityMfaDuo#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,43 +28,43 @@ export interface IdentityMfaDuoConfig extends cdktf.TerraformMetaArguments {
   /**
   * Integration key for Duo
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/identity_mfa_duo#integration_key IdentityMfaDuo#integration_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_duo#integration_key IdentityMfaDuo#integration_key}
   */
   readonly integrationKey: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/identity_mfa_duo#namespace IdentityMfaDuo#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_duo#namespace IdentityMfaDuo#namespace}
   */
   readonly namespace?: string;
   /**
   * Push information for Duo.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/identity_mfa_duo#push_info IdentityMfaDuo#push_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_duo#push_info IdentityMfaDuo#push_info}
   */
   readonly pushInfo?: string;
   /**
   * Secret key for Duo
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/identity_mfa_duo#secret_key IdentityMfaDuo#secret_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_duo#secret_key IdentityMfaDuo#secret_key}
   */
   readonly secretKey: string;
   /**
   * Require passcode upon MFA validation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/identity_mfa_duo#use_passcode IdentityMfaDuo#use_passcode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_duo#use_passcode IdentityMfaDuo#use_passcode}
   */
   readonly usePasscode?: boolean | cdktf.IResolvable;
   /**
   * A template string for mapping Identity names to MFA methods.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/identity_mfa_duo#username_format IdentityMfaDuo#username_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_duo#username_format IdentityMfaDuo#username_format}
   */
   readonly usernameFormat?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/identity_mfa_duo vault_identity_mfa_duo}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_duo vault_identity_mfa_duo}
 */
 export class IdentityMfaDuo extends cdktf.TerraformResource {
 
@@ -80,7 +80,7 @@ export class IdentityMfaDuo extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a IdentityMfaDuo resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IdentityMfaDuo to import
-  * @param importFromId The id of the existing IdentityMfaDuo that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/identity_mfa_duo#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IdentityMfaDuo that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_duo#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IdentityMfaDuo to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -92,7 +92,7 @@ export class IdentityMfaDuo extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/identity_mfa_duo vault_identity_mfa_duo} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_duo vault_identity_mfa_duo} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -103,7 +103,7 @@ export class IdentityMfaDuo extends cdktf.TerraformResource {
       terraformResourceType: 'vault_identity_mfa_duo',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.5.0',
+        providerVersion: '5.6.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
