@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.mount.Mount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/mount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/mount"
 
 mount.NewMount(scope Construct, id *string, config MountConfig) Mount
 ```
@@ -511,7 +511,7 @@ func ResetSealWrap()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.mount.Mount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/mount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/mount"
 
 mount.Mount_IsConstruct(x interface{}) *bool
 ```
@@ -543,7 +543,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.mount.Mount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/mount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/mount"
 
 mount.Mount_IsTerraformElement(x interface{}) *bool
 ```
@@ -557,7 +557,7 @@ mount.Mount_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.mount.Mount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/mount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/mount"
 
 mount.Mount_IsTerraformResource(x interface{}) *bool
 ```
@@ -571,7 +571,7 @@ mount.Mount_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.mount.Mount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/mount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/mount"
 
 mount.Mount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1273,7 +1273,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.mount.MountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/mount"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/mount"
 
 &mount.MountConfig {
 	Connection: interface{},

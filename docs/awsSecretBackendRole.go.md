@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/awssecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/awssecretbackendrole"
 
 awssecretbackendrole.NewAwsSecretBackendRole(scope Construct, id *string, config AwsSecretBackendRoleConfig) AwsSecretBackendRole
 ```
@@ -476,7 +476,7 @@ func ResetUserPath()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/awssecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/awssecretbackendrole"
 
 awssecretbackendrole.AwsSecretBackendRole_IsConstruct(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/awssecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/awssecretbackendrole"
 
 awssecretbackendrole.AwsSecretBackendRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ awssecretbackendrole.AwsSecretBackendRole_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/awssecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/awssecretbackendrole"
 
 awssecretbackendrole.AwsSecretBackendRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ awssecretbackendrole.AwsSecretBackendRole_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/awssecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/awssecretbackendrole"
 
 awssecretbackendrole.AwsSecretBackendRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1139,7 +1139,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.awsSecretBackendRole.AwsSecretBackendRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/awssecretbackendrole"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/awssecretbackendrole"
 
 &awssecretbackendrole.AwsSecretBackendRoleConfig {
 	Connection: interface{},
