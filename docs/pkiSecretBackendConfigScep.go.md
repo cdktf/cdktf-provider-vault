@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.pkiSecretBackendConfigScep.PkiSecretBackendConfigScep.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/pkisecretbackendconfigscep"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendconfigscep"
 
 pkisecretbackendconfigscep.NewPkiSecretBackendConfigScep(scope Construct, id *string, config PkiSecretBackendConfigScepConfig) PkiSecretBackendConfigScep
 ```
@@ -474,7 +474,7 @@ func ResetRestrictCaChainToIssuer()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.pkiSecretBackendConfigScep.PkiSecretBackendConfigScep.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/pkisecretbackendconfigscep"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendconfigscep"
 
 pkisecretbackendconfigscep.PkiSecretBackendConfigScep_IsConstruct(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.pkiSecretBackendConfigScep.PkiSecretBackendConfigScep.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/pkisecretbackendconfigscep"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendconfigscep"
 
 pkisecretbackendconfigscep.PkiSecretBackendConfigScep_IsTerraformElement(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ pkisecretbackendconfigscep.PkiSecretBackendConfigScep_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.pkiSecretBackendConfigScep.PkiSecretBackendConfigScep.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/pkisecretbackendconfigscep"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendconfigscep"
 
 pkisecretbackendconfigscep.PkiSecretBackendConfigScep_IsTerraformResource(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ pkisecretbackendconfigscep.PkiSecretBackendConfigScep_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.pkiSecretBackendConfigScep.PkiSecretBackendConfigScep.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/pkisecretbackendconfigscep"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendconfigscep"
 
 pkisecretbackendconfigscep.PkiSecretBackendConfigScep_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1016,7 +1016,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.pkiSecretBackendConfigScep.PkiSecretBackendConfigScepAuthenticators.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/pkisecretbackendconfigscep"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendconfigscep"
 
 &pkisecretbackendconfigscep.PkiSecretBackendConfigScepAuthenticators {
 	Cert: *map[string]*string,
@@ -1066,7 +1066,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.pkiSecretBackendConfigScep.PkiSecretBackendConfigScepConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/pkisecretbackendconfigscep"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendconfigscep"
 
 &pkisecretbackendconfigscep.PkiSecretBackendConfigScepConfig {
 	Connection: interface{},
@@ -1079,7 +1079,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/pkisecretbackendconfi
 	Backend: *string,
 	AllowedDigestAlgorithms: *[]*string,
 	AllowedEncryptionAlgorithms: *[]*string,
-	Authenticators: github.com/cdktf/cdktf-provider-vault-go/vault/v15.pkiSecretBackendConfigScep.PkiSecretBackendConfigScepAuthenticators,
+	Authenticators: github.com/cdktf/cdktf-provider-vault-go/vault.pkiSecretBackendConfigScep.PkiSecretBackendConfigScepAuthenticators,
 	DefaultPathPolicy: *string,
 	Enabled: interface{},
 	ExternalValidation: interface{},
@@ -1345,7 +1345,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.pkiSecretBackendConfigScep.PkiSecretBackendConfigScepExternalValidation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/pkisecretbackendconfigscep"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendconfigscep"
 
 &pkisecretbackendconfigscep.PkiSecretBackendConfigScepExternalValidation {
 	Intune: *map[string]*string,
@@ -1381,7 +1381,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.pkiSecretBackendConfigScep.PkiSecretBackendConfigScepAuthenticatorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/pkisecretbackendconfigscep"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendconfigscep"
 
 pkisecretbackendconfigscep.NewPkiSecretBackendConfigScepAuthenticatorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PkiSecretBackendConfigScepAuthenticatorsOutputReference
 ```
@@ -1688,7 +1688,7 @@ func InternalValue() PkiSecretBackendConfigScepAuthenticators
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.pkiSecretBackendConfigScep.PkiSecretBackendConfigScepExternalValidationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/pkisecretbackendconfigscep"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendconfigscep"
 
 pkisecretbackendconfigscep.NewPkiSecretBackendConfigScepExternalValidationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PkiSecretBackendConfigScepExternalValidationList
 ```
@@ -1848,7 +1848,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.pkiSecretBackendConfigScep.PkiSecretBackendConfigScepExternalValidationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/pkisecretbackendconfigscep"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/pkisecretbackendconfigscep"
 
 pkisecretbackendconfigscep.NewPkiSecretBackendConfigScepExternalValidationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PkiSecretBackendConfigScepExternalValidationOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.provider.VaultProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/provider"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/provider"
 
 provider.NewVaultProvider(scope Construct, id *string, config VaultProviderConfig) VaultProvider
 ```
@@ -361,7 +361,7 @@ func ResetVaultVersionOverride()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.provider.VaultProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/provider"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/provider"
 
 provider.VaultProvider_IsConstruct(x interface{}) *bool
 ```
@@ -393,7 +393,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.provider.VaultProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/provider"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/provider"
 
 provider.VaultProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -407,7 +407,7 @@ provider.VaultProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-vault.provider.VaultProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/provider"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/provider"
 
 provider.VaultProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -421,7 +421,7 @@ provider.VaultProvider_IsTerraformProvider(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.provider.VaultProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/provider"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/provider"
 
 provider.VaultProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1266,7 +1266,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.provider.VaultProviderAuthLogin.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/provider"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/provider"
 
 &provider.VaultProviderAuthLogin {
 	Path: *string,
@@ -1358,7 +1358,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginAws.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/provider"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/provider"
 
 &provider.VaultProviderAuthLoginAws {
 	Role: *string,
@@ -1632,7 +1632,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/provider"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/provider"
 
 &provider.VaultProviderAuthLoginAzure {
 	ResourceGroupName: *string,
@@ -1846,7 +1846,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginCert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/provider"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/provider"
 
 &provider.VaultProviderAuthLoginCert {
 	CertFile: *string,
@@ -1960,7 +1960,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/provider"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/provider"
 
 &provider.VaultProviderAuthLoginGcp {
 	Role: *string,
@@ -2090,7 +2090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/provider"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/provider"
 
 &provider.VaultProviderAuthLoginJwt {
 	Role: *string,
@@ -2188,7 +2188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/provider"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/provider"
 
 &provider.VaultProviderAuthLoginKerberos {
 	DisableFastNegotiation: interface{},
@@ -2382,7 +2382,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginOci.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/provider"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/provider"
 
 &provider.VaultProviderAuthLoginOci {
 	AuthType: *string,
@@ -2480,7 +2480,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/provider"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/provider"
 
 &provider.VaultProviderAuthLoginOidc {
 	Role: *string,
@@ -2594,7 +2594,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/provider"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/provider"
 
 &provider.VaultProviderAuthLoginRadius {
 	Mount: *string,
@@ -2692,7 +2692,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/provider"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/provider"
 
 &provider.VaultProviderAuthLoginTokenFile {
 	Filename: *string,
@@ -2758,7 +2758,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/provider"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/provider"
 
 &provider.VaultProviderAuthLoginUserpass {
 	Mount: *string,
@@ -2872,7 +2872,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.provider.VaultProviderClientAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/provider"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/provider"
 
 &provider.VaultProviderClientAuth {
 	CertFile: *string,
@@ -2922,7 +2922,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.provider.VaultProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/provider"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/provider"
 
 &provider.VaultProviderConfig {
 	AddAddressToEnv: *string,
@@ -3436,7 +3436,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.provider.VaultProviderHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/provider"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/provider"
 
 &provider.VaultProviderHeaders {
 	Name: *string,

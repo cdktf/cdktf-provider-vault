@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/consulsecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/consulsecretbackend"
 
 consulsecretbackend.NewConsulSecretBackend(scope Construct, id *string, config ConsulSecretBackendConfig) ConsulSecretBackend
 ```
@@ -567,7 +567,7 @@ func ResetToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/consulsecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/consulsecretbackend"
 
 consulsecretbackend.ConsulSecretBackend_IsConstruct(x interface{}) *bool
 ```
@@ -599,7 +599,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/consulsecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/consulsecretbackend"
 
 consulsecretbackend.ConsulSecretBackend_IsTerraformElement(x interface{}) *bool
 ```
@@ -613,7 +613,7 @@ consulsecretbackend.ConsulSecretBackend_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/consulsecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/consulsecretbackend"
 
 consulsecretbackend.ConsulSecretBackend_IsTerraformResource(x interface{}) *bool
 ```
@@ -627,7 +627,7 @@ consulsecretbackend.ConsulSecretBackend_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackend.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/consulsecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/consulsecretbackend"
 
 consulsecretbackend.ConsulSecretBackend_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1483,7 +1483,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.consulSecretBackend.ConsulSecretBackendConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/consulsecretbackend"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/consulsecretbackend"
 
 &consulsecretbackend.ConsulSecretBackendConfig {
 	Connection: interface{},

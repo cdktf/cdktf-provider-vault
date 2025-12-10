@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.identityGroupMemberGroupIds.IdentityGroupMemberGroupIds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/identitygroupmembergroupids"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identitygroupmembergroupids"
 
 identitygroupmembergroupids.NewIdentityGroupMemberGroupIds(scope Construct, id *string, config IdentityGroupMemberGroupIdsConfig) IdentityGroupMemberGroupIds
 ```
@@ -406,7 +406,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.identityGroupMemberGroupIds.IdentityGroupMemberGroupIds.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/identitygroupmembergroupids"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identitygroupmembergroupids"
 
 identitygroupmembergroupids.IdentityGroupMemberGroupIds_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.identityGroupMemberGroupIds.IdentityGroupMemberGroupIds.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/identitygroupmembergroupids"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identitygroupmembergroupids"
 
 identitygroupmembergroupids.IdentityGroupMemberGroupIds_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ identitygroupmembergroupids.IdentityGroupMemberGroupIds_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.identityGroupMemberGroupIds.IdentityGroupMemberGroupIds.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/identitygroupmembergroupids"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identitygroupmembergroupids"
 
 identitygroupmembergroupids.IdentityGroupMemberGroupIds_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ identitygroupmembergroupids.IdentityGroupMemberGroupIds_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.identityGroupMemberGroupIds.IdentityGroupMemberGroupIds.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/identitygroupmembergroupids"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identitygroupmembergroupids"
 
 identitygroupmembergroupids.IdentityGroupMemberGroupIds_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -805,7 +805,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.identityGroupMemberGroupIds.IdentityGroupMemberGroupIdsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/identitygroupmembergroupids"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/identitygroupmembergroupids"
 
 &identitygroupmembergroupids.IdentityGroupMemberGroupIdsConfig {
 	Connection: interface{},

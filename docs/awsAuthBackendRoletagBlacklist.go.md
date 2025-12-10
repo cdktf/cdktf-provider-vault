@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.awsAuthBackendRoletagBlacklist.AwsAuthBackendRoletagBlacklist.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/awsauthbackendroletagblacklist"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendroletagblacklist"
 
 awsauthbackendroletagblacklist.NewAwsAuthBackendRoletagBlacklist(scope Construct, id *string, config AwsAuthBackendRoletagBlacklistConfig) AwsAuthBackendRoletagBlacklist
 ```
@@ -406,7 +406,7 @@ func ResetSafetyBuffer()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.awsAuthBackendRoletagBlacklist.AwsAuthBackendRoletagBlacklist.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/awsauthbackendroletagblacklist"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendroletagblacklist"
 
 awsauthbackendroletagblacklist.AwsAuthBackendRoletagBlacklist_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.awsAuthBackendRoletagBlacklist.AwsAuthBackendRoletagBlacklist.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/awsauthbackendroletagblacklist"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendroletagblacklist"
 
 awsauthbackendroletagblacklist.AwsAuthBackendRoletagBlacklist_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ awsauthbackendroletagblacklist.AwsAuthBackendRoletagBlacklist_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.awsAuthBackendRoletagBlacklist.AwsAuthBackendRoletagBlacklist.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/awsauthbackendroletagblacklist"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendroletagblacklist"
 
 awsauthbackendroletagblacklist.AwsAuthBackendRoletagBlacklist_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ awsauthbackendroletagblacklist.AwsAuthBackendRoletagBlacklist_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.awsAuthBackendRoletagBlacklist.AwsAuthBackendRoletagBlacklist.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/awsauthbackendroletagblacklist"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendroletagblacklist"
 
 awsauthbackendroletagblacklist.AwsAuthBackendRoletagBlacklist_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -805,7 +805,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.awsAuthBackendRoletagBlacklist.AwsAuthBackendRoletagBlacklistConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/awsauthbackendroletagblacklist"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/awsauthbackendroletagblacklist"
 
 &awsauthbackendroletagblacklist.AwsAuthBackendRoletagBlacklistConfig {
 	Connection: interface{},

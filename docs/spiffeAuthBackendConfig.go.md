@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.spiffeAuthBackendConfig.SpiffeAuthBackendConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/spiffeauthbackendconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/spiffeauthbackendconfig"
 
 spiffeauthbackendconfig.NewSpiffeAuthBackendConfig(scope Construct, id *string, config SpiffeAuthBackendConfigConfig) SpiffeAuthBackendConfig
 ```
@@ -427,7 +427,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.spiffeAuthBackendConfig.SpiffeAuthBackendConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/spiffeauthbackendconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/spiffeauthbackendconfig"
 
 spiffeauthbackendconfig.SpiffeAuthBackendConfig_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.spiffeAuthBackendConfig.SpiffeAuthBackendConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/spiffeauthbackendconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/spiffeauthbackendconfig"
 
 spiffeauthbackendconfig.SpiffeAuthBackendConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ spiffeauthbackendconfig.SpiffeAuthBackendConfig_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.spiffeAuthBackendConfig.SpiffeAuthBackendConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/spiffeauthbackendconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/spiffeauthbackendconfig"
 
 spiffeauthbackendconfig.SpiffeAuthBackendConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ spiffeauthbackendconfig.SpiffeAuthBackendConfig_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.spiffeAuthBackendConfig.SpiffeAuthBackendConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/spiffeauthbackendconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/spiffeauthbackendconfig"
 
 spiffeauthbackendconfig.SpiffeAuthBackendConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -936,7 +936,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.spiffeAuthBackendConfig.SpiffeAuthBackendConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/spiffeauthbackendconfig"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/spiffeauthbackendconfig"
 
 &spiffeauthbackendconfig.SpiffeAuthBackendConfigConfig {
 	Connection: interface{},

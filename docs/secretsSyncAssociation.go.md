@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.secretsSyncAssociation.SecretsSyncAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/secretssyncassociation"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/secretssyncassociation"
 
 secretssyncassociation.NewSecretsSyncAssociation(scope Construct, id *string, config SecretsSyncAssociationConfig) SecretsSyncAssociation
 ```
@@ -392,7 +392,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.secretsSyncAssociation.SecretsSyncAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/secretssyncassociation"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/secretssyncassociation"
 
 secretssyncassociation.SecretsSyncAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.secretsSyncAssociation.SecretsSyncAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/secretssyncassociation"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/secretssyncassociation"
 
 secretssyncassociation.SecretsSyncAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ secretssyncassociation.SecretsSyncAssociation_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.secretsSyncAssociation.SecretsSyncAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/secretssyncassociation"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/secretssyncassociation"
 
 secretssyncassociation.SecretsSyncAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ secretssyncassociation.SecretsSyncAssociation_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.secretsSyncAssociation.SecretsSyncAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/secretssyncassociation"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/secretssyncassociation"
 
 secretssyncassociation.SecretsSyncAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -824,7 +824,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.secretsSyncAssociation.SecretsSyncAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/secretssyncassociation"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/secretssyncassociation"
 
 &secretssyncassociation.SecretsSyncAssociationConfig {
 	Connection: interface{},
@@ -1023,7 +1023,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.secretsSyncAssociation.SecretsSyncAssociationMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/secretssyncassociation"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/secretssyncassociation"
 
 &secretssyncassociation.SecretsSyncAssociationMetadata {
 
@@ -1038,7 +1038,7 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/secretssyncassociatio
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.secretsSyncAssociation.SecretsSyncAssociationMetadataList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/secretssyncassociation"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/secretssyncassociation"
 
 secretssyncassociation.NewSecretsSyncAssociationMetadataList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecretsSyncAssociationMetadataList
 ```
@@ -1187,7 +1187,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.secretsSyncAssociation.SecretsSyncAssociationMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/secretssyncassociation"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/secretssyncassociation"
 
 secretssyncassociation.NewSecretsSyncAssociationMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecretsSyncAssociationMetadataOutputReference
 ```

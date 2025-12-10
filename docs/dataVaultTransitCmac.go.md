@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultTransitCmac.DataVaultTransitCmac.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/datavaulttransitcmac"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaulttransitcmac"
 
 datavaulttransitcmac.NewDataVaultTransitCmac(scope Construct, id *string, config DataVaultTransitCmacConfig) DataVaultTransitCmac
 ```
@@ -339,7 +339,7 @@ func ResetUrlMacLength()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.dataVaultTransitCmac.DataVaultTransitCmac.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/datavaulttransitcmac"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaulttransitcmac"
 
 datavaulttransitcmac.DataVaultTransitCmac_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.dataVaultTransitCmac.DataVaultTransitCmac.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/datavaulttransitcmac"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaulttransitcmac"
 
 datavaulttransitcmac.DataVaultTransitCmac_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ datavaulttransitcmac.DataVaultTransitCmac_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vault.dataVaultTransitCmac.DataVaultTransitCmac.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/datavaulttransitcmac"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaulttransitcmac"
 
 datavaulttransitcmac.DataVaultTransitCmac_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ datavaulttransitcmac.DataVaultTransitCmac_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.dataVaultTransitCmac.DataVaultTransitCmac.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/datavaulttransitcmac"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaulttransitcmac"
 
 datavaulttransitcmac.DataVaultTransitCmac_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -848,7 +848,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.dataVaultTransitCmac.DataVaultTransitCmacConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/datavaulttransitcmac"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/datavaulttransitcmac"
 
 &datavaulttransitcmac.DataVaultTransitCmacConfig {
 	Connection: interface{},

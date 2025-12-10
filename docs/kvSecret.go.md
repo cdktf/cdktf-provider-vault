@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vault.kvSecret.KvSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/kvsecret"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/kvsecret"
 
 kvsecret.NewKvSecret(scope Construct, id *string, config KvSecretConfig) KvSecret
 ```
@@ -392,7 +392,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.kvSecret.KvSecret.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/kvsecret"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/kvsecret"
 
 kvsecret.KvSecret_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.kvSecret.KvSecret.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/kvsecret"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/kvsecret"
 
 kvsecret.KvSecret_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ kvsecret.KvSecret_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.kvSecret.KvSecret.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/kvsecret"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/kvsecret"
 
 kvsecret.KvSecret_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ kvsecret.KvSecret_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.kvSecret.KvSecret.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/kvsecret"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/kvsecret"
 
 kvsecret.KvSecret_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -780,7 +780,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vault.kvSecret.KvSecretConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/kvsecret"
+import "github.com/cdktf/cdktf-provider-vault-go/vault/kvsecret"
 
 &kvsecret.KvSecretConfig {
 	Connection: interface{},
